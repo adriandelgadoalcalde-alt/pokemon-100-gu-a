@@ -1,24 +1,20 @@
-# Archivo Maestro Pokémon — aplicación web instalable (PWA) v8.2
+# Archivo Maestro Pokémon — Atlas V9.2
 
-Esta carpeta contiene una versión autocontenida de la guía v8.1 con instalación desde Safari/Chrome, compatible con GitHub Pages. No incluye partidas `.sav` o `main` personales. La lectura de partidas se realiza en el navegador, sin enviar guardados al servidor.
+Aplicación de seguimiento Pokémon con dos rutas de acceso:
 
-## Publicar en GitHub Pages
+- **[Atlas de nueve generaciones](./atlas.html):** 39 ediciones, 525 misiones y 1.146 pasos, expedientes manuales por edición y carga de diagnósticos JSON exportados desde el lector clásico.
+- **[Lector de guardados y guía clásica](./index.html):** lectura local de los formatos compatibles y guía especializada para las ediciones ya implementadas.
 
-1. Crear repositorio (público si se usa GitHub Pages gratuito según las condiciones de la cuenta).
-2. Subir **todo el contenido de esta carpeta a la raíz** de la rama `main`, conservando la carpeta `icons`.
-3. En Settings → Pages, seleccionar Deploy from a branch, `main`, `/(root)`, Save.
-4. Abrir `https://USUARIO.github.io/REPOSITORIO/` cuando Pages indique que se ha publicado.
+## Publicación
+GitHub Pages se publica desde la rama `main` y la raíz del repositorio. La aplicación puede instalarse desde Safari en iPad y Chrome en Android, sujeto a disponibilidad del navegador.
 
-## Instalar en iPad
+## Seguridad y progreso
+Los archivos de guardado personales no están en este repositorio. Importar registros de Pokédex no certifica que se hayan completado los eventos originales. Exporta las casillas a JSON antes de cambiar de dispositivo.
 
-Abrir esa dirección en Safari → Compartir → Añadir a pantalla de inicio → Abrir desde el icono. Cargar una vez con conexión para que el contenido quede en caché. En Chrome Android se puede usar Instalar aplicación.
+## Cobertura real
+La estructura abarca nueve generaciones; no todas las rutas son todavía guías exhaustivas. La V9.2 corrige el itinerario de Negro 2/Blanco 2 y añade comprobaciones específicas, pero 459 misiones siguen siendo recorridos introductorios. La lectura SAV directa de todas las generaciones y la certificación absoluta requieren desarrollo y pruebas por formato.
 
-## Progreso y privacidad
-
-El progreso se guarda **localmente en cada navegador**; usa Exportar/Importar JSON para transferirlo de Android a iPad o PC. La PWA por sí sola no sincroniza automáticamente el estado. No subas archivos `.sav`, `main` ni los JSON de tu progreso al repositorio público. Los diagnósticos personales preintegrados se han eliminado de esta versión para evitar publicarlos. Importa tus cinco partidas localmente en cada dispositivo para obtener los diagnósticos personalizados.
-
-## Test rápido
-
-Servir esta carpeta con `python -m http.server 8000`, abrir `http://localhost:8000`, probar el lector y desactivar la red después de la primera carga. Para instalar realmente en iPad es necesario HTTPS, que proporciona GitHub Pages.
-
-GitHub Pages: publicación desde `main` / raíz del repositorio. Entrada: `index.html`.
+### Referencias
+- https://bulbapedia.bulbagarden.net/wiki/Appendix:Black_2_and_White_2_walkthrough
+- https://www.wikidex.net/wiki/Unova
+- https://bulbapedia.bulbagarden.net/wiki/Core_series
