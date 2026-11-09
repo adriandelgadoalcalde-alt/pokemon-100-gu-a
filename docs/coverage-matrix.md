@@ -1,8 +1,9 @@
 # Cobertura real y primera entrega
 
 Fecha: 9 de noviembre de 2026. Base auditada: `5af3c69` de `main`.
-Rama de trabajo: `feat/save-evidence-engine`. El commit de entrega queda en el historial
-de esta rama; este informe no presenta la rama como publicada en Pages.
+Rama de trabajo: `feat/save-evidence-engine`. Implementación inicial: `093c948`;
+los ajustes posteriores de pruebas constan en el historial. Este informe no presenta
+la rama como publicada en Pages.
 
 ## Alcance acordado con el usuario
 
@@ -64,7 +65,7 @@ Archivos de producto: `index.html`, `atlas.html`, `sw.js`,
 | Pruebas unitarias/contrato locales | Pasan: catálogo, contadores, corrupción, Pokédex, límites, bytes intactos |
 | Pruebas Chromium locales | Pasan: cinco anchuras, importación local, restauración, rechazo sin pérdida, offline |
 | Safari/iPadOS físico | Pendiente; emulación de anchuras no sustituye dispositivo real |
-| CI remota | Consultar la ejecución de esta rama; pasar en local no implica CI verde |
+| CI remota | Auditoría, contratos y navegador pasaron en GitHub para `093c948`; consultar también el estado del último commit de la propuesta |
 
 Se generan capturas a 390, 768, 1024, 1366 y 1440 píxeles, y se comprueba ausencia de
 overflow horizontal en ambas entradas. Las pantallas iniciales se mantienen. El test

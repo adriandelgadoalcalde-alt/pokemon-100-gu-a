@@ -56,9 +56,10 @@ async function run() {
     assert.deepEqual(restored.evidence.SOULSILVER.caught, [145,146]);
     // An older backup without evidence preserves the evidence already held locally.
     const older = {...backup}; delete older.evidence;
+    const olderRestored = page.waitForEvent('dialog');
     await page.locator('#file-import').setInputFiles({name: 'older-progress.json', mimeType: 'application/json',
       buffer: Buffer.from(JSON.stringify(older))});
-    await page.waitForTimeout(100);
+    await olderRestored;
     restored = await page.evaluate(() => JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1')));
     assert.deepEqual(restored.evidence.SOULSILVER.caught, [145,146]);
     // Import a synthetic binary through the actual UI; no network request contains it.
@@ -73,8 +74,9 @@ async function run() {
     assert.ok(requests.every(r => r.method === 'GET' && r.data === null), 'save must stay local');
     // A corrupt upload must leave the previous diagnosis untouched.
     const corrupt = fixture({caught: [150]}); corrupt[0x12BC] ^= 1;
+    const rejection = page.waitForEvent('dialog');
     await page.locator('#saveImportFile').setInputFiles({name: 'corrupt.sav', mimeType: 'application/octet-stream', buffer: Buffer.from(corrupt)});
-    await page.waitForTimeout(100);
+    assert.match((await rejection).message(), /integridad/);
     const afterError = await page.evaluate(() => JSON.parse(localStorage.getItem('archivo-pokemon-v2')));
     assert.deepEqual(afterError.snapshots, progress.snapshots);
     await context.close();
