@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "Archivo Maestro Pokémon · Guía 100%",
+  "short_name": "Pokémon 100%",
+  "description": "Guía de completismo Pokémon y lector local de partidas",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0a1020",
+  "theme_color": "#0a1020",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
