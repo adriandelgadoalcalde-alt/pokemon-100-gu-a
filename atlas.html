@@ -34,7 +34,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 let store={checks:{},history:[],game:'SOULSILVER',evidence:{},goalChecks:{},masterChecks:{}};
 try {const raw=localStorage.getItem(KEY);if(raw){const parsed=JSON.parse(raw);if(parsed?.checks&&typeof parsed.checks==='object')store={...store,...parsed}}} catch(e){}
 if(!CATALOG.games.some(g=>g.id===store.game))store.game='SOULSILVER';
-let genFilter=4,view='mission',textFilter='',pending=false;
+let genFilter=4,view='mastery',textFilter='',pending=false;
 const formatTime=t=>typeof t==='string'?t:'sin dato';
 const evidenceFor=g=>store.evidence?.[g.id]||null;
 const hasCaught=(g,id)=>Boolean(evidenceFor(g)?.caught?.includes(id));
