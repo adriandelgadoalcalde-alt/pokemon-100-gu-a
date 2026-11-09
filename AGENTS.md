@@ -1,5 +1,11 @@
 # AGENTS.md — Archivo Maestro Pokémon: traspaso integral a Codex
 
+> **Alcance confirmado por el usuario al continuar (09/11/2026):** guía completa de las
+> nueve generaciones, orientada por lectura local del guardado. Excluir entrenadores
+> secundarios y objetos sueltos triviales; incluir todos los objetos importantes o
+> relevantes para cualquier paso. Esta precisión prevalece sobre listas generales
+> de entrenadores/objetos del traspaso. Estado del trabajo en `docs/coverage-matrix.md`.
+
 > **Proyecto:** Guía Pokémon al 100 %, Atlas de las nueve generaciones, lector y auditor de guardados `.sav`/`main` y aplicación web progresiva (PWA).  
 > **Fecha de este traspaso:** 9 de noviembre de 2026.  
 > **Estado:** producto web funcional **parcial**, con contenido extenso, lectores limitados y una gran cantidad de investigación/validación pendiente. **No se ha certificado el 100 % de las 39 ediciones.**  

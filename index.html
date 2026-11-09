@@ -3663,7 +3663,8 @@
     }
   ],
   "pkhexRef": "https://projectpokemon.org/home/tutorials/save-editing/using-pkhex/importing-wondercards-r29/"
-}</script><script>
+}</script><script src="./src/saves/hgss-integrity.js"></script>
+<script>
 /* Archivo Maestro Pokemon – importador LOCAL y de SOLO LECTURA.
  * Estructuras contrastadas contra PKHeX.Core (SAV4HGSS, SAV5B2W2,
  * SaveBlockAccessor6XY/6AO/7USUM, Zukan4/5/6/7, MyStatus6/7).
@@ -3870,14 +3871,16 @@ function eventAudit(o,b){let off,workBase,flagBase,flagCount,workCount;
 
  function parseHGSS(b){let variants=[0,0x40000].map(base=>tryHGSS(b,base)).filter(Boolean);
   if(!variants.length)return null;
-  variants.sort((a,z)=>z.counter-a.counter||z.hours-a.hours||z.base-a.base);
-  const a=variants[0], base=a.base, ver=a.v;
+  const integrity=root.PokemonHGSSIntegrity.inspect(b);
+  const a=variants.find(v=>v.base===integrity?.base);
+  if(!a)fail('La copia más reciente de HGSS no identifica una edición compatible. No se ha importado progreso.');
+  const base=a.base, ver=a.v;
   validateVersion(ver,[8]);
   const johto=u8(b,base+0x64+0x1a),kanto=u8(b,base+0x64+0x1f),prog=u8(b,base+0x64+0x1d);
   const d=dex(b,{ofs:base+0x12B8,caught:4,seen:0x44,region:0x40,regions:1,max:493});
   const required=Array.from({length:493},(_,i)=>i+1).filter(i=>!MYTHICAL4.has(i));
   const missing=required.filter(i=>!d.caught.includes(i));
-  return details({game:'SOULSILVER',version:ver,generation:4,format:'DS 512 KiB',trainer:str4(b,base+0x64,16),tid:u16(b,base+0x74),playtime:time(b,base+0x86),firstHallOfFameSeconds:u32(b,base+0x3C),badgesJohto:bits(johto),badgesKanto:bits(kanto),badgesJohtoMask:johto,badgesKantoMask:kanto,badgesTotal:bits(johto)+bits(kanto),gameClear:!!(prog&1),nationalDex:!!(prog&2),missingRequired:missing,requiredCount:required.length,requiredCaught:required.length-missing.length,pokeathlon:parsePokeathlon4(b,base),pokewalker:parsePokewalker4(b,base),saveBase:base,slotInfo:`Ranura de guardado ${base?'secundaria':'principal'}`,notes:['Pokédex: «capturado» incluye intercambios; no acredita dónde apareció ni si completaste la escena.','Las dos copias DS se seleccionan por indicadores de actualización y tiempo; comprueba el registro si acabas de guardar.']},b,d);
+  return details({game:'SOULSILVER',integrity,version:ver,generation:4,format:'DS 512 KiB',trainer:str4(b,base+0x64,16),tid:u16(b,base+0x74),playtime:time(b,base+0x86),firstHallOfFameSeconds:u32(b,base+0x3C),badgesJohto:bits(johto),badgesKanto:bits(kanto),badgesJohtoMask:johto,badgesKantoMask:kanto,badgesTotal:bits(johto)+bits(kanto),gameClear:!!(prog&1),nationalDex:!!(prog&2),missingRequired:missing,requiredCount:required.length,requiredCaught:required.length-missing.length,pokeathlon:parsePokeathlon4(b,base),pokewalker:parsePokewalker4(b,base),saveBase:base,slotInfo:`Ranura de guardado ${base?'secundaria':'principal'}`,notes:['Pokédex: «capturado» incluye intercambios; no acredita dónde apareció ni si completaste la escena.','Bloque general seleccionado por contadores mayor/menor y comprobado por CRC. Cajas y bloques adicionales aún no tienen validación de integridad en este lector.']},b,d);
  }
  function tryB2W2(b,base){if(base+0x26000>b.length)return null;const v=u8(b,base+0x1941F),h=u16(b,base+0x19424);if(![22,23].includes(v)||h>9999)return null;return {base,v,h};}
  function parseB2W2(b){const variants=[0,0x26000].map(x=>tryB2W2(b,x)).filter(Boolean);if(!variants.length)return null;variants.sort((a,z)=>z.h-a.h||z.base-a.base);const {base,v}=variants[0];validateVersion(v,[22,23]);
@@ -3953,7 +3956,7 @@ function persist(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e)
 function log(g,task,step,action){state.history.unshift({game:g,title:task,step,action,date:new Date().toISOString()});if(state.history.length>1200)state.history.length=1200;}
 function notify(s){const prev=document.querySelector('.toast');if(prev)prev.remove();let node=document.createElement('div');node.className='toast';node.setAttribute('role','status');node.textContent=s;document.body.append(node);clearTimeout(toastTimer);toastTimer=setTimeout(()=>node.remove(),3500);}
 function setStep(id,i,val){const {g,t}=IDX[id]||{};if(!t||i<0||i>=t.steps.length)return;const k=dkey(t,i);if(!!state.checked[k]===val)return;state.checked[k]=val;log(g.id,t.title,`Paso ${i+1}: ${t.steps[i]}`,val?'completado':'reabierto');persist();render({keepScroll:true});}
-function setTask(id,val){const {g,t}=IDX[id]||{};if(!t)return;const before=doneN(t);t.steps.forEach((_,i)=>state.checked[dkey(t,i)]=val);if(before!==(val?t.steps.length:0)){log(g.id,t.title,'Todos los pasos',val?'misión completada':'misión reabierta');persist();render({keepScroll:true});}}
+
 function color(){document.documentElement.style.setProperty('--accent',MAP[state.game].color);document.documentElement.classList.toggle('light',!!state.light);}
 function navigate(view){state.view=view;search='';filter=(view==='guide'&&state.snapshots?.[state.game])?'next':'all';chapterOpen.clear();taskOpen=null;persist();render();window.scrollTo({top:0,behavior:'instant'});}
 function chooseGame(id){if(!MAP[id])return;state.game=id;search='';filter='all';chapterOpen.clear();taskOpen=null;persist();render();window.scrollTo({top:0,behavior:'instant'});}
@@ -4132,7 +4135,7 @@ function applySaveEvidence(){const s=state.snapshots[state.game];if(!s)return;co
  for(const a of unmarked){state.checked[`${a.id}#${a.index}`]=true;}log(s.game,'Análisis de guardado',`${unmarked.length} pasos confirmados por datos del archivo`,'verificación aplicada');persist();render({keepScroll:true});notify(`${unmarked.length} pasos verificados aplicados.`);
 }
 function fastFingerprint(bytes){let h=0x811c9dc5;for(let i=0;i<bytes.length;i++)h=Math.imul(h^bytes[i],0x01000193)>>>0;return bytes.length.toString(16)+'-'+h.toString(16).padStart(8,'0');}
-async function readSaveFiles(fileList){const files=Array.from(fileList||[]);if(!files.length)return;let success=0,errors=[];for(const file of files){try{if(file.size>4*1024*1024)throw Error('Archivo demasiado grande; exporta el guardado interno, no la ROM.');const bytes=new Uint8Array(await file.arrayBuffer());const s=PokemonSaveReader.parse(bytes);s.quickFingerprint=fastFingerprint(bytes);try{if(crypto?.subtle){const hash=await crypto.subtle.digest('SHA-256',bytes);s.sha256=Array.from(new Uint8Array(hash)).map(x=>x.toString(16).padStart(2,'0')).join('');}}catch(_e){}s.filename=file.name;s.readAt=new Date().toISOString();if(state.snapshots[s.game]?.quickFingerprint===s.quickFingerprint){notify('Archivo idéntico al diagnóstico ya cargado; no se creó un cambio falso.');continue;}if(state.snapshots[s.game]&&!confirm(`Ya existe un diagnóstico de ${(MAP[s.game]?.name||s.game)}. ¿Reemplazarlo por ${file.name}?`))continue;if(state.snapshots[s.game] && (!s.sha256 || state.snapshots[s.game].sha256!==s.sha256))persistComparison(s.game,state.snapshots[s.game],s);state.snapshots[s.game]=s;state.game=s.game;log(s.game,'Lectura de archivo',`Guardado leído: ${file.name} · ${s.caughtCount} Pokémon capturados · ${s.playtime||'sin tiempo legible'}`,'diagnóstico importado');success++;}catch(ex){errors.push(`${file.name}: ${ex.message||String(ex)}`)}}if(success){state.view='save';persist();render();notify(`${success} partida${success===1?'':'s'} leída${success===1?'':'s'} sin modificar los archivos.`);}if(errors.length)alert('No se pudo leer:\n'+errors.join('\n\n'));}
+
 
 // Auditoría y certificación v5. Sólo lectura. Fecha exacta de los eventos anteriores a la primera importación: desconocida.
 const HISTORIC_LINKS={
@@ -4455,28 +4458,9 @@ function v7ReqStatus(r){
  if(r.type==='manual')return state.prereqAnswers[state.game+'|'+r.key]?'verified':'unknown';
  return 'unknown';
 }
-function v7Unmet(t){return (V7_REQ[t?.id]||[]).filter(r=>v7ReqStatus(r)!=='verified');}
-function v7UnmetRoot(t,seen=new Set()){
- if(!t||seen.has(t.id))return t;
- seen.add(t.id);
- for(const req of v7Unmet(t)){
-  if(req.task&&IDX[req.task]?.t){
-   const upstream=IDX[req.task].t;
-   if(upstream.id!==t.id&& !complete(upstream))return v7UnmetRoot(upstream,seen);
-  }
- }
- return t;
-}
-function v7Panel(t){
- const requirements=V7_REQ[t.id];if(!requirements?.length)return '';
- const s=v6Snap(state.game),missing=v7Unmet(t),green=missing.length===0;
- return `<section class="v7-requisites ${green?'v7-ready':'v7-not-ready'}" aria-label="Requisitos previos de ${esc(t.title)}"><div class="v7-requisites-header"><b>${green?'✓ Requisitos indicados confirmados':'⚠ Antes de viajar: comprueba estos requisitos'}</b><span>${requirements.length-missing.length}/${requirements.length} verificados</span></div><div class="v7-checks">${requirements.map(r=>{const status=v7ReqStatus(r),yes=status==='verified';let action='';
- if(!yes&&r.task&&IDX[r.task])action=`<button class="btn compact" data-open="${r.task}">Abrir misión previa</button>`;
- if(!yes&&r.type==='manual')action=`<button class="btn compact" data-v7-manual="${esc(r.key)}" data-v7-set="1">Ya lo he comprobado</button>`;
- if(yes&&r.type==='manual')action=`<button class="btn compact" data-v7-manual="${esc(r.key)}" data-v7-set="0">Desmarcar</button>`;
- if(!yes&&r.type==='step'&&r.task)action+=`<button class="btn compact" data-v7-step="${r.task}" data-v7-index="${r.index}">Confirmar paso realizado</button>`;
- return `<div class="v7-prereq ${yes?'v7-yes':'v7-unknown'}"><span class="v7-check-symbol">${yes?'✓':status==='missing'?'✕':'?'}</span><div><strong>${esc(r.label)}</strong><small>${yes?(r.type==='badge16'||r.type==='national'||r.type==='gameClear'?'Confirmado por el guardado':'Confirmado manualmente'):(status==='missing'?'El guardado indica que falta':'No verificado: no supongas que está completado')}</small></div><div class="v7-prereq-actions">${action}</div></div>`}).join('')}</div>${!green?`<p class="v7-stop">No des por desbloqueado este objetivo hasta confirmar lo anterior. Los indicadores ausentes pueden requerir una comprobación en el juego.</p>`:`<p class="v7-okay">Puedes seguir los pasos. Comprueba igualmente los objetos en tu Bolsa cuando corresponda.</p>`}${t.id==='soulsilver-34'?`<details class="v7-troubleshooting"><summary>¿El Sr. Pokémon no te entrega el Orbe Rojo?</summary><p><b>Diagnóstico más habitual:</b> todavía no has recibido un inicial de Kanto del Profesor Oak, aunque ya hayas vencido a Rojo. Ve al laboratorio de Oak en Pueblo Paleta, deja un hueco en el equipo, recibe Bulbasaur, Charmander o Squirtle y después vuelve al Sr. Pokémon en la Ruta 30.</p><p>También revisa si llevas el Orbe Rojo en Objetos Clave, si el guardado es SoulSilver (no HeartGold) y si tienes Pokédex Nacional. No es necesario editar PKHeX.</p><small>Fuentes consultadas: Bulbapedia, Smogon University y WikiDex. Incluidas en esta página offline.</small></details>`:''}</section>`;
-}
+
+
+
 
 const V6_PRIORITY = {
  SOULSILVER:['soulsilver-33','soulsilver-36','soulsilver-34','soulsilver-35','soulsilver-31','soulsilver-32','soulsilver-37','soulsilver-38','soulsilver-39','soulsilver-40','soulsilver-41','soulsilver-44','soulsilver-45','soulsilver-46','soulsilver-53','soulsilver-54','soulsilver-55','soulsilver-56','soulsilver-47'],
@@ -4524,15 +4508,7 @@ function v6DirectFacts(g,s){if(!s)return [];
  return facts;
 }
 function v6SupportByStep(s){const map=new Map();if(s)for(const a of verifiedSuggestions(s))map.set(a.id+'#'+a.index,a.reason);return map;}
-function v6TaskInfo(t,s){const n=doneN(t),total=t.steps.length;
- if(n===total)return {kind:'done',title:'Completada por ti',detail:'Todos sus pasos están marcados en la guía.'};
- const ev=evidenceForTask(s,t);
- if(ev?.active)return {kind:'signal',title:ev.strength==='high'?'Hay evidencia del encuentro':'Hay una señal en el guardado',detail:ev.label+'. Comprueba que se realizaron los demás pasos.'};
- const direct=s?verifiedSuggestions(s).filter(x=>x.id===t.id):[];
- if(direct.length)return {kind:'signal',title:`${direct.length} paso(s) respaldados por el .sav`,detail:direct[0].reason};
- if(n>0)return {kind:'partial',title:`En curso · ${n}/${total}`,detail:'Continuar desde el primer paso que todavía no hayas marcado.'};
- return {kind:'pending',title:'Por revisar',detail:s?'No hay evidencia suficiente de esta misión en el guardado.':'Sin archivo analizado.'};
-}
+
 function v6Prioritized(g){const s=v6Snap(g.id),all=TASKS[g.id];const list=[];
  const add=t=>{if(t?.id==='soulsilver-33'&&state.checked['soulsilver-33#3'])return;if(t&&pokemonTaskEvidence(t,s)?.caught)return;if(t&&!complete(t)&&!list.includes(t))list.push(t);};
  if(!s)return all.filter(t=>!complete(t)).slice(0,20);
@@ -4548,13 +4524,9 @@ function v6Prioritized(g){const s=v6Snap(g.id),all=TASKS[g.id];const list=[];
  }
  return list;
 }
-function v6Next(g){const candidate=v6Prioritized(g)[0] || TASKS[g.id].find(t=>!complete(t))||null;return candidate?v7UnmetRoot(candidate):null;}
+
 function v6TaskHref(t){return t?`data-open="${t.id}"`:'';}
-function v6Flow(g,context='dashboard'){
- const s=v6Snap(g.id),next=v6Next(g),p=progress(g);
- if(!s)return `<section class="flow-entry"><div class="eyebrow">Tu recorrido empieza aquí</div><h2>Primero, conecta tu partida</h2><p>Así evitamos preguntarte lo que el guardado ya demuestra y buscamos misiones acordes con tu progreso.</p><div class="flow-steps"><div><span>01</span><b>Importar .sav o main</b><small>Lectura local, sin cambios</small></div><div><span>02</span><b>Resolver dudas</b><small>Solo preguntas pendientes</small></div><div><span>03</span><b>Continuar la aventura</b><small>Pasos en orden y con evidencia</small></div></div><div class="flow-buttons"><button class="btn primary" id="v6UploadSave">01 · Seleccionar archivo .sav / main →</button><button class="btn" data-view="guide">Ver guía completa</button></div></section>`;
- return `<section class="flow-entry v6-has-save" aria-label="Ruta recomendada tras analizar tu partida"><div class="flow-heading"><div><div class="eyebrow">Tu ruta personalizada · ${esc(g.name)}</div><h2>Partida reconocida. Continúa por aquí.</h2><p>${esc(s.trainer||'Entrenador')} · ${esc(s.playtime||'Tiempo no disponible')} · ${esc(s.filename||'Último diagnóstico incorporado')}</p></div><span class="flow-success">✓ Guardado analizado</span></div><div class="flow-steps"><div class="flow-complete"><span>01 ✓</span><b>Partida analizada</b><small>${esc(v6DirectFacts(g,s).slice(0,2).join(' · '))}</small></div><div><span>02</span><b>Test de dudas</b><small>Solo lo que no puede certificar el archivo</small></div><div class="flow-current"><span>03 →</span><b>Continuar la guía</b><small>${next?esc(next.title):'Revisar certificación final'}</small></div></div><div class="flow-buttons"><button class="btn primary v6-primary-continue" ${next?v6TaskHref(next):'data-view="certification"'}>▶ ${next?'Continuar: '+esc(next.title):'Revisar certificación'} →</button><button class="btn" data-view="quiz">02 · Resolver dudas</button><button class="btn" data-view="guide">Ver capítulos y filtros</button><button class="btn" id="v6UploadSave">↻ Actualizar partida</button></div><p class="flow-disclaimer">El archivo aporta evidencias. Las misiones solo se dan por hechas cuando sus pasos están marcados o el requisito concreto se verifica; no se deduce una escena de la Pokédex.</p></section>`;
-}
+
 function dashboardV7(g){const s=v6Snap(g.id),p=progress(g),next=v6Next(g),facts=v6DirectFacts(g,s),qc=v6SituationalQuestions(g);
  return `<div class="section-top"><div><div class="eyebrow">Centro de operaciones</div><h1>Tu aventura en ${esc(g.name)}</h1><p>Qué ha demostrado la partida, qué has marcado tú y qué toca hacer ahora.</p></div>${selector()}</div>${v6Flow(g)}${g.id==='SOULSILVER'&&s?.badgesTotal===16?`<section class="v7-featured"><div><div class="eyebrow">Ruta de Groudon · verificación previa</div><strong>¿Todavía no tienes el Orbe Rojo?</strong><p>Antes de ir al Sr. Pokémon debes vencer a Rojo y recoger un inicial de Kanto de Oak. Compruébalo aquí, sin salir de la guía.</p></div><button class="btn primary" data-open="soulsilver-34">Comprobar requisitos del Orbe Rojo →</button></section>`:''}
  <div class="v6-summary-cards"><section class="v6-summary"><span>Guardado detectado</span><strong>${s?'Sí':'Pendiente'}</strong><small>${s?esc(s.playtime||'Formato reconocido'):'Importa tu archivo para empezar'}</small></section><section class="v6-summary"><span>Guía marcada por ti</span><strong>${p.steps} / ${p.total}</strong><small>Pasos de la guía; no son logros oficiales</small></section><section class="v6-summary"><span>Dudas por revisar</span><strong>${s?qc.length:'—'}</strong><small>Preguntas contextualizadas del test</small></section><section class="v6-summary"><span>Objetivos oficiales confirmados</span><strong>${(OFFICIAL_GOALS[g.id]||[]).filter(id=>!!state.certifications?.[g.id]?.[id]).length} / ${(OFFICIAL_GOALS[g.id]||[]).length}</strong><small>Comprobación directa en tarjeta o pasaporte</small></section></div>
@@ -4579,27 +4551,9 @@ function guideV7(g){const s=v6Snap(g.id),next=v6Next(g),ranked=v6Prioritized(g),
  ${heads||'<section class="panel"><p class="muted">No hay misiones que coincidan con estos filtros. Selecciona «Todos los capítulos».</p><button class="btn" data-v6-filter="all">Ver todas</button></section>'}
  <p class="foot">Las tareas se conservan por edición. Importar un .sav nunca borra ni marca automáticamente sus pasos.</p>`;
 }
-function v6SituationalQuestions(g){const s=v6Snap(g.id);if(!s)return [];
- let choices=[...v6Prioritized(g)];const p=new Set();const mapped=[];
- for(const t of choices){if(mapped.length>=10)break;
-  if(p.has(t.id)||complete(t))continue;
-  if(s.gameClear && t.kind==='H' && t.chap===0)continue;
-  if(V6_DIRECT_SKIP[g.id]?.includes(t.id))continue;
-  // No volver a preguntar por medallas o Liga confirmadas.
-  if(s.gameClear&&OFFICIAL_GOALS[g.id]?.[0]===t.id)continue;
-  if((s.game==='BLACK2'||s.game==='WHITE2')&&s.medals?.obtained===255&&t.id.endsWith('audit-1'))continue;
-  p.add(t.id);mapped.push(t);
- }
- return mapped;
-}
+
 function v6QuestionLabel(t){return V6_EXTRA_QUESTIONS[state.game]?.[t.id]||`¿Has completado la misión «${t.title}» entera, con todos sus pasos?`;}
-function quizPage(g){const s=v6Snap(g.id),q=v6SituationalQuestions(g),answers=state.quiz[g.id]||{},verified=s?v6DirectFacts(g,s):[];
- if(!s)return `<div class="section-top"><div><div class="eyebrow">Test contextual</div><h1>Primero necesitamos la partida</h1><p>El test nuevo se genera a partir del contenido de tu archivo. Ya no empieza con preguntas que el guardado puede resolver.</p></div>${selector()}</div>${v6Flow(g)}`;
- return `<div class="section-top"><div><div class="eyebrow">Test de situación · personalizado desde el .sav</div><h1>Solo las dudas que faltan</h1><p>Tu archivo ya ha respondido algunas preguntas. Contesta únicamente sobre escenas, encuentros y retos que el guardado no demuestra completamente.</p></div>${selector()}</div>
- <section class="v6-explained"><b>El test ya sabe lo siguiente:</b><ul>${verified.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p>La prueba «visto/capturado» no demuestra dónde conseguiste el Pokémon. No marcaré otras misiones de forma indirecta.</p></section>
- ${q.length?`<div class="v6-test-heading"><h2>${q.length} comprobaciones enfocadas en tu progreso</h2><p>Responder «Sí, misión completa» permite marcar <b>solo esa misión específica</b>, nunca capítulos enteros. «No» o «No lo sé» no borra tus marcas previas.</p></div>
- <form id="v6QuizForm" class="quiz v6-quiz">${q.map((t,i)=>{const a=answers['mission:'+t.id]||'unknown',info=v6TaskInfo(t,s);return `<section class="quiz-item v6-quiz-item"><div class="v6-question-head"><span class="v6-question-num">${i+1} / ${q.length}</span><span class="v6-state v6-${info.kind}">${esc(info.title)}</span></div><h3>${esc(v6QuestionLabel(t))}</h3><p>Capítulo: ${esc(t.section)} · ${t.steps.length} pasos. ${esc(info.detail)}</p><details><summary>Ver qué incluye esta misión antes de responder</summary><ol>${t.steps.map(step=>`<li>${esc(step)}</li>`).join('')}</ol></details><div class="answer-row v6-options">${[['yes','Sí, misión completa'],['no','No, me falta'],['unknown','No lo sé']].map(([value,label])=>`<label><input type="radio" name="situation-${t.id}" value="${value}" ${a===value?'checked':''}>${label}</label>`).join('')}</div></section>`;}).join('')}<div class="v6-test-footer"><p>Las respuestas afirmativas marcan únicamente las misiones que confirmas completamente. Quedan registradas en tu cronología y puedes corregirlas.</p><button class="btn primary" type="submit">Guardar respuestas y continuar mi guía →</button><button class="btn" type="button" id="v6SkipQuiz">Continuar sin test</button></div></form>`:`<section class="panel"><h2>No quedan preguntas prioritarias en este bloque</h2><p>Continúa con la guía o comprueba nuevos requisitos oficiales.</p><div class="actions"><button class="btn primary" data-view="guide">Abrir guía →</button><button class="btn" data-view="certification">Revisar certificación</button></div></section>`}`;
-}
+
 function savePage(g){const s=v6Snap(g.id);return `<div class="section-top"><div><div class="eyebrow">Análisis de partida · punto de entrada</div><h1>${s?'Tu partida está lista para continuar':'Importa tu partida'}</h1><p>${s?'No necesitas buscar dónde seguir: elige el próximo objetivo o resuelve las dudas del test.':'La guía te situará en la historia y te recomendará solo lo que falta comprobar.'}</p></div>${selector()}</div>${v6Flow(g)}<details class="v6-audit-details" ${s?'':'open'}><summary>${s?'Ver todos los datos técnicos de mi guardado':'Elegir un archivo de guardado'}</summary>${savePageLegacy(g)}</details>`;
 }
 function timeline(g){const s=v6Snap(g.id),mode=state.mode||'narrative';let list='';
@@ -4612,14 +4566,7 @@ function timeline(g){const s=v6Snap(g.id),mode=state.mode||'narrative';let list=
 }
 function sideNav(){return `<aside class="sidebar"><div class="logo"><div class="logo-mark" aria-hidden="true"></div><div><div class="eyebrow">Archivo Maestro</div><strong>POKÉMON 100%</strong></div></div><div><div class="side-section">Tu progreso</div><nav class="side-nav">${[['dashboard','◈','Mi ruta · EMPEZAR'],['save','▣','Mi partida / diagnóstico'],['quiz','?','Test según el guardado'],['guide','☷','Guía y misiones'],['certification','◉','Certificación 100 %'],['achievements','✦','Logros oficiales'],['timeline','◷','Mi cronología'],['events','⌁','Eventos y PKHeX'],['sources','▤','Fuentes']].map(([id,ic,label])=>`<button class="navbtn ${state.view===id?'active':''}" data-view="${id}"><span class="navico">${ic}</span>${label}</button>`).join('')}</nav></div><div><div class="side-section">Ediciones</div><div class="side-games">${G.map(g=>{const s=v6Snap(g.id),p=progress(g);return `<button class="game-choose ${state.game===g.id?'active':''}" data-game="${g.id}" style="--gcolor:${g.color}"><i class="game-color"></i><span><b>${esc(g.name)}</b><small>${s?'✓ partida detectada':'sin importar'} · ${p.missions}/${p.missionsTotal} misiones</small></span></button>`}).join('')}</div></div><div class="side-bottom">Importar no altera tu partida.<br>Exporta JSON para pasar el progreso entre dispositivos.</div></aside>`;}
 function mobileBar(){return `<nav class="menu-mobile" aria-label="Navegación principal">${[['dashboard','Ruta'],['save','Partida'],['quiz','Test'],['guide','Guía'],['certification','100 %'],['timeline','Diario']].map(([v,label])=>`<button data-view="${v}" class="${state.view===v?'active':''}"><span>${icons[v]}</span>${label}</button>`).join('')}</nav>`;}
-function submitV6Quiz(form){const g=MAP[state.game],q=v6SituationalQuestions(g);let marks=0,yes=0;
- const answers=state.quiz[g.id]||{};
- for(const t of q){const input=form.querySelector(`input[name="situation-${t.id}"]:checked`);const answer=input?.value||'unknown';answers['mission:'+t.id]=answer;if(answer==='yes'){
-  yes++;let count=0;for(let i=0;i<t.steps.length;i++){const key=dkey(t,i);if(!state.checked[key]){state.checked[key]=true;marks++;count++;}}
-  if(count)log(g.id,t.title,`Confirmaste explícitamente la misión completa (${t.steps.length} pasos).`,'confirmada en test personalizado');
- }}
- state.quiz[g.id]=answers;log(g.id,'Test basado en partida',`${q.length} preguntas · ${yes} misiones confirmadas · ${marks} pasos nuevos`,'test aplicado');persist();filter='next';chapterOpen.clear();taskOpen=null;state.view='guide';render();notify(`Test guardado: ${yes} misiones confirmadas. Te mostramos la siguiente ruta.`);
-}
+
 // El test original no se usa al existir un archivo; no sobrescribimos los pasos por grandes bloques de historia.
 app.addEventListener('submit',e=>{if(e.target.id==='v6QuizForm'){e.preventDefault();submitV6Quiz(e.target);}});
 app.addEventListener('click',e=>{const btn=e.target.closest('button');if(!btn)return;

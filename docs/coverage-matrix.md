@@ -1,0 +1,89 @@
+# Cobertura real y primera entrega
+
+Fecha: 9 de noviembre de 2026. Base auditada: `5af3c69` de `main`.
+Rama de trabajo: `feat/save-evidence-engine`. El commit de entrega queda en el historial
+de esta rama; este informe no presenta la rama como publicada en Pages.
+
+## Alcance acordado con el usuario
+
+Guía de inicio a postgame para las nueve generaciones y sus 39 ediciones previstas,
+con reconocimiento oficial y contenido relevante separado. Se excluyen los
+entrenadores secundarios y los objetos sueltos triviales. Se incluyen los objetos
+necesarios o relevantes para cualquier objetivo. La lectura del guardado debe orientar
+al jugador y evitar preguntas o capturas redundantes; siempre local y de solo lectura.
+
+## Baseline comprobado
+
+| Superficie | Ediciones | Misiones | Pasos | Cobertura |
+| --- | ---: | ---: | ---: | --- |
+| Guía clásica | 6 | 278 | No agregado en esta auditoría | Contenido específico, lector parcial |
+| Atlas | 39 | 525 | 1.146 | 459 base, 28 referencia, 20 revisión guiada, 18 edition |
+
+Los dos HTML publicados se descargaron y coincidían byte por byte con los del commit
+base. Se revisaron los diez commits más recientes, README, manifiesto y service worker.
+No se verificó Settings → Pages mediante API: se ha comprobado el contenido servido,
+no la configuración administrativa del repositorio.
+
+El extractor JS anuncia SoulSilver, Blanco 2, Negro 2, Y, Rubí Omega y Ultrasol.
+**No hay guardados reales disponibles aquí para validar esas seis ediciones**.
+En esta entrega solo se prueba el parser de SoulSilver con fixtures sintéticos.
+No hay soporte binario nuevo para otras ediciones ni integración de PKHeX.Core.
+
+## Cambios y errores reproducidos
+
+- SoulSilver: el selector anterior ordenaba por el máximo de dos contadores y horas,
+  descartando números grandes; no validaba CRC. Un caso sintético con contador mayor
+  más reciente pero contador menor más bajo elegía el progreso equivocado. Ahora se
+  comparan ambos contadores por prioridad y se valida el CRC del bloque general.
+  Corrupción en la copia seleccionada cancela la importación sin cambiar el diagnóstico.
+- Atlas: `importData` conservaba siempre las evidencias del navegador y descartaba
+  `data.evidence` de la copia exportada. Se restaura ahora la evidencia válida del JSON;
+  una copia antigua sin ese campo conserva las evidencias locales.
+- Se eliminaron once declaraciones de función eclipsadas por versiones posteriores:
+  `setTask`, `readSaveFiles`, `v7Unmet`, `v7UnmetRoot`, `v7Panel`, `v6TaskInfo`,
+  `v6Next`, `v6Flow`, `v6SituationalQuestions`, `quizPage`, `submitV6Quiz`.
+  Se mantiene la última definición que ya ejecutaba JavaScript.
+- Se ocultan los selectores de archivo internos del Atlas; se usan los botones de importación previstos.
+- Auditoría automática del catálogo y símbolos; pruebas del parser y de navegador;
+  workflow de calidad que no despliega y capturas responsive como artefactos de CI.
+- Caché PWA actualizada con el nuevo módulo local. No se cambia ninguna clave de
+  almacenamiento, ID de misión ni formato de exportación. No hay migración de esquema.
+
+Archivos de producto: `index.html`, `atlas.html`, `sw.js`,
+`src/saves/hgss-integrity.js`. Se añaden herramientas, pruebas, workflow y documentación.
+
+## Evidencia y validación
+
+| Métrica | Resultado de esta entrega |
+| --- | --- |
+| Nuevas misiones contrastadas exhaustivamente | 0 |
+| Nuevos mapeos narrativos verificados con save antes/después | 0 |
+| Mapeos documentados en scripts, pendientes de fixtures reales | 7, solo investigación |
+| Nuevas ediciones con lector validado con guardado real | 0 |
+| Integridad nueva | CRC del bloque general HGSS; cajas y extras pendientes |
+| Pruebas unitarias/contrato locales | Pasan: catálogo, contadores, corrupción, Pokédex, límites, bytes intactos |
+| Pruebas Chromium locales | Pasan: cinco anchuras, importación local, restauración, rechazo sin pérdida, offline |
+| Safari/iPadOS físico | Pendiente; emulación de anchuras no sustituye dispositivo real |
+| CI remota | Consultar la ejecución de esta rama; pasar en local no implica CI verde |
+
+Se generan capturas a 390, 768, 1024, 1366 y 1440 píxeles, y se comprueba ausencia de
+overflow horizontal en ambas entradas. Las pantallas iniciales se mantienen. El test
+de importación comprueba que no hay peticiones con los bytes del guardado.
+
+## Respaldo y límites
+
+El commit base sigue disponible en GitHub; se creó además un bundle local del historial
+previo y copias locales de los HTML publicados, fuera del árbol público. No se modifica
+`main` ni se despliega esta entrega. Los fixtures se generan sintéticamente en memoria;
+`.gitignore` excluye guardados, exportaciones privadas por carpeta y archivos de entorno.
+
+P0 **no está completo**: faltan pruebas exhaustivas de todas las migraciones históricas,
+todos los flujos responsive y dispositivos físicos. La migración V7 heredada tiene
+reinicios de casillas antiguos que requieren revisión específica antes de rediseñar
+persistencia. El parser de otras familias sigue sin validación integral de checksums.
+
+Siguiente entrega de mayor impacto: contrastar los siete mapeos investigados con
+guardados privados identificados por región/revisión, y conectar hechos documentados
+al recorrido Rojo → Oak → Orbe Rojo → Groudon, sin convertir Pokédex en prueba de origen.
+En paralelo técnico posterior: unificar los motores y progreso del Atlas y lector.
+La cobertura exhaustiva de las nueve generaciones sigue pendiente; no se declara 100 %.
