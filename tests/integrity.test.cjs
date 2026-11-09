@@ -58,3 +58,9 @@ test('Red Orb possession is a current inventory fact, independent of encounter h
  assert.deepEqual(JSON.parse(JSON.stringify(parsed.keyItems)),[{id:534,count:1}]);
  assert.equal(parsed.oakGiftReceived,undefined);assert.equal(parsed.originalEncounterCompleted,undefined);
 });
+test('HGSS trainer identity reads SID, accents and digits using the game encoding',()=>{
+ const bytes=fixture({tid:123,sid:456}),view=new DataView(bytes.buffer);
+ for(const [i,glyph]of [0x160,0x170,0x122,0xFFFF].entries())view.setUint16(0x64+i*2,glyph,true);
+ view.setUint16(0xF626,crc16(bytes.subarray(0,0xF618)),true);
+ const result=reader().parse(bytes);assert.equal(result.trainer,'ÁÑ1');assert.equal(result.tid,123);assert.equal(result.sid,456);
+});

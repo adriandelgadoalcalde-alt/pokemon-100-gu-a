@@ -8,6 +8,8 @@ for(const name of fixtures){
  const hash=b=>createHash('sha256').update(b).digest('hex'),before=hash(bytes);
  const fromJS=reader().parse(bytes);
  assert.equal(hash(bytes),before,name+': input was modified');
+ const profile=createHash('sha256').update(`pokemon-save-audit-v1|${fromCore.detectedVersion}|${fromJS.trainer}|${fromJS.tid}|${fromJS.sid}`).digest('hex');
+ assert.equal(profile,fromCore.profileId,name+': trainer identity mismatch');
  for(const key of ['game','gameClear','nationalDex'])if(fromCore[key]!==null)assert.equal(fromJS[key],fromCore[key],name+': '+key);
  if(fromCore.badgesTotal!==null)assert.equal(fromJS.badgesTotal??fromJS.badges,fromCore.badgesTotal,name+': badges');
  for(const key of ['caught','seen'])assert.deepEqual([...fromJS[key]],fromCore[key],name+': '+key);

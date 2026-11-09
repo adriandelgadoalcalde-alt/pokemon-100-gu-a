@@ -161,6 +161,28 @@ async function run() {
     assert.match(await page.locator('[data-taskbox="soulsilver-34"]').innerText(),/Ya llevas el Orbe Rojo/);
     assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2')).checked['soulsilver-36#2']),undefined);
     await context.close();
+    // A new reader learning SID must retain manual records for the exact same binary.
+    const identityContext=await browser.newContext({serviceWorkers:'block'}),identityPage=await identityContext.newPage();
+    identityPage.on('pageerror',e=>errors.push(e.message));identityPage.on('dialog',d=>d.accept());
+    await identityPage.goto(`${base}/index.html`);
+    const identityFile={name:'identity.sav',mimeType:'application/octet-stream',buffer:Buffer.from(fixture({sid:456}))};
+    await identityPage.locator('#saveImportFile').setInputFiles(identityFile);
+    await identityPage.waitForFunction(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.snapshots?.SOULSILVER?.sid===456);
+    await identityPage.evaluate(()=>{const p=JSON.parse(localStorage.getItem('archivo-pokemon-v2'));delete p.snapshots.SOULSILVER.sid;
+      p.checked['soulsilver-1#0']=true;p.v8Manual['SOULSILVER|SYNTH|0|?|SOULSILVER|red-won']={value:true,provenance:'Confirmación anterior'};
+      localStorage.setItem('archivo-pokemon-v2',JSON.stringify(p));});
+    await identityPage.reload();await identityPage.locator('#saveImportFile').setInputFiles(identityFile);
+    await identityPage.waitForFunction(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.snapshots?.SOULSILVER?.sid===456);
+    assert.equal(await identityPage.evaluate(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2')).v8ProfileAliases['SOULSILVER|SYNTH|0|456']),'SOULSILVER|SYNTH|0|?');
+    assert.equal(await identityPage.evaluate(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2')).v8Manual['SOULSILVER|SYNTH|0|?|SOULSILVER|red-won'].value),true);
+    assert.equal(await identityPage.evaluate(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2')).checked['soulsilver-1#0']),true);
+    await identityPage.locator('#saveImportFile').setInputFiles({...identityFile,name:'other-sid.sav',buffer:Buffer.from(fixture({sid:789}))});
+    await identityPage.waitForFunction(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.snapshots?.SOULSILVER?.sid===789);
+    assert.equal(await identityPage.evaluate(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2')).checked['soulsilver-1#0']),undefined);
+    await identityPage.locator('#saveImportFile').setInputFiles(identityFile);
+    await identityPage.waitForFunction(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.snapshots?.SOULSILVER?.sid===456);
+    assert.equal(await identityPage.evaluate(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2')).checked['soulsilver-1#0']),true);
+    await identityContext.close();
     // Every catalogued edition must render its goals without duplicate IDs or runtime errors.
     const {catalogue}=require('../scripts/audit.cjs');
     const catalog=catalogue(fs.readFileSync(path.join(root,'atlas.html'),'utf8'));

@@ -4308,7 +4308,7 @@ const V8_SOURCES={
   'Bulbapedia / Regigigas Omega Ruby Alpha Sapphire':'https://bulbapedia.bulbagarden.net/wiki/Regigigas',
   'Guía del capítulo y referencias de esta edición (disponibles en Fuentes)':null
 };
-function v8Profile(s){return s?`${s.game}|${String(s.trainer||'?').trim()}|${s.tid??'?'}|${s.sid??'?'}`:'sin-partida';}
+function v8Profile(s){let id=s?`${s.game}|${String(s.trainer||'?').trim()}|${s.tid??'?'}|${s.sid??'?'}`:'sin-partida';const seen=new Set();while(state.v8ProfileAliases?.[id]&&!seen.has(id)){seen.add(id);id=state.v8ProfileAliases[id];}return id;}
 function v8FullKey(r,s){return `${v8Profile(s)}|${r.key}`;}
 function v8CurrentEvidence(r){
  const s=v6Snap(state.game);
@@ -4470,7 +4470,7 @@ async function readSaveFiles(fileList){const files=Array.from(fileList||[]);if(!
   fresh.readerVersion=PokemonSaveReader.version;fresh.filename=file.name;fresh.readAt=new Date().toISOString();
   try{if(globalThis.crypto?.subtle){const digest=await crypto.subtle.digest('SHA-256',bytes);fresh.sha256=Array.from(new Uint8Array(digest)).map(x=>x.toString(16).padStart(2,'0')).join('');}}catch(_e){}
   const old=state.snapshots?.[fresh.game];
-  if(old?.sha256&&fresh.sha256&&old.sha256===fresh.sha256){state.snapshots[fresh.game]=fresh;state.game=fresh.game;state.view='dashboard';success++;continue;}
+  if(old?.sha256&&fresh.sha256&&old.sha256===fresh.sha256){const previous=v8Profile(old),current=v8Profile(fresh);if(previous!==current){state.v8ProfileAliases=state.v8ProfileAliases||{};state.v8ProfileAliases[current]=previous;}state.snapshots[fresh.game]=fresh;state.game=fresh.game;state.view='dashboard';success++;continue;}
   if(old&&!confirm(`Hay un diagnóstico de ${MAP[fresh.game]?.name||fresh.game}. ¿Cargar ${file.name} y conservar la comparación?`))continue;
   if(old){const sameProfile=v8Profile(old)===v8Profile(fresh);v8SwitchProfile(fresh.game,old,fresh);if(sameProfile)persistComparison(fresh.game,old,fresh);}
   state.snapshots=state.snapshots||{};state.snapshots[fresh.game]=fresh;state.game=fresh.game;state.view='dashboard';
@@ -4480,7 +4480,6 @@ async function readSaveFiles(fileList){const files=Array.from(fileList||[]);if(!
  if(success){const stored=persist();render();notify(stored?`${success} partida(s) importada(s). Usa el botón «Continuar» para abrir tu siguiente objetivo.`:'Partida analizada en memoria. Exporta una copia JSON antes de cerrar.');}
  if(errors.length)alert('No se ha podido leer:\n'+errors.join('\n'));
 }
-// The original SoulSilver import may be bundled only as diagnostics (no raw .sav); only bind the Red assertion on actual matching import.
 // An optional per-goal independent check can be exported as a transparent, limited certificate.
 function v8CertificationAudit(g){const official=OFFICIAL_GOALS[g.id]||[],requirements=official.map(id=>{
  const t=IDX[id].t,marks=doneN(t),s=v8Status(t),human=state.certifications?.[g.id]?.[id]===true;

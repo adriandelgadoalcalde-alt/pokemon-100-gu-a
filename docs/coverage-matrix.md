@@ -256,3 +256,25 @@ explícito de historia por edición, probado con el catálogo real, para no volv
 recomendar la primera Liga después de recibir evidencia de final. Las 16 medallas
 de Johto/Kanto priorizan Monte Plateado sin certificar las escenas anteriores.
 No hay cambio de claves de almacenamiento ni pérdida de marcas manuales.
+
+## Quinto ciclo: identidad del entrenador sin perder confirmaciones
+
+Base: `54f0f25`; CI de rutas finalizado correctamente en GitHub.
+
+Se corrige la omisión de SID16 en las diez ediciones del lector compartido y se
+amplía la decodificación occidental de nombres HGSS a dígitos y diacríticos.
+El contrato sintético JS/Core también compara ahora la identidad seudonimizada,
+con una variante HeartGold que incluye tilde, eñe y número. No se imprimen IDs ni
+nombres de partidas personales; todos estos archivos son sintéticos.
+
+Para actualizar el lector sin perder declaraciones, la guía clásica enlaza el
+perfil anterior al nuevo exclusivamente cuando coincide el SHA-256 completo.
+La regresión de navegador conserva las marcas del perfil antiguo, importa otro
+SID sin heredarlas y las recupera al volver al original. No se reemplazan las
+claves de progreso ni se borran confirmaciones anteriores.
+
+Pruebas: 42 casos unitarios; comparación de diez contenedores sintéticos con Core;
+contratos de privacidad/solo lectura y regresión de navegador. La primera ejecución
+de la prueba nueva de navegador intentó consultar una función interna del cierre;
+se corrigió para verificar el estado persistido y el flujo real de importación.
+Siguen pendientes las validaciones naturales y de dispositivo descritas arriba.

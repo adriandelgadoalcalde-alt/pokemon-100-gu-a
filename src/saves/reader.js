@@ -21,12 +21,19 @@
  function str(b,ofs,max){let s='';for(let i=0;i<max;i+=2){const ch=u16(b,ofs+i);if(!ch||ch===0xffff)break;if(ch<32||ch>=0xE000&&ch<=0xF8FF)continue;s+=String.fromCharCode(ch)}return s.replace(/[^\p{L}\p{N}\s.'’_\-]/gu,'').trim().slice(0,24)}
  // Gen 4 uses an internal character table, not Unicode code points.
  // Western alphabet: 0x012B–0x0144 (A-Z), 0x0145–0x015E (a-z).
- // The older synthetic-test saves may contain literal UTF-16; retain them as fallback.
+ // Latin diacritics/digits use game glyph values, not their Unicode byte values.
+ // Reference: pinned PKHeX StringConverter4Util.TableINT (encoding data).
  function str4(b,ofs,max){let out='';for(let i=0;i<max;i+=2){const ch=u16(b,ofs+i);
   if(ch===0||ch===0xffff)break;
   if(ch>=0x12B&&ch<=0x144)out+=String.fromCharCode(65+ch-0x12B);
   else if(ch>=0x145&&ch<=0x15E)out+=String.fromCharCode(97+ch-0x145);
-  else if(ch>=32&&ch<=126)out+=String.fromCharCode(ch);
+  else if(ch>=0x121&&ch<=0x12A)out+=String.fromCharCode(48+ch-0x121);
+  else if(ch>=0x15F&&ch<=0x19E&&ch!==0x176&&ch!==0x196)out+=String.fromCharCode(0xC0+ch-0x15F);
+  else if(ch===0x1DE)out+=' ';
+  else if(ch===0x1AE)out+='.';
+  else if(ch===0x1BE)out+='-';
+  else if(ch===0x1E9)out+='_';
+  else if(ch===0x1B3)out+="'";
   else out+='?';
  }return out.replace(/\?+$/,'').trim().slice(0,24)}
  function time(b,ofs){const h=u16(b,ofs),m=u8(b,ofs+2),s=u8(b,ofs+3);return m<60&&s<60&&h<65535?`${h} h ${String(m).padStart(2,'0')} min`:null}
@@ -214,27 +221,27 @@ function eventAudit(o,b){let off,workBase,flagBase,flagCount,workCount;
   const d=dex(b,{ofs:base+0x12B8,caught:4,seen:0x44,region:0x40,regions:1,max:493});
   const required=Array.from({length:493},(_,i)=>i+1).filter(i=>!MYTHICAL4.has(i));
   const missing=required.filter(i=>!d.caught.includes(i));
-  return details({game:ver===7?'HEARTGOLD':'SOULSILVER',keyItems:keyItemsHGSS(b,base),integrity,version:ver,generation:4,format:'DS 512 KiB',trainer:str4(b,base+0x64,16),tid:u16(b,base+0x74),playtime:time(b,base+0x86),firstHallOfFameSeconds:u32(b,base+0x3C),badgesJohto:bits(johto),badgesKanto:bits(kanto),badgesJohtoMask:johto,badgesKantoMask:kanto,badgesTotal:bits(johto)+bits(kanto),gameClear:!!(prog&1),nationalDex:!!(prog&2),missingRequired:missing,requiredCount:required.length,requiredCaught:required.length-missing.length,pokeathlon:parsePokeathlon4(b,base),pokewalker:parsePokewalker4(b,base),saveBase:base,slotInfo:`Ranura de guardado ${base?'secundaria':'principal'}`,notes:['Pokédex: «capturado» incluye intercambios; no acredita dónde apareció ni si completaste la escena.','Bloque general seleccionado por contadores mayor/menor y comprobado por CRC. Cajas y bloques adicionales aún no tienen validación de integridad en este lector.']},b,d);
+  return details({game:ver===7?'HEARTGOLD':'SOULSILVER',keyItems:keyItemsHGSS(b,base),integrity,version:ver,generation:4,format:'DS 512 KiB',trainer:str4(b,base+0x64,16),tid:u16(b,base+0x74),sid:u16(b,base+0x76),playtime:time(b,base+0x86),firstHallOfFameSeconds:u32(b,base+0x3C),badgesJohto:bits(johto),badgesKanto:bits(kanto),badgesJohtoMask:johto,badgesKantoMask:kanto,badgesTotal:bits(johto)+bits(kanto),gameClear:!!(prog&1),nationalDex:!!(prog&2),missingRequired:missing,requiredCount:required.length,requiredCaught:required.length-missing.length,pokeathlon:parsePokeathlon4(b,base),pokewalker:parsePokewalker4(b,base),saveBase:base,slotInfo:`Ranura de guardado ${base?'secundaria':'principal'}`,notes:['Pokédex: «capturado» incluye intercambios; no acredita dónde apareció ni si completaste la escena.','Bloque general seleccionado por contadores mayor/menor y comprobado por CRC. Cajas y bloques adicionales aún no tienen validación de integridad en este lector.']},b,d);
  }
  function tryB2W2(b,base){if(base+0x26000>b.length)return null;const v=u8(b,base+0x1941F);if(![22,23].includes(v))return null;return {base,v};}
  function parseB2W2(b){const candidate=tryB2W2(b,0);if(!candidate)return null;const {base,v}=candidate;validateVersion(v,[22,23]);const integrity=root.PokemonSaveIntegrity.b2w2(b);
   const d=dex(b,{ofs:base+0x21400,caught:8,seen:0x5c,region:0x54,regions:4,max:649});
   const required=Array.from({length:649},(_,i)=>i+1).filter(i=>!MYTHICAL5.has(i));const missing=required.filter(i=>!d.caught.includes(i));
   const toFameLow=u32(b,base+0x1D900+0x3C),toFameHigh=u32(b,base+0x1D900+0x40);
-  return details({game:v===22?'WHITE2':'BLACK2',integrity,version:v,generation:5,format:'DS 512 KiB',trainer:str(b,base+0x19404,16),tid:u16(b,base+0x19414),playtime:time(b,base+0x19424),badges:bits(u8(b,base+0x21104)),badgesMask:u8(b,base+0x21104),gameClear:!!(toFameLow||toFameHigh),nationalDex:!!(u32(b,base+0x21404)&1),missingRequired:missing,requiredCount:required.length,requiredCaught:required.length-missing.length,medals:parseMedals5(b,base),saveBase:base,slotInfo:'Bloques nativos de quinta generación; no se seleccionan por horas jugadas',notes:['Guardado detectado como '+(v===22?'Blanco 2':'Negro 2')+'. Las especies, premios y escenarios exclusivos cambian según la edición.','La Pokédex registra posesión histórica, no necesariamente especies presentes en las cajas.']},b,d);
+  return details({game:v===22?'WHITE2':'BLACK2',integrity,version:v,generation:5,format:'DS 512 KiB',trainer:str(b,base+0x19404,16),tid:u16(b,base+0x19414),sid:u16(b,base+0x19416),playtime:time(b,base+0x19424),badges:bits(u8(b,base+0x21104)),badgesMask:u8(b,base+0x21104),gameClear:!!(toFameLow||toFameHigh),nationalDex:!!(u32(b,base+0x21404)&1),missingRequired:missing,requiredCount:required.length,requiredCaught:required.length-missing.length,medals:parseMedals5(b,base),saveBase:base,slotInfo:'Bloques nativos de quinta generación; no se seleccionan por horas jugadas',notes:['Guardado detectado como '+(v===22?'Blanco 2':'Negro 2')+'. Las especies, premios y escenarios exclusivos cambian según la edición.','La Pokédex registra posesión histórica, no necesariamente especies presentes en las cajas.']},b,d);
  }
  function beef(b){return u32(b,b.length-0x1f0)===0x42454546}
  function parseXY(b){const v=u8(b,0x14004);validateVersion(v,[24,25]);if(!beef(b))fail('No se encuentra la firma BEEF de un guardado 3DS descifrado. Exporta el archivo main del emulador o de Checkpoint.');const d=dex(b,{ofs:0x15000,caught:8,seen:0x68,region:0x60,regions:4,max:721});
   const integrity=root.PokemonSaveIntegrity.beef(b,55,'ccitt');
-  return details({game:v===24?'X':'Y',integrity,version:v,generation:6,format:'3DS main descifrado',trainer:str(b,0x14048,26),tid:u16(b,0x14000),playtime:time(b,0x1800),badges:bits(u8(b,0x420C)),badgesMask:u8(b,0x420C),gameClear:u32(b,0x1220)>0,secondsToFame:u32(b,0x1220),nationalDex:!!(u32(b,0x15004)&1),requiredCount:null,missingRequired:null,notes:['La tarjeta de Y exige registrar avistamientos de la Pokédex regional de Kalos: el conteo nacional por sí solo no permite validarla.','No se puede demostrar que un legendario fuera capturado en su encuentro original usando solamente la Pokédex.']},b,d);
+  return details({game:v===24?'X':'Y',integrity,version:v,generation:6,format:'3DS main descifrado',trainer:str(b,0x14048,26),tid:u16(b,0x14000),sid:u16(b,0x14002),playtime:time(b,0x1800),badges:bits(u8(b,0x420C)),badgesMask:u8(b,0x420C),gameClear:u32(b,0x1220)>0,secondsToFame:u32(b,0x1220),nationalDex:!!(u32(b,0x15004)&1),requiredCount:null,missingRequired:null,notes:['La tarjeta de Y exige registrar avistamientos de la Pokédex regional de Kalos: el conteo nacional por sí solo no permite validarla.','No se puede demostrar que un legendario fuera capturado en su encuentro original usando solamente la Pokédex.']},b,d);
  }
  function parseORAS(b){const v=u8(b,0x14004);validateVersion(v,[26,27]);if(!beef(b))fail('Guardado 3DS sin firma BEEF. Necesitamos el archivo main descifrado.');const d=dex(b,{ofs:0x15000,caught:8,seen:0x68,region:0x60,regions:4,max:721});
   const integrity=root.PokemonSaveIntegrity.beef(b,58,'ccitt');
-  return details({game:v===26?'ALPHASAPPHIRE':'OMEGARUBY',integrity,version:v,generation:6,format:'3DS main descifrado',trainer:str(b,0x14048,26),tid:u16(b,0x14000),playtime:time(b,0x1800),badges:bits(u8(b,0x420C)),badgesMask:u8(b,0x420C),gameClear:u32(b,0x1220)>0,secondsToFame:u32(b,0x1220),nationalDex:!!(u32(b,0x15004)&1),requiredCount:null,missingRequired:null,notes:['El requisito de tarjeta se basa en la Pokédex regional de Hoenn. No se deduce únicamente del total de especies nacionales vistas.','Episodio Delta, concursos y bases secretas requieren revisar registros adicionales.']},b,d);
+  return details({game:v===26?'ALPHASAPPHIRE':'OMEGARUBY',integrity,version:v,generation:6,format:'3DS main descifrado',trainer:str(b,0x14048,26),tid:u16(b,0x14000),sid:u16(b,0x14002),playtime:time(b,0x1800),badges:bits(u8(b,0x420C)),badgesMask:u8(b,0x420C),gameClear:u32(b,0x1220)>0,secondsToFame:u32(b,0x1220),nationalDex:!!(u32(b,0x15004)&1),requiredCount:null,missingRequired:null,notes:['El requisito de tarjeta se basa en la Pokédex regional de Hoenn. No se deduce únicamente del total de especies nacionales vistas.','Episodio Delta, concursos y bases secretas requieren revisar registros adicionales.']},b,d);
  }
  function parseUSUM(b){const v=u8(b,0x1404);validateVersion(v,[32,33]);if(!beef(b))fail('Guardado 3DS sin firma BEEF. Exporta main sin cifrar.');const d=dex(b,{ofs:0x2C00,caught:0x88,seen:0xF0,region:0x8C,regions:4,max:807});
   const integrity=root.PokemonSaveIntegrity.beef(b,39,'usb');
-  return details({game:v===33?'ULTRAMOON':'ULTRASUN',integrity,version:v,generation:7,format:'3DS main descifrado',trainer:str(b,0x1438,26),tid:u16(b,0x1400),playtime:time(b,0x41000),battleTree:parseBattleTree7(b),gameClear:u32(b,0x4A30)>0,secondsToFame:u32(b,0x4A30),nationalDex:null,requiredCount:null,missingRequired:null,notes:['El pasaporte utiliza la Pokédex regional de Alola y 15 sellos; el total de especies nacionales aquí es informativo.','Pruebas de islas, sellos y eventos concretos no se certifican automáticamente sin mapear sus registros.']},b,d);
+  return details({game:v===33?'ULTRAMOON':'ULTRASUN',integrity,version:v,generation:7,format:'3DS main descifrado',trainer:str(b,0x1438,26),tid:u16(b,0x1400),sid:u16(b,0x1402),playtime:time(b,0x41000),battleTree:parseBattleTree7(b),gameClear:u32(b,0x4A30)>0,secondsToFame:u32(b,0x4A30),nationalDex:null,requiredCount:null,missingRequired:null,notes:['El pasaporte utiliza la Pokédex regional de Alola y 15 sellos; el total de especies nacionales aquí es informativo.','Pruebas de islas, sellos y eventos concretos no se certifican automáticamente sin mapear sus registros.']},b,d);
  }
  function parseArray(input){const b=input instanceof Uint8Array?input:new Uint8Array(input);ensureReal(b);if(b.length===LENGTHS.XY)return parseXY(b);if(b.length===LENGTHS.ORAS)return parseORAS(b);if(b.length===LENGTHS.USUM)return parseUSUM(b);
   if(b.length===LENGTHS.NDS){const h=parseHGSS(b);if(h)return h;const b2=parseB2W2(b);if(b2)return b2;fail('Guardado DS de 512 KiB, pero no corresponde de forma reconocible a HeartGold/SoulSilver, Blanco 2 ni Negro 2. Puede estar cifrado, ser otra edición o tener un formato no compatible.');}
@@ -242,5 +249,5 @@ function eventAudit(o,b){let off,workBase,flagBase,flagCount,workCount;
   fail(`Tamaño no reconocido: ${b.length.toLocaleString('es-ES')} bytes. DS: 524.288 bytes; Y: ${LENGTHS.XY}; Rubí Omega: ${LENGTHS.ORAS}; Ultrasol: ${LENGTHS.USUM}. Si es un estado rápido, exporta el guardado interno del juego.`);
  }
  function missingLabel(id){return NAME_BY_ID[id]?`#${String(id).padStart(3,'0')} ${NAME_BY_ID[id]}`:`#${String(id).padStart(3,'0')}`}
- root.PokemonSaveReader={parse:parseArray,missingLabel,names:NAME_BY_ID,version:'5.2-shared' };
+ root.PokemonSaveReader={parse:parseArray,missingLabel,names:NAME_BY_ID,version:'5.3-shared' };
 })(typeof window!=='undefined'?window:globalThis);

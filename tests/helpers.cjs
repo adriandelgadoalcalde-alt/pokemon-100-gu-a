@@ -2,10 +2,11 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 const integrity = require('../src/saves/hgss-integrity.js');
 const {scripts} = require('../scripts/audit.cjs');
-function writeCopy(bytes, base, {major = 1, minor = 1, hours = 1, tid = 0, trainer = 'SYNTH', caught = [], seen = [], keyItems = []} = {}) {
+function writeCopy(bytes, base, {major = 1, minor = 1, hours = 1, tid = 0, sid = 0, trainer = 'SYNTH', caught = [], seen = [], keyItems = []} = {}) {
   const v = new DataView(bytes.buffer), end = base + 0xF628;
   for(let i=0;i<Math.min(7,trainer.length);i++)v.setUint16(base+0x64+i*2,0x12B+trainer.charCodeAt(i)-65,true);
   v.setUint16(base + 0x74, tid, true);
+  v.setUint16(base + 0x76, sid, true);
   bytes[base + 0x80] = 8; // SoulSilver ROM code.
   bytes[base + 0x7E] = 255; // Eight Johto badges.
   bytes[base + 0x83] = 255; // Eight Kanto badges.

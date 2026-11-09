@@ -20,7 +20,7 @@ static byte[] SyntheticHgss(GameVersion version = GameVersion.SS)
         BinaryPrimitives.WriteUInt16LittleEndian(block[^4..], (ushort)slot);
         BinaryPrimitives.WriteUInt16LittleEndian(block[^2..], Checksums.CRC16_CCITT(block[..^16]));
     }
-    var hg = new SAV4HGSS(bytes) { Version = version, OT = "SYNTH", TID16 = 123, SID16 = 456,
+    var hg = new SAV4HGSS(bytes) { Version = version, OT = version==GameVersion.HG?"ÁÑ1":"SYNTH", TID16 = 123, SID16 = 456,
         Language = (int)LanguageID.Spanish, Badges = 255, Badges16 = 255, GameClear = true, NationalDex = true,
         PlayedHours = 10, PlayedMinutes = 2 };
     hg.Dex.SetCaught(145, true); hg.Dex.SetCaught(146, true); hg.Dex.SetSeen(145, true); hg.Dex.SetSeen(146, true); hg.Dex.SetSeen(381, true);
@@ -109,6 +109,7 @@ var familyFixtures = new List<string> { "synthetic-hgss" };
 var heartgold=SyntheticHgss(GameVersion.HG);
 var heartgoldSave=SaveUtil.GetSaveFile(heartgold.ToArray().AsMemory()) ?? throw new Exception("HeartGold fixture detection failed");
 Check(heartgoldSave.ChecksumsValid,"HeartGold fixture integrity failed");
+Check(heartgoldSave.OT=="ÁÑ1","HeartGold synthetic glyph encoding mismatch");
 File.WriteAllBytes(Path.Combine(output,"synthetic-HG.sav"),heartgold);
 File.WriteAllText(Path.Combine(output,"synthetic-HG.json"),JsonSerializer.Serialize(Audit.Extract(heartgoldSave,Convert.ToHexStringLower(SHA256.HashData(heartgold)),true),Audit.JsonOptions));
 familyFixtures.Add("synthetic-HG");
