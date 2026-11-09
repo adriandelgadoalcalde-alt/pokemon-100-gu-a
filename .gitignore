@@ -11,3 +11,7 @@ fixtures/private/
 **/main
 .env
 .env.*
+
+.cache/
+**/bin/
+**/obj/

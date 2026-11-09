@@ -130,3 +130,108 @@ Permanecen los siete mapeos documentales del primer ciclo y sus límites. Esta e
 retira el cuestionario del producto; **no demuestra todavía lectura integral de todos
 los guardados**. La prioridad técnica posterior sigue siendo validar e integrar los
 hechos de eventos por edición y unificar Atlas y lector.
+
+## Tercer ciclo: lector compartido, extractor local y evidencias
+
+Base del ciclo: `0f8cd10`, rama `feat/save-evidence-engine`. Se ha actualizado el
+checkout de `main` y comprobado la entrada publicada antes de cambiar el comportamiento.
+Los commits de este ciclo figuran en el historial y en la propuesta de GitHub.
+
+### Resultado implementado
+
+- Un solo módulo de lectura para ambas páginas. El Atlas acepta directamente el
+  guardado y mantiene la carga de JSON. Diez ediciones DS/3DS tienen fixtures sintéticos
+  completos contrastados con la revisión fijada de PKHeX: HG/SS, B2/W2, X/Y, OR/AS, US/UM.
+  Las cuatro variantes adicionales se usan en el Atlas; la guía clásica mantiene sus
+  seis guías, con indicación para abrir el Atlas para el resto.
+- Integridad ampliada: bloques BEEF de los formatos 3DS; bloques críticos y espejo CRC
+  de B2W2; bloque general HGSS. Alcance y exclusiones en `research/save-integrity.md`.
+  No se confunde la validación parcial B2W2 con la de todas las cajas y extras.
+- Se elimina la copia B2W2 supuestamente elegida por horas, el filtro por muestreo que
+  rechazaba archivos válidos poco poblados y la falsa Pokédex Nacional de USUM.
+- Objetos clave de HGSS contrastados con PKHeX. Orbe Rojo presente orienta a Groudon,
+  sin acreditar automáticamente escenas anteriores de Oak/Rojo. La recomendación del
+  Atlas prioriza postgame cuando consta la Liga, conservando todas las marcas previas.
+- Motor conservador de objetivos, hechos y grafo de dependencias. Se usa en maestría
+  del Atlas; distingue evidencia verificada, declaración manual, indicio y desconocido,
+  así como conflictos, exclusiones, DLC y eventos históricos. No migra aún todas las
+  reglas heredadas ni construye el DAG exhaustivo de las 39 ediciones.
+- Restauración y migración reversibles: se conservan marcas V7, respuestas antiguas,
+  perfiles, campos futuros, comparaciones e historial completo. Las marcas de pasos
+  cuyo texto cambió reciben aviso de revisión; no se usan como prueba de requisitos nuevos.
+- Cambio de perfiles: las listas manuales se archivan y restauran al volver al perfil;
+  un mismo binario puede enlazar el diagnóstico del lector web y del extractor Core.
+  Una identidad incompleta antigua sigue siendo una limitación, no una identificación infalible.
+- Comparaciones de campos presentes en ambos snapshots: un campo recién implementado
+  no se presenta como progreso del juego. Se mantienen los intervalos de observación
+  y se deja sin fecha/orden interno lo que el juego no acredita. Se evita mezclar perfiles.
+- Importación idéntica actualiza el diagnóstico sin inventar un diff de progreso.
+  Se eliminan recortes automáticos del historial y comparaciones. Si el almacenamiento
+  falla, los datos siguen en memoria, se advierte de forma persistente y se pueden exportar.
+- Recuperación de JSON local dañado sin desechar su copia original disponible. Se
+  validan los datos antes de aplicar una importación; se comprueba que diagnóstico y edición coincidan.
+- Cobertura por edición visible, selección de generación correcta tras recargar y
+  regiones corregidas por título. El aviso de instalación deja de tapar los controles.
+  Todos los módulos nuevos se precachean y la auditoría comprueba esas referencias.
+
+### Extractor C#
+
+`pkhex-extractor/` compila con .NET 10 y verifica la revisión de PKHeX al construir.
+Lee una copia de los bytes, rechaza integridad inválida, crea JSON de forma atómica
+sin sobrescribir destinos, no imprime datos personales y no expone nombre ni ID del
+entrenador en el diagnóstico por defecto. Incluye inventario y flags/work opcionales.
+No es un backend de Pages ni un ejecutable de iPad. Los formatos que no identifican
+una edición individual no se asignan a una variante por defecto; FRLG, en particular,
+no se convierte en Rojo Fuego por el valor predeterminado del objeto upstream.
+
+Se ha compilado y ejecutado localmente el contraste completo de diez ediciones y los
+contratos CLI de original intacto, corrupción, truncado, destino existente y alias.
+El informe de objetos API de otras familias **no es una prueba con archivos reales**.
+El objeto vacío de Z-A no se puede construir en la revisión upstream fijada: se registra
+como pendiente y no se cuenta como cobertura aprobada. Los bloques hash modernos aún
+no tienen interpretación narrativa completa.
+
+### Cobertura actual y validación
+
+El catálogo sigue en 39 ediciones, 525 misiones y 1.146 pasos. La auditoría cuenta
+693 criterios de maestría existentes; ninguna de estas cifras demuestra exhaustividad.
+Se mantienen 459 misiones base. **En este ciclo no se han contrastado exhaustivamente
+nuevas guías completas ni validado mapeos narrativos con partidas naturales antes/después.**
+
+Pasan los contratos JavaScript y el contraste local con PKHeX de campos, flags y work
+para diez fixtures. Se comprueba inmutabilidad de bytes y rechazo de corrupción.
+El navegador cubre anchos móvil/tableta/escritorio, las 39 pantallas de maestría,
+importación binaria del Atlas, restauración de ambas guías, perfiles, Orbe Rojo,
+recomendación tras la Liga, recuperación de JSON, fallo de cuota y carga offline.
+La CI remota de este ciclo se debe consultar en el último commit de la propuesta.
+Safari/iPadOS físico sigue pendiente; no se sustituye por una captura de Chromium.
+
+El código de producto cambia en `index.html`, `atlas.html`, `sw.js`, `src/saves/` y
+`src/engine/`; se añaden extractor, pruebas, auditorías y documentación. Las claves
+locales e IDs de misión permanecen; los nuevos archivos de respaldo de migración y
+perfiles son campos opcionales conservados por la exportación. No hay despliegue de Pages.
+
+### Pendientes de mayor impacto
+
+Completar los recorridos base por edición con fuentes verificadas; contrastar los siete
+mapeos HGSS con guardados naturales de región/revisión conocida; ampliar lectura de
+formatos y bloques modernos, tratar registros propios de cada reconocimiento oficial,
+unificar todas las reglas de las dos guías y probar Safari/iPad reales. IndexedDB y
+políticas explícitas de archivo son trabajo pendiente para historiales muy grandes:
+la advertencia de cuota y exportación evita ocultar el fallo, pero no elimina el límite
+intrínseco de localStorage. El proyecto sigue sin cumplir los criterios de 100 % global.
+
+Actualización de cierre del tercer ciclo:
+- El contrato JS/Core pasa en diez contenedores sintéticos DS/3DS. El extractor
+  supera otros 23 contenedores sintéticos de GB/GBC/GBA, Sinnoh, B/N, Sol/Luna,
+  Let's Go y BD/SP. La ambigüedad de edición se conserva; no equivale a 33
+  identificaciones individuales ni a validación con guardados reales.
+- Espada/Escudo, Arceus, Escarlata/Púrpura y Z-A siguen sin contenedor sintético
+  validado en este ciclo. Los objetos vacíos upstream no sustituyen archivos reales.
+- Se elimina la vinculación pública de una huella personal con declaraciones de
+  Rojo y Oak. Las declaraciones ya guardadas por cada usuario permanecen intactas;
+  no se siembran afirmaciones personales en nuevas importaciones.
+- El diagnóstico conserva inventario, idioma, revisión y las limitaciones del
+  extractor. El Atlas muestra los campos pendientes en «Alcance de esta lectura».
+- Ningún nuevo mapeo narrativo obtiene certificación automática sin el contraste
+  natural antes/después exigido en la investigación HGSS.

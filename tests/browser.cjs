@@ -9,7 +9,7 @@ const root = path.resolve(__dirname, '..');
 const server = http.createServer((req, res) => {
   let name = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
   if (name === '/') name = '/index.html';
-  if (!/^\/(index\.html|atlas\.html|sw\.js|manifest\.webmanifest|icons\/[\w.-]+|src\/saves\/[\w.-]+)$/.test(name)) {
+  if (!/^\/(index\.html|atlas\.html|sw\.js|manifest\.webmanifest|icons\/[\w.-]+|src\/(saves|engine)\/[\w.-]+)$/.test(name)) {
     res.writeHead(404).end(); return;
   }
   const file = path.join(root, name);
@@ -62,6 +62,23 @@ async function run() {
     await olderRestored;
     restored = await page.evaluate(() => JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1')));
     assert.deepEqual(restored.evidence.SOULSILVER.caught, [145,146]);
+    await page.locator('[data-view="mastery"]').first().click();
+    assert.match(await page.locator('#master-pokemon-145').innerText(), /Evidencia parcial/);
+    // The Atlas uses the same local binary reader, without an intermediate JSON export.
+    const atlasRequests=[];page.on('request',r=>atlasRequests.push({method:r.method(),data:r.postData()}));
+    await page.locator('#file-save').setInputFiles({name:'synthetic.sav',mimeType:'application/octet-stream',
+      buffer:Buffer.from(fixture({caught:[145,146],seen:[381]}))});
+    await page.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.SOULSILVER?.sourceType==='local-save');
+    const atlasBinary=await page.evaluate(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1')));
+    assert.deepEqual(atlasBinary.checks,backup.checks);
+    assert.deepEqual(atlasBinary.evidence.SOULSILVER.caught,[145,146]);
+    assert.ok(atlasBinary.evidenceArchive.SOULSILVER.length>0);
+    await page.locator('[data-view="mastery"]').first().click();
+    assert.match(await page.locator('#master-pokemon-145').innerText(), /integridad del bloque comprobada/);
+    await page.locator('[data-view="mission"]').first().click();
+    assert.ok(!/Siguiente objetivo no confirmado\s+Inicio en Pueblo Primavera/.test(await page.locator('body').innerText()));
+    assert.match(await page.locator('body').innerText(),/Se prioriza contenido posterior/);
+    assert.ok(atlasRequests.every(r=>r.method==='GET'&&r.data===null));
     // Import a synthetic binary through the actual UI; no network request contains it.
     const historical = {game: 'SOULSILVER', view: 'quiz', checked: {'soulsilver-1#0': true},
       notes: {'soulsilver-1': 'Nota anterior'}, history: [], quiz: {SOULSILVER: {red: 'yes'}},
@@ -91,6 +108,11 @@ async function run() {
     assert.match((await rejection).message(), /integridad/);
     const afterError = await page.evaluate(() => JSON.parse(localStorage.getItem('archivo-pokemon-v2')));
     assert.deepEqual(afterError.snapshots, progress.snapshots);
+    // Identical content refreshes the diagnosis without adding a false progress diff.
+    await page.locator('#saveImportFile').setInputFiles({name:'same.sav',mimeType:'application/octet-stream',
+      buffer:Buffer.from(fixture({caught:[145,146],seen:[381]}))});
+    await page.waitForFunction(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.snapshots?.SOULSILVER?.filename==='same.sav');
+    assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2')).comparisons),progress.comparisons);
     // The diagnosis lists unknown requirements without converting them into completions.
     await page.locator('#openSaved').click();
     await page.getByRole('heading', {name: 'Qué hemos leído de tu partida', exact: true}).waitFor();
@@ -118,7 +140,69 @@ async function run() {
     for (const field of ['checked', 'notes', 'quiz', 'v8Manual', 'v8Profiles']) assert.deepEqual(recovered[field], exported[field]);
     assert.equal(await restorePage.locator('[data-view="quiz"], input[type="radio"]').count(), 0);
     await restoreContext.close();
+    // Distinct trainers cannot create a cross-profile chronology or inherit manual steps.
+    await page.locator('#saveImportFile').setInputFiles({name:'different-profile.sav',mimeType:'application/octet-stream',
+      buffer:Buffer.from(fixture({tid:42,caught:[150],seen:[150]}))});
+    await page.waitForFunction(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.snapshots?.SOULSILVER?.tid===42);
+    let switched=await page.evaluate(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2')));
+    assert.equal(switched.checked['soulsilver-1#0'],undefined);
+    assert.deepEqual(switched.comparisons,progress.comparisons);
+    await page.locator('#saveImportFile').setInputFiles({name:'original-profile.sav',mimeType:'application/octet-stream',
+      buffer:Buffer.from(fixture({caught:[145,146],seen:[381]}))});
+    await page.waitForFunction(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.snapshots?.SOULSILVER?.tid===0);
+    switched=await page.evaluate(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2')));
+    assert.deepEqual(switched.checked,historical.checked);assert.deepEqual(switched.notes,historical.notes);
+    await page.locator('#saveImportFile').setInputFiles({name:'orb-present.sav',mimeType:'application/octet-stream',
+      buffer:Buffer.from(fixture({caught:[145,146],seen:[381],keyItems:[{id:534,count:1}]}))});
+    await page.waitForFunction(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.snapshots?.SOULSILVER?.keyItems?.some(i=>i.id===534));
+    assert.equal(await page.locator('.v6-primary-continue').first().getAttribute('data-open'),'soulsilver-34');
+    await page.locator('.v6-primary-continue').first().click();
+    await page.locator('[data-taskbox="soulsilver-34"] .task-detail').waitFor();
+    assert.match(await page.locator('[data-taskbox="soulsilver-34"]').innerText(),/Ya llevas el Orbe Rojo/);
+    assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2')).checked['soulsilver-36#2']),undefined);
     await context.close();
+    // Every catalogued edition must render its goals without duplicate IDs or runtime errors.
+    const {catalogue}=require('../scripts/audit.cjs');
+    const catalog=catalogue(fs.readFileSync(path.join(root,'atlas.html'),'utf8'));
+    const allContext=await browser.newContext({serviceWorkers:'block'}),allPage=await allContext.newPage();
+    allPage.on('pageerror',e=>errors.push(e.message));await allPage.goto(`${base}/atlas.html`);
+    for(const game of catalog.games){
+      await allPage.evaluate(id=>localStorage.setItem('pokemon-atlas9-progress-v1',JSON.stringify({game:id,checks:{}})),game.id);
+      await allPage.reload();
+      assert.equal(await allPage.locator('#mobile-gen').inputValue(),String(game.generation));
+      await allPage.locator('[data-view="mastery"]').first().click();
+      await allPage.locator('[data-master]').first().waitFor();
+      await allPage.locator('[data-view="dossier"]').first().click();
+      await allPage.locator('[data-goal]').first().waitFor();
+      if(game.generation===1){assert.equal(await allPage.locator('[data-goal]').count(),5);assert.match(await allPage.locator('body').innerText(),/Los entrenadores secundarios quedan fuera/);}
+    }
+    await allPage.locator('[data-view="coverage"]').first().click();
+    assert.equal(await allPage.locator('[data-coverage-game]').count(),39);
+    await allPage.setViewportSize({width:390,height:1000});
+    assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    // Damaged persisted JSON remains recoverable rather than silently disappearing.
+    const damaged='{"checked":';
+    await allPage.evaluate(raw=>localStorage.setItem('archivo-pokemon-v2',raw),damaged);
+    await allPage.goto(`${base}/index.html`);
+    await allPage.locator('#app button:visible').first().waitFor();
+    const recoveryDownload=allPage.waitForEvent('download');await allPage.locator('#backup').click();
+    const recoveredRaw=JSON.parse(await fs.promises.readFile(await (await recoveryDownload).path(),'utf8'));
+    assert.equal(recoveredRaw.recoveryBackup,damaged);
+    await allContext.close();
+    // Storage failure must leave an exportable diagnosis and a persistent warning.
+    const quotaContext=await browser.newContext({serviceWorkers:'block'});
+    await quotaContext.addInitScript(()=>{const original=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){
+      if(k==='archivo-pokemon-v2')throw new DOMException('Synthetic quota limit','QuotaExceededError');
+      return original.call(this,k,v);
+    };});
+    const quotaPage=await quotaContext.newPage();quotaPage.on('pageerror',e=>errors.push(e.message));
+    await quotaPage.goto(`${base}/index.html`);
+    await quotaPage.locator('#saveImportFile').setInputFiles({name:'memory-only.sav',mimeType:'application/octet-stream',buffer:Buffer.from(fixture({caught:[145]}))});
+    await quotaPage.getByRole('alert').filter({hasText:'Siguen en memoria'}).waitFor();
+    const quotaDownload=quotaPage.waitForEvent('download');await quotaPage.locator('#backup').click();
+    const inMemory=JSON.parse(await fs.promises.readFile(await (await quotaDownload).path(),'utf8'));
+    assert.deepEqual(inMemory.snapshots.SOULSILVER.caught,[145]);
+    await quotaContext.close();
     // Install, go offline, reload both entry points and the new reader module.
     const offline = await browser.newContext();
     const offlinePage = await offline.newPage();

@@ -6,6 +6,7 @@ const {fixture, reader} = require('./helpers.cjs');
 
 test('CRC standard independent known vector', () => {
   assert.equal(crc16(new TextEncoder().encode('123456789')), 0x29b1);
+  assert.equal(require('../src/saves/integrity.js').usb(new TextEncoder().encode('123456789')),0xb4c8);
 });
 test('select major counter before minor counter or playtime', () => {
   const bytes = fixture({major: 4, minor: 99, hours: 300, caught: [145]},
@@ -51,4 +52,9 @@ test('read-only parsing leaves every input byte unchanged', () => {
 });
 test('truncated input cannot generate a diagnosis', () => {
   assert.throws(() => reader().parse(fixture().slice(0, 10000)), /Tamaño no reconocido/);
+});
+test('Red Orb possession is a current inventory fact, independent of encounter history',()=>{
+ const parsed=reader().parse(fixture({keyItems:[{id:534,count:1}]}));
+ assert.deepEqual(JSON.parse(JSON.stringify(parsed.keyItems)),[{id:534,count:1}]);
+ assert.equal(parsed.oakGiftReceived,undefined);assert.equal(parsed.originalEncounterCompleted,undefined);
 });

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PKHeXSource Condition="'$(PKHeXSource)' == ''">$(MSBuildThisFileDirectory)../.cache/pkhex</PKHeXSource>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(PKHeXSource)/PKHeX.Core/PKHeX.Core.csproj" />
+    <Compile Remove="Tests/**/*.cs" />
+  </ItemGroup>
+  <Target Name="VerifyPKHeXRevision" BeforeTargets="BeforeBuild">
+    <Exec Command="git -C &quot;$(PKHeXSource)&quot; rev-parse HEAD" ConsoleToMSBuild="true" StandardOutputImportance="Low">
+      <Output TaskParameter="ConsoleOutput" PropertyName="PKHeXRevision" />
+    </Exec>
+    <Error Condition="'$(PKHeXRevision)' != '96e33e7432d900e5345afdfd117eabfac43f5bbd'" Text="La revisión de PKHeX.Core no coincide con la revisión auditada. Ejecuta scripts/prepare-pkhex.sh." />
+  </Target>
+</Project>

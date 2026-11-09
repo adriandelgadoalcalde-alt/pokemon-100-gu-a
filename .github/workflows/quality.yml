@@ -24,3 +24,26 @@ jobs:
         with:
           name: responsive-screenshots
           path: test-results/
+  pkhex-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - run: npm ci --ignore-scripts
+      - run: bash scripts/prepare-pkhex.sh
+      - run: dotnet run --project pkhex-extractor/Tests/Pokemon.SaveAudit.Tests.csproj --configuration Release -- .cache/synthetic
+      - run: node scripts/compare-pkhex.cjs .cache/synthetic
+      - run: node scripts/test-extractor-cli.cjs .cache/synthetic
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: upstream-api-smoke-only
+          path: |
+            .cache/synthetic/api-smoke.json
+            .cache/synthetic/container-smoke.json

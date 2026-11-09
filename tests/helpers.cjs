@@ -2,15 +2,17 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 const integrity = require('../src/saves/hgss-integrity.js');
 const {scripts} = require('../scripts/audit.cjs');
-function writeCopy(bytes, base, {major = 1, minor = 1, hours = 1, caught = [], seen = []} = {}) {
+function writeCopy(bytes, base, {major = 1, minor = 1, hours = 1, tid = 0, trainer = 'SYNTH', caught = [], seen = [], keyItems = []} = {}) {
   const v = new DataView(bytes.buffer), end = base + 0xF628;
-  for (const offset of [509, 1018, 1527]) bytes[base + offset] = 1;
+  for(let i=0;i<Math.min(7,trainer.length);i++)v.setUint16(base+0x64+i*2,0x12B+trainer.charCodeAt(i)-65,true);
+  v.setUint16(base + 0x74, tid, true);
   bytes[base + 0x80] = 8; // SoulSilver ROM code.
   bytes[base + 0x7E] = 255; // Eight Johto badges.
   bytes[base + 0x83] = 255; // Eight Kanto badges.
   bytes[base + 0x81] = 3; // Game clear / National Dex.
   v.setUint16(base + 0x86, hours, true);
   v.setUint32(base + 0x3C, 1, true);
+  keyItems.forEach((item,i)=>{v.setUint16(base+0x8D8+i*4,item.id,true);v.setUint16(base+0x8DA+i*4,item.count,true);});
   for (const [offset, list] of [[0x12BC, caught], [0x12FC, seen]])
     for (const id of list) bytes[base + offset + ((id - 1) >> 3)] |= 1 << ((id - 1) & 7);
   v.setUint32(end - 20, major, true);
@@ -28,9 +30,9 @@ function fixture(first = {}, second) {
   return bytes;
 }
 function reader() {
-  const html = fs.readFileSync('index.html', 'utf8');
-  const code = scripts(html).find(s => s.includes('root.PokemonSaveReader='));
-  const context = vm.createContext({Uint8Array, PokemonHGSSIntegrity: integrity});
+  const code = fs.readFileSync('src/saves/reader.js', 'utf8');
+  const context = vm.createContext({Uint8Array, PokemonHGSSIntegrity: integrity,
+    PokemonSaveIntegrity:require('../src/saves/integrity.js')});
   vm.runInContext(code, context);
   return context.PokemonSaveReader;
 }

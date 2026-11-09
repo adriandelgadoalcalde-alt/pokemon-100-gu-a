@@ -1,4 +1,5 @@
 const fs = require('node:fs');
+const path = require('node:path');
 const acorn = require('acorn');
 
 function scripts(html) {
@@ -46,6 +47,33 @@ function audit(root = '.') {
   for (const [name, html] of [['index.html', classic], ['atlas.html', atlas]])
     for (const code of scripts(html))
       for (const duplicate of duplicates(code)) errors.push(`${name}: función duplicada ${duplicate}`);
+  const sw=acorn.parse(fs.readFileSync(`${root}/sw.js`,'utf8'),{ecmaVersion:'latest'});
+  let cacheFiles=[];
+  walk(sw,n=>{if(n.type==='VariableDeclarator'&&n.id.name==='CORE')cacheFiles=n.init.elements.map(x=>x.value);});
+  for(const html of [classic,atlas])for(const match of html.matchAll(/<script\b[^>]*src="(\.[^"]+)"/g)){
+    if(!fs.existsSync(path.join(root,match[1])))errors.push('Módulo local ausente: '+match[1]);
+    if(!cacheFiles.includes(match[1]))errors.push('Módulo ausente de la caché offline: '+match[1]);
+  }
+  for(const folder of ['src/saves','src/engine'])for(const file of fs.readdirSync(`${root}/${folder}`)){
+    if(!file.endsWith('.js'))continue;
+    for(const duplicate of duplicates(fs.readFileSync(`${root}/${folder}/${file}`,'utf8')))errors.push(`${file}: función duplicada ${duplicate}`);
+  }
+  let rules={},masters={};
+  for(const code of scripts(classic))walk(acorn.parse(code,{ecmaVersion:'latest'}),n=>{
+    if(n.type==='VariableDeclarator'&&n.id.name==='V8_OWN_SS_FINGERPRINT')errors.push('No vincular declaraciones personales incrustadas a una huella pública.');
+    if(n.type==='VariableDeclarator'&&n.id.name==='V8_RULES')rules=JSON.parse(code.slice(n.init.start,n.init.end));
+    if(n.type==='VariableDeclarator'&&n.id.name==='FIVE_SAVE_AUDITS'&&n.init.properties.length)errors.push('No incrustar diagnósticos personales en el HTML público.');
+  });
+  for(const code of scripts(atlas))walk(acorn.parse(code,{ecmaVersion:'latest'}),n=>{
+    if(n.type==='VariableDeclarator'&&n.id.name==='MASTER_DATA')masters=JSON.parse(code.slice(n.init.start,n.init.end));
+  });
+  const lookup=new Map(classicTasks.map(t=>[t.id,t]));
+  for(const [id,rule]of Object.entries(rules))for(const req of rule.req||[]){
+    if(!lookup.has(id))errors.push('Regla para misión inexistente: '+id);
+    if(req.task&&!lookup.has(req.task))errors.push('Prerrequisito inexistente: '+req.task);
+    if(req.type==='step'&&lookup.has(req.task)&&(!Number.isInteger(req.index)||req.index<0||req.index>=lookup.get(req.task).steps.length))errors.push('Paso de prerrequisito inexistente: '+id);
+  }
+  for(const [id,goals]of Object.entries(masters))if(new Set(goals.map(g=>g.id)).size!==goals.length)errors.push('Objetivos de maestría duplicados: '+id);
   for (const [name, tasks] of [['clásica', classicTasks], ['Atlas', atlasTasks]]) {
     const ids = new Set();
     for (const task of tasks) {
@@ -58,7 +86,8 @@ function audit(root = '.') {
   for (const task of atlasTasks) levels[task.verified || 'sin etiqueta'] = (levels[task.verified || 'sin etiqueta'] || 0) + 1;
   return {classic: {editions: db.games.length, missions: classicTasks.length},
     atlas: {editions: catalog.games.length, generations: new Set(catalog.games.map(g => g.generation)).size,
-      missions: atlasTasks.length, steps: atlasTasks.reduce((n, t) => n + t.steps.length, 0), levels}, errors};
+      missions: atlasTasks.length, steps: atlasTasks.reduce((n, t) => n + t.steps.length, 0), levels},
+    masteryGoals:Object.values(masters).reduce((n,g)=>n+g.length,0),browserReaders:require('../src/saves/diagnosis.js').supported,errors};
 }
 module.exports = {scripts, walk, duplicates, catalogue, audit};
 if (require.main === module) {
