@@ -20,3 +20,5 @@ El progreso se guarda **localmente en cada navegador**; usa Exportar/Importar JS
 ## Test rápido
 
 Servir esta carpeta con `python -m http.server 8000`, abrir `http://localhost:8000`, probar el lector y desactivar la red después de la primera carga. Para instalar realmente en iPad es necesario HTTPS, que proporciona GitHub Pages.
+
+GitHub Pages: publicación desde `main` / raíz del repositorio. Entrada: `index.html`.
