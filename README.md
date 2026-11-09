@@ -19,6 +19,12 @@ El alcance excluye entrenadores secundarios y objetos sueltos triviales; incluye
 todos los objetos importantes para completar los objetivos. Consulta la
 [matriz de cobertura](docs/coverage-matrix.md) y la [investigación HGSS](research/flags/hgss.md).
 
+El recorrido de la guía clásica es **guardado → diagnóstico → siguiente objetivo**,
+sin cuestionarios de situación. El diagnóstico distingue los datos leídos de los
+requisitos pendientes de interpretación. Las respuestas antiguas se conservan al
+exportar/restaurar el progreso y no reaparecen como un test. Quitar el cuestionario
+no amplía por sí solo los formatos compatibles ni certifica nuevos eventos.
+
 ## Desarrollo y comprobaciones
 
 Requiere Node.js 24. La aplicación sigue siendo estática; no necesita build ni backend.

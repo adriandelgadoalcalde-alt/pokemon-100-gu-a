@@ -5,6 +5,11 @@
 > secundarios y objetos sueltos triviales; incluir todos los objetos importantes o
 > relevantes para cualquier paso. Esta precisión prevalece sobre listas generales
 > de entrenadores/objetos del traspaso. Estado del trabajo en `docs/coverage-matrix.md`.
+>
+> **Dirección de producto confirmada después:** el recorrido será guardado → diagnóstico
+> → guía, sin tests de situación. Conservar las respuestas y marcas históricas en las
+> copias de seguridad. La retirada del cuestionario no acredita automáticamente datos
+> que el lector aún no interpreta: mantenerlos explícitamente pendientes de lectura.
 
 > **Proyecto:** Guía Pokémon al 100 %, Atlas de las nueve generaciones, lector y auditor de guardados `.sav`/`main` y aplicación web progresiva (PWA).  
 > **Fecha de este traspaso:** 9 de noviembre de 2026.  

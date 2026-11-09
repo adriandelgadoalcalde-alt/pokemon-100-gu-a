@@ -63,7 +63,14 @@ async function run() {
     restored = await page.evaluate(() => JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1')));
     assert.deepEqual(restored.evidence.SOULSILVER.caught, [145,146]);
     // Import a synthetic binary through the actual UI; no network request contains it.
+    const historical = {game: 'SOULSILVER', view: 'quiz', checked: {'soulsilver-1#0': true},
+      notes: {'soulsilver-1': 'Nota anterior'}, history: [], quiz: {SOULSILVER: {red: 'yes'}},
+      v8Manual: {'legacy-profile|fact': {value: true, provenance: 'Respuesta histórica'}},
+      v8Profiles: {'legacy-profile': {checked: {'soulsilver-2#0': true}}}, v7ChainMigration: true};
+    await page.evaluate(data => localStorage.setItem('archivo-pokemon-v2', JSON.stringify(data)), historical);
     await page.goto(`${base}/index.html`);
+    await page.getByRole('heading', {name: 'Importa tu partida', exact: true}).waitFor();
+    assert.equal(await page.locator('[data-view="quiz"], #quizForm, #v6QuizForm, #v8QuizForm, input[type="radio"]').count(), 0);
     const requests = [];
     page.on('request', r => requests.push({method: r.method(), data: r.postData()}));
     await page.locator('#saveImportFile').setInputFiles({name: 'synthetic.sav', mimeType: 'application/octet-stream',
@@ -71,6 +78,11 @@ async function run() {
     await page.waitForFunction(() => JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.snapshots?.SOULSILVER?.integrity?.generalChecksumValid);
     const progress = await page.evaluate(() => JSON.parse(localStorage.getItem('archivo-pokemon-v2')));
     assert.deepEqual(progress.snapshots.SOULSILVER.caught, [145,146]);
+    assert.deepEqual(progress.quiz, historical.quiz);
+    assert.deepEqual(progress.v8Manual, historical.v8Manual);
+    assert.deepEqual(progress.checked, historical.checked);
+    assert.equal(await page.locator('[data-view="quiz"], input[type="radio"]').count(), 0);
+    await page.locator('.v6-primary-continue').first().waitFor();
     assert.ok(requests.every(r => r.method === 'GET' && r.data === null), 'save must stay local');
     // A corrupt upload must leave the previous diagnosis untouched.
     const corrupt = fixture({caught: [150]}); corrupt[0x12BC] ^= 1;
@@ -79,6 +91,33 @@ async function run() {
     assert.match((await rejection).message(), /integridad/);
     const afterError = await page.evaluate(() => JSON.parse(localStorage.getItem('archivo-pokemon-v2')));
     assert.deepEqual(afterError.snapshots, progress.snapshots);
+    // The diagnosis lists unknown requirements without converting them into completions.
+    await page.locator('#openSaved').click();
+    await page.getByRole('heading', {name: 'Qué hemos leído de tu partida', exact: true}).waitFor();
+    assert.ok(await page.locator('.reading-gaps [data-open]').count() > 0);
+    await page.locator('.reading-gaps').locator('..').locator('summary').click();
+    const priorMission = page.locator('.reading-gaps li').filter({hasText: 'Terminar: Ciudad Iris: Morti y los perros legendarios'});
+    assert.equal(await priorMission.getByRole('button').getAttribute('data-open'), 'soulsilver-7');
+    await page.screenshot({path: 'test-results/diagnosis-direct-route.png', fullPage: true});
+    // Export and restore the old answers and manual records without resurrecting a quiz.
+    const downloadEvent = page.waitForEvent('download');
+    await page.locator('#backup').click();
+    const exported = JSON.parse(await fs.promises.readFile(await (await downloadEvent).path(), 'utf8'));
+    assert.deepEqual(exported.quiz, historical.quiz);
+    assert.deepEqual(exported.v8Manual, historical.v8Manual);
+    assert.deepEqual(exported.v8Profiles, historical.v8Profiles);
+    const restoreContext = await browser.newContext({serviceWorkers: 'block'});
+    const restorePage = await restoreContext.newPage();
+    restorePage.on('pageerror', e => errors.push(e.message));
+    restorePage.on('dialog', d => d.accept());
+    await restorePage.goto(`${base}/index.html`);
+    await restorePage.locator('#importFile').setInputFiles({name: 'historical-progress.json', mimeType: 'application/json',
+      buffer: Buffer.from(JSON.stringify(exported))});
+    await restorePage.waitForFunction(() => JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.v8Manual?.['legacy-profile|fact']?.value === true);
+    const recovered = await restorePage.evaluate(() => JSON.parse(localStorage.getItem('archivo-pokemon-v2')));
+    for (const field of ['checked', 'notes', 'quiz', 'v8Manual', 'v8Profiles']) assert.deepEqual(recovered[field], exported[field]);
+    assert.equal(await restorePage.locator('[data-view="quiz"], input[type="radio"]').count(), 0);
+    await restoreContext.close();
     await context.close();
     // Install, go offline, reload both entry points and the new reader module.
     const offline = await browser.newContext();
@@ -96,7 +135,7 @@ async function run() {
     }
     await offline.close();
     assert.deepEqual(errors, []);
-    console.log('Responsive layout, local binary import, rejected corruption, Atlas restoration, and offline navigation passed.');
+    console.log('Responsive layout, direct route without quizzes, preserved historical answers, local import, rejected corruption, restoration, and offline navigation passed.');
   } finally {await browser.close();}
 }
 run().catch(e => {console.error(e); process.exitCode = 1;}).finally(() => server.close());

@@ -88,3 +88,45 @@ guardados privados identificados por región/revisión, y conectar hechos docume
 al recorrido Rojo → Oak → Orbe Rojo → Groudon, sin convertir Pokédex en prueba de origen.
 En paralelo técnico posterior: unificar los motores y progreso del Atlas y lector.
 La cobertura exhaustiva de las nueve generaciones sigue pendiente; no se declara 100 %.
+
+## Segunda entrega: ruta directa, sin cuestionarios
+
+Base de este ciclo: `92b22be`, sobre la misma rama de trabajo. Se revisó el último
+`main`, el historial y la entrada publicada antes de editar. `main` y Pages siguen
+en el estado anterior; los cambios se mantienen en la propuesta de GitHub.
+
+Decisión del usuario: construir una guía de referencia para todas las generaciones,
+con el guardado como entrada principal y sin tests de situación.
+
+Cambios de producto:
+
+- Se retiran los cuestionarios y sus funciones de envío, enlaces de menú y botones.
+  La secuencia de entrada pasa a leer guardado, entender progreso y seguir la ruta.
+- La vista antigua `quiz` abre ahora el diagnóstico, sin borrar sus respuestas.
+- Se añade un resumen de lectura y una lista desplegable de requisitos sin evidencia,
+  enlazada a sus instrucciones. No se convierte la ausencia de lectura en un «no» ni
+  se marca ninguna misión al quitar el cuestionario.
+- El panel de ruta ofrece continuar directamente y acceso al Atlas de nueve generaciones.
+- Se corrige además la restauración de `v8Manual` y `v8Profiles`, que la importación
+  clásica no recuperaba de la exportación. Se conservan `quiz`, casillas y notas.
+- Las confirmaciones opcionales dentro de una misión mantienen su procedencia manual.
+  No se presenta ese dato como una lectura automática del archivo.
+- Se actualiza la caché PWA. No cambian claves de almacenamiento, IDs de misiones ni
+  formatos de exportación; la compatibilidad de la antigua vista es reversible.
+
+Archivos de producto modificados: `index.html` y `sw.js`. Se amplían las pruebas de
+navegador y esta documentación. El historial de Git identifica el commit de entrega.
+
+Validación local: pasan contratos y auditoría; Chromium en las cinco anchuras; entrada
+desde una vista antigua de test; importación y botón para continuar sin formulario;
+exportación/restauración de respuestas, perfiles, casillas y notas; requisitos sin
+evidencia visibles con enlaces; rechazo de corrupción sin pérdida; funcionamiento
+offline. Se revisaron las capturas de entrada móvil y del diagnóstico. La CI remota
+de este ciclo debe consultarse en el último commit de la propuesta.
+
+Cobertura nueva de contenido/semántica: **0 misiones exhaustivamente contrastadas,
+0 nuevos mapeos con fixtures reales, 0 ediciones nuevas con lector validado**.
+Permanecen los siete mapeos documentales del primer ciclo y sus límites. Esta entrega
+retira el cuestionario del producto; **no demuestra todavía lectura integral de todos
+los guardados**. La prioridad técnica posterior sigue siendo validar e integrar los
+hechos de eventos por edición y unificar Atlas y lector.
