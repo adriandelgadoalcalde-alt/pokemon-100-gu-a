@@ -12,7 +12,7 @@ GitHub Pages se publica desde la rama `main` y la raíz del repositorio. La apli
 Los archivos de guardado personales no están en este repositorio. Importar registros de Pokédex no certifica que se hayan completado los eventos originales. Exporta las casillas a JSON antes de cambiar de dispositivo.
 
 ## Cobertura real
-La estructura abarca nueve generaciones; no todas las rutas son todavía guías exhaustivas. La V9.2 corrige el itinerario de Negro 2/Blanco 2 y añade comprobaciones específicas, pero 459 misiones siguen siendo recorridos introductorios. La lectura SAV directa de todas las generaciones y la certificación absoluta requieren desarrollo y pruebas por formato.
+La estructura abarca nueve generaciones; no todas las rutas son todavía guías exhaustivas. La V9.2 corrige el itinerario de Negro 2/Blanco 2 y añade comprobaciones específicas, pero 445 misiones siguen siendo recorridos introductorios. La lectura SAV directa de todas las generaciones y la certificación absoluta requieren desarrollo y pruebas por formato.
 
 El lector común del navegador admite **HeartGold, SoulSilver, Negro 2, Blanco 2, X, Y,
 Rubí Omega, Zafiro Alfa, Ultrasol y Ultraluna**. Se han contrastado sus campos seleccionados,
@@ -27,7 +27,7 @@ El alcance excluye entrenadores secundarios y objetos sueltos triviales; incluye
 todos los objetos importantes para completar los objetivos. Consulta la
 [matriz de cobertura](docs/coverage-matrix.md) y la [investigación HGSS](research/flags/hgss.md).
 La [integridad por formato](research/save-integrity.md) y el [motor de evidencias](docs/evidence-engine.md)
-documentan qué se comprueba y qué sigue pendiente.
+documentan qué se comprueba y qué sigue pendiente. Las [correcciones por edición](research/routes/edition-corrections.md) registran los últimos ajustes de rutas y sus fuentes.
 
 El recorrido de la guía clásica es **guardado → diagnóstico → siguiente objetivo**,
 sin cuestionarios de situación. El diagnóstico distingue los datos leídos de los

@@ -235,3 +235,24 @@ Actualización de cierre del tercer ciclo:
   extractor. El Atlas muestra los campos pendientes en «Alcance de esta lectura».
 - Ningún nuevo mapeo narrativo obtiene certificación automática sin el contraste
   natural antes/después exigido en la investigación HGSS.
+
+## Cuarto ciclo: diferencias reales de edición y destino tras la Liga
+
+Base: `73d1a63` de `feat/save-evidence-engine`; ambos trabajos de CI de esa revisión
+han terminado correctamente, incluido el contrato .NET/Core en GitHub Actions.
+
+Se revisan 14 misiones existentes con siete páginas externas consultadas:
+Negro/Blanco (primera Liga y tarjeta), Sol/Luna (colección de Zygarde),
+Espada/Escudo (gimnasios exclusivos y orden) y Platino (Fantina/Brega/Mananti).
+Las fuentes y el alcance están en `research/routes/edition-corrections.md`.
+No se añaden nuevas misiones, nuevos offsets ni certificaciones de historia.
+
+Recuento actualizado: 525 misiones / 1.146 pasos; 445 introductorias, 34 de revisión
+guiada, 28 de referencia declarada y 18 específicas de edición. Continúan 693
+criterios de maestría existentes; no equivalen a hechos verificados.
+
+Se conserva cada ID y cada índice de paso. El recomendador utiliza un límite
+explícito de historia por edición, probado con el catálogo real, para no volver a
+recomendar la primera Liga después de recibir evidencia de final. Las 16 medallas
+de Johto/Kanto priorizan Monte Plateado sin certificar las escenas anteriores.
+No hay cambio de claves de almacenamiento ni pérdida de marcas manuales.

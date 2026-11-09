@@ -10,3 +10,13 @@ test('an orb already in the bag directs the route to the tower rather than repea
 test('acquired species never reappear through a fallback recommendation',()=>{
  assert.equal(nextMission(game,{},()=>false,()=>true),null);
 });
+test('catalogue story boundaries do not send a champion back to their first League',()=>{
+ const fs=require('node:fs'),{catalogue}=require('../scripts/audit.cjs');
+ const games=catalogue(fs.readFileSync(require('node:path').join(__dirname,'../atlas.html'),'utf8')).games;
+ for(const [id,next]of [['BLACK','10'],['SUN','09'],['PLATINUM','11'],['SOULSILVER','10']]){
+  const edition=games.find(g=>g.id===id),result=nextMission(edition,{gameClear:true},()=>false,()=>false);
+  assert.equal(result.mission.id,id+'-'+next);
+ }
+ const ss=games.find(g=>g.id==='SOULSILVER');
+ assert.equal(nextMission(ss,{gameClear:true,badgesTotal:16},()=>false,()=>false).mission.id,'SOULSILVER-13');
+});

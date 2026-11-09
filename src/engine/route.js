@@ -9,8 +9,11 @@
    if(tower&&!snapshot.caught?.includes(383))return {mission:tower,reason:'El Orbe Rojo ya está en tu bolsa. Continúa con el acceso a la Torre Oculta; no repitas su entrega.'};
   }
   if(snapshot?.gameClear===true){
-   const afterStory=pending.find(m=>m.section!=='Historia'&&
-    !(['SOULSILVER','HEARTGOLD'].includes(game.id)&&snapshot.badgesTotal===16&&m.id===game.id+'-12'));
+   const endIndex=game.missions.findIndex(m=>m.id===game.mainStoryLastMission);
+   const johtoComplete=['GOLD','SILVER','CRYSTAL','SOULSILVER','HEARTGOLD'].includes(game.id)&&snapshot.badgesTotal===16;
+   const kantoEnd=johtoComplete?game.missions.findIndex(m=>m.id===game.id+'-12'):-1;
+   const boundary=Math.max(endIndex,kantoEnd);
+   const afterStory=pending.find(m=>boundary>=0?game.missions.indexOf(m)>boundary:m.section!=='Historia');
    if(afterStory)return {mission:afterStory,reason:'El final de la historia consta en el diagnóstico. Se prioriza contenido posterior sin marcar por hechas las escenas anteriores.'};
   }
   return {mission:pending[0],reason:snapshot?'Siguiente objetivo sin evidencia suficiente; consulta sus requisitos antes de desplazarte.':'Puedes consultar la guía desde el inicio o cargar un guardado compatible.'};

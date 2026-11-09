@@ -82,6 +82,7 @@ function audit(root = '.') {
       ids.add(task.id);
     }
   }
+  for(const game of catalog.games)if(!game.missions.some(m=>m.id===game.mainStoryLastMission))errors.push('Límite de historia ausente o inválido: '+game.id);
   const levels = {};
   for (const task of atlasTasks) levels[task.verified || 'sin etiqueta'] = (levels[task.verified || 'sin etiqueta'] || 0) + 1;
   return {classic: {editions: db.games.length, missions: classicTasks.length},
