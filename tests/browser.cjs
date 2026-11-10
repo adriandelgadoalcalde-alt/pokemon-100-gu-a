@@ -311,6 +311,31 @@ async function run() {
     assert.equal(await allPage.locator('[data-coverage-game]').count(),39);
     await allPage.setViewportSize({width:390,height:1000});
     assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    // Medal receipts, ready rewards and unknown states have separate searchable rows.
+    const medalRows=Array.from({length:255},(_,i)=>({id:i+1,state:0}));
+    medalRows[0]={id:1,state:4,date:'2026-02-31'};medalRows[1]={id:2,state:3,date:'2026-11-10'};medalRows[254]={id:255,state:7};
+    const medalDiagnosis={game:'BLACK2',caught:[],seen:[],integrity:{verifiedFields:['medals']},medals:{medals:medalRows,obtained:255}};
+    await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-medals.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(medalDiagnosis))});
+    await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.game==='BLACK2');
+    await allPage.locator('[data-view="diagnostic"]').first().click();
+    const medalBook=allPage.locator('[data-medal-book]');
+    assert.match(await medalBook.innerText(),/1\/255 recibidas/);assert.doesNotMatch(await medalBook.innerText(),/31\/02\/2026/);
+    await medalBook.locator('[data-medal-filter]').selectOption('ready');
+    assert.equal(await medalBook.locator('[data-medal-id]:visible').count(),1);
+    assert.equal(await medalBook.locator('[data-medal-id]:visible').getAttribute('data-medal-id'),'2');
+    await medalBook.locator('[data-medal-query]').fill('finalísta');
+    assert.equal(await medalBook.locator('[data-medal-id]:visible').count(),1);
+    assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    await allPage.screenshot({path:path.join(resultDir,'medals-ready-390.png'),fullPage:true});
+    await medalBook.locator('[data-medal-query]').fill('');await medalBook.locator('[data-medal-filter]').selectOption('unknown');
+    assert.equal(await medalBook.locator('[data-medal-id]:visible').count(),1);
+    await allPage.locator('[data-view="mastery"]').first().click();
+    assert.doesNotMatch(await allPage.locator('#master-medals').innerText(),/Evidencia/);
+    await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-all-medals.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...medalDiagnosis,medals:{medals:medalRows.map(m=>({...m,state:4,date:null}))}}))});
+    await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.BLACK2?.medals?.medals?.[254]?.state===4);
+    await allPage.locator('[data-view="mastery"]').first().click();
+    assert.match(await allPage.locator('#master-medals').innerText(),/255 medallas recibidas registradas/);
+    assert.equal(await allPage.locator('[data-master]:checked').count(),0);
     // GBA documentary flags orient an imported save without ticking historical scenes.
     const gba={game:'FIRERED',caught:[],seen:[],gameClear:null,badgesTotal:8,badgesMask:255,nationalDex:true,
       integrity:{checksumsValid:true},progressSignals:[{id:'story.gba.gameClear',label:'Indicador de Liga superada (GBA)',value:true,validation:'documented'}]};
@@ -383,6 +408,10 @@ async function run() {
         await offlinePage.locator('#mobile-game').selectOption('SOULSILVER');
         await offlinePage.locator('[data-mid="SOULSILVER-09"] > summary').click();
         assert.match(await offlinePage.locator('[data-mid="SOULSILVER-09"] .route-details').innerText(),/cinco combates seguidos/);
+        await offlinePage.locator('#file-diagnosis').setInputFiles({name:'synthetic-medals-offline.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(medalDiagnosis))});
+        await offlinePage.locator('[data-view="diagnostic"]').first().click();
+        await offlinePage.locator('[data-medal-filter]').selectOption('ready');
+        assert.equal(await offlinePage.locator('[data-medal-id]:visible').count(),1);
       }
     }
     await offline.close();

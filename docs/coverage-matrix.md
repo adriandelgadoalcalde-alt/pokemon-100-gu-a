@@ -531,3 +531,29 @@ Dos ejecuciones remotas anteriores permanecieron en instalación de WebKit mient
 otras ejecuciones del mismo conjunto la completaron. Se limita a diez minutos la
 provisión de navegadores en CI; un atasco externo falla el trabajo y permite reintento,
 sin suprimir WebKit ni aceptar pruebas pendientes como aprobadas.
+
+## Decimocuarto ciclo: Medallero completo en los dos lectores
+
+Base: `a18f3a1`; rama `feat/b2w2-medals`. El ciclo D/P+HGSS está publicado y probado
+en la URL pública con ambos motores; véase `docs/releases/gen4-ds.md`.
+
+Se reproduce la aceptación de un 31 de febrero con CRC correcto en el lector
+ligero y la omisión del Medallero en `Audit.cs`. Se corrigen fechas, se conservan
+estados desconocidos y se recompila WASM con las mismas 255 entradas que CLI.
+Las comparaciones sintéticas y públicas incorporan el bloque completo: dos partidas
+públicas nativas coinciden sin modificar sus bytes ni publicar fechas o identidades.
+
+El Atlas ofrece nombres, búsqueda y filtros, tanto en diagnóstico como en E01;
+separa recibidas, listas para recoger y pendientes/sin interpretar. La meta de 255
+recibe evidencia únicamente de una lista completa y campos validados, sin crear
+historia de desafíos. Se conservan todos los IDs, marcas, claves y exportaciones.
+Los nombres GPL se verifican contra el recurso fijado y se incluyen avisos/fuentes.
+
+Pasan 57 casos unitarios, auditoría, contratos CLI, corpus completo y ambas regresiones
+Chromium/WebKit: GUI, búsqueda sin acentos, datos incompletos, reapertura offline,
+actualización PWA y paridad completa CLI/WASM. Nuevos eventos narrativos con pareja
+natural: **0**. Las 255 condiciones todavía requieren redacción ejecutable propia y
+revisión de disponibilidad; no se cuentan como nuevas rutas exhaustivas.
+
+El total editorial se mantiene en 147 rutas y 312 conexiones, con 213 misiones del
+catálogo sin ampliación. Ninguna guía exhaustiva se declara cerrada por este ciclo.

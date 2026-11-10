@@ -188,19 +188,21 @@ function eventAudit(o,b){let off,workBase,flagBase,flagCount,workCount;
  function parseMedals5(b,base){
   const start=base+0x25300, groups=[['Especial',0,7],['Aventura',7,105],['Combate',105,161],['Entretenimiento',161,236],['Desafío',236,255]];
   if(start+0x3ff>b.length)return null;
-  const medals=[];let obtained=0,ready=0;
+  const medals=[];let obtained=0,ready=0,unknown=0;
   for(let index=0;index<255;index++){
    const offset=start+index*4, rawDate=u16(b,offset),state=u8(b,offset+2)&7;
    const group=groups.find(g=>index>=g[1]&&index<g[2])[0];
    const year=2000+(rawDate&127),month=(rawDate>>7)&15,day=(rawDate>>11)&31;
-   const date=rawDate&&month>=1&&month<=12&&day>=1&&day<=31?`${year}-${String(month).padStart(2,'0')}-${String(day).padStart(2,'0')}`:null;
-   if(state===4)obtained++;if(state===3)ready++;
-   medals.push({id:index+1,group,state,obtained:state===4,ready:state===3,date});
+   const calendar=new Date(Date.UTC(year,month-1,day));
+   const valid=rawDate&&[2,3,4].includes(state)&&month>=1&&month<=12&&day>=1&&calendar.getUTCFullYear()===year&&calendar.getUTCMonth()===month-1&&calendar.getUTCDate()===day;
+   const date=valid?`${year}-${String(month).padStart(2,'0')}-${String(day).padStart(2,'0')}`:null;
+   if(state===4)obtained++;if(state===3)ready++;if(state>4)unknown++;
+   medals.push({id:index+1,group,state,obtained:state===4,ready:state===3,unread:!!(u8(b,offset+2)&8),date});
   }
   const categories=groups.map(([name,a,z])=>({name,obtained:medals.slice(a,z).filter(x=>x.obtained).length,total:z-a}));
   const dates={};medals.filter(m=>m.obtained&&m.date).forEach(m=>dates[m.date]=(dates[m.date]||0)+1);
   const topDate=Object.entries(dates).sort((a,z)=>z[1]-a[1])[0]||null;
-  return {obtained,ready,total:255,remaining:255-obtained,categories,medals,rank:u8(b,start+0x3FD),tutorialCompleted:!!u8(b,start+0x3FE),mostCommonDate:topDate?topDate[0]:null,mostCommonDateCount:topDate?topDate[1]:0,source:'PKHeX.Core SaveBlockAccessor5B2W2 (bloque 68), MedalList5 y Medal5',interpretation:'Recibidas en el guardado, no comprobación de consecución jugando.'};
+  return {obtained,ready,unknown,total:255,remaining:255-obtained,categories,medals,rank:u8(b,start+0x3FD),tutorialCompleted:!!u8(b,start+0x3FE),mostCommonDate:topDate?topDate[0]:null,mostCommonDateCount:topDate?topDate[1]:0,source:'PKHeX.Core SaveBlockAccessor5B2W2 (bloque 68), MedalList5 y Medal5',interpretation:'Recibidas en el guardado, no comprobación de consecución jugando.'};
  }
  // Datos de Pokéathlon de HGSS: registros informativos de solo lectura.
  // Offsets del trabajo de investigación de Project Pokémon y SAV4HGSS.Pokeathlon.

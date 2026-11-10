@@ -7,6 +7,7 @@
     "uniqueSaveHashes": 57,
     "coreRead": 51,
     "browserRead": 12,
+    "medalParitySamples": 2,
     "browserEditions": [
       "ALPHASAPPHIRE",
       "BLACK2",
@@ -492,6 +493,7 @@
       "format": "SAV5B2W2",
       "atlasDiagnosisCompatible": true,
       "browser": "read",
+      "medalParity": true,
       "browserParity": true,
       "inputUnchanged": true,
       "failures": []
@@ -525,6 +527,7 @@
       "format": "SAV5B2W2",
       "atlasDiagnosisCompatible": true,
       "browser": "read",
+      "medalParity": true,
       "browserParity": true,
       "inputUnchanged": true,
       "failures": []

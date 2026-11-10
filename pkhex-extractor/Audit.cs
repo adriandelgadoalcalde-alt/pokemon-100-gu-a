@@ -12,6 +12,38 @@ public static class Audit
     public const string EngineCommit = "96e33e7432d900e5345afdfd117eabfac43f5bbd";
     public static readonly JsonSerializerOptions JsonOptions = new() { WriteIndented = true };
 
+    private static object? ReadMedals(SaveFile save)
+    {
+        if (save is not SAV5B2W2 b2w2) return null;
+        (string Name, int Start, int End)[] groups = [("Especial", 0, 7), ("Aventura", 7, 105),
+            ("Combate", 105, 161), ("Entretenimiento", 161, 236), ("Desafío", 236, 255)];
+        var block = b2w2.Medals;
+        var entries = Enumerable.Range(0, 255).Select(index =>
+        {
+            var medal = block[index];
+            string? date = null;
+            if (medal.CanHaveDate && medal.HasDate)
+            {
+                try { date = medal.Date.ToString("yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture); }
+                catch (ArgumentOutOfRangeException) { /* Invalid calendar data remains unknown. */ }
+            }
+            var state = (int)medal.State;
+            return new { id = index + 1, group = groups.First(g => index >= g.Start && index < g.End).Name,
+                state, obtained = state == 4, ready = state == 3, unread = medal.IsUnread, date };
+        }).ToArray();
+        var commonDate = entries.Where(m => m.obtained && m.date is not null).GroupBy(m => m.date)
+            .OrderByDescending(g => g.Count()).FirstOrDefault();
+        var obtained = entries.Count(m => m.obtained);
+        return new { obtained, ready = entries.Count(m => m.ready), unknown = entries.Count(m => m.state > 4),
+            total = 255, remaining = 255 - obtained,
+            categories = groups.Select(g => new { name = g.Name,
+                obtained = entries.Skip(g.Start).Take(g.End - g.Start).Count(m => m.obtained), total = g.End - g.Start }).ToArray(),
+            medals = entries, rank = (int)block.Rank, tutorialCompleted = block.IsTutorialComplete,
+            mostCommonDate = commonDate?.Key, mostCommonDateCount = commonDate?.Count() ?? 0,
+            source = "PKHeX.Core SaveBlockAccessor5B2W2 (bloque 68), MedalList5 y Medal5",
+            interpretation = "Recibidas en el guardado, no comprobación de consecución jugando." };
+    }
+
     public static string? GameId(SaveFile save) => save is SAV3FRLG ? null : save.Version switch
     {
         GameVersion.RD => "RED", GameVersion.GN => save.Language == 1 ? "GREEN" : "BLUE",
@@ -89,6 +121,7 @@ public static class Audit
             ["caught"] = implementsCaught ? caught : null, ["seen"] = implementsSeen ? seen : null,
             ["caughtCount"] = implementsCaught ? caught.Count : null, ["seenCount"] = implementsSeen ? seen.Count : null,
             ["inventory"] = inventory, ["keyItems"] = keyItems,
+            ["medals"] = ReadMedals(save),
             ["integrity"] = new { engine = "PKHeX.Core", checksumsValid = checksums,
                 scope = "Propiedad de integridad upstream; algunos formatos no tienen checksums propios" },
             ["gameClear"] = save is SAV4 s4 ? s4.GameClear : save is SAV5 or SAV6 or SAV7 ? save.SecondsToFame > 0 : null,

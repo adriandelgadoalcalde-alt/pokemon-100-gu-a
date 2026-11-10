@@ -34,3 +34,8 @@ El script parte de una carpeta de distribución vacía para evitar mezclar recur
 de versiones anteriores. No incluye partidas ni diagnósticos. El proveedor MD5
 implementa RFC 1321 únicamente para contrastar el checksum del juego en BD/SP;
 no se utiliza como función de seguridad ni se modifica el guardado original.
+
+Los nombres españoles del Medallero de B2/W2 en `src/guides/medals.js` proceden del
+recurso `Resources/text/game/medals_b2w2/text_medals_es.txt` de PKHeX.Core en esa misma
+revisión y se distribuyen bajo GPL-3.0-or-later. El archivo de fuentes correspondiente
+incluye el recurso completo; la lógica de presentación y las pruebas están en el repositorio.

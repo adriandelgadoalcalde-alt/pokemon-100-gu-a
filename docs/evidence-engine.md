@@ -62,3 +62,12 @@ fijadas de cada juego determinan los conjuntos en `completion.js`. La misma list
 482 puede completar Sinnoh y dejar HGSS pendiente; duplicados y especies excluidas
 no compensan ausencias. Se acreditan registros de campos validados, conservando
 confianza parcial sin integridad y sin hechos de recompensa o encuentro original.
+
+## Medallas recibidas de B2/W2
+
+`medals.b2w2.allReceived` compara los 255 estados individuales: solo 4 es recibido;
+3 es listo para recoger. Resúmenes agregados, listas incompletas/duplicadas o estados
+sin interpretar no acreditan el conjunto. La confianza depende del campo `medals`
+validado. No se crean hechos de desafíos originales ni instantes de cronología a
+partir de fechas. La vista y la normalización de fechas se explican en
+`research/saves/b2w2-medals.md`.
