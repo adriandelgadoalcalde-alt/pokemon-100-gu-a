@@ -24,3 +24,30 @@ test('a complete FRLG registration needs validated read fields and never creates
  assert.ok(!facts.some(f=>/encounter|reward|original|star/i.test(f.id)));
  assert.ok(!engine.fromDiagnosis({...d,caught:null}).some(f=>f.id==='pokedex.completion.national'));
 });
+test('Sinnoh excludes Lugia/Ho-Oh while HGSS requires them; event species cannot fill a gap',()=>{
+ const mythical=new Set([151,251,385,386,489,490,491,492,493]);
+ const all=Array.from({length:493},(_,i)=>i+1).filter(id=>!mythical.has(id));
+ const sinnoh=all.filter(id=>id!==249&&id!==250);
+ for(const game of ['DIAMOND','PEARL','PLATINUM']){
+  const complete=dexStatus({game,caught:sinnoh});assert.equal(complete.national.required,482);assert.equal(complete.national.complete,true);
+  const gap=dexStatus({game,caught:sinnoh.filter(id=>id!==16).concat(151,249,250)});
+  assert.deepEqual(gap.national.missing,[16]);assert.equal(gap.national.complete,false);
+ }
+ for(const game of ['HEARTGOLD','SOULSILVER']){
+  assert.equal(dexStatus({game,caught:all}).national.complete,true);
+  const old=dexStatus({game,caught:sinnoh});assert.equal(old.national.required,484);assert.deepEqual(old.national.missing,[249,250]);
+  const gap=dexStatus({game,caught:all.filter(id=>id!==16).concat(151)});assert.equal(gap.national.complete,false);assert.deepEqual(gap.national.missing,[16]);
+  assert.equal(dexStatus({game,caught:null}),null);
+ }
+});
+test('a Gen4 exact registration proves no awarded star, original encounter or reward',()=>{
+ const excluded=new Set([151,251,385,386,489,490,491,492,493]);
+ const caught=Array.from({length:493},(_,i)=>i+1).filter(id=>!excluded.has(id));
+ for(const game of ['DIAMOND','PEARL','PLATINUM','HEARTGOLD','SOULSILVER']){
+  const d={game,caught,seen:caught,integrity:{checksumsValid:true}},facts=engine.fromDiagnosis(d);
+  const nodes=[{id:'national',gameId:game,verification:{fact:'pokedex.completion.national'}}];
+  assert.equal(engine.evaluate(nodes,facts,game)[0].status,'COMPLETED_VERIFIED');
+  assert.equal(engine.evaluate(nodes,engine.fromDiagnosis({...d,integrity:{}}),game)[0].status,'PARTIAL_EVIDENCE');
+  assert.ok(!facts.some(f=>/encounter|reward|original|star/i.test(f.id)));
+ }
+});

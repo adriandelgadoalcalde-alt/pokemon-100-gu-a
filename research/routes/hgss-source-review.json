@@ -1,0 +1,174 @@
+{
+  "checkedAt": "2026-11-10",
+  "scope": "Pinned primary source availability and byte parity; narrative mappings are not natural-save certification.",
+  "sources": [
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0014_D11R0105.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0014_D11R0105.s",
+      "status": 200,
+      "sha256": "f4ed453dd9bf6dfdf20aeb6bdb5a49713977687678df7a3c535f5cf6e388c74d",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0018_D15R0103.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0018_D15R0103.s",
+      "status": 200,
+      "sha256": "989ff8b92e293c94aab8e941dae62eddf0891a5c834be3932dfc48c8dfadd13d",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0024_D18R0102.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0024_D18R0102.s",
+      "status": 200,
+      "sha256": "82a8858665647fa76928c0f60f5ec7841ac2acb865bc846382e53f23b5625ae9",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0060_D26R0102.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0060_D26R0102.s",
+      "status": 200,
+      "sha256": "f1cc00fb5ab73433542dabf7f7b98dd5793780ea4269fc6650995485bc294829",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0088_D35R0101.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0088_D35R0101.s",
+      "status": 200,
+      "sha256": "fecfb8ef4fecc363a215dbc409b7445ef685765e7622d93d5c89a1982bff813e",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0092_D36R0101.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0092_D36R0101.s",
+      "status": 200,
+      "sha256": "9f448ea8175ef08abe6530ec33731267970855f4a3a6909b8f89e1108b166af4",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0112_D44R0103.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0112_D44R0103.s",
+      "status": 200,
+      "sha256": "b56cf4cabe9495342e2951b40aa927f0fbccba95873f34bfdf76cb1deb91a2f0",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0113_D45R0101.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0113_D45R0101.s",
+      "status": 200,
+      "sha256": "e6c2541bbc6115bd6009f11c65afd0f7dadd7b8baf35b68d4092a967fa3d1c88",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0228_R30R0101.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0228_R30R0101.s",
+      "status": 200,
+      "sha256": "9669335ad4b437bd59207b8a74f2921d7604ffd4b7a79cb7df4295290806bdc1",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0243_R36.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0243_R36.s",
+      "status": 200,
+      "sha256": "1ecd8c44f0869de4c943aee8afb3151dfde852e3ae10da5bec9100223a57c35a",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0252_R42.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0252_R42.s",
+      "status": 200,
+      "sha256": "db99d29ec0c9ee7915fded120e3c3b273198d3c360f86da21d890c925707d925",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0743_T02GYM0101.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0743_T02GYM0101.s",
+      "status": 200,
+      "sha256": "bcefeed9081eeacc36a5f9449fe16f1c9990e2125563c2709bd765cc7b6141e2",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0760_T04GYM0101.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0760_T04GYM0101.s",
+      "status": 200,
+      "sha256": "b3243b7081a618828f82e991cc0d442f92a5d7b1cd1afc6934f6053731ed059a",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0843_T20R0101.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0843_T20R0101.s",
+      "status": 200,
+      "sha256": "88e8d43977a93889c40d27e9447d295389410311a61b43170d5321320932589e",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0875_T24.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0875_T24.s",
+      "status": 200,
+      "sha256": "6c8c0af4af174140d11944d52c2614a065e994231f807a56092ae90c6ae0a17f",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0881_T24R0501.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0881_T24R0501.s",
+      "status": 200,
+      "sha256": "30492a50a1b0bb2adef81f1a21fd4f58275da149896d68892413a82cb0acbb47",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0922_T27GYM0101.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0922_T27GYM0101.s",
+      "status": 200,
+      "sha256": "9640285aab5b237efe2815330be21d78ff04ee441990bcc4ccb54d8df793dc1e",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0928_T27R0501.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/files/fielddata/script/scr_seq/scr_seq_0928_T27R0501.s",
+      "status": 200,
+      "sha256": "bc29dedbd499d60a0fa9eed53c60241508e90bfaefe29a15a1c34042628bdeab",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/src/alph_checks.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/src/alph_checks.c",
+      "status": 200,
+      "sha256": "5301542027b6ddb28ebd173516ea8e4830e920f69eabb0da2cfb5c6634f5fa85",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/src/field_use_item.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/src/field_use_item.c",
+      "status": 200,
+      "sha256": "e92782d92ce02272b23f7f459127a265e8a9f8e0ee9327627d24d4ab25e0c819",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/src/pokedex.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeheartgold/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/src/pokedex.c",
+      "status": 200,
+      "sha256": "718bd391b85bea215370da41b6ccddeccbc98e737c5a96004c0d5c972d063984",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokediamond/blob/b623abef1b4dfe204ca50aab42447ac00c134290/arm9/src/pokedex.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokediamond/b623abef1b4dfe204ca50aab42447ac00c134290/arm9/src/pokedex.c",
+      "status": 200,
+      "sha256": "32b8aa6388ee6428bad83c4433dbc13e65abd311bee3925eee95059c8d4790ad",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/src/pokedex.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/src/pokedex.c",
+      "status": 200,
+      "sha256": "1ff0da47e1e29318894e0b8cbff5b709b4dd7661029b4598da3264deec2def29",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/include/pokedex.h",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/include/pokedex.h",
+      "status": 200,
+      "sha256": "0d361cefa79dfec48c439c1ad61c3baaceddd2ce020fcb0f1f764420dff238a4",
+      "matchesPinnedSource": true
+    }
+  ]
+}
