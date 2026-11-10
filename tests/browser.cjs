@@ -427,6 +427,18 @@ async function run() {
     assert.equal(await allPage.evaluate(()=>Object.keys(JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1')).checks||{}).filter(k=>k.startsWith('OMEGARUBY-')).length),0);
     assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
     await allPage.screenshot({path:path.join(resultDir,'oras-stones-390.png'),fullPage:true});
+    const crystalDiagnosis={game:'ULTRASUN',caught:[],seen:[],integrity:{checksumsValid:true},inventory:[{pocket:'ZCrystals',items:[{id:807,count:1},{id:927,count:1},{id:776,count:1}]}]};
+    await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-crystals.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(crystalDiagnosis))});
+    await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.game==='ULTRASUN');
+    await allPage.locator('[data-view="diagnostic"]').first().click();
+    const crystals=allPage.locator('[data-alola-crystals]');
+    assert.match(await crystals.innerText(),/2\/35 tipos presentes/);
+    await crystals.locator('summary').click();
+    assert.equal(await crystals.locator('[data-crystal-state="present"]').count(),2);
+    assert.equal(await crystals.locator('[data-crystal-id="807"]').getAttribute('data-crystal-state'),'present');
+    assert.equal(await crystals.locator('[data-crystal-id="808"]').getAttribute('data-crystal-state'),'absent');
+    assert.equal(await crystals.locator('[data-crystal-id="776"]').count(),0);
+    assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
     // Medal receipts, ready rewards and unknown states have separate searchable rows.
     const medalRows=Array.from({length:255},(_,i)=>({id:i+1,state:0}));
     medalRows[0]={id:1,state:4,date:'2026-02-31'};medalRows[1]={id:2,state:3,date:'2026-11-10'};medalRows[254]={id:255,state:7};
@@ -553,6 +565,10 @@ async function run() {
         await offlinePage.locator('#mobile-game').selectOption('ULTRAMOON');
         await offlinePage.locator('[data-mid="ULTRAMOON-07"] > summary').click();
         assert.match(await offlinePage.locator('[data-mid="ULTRAMOON-07"] .route-details').innerText(),/Flor Irisada/);
+        await offlinePage.locator('#file-diagnosis').setInputFiles({name:'synthetic-crystals-offline.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(crystalDiagnosis))});
+        await offlinePage.locator('[data-view="diagnostic"]').first().click();
+        assert.match(await offlinePage.locator('[data-alola-crystals]').innerText(),/2\/35 tipos presentes/);
+
 
 
 

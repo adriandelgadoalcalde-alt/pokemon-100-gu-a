@@ -213,6 +213,22 @@ foreach (var version in new[] { GameVersion.B2, GameVersion.W2, GameVersion.X, G
     if (model is SAV7 s7)
     {
         s7.Zukan.SetCaught(145); s7.Zukan.SetCaught(146); s7.Zukan.SetSeen(145, true); s7.Zukan.SetSeen(146, true); s7.Zukan.SetSeen(381, true);
+        var inventory7=model.Inventory;
+        foreach(var pouch in inventory7.Pouches)
+        {
+            var legal=inventory7.Info.GetItems(pouch.Type);
+            var first=(InventoryItem7)pouch.Items[0]; first.Index=legal[0]; first.Count=1;
+            first.IsNew=true; first.FreeSpaceIndex=777;
+            pouch.Items[1].Index=legal[1]; pouch.Items[1].Count=0;
+            pouch.Items[2].Index=0; pouch.Items[2].Count=7;
+            var last=(InventoryItem7)pouch.Items[^1]; last.Index=legal[^1];
+            last.Count=pouch.Type==InventoryType.Items?513:1;last.FreeSpaceIndex=1023;
+        }
+        inventory7.CopyTo(model);
+        // Reserved top bit and a bag-alignment gap must not contaminate ID/count.
+        model.Data[3]|=0x80;
+        BinaryPrimitives.WriteUInt32LittleEndian(model.Data[0xE28..],807u|(37u<<10));
+
     }
     if (model is IEventFlagProvider37 flags) { flags.EventWork.SetEventFlag(5, true); flags.EventWork.SetWork(7, 123); }
     if (model is SAV_BEEF beef)
