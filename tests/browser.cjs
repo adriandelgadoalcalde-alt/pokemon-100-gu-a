@@ -371,6 +371,27 @@ async function run() {
       assert.match(await allPage.locator(`[data-mid="${game}-06"] .route-details`).innerText(),/ascensores 3, 1, 3 y 2/);
       assert.match(await allPage.locator(`[data-mid="${game}-08"] .route-details`).innerText(),/Xerneas en X o Yveltal en Y/);
     }
+    const hoennRequired=require('../src/engine/hoenn-dex.js').required;
+    for(const game of ['OMEGARUBY','ALPHASAPPHIRE']){
+      const d={game,caught:hoennRequired,seen:hoennRequired.filter(id=>id!==252).concat(384),integrity:{verifiedFields:['seen']}};
+      await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-hoenn-gap.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(d))});
+      await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.[g]?.seen?.includes(384),game);
+      assert.match(await allPage.locator('#master-card-1').innerText(),/Pendiente/);
+      await allPage.locator('[data-view="diagnostic"]').first().click();
+      assert.match(await allPage.locator('#dex-completion').innerText(),/Hoenn: 207\/208 vistas/);
+      await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-hoenn-full.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...d,caught:[],seen:hoennRequired}))});
+      await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.[g]?.seen?.includes(252),game);
+      assert.match(await allPage.locator('#master-card-1').innerText(),/Evidencia/);
+      assert.doesNotMatch(await allPage.locator('#master-pokedex').innerText(),/Evidencia/);
+      assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+      await allPage.locator('[data-view="mission"]').first().click();
+      for(const suffix of ['04','05','09','11','13'])await allPage.locator(`[data-mid="${game}-${suffix}"] > summary`).click();
+      assert.match(await allPage.locator(`[data-mid="${game}-04"] .route-details`).innerText(),/regalo del túnel no es MO04 Fuerza/);
+      assert.match(await allPage.locator(`[data-mid="${game}-05"] .route-details`).innerText(),/Aura o Bruno entrega MO04 Fuerza/);
+      assert.match(await allPage.locator(`[data-mid="${game}-09"] .route-details`).innerText(),/sigue a Máximo a su casa/);
+      assert.match(await allPage.locator(`[data-mid="${game}-11"] .route-details`).innerText(),/Plubio tanto en Rubí Omega como en Zafiro Alfa/);
+      assert.match(await allPage.locator(`[data-mid="${game}-13"] .route-details`).innerText(),/Mesprit aparece de 04:00 a 19:59/);
+    }
     // Medal receipts, ready rewards and unknown states have separate searchable rows.
     const medalRows=Array.from({length:255},(_,i)=>({id:i+1,state:0}));
     medalRows[0]={id:1,state:4,date:'2026-02-31'};medalRows[1]={id:2,state:3,date:'2026-11-10'};medalRows[254]={id:255,state:7};
@@ -479,6 +500,11 @@ async function run() {
         await offlinePage.locator('[data-mid="X-06"] > summary').click();
         assert.match(await offlinePage.locator('[data-mid="X-06"] .route-details').innerText(),/ascensores 3, 1, 3 y 2/);
         assert.equal(await offlinePage.evaluate(()=>PokemonCompletion.dexStatus({game:'X',seen:PokemonKalosDex.required}).kalos.complete),true);
+        await offlinePage.locator('#mobile-game').selectOption('OMEGARUBY');
+        await offlinePage.locator('[data-mid="OMEGARUBY-05"] > summary').click();
+        assert.match(await offlinePage.locator('[data-mid="OMEGARUBY-05"] .route-details').innerText(),/Aura o Bruno entrega MO04 Fuerza/);
+        assert.equal(await offlinePage.evaluate(()=>PokemonCompletion.dexStatus({game:'OMEGARUBY',seen:PokemonHoennDex.required}).hoenn.complete),true);
+
 
 
         await offlinePage.locator('#file-diagnosis').setInputFiles({name:'synthetic-medals-offline.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(medalDiagnosis))});

@@ -14,7 +14,9 @@
   requirements:{national:range(649,[...mythicals4,494,647,648,649])}};
  const kalosData=typeof module==='object'&&module.exports?require('./kalos-dex.js'):root.PokemonKalosDex;
  const xy={source:kalosData.requirementsSource,requirements:{kalos:kalosData.required},field:'seen'};
- const definitions={FIRERED:frlg,LEAFGREEN:frlg,DIAMOND:dp,PEARL:dp,PLATINUM:platinum,HEARTGOLD:hgss,SOULSILVER:hgss,BLACK:unova,WHITE:unova,BLACK2:unova,WHITE2:unova,X:xy,Y:xy};
+ const hoennData=typeof module==='object'&&module.exports?require('./hoenn-dex.js'):root.PokemonHoennDex;
+ const oras={source:hoennData.requirementsSource,requirements:{hoenn:hoennData.required},field:'seen'};
+ const definitions={FIRERED:frlg,LEAFGREEN:frlg,DIAMOND:dp,PEARL:dp,PLATINUM:platinum,HEARTGOLD:hgss,SOULSILVER:hgss,BLACK:unova,WHITE:unova,BLACK2:unova,WHITE2:unova,X:xy,Y:xy,OMEGARUBY:oras,ALPHASAPPHIRE:oras};
  function dexStatus(d){
   const definition=definitions[d?.game];
   if(!definition)return null;

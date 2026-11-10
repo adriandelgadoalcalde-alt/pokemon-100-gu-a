@@ -74,8 +74,8 @@ flags y la validación natural del guardado tienen su propia revisión técnica.
 | 5 | Blanco 2 | 16 | 16 | En revisión |
 | 6 | X | 12 | 12 | En revisión |
 | 6 | Y | 12 | 12 | En revisión |
-| 6 | Rubí Omega | 16 | 2 | En revisión |
-| 6 | Zafiro Alfa | 16 | 2 | En revisión |
+| 6 | Rubí Omega | 16 | 16 | En revisión |
+| 6 | Zafiro Alfa | 16 | 16 | En revisión |
 | 7 | Sol | 10 | 2 | En revisión |
 | 7 | Luna | 10 | 2 | En revisión |
 | 7 | Ultrasol | 12 | 2 | En revisión |
@@ -132,3 +132,8 @@ X/Y añade diez rutas y 59 instrucciones, conservando las dos del postgame. Las
 doce misiones de cada edición tienen ampliación; falta todavía el inventario
 exhaustivo. La comparación de Kalos usa 450 especies vistas y valida ese campo de
 forma independiente de los obtenidos. Véase `research/routes/kalos.md`.
+
+Los remakes de Hoenn añaden catorce recorridos y 87 instrucciones a las dos entradas
+del Episodio Delta. Las dieciséis misiones actuales por edición tienen ampliación;
+los inventarios y mapas aún siguen en revisión. El reconocimiento regional compara
+208 especies vistas, sin acreditar premios de captura. Véase `research/routes/oras.md`.
