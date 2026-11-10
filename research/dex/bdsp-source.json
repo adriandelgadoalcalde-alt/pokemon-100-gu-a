@@ -1,0 +1,39 @@
+{
+  "repository": "shatter9652/uDPR",
+  "revision": "becc1c369460026fbd33ca28d83e8c18d3e30526",
+  "description": "Public community reconstruction of Brilliant Diamond 1.3.0 C# logic; not an independently executed retail binary.",
+  "files": [
+    {
+      "source": "https://raw.githubusercontent.com/shatter9652/uDPR/becc1c369460026fbd33ca28d83e8c18d3e30526/Assets/Scripts/Game/ZukanWork.cs",
+      "sha256": "96b42748d56f51ace854afeb84e41a50e2fab453b279c6037b5e353da3876f77"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/shatter9652/uDPR/becc1c369460026fbd33ca28d83e8c18d3e30526/Assets/Scripts/Game/PlayerWork.cs",
+      "sha256": "d221f0d9357d174e8b8af59be9c110a76f652250ae98ffcd394379215fac59f9"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/shatter9652/uDPR/becc1c369460026fbd33ca28d83e8c18d3e30526/Assets/Scripts/Game/Dpr/EvScript/EvDataManager.cs",
+      "sha256": "a4693db789df59d6e377aaa3846787f1026db6410642f342b3a49a9a24af0fd8"
+    }
+  ],
+  "nationalExclusions": [
+    151,
+    249,
+    250,
+    251,
+    385,
+    386,
+    489,
+    490,
+    491,
+    492,
+    493
+  ],
+  "requiredNationalRegistered": 482,
+  "reading": "CheckZenkokuZukanCompGet excludes eleven IDs; PlayerWork.GetTrainerRank calls that check. The full game check also requires the Pokedex/National unlock flags. This application compares the species list only and does not infer a star or award.",
+  "crossChecks": [
+    "https://bulbapedia.bulbagarden.net/wiki/Trainer_Card_level#Brilliant_Diamond_and_Shining_Pearl",
+    "https://bulbapedia.bulbagarden.net/wiki/Diploma"
+  ],
+  "reviewedAt": "2026-11-10"
+}
