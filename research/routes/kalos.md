@@ -68,3 +68,8 @@ igual total, especies solo obtenidas, ausencia de vistas e integridad del campo
 incorrecto. La interfaz se comprueba en ambos motores para X e Y, mostrando las
 vistas de Kalos, las rutas concretas y el cálculo sin origen disponible. La prueba
 WebKit no sustituye una prueba en Safari de un iPad físico.
+
+La verificación remota anterior agotó diez minutos descargando paquetes desde el
+espejo Ubuntu de Azure, antes de arrancar los navegadores del contrato PKHeX. El
+workflow selecciona ahora el archivo oficial de Ubuntu mediante HTTPS para evitar
+ese cuello de botella; conserva el límite de tiempo y todas las comprobaciones.
