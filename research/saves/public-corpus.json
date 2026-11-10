@@ -1,0 +1,1459 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-10",
+  "engineCommit": "96e33e7432d900e5345afdfd117eabfac43f5bbd",
+  "scope": "Publicly shared save containers; origin and natural event completion are not certified.",
+  "samples": [
+    {
+      "id": "community-declared-bf8002375cac",
+      "repository": "Bl1ndBeholder/pokemon-saves",
+      "commit": "234cf954b1eba905448996499ac862178b697911",
+      "sourcePath": "alpha-sapphire/011020252224",
+      "provenance": "community-declared",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Bl1ndBeholder/pokemon-saves/234cf954b1eba905448996499ac862178b697911/alpha-sapphire/011020252224",
+        "bytes": 483328,
+        "sha256": "3f0235917e77006fd112f3f64d87a1e2e2768309b0adfe3fca587adb52fbedbe",
+        "kind": "raw"
+      },
+      "fileBytes": 483328,
+      "fileSha256": "3f0235917e77006fd112f3f64d87a1e2e2768309b0adfe3fca587adb52fbedbe",
+      "expected": {
+        "core": "rejected",
+        "browser": "rejected",
+        "rejection": "unrecognized"
+      }
+    },
+    {
+      "id": "community-declared-720d1c45adb7",
+      "repository": "Bl1ndBeholder/pokemon-saves",
+      "commit": "234cf954b1eba905448996499ac862178b697911",
+      "sourcePath": "emerald/011020251345.sav",
+      "provenance": "community-declared",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Bl1ndBeholder/pokemon-saves/234cf954b1eba905448996499ac862178b697911/emerald/011020251345.sav",
+        "bytes": 131088,
+        "sha256": "e88d19392f23c0df2b4d6a817d9aa244defd6271189aad4aacb87272f9e199b2",
+        "kind": "raw"
+      },
+      "fileBytes": 131088,
+      "fileSha256": "e88d19392f23c0df2b4d6a817d9aa244defd6271189aad4aacb87272f9e199b2",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "EMERALD",
+        "candidates": [
+          "EMERALD"
+        ],
+        "format": "SAV3E",
+        "generation": 3
+      }
+    },
+    {
+      "id": "community-declared-729adddcd67c",
+      "repository": "Bl1ndBeholder/pokemon-saves",
+      "commit": "234cf954b1eba905448996499ac862178b697911",
+      "sourcePath": "moon/011020252224",
+      "provenance": "community-declared",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Bl1ndBeholder/pokemon-saves/234cf954b1eba905448996499ac862178b697911/moon/011020252224",
+        "bytes": 441856,
+        "sha256": "6b520076a2a3f937a784e458274b7b3df5749fd1fd13d6cd7355600affa2493d",
+        "kind": "raw"
+      },
+      "fileBytes": 441856,
+      "fileSha256": "6b520076a2a3f937a784e458274b7b3df5749fd1fd13d6cd7355600affa2493d",
+      "expected": {
+        "core": "rejected",
+        "browser": "rejected",
+        "rejection": "unrecognized"
+      }
+    },
+    {
+      "id": "community-declared-fca9723710c3",
+      "repository": "Bl1ndBeholder/pokemon-saves",
+      "commit": "234cf954b1eba905448996499ac862178b697911",
+      "sourcePath": "moon/011020252257",
+      "provenance": "community-declared",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Bl1ndBeholder/pokemon-saves/234cf954b1eba905448996499ac862178b697911/moon/011020252257",
+        "bytes": 441856,
+        "sha256": "0928edb328f421aab0503c95c97cf0f0e131ce2e0ae55d094a6d440e0c2deb40",
+        "kind": "raw"
+      },
+      "fileBytes": 441856,
+      "fileSha256": "0928edb328f421aab0503c95c97cf0f0e131ce2e0ae55d094a6d440e0c2deb40",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "MOON",
+        "candidates": [
+          "MOON"
+        ],
+        "format": "SAV7SM",
+        "generation": 7
+      }
+    },
+    {
+      "id": "community-declared-edb419f7c876",
+      "repository": "Bl1ndBeholder/pokemon-saves",
+      "commit": "234cf954b1eba905448996499ac862178b697911",
+      "sourcePath": "moon/021020252230",
+      "provenance": "community-declared",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Bl1ndBeholder/pokemon-saves/234cf954b1eba905448996499ac862178b697911/moon/021020252230",
+        "bytes": 441856,
+        "sha256": "0928edb328f421aab0503c95c97cf0f0e131ce2e0ae55d094a6d440e0c2deb40",
+        "kind": "raw"
+      },
+      "fileBytes": 441856,
+      "fileSha256": "0928edb328f421aab0503c95c97cf0f0e131ce2e0ae55d094a6d440e0c2deb40",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "MOON",
+        "candidates": [
+          "MOON"
+        ],
+        "format": "SAV7SM",
+        "generation": 7
+      }
+    },
+    {
+      "id": "community-declared-d02be51c0563",
+      "repository": "Bl1ndBeholder/pokemon-saves",
+      "commit": "234cf954b1eba905448996499ac862178b697911",
+      "sourcePath": "moon/031020250637",
+      "provenance": "community-declared",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Bl1ndBeholder/pokemon-saves/234cf954b1eba905448996499ac862178b697911/moon/031020250637",
+        "bytes": 441856,
+        "sha256": "6b520076a2a3f937a784e458274b7b3df5749fd1fd13d6cd7355600affa2493d",
+        "kind": "raw"
+      },
+      "fileBytes": 441856,
+      "fileSha256": "6b520076a2a3f937a784e458274b7b3df5749fd1fd13d6cd7355600affa2493d",
+      "expected": {
+        "core": "rejected",
+        "browser": "rejected",
+        "rejection": "unrecognized"
+      }
+    },
+    {
+      "id": "community-declared-a19355f16a97",
+      "repository": "Bl1ndBeholder/pokemon-saves",
+      "commit": "234cf954b1eba905448996499ac862178b697911",
+      "sourcePath": "omega-ruby/011020252224",
+      "provenance": "community-declared",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Bl1ndBeholder/pokemon-saves/234cf954b1eba905448996499ac862178b697911/omega-ruby/011020252224",
+        "bytes": 483328,
+        "sha256": "2f55deb649e22d33917fa93b7f3c4693eb93cd46df06cb3b77a6a2e5c1bc4fc2",
+        "kind": "raw"
+      },
+      "fileBytes": 483328,
+      "fileSha256": "2f55deb649e22d33917fa93b7f3c4693eb93cd46df06cb3b77a6a2e5c1bc4fc2",
+      "expected": {
+        "core": "rejected",
+        "browser": "rejected",
+        "rejection": "unrecognized"
+      }
+    },
+    {
+      "id": "community-declared-875cb881f071",
+      "repository": "Bl1ndBeholder/pokemon-saves",
+      "commit": "234cf954b1eba905448996499ac862178b697911",
+      "sourcePath": "sun/011020252224",
+      "provenance": "community-declared",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Bl1ndBeholder/pokemon-saves/234cf954b1eba905448996499ac862178b697911/sun/011020252224",
+        "bytes": 441856,
+        "sha256": "98e330c3afa424256e00ca222447c518df0e2cb830746b05dcdbe331d22e7661",
+        "kind": "raw"
+      },
+      "fileBytes": 441856,
+      "fileSha256": "98e330c3afa424256e00ca222447c518df0e2cb830746b05dcdbe331d22e7661",
+      "expected": {
+        "core": "rejected",
+        "browser": "rejected",
+        "rejection": "unrecognized"
+      }
+    },
+    {
+      "id": "community-declared-05883f151ab2",
+      "repository": "Bl1ndBeholder/pokemon-saves",
+      "commit": "234cf954b1eba905448996499ac862178b697911",
+      "sourcePath": "ultra-moon/011020252224",
+      "provenance": "community-declared",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Bl1ndBeholder/pokemon-saves/234cf954b1eba905448996499ac862178b697911/ultra-moon/011020252224",
+        "bytes": 445440,
+        "sha256": "f670ec35a7481a0db783a4838dede7fa28f82484a3eac8042deb57f3dba8e432",
+        "kind": "raw"
+      },
+      "fileBytes": 445440,
+      "fileSha256": "f670ec35a7481a0db783a4838dede7fa28f82484a3eac8042deb57f3dba8e432",
+      "expected": {
+        "core": "read",
+        "browser": "read",
+        "game": "ULTRAMOON",
+        "candidates": [
+          "ULTRAMOON"
+        ],
+        "format": "SAV7USUM",
+        "generation": 7
+      }
+    },
+    {
+      "id": "community-declared-f047509e081c",
+      "repository": "Bl1ndBeholder/pokemon-saves",
+      "commit": "234cf954b1eba905448996499ac862178b697911",
+      "sourcePath": "ultra-sun/011020252224",
+      "provenance": "community-declared",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Bl1ndBeholder/pokemon-saves/234cf954b1eba905448996499ac862178b697911/ultra-sun/011020252224",
+        "bytes": 445440,
+        "sha256": "bf4d8fff68d51246797923303c0ac9fe4d2de5e2b892e5ef04a7e8993623c20d",
+        "kind": "raw"
+      },
+      "fileBytes": 445440,
+      "fileSha256": "bf4d8fff68d51246797923303c0ac9fe4d2de5e2b892e5ef04a7e8993623c20d",
+      "expected": {
+        "core": "read",
+        "browser": "read",
+        "game": "ULTRASUN",
+        "candidates": [
+          "ULTRASUN"
+        ],
+        "format": "SAV7USUM",
+        "generation": 7
+      }
+    },
+    {
+      "id": "community-declared-ad1c157c8e1a",
+      "repository": "Bl1ndBeholder/pokemon-saves",
+      "commit": "234cf954b1eba905448996499ac862178b697911",
+      "sourcePath": "x/011020252224",
+      "provenance": "community-declared",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Bl1ndBeholder/pokemon-saves/234cf954b1eba905448996499ac862178b697911/x/011020252224",
+        "bytes": 415232,
+        "sha256": "6023e00e0c1d44c28a750414edfeaea609b8c9e277b674a858f04a18d0b7e346",
+        "kind": "raw"
+      },
+      "fileBytes": 415232,
+      "fileSha256": "6023e00e0c1d44c28a750414edfeaea609b8c9e277b674a858f04a18d0b7e346",
+      "expected": {
+        "core": "read",
+        "browser": "read",
+        "game": "X",
+        "candidates": [
+          "X"
+        ],
+        "format": "SAV6XY",
+        "generation": 6
+      }
+    },
+    {
+      "id": "community-declared-0e1326a53b15",
+      "repository": "Bl1ndBeholder/pokemon-saves",
+      "commit": "234cf954b1eba905448996499ac862178b697911",
+      "sourcePath": "y/011020252224",
+      "provenance": "community-declared",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Bl1ndBeholder/pokemon-saves/234cf954b1eba905448996499ac862178b697911/y/011020252224",
+        "bytes": 415232,
+        "sha256": "454f42b03e3c7db6c829d351a12460e050ac10fd61d7ab85c3a9135a148beb49",
+        "kind": "raw"
+      },
+      "fileBytes": 415232,
+      "fileSha256": "454f42b03e3c7db6c829d351a12460e050ac10fd61d7ab85c3a9135a148beb49",
+      "expected": {
+        "core": "rejected",
+        "browser": "rejected",
+        "rejection": "unrecognized"
+      }
+    },
+    {
+      "id": "prepared-dex-60b1612f29eb",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 1 - Blue (ENG) (Cart or Emu).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%201%20-%20Blue%20%28ENG%29%20%28Cart%20or%20Emu%29.sav",
+        "bytes": 32768,
+        "sha256": "e1693d2fc8b3e9d0363bba4452efa41ef2b06aacab046baff5dc732f0ec49075",
+        "kind": "raw"
+      },
+      "fileBytes": 32768,
+      "fileSha256": "e1693d2fc8b3e9d0363bba4452efa41ef2b06aacab046baff5dc732f0ec49075",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": null,
+        "candidates": [
+          "RED",
+          "BLUE"
+        ],
+        "format": "SAV1",
+        "generation": 1
+      }
+    },
+    {
+      "id": "prepared-dex-d0411c2c8992",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 1 - Red (ENG) (Cart or Emu).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%201%20-%20Red%20%28ENG%29%20%28Cart%20or%20Emu%29.sav",
+        "bytes": 32768,
+        "sha256": "d4eb074f095c1624a5d5129ad36d6998adc1c84c040b89acc594d7a7bf6847c2",
+        "kind": "raw"
+      },
+      "fileBytes": 32768,
+      "fileSha256": "d4eb074f095c1624a5d5129ad36d6998adc1c84c040b89acc594d7a7bf6847c2",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": null,
+        "candidates": [
+          "RED",
+          "BLUE"
+        ],
+        "format": "SAV1",
+        "generation": 1
+      }
+    },
+    {
+      "id": "prepared-dex-32b31bd0b2fa",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 1 - Yellow (ENG) (Cart or Emu).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%201%20-%20Yellow%20%28ENG%29%20%28Cart%20or%20Emu%29.sav",
+        "bytes": 32768,
+        "sha256": "405f66fec2ba3c9fbf7baf8ebcc371556dc6d9210cc88bf4b621588d33d23627",
+        "kind": "raw"
+      },
+      "fileBytes": 32768,
+      "fileSha256": "405f66fec2ba3c9fbf7baf8ebcc371556dc6d9210cc88bf4b621588d33d23627",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "YELLOW",
+        "candidates": [
+          "YELLOW"
+        ],
+        "format": "SAV1",
+        "generation": 1
+      }
+    },
+    {
+      "id": "prepared-dex-e0c139cbc3b1",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 2 - Crystal (ENG) (Cart or Emu).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%202%20-%20Crystal%20%28ENG%29%20%28Cart%20or%20Emu%29.sav",
+        "bytes": 32768,
+        "sha256": "bec274d12669de63e411e3255d18f525ed26a85a65def1ce02683637af482d0a",
+        "kind": "raw"
+      },
+      "fileBytes": 32768,
+      "fileSha256": "bec274d12669de63e411e3255d18f525ed26a85a65def1ce02683637af482d0a",
+      "expected": {
+        "core": "rejected",
+        "browser": "rejected",
+        "rejection": "integrity"
+      }
+    },
+    {
+      "id": "prepared-dex-af415d2b6dcf",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 2 - Gold (ENG) (Cart or Emu).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%202%20-%20Gold%20%28ENG%29%20%28Cart%20or%20Emu%29.sav",
+        "bytes": 32768,
+        "sha256": "e381aed935a58394b67cc13b208816527fedd53ad9373b2e691d1aa62cf72ee7",
+        "kind": "raw"
+      },
+      "fileBytes": 32768,
+      "fileSha256": "e381aed935a58394b67cc13b208816527fedd53ad9373b2e691d1aa62cf72ee7",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": null,
+        "candidates": [
+          "GOLD",
+          "SILVER"
+        ],
+        "format": "SAV2",
+        "generation": 2
+      }
+    },
+    {
+      "id": "prepared-dex-621c4fa6c182",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 2 - Silver (ENG) (Cart or Emu).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%202%20-%20Silver%20%28ENG%29%20%28Cart%20or%20Emu%29.sav",
+        "bytes": 32768,
+        "sha256": "7167d237402565221cddf9eb30f395f229866688c66517b13b686248f408a5ac",
+        "kind": "raw"
+      },
+      "fileBytes": 32768,
+      "fileSha256": "7167d237402565221cddf9eb30f395f229866688c66517b13b686248f408a5ac",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": null,
+        "candidates": [
+          "GOLD",
+          "SILVER"
+        ],
+        "format": "SAV2",
+        "generation": 2
+      }
+    },
+    {
+      "id": "prepared-dex-eb86a26770cf",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 3 - Emerald (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%203%20-%20Emerald%20%28ENG%29.sav",
+        "bytes": 131072,
+        "sha256": "cb37606010ce37f6ea0aea14a3d158e1ac63a42b86385a7c3350b0b6837aee18",
+        "kind": "raw"
+      },
+      "fileBytes": 131072,
+      "fileSha256": "cb37606010ce37f6ea0aea14a3d158e1ac63a42b86385a7c3350b0b6837aee18",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "EMERALD",
+        "candidates": [
+          "EMERALD"
+        ],
+        "format": "SAV3E",
+        "generation": 3
+      }
+    },
+    {
+      "id": "prepared-dex-8ee929caaa55",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 3 - FireRed (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%203%20-%20FireRed%20%28ENG%29.sav",
+        "bytes": 131072,
+        "sha256": "d9c73e6a262b941ec4438e59b7470073c7c9ca6de78e81b90961d3341b16e768",
+        "kind": "raw"
+      },
+      "fileBytes": 131072,
+      "fileSha256": "d9c73e6a262b941ec4438e59b7470073c7c9ca6de78e81b90961d3341b16e768",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": null,
+        "candidates": [
+          "FIRERED",
+          "LEAFGREEN"
+        ],
+        "format": "SAV3FRLG",
+        "generation": 3
+      }
+    },
+    {
+      "id": "prepared-dex-4c1747945739",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 3 - LeafGreen (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%203%20-%20LeafGreen%20%28ENG%29.sav",
+        "bytes": 131072,
+        "sha256": "b9e768ea960da29710b023685144c80a0f7bd7eb758a72632d4d0be49a1ff3a7",
+        "kind": "raw"
+      },
+      "fileBytes": 131072,
+      "fileSha256": "b9e768ea960da29710b023685144c80a0f7bd7eb758a72632d4d0be49a1ff3a7",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": null,
+        "candidates": [
+          "FIRERED",
+          "LEAFGREEN"
+        ],
+        "format": "SAV3FRLG",
+        "generation": 3
+      }
+    },
+    {
+      "id": "prepared-dex-20fa8137790e",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 3 - Ruby (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%203%20-%20Ruby%20%28ENG%29.sav",
+        "bytes": 131072,
+        "sha256": "1b63efb4bce00dac139048e6e37c1bb704d34511667905c8648e0ec55b27cf48",
+        "kind": "raw"
+      },
+      "fileBytes": 131072,
+      "fileSha256": "1b63efb4bce00dac139048e6e37c1bb704d34511667905c8648e0ec55b27cf48",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": null,
+        "candidates": [
+          "RUBY",
+          "SAPPHIRE"
+        ],
+        "format": "SAV3RS",
+        "generation": 3
+      }
+    },
+    {
+      "id": "prepared-dex-cada40bcb6b5",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 3 - Sapphire (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%203%20-%20Sapphire%20%28ENG%29.sav",
+        "bytes": 131072,
+        "sha256": "616a251893d56a73f977abc40dbbe805fe04b67750822b4b6aa0b023685b56b8",
+        "kind": "raw"
+      },
+      "fileBytes": 131072,
+      "fileSha256": "616a251893d56a73f977abc40dbbe805fe04b67750822b4b6aa0b023685b56b8",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": null,
+        "candidates": [
+          "RUBY",
+          "SAPPHIRE"
+        ],
+        "format": "SAV3RS",
+        "generation": 3
+      }
+    },
+    {
+      "id": "prepared-dex-1701f1c78744",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 4 - Pokemon Diamond (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%204%20-%20Pokemon%20Diamond%20%28ENG%29.sav",
+        "bytes": 524288,
+        "sha256": "b1300bfd650a6eb8e8c944e34b56278ac0cfe029a86c5b8fba36e54d01fcf904",
+        "kind": "raw"
+      },
+      "fileBytes": 524288,
+      "fileSha256": "b1300bfd650a6eb8e8c944e34b56278ac0cfe029a86c5b8fba36e54d01fcf904",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": null,
+        "candidates": [
+          "DIAMOND",
+          "PEARL"
+        ],
+        "format": "SAV4DP",
+        "generation": 4
+      }
+    },
+    {
+      "id": "prepared-dex-56b6722479bb",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 4 - Pokemon HeartGold (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%204%20-%20Pokemon%20HeartGold%20%28ENG%29.sav",
+        "bytes": 524288,
+        "sha256": "6f70eb0ee066b6a108de7c0d586f844f59bf81ec2cf8a580c9bdfc1bf8008eaf",
+        "kind": "raw"
+      },
+      "fileBytes": 524288,
+      "fileSha256": "6f70eb0ee066b6a108de7c0d586f844f59bf81ec2cf8a580c9bdfc1bf8008eaf",
+      "expected": {
+        "core": "read",
+        "browser": "read",
+        "game": "HEARTGOLD",
+        "candidates": [
+          "HEARTGOLD"
+        ],
+        "format": "SAV4HGSS",
+        "generation": 4
+      }
+    },
+    {
+      "id": "prepared-dex-e3372086d407",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 4 - Pokemon Pearl (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%204%20-%20Pokemon%20Pearl%20%28ENG%29.sav",
+        "bytes": 524288,
+        "sha256": "e7fce112a3f8dc89026c09ee0c3766222b02101e8c6cd38d45b72a120884ee75",
+        "kind": "raw"
+      },
+      "fileBytes": 524288,
+      "fileSha256": "e7fce112a3f8dc89026c09ee0c3766222b02101e8c6cd38d45b72a120884ee75",
+      "expected": {
+        "core": "rejected",
+        "browser": "rejected",
+        "rejection": "integrity"
+      }
+    },
+    {
+      "id": "prepared-dex-5d9e947d7f10",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 4 - Pokemon Platinum (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%204%20-%20Pokemon%20Platinum%20%28ENG%29.sav",
+        "bytes": 524288,
+        "sha256": "cf6302f1200afe2a3ecba2e2154ae1375a2a2ba54e0ca9586e7bbe3d0447f1c1",
+        "kind": "raw"
+      },
+      "fileBytes": 524288,
+      "fileSha256": "cf6302f1200afe2a3ecba2e2154ae1375a2a2ba54e0ca9586e7bbe3d0447f1c1",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "PLATINUM",
+        "candidates": [
+          "PLATINUM"
+        ],
+        "format": "SAV4Pt",
+        "generation": 4
+      }
+    },
+    {
+      "id": "prepared-dex-55b118fd6194",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 4 - Pokemon SoulSilver (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%204%20-%20Pokemon%20SoulSilver%20%28ENG%29.sav",
+        "bytes": 524288,
+        "sha256": "6182d4f5369c02929ee8a7d0aa1953f2ae36b8ce82cbdebfb6ddb31345c950db",
+        "kind": "raw"
+      },
+      "fileBytes": 524288,
+      "fileSha256": "6182d4f5369c02929ee8a7d0aa1953f2ae36b8ce82cbdebfb6ddb31345c950db",
+      "expected": {
+        "core": "read",
+        "browser": "read",
+        "game": "SOULSILVER",
+        "candidates": [
+          "SOULSILVER"
+        ],
+        "format": "SAV4HGSS",
+        "generation": 4
+      }
+    },
+    {
+      "id": "prepared-dex-297b6d4d5662",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 5 - Pokemon Black (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%205%20-%20Pokemon%20Black%20%28ENG%29.sav",
+        "bytes": 524288,
+        "sha256": "5038a171862ba7d5c797cdbbd75bd77e77698a64c97d784f47337e873030fabb",
+        "kind": "raw"
+      },
+      "fileBytes": 524288,
+      "fileSha256": "5038a171862ba7d5c797cdbbd75bd77e77698a64c97d784f47337e873030fabb",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "BLACK",
+        "candidates": [
+          "BLACK"
+        ],
+        "format": "SAV5BW",
+        "generation": 5
+      }
+    },
+    {
+      "id": "prepared-dex-b8f54c45f174",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 5 - Pokemon Black 2 (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%205%20-%20Pokemon%20Black%202%20%28ENG%29.sav",
+        "bytes": 524288,
+        "sha256": "25b0007d58202fba721a67f876f72f9855915758651e9caa3607a8245cdc0233",
+        "kind": "raw"
+      },
+      "fileBytes": 524288,
+      "fileSha256": "25b0007d58202fba721a67f876f72f9855915758651e9caa3607a8245cdc0233",
+      "expected": {
+        "core": "read",
+        "browser": "read",
+        "game": "BLACK2",
+        "candidates": [
+          "BLACK2"
+        ],
+        "format": "SAV5B2W2",
+        "generation": 5
+      }
+    },
+    {
+      "id": "prepared-dex-8314831f9e4c",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 5 - Pokemon White (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%205%20-%20Pokemon%20White%20%28ENG%29.sav",
+        "bytes": 524288,
+        "sha256": "23aa2e01c786dd67e88c2011061076668d7d8907034db382ab1545123c5ae489",
+        "kind": "raw"
+      },
+      "fileBytes": 524288,
+      "fileSha256": "23aa2e01c786dd67e88c2011061076668d7d8907034db382ab1545123c5ae489",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "WHITE",
+        "candidates": [
+          "WHITE"
+        ],
+        "format": "SAV5BW",
+        "generation": 5
+      }
+    },
+    {
+      "id": "prepared-dex-5e28dc9dcbe8",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 5 - Pokemon White 2 (ENG).sav",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%205%20-%20Pokemon%20White%202%20%28ENG%29.sav",
+        "bytes": 524288,
+        "sha256": "de930d61ba3cb92ef193790c1ba71d84ab6d6613b28bb5993a4ee5ee0b11f322",
+        "kind": "raw"
+      },
+      "fileBytes": 524288,
+      "fileSha256": "de930d61ba3cb92ef193790c1ba71d84ab6d6613b28bb5993a4ee5ee0b11f322",
+      "expected": {
+        "core": "read",
+        "browser": "read",
+        "game": "WHITE2",
+        "candidates": [
+          "WHITE2"
+        ],
+        "format": "SAV5B2W2",
+        "generation": 5
+      }
+    },
+    {
+      "id": "prepared-dex-f7f1e4fc5a8c",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 6 - Alpha Sapphire (ENG)/main",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%206%20-%20Alpha%20Sapphire%20%28ENG%29/main",
+        "bytes": 483328,
+        "sha256": "c901d1cab27fee1220edfd7cb5e6f5abf017d46af435b0f1a71b0a5e90da78a3",
+        "kind": "raw"
+      },
+      "fileBytes": 483328,
+      "fileSha256": "c901d1cab27fee1220edfd7cb5e6f5abf017d46af435b0f1a71b0a5e90da78a3",
+      "expected": {
+        "core": "read",
+        "browser": "read",
+        "game": "ALPHASAPPHIRE",
+        "candidates": [
+          "ALPHASAPPHIRE"
+        ],
+        "format": "SAV6AO",
+        "generation": 6
+      }
+    },
+    {
+      "id": "prepared-dex-0d9480d622b3",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 6 - Omega Ruby (ENG)/main",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%206%20-%20Omega%20Ruby%20%28ENG%29/main",
+        "bytes": 483328,
+        "sha256": "0dcbe0ea1eb5d8fa20b0d8f394ff3aa271311bface1908b36f15f8c590b3590a",
+        "kind": "raw"
+      },
+      "fileBytes": 483328,
+      "fileSha256": "0dcbe0ea1eb5d8fa20b0d8f394ff3aa271311bface1908b36f15f8c590b3590a",
+      "expected": {
+        "core": "read",
+        "browser": "read",
+        "game": "OMEGARUBY",
+        "candidates": [
+          "OMEGARUBY"
+        ],
+        "format": "SAV6AO",
+        "generation": 6
+      }
+    },
+    {
+      "id": "prepared-dex-04b3e1cfee4b",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 6 - X (ENG)/main",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%206%20-%20X%20%28ENG%29/main",
+        "bytes": 415232,
+        "sha256": "49f0fa464909bbbd4dc509e4ba009ba10f67940548c157dab1fba43b72124544",
+        "kind": "raw"
+      },
+      "fileBytes": 415232,
+      "fileSha256": "49f0fa464909bbbd4dc509e4ba009ba10f67940548c157dab1fba43b72124544",
+      "expected": {
+        "core": "read",
+        "browser": "read",
+        "game": "X",
+        "candidates": [
+          "X"
+        ],
+        "format": "SAV6XY",
+        "generation": 6
+      }
+    },
+    {
+      "id": "prepared-dex-71f65dc5bc8a",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 6 - Y (ENG)/main",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%206%20-%20Y%20%28ENG%29/main",
+        "bytes": 415232,
+        "sha256": "d46a1da5626f94d4388c4b74540f7c2a29c1b061838174d650398b2625c19de9",
+        "kind": "raw"
+      },
+      "fileBytes": 415232,
+      "fileSha256": "d46a1da5626f94d4388c4b74540f7c2a29c1b061838174d650398b2625c19de9",
+      "expected": {
+        "core": "read",
+        "browser": "read",
+        "game": "Y",
+        "candidates": [
+          "Y"
+        ],
+        "format": "SAV6XY",
+        "generation": 6
+      }
+    },
+    {
+      "id": "prepared-dex-c031b2710276",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 7 - Let's Go Eevee (ENG)/savedata.bin",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%207%20-%20Let%27s%20Go%20Eevee%20%28ENG%29/savedata.bin",
+        "bytes": 1048576,
+        "sha256": "b90def9d5299144ea71226a2dfb13c18a6419077ad491ba29873b50d6eb4b74e",
+        "kind": "raw"
+      },
+      "fileBytes": 1048576,
+      "fileSha256": "b90def9d5299144ea71226a2dfb13c18a6419077ad491ba29873b50d6eb4b74e",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "LETGOE",
+        "candidates": [
+          "LETGOE"
+        ],
+        "format": "SAV7b",
+        "generation": 7
+      }
+    },
+    {
+      "id": "prepared-dex-26e5e414e9ad",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 7 - Let's Go Pikachu (ENG)/savedata.bin",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%207%20-%20Let%27s%20Go%20Pikachu%20%28ENG%29/savedata.bin",
+        "bytes": 1048576,
+        "sha256": "8a1c221d223db8aea6d96db0e898b4346fc07d56e35d215a07fc68481eca59ee",
+        "kind": "raw"
+      },
+      "fileBytes": 1048576,
+      "fileSha256": "8a1c221d223db8aea6d96db0e898b4346fc07d56e35d215a07fc68481eca59ee",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "LETGOP",
+        "candidates": [
+          "LETGOP"
+        ],
+        "format": "SAV7b",
+        "generation": 7
+      }
+    },
+    {
+      "id": "prepared-dex-a53c7f14c76e",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 8 - SWSH (v1.0.0) (ENG)/main",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%208%20-%20SWSH%20%28v1.0.0%29%20%28ENG%29/main",
+        "bytes": 1513139,
+        "sha256": "0ae7cb9198de399a40d0336d0fbe7364ba8aa05e286dd7471fff06104bcd4776",
+        "kind": "raw"
+      },
+      "fileBytes": 1513139,
+      "fileSha256": "0ae7cb9198de399a40d0336d0fbe7364ba8aa05e286dd7471fff06104bcd4776",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "SWORD",
+        "candidates": [
+          "SWORD"
+        ],
+        "format": "SAV8SWSH",
+        "generation": 8
+      }
+    },
+    {
+      "id": "prepared-dex-703631444baa",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 8 - SWSH (v1.1.0) (ENG)/main",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%208%20-%20SWSH%20%28v1.1.0%29%20%28ENG%29/main",
+        "bytes": 1513822,
+        "sha256": "daaa01d951a186a32a419a72f16d3617845fd56dbe00b09c625ce8524091b2d5",
+        "kind": "raw"
+      },
+      "fileBytes": 1513822,
+      "fileSha256": "daaa01d951a186a32a419a72f16d3617845fd56dbe00b09c625ce8524091b2d5",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "SWORD",
+        "candidates": [
+          "SWORD"
+        ],
+        "format": "SAV8SWSH",
+        "generation": 8
+      }
+    },
+    {
+      "id": "prepared-dex-3291e5f4ee1f",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 8 - SWSH (v1.2.0) (ENG)/main",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%208%20-%20SWSH%20%28v1.2.0%29%20%28ENG%29/main",
+        "bytes": 1575705,
+        "sha256": "53df6395f1405dc0e5f2748bc5cdfcc0d8ac772c74e5558184566b3c93f0cb43",
+        "kind": "raw"
+      },
+      "fileBytes": 1575705,
+      "fileSha256": "53df6395f1405dc0e5f2748bc5cdfcc0d8ac772c74e5558184566b3c93f0cb43",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "SWORD",
+        "candidates": [
+          "SWORD"
+        ],
+        "format": "SAV8SWSH",
+        "generation": 8
+      }
+    },
+    {
+      "id": "prepared-dex-87797c5ba569",
+      "repository": "Xieon/XFork_ProjectCompleteDexSaves",
+      "commit": "4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a",
+      "sourcePath": "Gen 8 - SWSH (v1.3.0) (ENG)/main",
+      "provenance": "prepared-dex",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Xieon/XFork_ProjectCompleteDexSaves/4e4dbb57c9d3669c4c9ac71a9f6ec4aef3a80b4a/Gen%208%20-%20SWSH%20%28v1.3.0%29%20%28ENG%29/main",
+        "bytes": 1603176,
+        "sha256": "d38dcda5913fa325f19c750913989b3a0c07270f9f60ceae3be8918ed5822c19",
+        "kind": "raw"
+      },
+      "fileBytes": 1603176,
+      "fileSha256": "d38dcda5913fa325f19c750913989b3a0c07270f9f60ceae3be8918ed5822c19",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "SWORD",
+        "candidates": [
+          "SWORD"
+        ],
+        "format": "SAV8SWSH",
+        "generation": 8
+      }
+    },
+    {
+      "id": "public-nx-6e299b582e59",
+      "repository": "Viren070/NX_Saves",
+      "commit": "603dc50937246f08ed80670c1aa1d0c0607fa73d",
+      "sourcePath": "nintendo/switch/savegames/Pokemon Scarlet [English Post Game] [ZenKuma] [0100A3D008C5C000].zip",
+      "provenance": "public-archive-unverified",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Viren070/NX_Saves/603dc50937246f08ed80670c1aa1d0c0607fa73d/nintendo/switch/savegames/Pokemon%20Scarlet%20%5BEnglish%20Post%20Game%5D%20%5BZenKuma%5D%20%5B0100A3D008C5C000%5D.zip",
+        "bytes": 3253099,
+        "sha256": "5bb182f2a0bbd86e2981e68c8eeb75a80086d32c04d21a2baec81bc6cae962da",
+        "kind": "zip",
+        "member": "main"
+      },
+      "fileBytes": 3252957,
+      "fileSha256": "84d7d6e77fcf15c460d9288fa782e8f7f49c431025b4eb94576c25015b2ce156",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "SCARLET",
+        "candidates": [
+          "SCARLET"
+        ],
+        "format": "SAV9SV",
+        "generation": 9,
+        "paldeaSignal": true
+      }
+    },
+    {
+      "id": "public-nx-25a0d5e27d69",
+      "repository": "Viren070/NX_Saves",
+      "commit": "603dc50937246f08ed80670c1aa1d0c0607fa73d",
+      "sourcePath": "nintendo/switch/savegames/Pokemon Scarlet [Spanish Post Game] [ZenKuma] [0100A3D008C5C000].zip",
+      "provenance": "public-archive-unverified",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Viren070/NX_Saves/603dc50937246f08ed80670c1aa1d0c0607fa73d/nintendo/switch/savegames/Pokemon%20Scarlet%20%5BSpanish%20Post%20Game%5D%20%5BZenKuma%5D%20%5B0100A3D008C5C000%5D.zip",
+        "bytes": 3253099,
+        "sha256": "32b41da3416417ba45ae60778c1210da57f7fa549121e6689b45cb1571b2aeab",
+        "kind": "zip",
+        "member": "main"
+      },
+      "fileBytes": 3252957,
+      "fileSha256": "c14823adb03554bb7680a084233f7b6c3e682916a845779aa26b0aa6e4286bb4",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "SCARLET",
+        "candidates": [
+          "SCARLET"
+        ],
+        "format": "SAV9SV",
+        "generation": 9,
+        "paldeaSignal": true
+      }
+    },
+    {
+      "id": "public-nx-579e7851e5e6",
+      "repository": "Viren070/NX_Saves",
+      "commit": "603dc50937246f08ed80670c1aa1d0c0607fa73d",
+      "sourcePath": "nintendo/switch/savegames/Pokemon Shield [Boy DLC Super Starter] [ESP] [01008DB008C2C000] [001].zip",
+      "provenance": "public-archive-unverified",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Viren070/NX_Saves/603dc50937246f08ed80670c1aa1d0c0607fa73d/nintendo/switch/savegames/Pokemon%20Shield%20%5BBoy%20DLC%20Super%20Starter%5D%20%5BESP%5D%20%5B01008DB008C2C000%5D%20%5B001%5D.zip",
+        "bytes": 1603872,
+        "sha256": "342dc7775f664f2590ffa466f11dced8320a2c62eef0ef36ac0aa5207fa2b232",
+        "kind": "zip",
+        "member": "main"
+      },
+      "fileBytes": 1603146,
+      "fileSha256": "28151337291c2a6fc0e511058adcdade0cd2506c87e6a6f46f539be15c58c281",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "SHIELD",
+        "candidates": [
+          "SHIELD"
+        ],
+        "format": "SAV8SWSH",
+        "generation": 8
+      }
+    },
+    {
+      "id": "public-nx-f45674b8126c",
+      "repository": "Viren070/NX_Saves",
+      "commit": "603dc50937246f08ed80670c1aa1d0c0607fa73d",
+      "sourcePath": "nintendo/switch/savegames/Pokémon Legends Arceus [Completed, Max Items + Shiny & NonShiny Dex] [TRULY] [01001F5010DFA000].zip",
+      "provenance": "public-archive-unverified",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Viren070/NX_Saves/603dc50937246f08ed80670c1aa1d0c0607fa73d/nintendo/switch/savegames/Pok%C3%A9mon%20Legends%20Arceus%20%5BCompleted%2C%20Max%20Items%20%2B%20Shiny%20%26%20NonShiny%20Dex%5D%20%5BTRULY%5D%20%5B01001F5010DFA000%5D.zip",
+        "bytes": 1289750,
+        "sha256": "76156f79ee1e6f3bea1de403c8e57f210b7e661d0d9ffc09ed35a67f9e2c3790",
+        "kind": "zip",
+        "member": "main"
+      },
+      "fileBytes": 1289478,
+      "fileSha256": "c239ea41fd6884f7f3ae2d611373d61b6be24bf5004ab7ce3a563cc35b72e38a",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "ARCEUS",
+        "candidates": [
+          "ARCEUS"
+        ],
+        "format": "SAV8LA",
+        "generation": 8
+      }
+    },
+    {
+      "id": "public-nx-d1d8ec5db846",
+      "repository": "Viren070/NX_Saves",
+      "commit": "603dc50937246f08ed80670c1aa1d0c0607fa73d",
+      "sourcePath": "nintendo/switch/savegames/Pokémon Legends Arceus [Post-Trial Boy] [Ecchi] [01001F5010DFA000].zip",
+      "provenance": "public-archive-unverified",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Viren070/NX_Saves/603dc50937246f08ed80670c1aa1d0c0607fa73d/nintendo/switch/savegames/Pok%C3%A9mon%20Legends%20Arceus%20%5BPost-Trial%20Boy%5D%20%5BEcchi%5D%20%5B01001F5010DFA000%5D.zip",
+        "bytes": 1273900,
+        "sha256": "516fff66359dfcb1f50d7b20c5f35b544e9b4b28690c4698c9755449320e5667",
+        "kind": "zip",
+        "member": "main"
+      },
+      "fileBytes": 1273310,
+      "fileSha256": "5965c516fffc68f7b95649879c7a4fc765d0511e7a4ff8a5e9349155bdf466c7",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "ARCEUS",
+        "candidates": [
+          "ARCEUS"
+        ],
+        "format": "SAV8LA",
+        "generation": 8
+      }
+    },
+    {
+      "id": "public-fixture-58a46d9b7a85",
+      "repository": "realgarit/PKHeX-Avalonia",
+      "commit": "bf23d6b9e091b75a9a4c536dd27a6314431648ae",
+      "sourcePath": "Tests/savefiles/gen9a_legendsza.main",
+      "provenance": "public-software-test-fixture",
+      "download": {
+        "url": "https://raw.githubusercontent.com/realgarit/PKHeX-Avalonia/bf23d6b9e091b75a9a4c536dd27a6314431648ae/Tests/savefiles/gen9a_legendsza.main",
+        "bytes": 3093124,
+        "sha256": "77ae677445a74f43acf7d7c0d883a0a9b267fe901567aba61820217e634b91a6",
+        "kind": "raw"
+      },
+      "fileBytes": 3093124,
+      "fileSha256": "77ae677445a74f43acf7d7c0d883a0a9b267fe901567aba61820217e634b91a6",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "ZA",
+        "candidates": [
+          "ZA"
+        ],
+        "format": "SAV9ZA",
+        "generation": 9
+      }
+    },
+    {
+      "id": "public-fixture-35e0705a972a",
+      "repository": "realgarit/PKHeX-Avalonia",
+      "commit": "bf23d6b9e091b75a9a4c536dd27a6314431648ae",
+      "sourcePath": "Tests/savefiles/gen9_violet.main",
+      "provenance": "public-software-test-fixture",
+      "download": {
+        "url": "https://raw.githubusercontent.com/realgarit/PKHeX-Avalonia/bf23d6b9e091b75a9a4c536dd27a6314431648ae/Tests/savefiles/gen9_violet.main",
+        "bytes": 3251648,
+        "sha256": "531f7ad824fe4d51d67ac1583120aa2010f7e900558cf975885976139a8caeb5",
+        "kind": "raw"
+      },
+      "fileBytes": 3251648,
+      "fileSha256": "531f7ad824fe4d51d67ac1583120aa2010f7e900558cf975885976139a8caeb5",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "VIOLET",
+        "candidates": [
+          "VIOLET"
+        ],
+        "format": "SAV9SV",
+        "generation": 9
+      }
+    },
+    {
+      "id": "public-fixture-f33c01ffc89c",
+      "repository": "realgarit/PKHeX-Avalonia",
+      "commit": "bf23d6b9e091b75a9a4c536dd27a6314431648ae",
+      "sourcePath": "Tests/savefiles/gen9_violet_indigo_public.main",
+      "provenance": "public-software-test-fixture",
+      "download": {
+        "url": "https://raw.githubusercontent.com/realgarit/PKHeX-Avalonia/bf23d6b9e091b75a9a4c536dd27a6314431648ae/Tests/savefiles/gen9_violet_indigo_public.main",
+        "bytes": 4435308,
+        "sha256": "33a831fa5b8b729895e47bf74d48d5a391bb06467dbc7b49c5bcd82b9f293eae",
+        "kind": "raw"
+      },
+      "fileBytes": 4435308,
+      "fileSha256": "33a831fa5b8b729895e47bf74d48d5a391bb06467dbc7b49c5bcd82b9f293eae",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "VIOLET",
+        "candidates": [
+          "VIOLET"
+        ],
+        "format": "SAV9SV",
+        "generation": 9
+      }
+    },
+    {
+      "id": "public-fixture-1de819a6a3f0",
+      "repository": "realgarit/PKHeX-Avalonia",
+      "commit": "bf23d6b9e091b75a9a4c536dd27a6314431648ae",
+      "sourcePath": "Tests/savefiles/gen9_scarlet_teal_public.main",
+      "provenance": "public-software-test-fixture",
+      "download": {
+        "url": "https://raw.githubusercontent.com/realgarit/PKHeX-Avalonia/bf23d6b9e091b75a9a4c536dd27a6314431648ae/Tests/savefiles/gen9_scarlet_teal_public.main",
+        "bytes": 4406084,
+        "sha256": "8cd456dac6dc7b1bfeefcb4cb2486595b5c8f0b1def09fc116d3b75a0c120536",
+        "kind": "raw"
+      },
+      "fileBytes": 4406084,
+      "fileSha256": "8cd456dac6dc7b1bfeefcb4cb2486595b5c8f0b1def09fc116d3b75a0c120536",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "SCARLET",
+        "candidates": [
+          "SCARLET"
+        ],
+        "format": "SAV9SV",
+        "generation": 9
+      }
+    },
+    {
+      "id": "public-fixture-89301cef4454",
+      "repository": "realgarit/PKHeX-Avalonia",
+      "commit": "bf23d6b9e091b75a9a4c536dd27a6314431648ae",
+      "sourcePath": "Tests/savefiles/gen8a_legendsarceus.main",
+      "provenance": "public-software-test-fixture",
+      "download": {
+        "url": "https://raw.githubusercontent.com/realgarit/PKHeX-Avalonia/bf23d6b9e091b75a9a4c536dd27a6314431648ae/Tests/savefiles/gen8a_legendsarceus.main",
+        "bytes": 1273310,
+        "sha256": "6fb9c1dd707dc73d57cbd89a4ae477a8f2a1b6b0dbd12ba2f42a579c75151201",
+        "kind": "raw"
+      },
+      "fileBytes": 1273310,
+      "fileSha256": "6fb9c1dd707dc73d57cbd89a4ae477a8f2a1b6b0dbd12ba2f42a579c75151201",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "ARCEUS",
+        "candidates": [
+          "ARCEUS"
+        ],
+        "format": "SAV8LA",
+        "generation": 8
+      }
+    },
+    {
+      "id": "public-fixture-8306f8f0074e",
+      "repository": "realgarit/PKHeX-Avalonia",
+      "commit": "bf23d6b9e091b75a9a4c536dd27a6314431648ae",
+      "sourcePath": "Tests/savefiles/gen8_sword_ct_public.main",
+      "provenance": "public-software-test-fixture",
+      "download": {
+        "url": "https://raw.githubusercontent.com/realgarit/PKHeX-Avalonia/bf23d6b9e091b75a9a4c536dd27a6314431648ae/Tests/savefiles/gen8_sword_ct_public.main",
+        "bytes": 1603249,
+        "sha256": "b1dc081fe7f5a3f5e6e706646883bd065fbbf1792826ad2733d895465fb52654",
+        "kind": "raw"
+      },
+      "fileBytes": 1603249,
+      "fileSha256": "b1dc081fe7f5a3f5e6e706646883bd065fbbf1792826ad2733d895465fb52654",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "SHIELD",
+        "candidates": [
+          "SHIELD"
+        ],
+        "format": "SAV8SWSH",
+        "generation": 8
+      }
+    },
+    {
+      "id": "public-fixture-a1938d30cb32",
+      "repository": "realgarit/PKHeX-Avalonia",
+      "commit": "bf23d6b9e091b75a9a4c536dd27a6314431648ae",
+      "sourcePath": "Tests/savefiles/gen2_crystal.sav",
+      "provenance": "public-software-test-fixture",
+      "download": {
+        "url": "https://raw.githubusercontent.com/realgarit/PKHeX-Avalonia/bf23d6b9e091b75a9a4c536dd27a6314431648ae/Tests/savefiles/gen2_crystal.sav",
+        "bytes": 32816,
+        "sha256": "02f2dcaf51ae77178c78bf8e83c93aec68edb92899dc619825ceb7f64a04fdac",
+        "kind": "raw"
+      },
+      "fileBytes": 32816,
+      "fileSha256": "02f2dcaf51ae77178c78bf8e83c93aec68edb92899dc619825ceb7f64a04fdac",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "CRYSTAL",
+        "candidates": [
+          "CRYSTAL"
+        ],
+        "format": "SAV2",
+        "generation": 2
+      }
+    },
+    {
+      "id": "public-fixture-d4aa4f12355c",
+      "repository": "Chnapy/PKVault",
+      "commit": "8fb46c40524ca155d54e381ee88aa5dd1195c1e9",
+      "sourcePath": "Scripts/generate-convert-view/saves/G8 Pokemon Brilliant Diamond/SaveData.bin",
+      "provenance": "public-software-test-fixture",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Chnapy/PKVault/8fb46c40524ca155d54e381ee88aa5dd1195c1e9/Scripts/generate-convert-view/saves/G8%20Pokemon%20Brilliant%20Diamond/SaveData.bin",
+        "bytes": 973856,
+        "sha256": "ff4ccc2b63e33cc65e75feadc546acce240a3783661b8de32941426f403237fe",
+        "kind": "raw"
+      },
+      "fileBytes": 973856,
+      "fileSha256": "ff4ccc2b63e33cc65e75feadc546acce240a3783661b8de32941426f403237fe",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "BD",
+        "candidates": [
+          "BD"
+        ],
+        "format": "SAV8BS",
+        "generation": 8
+      }
+    },
+    {
+      "id": "public-fixture-f1327caa874f",
+      "repository": "Chnapy/PKVault",
+      "commit": "8fb46c40524ca155d54e381ee88aa5dd1195c1e9",
+      "sourcePath": "Scripts/generate-convert-view/saves/G8 Shining Pearl/SaveData.bin",
+      "provenance": "public-software-test-fixture",
+      "download": {
+        "url": "https://raw.githubusercontent.com/Chnapy/PKVault/8fb46c40524ca155d54e381ee88aa5dd1195c1e9/Scripts/generate-convert-view/saves/G8%20Shining%20Pearl/SaveData.bin",
+        "bytes": 973856,
+        "sha256": "9bca8488dec08c4cfe4e6e2c343dd0e74f2b711ae9a53536b3ae0516ef2af3bc",
+        "kind": "raw"
+      },
+      "fileBytes": 973856,
+      "fileSha256": "9bca8488dec08c4cfe4e6e2c343dd0e74f2b711ae9a53536b3ae0516ef2af3bc",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "SP",
+        "candidates": [
+          "SP"
+        ],
+        "format": "SAV8BS",
+        "generation": 8
+      }
+    },
+    {
+      "id": "public-fixture-5e7a733cdb23",
+      "repository": "codemonkey85/PKMDS-Blazor",
+      "commit": "47d31832aa1236ee4a845ab58e0f01d3c2bfa7e0",
+      "sourcePath": "TestFiles/Pokemon Heart Gold  (JP)old.sav",
+      "provenance": "public-software-test-fixture",
+      "download": {
+        "url": "https://raw.githubusercontent.com/codemonkey85/PKMDS-Blazor/47d31832aa1236ee4a845ab58e0f01d3c2bfa7e0/TestFiles/Pokemon%20Heart%20Gold%20%20%28JP%29old.sav",
+        "bytes": 524288,
+        "sha256": "78ae42e4ee2a494ae7d24c0fd5782211559ffdc64bf330b9103008829e183432",
+        "kind": "raw"
+      },
+      "fileBytes": 524288,
+      "fileSha256": "78ae42e4ee2a494ae7d24c0fd5782211559ffdc64bf330b9103008829e183432",
+      "expected": {
+        "core": "read",
+        "browser": "read",
+        "game": "HEARTGOLD",
+        "candidates": [
+          "HEARTGOLD"
+        ],
+        "format": "SAV4HGSS",
+        "generation": 4
+      }
+    },
+    {
+      "id": "public-fixture-2b000d0e5fd0",
+      "repository": "codemonkey85/PKMDS-Blazor",
+      "commit": "47d31832aa1236ee4a845ab58e0f01d3c2bfa7e0",
+      "sourcePath": "TestFiles/sun.sav",
+      "provenance": "public-software-test-fixture",
+      "download": {
+        "url": "https://raw.githubusercontent.com/codemonkey85/PKMDS-Blazor/47d31832aa1236ee4a845ab58e0f01d3c2bfa7e0/TestFiles/sun.sav",
+        "bytes": 441856,
+        "sha256": "44531d420b9ee696fc1734df89db8e129ab6435c1d90bf1cfacf69a4e941643a",
+        "kind": "raw"
+      },
+      "fileBytes": 441856,
+      "fileSha256": "44531d420b9ee696fc1734df89db8e129ab6435c1d90bf1cfacf69a4e941643a",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "SUN",
+        "candidates": [
+          "SUN"
+        ],
+        "format": "SAV7SM",
+        "generation": 7
+      }
+    },
+    {
+      "id": "public-fixture-5ec85443e28f",
+      "repository": "codemonkey85/PKMDS-Blazor",
+      "commit": "47d31832aa1236ee4a845ab58e0f01d3c2bfa7e0",
+      "sourcePath": "TestFiles/PM_CRYSTAL_BXTJ-0.sav",
+      "provenance": "public-software-test-fixture",
+      "download": {
+        "url": "https://raw.githubusercontent.com/codemonkey85/PKMDS-Blazor/47d31832aa1236ee4a845ab58e0f01d3c2bfa7e0/TestFiles/PM_CRYSTAL_BXTJ-0.sav",
+        "bytes": 65584,
+        "sha256": "9a45a31594f5f2b4a8fb97f7c722a159f0d4b9f1c14367fc61d8b3e47b295ab0",
+        "kind": "raw"
+      },
+      "fileBytes": 65584,
+      "fileSha256": "9a45a31594f5f2b4a8fb97f7c722a159f0d4b9f1c14367fc61d8b3e47b295ab0",
+      "expected": {
+        "core": "read",
+        "browser": "rejected",
+        "game": "CRYSTAL",
+        "candidates": [
+          "CRYSTAL"
+        ],
+        "format": "SAV2",
+        "generation": 2
+      }
+    }
+  ]
+}

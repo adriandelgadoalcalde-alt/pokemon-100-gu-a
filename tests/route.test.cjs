@@ -20,3 +20,10 @@ test('catalogue story boundaries do not send a champion back to their first Leag
  const ss=games.find(g=>g.id==='SOULSILVER');
  assert.equal(nextMission(ss,{gameClear:true,badgesTotal:16},()=>false,()=>false).mission.id,'SOULSILVER-13');
 });
+test('a positive documented Paldea signal directs the route without certifying checkboxes',()=>{
+ const edition={id:'SCARLET',mainStoryLastMission:'SCARLET-07',missions:[{id:'SCARLET-01',section:'Historia'},{id:'SCARLET-07',section:'Historia'},{id:'SCARLET-08',section:'Postgame y 100%'}]};
+ const positive={gameClear:null,progressSignals:[{id:'story.paldea.clear',value:true}]};
+ assert.equal(nextMission(edition,positive,()=>false,()=>false).mission.id,'SCARLET-08');
+ for(const value of [false,null])assert.equal(nextMission(edition,{progressSignals:[{id:'story.paldea.clear',value}]},()=>false,()=>false).mission.id,'SCARLET-01');
+ assert.equal(nextMission(edition,{...positive,gameClear:false},()=>false,()=>false).mission.id,'SCARLET-01');
+});

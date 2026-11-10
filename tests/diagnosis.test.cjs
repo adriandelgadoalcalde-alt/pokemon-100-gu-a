@@ -15,7 +15,7 @@ test('shared binary read returns a normalized local diagnosis without input chan
 });
 test('a malformed diagnosis or oversized binary cannot be accepted as valid progress',async()=>{
  assert.equal(normalize({caught:[],seen:'all'}),null);
- await assert.rejects(read({size:5*1024*1024}),/4 MiB/);
+ await assert.rejects(read({size:9*1024*1024}),/8 MiB/);
 });
 test('Atlas profile changes archive all checklist layers and restore them on return',()=>{
  const a={game:'SOULSILVER',trainer:'SYNTH',tid:1,caught:[],seen:[],sha256:'a'},b={...a,tid:2,sha256:'b'};
@@ -35,4 +35,24 @@ test('Core diagnostics retain limitations, inventory, language and revision acro
   warnings:['Estado actual'],unparsed:['Historia incompleta'],inventory:[{pocket:'Items',items:[{id:50,count:2}]}]};
  const result=normalize(raw);for(const key of ['languageId','revision','region','warnings','unparsed','inventory'])assert.deepEqual(result[key],raw[key]);
  result.inventory[0].items[0].count=99;assert.equal(raw.inventory[0].items[0].count,2);
+});
+test('documented event signals retain unknowns and cannot claim verified validation',()=>{
+ const d=normalize({game:'SCARLET',caught:[],seen:[],progressSignals:[{id:'story.paldea.clear',value:true,validation:'verified'},{id:'story.tealMask.clear',value:'false'}]});
+ assert.equal(d.progressSignals[0].validation,'documented');assert.equal(d.progressSignals[0].value,true);assert.equal(d.progressSignals[1].value,null);
+});
+test('local Core fallback only handles explicitly unsupported formats, never integrity failures',async()=>{
+ let calls=0;const bytes=new Uint8Array(100);
+ globalThis.PokemonCoreBrowser={read:async()=>{calls++;return {game:'SCARLET',caught:[],seen:[]};}};
+ try{
+  const file={size:bytes.length,arrayBuffer:async()=>bytes.buffer};
+  const d=await read(file,{parse(){throw Object.assign(Error('Unsupported'),{code:'UNSUPPORTED_SAVE_FORMAT'});}});
+  assert.equal(d.game,'SCARLET');assert.equal(calls,1);
+  await assert.rejects(read(file,{parse(){throw Error('Invalid integrity');}}),/Invalid integrity/);
+  assert.equal(calls,1);
+  globalThis.PokemonCoreBrowser.read=async()=>({game:null,gameCandidates:['RED','BLUE'],caught:[],seen:[]});
+  const unsupported={parse(){throw Object.assign(Error('Unsupported'),{code:'UNSUPPORTED_SAVE_FORMAT'});}};
+  await assert.rejects(read(file,unsupported,{selectedGame:'GREEN'}),/no distingue/);
+  const family=await read(file,unsupported,{selectedGame:'BLUE'});
+  assert.equal(family.game,'BLUE');assert.equal(family.editionIdentification,'selected-in-atlas');
+ }finally{delete globalThis.PokemonCoreBrowser;}
 });

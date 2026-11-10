@@ -17,6 +17,7 @@
   for(const key of ['unparsed','warnings','gameCandidates'])if(Array.isArray(e[key]))result[key]=e[key].filter(x=>typeof x==='string');
   for(const key of ['revision','region','detectedVersion','schemaVersion'])if(typeof e[key]==='string'||e[key]===null)result[key]=e[key];
   if(integer(e.languageId)!==null)result.languageId=e.languageId;
+  if(Array.isArray(e.progressSignals))result.progressSignals=e.progressSignals.filter(s=>s&&typeof s.id==='string').map(s=>({id:s.id,label:typeof s.label==='string'?s.label:s.id,value:tri(s.value),validation:'documented',source:s.source&&typeof s.source==='object'?JSON.parse(JSON.stringify(s.source)):null}));
   if(Array.isArray(e.inventory))result.inventory=JSON.parse(JSON.stringify(e.inventory));
   for(const key of ['tid','sid','generation','version'])if(integer(e[key])!==null)result[key]=e[key];
   if(Array.isArray(e.keyItems))result.keyItems=e.keyItems.filter(i=>i&&Number.isInteger(i.id)&&i.id>0&&Number.isInteger(i.count)&&i.count>0)
@@ -32,10 +33,18 @@
   if(Number.isInteger(e.tid)&&e.trainer)return `${e.game}|${e.trainer}|${e.tid}|${e.sid??'unknown'}`;
   return null;
  }
- async function read(file,parser=root.PokemonSaveReader){
-  if(!file||file.size>4*1024*1024)throw Error('Selecciona el guardado interno .sav o main, de hasta 4 MiB; no una ROM ni un estado rápido.');
+ async function read(file,parser=root.PokemonSaveReader,options={}){
+  if(!file||file.size>8*1024*1024)throw Error('Selecciona el guardado interno .sav o main, de hasta 8 MiB; no una ROM ni un estado rápido.');
   if(!parser?.parse)throw Error('El lector local no está disponible. Recarga la página con conexión antes de usarla offline.');
-  const bytes=new Uint8Array(await file.arrayBuffer()),parsed=parser.parse(bytes);
+  const bytes=new Uint8Array(await file.arrayBuffer());let parsed;
+  try{parsed=parser.parse(bytes);}catch(error){
+   if(error.code!=='UNSUPPORTED_SAVE_FORMAT'||!root.PokemonCoreBrowser?.read)throw error;
+   parsed=await root.PokemonCoreBrowser.read(bytes);
+  }
+  if(!parsed.game&&Array.isArray(parsed.gameCandidates)){
+   if(!parsed.gameCandidates.includes(options.selectedGame))throw Error('El formato no distingue la edición. Selecciona primero una edición de su familia en el Atlas e importa de nuevo.');
+   parsed={...parsed,game:options.selectedGame,editionIdentification:'selected-in-atlas'};
+  }
   const result=normalize({...parsed,readAt:new Date().toISOString(),sourceType:'local-save'});
   if(!result)throw Error('El lector no devolvió un diagnóstico compatible. No se ha cambiado el progreso.');
   if(root.crypto?.subtle){const hash=await root.crypto.subtle.digest('SHA-256',bytes);

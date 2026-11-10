@@ -64,3 +64,9 @@ test('HGSS trainer identity reads SID, accents and digits using the game encodin
  view.setUint16(0xF626,crc16(bytes.subarray(0,0xF618)),true);
  const result=reader().parse(bytes);assert.equal(result.trainer,'ÁÑ1');assert.equal(result.tid,123);assert.equal(result.sid,456);
 });
+test('HGSS Japanese kana and full-width characters keep their original encoding identity',()=>{
+ const bytes=fixture(),view=new DataView(bytes.buffer);
+ for(const [i,glyph]of [0x53,0xF1,0x5D,0xAC,0xA3,0xFFFF].entries())view.setUint16(0x64+i*2,glyph,true);
+ view.setUint16(0xF626,crc16(bytes.subarray(0,0xF618)),true);
+ assert.equal(reader().parse(bytes).trainer,'アーガＡ１');
+});

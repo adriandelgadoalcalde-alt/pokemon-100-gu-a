@@ -9,10 +9,10 @@ Fuente exacta: https://github.com/kwsch/PKHeX/tree/96e33e7432d900e5345afdfd117ea
 Licencia completa de la dependencia:
 https://github.com/kwsch/PKHeX/blob/96e33e7432d900e5345afdfd117eabfac43f5bbd/LICENSE
 
-No se distribuyen binarios ni código upstream en esta entrega. Si se distribuye un
-ejecutable enlazado con PKHeX.Core, deben acompañarlo los avisos y la licencia GPL,
-y facilitarse el código fuente correspondiente del extractor y de la revisión exacta
-de PKHeX, incluidas las instrucciones y scripts para reproducir la compilación.
+El motor de navegador se distribuye como WebAssembly en `engine/`, junto con los
+avisos, el texto de la GPL y un archivo de fuentes correspondientes de Core. El
+adaptador y los scripts de construcción están en este repositorio; véase
+[aviso del motor](../engine/NOTICE.md). El extractor CLI conserva su compilación local.
 
 El diagnóstico se crea localmente. El hash de perfil es un seudónimo determinista,
 no una garantía de anonimización; trata todos los JSON como datos privados.

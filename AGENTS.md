@@ -24,6 +24,11 @@
 
 ---
 
+> **Validación pública autorizada (10/11/2026):** el usuario permite buscar y descargar
+> partidas públicas para experimentar y contrastar el lector. Los originales siguen
+> siendo de solo lectura y no se redistribuyen. Manifiesto e informe saneado en
+> `research/saves/`; no confundir partidas preparadas con progresión natural.
+
 ## 0. Instrucciones obligatorias para Codex — leer antes de editar nada
 
 1. **Trabaja sobre el código REAL de GitHub, no sobre capturas ni resúmenes antiguos.** Antes de cada cambio, inspecciona el último `main`, la web publicada, los artefactos actuales y el historial de commits. Este documento es una fotografía del 09/11/2026, no una garantía de que no existan commits posteriores.

@@ -12,15 +12,20 @@ GitHub Pages se publica desde la rama `main` y la raíz del repositorio. La apli
 Los archivos de guardado personales no están en este repositorio. Importar registros de Pokédex no certifica que se hayan completado los eventos originales. Exporta las casillas a JSON antes de cambiar de dispositivo.
 
 ## Cobertura real
-La estructura abarca nueve generaciones; no todas las rutas son todavía guías exhaustivas. La V9.2 corrige el itinerario de Negro 2/Blanco 2 y añade comprobaciones específicas, pero 445 misiones siguen siendo recorridos introductorios. La lectura SAV directa de todas las generaciones y la certificación absoluta requieren desarrollo y pruebas por formato.
+La estructura abarca nueve generaciones; no todas las rutas son todavía guías exhaustivas. La V9.2 corrige el itinerario de Negro 2/Blanco 2 y añade comprobaciones específicas, pero 445 misiones siguen siendo recorridos introductorios. La lectura ampliada utiliza Core en el navegador; la certificación de cada evento y
+las rutas exhaustivas siguen requiriendo trabajo y pruebas por edición.
 
 El lector común del navegador admite **HeartGold, SoulSilver, Negro 2, Blanco 2, X, Y,
 Rubí Omega, Zafiro Alfa, Ultrasol y Ultraluna**. Se han contrastado sus campos seleccionados,
 flags y work mediante fixtures sintéticos completos frente a PKHeX.Core fijado por revisión.
-Eso no sustituye pruebas con partidas reales ni valida todas las revisiones regionales.
+Se han añadido partidas públicas: 12 muestras coinciden con Core en las diez
+ediciones, además de fixtures sintéticos. No valida todas las revisiones regionales
+ni la semántica natural de cada evento.
 La guía clásica conserva sus seis guías específicas; las variantes adicionales se leen
-desde el Atlas. Para otras familias está disponible el [extractor local C#](pkhex-extractor/README.md),
-cuyo diagnóstico JSON puede importarse en el Atlas, con sus límites de detección explícitos.
+desde el Atlas. Para otras familias, el Atlas descarga el [motor local WebAssembly](pkhex-browser/README.md)
+(hasta 45 MiB en el primer uso). También se conserva el [extractor local C#](pkhex-extractor/README.md)
+y la importación de su diagnóstico JSON. Las familias ambiguas exigen seleccionar
+la edición y los campos pendientes permanecen explícitos.
 
 La continuación del proyecto prioriza lectura local fiable y rutas con evidencias.
 El alcance excluye entrenadores secundarios y objetos sueltos triviales; incluye
@@ -46,7 +51,9 @@ no certifican el 100 % de los juegos.
 
 ## Desarrollo y comprobaciones
 
-Requiere Node.js 24. La aplicación sigue siendo estática; no necesita build ni backend.
+Requiere Node.js 24 para las herramientas. La web es estática y distribuye el motor
+precompilado; modificar el adaptador C# exige reconstruirlo según su README. No
+requiere un servidor de análisis. `.nojekyll` permite servir `_framework` en Pages.
 
 ```sh
 npm ci --ignore-scripts
@@ -61,6 +68,10 @@ genera archivos sintéticos temporales en una carpeta ignorada por Git. Las capt
 se escriben en `test-results/` y no se publican en Pages. En CI se guardan como artefacto.
 Los guardados privados y exportaciones personales deben quedar en `fixtures/private/`,
 fuera de Git. No se incluyen ni necesitan partidas personales para ejecutar estas pruebas.
+El [corpus público](research/saves/README.md) permite repetir la validación con
+archivos publicados por la comunidad, fijados por revisión y hash, sin subir los
+originales ni los datos del entrenador. La regresión visual cubre Chromium y WebKit;
+WebKit en Linux no sustituye una prueba física de Safari/iPadOS.
 
 ### Referencias
 - https://bulbapedia.bulbagarden.net/wiki/Appendix:Black_2_and_White_2_walkthrough

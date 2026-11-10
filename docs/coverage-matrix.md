@@ -314,3 +314,65 @@ Quedan 349 misiones del catálogo sin esta ampliación editorial, además de la
 revisión de huecos fuera del catálogo original. Ninguna edición pasa a «guía
 exhaustiva cerrada» por las cifras de esta entrega. No hay cambios de esquema de
 progreso ni nuevos offsets de lectura de eventos.
+
+## Séptimo ciclo: corpus público, motor WebAssembly y WebKit
+
+Fecha: 10 de noviembre de 2026. Base: `916b7da` en
+`feat/save-evidence-engine`. El usuario autoriza localizar y descargar partidas
+públicas para experimentar. No se publican los originales ni sus diagnósticos
+completos. Véase `research/saves/README.md`.
+
+Se fijan 59 referencias públicas, 57 contenidos distintos, de seis repositorios.
+Core lee 51 y rechaza ocho (seis no reconocidos, dos con integridad inválida).
+El lector ligero coincide en doce muestras de sus diez ediciones con Core en los
+campos seleccionados, flags/work e identidad. Todos los originales quedan intactos.
+Los formatos aceptados representan las nueve generaciones; no prueban las 39
+ediciones individualmente ni la consecución natural de escenas.
+
+El HeartGold japonés público reprodujo un fallo de decodificación de entrenador;
+se corrigen kana, vocal prolongada y caracteres de ancho completo. Se mantiene el
+enlace de perfiles exclusivamente por hash idéntico cuando cambia la identidad.
+No se declara soporte completo de coreano ni de todos los símbolos.
+
+El Atlas incorpora PKHeX.Core mediante un motor WebAssembly estático, separado del
+lector ligero y descargado únicamente para formatos no implementados por este.
+Un rechazo de integridad no habilita otra lectura. No hay backend, subida de saves
+ni edición del original. Las familias ambiguas conservan su identificación parcial
+y exigen seleccionar una edición válida. Los avisos, GPL, fuentes correspondientes
+y recursos fijados por hash se distribuyen en `engine/`. `.nojekyll` permite servir
+su carpeta de runtime desde Pages. El coste inicial ronda 45 MiB sin compresión.
+
+El proveedor MD5 del runtime no está disponible en el navegador. BD/SP lo necesita;
+se añade una implementación local RFC 1321, probada frente a .NET en nueve tamaños
+(incluidos límites de padding) y en ambas muestras públicas. Se analiza una copia.
+La primera integración detectó también una carrera: Blazor podía indicar arranque
+antes de cargar el adaptador. Se requiere ahora una señal explícita desde C#.
+
+Escarlata/Púrpura añade cinco señales tipadas de progreso documentadas en Core.
+Dos muestras declaradas de postgame de Escarlata contienen el final de Paldea.
+La señal orienta al postgame con evidencia parcial, sin marcar escenas previas ni
+convertirse en certificación automática. Falso, ausencia, tipo incorrecto y
+contradicción se prueban sintéticamente; faltan pares naturales antes/después.
+
+WebKit detectó un desbordamiento real en la guía clásica a ancho de tableta; la
+cabecera permite ahora envolver sus controles. Chromium y WebKit pasan la regresión
+responsive, importación, conservación, rechazo y navegación con el servidor cerrado.
+El Atlas registra ahora el service worker también como entrada independiente.
+La validación del motor ampliado añade comparación completa con CLI, comprobación
+de red exclusivamente estática y nueva lectura tras cerrar el servidor. Consultar
+sus informes en `research/saves/`: ambos motores leen 51 de las 59 referencias,
+rechazan ocho y coinciden completamente con CLI salvo la hora de lectura. La
+reapertura offline del motor pasa en ambos, sin errores de página. El CI vuelve a
+ejecutar estos contratos; no se afirma aquí un resultado remoto aún no observado.
+
+Pruebas de este ciclo: 47 casos unitarios JS, tres pruebas sintéticas del descargador,
+contrato C# y comparación JS/Core sintética, CLI de privacidad/solo lectura, corpus
+público y regresión visual en ambos motores. Las capturas e informes públicos de CI
+no incluyen saves, OT, TID/SID, perfiles ni volcados de flags individuales.
+
+No cambian IDs, casillas ni claves de almacenamiento. Se añade metadato opcional de
+señales documentadas; la normalización conserva desconocidos y limita su confianza.
+No se amplía en este ciclo el número de rutas editoriales: siguen 73 rutas enlazadas
+a 176 misiones y 349 misiones sin ese desarrollo, además de huecos del inventario.
+Las guías exhaustivas de todas las generaciones continúan dentro del alcance y
+ninguna se declara cerrada por haber ampliado el soporte de contenedores.

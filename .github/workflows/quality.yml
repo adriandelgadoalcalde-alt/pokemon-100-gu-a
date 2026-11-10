@@ -8,6 +8,10 @@ permissions:
 jobs:
   quality:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -15,14 +19,18 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci --ignore-scripts
+      - run: python3 scripts/update-public-coverage.py --check
       - run: npm run audit
       - run: npm test
-      - run: npx playwright install --with-deps chromium
+      - run: python3 -m unittest discover -s tests -p '*_test.py'
+      - run: npx playwright install --with-deps ${{ matrix.browser }}
       - run: npm run test:browser
+        env:
+          POKEMON_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: responsive-screenshots
+          name: responsive-screenshots-${{ matrix.browser }}
           path: test-results/
   pkhex-contract:
     runs-on: ubuntu-latest
@@ -40,10 +48,19 @@ jobs:
       - run: dotnet run --project pkhex-extractor/Tests/Pokemon.SaveAudit.Tests.csproj --configuration Release -- .cache/synthetic
       - run: node scripts/compare-pkhex.cjs .cache/synthetic
       - run: node scripts/test-extractor-cli.cjs .cache/synthetic
+      - run: python3 scripts/fetch-public-saves.py .cache/public-corpus
+      - run: node scripts/validate-public-saves.cjs .cache/public-corpus
+      - run: npx playwright install --with-deps chromium webkit
+      - run: node tests/core-browser.cjs .cache/public-corpus
+      - run: node tests/core-browser.cjs .cache/public-corpus
+        env:
+          POKEMON_BROWSER: webkit
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: upstream-api-smoke-only
+          name: upstream-and-public-save-regression
           path: |
             .cache/synthetic/api-smoke.json
             .cache/synthetic/container-smoke.json
+            .cache/public-corpus/report.json
+            .cache/public-corpus/browser-*-report.json

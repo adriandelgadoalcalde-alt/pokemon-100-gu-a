@@ -67,7 +67,7 @@ de corrupción y SHA-256 idéntico del input antes/después. La bolsa de HGSS in
 casos de Orbe Rojo y Azul. Nada de esto acredita todavía una partida natural real,
 todas las regiones/revisiones o la semántica histórica de cada bandera.
 
-## Identidad del perfil y caracteres occidentales
+## Identidad del perfil y caracteres HGSS
 
 El lector compartido ahora lee TID16 y SID16 en las diez ediciones admitidas.
 Se contrasta el seudónimo SHA-256 calculado desde versión/nombre/IDs con el
@@ -78,7 +78,10 @@ En HGSS los dígitos y las letras latinas con diacríticos son códigos de glifo
 no Unicode directo. Se corrigen sus rangos usando como referencia
 [StringConverter4Util.TableINT](https://github.com/kwsch/PKHeX/blob/96e33e7432d900e5345afdfd117eabfac43f5bbd/PKHeX.Core/PKM/Strings/StringConverter4Util.cs).
 El fixture HeartGold usa un nombre sintético con tilde, eñe y número; Core y JS
-coinciden. No se declara aquí lectura completa de alfabetos japonés/coreano.
+coinciden. El contraste con un HeartGold japonés público detectó una discrepancia
+en el nombre; se corrigen kana, vocal prolongada y caracteres latinos/dígitos de
+ancho completo. La identidad coincide ahora con Core. No se declara cobertura
+completa de símbolos ni del alfabeto coreano. Véase `saves/README.md`.
 
 Si un lector antiguo no incluía SID o decodificaba mal el nombre, la guía clásica
 solo enlaza su identidad previa con la nueva al observar el **mismo SHA-256 del

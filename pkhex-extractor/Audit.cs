@@ -97,6 +97,7 @@ public static class Audit
             ["badgesTotal"] = save is SAV4HGSS hg ? BitOperations.PopCount(hg.Badges) + BitOperations.PopCount((uint)hg.Badges16) :
                 save is SAV4 d4 ? BitOperations.PopCount(d4.Badges) : save is SAV5 b5 ? BitOperations.PopCount((uint)b5.Misc.Badges) :
                 save is SAV6 b6 ? BitOperations.PopCount((uint)b6.Badges) : null,
+            ["progressSignals"] = ProgressSignals.Read(save),
             ["unparsed"] = unparsed,
             ["warnings"] = new[] { "Diagnóstico de estado, no certificación de legitimidad ni del 100 %.",
                 "El identificador de perfil es un seudónimo; conserva este JSON como archivo privado." },

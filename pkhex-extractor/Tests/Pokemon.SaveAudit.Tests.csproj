@@ -5,5 +5,5 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <ItemGroup><ProjectReference Include="../Pokemon.SaveAudit.csproj" /></ItemGroup>
+  <ItemGroup><ProjectReference Include="../Pokemon.SaveAudit.csproj" /><Compile Include="../../pkhex-browser/BrowserMd5.cs" Link="BrowserMd5.cs" /></ItemGroup>
 </Project>

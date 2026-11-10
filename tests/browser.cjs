@@ -1,4 +1,4 @@
-const {chromium} = require('playwright');
+const {chromium,webkit} = require('playwright');
 const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -21,10 +21,13 @@ const server = http.createServer((req, res) => {
 async function run() {
   await new Promise(r => server.listen(0, '127.0.0.1', r));
   const base = `http://127.0.0.1:${server.address().port}`;
-  const browser = await chromium.launch({headless: true});
+  const engine=process.env.POKEMON_BROWSER||'chromium';
+  if(!['chromium','webkit'].includes(engine))throw Error('Unsupported browser engine');
+  const resultDir=path.join('test-results',engine);
+  const browser = await ({chromium,webkit}[engine]).launch({headless: true});
   const errors = [];
   try {
-    fs.mkdirSync('test-results', {recursive: true});
+    fs.mkdirSync(resultDir, {recursive: true});
     for (const width of [390, 768, 1024, 1366, 1440]) {
       const context = await browser.newContext({viewport: {width, height: 1000}, serviceWorkers: 'block'});
       const page = await context.newPage();
@@ -34,7 +37,7 @@ async function run() {
         await page.locator('#app button:visible').first().waitFor();
         const dimensions = await page.evaluate(() => ({width: innerWidth, scroll: document.documentElement.scrollWidth}));
         assert.ok(dimensions.scroll <= dimensions.width + 1, `${file}: horizontal overflow at ${width}`);
-        await page.screenshot({path: `test-results/${file}-${width}.png`, fullPage: true});
+        await page.screenshot({path: path.join(resultDir,`${file}-${width}.png`), fullPage: true});
       }
       await context.close();
     }
@@ -120,7 +123,7 @@ async function run() {
     await page.locator('.reading-gaps').locator('..').locator('summary').click();
     const priorMission = page.locator('.reading-gaps li').filter({hasText: 'Terminar: Ciudad Iris: Morti y los perros legendarios'});
     assert.equal(await priorMission.getByRole('button').getAttribute('data-open'), 'soulsilver-7');
-    await page.screenshot({path: 'test-results/diagnosis-direct-route.png', fullPage: true});
+    await page.screenshot({path: path.join(resultDir,'diagnosis-direct-route.png'), fullPage: true});
     // Export and restore the old answers and manual records without resurrecting a quiz.
     const downloadEvent = page.waitForEvent('download');
     await page.locator('#backup').click();
@@ -204,12 +207,25 @@ async function run() {
       await allPage.locator('[data-mid="'+detailed.id+'"] .route-details').waitFor();
       assert.ok(await allPage.locator('[data-mid="'+detailed.id+'"] .route-details ol > li').count()>=3);
       assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),game.id+': expanded route overflow');
-      if(['RED','GOLD','SWORD','ZA'].includes(game.id))await allPage.screenshot({path:'test-results/route-'+game.id+'-390.png',fullPage:true});
+      if(['RED','GOLD','SWORD','ZA'].includes(game.id))await allPage.screenshot({path:path.join(resultDir,'route-'+game.id+'-390.png'),fullPage:true});
     }
     await allPage.locator('[data-view="coverage"]').first().click();
     assert.equal(await allPage.locator('[data-coverage-game]').count(),39);
     await allPage.setViewportSize({width:390,height:1000});
     assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    // Documented modern signals guide the route while mastery remains partial.
+    const modern={game:'SCARLET',caught:[],seen:[],gameClear:null,integrity:{checksumsValid:true},progressSignals:[
+      {id:'story.paldea.clear',label:'Indicador de final de Paldea',value:true,validation:'documented'},
+      {id:'story.tealMask.clear',label:'Indicador de final de La máscara turquesa',value:null,validation:'documented'}]};
+    allPage.on('dialog',d=>d.accept());
+    await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-modern.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(modern))});
+    await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.SCARLET?.progressSignals?.length===2);
+    await allPage.locator('[data-view="diagnostic"]').first().click();
+    assert.match(await allPage.locator('body').innerText(),/sin lectura disponible/);
+    await allPage.locator('[data-view="mission"]').first().click();
+    assert.equal(await allPage.locator('[data-focus]').first().getAttribute('data-focus'),'SCARLET-08');
+    await allPage.locator('[data-view="mastery"]').first().click();
+    assert.match(await allPage.locator('#master-story').innerText(),/Evidencia parcial/);
     // Damaged persisted JSON remains recoverable rather than silently disappearing.
     const damaged='{"checked":';
     await allPage.evaluate(raw=>localStorage.setItem('archivo-pokemon-v2',raw),damaged);
@@ -241,7 +257,10 @@ async function run() {
     await offlinePage.evaluate(async () => {await navigator.serviceWorker.ready;});
     await offlinePage.reload();
     await offlinePage.waitForFunction(() => !!navigator.serviceWorker.controller);
-    await offline.setOffline(true);
+    // Closing the origin exercises cached navigation in both engines. WebKit
+    // offline emulation can fail before dispatching the service-worker fetch.
+    server.closeAllConnections();
+    await new Promise(resolve=>server.close(resolve));
     for (const file of ['index.html', 'atlas.html']) {
       await offlinePage.goto(`${base}/${file}`);
       await offlinePage.locator('#app button:visible').first().waitFor();
@@ -250,7 +269,7 @@ async function run() {
     }
     await offline.close();
     assert.deepEqual(errors, []);
-    console.log('Responsive layout, direct route without quizzes, preserved historical answers, local import, rejected corruption, restoration, and offline navigation passed.');
+    console.log(engine+': Responsive layout, direct route without quizzes, preserved historical answers, local import, rejected corruption, restoration, and offline navigation passed.');
   } finally {await browser.close();}
 }
 run().catch(e => {console.error(e); process.exitCode = 1;}).finally(() => server.close());

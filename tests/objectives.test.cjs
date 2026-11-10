@@ -64,3 +64,10 @@ test('a key item alone is partial evidence for a composite delivery-and-possessi
  const result=engine.evaluate([node('orb',{all:[{fact:'orb.present'},{fact:'orb.originalDelivery'}]})],[direct('orb.present',true)],gameId);
  assert.equal(result[0].status,'PARTIAL_EVIDENCE');
 });
+test('a documented Paldea flag stays partial even when file integrity is valid',()=>{
+ const api=require('../src/engine/objectives.js');
+ const d={game:'SCARLET',caught:[],seen:[],gameClear:null,integrity:{checksumsValid:true},progressSignals:[{id:'story.paldea.clear',value:true,validation:'documented'}]};
+ const nodes=[{id:'story',gameId:'SCARLET',verification:{fact:'story.gameClear'}}];
+ assert.equal(api.evaluate(nodes,api.fromDiagnosis(d),'SCARLET')[0].status,'PARTIAL_EVIDENCE');
+ assert.equal(api.fromDiagnosis({...d,game:'Y'}).some(f=>f.id==='story.gameClear'),false);
+});

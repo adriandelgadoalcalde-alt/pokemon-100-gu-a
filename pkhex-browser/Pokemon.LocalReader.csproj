@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OverrideHtmlAssetPlaceholders>true</OverrideHtmlAssetPlaceholders>
+    <PKHeXSource Condition="'$(PKHeXSource)' == ''">$(MSBuildThisFileDirectory)../.cache/pkhex</PKHeXSource>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <AssemblyName>Pokemon.LocalReader</AssemblyName>
+    <PublishTrimmed>false</PublishTrimmed>
+    <JsonSerializerIsReflectionEnabledByDefault>true</JsonSerializerIsReflectionEnabledByDefault>
+    <WasmBuildNative>false</WasmBuildNative>
+    <DebugType>none</DebugType>
+    <BlazorEnableCompression>false</BlazorEnableCompression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="10.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="10.0.14" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup><ProjectReference Include="$(PKHeXSource)/PKHeX.Core/PKHeX.Core.csproj" /><Compile Include="../pkhex-extractor/Audit.cs" Link="Audit.cs" /><Compile Include="../pkhex-extractor/ProgressSignals.cs" Link="ProgressSignals.cs" /></ItemGroup>
+  <Target Name="VerifyPKHeXRevision" BeforeTargets="BeforeBuild">
+    <Exec Command="git -C &quot;$(PKHeXSource)&quot; rev-parse HEAD" ConsoleToMSBuild="true" StandardOutputImportance="Low">
+      <Output TaskParameter="ConsoleOutput" PropertyName="PKHeXRevision" />
+    </Exec>
+    <Error Condition="'$(PKHeXRevision)' != '96e33e7432d900e5345afdfd117eabfac43f5bbd'" Text="La revisión de PKHeX.Core no coincide con la revisión auditada. Ejecuta scripts/prepare-pkhex.sh." />
+  </Target>
+</Project>

@@ -105,6 +105,7 @@
   if(typeof d.nationalDex==='boolean')add('pokedex.nationalUnlocked',d.nationalDex,'nationalDex');
   if(Number.isInteger(d.badgesTotal??d.badges))add('story.badges.count',d.badgesTotal??d.badges,'badgesTotal');
   for(const item of d.keyItems||[])if(item.count>0)add(`inventory.keyItem.${item.id}.present`,true,'keyItems');
+  if(['SCARLET','VIOLET'].includes(d.game)){const signal=d.progressSignals?.find(s=>s.id==='story.paldea.clear');if(typeof signal?.value==='boolean')facts.push({id:'story.gameClear',value:signal.value,gameId:d.game,type:'derived',validation:'documented',source:signal.source});}
   return facts;
  }
  const api={order,evaluate,next,fromDiagnosis};

@@ -4,8 +4,10 @@
   "version": "0.1.0",
   "scripts": {
     "test": "node --test tests/*.test.cjs",
-    "audit": "node scripts/audit.cjs",
-    "test:browser": "node tests/browser.cjs"
+    "audit": "node scripts/audit.cjs && node scripts/audit-browser-engine.cjs",
+    "test:browser": "node tests/browser.cjs",
+    "test:core-browser": "node tests/core-browser.cjs",
+    "test:public-saves": "node scripts/validate-public-saves.cjs"
   },
   "devDependencies": {
     "acorn": "8.15.0",

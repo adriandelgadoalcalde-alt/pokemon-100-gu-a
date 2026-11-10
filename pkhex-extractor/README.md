@@ -46,3 +46,21 @@ con archivos reales**. La construcción del objeto vacío de Z-A falla en la rev
 upstream fijada y queda como pendiente, sin ocultarse ni contabilizarse como aprobada.
 
 Véanse [licencia y dependencias](NOTICE.md) y [alcance de integridad](../research/save-integrity.md).
+
+## Archivos públicos contrastados
+
+El [corpus público](../research/saves/README.md) incluye 59 referencias (57 contenidos
+distintos): Core admite 51 y rechaza ocho explícitamente. Hay contenedores admitidos
+de las nueve generaciones, incluidos formatos Switch que no podían construirse con
+el objeto vacío de upstream. Esto amplía la validación de contenedores, sin convertir
+una partida preparada en prueba natural de escenas o de legitimidad. El contrato
+compara también doce muestras del lector JS con Core y conserva los originales.
+
+```sh
+python3 scripts/fetch-public-saves.py .cache/public-corpus
+node scripts/validate-public-saves.cjs .cache/public-corpus
+```
+
+Escarlata/Púrpura incorpora cinco señales de progreso documentadas y tipadas; las
+claves ausentes siguen nulas. Su nivel es documental: no certifican escenas sin
+comparaciones naturales antes/después ni sobrescriben marcas manuales.

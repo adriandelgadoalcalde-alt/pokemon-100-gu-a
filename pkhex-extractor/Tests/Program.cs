@@ -5,8 +5,17 @@ using System.Security.Cryptography;
 using System.Text.Json;
 using PKHeX.Core;
 using Pokemon.SaveAudit;
+using Pokemon.LocalReader;
 
 static void Check(bool condition, string message) { if (!condition) throw new Exception(message); }
+foreach (var size in new[] { 0,1,55,56,63,64,65,128,1048576 })
+{
+    var input=Enumerable.Range(0,size).Select(i=>(byte)(i*37+19)).ToArray();
+    var md5Original=input.ToArray();var actual=new byte[16];
+    new BrowserMd5().HashData(input,actual);
+    Check(actual.AsSpan().SequenceEqual(MD5.HashData(input)),"Browser MD5 known-length parity failed");
+    Check(input.AsSpan().SequenceEqual(md5Original),"Browser MD5 modified input");
+}
 static byte[] SyntheticHgss(GameVersion version = GameVersion.SS)
 {
     var bytes = Enumerable.Repeat((byte)255, 0x80000).ToArray();
@@ -85,6 +94,12 @@ static void SeedContainerMetadata(SaveFile model)
         foreach(var b in beef.AllBlocks){var at=0x14+(int)b.ID*8;BinaryPrimitives.WriteUInt32LittleEndian(footer[at..],(uint)b.Length);BinaryPrimitives.WriteUInt16LittleEndian(footer[(at+4)..],(ushort)b.ID);}
     }
 }
+
+Check(ProgressSignals.DecodeBooleanType(SCTypeCode.Bool1)==false,"False boolean block changed meaning");
+Check(ProgressSignals.DecodeBooleanType(SCTypeCode.Bool2)==true,"True boolean block changed meaning");
+Check(ProgressSignals.DecodeBooleanType(null) is null,"An absent block became false");
+Check(ProgressSignals.DecodeBooleanType(SCTypeCode.Bool3) is null,"An array boolean became a scalar flag");
+Check(ProgressSignals.DecodeBooleanType(SCTypeCode.Object) is null,"An object block became a scalar flag");
 
 var output = args.Length == 1 ? Path.GetFullPath(args[0]) : Path.Combine(Path.GetTempPath(), "pokemon-audit-synthetic");
 Directory.CreateDirectory(output);
