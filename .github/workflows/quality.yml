@@ -24,6 +24,7 @@ jobs:
       - run: npm test
       - run: python3 -m unittest discover -s tests -p '*_test.py'
       - run: npx playwright install --with-deps ${{ matrix.browser }}
+        timeout-minutes: 10
       - run: npm run test:updates
         env:
           POKEMON_BROWSER: ${{ matrix.browser }}
@@ -54,6 +55,7 @@ jobs:
       - run: python3 scripts/fetch-public-saves.py .cache/public-corpus
       - run: node scripts/validate-public-saves.cjs .cache/public-corpus
       - run: npx playwright install --with-deps chromium webkit
+        timeout-minutes: 10
       - run: node tests/core-browser.cjs .cache/public-corpus
       - run: node tests/core-browser.cjs .cache/public-corpus
         env:

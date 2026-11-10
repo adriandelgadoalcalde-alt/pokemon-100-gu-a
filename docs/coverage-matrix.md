@@ -485,3 +485,49 @@ La caché PWA incorpora el módulo nuevo. La auditoría y los 52 casos unitarios
 la regresión de navegador comprueba el inicial de Ruta 201, el orden de Fantina/Brega,
 Fuerza de Quinoa, Despejar de Ruinas Sosiego y la conversación de Cintia sin cambiar
 marcas manuales. El resultado final de CI/publicación se añade tras verificarse.
+
+## Duodécimo ciclo: Diamante/Perla originales
+
+Base: `ccd9714`; rama `feat/diamond-pearl-walkthroughs`. La entrega GBA/Platino ya
+publicada está documentada en `docs/releases/gba-platinum.md`, con verificación real
+de la URL pública en Chromium y WebKit y comparación local de campos de Esmeralda.
+
+Diez rutas nuevas, 52 instrucciones y veinte conexiones para D/P. Total: 130 rutas,
+278 conexiones y 247 misiones catalogadas aún sin ampliación. Se conserva el número
+de 525 misiones y 1.146 casillas de pasos; no hay migración ni cambio de claves/IDs.
+
+Se separan Fantina quinta después de Surf, Fuerza de Torre Perdida y Despejar del
+Gran Pantano, regalos de versión y Dialga/Palkia sin Mundo Distorsión. Se corrigen
+el orden Gardenia/edificio y la ambigüedad Brega/Fantina en las casillas originales.
+Referencias editoriales y límites: `research/routes/diamond-pearl.md`. No hay nuevos
+offsets de alta confianza, parejas naturales ni guías exhaustivas cerradas.
+
+Auditoría y 52 pruebas unitarias correctas. La regresión de interfaz comprueba ambas
+ediciones y la consulta de Fantina sin servidor; los resultados de CI/publicación
+se registran tras verificarse.
+
+## Decimotercer ciclo: remakes HGSS y Nacional de generación IV
+
+Rama: `feat/hgss-walkthroughs`, sobre `0d31a52` del ciclo D/P. Diecisiete rutas,
+94 instrucciones y 34 conexiones nuevas. Total editorial: 147 rutas, 312 conexiones
+y 213 misiones catalogadas aún sin ampliación. HG/SS tiene 19 conexiones por edición;
+el inventario exhaustivo y varios puzles permanecen en revisión.
+
+Se explican Surf frente a cinco Kimono, Fuerza de Ruta 42, regalo de Dratini,
+componente/Abono/radio de Kanto, Rojo/Oak y cámaras de Alfa. Fuentes primarias fijadas
+y límites: `research/routes/hgss.md`, con informe de disponibilidad/paridad separado.
+
+El motor compara ahora la lista Nacional exacta de D/P/Platino (482) frente a HGSS
+(484, incluyendo Lugia/Ho-Oh). El diagnóstico muestra pendientes con nombres y
+las metas de registro reciben evidencia sin inventar escenas, premios o estrellas.
+Se mantienen claves, IDs, índices, historial y marcas manuales; no hay migración.
+
+Pasan 54 casos unitarios, auditoría y regresión Chromium/WebKit: misma lista que
+completa Sinnoh pero carece de dos especies exigidas en HGSS, MO/Kimono/Alfa y
+reapertura de rutas sin servidor. Nuevos mapeos narrativos con validación natural:
+**0**. CI y publicación se registrarán tras comprobarse.
+
+Dos ejecuciones remotas anteriores permanecieron en instalación de WebKit mientras
+otras ejecuciones del mismo conjunto la completaron. Se limita a diez minutos la
+provisión de navegadores en CI; un atasco externo falla el trabajo y permite reintento,
+sin suprimir WebKit ni aceptar pruebas pendientes como aprobadas.

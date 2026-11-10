@@ -54,3 +54,11 @@ directo: su estado orienta la recomendación pero aporta únicamente evidencia p
 La normalización conserva la máscara y la procedencia de la señal. Una contradicción
 explícita o una señal de otra familia no habilita el salto al postgame. Definiciones,
 activadores y validación pendiente: `research/saves/gba-progress.md`.
+
+## Listas nacionales de generación IV
+
+D/P/Platino exigen 482 especies; HGSS exige 484 e incluye Lugia y Ho-Oh. Las definiciones
+fijadas de cada juego determinan los conjuntos en `completion.js`. La misma lista de
+482 puede completar Sinnoh y dejar HGSS pendiente; duplicados y especies excluidas
+no compensan ausencias. Se acreditan registros de campos validados, conservando
+confianza parcial sin integridad y sin hechos de recompensa o encuentro original.

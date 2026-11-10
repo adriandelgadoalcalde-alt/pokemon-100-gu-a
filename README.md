@@ -46,7 +46,7 @@ no amplía por sí solo los formatos compatibles ni certifica nuevos eventos.
 
 Las misiones incorporan recorridos con ubicación, requisitos, instrucciones,
 comprobación final y fuentes, disponibles también offline. La ampliación actual
-contiene 120 rutas enlazadas a 258 misiones de las 39 ediciones. Mantiene todas las
+contiene 147 rutas enlazadas a 312 misiones de las 39 ediciones. Mantiene todas las
 casillas previas. El [seguimiento editorial](docs/guide-completion.md) define qué
 falta para cerrar las guías exhaustivas de las nueve generaciones; los recuentos
 no certifican el 100 % de los juegos. Hoenn GBA incluye las diferencias de
@@ -93,3 +93,12 @@ oficial de Switch. La plataforma no se inventa a partir de un save que no la ide
 Platino tiene recorridos propios del inicio a la Liga y del Mundo Distorsión. Se
 distinguen el inicial de Ruta 201, Fantina tercera, Brega cuarta, Fuerza de Quinoa y
 Despejar de Ruinas Sosiego; no se trasladan esas condiciones a Diamante/Perla.
+
+Diamante/Perla incorpora diez recorridos compartidos de su historia original DS:
+maletín de Lago Veraz, Fantina quinta tras Surf, Fuerza de Torre Perdida, Despejar del
+Gran Pantano y clímax de Dialga/Palkia. Se mantienen separados de Platino y los remakes.
+
+HGSS añade 17 rutas de sus remakes: Kimono, MO, Central, Abono, radio, Suicune y
+Ruinas Alfa. La Nacional se compara por especie en las cinco ediciones DS de la
+generación IV: 482 exigidas en D/P/Platino y 484 en HGSS. Se conservan sin marcar
+las casillas manuales; no se certifican premios entregados ni encuentros originales.

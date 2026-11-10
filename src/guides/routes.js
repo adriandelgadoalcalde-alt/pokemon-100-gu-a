@@ -2113,6 +2113,8 @@
  routes.push(...(typeof module==='object'&&module.exports?require('./hoenn.js'):root.PokemonHoennRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./frlg.js'):root.PokemonFRLGRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./platinum.js'):root.PokemonPlatinumRoutes));
+ routes.push(...(typeof module==='object'&&module.exports?require('./diamond-pearl.js'):root.PokemonDiamondPearlRoutes));
+ routes.push(...(typeof module==='object'&&module.exports?require('./hgss.js'):root.PokemonHGSSRoutes));
  const ice=typeof module==='object'&&module.exports?require('./ice-puzzle.js'):root.PokemonIcePuzzle;
  const byMission=new Map();
  for(const route of routes)for(const game of route.games){const id=game+'-'+route.mission;if(byMission.has(id))throw Error('Ruta editorial duplicada: '+id);byMission.set(id,route);}

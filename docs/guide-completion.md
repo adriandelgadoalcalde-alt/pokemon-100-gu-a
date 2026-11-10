@@ -63,11 +63,11 @@ flags y la validación natural del guardado tienen su propia revisión técnica.
 | 3 | Esmeralda | 16 | 16 | En revisión |
 | 3 | Rojo Fuego | 18 | 18 | En revisión |
 | 3 | Verde Hoja | 18 | 18 | En revisión |
-| 4 | Diamante | 12 | 1 | En revisión |
-| 4 | Perla | 12 | 1 | En revisión |
+| 4 | Diamante | 12 | 11 | En revisión |
+| 4 | Perla | 12 | 11 | En revisión |
 | 4 | Platino | 13 | 13 | En revisión |
-| 4 | Oro HeartGold | 19 | 2 | En revisión |
-| 4 | Plata SoulSilver | 19 | 2 | En revisión |
+| 4 | Oro HeartGold | 19 | 19 | En revisión |
+| 4 | Plata SoulSilver | 19 | 19 | En revisión |
 | 5 | Negro | 11 | 2 | En revisión |
 | 5 | Blanco | 11 | 2 | En revisión |
 | 5 | Negro 2 | 16 | 1 | En revisión |
@@ -106,3 +106,12 @@ Platino añade once rutas propias para historia y Mundo Distorsión, conservando
 dos de postgame/colección anteriores. Sus trece misiones catalogadas tienen ahora
 ampliación. Persisten huecos de inventario y navegación espacial descritos en
 `research/routes/platinum.md`; la guía permanece en revisión exhaustiva.
+
+Diamante/Perla añade diez recorridos de historia compartidos, con la quinta medalla
+de Fantina después de Surf. Cada edición tiene once conexiones ampliadas; colección
+y reconocimiento oficial siguen agrupados y pendientes de expansión. Véase
+`research/routes/diamond-pearl.md`.
+
+HGSS amplía las 17 misiones restantes del catálogo, con 94 instrucciones, manteniendo
+las dos de orbes. Las 19 conexiones por edición no cierran los inventarios ni los
+puzles detallados: véase `research/routes/hgss.md`.

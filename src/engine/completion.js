@@ -1,16 +1,23 @@
-/* Exact registered-species requirements from the pinned FRLG pokedex.c, not encounter history. */
+/* Exact registered-species requirements from pinned game sources; not encounter history. */
 (function(root){
  'use strict';
- const source='https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/pokedex.c';
- const excluded=new Set([151,249,250,251,385,386]);
- const requirements={kanto:Array.from({length:150},(_,i)=>i+1),
-  national:Array.from({length:386},(_,i)=>i+1).filter(id=>!excluded.has(id))};
+ const range=(last,excluded=[])=>Array.from({length:last},(_,i)=>i+1).filter(id=>!excluded.includes(id));
+ const mythicals4=[151,251,385,386,489,490,491,492,493];
+ const frlg={source:'https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/pokedex.c',
+  requirements:{kanto:range(150),national:range(386,[151,249,250,251,385,386])}};
+ const dp={source:'https://github.com/pret/pokediamond/blob/b623abef1b4dfe204ca50aab42447ac00c134290/arm9/src/pokedex.c',
+  requirements:{national:range(493,[...mythicals4,249,250])}};
+ const platinum={source:'https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/src/pokedex.c',requirements:dp.requirements};
+ const hgss={source:'https://github.com/pret/pokeheartgold/blob/6bf138d6035aa6b43d6f8f4132a12df70f86dcec/src/pokedex.c',
+  requirements:{national:range(493,mythicals4)}};
+ const definitions={FIRERED:frlg,LEAFGREEN:frlg,DIAMOND:dp,PEARL:dp,PLATINUM:platinum,HEARTGOLD:hgss,SOULSILVER:hgss};
  function dexStatus(d){
-  if(!['FIRERED','LEAFGREEN'].includes(d?.game)||!Array.isArray(d.caught))return null;
+  const definition=definitions[d?.game];
+  if(!definition||!Array.isArray(d.caught))return null;
   const registered=new Set(d.caught);
-  return Object.fromEntries(Object.entries(requirements).map(([key,required])=>{
+  return Object.fromEntries(Object.entries(definition.requirements).map(([key,required])=>{
    const missing=required.filter(id=>!registered.has(id));
-   return [key,{required:required.length,registered:required.length-missing.length,missing,complete:missing.length===0,source}];
+   return [key,{required:required.length,registered:required.length-missing.length,missing,complete:missing.length===0,source:definition.source}];
   }));
  }
  const api={dexStatus};

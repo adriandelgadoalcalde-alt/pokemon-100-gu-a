@@ -225,6 +225,18 @@ async function run() {
     assert.match(await allPage.locator('[data-mid="PLATINUM-DETAIL1"] .route-details').innerText(),/habla con Cintia/);
     assert.equal(await allPage.locator('[data-check]:checked').count(),0);
     await allPage.screenshot({path:path.join(resultDir,'platinum-field-moves-390.png'),fullPage:true});
+    for(const game of ['DIAMOND','PEARL']){
+      await allPage.locator('#mobile-game').selectOption(game);
+      await allPage.locator('[data-mid="'+game+'-04"] > summary').click();
+      assert.match(await allPage.locator('[data-mid="'+game+'-04"] .route-details').innerText(),/Torre Perdida/);
+      await allPage.locator('[data-mid="'+game+'-05"] > summary').click();
+      assert.match(await allPage.locator('[data-mid="'+game+'-05"] .route-details').innerText(),/Gran Pantano/);
+      await allPage.locator('[data-mid="'+game+'-06"] > summary').click();
+      const originalRoute=await allPage.locator('[data-mid="'+game+'-06"] .route-details').innerText();
+      assert.match(originalRoute,/15, 40, 39 y 15/);
+      assert.match(originalRoute,/Medalla Reliquia/);
+      assert.equal(await allPage.locator('[data-check]:checked').count(),0);
+    }
     // Edition-specific puzzles and narrative gates must not inherit R/S instructions in Emerald.
     await allPage.locator('#mobile-gen').selectOption('3');
     await allPage.locator('#mobile-game').selectOption('EMERALD');
@@ -244,6 +256,34 @@ async function run() {
     await allPage.locator('[data-mid="RUBY-11"] > summary').click();
     assert.equal(await allPage.locator('[data-ice-version="EMERALD"]').count(),0);
     assert.equal(await allPage.locator('[data-ice-version="RUBY_SAPPHIRE"]').count(),3);
+    // Identical registrations satisfy Sinnoh but still lack required HGSS species.
+    const mythicals4=new Set([151,251,385,386,489,490,491,492,493]);
+    const sinnohRegistered=Array.from({length:493},(_,i)=>i+1).filter(id=>!mythicals4.has(id)&&id!==249&&id!==250);
+    for(const [game,required] of [['DIAMOND',482],['SOULSILVER',484]]){
+      const diagnosis={game,caught:sinnohRegistered,seen:sinnohRegistered,integrity:{checksumsValid:true}};
+      await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-gen4.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(diagnosis))});
+      await allPage.waitForFunction(id=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.game===id,game);
+      await allPage.locator('[data-view="diagnostic"]').first().click();
+      assert.match(await allPage.locator('#dex-completion').innerText(),new RegExp('Nacional: 482/'+required));
+      if(game==='SOULSILVER'){
+        await allPage.locator('#dex-completion details > summary').click();
+        assert.match(await allPage.locator('#dex-completion').innerText(),/#249 Lugia/);
+        assert.match(await allPage.locator('#dex-completion').innerText(),/#250 Ho-Oh/);
+      }
+      await allPage.locator('[data-view="mastery"]').first().click();
+      const proof=await allPage.locator('#master-card-1').innerText();
+      if(game==='DIAMOND')assert.match(proof,/Evidencia/);else assert.doesNotMatch(proof,/Evidencia/);
+      assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+    }
+    // HGSS-specific actions must not inherit G/S gifts or skip the Kimono sequence.
+    await allPage.locator('[data-view="mission"]').first().click();
+    await allPage.locator('[data-mid="SOULSILVER-06"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="SOULSILVER-06"] .route-details').innerText(),/montañero junto a Monte Mortero/);
+    await allPage.locator('[data-mid="SOULSILVER-09"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="SOULSILVER-09"] .route-details').innerText(),/cinco combates seguidos/);
+    await allPage.locator('[data-mid="SOULSILVER-E03"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="SOULSILVER-E03"] .route-details').innerText(),/usar una Piedra Agua desde la bolsa/);
+    await allPage.locator('#mobile-gen').selectOption('3');
     // Remake locations and exact completion sets must not inherit the original GB guide.
     await allPage.locator('#mobile-game').selectOption('FIRERED');
     await allPage.locator('[data-mid="FIRERED-15"] > summary').click();
@@ -337,6 +377,12 @@ async function run() {
         await offlinePage.locator('#mobile-game').selectOption('PLATINUM');
         await offlinePage.locator('[data-mid="PLATINUM-06"] > summary').click();
         assert.match(await offlinePage.locator('[data-mid="PLATINUM-06"] .route-details').innerText(),/Quinoa para recibir MO04 Fuerza/);
+        await offlinePage.locator('#mobile-game').selectOption('DIAMOND');
+        await offlinePage.locator('[data-mid="DIAMOND-06"] > summary').click();
+        assert.match(await offlinePage.locator('[data-mid="DIAMOND-06"] .route-details').innerText(),/15, 40, 39 y 15/);
+        await offlinePage.locator('#mobile-game').selectOption('SOULSILVER');
+        await offlinePage.locator('[data-mid="SOULSILVER-09"] > summary').click();
+        assert.match(await offlinePage.locator('[data-mid="SOULSILVER-09"] .route-details').innerText(),/cinco combates seguidos/);
       }
     }
     await offline.close();
