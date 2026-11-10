@@ -330,6 +330,28 @@ async function run() {
       }
       assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
     }
+    // A swapped event species cannot fill a National Dex gap in either Gen V family.
+    const excluded5=new Set([151,251,385,386,489,490,491,492,493,494,647,648,649]);
+    const national5=Array.from({length:649},(_,i)=>i+1).filter(id=>!excluded5.has(id));
+    for(const game of ['BLACK','WHITE2']){
+      const gap={game,caught:national5.filter(id=>id!==249).concat(151),seen:[],integrity:{verifiedFields:['caught']}};
+      await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-unova-gap.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(gap))});
+      await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.[g]?.caught?.includes(151),game);
+      assert.match(await allPage.locator('#master-card-1').innerText(),/Pendiente/);
+      await allPage.locator('[data-view="diagnostic"]').first().click();
+      assert.match(await allPage.locator('#dex-completion').innerText(),/Nacional: 635\/636/);
+      await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-unova-full.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...gap,caught:national5}))});
+      await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.[g]?.caught?.includes(249),game);
+      assert.match(await allPage.locator('#master-card-1').innerText(),/Evidencia: Registro de Pokédex/);
+      assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+    }
+    await allPage.locator('[data-view="mission"]').first().click();
+    await allPage.locator('[data-mid="WHITE2-N2"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="WHITE2-N2"] .route-details').innerText(),/seis casillas al sur y nueve al este/);
+    await allPage.locator('[data-mid="WHITE2-E02"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="WHITE2-E02"] .route-details').innerText(),/Líderes del Mundo diez veces/);
+    await allPage.locator('[data-mid="WHITE2-N3"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="WHITE2-N3"] .route-details').innerText(),/Pase antes de viajar/);
     // Medal receipts, ready rewards and unknown states have separate searchable rows.
     const medalRows=Array.from({length:255},(_,i)=>({id:i+1,state:0}));
     medalRows[0]={id:1,state:4,date:'2026-02-31'};medalRows[1]={id:2,state:3,date:'2026-11-10'};medalRows[254]={id:255,state:7};
@@ -431,6 +453,8 @@ async function run() {
         await offlinePage.locator('#mobile-game').selectOption('WHITE2');
         await offlinePage.locator('[data-mid="WHITE2-08"] > summary').click();
         assert.match(await offlinePage.locator('[data-mid="WHITE2-08"] .route-details').innerText(),/Tarjeta Plasma y la contraseña/);
+        await offlinePage.locator('[data-mid="WHITE2-N2"] > summary').click();
+        assert.match(await offlinePage.locator('[data-mid="WHITE2-N2"] .route-details').innerText(),/seis casillas al sur y nueve al este/);
 
         await offlinePage.locator('#file-diagnosis').setInputFiles({name:'synthetic-medals-offline.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(medalDiagnosis))});
         await offlinePage.locator('[data-view="diagnostic"]').first().click();

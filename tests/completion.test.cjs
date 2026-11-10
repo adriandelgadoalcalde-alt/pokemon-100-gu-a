@@ -51,3 +51,19 @@ test('a Gen4 exact registration proves no awarded star, original encounter or re
   assert.ok(!facts.some(f=>/encounter|reward|original|star/i.test(f.id)));
  }
 });
+
+test('Unova National registration requires all 636 ordinary species, including Lugia/Ho-Oh',()=>{
+ const exclusions=new Set([151,251,385,386,489,490,491,492,493,494,647,648,649]);
+ const required=Array.from({length:649},(_,i)=>i+1).filter(id=>!exclusions.has(id));
+ for(const game of ['BLACK','WHITE','BLACK2','WHITE2']){
+  const d={game,caught:required,seen:required,integrity:{verifiedFields:['caught']}};
+  const full=dexStatus(d).national;assert.equal(full.required,636);assert.equal(full.complete,true);
+  const swapped=dexStatus({...d,caught:required.filter(id=>![249,250,646].includes(id)).concat(151,494,647,required[0])}).national;
+  assert.equal(swapped.complete,false);assert.deepEqual(swapped.missing,[249,250,646]);
+  const nodes=[{id:'national',gameId:game,verification:{fact:'pokedex.completion.national'}}];
+  assert.equal(engine.evaluate(nodes,engine.fromDiagnosis(d),game)[0].status,'COMPLETED_VERIFIED');
+  assert.equal(engine.evaluate(nodes,engine.fromDiagnosis({...d,integrity:{}}),game)[0].status,'PARTIAL_EVIDENCE');
+  assert.equal(dexStatus({...d,caught:null}),null);
+  assert.ok(!engine.fromDiagnosis(d).some(f=>/encounter|reward|original|star|permit|charm/i.test(f.id)));
+ }
+});

@@ -454,8 +454,8 @@
     ],
     "steps": [
       "Resuelve la invasión de Caolín y el robo de la Punta ADN. Regresa a Arenisca y cruza el Acuatúnel hasta Ciudad Marga; busca a Ciprián por el muelle para que vuelva al gimnasio.",
-      "Cruza los nenúfares del gimnasio y vence a Ciprián para obtener la octava medalla. En Ruta 22 habla con Acromo cerca de Terrakion y recibe el Acromáquina, necesario para despejar el Crustle de Cueva Costera.",
-      "Ve por Ruta 21 a Cueva Costera, usa el Acromáquina ante Crustle y llega al barco. Ciprián facilita el embarque. Esta incursión es distinta de la del muelle del PWT.",
+      "Cruza los nenúfares del gimnasio y vence a Ciprián para obtener la octava medalla. En Ruta 22 habla con Acromo cerca de Terrakion y recibe la Acromáquina, necesario para despejar el Crustle de Cueva Costera.",
+      "Ve por Ruta 21 a Cueva Costera, usa la Acromáquina ante Crustle y llega al barco. Ciprián facilita el embarque. Esta incursión es distinta de la del muelle del PWT.",
       "En la primera barrera de esta incursión, Negro 2 requiere cuatro interruptores: desde las habitaciones noroeste, este y suroeste usa el teletransportador superior izquierdo; desde la sureste, el inferior derecho. Blanco 2 requiere Tarjeta Plasma y la contraseña de las pistas de los reclutas; recoge la tarjeta de la recluta del comedor.",
       "Tras superar esa barrera y combatir junto al rival, sigue la nave hasta Boquete Gigante. En su interior vuelve a cambiar el puzle: Negro 2 pide tarjeta y contraseña; Blanco 2, cuatro interruptores mediante teletransportadores. No repitas la solución de la barrera anterior.",
       "En los puzles con contraseña consigue primero la Tarjeta Plasma y reúne las pistas de esa partida. La clave puede contener cifras o el nombre de un dragón; no existe una contraseña única válida para todos los idiomas y partidas.",
