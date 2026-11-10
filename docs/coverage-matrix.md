@@ -442,3 +442,28 @@ podía copiar HTML viejo de la caché HTTP. La instalación descarga ahora los r
 con `cache: reload`, y las escrituras dinámicas de recursos mantienen vivo el
 service worker hasta terminar. La prueba OLD → NEW reabre la versión nueva sin
 servidor y conserva el marcador de progreso; se ejecuta en ambos motores en CI.
+
+## Décimo ciclo: campos GBA y diferencias entre revisiones
+
+Base: `7143dee`; rama `feat/gba-progress-fields`. La entrega anterior de Kanto está
+publicada: Pages terminó correctamente y Atlas, ruta FRLG y SW coinciden byte a byte
+con la integración. Este ciclo conserva los 109 recorridos / 247 enlaces y los 278
+objetivos catalogados sin ampliación; no cierra ninguna guía exhaustiva.
+
+Se corrige la omisión de medallas y Nacional en `Audit.cs`, se recompila el motor
+WASM y se conserva la máscara de medallas en `diagnosis.js`. `ProgressSignals.cs`
+añade un indicador de final por familia GBA, documentado tanto en definición como en
+activador. `route.js` lo utiliza para orientar hacia el postgame; `objectives.js`
+conserva confianza parcial y contradicciones. Fuentes, índices y límites constan en
+`research/saves/gba-progress.md`. Nuevos mapeos narrativos con validación natural: **0**.
+
+Las rutas de FRLG distinguen ahora GBA original de la reedición oficial de Switch:
+tickets tras Hall de la Fama, condición de cinta nueva y corrección de Rugido.
+Se mantienen IDs, orden y número de casillas. El lector no atribuye plataforma ni
+revisión cuando el formato no las distingue. Véase `research/routes/frlg.md`.
+
+Validación local: 52 pruebas unitarias; contratos Core con contenedores GBA de las
+cinco ediciones; CLI de solo lectura y privacidad; comparación DS/3DS; corpus público
+con 51 aceptados y ocho rechazos esperados. Los informes WASM de Chromium/WebKit
+comparan la diagnosis completa con CLI, conservan los originales y reabren offline.
+La verificación de la interfaz y actualización PWA se registra tras completarse.

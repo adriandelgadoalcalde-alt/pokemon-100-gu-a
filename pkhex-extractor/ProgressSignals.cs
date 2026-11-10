@@ -17,6 +17,7 @@ public static class ProgressSignals
 
     public static object[] Read(SaveFile save)
     {
+        if (save is SAV3 gba) return ReadGba(gba);
         if (save is not SAV9SV sv) return [];
         (uint Key, string Id, string Label, string ScriptName)[] definitions =
         [
@@ -34,5 +35,29 @@ public static class ProgressSignals
                 source = new { url = Source, engineCommit = Audit.EngineCommit, blockKey = $"0x{d.Key:X8}", scriptName = d.ScriptName },
                 limitation = "Interpretación documentada en upstream; pendiente de contraste natural controlado. Un bloque ausente o de otro tipo no se interpreta como falso." };
         }).ToArray();
+    }
+
+    private static object[] ReadGba(SAV3 save)
+    {
+        // Definitions are edition-specific in the game's sources. In particular,
+        // Emerald's system flags start at 0x860; Ruby/Sapphire's start at 0x800.
+        (int Index, string Repository, string Revision) definition = save switch
+        {
+            SAV3RS => (0x804, "pokeruby", "5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f"),
+            SAV3E => (0x864, "pokeemerald", "731ad5bfd6e6f265508d0efcca0ba42f9dcf5881"),
+            SAV3FRLG => (0x82C, "pokefirered", "ce6406d8c2eaf46d543c8a2606de0c3cb1951982"),
+            _ => throw new NotSupportedException("Unknown GBA save family."),
+        };
+        return [new {
+            id = "story.gba.gameClear", label = "Indicador de Liga superada (GBA)",
+            value = save.GetEventFlag(definition.Index), validation = "documented",
+            source = new {
+                url = $"https://github.com/pret/{definition.Repository}/blob/{definition.Revision}/include/constants/flags.h",
+                triggerUrl = $"https://github.com/pret/{definition.Repository}/blob/{definition.Revision}/src/post_battle_event_funcs.c",
+                sourceCommit = definition.Revision, engineCommit = Audit.EngineCommit,
+                flagIndex = definition.Index, scriptName = "FLAG_SYS_GAME_CLEAR",
+            },
+            limitation = "Definición documentada en los scripts del juego; pendiente de comparación natural controlada. No acredita escenas previas ni cronología.",
+        }];
     }
 }

@@ -255,6 +255,15 @@ async function run() {
     assert.equal(await allPage.locator('[data-coverage-game]').count(),39);
     await allPage.setViewportSize({width:390,height:1000});
     assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    // GBA documentary flags orient an imported save without ticking historical scenes.
+    const gba={game:'FIRERED',caught:[],seen:[],gameClear:null,badgesTotal:8,badgesMask:255,nationalDex:true,
+      integrity:{checksumsValid:true},progressSignals:[{id:'story.gba.gameClear',label:'Indicador de Liga superada (GBA)',value:true,validation:'documented'}]};
+    await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-gba.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(gba))});
+    await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.FIRERED?.badgesMask===255);
+    await allPage.locator('[data-view="mission"]').first().click();
+    assert.match(await allPage.locator('#app').innerText(),/indicador documentado de Liga superada/);
+    assert.equal(await allPage.locator('[data-step]:checked').count(),0);
+    assert.equal(await allPage.locator('[data-focus]').first().getAttribute('data-focus'),'FIRERED-15');
     // Documented modern signals guide the route while mastery remains partial.
     const modern={game:'SCARLET',caught:[],seen:[],gameClear:null,integrity:{checksumsValid:true},progressSignals:[
       {id:'story.paldea.clear',label:'Indicador de final de Paldea',value:true,validation:'documented'},

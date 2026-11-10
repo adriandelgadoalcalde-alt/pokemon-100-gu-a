@@ -19,13 +19,18 @@
   if(integer(e.languageId)!==null)result.languageId=e.languageId;
   if(Array.isArray(e.progressSignals))result.progressSignals=e.progressSignals.filter(s=>s&&typeof s.id==='string').map(s=>({id:s.id,label:typeof s.label==='string'?s.label:s.id,value:tri(s.value),validation:'documented',source:s.source&&typeof s.source==='object'?JSON.parse(JSON.stringify(s.source)):null}));
   if(Array.isArray(e.inventory))result.inventory=JSON.parse(JSON.stringify(e.inventory));
-  for(const key of ['tid','sid','generation','version'])if(integer(e[key])!==null)result[key]=e[key];
+  for(const key of ['tid','sid','generation','version','badgesMask'])if(integer(e[key])!==null)result[key]=e[key];
   if(Array.isArray(e.keyItems))result.keyItems=e.keyItems.filter(i=>i&&Number.isInteger(i.id)&&i.id>0&&Number.isInteger(i.count)&&i.count>0)
    .map(i=>({id:i.id,count:i.count}));
   if(e.extractor&&typeof e.extractor==='object')result.extractor={engine:String(e.extractor.engine||''),engineCommit:String(e.extractor.engineCommit||'')};
   for(const key of ['integrity','events','medals','battleTree','pokeathlon','pokewalker'])
    if(e[key]&&typeof e[key]==='object'&&!Array.isArray(e[key]))result[key]=JSON.parse(JSON.stringify(e[key]));
   return result;
+ }
+ function documentedClear(e){
+  const id=['RUBY','SAPPHIRE','EMERALD','FIRERED','LEAFGREEN'].includes(e?.game)?'story.gba.gameClear':['SCARLET','VIOLET'].includes(e?.game)?'story.paldea.clear':null;
+  const signal=id?e?.progressSignals?.find(s=>s.id===id):null;
+  return typeof signal?.value==='boolean'?signal:null;
  }
  function profile(e){
   if(!e)return null;
@@ -78,6 +83,6 @@
   if(old&&!identical){next.evidenceArchive=next.evidenceArchive||{};next.evidenceArchive[game]=[old,...(next.evidenceArchive[game]||[])];}
   next.evidence[game]=diagnosis;next.game=game;return next;
  }
- const api={normalize,read,profile,apply,supported};
+ const api={normalize,read,profile,apply,supported,documentedClear};
  if(typeof module==='object'&&module.exports)module.exports=api;else root.PokemonDiagnosis=api;
 })(typeof globalThis==='object'?globalThis:this);

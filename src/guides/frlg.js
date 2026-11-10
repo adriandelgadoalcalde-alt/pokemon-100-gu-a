@@ -411,13 +411,15 @@
       "Sal por el extremo norte hacia Meseta Añil. Prepara curaciones, estados y PP antes de cruzar la puerta del Alto Mando; es una secuencia de cinco combates.",
       "Los miembros son Lorelei (Hielo), Bruno (Lucha), Agatha (Fantasma/Veneno) y Lance (Dragón). Tu rival es el Campeón y su equipo cambia según el inicial que elegiste.",
       "Tras vencer al Campeón deja registrar el Hall de la Fama y terminar los créditos. Al continuar la partida revisa con Oak la ampliación a Pokédex Nacional: se requieren al menos 60 especies capturadas, además de haber superado la Liga.",
-      "Con la Pokédex Nacional vuelve a Celio en Isla Prima y abre el recorrido del Rubí y el Zafiro. Esa cadena habilita funciones y encuentros que la primera victoria en Liga no abre por sí sola."
+      "Con la Pokédex Nacional vuelve a Celio en Isla Prima y abre el recorrido del Rubí y el Zafiro. Esa cadena habilita funciones y encuentros que la primera victoria en Liga no abre por sí sola.",
+      "Si juegas a la reedición oficial de Switch, revisa Ori-Ticket y Misti-Ticket después del Hall de la Fama: permiten los accesos a Isla Origen y Roca Ombligo. Esta entrega no existe en los cartuchos GBA originales; consulta la misión de las islas para las condiciones de esa revisión."
     ],
     "check": "Hall de la Fama y requisito de Pokédex Nacional revisados.",
     "pitfalls": [
       "Un total de especies vistas no cumple las 60 capturadas. El acceso a Mewtwo depende también del cierre de la red de Celio."
     ],
     "sources": [
+      "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/post_battle_event_funcs.c",
       "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/VictoryRoad_1F/scripts.inc",
       "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/VictoryRoad_2F/scripts.inc",
       "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/VictoryRoad_3F/scripts.inc",
@@ -449,7 +451,8 @@
     ],
     "check": "Ubicaciones y accesos de las cuatro capturas fijas y del errante identificados.",
     "pitfalls": [
-      "Moltres está en Monte Ascuas, no en Calle Victoria. Una especie registrada no prueba que se haya resuelto su escena original. Conserva una copia antes de encuentros únicos."
+      "Moltres está en Monte Ascuas, no en Calle Victoria. Una especie registrada no prueba que se haya resuelto su escena original. Conserva una copia antes de encuentros únicos.",
+      "En GBA original, Entei/Raikou pueden desaparecer definitivamente si Rugido termina el combate: considera reservar la Master Ball para ese errante. La reedición oficial de Switch corrige ese fallo. No confundas esta diferencia de revisión con la huida normal del errante."
     ],
     "sources": [
       "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SeafoamIslands_B4F/scripts.inc",
@@ -458,7 +461,8 @@
       "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/OneIsland_KindleRoad_EmberSpa/scripts.inc",
       "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/OneIsland_PokemonCenter_1F/scripts.inc",
       "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeruleanCave_B1F/scripts.inc",
-      "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/roamer.c"
+      "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/roamer.c",
+      "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/battle_main.c"
     ],
     "review": "reference-checked",
     "reviewedAt": "2026-11-10"

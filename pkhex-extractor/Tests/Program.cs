@@ -101,6 +101,30 @@ Check(ProgressSignals.DecodeBooleanType(null) is null,"An absent block became fa
 Check(ProgressSignals.DecodeBooleanType(SCTypeCode.Bool3) is null,"An array boolean became a scalar flag");
 Check(ProgressSignals.DecodeBooleanType(SCTypeCode.Object) is null,"An object block became a scalar flag");
 
+foreach (var version in new[] { GameVersion.R, GameVersion.S, GameVersion.E, GameVersion.FR, GameVersion.LG })
+{
+    var gba=(SAV3)SyntheticGba(version);
+    gba.Badges=0b10100101;
+    gba.NationalDex=true;
+    var flagIndex=version is GameVersion.R or GameVersion.S?0x804:version==GameVersion.E?0x864:0x82C;
+    foreach(var cleared in new[] { false,true })
+    {
+        gba.SetEventFlag(flagIndex,cleared);
+        gba.SetEventFlag(flagIndex+1,!cleared);
+        var container=gba.Write().ToArray();var original=SHA256.HashData(container);
+        var decoded=SaveUtil.GetSaveFile(container.ToArray().AsMemory()) as SAV3;
+        Check(decoded is not null && decoded.ChecksumsValid,"GBA synthetic container integrity failed");
+        var diagnosis=Audit.Extract(decoded!,Convert.ToHexStringLower(original),true);
+        Check((int?)diagnosis["badgesTotal"]==4,"GBA badge count is not a bit count");
+        Check((int?)diagnosis["badgesMask"]==0b10100101,"GBA individual badge mask was lost");
+        Check((bool?)diagnosis["nationalDex"]==true,"GBA national unlock was omitted");
+        using var signals=JsonDocument.Parse(JsonSerializer.Serialize(diagnosis["progressSignals"],Audit.JsonOptions));
+        Check(signals.RootElement[0].GetProperty("value").GetBoolean()==cleared,"GBA clear signal uses the wrong family flag");
+        Check(signals.RootElement[0].GetProperty("validation").GetString()=="documented","GBA documentary flag was certified");
+        Check(SHA256.HashData(container).AsSpan().SequenceEqual(original),"GBA input changed");
+    }
+}
+
 var output = args.Length == 1 ? Path.GetFullPath(args[0]) : Path.Combine(Path.GetTempPath(), "pokemon-audit-synthetic");
 Directory.CreateDirectory(output);
 var bytes = SyntheticHgss(); var before = SHA256.HashData(bytes);

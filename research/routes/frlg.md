@@ -69,3 +69,23 @@ Faltan desgloses de intercambios, evoluciones, actividades y recompensas aún
 agrupadas, y revisar el inventario completo de cada edición. Las comparaciones de
 registros no prueban legitimidad ni historia de escenas. La semántica de los demás
 flags y el seguimiento natural antes/después continúan pendientes.
+
+## Revisión oficial de Switch
+
+La revisión `GAME_REVISION=10` del mismo código fijado tiene diferencias relevantes:
+`EnterHallOfFame`, en `src/post_battle_event_funcs.c`, entrega Ori-Ticket/Misti-Ticket
+y activa las rutas de Isla Origen/Roca Ombligo. Está condicionado a conceder al menos
+una Cinta Campeón nueva y a no llevar ya el Ori-Ticket. La explicación oficial general
+es la entrega después del Hall de la Fama:
+[noticia oficial de Pokémon](https://www.pokemon.com/uk/news/pokemon-firered-version-and-pokemon-leafgreen-version-link-with-pokemon-home-this-october).
+
+`src/battle_main.c` distingue también la revisión para no desactivar erróneamente al
+errante cuando Rugido termina el combate. La guía advierte de ese riesgo en GBA
+original y de su corrección en Switch. Los nombres españoles Ori-Ticket y Misti-Ticket
+se comprueban en el recurso `text_ItemsG3_es.txt` del Core fijado.
+
+Se corrige la frase general «la Liga no entrega los tickets», válida solo para GBA
+original. No se presupone la plataforma de origen desde un contenedor genérico:
+se muestran ambas condiciones. No se certifica haber recibido tickets ni haber abierto
+las islas por la mera presencia de una especie en la Pokédex. La guía mantiene 16
+rutas nuevas compartidas, ahora con 80 instrucciones, además de la ruta previa E02.

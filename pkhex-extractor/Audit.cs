@@ -92,9 +92,10 @@ public static class Audit
             ["integrity"] = new { engine = "PKHeX.Core", checksumsValid = checksums,
                 scope = "Propiedad de integridad upstream; algunos formatos no tienen checksums propios" },
             ["gameClear"] = save is SAV4 s4 ? s4.GameClear : save is SAV5 or SAV6 or SAV7 ? save.SecondsToFame > 0 : null,
-            ["nationalDex"] = save is SAV4 n4 ? n4.NationalDex : save is SAV5 n5 ? n5.Zukan.IsNationalDexUnlocked :
+            ["nationalDex"] = save is SAV3 n3 ? n3.NationalDex : save is SAV4 n4 ? n4.NationalDex : save is SAV5 n5 ? n5.Zukan.IsNationalDexUnlocked :
                 save is SAV6XY nx ? nx.Zukan.IsNationalDexUnlocked : save is SAV6AO na ? na.Zukan.IsNationalDexUnlocked : null,
-            ["badgesTotal"] = save is SAV4HGSS hg ? BitOperations.PopCount(hg.Badges) + BitOperations.PopCount((uint)hg.Badges16) :
+            ["badgesMask"] = save is SAV3 b3 ? b3.Badges : (int?)null,
+            ["badgesTotal"] = save is SAV3 badges3 ? BitOperations.PopCount((uint)badges3.Badges) : save is SAV4HGSS hg ? BitOperations.PopCount(hg.Badges) + BitOperations.PopCount((uint)hg.Badges16) :
                 save is SAV4 d4 ? BitOperations.PopCount(d4.Badges) : save is SAV5 b5 ? BitOperations.PopCount((uint)b5.Misc.Badges) :
                 save is SAV6 b6 ? BitOperations.PopCount((uint)b6.Badges) : null,
             ["progressSignals"] = ProgressSignals.Read(save),

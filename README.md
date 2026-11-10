@@ -83,3 +83,9 @@ WebKit en Linux no sustituye una prueba física de Safari/iPadOS.
 - https://bulbapedia.bulbagarden.net/wiki/Appendix:Black_2_and_White_2_walkthrough
 - https://www.wikidex.net/wiki/Unova
 - https://bulbapedia.bulbagarden.net/wiki/Core_series
+
+El motor ampliado conserva ahora las medallas individuales y la Nacional de los
+cinco títulos GBA. Una señal documentada de Liga orienta al postgame sin dar por
+hechas todas las escenas; véase `research/saves/gba-progress.md`. Rojo Fuego/Verde
+Hoja distingue los tickets y el fallo de Rugido entre GBA original y la reedición
+oficial de Switch. La plataforma no se inventa a partir de un save que no la identifica.

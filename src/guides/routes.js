@@ -832,18 +832,20 @@
       "Acceso a la región insular y billetes de evento válidos"
     ],
     "steps": [
-      "Comprueba qué acceso histórico conserva la partida: el Ori-Ticket corresponde a Isla Origen y el Misti-Ticket a Roca Ombligo.",
+      "Distingue la versión: en los cartuchos GBA originales, Ori-Ticket y Misti-Ticket dependían de distribuciones de evento; en la reedición oficial de Switch se entregan al entrar en el Hall de la Fama. El Ori-Ticket corresponde a Isla Origen y el Misti-Ticket a Roca Ombligo.",
       "En Isla Origen, interactúa con el triángulo y acércate a cada nueva posición por el recorrido más corto. Si se reinicia el puzle, repite desde el comienzo sin dar pasos innecesarios.",
       "Tras completar el triángulo aparece Deoxys. Guarda antes del encuentro y revisa que su forma depende del juego donde se encuentre.",
       "En Roca Ombligo usa la bifurcación interior: el ascenso conduce a Ho-Oh y el descenso a Lugia. Son dos encuentros diferentes.",
       "Registra aparte si solo has obtenido estas especies por intercambio. Eso no prueba que tu partida tenga habilitadas las islas."
     ],
-    "check": "Acceso histórico y encuentros de cada isla diferenciados.",
+    "check": "Versión, acceso y encuentros de cada isla diferenciados.",
     "pitfalls": [
-      "Los tickets no se consiguen derrotando entrenadores secundarios ni completando otra vez la Liga. No presentes una recreación de evento como distribución recibida en su época."
+      "En GBA original, repetir la Liga no entrega estos tickets. En Switch, si no aparecen tras el Hall de la Fama, revisa ambos objetos y vuelve con al menos un Pokémon sin la Cinta Campeón: la entrega está dentro de la concesión de una cinta nueva y condicionada a no llevar ya el Ori-Ticket. Un ticket aislado importado no demuestra que estén activadas las rutas del barco."
     ],
     "sources": [
-      "https://www.serebii.net/fireredleafgreen/legendary.shtml"
+      "https://www.serebii.net/fireredleafgreen/legendary.shtml",
+      "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/post_battle_event_funcs.c",
+      "https://www.pokemon.com/uk/news/pokemon-firered-version-and-pokemon-leafgreen-version-link-with-pokemon-home-this-october"
     ],
     "review": "reference-checked",
     "reviewedAt": "2026-11-10"
