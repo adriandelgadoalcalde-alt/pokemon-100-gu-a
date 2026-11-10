@@ -1,0 +1,62 @@
+{
+  "sourceCommit": "ce6406d8c2eaf46d543c8a2606de0c3cb1951982",
+  "sourceRepository": "pret/pokefirered",
+  "map": "SaffronCity_Gym",
+  "width": 29,
+  "height": 25,
+  "mapSha256": "2050a71b0921f28316910f4b1197b3c89ee648589abe371249bbf815023934d0",
+  "mapEventsSha256": "4d6acadeb367361febd096e568db251bfa6d6b08eaf6821732040bdf60738fa5",
+  "teleports": [
+    [
+      [
+        18,
+        20
+      ],
+      [
+        28,
+        23
+      ]
+    ],
+    [
+      [
+        28,
+        20
+      ],
+      [
+        28,
+        12
+      ]
+    ],
+    [
+      [
+        28,
+        15
+      ],
+      [
+        0,
+        12
+      ]
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        8,
+        7
+      ]
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        18,
+        15
+      ]
+    ]
+  ],
+  "scope": "Derived navigation through pinned collision cells and warp targets, avoiding NPC positions; not a natural-save test."
+}

@@ -101,6 +101,11 @@
    validation:validated||d.integrity?.verifiedFields?.includes(field)?'verified':'unverified',source:{kind:'save_field',engine:d.extractor?.engine||'PokemonSaveReader'}});
   for(const id of d.caught||[])add(`pokedex.caught.${id}`,true,'caught');
   for(const id of d.seen||[])add(`pokedex.seen.${id}`,true,'seen');
+  const completion=(typeof module==='object'&&module.exports?require('./completion.js'):root.PokemonCompletion)?.dexStatus(d);
+  if(completion)for(const [key,status]of Object.entries(completion)){
+   add('pokedex.completion.'+key,status.complete,'caught');
+   facts.at(-1).source={...facts.at(-1).source,definition:status.source,meaning:'Exact registered species set; not original encounters or reward collection'};
+  }
   if(typeof d.gameClear==='boolean')add('story.gameClear',d.gameClear,'gameClear');
   if(typeof d.nationalDex==='boolean')add('pokedex.nationalUnlocked',d.nationalDex,'nationalDex');
   if(Number.isInteger(d.badgesTotal??d.badges))add('story.badges.count',d.badgesTotal??d.badges,'badgesTotal');

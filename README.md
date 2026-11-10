@@ -46,12 +46,14 @@ no amplía por sí solo los formatos compatibles ni certifica nuevos eventos.
 
 Las misiones incorporan recorridos con ubicación, requisitos, instrucciones,
 comprobación final y fuentes, disponibles también offline. La ampliación actual
-contiene 93 rutas enlazadas a 215 misiones de las 39 ediciones. Mantiene todas las
+contiene 109 rutas enlazadas a 247 misiones de las 39 ediciones. Mantiene todas las
 casillas previas. El [seguimiento editorial](docs/guide-completion.md) define qué
 falta para cerrar las guías exhaustivas de las nueve generaciones; los recuentos
 no certifican el 100 % de los juegos. Hoenn GBA incluye las diferencias de
 historia y un visor de hielo específico para Rubí/Zafiro y Esmeralda, disponible
-offline y sin modificar las casillas del usuario.
+offline y sin modificar las casillas del usuario. Rojo Fuego/Verde Hoja conserva
+su recorrido propio, ubicaciones corregidas y diagnóstico de las especies exactas
+que faltan para sus requisitos de Pokédex.
 
 ## Desarrollo y comprobaciones
 

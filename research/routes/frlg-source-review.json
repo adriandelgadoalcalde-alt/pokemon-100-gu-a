@@ -1,0 +1,552 @@
+{
+  "checkedAt": "2026-11-10",
+  "scope": "Source availability and pinned script byte parity; not natural-save validation or exhaustive inventory review.",
+  "sources": [
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/layouts/SaffronCity_Gym/map.bin",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/layouts/SaffronCity_Gym/map.bin",
+      "status": 200,
+      "sha256": "2050a71b0921f28316910f4b1197b3c89ee648589abe371249bbf815023934d0",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeladonCity_Condominiums_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeladonCity_Condominiums_1F/scripts.inc",
+      "status": 200,
+      "sha256": "dae67452657319ef042eef63e7fb03019358b1bc3e12f8cec3b04ffa42669c46",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeladonCity_Condominiums_RoofRoom/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeladonCity_Condominiums_RoofRoom/scripts.inc",
+      "status": 200,
+      "sha256": "1802931ce27a575f96381a78aa81b25d5d77bfd47beb5addf35bd94c49599b19",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeladonCity_GameCorner/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeladonCity_GameCorner/scripts.inc",
+      "status": 200,
+      "sha256": "1e05d3520f34fa7a6bad3542e0f99b205d0308cdb9d9e812c33a8f0b71498da5",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeladonCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeladonCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "ded6804f2de529da76ec6daf68e4a2ccbf26a583626620264da42ecfccbdfe3c",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeruleanCave_B1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeruleanCave_B1F/scripts.inc",
+      "status": 200,
+      "sha256": "c454a14b2ea0868fe3ba3e3e47918b3201625113e9c381b673787ce1522f144a",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeruleanCity/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeruleanCity/scripts.inc",
+      "status": 200,
+      "sha256": "d4e99c027ed400707ad2ce259ac0f8efc77ecbb8f5adff118be84b05ed29e49b",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeruleanCity_BikeShop/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeruleanCity_BikeShop/scripts.inc",
+      "status": 200,
+      "sha256": "24f03c434d0ec4e6da1d9ee7b108e8a52300b37b0d1cdce5b6cd46274f1655df",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeruleanCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CeruleanCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "78396fded9695c03277840a5c9f8f1232c8c6d0a5f3e25518cc7584993f752b0",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CinnabarIsland/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CinnabarIsland/scripts.inc",
+      "status": 200,
+      "sha256": "58ee5ed2f19deb369e24ff9b1cd4009b872ce1d49ed2e8fe453bf70a668e6a8b",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CinnabarIsland_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CinnabarIsland_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "e7576dbee7d5b44f6e03c363c062bfdfae2a40adf4273a13461e35a70ff5ad5e",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.inc",
+      "status": 200,
+      "sha256": "8afc38f502fd909a1bb220a919ac107ce8b39e98e29731d654f6edef749828ce",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/DiglettsCave_B1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/DiglettsCave_B1F/scripts.inc",
+      "status": 200,
+      "sha256": "335a0ecf2c1c51ae6bc88bda0d7c73e21c098353848a65f14bcbf2a0b3536009",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/FuchsiaCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/FuchsiaCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "5af256d09bf8768431c502381d40543a3bbf136e2cf3feacebe3bf85a2b62502",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/FuchsiaCity_WardensHouse/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/FuchsiaCity_WardensHouse/scripts.inc",
+      "status": 200,
+      "sha256": "8fa85e60af38591f8386df4aca612bdfb37511d2dcc10780e532a50eb20bd995",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/LavenderTown_VolunteerPokemonHouse/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/LavenderTown_VolunteerPokemonHouse/scripts.inc",
+      "status": 200,
+      "sha256": "5e6f4e734e5fe3a6e7b85926789bd1926a5583161f6a43ad2843ded5c63f8004",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/MtEmber_Summit/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/MtEmber_Summit/scripts.inc",
+      "status": 200,
+      "sha256": "5c462d9eeb42d9ef65249511f80e62d8887181482942b5e05ea803e46a0b83f6",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/MtMoon_1F/map.json",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/MtMoon_1F/map.json",
+      "status": 200,
+      "sha256": "312b2de23d9942d3326da9fe9597b25ef7c3537bcedfcafa7922d5c8b8e8d8fc",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/MtMoon_B2F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/MtMoon_B2F/scripts.inc",
+      "status": 200,
+      "sha256": "4d53d179f893c9c6d6af6c5b10e2a005ce83315484636a57df36d56bcc7f7898",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/OneIsland_KindleRoad_EmberSpa/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/OneIsland_KindleRoad_EmberSpa/scripts.inc",
+      "status": 200,
+      "sha256": "5d2a1c3146b26a0accc57a7b8574e59e9afc539dd43eab4ff2993e31a6051720",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/OneIsland_PokemonCenter_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/OneIsland_PokemonCenter_1F/scripts.inc",
+      "status": 200,
+      "sha256": "845a094b969d8d8fca4411a9626a25babf6d02aa3876fd1aa0bc67988b6efd70",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PalletTown_ProfessorOaksLab/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PalletTown_ProfessorOaksLab/scripts.inc",
+      "status": 200,
+      "sha256": "ed6e02fdd179af05159f27288ef9b5226ce7917c03ae54e8fb8d83c853fc311d",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PalletTown_RivalsHouse/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PalletTown_RivalsHouse/scripts.inc",
+      "status": 200,
+      "sha256": "8ceaa5011452e4e06f15ffe43700cac92318755d02cc9e32d8b5f06095d03c9b",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PewterCity/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PewterCity/scripts.inc",
+      "status": 200,
+      "sha256": "8cdad0daad04002a4dff3e9878884da4e478626ac48181ea7aa48616fe295e6d",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PewterCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PewterCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "c1e6f14fd5c437d96421b41e88609e637e81fbc5a03a2161bcdadd6c1bc45153",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PewterCity_Museum_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PewterCity_Museum_1F/scripts.inc",
+      "status": 200,
+      "sha256": "199f9436d64f20419ab16a49bd582dccd14996c870bfbf4cf3bd61e2f7274135",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PokemonLeague_ChampionsRoom/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PokemonLeague_ChampionsRoom/scripts.inc",
+      "status": 200,
+      "sha256": "41d2f054b4569798cd3e11e848f3ac3da62781db22320241ef18efb6604f72f3",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PokemonLeague_LoreleisRoom/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PokemonLeague_LoreleisRoom/scripts.inc",
+      "status": 200,
+      "sha256": "62206bd5b51860c75293bf53021a845ee1495cae5ea28703c78ca142b7c32e15",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PokemonMansion_B1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PokemonMansion_B1F/scripts.inc",
+      "status": 200,
+      "sha256": "7ac39b6051667cd7eb05c05bb0c4b47483445080f4fc36560cee96d35676cd26",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PokemonTower_6F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PokemonTower_6F/scripts.inc",
+      "status": 200,
+      "sha256": "9b761b8470ee034f3c3fea2c2e293ef631e75c2b848e3bf81daedc0ff30b2a90",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PokemonTower_7F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PokemonTower_7F/scripts.inc",
+      "status": 200,
+      "sha256": "3c9699000e2912afcb9833b07591271ffe24ce066331cf0a4a6e7e85f1d78dfd",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PowerPlant/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/PowerPlant/scripts.inc",
+      "status": 200,
+      "sha256": "7558c5214a97c767aa1840d14fa15521e7f0993657ee19a3bb088b4202f6f192",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/RockTunnel_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/RockTunnel_1F/scripts.inc",
+      "status": 200,
+      "sha256": "280e115dda1b2bd1bdefed4844fc725209425d4f6610a270c65186eb373bfbd2",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/RockTunnel_B1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/RockTunnel_B1F/scripts.inc",
+      "status": 200,
+      "sha256": "1f3956432dd0579b68aeb55d70399c1d88c9510aff382a7f082866728c0c8768",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/RocketHideout_B4F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/RocketHideout_B4F/scripts.inc",
+      "status": 200,
+      "sha256": "b9cf991e65b8699b113904604fae31d20e9b9b3459c606b2968b981ee9d282a2",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route10_PokemonCenter_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route10_PokemonCenter_1F/scripts.inc",
+      "status": 200,
+      "sha256": "53a34278cab6835a7056f5f2420a5e53f78095fe99760663bd1db4edcfa9e48b",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route11_EastEntrance_2F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route11_EastEntrance_2F/scripts.inc",
+      "status": 200,
+      "sha256": "00478c86303a3cf36d1d2d31acd2a1ef18cad83d1ed60f9b3b5bc77aaa281b05",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route12/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route12/scripts.inc",
+      "status": 200,
+      "sha256": "ea70631fa17e3042cf08b32c94fbc26fbb128936b61c00e61127b79af780368e",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route15_WestEntrance_2F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route15_WestEntrance_2F/scripts.inc",
+      "status": 200,
+      "sha256": "14b686dcb69830824a9407ee510b9c93343a8031d1c104b56cf5419a2b2b6090",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route16/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route16/scripts.inc",
+      "status": 200,
+      "sha256": "680c86b2457428a348f8dd7ff006d13681c510cd5098c04b44f8f09a755a17a5",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route16_House/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route16_House/scripts.inc",
+      "status": 200,
+      "sha256": "406a9f3221438603f5cbcca8852385301e2ccf0dec2ebfec5180211d20591b28",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route22/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route22/scripts.inc",
+      "status": 200,
+      "sha256": "09015b4472fdd75b7ac1f01501ad76341b177f9b2b5ff94411c0fa6ea2139be2",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route23/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route23/scripts.inc",
+      "status": 200,
+      "sha256": "c8f109eb87df8be7bd99337ec562d478e0f365f7106a2773f1dbcdb5a431fec2",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route25_SeaCottage/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route25_SeaCottage/scripts.inc",
+      "status": 200,
+      "sha256": "41e7058fc1aa79245b890bc086a49da80035f981237528fc4414faeef997fb38",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route2_EastBuilding/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route2_EastBuilding/scripts.inc",
+      "status": 200,
+      "sha256": "a01c8d296d4ae99b0875e529415d39c530c3dbc39e5250bbb131ac7a9b6ed745",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route4/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route4/scripts.inc",
+      "status": 200,
+      "sha256": "c11847a08f2e50d69d425af0ac346508b4696f1ac616dde06fd36ad322161a60",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route5/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route5/scripts.inc",
+      "status": 200,
+      "sha256": "0342511fa88ffa97399f1ea11825bf42e93902002718c7cfce8787d0bf7c8009",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route7/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route7/scripts.inc",
+      "status": 200,
+      "sha256": "ac1ffb29834db27fd68b59d8f97ceb6eb14c81762bd92c5263770a1839936732",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route8/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/Route8/scripts.inc",
+      "status": 200,
+      "sha256": "7126c370e63fe94ce3762ed77c5f87a028fd31e150a6c202da99f2d76251fda2",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SSAnne_2F_Corridor/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SSAnne_2F_Corridor/scripts.inc",
+      "status": 200,
+      "sha256": "91d88d8000a96abfc7b8a41fd925c11663a0a00a706e56e2bf0784a03e073a6d",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SSAnne_CaptainsOffice/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SSAnne_CaptainsOffice/scripts.inc",
+      "status": 200,
+      "sha256": "6effe02479f7263830c238b90c906b7809cd5830613b885118176a770edb88aa",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SSAnne_Exterior/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SSAnne_Exterior/scripts.inc",
+      "status": 200,
+      "sha256": "9d6464b9972ff2744d35e69124484829253f28706f5b07a0b3fb23c2fe00c3e1",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SafariZone_SecretHouse/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SafariZone_SecretHouse/scripts.inc",
+      "status": 200,
+      "sha256": "dcdebeda8d505b4ac7bcae912a9dd3ff1039d8987a187ddb41bffaa81cbda795",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SafariZone_West/map.json",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SafariZone_West/map.json",
+      "status": 200,
+      "sha256": "6d386dbe03990c3fa57c1f67149841dd629f5258567408f8d3d456f4168cf328",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SaffronCity_Dojo/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SaffronCity_Dojo/scripts.inc",
+      "status": 200,
+      "sha256": "a7e406b6355b31c2853206ba66a0fb00cfd1575b5a3a92d69e9237bffdac9098",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SaffronCity_Gym/map.json",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SaffronCity_Gym/map.json",
+      "status": 200,
+      "sha256": "4d6acadeb367361febd096e568db251bfa6d6b08eaf6821732040bdf60738fa5",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SaffronCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SaffronCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "54a8956e1f0aa8d60250c13de4919ffa581f0bda0a9c41a8c97a0c02b1fb421b",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SeafoamIslands_B4F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SeafoamIslands_B4F/scripts.inc",
+      "status": 200,
+      "sha256": "f269137e533de5e32c2b90fe281a9b16017cdfbc5a1aa8cdf2754feff2b2bacd",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SilphCo_11F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SilphCo_11F/scripts.inc",
+      "status": 200,
+      "sha256": "34d6a1075bc50768cd182488907e77e4f46110ba55fae4dec83ff7d96c729339",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SilphCo_3F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SilphCo_3F/scripts.inc",
+      "status": 200,
+      "sha256": "de8cf2428970d57ee9f6190f5c294f7d8fc1211de3df50f82227c34e5818ff89",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SilphCo_5F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SilphCo_5F/scripts.inc",
+      "status": 200,
+      "sha256": "7e1bebe3f4e201970c075c9c6c103790e2ff8891e73b9f5e2ea2321a95d0c73d",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SilphCo_7F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SilphCo_7F/scripts.inc",
+      "status": 200,
+      "sha256": "87760a3d9105e4f441fecd443c67e67fde075a40e4379a5bb2d944fe5b9687c9",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/ThreeIsland_BerryForest/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/ThreeIsland_BerryForest/scripts.inc",
+      "status": 200,
+      "sha256": "e716d5252078b670652939fe883fc8b6db45af0273e4183c82ee3939985a9342",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/TwoIsland_JoyfulGameCorner/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/TwoIsland_JoyfulGameCorner/scripts.inc",
+      "status": 200,
+      "sha256": "854aa8b365a7b3675bd77f3d4afb189214e1f76b6da909528dc3721a56b3662f",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/VermilionCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/VermilionCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "3341fb187215a9b961bde55465491fb3b24772fe11b0f801d840dcea3888ed7c",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/VermilionCity_PokemonFanClub/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/VermilionCity_PokemonFanClub/scripts.inc",
+      "status": 200,
+      "sha256": "82a5ec8f76bc292fe2cc7031a19c4bd0d73a64ff823ee1c3f718daba1300dcda",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/VictoryRoad_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/VictoryRoad_1F/scripts.inc",
+      "status": 200,
+      "sha256": "cdcc21ffc6954ac2b5da5c7da1a47341b37971bdf61adf7a31653c6c32be1046",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/VictoryRoad_2F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/VictoryRoad_2F/scripts.inc",
+      "status": 200,
+      "sha256": "ee8a47d14edb1e1ff084032f102e0193e4b517eb780d1283bef47e7090ae598a",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/VictoryRoad_3F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/VictoryRoad_3F/scripts.inc",
+      "status": 200,
+      "sha256": "c8dae23f151a2eced7bf71135cbded590823c01b912da5ec20d6ecfa610664e4",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/ViridianCity/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/ViridianCity/scripts.inc",
+      "status": 200,
+      "sha256": "2f23053443e399983324ed7461923bba1267ca3d3c8961ce33a6d10be140f72d",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/ViridianCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/ViridianCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "a69345d0612e7999c466478b5b2569ae5c4c7750262de503060795ef68962046",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/ViridianCity_Mart/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/ViridianCity_Mart/scripts.inc",
+      "status": 200,
+      "sha256": "b8ffccc716ae3d79be432c37213e3284849c5d5dd160757a8a1a9f1c5bc61e8b",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/data/pokemon/level_up_learnsets.h",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/data/pokemon/level_up_learnsets.h",
+      "status": 200,
+      "sha256": "d6563a88fa893d1433a02027cb13ba9574a6828a96b1a730b1d767fd7c5a0cc6",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/dodrio_berry_picking.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/dodrio_berry_picking.c",
+      "status": 200,
+      "sha256": "4e64fb046229d5066d5535ae71374e4bbf79724046a9ccd809ba1476de30b187",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/evolution_scene.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/evolution_scene.c",
+      "status": 200,
+      "sha256": "36d3fe95bd25ce07a4085ba6e9b7b68dc9014b349e0e4106d42e28b7b40155fb",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/pokedex.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/pokedex.c",
+      "status": 200,
+      "sha256": "b6283039a19fe1a5b781f6dd7ef3f61b1a022c460ce2588b8b6f99932a4682b7",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/roamer.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/roamer.c",
+      "status": 200,
+      "sha256": "b72cd17c1e668b8d483953dd85cc6f0e02c54a1a022f4fabe743841867b9877f",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/trainer_card.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/trainer_card.c",
+      "status": 200,
+      "sha256": "54c39013c4bd42a9b14d8a375b7d04aec80a6448dbb1ca2a7dba4f58d7821f60",
+      "matchesPinnedSource": true
+    }
+  ]
+}

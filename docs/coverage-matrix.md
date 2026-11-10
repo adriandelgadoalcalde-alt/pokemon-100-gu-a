@@ -404,3 +404,35 @@ Comprobaciones locales: 48 pruebas unitarias, auditoría sin errores, regeneraci
 de los recorridos del hielo, y regresión Chromium/WebKit con el visor móvil, cambio
 de edición, ausencia de marcas automáticas y uso después de cerrar el servidor.
 No hay nuevos offsets ni certificaciones de eventos de guardado en este ciclo.
+
+## Noveno ciclo: remakes de Kanto GBA y listas exactas de registro
+
+Base: `9d3a796` de `main`; rama `feat/frlg-walkthroughs`. Se añaden 16 rutas,
+79 instrucciones y 32 enlaces a misiones de Rojo Fuego/Verde Hoja. Total editorial:
+109 rutas, 247 conexiones y 278 misiones del catálogo aún sin esa ampliación.
+Todas las misiones hoy catalogadas de la generación III tienen recorrido ampliado;
+esto no cierra el inventario de objetivos y recompensas fuera o dentro de tareas
+agrupadas. Las cinco guías permanecen en revisión exhaustiva.
+
+Se corrige el falso destino de Moltres en Calle Victoria, el acceso de Mewtwo,
+condiciones de MO/objetos y advertencias trasladadas de otros juegos. Se documentan
+los teletransportadores de Sabrina con una derivación reproducible del mapa.
+Las fuentes y su revisión están en `research/routes/frlg.md`.
+
+El diagnóstico compara las listas reales de 150/380 especies exigidas para Kanto
+y Nacional. Los totales no sustituyen la identidad de cada especie; una captura
+excluida no reemplaza otra ausente. Se muestran pendientes por número y nombre,
+y el motor acredita únicamente el registro con integridad validada. No inventa
+encuentros originales, regalos entregados ni recompensas recogidas. Las marcas
+manuales no se modifican y no hay migración de claves ni cambio de IDs.
+
+También se actualizan dos mensajes del Atlas que todavía describían como inexistente
+el motor ampliado ya publicado. La guía clásica utiliza los nombres completos en
+sus etiquetas de especies pendientes; no cambian bytes ni campos del parser.
+
+Comprobaciones locales: 50 casos unitarios; auditoría sin errores; derivación de
+teletransportadores fijada; regresión Chromium/WebKit con ubicación de Moltres,
+recorrido de Sabrina y el caso de 380 registros que todavía carece de Pidgey.
+Ambos motores muestran el pendiente por nombre, acreditan las listas correctas
+y conservan sin marcar las casillas manuales. Se revisa también la captura móvil
+del diagnóstico. Se mantienen las pruebas de importación, perfiles y offline.

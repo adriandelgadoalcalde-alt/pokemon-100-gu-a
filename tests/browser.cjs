@@ -228,6 +228,29 @@ async function run() {
     await allPage.locator('[data-mid="RUBY-11"] > summary').click();
     assert.equal(await allPage.locator('[data-ice-version="EMERALD"]').count(),0);
     assert.equal(await allPage.locator('[data-ice-version="RUBY_SAPPHIRE"]').count(),3);
+    // Remake locations and exact completion sets must not inherit the original GB guide.
+    await allPage.locator('#mobile-game').selectOption('FIRERED');
+    await allPage.locator('[data-mid="FIRERED-15"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="FIRERED-15"] .route-details').innerText(),/Monte Ascuas/);
+    await allPage.locator('[data-mid="FIRERED-11"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="FIRERED-11"] .route-details').innerText(),/superior derecha → inferior derecha → inferior izquierda → inferior izquierda/);
+    const exclusions=new Set([151,249,250,251,385,386]);
+    const required=Array.from({length:386},(_,i)=>i+1).filter(id=>!exclusions.has(id));
+    const frlg={game:'FIRERED',profileId:'synthetic-frlg',caught:required.filter(id=>id!==16).concat(151),seen:[],integrity:{checksumsValid:true}};
+    allPage.on('dialog',d=>d.accept());
+    await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-frlg.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(frlg))});
+    await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.FIRERED?.caught?.includes(151));
+    assert.match(await allPage.locator('#master-card-2').innerText(),/Pendiente/);
+    await allPage.locator('[data-view="diagnostic"]').first().click();
+    assert.match(await allPage.locator('#dex-completion').innerText(),/Nacional: 379\/380/);
+    await allPage.locator('#dex-completion details > summary').first().click();
+    assert.match(await allPage.locator('#dex-completion').innerText(),/#016 Pidgey/);
+    await allPage.screenshot({path:path.join(resultDir,'frlg-exact-dex-390.png'),fullPage:true});
+    await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-frlg-complete.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...frlg,caught:required}))});
+    await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.FIRERED?.caught?.includes(16));
+    assert.match(await allPage.locator('#master-card-1').innerText(),/Evidencia/);
+    assert.match(await allPage.locator('#master-card-2').innerText(),/Evidencia/);
+    assert.equal(await allPage.locator('[data-master]:checked').count(),0);
     await allPage.locator('[data-view="coverage"]').first().click();
     assert.equal(await allPage.locator('[data-coverage-game]').count(),39);
     await allPage.setViewportSize({width:390,height:1000});
@@ -236,7 +259,6 @@ async function run() {
     const modern={game:'SCARLET',caught:[],seen:[],gameClear:null,integrity:{checksumsValid:true},progressSignals:[
       {id:'story.paldea.clear',label:'Indicador de final de Paldea',value:true,validation:'documented'},
       {id:'story.tealMask.clear',label:'Indicador de final de La máscara turquesa',value:null,validation:'documented'}]};
-    allPage.on('dialog',d=>d.accept());
     await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-modern.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(modern))});
     await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.SCARLET?.progressSignals?.length===2);
     await allPage.locator('[data-view="diagnostic"]').first().click();
