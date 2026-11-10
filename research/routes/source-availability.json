@@ -1,0 +1,346 @@
+{
+  "checkedAt": "2026-11-10",
+  "scope": "Disponibilidad HTTP, no revisión de exhaustividad ni certificación de guardados.",
+  "sources": [
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/OneIsland_PokemonCenter_1F/scripts.inc",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/data/maps/SixIsland_DottedHole_SapphireRoom/scripts.inc",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/black2white2/medals.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/black2white2/trainercard.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/blackwhite/abyssalruins.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/blackwhite/battlesubway.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/blackwhite/elitefour.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/blackwhite/plasma.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/blackwhite/trainercard.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/brilliantdiamondshiningpearl/ramanaspark.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/crystal/legends.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/crystal/virtualconsole.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/diamondpearl/legendaries.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/diamondpearl/national.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/emerald/arena.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/emerald/dome.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/emerald/factory.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/emerald/frontier.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/emerald/legendary.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/emerald/palace.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/emerald/pike.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/emerald/pyramid.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/emerald/regi.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/emerald/safarizone.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/emerald/tower.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/emerald/tunnel.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/fireredleafgreen/legendary.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/gs/dailyevent.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/gs/elitefour.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/gs/gift.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/gs/gyms.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/gs/items.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/gs/legends.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/gs/pokegear.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/gs/red.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/gs/rival.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/gs/teamrocket.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/gs/timecapsule.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/gs/tmhm.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/heartgoldsoulsilver/legends.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/legendsarceus/arceus.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/legendsz-a/legendary.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/letsgopikachueevee/legendary.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/letsgopikachueevee/mastertrainers.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/letsgopikachueevee/red.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/omegarubyalphasapphire/deltaepisode.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/platinum/battlefrontier.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/platinum/legends.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/platinum/regigigas.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/platinum/supercontests.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/platinum/underground.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/rb/elitefour.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/rb/exclusives.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/rb/gift.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/rb/greenblue.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/rb/gyms.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/rb/interact.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/rb/legends.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/rb/rival.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/rb/teamrocket.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/rb/tmhm.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/rubysapphire/legendary.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/scarletviolet/areazerounderdepths.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/scarletviolet/blueberryelitefour.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/scarletviolet/kitakamimaskfestival.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/scarletviolet/leagueclub.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/scarletviolet/mochimayhem.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/scarletviolet/paradoxperrin.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/scarletviolet/pokedexcompletion.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/scarletviolet/stakes.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/scarletviolet/thebloodmoonbeast.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/sunmoon/legendary.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/sunmoon/ultrabeasts.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/sunmoon/zygarde.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/swordshield/alegendarytreeofalegendarythree.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/swordshield/diglett.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/swordshield/footprints.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/swordshield/mustard.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/swordshield/restrictedsparring.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/swordshield/thesacredbondsofsovereignandsteed.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/swordshield/theterribletitanslurkinglockedaway.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/ultrasunultramoon/teamrainbowrocket.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/ultrasunultramoon/totemstickers.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/xy/looker.shtml",
+      "status": 200
+    },
+    {
+      "url": "https://www.serebii.net/yellow/gift.shtml",
+      "status": 200
+    }
+  ]
+}

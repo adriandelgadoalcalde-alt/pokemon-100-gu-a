@@ -1,0 +1,309 @@
+{
+  "summary": {
+    "engine": "chromium",
+    "samples": 59,
+    "accepted": 51,
+    "rejected": 8,
+    "failed": 0,
+    "pageErrors": 0,
+    "localNetworkOnly": true,
+    "offline": true
+  },
+  "results": [
+    {
+      "id": "community-declared-bf8002375cac",
+      "accepted": false,
+      "failures": []
+    },
+    {
+      "id": "community-declared-720d1c45adb7",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "community-declared-729adddcd67c",
+      "accepted": false,
+      "failures": []
+    },
+    {
+      "id": "community-declared-fca9723710c3",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "community-declared-edb419f7c876",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "community-declared-d02be51c0563",
+      "accepted": false,
+      "failures": []
+    },
+    {
+      "id": "community-declared-a19355f16a97",
+      "accepted": false,
+      "failures": []
+    },
+    {
+      "id": "community-declared-875cb881f071",
+      "accepted": false,
+      "failures": []
+    },
+    {
+      "id": "community-declared-05883f151ab2",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "community-declared-f047509e081c",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "community-declared-ad1c157c8e1a",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "community-declared-0e1326a53b15",
+      "accepted": false,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-60b1612f29eb",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-d0411c2c8992",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-32b31bd0b2fa",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-e0c139cbc3b1",
+      "accepted": false,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-af415d2b6dcf",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-621c4fa6c182",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-eb86a26770cf",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-8ee929caaa55",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-4c1747945739",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-20fa8137790e",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-cada40bcb6b5",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-1701f1c78744",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-56b6722479bb",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-e3372086d407",
+      "accepted": false,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-5d9e947d7f10",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-55b118fd6194",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-297b6d4d5662",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-b8f54c45f174",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-8314831f9e4c",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-5e28dc9dcbe8",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-f7f1e4fc5a8c",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-0d9480d622b3",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-04b3e1cfee4b",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-71f65dc5bc8a",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-c031b2710276",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-26e5e414e9ad",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-a53c7f14c76e",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-703631444baa",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-3291e5f4ee1f",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "prepared-dex-87797c5ba569",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-nx-6e299b582e59",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-nx-25a0d5e27d69",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-nx-579e7851e5e6",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-nx-f45674b8126c",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-nx-d1d8ec5db846",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-fixture-58a46d9b7a85",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-fixture-35e0705a972a",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-fixture-f33c01ffc89c",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-fixture-1de819a6a3f0",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-fixture-89301cef4454",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-fixture-8306f8f0074e",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-fixture-a1938d30cb32",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-fixture-d4aa4f12355c",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-fixture-f1327caa874f",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-fixture-5e7a733cdb23",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-fixture-2b000d0e5fd0",
+      "accepted": true,
+      "failures": []
+    },
+    {
+      "id": "public-fixture-5ec85443e28f",
+      "accepted": true,
+      "failures": []
+    }
+  ]
+}

@@ -1,5 +1,20 @@
 # AGENTS.md — Archivo Maestro Pokémon: traspaso integral a Codex
 
+> **Alcance confirmado por el usuario al continuar (09/11/2026):** guía completa de las
+> nueve generaciones, orientada por lectura local del guardado. Excluir entrenadores
+> secundarios y objetos sueltos triviales; incluir todos los objetos importantes o
+> relevantes para cualquier paso. Esta precisión prevalece sobre listas generales
+> de entrenadores/objetos del traspaso. Estado del trabajo en `docs/coverage-matrix.md`.
+>
+> **Dirección de producto confirmada después:** el recorrido será guardado → diagnóstico
+> → guía, sin tests de situación. Conservar las respuestas y marcas históricas en las
+> copias de seguridad. La retirada del cuestionario no acredita automáticamente datos
+> que el lector aún no interpreta: mantenerlos explícitamente pendientes de lectura.
+
+> **Cierre confirmado por el usuario (10/11/2026):** las guías exhaustivas de todas
+> las generaciones también deben quedar cerradas. Completar el lector o la PWA no
+> sustituye ese trabajo. Criterios y seguimiento: `docs/guide-completion.md`.
+>
 > **Proyecto:** Guía Pokémon al 100 %, Atlas de las nueve generaciones, lector y auditor de guardados `.sav`/`main` y aplicación web progresiva (PWA).  
 > **Fecha de este traspaso:** 9 de noviembre de 2026.  
 > **Estado:** producto web funcional **parcial**, con contenido extenso, lectores limitados y una gran cantidad de investigación/validación pendiente. **No se ha certificado el 100 % de las 39 ediciones.**  
@@ -8,6 +23,11 @@
 > **Prioridad contractual:** exactitud, trazabilidad y seguridad de los guardados por encima de porcentajes atractivos o de declarar trabajo no realizado.
 
 ---
+
+> **Validación pública autorizada (10/11/2026):** el usuario permite buscar y descargar
+> partidas públicas para experimentar y contrastar el lector. Los originales siguen
+> siendo de solo lectura y no se redistribuyen. Manifiesto e informe saneado en
+> `research/saves/`; no confundir partidas preparadas con progresión natural.
 
 ## 0. Instrucciones obligatorias para Codex — leer antes de editar nada
 

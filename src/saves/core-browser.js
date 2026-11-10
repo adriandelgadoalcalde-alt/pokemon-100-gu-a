@@ -1,0 +1,36 @@
+/* Lazy same-origin reader. Only static engine assets use the network; save bytes stay in this window and its local frame. */
+(function(root){
+ 'use strict';
+ let frame=null,loading=null,sequence=0;
+ const pending=new Map();
+ const engineURL=new URL('../../engine/index.html',document.currentScript.src);
+ addEventListener('message',event=>{
+  if(event.origin!==location.origin||event.source!==frame?.contentWindow||event.data?.type!=='pokemon-local-result')return;
+  const task=pending.get(event.data.id);if(!task)return;
+  clearTimeout(task.timer);pending.delete(event.data.id);
+  if(event.data.ok&&event.data.diagnosis)task.resolve(event.data.diagnosis);
+  else task.reject(Error(event.data.error||'No se ha podido interpretar el guardado. No se ha cambiado el progreso.'));
+ });
+ function load(){
+  if(loading)return loading;
+  loading=new Promise((resolve,reject)=>{
+   frame=document.createElement('iframe');frame.hidden=true;frame.title='Motor local de guardados';
+   const timer=setTimeout(()=>{frame.remove();frame=null;loading=null;reject(Error('El motor local no se ha descargado. Conecta el dispositivo e inténtalo de nuevo.'));},120000);
+   frame.onload=()=>{clearTimeout(timer);resolve();};
+   frame.onerror=()=>{clearTimeout(timer);frame.remove();frame=null;loading=null;reject(Error('No se ha podido cargar el motor local.'));};
+   frame.src=engineURL.href;document.body.append(frame);
+  });return loading;
+ }
+ async function read(bytes){
+  if(!(bytes instanceof Uint8Array)||!bytes.length||bytes.length>8*1024*1024)throw Error('Selecciona el guardado interno de hasta 8 MiB.');
+  await load();const id=String(++sequence);
+  return new Promise((resolve,reject)=>{
+   const timer=setTimeout(()=>{pending.delete(id);reject(Error('La lectura local ha tardado demasiado. No se ha cambiado el progreso.'));},120000);
+   pending.set(id,{resolve,reject,timer});
+   // A separate copy preserves the caller's bytes, including on failed analysis.
+   const copy=bytes.slice().buffer;
+   frame.contentWindow.postMessage({type:'pokemon-local-analyze',id,bytes:copy},location.origin,[copy]);
+  });
+ }
+ root.PokemonCoreBrowser={read};
+})(globalThis);
