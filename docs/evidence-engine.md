@@ -34,3 +34,14 @@ campos futuros e historial al restaurar. La migración V7 no borra marcas; las q
 corresponden a instrucciones modificadas reciben una señal de revisión y una copia
 recuperable en `migrationBackups`. No se usa una marca pendiente de revisión para
 acreditar automáticamente un prerrequisito nuevo.
+
+## Registro exacto de Pokédex en los remakes de Kanto GBA
+
+`completion.js` compara las especies requeridas por las funciones del juego
+`HasAllKantoMons` y `HasAllMons`, en una revisión fijada de pret/pokefirered. Son
+150 y 380 registros concretos; un mismo total con una especie excluida no acredita
+la lista. El hecho `pokedex.completion.*` describe ese conjunto registrado, no una
+escena, una captura local ni un premio recogido. Solo se acredita automáticamente
+con integridad válida de los campos de Pokédex. Una lista completa sin integridad
+permanece como evidencia parcial; una lectura ausente no se convierte en cero.
+Las confirmaciones manuales no se cambian. Véase `research/routes/frlg.md`.

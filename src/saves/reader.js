@@ -258,6 +258,6 @@ function eventAudit(o,b){let off,workBase,flagBase,flagCount,workCount;
   if(b.length>LENGTHS.NDS&&b.length<=LENGTHS.NDS+0x1000){return parseArray(b.slice(0,LENGTHS.NDS));}
   unsupported(`Tamaño no reconocido: ${b.length.toLocaleString('es-ES')} bytes. DS: 524.288 bytes; Y: ${LENGTHS.XY}; Rubí Omega: ${LENGTHS.ORAS}; Ultrasol: ${LENGTHS.USUM}. Si es un estado rápido, exporta el guardado interno del juego.`);
  }
- function missingLabel(id){return NAME_BY_ID[id]?`#${String(id).padStart(3,'0')} ${NAME_BY_ID[id]}`:`#${String(id).padStart(3,'0')}`}
+ function missingLabel(id){const name=root.PokemonSpecies?.name(id)||NAME_BY_ID[id];return name?`#${String(id).padStart(3,'0')} ${name}`:`#${String(id).padStart(3,'0')}`}
  root.PokemonSaveReader={parse:parseArray,missingLabel,names:NAME_BY_ID,version:'5.4-shared' };
 })(typeof window!=='undefined'?window:globalThis);

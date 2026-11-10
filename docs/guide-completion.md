@@ -61,8 +61,8 @@ flags y la validación natural del guardado tienen su propia revisión técnica.
 | 3 | Rubí | 14 | 14 | En revisión |
 | 3 | Zafiro | 14 | 14 | En revisión |
 | 3 | Esmeralda | 16 | 16 | En revisión |
-| 3 | Rojo Fuego | 18 | 2 | En revisión |
-| 3 | Verde Hoja | 18 | 2 | En revisión |
+| 3 | Rojo Fuego | 18 | 18 | En revisión |
+| 3 | Verde Hoja | 18 | 18 | En revisión |
 | 4 | Diamante | 12 | 1 | En revisión |
 | 4 | Perla | 12 | 1 | En revisión |
 | 4 | Platino | 13 | 2 | En revisión |
@@ -95,3 +95,9 @@ La ampliación de Hoenn incluye 20 rutas nuevas y un visor de hielo diferente pa
 R/S y Esmeralda, derivado de sus mapas y scripts. Sigue pendiente revisar los
 objetivos agrupados de colección y actividades, así como los huecos de inventario;
 no se declara exhaustividad. Véase `research/routes/hoenn.md`.
+
+Rojo Fuego/Verde Hoja añade 16 recorridos y corrige ubicaciones/accesos que no
+coinciden con los originales de GB. Las listas exactas de 150/380 registros de
+Pokédex se pueden comparar con el diagnóstico sin acreditar escenas originales.
+Sigue pendiente el inventario exhaustivo y el desglose de actividades agrupadas;
+`research/routes/frlg.md` documenta el alcance.
