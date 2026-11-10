@@ -436,3 +436,9 @@ recorrido de Sabrina y el caso de 380 registros que todavía carece de Pidgey.
 Ambos motores muestran el pendiente por nombre, acreditan las listas correctas
 y conservan sin marcar las casillas manuales. Se revisa también la captura móvil
 del diagnóstico. Se mantienen las pruebas de importación, perfiles y offline.
+
+La regresión de actualización reprodujo otro fallo: instalar una nueva caché PWA
+podía copiar HTML viejo de la caché HTTP. La instalación descarga ahora los recursos
+con `cache: reload`, y las escrituras dinámicas de recursos mantienen vivo el
+service worker hasta terminar. La prueba OLD → NEW reabre la versión nueva sin
+servidor y conserva el marcador de progreso; se ejecuta en ambos motores en CI.

@@ -24,6 +24,9 @@ jobs:
       - run: npm test
       - run: python3 -m unittest discover -s tests -p '*_test.py'
       - run: npx playwright install --with-deps ${{ matrix.browser }}
+      - run: npm run test:updates
+        env:
+          POKEMON_BROWSER: ${{ matrix.browser }}
       - run: npm run test:browser
         env:
           POKEMON_BROWSER: ${{ matrix.browser }}
