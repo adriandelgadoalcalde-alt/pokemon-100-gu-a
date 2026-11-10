@@ -35,6 +35,15 @@ requisitos pendientes de interpretación. Las respuestas antiguas se conservan a
 exportar/restaurar el progreso y no reaparecen como un test. Quitar el cuestionario
 no amplía por sí solo los formatos compatibles ni certifica nuevos eventos.
 
+## Guías ampliadas y cierre editorial
+
+Las misiones incorporan recorridos con ubicación, requisitos, instrucciones,
+comprobación final y fuentes, disponibles también offline. La ampliación actual
+contiene 73 rutas enlazadas a 176 misiones de las 39 ediciones. Mantiene todas las
+casillas previas. El [seguimiento editorial](docs/guide-completion.md) define qué
+falta para cerrar las guías exhaustivas de las nueve generaciones; los recuentos
+no certifican el 100 % de los juegos.
+
 ## Desarrollo y comprobaciones
 
 Requiere Node.js 24. La aplicación sigue siendo estática; no necesita build ni backend.

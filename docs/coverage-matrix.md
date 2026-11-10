@@ -278,3 +278,39 @@ contratos de privacidad/solo lectura y regresión de navegador. La primera ejecu
 de la prueba nueva de navegador intentó consultar una función interna del cierre;
 se corrigió para verificar el estado persistido y el flujo real de importación.
 Siguen pendientes las validaciones naturales y de dispositivo descritas arriba.
+
+## Sexto ciclo: recorridos ampliados y cierre editorial obligatorio
+
+Fecha de trabajo: 10 de noviembre de 2026. Base: `cf92101`, con CI aprobado.
+La petición del usuario confirma que **las guías exhaustivas de las nueve
+ generaciones también deben quedar cerradas**; ese trabajo no queda fuera del alcance.
+Los criterios y el seguimiento por edición están en `docs/guide-completion.md`.
+
+Se añaden 73 rutas editoriales con 390 instrucciones desarrolladas, enlazadas a
+176 misiones existentes en las 39 ediciones y las nueve generaciones. El total de
+525 misiones y sus 1.146 casillas no cambia: las instrucciones ampliadas no generan
+nuevos completados ni modifican el progreso manual.
+
+Todos los objetivos hoy catalogados para los originales de Kanto y Johto tienen
+recorrido ampliado. En otras familias se priorizan cadenas de acceso, puzles y
+postgame: Regis, símbolos del Frente, Celio, Montaña Dura, orbes HGSS, Metro,
+Handsome, Episodio Delta, Ultracriaturas, Rainbow Rocket, DLC de Galar, Parque Hansa,
+Arceus, Noroteo, Área Cero inferior, Pecharunt y la cadena de legendarios de Z-A.
+Esto **no acredita exhaustividad del inventario de ninguna edición**.
+
+Las rutas tienen fuentes enlazadas; se verifica disponibilidad HTTP de 85 URLs en
+`research/routes/source-availability.json`. La disponibilidad de un enlace no
+certifica por sí sola su interpretación. Los scripts de Celio y Cueva Punteada se
+referencian a una revisión fija de pret/pokefirered; no se copian ROM ni recursos.
+
+La auditoría comprueba destinos existentes, referencias públicas, duplicados,
+campos obligatorios y recuentos sin multiplicar rutas compartidas entre ediciones.
+El navegador abre un recorrido por cada edición, revisa ancho móvil y comprueba
+que las instrucciones de Kanto se consultan offline. El primer intento de esa
+prueba utilizó el selector móvil en ancho escritorio; se ajusta el viewport para
+reproducir el uso móvil real.
+
+Quedan 349 misiones del catálogo sin esta ampliación editorial, además de la
+revisión de huecos fuera del catálogo original. Ninguna edición pasa a «guía
+exhaustiva cerrada» por las cifras de esta entrega. No hay cambios de esquema de
+progreso ni nuevos offsets de lectura de eventos.

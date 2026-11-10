@@ -54,7 +54,7 @@ function audit(root = '.') {
     if(!fs.existsSync(path.join(root,match[1])))errors.push('Módulo local ausente: '+match[1]);
     if(!cacheFiles.includes(match[1]))errors.push('Módulo ausente de la caché offline: '+match[1]);
   }
-  for(const folder of ['src/saves','src/engine'])for(const file of fs.readdirSync(`${root}/${folder}`)){
+  for(const folder of ['src/saves','src/engine','src/guides'])for(const file of fs.readdirSync(`${root}/${folder}`)){
     if(!file.endsWith('.js'))continue;
     for(const duplicate of duplicates(fs.readFileSync(`${root}/${folder}/${file}`,'utf8')))errors.push(`${file}: función duplicada ${duplicate}`);
   }
@@ -83,12 +83,25 @@ function audit(root = '.') {
     }
   }
   for(const game of catalog.games)if(!game.missions.some(m=>m.id===game.mainStoryLastMission))errors.push('Límite de historia ausente o inválido: '+game.id);
+  const book=require('../src/guides/routes.js'),routeKeys=new Set(),guideEditions=new Set();
+  for(const r of book.routes){
+    if(!r.games?.length||!r.mission||!r.location||!r.check||!Array.isArray(r.requires)||!Array.isArray(r.pitfalls)||!r.steps?.length||r.steps.some(s=>typeof s!=='string'||!s.trim()))errors.push('Ruta ampliada incompleta: '+r.mission);
+    if(!r.sources?.length||r.sources.some(u=>!/^https:\/\/(www\.serebii\.net|github\.com)\//.test(u)))errors.push('Ruta sin referencia pública válida: '+r.mission);
+    for(const id of r.games||[]){
+      const key=id+'-'+r.mission,g=catalog.games.find(g=>g.id===id);
+      if(!g?.missions.some(m=>m.id===key))errors.push('Ruta para misión inexistente: '+key);
+      if(routeKeys.has(key))errors.push('Ruta repetida: '+key);routeKeys.add(key);guideEditions.add(id);
+    }
+  }
+  if(catalog.games.reduce((n,g)=>n+book.stats(g.id),0)!==routeKeys.size)errors.push('El recuento de rutas ampliadas duplica misiones entre ediciones.');
+  const walkthrough={authoredRoutes:book.routes.length,detailedMissionLinks:routeKeys.size,editions:guideEditions.size,
+    generations:new Set(catalog.games.filter(g=>guideEditions.has(g.id)).map(g=>g.generation)).size};
   const levels = {};
   for (const task of atlasTasks) levels[task.verified || 'sin etiqueta'] = (levels[task.verified || 'sin etiqueta'] || 0) + 1;
   return {classic: {editions: db.games.length, missions: classicTasks.length},
     atlas: {editions: catalog.games.length, generations: new Set(catalog.games.map(g => g.generation)).size,
       missions: atlasTasks.length, steps: atlasTasks.reduce((n, t) => n + t.steps.length, 0), levels},
-    masteryGoals:Object.values(masters).reduce((n,g)=>n+g.length,0),browserReaders:require('../src/saves/diagnosis.js').supported,errors};
+    walkthrough,masteryGoals:Object.values(masters).reduce((n,g)=>n+g.length,0),browserReaders:require('../src/saves/diagnosis.js').supported,errors};
 }
 module.exports = {scripts, walk, duplicates, catalogue, audit};
 if (require.main === module) {

@@ -9,7 +9,7 @@ const root = path.resolve(__dirname, '..');
 const server = http.createServer((req, res) => {
   let name = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
   if (name === '/') name = '/index.html';
-  if (!/^\/(index\.html|atlas\.html|sw\.js|manifest\.webmanifest|icons\/[\w.-]+|src\/(saves|engine)\/[\w.-]+)$/.test(name)) {
+  if (!/^\/(index\.html|atlas\.html|sw\.js|manifest\.webmanifest|icons\/[\w.-]+|src\/(saves|engine|guides)\/[\w.-]+)$/.test(name)) {
     res.writeHead(404).end(); return;
   }
   const file = path.join(root, name);
@@ -187,7 +187,7 @@ async function run() {
     const {catalogue}=require('../scripts/audit.cjs');
     const catalog=catalogue(fs.readFileSync(path.join(root,'atlas.html'),'utf8'));
     const allContext=await browser.newContext({serviceWorkers:'block'}),allPage=await allContext.newPage();
-    allPage.on('pageerror',e=>errors.push(e.message));await allPage.goto(`${base}/atlas.html`);
+    allPage.on('pageerror',e=>errors.push(e.message));await allPage.setViewportSize({width:390,height:1000});await allPage.goto(`${base}/atlas.html`);
     for(const game of catalog.games){
       await allPage.evaluate(id=>localStorage.setItem('pokemon-atlas9-progress-v1',JSON.stringify({game:id,checks:{}})),game.id);
       await allPage.reload();
@@ -197,6 +197,14 @@ async function run() {
       await allPage.locator('[data-view="dossier"]').first().click();
       await allPage.locator('[data-goal]').first().waitFor();
       if(game.generation===1){assert.equal(await allPage.locator('[data-goal]').count(),5);assert.match(await allPage.locator('body').innerText(),/Los entrenadores secundarios quedan fuera/);}
+      const detailed=game.missions.find(m=>require('../src/guides/routes.js').get(game.id,m.id));
+      assert.ok(detailed,game.id+': missing detailed route');
+      await allPage.locator('[data-view="mission"]').first().click();
+      await allPage.locator('[data-mid="'+detailed.id+'"] > summary').click();
+      await allPage.locator('[data-mid="'+detailed.id+'"] .route-details').waitFor();
+      assert.ok(await allPage.locator('[data-mid="'+detailed.id+'"] .route-details ol > li').count()>=3);
+      assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),game.id+': expanded route overflow');
+      if(['RED','GOLD','SWORD','ZA'].includes(game.id))await allPage.screenshot({path:'test-results/route-'+game.id+'-390.png',fullPage:true});
     }
     await allPage.locator('[data-view="coverage"]').first().click();
     assert.equal(await allPage.locator('[data-coverage-game]').count(),39);
@@ -238,6 +246,7 @@ async function run() {
       await offlinePage.goto(`${base}/${file}`);
       await offlinePage.locator('#app button:visible').first().waitFor();
       if (file === 'index.html') assert.equal(await offlinePage.evaluate(() => typeof PokemonHGSSIntegrity.inspect), 'function');
+      if(file==='atlas.html'){await offlinePage.setViewportSize({width:390,height:1000});await offlinePage.locator('#mobile-gen').selectOption('1');await offlinePage.locator('#mobile-game').selectOption('RED');await offlinePage.locator('[data-mid="RED-01"] > summary').click();await offlinePage.locator('[data-mid="RED-01"] .route-details').waitFor();assert.match(await offlinePage.locator('[data-mid="RED-01"] .route-details').innerText(),/paquete destinado al profesor/);}
     }
     await offline.close();
     assert.deepEqual(errors, []);

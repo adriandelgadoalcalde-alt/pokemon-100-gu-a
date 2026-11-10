@@ -11,6 +11,10 @@
 > copias de seguridad. La retirada del cuestionario no acredita automáticamente datos
 > que el lector aún no interpreta: mantenerlos explícitamente pendientes de lectura.
 
+> **Cierre confirmado por el usuario (10/11/2026):** las guías exhaustivas de todas
+> las generaciones también deben quedar cerradas. Completar el lector o la PWA no
+> sustituye ese trabajo. Criterios y seguimiento: `docs/guide-completion.md`.
+>
 > **Proyecto:** Guía Pokémon al 100 %, Atlas de las nueve generaciones, lector y auditor de guardados `.sav`/`main` y aplicación web progresiva (PWA).  
 > **Fecha de este traspaso:** 9 de noviembre de 2026.  
 > **Estado:** producto web funcional **parcial**, con contenido extenso, lectores limitados y una gran cantidad de investigación/validación pendiente. **No se ha certificado el 100 % de las 39 ediciones.**  
