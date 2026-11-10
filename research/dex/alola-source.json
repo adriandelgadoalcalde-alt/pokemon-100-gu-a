@@ -1,0 +1,35 @@
+{
+  "repository": "PokeAPI/pokeapi",
+  "revision": "5cbeb3f3eb55a9b86da52c4869336f9d61fdd6d7",
+  "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/5cbeb3f3eb55a9b86da52c4869336f9d61fdd6d7/data/v2/csv/pokemon_dex_numbers.csv",
+  "sourceSha256": "b8fe3353eec2b0ba4fc37e07e94ffa9f33ce96a7f9856c643a18b3ad518cd393",
+  "selection": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "selectedSha256": "4a7b3c573f0b0eb4389db1a532c0df7da6cd6447adc331290e6fd80564c9f704",
+  "exclusions": {
+    "original": [
+      801,
+      802
+    ],
+    "ultra": [
+      801,
+      802,
+      807
+    ]
+  },
+  "requirementsSource": "https://bulbapedia.bulbagarden.net/wiki/Trainer_Card_(game)#Stamps",
+  "additionalSources": [
+    "https://www.serebii.net/sunmoon/pokedexrewards.shtml"
+  ],
+  "reviewedAt": "2026-11-10"
+}

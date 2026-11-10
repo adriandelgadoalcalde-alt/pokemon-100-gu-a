@@ -606,3 +606,24 @@ separados de los equipables: 29 tipos en originales y 35 en Ultra. Sus nombres/I
 se validan contra fuentes empaquetadas en CI. Se muestran posesión, ausencia y
 lectura desconocida sin cerrar pruebas, pasaporte o casillas. Sol/Luna continúa
 usando el lector ampliado. Documentación: `research/saves/gen7-inventory.md`.
+
+## Sellos guardados del pasaporte y listas exactas de Alola
+
+Se leen los quince bits de sello de PKHeX Misc7 para las cuatro ediciones mediante
+Core y, en Ultra, también con el lector nativo. Los IDs históricos se conservan:
+Pokévisor y combate Múltiple se traducen a sus bits reales sin intercambiar marcas.
+Dos muestras públicas Ultra coinciden; no se añaden parejas naturales antes/después.
+
+La Pokédex se compara con las listas exactas de 300/400 obtenidos y las cuatro islas
+por pareja. Se distingue completar el registro y recibir el sello: solo la máscara
+acredita los objetivos de pasaporte. Ausencia, integridad insuficiente y campos
+inválidos no se convierten en completados. Se actualiza el motor local para mantener
+paridad CLI/WebAssembly. Fuente y límites: `research/saves/alola-passport.md`.
+
+No cambia la cantidad de rutas ni casillas ni el esquema de almacenamiento.
+Las guías exhaustivas siguen en revisión y no se certifica el 100 % global.
+
+La entrega anterior de historia y la de bolsa/cristales están publicadas y
+comprobadas en ambos motores: `docs/releases/alola-story.md` y
+`docs/releases/alola-inventory.md`. La lectura nueva del pasaporte se valida
+aparte; no se atribuye a esas versiones anteriores.

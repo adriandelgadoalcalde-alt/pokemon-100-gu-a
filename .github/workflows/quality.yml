@@ -24,6 +24,7 @@ jobs:
       - run: python3 scripts/update-kalos-dex.py --check
       - run: python3 scripts/update-hoenn-dex.py --check
       - run: python3 scripts/update-alola-item-names.py --check
+      - run: python3 scripts/update-alola-dex.py --check
       - run: npm run audit
       - run: npm test
       - run: python3 -m unittest discover -s tests -p '*_test.py'

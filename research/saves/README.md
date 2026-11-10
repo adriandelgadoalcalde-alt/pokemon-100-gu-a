@@ -73,3 +73,7 @@ límites de interpretación: [estudio de inventario](gen6-inventory.md).
 Ultrasol/Ultraluna añaden paridad de los siete bolsillos en sus dos muestras
 públicas. La representación de diez bits de ID/cantidad y la distinción de
 cristales de bolsa/equipables se documentan en [inventario Ultra](gen7-inventory.md).
+
+La máscara de los quince sellos del pasaporte se contrasta entre el lector nativo
+y Core en las dos muestras Ultra. Sus bits, orden de los objetivos históricos y
+separación de los requisitos regionales están en [pasaporte de Alola](alola-passport.md).

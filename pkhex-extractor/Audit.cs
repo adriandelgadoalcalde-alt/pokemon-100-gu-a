@@ -122,6 +122,7 @@ public static class Audit
             ["caughtCount"] = implementsCaught ? caught.Count : null, ["seenCount"] = implementsSeen ? seen.Count : null,
             ["inventory"] = inventory, ["keyItems"] = keyItems,
             ["medals"] = ReadMedals(save),
+            ["passport"] = save is SAV7 passport7 ? new { mask = passport7.Misc.Stamps } : null,
             ["integrity"] = new { engine = "PKHeX.Core", checksumsValid = checksums,
                 scope = "Propiedad de integridad upstream; algunos formatos no tienen checksums propios" },
             ["gameClear"] = save is SAV4 s4 ? s4.GameClear : save is SAV5 or SAV6 or SAV7 ? save.SecondsToFame > 0 : null,

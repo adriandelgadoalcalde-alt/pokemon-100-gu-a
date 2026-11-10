@@ -124,3 +124,7 @@ como legado. El lector ligero contrasta también los cinco bolsillos de X/Y/ORAS
 El diagnóstico de Alola distingue cristales Z de bolsa y equipables. Ultrasol y
 Ultraluna incluyen lectura nativa de los siete bolsillos, contrastada con PKHeX;
 los cristales presentes no certifican pruebas ni sellos del pasaporte.
+
+Alola separa las listas exactas de Pokédex (300 originales/400 Ultra y cada isla)
+de los quince sellos que constan en el pasaporte. Cumplir el registro no acredita
+por sí solo haber recibido su sello ni haber realizado todos los encuentros.

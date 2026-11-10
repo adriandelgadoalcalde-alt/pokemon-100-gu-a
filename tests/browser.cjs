@@ -439,6 +439,25 @@ async function run() {
     assert.equal(await crystals.locator('[data-crystal-id="808"]').getAttribute('data-crystal-state'),'absent');
     assert.equal(await crystals.locator('[data-crystal-id="776"]').count(),0);
     assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    const alolaRequired=require('../src/engine/alola-dex.js');
+    for(const game of ['SUN','MOON','ULTRASUN','ULTRAMOON']){
+      const family=game.startsWith('ULTRA')?'ultra':'original',required=alolaRequired[family].alola;
+      const d={game,caught:required,seen:[],passport:{mask:0},integrity:{checksumsValid:true}};
+      await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-alola-dex.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(d))});
+      await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.game===g,game);
+      assert.match(await allPage.locator('#master-pokedex').innerText(),/Evidencia/);
+      assert.doesNotMatch(await allPage.locator('#master-card-10').innerText(),/Evidencia/);
+      await allPage.locator('[data-view="diagnostic"]').first().click();
+      assert.match(await allPage.locator('[data-passport]').innerText(),/0\/15 sellos/);
+      assert.ok((await allPage.locator('#dex-completion').innerText()).includes('Alola: '+required.length+'/'+required.length+' registradas'));
+      assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    }
+    const finderDiagnosis={game:'ULTRAMOON',caught:[],seen:[],passport:{mask:1<<14},integrity:{verifiedFields:['passport']}};
+    await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-finder-stamp.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(finderDiagnosis))});
+    await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.ULTRAMOON?.passport?.mask===(1<<14));
+    assert.match(await allPage.locator('#master-card-13').innerText(),/Evidencia: Sello registrado/);
+    assert.doesNotMatch(await allPage.locator('#master-card-14').innerText(),/Evidencia/);
+    assert.equal(await allPage.locator('[data-master]:checked').count(),0);
     // Medal receipts, ready rewards and unknown states have separate searchable rows.
     const medalRows=Array.from({length:255},(_,i)=>({id:i+1,state:0}));
     medalRows[0]={id:1,state:4,date:'2026-02-31'};medalRows[1]={id:2,state:3,date:'2026-11-10'};medalRows[254]={id:255,state:7};
@@ -568,6 +587,11 @@ async function run() {
         await offlinePage.locator('#file-diagnosis').setInputFiles({name:'synthetic-crystals-offline.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(crystalDiagnosis))});
         await offlinePage.locator('[data-view="diagnostic"]').first().click();
         assert.match(await offlinePage.locator('[data-alola-crystals]').innerText(),/2\/35 tipos presentes/);
+        await offlinePage.locator('#file-diagnosis').setInputFiles({name:'synthetic-passport-offline.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(finderDiagnosis))});
+        await offlinePage.locator('[data-view="diagnostic"]').first().click();
+        assert.match(await offlinePage.locator('[data-passport]').innerText(),/1\/15 sellos/);
+        assert.equal(await offlinePage.evaluate(()=>PokemonCompletion.dexStatus({game:'ULTRASUN',caught:PokemonAlolaDex.ultra.alola}).alola.complete),true);
+
 
 
 

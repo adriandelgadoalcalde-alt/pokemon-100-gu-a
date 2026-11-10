@@ -213,6 +213,15 @@ foreach (var version in new[] { GameVersion.B2, GameVersion.W2, GameVersion.X, G
     if (model is SAV7 s7)
     {
         s7.Zukan.SetCaught(145); s7.Zukan.SetCaught(146); s7.Zukan.SetSeen(145, true); s7.Zukan.SetSeen(146, true); s7.Zukan.SetSeen(381, true);
+        foreach(uint mask in new uint[]{0,1,1<<13,1<<14,0x5555,0x2AAA,0x7FFF})
+        {
+            s7.Misc.Stamps=mask;
+            using var stampCheck=JsonDocument.Parse(JsonSerializer.Serialize(Audit.Extract(model,"synthetic",false)["passport"],Audit.JsonOptions));
+            Check(stampCheck.RootElement.GetProperty("mask").GetUInt32()==mask,"Passport mask changed meaning");
+        }
+        s7.Misc.Stamps=0x5555;
+        var stampRaw=BinaryPrimitives.ReadUInt32LittleEndian(model.Data[0x4408..]);
+        BinaryPrimitives.WriteUInt32LittleEndian(model.Data[0x4408..],stampRaw|0xFFF8000F);
         var inventory7=model.Inventory;
         foreach(var pouch in inventory7.Pouches)
         {

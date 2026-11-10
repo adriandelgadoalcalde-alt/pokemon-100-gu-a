@@ -17,9 +17,11 @@ for(const name of fixtures){
  assert.deepEqual([...fromJS.events.work],fromCore.events.work,name+': work');
  if(fromJS.keyItems)assert.deepEqual(JSON.parse(JSON.stringify(fromJS.keyItems)),fromCore.keyItems,name+': key items');
  if(fromJS.inventory)assert.deepEqual(JSON.parse(JSON.stringify(fromJS.inventory)),fromCore.inventory,name+': full inventory');
+ if(fromJS.passport)assert.deepEqual(JSON.parse(JSON.stringify(fromJS.passport)),fromCore.passport,name+': passport stamps');
  if(fromJS.medals)assert.deepEqual(JSON.parse(JSON.stringify(fromJS.medals)),fromCore.medals,name+': medals');
  const corrupt=bytes.slice();corrupt[fromJS.generation===4?0x12bc:fromJS.generation===5?0x21408:fromJS.game==='ULTRASUN'?0x2c88:0x15008]^=1;
  assert.throws(()=>reader().parse(corrupt),/integridad/,name+': corrupt data accepted');
+ if(fromJS.passport){const passportCorrupt=bytes.slice();passportCorrupt[0x4408]^=1;assert.throws(()=>reader().parse(passportCorrupt),/integridad/,name+': corrupt passport accepted');}
  if(fromJS.inventory){const bagCorrupt=bytes.slice();bagCorrupt[0x400]^=1;assert.throws(()=>reader().parse(bagCorrupt),/integridad/,name+': corrupt inventory accepted');}
 }
 console.log('JavaScript and pinned PKHeX.Core agree on synthetic DS/3DS fields, all flags, and all work values.');
