@@ -209,6 +209,22 @@ async function run() {
       assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),game.id+': expanded route overflow');
       if(['RED','GOLD','SWORD','ZA'].includes(game.id))await allPage.screenshot({path:path.join(resultDir,'route-'+game.id+'-390.png'),fullPage:true});
     }
+    // Platinum's starter, gym order and field moves differ from Diamond/Pearl.
+    await allPage.locator('#mobile-gen').selectOption('4');
+    await allPage.locator('#mobile-game').selectOption('PLATINUM');
+    await allPage.locator('[data-mid="PLATINUM-01"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="PLATINUM-01"] .route-details').innerText(),/Ruta 201/);
+    await allPage.locator('[data-mid="PLATINUM-04"] > summary').click();
+    const platinumOrder=await allPage.locator('[data-mid="PLATINUM-04"] .route-details').innerText();
+    assert.match(platinumOrder,/Fantina es la tercera/);
+    assert.match(platinumOrder,/Brega, cuarta/);
+    assert.match(platinumOrder,/Ruinas Sosiego/);
+    await allPage.locator('[data-mid="PLATINUM-06"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="PLATINUM-06"] .route-details').innerText(),/Quinoa para recibir MO04 Fuerza/);
+    await allPage.locator('[data-mid="PLATINUM-DETAIL1"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="PLATINUM-DETAIL1"] .route-details').innerText(),/habla con Cintia/);
+    assert.equal(await allPage.locator('[data-check]:checked').count(),0);
+    await allPage.screenshot({path:path.join(resultDir,'platinum-field-moves-390.png'),fullPage:true});
     // Edition-specific puzzles and narrative gates must not inherit R/S instructions in Emerald.
     await allPage.locator('#mobile-gen').selectOption('3');
     await allPage.locator('#mobile-game').selectOption('EMERALD');
@@ -255,6 +271,15 @@ async function run() {
     assert.equal(await allPage.locator('[data-coverage-game]').count(),39);
     await allPage.setViewportSize({width:390,height:1000});
     assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    // GBA documentary flags orient an imported save without ticking historical scenes.
+    const gba={game:'FIRERED',caught:[],seen:[],gameClear:null,badgesTotal:8,badgesMask:255,nationalDex:true,
+      integrity:{checksumsValid:true},progressSignals:[{id:'story.gba.gameClear',label:'Indicador de Liga superada (GBA)',value:true,validation:'documented'}]};
+    await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-gba.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(gba))});
+    await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.FIRERED?.badgesMask===255);
+    await allPage.locator('[data-view="mission"]').first().click();
+    assert.match(await allPage.locator('#app').innerText(),/indicador documentado de Liga superada/);
+    assert.equal(await allPage.locator('[data-step]:checked').count(),0);
+    assert.equal(await allPage.locator('[data-focus]').first().getAttribute('data-focus'),'FIRERED-15');
     // Documented modern signals guide the route while mastery remains partial.
     const modern={game:'SCARLET',caught:[],seen:[],gameClear:null,integrity:{checksumsValid:true},progressSignals:[
       {id:'story.paldea.clear',label:'Indicador de final de Paldea',value:true,validation:'documented'},
@@ -307,6 +332,12 @@ async function run() {
       await offlinePage.locator('#app button:visible').first().waitFor();
       if (file === 'index.html') assert.equal(await offlinePage.evaluate(() => typeof PokemonHGSSIntegrity.inspect), 'function');
       if(file==='atlas.html'){await offlinePage.setViewportSize({width:390,height:1000});await offlinePage.locator('#mobile-gen').selectOption('1');await offlinePage.locator('#mobile-game').selectOption('RED');await offlinePage.locator('[data-mid="RED-01"] > summary').click();await offlinePage.locator('[data-mid="RED-01"] .route-details').waitFor();assert.match(await offlinePage.locator('[data-mid="RED-01"] .route-details').innerText(),/paquete destinado al profesor/);await offlinePage.locator('#mobile-gen').selectOption('3');await offlinePage.locator('#mobile-game').selectOption('EMERALD');await offlinePage.locator('[data-mid="EMERALD-11"] > summary').click();await offlinePage.locator('[data-ice-platform="3"] [data-ice-delta="1"]').click();assert.equal(await offlinePage.locator('[data-ice-platform="3"]').getAttribute('data-ice-step'),'1');}
+      if(file==='atlas.html'){
+        await offlinePage.locator('#mobile-gen').selectOption('4');
+        await offlinePage.locator('#mobile-game').selectOption('PLATINUM');
+        await offlinePage.locator('[data-mid="PLATINUM-06"] > summary').click();
+        assert.match(await offlinePage.locator('[data-mid="PLATINUM-06"] .route-details').innerText(),/Quinoa para recibir MO04 Fuerza/);
+      }
     }
     await offline.close();
     assert.deepEqual(errors, []);

@@ -547,6 +547,27 @@
       "status": 200,
       "sha256": "54c39013c4bd42a9b14d8a375b7d04aec80a6448dbb1ca2a7dba4f58d7821f60",
       "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/post_battle_event_funcs.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/post_battle_event_funcs.c",
+      "status": 200,
+      "sha256": "37070b4bf6fe839d2e78dc4a921225488f95e1a26c266b8666972b56eec66bc3",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/battle_main.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/src/battle_main.c",
+      "status": 200,
+      "sha256": "c290d325761d68c059f02dc21cc6178d4bbefa0d06ffddc8879341c090d37928",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokefirered/blob/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/Makefile",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokefirered/ce6406d8c2eaf46d543c8a2606de0c3cb1951982/Makefile",
+      "status": 200,
+      "sha256": "51960ea72311e53c272ebcc5b481021efba52fcc7db7f0ded4bfcebaf8bbdf47",
+      "matchesPinnedSource": true
     }
   ]
 }

@@ -45,3 +45,12 @@ escena, una captura local ni un premio recogido. Solo se acredita automáticamen
 con integridad válida de los campos de Pokédex. Una lista completa sin integridad
 permanece como evidencia parcial; una lectura ausente no se convierte en cero.
 Las confirmaciones manuales no se cambian. Véase `research/routes/frlg.md`.
+
+## Orientación GBA documentada
+
+El lector Core expone máscara y total de medallas y desbloqueo Nacional para las
+cinco ediciones GBA. El indicador familiar de final está separado del `gameClear`
+directo: su estado orienta la recomendación pero aporta únicamente evidencia parcial.
+La normalización conserva la máscara y la procedencia de la señal. Una contradicción
+explícita o una señal de otra familia no habilita el salto al postgame. Definiciones,
+activadores y validación pendiente: `research/saves/gba-progress.md`.

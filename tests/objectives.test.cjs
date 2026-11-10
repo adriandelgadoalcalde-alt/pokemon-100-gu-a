@@ -71,3 +71,10 @@ test('a documented Paldea flag stays partial even when file integrity is valid',
  assert.equal(api.evaluate(nodes,api.fromDiagnosis(d),'SCARLET')[0].status,'PARTIAL_EVIDENCE');
  assert.equal(api.fromDiagnosis({...d,game:'Y'}).some(f=>f.id==='story.gameClear'),false);
 });
+test('GBA documentary clear flags remain partial, conflict safely and do not leak to another family',()=>{
+ const d={game:'EMERALD',caught:[],seen:[],gameClear:null,integrity:{checksumsValid:true},progressSignals:[{id:'story.gba.gameClear',value:true}]};
+ const nodes=[{id:'story',gameId:d.game,verification:{fact:'story.gameClear'}}];
+ assert.equal(engine.evaluate(nodes,engine.fromDiagnosis(d),d.game)[0].status,'PARTIAL_EVIDENCE');
+ assert.equal(engine.evaluate(nodes,engine.fromDiagnosis({...d,gameClear:false}),d.game)[0].status,'UNKNOWN');
+ assert.equal(engine.fromDiagnosis({...d,game:'Y'}).some(f=>f.id==='story.gameClear'),false);
+});

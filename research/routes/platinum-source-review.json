@@ -1,0 +1,440 @@
+{
+  "checkedAt": "2026-11-10",
+  "scope": "Pinned script availability and byte parity; not event validation with controlled natural saves or exhaustive inventory closure.",
+  "sources": [
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/canalave_city/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/canalave_city/scripts.s",
+      "status": 200,
+      "sha256": "ed243f3a0b6011ad6e4edebcf22f22ed88b1f720b173a7efb6664db2b4820602",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/canalave_city_gym/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/canalave_city_gym/scripts.s",
+      "status": 200,
+      "sha256": "8e18ba3dfdef77fa28d6f55122f95c995b9bfb18e12ce93ed99f6b5dfa9f5c61",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/canalave_library_3f/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/canalave_library_3f/scripts.s",
+      "status": 200,
+      "sha256": "0de887ab5b1a0367b64b4139e9c10dc4e385aa036691b4a63f24e4ea020e4d99",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/celestic_town/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/celestic_town/scripts.s",
+      "status": 200,
+      "sha256": "8c0cc76132fa85132a4ffc0ef50fd9df32f04dd79574344eeb2b2166bb06d8b1",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/celestic_town_cave/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/celestic_town_cave/scripts.s",
+      "status": 200,
+      "sha256": "70a9255936ecc4121ffe6fb4d2589674fbad09a92fc5430d918cc0f304602e58",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/cycle_shop/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/cycle_shop/scripts.s",
+      "status": 200,
+      "sha256": "1e10f53a063462d3f62aacacbe8740d09f1f17b9e7c351836f76bd52ddcbfef7",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/distortion_world_b1f/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/distortion_world_b1f/scripts.s",
+      "status": 200,
+      "sha256": "f706a8961af07f551588608247e92a8a19f1ab2ea92dd319c4ab5950054def23",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/distortion_world_b6f/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/distortion_world_b6f/scripts.s",
+      "status": 200,
+      "sha256": "f5c0520000492bd35ddfcfa6cdb21c86d92a8d2e0bde9ffdf2325b4c44101335",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/distortion_world_b7f/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/distortion_world_b7f/scripts.s",
+      "status": 200,
+      "sha256": "6330409c95af02a2c7074dea1a7b2643ad7acf527fd99993f9335f00fcf43564",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/distortion_world_giratina_room/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/distortion_world_giratina_room/scripts.s",
+      "status": 200,
+      "sha256": "54b926e98868a9c38dafa00679d4efc00c8ef6d45b295a5c5fc0b558b2b6bbb8",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/distortion_world_turnback_cave_room/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/distortion_world_turnback_cave_room/scripts.s",
+      "status": 200,
+      "sha256": "39ab37ffee2c0142be28598e0987e97c7143e0185f1b9ded97eca0018bc9b825",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/eterna_city/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/eterna_city/scripts.s",
+      "status": 200,
+      "sha256": "dd0d4ea1efd1555ec95787506bd91e2c0c899a46ba1568598502b8f025a84843",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/eterna_city_gym/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/eterna_city_gym/scripts.s",
+      "status": 200,
+      "sha256": "4a7df5f8827d2b5c081a0f67b0e0819f631efd1a873725f49aa7bc3ad69092b2",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/eterna_city_underground_man_house/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/eterna_city_underground_man_house/scripts.s",
+      "status": 200,
+      "sha256": "c7decdbccd4e32eb7f7ac28ce226e80551bcc4e0408117cd889fe17faa03fada",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/eterna_forest/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/eterna_forest/scripts.s",
+      "status": 200,
+      "sha256": "a924336ee45ccd501ebfdcb7d05aa1d739261282f20a1d89f5f6b93dfe6ccfc7",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/floaroma_meadow/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/floaroma_meadow/scripts.s",
+      "status": 200,
+      "sha256": "01787705580c0b61090b3b6d1493faf74a8d2be6d20d234d9ffef518918302fb",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/galactic_hq_4f/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/galactic_hq_4f/scripts.s",
+      "status": 200,
+      "sha256": "1a395e2847a30539063c904352cde4fdf92de05fe0896aa02d59ec008110b6c2",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/galactic_hq_b2f/events.json",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/galactic_hq_b2f/events.json",
+      "status": 200,
+      "sha256": "24647b41c6745a2974f9c271ab35e998630ff6c09816dd74ec754602c5a18283",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/galactic_hq_laboratory/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/galactic_hq_laboratory/scripts.s",
+      "status": 200,
+      "sha256": "305525c82bac2c134afff56af0a09ce9f37044e45cdd17ec3700cbf8390956c7",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/hearthome_city_gym_leader_room/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/hearthome_city_gym_leader_room/scripts.s",
+      "status": 200,
+      "sha256": "bfc8b2020f924c69501c99584e86267209b6cdad61302f98d77a2b3c944d446d",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/hearthome_city_northwest_house/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/hearthome_city_northwest_house/scripts.s",
+      "status": 200,
+      "sha256": "993c40c1760a43f3bfde1946212fa612f49446a1e8d6051512950aa6b768dcbf",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/iron_island/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/iron_island/scripts.s",
+      "status": 200,
+      "sha256": "183c8dc008cba560b9c1165fc64bad95b420ae5fdba3fb947cd8fe4e1ec85d87",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/iron_island_b2f_left_room/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/iron_island_b2f_left_room/scripts.s",
+      "status": 200,
+      "sha256": "f922c3e94741966cc47ef4cc813dcc8406d5b88d0e2f7afeef6c65f6872cfe72",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/jubilife_city/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/jubilife_city/scripts.s",
+      "status": 200,
+      "sha256": "d6383ddc068a71fa47fc86cec9cc11bb3ead5710b53234173a3019bd9455dc92",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/lake_acuity/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/lake_acuity/scripts.s",
+      "status": 200,
+      "sha256": "63ebb8102cde504700650cff1568d92a2419823fcd28dbd42e050ef2b6022a1e",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/lake_verity/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/lake_verity/scripts.s",
+      "status": 200,
+      "sha256": "6525e478ce017c9ccce4dfd0e08779bb8d76ae9bf021569894954ff949091dc4",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/oreburgh_city_gym/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/oreburgh_city_gym/scripts.s",
+      "status": 200,
+      "sha256": "7ff042ef78dfd52d55af21e9b871b8f9c7abe1663710b54a9e387e589cea083c",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/oreburgh_gate_1f/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/oreburgh_gate_1f/scripts.s",
+      "status": 200,
+      "sha256": "f81d0c6180253d63000792e319d472e23b07a2d7bd9f0dceef7ec1926ae064d2",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/oreburgh_mine_b2f/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/oreburgh_mine_b2f/scripts.s",
+      "status": 200,
+      "sha256": "dc40b6ed7c9756562d274e1f8abbce1d5fb047a62b7fa8ea2bc79b410d37d297",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pastoria_city/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pastoria_city/scripts.s",
+      "status": 200,
+      "sha256": "5985cdd1a532ddd133ebd387c52e405dfed4982c69b12b5ea48193bb9f671e7b",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pastoria_city_gym/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pastoria_city_gym/scripts.s",
+      "status": 200,
+      "sha256": "b7310091ed635df37aa028da1ab444d3ff8ba69cfe3f93963bfec2257ffbdd31",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league/scripts.s",
+      "status": 200,
+      "sha256": "ac7a9d5389541b2ca51b90c7f723e0c6cf3037763ebb61091f1f95eb60bc41f9",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league_aaron_room/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league_aaron_room/scripts.s",
+      "status": 200,
+      "sha256": "a1a9b60210efcad4d2a6fee455cf09022f542c119564a93aed23b04887848a5b",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league_bertha_room/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league_bertha_room/scripts.s",
+      "status": 200,
+      "sha256": "e1957c166a44f5eeb06b46f9dfc3cada11be3bc222eb07bbeff6a0df5c043ecd",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league_champion_room/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league_champion_room/scripts.s",
+      "status": 200,
+      "sha256": "a7bff38c39a593549b698667e419e42793e44d9e529b7e43bb59820e7e1cd7e0",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league_flint_room/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league_flint_room/scripts.s",
+      "status": 200,
+      "sha256": "7515349ca38a5f459bcd95902b36a8b85823c53e52490c40567e925448bcbca2",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league_hall_of_fame/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league_hall_of_fame/scripts.s",
+      "status": 200,
+      "sha256": "574630ead4444ec06d8567268eee5edc4699eb6a1beba75a290cf76b54ad58cf",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league_lucian_room/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/pokemon_league_lucian_room/scripts.s",
+      "status": 200,
+      "sha256": "1c7c77519f60f2d7289a7a2dec976514a1d079a39167d6f9db658a03ee60f0b8",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_201/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_201/scripts.s",
+      "status": 200,
+      "sha256": "d79b6e8161daa7ab05e86f7468f422e662d893fd70d7000e7dc77061af664eb8",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_203/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_203/scripts.s",
+      "status": 200,
+      "sha256": "e3495d96c184fbf5f6fb23fed0b76428035359396a222817aea87d5173ef8820",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_207/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_207/scripts.s",
+      "status": 200,
+      "sha256": "3651b027cda5edb5d31730fc7785065ab5ab1b05c93b8344b3f31cb3f6d0b89c",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_210_south/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_210_south/scripts.s",
+      "status": 200,
+      "sha256": "f8367c1c165b53d29367e2c6044b4a06a1016bf24a3814ee8aa631448bd241aa",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_213/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_213/scripts.s",
+      "status": 200,
+      "sha256": "6adf1362db5407121b74e8b05251d5c9653475ada6d00ca3ece384492c26d019",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_217/events.json",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_217/events.json",
+      "status": 200,
+      "sha256": "4c59d8a0dba65ca45c254ab76f8e1651a45dd66e4a7c221f06a2a1850ea5fd46",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_218_gate_to_jubilife_city/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/route_218_gate_to_jubilife_city/scripts.s",
+      "status": 200,
+      "sha256": "3914d4ea67df5a20f2963be1bf1eb9afc56199ebb9f6d47109c96d57f046e0c3",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/sandgem_town_pokemon_research_lab/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/sandgem_town_pokemon_research_lab/scripts.s",
+      "status": 200,
+      "sha256": "fef78a8a5a41d7f744c20b8ad4f74207f2719be243e555005496eeaf5ccb84f2",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/snowpoint_city_gym/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/snowpoint_city_gym/scripts.s",
+      "status": 200,
+      "sha256": "ef8ba6b779254f2bff173e459b34a327e3040d382aea23fbaca38486c9abcd82",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/solaceon_ruins_room_7/events.json",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/solaceon_ruins_room_7/events.json",
+      "status": 200,
+      "sha256": "29c80d13fa20f85e92ed42dec5e705da82acc0f9513b647e4c8af2657399a288",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/spear_pillar/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/spear_pillar/scripts.s",
+      "status": 200,
+      "sha256": "cd03793c50fa86d89f6248b7a65ccd88bf85b517dfe2550036b21ea993eb8043",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/sunyshore_city/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/sunyshore_city/scripts.s",
+      "status": 200,
+      "sha256": "ddbfe2ca0feb80ca5d1a40e3ac12a34d6d6cf45ab66160a23e14d5e5573be663",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/sunyshore_city_gym_room_3/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/sunyshore_city_gym_room_3/scripts.s",
+      "status": 200,
+      "sha256": "00086d7ad5a12193fcb4b5a76f10c15e1dfe2783a094a3eeaad4fadea23f78a9",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/team_galactic_eterna_building_4f/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/team_galactic_eterna_building_4f/scripts.s",
+      "status": 200,
+      "sha256": "3e58a6af8e5bf9ce19278b07a877e5fe9f43000fd975308ab3adbfbca72c76b5",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/trainers_school/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/trainers_school/scripts.s",
+      "status": 200,
+      "sha256": "0d3ede6ccd6c0bd2df424a12bceb418fbff99aae14b72d9bea6fc0a22012456b",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/twinleaf_town_player_house_1f/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/twinleaf_town_player_house_1f/scripts.s",
+      "status": 200,
+      "sha256": "8caaccfce6c18c49f07b5c54cc29f1a53fd35c81b4b1e2d695ab2bec3681e8a2",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/valley_windworks_building/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/valley_windworks_building/scripts.s",
+      "status": 200,
+      "sha256": "794b543d550e5f34399b03426e314c70688b81aee88c226171648b8a55981396",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/valor_cavern/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/valor_cavern/scripts.s",
+      "status": 200,
+      "sha256": "a10eadf759b73399c43ab962f9cdd01f3f1afdad0d1563137397b57c7c7fdcb6",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/valor_lakefront/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/valor_lakefront/scripts.s",
+      "status": 200,
+      "sha256": "0b4c0a4889d6c6870e2474a668d91e43fdb68e3ab32ce965d242baeefe97351a",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/veilstone_city/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/veilstone_city/scripts.s",
+      "status": 200,
+      "sha256": "4bade6691484c66c2deebcac87b64aa2bd16707dee826f3da8804870368cf164",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/veilstone_city_galactic_warehouse/events.json",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/veilstone_city_galactic_warehouse/events.json",
+      "status": 200,
+      "sha256": "ce3d85e6408eabc2b209d7924f0e43b60d32397270fbdf014a455fffce1470be",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/veilstone_city_galactic_warehouse/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/veilstone_city_galactic_warehouse/scripts.s",
+      "status": 200,
+      "sha256": "bf2b49859e3906b08be0ee11f2bc0f5a306bcd20e116f94724b76091de3e1043",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/veilstone_city_gym/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/veilstone_city_gym/scripts.s",
+      "status": 200,
+      "sha256": "e5fdf7fca93818ff0a3c1b51673278c3e5a4068db51604c0206cd07569b02ebd",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeplatinum/blob/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/vista_lighthouse/scripts.s",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeplatinum/62bdaacdca6c56a6a396f3e9911e2f922b79bba8/res/field/maps/vista_lighthouse/scripts.s",
+      "status": 200,
+      "sha256": "db17ea8063cfbc669cb761e13e0bd5e8bf8dd7877eda63729912bdd3c35cf60d",
+      "matchesPinnedSource": true
+    }
+  ]
+}

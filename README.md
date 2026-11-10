@@ -46,7 +46,7 @@ no amplía por sí solo los formatos compatibles ni certifica nuevos eventos.
 
 Las misiones incorporan recorridos con ubicación, requisitos, instrucciones,
 comprobación final y fuentes, disponibles también offline. La ampliación actual
-contiene 109 rutas enlazadas a 247 misiones de las 39 ediciones. Mantiene todas las
+contiene 120 rutas enlazadas a 258 misiones de las 39 ediciones. Mantiene todas las
 casillas previas. El [seguimiento editorial](docs/guide-completion.md) define qué
 falta para cerrar las guías exhaustivas de las nueve generaciones; los recuentos
 no certifican el 100 % de los juegos. Hoenn GBA incluye las diferencias de
@@ -83,3 +83,13 @@ WebKit en Linux no sustituye una prueba física de Safari/iPadOS.
 - https://bulbapedia.bulbagarden.net/wiki/Appendix:Black_2_and_White_2_walkthrough
 - https://www.wikidex.net/wiki/Unova
 - https://bulbapedia.bulbagarden.net/wiki/Core_series
+
+El motor ampliado conserva ahora las medallas individuales y la Nacional de los
+cinco títulos GBA. Una señal documentada de Liga orienta al postgame sin dar por
+hechas todas las escenas; véase `research/saves/gba-progress.md`. Rojo Fuego/Verde
+Hoja distingue los tickets y el fallo de Rugido entre GBA original y la reedición
+oficial de Switch. La plataforma no se inventa a partir de un save que no la identifica.
+
+Platino tiene recorridos propios del inicio a la Liga y del Mundo Distorsión. Se
+distinguen el inicial de Ruta 201, Fantina tercera, Brega cuarta, Fuerza de Quinoa y
+Despejar de Ruinas Sosiego; no se trasladan esas condiciones a Diamante/Perla.

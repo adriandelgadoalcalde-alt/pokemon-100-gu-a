@@ -27,3 +27,16 @@ test('a positive documented Paldea signal directs the route without certifying c
  for(const value of [false,null])assert.equal(nextMission(edition,{progressSignals:[{id:'story.paldea.clear',value}]},()=>false,()=>false).mission.id,'SCARLET-01');
  assert.equal(nextMission(edition,{...positive,gameClear:false},()=>false,()=>false).mission.id,'SCARLET-01');
 });
+test('GBA documentary clear signals prioritize postgame only in their own family',()=>{
+ const fs=require('fs'),{catalogue}=require('../scripts/audit.cjs');
+ const catalog=catalogue(fs.readFileSync('atlas.html','utf8'));
+ for(const id of ['RUBY','SAPPHIRE','EMERALD','FIRERED','LEAFGREEN']){
+  const game=catalog.games.find(g=>g.id===id);
+  const snapshot={game:id,gameClear:null,badgesTotal:8,progressSignals:[{id:'story.gba.gameClear',value:true}]};
+  const result=require('../src/engine/route.js').nextMission(game,snapshot,()=>false,()=>false);
+  assert.ok(game.missions.indexOf(result.mission)>game.missions.findIndex(m=>m.id===game.mainStoryLastMission));
+  assert.match(result.reason,/indicador documentado de Liga/);
+  const contradicted=require('../src/engine/route.js').nextMission(game,{...snapshot,gameClear:false},()=>false,()=>false);
+  assert.equal(contradicted.mission.id,game.missions[0].id);
+ }
+});
