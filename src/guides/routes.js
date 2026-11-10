@@ -2117,6 +2117,7 @@
  routes.push(...(typeof module==='object'&&module.exports?require('./unova-postgame.js'):root.PokemonUnovaPostgameRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./kalos.js'):root.PokemonKalosRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./oras.js'):root.PokemonORASRoutes));
+ routes.push(...(typeof module==='object'&&module.exports?require('./alola.js'):root.PokemonAlolaRoutes));
  const ice=typeof module==='object'&&module.exports?require('./ice-puzzle.js'):root.PokemonIcePuzzle;
  const byMission=new Map();
  for(const route of routes)for(const game of route.games){const id=game+'-'+route.mission;if(byMission.has(id))throw Error('Ruta editorial duplicada: '+id);byMission.set(id,route);}

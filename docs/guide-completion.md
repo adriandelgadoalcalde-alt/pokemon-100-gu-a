@@ -76,10 +76,10 @@ flags y la validación natural del guardado tienen su propia revisión técnica.
 | 6 | Y | 12 | 12 | En revisión |
 | 6 | Rubí Omega | 16 | 16 | En revisión |
 | 6 | Zafiro Alfa | 16 | 16 | En revisión |
-| 7 | Sol | 10 | 2 | En revisión |
-| 7 | Luna | 10 | 2 | En revisión |
-| 7 | Ultrasol | 12 | 2 | En revisión |
-| 7 | Ultraluna | 12 | 2 | En revisión |
+| 7 | Sol | 10 | 10 | En revisión |
+| 7 | Luna | 10 | 10 | En revisión |
+| 7 | Ultrasol | 12 | 10 | En revisión |
+| 7 | Ultraluna | 12 | 10 | En revisión |
 | 7 | Let's Go Pikachu | 6 | 2 | En revisión |
 | 7 | Let's Go Eevee | 6 | 2 | En revisión |
 | 8 | Espada | 10 | 2 | En revisión |
@@ -137,3 +137,13 @@ Los remakes de Hoenn añaden catorce recorridos y 87 instrucciones a las dos ent
 del Episodio Delta. Las dieciséis misiones actuales por edición tienen ampliación;
 los inventarios y mapas aún siguen en revisión. El reconocimiento regional compara
 208 especies vistas, sin acreditar premios de captura. Véase `research/routes/oras.md`.
+
+Alola añade dieciséis rutas y 117 instrucciones para las cuatro ediciones. Se
+separan inicial, pruebas, dominantes, rescate, gran prueba de Hela y primer título
+de Sol/Luna frente a Ultra. Diez misiones por edición tienen ampliación, sin
+certificar todavía mapas, inventarios, pasaporte ni todas las colecciones. Véase
+`research/routes/alola.md`.
+
+ORAS dispone de una guía individual de 47 megapiedras y comparación de bolsa.
+La lectura de objetos equipados y el resto del inventario exhaustivo siguen
+pendientes; véase `research/routes/oras-stones.md`.

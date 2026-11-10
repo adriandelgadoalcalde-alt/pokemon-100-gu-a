@@ -392,6 +392,20 @@ async function run() {
       assert.match(await allPage.locator(`[data-mid="${game}-11"] .route-details`).innerText(),/Plubio tanto en Rubí Omega como en Zafiro Alfa/);
       assert.match(await allPage.locator(`[data-mid="${game}-13"] .route-details`).innerText(),/Mesprit aparece de 04:00 a 19:59/);
     }
+    // Original Alola and Ultra keep distinct required bosses, Poni order and first title.
+    await allPage.locator('[data-view="mission"]').first().click();
+    await allPage.locator('#mobile-gen').selectOption('7');
+    for(const game of ['SUN','MOON','ULTRASUN','ULTRAMOON']){
+      await allPage.locator('#mobile-game').selectOption(game);
+      for(const suffix of ['03','05','07','08'])await allPage.locator(`[data-mid="${game}-${suffix}"] > summary`).click();
+      const text=async id=>allPage.locator(`[data-mid="${game}-${id}"] .route-details`).innerText();
+      assert.match(await text('03'),game.startsWith('ULTRA')?/Araquanid dominante/:/Wishiwashi dominante/);
+      assert.match(await text('05'),game.startsWith('ULTRA')?/Togedemaru dominante/:/Vikavolt dominante/);
+      assert.match(await text('05'),/Paliza, Golisopod, Skittolate y ¡Nanay!/);
+      assert.match(await text('07'),game.startsWith('ULTRA')?/Ribombee dominante/:/Hela antes de internarte en el cañón/);
+      assert.match(await text('08'),game.startsWith('ULTRA')?/vence a Tilo para obtener el primer título/:/Vence a Kukui/);
+      assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    }
     // Stone possession is read separately from manual completion and original gifts.
     const stoneDiagnosis={game:'OMEGARUBY',caught:[],seen:[],integrity:{checksumsValid:true},inventory:[{pocket:'Items',items:[{id:656,count:1},{id:758,count:2}]}]};
     await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-stones.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(stoneDiagnosis))});
@@ -532,6 +546,14 @@ async function run() {
         assert.equal(await offlineStones.locator('[data-stone-item]:visible').count(),1);
         await offlineStones.locator('[data-stone-item="770"] > summary').click();
         assert.match(await offlineStones.locator('[data-stone-item="770"]').innerText(),/Llave Almacén/);
+        await offlinePage.locator('#mobile-gen').selectOption('7');
+        await offlinePage.locator('#mobile-game').selectOption('SUN');
+        await offlinePage.locator('[data-mid="SUN-05"] > summary').click();
+        assert.match(await offlinePage.locator('[data-mid="SUN-05"] .route-details').innerText(),/RotomDex, Charjabug y Pokémon dominante/);
+        await offlinePage.locator('#mobile-game').selectOption('ULTRAMOON');
+        await offlinePage.locator('[data-mid="ULTRAMOON-07"] > summary').click();
+        assert.match(await offlinePage.locator('[data-mid="ULTRAMOON-07"] .route-details').innerText(),/Flor Irisada/);
+
 
 
 
