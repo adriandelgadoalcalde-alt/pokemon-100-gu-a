@@ -115,3 +115,8 @@ especies vistas, sin atribuir recogida de premios ni encuentros originales.
 Rubí Omega/Zafiro Alfa compara para su reconocimiento regional las 208 especies
 vistas exigidas de Hoenn; se distinguen de los 211 registros totales y de los
 premios de captura. Las fuentes y licencia están en `research/dex/`.
+
+Los remakes de Hoenn incluyen además un buscador de las 47 megapiedras con rutas y
+fuentes individuales. Al importar un guardado, muestra cuáles constan en la bolsa;
+una ausencia puede significar que la piedra está equipada. La Diancita se separa
+como legado. El lector ligero contrasta también los cinco bolsillos de X/Y/ORAS.

@@ -242,14 +242,24 @@ function eventAudit(o,b){let off,workBase,flagBase,flagCount,workCount;
   const toFameLow=u32(b,base+0x1D900+0x3C),toFameHigh=u32(b,base+0x1D900+0x40);
   return details({game:v===22?'WHITE2':'BLACK2',integrity,version:v,generation:5,format:'DS 512 KiB',trainer:str(b,base+0x19404,16),tid:u16(b,base+0x19414),sid:u16(b,base+0x19416),playtime:time(b,base+0x19424),badges:bits(u8(b,base+0x21104)),badgesMask:u8(b,base+0x21104),gameClear:!!(toFameLow||toFameHigh),nationalDex:!!(u32(b,base+0x21404)&1),missingRequired:missing,requiredCount:required.length,requiredCaught:required.length-missing.length,medals:parseMedals5(b,base),saveBase:base,slotInfo:'Bloques nativos de quinta generación; no se seleccionan por horas jugadas',notes:['Guardado detectado como '+(v===22?'Blanco 2':'Negro 2')+'. Las especies, premios y escenarios exclusivos cambian según la edición.','La Pokédex registra posesión histórica, no necesariamente especies presentes en las cajas.']},b,d);
  }
+ // PKHeX PlayerBag6XY/AO, InventoryPouch4 and SaveBlockAccessor6XY/AO at the pinned revision.
+ // Pocket slot counts follow the API, not the unused padding between pockets.
+ function inventory6(b,oras){
+  const layout=oras?[['Items',0,305],['KeyItems',0x640,47],['TMHMs',0x7c0,107],['Medicine',0x970,54],['Berries',0xa70,67]]:
+   [['Items',0,289],['KeyItems',0x640,32],['TMHMs',0x7c0,105],['Medicine',0x968,51],['Berries',0xa68,67]];
+  return layout.map(([pocket,offset,slots])=>{
+   const items=[];for(let i=0;i<slots;i++){const pos=0x400+offset+i*4,id=u16(b,pos),count=u16(b,pos+2);if(id>0&&count>0)items.push({id,count});}
+   return {pocket,items};
+  });
+ }
  function beef(b){return u32(b,b.length-0x1f0)===0x42454546}
  function parseXY(b){const v=u8(b,0x14004);validateVersion(v,[24,25]);if(!beef(b))fail('No se encuentra la firma BEEF de un guardado 3DS descifrado. Exporta el archivo main del emulador o de Checkpoint.');const d=dex(b,{ofs:0x15000,caught:8,seen:0x68,region:0x60,regions:4,max:721});
-  const integrity=root.PokemonSaveIntegrity.beef(b,55,'ccitt');
-  return details({game:v===24?'X':'Y',integrity,version:v,generation:6,format:'3DS main descifrado',trainer:str(b,0x14048,26),tid:u16(b,0x14000),sid:u16(b,0x14002),playtime:time(b,0x1800),badges:bits(u8(b,0x420C)),badgesMask:u8(b,0x420C),gameClear:u32(b,0x1220)>0,secondsToFame:u32(b,0x1220),nationalDex:!!(u32(b,0x15004)&1),requiredCount:null,missingRequired:null,notes:['La tarjeta de Y exige registrar avistamientos de la Pokédex regional de Kalos: el conteo nacional por sí solo no permite validarla.','No se puede demostrar que un legendario fuera capturado en su encuentro original usando solamente la Pokédex.']},b,d);
+  const integrity=root.PokemonSaveIntegrity.beef(b,55,'ccitt'),inventory=inventory6(b,false);
+  return details({game:v===24?'X':'Y',inventory,keyItems:inventory.find(p=>p.pocket==='KeyItems').items,integrity,version:v,generation:6,format:'3DS main descifrado',trainer:str(b,0x14048,26),tid:u16(b,0x14000),sid:u16(b,0x14002),playtime:time(b,0x1800),badges:bits(u8(b,0x420C)),badgesMask:u8(b,0x420C),gameClear:u32(b,0x1220)>0,secondsToFame:u32(b,0x1220),nationalDex:!!(u32(b,0x15004)&1),requiredCount:null,missingRequired:null,notes:['La tarjeta de Y exige registrar avistamientos de la Pokédex regional de Kalos: el conteo nacional por sí solo no permite validarla.','No se puede demostrar que un legendario fuera capturado en su encuentro original usando solamente la Pokédex.']},b,d);
  }
  function parseORAS(b){const v=u8(b,0x14004);validateVersion(v,[26,27]);if(!beef(b))fail('Guardado 3DS sin firma BEEF. Necesitamos el archivo main descifrado.');const d=dex(b,{ofs:0x15000,caught:8,seen:0x68,region:0x60,regions:4,max:721});
-  const integrity=root.PokemonSaveIntegrity.beef(b,58,'ccitt');
-  return details({game:v===26?'ALPHASAPPHIRE':'OMEGARUBY',integrity,version:v,generation:6,format:'3DS main descifrado',trainer:str(b,0x14048,26),tid:u16(b,0x14000),sid:u16(b,0x14002),playtime:time(b,0x1800),badges:bits(u8(b,0x420C)),badgesMask:u8(b,0x420C),gameClear:u32(b,0x1220)>0,secondsToFame:u32(b,0x1220),nationalDex:!!(u32(b,0x15004)&1),requiredCount:null,missingRequired:null,notes:['El requisito de tarjeta se basa en la Pokédex regional de Hoenn. No se deduce únicamente del total de especies nacionales vistas.','Episodio Delta, concursos y bases secretas requieren revisar registros adicionales.']},b,d);
+  const integrity=root.PokemonSaveIntegrity.beef(b,58,'ccitt'),inventory=inventory6(b,true);
+  return details({game:v===26?'ALPHASAPPHIRE':'OMEGARUBY',inventory,keyItems:inventory.find(p=>p.pocket==='KeyItems').items,integrity,version:v,generation:6,format:'3DS main descifrado',trainer:str(b,0x14048,26),tid:u16(b,0x14000),sid:u16(b,0x14002),playtime:time(b,0x1800),badges:bits(u8(b,0x420C)),badgesMask:u8(b,0x420C),gameClear:u32(b,0x1220)>0,secondsToFame:u32(b,0x1220),nationalDex:!!(u32(b,0x15004)&1),requiredCount:null,missingRequired:null,notes:['El requisito de tarjeta se basa en la Pokédex regional de Hoenn. No se deduce únicamente del total de especies nacionales vistas.','Episodio Delta, concursos y bases secretas requieren revisar registros adicionales.']},b,d);
  }
  function parseUSUM(b){const v=u8(b,0x1404);validateVersion(v,[32,33]);if(!beef(b))fail('Guardado 3DS sin firma BEEF. Exporta main sin cifrar.');const d=dex(b,{ofs:0x2C00,caught:0x88,seen:0xF0,region:0x8C,regions:4,max:807});
   const integrity=root.PokemonSaveIntegrity.beef(b,39,'usb');

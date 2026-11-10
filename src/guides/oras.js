@@ -390,7 +390,7 @@
     "steps": [
       "La tarjeta de Rubí Omega/Zafiro Alfa tiene tres logros: Hall de la Fama, vistas exigidas de Hoenn y victoria contra una Dama de Combate en el combate 50 de una modalidad Súper de la Mansión Batalla.",
       "El requisito regional de tarjeta usa 208 especies vistas: la Hoenn ampliada tiene 211 entradas y se excluyen Rayquaza, Jirachi y Deoxys para ese reconocimiento. No se exige capturar a las 208 ni sustituirlas por especies ajenas con el mismo total.",
-      "Para los concursos utiliza los Pokécubos para preparar la condición correspondiente y gana Normal, Súper, Híper y Experto en cada categoría. Registra las cinco cintas de Experto; reunirlas en un mismo Pokémon concede la Cinta Estrella de los Concursos.",
+      "Para los concursos utiliza los Pokécubos para preparar la condición correspondiente y gana Normal, Alto, Avanzado y Maestro en cada categoría. Registra las cinco cintas de Maestro; reunirlas en un mismo Pokémon concede la Cinta Estrella de los Concursos.",
       "Crea una Superbase Secreta con Daño Secreto y consigue banderas de otras bases. Habla con Perico en Arborada para los ascensos: Bronce con 30, Plata con 100, Oro con 500 y Platino con 1.000; este último permite recibir la Garchompita de Perico. El rango no sube solo por tener una base decorada.",
       "Puedes incorporar bases mediante QR y comunicación local compatible. Las actividades diarias de una base incorporada por QR normal esperan hasta el día siguiente; no se promete que los antiguos servicios en línea sigan disponibles.",
       "Tras el Episodio Delta recibe el billete y viaja en el S.S. Marea hasta Resort Batalla. Accede a su Mansión y gana los veinte combates normales para abrir la modalidad Súper correspondiente.",

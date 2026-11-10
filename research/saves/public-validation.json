@@ -7,6 +7,7 @@
     "uniqueSaveHashes": 57,
     "coreRead": 51,
     "browserRead": 12,
+    "inventoryParitySamples": 5,
     "medalParitySamples": 2,
     "browserEditions": [
       "ALPHASAPPHIRE",
@@ -195,6 +196,7 @@
       "format": "SAV6XY",
       "atlasDiagnosisCompatible": true,
       "browser": "read",
+      "inventoryParity": true,
       "browserParity": true,
       "inputUnchanged": true,
       "failures": []
@@ -545,6 +547,7 @@
       "format": "SAV6AO",
       "atlasDiagnosisCompatible": true,
       "browser": "read",
+      "inventoryParity": true,
       "browserParity": true,
       "inputUnchanged": true,
       "failures": []
@@ -562,6 +565,7 @@
       "format": "SAV6AO",
       "atlasDiagnosisCompatible": true,
       "browser": "read",
+      "inventoryParity": true,
       "browserParity": true,
       "inputUnchanged": true,
       "failures": []
@@ -579,6 +583,7 @@
       "format": "SAV6XY",
       "atlasDiagnosisCompatible": true,
       "browser": "read",
+      "inventoryParity": true,
       "browserParity": true,
       "inputUnchanged": true,
       "failures": []
@@ -596,6 +601,7 @@
       "format": "SAV6XY",
       "atlasDiagnosisCompatible": true,
       "browser": "read",
+      "inventoryParity": true,
       "browserParity": true,
       "inputUnchanged": true,
       "failures": []
