@@ -91,7 +91,7 @@
  {
   "id": 662,
   "name": "Mewtwoita X",
-  "place": "Pueblo Raíz",
+  "place": "Villa Raíz",
   "phase": "Primigenio",
   "steps": [
    "Regresa después del episodio de Groudon/Kyogre.",
@@ -403,7 +403,7 @@
  {
   "id": 684,
   "name": "Latiasita",
-  "place": "Isla del Sur / Pueblo Raíz",
+  "place": "Isla del Sur / Villa Raíz",
   "phase": "Eón",
   "steps": [
    "Consulta la entrega de tu edición. Tener a Latias registrado en la Pokédex no demuestra haber recibido esta piedra."
@@ -413,7 +413,7 @@
   ],
   "variants": {
    "OMEGARUBY": [
-    "Completa el Episodio Delta y habla con tu madre en casa, en Pueblo Raíz, para recibir la Latiasita."
+    "Completa el Episodio Delta y habla con tu madre en casa, en Villa Raíz, para recibir la Latiasita."
    ],
    "ALPHASAPPHIRE": [
     "En la visita de historia a Isla del Sur, Latias se incorpora al equipo con la Latiasita equipada. Si no está en la bolsa, revisa su objeto."
@@ -423,7 +423,7 @@
  {
   "id": 685,
   "name": "Latiosita",
-  "place": "Isla del Sur / Pueblo Raíz",
+  "place": "Isla del Sur / Villa Raíz",
   "phase": "Eón",
   "steps": [
    "Consulta la entrega de tu edición. Una piedra equipada no aparece en el bolsillo de objetos."
@@ -436,7 +436,7 @@
     "En la visita de historia a Isla del Sur, Latios se incorpora al equipo con la Latiosita equipada. Revisa su objeto antes de buscar otra entrega."
    ],
    "ALPHASAPPHIRE": [
-    "Completa el Episodio Delta y habla con tu madre en casa, en Pueblo Raíz, para recibir la Latiosita."
+    "Completa el Episodio Delta y habla con tu madre en casa, en Villa Raíz, para recibir la Latiosita."
    ]
   }
  },
