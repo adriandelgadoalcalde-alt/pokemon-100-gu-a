@@ -46,7 +46,7 @@ no amplía por sí solo los formatos compatibles ni certifica nuevos eventos.
 
 Las misiones incorporan recorridos con ubicación, requisitos, instrucciones,
 comprobación final y fuentes, disponibles también offline. La ampliación actual
-contiene 212 rutas enlazadas a 440 misiones de las 39 ediciones. Mantiene todas las
+contiene 216 rutas enlazadas a 448 misiones de las 39 ediciones. Mantiene todas las
 casillas previas. El [seguimiento editorial](docs/guide-completion.md) define qué
 falta para cerrar las guías exhaustivas de las nueve generaciones; los recuentos
 no certifican el 100 % de los juegos. Hoenn GBA incluye las diferencias de

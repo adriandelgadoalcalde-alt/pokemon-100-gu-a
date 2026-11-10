@@ -406,6 +406,23 @@ async function run() {
       assert.match(await text('08'),game.startsWith('ULTRA')?/vence a Tilo para obtener el primer título/:/Vence a Kukui/);
       assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
     }
+    // A mythical cannot replace Mewtwo in the 150 Kanto registrations; no manual check is created.
+    for(const game of ['LETGOP','LETGOE']){
+      const required=Array.from({length:150},(_,i)=>i+1),d={game,caught:required.slice(0,149).concat(151),seen:required,integrity:{verifiedFields:['caught']}};
+      await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-kanto-gap.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(d))});
+      await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.game===g,game);
+      assert.doesNotMatch(await allPage.locator('#master-pokedex').innerText(),/Evidencia/);
+      await allPage.locator('[data-view="diagnostic"]').first().click();
+      assert.match(await allPage.locator('#dex-completion').innerText(),/Kanto: 149\/150 registradas/);
+      await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-kanto-full.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...d,caught:required,seen:[]}))});
+      await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.[g]?.caught?.includes(150),game);
+      assert.match(await allPage.locator('#master-pokedex').innerText(),/Evidencia/);
+      assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+      await allPage.locator('[data-view="mission"]').first().click();
+      await allPage.locator(`[data-mid="${game}-03"] > summary`).click();
+      assert.ok(await allPage.locator(`[data-mid="${game}-03"] .route-details`).isVisible());
+      assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    }
     // Stone possession is read separately from manual completion and original gifts.
     const stoneDiagnosis={game:'OMEGARUBY',caught:[],seen:[],integrity:{checksumsValid:true},inventory:[{pocket:'Items',items:[{id:656,count:1},{id:758,count:2}]}]};
     await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-stones.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(stoneDiagnosis))});

@@ -1395,7 +1395,7 @@
       "Localiza a los Entrenadores Maestros tras la Liga. Cada desafío corresponde a una especie y exige llevarla; algunos objetivos son de presentación y otros de combate.",
       "Para desbloquear el encuentro con Rojo revisa el requisito de seis títulos de Maestro. No hace falta completar los 153 para activar ese combate.",
       "Acude a Meseta Añil para buscar a Rojo cuando se cumpla ese requisito y supera su equipo.",
-      "Para la Pokédex de Kanto, planifica exclusivos e intercambios y revisa las evoluciones por intercambio. Mew, Meltan y Melmetal tienen métodos externos distintos de las capturas del mapa.",
+      "Para la Pokédex de Kanto, planifica exclusivos e intercambios y revisa las evoluciones por intercambio. El requisito del diploma son las 150 especies de Bulbasaur a Mewtwo obtenidas, no solo vistas. Mew, Meltan y Melmetal se excluyen; sus métodos externos no sustituyen una especie ausente.",
       "Conserva por separado el diploma de Kanto, los títulos de Maestro que persigas y las capturas originales: son reconocimientos distintos."
     ],
     "check": "Desbloqueo y combate de Rojo, diploma y títulos revisados por separado.",
@@ -1404,7 +1404,8 @@
     ],
     "sources": [
       "https://www.serebii.net/letsgopikachueevee/mastertrainers.shtml",
-      "https://www.serebii.net/letsgopikachueevee/red.shtml"
+      "https://www.serebii.net/letsgopikachueevee/red.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/Diploma"
     ],
     "review": "reference-checked",
     "reviewedAt": "2026-11-10"
@@ -2118,6 +2119,7 @@
  routes.push(...(typeof module==='object'&&module.exports?require('./kalos.js'):root.PokemonKalosRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./oras.js'):root.PokemonORASRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./alola.js'):root.PokemonAlolaRoutes));
+ routes.push(...(typeof module==='object'&&module.exports?require('./lets-go.js'):root.PokemonLetsGoRoutes));
  const ice=typeof module==='object'&&module.exports?require('./ice-puzzle.js'):root.PokemonIcePuzzle;
  const byMission=new Map();
  for(const route of routes)for(const game of route.games){const id=game+'-'+route.mission;if(byMission.has(id))throw Error('Ruta editorial duplicada: '+id);byMission.set(id,route);}

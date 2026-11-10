@@ -102,3 +102,19 @@ test('ORAS card recognition uses its 208 seen species, excluding Rayquaza withou
   assert.ok(!engine.fromDiagnosis(d).some(f=>/encounter|reward|star|diploma/i.test(f.id)));
  }
 });
+
+test('Lets Go compares 150 exact caught entries and cannot infer diploma delivery or Master titles',()=>{
+ const required=Array.from({length:150},(_,i)=>i+1);
+ for(const game of ['LETGOP','LETGOE']){
+  const d={game,caught:required,seen:required,integrity:{verifiedFields:['caught']}};
+  assert.equal(dexStatus(d).kanto.required,150);assert.equal(dexStatus(d).kanto.complete,true);
+  const wrong={...d,caught:required.filter(id=>id!==150).concat(151,808,809,1)};
+  assert.deepEqual(dexStatus(wrong).kanto.missing,[150]);assert.equal(dexStatus(wrong).kanto.registered,149);
+  assert.equal(dexStatus({...d,caught:[],seen:required}).kanto.registered,0);
+  assert.equal(dexStatus({...d,caught:null}),null);
+  const nodes=[{id:'dex',gameId:game,verification:{fact:'pokedex.completion.kanto'}}];
+  assert.equal(engine.evaluate(nodes,engine.fromDiagnosis(d),game)[0].status,'COMPLETED_VERIFIED');
+  assert.equal(engine.evaluate(nodes,engine.fromDiagnosis({...d,integrity:{verifiedFields:['seen']}}),game)[0].status,'PARTIAL_EVIDENCE');
+  assert.ok(!engine.fromDiagnosis(d).some(f=>/encounter|reward|diploma|master|title/i.test(f.id)));
+ }
+});

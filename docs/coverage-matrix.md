@@ -627,3 +627,13 @@ La entrega anterior de historia y la de bolsa/cristales están publicadas y
 comprobadas en ambos motores: `docs/releases/alola-story.md` y
 `docs/releases/alola-inventory.md`. La lectura nueva del pasaporte se valida
 aparte; no se atribuye a esas versiones anteriores.
+
+### Let’s Go: historia y registros de Kanto
+
+Cuatro rutas nuevas y 37 instrucciones amplían las ocho conexiones de historia
+pendientes de Pikachu/Eevee: técnicas secretas, puertas de gimnasios, Rocket,
+Silph y Liga. Total: 216 rutas/448 conexiones; quedan 77 misiones sin ampliación.
+Las seis misiones catalogadas de cada edición tienen recorrido; persisten huecos
+de inventario, colecciones y mapas descritos en `research/routes/lets-go.md`.
+El diagnóstico compara las 150 especies obtenidas que exige el diploma, sin
+confundir esa condición con recibirlo ni con títulos o encuentros originales.
