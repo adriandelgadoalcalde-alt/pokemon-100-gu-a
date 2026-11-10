@@ -187,6 +187,26 @@ foreach (var version in new[] { GameVersion.B2, GameVersion.W2, GameVersion.X, G
     {
         b6.Badges = 255; model.SetCaught(145, true); model.SetCaught(146, true);
         model.SetSeen(145, true); model.SetSeen(146, true); model.SetSeen(381, true);
+        // First/last slots and zero-count holes catch pocket shifts and over-reading padding.
+        var inventory6 = model.Inventory;
+        foreach(var pouch in inventory6.Pouches)
+        {
+            var legal = inventory6.Info.GetItems(pouch.Type);
+            pouch.Items[0].Index = legal[0]; pouch.Items[0].Count = 1;
+            pouch.Items[1].Index = legal[1]; pouch.Items[1].Count = 0;
+            pouch.Items[2].Index = 0; pouch.Items[2].Count = 7;
+            pouch.Items[^1].Index = legal[^1]; pouch.Items[^1].Count = pouch.Type == InventoryType.Items ? 513 : 1;
+        }
+        inventory6.CopyTo(model);
+        // Nonzero unused padding must not be interpreted as additional inventory slots.
+        var pocketOffsets=model is SAV6AO?new[]{0,0x640,0x7C0,0x970,0xA70}:new[]{0,0x640,0x7C0,0x968,0xA68};
+        for(var index=0;index<inventory6.Pouches.Count;index++)
+        {
+            var at=0x400+pocketOffsets[index]+inventory6.Pouches[index].Items.Length*4;
+            BinaryPrimitives.WriteUInt16LittleEndian(model.Data[at..],656);
+            BinaryPrimitives.WriteUInt16LittleEndian(model.Data[(at+2)..],37);
+        }
+
         if (model is SAV6XY xy) xy.Zukan.IsNationalDexUnlocked = true;
         if (model is SAV6AO ao) ao.Zukan.IsNationalDexUnlocked = true;
     }

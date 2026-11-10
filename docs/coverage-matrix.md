@@ -557,3 +557,26 @@ revisión de disponibilidad; no se cuentan como nuevas rutas exhaustivas.
 
 El total editorial se mantiene en 147 rutas y 312 conexiones, con 213 misiones del
 catálogo sin ampliación. Ninguna guía exhaustiva se declara cerrada por este ciclo.
+
+## Megapiedras ORAS e inventario de sexta generación
+
+Base: recorridos ORAS publicados y comprobados en ambos motores de navegador
+([registro de publicación](releases/oras.md)). Se añade una guía consultable de las
+47 megapiedras con fuentes individuales, buscador y filtros, entregas por versión y
+legado separado. Se muestra presencia actual en bolsa, sin deducir regalos ni cerrar
+colecciones; objetos equipados todavía no se leen. No cambian los IDs de misiones,
+las 1.146 casillas, claves de almacenamiento ni el total de 196 recorridos.
+
+El lector JS incorpora los cinco bolsillos de X/Y/ORAS. Cinco muestras públicas
+coinciden con Core. La regresión sintética comprueba límites de bolsillos, relleno,
+huecos y corrupción sin escritura en originales. No hay nuevos mapeos de eventos
+antes/después ni ediciones nuevas validadas. Las fuentes y límites se conservan en
+`research/saves/gen6-inventory.md` y `research/routes/oras-stones.md`.
+
+Esta ampliación no cierra mapas, concursos, objetos equipados ni la guía exhaustiva
+global. No se presenta como completado el 100 % de ninguna edición.
+
+La interfaz y consulta offline pasaron en Chromium/WebKit, con filtros de bolsa y
+legado y sin pérdida de marcas. Dos partidas públicas ORAS se importaron también
+en la interfaz: conteos coincidentes, análisis local y cero errores. Queda pendiente
+validar el cambio en dispositivos físicos y comprobar su publicación tras CI.

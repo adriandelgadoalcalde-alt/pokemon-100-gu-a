@@ -62,3 +62,10 @@ y ningún fallo. Ambos comprueban importación real en el Atlas sin marcar misio
 red exclusivamente de recursos estáticos y nueva lectura tras cerrar el servidor
 y recargar el motor. Esto valida el adaptador WebAssembly y conserva los límites
 de procedencia y semántica anteriores. No se publican diagnósticos de esas partidas.
+
+## Bolsillos de sexta generación
+
+El lector ligero devuelve ahora los cinco bolsillos de X/Y y ORAS. Las cinco
+muestras públicas aceptadas de estas ediciones coinciden con Core en inventario
+completo, además de los campos anteriores. Fuente, tamaños, relleno ignorado y
+límites de interpretación: [estudio de inventario](gen6-inventory.md).

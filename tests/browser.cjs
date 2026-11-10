@@ -392,6 +392,27 @@ async function run() {
       assert.match(await allPage.locator(`[data-mid="${game}-11"] .route-details`).innerText(),/Plubio tanto en Rubí Omega como en Zafiro Alfa/);
       assert.match(await allPage.locator(`[data-mid="${game}-13"] .route-details`).innerText(),/Mesprit aparece de 04:00 a 19:59/);
     }
+    // Stone possession is read separately from manual completion and original gifts.
+    const stoneDiagnosis={game:'OMEGARUBY',caught:[],seen:[],integrity:{checksumsValid:true},inventory:[{pocket:'Items',items:[{id:656,count:1},{id:758,count:2}]}]};
+    await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-stones.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(stoneDiagnosis))});
+    await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.game==='OMEGARUBY');
+    await allPage.locator('[data-view="diagnostic"]').first().click();
+    const stoneBook=allPage.locator('[data-oras-stones]');
+    assert.match(await stoneBook.locator('[data-stone-summary]').innerText(),/2\/47 tipos presentes/);
+    assert.equal(await stoneBook.locator('[data-stone-item]').count(),47);
+    await stoneBook.locator('[data-stone-filter]').selectOption('present');
+    assert.equal(await stoneBook.locator('[data-stone-item]:visible').count(),2);
+    await stoneBook.locator('[data-stone-query]').fill('Metágróssita');
+    assert.equal(await stoneBook.locator('[data-stone-item]:visible').count(),1);
+    await stoneBook.locator('[data-stone-item="758"] > summary').click();
+    assert.match(await stoneBook.locator('[data-stone-item="758"]').innerText(),/primera revancha/);
+    await stoneBook.locator('[data-stone-query]').fill('');
+    await stoneBook.locator('[data-stone-filter]').selectOption('legacy');
+    assert.equal(await stoneBook.locator('[data-stone-item]:visible').count(),1);
+    assert.equal(await stoneBook.locator('[data-stone-item]:visible').getAttribute('data-stone-item'),'764');
+    assert.equal(await allPage.evaluate(()=>Object.keys(JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1')).checks||{}).filter(k=>k.startsWith('OMEGARUBY-')).length),0);
+    assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    await allPage.screenshot({path:path.join(resultDir,'oras-stones-390.png'),fullPage:true});
     // Medal receipts, ready rewards and unknown states have separate searchable rows.
     const medalRows=Array.from({length:255},(_,i)=>({id:i+1,state:0}));
     medalRows[0]={id:1,state:4,date:'2026-02-31'};medalRows[1]={id:2,state:3,date:'2026-11-10'};medalRows[254]={id:255,state:7};
@@ -504,6 +525,14 @@ async function run() {
         await offlinePage.locator('[data-mid="OMEGARUBY-05"] > summary').click();
         assert.match(await offlinePage.locator('[data-mid="OMEGARUBY-05"] .route-details').innerText(),/Aura o Bruno entrega MO04 Fuerza/);
         assert.equal(await offlinePage.evaluate(()=>PokemonCompletion.dexStatus({game:'OMEGARUBY',seen:PokemonHoennDex.required}).hoenn.complete),true);
+        await offlinePage.locator('[data-mid="OMEGARUBY-14"] > summary').click();
+        const offlineStones=offlinePage.locator('[data-oras-stones]');
+        assert.equal(await offlineStones.locator('[data-stone-item]').count(),47);
+        await offlineStones.locator('[data-stone-query]').fill('malvamar');
+        assert.equal(await offlineStones.locator('[data-stone-item]:visible').count(),1);
+        await offlineStones.locator('[data-stone-item="770"] > summary').click();
+        assert.match(await offlineStones.locator('[data-stone-item="770"]').innerText(),/Llave Almacén/);
+
 
 
 
