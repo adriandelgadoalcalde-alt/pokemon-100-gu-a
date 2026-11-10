@@ -46,7 +46,7 @@ no amplía por sí solo los formatos compatibles ni certifica nuevos eventos.
 
 Las misiones incorporan recorridos con ubicación, requisitos, instrucciones,
 comprobación final y fuentes, disponibles también offline. La ampliación actual
-contiene 165 rutas enlazadas a 348 misiones de las 39 ediciones. Mantiene todas las
+contiene 182 rutas enlazadas a 380 misiones de las 39 ediciones. Mantiene todas las
 casillas previas. El [seguimiento editorial](docs/guide-completion.md) define qué
 falta para cerrar las guías exhaustivas de las nueve generaciones; los recuentos
 no certifican el 100 % de los juegos. Hoenn GBA incluye las diferencias de
@@ -107,3 +107,7 @@ El Medallero de Negro 2/Blanco 2 muestra las 255 medallas por nombre y estado, c
 búsqueda y filtros. Se distingue recibida de lista para recoger, se mantienen los
 estados sin interpretar y se omiten fechas imposibles. El lector ligero y Core
 comparan ahora también el bloque completo; véase `research/saves/b2w2-medals.md`.
+
+Los datos de numeración regional de Kalos proceden de PokéAPI, fijados a una
+revisión y con su licencia en `research/dex/`. La comparación de X/Y usa 450
+especies vistas, sin atribuir recogida de premios ni encuentros originales.

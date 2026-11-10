@@ -70,10 +70,10 @@ flags y la validación natural del guardado tienen su propia revisión técnica.
 | 4 | Plata SoulSilver | 19 | 19 | En revisión |
 | 5 | Negro | 11 | 11 | En revisión |
 | 5 | Blanco | 11 | 11 | En revisión |
-| 5 | Negro 2 | 16 | 10 | En revisión |
-| 5 | Blanco 2 | 16 | 10 | En revisión |
-| 6 | X | 12 | 2 | En revisión |
-| 6 | Y | 12 | 2 | En revisión |
+| 5 | Negro 2 | 16 | 16 | En revisión |
+| 5 | Blanco 2 | 16 | 16 | En revisión |
+| 6 | X | 12 | 12 | En revisión |
+| 6 | Y | 12 | 12 | En revisión |
 | 6 | Rubí Omega | 16 | 2 | En revisión |
 | 6 | Zafiro Alfa | 16 | 2 | En revisión |
 | 7 | Sol | 10 | 2 | En revisión |
@@ -119,5 +119,16 @@ puzles detallados: véase `research/routes/hgss.md`.
 Teselia añade 18 recorridos de historia, 94 instrucciones y 36 conexiones para las
 cuatro ediciones. Se separan las entregas de MO, los gimnasios y los dos puzles de
 la Fragata por edición y etapa. Negro/Blanco tiene las once misiones catalogadas
-ampliadas; Negro 2/Blanco 2 tiene diez de dieciséis. Esto no cierra inventarios,
+ampliadas; Negro 2/Blanco 2 tiene dieciséis de dieciséis. Esto no cierra inventarios,
 colecciones ni navegación espacial; véase `research/routes/unova.md`.
+
+El postgame de las secuelas añade siete rutas y 51 instrucciones para las doce
+conexiones restantes: dragones, encuentros, tarjeta, Pokéwood/PWT, recuerdos,
+claves/Regi y Reserva Natural. El cierre del catálogo tampoco cierra el inventario
+exhaustivo ni los guiones y puzles pendientes. La Nacional compara las 636 especies
+exigidas en los cuatro títulos, sin inferir premios o encuentros originales.
+
+X/Y añade diez rutas y 59 instrucciones, conservando las dos del postgame. Las
+doce misiones de cada edición tienen ampliación; falta todavía el inventario
+exhaustivo. La comparación de Kalos usa 450 especies vistas y valida ese campo de
+forma independiente de los obtenidos. Véase `research/routes/kalos.md`.

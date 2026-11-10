@@ -21,9 +21,12 @@ jobs:
       - run: npm ci --ignore-scripts
       - run: python3 scripts/update-public-coverage.py --check
       - run: python3 scripts/update-medal-names.py --check
+      - run: python3 scripts/update-kalos-dex.py --check
       - run: npm run audit
       - run: npm test
       - run: python3 -m unittest discover -s tests -p '*_test.py'
+      - name: Use Ubuntu archive over HTTPS
+        run: sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/sources.list.d/ubuntu.sources
       - run: npx playwright install --with-deps ${{ matrix.browser }}
         timeout-minutes: 10
       - run: npm run test:updates
@@ -55,6 +58,8 @@ jobs:
       - run: node scripts/test-extractor-cli.cjs .cache/synthetic
       - run: python3 scripts/fetch-public-saves.py .cache/public-corpus
       - run: node scripts/validate-public-saves.cjs .cache/public-corpus
+      - name: Use Ubuntu archive over HTTPS
+        run: sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/sources.list.d/ubuntu.sources
       - run: npx playwright install --with-deps chromium webkit
         timeout-minutes: 10
       - run: node tests/core-browser.cjs .cache/public-corpus

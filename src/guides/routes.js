@@ -1076,9 +1076,7 @@
   {
     "games": [
       "BLACK",
-      "WHITE",
-      "BLACK2",
-      "WHITE2"
+      "WHITE"
     ],
     "mission": "11",
     "location": "Metro Batalla y colecciones de la tarjeta de Teselia",
@@ -2116,6 +2114,8 @@
  routes.push(...(typeof module==='object'&&module.exports?require('./diamond-pearl.js'):root.PokemonDiamondPearlRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./hgss.js'):root.PokemonHGSSRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./unova.js'):root.PokemonUnovaRoutes));
+ routes.push(...(typeof module==='object'&&module.exports?require('./unova-postgame.js'):root.PokemonUnovaPostgameRoutes));
+ routes.push(...(typeof module==='object'&&module.exports?require('./kalos.js'):root.PokemonKalosRoutes));
  const ice=typeof module==='object'&&module.exports?require('./ice-puzzle.js'):root.PokemonIcePuzzle;
  const byMission=new Map();
  for(const route of routes)for(const game of route.games){const id=game+'-'+route.mission;if(byMission.has(id))throw Error('Ruta editorial duplicada: '+id);byMission.set(id,route);}
