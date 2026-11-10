@@ -1,0 +1,17 @@
+{
+  "repository": "PokeAPI/pokeapi",
+  "revision": "5cbeb3f3eb55a9b86da52c4869336f9d61fdd6d7",
+  "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/5cbeb3f3eb55a9b86da52c4869336f9d61fdd6d7/data/v2/csv/pokemon_dex_numbers.csv",
+  "sourceSha256": "b8fe3353eec2b0ba4fc37e07e94ffa9f33ce96a7f9856c643a18b3ad518cd393",
+  "selection": [
+    15
+  ],
+  "selectedSha256": "d88e996b40a22daaf393090077c322dd3c05d746aa461721b5cf086411815e55",
+  "exclusions": [
+    384,
+    385,
+    386
+  ],
+  "requirementsSource": "https://bulbapedia.bulbagarden.net/wiki/Trainer_Card_level#Omega_Ruby_and_Alpha_Sapphire",
+  "reviewedAt": "2026-11-10"
+}

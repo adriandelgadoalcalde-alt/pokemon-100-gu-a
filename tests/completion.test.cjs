@@ -85,3 +85,20 @@ test('XY recognition uses 450 exact seen entries and validates seen independentl
   assert.ok(!engine.fromDiagnosis(d).some(f=>/encounter|reward|star|diploma/i.test(f.id)));
  }
 });
+test('ORAS card recognition uses its 208 seen species, excluding Rayquaza without excluding ordinary Hoenn species',()=>{
+ const {required}=require('../src/engine/hoenn-dex.js');assert.equal(required.length,208);
+ for(const id of [384,385,386])assert.ok(!required.includes(id));
+ for(const id of [252,255,258,382,383,475,478])assert.ok(required.includes(id));
+ for(const game of ['OMEGARUBY','ALPHASAPPHIRE']){
+  const d={game,caught:[],seen:required,integrity:{verifiedFields:['seen']}};
+  assert.equal(dexStatus(d).hoenn.complete,true);assert.equal(dexStatus(d).hoenn.field,'seen');
+  const replaced=dexStatus({...d,seen:required.filter(id=>id!==252).concat(384),caught:required}).hoenn;
+  assert.deepEqual(replaced.missing,[252]);assert.equal(replaced.complete,false);
+  assert.equal(dexStatus({...d,seen:[],caught:required}).hoenn.complete,false);
+  assert.equal(dexStatus({...d,seen:null}),null);
+  const nodes=[{id:'hoenn',gameId:game,verification:{fact:'pokedex.completion.hoenn'}}];
+  assert.equal(engine.evaluate(nodes,engine.fromDiagnosis(d),game)[0].status,'COMPLETED_VERIFIED');
+  assert.equal(engine.evaluate(nodes,engine.fromDiagnosis({...d,integrity:{verifiedFields:['caught']}}),game)[0].status,'PARTIAL_EVIDENCE');
+  assert.ok(!engine.fromDiagnosis(d).some(f=>/encounter|reward|star|diploma/i.test(f.id)));
+ }
+});
