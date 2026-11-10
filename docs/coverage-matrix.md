@@ -2,8 +2,8 @@
 
 Fecha: 9 de noviembre de 2026. Base auditada: `5af3c69` de `main`.
 Rama de trabajo: `feat/save-evidence-engine`. Implementación inicial: `093c948`;
-los ajustes posteriores de pruebas constan en el historial. Este informe no presenta
-la rama como publicada en Pages.
+los ajustes posteriores de pruebas constan en el historial. Los primeros ciclos describen trabajo previo a publicación. La entrega de lectura
+local ampliada se publicó después; véase `docs/releases/local-reader.md`.
 
 ## Alcance acordado con el usuario
 
@@ -376,3 +376,31 @@ No se amplía en este ciclo el número de rutas editoriales: siguen 73 rutas enl
 a 176 misiones y 349 misiones sin ese desarrollo, además de huecos del inventario.
 Las guías exhaustivas de todas las generaciones continúan dentro del alcance y
 ninguna se declara cerrada por haber ampliado el soporte de contenedores.
+
+## Octavo ciclo: Hoenn GBA y puzle reproducible
+
+Base publicada: `97b0a5f` en `main`; rama de continuación `feat/hoenn-walkthroughs`.
+Se añaden 20 recorridos con 106 instrucciones a 39 misiones existentes de Rubí,
+Zafiro y Esmeralda. El agregado es 93 rutas, 215 conexiones editoriales y 310
+misiones del catálogo aún sin ese desarrollo. No se añaden IDs ni casillas.
+
+Todos los objetivos hoy catalogados de esos tres títulos tienen recorrido ampliado.
+La guía exhaustiva sigue en revisión: faltan desgloses de actividades y colección
+agrupadas y revisión de huecos del inventario. Rojo Fuego/Verde Hoja no se consideran
+completados por pertenecer a la misma generación.
+
+Los scripts de pret/pokeruby y pret/pokeemerald se fijan por revisión. Se separan
+las guaridas, la entrega de Buceo, resolución de la crisis, Cascada, líderes,
+Campeones y requisitos de tarjeta. Se contrasta también el umbral de 800 puntos
+internos para pinturas de concurso. Investigación en `research/routes/hoenn.md`.
+
+El visor de hielo tiene soluciones para los dos mapas distintos. Su derivación
+lee metatiles y atributos fijados, calcula recorridos sin repetir casillas y los
+contrasta con los contadores de desbloqueo del script. La prueba reproduce todos
+los pasos sobre la geometría por edición; no sustituye una partida natural.
+Los botones del visor no cambian misiones, marcas ni el guardado.
+
+Comprobaciones locales: 48 pruebas unitarias, auditoría sin errores, regeneración
+de los recorridos del hielo, y regresión Chromium/WebKit con el visor móvil, cambio
+de edición, ausencia de marcas automáticas y uso después de cerrar el servidor.
+No hay nuevos offsets ni certificaciones de eventos de guardado en este ciclo.

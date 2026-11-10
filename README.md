@@ -12,7 +12,9 @@ GitHub Pages se publica desde la rama `main` y la raíz del repositorio. La apli
 Los archivos de guardado personales no están en este repositorio. Importar registros de Pokédex no certifica que se hayan completado los eventos originales. Exporta las casillas a JSON antes de cambiar de dispositivo.
 
 ## Cobertura real
-La estructura abarca nueve generaciones; no todas las rutas son todavía guías exhaustivas. La V9.2 corrige el itinerario de Negro 2/Blanco 2 y añade comprobaciones específicas, pero 445 misiones siguen siendo recorridos introductorios. La lectura ampliada utiliza Core en el navegador; la certificación de cada evento y
+La estructura abarca nueve generaciones; no todas las rutas son todavía guías exhaustivas. Las etiquetas históricas del catálogo se complementan con recorridos ampliados;
+la matriz editorial distingue las misiones desarrolladas de los objetivos aún
+agrupados o pendientes. La lectura ampliada utiliza Core en el navegador; la certificación de cada evento y
 las rutas exhaustivas siguen requiriendo trabajo y pruebas por edición.
 
 El lector común del navegador admite **HeartGold, SoulSilver, Negro 2, Blanco 2, X, Y,
@@ -44,10 +46,12 @@ no amplía por sí solo los formatos compatibles ni certifica nuevos eventos.
 
 Las misiones incorporan recorridos con ubicación, requisitos, instrucciones,
 comprobación final y fuentes, disponibles también offline. La ampliación actual
-contiene 73 rutas enlazadas a 176 misiones de las 39 ediciones. Mantiene todas las
+contiene 93 rutas enlazadas a 215 misiones de las 39 ediciones. Mantiene todas las
 casillas previas. El [seguimiento editorial](docs/guide-completion.md) define qué
 falta para cerrar las guías exhaustivas de las nueve generaciones; los recuentos
-no certifican el 100 % de los juegos.
+no certifican el 100 % de los juegos. Hoenn GBA incluye las diferencias de
+historia y un visor de hielo específico para Rubí/Zafiro y Esmeralda, disponible
+offline y sin modificar las casillas del usuario.
 
 ## Desarrollo y comprobaciones
 

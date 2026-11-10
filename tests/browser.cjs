@@ -209,6 +209,25 @@ async function run() {
       assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),game.id+': expanded route overflow');
       if(['RED','GOLD','SWORD','ZA'].includes(game.id))await allPage.screenshot({path:path.join(resultDir,'route-'+game.id+'-390.png'),fullPage:true});
     }
+    // Edition-specific puzzles and narrative gates must not inherit R/S instructions in Emerald.
+    await allPage.locator('#mobile-gen').selectOption('3');
+    await allPage.locator('#mobile-game').selectOption('EMERALD');
+    await allPage.locator('[data-mid="EMERALD-09"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="EMERALD-09"] .route-details').innerText(),/Centro Espacial/);
+    await allPage.locator('[data-mid="EMERALD-11"] > summary').click();
+    const icePanel=allPage.locator('[data-ice-version="EMERALD"][data-ice-platform="1"]');
+    await icePanel.locator('[data-ice-delta="1"]').click();
+    assert.equal(await icePanel.getAttribute('data-ice-step'),'1');
+    assert.match(await icePanel.locator('[role="status"]').innerText(),/Casilla 2 de 7/);
+    await icePanel.locator('[data-ice-reset]').click();
+    assert.equal(await icePanel.getAttribute('data-ice-step'),'0');
+    assert.equal(await allPage.locator('[data-check]:checked').count(),0);
+    assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    await allPage.screenshot({path:path.join(resultDir,'ice-EMERALD-390.png'),fullPage:true});
+    await allPage.locator('#mobile-game').selectOption('RUBY');
+    await allPage.locator('[data-mid="RUBY-11"] > summary').click();
+    assert.equal(await allPage.locator('[data-ice-version="EMERALD"]').count(),0);
+    assert.equal(await allPage.locator('[data-ice-version="RUBY_SAPPHIRE"]').count(),3);
     await allPage.locator('[data-view="coverage"]').first().click();
     assert.equal(await allPage.locator('[data-coverage-game]').count(),39);
     await allPage.setViewportSize({width:390,height:1000});
@@ -265,7 +284,7 @@ async function run() {
       await offlinePage.goto(`${base}/${file}`);
       await offlinePage.locator('#app button:visible').first().waitFor();
       if (file === 'index.html') assert.equal(await offlinePage.evaluate(() => typeof PokemonHGSSIntegrity.inspect), 'function');
-      if(file==='atlas.html'){await offlinePage.setViewportSize({width:390,height:1000});await offlinePage.locator('#mobile-gen').selectOption('1');await offlinePage.locator('#mobile-game').selectOption('RED');await offlinePage.locator('[data-mid="RED-01"] > summary').click();await offlinePage.locator('[data-mid="RED-01"] .route-details').waitFor();assert.match(await offlinePage.locator('[data-mid="RED-01"] .route-details').innerText(),/paquete destinado al profesor/);}
+      if(file==='atlas.html'){await offlinePage.setViewportSize({width:390,height:1000});await offlinePage.locator('#mobile-gen').selectOption('1');await offlinePage.locator('#mobile-game').selectOption('RED');await offlinePage.locator('[data-mid="RED-01"] > summary').click();await offlinePage.locator('[data-mid="RED-01"] .route-details').waitFor();assert.match(await offlinePage.locator('[data-mid="RED-01"] .route-details').innerText(),/paquete destinado al profesor/);await offlinePage.locator('#mobile-gen').selectOption('3');await offlinePage.locator('#mobile-game').selectOption('EMERALD');await offlinePage.locator('[data-mid="EMERALD-11"] > summary').click();await offlinePage.locator('[data-ice-platform="3"] [data-ice-delta="1"]').click();assert.equal(await offlinePage.locator('[data-ice-platform="3"]').getAttribute('data-ice-step'),'1');}
     }
     await offline.close();
     assert.deepEqual(errors, []);
