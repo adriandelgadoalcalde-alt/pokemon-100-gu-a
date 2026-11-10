@@ -67,3 +67,21 @@ test('Unova National registration requires all 636 ordinary species, including L
   assert.ok(!engine.fromDiagnosis(d).some(f=>/encounter|reward|original|star|permit|charm/i.test(f.id)));
  }
 });
+test('XY recognition uses 450 exact seen entries and validates seen independently of caught',()=>{
+ const {required}=require('../src/engine/kalos-dex.js');
+ assert.equal(required.length,450);assert.equal(new Set(required).size,450);
+ for(const id of [144,145,146,150,719,720,721])assert.ok(!required.includes(id));
+ for(const id of [650,653,656,716,717,718])assert.ok(required.includes(id));
+ for(const game of ['X','Y']){
+  const d={game,caught:[],seen:required,integrity:{verifiedFields:['seen']}};
+  assert.equal(dexStatus(d).kalos.complete,true);assert.equal(dexStatus(d).kalos.field,'seen');
+  const gap=dexStatus({...d,seen:required.filter(id=>id!==650).concat(719),caught:required}).kalos;
+  assert.equal(gap.complete,false);assert.equal(gap.registered,449);assert.deepEqual(gap.missing,[650]);
+  assert.equal(dexStatus({...d,seen:[],caught:required}).kalos.complete,false);
+  assert.equal(dexStatus({...d,seen:null}),null);
+  const nodes=[{id:'kalos',gameId:game,verification:{fact:'pokedex.completion.kalos'}}];
+  assert.equal(engine.evaluate(nodes,engine.fromDiagnosis(d),game)[0].status,'COMPLETED_VERIFIED');
+  assert.equal(engine.evaluate(nodes,engine.fromDiagnosis({...d,integrity:{verifiedFields:['caught']}}),game)[0].status,'PARTIAL_EVIDENCE');
+  assert.ok(!engine.fromDiagnosis(d).some(f=>/encounter|reward|star|diploma/i.test(f.id)));
+ }
+});

@@ -21,6 +21,7 @@ jobs:
       - run: npm ci --ignore-scripts
       - run: python3 scripts/update-public-coverage.py --check
       - run: python3 scripts/update-medal-names.py --check
+      - run: python3 scripts/update-kalos-dex.py --check
       - run: npm run audit
       - run: npm test
       - run: python3 -m unittest discover -s tests -p '*_test.py'

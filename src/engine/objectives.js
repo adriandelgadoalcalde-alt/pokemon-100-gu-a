@@ -103,7 +103,7 @@
   for(const id of d.seen||[])add(`pokedex.seen.${id}`,true,'seen');
   const completion=(typeof module==='object'&&module.exports?require('./completion.js'):root.PokemonCompletion)?.dexStatus(d);
   if(completion)for(const [key,status]of Object.entries(completion)){
-   add('pokedex.completion.'+key,status.complete,'caught');
+   add('pokedex.completion.'+key,status.complete,status.field);
    facts.at(-1).source={...facts.at(-1).source,definition:status.source,meaning:'Exact registered species set; not original encounters or reward collection'};
   }
   const medals=(typeof module==='object'&&module.exports?require('../guides/medals.js'):root.PokemonMedalBook)?.snapshot(d);

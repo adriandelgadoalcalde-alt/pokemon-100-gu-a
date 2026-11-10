@@ -12,14 +12,18 @@
   requirements:{national:range(493,mythicals4)}};
  const unova={source:'https://bulbapedia.bulbagarden.net/wiki/Trainer_Card_level#Black_2_and_White_2',
   requirements:{national:range(649,[...mythicals4,494,647,648,649])}};
- const definitions={FIRERED:frlg,LEAFGREEN:frlg,DIAMOND:dp,PEARL:dp,PLATINUM:platinum,HEARTGOLD:hgss,SOULSILVER:hgss,BLACK:unova,WHITE:unova,BLACK2:unova,WHITE2:unova};
+ const kalosData=typeof module==='object'&&module.exports?require('./kalos-dex.js'):root.PokemonKalosDex;
+ const xy={source:kalosData.requirementsSource,requirements:{kalos:kalosData.required},field:'seen'};
+ const definitions={FIRERED:frlg,LEAFGREEN:frlg,DIAMOND:dp,PEARL:dp,PLATINUM:platinum,HEARTGOLD:hgss,SOULSILVER:hgss,BLACK:unova,WHITE:unova,BLACK2:unova,WHITE2:unova,X:xy,Y:xy};
  function dexStatus(d){
   const definition=definitions[d?.game];
-  if(!definition||!Array.isArray(d.caught))return null;
-  const registered=new Set(d.caught);
+  if(!definition)return null;
+  const field=definition.field||'caught';
+  if(!Array.isArray(d[field]))return null;
+  const registered=new Set(d[field]);
   return Object.fromEntries(Object.entries(definition.requirements).map(([key,required])=>{
    const missing=required.filter(id=>!registered.has(id));
-   return [key,{required:required.length,registered:required.length-missing.length,missing,complete:missing.length===0,source:definition.source}];
+   return [key,{required:required.length,registered:required.length-missing.length,missing,complete:missing.length===0,source:definition.source,field}];
   }));
  }
  const api={dexStatus};
