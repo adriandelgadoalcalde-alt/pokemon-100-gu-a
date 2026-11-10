@@ -8,6 +8,7 @@
     "coreRead": 51,
     "browserRead": 12,
     "inventoryParitySamples": 7,
+    "passportParitySamples": 2,
     "medalParitySamples": 2,
     "browserEditions": [
       "ALPHASAPPHIRE",
@@ -163,6 +164,7 @@
       "atlasDiagnosisCompatible": true,
       "browser": "read",
       "inventoryParity": true,
+      "passportParity": true,
       "browserParity": true,
       "inputUnchanged": true,
       "failures": []
@@ -181,6 +183,7 @@
       "atlasDiagnosisCompatible": true,
       "browser": "read",
       "inventoryParity": true,
+      "passportParity": true,
       "browserParity": true,
       "inputUnchanged": true,
       "failures": []

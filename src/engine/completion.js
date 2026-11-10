@@ -16,7 +16,10 @@
  const xy={source:kalosData.requirementsSource,requirements:{kalos:kalosData.required},field:'seen'};
  const hoennData=typeof module==='object'&&module.exports?require('./hoenn-dex.js'):root.PokemonHoennDex;
  const oras={source:hoennData.requirementsSource,requirements:{hoenn:hoennData.required},field:'seen'};
- const definitions={FIRERED:frlg,LEAFGREEN:frlg,DIAMOND:dp,PEARL:dp,PLATINUM:platinum,HEARTGOLD:hgss,SOULSILVER:hgss,BLACK:unova,WHITE:unova,BLACK2:unova,WHITE2:unova,X:xy,Y:xy,OMEGARUBY:oras,ALPHASAPPHIRE:oras};
+ const alolaData=typeof module==='object'&&module.exports?require('./alola-dex.js'):root.PokemonAlolaDex;
+ const sm={source:alolaData.requirementsSource,requirements:alolaData.original};
+ const usum={source:alolaData.requirementsSource,requirements:alolaData.ultra};
+ const definitions={SUN:sm,MOON:sm,ULTRASUN:usum,ULTRAMOON:usum,FIRERED:frlg,LEAFGREEN:frlg,DIAMOND:dp,PEARL:dp,PLATINUM:platinum,HEARTGOLD:hgss,SOULSILVER:hgss,BLACK:unova,WHITE:unova,BLACK2:unova,WHITE2:unova,X:xy,Y:xy,OMEGARUBY:oras,ALPHASAPPHIRE:oras};
  function dexStatus(d){
   const definition=definitions[d?.game];
   if(!definition)return null;

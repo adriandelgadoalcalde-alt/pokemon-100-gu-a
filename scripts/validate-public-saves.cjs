@@ -53,6 +53,7 @@ try{
    for(const field of ['activeFlags','work'])if(!equal(browser.events?.[field],core.events?.[field]))failures.push('parity.events.'+field);
    if(browser.keyItems&&!equal(browser.keyItems,core.keyItems))failures.push('parity.keyItems');
    if(browser.inventory){row.inventoryParity=equal(browser.inventory,core.inventory);if(!row.inventoryParity)failures.push('parity.inventory');}
+   if(browser.passport){row.passportParity=equal(browser.passport,core.passport);if(!row.passportParity)failures.push('parity.passport');}
    if(browser.medals){row.medalParity=equal(browser.medals,core.medals);if(!row.medalParity)failures.push('parity.medals');}
    const identity=hash(`pokemon-save-audit-v1|${core.detectedVersion}|${browser.trainer}|${browser.tid}|${browser.sid}`);
    if(identity!==core.profileId)failures.push('parity.identity');
@@ -64,6 +65,7 @@ try{
  const report={checkedAt:new Date().toISOString().slice(0,10),scope:'Public archive containers, not proof of natural completion or controlled event history.',engineCommit:manifest.engineCommit,
   summary:{samples:results.length,uniqueSaveHashes:new Set(manifest.samples.map(s=>s.fileSha256)).size,coreRead:results.filter(r=>r.core==='read').length,browserRead:results.filter(r=>r.browser==='read').length,
    inventoryParitySamples:results.filter(r=>r.inventoryParity===true).length,
+   passportParitySamples:results.filter(r=>r.passportParity===true).length,
    medalParitySamples:results.filter(r=>r.medalParity===true).length,
    browserEditions:[...new Set(results.filter(r=>r.browserParity).map(r=>r.game))].sort(),generations:[...new Set(results.filter(r=>r.core==='read').map(r=>r.generation))].sort(),
    unchanged:results.every(r=>r.inputUnchanged),failed:results.filter(r=>r.failures.length).length},results};
