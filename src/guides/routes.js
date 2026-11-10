@@ -1425,7 +1425,7 @@
       "Recibe a Kubfu y visita con él los puntos de la isla señalados para aumentar la amistad. Habla con Mostaz cuando el requisito esté cumplido.",
       "Escoge una torre: Aguas produce a Urshifu Estilo Fluido y Sombras produce Estilo Brusco. La elección no se cambia después para ese Kubfu.",
       "Tras completar la torre y las condiciones del tramo posterior, continúa el encargo de Paul que conduce a la Maxipanal y a la preparación de la Maxisopa para Urshifu.",
-      "Revisa los 151 Diglett de Alola con el excursionista de la isla, las mejoras relevantes del dojo y el Amuleto Emblema de la colección de Pokédex.",
+      "Tras el Diglett inicial, encuentra los otros 150 Diglett de Alola con el excursionista de la isla, las mejoras relevantes del dojo y el Amuleto Emblema de la colección de Pokédex.",
       "Concluida la historia, abre los retos de Combate Restringido y registra cada tipo por separado si buscas completar esa instalación."
     ],
     "check": "Evolución elegida, cadena de Gigamax, colección de Diglett e instalación revisadas.",
@@ -1435,6 +1435,7 @@
     "sources": [
       "https://www.serebii.net/swordshield/mustard.shtml",
       "https://www.serebii.net/swordshield/diglett.shtml",
+      "https://bulbapedia.bulbagarden.net/wiki/Fields_of_Honor",
       "https://www.serebii.net/swordshield/restrictedsparring.shtml"
     ],
     "review": "reference-checked",
@@ -2120,6 +2121,7 @@
  routes.push(...(typeof module==='object'&&module.exports?require('./oras.js'):root.PokemonORASRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./alola.js'):root.PokemonAlolaRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./lets-go.js'):root.PokemonLetsGoRoutes));
+ routes.push(...(typeof module==='object'&&module.exports?require('./galar.js'):root.PokemonGalarRoutes));
  const ice=typeof module==='object'&&module.exports?require('./ice-puzzle.js'):root.PokemonIcePuzzle;
  const byMission=new Map();
  for(const route of routes)for(const game of route.games){const id=game+'-'+route.mission;if(byMission.has(id))throw Error('Ruta editorial duplicada: '+id);byMission.set(id,route);}

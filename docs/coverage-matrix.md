@@ -637,3 +637,12 @@ Las seis misiones catalogadas de cada edición tienen recorrido; persisten hueco
 de inventario, colecciones y mapas descritos en `research/routes/lets-go.md`.
 El diagnóstico compara las 150 especies obtenidas que exige el diploma, sin
 confundir esa condición con recibirlo ni con títulos o encuentros originales.
+
+### Galar: gimnasios, Copa y episodio posterior
+
+Nueve rutas nuevas y 66 instrucciones amplían dieciséis conexiones de Espada y
+Escudo. Total: 225 recorridos/464 conexiones; quedan 61 misiones sin ampliación.
+Se corrige el inicio en Yarda, los nombres españoles, la puntuación de Naboru,
+las versiones de gimnasios y la secuencia de captura de los legendarios. Se
+conservan casillas y dos rutas de expansiones. `research/routes/galar.md` recoge
+las fuentes y los inventarios/mapas/colecciones que aún impiden declarar cierre.
