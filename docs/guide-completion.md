@@ -80,8 +80,8 @@ flags y la validación natural del guardado tienen su propia revisión técnica.
 | 7 | Luna | 10 | 10 | En revisión |
 | 7 | Ultrasol | 12 | 10 | En revisión |
 | 7 | Ultraluna | 12 | 10 | En revisión |
-| 7 | Let's Go Pikachu | 6 | 2 | En revisión |
-| 7 | Let's Go Eevee | 6 | 2 | En revisión |
+| 7 | Let's Go Pikachu | 6 | 6 | En revisión |
+| 7 | Let's Go Eevee | 6 | 6 | En revisión |
 | 8 | Espada | 10 | 2 | En revisión |
 | 8 | Escudo | 10 | 2 | En revisión |
 | 8 | Diamante Brillante | 12 | 1 | En revisión |
@@ -147,3 +147,11 @@ certificar todavía mapas, inventarios, pasaporte ni todas las colecciones. Véa
 ORAS dispone de una guía individual de 47 megapiedras y comparación de bolsa.
 La lectura de objetos equipados y el resto del inventario exhaustivo siguen
 pendientes; véase `research/routes/oras-stones.md`.
+
+Let’s Go añade cuatro recorridos y 37 instrucciones propias de los remakes de
+Switch: técnicas secretas, requisitos de los gimnasios, progresión Rocket/Silph
+y Calle Victoria. Las seis misiones por edición disponen de ampliación. El
+diagnóstico compara exactamente las 150 especies obtenidas para el diploma,
+sin acreditar su entrega, encuentros originales ni títulos de Maestro. Siguen
+pendientes mapas interiores completos y colecciones; véase
+`research/routes/lets-go.md`.
