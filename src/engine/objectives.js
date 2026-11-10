@@ -106,6 +106,8 @@
    add('pokedex.completion.'+key,status.complete,'caught');
    facts.at(-1).source={...facts.at(-1).source,definition:status.source,meaning:'Exact registered species set; not original encounters or reward collection'};
   }
+  const medals=(typeof module==='object'&&module.exports?require('../guides/medals.js'):root.PokemonMedalBook)?.snapshot(d);
+  if(medals)add('medals.b2w2.allReceived',medals.complete,'medals');
   if(typeof d.gameClear==='boolean')add('story.gameClear',d.gameClear,'gameClear');
   if(typeof d.nationalDex==='boolean')add('pokedex.nationalUnlocked',d.nationalDex,'nationalDex');
   if(Number.isInteger(d.badgesTotal??d.badges))add('story.badges.count',d.badgesTotal??d.badges,'badgesTotal');

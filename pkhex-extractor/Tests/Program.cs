@@ -161,6 +161,28 @@ foreach (var version in new[] { GameVersion.B2, GameVersion.W2, GameVersion.X, G
         b5.Misc.Badges = 255; b5.Zukan.IsNationalDexUnlocked = true;
         b5.Zukan.SetCaught(145); b5.Zukan.SetCaught(146); b5.Zukan.SetSeen(145, 0); b5.Zukan.SetSeen(146, 0); b5.Zukan.SetSeen(381, 0);
     }
+    if (model is SAV5B2W2 medalSave)
+    {
+        var received = medalSave.Medals[0]; received.State = MedalState5.Obtained;
+        received.RawDate = (ushort)(26 | (2 << 7) | (31 << 11)); // impossible calendar date
+        var leap = medalSave.Medals[1]; leap.State = MedalState5.Obtained;
+        leap.Date = new DateOnly(2000,2,29); leap.IsUnread = true;
+        var ready = medalSave.Medals[2]; ready.State = MedalState5.ObtainReady;
+        ready.Date = new DateOnly(2026,11,10);
+        var hint = medalSave.Medals[3]; hint.State = MedalState5.HintObtained;
+        hint.Date = new DateOnly(2026,11,9);
+        var absent = medalSave.Medals[4]; absent.State = MedalState5.Unobtained;
+        absent.Date = new DateOnly(2026,11,8); // stale bytes do not become a receipt
+        var unknown = medalSave.Medals[5]; unknown.State = (MedalState5)7;
+        unknown.Date = new DateOnly(2026,11,7);
+        using var checkMedals=JsonDocument.Parse(JsonSerializer.Serialize(Audit.Extract(model,"synthetic",false)["medals"],Audit.JsonOptions));
+        var values=checkMedals.RootElement.GetProperty("medals");
+        Check(values[0].GetProperty("date").ValueKind==JsonValueKind.Null,"Impossible medal date accepted");
+        Check(values[1].GetProperty("date").GetString()=="2000-02-29","Leap-day medal date lost");
+        Check(!values[2].GetProperty("obtained").GetBoolean()&&values[2].GetProperty("ready").GetBoolean(),"Ready medal became received");
+        Check(values[4].GetProperty("date").ValueKind==JsonValueKind.Null,"Absent medal acquired a stale date");
+        Check(checkMedals.RootElement.GetProperty("unknown").GetInt32()==1,"Unknown medal state became pending or received");
+    }
     if (model is SAV6 b6)
     {
         b6.Badges = 255; model.SetCaught(145, true); model.SetCaught(146, true);

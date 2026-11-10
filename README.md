@@ -102,3 +102,8 @@ HGSS añade 17 rutas de sus remakes: Kimono, MO, Central, Abono, radio, Suicune 
 Ruinas Alfa. La Nacional se compara por especie en las cinco ediciones DS de la
 generación IV: 482 exigidas en D/P/Platino y 484 en HGSS. Se conservan sin marcar
 las casillas manuales; no se certifican premios entregados ni encuentros originales.
+
+El Medallero de Negro 2/Blanco 2 muestra las 255 medallas por nombre y estado, con
+búsqueda y filtros. Se distingue recibida de lista para recoger, se mantienen los
+estados sin interpretar y se omiten fechas imposibles. El lector ligero y Core
+comparan ahora también el bloque completo; véase `research/saves/b2w2-medals.md`.
