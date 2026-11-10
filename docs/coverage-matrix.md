@@ -580,3 +580,16 @@ La interfaz y consulta offline pasaron en Chromium/WebKit, con filtros de bolsa 
 legado y sin pérdida de marcas. Dos partidas públicas ORAS se importaron también
 en la interfaz: conteos coincidentes, análisis local y cero errores. Queda pendiente
 validar el cambio en dispositivos físicos y comprobar su publicación tras CI.
+
+## Historia de Alola separada por versiones
+
+Dieciséis rutas nuevas y 117 instrucciones conectan 32 misiones de Sol/Luna y
+Ultrasol/Ultraluna. El total pasa a 212 recorridos/440 conexiones; quedan 85 misiones
+del catálogo sin ampliación. Se corrigen capitanes, orden de las pruebas, rescate,
+Poni y Liga con referencias independientes por pareja. Los IDs y el número/índice
+de casillas se conservan, sin reglas automáticas narrativas ni cambios de esquema.
+
+Diez entradas por edición están ampliadas. Esto no acredita guía exhaustiva:
+puzles espaciales, inventarios, colecciones y servicios están pendientes en
+`research/routes/alola.md`. No se incrementan ediciones de lector ni eventos
+contrastados antes/después por añadir rutas editoriales.
