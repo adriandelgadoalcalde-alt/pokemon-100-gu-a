@@ -120,3 +120,7 @@ Los remakes de Hoenn incluyen además un buscador de las 47 megapiedras con ruta
 fuentes individuales. Al importar un guardado, muestra cuáles constan en la bolsa;
 una ausencia puede significar que la piedra está equipada. La Diancita se separa
 como legado. El lector ligero contrasta también los cinco bolsillos de X/Y/ORAS.
+
+El diagnóstico de Alola distingue cristales Z de bolsa y equipables. Ultrasol y
+Ultraluna incluyen lectura nativa de los siete bolsillos, contrastada con PKHeX;
+los cristales presentes no certifican pruebas ni sellos del pasaporte.

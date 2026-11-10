@@ -593,3 +593,16 @@ Diez entradas por edición están ampliadas. Esto no acredita guía exhaustiva:
 puzles espaciales, inventarios, colecciones y servicios están pendientes en
 `research/routes/alola.md`. No se incrementan ediciones de lector ni eventos
 contrastados antes/después por añadir rutas editoriales.
+
+## Inventario Ultra y cristales Z
+
+El lector nativo devuelve siete bolsillos de Ultrasol/Ultraluna, contrastados contra
+Core en dos muestras públicas y contenedores sintéticos. Son siete muestras con
+paridad de inventario completo contando las cinco de X/Y/ORAS anteriores. No hay
+ediciones nuevas de lector ni eventos narrativos contrastados antes/después.
+
+El diagnóstico de las cuatro ediciones de Alola muestra los cristales de bolsa,
+separados de los equipables: 29 tipos en originales y 35 en Ultra. Sus nombres/IDs
+se validan contra fuentes empaquetadas en CI. Se muestran posesión, ausencia y
+lectura desconocida sin cerrar pruebas, pasaporte o casillas. Sol/Luna continúa
+usando el lector ampliado. Documentación: `research/saves/gen7-inventory.md`.

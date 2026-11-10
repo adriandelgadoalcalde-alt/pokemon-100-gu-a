@@ -7,7 +7,7 @@
     "uniqueSaveHashes": 57,
     "coreRead": 51,
     "browserRead": 12,
-    "inventoryParitySamples": 5,
+    "inventoryParitySamples": 7,
     "medalParitySamples": 2,
     "browserEditions": [
       "ALPHASAPPHIRE",
@@ -162,6 +162,7 @@
       "format": "SAV7USUM",
       "atlasDiagnosisCompatible": true,
       "browser": "read",
+      "inventoryParity": true,
       "browserParity": true,
       "inputUnchanged": true,
       "failures": []
@@ -179,6 +180,7 @@
       "format": "SAV7USUM",
       "atlasDiagnosisCompatible": true,
       "browser": "read",
+      "inventoryParity": true,
       "browserParity": true,
       "inputUnchanged": true,
       "failures": []

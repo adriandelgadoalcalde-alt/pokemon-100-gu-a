@@ -69,3 +69,7 @@ El lector ligero devuelve ahora los cinco bolsillos de X/Y y ORAS. Las cinco
 muestras públicas aceptadas de estas ediciones coinciden con Core en inventario
 completo, además de los campos anteriores. Fuente, tamaños, relleno ignorado y
 límites de interpretación: [estudio de inventario](gen6-inventory.md).
+
+Ultrasol/Ultraluna añaden paridad de los siete bolsillos en sus dos muestras
+públicas. La representación de diez bits de ID/cantidad y la distinción de
+cristales de bolsa/equipables se documentan en [inventario Ultra](gen7-inventory.md).
