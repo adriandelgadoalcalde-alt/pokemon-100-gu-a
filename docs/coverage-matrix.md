@@ -466,4 +466,22 @@ Validación local: 52 pruebas unitarias; contratos Core con contenedores GBA de 
 cinco ediciones; CLI de solo lectura y privacidad; comparación DS/3DS; corpus público
 con 51 aceptados y ocho rechazos esperados. Los informes WASM de Chromium/WebKit
 comparan la diagnosis completa con CLI, conservan los originales y reabren offline.
-La verificación de la interfaz y actualización PWA se registra tras completarse.
+La regresión de interfaz y la actualización PWA frente a caché HTTP vieja pasan en ambos motores. Se corrige un selector inexistente en la nueva prueba antes de su repetición satisfactoria.
+
+## Undécimo ciclo: Platino sin heredar la cronología de D/P
+
+Rama: `feat/platinum-walkthroughs`, basada en el ciclo GBA. Se añaden once rutas con
+65 instrucciones: inicio a Liga y Mundo Distorsión. Total editorial: 120 rutas,
+258 conexiones y 267 misiones catalogadas aún sin ampliación. Se corrige en Platino
+el lugar de entrega del inicial, el orden de gimnasios, los accesos a MO y el clímax.
+No cambian IDs, índices de casillas, evidencias ni claves de almacenamiento.
+
+Las trece misiones catalogadas de Platino tienen ampliación, pero la guía exhaustiva
+permanece en revisión: navegación espacial de varios puzles e inventarios de premios,
+colecciones y legado pendientes. No se añade ningún mapeo narrativo de alta confianza
+ni validación natural de eventos. Fuentes y límites: `research/routes/platinum.md`.
+
+La caché PWA incorpora el módulo nuevo. La auditoría y los 52 casos unitarios pasan;
+la regresión de navegador comprueba el inicial de Ruta 201, el orden de Fantina/Brega,
+Fuerza de Quinoa, Despejar de Ruinas Sosiego y la conversación de Cintia sin cambiar
+marcas manuales. El resultado final de CI/publicación se añade tras verificarse.

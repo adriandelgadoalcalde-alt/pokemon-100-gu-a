@@ -65,7 +65,7 @@ flags y la validación natural del guardado tienen su propia revisión técnica.
 | 3 | Verde Hoja | 18 | 18 | En revisión |
 | 4 | Diamante | 12 | 1 | En revisión |
 | 4 | Perla | 12 | 1 | En revisión |
-| 4 | Platino | 13 | 2 | En revisión |
+| 4 | Platino | 13 | 13 | En revisión |
 | 4 | Oro HeartGold | 19 | 2 | En revisión |
 | 4 | Plata SoulSilver | 19 | 2 | En revisión |
 | 5 | Negro | 11 | 2 | En revisión |
@@ -101,3 +101,8 @@ coinciden con los originales de GB. Las listas exactas de 150/380 registros de
 Pokédex se pueden comparar con el diagnóstico sin acreditar escenas originales.
 Sigue pendiente el inventario exhaustivo y el desglose de actividades agrupadas;
 `research/routes/frlg.md` documenta el alcance.
+
+Platino añade once rutas propias para historia y Mundo Distorsión, conservando las
+dos de postgame/colección anteriores. Sus trece misiones catalogadas tienen ahora
+ampliación. Persisten huecos de inventario y navegación espacial descritos en
+`research/routes/platinum.md`; la guía permanece en revisión exhaustiva.
