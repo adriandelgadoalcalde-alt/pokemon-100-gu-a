@@ -82,8 +82,8 @@ flags y la validación natural del guardado tienen su propia revisión técnica.
 | 7 | Ultraluna | 12 | 10 | En revisión |
 | 7 | Let's Go Pikachu | 6 | 6 | En revisión |
 | 7 | Let's Go Eevee | 6 | 6 | En revisión |
-| 8 | Espada | 10 | 2 | En revisión |
-| 8 | Escudo | 10 | 2 | En revisión |
+| 8 | Espada | 10 | 10 | En revisión |
+| 8 | Escudo | 10 | 10 | En revisión |
 | 8 | Diamante Brillante | 12 | 1 | En revisión |
 | 8 | Perla Reluciente | 12 | 1 | En revisión |
 | 8 | Leyendas: Arceus | 11 | 2 | En revisión |
@@ -155,3 +155,10 @@ diagnóstico compara exactamente las 150 especies obtenidas para el diploma,
 sin acreditar su entrega, encuentros originales ni títulos de Maestro. Siguen
 pendientes mapas interiores completos y colecciones; véase
 `research/routes/lets-go.md`.
+
+Galar añade nueve recorridos y 66 instrucciones para las dieciséis conexiones
+restantes de Espada/Escudo. Se separan los gimnasios exclusivos, las fases de
+Eternatus, la captura de portada en el postgame y los rangos de Torre Batalla.
+Las diez misiones por edición tienen ampliación; se mantienen pendientes el
+inventario exhaustivo, colecciones y planos descritos en
+`research/routes/galar.md`.
