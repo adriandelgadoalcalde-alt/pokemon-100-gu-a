@@ -20,7 +20,8 @@
  const sm={source:alolaData.requirementsSource,requirements:alolaData.original};
  const usum={source:alolaData.requirementsSource,requirements:alolaData.ultra};
  const letsgo={source:'https://bulbapedia.bulbagarden.net/wiki/Diploma',requirements:{kanto:range(150)}};
- const definitions={LETGOP:letsgo,LETGOE:letsgo,SUN:sm,MOON:sm,ULTRASUN:usum,ULTRAMOON:usum,FIRERED:frlg,LEAFGREEN:frlg,DIAMOND:dp,PEARL:dp,PLATINUM:platinum,HEARTGOLD:hgss,SOULSILVER:hgss,BLACK:unova,WHITE:unova,BLACK2:unova,WHITE2:unova,X:xy,Y:xy,OMEGARUBY:oras,ALPHASAPPHIRE:oras};
+ const bdsp={source:'https://github.com/shatter9652/uDPR/blob/becc1c369460026fbd33ca28d83e8c18d3e30526/Assets/Scripts/Game/ZukanWork.cs',requirements:{national:range(493,[...mythicals4,249,250])}};
+ const definitions={BD:bdsp,SP:bdsp,LETGOP:letsgo,LETGOE:letsgo,SUN:sm,MOON:sm,ULTRASUN:usum,ULTRAMOON:usum,FIRERED:frlg,LEAFGREEN:frlg,DIAMOND:dp,PEARL:dp,PLATINUM:platinum,HEARTGOLD:hgss,SOULSILVER:hgss,BLACK:unova,WHITE:unova,BLACK2:unova,WHITE2:unova,X:xy,Y:xy,OMEGARUBY:oras,ALPHASAPPHIRE:oras};
  function dexStatus(d){
   const definition=definitions[d?.game];
   if(!definition)return null;

@@ -423,6 +423,21 @@ async function run() {
       assert.ok(await allPage.locator(`[data-mid="${game}-03"] .route-details`).isVisible());
       assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
     }
+    // BDSP registration cannot confer its distinct card achievement or a received prize.
+    for(const game of ['BD','SP']){
+      const excluded=new Set([151,249,250,251,385,386,489,490,491,492,493]),caught=Array.from({length:493},(_,i)=>i+1).filter(id=>!excluded.has(id));
+      await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-bdsp-national.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({game,caught,seen:[],integrity:{verifiedFields:['caught']}}))});
+      await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.game===g,game);
+      assert.match(await allPage.locator('#master-pokedex').innerText(),/Evidencia/);
+      assert.doesNotMatch(await allPage.locator('#master-card-1').innerText(),/Evidencia/);
+      await allPage.locator('[data-view="diagnostic"]').first().click();
+      assert.match(await allPage.locator('#dex-completion').innerText(),/Nacional: 482\/482 registradas/);
+      assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+      await allPage.locator('[data-view="mission"]').first().click();
+      await allPage.locator(`[data-mid="${game}-12"] > summary`).click();
+      assert.ok(await allPage.locator(`[data-mid="${game}-12"] .route-details`).isVisible());
+      assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    }
     // Stone possession is read separately from manual completion and original gifts.
     const stoneDiagnosis={game:'OMEGARUBY',caught:[],seen:[],integrity:{checksumsValid:true},inventory:[{pocket:'Items',items:[{id:656,count:1},{id:758,count:2}]}]};
     await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-stones.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(stoneDiagnosis))});

@@ -84,8 +84,8 @@ flags y la validación natural del guardado tienen su propia revisión técnica.
 | 7 | Let's Go Eevee | 6 | 6 | En revisión |
 | 8 | Espada | 10 | 10 | En revisión |
 | 8 | Escudo | 10 | 10 | En revisión |
-| 8 | Diamante Brillante | 12 | 1 | En revisión |
-| 8 | Perla Reluciente | 12 | 1 | En revisión |
+| 8 | Diamante Brillante | 12 | 12 | En revisión |
+| 8 | Perla Reluciente | 12 | 12 | En revisión |
 | 8 | Leyendas: Arceus | 11 | 2 | En revisión |
 | 9 | Escarlata | 13 | 5 | En revisión |
 | 9 | Púrpura | 13 | 5 | En revisión |
@@ -162,3 +162,10 @@ Eternatus, la captura de portada en el postgame y los rangos de Torre Batalla.
 Las diez misiones por edición tienen ampliación; se mantienen pendientes el
 inventario exhaustivo, colecciones y planos descritos en
 `research/routes/galar.md`.
+
+Diamante Brillante/Perla Reluciente añade once rutas y 68 instrucciones para
+las veintidós conexiones pendientes de historia y colecciones. Se usan MT y
+movimientos de campo del Poké-reloj, la cronología propia de los remakes y los
+requisitos de estatuas/concursos/Torre de su tarjeta. Las doce misiones por
+edición están ampliadas, sin cerrar todos los mapas y colecciones descritos en
+`research/routes/bdsp.md`.

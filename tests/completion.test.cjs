@@ -118,3 +118,19 @@ test('Lets Go compares 150 exact caught entries and cannot infer diploma deliver
   assert.ok(!engine.fromDiagnosis(d).some(f=>/encounter|reward|diploma|master|title/i.test(f.id)));
  }
 });
+
+test('BDSP national recognition excludes Lugia/Ho-Oh and nine mythicals without inferring a star or reward',()=>{
+ const excluded=new Set([151,249,250,251,385,386,489,490,491,492,493]);
+ const required=Array.from({length:493},(_,i)=>i+1).filter(id=>!excluded.has(id));
+ for(const game of ['BD','SP']){
+  const d={game,caught:required,seen:required,integrity:{verifiedFields:['caught']}};
+  assert.equal(dexStatus(d).national.required,482);assert.equal(dexStatus(d).national.complete,true);
+  const swapped=dexStatus({...d,caught:required.filter(id=>id!==485).concat(493)}).national;
+  assert.equal(swapped.registered,481);assert.deepEqual(swapped.missing,[485]);
+  assert.equal(dexStatus({...d,caught:[],seen:required}).national.complete,false);
+  const nodes=[{id:'dex',gameId:game,verification:{fact:'pokedex.completion.national'}}];
+  assert.equal(engine.evaluate(nodes,engine.fromDiagnosis(d),game)[0].status,'COMPLETED_VERIFIED');
+  assert.equal(engine.evaluate(nodes,engine.fromDiagnosis({...d,integrity:{verifiedFields:['seen']}}),game)[0].status,'PARTIAL_EVIDENCE');
+  assert.ok(!engine.fromDiagnosis(d).some(f=>/star|reward|diploma|encounter|charm/i.test(f.id)));
+ }
+});

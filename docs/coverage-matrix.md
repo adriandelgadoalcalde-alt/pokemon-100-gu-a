@@ -646,3 +646,14 @@ Se corrige el inicio en Yarda, los nombres españoles, la puntuación de Naboru,
 las versiones de gimnasios y la secuencia de captura de los legendarios. Se
 conservan casillas y dos rutas de expansiones. `research/routes/galar.md` recoge
 las fuentes y los inventarios/mapas/colecciones que aún impiden declarar cierre.
+
+### BDSP: historia, Gran Subsuelo y registros Nacionales
+
+Once rutas nuevas y 68 instrucciones amplían 22 conexiones: inicio, ocho
+medallas, Galaxia, Liga y colecciones. Total: 236 recorridos/486 conexiones;
+quedan 39 misiones sin ampliación. Se preservan IDs y casillas, y se corrige
+Gardenia antes del edificio Galaxia y Fantina como quinta líder. Los movimientos
+de campo usan Poké-reloj; la tarjeta exige variantes de estatuas, no banderas.
+La lista exacta de 482 obtenidos se compara sin acreditar estrella ni premio.
+La lógica reconstruida y sus límites se documentan en `research/routes/bdsp.md`;
+no se equipara el cierre del catálogo con todos los mapas/encuentros/colecciones.
