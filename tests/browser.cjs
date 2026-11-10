@@ -225,6 +225,18 @@ async function run() {
     assert.match(await allPage.locator('[data-mid="PLATINUM-DETAIL1"] .route-details').innerText(),/habla con Cintia/);
     assert.equal(await allPage.locator('[data-check]:checked').count(),0);
     await allPage.screenshot({path:path.join(resultDir,'platinum-field-moves-390.png'),fullPage:true});
+    for(const game of ['DIAMOND','PEARL']){
+      await allPage.locator('#mobile-game').selectOption(game);
+      await allPage.locator('[data-mid="'+game+'-04"] > summary').click();
+      assert.match(await allPage.locator('[data-mid="'+game+'-04"] .route-details').innerText(),/Torre Perdida/);
+      await allPage.locator('[data-mid="'+game+'-05"] > summary').click();
+      assert.match(await allPage.locator('[data-mid="'+game+'-05"] .route-details').innerText(),/Gran Pantano/);
+      await allPage.locator('[data-mid="'+game+'-06"] > summary').click();
+      const originalRoute=await allPage.locator('[data-mid="'+game+'-06"] .route-details').innerText();
+      assert.match(originalRoute,/15, 40, 39 y 15/);
+      assert.match(originalRoute,/Medalla Reliquia/);
+      assert.equal(await allPage.locator('[data-check]:checked').count(),0);
+    }
     // Edition-specific puzzles and narrative gates must not inherit R/S instructions in Emerald.
     await allPage.locator('#mobile-gen').selectOption('3');
     await allPage.locator('#mobile-game').selectOption('EMERALD');
@@ -337,6 +349,9 @@ async function run() {
         await offlinePage.locator('#mobile-game').selectOption('PLATINUM');
         await offlinePage.locator('[data-mid="PLATINUM-06"] > summary').click();
         assert.match(await offlinePage.locator('[data-mid="PLATINUM-06"] .route-details').innerText(),/Quinoa para recibir MO04 Fuerza/);
+        await offlinePage.locator('#mobile-game').selectOption('DIAMOND');
+        await offlinePage.locator('[data-mid="DIAMOND-06"] > summary').click();
+        assert.match(await offlinePage.locator('[data-mid="DIAMOND-06"] .route-details').innerText(),/15, 40, 39 y 15/);
       }
     }
     await offline.close();

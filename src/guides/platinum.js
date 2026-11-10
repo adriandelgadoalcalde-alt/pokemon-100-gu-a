@@ -14,7 +14,7 @@
       "Vuelve a casa para hablar con tu madre y recibir las Deportivas. Acompaña a tu rival al Lago Veraz y completa la escena con Helio; después recorre Ruta 201 hacia el este hasta Pueblo Arena.",
       "Entra en el laboratorio de Serbal en Pueblo Arena, acepta su encargo y recibe la Pokédex. Regresa a Hojaverde: tu madre y la madre de tu rival dejan preparado el paquete que debes entregarle.",
       "Vuelve por Pueblo Arena y toma Ruta 202 al norte. Sigue la demostración de captura de Maya/León y recoge las Poké Balls antes de subir a Ciudad Jubileo.",
-      "En Jubileo, entrega el paquete a tu rival en la Escuela de Entrenadores para recibir el Mapa. Encuentra a los tres payasos: junto a la tienda, ante Poké-reloj S. A. y ante Jubileo TV. Responde sí a sus preguntas, reúne los cupones y canjéalos con el presidente por el Poké-reloj.",
+      "En Jubileo, entrega el paquete a tu rival en la Escuela de Entrenadores para recibir el Mapa. Encuentra a los tres payasos: detrás del Centro Pokémon, ante Poké-reloj S. A. y ante Jubileo TV. Responde sí a sus preguntas, reúne los cupones y canjéalos con el presidente por el Poké-reloj.",
       "Antes de salir por Ruta 203 hacia Pirita, puedes recoger la Caña Vieja en el edificio de acceso occidental a Ruta 218. Es una herramienta de colección, no una medalla ni una recompensa de la Liga."
     ],
     "check": "Inicial, Pokédex, Mapa y Poké-reloj disponibles; salida hacia Ruta 203.",

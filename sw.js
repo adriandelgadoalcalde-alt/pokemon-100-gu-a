@@ -1,5 +1,5 @@
-const CACHE='pokemon-100-v9-12-platinum-routes';
-const CORE=['./src/guides/platinum.js','./src/saves/species.js','./src/engine/completion.js','./src/guides/frlg.js','./src/guides/ice-puzzle.js','./src/guides/hoenn.js','./src/saves/public-coverage.js','./src/saves/core-browser.js','./src/guides/routes.js','./','./index.html','./manifest.webmanifest','./icons/icon.svg','./atlas.html','./src/saves/hgss-integrity.js','./src/saves/progress.js','./src/saves/chronology.js','./src/saves/reader.js','./src/saves/integrity.js','./src/saves/diagnosis.js','./src/engine/objectives.js','./src/engine/route.js'];
+const CACHE='pokemon-100-v9-13-diamond-pearl';
+const CORE=['./src/guides/diamond-pearl.js','./src/guides/platinum.js','./src/saves/species.js','./src/engine/completion.js','./src/guides/frlg.js','./src/guides/ice-puzzle.js','./src/guides/hoenn.js','./src/saves/public-coverage.js','./src/saves/core-browser.js','./src/guides/routes.js','./','./index.html','./manifest.webmanifest','./icons/icon.svg','./atlas.html','./src/saves/hgss-integrity.js','./src/saves/progress.js','./src/saves/chronology.js','./src/saves/reader.js','./src/saves/integrity.js','./src/saves/diagnosis.js','./src/engine/objectives.js','./src/engine/route.js'];
 self.addEventListener('install',event=>event.waitUntil(
  caches.open(CACHE).then(cache=>cache.addAll(CORE.map(url=>new Request(url,{cache:'reload'}))))
  .then(()=>self.skipWaiting())

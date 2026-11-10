@@ -485,3 +485,23 @@ La caché PWA incorpora el módulo nuevo. La auditoría y los 52 casos unitarios
 la regresión de navegador comprueba el inicial de Ruta 201, el orden de Fantina/Brega,
 Fuerza de Quinoa, Despejar de Ruinas Sosiego y la conversación de Cintia sin cambiar
 marcas manuales. El resultado final de CI/publicación se añade tras verificarse.
+
+## Duodécimo ciclo: Diamante/Perla originales
+
+Base: `ccd9714`; rama `feat/diamond-pearl-walkthroughs`. La entrega GBA/Platino ya
+publicada está documentada en `docs/releases/gba-platinum.md`, con verificación real
+de la URL pública en Chromium y WebKit y comparación local de campos de Esmeralda.
+
+Diez rutas nuevas, 52 instrucciones y veinte conexiones para D/P. Total: 130 rutas,
+278 conexiones y 247 misiones catalogadas aún sin ampliación. Se conserva el número
+de 525 misiones y 1.146 casillas de pasos; no hay migración ni cambio de claves/IDs.
+
+Se separan Fantina quinta después de Surf, Fuerza de Torre Perdida y Despejar del
+Gran Pantano, regalos de versión y Dialga/Palkia sin Mundo Distorsión. Se corrigen
+el orden Gardenia/edificio y la ambigüedad Brega/Fantina en las casillas originales.
+Referencias editoriales y límites: `research/routes/diamond-pearl.md`. No hay nuevos
+offsets de alta confianza, parejas naturales ni guías exhaustivas cerradas.
+
+Auditoría y 52 pruebas unitarias correctas. La regresión de interfaz comprueba ambas
+ediciones y la consulta de Fantina sin servidor; los resultados de CI/publicación
+se registran tras verificarse.
