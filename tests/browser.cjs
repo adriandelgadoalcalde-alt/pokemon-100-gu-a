@@ -311,6 +311,25 @@ async function run() {
     assert.equal(await allPage.locator('[data-coverage-game]').count(),39);
     await allPage.setViewportSize({width:390,height:1000});
     assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    // Original/sequel chronology stays distinct in the actual rendered missions.
+    await allPage.locator('#mobile-gen').selectOption('5');
+    await allPage.locator('[data-view="mission"]').first().click();
+    for(const game of ['BLACK','WHITE','BLACK2','WHITE2']){
+      await allPage.locator('#mobile-game').selectOption(game);
+      for(const suffix of ['05','06','08','09'])await allPage.locator(`[data-mid="${game}-${suffix}"] > summary`).click();
+      const text=async suffix=>allPage.locator(`[data-mid="${game}-${suffix}"] .route-details`).innerText();
+      if(game.endsWith('2')){
+        assert.match(await text('05'),/Bel para recibir MO02 Vuelo/);
+        assert.match(await text('06'),/Cheren para recibir MO03 Surf/);
+        assert.match(await text('08'),/Negro 2 pide tarjeta y contraseña; Blanco 2, cuatro interruptores/);
+        assert.match(await text('09'),/Derrota a Iris/);
+      }else{
+        assert.match(await text('05'),/Bel.*Vuelo/);
+        assert.match(await text('06'),/Huevo Suerte/);
+        assert.match(await text('09'),/Mirto.*postgame/);
+      }
+      assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    }
     // Medal receipts, ready rewards and unknown states have separate searchable rows.
     const medalRows=Array.from({length:255},(_,i)=>({id:i+1,state:0}));
     medalRows[0]={id:1,state:4,date:'2026-02-31'};medalRows[1]={id:2,state:3,date:'2026-11-10'};medalRows[254]={id:255,state:7};
@@ -408,6 +427,11 @@ async function run() {
         await offlinePage.locator('#mobile-game').selectOption('SOULSILVER');
         await offlinePage.locator('[data-mid="SOULSILVER-09"] > summary').click();
         assert.match(await offlinePage.locator('[data-mid="SOULSILVER-09"] .route-details').innerText(),/cinco combates seguidos/);
+        await offlinePage.locator('#mobile-gen').selectOption('5');
+        await offlinePage.locator('#mobile-game').selectOption('WHITE2');
+        await offlinePage.locator('[data-mid="WHITE2-08"] > summary').click();
+        assert.match(await offlinePage.locator('[data-mid="WHITE2-08"] .route-details').innerText(),/Tarjeta Plasma y la contraseña/);
+
         await offlinePage.locator('#file-diagnosis').setInputFiles({name:'synthetic-medals-offline.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(medalDiagnosis))});
         await offlinePage.locator('[data-view="diagnostic"]').first().click();
         await offlinePage.locator('[data-medal-filter]').selectOption('ready');

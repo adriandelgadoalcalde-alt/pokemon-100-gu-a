@@ -68,10 +68,10 @@ flags y la validación natural del guardado tienen su propia revisión técnica.
 | 4 | Platino | 13 | 13 | En revisión |
 | 4 | Oro HeartGold | 19 | 19 | En revisión |
 | 4 | Plata SoulSilver | 19 | 19 | En revisión |
-| 5 | Negro | 11 | 2 | En revisión |
-| 5 | Blanco | 11 | 2 | En revisión |
-| 5 | Negro 2 | 16 | 1 | En revisión |
-| 5 | Blanco 2 | 16 | 1 | En revisión |
+| 5 | Negro | 11 | 11 | En revisión |
+| 5 | Blanco | 11 | 11 | En revisión |
+| 5 | Negro 2 | 16 | 10 | En revisión |
+| 5 | Blanco 2 | 16 | 10 | En revisión |
 | 6 | X | 12 | 2 | En revisión |
 | 6 | Y | 12 | 2 | En revisión |
 | 6 | Rubí Omega | 16 | 2 | En revisión |
@@ -115,3 +115,9 @@ y reconocimiento oficial siguen agrupados y pendientes de expansión. Véase
 HGSS amplía las 17 misiones restantes del catálogo, con 94 instrucciones, manteniendo
 las dos de orbes. Las 19 conexiones por edición no cierran los inventarios ni los
 puzles detallados: véase `research/routes/hgss.md`.
+
+Teselia añade 18 recorridos de historia, 94 instrucciones y 36 conexiones para las
+cuatro ediciones. Se separan las entregas de MO, los gimnasios y los dos puzles de
+la Fragata por edición y etapa. Negro/Blanco tiene las once misiones catalogadas
+ampliadas; Negro 2/Blanco 2 tiene diez de dieciséis. Esto no cierra inventarios,
+colecciones ni navegación espacial; véase `research/routes/unova.md`.
