@@ -1,0 +1,817 @@
+{
+  "checkedAt": "2026-11-10",
+  "scope": "Source availability and pinned script byte parity; not natural-save validation or exhaustive inventory review.",
+  "sources": [
+    {
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Appendix:Ruby_and_Sapphire_walkthrough/Section_4",
+      "checkedURL": "https://bulbapedia.bulbagarden.net/wiki/Appendix:Ruby_and_Sapphire_walkthrough/Section_4",
+      "status": 403,
+      "error": "HTTPError",
+      "alternateRetrieval": "Content read through connected web lookup; direct HTTP client returns 403."
+    },
+    {
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Sootopolis_Gym",
+      "checkedURL": "https://bulbapedia.bulbagarden.net/wiki/Sootopolis_Gym",
+      "status": 403,
+      "error": "HTTPError",
+      "alternateRetrieval": "Content read through connected web lookup; direct HTTP client returns 403."
+    },
+    {
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Walkthrough:Pok%C3%A9mon_Emerald/Part_15",
+      "checkedURL": "https://bulbapedia.bulbagarden.net/wiki/Walkthrough:Pok%C3%A9mon_Emerald/Part_15",
+      "status": 403,
+      "error": "HTTPError",
+      "alternateRetrieval": "Content read through connected web lookup; direct HTTP client returns 403."
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/layouts/SootopolisCity_Gym_1F/map.bin",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/layouts/SootopolisCity_Gym_1F/map.bin",
+      "status": 200,
+      "sha256": "cf87d29377201dd2f825131db2e0fe06af1bb3a720e3dcb3f99077ac97169469",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/AquaHideout_B2F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/AquaHideout_B2F/scripts.inc",
+      "status": 200,
+      "sha256": "ba277310214068dad9ad673e4f23a5b898188b0b6b14cb2d38bcde104b75b2ba",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "status": 200,
+      "sha256": "3c381cd3db4330f45e58766a0574805617486a75239c40b55ee6c93d0bd656b6",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/DewfordTown_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/DewfordTown_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "1063ebe7b76a7802dab7ba71a91c18f29d0e4dea20710971e9fb84158a7c9085",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "status": 200,
+      "sha256": "b44e8698d12280e0ffe41f6e41bdb773bf7e91386e96b0469a529ea6d0ed0735",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/FortreeCity/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/FortreeCity/scripts.inc",
+      "status": 200,
+      "sha256": "9e6aae273ab5db26ab7ce6e42d9f8d18a89ae9c7803030eab46572efeaa1e154",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/FortreeCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/FortreeCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "d242eea79973a00891aff5a0c68d8a1f626dfe3003750ced9909fff8e053973e",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/GraniteCave_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/GraniteCave_1F/scripts.inc",
+      "status": 200,
+      "sha256": "ea1f40787b2e33132c14ae4dbbfecefc3a4502ba8a31c5391e4976e162328185",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/JaggedPass/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/JaggedPass/scripts.inc",
+      "status": 200,
+      "sha256": "57848fe398c82178bccf56ef84556240676de6d6d7b1aca940640f600558e38d",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LavaridgeTown/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LavaridgeTown/scripts.inc",
+      "status": 200,
+      "sha256": "b7922d603c17632f98f59bad206f5669e83ea88ccda9e0c26d660eaa29e7d9d4",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+      "status": 200,
+      "sha256": "3864d568d1a96ec6d1c70651f5e86cdf1996c3786c0d51b821224445a8ae2615",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LilycoveCity/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LilycoveCity/scripts.inc",
+      "status": 200,
+      "sha256": "c6a38afe6021ddeea27518d2cd971396b63701695b142bc0e9d1ca6e73281a05",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LilycoveCity_ContestLobby/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LilycoveCity_ContestLobby/scripts.inc",
+      "status": 200,
+      "sha256": "64e54e51537e202760c2f36b621e1ad3a17c665a74de2c28f10174f80d038914",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+      "status": 200,
+      "sha256": "4d205954168f52698ccef74c1261af6a2934548966bf8f220c62cebd6fcb064d",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+      "status": 200,
+      "sha256": "6c8e1a37c69c0285acb5820cc1484a35e028248ee193f2010e13070f7a0509f0",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+      "status": 200,
+      "sha256": "d30bea3cb077a960ad26e29c712295f6bd9900d4f168e8985e2d135987fa2a67",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MagmaHideout_4F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MagmaHideout_4F/scripts.inc",
+      "status": 200,
+      "sha256": "0d1d6f91d828a97f22cddf7e7356421bacca8951127228c1ce2835e28571b54f",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MauvilleCity_BikeShop/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MauvilleCity_BikeShop/scripts.inc",
+      "status": 200,
+      "sha256": "612cfc65bb9cb86a3ea2c4c610e01899567457169a60fddf7ef7f00dec6b8cba",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MauvilleCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MauvilleCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "9fa32a400f7ac2e33a04f0e1beb3874b179a85b560aaf55dfe8e9ccf58cd4ffd",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MauvilleCity_House1/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MauvilleCity_House1/scripts.inc",
+      "status": 200,
+      "sha256": "b8111bf3049b756c57e4c61805158644c1e21c2fbc4a24e393e9531da050f0f6",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MeteorFalls_1F_1R/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MeteorFalls_1F_1R/scripts.inc",
+      "status": 200,
+      "sha256": "018faae32da8e178baa094c0f3c37ff9cd594c7f4ef8b4d77176475cd073788a",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MossdeepCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MossdeepCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "2e156e704543bb55b1080d2458a3bc8005399f1569e3da3b6547b23532cfd436",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+      "status": 200,
+      "sha256": "c74e9adde52df0aa7f21faa8aaa0bb2aa27b6b7690af1f4e70694b898fa5f220",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+      "status": 200,
+      "sha256": "c34f852b90221c54173f8ad9a3ad739b238f17b570b022eb2e28d4f1752dcb1a",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MossdeepCity_StevensHouse/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MossdeepCity_StevensHouse/scripts.inc",
+      "status": 200,
+      "sha256": "f307fa23d2b9d1972de26106dec3f7e8de87ced175ce4c1ac27f0bdfb922af00",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MtChimney/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MtChimney/scripts.inc",
+      "status": 200,
+      "sha256": "dc0ac68f0141e394a190c60c3f42edc0ca1a1c29bb326e96658a36e09b299ab2",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MtPyre_Summit/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/MtPyre_Summit/scripts.inc",
+      "status": 200,
+      "sha256": "602eb4b33543ddc01862653eba112ca84f9415e457bd9ce89f2e1dcd66e7664c",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/PetalburgCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/PetalburgCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "2f36d5d75cd62b63754fb176e2dc7f6a7406936852ac0e6d12b1cbb7d0884bfe",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/PetalburgCity_WallysHouse/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/PetalburgCity_WallysHouse/scripts.inc",
+      "status": 200,
+      "sha256": "00720505e83aeb13ec3f1d0ae7c2e0395a2da8802de6072a858db95bae09f79c",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/PetalburgWoods/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/PetalburgWoods/scripts.inc",
+      "status": 200,
+      "sha256": "90434183cd91da5829a4b7d4c9023b7ad2c33b17db101ab01e07574845532968",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route101/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route101/scripts.inc",
+      "status": 200,
+      "sha256": "8188d24a837d971f5d64bb48074dc714400929d5903006ba24a84892c72c95ed",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route103/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route103/scripts.inc",
+      "status": 200,
+      "sha256": "6f256099a70f80b1fb12eed5cca20d94464e867b58ced242069040228ed4c1da",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route110/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route110/scripts.inc",
+      "status": 200,
+      "sha256": "e6d0aca2f1d9a541eea6f4a258b7e51d33dd3c40a5abcae96a7ec0fc70a44b68",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route118/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route118/scripts.inc",
+      "status": 200,
+      "sha256": "5d4de1bf31a2fe06108f5123a7445f58ecf232bb64de81c192b8c87591e64b93",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route119/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route119/scripts.inc",
+      "status": 200,
+      "sha256": "b31f4a7b73ce8e7d8c49cf5bc4f0405e2d1bf5f700c1866f40e26bea55e434aa",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+      "status": 200,
+      "sha256": "309333a9c41d93da11bf4fadb405eaadeef8fba7262ad9351d55afa5501a04c5",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route120/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/Route120/scripts.inc",
+      "status": 200,
+      "sha256": "6c529975af118225d6c063dbb57b54d7431e494cf8a92965ab737c4a8ed9a5f3",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+      "status": 200,
+      "sha256": "b42ec5cecba70396e4b930e0920b584b3fe3f992972172a3e9c629c98476b5da",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/RustboroCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/RustboroCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "0880fe95e8aa6981e9e54883364b8f37b30330c50ecb0d3c3758d40a3e773208",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/RusturfTunnel/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/RusturfTunnel/scripts.inc",
+      "status": 200,
+      "sha256": "1c006f9948e1756d2e66d02be42dce6e8d2ec99e253e7debeb2ef0315a366a4c",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SeafloorCavern_Room9/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SeafloorCavern_Room9/scripts.inc",
+      "status": 200,
+      "sha256": "069d39acfc064df3680511f32b9aa2b3f06a19732f2b6c1570a8898d3aa7de97",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SkyPillar_Top/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SkyPillar_Top/scripts.inc",
+      "status": 200,
+      "sha256": "1a92c58dec06482a342189e4f273d0120642bb5de1ff225ac5a48061ac436b65",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SlateportCity_Harbor/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SlateportCity_Harbor/scripts.inc",
+      "status": 200,
+      "sha256": "4df2c704955b437d39fbfef820f8bb0960605ff708895f982aab1770e8fa0304",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+      "status": 200,
+      "sha256": "fdce68f4e9d51569529759a8a9732f3d44a94733bb99639b00fc904eefeaadd1",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+      "status": 200,
+      "sha256": "ae7070c8cb893781af872fa2fb00e52b5e5e0eccaa25a8646379af40397cd6dc",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SootopolisCity/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SootopolisCity/scripts.inc",
+      "status": 200,
+      "sha256": "eaf6cddc0b89f6f6092030bae0363d99e4da1f9376cbb731a2a055077295ea2a",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "status": 200,
+      "sha256": "eb90871c8eae3b6ece385fcb01a8702d422e928c7a8583dbfdb3bcfe6b1dc134",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/VictoryRoad_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/maps/VictoryRoad_1F/scripts.inc",
+      "status": 200,
+      "sha256": "4716716b99891eb58681ecbec0862ff378e1910c13ead1e79aac85f3a550b5b3",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/scripts/contest_hall.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/scripts/contest_hall.inc",
+      "status": 200,
+      "sha256": "3e67bb134d7495ac02c598d20f3c3168845b439d31236c80a2be6ca828d48e9f",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/tilesets/secondary/sootopolis_gym/metatile_attributes.bin",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/data/tilesets/secondary/sootopolis_gym/metatile_attributes.bin",
+      "status": 200,
+      "sha256": "633366767b89b7230696d4e684086dd9713a6f928146f928f04948e8a44496fe",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/src/contest_util.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/src/contest_util.c",
+      "status": 200,
+      "sha256": "dec8465e0d5482500b4d95bacb9069d5acc7623562b8e676c3f78bc4ded276c7",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/src/field_tasks.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/src/field_tasks.c",
+      "status": 200,
+      "sha256": "16fd11b62af7b5ecfdc6412d084742689076cad9990bc60a0bf4fa2a35041659",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeemerald/blob/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/src/trainer_card.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeemerald/731ad5bfd6e6f265508d0efcca0ba42f9dcf5881/src/trainer_card.c",
+      "status": 200,
+      "sha256": "8bc7dfdd8fb8e110c2af12ba5ab73d39f10328e5fc14f21ad71b727ad5d91a44",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/layouts/SootopolisCity_Gym_1F/map.bin",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/layouts/SootopolisCity_Gym_1F/map.bin",
+      "status": 200,
+      "sha256": "77cca6e078b03b3eceae6ab7dd74160e6b60bd46a12e73ce08460a3dc02b2822",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/AquaHideout_B2F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/AquaHideout_B2F/scripts.inc",
+      "status": 200,
+      "sha256": "598d90507066137ec92b2738793ab59746bafaae20858818f0914918f6e12c17",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "status": 200,
+      "sha256": "561f8b2b9244cfe8341b200583674c12ff42d54b5f043d6539083afe16bf4e6b",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/CaveOfOrigin_B4F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/CaveOfOrigin_B4F/scripts.inc",
+      "status": 200,
+      "sha256": "0d2622223972ee2647fd55624352b5e5b1e7f4ece766644f1cb432129b540cbd",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/DewfordTown_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/DewfordTown_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "012f738d56d0bcd7f3148f3406ed415ddff2356ef77ae94c33ff4946c26f19ce",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "status": 200,
+      "sha256": "576123d579652a63f410445cf98f3b1f7b4f2c7e22d3f48d340c4743d842dbbe",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/FortreeCity/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/FortreeCity/scripts.inc",
+      "status": 200,
+      "sha256": "d33863910d0d1a6bf5e6b0ab2886d14e25e49db32e1e2490bc84b639694079c0",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/FortreeCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/FortreeCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "4dec21096eae7dd91f17aa951c0f7e9db1b8e472e34e3c5af8c1ec223f5f3789",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/GraniteCave_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/GraniteCave_1F/scripts.inc",
+      "status": 200,
+      "sha256": "db64377a039c4e2ecf51fcaec0da657fe2dacc88745f7d057a78094191d9ccb5",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/JaggedPass/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/JaggedPass/scripts.inc",
+      "status": 200,
+      "sha256": "547af89daf40de202c84f3a44ee8e37768b5ca1895ba90b4016b52f74cdb2e63",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LavaridgeTown/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LavaridgeTown/scripts.inc",
+      "status": 200,
+      "sha256": "a66459401f99dc79550ddaf3e5c2d2f9ffee5981fb30f63078942e1f1031832d",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+      "status": 200,
+      "sha256": "7c66167a73c2b60cc830b221355726ac8c61669394e9aed773f3269625325fb0",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LilycoveCity/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LilycoveCity/scripts.inc",
+      "status": 200,
+      "sha256": "e8c4eb368066a7b9708a5337b6b3b54ce647df6fc1289c903e620d0f994c27f3",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LilycoveCity_ContestLobby/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LilycoveCity_ContestLobby/scripts.inc",
+      "status": 200,
+      "sha256": "99e59c36f1577984d61cbd7b81d08ed54cdf833d124527cb055ddb1b974b99d1",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LittlerootTown_BrendansHouse_1F/scripts.inc",
+      "status": 200,
+      "sha256": "19721941d213db397e262125dc6ea3e7a7ef877878d0a3d48ad655b74d3b3ef6",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LittlerootTown_MaysHouse_1F/scripts.inc",
+      "status": 200,
+      "sha256": "ca1c23bf838b3f61f3ec4b35690d938b2373ad21de944b23c18b2979a1010efd",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/LittlerootTown_ProfessorBirchsLab/scripts.inc",
+      "status": 200,
+      "sha256": "b72cfec27b77a6b6a80a96655297597cd2035dd405c40553a45de9f5f4c2367b",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MauvilleCity_BikeShop/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MauvilleCity_BikeShop/scripts.inc",
+      "status": 200,
+      "sha256": "c89d30c8ffadf21b2ea418121267ba3b7d73713360bfcddb38ea395a8aa3260b",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MauvilleCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MauvilleCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "4c50690a239bdf994bcb9e6067df7b50d84d99ea47e118e9539c296ac0565d25",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MauvilleCity_House1/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MauvilleCity_House1/scripts.inc",
+      "status": 200,
+      "sha256": "34d5b53c6773da1f4bb7cab1784bd458df619b899cb5d645b791d46890f5a351",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MeteorFalls_1F_1R/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MeteorFalls_1F_1R/scripts.inc",
+      "status": 200,
+      "sha256": "5326ea8bb797f0da8bce3f3df8aed83a25f89963754b8387ba2d5d5cf1eef47e",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MossdeepCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MossdeepCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "cf5b695c233b27c7a44e96aee32966d0824f9140d61ca48cac949986d8ae37bf",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+      "status": 200,
+      "sha256": "98547cd87019ee2aa816b24568fac9085d2a1ddfd95ea6e266d590e39198adcf",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MossdeepCity_SpaceCenter_2F/scripts.inc",
+      "status": 200,
+      "sha256": "4176956db01a11c38577affadce55edd659887c594ec37cf4555b854c5df81d1",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MossdeepCity_StevensHouse/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MossdeepCity_StevensHouse/scripts.inc",
+      "status": 200,
+      "sha256": "40181a1a17dd20cbc461336eacd48e1221a170a314ab3ef5406bab87a10aa9d9",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MtChimney/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MtChimney/scripts.inc",
+      "status": 200,
+      "sha256": "e23213bc035c54db34178a204b376fbb26f4b9b65d67f4ca15f2198167a6a0b3",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MtPyre_Summit/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/MtPyre_Summit/scripts.inc",
+      "status": 200,
+      "sha256": "4f84efe6945c38529c1e113d217bd868ad0a69ad7e8bdcbe2d03494406f1a044",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/PetalburgCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/PetalburgCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "5618a2535a10b307855717e9f0f2749a19d8f3fc98f857c2effe92abafdf1c2f",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/PetalburgCity_WallysHouse/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/PetalburgCity_WallysHouse/scripts.inc",
+      "status": 200,
+      "sha256": "03708b38e0701c3ea1493d24f056f8453310e44a9c45c7f317d4ebe2e5b7afc4",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/PetalburgWoods/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/PetalburgWoods/scripts.inc",
+      "status": 200,
+      "sha256": "79089dab4bd3f4b81983446bc3af738557d2a364b44b6f08f0fa12382bed75bc",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route101/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route101/scripts.inc",
+      "status": 200,
+      "sha256": "b29a5a5ffee6a5964a361b7b811183d8a77b3d5a7e82ca9dabd9fd2dfe01dca3",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route103/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route103/scripts.inc",
+      "status": 200,
+      "sha256": "83bb4f56354d78e04c8938817058ad1b91d3831362e29b957d4f2b4cb868e0ab",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route110/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route110/scripts.inc",
+      "status": 200,
+      "sha256": "2d3364d839329982d5487178724bcf1b0024b5f2f0f4515948e98353a2220f04",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route118/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route118/scripts.inc",
+      "status": 200,
+      "sha256": "bcd282e976dd26309e7db2249b69e765f42425264af8f806eb74303221cf95ef",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route119/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route119/scripts.inc",
+      "status": 200,
+      "sha256": "57aaf072959853830bbc3d8c0aa4478757a8e986fae49a47d8ff4606faff82c3",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route119_WeatherInstitute_2F/scripts.inc",
+      "status": 200,
+      "sha256": "bea39b98f005e7ecef71db1c5952e4d040fc923331dd9a226df7731af894c2a7",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route120/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/Route120/scripts.inc",
+      "status": 200,
+      "sha256": "50126bcf877ffcef0ce30816b31432c7e6d457c584f788650d8ea69f2e33c1d4",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/RustboroCity_DevonCorp_3F/scripts.inc",
+      "status": 200,
+      "sha256": "fc6746d7a559e4d7e5216b83e19687e3d614de705e25d6053a5d0fecf2f9711d",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/RustboroCity_Gym/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/RustboroCity_Gym/scripts.inc",
+      "status": 200,
+      "sha256": "1543f1de5f2084acfafbac20bc17fa4cb46eaaedcb5fddc00216171b885ba484",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/RusturfTunnel/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/RusturfTunnel/scripts.inc",
+      "status": 200,
+      "sha256": "65c5c4cf9abcd69ff8f3aadb4a6fc820fe49fb0b37b5d0b52a2e5f0e5e676e3e",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SeafloorCavern_Room9/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SeafloorCavern_Room9/scripts.inc",
+      "status": 200,
+      "sha256": "40c2aa220fbb557a81f6b17ab73850ca363a21eec31cc32a6288cad932501994",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SkyPillar_Top/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SkyPillar_Top/scripts.inc",
+      "status": 200,
+      "sha256": "b2343013a23742db3c2f85781b970b9e1962c279adf6a717192798b6079a148c",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SlateportCity_ContestLobby/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SlateportCity_ContestLobby/scripts.inc",
+      "status": 200,
+      "sha256": "d7650b3dcb958c7b523be750fa684c446c8edd63ba499f55a398eac3ce66f5fd",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SlateportCity_Harbor/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SlateportCity_Harbor/scripts.inc",
+      "status": 200,
+      "sha256": "7af905d204839bf71a6c42aa2b105f580822698699c3942eb487d87089f2d732",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc",
+      "status": 200,
+      "sha256": "6e69252eba10c764bd5297caaa6e7af85a2f68270a2e486e218486194cc5523d",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SlateportCity_SternsShipyard_1F/scripts.inc",
+      "status": 200,
+      "sha256": "b604c77b9210c331a151fe7000a7a1a62e129899cd3bc454988d3d3d3f6e613f",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SootopolisCity/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SootopolisCity/scripts.inc",
+      "status": 200,
+      "sha256": "dd0847d16b697434ac1e05e0d9afe87e7073100834a954c3efef6a83aa61ad26",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "status": 200,
+      "sha256": "2e0ffbd34be0fed15846ee699f061b6b74a316be278a264849341077261d7d40",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/VictoryRoad_1F/scripts.inc",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/maps/VictoryRoad_1F/scripts.inc",
+      "status": 200,
+      "sha256": "9b0772d3fc8ce669e45641e7fb02bf54dbe817c91344796e9e94c3cb076ea3c1",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/tilesets/secondary/sootopolis_gym/metatile_attributes.bin",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/data/tilesets/secondary/sootopolis_gym/metatile_attributes.bin",
+      "status": 200,
+      "sha256": "981c2c9704aae3737a266dad23e55d484bd6243a3734433bc4d13f6ca4b2f6e1",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/src/contest_util.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/src/contest_util.c",
+      "status": 200,
+      "sha256": "a060f6325136bf0bbb2414052d4ab76ec14e60b357a3a28039af79681e631c3e",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/src/field_tasks.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/src/field_tasks.c",
+      "status": 200,
+      "sha256": "975baef5f6875229ce8f1c915901ad44c66717e1a1e159d768e5ff7de1c84b0b",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://github.com/pret/pokeruby/blob/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/src/trainer_card.c",
+      "checkedURL": "https://raw.githubusercontent.com/pret/pokeruby/5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f/src/trainer_card.c",
+      "status": 200,
+      "sha256": "6ca681c88a6e376ef0124cebdcd428fac5667148e4171368cfbc1806483ff507",
+      "matchesPinnedSource": true
+    },
+    {
+      "url": "https://www.serebii.net/emerald/contest.shtml",
+      "checkedURL": "https://www.serebii.net/emerald/contest.shtml",
+      "status": 200,
+      "sha256": "4268c8e388ce7abd5c6c35c1fe5efa8a5997d83d982d649ddefe352ddf99e0f8"
+    },
+    {
+      "url": "https://www.serebii.net/emerald/elite.shtml",
+      "checkedURL": "https://www.serebii.net/emerald/elite.shtml",
+      "status": 200,
+      "sha256": "e05d729d5d01e5c91b79bbba301c27a43aee3277a3344e8574a660f50c6b470f"
+    },
+    {
+      "url": "https://www.serebii.net/emerald/frontier.shtml",
+      "checkedURL": "https://www.serebii.net/emerald/frontier.shtml",
+      "status": 200,
+      "sha256": "d8bac75df343ce07ed807179b2640c0196c6a9c9421bb9cb6fbfcdf8e2914760"
+    },
+    {
+      "url": "https://www.serebii.net/rubysapphire/battletower.shtml",
+      "checkedURL": "https://www.serebii.net/rubysapphire/battletower.shtml",
+      "status": 200,
+      "sha256": "a82d7a4511097d0ac977139e21e2069fda287ae78763ecf8b608e830424d6c05"
+    },
+    {
+      "url": "https://www.serebii.net/rubysapphire/elitefour.shtml",
+      "checkedURL": "https://www.serebii.net/rubysapphire/elitefour.shtml",
+      "status": 200,
+      "sha256": "c98b19b8db49949e992ce9f17667d095c0422022d27dcfa9b8232a938c47839d"
+    },
+    {
+      "url": "https://www.serebii.net/rubysapphire/items.shtml",
+      "checkedURL": "https://www.serebii.net/rubysapphire/items.shtml",
+      "status": 200,
+      "sha256": "3cdf79ff3c686ab7384a65efd3036a2e65774aa595af466136cde9777aaed06f"
+    },
+    {
+      "url": "https://www.serebii.net/rubysapphire/legendary.shtml",
+      "checkedURL": "https://www.serebii.net/rubysapphire/legendary.shtml",
+      "status": 200,
+      "sha256": "f62077e91540bf8c56b88215ede0f1c3ab7989125611eba0d0c84dcb3f2f4644"
+    },
+    {
+      "url": "https://www.serebii.net/rubysapphire/trainercard.shtml",
+      "checkedURL": "https://www.serebii.net/rubysapphire/trainercard.shtml",
+      "status": 200,
+      "sha256": "dfdec586da047bee3ea2519e05a48253892fe96294b04f25c35ebf1ceda8eb7a"
+    }
+  ]
+}

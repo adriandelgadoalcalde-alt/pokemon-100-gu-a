@@ -27,7 +27,8 @@ combates, retos con reconocimiento y objetos necesarios permanecen dentro del al
 
 ## Qué significa la ampliación actual
 
-El contenido ampliado está en `src/guides/routes.js`. Cada ruta tiene ubicación,
+El contenido ampliado está en `src/guides/routes.js` y sus módulos de familia
+(como `src/guides/hoenn.js`). Cada ruta tiene ubicación,
 requisitos, instrucciones ordenadas, comprobación final, advertencias y referencias.
 Se inserta en la misión existente para conservar IDs, casillas y exportaciones.
 Las instrucciones se guardan en la caché PWA para consultarlas sin conexión.
@@ -57,9 +58,9 @@ flags y la validación natural del guardado tienen su propia revisión técnica.
 | 2 | Oro | 15 | 15 | En revisión |
 | 2 | Plata | 15 | 15 | En revisión |
 | 2 | Cristal | 16 | 16 | En revisión |
-| 3 | Rubí | 14 | 1 | En revisión |
-| 3 | Zafiro | 14 | 1 | En revisión |
-| 3 | Esmeralda | 16 | 3 | En revisión |
+| 3 | Rubí | 14 | 14 | En revisión |
+| 3 | Zafiro | 14 | 14 | En revisión |
+| 3 | Esmeralda | 16 | 16 | En revisión |
 | 3 | Rojo Fuego | 18 | 2 | En revisión |
 | 3 | Verde Hoja | 18 | 2 | En revisión |
 | 4 | Diamante | 12 | 1 | En revisión |
@@ -89,3 +90,8 @@ flags y la validación natural del guardado tienen su propia revisión técnica.
 | 9 | Escarlata | 13 | 5 | En revisión |
 | 9 | Púrpura | 13 | 5 | En revisión |
 | 9 | Leyendas: Z-A | 9 | 1 | En revisión |
+
+La ampliación de Hoenn incluye 20 rutas nuevas y un visor de hielo diferente para
+R/S y Esmeralda, derivado de sus mapas y scripts. Sigue pendiente revisar los
+objetivos agrupados de colección y actividades, así como los huecos de inventario;
+no se declara exhaustividad. Véase `research/routes/hoenn.md`.

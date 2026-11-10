@@ -86,7 +86,7 @@ function audit(root = '.') {
   const book=require('../src/guides/routes.js'),routeKeys=new Set(),guideEditions=new Set();
   for(const r of book.routes){
     if(!r.games?.length||!r.mission||!r.location||!r.check||!Array.isArray(r.requires)||!Array.isArray(r.pitfalls)||!r.steps?.length||r.steps.some(s=>typeof s!=='string'||!s.trim()))errors.push('Ruta ampliada incompleta: '+r.mission);
-    if(!r.sources?.length||r.sources.some(u=>!/^https:\/\/(www\.serebii\.net|github\.com)\//.test(u)))errors.push('Ruta sin referencia pública válida: '+r.mission);
+    if(!r.sources?.length||r.sources.some(u=>!/^https:\/\/(www\.serebii\.net|github\.com|bulbapedia\.bulbagarden\.net)\//.test(u)))errors.push('Ruta sin referencia pública válida: '+r.mission);
     for(const id of r.games||[]){
       const key=id+'-'+r.mission,g=catalog.games.find(g=>g.id===id);
       if(!g?.missions.some(m=>m.id===key))errors.push('Ruta para misión inexistente: '+key);

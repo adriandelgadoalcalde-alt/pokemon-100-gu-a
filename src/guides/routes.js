@@ -2108,13 +2108,15 @@
     "reviewedAt": "2026-11-10"
   }
 ];
+ routes.push(...(typeof module==='object'&&module.exports?require('./hoenn.js'):root.PokemonHoennRoutes));
+ const ice=typeof module==='object'&&module.exports?require('./ice-puzzle.js'):root.PokemonIcePuzzle;
  const byMission=new Map();
  for(const route of routes)for(const game of route.games){const id=game+'-'+route.mission;if(byMission.has(id))throw Error('Ruta editorial duplicada: '+id);byMission.set(id,route);}
  function get(game,id){if(!id.startsWith(game+'-'))return null;const entry=byMission.get(id);return entry?.games.includes(game)?entry:null;}
  function stats(game){return routes.filter(r=>r.games.includes(game)).length;}
  function render(game,id,esc){
   const r=get(game,id);if(!r)return '';
-  return `<article class="route-details"><h3>Recorrido paso a paso</h3><p><b>Ubicación:</b> ${esc(r.location)}</p>${r.requires.length?`<h4>Antes de ir</h4><ul>${r.requires.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}<ol>${r.steps.map(x=>`<li style="margin-bottom:12px">${esc(x)}</li>`).join('')}</ol><p><b>Comprueba al terminar:</b> ${esc(r.check)}</p>${r.pitfalls.length?`<div class="warn">${r.pitfalls.map(x=>`<p>${esc(x)}</p>`).join('')}</div>`:''}<p class="small">Fuentes del recorrido: ${r.sources.map((url,i)=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Referencia ${i+1}</a>`).join(' · ')}. Esta ruta explica qué hacer; su finalización se distingue de los datos que el lector puede acreditar.</p></article><h4>Registro de la misión</h4>`;
+  return `<article class="route-details"><h3>Recorrido paso a paso</h3><p><b>Ubicación:</b> ${esc(r.location)}</p>${r.requires.length?`<h4>Antes de ir</h4><ul>${r.requires.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}<ol>${r.steps.map(x=>`<li style="margin-bottom:12px">${esc(x)}</li>`).join('')}</ol>${r.puzzleVersion?ice.render(r.puzzleVersion):''}<p><b>Comprueba al terminar:</b> ${esc(r.check)}</p>${r.pitfalls.length?`<div class="warn">${r.pitfalls.map(x=>`<p>${esc(x)}</p>`).join('')}</div>`:''}<p class="small">Fuentes del recorrido: ${r.sources.map((url,i)=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Referencia ${i+1}</a>`).join(' · ')}. Esta ruta explica qué hacer; su finalización se distingue de los datos que el lector puede acreditar.</p></article><h4>Registro de la misión</h4>`;
  }
  const api={routes,get,stats,render};
  if(typeof module==='object'&&module.exports)module.exports=api;else root.PokemonWalkthrough=api;
