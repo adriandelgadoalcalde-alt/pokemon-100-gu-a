@@ -698,3 +698,36 @@ Límites:
 - Confianza «documentado en código»; sin pruebas antes/después, nada se certifica automáticamente.
 - El Frente Batalla y los concursos siguen pendientes.
 - Las demás generaciones no tienen todavía esta capa.
+
+## Lectura de progreso por generación (11 de noviembre de 2026)
+
+Qué interpreta ahora la guía a partir del guardado, además de la Pokédex y las medallas que ya leía:
+
+| Gen. | Ediciones | Fuente del significado | Historia | Secretos, legendarios y desafíos |
+| --- | --- | --- | --- | --- |
+| I | Rojo, Azul, Amarillo | pret (pokered, pokeyellow) | 13 hitos | Pájaros, Mewtwo, Snorlax, Dojo, fósil, iniciales de Amarillo |
+| II | Oro, Plata, Cristal | pret (pokegold, pokecrystal) | 12 hitos | Ho-Oh/Lugia (Cristal con requisito exacto), bestias, Suicune, regalos, Ruinas Alfa |
+| III | Rubí, Zafiro, Esmeralda, RF, VH | pret + lector nativo | 11-13 hitos y ubicación | Regis, legendarios, eventos de ticket, Isla Espejismo calculada, Liga repetida, Frente Batalla, escudos |
+| IV | HeartGold, SoulSilver | pret (pokeheartgold) | 13 hitos hasta Rojo | 22 secretos, errantes con estado real, regalo de Oak, Ruinas Alfa, impresiones del Frente |
+| IV | Platino | pret (pokeplatinum) | 9 hitos | 22 secretos, Regis con Regigigas de evento, impresiones del Frente, concursos Master |
+| IV | Diamante, Perla | lista de PKHeX | Salón de la Fama | Legendarios, regalos y concursos Master |
+| V | Negro, Blanco, Negro 2, Blanco 2 | lista de PKHeX | Salón de la Fama | Legendarios y regalos; Medallero de N2/B2 (ya existente) |
+| VI | X, Y, Rubí Omega, Zafiro Alfa | lista de PKHeX | Salón de la Fama | Legendarios, Mansión Batalla, Episodio Delta, revancha del Alto Mando, Regis |
+| VII | Sol, Luna, Ultrasol, Ultraluna | lista de PKHeX | Salón de la Fama | Legendarios, regalos, monturas; sellos del pasaporte (ya existente) |
+| VIII | Diamante Brillante, Perla Reluciente | lista de PKHeX + lector propio de banderas | Salón de la Fama | Legendarios y regalos |
+| VIII | Espada, Escudo | bloques con nombre de PKHeX | — | Pájaros de Galar, Regis, Aventura Dinamax, Torre Batalla |
+| VIII | Leyendas Arceus | bloques con nombre de PKHeX | 6 hitos | Arceus, Pokédex completa y perfecta, zonas, monturas, Eterna Ensoñación |
+| IX | Escarlata, Púrpura | bloques y señales de PKHeX | Señal de final (existente) | DLC, diploma, teraincursiones |
+
+Pendiente:
+
+- **Sin interpretación todavía:**
+  - Verde (Japón).
+  - Let's Go Pikachu/Eevee: sus banderas existen en PKHeX, pero el motor no las exporta.
+  - Leyendas Z-A: matrices sin nombres públicos.
+- **Ubicación del jugador:** solo se lee en la tercera generación.
+- **Confianza:**
+  - Pret y PKHeX se marcan como «documentado en código» o «documentado por la comunidad».
+  - Ninguna lectura certifica automáticamente: faltan comparaciones antes/después con partidas propias.
+- **Integración continua:** la rama no la ejecuta en cada envío (el flujo solo corre en `main` y en propuestas de cambio). Las pruebas se han ejecutado aquí: 101 unitarias, auditoría, navegador y actualización de la PWA. La comparación con el extractor de escritorio requiere .NET.
+- **Red:** Bulbapedia y Serebii no son accesibles desde esta sesión. Las cifras salen del código fuente de los juegos.
