@@ -1727,6 +1727,42 @@
   },
   {
     "games": [
+      "ZA"
+    ],
+    "mission": "07",
+    "location": "Mega Dimensión (DLC): Luminalia Hiperespacial, Hoopa y los legendarios de Hoenn",
+    "requires": [
+      "DLC Mega Dimensión instalado. Desde el 16 de octubre de 2025 da la ropa Holo-X y Holo-Y; la historia llegó el 10 de diciembre de 2025."
+    ],
+    "steps": [
+      "Con el DLC instalado empiezan a abrirse los agujeros de Hoopa en Ciudad Luminalia. Persigue a Ansha, la repostera que viaja con Hoopa: acabarás en la Luminalia Hiperespacial y, al volver, recibirás el encargo de investigarla (misión del Hiperespacio n.º 1, primer sondeo).",
+      "Para entrar en el Hiperespacio necesitas un dónut de Ansha. Sus sabores activan poderes de Hoopa que suben tu nivel y el de tus Pokémon. Dentro, los Pokémon salvajes superan el nivel 100, así que prepara el equipo y usa dónuts de tantas estrellas como la zona: con menos estrellas, la probabilidad de captura baja mucho.",
+      "Cada zona del Hiperespacio trae tareas que suman puntos de sondeo. Por ejemplo: romper Poké Balls flotantes, rocas, zarzas o lodo; recoger objetos brillantes; capturar especies concretas, de un tipo, alfa o variocolor; capturar sin ser detectado o en la ventana de captura. Al completarlas todas aparece una Bola Bonus con objetos raros, entre ellos Bayas Hiper.",
+      "En las zonas de combate del Hiperespacio vence a entrenadores para sumar sondeo. Algunos ayudan: mensajeros (Bayas Hiper), enfermeras y camareras (curan), maníacos (Poké Balls raras) y niños ricos (monedas de Gimmighoul y pepitas).",
+      "Avanza las 14 misiones del Hiperespacio en orden. Alternan los sondeos n.º 2 a n.º 6 con escenas en el Hotel Z: la llegada de Corelia, un descanso por el museo y la cafetería, un estruendo en la sala de estrategia del Equipo MZ, un compañero que no baja a desayunar y un alboroto a medianoche. Cada sondeo calibra los detectores y abre zonas más peligrosas.",
+      "En los sondeos n.º 4 a n.º 6 investigas la gran distorsión sobre la torre. El hiperespacio amenaza con tragarse la ciudad real. El sondeo n.º 6 resuelve el misterio e impide que la Luminalia Hiperespacial se fusione con la ciudad.",
+      "Misión 12: Ansha aún busca un legendario. Prepara el dónut especial, cruza la distorsión esmeralda y captura a Rayquaza.",
+      "Misión 13: prepara el dónut especial de la distorsión rubí y captura a Groudon. Misión 14: el de la distorsión zafiro, para capturar a Kyogre.",
+      "Postgame del DLC: tras terminar la historia principal y vencer a Darkrai aparecen las Arenas Mega Rebeldes del Hiperespacio. Son revanchas de las megaevoluciones descontroladas a nivel 200 y con límite de tiempo; a veces sueltan una esfera que congela la cuenta atrás.",
+      "Cuando completes la misión secundaria 188, cada 25.000 puntos de sondeo puedes pedir un escaneo de zonas especiales en las oficinas del encargo (habla con Philippe). A veces sale una zona desconocida de 5 estrellas con un legendario o singular: Latias, Latios, Cobalion, Terrakion, Virizion, Keldeo y Meloetta.",
+      "Las zonas desconocidas a las que llevan algunos portales suelen ligarse a misiones secundarias o dan Megapiedras nuevas. Revisa la lista de Megapiedras para las megaevoluciones del DLC: Raichu X e Y, Chimecho, Absol Z, Staraptor, Garchomp Z, Lucario Z, Heatran, Darkrai, Golurk, Meowstic, Crabominable, Golisopod, Magearna, Zeraora, Scovillain, Glimmora, Tatsugiri y Baxcalibur."
+    ],
+    "check": "Las 14 misiones del Hiperespacio marcadas, Rayquaza, Groudon y Kyogre capturados, las Arenas Mega Rebeldes del Hiperespacio superadas y los legendarios de las zonas escaneadas registrados.",
+    "pitfalls": [
+      "Entrar con un dónut de menos estrellas que la zona reduce mucho la probabilidad de captura.",
+      "Las zonas escaneadas no aparecen hasta completar la misión secundaria 188.",
+      "Las Arenas Mega Rebeldes del Hiperespacio requieren haber vencido antes a Darkrai."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/megadimension.shtml",
+      "https://www.serebii.net/legendsz-a/hyperspacemissions.shtml",
+      "https://www.serebii.net/legendsz-a/hyperspacelumiose.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
       "RUBY"
     ],
     "mission": "13",
