@@ -185,6 +185,9 @@ test('posición Switch desde el motor: SV por identificador de lugar, Leyendas p
  const sw=L.read(null,'SWORD',0,0,{},{mapHash:'B6F6DA200E8FFE23'});assert.equal(sw.name,'Pueblo Yarda');assert.match(sw.detail,/interior/);
  assert.equal(L.read(null,'SHIELD',0,0,{},{mapHash:'5EA5C3539AB81C81'}).name,'Isla de la Armadura');
  assert.equal(L.read(null,'SHIELD',0,0,{},{mapHash:'23F8A2E146592267'}),null);
+ assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_t0501')}).name,'Pueblo Ladera');
+ assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_wr0304')}).name,'Nieves de la Corona');
+ assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_wr0122')}).name,'Área Silvestre');
 });
 
 test('posición Game Boy: Kanto y Johto con nombres oficiales; japonés y coreano excluidos',()=>{

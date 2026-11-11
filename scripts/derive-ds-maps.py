@@ -158,13 +158,24 @@ def switch_names():
         if table[index].strip() != expected:
             fail(f'el índice {index} no corresponde a «{expected}»')
     swsh = (base / 'gen8' / 'text_swsh_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
-    for index, expected in [(6, 'Pueblo Yarda'), (158, 'Torre Batalla'), (165, 'Isla de la Armadura')]:
-        if swsh[index].strip() != expected:
-            fail(f'el índice {index} de SWSH no corresponde a «{expected}»')
+    # Espada/Escudo: Coordinates8.M es FNV-1a de 64 bits del nombre de la zona (a_<código>, interiores _iXXYY).
+    # Cada código se identifica por pruebas, nunca por suposición:
+    #  t0101 casa inicial (a_t0101_i0101 en partidas públicas; evento z_t0101_MOTHER); t0401 líder de tipo agua
+    #  (z_t0401_LEADER_MIZU); t0501 el mural (z_t0501_T05_MURAL01); t0601 líder de tipo hada (z_t0601_LEADER_FAIRY);
+    #  t0801 la persiana (z_t0801_T08SHUTTER_*); wr01xx eventos WR_ del Área Silvestre; wr02xx Isla de la Armadura
+    #  (pkNX: a_wr0201 «isle_of_armor»); wr03xx puertas de los Regis y Virizion/Terrakion; bt0101 Torre Batalla (pkNX).
+    #  Los eventos son los de la lista pública de banderas de SWSH (formato de PKHeX).
+    codes = {'a_t0101': 6, 'a_t0401': 44, 'a_t0501': 70, 'a_t0601': 78, 'a_t0801': 102, 'a_bt0101': 158}
+    expected = {6: 'Pueblo Yarda', 44: 'Pueblo Amura', 70: 'Pueblo Ladera', 78: 'Pueblo Plié', 102: 'Pueblo Crampón',
+                121: 'Área Silvestre', 158: 'Torre Batalla', 165: 'Isla de la Armadura', 205: 'Nieves de la Corona'}
+    for index, name in expected.items():
+        if swsh[index].strip() != name:
+            fail(f'el índice {index} de SWSH no corresponde a «{name}»')
+    for region, index in (('a_wr01', 121), ('a_wr02', 165), ('a_wr03', 205)):
+        for n in range(1, 41):
+            codes[f'{region}{n:02d}'] = index
     return {'SV': {i: n.strip() for i, n in enumerate(sv) if n.strip() and not n.strip().startswith('－')},
-            # Espada/Escudo: Coordinates8.M es FNV-1a de 64 bits del nombre de la zona. Solo zonas con prueba:
-            # a_t0101 (casa inicial: a_t0101_i0101 en partidas públicas), a_wr0201 y a_bt0101 (pkNX, EditorSWSH).
-            'SWSH': {'a_t0101': swsh[6].strip(), 'a_wr0201': swsh[165].strip(), 'a_bt0101': swsh[158].strip()},
+            'SWSH': {code: swsh[index].strip() for code, index in codes.items()},
             'LA': {f'ha_area0{i}': la[6 + i].strip() for i in range(6)},
             'ZA': {'t1': xy[22].strip()},
             'source': 'PKHeX.Core gen9/text_sv, gen8a/text_la y gen6/text_xy (es)'}
