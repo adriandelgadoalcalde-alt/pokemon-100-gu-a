@@ -1,7 +1,7 @@
 {
   "about": "Hitos y secretos de la primera y segunda generación a partir de los eventos con nombre de pret.",
   "pack": "gen12",
-  "confidence": "documentado en código",
+  "confidence": "documentado en el código del juego (decompilación pret)",
   "repos": {
     "RB": {
       "repo": "pokered",

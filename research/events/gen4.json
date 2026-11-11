@@ -1,7 +1,7 @@
 {
   "about": "Hitos y secretos de la cuarta generación a partir de nombres de pret. scripts/derive-event-pack.py resuelve cada bandera o variable en la revisión fijada y exige un sitio que la active. Sin datos de partidas.",
   "pack": "gen4",
-  "confidence": "documentado en código",
+  "confidence": "documentado en el código del juego (decompilación pret)",
   "repos": {
     "HGSS": {
       "repo": "pokeheartgold",
