@@ -189,6 +189,23 @@ def build():
                     flags[f'pkhex:{hall}'] = hall
         if hall is not None:
             story[family] = [{'mission': league, 'flag': f'pkhex:{hall}', 'label': 'Salón de la Fama registrado'}]
+        BADGE_STORY = {
+            'BW': [('02', 2, 'Medalla Trío y 2.ª medalla (Ciudad Esmalte)'), ('03', 3, '3.ª medalla (Ciudad Porcelana)'), ('04', 4, 'Medalla Voltio'), ('05', 5, 'Medalla Temblor'),
+                   ('06', 6, 'Medalla Jet'), ('07', 7, '7.ª medalla (Ciudad Teja)'), ('08', 8, 'Medalla Leyenda')],
+            'B2W2': [('01', 1, 'Medalla Base'), ('02', 2, 'Medalla Ponzoña'), ('03', 3, '3.ª medalla (Ciudad Porcelana)'), ('04', 4, 'Medalla Voltio'),
+                     ('05', 5, 'Medalla Temblor'), ('06', 6, 'Medalla Jet'), ('08', 8, 'Medalla Leyenda y 8.ª medalla (Ciudad Marga)')],
+            'XY': [('02', 1, 'Medalla Insecto'), ('04', 2, 'Medalla Muro'), ('05', 3, 'Medalla Lid'), ('06', 5, 'Medallas Planta y Voltaje'),
+                   ('07', 7, 'Medallas Hada y Psique'), ('09', 8, 'Medalla Iceberg')],
+            'ORAS': [('02', 1, 'Medalla Piedra'), ('03', 2, 'Medalla Puño'), ('04', 3, 'Medalla Dinamo'), ('05', 4, 'Medalla Calor'),
+                     ('06', 5, 'Medalla Equilibrio'), ('07', 6, 'Medalla Pluma'), ('09', 7, 'Medalla Mente'), ('11', 8, 'Medalla Lluvia')],
+        }
+        if family in BADGE_STORY and hall is not None:
+            story[family] = [{'mission': m, 'badgesAtLeast': n, 'label': l} for m, n, l in BADGE_STORY[family]] + story[family]
+        if family == 'DP' and hall is not None:
+            # Medallas leídas por PKHeX.Core; orden de DP: Lignito, Bosque, Adoquín, Ciénaga, Reliquia (tras Surf), Mina, Carámbano, Faro.
+            story[family] = [{'mission': m, 'badgesAtLeast': n, 'label': l} for m, n, l in [
+                ('02', 1, 'Medalla Lignito'), ('03', 2, 'Medalla Bosque'), ('04', 3, 'Medalla Adoquín'), ('05', 4, 'Medalla Ciénaga'),
+                ('06', 6, 'Medallas Reliquia y Mina'), ('07', 7, 'Medalla Carámbano'), ('09', 8, 'Medalla Faro')]] + story[family]
         for subject, entry in by_subject.items():
             state = entry['state']
             if 'Captured' not in state and 'Received' not in state:
@@ -230,7 +247,7 @@ def build():
     game_families['LGPE'] = ['LETGOP', 'LETGOE']
     story['LGPE'] = lgpe_story
     secrets.extend(lgpe_secrets)
-    data = {'pack': 'pkhex', 'storyPartialFamilies': [f for f in families if f != 'LGPE'], 'confidence': 'documentado por la comunidad en PKHeX (sin script fuente)',
+    data = {'pack': 'pkhex', 'storyPartialFamilies': [f for f in families if f not in ('LGPE', 'DP', 'BW', 'B2W2', 'XY', 'ORAS')], 'confidence': 'documentado por la comunidad en PKHeX (sin script fuente)',
             'revisions': {'PKHeX': REVISION}, 'excludeLanguages': [], 'excludeReason': '',
             'gameFamilies': game_families, 'families': families, 'story': story, 'secrets': secrets}
     body = json.dumps(data, ensure_ascii=False, separators=(',', ':'), sort_keys=True)

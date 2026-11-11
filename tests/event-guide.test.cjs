@@ -73,15 +73,17 @@ test('Game Boy: el Dojo acredita cualquiera de los dos regalos',()=>{
  assert.equal(a.secrets.find(s=>s.id==='gen1.dojo').status,'completado');
 });
 
-test('PKHeX: las exclusivas siguen la etiqueta de versión y la historia parcial no recomienda la Liga',()=>{
+test('PKHeX: las exclusivas siguen la etiqueta de versión y la historia por medallas guía desde el principio',()=>{
  const pk=require('../src/saves/pkhex-data.js'),O=pk.families.ORAS;
  const ids=g=>guide.analyze({events:{activeFlags:[],work:[]},caught:[]},g).secrets.map(s=>s.title);
  assert.ok(ids('OMEGARUBY').includes('Groudon'));assert.ok(!ids('OMEGARUBY').includes('Kyogre'));
  const route=require('../src/engine/route.js');
  const game={id:'BLACK',mainStoryLastMission:'BLACK-09',missions:Array.from({length:11},(_,i)=>({id:'BLACK-'+String(i+1).padStart(2,'0'),section:i<9?'Historia':'Postgame',steps:['x']}))};
- const r=route.nextMission(game,{events:{activeFlags:[],work:[]},caught:[]},()=>false,()=>false);
- assert.equal(r.mission.id,'BLACK-01');
- const B=pk.families.BW,hall=pk.story.BW[0].flag;
+ const r=route.nextMission(game,{events:{activeFlags:[],work:[]},badgesTotal:0,caught:[]},()=>false,()=>false);
+ assert.equal(r.mission.id,'BLACK-02');
+ const u=route.nextMission({...game,id:'SUN',mainStoryLastMission:'SUN-08',missions:game.missions.map(m=>({...m,id:m.id.replace('BLACK','SUN')}))},{events:{activeFlags:[],work:[]},caught:[]},()=>false,()=>false);
+ assert.equal(u.mission.id,'SUN-01');
+ const B=pk.families.BW,hall=pk.story.BW.find(r=>r.flag).flag;
  const r2=route.nextMission(game,{events:{activeFlags:[B.flags[hall]],work:[]},caught:[]},()=>false,()=>false);
  assert.equal(r2.mission.id,'BLACK-10');
 });
