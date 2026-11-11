@@ -62,6 +62,36 @@ def platinum():
         fail('la numeración de mapas de Platino no coincide')
     return {'maps': table, 'names': used, 'source': 'pokeplatinum@62bdaacdca6c56a6a396f3e9911e2f922b79bba8'}
 
+def diamond():
+    """Diamante/Perla: sMapHeaders de pokediamond (campo mapsec, una entrada por línea en el orden de maps.h)."""
+    repo = PRET / 'pokediamond'
+    rev = subprocess.run(['git', '-C', str(repo), 'rev-parse', 'HEAD'], capture_output=True, text=True).stdout.strip()
+    if rev != 'b623abef1b4dfe204ca50aab42447ac00c134290':
+        fail('pokediamond no está en la revisión fijada')
+    maps = defines(repo / 'include' / 'constants' / 'maps.h')
+    sections = defines(repo / 'include' / 'constants' / 'map_sections.h')
+    names = (PKHEX / 'Resources' / 'text' / 'locations' / 'gen4' / 'text_hgss_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
+    for sec, expected in [('MAPSEC_ETERNA_CITY', 'Ciudad Vetusta'), ('MAPSEC_TWINLEAF_TOWN', 'Pueblo Hojaverde')]:
+        if names[sections[sec]].strip() != expected:
+            fail(f'{sec} no corresponde a «{expected}»')
+    byindex = {v: k for k, v in maps.items()}
+    text = (repo / 'arm9' / 'src' / 'map_header.c').read_text(encoding='utf-8')
+    body = text[text.index('sMapHeaders[]'):]
+    table, used, position = {}, {}, 0
+    for m in re.finditer(r'^\s*\{([^\n]*)\},\s*//\s*(MAP_\w+)', body, re.M):
+        name = byindex.get(position)
+        if name is None:
+            fail(f'la posición {position} no existe en maps.h')
+        sec = re.search(r'\b(MAPSEC_\w+)\b', m.group(1))
+        if sec:
+            index = sections[sec.group(1)]
+            used[index] = names[index].strip()
+            table[position] = [index, name[4:]]
+        position += 1
+    if position != len(maps):
+        fail(f'sMapHeaders tiene {position} entradas y maps.h {len(maps)}')
+    return {'maps': table, 'names': used, 'source': 'pokediamond@b623abef1b4dfe204ca50aab42447ac00c134290'}
+
 
 def kanto_gb(repo_name, rev):
     """Rojo/Azul/Amarillo: wCurMap → lugar del mapa de Kanto (town_map_entries.asm), nombre oficial en español."""
@@ -186,6 +216,7 @@ def build():
             table[maps[m.group(1)]] = [index, m.group(1)[4:]]
         data[family] = {'maps': table, 'names': used, 'source': src['repo'] + '@' + src['rev']}
     data['PT'] = platinum()
+    data['DP'] = diamond()
     data['RB'] = kanto_gb('pokered', '0dbf95cd12f5b1511c62ce69efe283000f780a8f')
     data['Y'] = kanto_gb('pokeyellow', 'b452f2ab07185075140061c5084ab866d5e4a794')
     data['GS'] = johto_gb('pokegold', 'f2cde36f49b994c143bfd18582182302fdc76492')

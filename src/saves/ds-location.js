@@ -1,12 +1,14 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-/* Posición actual del jugador en HeartGold/SoulSilver y Platino (solo lectura).
+/* Posición actual del jugador en HeartGold/SoulSilver, Diamante/Perla y Platino (solo lectura).
    HGSS: LocalFieldData.currentPosition tras SaveVarsFlags (0xDE4 + 0x44C + 4 de suma) = 0x1234 (pokeheartgold).
    Platino: FieldOverworldState.player tras SaveVarsFlags y Poké-reloj = 0x1280 (pokeplatinum).
+   Diamante/Perla: el mismo bloque de situación en 0x1238 (M/X/Y de SAV4DP.cs); mapas de sMapHeaders (pokediamond).
    La copia activa se elige como en hgss-integrity.js: contadores del pie y suma CRC válida. */
 (function(root){
  'use strict';
  // footer: bytes del pie excluidos de la suma (HGSS 0x10; Platino 0x14, como SAV4.cs de PKHeX); contadores en end-0x14 y end-0x10.
- const LAYOUT={HEARTGOLD:{size:0xF628,pos:0x1234,maps:'HGSS',footer:0x10},SOULSILVER:{size:0xF628,pos:0x1234,maps:'HGSS',footer:0x10},PLATINUM:{size:0xCF2C,pos:0x1280,maps:'PT',footer:0x14}};
+ const LAYOUT={HEARTGOLD:{size:0xF628,pos:0x1234,maps:'HGSS',footer:0x10},SOULSILVER:{size:0xF628,pos:0x1234,maps:'HGSS',footer:0x10},PLATINUM:{size:0xCF2C,pos:0x1280,maps:'PT',footer:0x14},
+  DIAMOND:{size:0xC100,pos:0x1238,maps:'DP',footer:0x14},PEARL:{size:0xC100,pos:0x1238,maps:'DP',footer:0x14}};
  const data=()=>root.PokemonDSMaps||(typeof module==='object'&&module.exports?require('./ds-maps-data.js'):null);
  const integrity=()=>root.PokemonHGSSIntegrity||(typeof module==='object'&&module.exports?require('./hgss-integrity.js'):null);
  function activeBase(bytes,size,footer){

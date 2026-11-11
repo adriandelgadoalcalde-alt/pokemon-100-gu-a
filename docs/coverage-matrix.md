@@ -705,12 +705,12 @@ Qué interpreta ahora la guía a partir del guardado, además de la Pokédex y l
 
 | Gen. | Ediciones | Fuente del significado | Historia | Secretos, legendarios y desafíos |
 | --- | --- | --- | --- | --- |
-| I | Rojo, Azul, Amarillo | pret (pokered, pokeyellow) | 13 hitos | Pájaros, Mewtwo, Snorlax, Dojo, fósil, iniciales de Amarillo |
-| II | Oro, Plata, Cristal | pret (pokegold, pokecrystal) | 12 hitos | Ho-Oh/Lugia (Cristal con requisito exacto), bestias, Suicune, regalos, Ruinas Alfa |
+| I | Rojo, Azul, Amarillo | pret (pokered, pokeyellow) | 13 hitos y ubicación | Pájaros, Mewtwo, Snorlax, Dojo, fósil, iniciales de Amarillo |
+| II | Oro, Plata, Cristal | pret (pokegold, pokecrystal) | 12 hitos y ubicación | Ho-Oh/Lugia (Cristal con requisito exacto), bestias, Suicune, regalos, Ruinas Alfa |
 | III | Rubí, Zafiro, Esmeralda, RF, VH | pret + lector nativo | 11-13 hitos y ubicación | Regis, legendarios, eventos de ticket, Isla Espejismo calculada, Liga repetida, Frente Batalla, escudos |
-| IV | HeartGold, SoulSilver | pret (pokeheartgold) | 13 hitos hasta Rojo | 22 secretos, errantes con estado real, regalo de Oak, Ruinas Alfa, impresiones del Frente |
-| IV | Platino | pret (pokeplatinum) | 9 hitos | 22 secretos, Regis con Regigigas de evento, impresiones del Frente, concursos Master |
-| IV | Diamante, Perla | lista de PKHeX | Salón de la Fama | Legendarios, regalos y concursos Master |
+| IV | HeartGold, SoulSilver | pret (pokeheartgold) | 13 hitos hasta Rojo y ubicación | 22 secretos, errantes con estado real, regalo de Oak, Ruinas Alfa, impresiones del Frente |
+| IV | Platino | pret (pokeplatinum) | 9 hitos y ubicación | 22 secretos, Regis con Regigigas de evento, impresiones del Frente, concursos Master |
+| IV | Diamante, Perla | lista de PKHeX; mapas de pokediamond | Medallas, Salón de la Fama y ubicación | Legendarios, regalos y concursos Master |
 | V | Negro, Blanco, Negro 2, Blanco 2 | lista de PKHeX | Salón de la Fama | Legendarios y regalos; Medallero de N2/B2 (ya existente) |
 | VI | X, Y, Rubí Omega, Zafiro Alfa | lista de PKHeX | Salón de la Fama | Legendarios, Mansión Batalla, Episodio Delta, revancha del Alto Mando, Regis |
 | VII | Sol, Luna, Ultrasol, Ultraluna | lista de PKHeX | Salón de la Fama | Legendarios, regalos, monturas; sellos del pasaporte (ya existente) |
@@ -723,9 +723,8 @@ Pendiente:
 
 - **Sin interpretación todavía:**
   - Verde (Japón).
-  - Let's Go Pikachu/Eevee: sus banderas existen en PKHeX, pero el motor no las exporta.
   - Leyendas Z-A: matrices sin nombres públicos.
-- **Ubicación del jugador:** solo se lee en la tercera generación.
+- **Ubicación del jugador:** se lee en las generaciones I a IV (salvo Verde japonés y las versiones japonesa y coreana de Game Boy); de la V en adelante, todavía no.
 - **Confianza:**
   - Pret y PKHeX se marcan como «documentado en código» o «documentado por la comunidad».
   - Ninguna lectura certifica automáticamente: faltan comparaciones antes/después con partidas propias.

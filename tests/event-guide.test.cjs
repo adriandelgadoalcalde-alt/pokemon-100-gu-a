@@ -121,6 +121,16 @@ test('posición DS: HGSS y Platino eligen la copia válida y descartan mapas ine
  assert.equal(maps.HGSS.names[maps.HGSS.maps[280][0]],'Carpa Pokéathlon');
 });
 
+test('posición DS: Diamante/Perla leen su bloque de 0xC100 y no confunden Platino',()=>{
+ const L=require('../src/saves/ds-location.js'),I=require('../src/saves/hgss-integrity.js'),maps=require('../src/saves/ds-maps-data.js');
+ const bytes=new Uint8Array(0x80000),v=new DataView(bytes.buffer),size=0xC100;
+ v.setInt32(0x1238,65,true);v.setInt32(0x1240,7,true);v.setInt32(0x1244,9,true);
+ v.setUint32(size-20,1,true);v.setUint32(size-12,size,true);v.setUint16(size-2,I.crc16(bytes.subarray(0,size-0x14)),true);
+ const r=L.read(bytes,'PEARL');assert.equal(r.name,'Ciudad Vetusta');assert.equal(r.map,'ETERNA');assert.equal(r.x,7);assert.equal(r.y,9);
+ assert.equal(L.read(bytes,'PLATINUM'),null);
+ assert.equal(maps.DP.names[maps.DP.maps[3][0]],'Ciudad Jubileo');
+});
+
 test('posición Game Boy: Kanto y Johto con nombres oficiales; japonés y coreano excluidos',()=>{
  const L=require('../src/saves/ds-location.js'),bytes=new Uint8Array(0x8000);
  bytes[0x260A]=40;bytes[0x260D]=3;bytes[0x260E]=5;
