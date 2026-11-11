@@ -33,6 +33,46 @@ FAMILIES = {
 }
 
 
+MAISON = 'Mansión Batalla'
+# Desafíos seleccionados: (familia, id, título, lugar, misión, [(índice, texto esperado, etiqueta)], pasos)
+CHALLENGES = [
+    ('XY', 'maison', 'Mansión Batalla: las cinco estatuillas', MAISON, '11',
+     [(381, 'Singles Statuette', 'Individual'), (382, 'Doubles Statuette', 'Dobles'), (383, 'Triples Statuette', 'Triples'),
+      (384, 'Rotation Statuette', 'Rotatorio'), (385, 'Multi Statuette', 'Múltiple')],
+     ['En la Mansión Batalla vence a los jefes de cada modalidad tras las rachas de la modalidad Súper.',
+      'Cada estatuilla se registra por separado; la Múltiple exige compañero.']),
+    ('ORAS', 'maison', 'Mansión Batalla: las cinco estatuillas', MAISON, '14',
+     [(380, 'Singles Statuette', 'Individual'), (381, 'Doubles Statuette', 'Dobles'), (382, 'Triples Statuette', 'Triples'),
+      (383, 'Rotation Statuette', 'Rotatorio'), (384, 'Multi Statuette', 'Múltiple')],
+     ['En la Mansión Batalla vence a los jefes de cada modalidad tras las rachas de la modalidad Súper.',
+      'Cada estatuilla se registra por separado; la Múltiple exige compañero.']),
+    ('ORAS', 'delta', 'Episodio Delta completado', 'Hoenn', 'E01',
+     [(2729, 'Completed Delta Episode', 'Episodio Delta')], ['Sigue el recorrido de la misión «Episodio Delta y Deoxys».']),
+    ('ORAS', 'rematch', 'Volver a vencer al Alto Mando', 'Liga Pokémon', '13',
+     [(361, 'Rematched Elite Four', 'Revancha del Alto Mando')],
+     ['Tras el Episodio Delta, vuelve a la Liga: el Alto Mando y el Campeón usan equipos más fuertes.']),
+    ('ORAS', 'regis', 'Puzles de los Regis', 'Cámara Sellada', '13',
+     [(3007, 'Sealed Chamber Puzzle Completed', 'Cámara Sellada'), (3008, 'Regi Caves Unlocked', 'Cuevas de los Regis abiertas')],
+     ['Sigue el recorrido de postgame: Cámara Sellada y las tres cuevas de los Regis.']),
+    ('DP', 'contests', 'Concursos: rango Master en las cinco categorías', 'Ciudad Corazón', '12',
+     [(2408, 'Cool Contest Master', 'Carisma'), (2409, 'Beauty Contest Master', 'Belleza'), (2410, 'Cute Contest Master', 'Dulzura'),
+      (2411, 'Smart Contest Master', 'Ingenio'), (2412, 'Tough Contest Master', 'Dureza')],
+     ['En la Sala de Concursos de Ciudad Corazón gana el rango Master de las cinco categorías.']),
+    ('SM', 'ride', 'Los ocho Pokémon Montura', 'Alola', '08',
+     [(3113, 'Received Ride Pager', 'Buscamontura'), (3114, 'Tauros Charge', 'Tauros'), (3115, 'Stoutland Search', 'Stoutland'),
+      (3116, 'Machamp Shove', 'Machamp'), (3117, 'Mudsdale Gallop', 'Mudsdale'), (3118, 'Lapras Paddle', 'Lapras'),
+      (3119, 'Sharpedo Jet', 'Sharpedo'), (3120, 'Charizard Glide', 'Charizard')], ['Se desbloquean a lo largo de las pruebas; consulta el recorrido de la historia.']),
+    ('USUM', 'ride', 'Los ocho Pokémon Montura', 'Alola', '08',
+     [(4073, 'Received Ride Pager', 'Buscamontura'), (4074, 'Tauros Charge', 'Tauros'), (4075, 'Stoutland Search', 'Stoutland'),
+      (4076, 'Machamp Shove', 'Machamp'), (4077, 'Mudsdale Gallop', 'Mudsdale'), (4078, 'Lapras Paddle', 'Lapras'),
+      (4079, 'Sharpedo Jet', 'Sharpedo'), (4080, 'Charizard Glide', 'Charizard')], ['Se desbloquean a lo largo de las pruebas; consulta el recorrido de la historia.']),
+    ('SM', 'judge', 'Juez de valores individuales del PC', 'Alola', '09',
+     [(3155, 'Unlocked IV Judge', 'Juez desbloqueado')], ['Función del PC que valora las estadísticas ocultas; su desbloqueo se explica en el recorrido de postgame enlazado.']),
+    ('USUM', 'judge', 'Juez de valores individuales del PC', 'Alola', '09',
+     [(4115, 'Unlocked IV Judge', 'Juez desbloqueado')], ['Función del PC que valora las estadísticas ocultas; su desbloqueo se explica en el recorrido de postgame enlazado.']),
+]
+
+
 def fail(message):
     raise SystemExit('derive-pkhex-pack: ' + message)
 
@@ -118,6 +158,20 @@ def build():
                             'requires': 'Consulta los requisitos en el recorrido de postgame de esta edición.',
                             'steps': ['Sigue el recorrido de la misión de postgame enlazada: indica el lugar exacto y lo que necesitas para este encuentro.'],
                             'conditions': {family: cond}})
+        by_index = {index: text for index, kind, text in rows}
+        for fam, key, title, place, mis, items, steps in CHALLENGES:
+            if fam != family:
+                continue
+            for index, expected, _ in items:
+                if expected not in by_index.get(index, ''):
+                    fail(f'{relative}: el índice {index} ya no describe «{expected}»')
+                flags[f'pkhex:{index}'] = index
+            names = [f'pkhex:{i}' for i, _, _ in items]
+            secrets.append({'id': f'pkhex.{family.lower()}.{key}', 'title': title, 'families': [family], 'category': 'Desafío',
+                            'placeName': {family: place}, 'mission': mis, 'requires': 'Consulta el recorrido enlazado.', 'steps': steps,
+                            'conditions': {family: {'done': names[0], 'doneAll': names[1:],
+                                                    'progress': [{'flag': f'pkhex:{i}', 'label': l} for i, _, l in items],
+                                                    'meaning': 'Banderas documentadas en la lista de eventos de PKHeX.'}}})
         families[family] = {'flags': flags, 'vars': {}, 'sources': {k: [relative] for k in flags}}
         game_families[family] = games
     data = {'pack': 'pkhex', 'confidence': 'documentado por la comunidad en PKHeX (sin script fuente)',
