@@ -658,6 +658,15 @@ La lista exacta de 482 obtenidos se compara sin acreditar estrella ni premio.
 La lógica reconstruida y sus límites se documentan en `research/routes/bdsp.md`;
 no se equipara el cierre del catálogo con todos los mapas/encuentros/colecciones.
 
+### Hisui: señoriales, monturas, crisis y tablas
+
+Nueve rutas nuevas y 70 instrucciones amplían las nueve conexiones restantes de
+Leyendas: Arceus. Total: 245 recorridos/495 conexiones; quedan 30 misiones sin
+ampliación. Se mantienen las dos rutas de Arceus y las casillas, se localiza el
+nombre de Volus y se distinguen investigación, monturas, señoriales y capturas.
+Templo Puntaneva y Uxie incluyen sus respuestas; Regigigas exige tablas y las
+fases de Giratina no equivalen a capturarlo. El cierre de las once misiones del
+catálogo no cierra peticiones, mapas ni colecciones: `research/routes/hisui.md`.
 ## Tercera generación: el guardado dice dónde estás y qué secretos faltan
 
 Fecha: 11 de noviembre de 2026.

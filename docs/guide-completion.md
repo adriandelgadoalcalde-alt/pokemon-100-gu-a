@@ -86,7 +86,7 @@ flags y la validación natural del guardado tienen su propia revisión técnica.
 | 8 | Escudo | 10 | 10 | En revisión |
 | 8 | Diamante Brillante | 12 | 12 | En revisión |
 | 8 | Perla Reluciente | 12 | 12 | En revisión |
-| 8 | Leyendas: Arceus | 11 | 2 | En revisión |
+| 8 | Leyendas: Arceus | 11 | 11 | En revisión |
 | 9 | Escarlata | 13 | 5 | En revisión |
 | 9 | Púrpura | 13 | 5 | En revisión |
 | 9 | Leyendas: Z-A | 9 | 1 | En revisión |
@@ -169,3 +169,10 @@ movimientos de campo del Poké-reloj, la cronología propia de los remakes y los
 requisitos de estatuas/concursos/Torre de su tarjeta. Las doce misiones por
 edición están ampliadas, sin cerrar todos los mapas y colecciones descritos en
 `research/routes/bdsp.md`.
+
+Hisui añade nueve rutas y 70 instrucciones para sus nueve conexiones pendientes:
+ingreso, señoriales, monturas, crisis, tablas, Volus y colecciones. Incluye las
+tres contraseñas del Templo Puntaneva y la respuesta de Uxie, sin confundir
+monturas/señoriales con capturas del equipo. Las once misiones catalogadas tienen
+ampliación; el inventario de peticiones, mapas y colecciones sigue en revisión
+en `research/routes/hisui.md`.

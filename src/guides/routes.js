@@ -1509,10 +1509,10 @@
     "mission": "09",
     "location": "Hisui: cierre de tablas, Pokédex y Templo de Sinnoh",
     "requires": [
-      "Historia principal, encargo de Volo y tablas completados"
+      "Historia principal, encargo de Volus y tablas completados"
     ],
     "steps": [
-      "Continúa las misiones de las tablas y termina el enfrentamiento de Volo, incluidas las fases de Giratina. Obtén la Flauta Azur como parte de ese cierre.",
+      "Continúa las misiones de las tablas y termina el enfrentamiento de Volus, incluidas las fases de Giratina. Obtén la Flauta Azur como parte de ese cierre.",
       "Captura las especies necesarias de Hisui. Para llegar a Arceus se requiere haber encontrado y capturado a los Pokémon exigidos, no perfeccionar todas las tareas de investigación.",
       "Revisa especialmente las especies de distorsiones, las evoluciones específicas, Spiritomb y los legendarios de las misiones posteriores: pueden faltar aunque hayas explorado todas las zonas.",
       "No exijas Phione, Manaphy, Shaymin o Darkrai para esta condición. Sus encargos o bonificaciones siguen siendo objetivos separados.",
@@ -1536,10 +1536,10 @@
     "mission": "DETAIL1",
     "location": "Hisui: cierre de tablas, Pokédex y Templo de Sinnoh",
     "requires": [
-      "Historia principal, encargo de Volo y tablas completados"
+      "Historia principal, encargo de Volus y tablas completados"
     ],
     "steps": [
-      "Continúa las misiones de las tablas y termina el enfrentamiento de Volo, incluidas las fases de Giratina. Obtén la Flauta Azur como parte de ese cierre.",
+      "Continúa las misiones de las tablas y termina el enfrentamiento de Volus, incluidas las fases de Giratina. Obtén la Flauta Azur como parte de ese cierre.",
       "Captura las especies necesarias de Hisui. Para llegar a Arceus se requiere haber encontrado y capturado a los Pokémon exigidos, no perfeccionar todas las tareas de investigación.",
       "Revisa especialmente las especies de distorsiones, las evoluciones específicas, Spiritomb y los legendarios de las misiones posteriores: pueden faltar aunque hayas explorado todas las zonas.",
       "No exijas Phione, Manaphy, Shaymin o Darkrai para esta condición. Sus encargos o bonificaciones siguen siendo objetivos separados.",
@@ -2123,6 +2123,7 @@
  routes.push(...(typeof module==='object'&&module.exports?require('./lets-go.js'):root.PokemonLetsGoRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./galar.js'):root.PokemonGalarRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./bdsp.js'):root.PokemonBDSPRoutes));
+ routes.push(...(typeof module==='object'&&module.exports?require('./hisui.js'):root.PokemonHisuiRoutes));
  const ice=typeof module==='object'&&module.exports?require('./ice-puzzle.js'):root.PokemonIcePuzzle;
  const byMission=new Map();
  for(const route of routes)for(const game of route.games){const id=game+'-'+route.mission;if(byMission.has(id))throw Error('Ruta editorial duplicada: '+id);byMission.set(id,route);}
