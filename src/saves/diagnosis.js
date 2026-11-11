@@ -23,7 +23,7 @@
   if(Array.isArray(e.keyItems))result.keyItems=e.keyItems.filter(i=>i&&Number.isInteger(i.id)&&i.id>0&&Number.isInteger(i.count)&&i.count>0)
    .map(i=>({id:i.id,count:i.count}));
   if(e.extractor&&typeof e.extractor==='object')result.extractor={engine:String(e.extractor.engine||''),engineCommit:String(e.extractor.engineCommit||'')};
-  for(const key of ['integrity','events','medals','passport','battleTree','pokeathlon','pokewalker','field','namedBlocks'])
+  for(const key of ['integrity','events','medals','passport','battleTree','pokeathlon','pokewalker','field','namedBlocks','location'])
    if(e[key]&&typeof e[key]==='object'&&!Array.isArray(e[key]))result[key]=JSON.parse(JSON.stringify(e[key]));
   return result;
  }
@@ -53,6 +53,9 @@
   if(root.PokemonBDSPFlags&&['BD','SP'].includes(parsed.game)&&!parsed.events){
    const extra=root.PokemonBDSPFlags.read(bytes);
    if(extra)parsed={...parsed,events:extra.events,badgesTotal:parsed.badgesTotal??extra.badgesTotal,gameClear:parsed.gameClear??extra.gameClear};
+  }
+  if(root.PokemonDSLocation&&!parsed.location){
+   try{const location=root.PokemonDSLocation.read(bytes,parsed.game,parsed.saveBase);if(location)parsed={...parsed,location};}catch{}
   }
   if(root.PokemonGen3Field&&bytes.length>=0x10000&&bytes.length<=0x20040){
    // Lectura de campo complementaria (ubicación, equipo, cajas, banderas). Si falla, el diagnóstico sigue igual.

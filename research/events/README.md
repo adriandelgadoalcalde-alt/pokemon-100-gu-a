@@ -99,3 +99,28 @@ Confianza: **documentado por la comunidad en PKHeX**, sin script fuente. Es infe
 - Secretos y desafíos:
   - Rojo, los dos Snorlax, los pájaros y Mewtwo (encuentro resuelto por bandera de desaparición), el Dojo, los regalos y las cinco técnicas secretas;
   - los **153 títulos de Entrenador Maestro**, contados solo en los índices 1 a 153.
+
+## Dónde estás: HeartGold/SoulSilver y Platino
+
+| | HeartGold/SoulSilver | Platino |
+| --- | --- | --- |
+| Estructura con la posición | `LocalFieldData.currentPosition` | `FieldOverworldState.player` |
+| Qué lo precede | `SaveVarsFlags` | `SaveVarsFlags` y el Poké-reloj |
+| Desplazamiento | `0x1234` | `0x1280` |
+
+- Los desplazamientos salen de los tamaños de pret, con 4 bytes de suma por bloque.
+- La posición contiene mapa, salida, x, y y dirección.
+- Copia activa:
+  - Platino: contadores del pie y CRC sobre el bloque menos 0x14 bytes, como en `SAV4.cs`. Coincide en la partida cedida.
+  - HGSS: la del lector ligero.
+- `scripts/derive-ds-maps.py` traduce el número de mapa a su nombre oficial en español:
+  - HGSS: `MAPSEC` desde las cabeceras de pokeheartgold.
+  - Platino: `locationName` de cada `header.json`, con el índice del banco de nombres de lugar.
+  - En ambos casos, los textos de PKHeX.
+  - El generador comprueba varios nombres conocidos.
+- Si el número de mapa no existe, no se muestra ninguna ubicación.
+- Contraste:
+  - HeartGold público: Carpa Pokéathlon.
+  - HGSS preparadas: Ciudad Cerezo.
+  - Platino público: Pueblo Arena.
+  - Platino cedido: Ciudad Vetusta. Su entrada previa, una casa de la misma ciudad, es coherente con esa posición.

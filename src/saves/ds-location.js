@@ -1,0 +1,31 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+/* Posición actual del jugador en HeartGold/SoulSilver y Platino (solo lectura).
+   HGSS: LocalFieldData.currentPosition tras SaveVarsFlags (0xDE4 + 0x44C + 4 de suma) = 0x1234 (pokeheartgold).
+   Platino: FieldOverworldState.player tras SaveVarsFlags y Poké-reloj = 0x1280 (pokeplatinum).
+   La copia activa se elige como en hgss-integrity.js: contadores del pie y suma CRC válida. */
+(function(root){
+ 'use strict';
+ // footer: bytes del pie excluidos de la suma (HGSS 0x10; Platino 0x14, como SAV4.cs de PKHeX); contadores en end-0x14 y end-0x10.
+ const LAYOUT={HEARTGOLD:{size:0xF628,pos:0x1234,maps:'HGSS',footer:0x10},SOULSILVER:{size:0xF628,pos:0x1234,maps:'HGSS',footer:0x10},PLATINUM:{size:0xCF2C,pos:0x1280,maps:'PT',footer:0x14}};
+ const data=()=>root.PokemonDSMaps||(typeof module==='object'&&module.exports?require('./ds-maps-data.js'):null);
+ const integrity=()=>root.PokemonHGSSIntegrity||(typeof module==='object'&&module.exports?require('./hgss-integrity.js'):null);
+ function activeBase(bytes,size,footer){
+  const I=integrity();if(!I||bytes.length!==0x80000)return null;
+  const v=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength),u32=o=>v.getUint32(o,true);
+  const c=[0,0x40000].map(base=>{const end=base+size;
+   const ok=u32(end-12)===size&&I.crc16(bytes.subarray(base,end-footer))===v.getUint16(end-2,true);
+   return {base,ok,major:u32(end-20),minor:u32(end-16)};}).filter(x=>x.ok);
+  if(!c.length)return null;
+  return c.reduce((a,b)=>(I.counterOrder(a.major,b.major)||I.counterOrder(a.minor,b.minor))<0?b:a).base;
+ }
+ function read(bytes,game,base){
+  const L=LAYOUT[game],D=data();if(!L||!D||!(bytes instanceof Uint8Array))return null;
+  const b=Number.isInteger(base)?base:activeBase(bytes,L.size,L.footer);if(b===null||b===undefined)return null;
+  const v=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength),o=b+L.pos;
+  const mapId=v.getInt32(o,true),entry=D[L.maps].maps[mapId];
+  if(!entry)return null;
+  return {mapId,map:entry[1],name:D[L.maps].names[entry[0]],x:v.getInt32(o+8,true),y:v.getInt32(o+12,true),source:'ds-location'};
+ }
+ const api={read,LAYOUT};
+ if(typeof module==='object'&&module.exports)module.exports=api;else root.PokemonDSLocation=api;
+})(globalThis);

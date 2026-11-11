@@ -107,3 +107,16 @@ test("Let's Go: gimnasios como historia, capturas y títulos de Maestro contados
  assert.equal(b.secrets.find(s=>s.id==='pkhex.lgpe.snorlax').status,'en curso');
  assert.equal(b.story.next.id,'LETGOP-02');
 });
+
+test('posición DS: HGSS y Platino eligen la copia válida y descartan mapas inexistentes',()=>{
+ const L=require('../src/saves/ds-location.js'),I=require('../src/saves/hgss-integrity.js'),maps=require('../src/saves/ds-maps-data.js');
+ const bytes=new Uint8Array(0x80000),v=new DataView(bytes.buffer);
+ const write=(base,major,map,x,y)=>{const size=0xCF2C,end=base+size;v.setInt32(base+0x1280,map,true);v.setInt32(base+0x1288,x,true);v.setInt32(base+0x128C,y,true);
+  v.setUint32(end-20,major,true);v.setUint32(end-12,size,true);v.setUint16(end-2,I.crc16(bytes.subarray(base,end-0x14)),true);};
+ write(0,5,65,10,20);write(0x40000,9,418,1,2);
+ assert.equal(L.read(bytes,'PLATINUM').name,maps.PT.names[maps.PT.maps[418][0]]);
+ bytes[0x40010]^=1;assert.equal(L.read(bytes,'PLATINUM').map,'ETERNA_CITY');
+ v.setInt32(0x1280,99999,true);v.setUint16(0xCF2C-2,I.crc16(bytes.subarray(0,0xCF2C-0x14)),true);
+ assert.equal(L.read(bytes,'PLATINUM'),null);
+ assert.equal(maps.HGSS.names[maps.HGSS.maps[280][0]],'Carpa Pokéathlon');
+});
