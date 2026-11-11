@@ -91,6 +91,11 @@ def build():
             entry['state'][verb] = index
             entry['labels'][verb] = clean
             flags[f'pkhex:{index}'] = index
+        if family == 'BDSP':
+            for index, kind, text in parse(PKHEX / 'Resources' / 'text' / 'script' / 'gen8' / 'system_bdsp_en.txt'):
+                if text.strip() == 'SYS_FLAG_GAME_CLEAR':
+                    hall = 4000 + index  # banderas de sistema tras las 4000 normales (src/saves/bdsp-flags.js)
+                    flags[f'pkhex:{hall}'] = hall
         if hall is not None:
             story[family] = [{'mission': league, 'flag': f'pkhex:{hall}', 'label': 'Salón de la Fama registrado'}]
         for subject, entry in by_subject.items():

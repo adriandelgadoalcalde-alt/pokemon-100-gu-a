@@ -50,6 +50,10 @@
    if(!parsed.gameCandidates.includes(options.selectedGame))throw Error('El formato no distingue la edición. Selecciona primero una edición de su familia en el Atlas e importa de nuevo.');
    parsed={...parsed,game:options.selectedGame,editionIdentification:'selected-in-atlas'};
   }
+  if(root.PokemonBDSPFlags&&['BD','SP'].includes(parsed.game)&&!parsed.events){
+   const extra=root.PokemonBDSPFlags.read(bytes);
+   if(extra)parsed={...parsed,events:extra.events,badgesTotal:parsed.badgesTotal??extra.badgesTotal,gameClear:parsed.gameClear??extra.gameClear};
+  }
   if(root.PokemonGen3Field&&bytes.length>=0x10000&&bytes.length<=0x20040){
    // Lectura de campo complementaria (ubicación, equipo, cajas, banderas). Si falla, el diagnóstico sigue igual.
    try{const field=root.PokemonGen3Field.read(bytes);if(field.games.includes(parsed.game))parsed={...parsed,field};}catch{}

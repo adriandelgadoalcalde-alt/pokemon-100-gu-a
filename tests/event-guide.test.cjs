@@ -85,3 +85,11 @@ test('PKHeX: las exclusivas siguen la etiqueta de versión y la historia parcial
  const r2=route.nextMission(game,{events:{activeFlags:[B.flags[hall]],work:[]},caught:[]},()=>false,()=>false);
  assert.equal(r2.mission.id,'BLACK-10');
 });
+
+test('BDSP: banderas int32, medallas y Liga desde las banderas de sistema; valores raros se descartan',()=>{
+ const B=require('../src/saves/bdsp-flags.js'),bytes=new Uint8Array(0x4+5500*4+16),v=new DataView(bytes.buffer);
+ const sys=i=>v.setInt32(0x4+(500+4000+i)*4,1,true);[124,125,126].forEach(sys);sys(5);v.setInt32(0x4+(500+1283)*4,1,true);
+ const r=B.read(bytes);assert.equal(r.badgesTotal,3);assert.equal(r.gameClear,true);assert.ok(r.events.activeFlags.includes(1283));
+ const a=guide.analyze({events:r.events,caught:[]},'BD');assert.equal(a.secrets.find(s=>s.title==='Regirock').status,'completado');
+ v.setInt32(0x4+(500+10)*4,7,true);assert.equal(B.read(bytes),null);
+});
