@@ -46,3 +46,21 @@ Diamante y Perla no tienen todavía banderas con nombre en pokediamond. No se re
 - En Oro/Plata/Cristal, `EVENT_FOUGHT_*` se activa al empezar el encuentro: consumido, no necesariamente capturado.
 - Las ediciones japonesas y coreanas de Game Boy se excluyen: pret describe las internacionales.
 - Contraste con partidas públicas: un Cristal completo marca todo salvo el Tyrogue de Kiyo, un Cristal temprano indica la Medalla Céfiro y las partidas preparadas no muestran eventos.
+
+## Generaciones IV a VIII sin decompilación con nombres: listas de PKHeX
+
+`scripts/derive-pkhex-pack.py` usa las listas que PKHeX.Core incluye para su editor de eventos (`Resources/text/script/genN/flags_*_en.txt`, revisión fijada). Cubre Diamante/Perla, Negro/Blanco, Negro 2/Blanco 2, X/Y, Rubí Omega/Zafiro Alfa, Sol/Luna, Ultrasol/Ultraluna y BDSP.
+
+- Toma las capturas, derrotas y regalos de legendarios y encuentros únicos, más la entrada al Salón de la Fama.
+- Las exclusivas se separan por las etiquetas de versión de la propia lista, por ejemplo `(OR)` y `(AS)`.
+- Los títulos usan los nombres oficiales en español de PKHeX.
+
+Confianza: **documentado por la comunidad en PKHeX**, sin script fuente. Es inferior a la de las decompilaciones y la interfaz lo indica.
+
+- La historia de estos paquetes solo contiene el Salón de la Fama. No se usa para recomendar la Liga desde el principio, sino para pasar al postgame cuando consta.
+- Los pasos remiten al recorrido de postgame de cada edición; no se inventan detalles.
+- Contraste:
+  - Negro 2 cedido por el propietario: 21 de 21 completados y Salón de la Fama registrado.
+  - Un Sol público natural: 6 de 6.
+  - Las partidas preparadas no muestran eventos.
+- BDSP aún no se evalúa: el motor del navegador no exporta sus banderas. Hay que recompilarlo con .NET, que no está disponible en este entorno.

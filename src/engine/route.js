@@ -13,11 +13,11 @@
   if(g3&&!g3.mismatch){
    const where=g3.location?.name?` Tu partida está guardada en ${g3.location.name}.`:'';
    const last=[...g3.story.rows].reverse().find(r=>r.state!=='pending');
-   if(g3.story.next){
+   if(g3.story.next&&!g3.storyPartial){
     const mission=pending.find(m=>m.id===g3.story.next.id)||game.missions.find(m=>m.id===g3.story.next.id);
     const post=game.missions.indexOf(mission)>game.missions.findIndex(x=>x.id===game.mainStoryLastMission)?' Se prioriza contenido posterior sin marcar por hechas las escenas anteriores.':'';
     if(mission)return {mission,reason:`Según los datos del guardado${last?', último hito: '+last.label:''}. Falta: ${g3.story.next.label}.${where}${post}`};
-   }else{
+   }else if(!g3.story.next){
     const after=pending.find(m=>game.missions.indexOf(m)>game.missions.findIndex(x=>x.id===game.mainStoryLastMission));
     if(after)return {mission:after,reason:`El guardado registra la Liga superada.${where} Consulta también «Secretos y eventos» en el diagnóstico.`};
    }

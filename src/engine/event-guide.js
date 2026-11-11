@@ -7,7 +7,7 @@
  'use strict';
  const isNode=typeof module==='object'&&module.exports;
  function packs(){
-  if(isNode)return ['gen3','gen12','gen4'].map(n=>{try{return require('../saves/'+n+'-data.js');}catch{return null;}}).filter(Boolean);
+  if(isNode)return ['gen3','gen12','gen4','pkhex'].map(n=>{try{return require('../saves/'+n+'-data.js');}catch{return null;}}).filter(Boolean);
   return [root.PokemonGen3Data,...(root.PokemonEventPacks||[])].filter(Boolean);
  }
  function locate(game){
@@ -51,7 +51,7 @@
   if(Number.isInteger(e.languageId)&&(where.pack.excludeLanguages||[]).includes(e.languageId))return null;
   if(src.kind==='field'&&e.field.family&&e.field.family!==where.family)return {mismatch:true};
   const result=evaluate(where.pack,where.family,game,src.flags,src.vars,e.caught,{badges:e.badgesTotal});
-  return {...result,family:where.family,location:src.location,sourceKind:src.kind,revisions:where.pack.revisions,
+  return {...result,storyPartial:Boolean(where.pack.storyPartial),family:where.family,location:src.location,sourceKind:src.kind,revisions:where.pack.revisions,
    confidence:where.pack.confidence||'documentado en código'};
  }
  const api={analyze,evaluate,locate};
