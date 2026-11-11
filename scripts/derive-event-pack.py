@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PRET = ROOT / '.cache' / 'pret'
-FLAG_SET = r'(?:SetFlag|setflag|FlagSet|SetScriptFlag|setevent|SetEvent|SetEventFlag|VarsFlags_SetFlag)'
+FLAG_SET = r'(?:SetFlag|setflag|FlagSet|SetScriptFlag|setevent|SetEvent|SetEventFlag|VarsFlags_SetFlag|SetEventReuseHL|SetEventReuseA|SetEventAfterBranchReuseHL|SetEvents|trainer)'
 VAR_SET = r'(?:SetVar|setvar|VarSet|SetScriptVar|AddVar|addvar|CopyVar|TrySetVarToValue|VarsFlags_SetVar)'
 
 
@@ -35,6 +35,37 @@ def c_defines(repo):
             match = re.match(r'\s*#define\s+([A-Za-z_][A-Za-z0-9_]*)\s+(.+?)\s*$', line.split('//')[0])
             if match:
                 table.setdefault(match.group(1), match.group(2))
+    return table
+
+
+def gb_constants(repo, relative):
+    """const_def / const / const_skip / const_next de las decompilaciones de Game Boy."""
+    table, counter, step = {}, 0, 1
+    def number(text):
+        expr = re.sub(r'\$([0-9A-Fa-f]+)', lambda m: str(int(m.group(1), 16)), text)
+        if not re.fullmatch(r'[\d\s+\-*()]+', expr):
+            fail('expresión no admitida en ' + relative + ': ' + text)
+        return int(eval(expr, {'__builtins__': {}}))
+    for raw in (PRET / repo / relative).read_text(encoding='utf-8').splitlines():
+        line = raw.split(';')[0].strip()
+        parts = line.split(None, 1)
+        if not parts:
+            continue
+        args = [a.strip() for a in parts[1].split(',')] if len(parts) > 1 else []
+        parts = [parts[0], *args]
+        if parts[0] == 'const_def':
+            counter = number(parts[1]) if len(parts) > 1 else 0
+            step = number(parts[2]) if len(parts) > 2 else 1
+        elif parts[0] == 'const':
+            table[parts[1]] = str(counter)
+            counter += step
+        elif parts[0] == 'const_skip':
+            counter += (number(parts[1]) if len(parts) > 1 else 1) * step
+        elif parts[0] == 'const_next':
+            target = number(parts[1])
+            if target < counter:
+                fail(f'const_next retrocede en {relative}')
+            counter = target
     return table
 
 
@@ -105,6 +136,7 @@ def collect(spec, family):
     def take(c):
         if c.get('flag'):
             flags.add(c['flag'])
+        flags.update(c.get('flags', []))
         if c.get('var'):
             variables.add(c['var'])
     for row in spec['story'].get(family, []):
@@ -117,6 +149,7 @@ def collect(spec, family):
             if cond.get(key):
                 flags.add(cond[key])
         flags.update(cond.get('doneAll', []))
+        flags.update(cond.get('doneAny', []))
         flags.update(cond.get('lost', []))
         if cond.get('doneVar'):
             take(cond['doneVar'])
@@ -133,6 +166,8 @@ def build(pack):
         table = c_defines(source['repo'])
         if source['kind'] == 'enumlist':
             table.update(enum_list(source['repo'], source['list']))
+        elif source['kind'] == 'gbasm':
+            table = gb_constants(source['repo'], source['list'])
         elif source['kind'] != 'c':
             fail('tipo de fuente no admitido: ' + source['kind'])
         def named(cond):
@@ -153,6 +188,8 @@ def build(pack):
             flags[name], where[name] = value, found
         for name in sorted(wanted_vars):
             value = evaluate(name, table)
+            if source['kind'] == 'gbasm':
+                fail('las variables no se admiten en Game Boy: ' + name)
             if value is None or value < 0x4000:
                 fail(f'{name} no es una variable guardada de {source["repo"]}')
             found = sites(source['repo'], name, VAR_SET)
@@ -168,6 +205,7 @@ def build(pack):
                     named(c)
         families[family] = {'flags': flags, 'vars': variables, 'sources': where}
     data = {'pack': pack, 'confidence': spec.get('confidence', 'documentado en código'),
+            'excludeLanguages': spec.get('excludeLanguages', []), 'excludeReason': spec.get('excludeReason', ''),
             'revisions': {s['repo']: s['rev'] for s in spec['repos'].values()},
             'gameFamilies': spec['families'], 'families': families, 'story': spec['story'], 'secrets': spec['secrets']}
     body = json.dumps(data, ensure_ascii=False, separators=(',', ':'), sort_keys=True)

@@ -1,0 +1,1069 @@
+{
+  "about": "Hitos y secretos de la primera y segunda generación a partir de los eventos con nombre de pret.",
+  "pack": "gen12",
+  "confidence": "documentado en código",
+  "repos": {
+    "RB": {
+      "repo": "pokered",
+      "rev": "0dbf95cd12f5b1511c62ce69efe283000f780a8f",
+      "kind": "gbasm",
+      "list": "constants/event_constants.asm"
+    },
+    "Y": {
+      "repo": "pokeyellow",
+      "rev": "b452f2ab07185075140061c5084ab866d5e4a794",
+      "kind": "gbasm",
+      "list": "constants/event_constants.asm"
+    },
+    "GS": {
+      "repo": "pokegold",
+      "rev": "f2cde36f49b994c143bfd18582182302fdc76492",
+      "kind": "gbasm",
+      "list": "constants/event_flags.asm"
+    },
+    "C": {
+      "repo": "pokecrystal",
+      "rev": "3c813b0b4d82b39bf62185aceffb76fd6026c70b",
+      "kind": "gbasm",
+      "list": "constants/event_flags.asm"
+    }
+  },
+  "families": {
+    "RB": [
+      "RED",
+      "BLUE"
+    ],
+    "Y": [
+      "YELLOW"
+    ],
+    "GS": [
+      "GOLD",
+      "SILVER"
+    ],
+    "C": [
+      "CRYSTAL"
+    ]
+  },
+  "story": {
+    "RB": [
+      {
+        "mission": "01",
+        "flag": "EVENT_GOT_POKEDEX",
+        "label": "Pokédex recibida del Prof. Oak"
+      },
+      {
+        "mission": "02",
+        "flag": "EVENT_BEAT_BROCK",
+        "label": "Medalla Roca"
+      },
+      {
+        "mission": "03",
+        "flag": "EVENT_BEAT_MT_MOON_EXIT_SUPER_NERD",
+        "label": "Fósil del Mt. Moon"
+      },
+      {
+        "mission": "04",
+        "flag": "EVENT_BEAT_MISTY",
+        "label": "Medalla Cascada"
+      },
+      {
+        "mission": "05",
+        "flag": "EVENT_GOT_HM01",
+        "label": "MO01 Corte del capitán del S.S. Anne"
+      },
+      {
+        "mission": "06",
+        "flag": "EVENT_BEAT_LT_SURGE",
+        "label": "Medalla Trueno"
+      },
+      {
+        "mission": "08",
+        "flag": "EVENT_BEAT_ERIKA",
+        "label": "Medalla Arcoíris"
+      },
+      {
+        "mission": "09",
+        "flag": "EVENT_GOT_POKE_FLUTE",
+        "label": "Poké Flauta del Sr. Fuji"
+      },
+      {
+        "mission": "10",
+        "flag": "EVENT_BEAT_KOGA",
+        "label": "Medalla Alma"
+      },
+      {
+        "mission": "11",
+        "flag": "EVENT_BEAT_SABRINA",
+        "label": "Medalla Pantano"
+      },
+      {
+        "mission": "12",
+        "flag": "EVENT_BEAT_BLAINE",
+        "label": "Medalla Volcán"
+      },
+      {
+        "mission": "13",
+        "flag": "EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI",
+        "label": "Medalla Tierra"
+      },
+      {
+        "mission": "14",
+        "flag": "EVENT_BEAT_CHAMPION_RIVAL",
+        "label": "Campeón de la Liga"
+      }
+    ],
+    "Y": [
+      {
+        "mission": "01",
+        "flag": "EVENT_GOT_POKEDEX",
+        "label": "Pokédex recibida del Prof. Oak"
+      },
+      {
+        "mission": "02",
+        "flag": "EVENT_BEAT_BROCK",
+        "label": "Medalla Roca"
+      },
+      {
+        "mission": "03",
+        "flag": "EVENT_BEAT_MT_MOON_EXIT_SUPER_NERD",
+        "label": "Fósil del Mt. Moon"
+      },
+      {
+        "mission": "04",
+        "flag": "EVENT_BEAT_MISTY",
+        "label": "Medalla Cascada"
+      },
+      {
+        "mission": "05",
+        "flag": "EVENT_GOT_HM01",
+        "label": "MO01 Corte del capitán del S.S. Anne"
+      },
+      {
+        "mission": "06",
+        "flag": "EVENT_BEAT_LT_SURGE",
+        "label": "Medalla Trueno"
+      },
+      {
+        "mission": "08",
+        "flag": "EVENT_BEAT_ERIKA",
+        "label": "Medalla Arcoíris"
+      },
+      {
+        "mission": "09",
+        "flag": "EVENT_GOT_POKE_FLUTE",
+        "label": "Poké Flauta del Sr. Fuji"
+      },
+      {
+        "mission": "10",
+        "flag": "EVENT_BEAT_KOGA",
+        "label": "Medalla Alma"
+      },
+      {
+        "mission": "11",
+        "flag": "EVENT_BEAT_SABRINA",
+        "label": "Medalla Pantano"
+      },
+      {
+        "mission": "12",
+        "flag": "EVENT_BEAT_BLAINE",
+        "label": "Medalla Volcán"
+      },
+      {
+        "mission": "13",
+        "flag": "EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI",
+        "label": "Medalla Tierra"
+      },
+      {
+        "mission": "14",
+        "flag": "EVENT_BEAT_CHAMPION_RIVAL",
+        "label": "Campeón de la Liga"
+      }
+    ],
+    "GS": [
+      {
+        "mission": "01",
+        "flag": "EVENT_GOT_A_POKEMON_FROM_ELM",
+        "label": "Inicial del Prof. Elm"
+      },
+      {
+        "mission": "02",
+        "flag": "EVENT_BEAT_FALKNER",
+        "label": "Medalla Céfiro"
+      },
+      {
+        "mission": "03",
+        "flag": "EVENT_BEAT_BUGSY",
+        "label": "Medalla Colmena"
+      },
+      {
+        "mission": "04",
+        "flag": "EVENT_BEAT_WHITNEY",
+        "label": "Medalla Planicie"
+      },
+      {
+        "mission": "05",
+        "flag": "EVENT_BEAT_MORTY",
+        "label": "Medalla Niebla"
+      },
+      {
+        "mission": "06",
+        "flags": [
+          "EVENT_BEAT_CHUCK",
+          "EVENT_BEAT_JASMINE"
+        ],
+        "label": "Medallas Tormenta y Mineral"
+      },
+      {
+        "mission": "07",
+        "flag": "EVENT_BEAT_PRYCE",
+        "label": "Medalla Glaciar"
+      },
+      {
+        "mission": "08",
+        "flag": "EVENT_BEAT_CLAIR",
+        "label": "Medalla Dragón"
+      },
+      {
+        "mission": "09",
+        "flag": "EVENT_BEAT_ELITE_FOUR",
+        "label": "Liga de Johto superada"
+      },
+      {
+        "mission": "10",
+        "flag": "EVENT_GOT_SS_TICKET_FROM_ELM",
+        "label": "Ticket Barco para Kanto"
+      },
+      {
+        "mission": "11",
+        "flag": "EVENT_RESTORED_POWER_TO_KANTO",
+        "label": "Central Energía restaurada"
+      },
+      {
+        "mission": "12",
+        "flags": [
+          "EVENT_BEAT_BROCK",
+          "EVENT_BEAT_MISTY",
+          "EVENT_BEAT_LTSURGE",
+          "EVENT_BEAT_ERIKA",
+          "EVENT_BEAT_JANINE",
+          "EVENT_BEAT_SABRINA",
+          "EVENT_BEAT_BLAINE",
+          "EVENT_BEAT_BLUE"
+        ],
+        "label": "Ocho medallas de Kanto"
+      }
+    ],
+    "C": [
+      {
+        "mission": "01",
+        "flag": "EVENT_GOT_A_POKEMON_FROM_ELM",
+        "label": "Inicial del Prof. Elm"
+      },
+      {
+        "mission": "02",
+        "flag": "EVENT_BEAT_FALKNER",
+        "label": "Medalla Céfiro"
+      },
+      {
+        "mission": "03",
+        "flag": "EVENT_BEAT_BUGSY",
+        "label": "Medalla Colmena"
+      },
+      {
+        "mission": "04",
+        "flag": "EVENT_BEAT_WHITNEY",
+        "label": "Medalla Planicie"
+      },
+      {
+        "mission": "05",
+        "flag": "EVENT_BEAT_MORTY",
+        "label": "Medalla Niebla"
+      },
+      {
+        "mission": "06",
+        "flags": [
+          "EVENT_BEAT_CHUCK",
+          "EVENT_BEAT_JASMINE"
+        ],
+        "label": "Medallas Tormenta y Mineral"
+      },
+      {
+        "mission": "07",
+        "flag": "EVENT_BEAT_PRYCE",
+        "label": "Medalla Glaciar"
+      },
+      {
+        "mission": "08",
+        "flag": "EVENT_BEAT_CLAIR",
+        "label": "Medalla Dragón"
+      },
+      {
+        "mission": "09",
+        "flag": "EVENT_BEAT_ELITE_FOUR",
+        "label": "Liga de Johto superada"
+      },
+      {
+        "mission": "10",
+        "flag": "EVENT_GOT_SS_TICKET_FROM_ELM",
+        "label": "Ticket Barco para Kanto"
+      },
+      {
+        "mission": "11",
+        "flag": "EVENT_RESTORED_POWER_TO_KANTO",
+        "label": "Central Energía restaurada"
+      },
+      {
+        "mission": "12",
+        "flags": [
+          "EVENT_BEAT_BROCK",
+          "EVENT_BEAT_MISTY",
+          "EVENT_BEAT_LTSURGE",
+          "EVENT_BEAT_ERIKA",
+          "EVENT_BEAT_JANINE",
+          "EVENT_BEAT_SABRINA",
+          "EVENT_BEAT_BLAINE",
+          "EVENT_BEAT_BLUE"
+        ],
+        "label": "Ocho medallas de Kanto"
+      }
+    ]
+  },
+  "secrets": [
+    {
+      "id": "gen1.zapdos",
+      "families": [
+        "RB",
+        "Y"
+      ],
+      "category": "Legendario",
+      "species": [
+        145
+      ],
+      "title": "Zapdos en la Central Energía",
+      "placeName": {
+        "RB": "Central Energía",
+        "Y": "Central Energía"
+      },
+      "requires": "Surf.",
+      "steps": [
+        "Surfea por el río de la Ruta 10, al sur del Centro Pokémon, hasta la Central Energía.",
+        "Zapdos (nivel 50) espera al fondo; algunos objetos del suelo son Voltorb y Electrode."
+      ],
+      "conditions": {
+        "RB": {
+          "done": "EVENT_BEAT_ZAPDOS",
+          "meaning": "El combate ya se produjo: el script de combate marca esta bandera y el Pokémon deja de estar en su sitio."
+        },
+        "Y": {
+          "done": "EVENT_BEAT_ZAPDOS",
+          "meaning": "El combate ya se produjo: el script de combate marca esta bandera y el Pokémon deja de estar en su sitio."
+        }
+      }
+    },
+    {
+      "id": "gen1.articuno",
+      "families": [
+        "RB",
+        "Y"
+      ],
+      "category": "Legendario",
+      "species": [
+        144
+      ],
+      "title": "Articuno en las Islas Espuma",
+      "placeName": {
+        "RB": "Islas Espuma",
+        "Y": "Islas Espuma"
+      },
+      "requires": "Surf y Fuerza.",
+      "steps": [
+        "Empuja rocas con Fuerza a los agujeros para frenar las corrientes del sótano.",
+        "Articuno (nivel 50) está en el sótano más profundo."
+      ],
+      "conditions": {
+        "RB": {
+          "done": "EVENT_BEAT_ARTICUNO",
+          "meaning": "El combate ya se produjo: el script de combate marca esta bandera y el Pokémon deja de estar en su sitio."
+        },
+        "Y": {
+          "done": "EVENT_BEAT_ARTICUNO",
+          "meaning": "El combate ya se produjo: el script de combate marca esta bandera y el Pokémon deja de estar en su sitio."
+        }
+      }
+    },
+    {
+      "id": "gen1.moltres",
+      "families": [
+        "RB",
+        "Y"
+      ],
+      "category": "Legendario",
+      "species": [
+        146
+      ],
+      "title": "Moltres en la Calle Victoria",
+      "placeName": {
+        "RB": "Calle Victoria",
+        "Y": "Calle Victoria"
+      },
+      "requires": "Fuerza y las ocho medallas.",
+      "steps": [
+        "En la segunda planta de la Calle Victoria, Moltres (nivel 50) bloquea un pasillo lateral."
+      ],
+      "conditions": {
+        "RB": {
+          "done": "EVENT_BEAT_MOLTRES",
+          "meaning": "El combate ya se produjo: el script de combate marca esta bandera y el Pokémon deja de estar en su sitio."
+        },
+        "Y": {
+          "done": "EVENT_BEAT_MOLTRES",
+          "meaning": "El combate ya se produjo: el script de combate marca esta bandera y el Pokémon deja de estar en su sitio."
+        }
+      }
+    },
+    {
+      "id": "gen1.mewtwo",
+      "families": [
+        "RB",
+        "Y"
+      ],
+      "category": "Legendario",
+      "species": [
+        150
+      ],
+      "title": "Mewtwo en la Cueva Celeste",
+      "placeName": {
+        "RB": "Cueva Celeste",
+        "Y": "Cueva Celeste"
+      },
+      "requires": "Ser Campeón y Surf.",
+      "steps": [
+        "Surfea al norte de Ciudad Celeste hasta la cueva y baja al sótano: Mewtwo (nivel 70)."
+      ],
+      "conditions": {
+        "RB": {
+          "done": "EVENT_BEAT_MEWTWO",
+          "meaning": "El combate ya se produjo: el script de combate marca esta bandera y el Pokémon deja de estar en su sitio."
+        },
+        "Y": {
+          "done": "EVENT_BEAT_MEWTWO",
+          "meaning": "El combate ya se produjo: el script de combate marca esta bandera y el Pokémon deja de estar en su sitio."
+        }
+      }
+    },
+    {
+      "id": "gen1.snorlax",
+      "families": [
+        "RB",
+        "Y"
+      ],
+      "category": "Encuentro único",
+      "species": [
+        143
+      ],
+      "title": "Los dos Snorlax de las Rutas 12 y 16",
+      "placeName": {
+        "RB": "Ruta 12",
+        "Y": "Ruta 12"
+      },
+      "requires": "Poké Flauta.",
+      "steps": [
+        "Usa la Poké Flauta junto a cada Snorlax (nivel 30): uno bloquea la Ruta 12 y otro la Ruta 16."
+      ],
+      "conditions": {
+        "RB": {
+          "done": "EVENT_BEAT_ROUTE12_SNORLAX",
+          "doneAlso": "EVENT_BEAT_ROUTE16_SNORLAX",
+          "meaning": "Cada Snorlax ya no bloquea el camino."
+        },
+        "Y": {
+          "done": "EVENT_BEAT_ROUTE12_SNORLAX",
+          "doneAlso": "EVENT_BEAT_ROUTE16_SNORLAX",
+          "meaning": "Cada Snorlax ya no bloquea el camino."
+        }
+      }
+    },
+    {
+      "id": "gen1.dojo",
+      "families": [
+        "RB",
+        "Y"
+      ],
+      "category": "Regalo",
+      "species": [
+        106,
+        107
+      ],
+      "title": "Hitmonlee o Hitmonchan del Dojo",
+      "placeName": {
+        "RB": "Ciudad Azafrán",
+        "Y": "Ciudad Azafrán"
+      },
+      "requires": "Vencer al Maestro Kárate del Dojo de Ciudad Azafrán.",
+      "steps": [
+        "Vence a los karatecas del Dojo y elige una de las dos Pokéball del fondo. Solo puedes llevarte una."
+      ],
+      "conditions": {
+        "RB": {
+          "doneAny": [
+            "EVENT_GOT_HITMONLEE",
+            "EVENT_GOT_HITMONCHAN"
+          ],
+          "meaning": "Regalo elegido."
+        },
+        "Y": {
+          "doneAny": [
+            "EVENT_GOT_HITMONLEE",
+            "EVENT_GOT_HITMONCHAN"
+          ],
+          "meaning": "Regalo elegido."
+        }
+      }
+    },
+    {
+      "id": "gen1.fossil",
+      "families": [
+        "RB",
+        "Y"
+      ],
+      "category": "Elección",
+      "species": [
+        138,
+        140
+      ],
+      "title": "Fósil del Mt. Moon",
+      "placeName": {
+        "RB": "Mt. Moon",
+        "Y": "Mt. Moon"
+      },
+      "requires": "Vencer al Supernecio del final del Mt. Moon.",
+      "steps": [
+        "Elige el Fósil Domo o el Fósil Hélix; el otro no vuelve en esta partida.",
+        "Llévalo al Laboratorio de Isla Canela para revivirlo."
+      ],
+      "conditions": {
+        "RB": {
+          "doneAny": [
+            "EVENT_GOT_DOME_FOSSIL",
+            "EVENT_GOT_HELIX_FOSSIL"
+          ],
+          "meaning": "Fósil elegido."
+        },
+        "Y": {
+          "doneAny": [
+            "EVENT_GOT_DOME_FOSSIL",
+            "EVENT_GOT_HELIX_FOSSIL"
+          ],
+          "meaning": "Fósil elegido."
+        }
+      }
+    },
+    {
+      "id": "gen1.masterball",
+      "families": [
+        "RB",
+        "Y"
+      ],
+      "category": "Objeto clave",
+      "title": "Master Ball del presidente de Silph",
+      "placeName": {
+        "RB": "Ciudad Azafrán",
+        "Y": "Ciudad Azafrán"
+      },
+      "requires": "Vencer a Giovanni en Silph S.A.",
+      "steps": [
+        "Tras echar al Team Rocket de Silph S.A., habla con el presidente en la 11.ª planta."
+      ],
+      "conditions": {
+        "RB": {
+          "done": "EVENT_GOT_MASTER_BALL",
+          "meaning": "Regalo recibido."
+        },
+        "Y": {
+          "done": "EVENT_GOT_MASTER_BALL",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "gen1.y.bulbasaur",
+      "families": [
+        "Y"
+      ],
+      "category": "Regalo",
+      "species": [
+        1
+      ],
+      "title": "Bulbasaur de Ciudad Celeste",
+      "placeName": {
+        "Y": "Ciudad Celeste"
+      },
+      "requires": "Que tu Pikachu te tenga cariño.",
+      "steps": [
+        "En la casa junto al Centro Pokémon de Ciudad Celeste, la chica te da Bulbasaur si Pikachu está contento contigo."
+      ],
+      "conditions": {
+        "Y": {
+          "done": "EVENT_GOT_BULBASAUR_IN_CERULEAN",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "gen1.y.charmander",
+      "families": [
+        "Y"
+      ],
+      "category": "Regalo",
+      "species": [
+        4
+      ],
+      "title": "Charmander de la Ruta 24",
+      "placeName": {
+        "Y": "Ruta 24"
+      },
+      "requires": "Llegar a la Ruta 24 (norte de Ciudad Celeste).",
+      "steps": [
+        "Habla con el chico de la Ruta 24, al final del Puente Pepita: te regala a Charmander."
+      ],
+      "conditions": {
+        "Y": {
+          "done": "EVENT_GOT_CHARMANDER_ON_ROUTE_24",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "gen1.y.squirtle",
+      "families": [
+        "Y"
+      ],
+      "category": "Regalo",
+      "species": [
+        7
+      ],
+      "title": "Squirtle de la agente Mara",
+      "placeName": {
+        "Y": "Ciudad Carmín"
+      },
+      "requires": "Medalla Trueno.",
+      "steps": [
+        "Tras la Medalla Trueno, habla con la agente junto al Centro Pokémon de Ciudad Carmín."
+      ],
+      "conditions": {
+        "Y": {
+          "done": "EVENT_GOT_SQUIRTLE_FROM_OFFICER_JENNY",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "gen2.hooh.gs",
+      "families": [
+        "GS"
+      ],
+      "category": "Legendario",
+      "species": [
+        250
+      ],
+      "title": "Ho-Oh en la Torre Hojalata",
+      "placeName": {
+        "GS": "Torre Hojalata"
+      },
+      "requires": "Ala Arcoíris.",
+      "steps": [
+        "Entra en la Torre Hojalata de Ciudad Iris con el Ala Arcoíris y sube hasta la azotea.",
+        "Ho-Oh espera allí. Guarda antes del combate."
+      ],
+      "conditions": {
+        "GS": {
+          "done": "EVENT_FOUGHT_HO_OH",
+          "meaning": "El script marca el encuentro como realizado al iniciarlo: no vuelve a aparecer."
+        }
+      },
+      "mission": "14"
+    },
+    {
+      "id": "gen2.hooh.c",
+      "families": [
+        "C"
+      ],
+      "category": "Legendario",
+      "species": [
+        250
+      ],
+      "title": "Ho-Oh en la Torre Hojalata",
+      "placeName": {
+        "C": "Torre Hojalata"
+      },
+      "requires": "Liga superada y Raikou, Entei y Suicune capturados por ti (con tu ID), en el equipo o en las cajas.",
+      "steps": [
+        "Captura a Raikou, Entei y Suicune; deben tener tu nombre e ID de entrenador.",
+        "Tras la Liga, entra en la planta baja de la Torre Hojalata: el sabio te da el Ala Arcoíris.",
+        "Sube hasta la azotea: Ho-Oh (nivel 60). Guarda antes del combate."
+      ],
+      "conditions": {
+        "C": {
+          "done": "EVENT_FOUGHT_HO_OH",
+          "meaning": "El script marca el encuentro como realizado al iniciarlo: no vuelve a aparecer."
+        }
+      },
+      "mission": "14"
+    },
+    {
+      "id": "gen2.lugia",
+      "families": [
+        "GS",
+        "C"
+      ],
+      "category": "Legendario",
+      "species": [
+        249
+      ],
+      "title": "Lugia en las Islas Remolino",
+      "placeName": {
+        "GS": "Islas Remolino",
+        "C": "Islas Remolino"
+      },
+      "requires": "Ala Plateada, Remolino y Cascada.",
+      "steps": [
+        "Con el Ala Plateada, baja hasta la sala más profunda de las Islas Remolino.",
+        "Lugia espera en el agua. Guarda antes del combate."
+      ],
+      "conditions": {
+        "GS": {
+          "done": "EVENT_FOUGHT_LUGIA",
+          "meaning": "El script marca el encuentro como realizado al iniciarlo: no vuelve a aparecer."
+        },
+        "C": {
+          "done": "EVENT_FOUGHT_LUGIA",
+          "meaning": "El script marca el encuentro como realizado al iniciarlo: no vuelve a aparecer."
+        }
+      },
+      "mission": "14"
+    },
+    {
+      "id": "gen2.beasts",
+      "families": [
+        "GS",
+        "C"
+      ],
+      "category": "Desbloqueo",
+      "species": [
+        243,
+        244,
+        245
+      ],
+      "title": "Despertar a las bestias de la Torre Quemada",
+      "placeName": {
+        "GS": "Torre Quemada",
+        "C": "Torre Quemada"
+      },
+      "requires": "Llegar al sótano de la Torre Quemada (Ciudad Iris).",
+      "steps": [
+        "Baja al sótano de la Torre Quemada y acércate a las tres bestias: huyen y Raikou y Entei empiezan a vagar por Johto."
+      ],
+      "conditions": {
+        "GS": {
+          "done": "EVENT_RELEASED_THE_BEASTS",
+          "meaning": "Bestias liberadas. No indica si ya capturaste a Raikou o Entei: el estado del errante no se interpreta aún."
+        },
+        "C": {
+          "done": "EVENT_RELEASED_THE_BEASTS",
+          "meaning": "Bestias liberadas. No indica si ya capturaste a Raikou o Entei: el estado del errante no se interpreta aún."
+        }
+      }
+    },
+    {
+      "id": "gen2.c.suicune",
+      "families": [
+        "C"
+      ],
+      "category": "Legendario",
+      "species": [
+        245
+      ],
+      "title": "Suicune en la Torre Hojalata",
+      "placeName": {
+        "C": "Torre Hojalata"
+      },
+      "requires": "Campana Clara y seguir a Suicune con Eusine.",
+      "steps": [
+        "Sigue las apariciones de Suicune: Ciudad Orquídea, Ruta 42 y Ruta 36.",
+        "Recibe la Campana Clara en la Torre Radio liberada y vence a Eusine.",
+        "En la Torre Hojalata, Suicune (nivel 40) espera en la planta baja."
+      ],
+      "conditions": {
+        "C": {
+          "done": "EVENT_FOUGHT_SUICUNE",
+          "meaning": "El script marca el encuentro como realizado al iniciarlo: no vuelve a aparecer."
+        }
+      }
+    },
+    {
+      "id": "gen2.snorlax",
+      "families": [
+        "GS",
+        "C"
+      ],
+      "category": "Encuentro único",
+      "species": [
+        143
+      ],
+      "title": "Snorlax de Ciudad Carmín",
+      "placeName": {
+        "GS": "Ciudad Carmín",
+        "C": "Ciudad Carmín"
+      },
+      "requires": "Tarjeta Expansión de la Radio.",
+      "steps": [
+        "Sintoniza la Poké Flauta de la radio junto al Snorlax que bloquea la entrada de la Cueva Diglett: nivel 50."
+      ],
+      "conditions": {
+        "GS": {
+          "done": "EVENT_FOUGHT_SNORLAX",
+          "meaning": "El combate ya se produjo: el script de combate marca esta bandera y el Pokémon deja de estar en su sitio."
+        },
+        "C": {
+          "done": "EVENT_FOUGHT_SNORLAX",
+          "meaning": "El combate ya se produjo: el script de combate marca esta bandera y el Pokémon deja de estar en su sitio."
+        }
+      }
+    },
+    {
+      "id": "gen2.sudowoodo",
+      "families": [
+        "GS",
+        "C"
+      ],
+      "category": "Encuentro único",
+      "species": [
+        185
+      ],
+      "title": "Sudowoodo de la Ruta 36",
+      "placeName": {
+        "GS": "Ruta 36",
+        "C": "Ruta 36"
+      },
+      "requires": "Regadera de la floristería de Ciudad Trigal.",
+      "steps": [
+        "Usa la Regadera sobre el árbol extraño de la Ruta 36: nivel 20."
+      ],
+      "conditions": {
+        "GS": {
+          "done": "EVENT_FOUGHT_SUDOWOODO",
+          "meaning": "El combate ya se produjo: el script de combate marca esta bandera y el Pokémon deja de estar en su sitio."
+        },
+        "C": {
+          "done": "EVENT_FOUGHT_SUDOWOODO",
+          "meaning": "El combate ya se produjo: el script de combate marca esta bandera y el Pokémon deja de estar en su sitio."
+        }
+      },
+      "mission": "05"
+    },
+    {
+      "id": "gen2.togepi",
+      "families": [
+        "GS",
+        "C"
+      ],
+      "category": "Regalo",
+      "species": [
+        175
+      ],
+      "title": "Huevo de Togepi",
+      "placeName": {
+        "GS": "Ciudad Malva",
+        "C": "Ciudad Malva"
+      },
+      "requires": "Entregar el Huevo Misterioso al Prof. Elm.",
+      "steps": [
+        "Tras la Medalla Céfiro, el ayudante de Elm te espera en el Centro Pokémon de Ciudad Malva con un Huevo de Togepi."
+      ],
+      "conditions": {
+        "GS": {
+          "done": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
+          "meaning": "Regalo recibido."
+        },
+        "C": {
+          "done": "EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "gen2.eevee",
+      "families": [
+        "GS",
+        "C"
+      ],
+      "category": "Regalo",
+      "species": [
+        133
+      ],
+      "title": "Eevee de Bill",
+      "placeName": {
+        "GS": "Ciudad Trigal",
+        "C": "Ciudad Trigal"
+      },
+      "requires": "Hablar con Bill en el Centro Pokémon de Ecruteak y visitarle en Ciudad Trigal.",
+      "steps": [
+        "Visita la casa de Bill en Ciudad Trigal y acepta su Eevee."
+      ],
+      "conditions": {
+        "GS": {
+          "done": "EVENT_GOT_EEVEE",
+          "meaning": "Regalo recibido."
+        },
+        "C": {
+          "done": "EVENT_GOT_EEVEE",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "gen2.tyrogue",
+      "families": [
+        "GS",
+        "C"
+      ],
+      "category": "Regalo",
+      "species": [
+        236
+      ],
+      "title": "Tyrogue de Kiyo",
+      "placeName": {
+        "GS": "Monte Mortero",
+        "C": "Monte Mortero"
+      },
+      "requires": "Fuerza y Cascada.",
+      "steps": [
+        "En lo más profundo del Monte Mortero vence al karateka Kiyo: te da un Tyrogue."
+      ],
+      "conditions": {
+        "GS": {
+          "done": "EVENT_GOT_TYROGUE_FROM_KIYO",
+          "meaning": "Regalo recibido."
+        },
+        "C": {
+          "done": "EVENT_GOT_TYROGUE_FROM_KIYO",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "gen2.c.dratini",
+      "families": [
+        "C"
+      ],
+      "category": "Regalo",
+      "species": [
+        147
+      ],
+      "title": "Dratini de la Guarida Dragón",
+      "placeName": {
+        "C": "Guarida Dragón"
+      },
+      "requires": "Medalla Dragón.",
+      "steps": [
+        "Tras la Medalla Dragón, responde bien al examen del Maestro en el santuario de la Guarida Dragón: te regala un Dratini."
+      ],
+      "conditions": {
+        "C": {
+          "done": "EVENT_GOT_DRATINI",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "gen2.c.oddegg",
+      "families": [
+        "C"
+      ],
+      "category": "Regalo",
+      "title": "Huevo Raro de la guardería",
+      "placeName": {
+        "C": "Ruta 34"
+      },
+      "requires": "Ninguno.",
+      "steps": [
+        "Habla con el anciano de la guardería de la Ruta 34 tras recibir la Pokédex: te da el Huevo Raro, que tiene más probabilidad de ser variocolor."
+      ],
+      "conditions": {
+        "C": {
+          "done": "EVENT_GOT_ODD_EGG",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "gen2.c.celebi",
+      "families": [
+        "C"
+      ],
+      "category": "Evento de legado",
+      "legacy": "La GS Ball se distribuyó en Japón; la Consola Virtual de Cristal la da tras la Liga.",
+      "species": [
+        251
+      ],
+      "title": "Celebi del Encinar",
+      "placeName": {
+        "C": "Encinar"
+      },
+      "requires": "GS Ball.",
+      "steps": [
+        "Recibe la GS Ball en el Centro Pokémon de Ciudad Trigal y entrégasela a Kurt en Pueblo Azalea.",
+        "Al día siguiente, recógela y colócala en el santuario del Encinar: aparece Celebi (nivel 30)."
+      ],
+      "conditions": {
+        "C": {
+          "done": "EVENT_GAVE_GS_BALL_TO_KURT",
+          "meaning": "GS Ball entregada a Kurt; la captura de Celebi no deja otra bandera con nombre."
+        }
+      }
+    },
+    {
+      "id": "gen2.alph",
+      "families": [
+        "GS",
+        "C"
+      ],
+      "category": "Puzle",
+      "title": "Ruinas Alfa: los cuatro puzles",
+      "placeName": {
+        "GS": "Ruinas Alfa",
+        "C": "Ruinas Alfa"
+      },
+      "requires": "Ninguno para los puzles; Destello, Cuerda Huida, Piedra Agua u Ho-Oh para las salas de Cristal.",
+      "steps": [
+        "Completa el puzle deslizante de las cámaras de Kabuto, Omanyte, Aerodactyl y Ho-Oh.",
+        "Al resolver cada uno aparecen nuevas formas de Unown en las ruinas."
+      ],
+      "conditions": {
+        "GS": {
+          "done": "EVENT_SOLVED_KABUTO_PUZZLE",
+          "doneAll": [
+            "EVENT_SOLVED_OMANYTE_PUZZLE",
+            "EVENT_SOLVED_AERODACTYL_PUZZLE",
+            "EVENT_SOLVED_HO_OH_PUZZLE"
+          ],
+          "meaning": "Los cuatro puzles resueltos."
+        },
+        "C": {
+          "done": "EVENT_SOLVED_KABUTO_PUZZLE",
+          "doneAll": [
+            "EVENT_SOLVED_OMANYTE_PUZZLE",
+            "EVENT_SOLVED_AERODACTYL_PUZZLE",
+            "EVENT_SOLVED_HO_OH_PUZZLE"
+          ],
+          "meaning": "Los cuatro puzles resueltos."
+        }
+      }
+    }
+  ],
+  "excludeLanguages": [
+    1,
+    8
+  ],
+  "excludeReason": "Las decompilaciones de pret corresponden a las versiones internacionales; las japonesas y coreanas de Game Boy pueden numerar los eventos de otra forma."
+}

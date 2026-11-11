@@ -23,14 +23,14 @@
   const set=new Set(flags),fam=pack.families[family];
   const has=name=>{const n=fam.flags[name];return n===undefined?null:set.has(n);};
   const varValue=name=>{const i=fam.vars?.[name];return i===undefined?null:vars[i]??null;};
-  const check=c=>c.badgesAtLeast!==undefined?(Number.isInteger(meta.badges)?meta.badges>=c.badgesAtLeast:null):c.flag?has(c.flag):c.var?(()=>{const v=varValue(c.var);return v===null?null:c.atLeast!==undefined?v>=c.atLeast:v===c.equals;})():null;
+  const check=c=>Array.isArray(c.flags)?(c.flags.some(f=>has(f)===null)?null:c.flags.every(f=>has(f))):c.badgesAtLeast!==undefined?(Number.isInteger(meta.badges)?meta.badges>=c.badgesAtLeast:null):c.flag?has(c.flag):c.var?(()=>{const v=varValue(c.var);return v===null?null:c.atLeast!==undefined?v>=c.atLeast:v===c.equals;})():null;
   const rows=(pack.story[family]||[]).map(r=>({...r,id:game+'-'+r.mission,set:check(r)}));
   let later=false;
   for(let i=rows.length-1;i>=0;i--){rows[i].state=rows[i].set?'direct':later?'derived':'pending';if(rows[i].set)later=true;}
   const secrets=pack.secrets.filter(s=>s.families.includes(family)&&(!s.games||s.games.includes(game))).map(s=>{
    const c=s.conditions?.[family]||{},place=s.placeName?.[family]||s.placeName?.[game]||'';
    if(s.computed)return {...s,place,status:'calculado'};
-   const done=[c.done,c.doneAlso,...(c.doneAll||[])].filter(Boolean).map(f=>({flag:f,set:has(f)}));
+   const done=[c.done,c.doneAlso,...(c.doneAll||[])].filter(Boolean).map(f=>({flag:f,set:has(f)})).concat(c.doneAny?[{flag:c.doneAny.join('|'),set:c.doneAny.some(f=>has(f))}]:[]);
    const doneVar=c.doneVar?[{var:c.doneVar.var,set:check(c.doneVar)}]:[];
    const all=[...done,...doneVar];
    const lost=[...(c.lost||[]).filter(f=>has(f)),...(c.lostVar||[]).filter(v=>check(v)).map(v=>v.var)];
@@ -48,6 +48,7 @@
  function analyze(e,game){
   const where=locate(game),src=sourceOf(e);
   if(!where||!src)return null;
+  if(Number.isInteger(e.languageId)&&(where.pack.excludeLanguages||[]).includes(e.languageId))return null;
   if(src.kind==='field'&&e.field.family&&e.field.family!==where.family)return {mismatch:true};
   const result=evaluate(where.pack,where.family,game,src.flags,src.vars,e.caught,{badges:e.badgesTotal});
   return {...result,family:where.family,location:src.location,sourceKind:src.kind,revisions:where.pack.revisions,

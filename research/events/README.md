@@ -35,3 +35,14 @@ Confianza: documentada en código. Faltan comparaciones antes/después con parti
   - Pendientes: Mesprit, Cresselia (vista, sin capturar), los pájaros errantes, Regigigas, Rotom y Porygon.
 
 Diamante y Perla no tienen todavía banderas con nombre en pokediamond. No se reutilizan los índices de Platino: requieren investigación propia con partidas antes/después.
+
+## Primera y segunda generación
+
+- Fuentes: pokered, pokeyellow, pokegold y pokecrystal, en revisiones fijadas.
+- Las constantes `const_def`/`const_skip`/`const_next` se evalúan igual que las macros de pret. El índice resultante coincide con el bit de `wEventFlags` que lee PKHeX: el máximo de Rojo/Azul es 2522, por debajo de los 2560 de `SAV1`.
+- Rojo/Azul y Amarillo son familias separadas: comparten la mayoría de índices, pero no todos.
+- 13 hitos de Kanto, 12 de Johto y 26 secretos. Incluye los legendarios, los dos Snorlax, el Dojo, los fósiles, los iniciales de Amarillo, Ho-Oh y Lugia, las bestias, Suicune, los regalos (Togepi, Eevee, Tyrogue, Dratini, Huevo Raro) y los puzles de las Ruinas Alfa.
+- Matiz de Cristal comprobado en `BeastsCheck`: el Ala Arcoíris exige la Liga y poseer Raikou, Entei y Suicune con tu nombre e ID, en el equipo o en las cajas.
+- En Oro/Plata/Cristal, `EVENT_FOUGHT_*` se activa al empezar el encuentro: consumido, no necesariamente capturado.
+- Las ediciones japonesas y coreanas de Game Boy se excluyen: pret describe las internacionales.
+- Contraste con partidas públicas: un Cristal completo marca todo salvo el Tyrogue de Kiyo, un Cristal temprano indica la Medalla Céfiro y las partidas preparadas no muestran eventos.

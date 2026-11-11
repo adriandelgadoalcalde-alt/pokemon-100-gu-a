@@ -57,3 +57,18 @@ test('Platino: la Liga se lee de su bandera de juego completado',()=>{
  const a=guide.analyze({events:{activeFlags:[P.flags.FLAG_GAME_COMPLETED],work:[]},badgesTotal:8,caught:[]},'PLATINUM');
  assert.equal(a.story.next,null);assert.equal(a.story.rows.at(-1).state,'direct');
 });
+
+test('Game Boy: eventos con nombre y exclusión de idiomas sin fuente',()=>{
+ const gb=require('../src/saves/gen12-data.js'),C=gb.families.C;
+ const ev={activeFlags:[C.flags.EVENT_GOT_A_POKEMON_FROM_ELM,C.flags.EVENT_BEAT_FALKNER],work:[]};
+ const a=guide.analyze({events:ev,caught:[]},'CRYSTAL');
+ assert.equal(a.story.next.id,'CRYSTAL-03');
+ assert.equal(guide.analyze({events:ev,caught:[],languageId:1},'CRYSTAL'),null);
+ const ho=a.secrets.find(s=>s.id==='gen2.hooh.c');assert.match(ho.requires,/Raikou, Entei y Suicune/);
+});
+
+test('Game Boy: el Dojo acredita cualquiera de los dos regalos',()=>{
+ const gb=require('../src/saves/gen12-data.js'),R=gb.families.RB;
+ const a=guide.analyze({events:{activeFlags:[R.flags.EVENT_GOT_HITMONCHAN],work:[]},caught:[]},'RED');
+ assert.equal(a.secrets.find(s=>s.id==='gen1.dojo').status,'completado');
+});
