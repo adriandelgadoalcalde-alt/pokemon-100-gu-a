@@ -158,22 +158,30 @@ def switch_names():
         if table[index].strip() != expected:
             fail(f'el índice {index} no corresponde a «{expected}»')
     swsh = (base / 'gen8' / 'text_swsh_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
-    # Espada/Escudo: Coordinates8.M es FNV-1a de 64 bits del nombre de la zona (a_<código>, interiores _iXXYY).
-    # Cada código se identifica por pruebas, nunca por suposición:
-    #  t0101 casa inicial (a_t0101_i0101 en partidas públicas; evento z_t0101_MOTHER); t0401 líder de tipo agua
-    #  (z_t0401_LEADER_MIZU); t0501 el mural (z_t0501_T05_MURAL01); t0601 líder de tipo hada (z_t0601_LEADER_FAIRY);
-    #  t0801 la persiana (z_t0801_T08SHUTTER_*); wr01xx eventos WR_ del Área Silvestre; wr02xx Isla de la Armadura
-    #  (pkNX: a_wr0201 «isle_of_armor»); wr03xx puertas de los Regis y Virizion/Terrakion; bt0101 Torre Batalla (pkNX).
-    #  Los eventos son los de la lista pública de banderas de SWSH (formato de PKHeX).
-    codes = {'a_t0101': 6, 'a_t0401': 44, 'a_t0501': 70, 'a_t0601': 78, 'a_t0801': 102, 'a_bt0101': 158}
-    expected = {6: 'Pueblo Yarda', 44: 'Pueblo Amura', 70: 'Pueblo Ladera', 78: 'Pueblo Plié', 102: 'Pueblo Crampón',
-                121: 'Área Silvestre', 158: 'Torre Batalla', 165: 'Isla de la Armadura', 205: 'Nieves de la Corona'}
-    for index, name in expected.items():
-        if swsh[index].strip() != name:
-            fail(f'el índice {index} de SWSH no corresponde a «{name}»')
-    for region, index in (('a_wr01', 121), ('a_wr02', 165), ('a_wr03', 205)):
-        for n in range(1, 41):
-            codes[f'{region}{n:02d}'] = index
+    # Espada/Escudo: Coordinates8.M es FNV-1a de 64 bits del nombre de área. Los 246 nombres salen del propio juego
+    # (research/switch/swsh-areas.json, tabla AHTB de data_table.gfpak). Pueblos y ciudades identificados por el
+    # orden de los combates de gimnasio (btl07 t03, btl10 t04, btl11 c01, btl13-14 t05, btl16 t06, btl19-20 t07,
+    # btl23 t08, btl24 c03; btl41 c02, combate final) y por los eventos de cada zona en la lista pública de banderas
+    # (t01 casa inicial, t04 líder de agua, t05 mural, t06 líder de hada, t08 persiana). wr01/wr02/wr03 y bt: pkNX y
+    # eventos (Regis y Espadas de la Justicia en wr03). Cuevas, «a_NNNN» (exteriores por trozos) y pl/tr: sin nombre.
+    places = {'t01': 'Pueblo Yarda', 't02': 'Pueblo Par', 't03': 'Pueblo Hoyuelo', 't04': 'Pueblo Amura', 't05': 'Pueblo Ladera',
+              't06': 'Pueblo Plié', 't07': 'Pueblo Auriga', 't08': 'Pueblo Crampón', 'c01': 'Ciudad Pistón', 'c02': 'Ciudad Puntera',
+              'c03': 'Ciudad Artejo', 'wr01': 'Área Silvestre', 'wr02': 'Isla de la Armadura', 'wr03': 'Nieves de la Corona', 'bt': 'Torre Batalla'}
+    for name in list(places.values()) + [f'Ruta {n}' for n in range(1, 11)]:
+        if name not in [x.strip() for x in swsh]:
+            fail(f'«{name}» no está en los lugares de Espada/Escudo de PKHeX')
+    kinds = {'g': 'estadio', 'pc': 'Centro Pokémon', 'i': 'dentro de un edificio', 'h': 'dentro de un edificio', 's': 'dentro de un edificio', 'b': 'dentro de un edificio'}
+    swsh_table = {}
+    for code in json.loads((ROOT / 'research' / 'switch' / 'swsh-areas.json').read_text(encoding='utf-8'))['areas']:
+        m = re.fullmatch(r'a_(?:btl\d\d_)?([tc]\d\d|wr0[123]|bt|r\d\d)(?:\d\d){0,2}(?:_([a-z]+)\d+)?', code)
+        if not m:
+            continue
+        place, kind = m.group(1), m.group(2)
+        name = f'Ruta {int(place[1:])}' if place.startswith('r') and not place.startswith('wr') else places.get(place)
+        if not name:
+            continue
+        detail = 'combate' if code.startswith('a_btl') else kinds.get(kind, '') if kind else ''
+        swsh_table[code] = [name, detail]
     gg = (base / 'gen7' / 'text_gg_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
     for index, name in [(3, 'Ruta 1'), (28, 'Pueblo Paleta'), (38, 'Ciudad Azafrán'), (39, 'Bosque Verde'), (46, 'Cueva Celeste'), (50, 'GO Park'), (53, 'Liga Pokémon')]:
         if gg[index].strip() != name:
@@ -199,7 +207,7 @@ def switch_names():
             lgpe[code] = [gg[index].strip(), kinds[m.group(3)]]
     return {'SV': {i: n.strip() for i, n in enumerate(sv) if n.strip() and not n.strip().startswith('－')},
             'LGPE': lgpe,
-            'SWSH': {code: swsh[index].strip() for code, index in codes.items()},
+            'SWSH': swsh_table,
             'LA': {f'ha_area0{i}': la[6 + i].strip() for i in range(6)},
             'ZA': {'t1': xy[22].strip()},
             'source': 'PKHeX.Core gen9/text_sv, gen8a/text_la y gen6/text_xy (es)'}

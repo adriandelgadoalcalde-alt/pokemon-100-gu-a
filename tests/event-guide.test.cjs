@@ -186,12 +186,14 @@ test('posición Switch desde el motor: SV por identificador de lugar, Leyendas p
  assert.equal(L.read(null,'LETGOP',0,0,{},{mapHash:L.fnv64('s001r01')}),null);
  assert.equal(L.read(null,'ZA',0,0,{},{map:'d9'}),null);
  assert.equal(L.fnv64('a_t0101_i0101'),'B6F6DA200E8FFE23');assert.equal(L.fnv64('a_wr0201'),'5EA5C3539AB81C81');
- const sw=L.read(null,'SWORD',0,0,{},{mapHash:'B6F6DA200E8FFE23'});assert.equal(sw.name,'Pueblo Yarda');assert.match(sw.detail,/interior/);
+ const sw=L.read(null,'SWORD',0,0,{},{mapHash:'B6F6DA200E8FFE23'});assert.equal(sw.name,'Pueblo Yarda');assert.equal(sw.detail,'dentro de un edificio');
  assert.equal(L.read(null,'SHIELD',0,0,{},{mapHash:'5EA5C3539AB81C81'}).name,'Isla de la Armadura');
  assert.equal(L.read(null,'SHIELD',0,0,{},{mapHash:'23F8A2E146592267'}),null);
- assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_t0501')}).name,'Pueblo Ladera');
- assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_wr0304')}).name,'Nieves de la Corona');
- assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_wr0122')}).name,'Área Silvestre');
+ assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_t0501_g0101')}).name,'Pueblo Ladera');
+ assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_wr0301_i0101')}).name,'Nieves de la Corona');
+ assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_wr0101')}).name,'Área Silvestre');
+ assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_btl24_c0301')}).name,'Ciudad Artejo');
+ assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_r0501_i0101')}).name,'Ruta 5');
 });
 
 test('Espada/Escudo: historia por medallas y título solo con prueba de la Torre Batalla',()=>{

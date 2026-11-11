@@ -89,12 +89,7 @@
  // FNV-1a de 64 bits (los hashes de zona de Espada/Escudo), con BigInt.
  const fnv64=t=>{let h=0xCBF29CE484222645n;for(const c of t){h^=BigInt(c.charCodeAt(0));h=(h*0x100000001B3n)&0xFFFFFFFFFFFFFFFFn;}return h.toString(16).toUpperCase().padStart(16,'0');};
  let swshCache=null;
- function swshZones(){
-  if(swshCache)return swshCache;swshCache={};const S=data()?.SWITCH;if(!S)return swshCache;
-  for(const base of Object.keys(S.SWSH)){swshCache[fnv64(base)]=[base,base];
-   for(let a=1;a<=20;a++)for(let b=1;b<=10;b++){const name=base+'_i'+String(a).padStart(2,'0')+String(b).padStart(2,'0');swshCache[fnv64(name)]=[base,name];}}
-  return swshCache;
- }
+ function swshZones(){if(swshCache)return swshCache;swshCache={};const S=data()?.SWITCH;if(S)for(const code of Object.keys(S.SWSH))swshCache[fnv64(code)]=code;return swshCache;}
  let lgpeCache=null;
  function lgpeAreas(){if(lgpeCache)return lgpeCache;lgpeCache={};const S=data()?.SWITCH;if(S)for(const code of Object.keys(S.LGPE))lgpeCache[fnv64(code)]=code;return lgpeCache;}
  // Posición que exporta el motor (switchPosition, NamedBlocks.Position): Escarlata/Púrpura dan el identificador de
@@ -112,8 +107,8 @@
    return {mapId:m[1],map:pos.map,name:S.LA[m[1]],detail:m[2]?'dentro de un edificio o zona interior':'',source:'switch-position'};
   }
   if(['SWORD','SHIELD'].includes(game)){
-   const h=String(pos.mapHash||'').toUpperCase(),hit=swshZones()[h];if(!hit)return null;
-   return {mapId:hit[0],map:hit[1],name:S.SWSH[hit[0]],detail:hit[1]===hit[0]?'':'dentro de un edificio o zona interior',source:'switch-position'};
+   const code=swshZones()[String(pos.mapHash||'').toUpperCase()];if(!code)return null;const [name,detail]=S.SWSH[code];
+   return {mapId:code,map:code,name,detail,source:'switch-position'};
   }
   if(['LETGOP','LETGOE'].includes(game)){
    const code=lgpeAreas()[String(pos.mapHash||'').toUpperCase()];if(!code)return null;const [name,detail]=S.LGPE[code];
