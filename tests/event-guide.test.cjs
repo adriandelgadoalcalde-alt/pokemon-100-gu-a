@@ -152,6 +152,15 @@ test('posición X/Y y ROZA: bloque Situation con suma de su tabla y zonas con no
  xy[0x1400]^=1;assert.equal(L.read(xy,'X'),null);
 });
 
+test('posición Ultrasol/Ultraluna: CRC16 invertido del bloque Situation y Sol/Luna sin tabla',()=>{
+ const L=require('../src/saves/ds-location.js'),size=0x6CC00,b=new Uint8Array(size),v=new DataView(b.buffer),bo=size-0x200,info=bo+0x14+8;
+ v.setUint32(bo+0x10,0x42454546,true);v.setUint16(info+4,1,true);v.setUint16(0x1000,22,true);v.setFloat32(0x1008,2400,true);v.setFloat32(0x1010,2160,true);
+ v.setUint16(info+6,L.crc16inv(b.subarray(0x1000,0x107C)),true);
+ const r=L.read(b,'ULTRASUN');assert.equal(r.name,'Ruinas de la Guerra');assert.equal(r.x,2400);
+ assert.equal(L.read(b,'SUN'),null);
+ b[0x1001]^=1;assert.equal(L.read(b,'ULTRAMOON'),null);
+});
+
 test('posición Game Boy: Kanto y Johto con nombres oficiales; japonés y coreano excluidos',()=>{
  const L=require('../src/saves/ds-location.js'),bytes=new Uint8Array(0x8000);
  bytes[0x260A]=40;bytes[0x260D]=3;bytes[0x260E]=5;

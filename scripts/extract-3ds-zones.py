@@ -2,11 +2,13 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 """Extrae de una copia propia (sin cifrar) de un juego de 3DS el índice del nombre de lugar de cada zona.
 
-Solo lectura: RomFS -> GARC -> último miembro con las cabeceras de zona. Guarda únicamente el
-campo del nombre (9 bits bajos del u16 en 0x1C), nunca otros bytes del juego.
-  xy:   a/0/1/2, miembro 360, 56 bytes por zona (360 zonas)
-  oras: a/0/1/3, miembro 536, 56 bytes por zona (536 zonas)
-Uso: python3 -I scripts/extract-3ds-zones.py <xy|oras> <rom.3ds> "<nombre del juego>" [salida.json]
+Solo lectura: RomFS -> GARC -> miembro con las cabeceras de zona. Guarda únicamente el campo del
+nombre de lugar de cada zona, nunca otros bytes del juego.
+  xy:   a/0/1/2, miembro 360, 56 bytes por zona (360 zonas); 9 bits bajos del u16 en 0x1C
+  oras: a/0/1/3, miembro 536, 56 bytes por zona (536 zonas); 9 bits bajos del u16 en 0x1C
+  usum: a/0/7/7 (GARC «zonedata»), miembro 0 comprimido con LZ11, 0x54 bytes por zona; int32 en 0x1C
+        («ParentMap», índice de la lista de lugares; ZoneData7 de pk3DS)
+Uso: python3 -I scripts/extract-3ds-zones.py <xy|oras|usum> <rom.3ds> "<nombre del juego>" [salida.json]
 """
 import hashlib
 import json
@@ -14,7 +16,41 @@ import struct
 import sys
 from pathlib import Path
 
-LAYOUTS = {'xy': ('a/0/1/2', 360, 56, 0x1C), 'oras': ('a/0/1/3', 536, 56, 0x1C)}
+# juego: (GARC, miembro, zonas esperadas o None, tamaño de registro, campo, máscara, LZ11)
+LAYOUTS = {'xy': ('a/0/1/2', 360, 360, 56, 0x1C, 0x1FF, False), 'oras': ('a/0/1/3', 536, 536, 56, 0x1C, 0x1FF, False),
+           'usum': ('a/0/7/7', 0, None, 0x54, 0x1C, 0xFFFF, True)}
+
+
+def lz11(b):
+    if b[0] != 0x11:
+        raise SystemExit('extract-3ds-zones: el miembro no está en LZ11')
+    size, p, out = int.from_bytes(b[1:4], 'little'), 4, bytearray()
+    if size == 0:
+        size, p = int.from_bytes(b[4:8], 'little'), 8
+    while len(out) < size:
+        flags = b[p]
+        p += 1
+        for bit in range(7, -1, -1):
+            if len(out) >= size:
+                break
+            if not flags >> bit & 1:
+                out.append(b[p])
+                p += 1
+                continue
+            kind = b[p] >> 4
+            if kind == 0:
+                length, disp = (((b[p] & 0xF) << 4) | (b[p + 1] >> 4)) + 0x11, (((b[p + 1] & 0xF) << 8) | b[p + 2]) + 1
+                p += 3
+            elif kind == 1:
+                length = (((b[p] & 0xF) << 12) | (b[p + 1] << 4) | (b[p + 2] >> 4)) + 0x111
+                disp = (((b[p + 2] & 0xF) << 8) | b[p + 3]) + 1
+                p += 4
+            else:
+                length, disp = kind + 1, (((b[p] & 0xF) << 8) | b[p + 1]) + 1
+                p += 2
+            for _ in range(length):
+                out.append(out[-disp])
+    return bytes(out)
 
 
 class Rom:
@@ -75,15 +111,18 @@ def garc(b):
 def main():
     if len(sys.argv) not in (4, 5) or sys.argv[1] not in LAYOUTS:
         raise SystemExit(__doc__)
-    path, member, size, field = LAYOUTS[sys.argv[1]]
+    path, member, expected, size, field, mask, packed = LAYOUTS[sys.argv[1]]
     zones = garc(Rom(sys.argv[2]).get(path))[member][0]
-    if len(zones) != (member * size):
-        raise SystemExit(f'extract-3ds-zones: {len(zones)} bytes; se esperaban {member * size}')
-    names = [struct.unpack('<H', zones[i * size + field:i * size + field + 2])[0] & 0x1FF for i in range(member)]
-    head = {'game': sys.argv[3], 'garc': path, 'member': member, 'entrySize': size, 'nameField': field, 'nameMask': 0x1FF,
-            'count': member, 'sha256': hashlib.sha256(zones).hexdigest(),
+    if packed:
+        zones = lz11(zones)
+    count = len(zones) // size
+    if len(zones) % size or (expected is not None and count != expected):
+        raise SystemExit(f'extract-3ds-zones: {len(zones)} bytes no encajan con registros de {size}')
+    names = [struct.unpack('<H', zones[i * size + field:i * size + field + 2])[0] & mask for i in range(count)]
+    head = {'game': sys.argv[3], 'garc': path, 'member': member, 'entrySize': size, 'nameField': field, 'nameMask': mask,
+            'count': count, 'sha256': hashlib.sha256(zones).hexdigest(),
             'note': 'Índice del nombre de lugar de cada cabecera de zona. Extraído de una copia propia del juego con scripts/extract-3ds-zones.py; no se guarda ningún otro byte del juego.'}
-    out = Path(sys.argv[4]) if len(sys.argv) == 5 else Path(__file__).resolve().parent.parent / 'research' / 'gen6' / f'{sys.argv[1]}-zones.json'
+    out = Path(sys.argv[4]) if len(sys.argv) == 5 else Path(__file__).resolve().parent.parent / 'research' / ('gen7' if sys.argv[1] == 'usum' else 'gen6') / f'{sys.argv[1]}-zones.json'
     out.write_text(json.dumps(head, ensure_ascii=False, indent=1)[:-2] + ',\n "names": ' + json.dumps(names, separators=(',', ':')) + '\n}\n', encoding='utf-8', newline='\n')
     print(f'Escrito {out.name}: {len(names)} zonas.')
 

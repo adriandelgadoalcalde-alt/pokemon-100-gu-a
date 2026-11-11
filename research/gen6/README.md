@@ -10,5 +10,4 @@ Contraste: zona 0 = Pueblo Boceto (X/Y) y Villa Raíz (ROZA); las partidas públ
 Ciudad Novarte y Ciudad Petalia. La posición se lee del bloque 4 «Situation» (0x1400; `Situation6` de PKHeX)
 tras comprobar su CRC16-CCITT en la tabla de bloques del final del guardado.
 
-Sol/Luna y Ultrasol/Ultraluna: pendiente localizar las cabeceras de zona en la RomFS (el miembro de 84 bytes
-de `a/0/1/7` resultó ser la tabla de especies, no las zonas).
+Séptima generación: ver `research/gen7/README.md`.

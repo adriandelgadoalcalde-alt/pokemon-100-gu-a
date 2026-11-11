@@ -713,7 +713,7 @@ Qué interpreta ahora la guía a partir del guardado, además de la Pokédex y l
 | IV | Diamante, Perla | lista de PKHeX; mapas de pokediamond | Medallas, Salón de la Fama y ubicación | Legendarios, regalos y concursos Master |
 | V | Negro, Blanco, Negro 2, Blanco 2 | lista de PKHeX; zonas de N2/B2 desde la ROM | Salón de la Fama; ubicación en N2/B2 | Legendarios y regalos; Medallero de N2/B2 (ya existente) |
 | VI | X, Y, Rubí Omega, Zafiro Alfa | lista de PKHeX; zonas desde la ROM | Salón de la Fama y ubicación | Legendarios, Mansión Batalla, Episodio Delta, revancha del Alto Mando, Regis |
-| VII | Sol, Luna, Ultrasol, Ultraluna | lista de PKHeX | Salón de la Fama | Legendarios, regalos, monturas; sellos del pasaporte (ya existente) |
+| VII | Sol, Luna, Ultrasol, Ultraluna | lista de PKHeX; zonas de USUM desde la ROM | Salón de la Fama; ubicación en USUM | Legendarios, regalos, monturas; sellos del pasaporte (ya existente) |
 | VIII | Diamante Brillante, Perla Reluciente | lista de PKHeX + lector propio de banderas | Salón de la Fama | Legendarios y regalos |
 | VIII | Espada, Escudo | bloques con nombre de PKHeX | — | Pájaros de Galar, Regis, Aventura Dinamax, Torre Batalla |
 | VIII | Leyendas Arceus | bloques con nombre de PKHeX | 6 hitos | Arceus, Pokédex completa y perfecta, zonas, monturas, Eterna Ensoñación |
@@ -724,7 +724,7 @@ Pendiente:
 - **Sin interpretación todavía:**
   - Verde (Japón).
   - Leyendas Z-A: matrices sin nombres públicos.
-- **Ubicación del jugador:** se lee en las generaciones I a IV (salvo Verde japonés y las versiones japonesa y coreana de Game Boy); en la V, solo Negro 2/Blanco 2 (falta una copia de Negro/Blanco para su tabla de zonas); en la VI, X/Y y ROZA; de la VII en adelante, todavía no.
+- **Ubicación del jugador:** se lee en las generaciones I a IV (salvo Verde japonés y las versiones japonesa y coreana de Game Boy); en la V, solo Negro 2/Blanco 2 (falta una copia de Negro/Blanco para su tabla de zonas); en la VI, X/Y y ROZA; en la VII, Ultrasol/Ultraluna (falta una copia de Sol/Luna); de Let's Go en adelante, todavía no.
 - **Confianza:**
   - Pret y PKHeX se marcan como «documentado en código» o «documentado por la comunidad».
   - Ninguna lectura certifica automáticamente: faltan comparaciones antes/después con partidas propias.
