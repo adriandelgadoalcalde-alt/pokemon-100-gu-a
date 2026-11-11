@@ -86,8 +86,28 @@
   const f=blocks.KPlayerCurrentFieldID;if(!Number.isInteger(f)||!SV_FIELDS[f])return null;
   return {mapId:f,map:'FIELD_'+f,name:SV_FIELDS[f],precision:'region',source:'named-blocks'};
  }
- function read(bytes,game,base,languageId,blocks){
-  if(['SCARLET','VIOLET'].includes(game))return fromBlocks(game,blocks);
+ // Posición que exporta el motor (switchPosition, NamedBlocks.Position): Escarlata/Púrpura dan el identificador de
+ // ubicación (int32 LE en el bloque PlayerSave_CurrentLocationId); Leyendas Arceus y Z-A, el nombre interno del mapa.
+ function fromPosition(game,pos,blocks){
+  const D=data(),S=D&&D.SWITCH;if(!S||!pos||typeof pos!=='object')return null;
+  if(['SCARLET','VIOLET'].includes(game)){
+   const m=/^hex:([0-9A-F]{8})/i.exec(String(pos.currentLocationId||''));
+   const id=m?new DataView(Uint8Array.from(m[1].match(/../g),h=>parseInt(h,16)).buffer).getInt32(0,true):Number.isInteger(pos.currentLocationId)?pos.currentLocationId:null;
+   if(id!==null&&S.SV[id])return {mapId:id,map:pos.lastRoomMapName||'LOCATION_'+id,name:S.SV[id],source:'switch-position'};
+   return null;
+  }
+  if(game==='ARCEUS'){
+   const m=/^(ha_area0[0-5])(?:_(.+))?$/.exec(String(pos.map||''));if(!m||!S.LA[m[1]])return null;
+   return {mapId:m[1],map:pos.map,name:S.LA[m[1]],detail:m[2]?'dentro de un edificio o zona interior':'',source:'switch-position'};
+  }
+  if(game==='ZA'){
+   const m=/^(t1)(?:_.*)?$/.exec(String(pos.map||''));if(!m)return null;
+   return {mapId:m[1],map:pos.map,name:S.ZA[m[1]],source:'switch-position'};
+  }
+  return null;
+ }
+ function read(bytes,game,base,languageId,blocks,position){
+  if(['SCARLET','VIOLET','ARCEUS','ZA'].includes(game))return fromPosition(game,position,blocks)||fromBlocks(game,blocks);
   if(['BD','SP'].includes(game))return bytes instanceof Uint8Array?readBDSP(bytes):null;
   if(GEN7[game])return bytes instanceof Uint8Array?readGen7(bytes,game):null;
   if(GEN6[game])return bytes instanceof Uint8Array?readGen6(bytes,game):null;
@@ -100,6 +120,6 @@
   if(!entry)return null;
   return {mapId,map:entry[1],name:D[L.maps].names[entry[0]],x:v.getInt32(o+8,true),y:v.getInt32(o+12,true),source:'ds-location'};
  }
- const api={read,fromBlocks,LAYOUT,GEN5,GEN6,GEN7,crc16inv};
+ const api={read,fromBlocks,fromPosition,LAYOUT,GEN5,GEN6,GEN7,crc16inv};
  if(typeof module==='object'&&module.exports)module.exports=api;else root.PokemonDSLocation=api;
 })(globalThis);

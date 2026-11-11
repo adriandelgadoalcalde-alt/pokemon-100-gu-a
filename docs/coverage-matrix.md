@@ -716,15 +716,15 @@ Qué interpreta ahora la guía a partir del guardado, además de la Pokédex y l
 | VII | Sol, Luna, Ultrasol, Ultraluna | lista de PKHeX; zonas de USUM desde la ROM | Salón de la Fama; ubicación en USUM | Legendarios, regalos, monturas; sellos del pasaporte (ya existente) |
 | VIII | Diamante Brillante, Perla Reluciente | lista de PKHeX + lector propio de banderas | Salón de la Fama y ubicación (zona = lugar oficial) | Legendarios y regalos |
 | VIII | Espada, Escudo | bloques con nombre de PKHeX | — | Pájaros de Galar, Regis, Aventura Dinamax, Torre Batalla |
-| VIII | Leyendas Arceus | bloques con nombre de PKHeX | 6 hitos | Arceus, Pokédex completa y perfecta, zonas, monturas, Eterna Ensoñación |
-| IX | Escarlata, Púrpura | bloques y señales de PKHeX | Señal de final (existente); región actual | DLC, diploma, teraincursiones |
+| VIII | Leyendas Arceus | bloques con nombre de PKHeX | 6 hitos y área actual | Arceus, Pokédex completa y perfecta, zonas, monturas, Eterna Ensoñación |
+| IX | Escarlata, Púrpura | bloques y señales de PKHeX | Señal de final (existente); lugar actual | DLC, diploma, teraincursiones |
 
 Pendiente:
 
 - **Sin interpretación todavía:**
   - Verde (Japón).
   - Leyendas Z-A: matrices sin nombres públicos.
-- **Ubicación del jugador:** se lee en las generaciones I a IV (salvo Verde japonés y las versiones japonesa y coreana de Game Boy); en la V, solo Negro 2/Blanco 2 (falta una copia de Negro/Blanco para su tabla de zonas); en la VI, X/Y y ROZA; en la VII, Ultrasol/Ultraluna (falta una copia de Sol/Luna); en Switch, Diamante Brillante/Perla Reluciente (lugar exacto) y Escarlata/Púrpura (solo la región); Let's Go, Espada/Escudo y las Leyendas requieren ampliar el motor.
+- **Ubicación del jugador:** se lee en las generaciones I a IV (salvo Verde japonés y las versiones japonesa y coreana de Game Boy); en la V, solo Negro 2/Blanco 2 (falta una copia de Negro/Blanco para su tabla de zonas); en la VI, X/Y y ROZA; en la VII, Ultrasol/Ultraluna (falta una copia de Sol/Luna); en Switch, Diamante Brillante/Perla Reluciente y Escarlata/Púrpura (lugar exacto; si falta, la región), Leyendas Arceus (Villa Jubileo o el área) y Leyendas Z-A (Ciudad Luminalia). Let's Go y Espada/Escudo guardan solo un hash del mapa: el motor lo exporta, pero falta la tabla para traducirlo.
 - **Confianza:**
   - Pret y PKHeX se marcan como «documentado en código» o «documentado por la comunidad».
   - Ninguna lectura certifica automáticamente: faltan comparaciones antes/después con partidas propias.

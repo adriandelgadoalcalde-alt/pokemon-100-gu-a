@@ -164,6 +164,9 @@ public static class Audit
             var named = NamedBlocks.Read(save);
             if (named is not null)
                 result["namedBlocks"] = named;
+            var position = NamedBlocks.Position(save);
+            if (position is not null)
+                result["switchPosition"] = position;
         }
         return result;
     }

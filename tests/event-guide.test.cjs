@@ -171,6 +171,19 @@ test('posición BDSP por zona = ubicación y región de Escarlata/Púrpura por b
  assert.equal(L.read(null,'SCARLET',undefined,undefined,{}),null);
 });
 
+test('posición Switch desde el motor: SV por identificador de lugar, Leyendas por mapa interno',()=>{
+ const L=require('../src/saves/ds-location.js');
+ assert.equal(L.read(null,'SCARLET',0,0,{KPlayerCurrentFieldID:0},{currentLocationId:'hex:82000000',lastRoomMapName:'a_sch_entrance01'}).name,'Academia Naranja');
+ assert.equal(L.read(null,'VIOLET',0,0,{},{currentLocationId:'hex:0A000000'}).name,'Liga Pokémon');
+ assert.equal(L.read(null,'VIOLET',0,0,{KPlayerCurrentFieldID:1},{currentLocationId:'hex:FFFF0000'}).name,'Noroteo');
+ const la=L.read(null,'ARCEUS',0,0,{},{map:'ha_area00_s02'});assert.equal(la.name,'Villa Jubileo');assert.match(la.detail,/interior/);
+ assert.equal(L.read(null,'ARCEUS',0,0,{},{map:'ha_area05'}).name,'Tundra Alba');
+ assert.equal(L.read(null,'ARCEUS',0,0,{},{map:'ha_area09'}),null);
+ assert.equal(L.read(null,'ZA',0,0,{},{map:'t1'}).name,'Ciudad Luminalia');
+ assert.equal(L.read(null,'ZA',0,0,{},{map:'d9'}),null);
+ assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:'B6F6DA200E8FFE23'}),null);
+});
+
 test('posición Game Boy: Kanto y Johto con nombres oficiales; japonés y coreano excluidos',()=>{
  const L=require('../src/saves/ds-location.js'),bytes=new Uint8Array(0x8000);
  bytes[0x260A]=40;bytes[0x260D]=3;bytes[0x260E]=5;

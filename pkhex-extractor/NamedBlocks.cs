@@ -44,4 +44,65 @@ public static class NamedBlocks
         }
         return result;
     }
+
+    // Posición del jugador en Switch, con las clases de PKHeX (solo lectura). Se exporta en bruto: el nombre
+    // interno del mapa (Leyendas), su hash (Let's Go, Espada/Escudo) o los bloques de Escarlata/Púrpura;
+    // la traducción a lugares oficiales se hace fuera, con tablas documentadas.
+    public static SortedDictionary<string, object>? Position(SaveFile save)
+    {
+        var r = new SortedDictionary<string, object>(StringComparer.Ordinal);
+        try
+        {
+            switch (save)
+            {
+                case SAV8LA la:
+                    r["map"] = la.Coordinates.M; r["x"] = la.Coordinates.X; r["y"] = la.Coordinates.Y; r["z"] = la.Coordinates.Z;
+                    break;
+                case SAV9ZA za:
+                    r["map"] = za.Coordinates.Map; r["x"] = za.Coordinates.X; r["y"] = za.Coordinates.Y; r["z"] = za.Coordinates.Z;
+                    break;
+                case SAV8SWSH sw:
+                    r["x"] = sw.Coordinates.X; r["y"] = sw.Coordinates.Y; r["z"] = sw.Coordinates.Z;
+                    r["mapHash"] = sw.Coordinates.M.ToString("X16");
+                    break;
+                case SAV7b gg:
+                    r["x"] = gg.Coordinates.X; r["y"] = gg.Coordinates.Y; r["z"] = gg.Coordinates.Z;
+                    r["mapHash"] = gg.Coordinates.M.ToString("X16");
+                    break;
+                case SAV9SV sv:
+                    // PlayerSave_LastRoomMapName, PlayerSave_CurrentLocationId y PlayerSave_LastSubField (SaveBlockAccessor9SV).
+                    foreach (var (name, key) in new[] { ("lastRoomMapName", 0x9F1ABF26u), ("currentLocationId", 0x19FC5B7Bu), ("lastSubField", 0x37AF0454u) })
+                    {
+                        if (!sv.Blocks.TryGetBlock(key, out var block))
+                            continue;
+                        r[name] = block.Type switch
+                        {
+                            SCTypeCode.Bool1 => false,
+                            SCTypeCode.Bool2 => true,
+                            SCTypeCode.Byte or SCTypeCode.UInt16 or SCTypeCode.UInt32 or SCTypeCode.UInt64 or SCTypeCode.SByte
+                                or SCTypeCode.Int16 or SCTypeCode.Int32 or SCTypeCode.Int64 => Convert.ToInt64(block.GetValue()),
+                            _ => AsciiOrHex(block.Data),
+                        };
+                    }
+                    break;
+                default:
+                    return null;
+            }
+        }
+        catch (Exception)
+        {
+            // Un bloque ausente o más corto de lo esperado no debe impedir el diagnóstico.
+        }
+        return r.Count == 0 ? null : r;
+    }
+
+    private static string AsciiOrHex(ReadOnlySpan<byte> data)
+    {
+        var end = data.IndexOf((byte)0);
+        var text = end >= 0 ? data[..end] : data;
+        foreach (var b in text)
+            if (b < 0x20 || b > 0x7E)
+                return "hex:" + Convert.ToHexString(data[..Math.Min(data.Length, 64)]);
+        return System.Text.Encoding.ASCII.GetString(text);
+    }
 }

@@ -145,6 +145,24 @@ def bdsp():
     return {'maps': table, 'names': used, 'source': 'PKHeX.Core gen8b/text_bdsp_00000_es.txt (zona = ubicación)'}
 
 
+def switch_names():
+    """Switch: lugares oficiales de PKHeX para lo que exporta el motor (switchPosition).
+    SV: currentLocationId es el identificador de ubicación de gen9/text_sv. LA: ha_area00..05 son Villa Jubileo y
+    las cinco áreas (orden comprobado con los fuegos fatuos por área: 7 + 5 x 20). Z-A: t1 es Ciudad Luminalia."""
+    base = PKHEX / 'Resources' / 'text' / 'locations'
+    sv = (base / 'gen9' / 'text_sv_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
+    la = (base / 'gen8a' / 'text_la_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
+    xy = (base / 'gen6' / 'text_xy_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
+    for table, index, expected in [(sv, 10, 'Liga Pokémon'), (sv, 130, 'Academia Naranja'), (sv, 131, 'Academia Uva'), (sv, 134, 'Villa Versui'),
+                                   (la, 6, 'Villa Jubileo'), (la, 7, 'Pradera Obsidiana'), (la, 11, 'Tundra Alba'), (xy, 22, 'Ciudad Luminalia')]:
+        if table[index].strip() != expected:
+            fail(f'el índice {index} no corresponde a «{expected}»')
+    return {'SV': {i: n.strip() for i, n in enumerate(sv) if n.strip() and not n.strip().startswith('－')},
+            'LA': {f'ha_area0{i}': la[6 + i].strip() for i in range(6)},
+            'ZA': {'t1': xy[22].strip()},
+            'source': 'PKHeX.Core gen9/text_sv, gen8a/text_la y gen6/text_xy (es)'}
+
+
 def kanto_gb(repo_name, rev):
     """Rojo/Azul/Amarillo: wCurMap → lugar del mapa de Kanto (town_map_entries.asm), nombre oficial en español."""
     repo = PRET / repo_name
@@ -271,6 +289,7 @@ def build():
     data['DP'] = diamond()
     data['B2W2'] = unova2()
     data['BDSP'] = bdsp()
+    data['SWITCH'] = switch_names()
     data['XY'] = kalos_hoenn('xy', [(0, 'Pueblo Boceto'), (8, 'Pueblo Acuarela'), (53, 'Ciudad Novarte')])
     data['USUM'] = kalos_hoenn('usum', [(0, 'Ruta 1'), (7, 'Ruta 2'), (22, 'Ruinas de la Guerra')], 'gen7', 'text_sm_00000_es.txt')
     data['ORAS'] = kalos_hoenn('oras', [(0, 'Villa Raíz'), (13, 'Ciudad Petalia')])
