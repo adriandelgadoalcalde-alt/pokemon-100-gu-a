@@ -1,0 +1,757 @@
+{
+  "about": "Hitos y secretos de la cuarta generación a partir de nombres de pret. scripts/derive-event-pack.py resuelve cada bandera o variable en la revisión fijada y exige un sitio que la active. Sin datos de partidas.",
+  "pack": "gen4",
+  "confidence": "documentado en código",
+  "repos": {
+    "HGSS": {
+      "repo": "pokeheartgold",
+      "rev": "6bf138d6035aa6b43d6f8f4132a12df70f86dcec",
+      "kind": "c"
+    }
+  },
+  "families": {
+    "HGSS": [
+      "HEARTGOLD",
+      "SOULSILVER"
+    ]
+  },
+  "story": {
+    "HGSS": [
+      {
+        "mission": "01",
+        "flag": "FLAG_GOT_STARTER",
+        "label": "Inicial recibido del Prof. Elm"
+      },
+      {
+        "mission": "02",
+        "badgesAtLeast": 1,
+        "label": "Medalla Céfiro"
+      },
+      {
+        "mission": "03",
+        "badgesAtLeast": 2,
+        "label": "Medalla Colmena"
+      },
+      {
+        "mission": "04",
+        "badgesAtLeast": 3,
+        "label": "Medalla Planicie"
+      },
+      {
+        "mission": "05",
+        "badgesAtLeast": 4,
+        "label": "Medalla Niebla"
+      },
+      {
+        "mission": "06",
+        "badgesAtLeast": 6,
+        "label": "Medallas Mineral y Tormenta"
+      },
+      {
+        "mission": "07",
+        "badgesAtLeast": 7,
+        "label": "Medalla Glaciar"
+      },
+      {
+        "mission": "08",
+        "label": "Medalla Dragón (tras liberar la Torre Radio)",
+        "badgesAtLeast": 8
+      },
+      {
+        "mission": "09",
+        "flag": "FLAG_GAME_CLEAR",
+        "label": "Liga de Johto superada"
+      },
+      {
+        "mission": "10",
+        "flag": "FLAG_GOT_SS_TICKET_FROM_ELM",
+        "label": "Ticket Barco recibido para viajar a Kanto"
+      },
+      {
+        "mission": "11",
+        "flag": "FLAG_RESTORED_POWER",
+        "label": "Central Energía restaurada"
+      },
+      {
+        "mission": "12",
+        "badgesAtLeast": 16,
+        "label": "Dieciséis medallas"
+      },
+      {
+        "mission": "13",
+        "var": "VAR_UNK_40FD",
+        "equals": 1,
+        "label": "Rojo derrotado en el Monte Plateado"
+      }
+    ]
+  },
+  "secrets": [
+    {
+      "id": "hgss.oak_kanto_starter",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Regalo",
+      "mission": "E02",
+      "species": [
+        1,
+        4,
+        7
+      ],
+      "title": "Inicial de Kanto del Prof. Oak",
+      "placeName": {
+        "HGSS": "Pueblo Paleta"
+      },
+      "requires": "Haber vencido a Rojo en el Monte Plateado.",
+      "steps": [
+        "Tras vencer a Rojo, vuelve a Pueblo Paleta y entra en el laboratorio del Prof. Oak.",
+        "Habla con Oak: te ofrece elegir uno de los tres iniciales de Kanto. Ten un hueco libre en el equipo.",
+        "Este regalo es el requisito que desbloquea el Orbe del Sr. Pokémon."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_UNK_4131",
+            "atLeast": 3
+          },
+          "meaning": "Fase del regalo de Oak: 3 o más tras entregar el Pokémon (variable sin nombre en pret, documentada en el script del laboratorio)."
+        }
+      }
+    },
+    {
+      "id": "hgss.embedded_orb",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Objeto clave",
+      "mission": "E02",
+      "title": "Orbe del Sr. Pokémon (Rojo en SoulSilver, Azul en HeartGold)",
+      "placeName": {
+        "HGSS": "Ruta 30"
+      },
+      "requires": "Regalo del inicial de Kanto de Oak.",
+      "steps": [
+        "Ve a la casa del Sr. Pokémon en la Ruta 30 y habla con él.",
+        "SoulSilver: recibes el Orbe Rojo. HeartGold: el Orbe Azul."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_SCENE_EMBEDDED_TOWER",
+            "atLeast": 2
+          },
+          "meaning": "Escena de la Torre Oculta en fase 2 o superior: el Sr. Pokémon ya inició la entrega del orbe."
+        }
+      }
+    },
+    {
+      "id": "hgss.groudon",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "SOULSILVER"
+      ],
+      "category": "Legendario",
+      "species": [
+        383
+      ],
+      "mission": "E02",
+      "title": "Groudon en la Torre Oculta",
+      "placeName": {
+        "HGSS": "Torre Oculta"
+      },
+      "requires": "Orbe Rojo.",
+      "steps": [
+        "Con el Orbe Rojo en la bolsa, entra en la Torre Oculta (Ruta 47, Cueva Acantilado).",
+        "Guarda antes de acercarte al altar: Groudon de nivel 50."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_GROUDON",
+          "meaning": "Capturado en la Torre Oculta."
+        }
+      }
+    },
+    {
+      "id": "hgss.kyogre",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "HEARTGOLD"
+      ],
+      "category": "Legendario",
+      "species": [
+        382
+      ],
+      "title": "Kyogre en la Torre Oculta",
+      "placeName": {
+        "HGSS": "Torre Oculta"
+      },
+      "requires": "Orbe Azul.",
+      "steps": [
+        "Con el Orbe Azul en la bolsa, entra en la Torre Oculta (Ruta 47, Cueva Acantilado).",
+        "Guarda antes del altar: Kyogre de nivel 50."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_KYOGRE",
+          "meaning": "Capturado en la Torre Oculta."
+        }
+      }
+    },
+    {
+      "id": "hgss.rayquaza",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario",
+      "species": [
+        384
+      ],
+      "title": "Rayquaza en la Torre Oculta",
+      "placeName": {
+        "HGSS": "Torre Oculta"
+      },
+      "requires": "Un Groudon de SoulSilver y un Kyogre de HeartGold capturados en la Torre Oculta, ambos en tu equipo.",
+      "steps": [
+        "Consigue por intercambio el legendario de la otra edición, capturado en su Torre Oculta.",
+        "Entra en la torre con Groudon y Kyogre en el equipo: aparece Rayquaza (nivel 50)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_RAYQUAZA",
+          "meaning": "Capturado en la Torre Oculta."
+        }
+      }
+    },
+    {
+      "id": "hgss.lugia.ss",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "SOULSILVER"
+      ],
+      "category": "Legendario",
+      "species": [
+        249
+      ],
+      "title": "Lugia en las Islas Remolino",
+      "placeName": {
+        "HGSS": "Islas Remolino"
+      },
+      "requires": "Ala Plateada de las chicas kimono (historia) y Surf, Remolino y Cascada.",
+      "steps": [
+        "Tras el baile de las chicas kimono en la Torre Campana recibes el Ala Plateada.",
+        "En las Islas Remolino baja hasta la sala más profunda; las chicas kimono calman la marea y aparece Lugia (nivel 45)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_LUGIA",
+          "meaning": "Capturado en las Islas Remolino."
+        }
+      }
+    },
+    {
+      "id": "hgss.lugia.hg",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "HEARTGOLD"
+      ],
+      "category": "Legendario",
+      "species": [
+        249
+      ],
+      "title": "Lugia en las Islas Remolino",
+      "placeName": {
+        "HGSS": "Islas Remolino"
+      },
+      "requires": "Ala Plateada del anciano de Ciudad Plateada (postgame).",
+      "steps": [
+        "En Kanto, habla con el anciano de la casa de Ciudad Plateada para recibir el Ala Plateada.",
+        "Vuelve a las Islas Remolino y baja hasta la sala más profunda: Lugia de nivel 70."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_LUGIA",
+          "meaning": "Capturado en las Islas Remolino."
+        }
+      }
+    },
+    {
+      "id": "hgss.hooh.hg",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "HEARTGOLD"
+      ],
+      "category": "Legendario",
+      "species": [
+        250
+      ],
+      "title": "Ho-Oh en la Torre Campana",
+      "placeName": {
+        "HGSS": "Torre Campana"
+      },
+      "requires": "Ala Arcoíris de las chicas kimono (historia).",
+      "steps": [
+        "Tras el baile de las chicas kimono recibes el Ala Arcoíris.",
+        "Sube por la Torre Campana de Ciudad Iris hasta la azotea: Ho-Oh de nivel 45."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_HO_OH",
+          "meaning": "Capturado en la Torre Campana."
+        }
+      }
+    },
+    {
+      "id": "hgss.hooh.ss",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "SOULSILVER"
+      ],
+      "category": "Legendario",
+      "species": [
+        250
+      ],
+      "title": "Ho-Oh en la Torre Campana",
+      "placeName": {
+        "HGSS": "Torre Campana"
+      },
+      "requires": "Ala Arcoíris del anciano de Ciudad Plateada (postgame).",
+      "steps": [
+        "En Kanto, habla con el anciano de Ciudad Plateada para recibir el Ala Arcoíris.",
+        "Sube por la Torre Campana hasta la azotea: Ho-Oh de nivel 70."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_HO_OH",
+          "meaning": "Capturado en la Torre Campana."
+        }
+      }
+    },
+    {
+      "id": "hgss.suicune",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario",
+      "species": [
+        245
+      ],
+      "mission": "E01",
+      "title": "Suicune: la cadena con Eusine",
+      "placeName": {
+        "HGSS": "Ruta 25"
+      },
+      "requires": "Ver la cadena completa de apariciones; consulta la misión de esta edición.",
+      "steps": [
+        "Sigue el recorrido exacto de la misión «Suicune: cadena exacta de apariciones».",
+        "El encuentro final es en la Ruta 25, al norte de Ciudad Celeste (nivel 40)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_SUICUNE",
+          "meaning": "Capturado (bandera de captura del script)."
+        }
+      }
+    },
+    {
+      "id": "hgss.raikou",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario errante",
+      "species": [
+        243
+      ],
+      "title": "Raikou errante por Johto",
+      "placeName": {
+        "HGSS": "Torre Quemada"
+      },
+      "requires": "Despertar a las bestias en el sótano de la Torre Quemada.",
+      "steps": [
+        "Tras la escena del sótano de la Torre Quemada, Raikou empieza a vagar por Johto.",
+        "Usa el mapa del Pokégear para ver en qué ruta está y retenlo con Mal de Ojo, Bloqueo o Ball Rápida: huye al primer turno."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_ROAMER_RAIKOU_STATUS",
+            "equals": 1
+          },
+          "progress": [
+            {
+              "var": "VAR_ROAMER_RAIKOU_STATUS",
+              "equals": 2,
+              "label": "Derrotado: vuelve a vagar tras la Liga"
+            }
+          ],
+          "meaning": "Estado del errante: 1 capturado, 2 derrotado (la Liga lo recrea), 0 sin resolver."
+        }
+      }
+    },
+    {
+      "id": "hgss.entei",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario errante",
+      "species": [
+        244
+      ],
+      "title": "Entei errante por Johto",
+      "placeName": {
+        "HGSS": "Torre Quemada"
+      },
+      "requires": "Despertar a las bestias en el sótano de la Torre Quemada.",
+      "steps": [
+        "Tras la escena del sótano de la Torre Quemada, Entei empieza a vagar por Johto.",
+        "Localízalo con el mapa del Pokégear y retenlo: huye al primer turno."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_ROAMER_ENTEI_STATUS",
+            "equals": 1
+          },
+          "progress": [
+            {
+              "var": "VAR_ROAMER_ENTEI_STATUS",
+              "equals": 2,
+              "label": "Derrotado: vuelve a vagar tras la Liga"
+            }
+          ],
+          "meaning": "Estado del errante: 1 capturado, 2 derrotado (la Liga lo recrea), 0 sin resolver."
+        }
+      }
+    },
+    {
+      "id": "hgss.latias",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "HEARTGOLD"
+      ],
+      "category": "Legendario errante",
+      "species": [
+        380
+      ],
+      "title": "Latias errante por Kanto",
+      "placeName": {
+        "HGSS": "Ciudad Carmín"
+      },
+      "requires": "Hablar con Máximo Peñas en Ciudad Carmín (cadena de la muñeca perdida del Club de Fans).",
+      "steps": [
+        "En Ciudad Carmín, al salir del Club de Fans durante la cadena de la muñeca, Máximo te habla de Latias.",
+        "Desde ese momento vaga por las rutas de Kanto: localízalo con el Pokégear y retenlo."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_ROAMER_LATIAS_STATUS",
+            "equals": 1
+          },
+          "progress": [
+            {
+              "var": "VAR_ROAMER_LATIAS_STATUS",
+              "equals": 2,
+              "label": "Derrotado: vuelve a vagar tras la Liga"
+            }
+          ],
+          "meaning": "Estado del errante: 1 capturado, 2 derrotado, 0 sin resolver."
+        }
+      }
+    },
+    {
+      "id": "hgss.latios",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "SOULSILVER"
+      ],
+      "category": "Legendario errante",
+      "species": [
+        381
+      ],
+      "title": "Latios errante por Kanto",
+      "placeName": {
+        "HGSS": "Ciudad Carmín"
+      },
+      "requires": "Hablar con Máximo Peñas en Ciudad Carmín (cadena de la muñeca perdida del Club de Fans).",
+      "steps": [
+        "En Ciudad Carmín, al salir del Club de Fans durante la cadena de la muñeca, Máximo te habla de Latios.",
+        "Desde ese momento vaga por las rutas de Kanto: localízalo con el Pokégear y retenlo."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_ROAMER_LATIOS_STATUS",
+            "equals": 1
+          },
+          "progress": [
+            {
+              "var": "VAR_ROAMER_LATIOS_STATUS",
+              "equals": 2,
+              "label": "Derrotado: vuelve a vagar tras la Liga"
+            }
+          ],
+          "meaning": "Estado del errante: 1 capturado, 2 derrotado, 0 sin resolver."
+        }
+      }
+    },
+    {
+      "id": "hgss.red_gyarados",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Encuentro único",
+      "species": [
+        130
+      ],
+      "title": "Gyarados rojo del Lago de la Furia",
+      "placeName": {
+        "HGSS": "Lago de la Furia"
+      },
+      "requires": "Surf.",
+      "steps": [
+        "Surfea hasta el centro del Lago de la Furia: el Gyarados rojo (nivel 30) es un encuentro fijo.",
+        "Tras el combate recoges la Escama Roja."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_RED_GYARADOS",
+          "meaning": "Capturado en el lago."
+        }
+      }
+    },
+    {
+      "id": "hgss.sudowoodo",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Encuentro único",
+      "species": [
+        185
+      ],
+      "mission": "05",
+      "title": "Sudowoodo de la Ruta 36",
+      "placeName": {
+        "HGSS": "Ruta 36"
+      },
+      "requires": "Regadera de la floristería de Ciudad Trigal (tras la Medalla Planicie).",
+      "steps": [
+        "Usa la Regadera sobre el árbol que bloquea la Ruta 36 (nivel 20)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_SUDOWOODO",
+          "meaning": "Capturado."
+        }
+      }
+    },
+    {
+      "id": "hgss.snorlax",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Encuentro único",
+      "species": [
+        143
+      ],
+      "title": "Snorlax de Kanto",
+      "placeName": {
+        "HGSS": "Ruta 11"
+      },
+      "requires": "Tarjeta Radio con la Poké Flauta sintonizada.",
+      "steps": [
+        "Junto a la entrada de la Cueva Diglett (Ruta 11), sintoniza la Poké Flauta en el Pokégear para despertar a Snorlax (nivel 50)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_SNORLAX",
+          "meaning": "Capturado."
+        }
+      }
+    },
+    {
+      "id": "hgss.zapdos",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario",
+      "species": [
+        145
+      ],
+      "title": "Zapdos junto a la Central Energía",
+      "placeName": {
+        "HGSS": "Ruta 10"
+      },
+      "requires": "Surf.",
+      "steps": [
+        "Surfea desde la Ruta 10 hasta el exterior de la Central Energía: Zapdos espera fuera (nivel 50)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_ZAPDOS",
+          "meaning": "Capturado en su lugar original (no basta con la Pokédex)."
+        }
+      }
+    },
+    {
+      "id": "hgss.articuno",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario",
+      "species": [
+        144
+      ],
+      "title": "Articuno en las Islas Espuma",
+      "placeName": {
+        "HGSS": "Islas Espuma"
+      },
+      "requires": "Surf, Fuerza y Cascada.",
+      "steps": [
+        "Resuelve el recorrido con Fuerza y Cascada hasta el sótano más profundo: Articuno (nivel 50)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_ARTICUNO",
+          "meaning": "Capturado en su lugar original."
+        }
+      }
+    },
+    {
+      "id": "hgss.moltres",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario",
+      "species": [
+        146
+      ],
+      "title": "Moltres en el Monte Plateado",
+      "placeName": {
+        "HGSS": "Monte Plateado"
+      },
+      "requires": "Acceso al Monte Plateado (dieciséis medallas), Surf, Cascada y Golpe Roca.",
+      "steps": [
+        "Dentro del Monte Plateado busca la sala interior a la que se llega surfeando y subiendo la cascada: Moltres (nivel 50)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_MOLTRES",
+          "meaning": "Capturado en su lugar original."
+        }
+      }
+    },
+    {
+      "id": "hgss.mewtwo",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario",
+      "species": [
+        150
+      ],
+      "title": "Mewtwo en la Cueva Celeste",
+      "placeName": {
+        "HGSS": "Cueva Celeste"
+      },
+      "requires": "Dieciséis medallas, Surf y Golpe Roca.",
+      "steps": [
+        "Surfea al norte de Ciudad Celeste hasta la cueva y baja hasta el sótano: Mewtwo (nivel 70)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_MEWTWO",
+          "meaning": "Capturado en su lugar original."
+        }
+      }
+    },
+    {
+      "id": "hgss.hoenn_starter",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Regalo",
+      "species": [
+        252,
+        255,
+        258
+      ],
+      "title": "Inicial de Hoenn de Máximo Peñas",
+      "placeName": {
+        "HGSS": "Silph S.A. (Ciudad Azafrán)"
+      },
+      "requires": "Haber vencido a Rojo y haber visto las escenas previas con Máximo (Ciudad Carmín).",
+      "steps": [
+        "Tras vencer a Rojo, Máximo Peñas aparece en la sede de Silph S.A. de Ciudad Azafrán.",
+        "Habla con él para elegir Treecko, Torchic o Mudkip. Es un regalo distinto del inicial de Kanto de Oak."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_GOT_HOENN_STARTER_FROM_STEVEN",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "hgss.alph",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Puzle",
+      "mission": "E03",
+      "title": "Ruinas Alfa: cuatro puzles y cuatro cámaras secretas",
+      "placeName": {
+        "HGSS": "Ruinas Alfa"
+      },
+      "requires": "Destello, Cuerda Huida, Piedra Agua y Ho-Oh en el equipo para las cámaras.",
+      "steps": [
+        "Resuelve el puzle deslizante de cada una de las cuatro cámaras: Kabuto, Omanyte, Aerodactyl y Ho-Oh.",
+        "Para las salas secretas: usa Cuerda Huida, Destello o una Piedra Agua frente a la pared con su inscripción, o entra con Ho-Oh en el equipo. Pasos detallados en la misión «Ruinas Alfa: cuatro cámaras secretas»."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_OPENED_ALPH_HO_OH_SECRET_ROOM",
+          "doneAll": [
+            "FLAG_OPENED_ALPH_ESCAPE_ROPE_SECRET_ROOM",
+            "FLAG_OPENED_ALPH_FLASH_SECRET_ROOM",
+            "FLAG_OPENED_ALPH_WATER_STONE_SECRET_ROOM"
+          ],
+          "progress": [
+            {
+              "flag": "FLAG_SYS_ALPH_PUZZLE_KABUTO",
+              "label": "Puzle Kabuto"
+            },
+            {
+              "flag": "FLAG_SYS_ALPH_PUZZLE_OMANYTE",
+              "label": "Puzle Omanyte"
+            },
+            {
+              "flag": "FLAG_SYS_ALPH_PUZZLE_AERODACTYL",
+              "label": "Puzle Aerodactyl"
+            },
+            {
+              "flag": "FLAG_SYS_ALPH_PUZZLE_HO_OH",
+              "label": "Puzle Ho-Oh"
+            }
+          ],
+          "meaning": "Las cuatro salas secretas abiertas; se muestran los puzles resueltos."
+        }
+      }
+    }
+  ]
+}

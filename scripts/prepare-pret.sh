@@ -9,4 +9,5 @@ fetch(){ local name=$1 rev=$2 dir="$root/$1"
 fetch pokeemerald 731ad5bfd6e6f265508d0efcca0ba42f9dcf5881
 fetch pokeruby 5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f
 fetch pokefirered ce6406d8c2eaf46d543c8a2606de0c3cb1951982
+fetch pokeheartgold 6bf138d6035aa6b43d6f8f4132a12df70f86dcec
 echo 'Decompilaciones pret fijadas en .cache/pret.'
