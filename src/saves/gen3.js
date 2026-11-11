@@ -81,6 +81,17 @@
   for(let box=0;box<14;box++)for(let s=0;s<30;s++){
    const m=mon(storage,4+(box*30+s)*80,data);if(m)boxes.push({box:box+1,slot:s+1,...m});
   }
+  // Salón de la Fama: sectores extra 0x1C000/0x1D000 (pret SECTOR_ID_HOF_1/2), suma comprobada como
+  // PKHeX IsSectorValidExtra. Equipos de 6×20 bytes; se cuentan los que tienen especie en el primer hueco.
+  let hallOfFame=null;
+  if(b.length===0x20000){
+   const valid=[0x1C000,0x1D000].every(o=>u16(b,o+0xFF4)===checksum(b,o));
+   if(valid){
+    const hof=new Uint8Array(2*USED);hof.set(b.subarray(0x1C000,0x1C000+USED));hof.set(b.subarray(0x1D000,0x1D000+USED),USED);
+    let teams=0;for(let t=0;t<50;t++)if(u16(hof,t*120+8)&0x1FF)teams++;
+    hallOfFame={teams,max:50};
+   }
+  }
   const activeFlags=[];for(let n=0;n<L.flagCount;n++)if(large[L.flags+(n>>3)]&1<<(n&7))activeFlags.push(n);
   const vars=[];for(let i=0;i<256;i++)vars.push(u16(large,L.vars+i*2));
   const fam3=data.families[fam];
@@ -90,7 +101,7 @@
    integrity:{activeSlot:active.index,saveCounter:active.counter,sectorsValid:true,copies:complete.length},
    location:{mapGroup:s8(large[4]),mapNum:s8(large[5]),x:u16(large,0)<<16>>16,y:u16(large,2)<<16>>16,
     name:mapEntry?data.locationNames[mapEntry[0]]:null,map:mapEntry?mapEntry[1]:null},
-   party,boxes,flags:activeFlags,vars,warnings
+   party,boxes,flags:activeFlags,vars,warnings,hallOfFame
   };
  }
  const api={read,LAYOUT};

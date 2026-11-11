@@ -37,6 +37,11 @@
   return data.secrets.filter(s=>s.families.includes(field.family)).map(s=>{
    const c=s.conditions?.[field.family],place=s.placeName[field.family];
    if(s.computed==='mirage')return {...s,place,status:'calculado',mirage:mirage(field,data)};
+   if(s.computed==='hallOfFame'){
+    const h=field.hallOfFame,n=h?.teams;
+    return {...s,place,status:n==null?'pendiente':n>=2?'completado':n===1?'en curso':'pendiente',
+     meaning:n==null?'El registro del Salón de la Fama no está disponible o no supera su comprobación.':`Equipos registrados en el Salón de la Fama: ${n}${n>=h.max?' (máximo que guarda el juego)':''}. Cada uno corresponde a una victoria en la Liga.`,done:[],lost:[],progress:[],species:[]};
+   }
    const done=[c.done,c.doneAlso].filter(Boolean).map(f=>({flag:f,set:has(field,data,f)}));
    const lost=(c.lost||[]).filter(f=>has(field,data,f));
    const progress=(c.progress||[]).map(p=>({...p,set:has(field,data,p.flag)}));

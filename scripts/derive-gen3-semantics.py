@@ -173,6 +173,11 @@ def build():
             if value is None:
                 fail(f'{name} no existe en {repo}')
             sites = set_sites(repo, name)
+            indirect = catalog.get('indirectSets', {}).get(family)
+            if not sites and indirect and name in indirect['flags']:
+                text = (PRET / repo / indirect['file']).read_text(encoding='utf-8')
+                if all(line in text for line in indirect['lines']):
+                    sites = [indirect['file'] + ' (' + indirect['note'] + ')']
             if not sites:
                 fail(f'{name} no se activa en ningún script de {repo}')
             flags[name] = value

@@ -851,6 +851,193 @@
           "meaning": "Cada bandera se activa solo al capturarlo. Derrotarlo marca que se ha ido volando."
         }
       }
+    },
+    {
+      "id": "gen3.hall_of_fame",
+      "families": [
+        "E",
+        "RS",
+        "FRLG"
+      ],
+      "category": "Desafío",
+      "computed": "hallOfFame",
+      "title": "Volver a vencer a la Liga",
+      "place": "MAPSEC_EVER_GRANDE_CITY",
+      "requires": "Haber entrado una vez en el Salón de la Fama.",
+      "steps": [
+        "Tras la primera victoria, vuelve a la Liga: en Esmeralda y Rojo Fuego/Verde Hoja el Alto Mando y el Campeón usan equipos más fuertes.",
+        "Cada victoria añade un equipo al Salón de la Fama (hasta 50 registros); el guardado los conserva."
+      ]
+    },
+    {
+      "id": "gen3.e.frontier_silver",
+      "families": [
+        "E"
+      ],
+      "category": "Desafío",
+      "title": "Frente Batalla: los siete símbolos de plata",
+      "place": "MAPSEC_BATTLE_FRONTIER",
+      "requires": "Liga superada y Ticket Barco hasta el Frente Batalla.",
+      "steps": [
+        "Cada As del Frente aparece en individual al alcanzar su racha: Torre Batalla: combate 35 (primer encuentro); Domo Batalla: torneo 5.º (primer encuentro); Palacio Batalla: combate 21 (primer encuentro); Sala Batalla: combate 28 (primer encuentro); Fábrica Batalla: combate 21 (primer encuentro); Tubo Batalla: sala 28 (primer encuentro); Pirámide Batalla: piso 21 (primer encuentro).",
+        "Venciendo al As por primera vez obtienes el símbolo de plata de esa instalación; se guarda en tu Pase Frente."
+      ],
+      "conditions": {
+        "E": {
+          "done": "FLAG_SYS_TOWER_SILVER",
+          "doneAll": [
+            "FLAG_SYS_DOME_SILVER",
+            "FLAG_SYS_PALACE_SILVER",
+            "FLAG_SYS_ARENA_SILVER",
+            "FLAG_SYS_FACTORY_SILVER",
+            "FLAG_SYS_PIKE_SILVER",
+            "FLAG_SYS_PYRAMID_SILVER"
+          ],
+          "progress": [
+            {
+              "flag": "FLAG_SYS_TOWER_SILVER",
+              "label": "Torre Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_DOME_SILVER",
+              "label": "Domo Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_PALACE_SILVER",
+              "label": "Palacio Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_ARENA_SILVER",
+              "label": "Sala Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_FACTORY_SILVER",
+              "label": "Fábrica Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_PIKE_SILVER",
+              "label": "Tubo Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_PYRAMID_SILVER",
+              "label": "Pirámide Batalla"
+            }
+          ],
+          "meaning": "Banderas de sistema de los símbolos de plata del Pase Frente."
+        }
+      }
+    },
+    {
+      "id": "gen3.e.frontier_gold",
+      "families": [
+        "E"
+      ],
+      "category": "Desafío",
+      "title": "Frente Batalla: los siete símbolos de oro",
+      "place": "MAPSEC_BATTLE_FRONTIER",
+      "requires": "Los símbolos de plata y mantener la racha hasta la segunda aparición de cada As.",
+      "steps": [
+        "Segunda aparición de cada As en individual: Torre Batalla: combates 35 y 70 (Anabel); Domo Batalla: torneos 5.º y 10.º (Tucker); Palacio Batalla: combates 21 y 42 (Spenser); Sala Batalla: combates 28 y 56 (Greta); Fábrica Batalla: combates 21 y 42 (Noland); Tubo Batalla: salas 28 y 140 (Lucy); Pirámide Batalla: pisos 21 y 70 (Brandon).",
+        "La racha debe ser continua: si pierdes, vuelve a empezar desde cero en esa instalación."
+      ],
+      "conditions": {
+        "E": {
+          "done": "FLAG_SYS_TOWER_GOLD",
+          "doneAll": [
+            "FLAG_SYS_DOME_GOLD",
+            "FLAG_SYS_PALACE_GOLD",
+            "FLAG_SYS_ARENA_GOLD",
+            "FLAG_SYS_FACTORY_GOLD",
+            "FLAG_SYS_PIKE_GOLD",
+            "FLAG_SYS_PYRAMID_GOLD"
+          ],
+          "progress": [
+            {
+              "flag": "FLAG_SYS_TOWER_GOLD",
+              "label": "Torre Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_DOME_GOLD",
+              "label": "Domo Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_PALACE_GOLD",
+              "label": "Palacio Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_ARENA_GOLD",
+              "label": "Sala Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_FACTORY_GOLD",
+              "label": "Fábrica Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_PIKE_GOLD",
+              "label": "Tubo Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_PYRAMID_GOLD",
+              "label": "Pirámide Batalla"
+            }
+          ],
+          "meaning": "Banderas de sistema de los símbolos de oro del Pase Frente."
+        }
+      }
+    },
+    {
+      "id": "gen3.shields",
+      "families": [
+        "E",
+        "RS"
+      ],
+      "category": "Desafío",
+      "title": "Escudos de plata y oro de la Torre Batalla",
+      "place": "MAPSEC_BATTLE_FRONTIER",
+      "requires": "Racha en la Torre Batalla (combates individuales).",
+      "steps": [
+        "Esmeralda: con una racha actual de 50 victorias en individual de la Torre Batalla, visita la casa de Scott en el Frente Batalla para el Escudo de Plata; con 100, el de Oro.",
+        "Rubí/Zafiro: el recepcionista del vestíbulo de la Torre Batalla los entrega por tu mejor racha de 50 y 100.",
+        "Necesitas espacio libre en el PC de decoraciones."
+      ],
+      "conditions": {
+        "E": {
+          "done": "FLAG_RECEIVED_SILVER_SHIELD",
+          "doneAlso": "FLAG_RECEIVED_GOLD_SHIELD",
+          "meaning": "Decoraciones recibidas."
+        },
+        "RS": {
+          "done": "FLAG_RECEIVED_SILVER_SHIELD",
+          "doneAlso": "FLAG_RECEIVED_GOLD_SHIELD",
+          "meaning": "Decoraciones recibidas."
+        }
+      }
     }
-  ]
+  ],
+  "indirectSets": {
+    "E": {
+      "file": "src/frontier_util.c",
+      "lines": [
+        "FlagSet(FLAG_SYS_TOWER_SILVER + facility * 2);",
+        "FlagSet(FLAG_SYS_TOWER_GOLD + facility * 2);"
+      ],
+      "flags": [
+        "FLAG_SYS_TOWER_SILVER",
+        "FLAG_SYS_TOWER_GOLD",
+        "FLAG_SYS_DOME_SILVER",
+        "FLAG_SYS_DOME_GOLD",
+        "FLAG_SYS_PALACE_SILVER",
+        "FLAG_SYS_PALACE_GOLD",
+        "FLAG_SYS_ARENA_SILVER",
+        "FLAG_SYS_ARENA_GOLD",
+        "FLAG_SYS_FACTORY_SILVER",
+        "FLAG_SYS_FACTORY_GOLD",
+        "FLAG_SYS_PIKE_SILVER",
+        "FLAG_SYS_PIKE_GOLD",
+        "FLAG_SYS_PYRAMID_SILVER",
+        "FLAG_SYS_PYRAMID_GOLD"
+      ],
+      "note": "GiveFacilitySymbol: plata y oro de cada instalación como base + instalación × 2."
+    }
+  }
 }

@@ -111,3 +111,16 @@ test('el recomendador usa la bandera de historia del guardado',()=>{
  const next=route.nextMission(game,{field:r,caught:[]},()=>false,()=>false);
  assert.equal(next.mission.id,'EMERALD-03');assert.match(next.reason,/Medalla Puño/);
 });
+
+test('Salón de la Fama: cuenta equipos con suma válida y no inventa con sectores dañados',()=>{
+ const bytes=build({flags:[E.flags.FLAG_SYS_GAME_CLEAR]}),v=new DataView(bytes.buffer);
+ for(const [o,teams] of [[0x1C000,[0,1,2]],[0x1D000,[]]]){for(const t of teams)v.setUint16(o+t*120+8,280,true);v.setUint16(o+0xFF4,checksum(bytes,o),true);}
+ const r=gen3.read(bytes,data);assert.equal(r.hallOfFame.teams,3);
+ assert.equal(guide.analyze(r,'EMERALD').secrets.find(s=>s.id==='gen3.hall_of_fame').status,'completado');
+ bytes[0x1C010]^=1;assert.equal(gen3.read(bytes,data).hallOfFame,null);
+});
+
+test('Frente Batalla: los símbolos se resuelven como base + instalación × 2',()=>{
+ assert.equal(E.flags.FLAG_SYS_DOME_SILVER,E.flags.FLAG_SYS_TOWER_SILVER+2);
+ assert.equal(E.flags.FLAG_SYS_PYRAMID_GOLD,E.flags.FLAG_SYS_TOWER_GOLD+12);
+});
