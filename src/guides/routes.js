@@ -1703,6 +1703,160 @@
     "games": [
       "ZA"
     ],
+    "mission": "01",
+    "location": "Ciudad Luminalia: llegada, Hotel Z y primera noche",
+    "requires": [],
+    "steps": [
+      "Misión principal 1: nada más llegar a Ciudad Luminalia, un Pancham te roba la bolsa de viaje. Persíguelo por las calles hasta recuperarla.",
+      "Misión 2: al caer la noche la ciudad se convierte en zona de combate. Sigue a tu nueva amiga o amigo (Taunie o Urbain, según tu protagonista) para salir de ella y refugiarte en el Hotel Z.",
+      "Misión 3: tu acompañante te enseña lo básico de la vida en Luminalia: Centro Pokémon, tiendas, zonas salvajes urbanas y el sistema de combate en tiempo real, con movimientos y esquivas.",
+      "Antes de seguir, captura algún Pokémon en las zonas salvajes cercanas y forma un equipo de al menos tres para las primeras noches del Torneo Z-A."
+    ],
+    "check": "Bolsa recuperada, primera noche superada y misión principal 3 marcada como completada.",
+    "pitfalls": [
+      "Los nombres de personajes son los de la versión inglesa (Serebii); los lugares, los oficiales en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/mainmissions.shtml",
+      "https://www.serebii.net/legendsz-a/z-aroyale.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
+    "mission": "02",
+    "location": "Torneo Z-A: rangos Z → Y → X → W → V",
+    "requires": [],
+    "steps": [
+      "Por la noche aparecen zonas de combate por toda la ciudad, también en las azoteas. Vence entrenadores para sumar puntos (hasta 2.500 por combate según tu rango) y recoge medallas de premio y tarjetas de bonificación.",
+      "Las tarjetas de bonificación piden tareas concretas: quemar o paralizar, golpes supereficaces, ataques por sorpresa o derrotar a entrenadores de rango superior. Las raras dan hasta 20.000 puntos. Atacar sin ser visto te da ventaja al empezar el combate.",
+      "Algunos entrenadores ayudan tras vencerlos: dependientes del Centro Pokémon y camareros curan, los niños ricos dan medallas, los Entrenadores Guay dan una tarjeta y los mensajeros dan objetos. Al amanecer las medallas se convierten en dinero, multiplicado según cuántos entrenadores hayas vencido (×1 a ×3).",
+      "Misión 4: con suficientes puntos consigues el billete de aspirante (Challenger's Ticket) y puedes disputar el combate de ascenso al rango Y.",
+      "Misiones 6 a 8: repite el ciclo para subir a X (rival: Yvon, oficinista), W (Xavi, colegial) y V (Rintaro, camarero). Cada ascenso se disputa con el billete en el lugar que indica la misión.",
+      "Entre combates, la misión 5 te enseña más de la ciudad junto a tu acompañante."
+    ],
+    "check": "Rango V alcanzado (misión principal 8 completada).",
+    "pitfalls": [
+      "Los rivales de la noche tienen tu rango o uno más o uno menos.",
+      "Los nombres de personajes son los de la versión inglesa (Serebii); los lugares, los oficiales en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/mainmissions.shtml",
+      "https://www.serebii.net/legendsz-a/z-aroyale.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
+    "mission": "03",
+    "location": "Luminalia: zonas salvajes y el Pokémon misterioso",
+    "requires": [],
+    "steps": [
+      "Explora las zonas salvajes urbanas de cada distrito (Verde, Azul, Rosa, Rojo y Amarillo) y registra especies en la Pokédex de Luminalia. Las apariciones cambian con el día y la noche y con el tiempo.",
+      "Misión principal 9: un Pokémon misterioso aparece ante ti y quiere que lo sigas. Síguelo hasta el final de la escena.",
+      "Aprovecha para completar misiones secundarias: dan objetos, Megapiedras y accesos que la historia no exige."
+    ],
+    "check": "Misión principal 9 completada y zonas salvajes de los cinco distritos visitadas.",
+    "pitfalls": [
+      "Los nombres de personajes son los de la versión inglesa (Serebii); los lugares, los oficiales en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/mainmissions.shtml",
+      "https://www.serebii.net/legendsz-a/z-aroyale.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
+    "mission": "04",
+    "location": "Megaevolución: Mega Aro y megaevoluciones descontroladas (rangos E a A)",
+    "requires": [],
+    "steps": [
+      "Misión 10: aprende los secretos de la megaevolución y consigue el Mega-Aro.",
+      "Misiones 11 a 13: megaevoluciones descontroladas de Slowbro (Distrito Azul), Camerupt (Distrito Amarillo) y Victreebel (Distrito Rosa). Si el contador llega a cero pierdes el combate: ataca rápido y esquiva sus ataques de área.",
+      "Misión 14: rango E contra Canari, la streamer; primero tienes que encontrarla.",
+      "Misiones 15 a 18 (encargo del Equipo MZ, «Team MZ» en inglés): Beedrill (Distrito Verde), Hawlucha (Distrito Rosa) y Banette (Distrito Amarillo).",
+      "Misión 19: antes del ascenso a D, busca a Gwynn, la hermana pequeña de Ivor, que ha desaparecido. Después vence a Ivor.",
+      "Misiones 20 a 23: encargos del Sindicato (Rust Syndicate) para saldar la deuda, y las megaevoluciones de Mawile (Distrito Rosa), Barbaracle (Distrito Azul) y Ampharos (Distrito Rojo).",
+      "Misión 24: rango C contra Corbeau, jefe del Sindicato (Rust Syndicate). Misión 25: combate en una pista de verdad, ya resuelta la deuda.",
+      "Misiones 26 a 29: Froslass (Distrito Azul), Altaria (Distrito Rosa) y Venusaur (Distrito Amarillo), antes del torneo de Jacinthe (SBC). Misión 30: rango B contra Jacinthe.",
+      "Misiones 31 a 34: Dragonite (Distrito Verde), Tyranitar (Distrito Amarillo) y Starmie (Distrito Azul)."
+    ],
+    "check": "Las 15 megaevoluciones descontroladas de la historia vencidas y rango B alcanzado (misión principal 34).",
+    "pitfalls": [
+      "Cada megaevolución descontrolada tiene límite de tiempo; a veces suelta una esfera que congela la cuenta atrás.",
+      "Los nombres de personajes son los de la versión inglesa (Serebii); los lugares, los oficiales en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/mainmissions.shtml",
+      "https://www.serebii.net/legendsz-a/z-aroyale.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
+    "mission": "05",
+    "location": "Rango A, Torre Prisma y el futuro de Luminalia",
+    "requires": [],
+    "steps": [
+      "Misión 35: tu rival para el rango A es Grisham. Solo tienes su foto, así que búscalo por la ciudad antes de enfrentarte a él.",
+      "Misión 36: una luz extraña sale de la Torre Prisma. Reúnete con tus amigos para proteger la ciudad.",
+      "Misión 37 («Operation Protect Lumiose»): deja atrás las rivalidades y ve a por Zygarde, que te espera en el lugar indicado.",
+      "Misión 38: con la ciudad recuperada, decide con tu acompañante qué hacer con los deseos ganados al llegar al rango A. Es el final de la historia principal."
+    ],
+    "check": "Misión principal 38 completada y rango A alcanzado.",
+    "pitfalls": [
+      "Guarda antes de los combates finales.",
+      "Los nombres de personajes son los de la versión inglesa (Serebii); los lugares, los oficiales en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/mainmissions.shtml",
+      "https://www.serebii.net/legendsz-a/z-aroyale.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
+    "mission": "08",
+    "location": "Postgame: Torneo Z-A Infinito, Pokédex y reconocimiento",
+    "requires": [],
+    "steps": [
+      "Misión 39: se abre el Torneo Z-A Infinito. Ya no hay más ascensos de rango, pero cada noche hay tres zonas de combate y los rivales suben de nivel a medida que completas torneos.",
+      "Con el billete de aspirante (Challenger's Ticket) puedes llamar a un rival en Quasartico Inc. para los combates de recompensa: pepitas grandes, vitaminas, Chapas Plateadas o Doradas, Poké Balls especiales y, con suerte, una Master Ball. Las rachas largas dan más Caramelos Exp.",
+      "Misiones 40 a 42: la amenaza de «el que da» (con Mable, antes miembro del Team Flare), la de «el que quita» (con Grisham y Vinnie) y el equilibrio del mundo con Zygarde. Los encuentros y capturas de Xerneas, Yveltal y Zygarde se detallan en la misión 06.",
+      "Completa la Pokédex de Luminalia y, si tienes el DLC, la del Hiperespacio (misión 07). Revisa también los títulos de entrenador y la investigación de Pokédex de Mable."
+    ],
+    "check": "Misiones principales 39 a 42 completadas, Torneo Infinito iniciado y Pokédex revisadas.",
+    "pitfalls": [
+      "Las distribuciones por internet o con código no se desbloquean jugando.",
+      "Los nombres de personajes son los de la versión inglesa (Serebii); los lugares, los oficiales en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/mainmissions.shtml",
+      "https://www.serebii.net/legendsz-a/z-aroyale.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
     "mission": "06",
     "location": "Luminalia: encuentro de Xerneas, Yveltal y Zygarde",
     "requires": [
