@@ -113,6 +113,24 @@ def unova2():
     return {'maps': table, 'names': used, 'source': 'ROM propia (' + spec['game'] + ') sha256:' + spec['sha256'][:16]}
 
 
+def kalos_hoenn(key, expected):
+    """X/Y y ROZA: zona → índice del nombre (research/gen6/<key>-zones.json, extraído de la ROM propia)."""
+    spec = json.loads((ROOT / 'research' / 'gen6' / f'{key}-zones.json').read_text(encoding='utf-8'))
+    names = (PKHEX / 'Resources' / 'text' / 'locations' / 'gen6' / 'text_xy_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
+    if spec['count'] != len(spec['names']):
+        fail(f'la tabla de zonas {key} está incompleta')
+    for zone, name in expected:
+        if names[spec['names'][zone]].strip() != name:
+            fail(f'la zona {zone} de {key} no corresponde a «{name}»')
+    table, used = {}, {}
+    for zone, index in enumerate(spec['names']):
+        if index == 0 or index >= len(names) or not names[index].strip():
+            continue
+        used[index] = names[index].strip()
+        table[zone] = [index, f'ZONE_{zone}']
+    return {'maps': table, 'names': used, 'source': 'ROM propia (' + spec['game'] + ') sha256:' + spec['sha256'][:16]}
+
+
 def kanto_gb(repo_name, rev):
     """Rojo/Azul/Amarillo: wCurMap → lugar del mapa de Kanto (town_map_entries.asm), nombre oficial en español."""
     repo = PRET / repo_name
@@ -238,6 +256,8 @@ def build():
     data['PT'] = platinum()
     data['DP'] = diamond()
     data['B2W2'] = unova2()
+    data['XY'] = kalos_hoenn('xy', [(0, 'Pueblo Boceto'), (8, 'Pueblo Acuarela'), (53, 'Ciudad Novarte')])
+    data['ORAS'] = kalos_hoenn('oras', [(0, 'Villa Raíz'), (13, 'Ciudad Petalia')])
     data['RB'] = kanto_gb('pokered', '0dbf95cd12f5b1511c62ce69efe283000f780a8f')
     data['Y'] = kanto_gb('pokeyellow', 'b452f2ab07185075140061c5084ab866d5e4a794')
     data['GS'] = johto_gb('pokegold', 'f2cde36f49b994c143bfd18582182302fdc76492')

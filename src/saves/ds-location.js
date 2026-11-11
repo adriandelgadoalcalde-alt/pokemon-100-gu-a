@@ -43,7 +43,19 @@
   const index=G.swap?.[entry[0]]??entry[0];
   return {mapId,map:entry[1],name:D[G.maps].names[index],x:v.getUint16(G.block+0x86,true),y:v.getUint16(G.block+0x8E,true),source:'ds-location'};
  }
+ // X/Y y ROZA: bloque 4 «Situation» (0x1400, 0x150 bytes); suma CRC16-CCITT en la tabla de bloques del final
+ // (tamaño-0x200 + 0x14 + id*8 + 6), como BlockInfo6 de PKHeX. Situation6: mapa u16 en +2, X float en +0x10, Y en +0x18.
+ const GEN6={X:{size:0x65600,maps:'XY'},Y:{size:0x65600,maps:'XY'},OMEGARUBY:{size:0x76000,maps:'ORAS'},ALPHASAPPHIRE:{size:0x76000,maps:'ORAS'}};
+ function readGen6(bytes,game){
+  const G=GEN6[game],D=data(),I=integrity();if(!G||!D||!I||bytes.length!==G.size)return null;
+  const v=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength),block=0x1400,info=G.size-0x200+0x14+4*8;
+  if(v.getUint32(G.size-0x200+0x10,true)!==0x42454546||v.getUint16(info+4,true)!==4)return null;
+  if(I.crc16(bytes.subarray(block,block+0x150))!==v.getUint16(info+6,true))return null;
+  const mapId=v.getUint16(block+2,true),entry=D[G.maps].maps[mapId];if(!entry)return null;
+  return {mapId,map:entry[1],name:D[G.maps].names[entry[0]],x:Math.round(v.getFloat32(block+0x10,true)),y:Math.round(v.getFloat32(block+0x18,true)),source:'ds-location'};
+ }
  function read(bytes,game,base,languageId){
+  if(GEN6[game])return bytes instanceof Uint8Array?readGen6(bytes,game):null;
   if(GEN5[game])return bytes instanceof Uint8Array?readGen5(bytes,game):null;
   if(GB[game])return bytes instanceof Uint8Array?readGB(bytes,game,languageId):null;
   const L=LAYOUT[game],D=data();if(!L||!D||!(bytes instanceof Uint8Array))return null;
@@ -53,6 +65,6 @@
   if(!entry)return null;
   return {mapId,map:entry[1],name:D[L.maps].names[entry[0]],x:v.getInt32(o+8,true),y:v.getInt32(o+12,true),source:'ds-location'};
  }
- const api={read,LAYOUT,GEN5};
+ const api={read,LAYOUT,GEN5,GEN6};
  if(typeof module==='object'&&module.exports)module.exports=api;else root.PokemonDSLocation=api;
 })(globalThis);

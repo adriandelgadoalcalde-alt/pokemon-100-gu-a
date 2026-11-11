@@ -141,6 +141,17 @@ test('posición Negro 2/Blanco 2: bloque con suma válida, zona con nombre y Bos
  bytes[0x19500]^=1;assert.equal(L.read(bytes,'BLACK2'),null);
 });
 
+test('posición X/Y y ROZA: bloque Situation con suma de su tabla y zonas con nombre',()=>{
+ const L=require('../src/saves/ds-location.js'),I=require('../src/saves/hgss-integrity.js');
+ const make=(size,zone)=>{const b=new Uint8Array(size),v=new DataView(b.buffer),bo=size-0x200,info=bo+0x14+4*8;
+  v.setUint32(bo+0x10,0x42454546,true);v.setUint16(info+4,4,true);v.setUint16(0x1402,zone,true);v.setFloat32(0x1410,12.4,true);v.setFloat32(0x1418,7.6,true);
+  v.setUint16(info+6,I.crc16(b.subarray(0x1400,0x1550)),true);return b;};
+ const xy=make(0x65600,53),r=L.read(xy,'Y');assert.equal(r.name,'Ciudad Novarte');assert.equal(r.x,12);assert.equal(r.y,8);
+ assert.equal(L.read(make(0x76000,0),'ALPHASAPPHIRE').name,'Villa Raíz');
+ assert.equal(L.read(xy,'OMEGARUBY'),null);
+ xy[0x1400]^=1;assert.equal(L.read(xy,'X'),null);
+});
+
 test('posición Game Boy: Kanto y Johto con nombres oficiales; japonés y coreano excluidos',()=>{
  const L=require('../src/saves/ds-location.js'),bytes=new Uint8Array(0x8000);
  bytes[0x260A]=40;bytes[0x260D]=3;bytes[0x260E]=5;
