@@ -131,6 +131,16 @@ test('posición DS: Diamante/Perla leen su bloque de 0xC100 y no confunden Plati
  assert.equal(maps.DP.names[maps.DP.maps[3][0]],'Ciudad Jubileo');
 });
 
+test('posición Negro 2/Blanco 2: bloque con suma válida, zona con nombre y Bosque Blanco en Blanco 2',()=>{
+ const L=require('../src/saves/ds-location.js'),I=require('../src/saves/hgss-integrity.js');
+ const bytes=new Uint8Array(0x80000),v=new DataView(bytes.buffer),seal=()=>v.setUint16(0x195AA,I.crc16(bytes.subarray(0x19500,0x195A8)),true);
+ v.setInt32(0x19580,427,true);v.setUint16(0x19586,48,true);v.setUint16(0x1958E,740,true);seal();
+ const r=L.read(bytes,'BLACK2');assert.equal(r.name,'Ciudad Engobe');assert.equal(r.x,48);assert.equal(r.y,740);
+ v.setInt32(0x19580,0,true);seal();
+ assert.equal(L.read(bytes,'BLACK2').name,'Ciudad Negra');assert.equal(L.read(bytes,'WHITE2').name,'Bosque Blanco');
+ bytes[0x19500]^=1;assert.equal(L.read(bytes,'BLACK2'),null);
+});
+
 test('posición Game Boy: Kanto y Johto con nombres oficiales; japonés y coreano excluidos',()=>{
  const L=require('../src/saves/ds-location.js'),bytes=new Uint8Array(0x8000);
  bytes[0x260A]=40;bytes[0x260D]=3;bytes[0x260E]=5;

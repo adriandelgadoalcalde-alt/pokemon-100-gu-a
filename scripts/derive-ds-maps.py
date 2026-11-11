@@ -93,6 +93,26 @@ def diamond():
     return {'maps': table, 'names': used, 'source': 'pokediamond@b623abef1b4dfe204ca50aab42447ac00c134290'}
 
 
+def unova2():
+    """Negro 2/Blanco 2: zona → índice del nombre (research/gen5/b2w2-zones.json, extraído de la ROM propia)."""
+    spec = json.loads((ROOT / 'research' / 'gen5' / 'b2w2-zones.json').read_text(encoding='utf-8'))
+    names = (PKHEX / 'Resources' / 'text' / 'locations' / 'gen5' / 'text_bw2_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
+    if spec['count'] != len(spec['names']) or spec['count'] != 615:
+        fail('la tabla de zonas de Negro 2/Blanco 2 no tiene 615 entradas')
+    # Ciudad Engobe (inicio del juego), Ciudad Gres y Monte Tuerca, contrastados con partidas públicas.
+    for zone, expected in [(427, 'Ciudad Engobe'), (6, 'Ciudad Gres'), (200, 'Monte Tuerca')]:
+        if names[spec['names'][zone]].strip() != expected:
+            fail(f'la zona {zone} no corresponde a «{expected}»')
+    table, used = {}, {}
+    for zone, index in enumerate(spec['names']):
+        if index == 0 or index >= len(names) or not names[index].strip() or names[index].strip().startswith('－'):
+            continue
+        used[index] = names[index].strip()
+        table[zone] = [index, f'ZONE_{zone}']
+    used[51] = names[51].strip()
+    return {'maps': table, 'names': used, 'source': 'ROM propia (' + spec['game'] + ') sha256:' + spec['sha256'][:16]}
+
+
 def kanto_gb(repo_name, rev):
     """Rojo/Azul/Amarillo: wCurMap → lugar del mapa de Kanto (town_map_entries.asm), nombre oficial en español."""
     repo = PRET / repo_name
@@ -217,6 +237,7 @@ def build():
         data[family] = {'maps': table, 'names': used, 'source': src['repo'] + '@' + src['rev']}
     data['PT'] = platinum()
     data['DP'] = diamond()
+    data['B2W2'] = unova2()
     data['RB'] = kanto_gb('pokered', '0dbf95cd12f5b1511c62ce69efe283000f780a8f')
     data['Y'] = kanto_gb('pokeyellow', 'b452f2ab07185075140061c5084ab866d5e4a794')
     data['GS'] = johto_gb('pokegold', 'f2cde36f49b994c143bfd18582182302fdc76492')

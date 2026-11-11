@@ -711,7 +711,7 @@ Qué interpreta ahora la guía a partir del guardado, además de la Pokédex y l
 | IV | HeartGold, SoulSilver | pret (pokeheartgold) | 13 hitos hasta Rojo y ubicación | 22 secretos, errantes con estado real, regalo de Oak, Ruinas Alfa, impresiones del Frente |
 | IV | Platino | pret (pokeplatinum) | 9 hitos y ubicación | 22 secretos, Regis con Regigigas de evento, impresiones del Frente, concursos Master |
 | IV | Diamante, Perla | lista de PKHeX; mapas de pokediamond | Medallas, Salón de la Fama y ubicación | Legendarios, regalos y concursos Master |
-| V | Negro, Blanco, Negro 2, Blanco 2 | lista de PKHeX | Salón de la Fama | Legendarios y regalos; Medallero de N2/B2 (ya existente) |
+| V | Negro, Blanco, Negro 2, Blanco 2 | lista de PKHeX; zonas de N2/B2 desde la ROM | Salón de la Fama; ubicación en N2/B2 | Legendarios y regalos; Medallero de N2/B2 (ya existente) |
 | VI | X, Y, Rubí Omega, Zafiro Alfa | lista de PKHeX | Salón de la Fama | Legendarios, Mansión Batalla, Episodio Delta, revancha del Alto Mando, Regis |
 | VII | Sol, Luna, Ultrasol, Ultraluna | lista de PKHeX | Salón de la Fama | Legendarios, regalos, monturas; sellos del pasaporte (ya existente) |
 | VIII | Diamante Brillante, Perla Reluciente | lista de PKHeX + lector propio de banderas | Salón de la Fama | Legendarios y regalos |
@@ -724,7 +724,7 @@ Pendiente:
 - **Sin interpretación todavía:**
   - Verde (Japón).
   - Leyendas Z-A: matrices sin nombres públicos.
-- **Ubicación del jugador:** se lee en las generaciones I a IV (salvo Verde japonés y las versiones japonesa y coreana de Game Boy); de la V en adelante, todavía no.
+- **Ubicación del jugador:** se lee en las generaciones I a IV (salvo Verde japonés y las versiones japonesa y coreana de Game Boy); en la V, solo Negro 2/Blanco 2 (falta una copia de Negro/Blanco para su tabla de zonas); de la VI en adelante, todavía no.
 - **Confianza:**
   - Pret y PKHeX se marcan como «documentado en código» o «documentado por la comunidad».
   - Ninguna lectura certifica automáticamente: faltan comparaciones antes/después con partidas propias.

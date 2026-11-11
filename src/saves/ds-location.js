@@ -31,7 +31,20 @@
   const id=bytes[G.map],entry=D[G.maps].maps[id];if(!entry)return null;
   return {mapId:id,map:entry[1],name:D[G.maps].names[entry[0]],x:bytes[G.x],y:bytes[G.y],source:'gb-location'};
  }
+ // Negro 2/Blanco 2: bloque 28 «Trainer Position» de SaveBlockAccessor5B2W2 (0x19500, 0xA8 bytes, CRC16 en 0x195AA);
+ // PlayerPosition5: mapa int32 en +0x80, X en +0x86, Y en +0x8E. Zonas: research/gen5/b2w2-zones.json.
+ // La zona de Ciudad Negra es la misma en Blanco 2, donde el lugar es el Bosque Blanco (índice 51).
+ const GEN5={BLACK2:{block:0x19500,len:0xA8,chk:0x195AA,maps:'B2W2'},WHITE2:{block:0x19500,len:0xA8,chk:0x195AA,maps:'B2W2',swap:{50:51}}};
+ function readGen5(bytes,game){
+  const G=GEN5[game],D=data(),I=integrity();if(!G||!D||!I||bytes.length<0x26000)return null;
+  const v=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength);
+  if(I.crc16(bytes.subarray(G.block,G.block+G.len))!==v.getUint16(G.chk,true))return null;
+  const mapId=v.getInt32(G.block+0x80,true),entry=D[G.maps].maps[mapId];if(!entry)return null;
+  const index=G.swap?.[entry[0]]??entry[0];
+  return {mapId,map:entry[1],name:D[G.maps].names[index],x:v.getUint16(G.block+0x86,true),y:v.getUint16(G.block+0x8E,true),source:'ds-location'};
+ }
  function read(bytes,game,base,languageId){
+  if(GEN5[game])return bytes instanceof Uint8Array?readGen5(bytes,game):null;
   if(GB[game])return bytes instanceof Uint8Array?readGB(bytes,game,languageId):null;
   const L=LAYOUT[game],D=data();if(!L||!D||!(bytes instanceof Uint8Array))return null;
   const b=Number.isInteger(base)?base:activeBase(bytes,L.size,L.footer);if(b===null||b===undefined)return null;
@@ -40,6 +53,6 @@
   if(!entry)return null;
   return {mapId,map:entry[1],name:D[L.maps].names[entry[0]],x:v.getInt32(o+8,true),y:v.getInt32(o+12,true),source:'ds-location'};
  }
- const api={read,LAYOUT};
+ const api={read,LAYOUT,GEN5};
  if(typeof module==='object'&&module.exports)module.exports=api;else root.PokemonDSLocation=api;
 })(globalThis);
