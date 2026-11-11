@@ -131,7 +131,8 @@ public static class Audit
             ["badgesMask"] = save is SAV3 b3 ? b3.Badges : (int?)null,
             ["badgesTotal"] = save is SAV3 badges3 ? BitOperations.PopCount((uint)badges3.Badges) : save is SAV4HGSS hg ? BitOperations.PopCount(hg.Badges) + BitOperations.PopCount((uint)hg.Badges16) :
                 save is SAV4 d4 ? BitOperations.PopCount(d4.Badges) : save is SAV5 b5 ? BitOperations.PopCount((uint)b5.Misc.Badges) :
-                save is SAV6 b6 ? BitOperations.PopCount((uint)b6.Badges) : null,
+                save is SAV6 b6 ? BitOperations.PopCount((uint)b6.Badges) :
+                save is SAV8SWSH b8 ? BitOperations.PopCount((uint)b8.Badges) : null,
             ["progressSignals"] = ProgressSignals.Read(save),
             ["unparsed"] = unparsed,
             ["warnings"] = new[] { "Diagnóstico de estado, no certificación de legitimidad ni del 100 %.",

@@ -715,7 +715,7 @@ Qué interpreta ahora la guía a partir del guardado, además de la Pokédex y l
 | VI | X, Y, Rubí Omega, Zafiro Alfa | lista de PKHeX; zonas desde la ROM | Salón de la Fama y ubicación | Legendarios, Mansión Batalla, Episodio Delta, revancha del Alto Mando, Regis |
 | VII | Sol, Luna, Ultrasol, Ultraluna | lista de PKHeX; zonas de USUM desde la ROM | Salón de la Fama; ubicación en USUM | Legendarios, regalos, monturas; sellos del pasaporte (ya existente) |
 | VIII | Diamante Brillante, Perla Reluciente | lista de PKHeX + lector propio de banderas | Salón de la Fama y ubicación (zona = lugar oficial) | Legendarios y regalos |
-| VIII | Espada, Escudo | bloques con nombre de PKHeX | — | Pájaros de Galar, Regis, Aventura Dinamax, Torre Batalla |
+| VIII | Espada, Escudo | bloques con nombre de PKHeX | 8 medallas y título (por victorias en la Torre Batalla) | Pájaros de Galar, Regis, Aventura Dinamax, Torre Batalla |
 | VIII | Leyendas Arceus | bloques con nombre de PKHeX | 6 hitos y área actual | Arceus, Pokédex completa y perfecta, zonas, monturas, Eterna Ensoñación |
 | IX | Escarlata, Púrpura | bloques y señales de PKHeX | Señal de final (existente); lugar actual | DLC, diploma, teraincursiones |
 

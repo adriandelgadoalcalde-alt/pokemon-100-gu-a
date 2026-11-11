@@ -190,6 +190,15 @@ test('posición Switch desde el motor: SV por identificador de lugar, Leyendas p
  assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_wr0122')}).name,'Área Silvestre');
 });
 
+test('Espada/Escudo: historia por medallas y título solo con prueba de la Torre Batalla',()=>{
+ const a=guide.analyze({namedBlocks:{KBattleTowerSinglesVictory:0,KBattleTowerDoublesVictory:0},badgesTotal:3,caught:[]},'SWORD');
+ assert.equal(a.storyPartial,true);assert.equal(a.story.next.label,'4.ª medalla (Pueblo Ladera: Lucha en Espada, Fantasma en Escudo)');
+ const b=guide.analyze({namedBlocks:{KBattleTowerSinglesVictory:0,KBattleTowerDoublesVictory:0},badgesTotal:8,caught:[]},'SHIELD');
+ assert.match(b.story.next.label,/Campeón de Galar/);
+ const c=guide.analyze({namedBlocks:{KBattleTowerSinglesVictory:6},badgesTotal:8,caught:[]},'SHIELD');
+ assert.equal(c.story.next,null);
+});
+
 test('posición Game Boy: Kanto y Johto con nombres oficiales; japonés y coreano excluidos',()=>{
  const L=require('../src/saves/ds-location.js'),bytes=new Uint8Array(0x8000);
  bytes[0x260A]=40;bytes[0x260D]=3;bytes[0x260E]=5;

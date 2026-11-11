@@ -228,6 +228,9 @@ def build(pack):
             'excludeLanguages': spec.get('excludeLanguages', []), 'excludeReason': spec.get('excludeReason', ''),
             'revisions': {s.get('repo', 'PKHeX'): s['rev'] for s in spec['repos'].values()},
             'gameFamilies': spec['families'], 'families': families, 'story': spec['story'], 'secrets': spec['secrets']}
+    # Familias cuya historia solo se conoce en parte (p. ej. sin señal fiable del Salón de la Fama).
+    if spec.get('storyPartialFamilies'):
+        data['storyPartialFamilies'] = spec['storyPartialFamilies']
     body = json.dumps(data, ensure_ascii=False, separators=(',', ':'), sort_keys=True)
     return ('// SPDX-License-Identifier: GPL-3.0-or-later\n'
             f'// Generado por scripts/derive-event-pack.py {pack}. No editar a mano.\n'

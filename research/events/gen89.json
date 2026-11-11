@@ -67,6 +67,56 @@
         ],
         "label": "Dialga o Palkia origen derrotado"
       }
+    ],
+    "SWSH": [
+      {
+        "mission": "02",
+        "badgesAtLeast": 1,
+        "label": "1.ª medalla (Pueblo Hoyuelo, tipo Planta)"
+      },
+      {
+        "mission": "03",
+        "badgesAtLeast": 2,
+        "label": "2.ª medalla (Pueblo Amura, tipo Agua)"
+      },
+      {
+        "mission": "03",
+        "badgesAtLeast": 3,
+        "label": "3.ª medalla (Ciudad Pistón, tipo Fuego)"
+      },
+      {
+        "mission": "04",
+        "badgesAtLeast": 4,
+        "label": "4.ª medalla (Pueblo Ladera: Lucha en Espada, Fantasma en Escudo)"
+      },
+      {
+        "mission": "04",
+        "badgesAtLeast": 5,
+        "label": "5.ª medalla (Pueblo Plié, tipo Hada)"
+      },
+      {
+        "mission": "04",
+        "badgesAtLeast": 6,
+        "label": "6.ª medalla (Pueblo Auriga: Roca en Espada, Hielo en Escudo)"
+      },
+      {
+        "mission": "05",
+        "badgesAtLeast": 7,
+        "label": "7.ª medalla (Pueblo Crampón, tipo Siniestro)"
+      },
+      {
+        "mission": "05",
+        "badgesAtLeast": 8,
+        "label": "8.ª medalla (Ciudad Artejo, tipo Dragón)"
+      },
+      {
+        "mission": "06",
+        "anyFlags": [
+          "block:KBattleTowerSinglesVictory",
+          "block:KBattleTowerDoublesVictory"
+        ],
+        "label": "Campeón de Galar (consta por victorias en la Torre Batalla, que se abre tras el título)"
+      }
     ]
   },
   "secrets": [
@@ -719,5 +769,8 @@
         }
       }
     }
+  ],
+  "storyPartialFamilies": [
+    "SWSH"
   ]
 }

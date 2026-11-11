@@ -36,7 +36,9 @@ public static class NamedBlocks
                 SCTypeCode.Bool1 => false,
                 SCTypeCode.Bool2 => true,
                 SCTypeCode.Byte or SCTypeCode.UInt16 or SCTypeCode.UInt32 or SCTypeCode.SByte or SCTypeCode.Int16 or SCTypeCode.Int32
-                    => Convert.ToInt64(block.GetValue()),
+                    or SCTypeCode.Int64 => Convert.ToInt64(block.GetValue()),
+                // Enteros de 64 bits sin signo (marcas de tiempo como KEnteredHallOfFame): se exportan si caben en Int64.
+                SCTypeCode.UInt64 when (ulong)block.GetValue() <= long.MaxValue => (long)(ulong)block.GetValue(),
                 _ => null,
             };
             if (value is not null)
