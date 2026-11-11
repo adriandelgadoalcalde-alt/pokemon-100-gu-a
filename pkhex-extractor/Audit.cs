@@ -150,6 +150,9 @@ public static class Audit
                     interpretation = "Datos crudos sin equivalencia automática a misiones", engineCommit = EngineCommit };
             }
             else unparsed.Add("Flags/work no expuestos como arrays por esta familia; bloques hash requieren adaptador específico");
+            var named = NamedBlocks.Read(save);
+            if (named is not null)
+                result["namedBlocks"] = named;
         }
         return result;
     }
