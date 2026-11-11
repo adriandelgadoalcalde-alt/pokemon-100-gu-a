@@ -73,6 +73,57 @@ CHALLENGES = [
 ]
 
 
+LGPE_OFFSETS = {'z': 0, 's': 128, 'v': 640, 'e': 2176}  # EventWork7b: zona, sistema, desaparición, evento
+
+
+def lgpe_family():
+    rows = {}
+    for raw in (PKHEX / 'Resources' / 'text' / 'script' / 'gen7' / 'flags_gg_en.txt').read_text(encoding='utf-8-sig').splitlines():
+        m = re.match(r'([zsve])(\d{4})\t(.+)$', raw)
+        if m:
+            rows[m.group(1) + m.group(2)] = (LGPE_OFFSETS[m.group(1)] + int(m.group(2)), m.group(3))
+    def ref(key, expected):
+        index, text = rows[key]
+        if expected not in text:
+            fail(f'flags_gg_en.txt: {key} ya no describe «{expected}»')
+        return f'pkhex:{index}'
+    gyms = [('s0012', 'Brock', 'Medalla Roca'), ('s0013', 'Misty', 'Medalla Cascada'), ('s0014', 'Lt. Surge', 'Medalla Trueno'),
+            ('s0015', 'Erika', 'Medalla Arcoíris'), ('s0016', 'Koga', 'Medalla Alma'), ('s0017', 'Sabrina', 'Medalla Pantano'),
+            ('s0018', 'Blaine', 'Medalla Volcán'), ('s0019', 'Giovanni', 'Medalla Tierra')]
+    story = [{'mission': '02', 'flags': [ref(k, n) for k, n, _ in gyms], 'label': 'Ocho gimnasios de Kanto'},
+             {'mission': '04', 'flag': ref('s0000', 'Completed Main Story'), 'label': 'Liga superada (historia principal)'}]
+    def secret(key, title, place, mission, cond, category='Legendario o encuentro único', species=None, steps=None):
+        return {'id': f'pkhex.lgpe.{key}', 'title': title, 'families': ['LGPE'], 'category': category, 'placeName': {'LGPE': place},
+                'mission': mission, **({'species': species} if species else {}), 'requires': 'Consulta el recorrido enlazado.',
+                'steps': steps or ['Sigue el recorrido de la misión enlazada.'], 'conditions': {'LGPE': cond}}
+    vanish = 'Encuentro resuelto: el Pokémon ya no aparece en su sitio (bandera de desaparición documentada en PKHeX).'
+    secrets = [
+        secret('red', 'Combate contra Rojo', 'Meseta Añil', '06', {'done': ref('e0000', 'Defeated Red'), 'meaning': 'Bandera documentada en PKHeX.'}, 'Desafío'),
+        secret('snorlax', 'Los dos Snorlax de las Rutas 12 y 16', 'Ruta 12', '03',
+               {'done': ref('e0192', 'Captured Route 12 Snorlax'), 'doneAlso': ref('e0193', 'Captured Route 16 Snorlax'), 'meaning': 'Capturas documentadas en PKHeX.'}, species=[143]),
+        secret('birds', 'Articuno, Zapdos y Moltres', 'Kanto', '05',
+               {'done': ref('v0500', 'Articuno'), 'doneAll': [ref('v0441', 'Zapdos'), ref('v0513', 'Moltres')],
+                'progress': [{'flag': ref('v0500', 'Articuno'), 'label': 'Articuno'}, {'flag': ref('v0441', 'Zapdos'), 'label': 'Zapdos'}, {'flag': ref('v0513', 'Moltres'), 'label': 'Moltres'}], 'meaning': vanish}, species=[144, 145, 146]),
+        secret('mewtwo', 'Mewtwo en la Cueva Celeste', 'Cueva Celeste', '05', {'done': ref('v0603', 'Mewtwo'), 'meaning': vanish}, species=[150]),
+        secret('dojo', 'Hitmonlee o Hitmonchan del Dojo', 'Ciudad Azafrán', '03', {'done': ref('e0030', 'Received Hitmonlee/Hitmonchan'), 'meaning': 'Regalo recibido.'}, 'Regalo', [106, 107]),
+        secret('gifts', 'Regalos de Kanto: iniciales, Lapras y Porygon', 'Kanto', '06',
+               {'done': ref('e0046', 'Bulbasaur'), 'doneAll': [ref('e0047', 'Charmander'), ref('e0048', 'Squirtle'), ref('e0011', 'Lapras'), ref('e0081', 'Porygon')],
+                'progress': [{'flag': ref(k, n), 'label': n} for k, n in [('e0046', 'Bulbasaur'), ('e0047', 'Charmander'), ('e0048', 'Squirtle'), ('e0011', 'Lapras'), ('e0081', 'Porygon')]],
+                'meaning': 'Regalos documentados en PKHeX.'}, 'Regalo', [1, 4, 7, 131, 137]),
+        secret('techniques', 'Las cinco técnicas secretas', 'Kanto', '02',
+               {'done': ref('s0001', 'Chop Down'), 'doneAll': [ref('s0002', 'Sky Dash'), ref('s0003', 'Strong Push'), ref('s0004', 'Sea Skim'), ref('s0005', 'Light Up')],
+                'progress': [{'flag': ref(k, e), 'label': l} for k, e, l in [('s0001', 'Chop Down', 'Corte'), ('s0002', 'Sky Dash', 'Vuelo'), ('s0003', 'Strong Push', 'Fuerza'), ('s0004', 'Sea Skim', 'Surf'), ('s0005', 'Light Up', 'Destello')]],
+                'meaning': 'Técnicas secretas desbloqueadas.'}, 'Historia'),
+        secret('masters', 'Entrenadores Maestros: los 153 títulos', 'Kanto', '06',
+               {'titlesAtLeast': 153, 'meaning': 'Títulos de Maestro desbloqueados según EventWork7b de PKHeX.'}, 'Desafío',
+               steps=['Tras la Liga, vence a cada Entrenador Maestro con la especie que pide; cada victoria desbloquea su título.']),
+    ]
+    flags = {}
+    for k, (index, _) in rows.items():
+        flags[f'pkhex:{index}'] = index
+    return {'flags': flags, 'vars': {}, 'sources': {}}, story, secrets
+
+
 def fail(message):
     raise SystemExit('derive-pkhex-pack: ' + message)
 
@@ -174,8 +225,13 @@ def build():
                                                     'meaning': 'Banderas documentadas en la lista de eventos de PKHeX.'}}})
         families[family] = {'flags': flags, 'vars': {}, 'sources': {k: [relative] for k in flags}}
         game_families[family] = games
-    data = {'pack': 'pkhex', 'confidence': 'documentado por la comunidad en PKHeX (sin script fuente)',
-            'revisions': {'PKHeX': REVISION}, 'excludeLanguages': [], 'excludeReason': '', 'storyPartial': True,
+    lgpe, lgpe_story, lgpe_secrets = lgpe_family()
+    families['LGPE'] = lgpe
+    game_families['LGPE'] = ['LETGOP', 'LETGOE']
+    story['LGPE'] = lgpe_story
+    secrets.extend(lgpe_secrets)
+    data = {'pack': 'pkhex', 'storyPartialFamilies': [f for f in families if f != 'LGPE'], 'confidence': 'documentado por la comunidad en PKHeX (sin script fuente)',
+            'revisions': {'PKHeX': REVISION}, 'excludeLanguages': [], 'excludeReason': '',
             'gameFamilies': game_families, 'families': families, 'story': story, 'secrets': secrets}
     body = json.dumps(data, ensure_ascii=False, separators=(',', ':'), sort_keys=True)
     return ('// SPDX-License-Identifier: GPL-3.0-or-later\n'

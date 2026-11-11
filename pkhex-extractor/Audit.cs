@@ -141,7 +141,18 @@ public static class Audit
         {
             IEventFlagArray? flags = save as IEventFlagArray;
             if (save is IEventFlagProvider37 provider) flags = provider.EventWork;
-            if (flags is not null)
+            if (save is SAV7b lgpe)
+            {
+                // Let's Go: banderas en bruto de EventWork7b (zona 0, sistema 128, desaparición 640, evento 2176) y títulos de Maestro.
+                var ew = lgpe.EventWork;
+                var active = Enumerable.Range(0, ew.CountFlag).Where(i => ew.GetFlag(i)).ToArray();
+                var work = Enumerable.Range(0, ew.CountWork).Select(i => ew.GetWork(i)).ToArray();
+                var titles = Enumerable.Range(0, EventWork7b.MaxTitleFlag).Where(i => ew.GetTitleFlag(i)).ToArray();
+                result["events"] = new { flagCount = ew.CountFlag, activeFlags = active, work, titles,
+                    layout = "EventWork7b: zona 0, sistema 128, desaparición 640, evento 2176",
+                    interpretation = "Datos crudos sin equivalencia automática a misiones", engineCommit = EngineCommit };
+            }
+            else if (flags is not null)
             {
                 var active = Enumerable.Range(0, flags.EventFlagCount).Where(flags.GetEventFlag).ToArray();
                 object? work = flags is IEventWorkArray<ushort> w16 ? Enumerable.Range(0,w16.EventWorkCount).Select(w16.GetWork).ToArray() :

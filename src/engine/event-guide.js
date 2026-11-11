@@ -32,7 +32,7 @@
    }
    const n=fam.flags[name];return n===undefined?null:set.has(n);};
   const varValue=name=>{const i=fam.vars?.[name];return i===undefined?null:vars[i]??null;};
-  const check=c=>Array.isArray(c.anyFlags)?(c.anyFlags.some(f=>has(f)===true)?true:c.anyFlags.every(f=>has(f)===false)?false:null):Array.isArray(c.flags)?(c.flags.some(f=>has(f)===null)?null:c.flags.every(f=>has(f))):c.badgesAtLeast!==undefined?(Number.isInteger(meta.badges)?meta.badges>=c.badgesAtLeast:null):c.flag?has(c.flag):c.var?(()=>{const v=varValue(c.var);return v===null?null:c.atLeast!==undefined?v>=c.atLeast:v===c.equals;})():null;
+  const check=c=>c.titlesAtLeast!==undefined?(Array.isArray(meta.titles)?meta.titles.length>=c.titlesAtLeast:null):Array.isArray(c.anyFlags)?(c.anyFlags.some(f=>has(f)===true)?true:c.anyFlags.every(f=>has(f)===false)?false:null):Array.isArray(c.flags)?(c.flags.some(f=>has(f)===null)?null:c.flags.every(f=>has(f))):c.badgesAtLeast!==undefined?(Number.isInteger(meta.badges)?meta.badges>=c.badgesAtLeast:null):c.flag?has(c.flag):c.var?(()=>{const v=varValue(c.var);return v===null?null:c.atLeast!==undefined?v>=c.atLeast:v===c.equals;})():null;
   const rows=(pack.story[family]||[]).map(r=>({...r,id:game+'-'+r.mission,set:check(r)}));
   let later=false;
   for(let i=rows.length-1;i>=0;i--){rows[i].state=rows[i].set?'direct':later?'derived':'pending';if(rows[i].set)later=true;}
@@ -40,7 +40,7 @@
    const c=s.conditions?.[family]||{},place=s.placeName?.[family]||s.placeName?.[game]||'';
    if(s.computed)return {...s,place,status:'calculado'};
    const done=[c.done,c.doneAlso,...(c.doneAll||[])].filter(Boolean).map(f=>({flag:f,set:has(f)})).concat(c.doneAny?[{flag:c.doneAny.join('|'),set:c.doneAny.some(f=>has(f))}]:[]);
-   const doneVar=c.doneVar?[{var:c.doneVar.var,set:check(c.doneVar)}]:[];
+   const doneVar=c.doneVar?[{var:c.doneVar.var,set:check(c.doneVar)}]:c.titlesAtLeast!==undefined?[{titles:c.titlesAtLeast,set:check(c)}]:[];
    const all=[...done,...doneVar];
    const lost=[...(c.lost||[]).filter(f=>has(f)),...(c.lostVar||[]).filter(v=>check(v)).map(v=>v.var)];
    const progress=(c.progress||[]).map(p=>({...p,set:check(p)}));
@@ -59,8 +59,8 @@
   if(!where||!src)return null;
   if(Number.isInteger(e.languageId)&&(where.pack.excludeLanguages||[]).includes(e.languageId))return null;
   if(src.kind==='field'&&e.field.family&&e.field.family!==where.family)return {mismatch:true};
-  const result=evaluate(where.pack,where.family,game,src.flags,src.vars,e.caught,{badges:e.badgesTotal,blocks:e.namedBlocks,signals:e.progressSignals});
-  return {...result,storyPartial:Boolean(where.pack.storyPartial),family:where.family,location:src.location,sourceKind:src.kind,revisions:where.pack.revisions,
+  const result=evaluate(where.pack,where.family,game,src.flags,src.vars,e.caught,{badges:e.badgesTotal,blocks:e.namedBlocks,signals:e.progressSignals,titles:e.events?.titles});
+  return {...result,storyPartial:Boolean(where.pack.storyPartial||(where.pack.storyPartialFamilies||[]).includes(where.family)),family:where.family,location:src.location,sourceKind:src.kind,revisions:where.pack.revisions,
    confidence:where.pack.confidence||'documentado en código'};
  }
  const api={analyze,evaluate,locate};
