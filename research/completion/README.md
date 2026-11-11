@@ -25,7 +25,7 @@ las Pokédex exactas de cada juego, los sellos del pasaporte de Alola, las 255 m
 coleccionables de bloques con nombre de PKHeX: Diglett de Alola, huellas de las Espadas de la Justicia, vatios del
 Dojo y combates restringidos (Espada/Escudo) y fuegos fatuos (Leyendas Arceus). Están contrastados con partidas
 públicas reales (por ejemplo, una partida de Escudo con las tres huellas al 100 % y otra de Leyendas Arceus con los
-107 fuegos fatuos).
+107 fuegos fatuos). En Rubí/Zafiro/Esmeralda también se acreditan la Pokédex de Hoenn de la tarjeta (las 200 primeras de HOENN_DEX, generadas desde pokeemerald), los cinco cuadros del museo (FLAG_*_PAINTING_MADE) y, en Esmeralda, los 14 símbolos del Frente Batalla (HasAllFrontierSymbols).
 
 ## Matriz por juego
 
@@ -38,9 +38,9 @@ públicas reales (por ejemplo, una partida de Escudo con las tres huellas al 100
 | GOLD | 15 | 7 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 5, Tarjeta / reconocimiento 1, Evento histórico 2, Coleccionables 1 |
 | SILVER | 15 | 7 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 5, Tarjeta / reconocimiento 1, Evento histórico 2, Coleccionables 1 |
 | CRYSTAL | 15 | 7 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 5, Tarjeta / reconocimiento 1, Evento histórico 2, Coleccionables 1 |
-| RUBY | 19 | 9 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 7, Tarjeta / reconocimiento 4, Evento histórico 1, Puzles 1 |
-| SAPPHIRE | 19 | 9 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 7, Tarjeta / reconocimiento 4, Evento histórico 1, Puzles 1 |
-| EMERALD | 20 | 10 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 8, Tarjeta / reconocimiento 4, Evento histórico 1, Puzles 1 |
+| RUBY | 19 | 11 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 7, Tarjeta / reconocimiento 4, Evento histórico 1, Puzles 1 |
+| SAPPHIRE | 19 | 11 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 7, Tarjeta / reconocimiento 4, Evento histórico 1, Puzles 1 |
+| EMERALD | 20 | 13 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 8, Tarjeta / reconocimiento 4, Evento histórico 1, Puzles 1 |
 | FIRERED | 19 | 11 | Historia 1, Postgame 2, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 7, Tarjeta / reconocimiento 4, Evento histórico 1 |
 | LEAFGREEN | 19 | 11 | Historia 1, Postgame 2, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 7, Tarjeta / reconocimiento 4, Evento histórico 1 |
 | DIAMOND | 21 | 10 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 8, Tarjeta / reconocimiento 5, Evento histórico 2 |
