@@ -2144,6 +2144,87 @@
   },
   {
     "games": [
+      "ULTRASUN",
+      "ULTRAMOON"
+    ],
+    "mission": "09",
+    "location": "Postgame de Alola: Ultraumbrales y Episodio RR",
+    "requires": [
+      "Campeón de Alola."
+    ],
+    "steps": [
+      "Ultraumbrales: desde la Ultrópolis (abierta en la historia) se vuela por el Ultraespacio a lomos de Lunala (Ultrasol) o Solgaleo (Ultraluna); se puede cambiar en la Ultrópolis. Al principio se controla con el giroscopio; en el edificio de GAME FREAK de Ciudad Kantai te dejan usar el stick.",
+      "Durante el vuelo recoge las esferas naranjas de energía y evita las eléctricas azules. Cuantos más años luz recorras, más probable es que el portal tenga borde especial (tipos 2 a 4) y lleve a un legendario: por ejemplo, a 3.000 años luz sale un 16 % de tipo 3 y un 2 % de tipo 4. No está garantizado.",
+      "Episodio RR: después de resolver lo de Blacephalon y Stakataka en Poni, Sophocles (Chris) te avisa de que la Isla Festiva ha sido pirateada. Entra con él y combate con Pokémon prestados de la Agencia de Combate hasta recuperar el control.",
+      "Por la tele ves cómo Giovanni irrumpe en la rueda de prensa de Lusamine. Sigue a Lillie al Paraíso Æther, convertido en castillo, y vence a Faba en combate múltiple junto a ella.",
+      "Dentro del castillo recorre las salas, vence a los jefes de otros mundos que ha reunido el Team Rainbow Rocket y, al final, a Giovanni."
+    ],
+    "check": "Episodio RR terminado y Ultraumbrales explorados en busca de legendarios.",
+    "pitfalls": [
+      "En la Isla Festiva pirateada no puedes usar tus Pokémon: solo los prestados de la Agencia.",
+      "Los personajes van con su nombre inglés (Serebii) cuando no se ha podido comprobar el oficial en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/ultrasunultramoon/teamrainbowrocket.shtml",
+      "https://www.serebii.net/ultrasunultramoon/ultrawormholes.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ULTRASUN",
+      "ULTRAMOON"
+    ],
+    "mission": "10",
+    "location": "Pasaporte, pegatinas dominantes y colecciones",
+    "requires": [],
+    "steps": [
+      "Pegatinas dominantes: hay más de 100 escondidas por Alola (17 en Melemele, 33 en Akala y el resto en Ula-Ula y Poni). Algunas quedan tapadas por objetos, por el ángulo de cámara o por Pokémon.",
+      "Al llegar a 20 pegatinas te llama Samson Oak: visítalo y te da un Pokémon de tamaño dominante. Las recompensas van por cantidad y edición: 20 → Gumshoos (Ultrasol) o Raticate (Ultraluna); 40 → Marowak o Araquanid; 50 → Lurantis o Salazzle; 70 → Vikavolt o Togedemaru; 80 → Mimikyu (en las dos); 100 → Ribombee o Kommo-o. Ninguno puede salir variocolor.",
+      "Pasaporte de entrenador, con 15 sellos: entrenador oficial; las cuatro Grandes Pruebas (Melemele, Akala, Ula-Ula y Poni, que suben el nivel al que te obedecen los Pokémon: 35, 50, 65 y 80); recorrido insular completado; las Pokédex de Melemele, Akala, Ula-Ula, Poni y Alola; 50 victorias seguidas en el Árbol Batalla en individual, dobles y múltiple; y el Pokévisor en su versión final.",
+      "Comprueba cada sello en la página del pasaporte: la web lo cruza con lo que lee del guardado."
+    ],
+    "check": "Los 15 sellos del pasaporte y las pegatinas dominantes que te faltan.",
+    "pitfalls": [
+      "Las pegatinas no se ven en el mapa; usa la lista por zonas."
+    ],
+    "sources": [
+      "https://www.serebii.net/ultrasunultramoon/totemstickers.shtml",
+      "https://www.serebii.net/ultrasunultramoon/trainerpassport.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "DIAMOND",
+      "PEARL"
+    ],
+    "mission": "12",
+    "location": "Sinnoh: Pokédex Nacional, Superconcursos, Subsuelo y tarjeta negra",
+    "requires": [
+      "Salón de la Fama."
+    ],
+    "steps": [
+      "Tras el Salón de la Fama, cuando hayas visto los 150 Pokémon de la Pokédex de Sinnoh, el profesor Oak, de visita en el laboratorio del profesor Serbal en Pueblo Arena, mejora tu Pokédex a la Nacional y se abre el resto del mapa.",
+      "La tarjeta de entrenador sube de color con cinco hitos, en cualquier orden: vencer al Alto Mando; ganar un Superconcurso de rango Maestro en cualquier categoría; capturar banderas en el Subsuelo; completar la Pokédex Nacional (482 especies, sin Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus); y lograr 100 victorias seguidas en la Torre Batalla. Con los cinco es la tarjeta negra.",
+      "Subsuelo: usa el Kit Explorador para excavar fósiles y esferas, crea tu base secreta y captura banderas en otras bases con amigos.",
+      "Superconcursos: hay cinco categorías (Carisma, Belleza, Dulzura, Ingenio y Dureza). Prepara pokochos y accesorios y ve subiendo de rango Normal a Maestro.",
+      "Revisa la lista de objetivos de esta edición para los legendarios y los eventos."
+    ],
+    "check": "Tarjeta de entrenador negra (cinco estrellas) y Pokédex Nacional completa.",
+    "pitfalls": [
+      "La Pokédex Nacional del premio excluye singulares de evento; no hace falta tenerlos."
+    ],
+    "sources": [
+      "https://www.serebii.net/diamondpearl/trainercard.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
       "RUBY"
     ],
     "mission": "13",
