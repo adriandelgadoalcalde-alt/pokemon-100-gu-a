@@ -63,6 +63,102 @@ def platinum():
     return {'maps': table, 'names': used, 'source': 'pokeplatinum@62bdaacdca6c56a6a396f3e9911e2f922b79bba8'}
 
 
+def kanto_gb(repo_name, rev):
+    """Rojo/Azul/Amarillo: wCurMap → lugar del mapa de Kanto (town_map_entries.asm), nombre oficial en español."""
+    repo = PRET / repo_name
+    head = subprocess.run(['git', '-C', str(repo), 'rev-parse', 'HEAD'], capture_output=True, text=True).stdout.strip()
+    if head != rev:
+        fail(f'{repo_name} no está en la revisión fijada')
+    base = PKHEX / 'Resources' / 'text' / 'locations'
+    norm = lambda t: re.sub(r'[^A-Z0-9]', '', t.upper().replace('É', 'E').replace('POKEMON', 'PKMN'))
+    spanish = {}
+    for en_file, es_file in [('gen3/text_rsefrlg_00000_en.txt', 'gen3/text_rsefrlg_00000_es.txt'), ('gen4/text_hgss_00000_en.txt', 'gen4/text_hgss_00000_es.txt')]:
+        en = (base / en_file).read_text(encoding='utf-8-sig').split('\n')
+        es = (base / es_file).read_text(encoding='utf-8-sig').split('\n')
+        for a, b in zip(en, es):
+            spanish.setdefault(norm(a.split(' (')[0]), re.sub(r'\s*\((E|RZ|RFVH)\)$', '', b.strip()))
+    labels = {}
+    for line in (repo / 'data' / 'maps' / 'names.asm').read_text(encoding='utf-8').splitlines():
+        m = re.match(r'(\w+Name):\s+db\s+"(.*)@"', line)
+        if m:
+            english = m.group(2).replace('#', 'POKé')
+            key = norm(english.replace('SEA ROUTE', 'ROUTE').replace('ROCKET HQ', 'ROCKET HIDEOUT'))
+            labels[m.group(1)] = spanish.get(key) or (english.title() + ' (Ruta 25)' if english == 'SEA COTTAGE' else english.title())
+    if labels.get('PalletTownName') != 'Pueblo Paleta':
+        fail('la traducción de Kanto no es la esperada')
+    consts, groups, counter, first_indoor = [], {}, 0, None
+    for line in (repo / 'constants' / 'map_constants.asm').read_text(encoding='utf-8').splitlines():
+        line = line.split(';')[0].strip()
+        if line.startswith('map_const '):
+            consts.append(line.split()[1].rstrip(','))
+            counter += 1
+        elif line.startswith('end_indoor_group '):
+            groups[line.split()[1]] = counter
+        elif line.startswith('DEF FIRST_INDOOR_MAP'):
+            first_indoor = counter
+    entries = (repo / 'data' / 'maps' / 'town_map_entries.asm').read_text(encoding='utf-8')
+    outdoor = re.findall(r'outdoor_map\s+\d+,\s*\d+,\s*(\w+)', entries)
+    indoor = re.findall(r'indoor_map\s+(\w+),\s*\d+,\s*\d+,\s*(\w+)', entries)
+    names, table = {}, {}
+    def put(number, const, label):
+        names.setdefault(label, len(names))
+        table[number] = [names[label], const]
+    for number, const in enumerate(consts):
+        if number < first_indoor:
+            if number < len(outdoor):
+                put(number, const, outdoor[number])
+        else:
+            for group, label in indoor:
+                if number < groups[group]:
+                    put(number, const, label)
+                    break
+    index_names = {i: labels[l] for l, i in names.items()}
+    return {'maps': table, 'names': index_names, 'source': f'{repo_name}@{rev}'}
+
+
+def johto_gb(repo_name, rev):
+    """Oro/Plata/Cristal: (grupo, número) → punto de referencia (data/maps/maps.asm) → nombre oficial en español."""
+    repo = PRET / repo_name
+    head = subprocess.run(['git', '-C', str(repo), 'rev-parse', 'HEAD'], capture_output=True, text=True).stdout.strip()
+    if head != rev:
+        fail(f'{repo_name} no está en la revisión fijada')
+    base = PKHEX / 'Resources' / 'text' / 'locations'
+    norm = lambda t: re.sub(r'[^A-Z0-9]', '', t.upper().replace('É', 'E').replace('POKEMON', 'PKMN'))
+    spanish = {}
+    for en_file, es_file in [('gen4/text_hgss_00000_en.txt', 'gen4/text_hgss_00000_es.txt'), ('gen3/text_rsefrlg_00000_en.txt', 'gen3/text_rsefrlg_00000_es.txt')]:
+        en = (base / en_file).read_text(encoding='utf-8-sig').split('\n')
+        es = (base / es_file).read_text(encoding='utf-8-sig').split('\n')
+        for a, b in zip(en, es):
+            spanish.setdefault(norm(a.split(' (')[0]), re.sub(r'\s*\((E|RZ|RFVH)\)$', '', b.strip()))
+    text = (repo / 'data' / 'maps' / 'landmarks.asm').read_text(encoding='utf-8')
+    strings = {m.group(1): m.group(2).replace('<BSP>', ' ').replace('#', 'POKé') for m in re.finditer(r'(\w+Name):\s+db\s+"(.*?)@"', text)}
+    order = re.findall(r'landmark\s+-?\d+,\s*-?\d+,\s*(\w+)', text)
+    consts = re.findall(r'^\s*const (LANDMARK_\w+)', (repo / 'constants' / 'landmark_constants.asm').read_text(encoding='utf-8'), re.M)
+    landmark = {c: strings.get(order[i], '') for i, c in enumerate(consts) if i < len(order)}
+    # Nombres renombrados en HGSS (lista oficial de PKHeX): Tin Tower → Bell Tower, Silver Cave → Mt. Silver Cave, Fast Ship → S.S. Aqua.
+    aliases = {'TIN TOWER': 'BELL TOWER', 'SILVER CAVE': 'MT. SILVER CAVE', 'FAST SHIP': 'S.S. AQUA', 'LAV RADIO TOWER': 'RADIO TOWER'}
+    def es(english):
+        english = aliases.get(english, english)
+        key = norm(english.replace('SEA ROUTE', 'ROUTE'))
+        if english == 'SPECIAL':
+            return 'Zona especial'
+        return spanish.get(key) or english.title()
+    maps_text = (repo / 'data' / 'maps' / 'maps.asm').read_text(encoding='utf-8')
+    groups = re.findall(r'dw (MapGroup_\w+)', maps_text)
+    names, table = {}, {}
+    for g, label in enumerate(groups, 1):
+        block = maps_text.split(label + ':', 1)[1].split('MapGroup_', 1)[0]
+        for n, m in enumerate(re.finditer(r'^\s*map (\w+),\s*\w+,\s*\w+,\s*(LANDMARK_\w+)', block, re.M), 1):
+            name = es(landmark.get(m.group(2), ''))
+            if landmark.get(m.group(2)) == 'UNDERGROUND':
+                name = 'Túnel Trigal' if m.group(1).startswith('Goldenrod') else 'Vía Subterránea'
+            names.setdefault(name, len(names))
+            table[f'{g}.{n}'] = [names[name], m.group(1)]
+    if es(landmark['LANDMARK_NEW_BARK_TOWN']) != 'Pueblo Primavera':
+        fail('la traducción de Johto no es la esperada')
+    return {'maps': table, 'names': {i: n for n, i in names.items()}, 'source': f'{repo_name}@{rev}'}
+
+
 def build():
     head = subprocess.run(['git', '-C', str(PKHEX.parent), 'rev-parse', 'HEAD'], capture_output=True, text=True).stdout.strip()
     if head != '96e33e7432d900e5345afdfd117eabfac43f5bbd':
@@ -90,6 +186,10 @@ def build():
             table[maps[m.group(1)]] = [index, m.group(1)[4:]]
         data[family] = {'maps': table, 'names': used, 'source': src['repo'] + '@' + src['rev']}
     data['PT'] = platinum()
+    data['RB'] = kanto_gb('pokered', '0dbf95cd12f5b1511c62ce69efe283000f780a8f')
+    data['Y'] = kanto_gb('pokeyellow', 'b452f2ab07185075140061c5084ab866d5e4a794')
+    data['GS'] = johto_gb('pokegold', 'f2cde36f49b994c143bfd18582182302fdc76492')
+    data['C'] = johto_gb('pokecrystal', '3c813b0b4d82b39bf62185aceffb76fd6026c70b')
     body = json.dumps(data, ensure_ascii=False, separators=(',', ':'), sort_keys=True)
     return ('// SPDX-License-Identifier: GPL-3.0-or-later\n'
             '// Generado por scripts/derive-ds-maps.py (pret + textos de PKHeX.Core). No editar a mano.\n'

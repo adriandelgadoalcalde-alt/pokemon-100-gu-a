@@ -124,3 +124,20 @@ Confianza: **documentado por la comunidad en PKHeX**, sin script fuente. Es infe
   - HGSS preparadas: Ciudad Cerezo.
   - Platino público: Pueblo Arena.
   - Platino cedido: Ciudad Vetusta. Su entrada previa, una casa de la misma ciudad, es coherente con esa posición.
+
+## Dónde estás: Game Boy
+
+| | Rojo/Azul/Amarillo | Oro/Plata | Cristal |
+| --- | --- | --- | --- |
+| Campos (pret) | `wCurMap`, `wYCoord`, `wXCoord` | `wMapGroup`, `wMapNumber`, coordenadas | `wMapGroup`, `wMapNumber`, coordenadas |
+| Desplazamiento | `0x260A`, `0x260D` y `0x260E` | `0x2868` | `0x2843` |
+| Cómo se obtiene | Campos tras `wMapPalOffset`, referencia: medallas de PKHeX | 34 bytes antes del equipo de PKHeX, por `wScreenSave` | Igual que Oro/Plata |
+
+- Nombres:
+  - Kanto: lugar del mapa de `town_map_entries.asm`.
+  - Johto: punto de referencia de `data/maps/maps.asm`.
+  - En ambos casos, traducidos con los textos oficiales de PKHeX (listas de RF/VH y HGSS).
+- Equivalencias de HGSS: Torre Campana, Cueva M Plateado y S.S. Aqua.
+- Pasos subterráneos: Túnel Trigal y Vía Subterránea. La «Sea Cottage» de Bill, sin nombre oficial en esas listas, se muestra en inglés con su ruta.
+- Las ediciones japonesas y coreanas se excluyen.
+- Contraste con partidas públicas: Rojo/Amarillo en Ciudad Verde, Oro en Ciudad Cerezo y un Cristal completo en la Mansión Azulona.

@@ -120,3 +120,12 @@ test('posición DS: HGSS y Platino eligen la copia válida y descartan mapas ine
  assert.equal(L.read(bytes,'PLATINUM'),null);
  assert.equal(maps.HGSS.names[maps.HGSS.maps[280][0]],'Carpa Pokéathlon');
 });
+
+test('posición Game Boy: Kanto y Johto con nombres oficiales; japonés y coreano excluidos',()=>{
+ const L=require('../src/saves/ds-location.js'),bytes=new Uint8Array(0x8000);
+ bytes[0x260A]=40;bytes[0x260D]=3;bytes[0x260E]=5;
+ const r=L.read(bytes,'RED');assert.equal(r.name,'Pueblo Paleta');assert.equal(r.map,'OAKS_LAB');assert.equal(r.x,5);
+ assert.equal(L.read(bytes,'RED',undefined,1),null);
+ bytes[0x2843]=26;bytes[0x2844]=3;const c=L.read(bytes,'CRYSTAL');assert.equal(c.name,'Ciudad Cerezo');
+ bytes[0x2843]=99;assert.equal(L.read(bytes,'CRYSTAL'),null);
+});

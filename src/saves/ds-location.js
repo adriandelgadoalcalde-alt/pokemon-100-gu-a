@@ -18,7 +18,19 @@
   if(!c.length)return null;
   return c.reduce((a,b)=>(I.counterOrder(a.major,b.major)||I.counterOrder(a.minor,b.minor))<0?b:a).base;
  }
- function read(bytes,game,base){
+ // Game Boy (versiones internacionales): pokered wCurMap/wYCoord/wXCoord tras wMapPalOffset (badges 0x2602 de PKHeX);
+ // pokegold/pokecrystal wMapGroup..wXCoord: 4 + 30 bytes (wScreenSave) antes del equipo (Party de PKHeX).
+ const GB={RED:{maps:'RB',map:0x260A,y:0x260D,x:0x260E},BLUE:{maps:'RB',map:0x260A,y:0x260D,x:0x260E},YELLOW:{maps:'Y',map:0x260A,y:0x260D,x:0x260E},
+  GOLD:{maps:'GS',group:0x2868},SILVER:{maps:'GS',group:0x2868},CRYSTAL:{maps:'C',group:0x2843}};
+ function readGB(bytes,game,languageId){
+  const G=GB[game],D=data();if(!G||!D||bytes.length<0x8000||languageId===1||languageId===8)return null;
+  if(G.group){const key=bytes[G.group]+'.'+bytes[G.group+1],entry=D[G.maps].maps[key];if(!entry)return null;
+   return {mapId:key,map:entry[1],name:D[G.maps].names[entry[0]],x:bytes[G.group+3],y:bytes[G.group+2],source:'gb-location'};}
+  const id=bytes[G.map],entry=D[G.maps].maps[id];if(!entry)return null;
+  return {mapId:id,map:entry[1],name:D[G.maps].names[entry[0]],x:bytes[G.x],y:bytes[G.y],source:'gb-location'};
+ }
+ function read(bytes,game,base,languageId){
+  if(GB[game])return bytes instanceof Uint8Array?readGB(bytes,game,languageId):null;
   const L=LAYOUT[game],D=data();if(!L||!D||!(bytes instanceof Uint8Array))return null;
   const b=Number.isInteger(base)?base:activeBase(bytes,L.size,L.footer);if(b===null||b===undefined)return null;
   const v=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength),o=b+L.pos;

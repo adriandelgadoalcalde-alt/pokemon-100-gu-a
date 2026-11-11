@@ -55,7 +55,7 @@
    if(extra)parsed={...parsed,events:extra.events,badgesTotal:parsed.badgesTotal??extra.badgesTotal,gameClear:parsed.gameClear??extra.gameClear};
   }
   if(root.PokemonDSLocation&&!parsed.location){
-   try{const location=root.PokemonDSLocation.read(bytes,parsed.game,parsed.saveBase);if(location)parsed={...parsed,location};}catch{}
+   try{const location=root.PokemonDSLocation.read(bytes,parsed.game,parsed.saveBase,parsed.languageId);if(location)parsed={...parsed,location};}catch{}
   }
   if(root.PokemonGen3Field&&bytes.length>=0x10000&&bytes.length<=0x20040){
    // Lectura de campo complementaria (ubicación, equipo, cajas, banderas). Si falla, el diagnóstico sigue igual.
