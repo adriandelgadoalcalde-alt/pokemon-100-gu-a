@@ -219,3 +219,15 @@ test('posición Game Boy: Kanto y Johto con nombres oficiales; japonés y corean
  bytes[0x2843]=26;bytes[0x2844]=3;const c=L.read(bytes,'CRYSTAL');assert.equal(c.name,'Ciudad Cerezo');
  bytes[0x2843]=99;assert.equal(L.read(bytes,'CRYSTAL'),null);
 });
+
+test('coleccionables del guardado: Diglett, huellas, vatios, combates restringidos y fuegos fatuos',()=>{
+ const O=require('../src/engine/objectives.js'),get=(d,id)=>O.fromDiagnosis(d).find(f=>f.id===id)?.value;
+ const sh={game:'SHIELD',namedBlocks:{KAlolanDiglettFound:1,KFootprintPercentageCobalion:100,KFootprintPercentageTerrakion:100,KFootprintPercentageVirizion:100,KDojoWattDonationProgress:1,KRecordSparringTypesCleared:0}};
+ assert.equal(get(sh,'collection.swsh.footprints'),true);assert.equal(get(sh,'collection.swsh.alolanDiglett'),false);
+ assert.equal(get({game:'SWORD',namedBlocks:{KAlolanDiglettFound:150}},'collection.swsh.alolanDiglett'),true);
+ assert.equal(get({game:'SWORD',namedBlocks:{KDojoWattDonationProgress:15}},'collection.swsh.dojoWatts'),true);
+ assert.equal(get({game:'SWORD',namedBlocks:{KRecordSparringTypesCleared:18}},'battle.swsh.restrictedSparring'),true);
+ const la=n=>({game:'ARCEUS',namedBlocks:{KWispsFoundArea00:7,KWispsFoundArea01:20,KWispsFoundArea02:20,KWispsFoundArea03:20,KWispsFoundArea04:20,KWispsFoundArea05:n}});
+ assert.equal(get(la(20),'collection.la.wisps'),true);assert.equal(get(la(19),'collection.la.wisps'),false);
+ assert.equal(get({game:'SWORD',namedBlocks:{}},'collection.swsh.footprints'),undefined);
+});
