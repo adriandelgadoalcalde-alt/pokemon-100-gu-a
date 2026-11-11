@@ -1561,6 +1561,233 @@
       "SCARLET",
       "VIOLET"
     ],
+    "mission": "01",
+    "location": "Pueblo Cahíz → Gruta Caleta → Sendero de Cahíz → Pueblo Ataifor → Ciudad Meseta",
+    "requires": [],
+    "steps": [
+      "En Pueblo Cahíz conoces a Nemona y eliges inicial: Sprigatito, Fuecoco o Quaxly. Tras el combate de prueba con ella, baja a la playa a buscar la mochila de tu hermana o hermano.",
+      "En la Gruta Caleta encuentras a Koraidon (Escarlata) o Miraidon (Púrpura), debilitado. Dale un bocadillo y te acompañará; ya puedes montarlo por el Sendero de Cahíz.",
+      "Sigue a Nemona hasta Pueblo Ataifor y continúa hasta Ciudad Meseta. Al llegar a la Academia (Naranja en Escarlata, Uva en Púrpura) el director Clavell presenta la Búsqueda del Tesoro.",
+      "La búsqueda abre tres historias que puedes hacer en el orden que quieras: Travesía de la Victoria (gimnasios), Senda Legendaria (titanes, con Arven) y Vía Stardust (Team Star, con un tal Cassiopeia). Ordénalas por el nivel de los rivales: misiones 02, 03 y 04."
+    ],
+    "check": "Tienes a Koraidon o Miraidon y la Búsqueda del Tesoro ha empezado en la Academia.",
+    "pitfalls": [
+      "Los líderes y personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/gyms.shtml",
+      "https://www.serebii.net/scarletviolet/pathoflegends.shtml",
+      "https://www.serebii.net/scarletviolet/starfallstreet.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "02",
+    "location": "Travesía de la Victoria: los 8 gimnasios de Paldea",
+    "requires": [],
+    "steps": [
+      "Pueblo Pirotín, tipo Bicho (Katy). Prueba: empujar una aceituna gigante por un laberinto hasta la meta. Premio: MT021.",
+      "Pueblo Altamía, tipo Planta (Brassius). Prueba: reunir los 10 Sunflora escondidos por el pueblo; algunos combaten.",
+      "Ciudad Leudal, tipo Eléctrico (Iono). Prueba: en su directo, encuentra tres veces al director Clavell disfrazado entre la gente y vence a un entrenador cada vez.",
+      "Ciudad Cántara, tipo Agua (Kofu). Prueba: lleva a Pueblo Marinada la cartera que olvidó el líder y gana la subasta que te encarga allí.",
+      "Pueblo Mestura, tipo Normal (Larry). Prueba: consigue las pistas del menú secreto venciendo a otros alumnos y haz el pedido secreto en el restaurante (en inglés: «Grilled Rice Balls, Medium, Extra Crispy with Lemon»). Premio: MT025.",
+      "Pueblo Hozkailu (en la Sierra Napada), tipo Fantasma (Ryme). Prueba: combates dobles ante un público que, si lo animas, te sube estadísticas. Premio: MT114.",
+      "Pueblo Alforno, tipo Psíquico (Tulip). Prueba: imita las emociones que pide la instructora y vence a un entrenador, dos veces. Premio: MT120.",
+      "Gimnasio de la Sierra Napada (aislado en la montaña), tipo Hielo (Grusha). Prueba: bajar la pista de nieve con tu montura pasando por todas las puertas en 1 minuto y 30 segundos. Premio: MT124.",
+      "Todas las pruebas se pueden repetir después para ganar recompensas, y los líderes admiten revancha en el postgame."
+    ],
+    "check": "Ocho medallas de gimnasio en la tarjeta de la Liga.",
+    "pitfalls": [
+      "Los gimnasios no tienen orden fijo; el de esta lista va de menor a mayor nivel.",
+      "Los líderes y personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/gyms.shtml",
+      "https://www.serebii.net/scarletviolet/pathoflegends.shtml",
+      "https://www.serebii.net/scarletviolet/starfallstreet.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "03",
+    "location": "Senda Legendaria: los 5 titanes y las Hierbas Mística",
+    "requires": [],
+    "steps": [
+      "Arven busca las Hierbas Mística, guardadas por Pokémon titánicos. Cada titán se vence dos veces: la segunda, tras comerse la hierba, con la ayuda de Arven. Después, Arven te prepara un bocadillo que despierta un poder de tu montura.",
+      "Klawf, titán del acantilado (tipo Roca), en el Área 3 (Sur). Desbloquea el acelerón.",
+      "Bombirdier, titán de las alturas (tipo Volador), en el Área 1 (Oeste); tira rocas desde la montaña. Desbloquea nadar.",
+      "Orthworm, titán de acero (tipo Acero), en las minas del Área 3 (Este): persíguelo por los túneles. Desbloquea el salto alto.",
+      "Gran Colmillo (Escarlata) o Ferrodada (Púrpura), titán sísmico (tipo Tierra), en el Desierto Rostiz. Desbloquea planear.",
+      "Tatsugiri y Dondozo, falso titán (tipo Dragón), en el Lago Cazola. Desbloquea escalar.",
+      "Con los cinco, vuelve al Sendero de Cahíz: en el laboratorio del faro, Arven cura a Mabosstiff y te reta a un combate. Los titanes se pueden capturar más adelante con una marca especial."
+    ],
+    "check": "Cinco titanes vencidos y las cinco habilidades de tu montura activas.",
+    "pitfalls": [
+      "Los líderes y personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/gyms.shtml",
+      "https://www.serebii.net/scarletviolet/pathoflegends.shtml",
+      "https://www.serebii.net/scarletviolet/starfallstreet.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "04",
+    "location": "Vía Stardust: las 5 bases del Team Star",
+    "requires": [],
+    "steps": [
+      "Cassiopeia te llama para acabar con el Team Star. En cada base vences a 30 Pokémon en 10 minutos con el combate automático («Let's Go» en inglés: tu Pokémon combate solo). Clive puede curarte, y después te enfrentas al jefe y a su Starmobile.",
+      "Escuadrón Segin, tipo Siniestro (Giacomo), en el Área 1 (Oeste). Premio: MT062.",
+      "Escuadrón Schedar, tipo Fuego (Mela), en el Área 1 (Este). Premio: MT038.",
+      "Escuadrón Navi, tipo Veneno (Atticus), en Bosquejada. Premio: MT102.",
+      "Escuadrón Ruchbah, tipo Hada (Ortega), en el Área 3 (Norte). Premio: MT079.",
+      "Escuadrón Caph, tipo Lucha (Eri), en el Área 2 (Norte). Premio: MT167.",
+      "Tras cada jefe, Penny (división de suministros) te da materiales y PL. Al vencer a los cinco, Cassiopeia revela quién es en la misión 06."
+    ],
+    "check": "Las cinco bases derrotadas.",
+    "pitfalls": [
+      "Lleva un Pokémon fuerte el primero del equipo: el combate automático usa al que va en cabeza.",
+      "Los líderes y personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/gyms.shtml",
+      "https://www.serebii.net/scarletviolet/pathoflegends.shtml",
+      "https://www.serebii.net/scarletviolet/starfallstreet.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "05",
+    "location": "Liga Pokémon: evaluación de campeón",
+    "requires": [
+      "Ocho medallas de gimnasio."
+    ],
+    "steps": [
+      "En la Liga Pokémon, la Evaluación de Campeón empieza con una entrevista: responde a las preguntas sobre tu viaje.",
+      "Vence al Alto Mando en orden: tipo Tierra, tipo Acero, tipo Volador (es el mismo Larry del gimnasio Normal) y tipo Dragón. Puedes curarte entre combates.",
+      "Final contra la Campeona Geeta, que dirige la Liga. Al ganar obtienes el rango de Campeón."
+    ],
+    "check": "Rango de Campeón registrado.",
+    "pitfalls": [
+      "Guarda antes de entrar: la evaluación no deja salir a medias.",
+      "Los líderes y personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/elitefour.shtml",
+      "https://www.serebii.net/scarletviolet/gyms.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "06",
+    "location": "Finales de las tres historias",
+    "requires": [
+      "Rango de Campeón y las tres historias completadas."
+    ],
+    "steps": [
+      "Nemona te reta al combate que llevaba esperando: combate de campeonas o campeones.",
+      "Senda Legendaria: el combate con Arven en el faro del Sendero de Cahíz, si no lo hiciste ya.",
+      "Vía Stardust: en la Academia se revela quién es Cassiopeia y combates contra ella, que usa un equipo de Eevee y sus evoluciones.",
+      "Con las tres terminadas, los tres amigos te proponen ir juntos al Área Cero: es la misión 07."
+    ],
+    "check": "Combates finales con Nemona, Arven y Cassiopeia completados.",
+    "pitfalls": [
+      "Los líderes y personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/gyms.shtml",
+      "https://www.serebii.net/scarletviolet/pathoflegends.shtml",
+      "https://www.serebii.net/scarletviolet/starfallstreet.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "07",
+    "location": "Camino a casa: Área Cero y el laboratorio",
+    "requires": [
+      "Misión 06 completada."
+    ],
+    "steps": [
+      "Con Nemona, Arven y Penny entra por la puerta del foso de Paldea y baja al Área Cero con la ayuda de Koraidon o Miraidon.",
+      "Recorre las cuatro estaciones de investigación en orden. En cada una hay que desbloquear la puerta, y entre ellas aparecen Pokémon paradoja y cristales de teracristal.",
+      "En el laboratorio del fondo te espera la IA del profesor (Sada en Escarlata, Turo en Púrpura). Vence a su equipo de Pokémon paradoja.",
+      "En el combate final, Koraidon o Miraidon lucha a tu lado. Después llegan los créditos y el epílogo en la Academia."
+    ],
+    "check": "Créditos vistos y el indicador de final de Paldea activo (la web lo lee del guardado).",
+    "pitfalls": [
+      "Prepara curas antes de bajar: entre estaciones no hay Centro Pokémon.",
+      "Los personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/pathoflegends.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "08",
+    "location": "Postgame: Torneo Academia, revanchas y Pokédex",
+    "requires": [
+      "Final de Paldea (misión 07)."
+    ],
+    "steps": [
+      "Torneo Academia: se juega en la Academia y se puede repetir. Entre los rivales hay líderes de gimnasio, el Alto Mando, la Campeona, Nemona, Arven y Penny; ganarlo da premios.",
+      "Revanchas: los líderes de gimnasio y los jefes del Team Star admiten un combate más fuerte. Las pruebas de gimnasio también se repiten por recompensa.",
+      "Captura de los titanes con su marca especial y de los legendarios de las estacas (misión 12).",
+      "Completa la Pokédex de Paldea para recibir el diploma. Con los DLC siguen las misiones 09 a 11 (Noroteo, Academia Arándano y el epílogo)."
+    ],
+    "check": "Torneo Academia ganado al menos una vez y Pokédex de Paldea revisada.",
+    "pitfalls": [
+      "Los personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/academyacetournament.shtml",
+      "https://www.serebii.net/scarletviolet/gymrematches.shtml",
+      "https://www.serebii.net/scarletviolet/teamstarrematches.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
     "mission": "09",
     "location": "Noroteo: historia de las máscaras y Ursaluna Luna Carmesí",
     "requires": [
