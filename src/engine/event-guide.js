@@ -33,7 +33,7 @@
    const done=[c.done,c.doneAlso,...(c.doneAll||[])].filter(Boolean).map(f=>({flag:f,set:has(f)}));
    const doneVar=c.doneVar?[{var:c.doneVar.var,set:check(c.doneVar)}]:[];
    const all=[...done,...doneVar];
-   const lost=(c.lost||[]).filter(f=>has(f));
+   const lost=[...(c.lost||[]).filter(f=>has(f)),...(c.lostVar||[]).filter(v=>check(v)).map(v=>v.var)];
    const progress=(c.progress||[]).map(p=>({...p,set:check(p)}));
    const species=(s.species||[]).map(id=>({id,caught:Array.isArray(dex)?dex.includes(id):null}));
    let status;

@@ -41,3 +41,19 @@ test('el regalo de Oak se acredita desde la fase 3 de su variable',()=>{
  const s=v=>guide.analyze({events:events([],{VAR_UNK_4131:v}),caught:[]},'SOULSILVER').secrets.find(x=>x.id==='hgss.oak_kanto_starter').status;
  assert.equal(s(2),'pendiente');assert.equal(s(3),'completado');assert.equal(s(6),'completado');
 });
+
+test('Platino: Regis por estado de las ruinas, con no capturado como definitivo',()=>{
+ const P=gen4.families.PT,work=new Array(400).fill(0);
+ const regi=require('../src/saves/gen4-data.js').secrets.find(s=>s.id==='pt.regirock').conditions.PT;
+ work[P.vars.VAR_ROCK_PEAK_RUINS_STATE]=regi.lostVar[0].equals;
+ const a=guide.analyze({events:{activeFlags:[],work},caught:[]},'PLATINUM');
+ assert.equal(a.secrets.find(x=>x.id==='pt.regirock').status,'perdido');
+ work[P.vars.VAR_ROCK_PEAK_RUINS_STATE]=regi.doneVar.equals;
+ assert.equal(guide.analyze({events:{activeFlags:[],work},caught:[]},'PLATINUM').secrets.find(x=>x.id==='pt.regirock').status,'completado');
+});
+
+test('Platino: la Liga se lee de su bandera de juego completado',()=>{
+ const P=gen4.families.PT;
+ const a=guide.analyze({events:{activeFlags:[P.flags.FLAG_GAME_COMPLETED],work:[]},badgesTotal:8,caught:[]},'PLATINUM');
+ assert.equal(a.story.next,null);assert.equal(a.story.rows.at(-1).state,'direct');
+});

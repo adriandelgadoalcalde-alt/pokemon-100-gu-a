@@ -20,3 +20,18 @@ Las condiciones se expresan con nombres de pret, nunca con números: banderas, v
 - Contraste con partidas públicas: una partida natural de HeartGold con 16 medallas muestra pendientes justamente Lugia (Ala Plateada de Ciudad Plateada), Entei y Latias. Las partidas preparadas de Pokédex no muestran eventos: estructura válida sin recorrido natural.
 
 Confianza: documentada en código. Faltan comparaciones antes/después con partidas propias.
+
+## Cuarta generación: Platino
+
+- Fuente: la lista enumerada `generated/vars_flags.txt` de pokeplatinum, más las constantes `ROAMER_STATE_*` y `RUINS_STATE_*`.
+- 9 hitos y 20 secretos.
+- Matices del código:
+  - Los Regis exigen un **Regigigas de evento** (encuentro fatídico): se muestran como legado. Si no capturas al Regi, la estatua deja de emanar poder y no vuelve.
+  - Regigigas exige los tres Regis en el equipo y es de nivel 1.
+  - Diamansfera y Lustresfera están en el suelo de la 4.ª planta del Monte Corona.
+  - El acceso a la Columna Lanza lo abre la abuela de Cintia tras la Liga.
+- Contraste con la partida de Platino cedida por el propietario (privada, fuera de Git), leída con PKHeX.Core:
+  - 8 medallas, Liga superada y lo capturado coherente con las banderas.
+  - Pendientes: Mesprit, Cresselia (vista, sin capturar), los pájaros errantes, Regigigas, Rotom y Porygon.
+
+Diamante y Perla no tienen todavía banderas con nombre en pokediamond. No se reutilizan los índices de Platino: requieren investigación propia con partidas antes/después.

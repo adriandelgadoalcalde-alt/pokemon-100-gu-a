@@ -7,12 +7,21 @@
       "repo": "pokeheartgold",
       "rev": "6bf138d6035aa6b43d6f8f4132a12df70f86dcec",
       "kind": "c"
+    },
+    "PT": {
+      "repo": "pokeplatinum",
+      "rev": "62bdaacdca6c56a6a396f3e9911e2f922b79bba8",
+      "kind": "enumlist",
+      "list": "generated/vars_flags.txt"
     }
   },
   "families": {
     "HGSS": [
       "HEARTGOLD",
       "SOULSILVER"
+    ],
+    "PT": [
+      "PLATINUM"
     ]
   },
   "story": {
@@ -82,6 +91,53 @@
         "var": "VAR_UNK_40FD",
         "equals": 1,
         "label": "Rojo derrotado en el Monte Plateado"
+      }
+    ],
+    "PT": [
+      {
+        "mission": "01",
+        "flag": "FLAG_HAS_POKEDEX",
+        "label": "Inicial y Pokédex del Prof. Serbal"
+      },
+      {
+        "mission": "02",
+        "badgesAtLeast": 1,
+        "label": "Medalla Lignito"
+      },
+      {
+        "mission": "03",
+        "badgesAtLeast": 2,
+        "label": "Medalla Bosque"
+      },
+      {
+        "mission": "04",
+        "badgesAtLeast": 4,
+        "label": "Medallas Reliquia y Adoquín"
+      },
+      {
+        "mission": "05",
+        "badgesAtLeast": 5,
+        "label": "Medalla Ciénaga"
+      },
+      {
+        "mission": "06",
+        "badgesAtLeast": 6,
+        "label": "Medalla Mina"
+      },
+      {
+        "mission": "07",
+        "badgesAtLeast": 7,
+        "label": "Medalla Carámbano"
+      },
+      {
+        "mission": "09",
+        "badgesAtLeast": 8,
+        "label": "Medalla Faro"
+      },
+      {
+        "mission": "10",
+        "flag": "FLAG_GAME_COMPLETED",
+        "label": "Liga de Sinnoh superada"
       }
     ]
   },
@@ -750,6 +806,626 @@
             }
           ],
           "meaning": "Las cuatro salas secretas abiertas; se muestran los puzles resueltos."
+        }
+      }
+    },
+    {
+      "id": "pt.giratina",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        487
+      ],
+      "mission": "DETAIL1",
+      "title": "Giratina en el Mundo Distorsión",
+      "placeName": {
+        "PT": "Mundo Distorsión"
+      },
+      "requires": "Clímax de la historia en la Columna Lanza.",
+      "steps": [
+        "Tras la Columna Lanza cruzas el Mundo Distorsión siguiendo sus plataformas.",
+        "Giratina (nivel 47) espera al final. Si no lo capturas, reaparece en la Cueva Retorno tras la Liga."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_GIRATINA",
+          "meaning": "Capturado en el Mundo Distorsión o en la Cueva Retorno."
+        }
+      }
+    },
+    {
+      "id": "pt.dialga",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        483
+      ],
+      "title": "Dialga en la Columna Lanza",
+      "placeName": {
+        "PT": "Columna Lanza"
+      },
+      "requires": "Liga superada, investigación de la abuela de Cintia y Diamansfera en la bolsa.",
+      "steps": [
+        "Tras la Liga habla con la anciana de la casa del norte de Pueblo Caelestis: abre el acceso a la Columna Lanza.",
+        "Recoge la Diamansfera del suelo de la cuarta planta del Monte Corona.",
+        "Sube a la cima del Monte Corona con la Diamansfera: Dialga de nivel 70."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_DIALGA",
+          "progress": [
+            {
+              "flag": "FLAG_UNLOCKED_DIALGA_PALKIA_SPEAR_PILLAR",
+              "label": "Acceso abierto por la abuela de Cintia"
+            }
+          ],
+          "meaning": "Capturado en la Columna Lanza."
+        }
+      }
+    },
+    {
+      "id": "pt.palkia",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        484
+      ],
+      "title": "Palkia en la Columna Lanza",
+      "placeName": {
+        "PT": "Columna Lanza"
+      },
+      "requires": "Liga superada, investigación de la abuela de Cintia y Lustresfera en la bolsa.",
+      "steps": [
+        "Con el acceso abierto, recoge la Lustresfera del suelo de la cuarta planta del Monte Corona.",
+        "Sube a la cima del Monte Corona con la Lustresfera: Palkia de nivel 70."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_PALKIA",
+          "progress": [
+            {
+              "flag": "FLAG_UNLOCKED_DIALGA_PALKIA_SPEAR_PILLAR",
+              "label": "Acceso abierto por la abuela de Cintia"
+            }
+          ],
+          "meaning": "Capturado en la Columna Lanza."
+        }
+      }
+    },
+    {
+      "id": "pt.heatran",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        485
+      ],
+      "title": "Heatran en la Montaña Dura",
+      "placeName": {
+        "PT": "Montaña Dura"
+      },
+      "requires": "Acceso a la Zona de Combate y la escena de Buck y Charon en la Montaña Dura.",
+      "steps": [
+        "Acompaña a Buck por la Montaña Dura hasta la sala del fondo, donde se arresta a Charon.",
+        "Sal y vuelve a entrar en la sala del fondo: Heatran de nivel 50."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_HEATRAN",
+          "progress": [
+            {
+              "flag": "FLAG_ARRESTED_CHARON_STARK_MOUNTAIN",
+              "label": "Charon arrestado"
+            }
+          ],
+          "meaning": "Capturado en la Montaña Dura."
+        }
+      }
+    },
+    {
+      "id": "pt.azelf",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        482
+      ],
+      "title": "Azelf en la Caverna Valor",
+      "placeName": {
+        "PT": "Caverna Valor"
+      },
+      "requires": "Clímax de la historia completado; Surf.",
+      "steps": [
+        "Surfea hasta la isla del Lago Valor y entra en la Caverna Valor: Azelf de nivel 50."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_AZELF",
+          "meaning": "Capturado en la caverna."
+        }
+      }
+    },
+    {
+      "id": "pt.uxie",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        480
+      ],
+      "title": "Uxie en la Caverna Agudeza",
+      "placeName": {
+        "PT": "Caverna Agudeza"
+      },
+      "requires": "Clímax de la historia completado; Surf.",
+      "steps": [
+        "Surfea hasta la isla del Lago Agudeza y entra en la Caverna Agudeza: Uxie de nivel 50."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_UXIE",
+          "meaning": "Capturado en la caverna."
+        }
+      }
+    },
+    {
+      "id": "pt.mesprit",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario errante",
+      "species": [
+        481
+      ],
+      "title": "Mesprit errante por Sinnoh",
+      "placeName": {
+        "PT": "Caverna Veraz"
+      },
+      "requires": "Clímax de la historia completado.",
+      "steps": [
+        "Entra en la Caverna Veraz (Lago Veraz): Mesprit huye y empieza a vagar.",
+        "Localízalo en el mapa del Poké-reloj (aplicación Marcamapa) y retenlo: huye al primer turno."
+      ],
+      "conditions": {
+        "PT": {
+          "doneVar": {
+            "var": "VAR_ROAMING_MESPRIT_STATE",
+            "equalsName": "ROAMER_STATE_CAPTURED"
+          },
+          "progress": [
+            {
+              "var": "VAR_ROAMING_MESPRIT_STATE",
+              "equalsName": "ROAMER_STATE_DEFEATED",
+              "label": "Derrotado: vuelve a vagar tras la Liga"
+            }
+          ],
+          "meaning": "Estado del errante en pret: 0 vagando, 1 capturado, 2 derrotado, 3 reinicio tras la Liga."
+        }
+      }
+    },
+    {
+      "id": "pt.cresselia",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario errante",
+      "species": [
+        488
+      ],
+      "title": "Cresselia de la Isla Plenilunio",
+      "placeName": {
+        "PT": "Isla Plenilunio"
+      },
+      "requires": "Liga superada y visitar al niño con pesadillas de Ciudad Canal.",
+      "steps": [
+        "En Ciudad Canal habla con el marinero cuyo hijo tiene pesadillas y viaja a la Isla Plenilunio.",
+        "En el claro del bosque Cresselia huye y empieza a vagar; recoge la Pluma Lunar.",
+        "Localízalo con el Poké-reloj y retenlo."
+      ],
+      "conditions": {
+        "PT": {
+          "doneVar": {
+            "var": "VAR_ROAMING_CRESSELIA_STATE",
+            "equalsName": "ROAMER_STATE_CAPTURED"
+          },
+          "progress": [
+            {
+              "flag": "FLAG_MET_CRESSELIA",
+              "label": "Visto en la Isla Plenilunio"
+            },
+            {
+              "var": "VAR_ROAMING_CRESSELIA_STATE",
+              "equalsName": "ROAMER_STATE_DEFEATED",
+              "label": "Derrotado: vuelve a vagar tras la Liga"
+            }
+          ],
+          "meaning": "Estado del errante en pret: 0 vagando, 1 capturado, 2 derrotado, 3 reinicio tras la Liga."
+        }
+      }
+    },
+    {
+      "id": "pt.birds",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendarios errantes",
+      "species": [
+        144,
+        145,
+        146
+      ],
+      "title": "Articuno, Zapdos y Moltres errantes",
+      "placeName": {
+        "PT": "Ciudad Vetusta"
+      },
+      "requires": "Pokédex Nacional.",
+      "steps": [
+        "Con la Pokédex Nacional, habla con el Prof. Oak en la casa del sur de Ciudad Vetusta: los tres pájaros empiezan a vagar por Sinnoh.",
+        "Localízalos con el Poké-reloj y retenlos. Al capturar los tres, vuelve a hablar con Oak."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_ROAMING_LEGENDARY_BIRDS",
+          "progress": [
+            {
+              "flag": "FLAG_ACTIVATED_ROAMING_LEGENDARY_BIRDS",
+              "label": "Errantes activados por Oak"
+            },
+            {
+              "var": "VAR_ROAMING_ARTICUNO_STATE",
+              "equalsName": "ROAMER_STATE_CAPTURED",
+              "label": "Articuno capturado"
+            },
+            {
+              "var": "VAR_ROAMING_ZAPDOS_STATE",
+              "equalsName": "ROAMER_STATE_CAPTURED",
+              "label": "Zapdos capturado"
+            },
+            {
+              "var": "VAR_ROAMING_MOLTRES_STATE",
+              "equalsName": "ROAMER_STATE_CAPTURED",
+              "label": "Moltres capturado"
+            }
+          ],
+          "meaning": "Oak registra los tres capturados."
+        }
+      }
+    },
+    {
+      "id": "pt.regigigas",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        486
+      ],
+      "title": "Regigigas en el Templo Puntaneva",
+      "placeName": {
+        "PT": "Templo Puntaneva"
+      },
+      "requires": "Regirock, Regice y Registeel en el equipo.",
+      "steps": [
+        "Baja hasta la sala más profunda del Templo Puntaneva con los tres Regis en el equipo.",
+        "Examina la estatua: Regigigas de nivel 1."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_REGIGIGAS",
+          "meaning": "Capturado en el templo."
+        }
+      }
+    },
+    {
+      "id": "pt.regirock",
+      "families": [
+        "PT"
+      ],
+      "category": "Evento de legado",
+      "legacy": "El script exige un Regigigas de evento (encuentro fatídico) en el equipo.",
+      "species": [
+        377
+      ],
+      "title": "Regirock en las Ruinas Pico Roca",
+      "placeName": {
+        "PT": "Ruinas Pico Roca"
+      },
+      "requires": "Liga superada y un Regigigas de evento en el equipo.",
+      "steps": [
+        "Entra en las Ruinas Pico Roca con el Regigigas de evento en el equipo.",
+        "Pisa los siete puntos marcados del suelo alrededor de la estatua y examínala: algo cambia en el aire.",
+        "Examínala de nuevo: Regirock de nivel 30. Si no lo capturas, la estatua deja de emanar poder."
+      ],
+      "conditions": {
+        "PT": {
+          "doneVar": {
+            "var": "VAR_ROCK_PEAK_RUINS_STATE",
+            "equalsName": "RUINS_STATE_CAUGHT_REGI"
+          },
+          "lostVar": [
+            {
+              "var": "VAR_ROCK_PEAK_RUINS_STATE",
+              "equalsName": "RUINS_STATE_DID_NOT_CATCH_REGI"
+            }
+          ],
+          "progress": [
+            {
+              "var": "VAR_ROCK_PEAK_RUINS_STATE",
+              "equalsName": "RUINS_STATE_ACTIVATED_STATUE",
+              "label": "Estatua activada"
+            }
+          ],
+          "meaning": "Estado de las ruinas: capturado, no capturado (definitivo) o estatua activada."
+        }
+      }
+    },
+    {
+      "id": "pt.regice",
+      "families": [
+        "PT"
+      ],
+      "category": "Evento de legado",
+      "legacy": "El script exige un Regigigas de evento (encuentro fatídico) en el equipo.",
+      "species": [
+        378
+      ],
+      "title": "Regice en las Ruinas Iceberg",
+      "placeName": {
+        "PT": "Ruinas Iceberg"
+      },
+      "requires": "Liga superada y un Regigigas de evento en el equipo.",
+      "steps": [
+        "Entra en las Ruinas Iceberg con el Regigigas de evento en el equipo.",
+        "Pisa los siete puntos marcados del suelo alrededor de la estatua y examínala: algo cambia en el aire.",
+        "Examínala de nuevo: Regice de nivel 30. Si no lo capturas, la estatua deja de emanar poder."
+      ],
+      "conditions": {
+        "PT": {
+          "doneVar": {
+            "var": "VAR_ICEBERG_RUINS_STATE",
+            "equalsName": "RUINS_STATE_CAUGHT_REGI"
+          },
+          "lostVar": [
+            {
+              "var": "VAR_ICEBERG_RUINS_STATE",
+              "equalsName": "RUINS_STATE_DID_NOT_CATCH_REGI"
+            }
+          ],
+          "progress": [
+            {
+              "var": "VAR_ICEBERG_RUINS_STATE",
+              "equalsName": "RUINS_STATE_ACTIVATED_STATUE",
+              "label": "Estatua activada"
+            }
+          ],
+          "meaning": "Estado de las ruinas: capturado, no capturado (definitivo) o estatua activada."
+        }
+      }
+    },
+    {
+      "id": "pt.registeel",
+      "families": [
+        "PT"
+      ],
+      "category": "Evento de legado",
+      "legacy": "El script exige un Regigigas de evento (encuentro fatídico) en el equipo.",
+      "species": [
+        379
+      ],
+      "title": "Registeel en las Ruinas Hierro",
+      "placeName": {
+        "PT": "Ruinas Hierro"
+      },
+      "requires": "Liga superada y un Regigigas de evento en el equipo.",
+      "steps": [
+        "Entra en las Ruinas Hierro con el Regigigas de evento en el equipo.",
+        "Pisa los siete puntos marcados del suelo alrededor de la estatua y examínala: algo cambia en el aire.",
+        "Examínala de nuevo: Registeel de nivel 30. Si no lo capturas, la estatua deja de emanar poder."
+      ],
+      "conditions": {
+        "PT": {
+          "doneVar": {
+            "var": "VAR_IRON_RUINS_STATE",
+            "equalsName": "RUINS_STATE_CAUGHT_REGI"
+          },
+          "lostVar": [
+            {
+              "var": "VAR_IRON_RUINS_STATE",
+              "equalsName": "RUINS_STATE_DID_NOT_CATCH_REGI"
+            }
+          ],
+          "progress": [
+            {
+              "var": "VAR_IRON_RUINS_STATE",
+              "equalsName": "RUINS_STATE_ACTIVATED_STATUE",
+              "label": "Estatua activada"
+            }
+          ],
+          "meaning": "Estado de las ruinas: capturado, no capturado (definitivo) o estatua activada."
+        }
+      }
+    },
+    {
+      "id": "pt.rotom",
+      "families": [
+        "PT"
+      ],
+      "category": "Encuentro único",
+      "species": [
+        479
+      ],
+      "title": "Rotom de la Vieja Mansión",
+      "placeName": {
+        "PT": "Vieja Mansión"
+      },
+      "requires": "Pokédex Nacional.",
+      "steps": [
+        "Por la noche, entra en la Vieja Mansión y examina el televisor de la habitación del fondo: Rotom de nivel 20."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_OLD_CHATEAU_ROTOM",
+          "meaning": "Capturado en la mansión."
+        }
+      }
+    },
+    {
+      "id": "pt.riolu",
+      "families": [
+        "PT"
+      ],
+      "category": "Regalo",
+      "species": [
+        447
+      ],
+      "title": "Huevo de Riolu de Quinoa",
+      "placeName": {
+        "PT": "Isla Hierro"
+      },
+      "requires": "Acompañar a Quinoa por la Isla Hierro.",
+      "steps": [
+        "Recorre la Isla Hierro junto a Quinoa y vence a los soldados Galaxia.",
+        "Al final, Quinoa te regala un Huevo de Riolu; ten un hueco libre."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_RECEIVED_RIOLU_EGG_FROM_RILEY",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "pt.eevee",
+      "families": [
+        "PT"
+      ],
+      "category": "Regalo",
+      "species": [
+        133
+      ],
+      "title": "Eevee de Bebe",
+      "placeName": {
+        "PT": "Ciudad Corazón"
+      },
+      "requires": "Pokédex Nacional.",
+      "steps": [
+        "Habla con Bebe en su casa, junto al Centro Pokémon de Ciudad Corazón."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_RECEIVED_HEARTHOME_CITY_NORTHWEST_HOUSE_EEVEE",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "pt.porygon",
+      "families": [
+        "PT"
+      ],
+      "category": "Regalo",
+      "species": [
+        137
+      ],
+      "title": "Porygon de Ciudad Rocavelo",
+      "placeName": {
+        "PT": "Ciudad Rocavelo"
+      },
+      "requires": "Pokédex Nacional.",
+      "steps": [
+        "Visita la casa del noreste de Ciudad Rocavelo y habla con el científico."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_RECEIVED_VEILSTONE_CITY_NORTHEAST_HOUSE_PORYGON",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "pt.darkrai",
+      "families": [
+        "PT"
+      ],
+      "category": "Evento de legado",
+      "legacy": "Requiere la Tarjeta Socio de una distribución.",
+      "species": [
+        491
+      ],
+      "title": "Darkrai en la Isla Lunanueva",
+      "placeName": {
+        "PT": "Isla Lunanueva"
+      },
+      "requires": "Tarjeta Socio.",
+      "steps": [
+        "Duerme en el hostal de Ciudad Canal con la Tarjeta Socio y habla con el marinero al despertar.",
+        "En la Isla Lunanueva, Darkrai (nivel 50) espera en el claro."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_DARKRAI",
+          "meaning": "Capturado."
+        }
+      }
+    },
+    {
+      "id": "pt.shaymin",
+      "families": [
+        "PT"
+      ],
+      "category": "Evento de legado",
+      "legacy": "Requiere la Carta de Oak de una distribución.",
+      "species": [
+        492
+      ],
+      "title": "Shaymin en el Paraíso Floral",
+      "placeName": {
+        "PT": "Paraíso Floral"
+      },
+      "requires": "Carta de Oak.",
+      "steps": [
+        "Con la Carta de Oak ve a la Ruta 224 y examina la roca del fondo.",
+        "En el Paraíso Floral, Shaymin (nivel 30) espera entre las flores."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_SHAYMIN",
+          "meaning": "Capturado."
+        }
+      }
+    },
+    {
+      "id": "pt.arceus",
+      "families": [
+        "PT"
+      ],
+      "category": "Evento de legado",
+      "legacy": "Requiere la Flauta Azur, que nunca se distribuyó oficialmente.",
+      "species": [
+        493
+      ],
+      "title": "Arceus en la Sala del Origen",
+      "placeName": {
+        "PT": "Sala del Origen"
+      },
+      "requires": "Flauta Azur.",
+      "steps": [
+        "Toca la Flauta Azur en la cima de la Columna Lanza: aparece una escalera hacia la Sala del Origen.",
+        "Arceus espera arriba (nivel 80)."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_ARCEUS",
+          "meaning": "Capturado."
         }
       }
     }

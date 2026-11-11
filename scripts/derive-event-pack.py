@@ -13,8 +13,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PRET = ROOT / '.cache' / 'pret'
-FLAG_SET = r'(?:SetFlag|setflag|FlagSet|SetScriptFlag|setevent|SetEvent|SetEventFlag)'
-VAR_SET = r'(?:SetVar|setvar|VarSet|SetScriptVar|AddVar|addvar|CopyVar|setevent)'
+FLAG_SET = r'(?:SetFlag|setflag|FlagSet|SetScriptFlag|setevent|SetEvent|SetEventFlag|VarsFlags_SetFlag)'
+VAR_SET = r'(?:SetVar|setvar|VarSet|SetScriptVar|AddVar|addvar|CopyVar|TrySetVarToValue|VarsFlags_SetVar)'
 
 
 def fail(message):
@@ -35,6 +35,26 @@ def c_defines(repo):
             match = re.match(r'\s*#define\s+([A-Za-z_][A-Za-z0-9_]*)\s+(.+?)\s*$', line.split('//')[0])
             if match:
                 table.setdefault(match.group(1), match.group(2))
+    return table
+
+
+def enum_list(repo, relative):
+    """Lista enumerada (una entrada por línea, opcionalmente NOMBRE = EXPRESIÓN), como un enum de C."""
+    table, counter = {}, 0
+    for raw in (PRET / repo / relative).read_text(encoding='utf-8').splitlines():
+        line = raw.split('//')[0].strip().rstrip(',')
+        if not line:
+            continue
+        if '=' in line:
+            name, expr = [x.strip() for x in line.split('=', 1)]
+            table[name] = expr
+            value = evaluate(name, table)
+            if value is None:
+                fail(f'no se puede evaluar {name} en {relative}')
+        else:
+            name, value = line, counter
+        table[name] = str(value)
+        counter = value + 1
     return table
 
 
@@ -59,10 +79,10 @@ def evaluate(name, table, stack=()):
 
 
 def sites(repo, name, verb):
-    pattern = re.compile(verb + r'\b[\s(]*(?:state,\s*)?' + re.escape(name) + r'\b')
+    pattern = re.compile(verb + r'\b[\s(]*(?:\w+,\s*)?' + re.escape(name) + r'\b')
     found = []
     base = PRET / repo
-    for folder in ('data', 'files', 'src', 'asm', 'engine', 'maps', 'scripts'):
+    for folder in ('data', 'files', 'src', 'asm', 'engine', 'maps', 'scripts', 'res'):
         root = base / folder
         if not root.exists():
             continue
@@ -100,7 +120,7 @@ def collect(spec, family):
         flags.update(cond.get('lost', []))
         if cond.get('doneVar'):
             take(cond['doneVar'])
-        for p in cond.get('progress', []):
+        for p in [*cond.get('progress', []), *cond.get('lostVar', [])]:
             take(p)
     return flags, variables
 
@@ -110,9 +130,17 @@ def build(pack):
     families = {}
     for family, source in spec['repos'].items():
         check_revision(source['repo'], source['rev'])
-        if source['kind'] != 'c':
-            fail('tipo de fuente no admitido: ' + source['kind'])
         table = c_defines(source['repo'])
+        if source['kind'] == 'enumlist':
+            table.update(enum_list(source['repo'], source['list']))
+        elif source['kind'] != 'c':
+            fail('tipo de fuente no admitido: ' + source['kind'])
+        def named(cond):
+            if 'equalsName' in cond:
+                value = evaluate(cond['equalsName'], table)
+                if value is None:
+                    fail(f"constante {cond['equalsName']} desconocida en {source['repo']}")
+                cond['equals'] = value
         wanted_flags, wanted_vars = collect(spec, family)
         flags, variables, where = {}, {}, {}
         for name in sorted(wanted_flags):
@@ -131,6 +159,13 @@ def build(pack):
             if not found:
                 fail(f'{name} no se escribe en ningún sitio de {source["repo"]}')
             variables[name], where[name] = value - 0x4000, found
+        for row in spec['story'].get(family, []):
+            named(row)
+        for entry in spec['secrets']:
+            cond = entry.get('conditions', {}).get(family)
+            if cond:
+                for c in [cond.get('doneVar') or {}, *cond.get('progress', []), *cond.get('lostVar', [])]:
+                    named(c)
         families[family] = {'flags': flags, 'vars': variables, 'sources': where}
     data = {'pack': pack, 'confidence': spec.get('confidence', 'documentado en código'),
             'revisions': {s['repo']: s['rev'] for s in spec['repos'].values()},
