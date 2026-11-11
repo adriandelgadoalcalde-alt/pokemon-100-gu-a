@@ -1,0 +1,72 @@
+# El 100 % de cada juego: criterios, fuentes y comprobación
+
+La lista de objetivos de la web (`MASTER_DATA` en `atlas.html`) define qué significa terminar al 100 % cada
+edición. Cada objetivo cita su fuente en el texto «cómo».
+
+## Fuentes y cómo se contrastan
+
+- **Código del juego** (decompilaciones de pret, revisión fijada): estrellas de la tarjeta de Rubí/Zafiro,
+  Esmeralda, Rojo Fuego/Verde Hoja y Platino; diploma de la primera y segunda generación (total de capturados).
+- **WikiDex** (en español, con los nombres oficiales), consultada con su API de MediaWiki desde el PC: ficha de
+  entrenador de todas las generaciones, Pokédex, Nexárbol, Musical, Liga Arándano y Bosque Blanco.
+- **Serebii**, consultado desde el PC: índice de contenidos de los 22 juegos (inventario de instalaciones,
+  coleccionables y minijuegos) y páginas de cada contenido para cifras y condiciones.
+- **PokéWiki** (alemana), como tercera fuente cuando las otras discrepan. Ejemplo: en Negro/Blanco la tarjeta pide
+  todos los poderes regalo de la Zona Nexo (Serebii y PokéWiki); WikiDex atribuía también a Negro/Blanco el
+  Nexárbol a nivel 30, que en realidad es de Negro 2/Blanco 2.
+- **PKHeX.Core** (revisión fijada): nombres oficiales en español de lugares y objetos; cuando un nombre no se ha
+  podido confirmar, se deja el inglés entre comillas en lugar de inventarlo.
+- **Juegos propios** (solo lectura en el PC): tablas de zonas y de áreas extraídas de las ROM/NSP/XCI.
+
+## Qué comprueba el guardado por sí solo
+
+Además de la historia y la Pokédex, se acreditan solos desde el guardado: el diploma de la 1.ª y 2.ª generación,
+las Pokédex exactas de cada juego, los sellos del pasaporte de Alola, las 255 medallas de Negro 2/Blanco 2 y estos
+coleccionables de bloques con nombre de PKHeX: Diglett de Alola, huellas de las Espadas de la Justicia, vatios del
+Dojo y combates restringidos (Espada/Escudo) y fuegos fatuos (Leyendas Arceus). Están contrastados con partidas
+públicas reales (por ejemplo, una partida de Escudo con las tres huellas al 100 % y otra de Leyendas Arceus con los
+107 fuegos fatuos).
+
+## Matriz por juego
+
+| Juego | Objetivos | Se comprueban solos con el guardado | Por categoría |
+| --- | ---: | ---: | --- |
+| RED | 11 | 6 | Historia 1, Postgame 1, Combates 1, Objetos clave 1, Pokédex 1, Legendarios 4, Tarjeta / reconocimiento 1, Evento histórico 1 |
+| GREEN | 11 | 6 | Historia 1, Postgame 1, Combates 1, Objetos clave 1, Pokédex 1, Legendarios 4, Tarjeta / reconocimiento 1, Evento histórico 1 |
+| BLUE | 11 | 6 | Historia 1, Postgame 1, Combates 1, Objetos clave 1, Pokédex 1, Legendarios 4, Tarjeta / reconocimiento 1, Evento histórico 1 |
+| YELLOW | 11 | 6 | Historia 1, Postgame 1, Combates 1, Objetos clave 1, Pokédex 1, Legendarios 4, Tarjeta / reconocimiento 1, Evento histórico 1 |
+| GOLD | 15 | 7 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 5, Tarjeta / reconocimiento 1, Evento histórico 2, Coleccionables 1 |
+| SILVER | 15 | 7 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 5, Tarjeta / reconocimiento 1, Evento histórico 2, Coleccionables 1 |
+| CRYSTAL | 15 | 7 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 5, Tarjeta / reconocimiento 1, Evento histórico 2, Coleccionables 1 |
+| RUBY | 19 | 9 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 7, Tarjeta / reconocimiento 4, Evento histórico 1, Puzles 1 |
+| SAPPHIRE | 19 | 9 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 7, Tarjeta / reconocimiento 4, Evento histórico 1, Puzles 1 |
+| EMERALD | 20 | 10 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 8, Tarjeta / reconocimiento 4, Evento histórico 1, Puzles 1 |
+| FIRERED | 19 | 11 | Historia 1, Postgame 2, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 7, Tarjeta / reconocimiento 4, Evento histórico 1 |
+| LEAFGREEN | 19 | 11 | Historia 1, Postgame 2, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 7, Tarjeta / reconocimiento 4, Evento histórico 1 |
+| DIAMOND | 21 | 10 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 8, Tarjeta / reconocimiento 5, Evento histórico 2 |
+| PEARL | 21 | 10 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 8, Tarjeta / reconocimiento 5, Evento histórico 2 |
+| PLATINUM | 23 | 11 | Historia 1, Postgame 1, Combates 3, Objetos clave 1, Pokédex 1, Legendarios 9, Tarjeta / reconocimiento 5, Evento histórico 2 |
+| HEARTGOLD | 30 | 14 | Historia 1, Postgame 1, Combates 4, Objetos clave 2, Pokédex 1, Legendarios 12, Puzles 1, Tarjeta / reconocimiento 5, Evento histórico 2, Coleccionables 1 |
+| SOULSILVER | 30 | 14 | Historia 1, Postgame 1, Combates 4, Objetos clave 2, Pokédex 1, Legendarios 12, Puzles 1, Tarjeta / reconocimiento 5, Evento histórico 2, Coleccionables 1 |
+| BLACK | 20 | 9 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 8, Tarjeta / reconocimiento 5, Evento histórico 1 |
+| WHITE | 20 | 9 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 8, Tarjeta / reconocimiento 5, Evento histórico 1 |
+| BLACK2 | 30 | 18 | Historia 1, Postgame 1, Combates 4, Objetos clave 1, Pokédex 1, Legendarios 15, Reconocimiento 1, Tarjeta / reconocimiento 5, Evento histórico 1 |
+| WHITE2 | 30 | 18 | Historia 1, Postgame 1, Combates 4, Objetos clave 1, Pokédex 1, Legendarios 15, Reconocimiento 1, Tarjeta / reconocimiento 5, Evento histórico 1 |
+| X | 17 | 8 | Historia 1, Postgame 1, Combates 3, Objetos clave 1, Pokédex 1, Legendarios 6, Tarjeta / reconocimiento 3, Evento histórico 1 |
+| Y | 17 | 8 | Historia 1, Postgame 1, Combates 3, Objetos clave 1, Pokédex 1, Legendarios 6, Tarjeta / reconocimiento 3, Evento histórico 1 |
+| OMEGARUBY | 35 | 27 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 25, Tarjeta / reconocimiento 3, Evento histórico 1 |
+| ALPHASAPPHIRE | 35 | 27 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 25, Tarjeta / reconocimiento 3, Evento histórico 1 |
+| SUN | 33 | 25 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 9, Tarjeta / reconocimiento 15, Evento histórico 2, Coleccionables 1 |
+| MOON | 33 | 25 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 9, Tarjeta / reconocimiento 15, Evento histórico 2, Coleccionables 1 |
+| ULTRASUN | 36 | 25 | Historia 1, Postgame 3, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 9, Coleccionables 2, Tarjeta / reconocimiento 15, Evento histórico 2 |
+| ULTRAMOON | 36 | 25 | Historia 1, Postgame 3, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 9, Coleccionables 2, Tarjeta / reconocimiento 15, Evento histórico 2 |
+| LETGOP | 12 | 5 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 4, Tarjeta / reconocimiento 1, Evento histórico 1 |
+| LETGOE | 12 | 5 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 4, Tarjeta / reconocimiento 1, Evento histórico 1 |
+| SWORD | 32 | 24 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 19, Tarjeta / reconocimiento 2, Evento histórico 2, Coleccionables 3 |
+| SHIELD | 32 | 24 | Historia 1, Postgame 1, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 19, Tarjeta / reconocimiento 2, Evento histórico 2, Coleccionables 3 |
+| BD | 19 | 10 | Historia 1, Postgame 1, Combates 1, Objetos clave 1, Pokédex 1, Legendarios 8, Tarjeta / reconocimiento 5, Evento histórico 1 |
+| SP | 19 | 10 | Historia 1, Postgame 1, Combates 1, Objetos clave 1, Pokédex 1, Legendarios 8, Tarjeta / reconocimiento 5, Evento histórico 1 |
+| ARCEUS | 20 | 10 | Historia 1, Postgame 2, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 8, Tarjeta / reconocimiento 2, Evento histórico 1, Coleccionables 2 |
+| SCARLET | 25 | 11 | Historia 1, Postgame 6, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 10, Evento histórico 3, Tarjeta / reconocimiento 1 |
+| VIOLET | 25 | 11 | Historia 1, Postgame 6, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 10, Evento histórico 3, Tarjeta / reconocimiento 1 |
+| ZA | 14 | 4 | Historia 1, Postgame 4, Combates 1, Objetos clave 1, Pokédex 1, Legendarios 3, Tarjeta / reconocimiento 1, Evento histórico 2 |
