@@ -72,3 +72,19 @@ Confianza: **documentado por la comunidad en PKHeX**, sin script fuente. Es infe
 - Concursos de Platino: rango Master en las cinco categorías.
 - Contraste con la partida de Platino cedida: las cinco impresiones de oro y los cinco concursos Master constan.
 - Bulbapedia y Serebii no son accesibles desde esta sesión (red restringida). Las cifras proceden del código.
+
+## Switch: Espada/Escudo, Leyendas Arceus y Escarlata/Púrpura
+
+- El motor WebAssembly se ha recompilado con `pkhex-extractor/NamedBlocks.cs`. Exporta, por el nombre de su constante en el accesor fijado de PKHeX, los bloques booleanos y enteros de Espada/Escudo, Leyendas Arceus, Escarlata/Púrpura y Z-A.
+- Compilación: .NET 10 en el PC del propietario, con el runtime de WebAssembly 10.0.12. El manifiesto `engine/build.json` registra los hashes con saltos de línea Unix, y `.gitattributes` impide convertir los archivos del motor.
+- Paquete `gen89`. Cada nombre se comprueba contra el accesor fijado.
+
+| Juego | Qué se lee |
+| --- | --- |
+| Espada/Escudo | Pájaros de Galar, los seis Regis, Spiritomb, legendarios de la Aventura Dinamax y Torre Batalla |
+| Leyendas Arceus | Señores calmados como historia, zonas, monturas, Pokédex completa y perfecta, Arceus y Eterna Ensoñación |
+| Escarlata/Púrpura | DLC y diploma (señales documentadas) y dificultades de teraincursión |
+
+- Contraste con 15 partidas públicas de Switch leídas en el navegador: entre 47 y 1111 bloques por partida, con resultados coherentes. Por ejemplo, un Arceus completado marca Arceus y la Pokédex completos.
+- Z-A todavía no tiene interpretación: su progreso está en matrices de eventos sin nombres públicos.
+- Las partidas personales de Switch del propietario no se han sacado de su PC (regla de sus archivos LEEME).

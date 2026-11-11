@@ -10,7 +10,7 @@
   }
   const guide=snapshot&&(root.PokemonEventGuide||(typeof module==='object'&&module.exports?require('./event-guide.js'):null));
   const g3=guide?guide.analyze(snapshot,game.id):null;
-  if(g3&&!g3.mismatch){
+  if(g3&&!g3.mismatch&&g3.story.rows.length){
    const where=g3.location?.name?` Tu partida está guardada en ${g3.location.name}.`:'';
    const last=[...g3.story.rows].reverse().find(r=>r.state!=='pending');
    if(g3.story.next&&!g3.storyPartial){

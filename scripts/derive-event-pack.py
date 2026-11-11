@@ -162,6 +162,26 @@ def build(pack):
     spec = json.loads((ROOT / 'research' / 'events' / f'{pack}.json').read_text())
     families = {}
     for family, source in spec['repos'].items():
+        if source['kind'] == 'pkhexblocks':
+            pkhex = ROOT / '.cache' / 'pkhex'
+            head = subprocess.run(['git', '-C', str(pkhex), 'rev-parse', 'HEAD'], capture_output=True, text=True).stdout.strip()
+            if head != source['rev']:
+                fail('PKHeX no está en la revisión fijada; ejecuta scripts/prepare-pkhex.sh')
+            text = (pkhex / source['file']).read_text(encoding='utf-8')
+            names, where = set(), {}
+            for row in spec['story'].get(family, []):
+                names.update(x[6:] for x in [row.get('flag', ''), *row.get('anyFlags', [])] if x.startswith('block:'))
+            for entry in spec['secrets']:
+                cond = entry.get('conditions', {}).get(family) or {}
+                for x in [cond.get('done'), cond.get('doneAlso'), *cond.get('doneAll', []), *cond.get('doneAny', []), *cond.get('lost', [])] + [p.get('flag') for p in cond.get('progress', [])]:
+                    if x and x.startswith('block:'):
+                        names.add(x[6:])
+            for name in sorted(names):
+                if not re.search(r'const uint ' + re.escape(name) + r'\b', text):
+                    fail(f'{name} no existe en {source["file"]}')
+                where['block:' + name] = [source['file']]
+            families[family] = {'flags': {}, 'vars': {}, 'sources': where}
+            continue
         check_revision(source['repo'], source['rev'])
         table = c_defines(source['repo'])
         if source['kind'] == 'enumlist':
@@ -206,7 +226,7 @@ def build(pack):
         families[family] = {'flags': flags, 'vars': variables, 'sources': where}
     data = {'pack': pack, 'confidence': spec.get('confidence', 'documentado en código'),
             'excludeLanguages': spec.get('excludeLanguages', []), 'excludeReason': spec.get('excludeReason', ''),
-            'revisions': {s['repo']: s['rev'] for s in spec['repos'].values()},
+            'revisions': {s.get('repo', 'PKHeX'): s['rev'] for s in spec['repos'].values()},
             'gameFamilies': spec['families'], 'families': families, 'story': spec['story'], 'secrets': spec['secrets']}
     body = json.dumps(data, ensure_ascii=False, separators=(',', ':'), sort_keys=True)
     return ('// SPDX-License-Identifier: GPL-3.0-or-later\n'
