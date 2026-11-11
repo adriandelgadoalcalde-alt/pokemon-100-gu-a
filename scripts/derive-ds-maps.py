@@ -131,6 +131,20 @@ def kalos_hoenn(key, expected, gen='gen6', text='text_xy_00000_es.txt'):
     return {'maps': table, 'names': used, 'source': 'ROM propia (' + spec['game'] + ') sha256:' + spec['sha256'][:16]}
 
 
+def bdsp():
+    """Diamante Brillante/Perla Reluciente: la zona es el identificador de ubicación (gen8b de PKHeX)."""
+    names = (PKHEX / 'Resources' / 'text' / 'locations' / 'gen8b' / 'text_bdsp_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
+    for zone, expected in [(0, 'Ciudad Jubileo'), (350, 'Orilla Valor'), (420, 'Ruta 229')]:
+        if names[zone].strip() != expected:
+            fail(f'la zona {zone} de BDSP no corresponde a «{expected}»')
+    table, used = {}, {}
+    for zone, name in enumerate(names):
+        if name.strip():
+            used[zone] = name.strip()
+            table[zone] = [zone, f'ZONE_{zone}']
+    return {'maps': table, 'names': used, 'source': 'PKHeX.Core gen8b/text_bdsp_00000_es.txt (zona = ubicación)'}
+
+
 def kanto_gb(repo_name, rev):
     """Rojo/Azul/Amarillo: wCurMap → lugar del mapa de Kanto (town_map_entries.asm), nombre oficial en español."""
     repo = PRET / repo_name
@@ -256,6 +270,7 @@ def build():
     data['PT'] = platinum()
     data['DP'] = diamond()
     data['B2W2'] = unova2()
+    data['BDSP'] = bdsp()
     data['XY'] = kalos_hoenn('xy', [(0, 'Pueblo Boceto'), (8, 'Pueblo Acuarela'), (53, 'Ciudad Novarte')])
     data['USUM'] = kalos_hoenn('usum', [(0, 'Ruta 1'), (7, 'Ruta 2'), (22, 'Ruinas de la Guerra')], 'gen7', 'text_sm_00000_es.txt')
     data['ORAS'] = kalos_hoenn('oras', [(0, 'Villa Raíz'), (13, 'Ciudad Petalia')])

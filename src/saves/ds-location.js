@@ -68,7 +68,27 @@
   const mapId=v.getUint16(block,true),entry=D[G.maps].maps[mapId];if(!entry)return null;
   return {mapId,map:entry[1],name:D[G.maps].names[entry[0]],x:Math.round(v.getFloat32(block+8,true)),y:Math.round(v.getFloat32(block+0x10,true)),source:'ds-location'};
  }
- function read(bytes,game,base,languageId){
+ // Diamante Brillante/Perla Reluciente: ZoneID int16 en 0x5634 (SAV8BS de PKHeX). En BDSP el número de zona es el
+ // mismo identificador que la ubicación de encuentro, así que su nombre es el de gen8b/text_bdsp_00000_es.txt.
+ // Solo se llama tras aceptar PKHeX.Core el archivo (integridad MD5 del propio formato).
+ const BDSP_SIZES=[0xE9828,0xEDC20,0xEED8C,0xEF0A4];
+ function readBDSP(bytes){
+  const D=data();if(!D||!BDSP_SIZES.includes(bytes.length))return null;
+  const v=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength),mapId=v.getInt16(0x5634,true),entry=D.BDSP.maps[mapId];
+  if(!entry)return null;
+  return {mapId,map:entry[1],name:D.BDSP.names[entry[0]],source:'ds-location'};
+ }
+ // Escarlata/Púrpura: el motor exporta KPlayerCurrentFieldID (PlayerSave_CurrentFieldId; 0 = Paldea, 1 = Noroteo,
+ // 2 = Academia Arándano, según SaveBlockAccessor9SV de PKHeX). Solo da la región, no el lugar exacto.
+ const SV_FIELDS=['Paldea','Noroteo','Academia Arándano'];
+ function fromBlocks(game,blocks){
+  if(!['SCARLET','VIOLET'].includes(game)||!blocks||typeof blocks!=='object')return null;
+  const f=blocks.KPlayerCurrentFieldID;if(!Number.isInteger(f)||!SV_FIELDS[f])return null;
+  return {mapId:f,map:'FIELD_'+f,name:SV_FIELDS[f],precision:'region',source:'named-blocks'};
+ }
+ function read(bytes,game,base,languageId,blocks){
+  if(['SCARLET','VIOLET'].includes(game))return fromBlocks(game,blocks);
+  if(['BD','SP'].includes(game))return bytes instanceof Uint8Array?readBDSP(bytes):null;
   if(GEN7[game])return bytes instanceof Uint8Array?readGen7(bytes,game):null;
   if(GEN6[game])return bytes instanceof Uint8Array?readGen6(bytes,game):null;
   if(GEN5[game])return bytes instanceof Uint8Array?readGen5(bytes,game):null;
@@ -80,6 +100,6 @@
   if(!entry)return null;
   return {mapId,map:entry[1],name:D[L.maps].names[entry[0]],x:v.getInt32(o+8,true),y:v.getInt32(o+12,true),source:'ds-location'};
  }
- const api={read,LAYOUT,GEN5,GEN6,GEN7,crc16inv};
+ const api={read,fromBlocks,LAYOUT,GEN5,GEN6,GEN7,crc16inv};
  if(typeof module==='object'&&module.exports)module.exports=api;else root.PokemonDSLocation=api;
 })(globalThis);

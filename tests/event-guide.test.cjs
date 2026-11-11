@@ -161,6 +161,16 @@ test('posición Ultrasol/Ultraluna: CRC16 invertido del bloque Situation y Sol/L
  b[0x1001]^=1;assert.equal(L.read(b,'ULTRAMOON'),null);
 });
 
+test('posición BDSP por zona = ubicación y región de Escarlata/Púrpura por bloques',()=>{
+ const L=require('../src/saves/ds-location.js'),b=new Uint8Array(0xEDC20),v=new DataView(b.buffer);
+ v.setInt16(0x5634,350,true);assert.equal(L.read(b,'BD').name,'Orilla Valor');
+ v.setInt16(0x5634,0,true);assert.equal(L.read(b,'SP').name,'Ciudad Jubileo');
+ assert.equal(L.read(new Uint8Array(0x1000),'BD'),null);
+ assert.equal(L.read(null,'VIOLET',undefined,undefined,{KPlayerCurrentFieldID:2}).name,'Academia Arándano');
+ assert.equal(L.read(null,'SCARLET',undefined,undefined,{KPlayerCurrentFieldID:0}).precision,'region');
+ assert.equal(L.read(null,'SCARLET',undefined,undefined,{}),null);
+});
+
 test('posición Game Boy: Kanto y Johto con nombres oficiales; japonés y coreano excluidos',()=>{
  const L=require('../src/saves/ds-location.js'),bytes=new Uint8Array(0x8000);
  bytes[0x260A]=40;bytes[0x260D]=3;bytes[0x260E]=5;
