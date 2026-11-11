@@ -180,6 +180,10 @@ test('posición Switch desde el motor: SV por identificador de lugar, Leyendas p
  assert.equal(L.read(null,'ARCEUS',0,0,{},{map:'ha_area05'}).name,'Tundra Alba');
  assert.equal(L.read(null,'ARCEUS',0,0,{},{map:'ha_area09'}),null);
  assert.equal(L.read(null,'ZA',0,0,{},{map:'t1'}).name,'Ciudad Luminalia');
+ const gg=L.read(null,'LETGOE',0,0,{},{mapHash:'C575D7D020856017'});assert.equal(gg.name,'Pueblo Paleta');assert.equal(gg.detail,'dentro de un edificio');
+ assert.equal(L.read(null,'LETGOP',0,0,{},{mapHash:L.fnv64('t011gym')}).detail,'gimnasio');
+ assert.equal(L.read(null,'LETGOP',0,0,{},{mapHash:L.fnv64('r023d01')}).name,'Calle Victoria');
+ assert.equal(L.read(null,'LETGOP',0,0,{},{mapHash:L.fnv64('s001r01')}),null);
  assert.equal(L.read(null,'ZA',0,0,{},{map:'d9'}),null);
  assert.equal(L.fnv64('a_t0101_i0101'),'B6F6DA200E8FFE23');assert.equal(L.fnv64('a_wr0201'),'5EA5C3539AB81C81');
  const sw=L.read(null,'SWORD',0,0,{},{mapHash:'B6F6DA200E8FFE23'});assert.equal(sw.name,'Pueblo Yarda');assert.match(sw.detail,/interior/);

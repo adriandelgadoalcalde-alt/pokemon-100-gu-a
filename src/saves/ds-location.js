@@ -95,6 +95,8 @@
    for(let a=1;a<=20;a++)for(let b=1;b<=10;b++){const name=base+'_i'+String(a).padStart(2,'0')+String(b).padStart(2,'0');swshCache[fnv64(name)]=[base,name];}}
   return swshCache;
  }
+ let lgpeCache=null;
+ function lgpeAreas(){if(lgpeCache)return lgpeCache;lgpeCache={};const S=data()?.SWITCH;if(S)for(const code of Object.keys(S.LGPE))lgpeCache[fnv64(code)]=code;return lgpeCache;}
  // Posición que exporta el motor (switchPosition, NamedBlocks.Position): Escarlata/Púrpura dan el identificador de
  // ubicación (int32 LE en el bloque PlayerSave_CurrentLocationId); Leyendas Arceus y Z-A, el nombre interno del mapa.
  function fromPosition(game,pos,blocks){
@@ -113,6 +115,10 @@
    const h=String(pos.mapHash||'').toUpperCase(),hit=swshZones()[h];if(!hit)return null;
    return {mapId:hit[0],map:hit[1],name:S.SWSH[hit[0]],detail:hit[1]===hit[0]?'':'dentro de un edificio o zona interior',source:'switch-position'};
   }
+  if(['LETGOP','LETGOE'].includes(game)){
+   const code=lgpeAreas()[String(pos.mapHash||'').toUpperCase()];if(!code)return null;const [name,detail]=S.LGPE[code];
+   return {mapId:code,map:code,name,detail,source:'switch-position'};
+  }
   if(game==='ZA'){
    const m=/^(t1)(?:_.*)?$/.exec(String(pos.map||''));if(!m)return null;
    return {mapId:m[1],map:pos.map,name:S.ZA[m[1]],source:'switch-position'};
@@ -120,7 +126,7 @@
   return null;
  }
  function read(bytes,game,base,languageId,blocks,position){
-  if(['SCARLET','VIOLET','ARCEUS','ZA','SWORD','SHIELD'].includes(game))return fromPosition(game,position,blocks)||fromBlocks(game,blocks);
+  if(['SCARLET','VIOLET','ARCEUS','ZA','SWORD','SHIELD','LETGOP','LETGOE'].includes(game))return fromPosition(game,position,blocks)||fromBlocks(game,blocks);
   if(['BD','SP'].includes(game))return bytes instanceof Uint8Array?readBDSP(bytes):null;
   if(GEN7[game])return bytes instanceof Uint8Array?readGen7(bytes,game):null;
   if(GEN6[game])return bytes instanceof Uint8Array?readGen6(bytes,game):null;

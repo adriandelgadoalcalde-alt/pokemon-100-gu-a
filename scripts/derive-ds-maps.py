@@ -174,7 +174,31 @@ def switch_names():
     for region, index in (('a_wr01', 121), ('a_wr02', 165), ('a_wr03', 205)):
         for n in range(1, 41):
             codes[f'{region}{n:02d}'] = index
+    gg = (base / 'gen7' / 'text_gg_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
+    for index, name in [(3, 'Ruta 1'), (28, 'Pueblo Paleta'), (38, 'Ciudad Azafrán'), (39, 'Bosque Verde'), (46, 'Cueva Celeste'), (50, 'GO Park'), (53, 'Liga Pokémon')]:
+        if gg[index].strip() != name:
+            fail(f'el índice {index} de Let\'s Go no corresponde a «{name}»')
+    # Let's Go: Coordinates7b.M es FNV-1a de 64 bits del nombre de área (research/switch/lgpe-areas.json, sacado de
+    # AreaNameHashTable.tbl). Pueblos t001..t011 en el orden de los mapas de Rojo/Azul, que es también el de PKHeX
+    # (índices 28-38): t001 y t005 sin gimnasio, t004d01 Cueva Celeste, t007 sin tienda propia (grandes almacenes),
+    # t010champ la Liga, t011 con cuatro garitas. rNNN = Ruta N (índice 2+N); cuevas por su ruta.
+    special = {'forest': (39, ''), 'r004d01': (40, ''), 'r010d01': (41, ''), 'r010r01': (42, ''), 'r011d01': (43, ''),
+               'r020d01': (44, ''), 'r023d01': (45, ''), 't004d01': (46, ''), 't010champ': (53, ''), 'gogo_park': (50, ''), 'gogo_play': (50, '')}
+    kinds = {'gym': 'gimnasio', 'pc': 'Centro Pokémon', 'fs': 'tienda', 'g': 'garita', 'u': 'entrada del Paso Subterráneo', 'r': 'dentro de un edificio'}
+    lgpe = {}
+    for code in json.loads((ROOT / 'research' / 'switch' / 'lgpe-areas.json').read_text(encoding='utf-8'))['areas']:
+        if code in special:
+            lgpe[code] = [gg[special[code][0]].strip(), special[code][1]]
+            continue
+        m = re.fullmatch(r'([tr])(\d{3})(gym|pc|fs|g|u|r|d)\d*', code)
+        if not m or m.group(3) == 'd':
+            continue
+        n = int(m.group(2))
+        index = 27 + n if m.group(1) == 't' and 1 <= n <= 11 else 2 + n if m.group(1) == 'r' and 1 <= n <= 25 else None
+        if index is not None:
+            lgpe[code] = [gg[index].strip(), kinds[m.group(3)]]
     return {'SV': {i: n.strip() for i, n in enumerate(sv) if n.strip() and not n.strip().startswith('－')},
+            'LGPE': lgpe,
             'SWSH': {code: swsh[index].strip() for code, index in codes.items()},
             'LA': {f'ha_area0{i}': la[6 + i].strip() for i in range(6)},
             'ZA': {'t1': xy[22].strip()},
