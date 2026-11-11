@@ -201,8 +201,9 @@ def build():
         }
         if family in BADGE_STORY and hall is not None:
             story[family] = [{'mission': m, 'badgesAtLeast': n, 'label': l} for m, n, l in BADGE_STORY[family]] + story[family]
-        if family == 'DP' and hall is not None:
-            # Medallas leídas por PKHeX.Core; orden de DP: Lignito, Bosque, Adoquín, Ciénaga, Reliquia (tras Surf), Mina, Carámbano, Faro.
+        if family in ('DP', 'BDSP') and hall is not None:
+            # Medallas leídas por PKHeX.Core (DP) o por las banderas de sistema 124-131 (BDSP, src/saves/bdsp-flags.js);
+            # orden de DP, que BDSP conserva con las mismas misiones: Lignito, Bosque, Adoquín, Ciénaga, Reliquia (tras Surf), Mina, Carámbano, Faro.
             story[family] = [{'mission': m, 'badgesAtLeast': n, 'label': l} for m, n, l in [
                 ('02', 1, 'Medalla Lignito'), ('03', 2, 'Medalla Bosque'), ('04', 3, 'Medalla Adoquín'), ('05', 4, 'Medalla Ciénaga'),
                 ('06', 6, 'Medallas Reliquia y Mina'), ('07', 7, 'Medalla Carámbano'), ('09', 8, 'Medalla Faro')]] + story[family]
@@ -247,7 +248,7 @@ def build():
     game_families['LGPE'] = ['LETGOP', 'LETGOE']
     story['LGPE'] = lgpe_story
     secrets.extend(lgpe_secrets)
-    data = {'pack': 'pkhex', 'storyPartialFamilies': [f for f in families if f not in ('LGPE', 'DP', 'BW', 'B2W2', 'XY', 'ORAS')], 'confidence': 'documentado por la comunidad en PKHeX (sin script fuente)',
+    data = {'pack': 'pkhex', 'storyPartialFamilies': [f for f in families if f not in ('LGPE', 'DP', 'BW', 'B2W2', 'XY', 'ORAS', 'BDSP')], 'confidence': 'documentado por la comunidad en PKHeX (sin script fuente)',
             'revisions': {'PKHeX': REVISION}, 'excludeLanguages': [], 'excludeReason': '',
             'gameFamilies': game_families, 'families': families, 'story': story, 'secrets': secrets}
     body = json.dumps(data, ensure_ascii=False, separators=(',', ':'), sort_keys=True)

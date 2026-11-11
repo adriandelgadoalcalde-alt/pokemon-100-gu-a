@@ -205,6 +205,12 @@ test('Espada/Escudo: historia por medallas y título solo con prueba de la Torre
  assert.equal(c.story.next,null);
 });
 
+test('Diamante Brillante/Perla Reluciente: historia por medallas con las misiones de su guía',()=>{
+ const a=guide.analyze({events:{activeFlags:[],work:[]},badgesTotal:3,caught:[]},'BD');
+ assert.equal(a.storyPartial,false);assert.equal(a.story.next.label,'Medalla Ciénaga');assert.equal(a.story.next.mission,'05');
+ assert.equal(guide.analyze({events:{activeFlags:[],work:[]},badgesTotal:8,caught:[]},'SP').story.next.label,'Salón de la Fama registrado');
+});
+
 test('posición Game Boy: Kanto y Johto con nombres oficiales; japonés y coreano excluidos',()=>{
  const L=require('../src/saves/ds-location.js'),bytes=new Uint8Array(0x8000);
  bytes[0x260A]=40;bytes[0x260D]=3;bytes[0x260E]=5;
