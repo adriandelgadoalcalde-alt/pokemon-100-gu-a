@@ -724,7 +724,7 @@ Pendiente:
 - **Sin interpretación todavía:**
   - Verde (Japón).
   - Leyendas Z-A: matrices sin nombres públicos.
-- **Ubicación del jugador:** se lee en las generaciones I a IV (salvo Verde japonés y las versiones japonesa y coreana de Game Boy); en la V, solo Negro 2/Blanco 2 (falta una copia de Negro/Blanco para su tabla de zonas); en la VI, X/Y y ROZA; en la VII, Ultrasol/Ultraluna (falta una copia de Sol/Luna); en Switch, Diamante Brillante/Perla Reluciente y Escarlata/Púrpura (lugar exacto; si falta, la región), Leyendas Arceus (Villa Jubileo o el área) y Leyendas Z-A (Ciudad Luminalia). Let's Go y Espada/Escudo guardan solo un hash del mapa: el motor lo exporta, pero falta la tabla para traducirlo.
+- **Ubicación del jugador:** se lee en las generaciones I a IV (salvo Verde japonés y las versiones japonesa y coreana de Game Boy); en la V, solo Negro 2/Blanco 2 (falta una copia de Negro/Blanco para su tabla de zonas); en la VI, X/Y y ROZA; en la VII, Ultrasol/Ultraluna (falta una copia de Sol/Luna); en Switch, Diamante Brillante/Perla Reluciente y Escarlata/Púrpura (lugar exacto; si falta, la región), Leyendas Arceus (Villa Jubileo o el área) y Leyendas Z-A (Ciudad Luminalia). Espada/Escudo guarda un hash del nombre de la zona: se reconocen Pueblo Yarda, la Isla de la Armadura y la Torre Batalla (el resto queda sin nombre hasta tener su tabla). Let's Go: pendiente.
 - **Confianza:**
   - Pret y PKHeX se marcan como «documentado en código» o «documentado por la comunidad».
   - Ninguna lectura certifica automáticamente: faltan comparaciones antes/después con partidas propias.

@@ -181,7 +181,10 @@ test('posición Switch desde el motor: SV por identificador de lugar, Leyendas p
  assert.equal(L.read(null,'ARCEUS',0,0,{},{map:'ha_area09'}),null);
  assert.equal(L.read(null,'ZA',0,0,{},{map:'t1'}).name,'Ciudad Luminalia');
  assert.equal(L.read(null,'ZA',0,0,{},{map:'d9'}),null);
- assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:'B6F6DA200E8FFE23'}),null);
+ assert.equal(L.fnv64('a_t0101_i0101'),'B6F6DA200E8FFE23');assert.equal(L.fnv64('a_wr0201'),'5EA5C3539AB81C81');
+ const sw=L.read(null,'SWORD',0,0,{},{mapHash:'B6F6DA200E8FFE23'});assert.equal(sw.name,'Pueblo Yarda');assert.match(sw.detail,/interior/);
+ assert.equal(L.read(null,'SHIELD',0,0,{},{mapHash:'5EA5C3539AB81C81'}).name,'Isla de la Armadura');
+ assert.equal(L.read(null,'SHIELD',0,0,{},{mapHash:'23F8A2E146592267'}),null);
 });
 
 test('posición Game Boy: Kanto y Johto con nombres oficiales; japonés y coreano excluidos',()=>{

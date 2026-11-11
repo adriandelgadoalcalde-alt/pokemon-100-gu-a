@@ -86,6 +86,15 @@
   const f=blocks.KPlayerCurrentFieldID;if(!Number.isInteger(f)||!SV_FIELDS[f])return null;
   return {mapId:f,map:'FIELD_'+f,name:SV_FIELDS[f],precision:'region',source:'named-blocks'};
  }
+ // FNV-1a de 64 bits (los hashes de zona de Espada/Escudo), con BigInt.
+ const fnv64=t=>{let h=0xCBF29CE484222645n;for(const c of t){h^=BigInt(c.charCodeAt(0));h=(h*0x100000001B3n)&0xFFFFFFFFFFFFFFFFn;}return h.toString(16).toUpperCase().padStart(16,'0');};
+ let swshCache=null;
+ function swshZones(){
+  if(swshCache)return swshCache;swshCache={};const S=data()?.SWITCH;if(!S)return swshCache;
+  for(const base of Object.keys(S.SWSH)){swshCache[fnv64(base)]=[base,base];
+   for(let a=1;a<=20;a++)for(let b=1;b<=10;b++){const name=base+'_i'+String(a).padStart(2,'0')+String(b).padStart(2,'0');swshCache[fnv64(name)]=[base,name];}}
+  return swshCache;
+ }
  // Posición que exporta el motor (switchPosition, NamedBlocks.Position): Escarlata/Púrpura dan el identificador de
  // ubicación (int32 LE en el bloque PlayerSave_CurrentLocationId); Leyendas Arceus y Z-A, el nombre interno del mapa.
  function fromPosition(game,pos,blocks){
@@ -100,6 +109,10 @@
    const m=/^(ha_area0[0-5])(?:_(.+))?$/.exec(String(pos.map||''));if(!m||!S.LA[m[1]])return null;
    return {mapId:m[1],map:pos.map,name:S.LA[m[1]],detail:m[2]?'dentro de un edificio o zona interior':'',source:'switch-position'};
   }
+  if(['SWORD','SHIELD'].includes(game)){
+   const h=String(pos.mapHash||'').toUpperCase(),hit=swshZones()[h];if(!hit)return null;
+   return {mapId:hit[0],map:hit[1],name:S.SWSH[hit[0]],detail:hit[1]===hit[0]?'':'dentro de un edificio o zona interior',source:'switch-position'};
+  }
   if(game==='ZA'){
    const m=/^(t1)(?:_.*)?$/.exec(String(pos.map||''));if(!m)return null;
    return {mapId:m[1],map:pos.map,name:S.ZA[m[1]],source:'switch-position'};
@@ -107,7 +120,7 @@
   return null;
  }
  function read(bytes,game,base,languageId,blocks,position){
-  if(['SCARLET','VIOLET','ARCEUS','ZA'].includes(game))return fromPosition(game,position,blocks)||fromBlocks(game,blocks);
+  if(['SCARLET','VIOLET','ARCEUS','ZA','SWORD','SHIELD'].includes(game))return fromPosition(game,position,blocks)||fromBlocks(game,blocks);
   if(['BD','SP'].includes(game))return bytes instanceof Uint8Array?readBDSP(bytes):null;
   if(GEN7[game])return bytes instanceof Uint8Array?readGen7(bytes,game):null;
   if(GEN6[game])return bytes instanceof Uint8Array?readGen6(bytes,game):null;
@@ -120,6 +133,6 @@
   if(!entry)return null;
   return {mapId,map:entry[1],name:D[L.maps].names[entry[0]],x:v.getInt32(o+8,true),y:v.getInt32(o+12,true),source:'ds-location'};
  }
- const api={read,fromBlocks,fromPosition,LAYOUT,GEN5,GEN6,GEN7,crc16inv};
+ const api={read,fromBlocks,fromPosition,fnv64,LAYOUT,GEN5,GEN6,GEN7,crc16inv};
  if(typeof module==='object'&&module.exports)module.exports=api;else root.PokemonDSLocation=api;
 })(globalThis);

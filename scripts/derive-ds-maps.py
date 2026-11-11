@@ -157,7 +157,14 @@ def switch_names():
                                    (la, 6, 'Villa Jubileo'), (la, 7, 'Pradera Obsidiana'), (la, 11, 'Tundra Alba'), (xy, 22, 'Ciudad Luminalia')]:
         if table[index].strip() != expected:
             fail(f'el índice {index} no corresponde a «{expected}»')
+    swsh = (base / 'gen8' / 'text_swsh_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
+    for index, expected in [(6, 'Pueblo Yarda'), (158, 'Torre Batalla'), (165, 'Isla de la Armadura')]:
+        if swsh[index].strip() != expected:
+            fail(f'el índice {index} de SWSH no corresponde a «{expected}»')
     return {'SV': {i: n.strip() for i, n in enumerate(sv) if n.strip() and not n.strip().startswith('－')},
+            # Espada/Escudo: Coordinates8.M es FNV-1a de 64 bits del nombre de la zona. Solo zonas con prueba:
+            # a_t0101 (casa inicial: a_t0101_i0101 en partidas públicas), a_wr0201 y a_bt0101 (pkNX, EditorSWSH).
+            'SWSH': {'a_t0101': swsh[6].strip(), 'a_wr0201': swsh[165].strip(), 'a_bt0101': swsh[158].strip()},
             'LA': {f'ha_area0{i}': la[6 + i].strip() for i in range(6)},
             'ZA': {'t1': xy[22].strip()},
             'source': 'PKHeX.Core gen9/text_sv, gen8a/text_la y gen6/text_xy (es)'}
