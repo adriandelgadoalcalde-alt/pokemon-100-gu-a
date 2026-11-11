@@ -25,7 +25,10 @@
  // lista: pokered pide al menos 150 de 151 («discount Mew»); pokegold/pokecrystal, más de 248 de 251 (sin Mew ni Celebi).
  const gen1={source:'https://github.com/pret/pokered/blob/0dbf95cd12f5b1511c62ce69efe283000f780a8f/scripts/CeladonMansion3F.asm',requirements:{diploma:{atLeast:150,of:range(151)}}};
  const gen2={source:'https://github.com/pret/pokecrystal/blob/3c813b0b4d82b39bf62185aceffb76fd6026c70b/maps/CeladonMansion3F.asm',requirements:{diploma:{atLeast:249,of:range(251)}}};
- const definitions={RED:gen1,BLUE:gen1,GREEN:gen1,YELLOW:gen1,GOLD:gen2,SILVER:gen2,CRYSTAL:gen2,BD:bdsp,SP:bdsp,LETGOP:letsgo,LETGOE:letsgo,SUN:sm,MOON:sm,ULTRASUN:usum,ULTRAMOON:usum,FIRERED:frlg,LEAFGREEN:frlg,DIAMOND:dp,PEARL:dp,PLATINUM:platinum,HEARTGOLD:hgss,SOULSILVER:hgss,BLACK:unova,WHITE:unova,BLACK2:unova,WHITE2:unova,X:xy,Y:xy,OMEGARUBY:oras,ALPHASAPPHIRE:oras};
+ // Rubí/Zafiro/Esmeralda: HasAllHoennMons (pokeemerald) exige los 200 primeros de la Pokédex de Hoenn capturados.
+ const hoenn3Data=typeof module==='object'&&module.exports?require('./hoenn-gen3-dex.js'):root.PokemonHoennGen3Dex;
+ const hoenn3={source:hoenn3Data.source,requirements:{hoenn:hoenn3Data.required}};
+ const definitions={RUBY:hoenn3,SAPPHIRE:hoenn3,EMERALD:hoenn3,RED:gen1,BLUE:gen1,GREEN:gen1,YELLOW:gen1,GOLD:gen2,SILVER:gen2,CRYSTAL:gen2,BD:bdsp,SP:bdsp,LETGOP:letsgo,LETGOE:letsgo,SUN:sm,MOON:sm,ULTRASUN:usum,ULTRAMOON:usum,FIRERED:frlg,LEAFGREEN:frlg,DIAMOND:dp,PEARL:dp,PLATINUM:platinum,HEARTGOLD:hgss,SOULSILVER:hgss,BLACK:unova,WHITE:unova,BLACK2:unova,WHITE2:unova,X:xy,Y:xy,OMEGARUBY:oras,ALPHASAPPHIRE:oras};
  function dexStatus(d){
   const definition=definitions[d?.game];
   if(!definition)return null;

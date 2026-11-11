@@ -142,3 +142,10 @@ test('BDSP national recognition excludes Lugia/Ho-Oh and nine mythicals without 
   assert.ok(!engine.fromDiagnosis(d).some(f=>/star|reward|diploma|encounter|charm/i.test(f.id)));
  }
 });
+
+test('Rubí/Zafiro/Esmeralda: Pokédex de Hoenn de la tarjeta = 200 primeras de HOENN_DEX (pokeemerald)',()=>{
+ const H=require('../src/engine/hoenn-gen3-dex.js');
+ assert.equal(H.required.length,200);assert.equal(H.required[0],252);assert.equal(H.required.includes(385),false);assert.equal(H.required.includes(386),false);
+ assert.equal(dexStatus({game:'EMERALD',caught:H.required}).hoenn.complete,true);
+ assert.deepEqual(dexStatus({game:'SAPPHIRE',caught:H.required.filter(id=>id!==384)}).hoenn.missing,[384]);
+});
