@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PRET = ROOT / '.cache' / 'pret'
 FLAG_SET = r'(?:SetFlag|setflag|FlagSet|SetScriptFlag|setevent|SetEvent|SetEventFlag|VarsFlags_SetFlag|SetEventReuseHL|SetEventReuseA|SetEventAfterBranchReuseHL|SetEvents|trainer)'
-VAR_SET = r'(?:SetVar|setvar|VarSet|SetScriptVar|AddVar|addvar|CopyVar|TrySetVarToValue|VarsFlags_SetVar)'
+VAR_SET = r'(?:SetVar|setvar|VarSet|SetScriptVar|AddVar|addvar|CopyVar|TrySetVarToValue|VarsFlags_SetVar|SetSystemVar)'
 
 
 def fail(message):

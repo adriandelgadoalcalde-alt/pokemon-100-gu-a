@@ -1428,6 +1428,206 @@
           "meaning": "Capturado."
         }
       }
+    },
+    {
+      "id": "hgss.frontier_prints",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Desafío",
+      "title": "Frente Batalla: las cinco impresiones de oro",
+      "placeName": {
+        "HGSS": "Frente Batalla"
+      },
+      "requires": "Liga superada y acceso al Frente Batalla.",
+      "steps": [
+        "En combates individuales, cada As del Frente aparece en estos combates de la racha: Torre Batalla (Palmer): 21 y 49; Fábrica Batalla (Thorton): 21 y 49; Castillo Batalla (Darach): 21 y 49; Ruleta Batalla (Dahlia): 21 y 49; Sala Batalla (Argenta): 50 y 170. (Cifras tomadas del código de Platino, que comparte el Frente Batalla; en HGSS no están descompiladas.)",
+        "La primera victoria contra el As da la impresión de plata; la segunda, la de oro. Recógela en el mostrador de la instalación.",
+        "Si pierdes, la racha vuelve a cero en esa instalación."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_GOT_ALL_FOUR_FRONTIER_PRINTS",
+          "progress": [
+            {
+              "var": "VAR_BATTLE_TOWER_PRINT_PROGRESS",
+              "atLeast": 2,
+              "label": "Torre Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_FACTORY_PRINT_PROGRESS",
+              "atLeast": 2,
+              "label": "Fábrica Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_CASTLE_PRINT_PROGRESS",
+              "atLeast": 2,
+              "label": "Castillo Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_ARCADE_PRINT_PROGRESS",
+              "atLeast": 2,
+              "label": "Ruleta Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_HALL_PRINT_PROGRESS",
+              "atLeast": 2,
+              "label": "Sala Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_TOWER_PRINT_PROGRESS",
+              "atLeast": 4,
+              "label": "Torre Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_FACTORY_PRINT_PROGRESS",
+              "atLeast": 4,
+              "label": "Fábrica Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_CASTLE_PRINT_PROGRESS",
+              "atLeast": 4,
+              "label": "Castillo Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_ARCADE_PRINT_PROGRESS",
+              "atLeast": 4,
+              "label": "Ruleta Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_HALL_PRINT_PROGRESS",
+              "atLeast": 4,
+              "label": "Sala Batalla: impresión de oro"
+            }
+          ],
+          "meaning": "Bandera que el juego activa al tener las cinco impresiones de oro; el progreso usa el estado de cada impresión (2 plata y 4 oro recibidas, según el script que exige 4 en todas)."
+        }
+      }
+    },
+    {
+      "id": "pt.frontier_prints",
+      "families": [
+        "PT"
+      ],
+      "category": "Desafío",
+      "title": "Frente Batalla: las cinco impresiones de oro",
+      "placeName": {
+        "PT": "Frente Batalla"
+      },
+      "requires": "Liga superada y acceso al Frente Batalla.",
+      "steps": [
+        "En combates individuales, cada As del Frente aparece en estos combates de la racha: Torre Batalla (Palmer): 21 y 49; Fábrica Batalla (Thorton): 21 y 49; Castillo Batalla (Darach): 21 y 49; Ruleta Batalla (Dahlia): 21 y 49; Sala Batalla (Argenta): 50 y 170.",
+        "La primera victoria contra el As da la impresión de plata; la segunda, la de oro. Recógela en el mostrador de la instalación.",
+        "Si pierdes, la racha vuelve a cero en esa instalación."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_OBTAINED_ALL_BATTLE_FRONTIER_GOLD_PRINTS",
+          "progress": [
+            {
+              "var": "VAR_BATTLE_TOWER_PRINT_STATE",
+              "atLeast": 2,
+              "label": "Torre Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_FACTORY_PRINT_STATE",
+              "atLeast": 2,
+              "label": "Fábrica Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_CASTLE_PRINT_STATE",
+              "atLeast": 2,
+              "label": "Castillo Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_ARCADE_PRINT_STATE",
+              "atLeast": 2,
+              "label": "Ruleta Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_HALL_PRINT_STATE",
+              "atLeast": 2,
+              "label": "Sala Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_TOWER_PRINT_STATE",
+              "atLeast": 4,
+              "label": "Torre Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_FACTORY_PRINT_STATE",
+              "atLeast": 4,
+              "label": "Fábrica Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_CASTLE_PRINT_STATE",
+              "atLeast": 4,
+              "label": "Castillo Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_ARCADE_PRINT_STATE",
+              "atLeast": 4,
+              "label": "Ruleta Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_HALL_PRINT_STATE",
+              "atLeast": 4,
+              "label": "Sala Batalla: impresión de oro"
+            }
+          ],
+          "meaning": "Bandera que el juego activa al tener las cinco impresiones de oro; el progreso usa el estado de cada impresión (2 plata y 4 oro recibidas, según el script que exige 4 en todas)."
+        }
+      }
+    },
+    {
+      "id": "pt.contest_masters",
+      "families": [
+        "PT"
+      ],
+      "category": "Desafío",
+      "title": "Concursos: rango Master en las cinco categorías",
+      "placeName": {
+        "PT": "Ciudad Corazón"
+      },
+      "requires": "Ganar los rangos Normal, Grande y Ultra de cada categoría.",
+      "steps": [
+        "En la Sala de Concursos de Ciudad Corazón gana el rango Master de Carisma, Belleza, Dulzura, Ingenio y Dureza.",
+        "Cada victoria en Master se registra en el juego; Mr. Goods (Ciudad Corazón) entrega las copas correspondientes."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CONTEST_MASTER_COOL",
+          "doneAll": [
+            "FLAG_CONTEST_MASTER_BEAUTY",
+            "FLAG_CONTEST_MASTER_CUTE",
+            "FLAG_CONTEST_MASTER_SMART",
+            "FLAG_CONTEST_MASTER_TOUGH"
+          ],
+          "progress": [
+            {
+              "flag": "FLAG_CONTEST_MASTER_COOL",
+              "label": "Carisma"
+            },
+            {
+              "flag": "FLAG_CONTEST_MASTER_BEAUTY",
+              "label": "Belleza"
+            },
+            {
+              "flag": "FLAG_CONTEST_MASTER_CUTE",
+              "label": "Dulzura"
+            },
+            {
+              "flag": "FLAG_CONTEST_MASTER_SMART",
+              "label": "Ingenio"
+            },
+            {
+              "flag": "FLAG_CONTEST_MASTER_TOUGH",
+              "label": "Dureza"
+            }
+          ],
+          "meaning": "Banderas de victoria en rango Master por categoría."
+        }
+      }
     }
   ]
 }

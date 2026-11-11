@@ -64,3 +64,11 @@ Confianza: **documentado por la comunidad en PKHeX**, sin script fuente. Es infe
   - Un Sol público natural: 6 de 6.
   - Las partidas preparadas no muestran eventos.
 - BDSP aún no se evalúa: el motor del navegador no exporta sus banderas. Hay que recompilarlo con .NET, que no está disponible en este entorno.
+
+## Desafíos de la cuarta generación
+
+- Impresiones del Frente Batalla en Platino y HGSS: estado de cada instalación (2 plata, 4 oro) y bandera de las cinco de oro.
+- Combates del As según `include/constants/battle_frontier.h` de pokeplatinum: Torre, Fábrica, Castillo y Ruleta en el 21 y el 49; Sala en el 50 y el 170. HGSS comparte el Frente, pero su código no está descompilado: las cifras se indican como tomadas de Platino.
+- Concursos de Platino: rango Master en las cinco categorías.
+- Contraste con la partida de Platino cedida: las cinco impresiones de oro y los cinco concursos Master constan.
+- Bulbapedia y Serebii no son accesibles desde esta sesión (red restringida). Las cifras proceden del código.
