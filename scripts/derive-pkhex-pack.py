@@ -115,7 +115,7 @@ def lgpe_family():
                 'progress': [{'flag': ref(k, e), 'label': l} for k, e, l in [('s0001', 'Chop Down', 'Corte'), ('s0002', 'Sky Dash', 'Vuelo'), ('s0003', 'Strong Push', 'Fuerza'), ('s0004', 'Sea Skim', 'Surf'), ('s0005', 'Light Up', 'Destello')]],
                 'meaning': 'Técnicas secretas desbloqueadas.'}, 'Historia'),
         secret('masters', 'Entrenadores Maestros: los 153 títulos', 'Kanto', '06',
-               {'titlesAtLeast': 153, 'meaning': 'Títulos de Maestro desbloqueados según EventWork7b de PKHeX.'}, 'Desafío',
+               {'titlesAtLeast': 153, 'titlesRange': [1, 153], 'meaning': 'Títulos de Entrenador Maestro (índices 1 a 153 de EventWork7b en PKHeX).'}, 'Desafío',
                steps=['Tras la Liga, vence a cada Entrenador Maestro con la especie que pide; cada victoria desbloquea su título.']),
     ]
     flags = {}

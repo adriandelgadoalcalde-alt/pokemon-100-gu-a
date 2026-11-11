@@ -88,3 +88,14 @@ Confianza: **documentado por la comunidad en PKHeX**, sin script fuente. Es infe
 - Contraste con 15 partidas públicas de Switch leídas en el navegador: entre 47 y 1111 bloques por partida, con resultados coherentes. Por ejemplo, un Arceus completado marca Arceus y la Pokédex completos.
 - Z-A todavía no tiene interpretación: su progreso está en matrices de eventos sin nombres públicos.
 - Las partidas personales de Switch del propietario no se han sacado de su PC (regla de sus archivos LEEME).
+
+## Let's Go Pikachu/Eevee
+
+- El extractor exporta las banderas en bruto de `EventWork7b` (zona 0, sistema 128, desaparición 640, evento 2176) y los títulos de Entrenador Maestro.
+- Las referencias de la lista de PKHeX (`flags_gg_en.txt`, con prefijos `s`, `v` y `e`) se convierten a ese índice en bruto. El generador comprueba la descripción de cada índice.
+- Historia:
+  - los ocho gimnasios (banderas de sistema por líder);
+  - el final de la historia principal.
+- Secretos y desafíos:
+  - Rojo, los dos Snorlax, los pájaros y Mewtwo (encuentro resuelto por bandera de desaparición), el Dojo, los regalos y las cinco técnicas secretas;
+  - los **153 títulos de Entrenador Maestro**, contados solo en los índices 1 a 153.

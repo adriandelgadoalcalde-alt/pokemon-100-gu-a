@@ -93,3 +93,15 @@ test('BDSP: banderas int32, medallas y Liga desde las banderas de sistema; valor
  const a=guide.analyze({events:r.events,caught:[]},'BD');assert.equal(a.secrets.find(s=>s.title==='Regirock').status,'completado');
  v.setInt32(0x4+(500+10)*4,7,true);assert.equal(B.read(bytes),null);
 });
+
+test("Let's Go: gimnasios como historia, capturas y títulos de Maestro contados",()=>{
+ const sys=i=>128+i,ev=i=>2176+i;
+ const all=[0,12,13,14,15,16,17,18,19].map(sys);
+ const a=guide.analyze({events:{activeFlags:all,work:[],titles:Array.from({length:153},(_,i)=>i+1)},caught:[]},'LETGOE');
+ assert.equal(a.story.next,null);assert.equal(a.storyPartial,false);
+ assert.equal(a.secrets.find(s=>s.id==='pkhex.lgpe.masters').status,'completado');
+ const b=guide.analyze({events:{activeFlags:[ev(192)],work:[],titles:[1,2]},caught:[]},'LETGOP');
+ assert.equal(b.secrets.find(s=>s.id==='pkhex.lgpe.masters').status,'pendiente');
+ assert.equal(b.secrets.find(s=>s.id==='pkhex.lgpe.snorlax').status,'en curso');
+ assert.equal(b.story.next.id,'LETGOP-02');
+});

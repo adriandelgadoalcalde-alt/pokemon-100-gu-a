@@ -32,7 +32,7 @@
    }
    const n=fam.flags[name];return n===undefined?null:set.has(n);};
   const varValue=name=>{const i=fam.vars?.[name];return i===undefined?null:vars[i]??null;};
-  const check=c=>c.titlesAtLeast!==undefined?(Array.isArray(meta.titles)?meta.titles.length>=c.titlesAtLeast:null):Array.isArray(c.anyFlags)?(c.anyFlags.some(f=>has(f)===true)?true:c.anyFlags.every(f=>has(f)===false)?false:null):Array.isArray(c.flags)?(c.flags.some(f=>has(f)===null)?null:c.flags.every(f=>has(f))):c.badgesAtLeast!==undefined?(Number.isInteger(meta.badges)?meta.badges>=c.badgesAtLeast:null):c.flag?has(c.flag):c.var?(()=>{const v=varValue(c.var);return v===null?null:c.atLeast!==undefined?v>=c.atLeast:v===c.equals;})():null;
+  const check=c=>c.titlesAtLeast!==undefined?(Array.isArray(meta.titles)?meta.titles.filter(i=>!c.titlesRange||(i>=c.titlesRange[0]&&i<=c.titlesRange[1])).length>=c.titlesAtLeast:null):Array.isArray(c.anyFlags)?(c.anyFlags.some(f=>has(f)===true)?true:c.anyFlags.every(f=>has(f)===false)?false:null):Array.isArray(c.flags)?(c.flags.some(f=>has(f)===null)?null:c.flags.every(f=>has(f))):c.badgesAtLeast!==undefined?(Number.isInteger(meta.badges)?meta.badges>=c.badgesAtLeast:null):c.flag?has(c.flag):c.var?(()=>{const v=varValue(c.var);return v===null?null:c.atLeast!==undefined?v>=c.atLeast:v===c.equals;})():null;
   const rows=(pack.story[family]||[]).map(r=>({...r,id:game+'-'+r.mission,set:check(r)}));
   let later=false;
   for(let i=rows.length-1;i>=0;i--){rows[i].state=rows[i].set?'direct':later?'derived':'pending';if(rows[i].set)later=true;}
