@@ -120,6 +120,11 @@
    const F=G?.families?.E?.flags,names=['TOWER','DOME','PALACE','ARENA','FACTORY','PIKE','PYRAMID'].flatMap(n=>['FLAG_SYS_'+n+'_SILVER','FLAG_SYS_'+n+'_GOLD']);
    if(F&&names.every(n=>Number.isInteger(F[n]))){const set=new Set(d.field.flags);add('card.emerald.frontierSymbols',names.every(n=>set.has(F[n])),'field');}
   }
+  // Rubí/Zafiro/Esmeralda: estrella de los cuadros del museo. FLAG_COOL/BEAUTY/CUTE/SMART/TOUGH_PAINTING_MADE
+  // (0xA0-0xA4, igual en pokeruby y pokeemerald) se activan en el vestíbulo de concursos al hacer cada cuadro.
+  if(d.field&&Array.isArray(d.field.flags)&&['RS','E'].includes(d.field.family)){
+   const set=new Set(d.field.flags);add('card.hoenn.paintings',[0xA0,0xA1,0xA2,0xA3,0xA4].every(f=>set.has(f)),'field');
+  }
   // Coleccionables que el guardado registra en bloques con nombre de PKHeX (solo lectura; umbrales según Serebii).
   const nb=d.namedBlocks&&typeof d.namedBlocks==='object'?d.namedBlocks:null;
   if(nb){

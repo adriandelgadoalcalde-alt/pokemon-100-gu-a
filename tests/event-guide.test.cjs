@@ -240,3 +240,10 @@ test('Esmeralda: estrella del Frente Batalla con las 14 banderas de símbolos y 
  assert.equal(get({family:'E',flags:all.slice(0,-1)}),false);
  assert.equal(get({family:'RS',flags:all}),undefined);
 });
+
+test('Rubí/Zafiro/Esmeralda: estrella de los cinco cuadros del museo; Rojo Fuego excluido',()=>{
+ const O=require('../src/engine/objectives.js'),get=(field)=>O.fromDiagnosis({game:'RUBY',field}).find(f=>f.id==='card.hoenn.paintings')?.value;
+ assert.equal(get({family:'RS',flags:[0xA0,0xA1,0xA2,0xA3,0xA4]}),true);
+ assert.equal(get({family:'E',flags:[0xA0,0xA1,0xA2,0xA3]}),false);
+ assert.equal(get({family:'FRLG',flags:[0xA0,0xA1,0xA2,0xA3,0xA4]}),undefined);
+});
