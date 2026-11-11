@@ -231,3 +231,12 @@ test('coleccionables del guardado: Diglett, huellas, vatios, combates restringid
  assert.equal(get(la(20),'collection.la.wisps'),true);assert.equal(get(la(19),'collection.la.wisps'),false);
  assert.equal(get({game:'SWORD',namedBlocks:{}},'collection.swsh.footprints'),undefined);
 });
+
+test('Esmeralda: estrella del Frente Batalla con las 14 banderas de símbolos y solo en la familia E',()=>{
+ const O=require('../src/engine/objectives.js'),G=require('../src/saves/gen3-data.js'),F=G.families.E.flags;
+ const all=['TOWER','DOME','PALACE','ARENA','FACTORY','PIKE','PYRAMID'].flatMap(n=>['FLAG_SYS_'+n+'_SILVER','FLAG_SYS_'+n+'_GOLD']).map(n=>F[n]);
+ const get=(field,game='EMERALD')=>O.fromDiagnosis({game,field}).find(f=>f.id==='card.emerald.frontierSymbols')?.value;
+ assert.equal(get({family:'E',flags:all}),true);
+ assert.equal(get({family:'E',flags:all.slice(0,-1)}),false);
+ assert.equal(get({family:'RS',flags:all}),undefined);
+});

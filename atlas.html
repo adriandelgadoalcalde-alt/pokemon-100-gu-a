@@ -11,7 +11,7 @@ function masteryEvaluation(goal,g){
   const facts=PokemonObjectives.fromDiagnosis(evidenceFor(g));
   const nodes=masteryGoals(g).map(item=>{
    let auto=item.fact?item.fact:item.auto==='gameClear'?'story.gameClear':Number.isInteger(item.species)?'pokedex.caught.'+item.species:null;
-   if(['RED','BLUE','GREEN','YELLOW','GOLD','SILVER','CRYSTAL'].includes(g.id)&&item.id==='medal-type')auto='pokedex.completion.diploma';    if(['FIRERED','LEAFGREEN'].includes(g.id)&&['card-1','card-2'].includes(item.id))auto='pokedex.completion.'+(item.id==='card-1'?'kanto':'national');
+   if(['RED','BLUE','GREEN','YELLOW','GOLD','SILVER','CRYSTAL'].includes(g.id)&&item.id==='medal-type')auto='pokedex.completion.diploma';    if(item.label==='Hall de la Fama')auto='story.gameClear';    if(g.id==='EMERALD'&&item.id==='card-3')auto='card.emerald.frontierSymbols';    if(['FIRERED','LEAFGREEN'].includes(g.id)&&['card-1','card-2'].includes(item.id))auto='pokedex.completion.'+(item.id==='card-1'?'kanto':'national');
    if(['OMEGARUBY','ALPHASAPPHIRE'].includes(g.id)&&item.id==='card-1')auto='pokedex.completion.hoenn';
    if(['X','Y'].includes(g.id)&&['pokedex','card-1'].includes(item.id))auto='pokedex.completion.kalos';
    if(['DIAMOND','PEARL','PLATINUM','HEARTGOLD','SOULSILVER','BLACK','WHITE','BLACK2','WHITE2'].includes(g.id)&&['pokedex','card-1'].includes(item.id))auto='pokedex.completion.national';
