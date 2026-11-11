@@ -21,7 +21,11 @@
  const usum={source:alolaData.requirementsSource,requirements:alolaData.ultra};
  const letsgo={source:'https://bulbapedia.bulbagarden.net/wiki/Diploma',requirements:{kanto:range(150)}};
  const bdsp={source:'https://github.com/shatter9652/uDPR/blob/becc1c369460026fbd33ca28d83e8c18d3e30526/Assets/Scripts/Game/ZukanWork.cs',requirements:{national:range(493,[...mythicals4,249,250])}};
- const definitions={BD:bdsp,SP:bdsp,LETGOP:letsgo,LETGOE:letsgo,SUN:sm,MOON:sm,ULTRASUN:usum,ULTRAMOON:usum,FIRERED:frlg,LEAFGREEN:frlg,DIAMOND:dp,PEARL:dp,PLATINUM:platinum,HEARTGOLD:hgss,SOULSILVER:hgss,BLACK:unova,WHITE:unova,BLACK2:unova,WHITE2:unova,X:xy,Y:xy,OMEGARUBY:oras,ALPHASAPPHIRE:oras};
+ // Diploma de GAME FREAK (Mansión Azulona, 3.ª planta): el juego cuenta TODOS los capturados y exige un total, no una
+ // lista: pokered pide al menos 150 de 151 («discount Mew»); pokegold/pokecrystal, más de 248 de 251 (sin Mew ni Celebi).
+ const gen1={source:'https://github.com/pret/pokered/blob/0dbf95cd12f5b1511c62ce69efe283000f780a8f/scripts/CeladonMansion3F.asm',requirements:{diploma:{atLeast:150,of:range(151)}}};
+ const gen2={source:'https://github.com/pret/pokecrystal/blob/3c813b0b4d82b39bf62185aceffb76fd6026c70b/maps/CeladonMansion3F.asm',requirements:{diploma:{atLeast:249,of:range(251)}}};
+ const definitions={RED:gen1,BLUE:gen1,GREEN:gen1,YELLOW:gen1,GOLD:gen2,SILVER:gen2,CRYSTAL:gen2,BD:bdsp,SP:bdsp,LETGOP:letsgo,LETGOE:letsgo,SUN:sm,MOON:sm,ULTRASUN:usum,ULTRAMOON:usum,FIRERED:frlg,LEAFGREEN:frlg,DIAMOND:dp,PEARL:dp,PLATINUM:platinum,HEARTGOLD:hgss,SOULSILVER:hgss,BLACK:unova,WHITE:unova,BLACK2:unova,WHITE2:unova,X:xy,Y:xy,OMEGARUBY:oras,ALPHASAPPHIRE:oras};
  function dexStatus(d){
   const definition=definitions[d?.game];
   if(!definition)return null;
@@ -29,6 +33,11 @@
   if(!Array.isArray(d[field]))return null;
   const registered=new Set(d[field]);
   return Object.fromEntries(Object.entries(definition.requirements).map(([key,required])=>{
+   if(!Array.isArray(required)){
+    // Requisito por total (como lo cuenta el juego): cualquier combinación de especies sirve.
+    const missing=required.of.filter(id=>!registered.has(id)),count=required.of.length-missing.length;
+    return [key,{required:required.atLeast,registered:Math.min(count,required.atLeast),missing:count>=required.atLeast?[]:missing,complete:count>=required.atLeast,source:definition.source,field}];
+   }
    const missing=required.filter(id=>!registered.has(id));
    return [key,{required:required.length,registered:required.length-missing.length,missing,complete:missing.length===0,source:definition.source,field}];
   }));
