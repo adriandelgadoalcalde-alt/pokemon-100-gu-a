@@ -657,3 +657,35 @@ de campo usan Poké-reloj; la tarjeta exige variantes de estatuas, no banderas.
 La lista exacta de 482 obtenidos se compara sin acreditar estrella ni premio.
 La lógica reconstruida y sus límites se documentan en `research/routes/bdsp.md`;
 no se equipara el cierre del catálogo con todos los mapas/encuentros/colecciones.
+
+## Tercera generación: el guardado dice dónde estás y qué secretos faltan
+
+Fecha: 11 de noviembre de 2026.
+
+**Lector nativo de campo** para R/Z, E y RF/VH. Lee:
+
+- la copia activa con sus checksums;
+- la ubicación (nombre oficial en español);
+- equipo y cajas;
+- todas las banderas y variables.
+
+Paridad con PKHeX.Core: 8 de 8 archivos coinciden por completo (6 públicos y 2 privados cedidos, fuera de Git).
+
+**Catálogo de 23 secretos y legendarios.** Cada uno tiene banderas de pret verificadas: existen y algún script las activa. Las semánticas difieren por edición; están documentadas en `research/gen3/README.md`.
+
+**En el Atlas:**
+
+- «Dónde estás ahora» y la historia según las banderas;
+- «Secretos y eventos» con estado, requisitos y pasos;
+- la Isla Espejismo calculada para hoy y los próximos días con tus propios Pokémon;
+- la ruta del clima anómalo de Esmeralda.
+
+El recomendador usa la primera bandera de historia pendiente.
+
+Pruebas: 86 unitarias, auditoría, regresión de navegador (Chromium) y actualización de la PWA. Capturas revisadas a 390, 1024 y 1440 píxeles, sin desbordamiento.
+
+Límites:
+
+- Confianza «documentado en código»; sin pruebas antes/después, nada se certifica automáticamente.
+- El Frente Batalla y los concursos siguen pendientes.
+- Las demás generaciones no tienen todavía esta capa.

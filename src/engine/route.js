@@ -8,6 +8,19 @@
    const tower=pending.find(m=>m.id==='SOULSILVER-E02');
    if(tower&&!snapshot.caught?.includes(383))return {mission:tower,reason:'El Orbe Rojo ya está en tu bolsa. Continúa con el acceso a la Torre Oculta; no repitas su entrega.'};
   }
+  const guide=snapshot?.field&&(root.PokemonGen3Guide||(typeof module==='object'&&module.exports?require('./gen3-guide.js'):null));
+  const g3=guide?guide.analyze(snapshot.field,game.id,snapshot.caught):null;
+  if(g3&&!g3.mismatch){
+   const where=g3.location?.name?` Tu partida está guardada en ${g3.location.name}.`:'';
+   const last=[...g3.story.rows].reverse().find(r=>r.state!=='pending');
+   if(g3.story.next){
+    const mission=pending.find(m=>m.id===g3.story.next.id)||game.missions.find(m=>m.id===g3.story.next.id);
+    if(mission)return {mission,reason:`Según las banderas del guardado${last?', último hito: '+last.label:''}. Falta: ${g3.story.next.label}.${where}`};
+   }else{
+    const after=pending.find(m=>game.missions.indexOf(m)>game.missions.findIndex(x=>x.id===game.mainStoryLastMission));
+    if(after)return {mission:after,reason:`El guardado registra la Liga superada.${where} Consulta también «Secretos y eventos» en el diagnóstico.`};
+   }
+  }
   const signal=(typeof module==='object'&&module.exports?require('../saves/diagnosis.js'):root.PokemonDiagnosis)?.documentedClear({...snapshot,game:snapshot?.game||game.id});
   const documentedClear=snapshot?.gameClear==null&&signal?.value===true;
   if(snapshot?.gameClear===true||documentedClear){

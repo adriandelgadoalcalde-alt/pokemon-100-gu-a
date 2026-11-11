@@ -128,3 +128,8 @@ los cristales presentes no certifican pruebas ni sellos del pasaporte.
 Alola separa las listas exactas de Pokédex (300 originales/400 Ultra y cada isla)
 de los quince sellos que constan en el pasaporte. Cumplir el registro no acredita
 por sí solo haber recibido su sello ni haber realizado todos los encuentros.
+
+La tercera generación lee además del propio guardado la ubicación, el equipo, las cajas y todas las banderas.
+Con ello muestra dónde estás, el siguiente hito de la historia y el estado de 23 secretos y legendarios,
+y calcula la Isla Espejismo con tus Pokémon. El lector coincide con PKHeX.Core. Método y límites en
+`research/gen3/README.md`.

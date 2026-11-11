@@ -23,7 +23,7 @@
   if(Array.isArray(e.keyItems))result.keyItems=e.keyItems.filter(i=>i&&Number.isInteger(i.id)&&i.id>0&&Number.isInteger(i.count)&&i.count>0)
    .map(i=>({id:i.id,count:i.count}));
   if(e.extractor&&typeof e.extractor==='object')result.extractor={engine:String(e.extractor.engine||''),engineCommit:String(e.extractor.engineCommit||'')};
-  for(const key of ['integrity','events','medals','passport','battleTree','pokeathlon','pokewalker'])
+  for(const key of ['integrity','events','medals','passport','battleTree','pokeathlon','pokewalker','field'])
    if(e[key]&&typeof e[key]==='object'&&!Array.isArray(e[key]))result[key]=JSON.parse(JSON.stringify(e[key]));
   return result;
  }
@@ -49,6 +49,10 @@
   if(!parsed.game&&Array.isArray(parsed.gameCandidates)){
    if(!parsed.gameCandidates.includes(options.selectedGame))throw Error('El formato no distingue la edición. Selecciona primero una edición de su familia en el Atlas e importa de nuevo.');
    parsed={...parsed,game:options.selectedGame,editionIdentification:'selected-in-atlas'};
+  }
+  if(root.PokemonGen3Field&&bytes.length>=0x10000&&bytes.length<=0x20040){
+   // Lectura de campo complementaria (ubicación, equipo, cajas, banderas). Si falla, el diagnóstico sigue igual.
+   try{const field=root.PokemonGen3Field.read(bytes);if(field.games.includes(parsed.game))parsed={...parsed,field};}catch{}
   }
   const result=normalize({...parsed,readAt:new Date().toISOString(),sourceType:'local-save'});
   if(!result)throw Error('El lector no devolvió un diagnóstico compatible. No se ha cambiado el progreso.');
