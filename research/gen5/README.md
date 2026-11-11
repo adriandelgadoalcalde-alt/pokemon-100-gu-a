@@ -12,5 +12,8 @@ Ciudad Engobe.
 La posición del jugador se lee del bloque 28 («Trainer Position») de `SaveBlockAccessor5B2W2` de PKHeX:
 0x19500, 0xA8 bytes, CRC16-CCITT en 0x195AA; el mapa es el int32 de +0x80 (`PlayerPosition5`).
 
-Negro/Blanco usan otra numeración de zonas (la misma posición da otra ciudad) y no hay copia de esos juegos:
-su ubicación queda pendiente hasta tener la tabla.
+Negro/Blanco usan otra numeración de zonas (427). Su tabla (`bw-zones.json`) procede de pokedaisy (GPL-3.0), que la
+generó desde el cartucho con el mismo método: su tabla de Negro 2 coincide en las 615 zonas con la extraída aquí de
+Blanco 2. Contraste con partidas reales: las públicas de Negro/Blanco salen en Ciudad Gres y la de Twitch Plays
+Pokémon Negro, guardada al final de la historia, en el Palacio de N. El bloque de posición de Negro/Blanco mide 0x9C
+bytes, con su CRC16 en 0x1959E (SaveBlockAccessor5BW).

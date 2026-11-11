@@ -34,7 +34,9 @@
  // Negro 2/Blanco 2: bloque 28 «Trainer Position» de SaveBlockAccessor5B2W2 (0x19500, 0xA8 bytes, CRC16 en 0x195AA);
  // PlayerPosition5: mapa int32 en +0x80, X en +0x86, Y en +0x8E. Zonas: research/gen5/b2w2-zones.json.
  // La zona de Ciudad Negra es la misma en Blanco 2, donde el lugar es el Bosque Blanco (índice 51).
- const GEN5={BLACK2:{block:0x19500,len:0xA8,chk:0x195AA,maps:'B2W2'},WHITE2:{block:0x19500,len:0xA8,chk:0x195AA,maps:'B2W2',swap:{50:51}}};
+ // Negro/Blanco: el mismo bloque 28 «Trainer Position» con 0x9C bytes y CRC16 en 0x1959E (SaveBlockAccessor5BW).
+ const GEN5={BLACK2:{block:0x19500,len:0xA8,chk:0x195AA,maps:'B2W2'},WHITE2:{block:0x19500,len:0xA8,chk:0x195AA,maps:'B2W2',swap:{50:51}},
+  BLACK:{block:0x19500,len:0x9C,chk:0x1959E,maps:'BW'},WHITE:{block:0x19500,len:0x9C,chk:0x1959E,maps:'BW',swap:{50:51}}};
  function readGen5(bytes,game){
   const G=GEN5[game],D=data(),I=integrity();if(!G||!D||!I||bytes.length<0x26000)return null;
   const v=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength);

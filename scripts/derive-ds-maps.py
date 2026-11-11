@@ -93,6 +93,25 @@ def diamond():
     return {'maps': table, 'names': used, 'source': 'pokediamond@b623abef1b4dfe204ca50aab42447ac00c134290'}
 
 
+def unova1():
+    """Negro/Blanco: zona → índice del nombre (research/gen5/bw-zones.json, de pokedaisy, validada con N2/B2)."""
+    spec = json.loads((ROOT / 'research' / 'gen5' / 'bw-zones.json').read_text(encoding='utf-8'))
+    names = (PKHEX / 'Resources' / 'text' / 'locations' / 'gen5' / 'text_bw2_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
+    if spec['count'] != len(spec['names']) or spec['count'] != 427:
+        fail('la tabla de zonas de Negro/Blanco no tiene 427 entradas')
+    for zone, expected in [(0, 'Ciudad Negra'), (6, 'Ciudad Gres')]:
+        if names[spec['names'][zone]].strip() != expected:
+            fail(f'la zona {zone} de Negro/Blanco no corresponde a «{expected}»')
+    table, used = {}, {}
+    for zone, index in enumerate(spec['names']):
+        if index == 0 or index >= len(names) or not names[index].strip() or names[index].strip().startswith('－'):
+            continue
+        used[index] = names[index].strip()
+        table[zone] = [index, f'ZONE_{zone}']
+    used[51] = names[51].strip()
+    return {'maps': table, 'names': used, 'source': 'pokedaisy@135ac809 (validada contra la ROM propia de Blanco 2)'}
+
+
 def unova2():
     """Negro 2/Blanco 2: zona → índice del nombre (research/gen5/b2w2-zones.json, extraído de la ROM propia)."""
     spec = json.loads((ROOT / 'research' / 'gen5' / 'b2w2-zones.json').read_text(encoding='utf-8'))
@@ -338,6 +357,7 @@ def build():
     data['PT'] = platinum()
     data['DP'] = diamond()
     data['B2W2'] = unova2()
+    data['BW'] = unova1()
     data['BDSP'] = bdsp()
     data['SWITCH'] = switch_names()
     data['XY'] = kalos_hoenn('xy', [(0, 'Pueblo Boceto'), (8, 'Pueblo Acuarela'), (53, 'Ciudad Novarte')])

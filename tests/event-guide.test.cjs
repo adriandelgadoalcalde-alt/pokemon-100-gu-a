@@ -211,6 +211,15 @@ test('Diamante Brillante/Perla Reluciente: historia por medallas con las misione
  assert.equal(guide.analyze({events:{activeFlags:[],work:[]},badgesTotal:8,caught:[]},'SP').story.next.label,'Salón de la Fama registrado');
 });
 
+test('posición Negro/Blanco: bloque 28 de 0x9C bytes, tabla de zonas propia y Bosque Blanco en Blanco',()=>{
+ const L=require('../src/saves/ds-location.js'),I=require('../src/saves/hgss-integrity.js');
+ const b=new Uint8Array(0x80000),v=new DataView(b.buffer),seal=()=>v.setUint16(0x1959E,I.crc16(b.subarray(0x19500,0x1959C)),true);
+ v.setInt32(0x19580,278,true);seal();assert.equal(L.read(b,'BLACK').name,'Palacio de N');
+ v.setInt32(0x19580,6,true);seal();assert.equal(L.read(b,'WHITE').name,'Ciudad Gres');
+ v.setInt32(0x19580,0,true);seal();assert.equal(L.read(b,'BLACK').name,'Ciudad Negra');assert.equal(L.read(b,'WHITE').name,'Bosque Blanco');
+ assert.equal(L.read(b,'BLACK2'),null);
+});
+
 test('posición Game Boy: Kanto y Johto con nombres oficiales; japonés y coreano excluidos',()=>{
  const L=require('../src/saves/ds-location.js'),bytes=new Uint8Array(0x8000);
  bytes[0x260A]=40;bytes[0x260D]=3;bytes[0x260E]=5;
