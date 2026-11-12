@@ -78,8 +78,8 @@
     {
       "id": "alola-postliga",
       "titulo": "Alola: células de Zygarde en USUL (núcleos, células de SL, dominsignias, Mantine Surf y defensa del título ya se acreditan)",
-      "estado": "bloqueado",
-      "motivo": "Células de USUL: PKHeX no las localiza (su vector son las dominsignias) y la lista de FlagsEditorEX de USUL no nombra ninguna variable de células. Los núcleos se resolvieron con SYS_FLAG_ZIGARUDE_CORE*_GET."
+      "estado": "hecho",
+      "nota": "12/11/2026: en USUL no hay células por Alola (WikiDex «Arca de Zygarde»: el Arca trae 40, Dexio da un Zygarde al 10 % y la Gruta Desenlace tiene uno al 50 %). La variable 169 de EventWork7 (ZygardeCellCount) cuenta células y núcleos reunidos: Sol pública 100, Sol del propietario 95, Luna 75 (71 células + 4 núcleos), Ultrasol y Ultraluna del propietario 100 (Ultrasol con 40 en la 161). Hecho alola.usum.zygardeCells."
     },
     {
       "id": "ipad",

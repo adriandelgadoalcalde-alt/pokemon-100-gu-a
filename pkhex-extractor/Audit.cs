@@ -199,7 +199,8 @@ public static class Audit
             ["cells7"] = save is SAV7 c7 ? new { kind = c7 is SAV7USUM ? "totemStickers" : "zygardeCells",
                 total = c7.EventWork.TotalZygardeCellCount,
                 received = Enumerable.Range(0, c7.EventWork.TotalZygardeCellCount).Count(i => c7.EventWork.GetZygardeCell(i) == 2),
-                surf = c7 is SAV7USUM ? Enumerable.Range(0, 4).Select(i => c7.Misc.GetSurfScore(i)).ToArray() : null } : null,
+                surf = c7 is SAV7USUM ? Enumerable.Range(0, 4).Select(i => c7.Misc.GetSurfScore(i)).ToArray() : null,
+                cellWork = new[] { (int)c7.EventWork.ZygardeCellTotal, (int)c7.EventWork.ZygardeCellCount } } : null,
             // Sol/Luna y USUL: récord 100 «Champion Title Defense» (RecordLists.RecordList_7 de PKHeX): defensas del título de campeón.
             ["records7"] = save is SAV7 rc7 ? new { titleDefense = rc7.GetRecord(100) } : null,
             // Diamante Brillante/Perla Reluciente: racha actual y máxima de cada modalidad de la Torre Batalla (BattleTowerWork8b).

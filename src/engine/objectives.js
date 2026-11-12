@@ -290,6 +290,10 @@
   // con puntuación (USUL). Vector de EventWork7 de PKHeX (cells7 de Audit.cs).
   if(d.cells7&&Number.isInteger(d.cells7.received)&&Number.isInteger(d.cells7.total)&&d.cells7.total>0){
    add(d.cells7.kind==='totemStickers'?'alola.usum.totemStickers':'alola.sm.zygardeCells',d.cells7.received>=d.cells7.total,'cells7');
+   // Variable 169 de EventWork7 (ZygardeCellCount de PKHeX) = células y núcleos reunidos. Contrastado: Sol pública 95+5=100,
+   // Sol del propietario 95+0, Luna 71+4=75. En USUL no hay células por Alola: el Arca trae 40 (variable 161), Dexio da un
+   // Zygarde al 10 % y en la Gruta Desenlace hay uno al 50 % (WikiDex «Arca de Zygarde»): total 100.
+   if(d.cells7.kind==='totemStickers'&&Array.isArray(d.cells7.cellWork)&&Number.isInteger(d.cells7.cellWork[1]))add('alola.usum.zygardeCells',d.cells7.cellWork[1]>=100,'cells7');
    if(Array.isArray(d.cells7.surf)&&d.cells7.surf.length===4)add('alola.usum.mantineSurf4',d.cells7.surf.every(x=>Number.isInteger(x)&&x>0),'cells7');
   }
   // DBPR: estrella de las estatuas = 100 tipos distintos (PlayerWork.GetTrainerRank y UgItemWork.GetHaveStatueKindNum, uDPR).

@@ -668,3 +668,8 @@ test('Escarlata/Púrpura: finales de los DLC y Ogre Oustin\' en difícil por blo
  const v=id=>facts.find(x=>x.id===id)?.value;
  assert.equal(v('sv.tealMaskClear'),true);assert.equal(v('sv.indigoDiskClear'),false);assert.equal(v('sv.ogreOustinHard'),undefined);
 });
+
+test('USUL: células y núcleos de Zygarde por la variable 169 (ZygardeCellCount)',()=>{
+ const O=require('../src/engine/objectives.js'),f=w=>O.fromDiagnosis({game:'ULTRASUN',cells7:{kind:'totemStickers',total:100,received:0,cellWork:w}}).find(x=>x.id==='alola.usum.zygardeCells')?.value;
+ assert.equal(f([40,100]),true);assert.equal(f([40,60]),false);assert.equal(f(null),undefined);
+});

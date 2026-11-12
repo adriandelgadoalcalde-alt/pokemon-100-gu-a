@@ -326,3 +326,19 @@ Bloques con nombre de `SaveBlockAccessor9SV` (PKHeX 96e33e7), leídos por `Progr
 
 Un bloque ausente (partida de una versión anterior al DLC) se deja sin interpretar. Sin dato: vuelo contrarreloj y
 Torneo de la Academia.
+
+### 12/11/2026 — Células de Zygarde en Ultrasol/Ultraluna
+
+En USUL no hay células repartidas por Alola (WikiDex «Arca de Zygarde»): el Arca trae 40 células y núcleos, Dexio da un
+Zygarde al 10 % y en la Gruta Desenlace hay uno al 50 %; en total, 100. El vector de 100 de `EventWork7` son las
+dominsignias, pero la variable 169 (`ZygardeCellCount` de PKHeX) cuenta las células y núcleos reunidos en los cuatro juegos:
+
+| Partida | Variable 161 | Variable 169 | Células (vector) | Núcleos |
+|---|---|---|---|---|
+| Sol pública acabada | 0 | 100 | 95 | 5 |
+| Sol del propietario | 95 | 95 | 95 | 0 |
+| Luna del propietario | 15 | 75 | 71 | 4 |
+| Ultrasol del propietario | 40 | 100 | (dominsignias) | 5 |
+| Ultraluna del propietario | 0 | 100 | (dominsignias) | 5 |
+
+Hecho `alola.usum.zygardeCells` = variable 169 ≥ 100.
