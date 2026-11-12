@@ -29,6 +29,7 @@ function masteryEvaluation(goal,g){
    if(['RUBY','SAPPHIRE','EMERALD'].includes(g.id)&&item.id==='diploma-regional')auto='pokedex.completion.hoenn';
    if(['RUBY','SAPPHIRE','EMERALD','FIRERED','LEAFGREEN','DIAMOND','PEARL'].includes(g.id)&&item.id==='diploma-nacional')auto='pokedex.completion.national';
    if(['FIRERED','LEAFGREEN','LETGOP','LETGOE'].includes(g.id)&&item.id==='diploma-regional')auto='pokedex.completion.kanto';
+   if(['DIAMOND','PEARL'].includes(g.id)&&item.id==='diploma-regional')auto='pokedex.completion.sinnoh';
    if(g.id==='PLATINUM'&&item.id==='diploma-regional')auto='card.pt.diplomaSinnoh';if(g.id==='PLATINUM'&&item.id==='diploma-nacional')auto='card.pt.diplomaNational';
    if(g.id==='EMERALD'&&item.id==='final-boss')auto='battle.emerald.stevenMeteorFalls';
    // Objetivos que acreditan los paquetes de eventos (banderas documentadas): el secreto completo o cualquiera de sus condiciones.

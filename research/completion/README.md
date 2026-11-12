@@ -23,7 +23,9 @@ Cómo se acreditan los nuevos objetivos del pilar 2 y 3 (todos con fuente en su 
 - **Diplomas por el mismo recuento que hace el juego** (pret): Hoenn de RZE (`HasAllHoennMons`), nacional de RZ
   (`CompletedNationalPokedex` de pokeruby: 380 especies, con su error de índice que no pide a Chikorita y sí a Lugia y
   Ho-Oh), nacional de Esmeralda y RFVH (`HasAllMons`), Kanto de RFVH (`HasAllKantoMons`), nacional de DP
-  (`Pokedex_NationalDexIsComplete`: 482 sin los 11 singulares del juego) y Kanto de Let's Go.
+  (`Pokedex_NationalDexIsComplete`: 482 sin los 11 singulares del juego), Sinnoh de DP (`Pokedex_SinnohDexIsComplete`:
+  150 VISTOS de la Pokédex de Sinnoh sin Manaphy; lista sacada de `poketool/shinzukan.narc` de la ROM de Diamante) y
+  Kanto de Let's Go.
 - **Diplomas por su bandera de entrega**: Platino `FLAG_RECEIVED_LOCAL_DEX_DIPLOMA` 0xAB y
   `FLAG_RECEIVED_NATIONAL_DEX_DIPLOMA` 0xAC (pokeplatinum; misma numeración de `generated/vars_flags.txt` que la
   0x69 de la enfermera, contrastada con la partida del propietario).
@@ -32,8 +34,7 @@ Cómo se acreditan los nuevos objetivos del pilar 2 y 3 (todos con fuente en su 
   Morimoto la primera vez que se le vence, así que acredita ese combate (WikiDex «Amuleto Oval»).
 - **Máximo en la Cascada Meteoro** (Esmeralda): `FLAG_DEFEATED_METEOR_FALLS_STEVEN` 0x4F8 (pokeemerald).
 
-Sin dato en la partida (se marcan a mano; motivo en `pendientes.json`): diploma de Sinnoh de DP y DBPR (falta la tabla
-regional de la ROM), diplomas de HGSS, Teselia, Kalos, ROZA, DBPR y Galar, y Morimoto/Nishino en Teselia (combate
+Sin dato en la partida (se marcan a mano; motivo en `pendientes.json`): diploma de Sinnoh de DBPR, diplomas de HGSS, Teselia, Kalos, ROZA, DBPR y Galar, y Morimoto/Nishino en Teselia (combate
 diario sin registro conocido).
 
 ## Fuentes y cómo se contrastan

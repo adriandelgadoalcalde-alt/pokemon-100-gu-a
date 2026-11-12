@@ -517,3 +517,12 @@ test('Diploma nacional de Rubí/Zafiro (pokeruby, con su error de índice) frent
  assert.equal(C.dexStatus({game:'EMERALD',caught:without([151,249,250,251,385,386])}).national.complete,true);
  assert.equal(C.dexStatus({game:'EMERALD',caught:without([152])}).national.complete,false);
 });
+
+test('Diploma de Sinnoh de DP: 150 vistos de la Pokédex de Sinnoh sin Manaphy (y Platino no lo hereda)',()=>{
+ const C=require('../src/engine/completion.js'),dp=C.dexStatus({game:'DIAMOND',caught:[],seen:[]}).sinnoh;
+ assert.equal(dp.required,150);assert.equal(dp.field,'seen');
+ const seen=Array.from({length:493},(_,i)=>i+1).filter(i=>i!==490);
+ assert.equal(C.dexStatus({game:'PEARL',caught:[],seen}).sinnoh.complete,true);
+ assert.equal(C.dexStatus({game:'PEARL',caught:[],seen:seen.filter(i=>i!==387)}).sinnoh.complete,false);
+ assert.equal(C.dexStatus({game:'PLATINUM',caught:[],seen}).sinnoh,undefined);
+});
