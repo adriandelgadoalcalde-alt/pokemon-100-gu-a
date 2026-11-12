@@ -343,3 +343,10 @@ test('Sinnoh: bandera de platino del Subsuelo con 50 banderas capturadas (pokepl
  const O=require('../src/engine/objectives.js'),get=u=>O.fromDiagnosis({game:'PLATINUM',underground4:u}).find(f=>f.id==='card.sinnoh.platinumFlag')?.value;
  assert.equal(get({flagsCaptured:50}),true);assert.equal(get({flagsCaptured:49}),false);assert.equal(get(undefined),undefined);
 });
+
+test('Leyendas Arceus: rango 10, 28 Unown y fin de la historia por Dialga o Palkia origen',()=>{
+ const O=require('../src/engine/objectives.js'),f=(nb,id)=>O.fromDiagnosis({game:'ARCEUS',namedBlocks:nb}).find(x=>x.id===id)?.value;
+ assert.equal(f({KExpeditionTeamRank:10},'la.rank10'),true);assert.equal(f({KExpeditionTeamRank:9},'la.rank10'),false);
+ assert.equal(f({KTotalUnownCaptured:6},'la.unown'),false);assert.equal(f({KTotalUnownCaptured:28},'la.unown'),true);
+ assert.equal(f({KDefeatedOriginPalkia:true},'story.gameClear'),true);assert.equal(f({KDefeatedOriginDialga:false},'story.gameClear'),undefined);
+});
