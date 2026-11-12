@@ -77,8 +77,9 @@
     },
     {
       "id": "enfermera-otras",
-      "titulo": "Reconocimiento de la enfermera en Diamante/Perla y generaciones 5-9: comprobar si existe y qué dato del guardado lo registra",
-      "estado": "pendiente"
+      "titulo": "Reconocimiento de la enfermera en Diamante/Perla y en Negro/Blanco y N2/B2 (WikiDex «Ficha de entrenador»: ocurre al alcanzar el último nivel de la ficha)",
+      "estado": "pendiente",
+      "nota": "Hecho en Esmeralda, Platino y HGSS (bandera del script). DP: falta el número de su bandera (pokediamond sin scripts con nombres). Teselia: depende de las 5 estrellas; faltan por leer los poderes regalo del Nexárbol (N/B) y las películas de Pokéstar (N2/B2)."
     }
   ]
 }
