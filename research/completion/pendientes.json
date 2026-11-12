@@ -14,12 +14,14 @@
     {
       "id": "sv-dlc",
       "titulo": "Escarlata/Púrpura: retos de los DLC (ogros, vuelo contrarreloj, fotos de Perrin, Liga Arándano, Pecharunt) desde los datos del juego",
-      "estado": "pendiente"
+      "estado": "bloqueado",
+      "motivo": "Ni las dos partidas del propietario (Escarlata 11/25, Púrpura 6/25) ni las públicas del corpus tienen los DLC empezados: los bloques FSYS_SCENARIO_GAME_CLEAR_SU1/SU2 no existen en ellas y SaveBlockAccessor9SV no nombra los de los minijuegos. Sin una partida con DLC no hay contraste posible."
     },
     {
       "id": "sv-dlc-fin",
       "titulo": "Escarlata/Púrpura: contrastar FSYS_SCENARIO_GAME_CLEAR_SU1/SU2 con una partida con los DLC acabados",
-      "estado": "pendiente"
+      "estado": "bloqueado",
+      "motivo": "Ni las dos partidas del propietario (Escarlata 11/25, Púrpura 6/25) ni las públicas del corpus tienen los DLC empezados: los bloques FSYS_SCENARIO_GAME_CLEAR_SU1/SU2 no existen en ellas y SaveBlockAccessor9SV no nombra los de los minijuegos. Sin una partida con DLC no hay contraste posible."
     },
     {
       "id": "usum-rainbow",
@@ -52,7 +54,8 @@
     {
       "id": "unova-postliga",
       "titulo": "Negro/Blanco y N2/B2: torre de Ciudad Negra/Bosque Blanco y poderes del Nexárbol (Pokéstar y posliga ya se acreditan)",
-      "estado": "pendiente"
+      "estado": "bloqueado",
+      "motivo": "Torre de Ciudad Negra/Bosque Blanco: PKHeX no documenta su variable (const_b2w2 solo trae 2 entradas) y los bloques 39 y 43 no la contienen (comparados Negro 2 «100» y Blanco 2); el récord 48 cuenta entrenadores, no zonas. Poderes del Nexárbol (N/B): PKHeX solo expone Entralink5BW.MissionsComplete y las dos partidas del propietario lo tienen a 0, sin caso positivo con el que contrastar."
     },
     {
       "id": "sinnoh-postliga",
