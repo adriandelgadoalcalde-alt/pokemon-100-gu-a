@@ -106,6 +106,8 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
 - **Posliga y DLC de Espada/Escudo:** final de la historia, el legendario de la edición capturado (Zacian 888 en Espada,
   Zamazenta 889 en Escudo, que se captura tras la crisis posliga), Urshifu (892, cierre de la Isla de la Armadura) y las
   capturas de las Nieves de la Corona.
+- **Posliga de Hoenn:** legendarios registrados en la Pokédex: Regirock/Regice/Registeel, Rayquaza y el de la portada en
+  Rubí/Zafiro; los seis (con Groudon y Kyogre) en Esmeralda; Rayquaza, Deoxys y el de la portada (Episodio Delta) en ROZA.
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.

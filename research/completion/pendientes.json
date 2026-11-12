@@ -62,7 +62,8 @@
     {
       "id": "hoenn-postliga",
       "titulo": "Hoenn: encuentros legendarios y contenido posterior a la Liga",
-      "estado": "pendiente"
+      "estado": "hecho",
+      "nota": "Legendarios de cada edición registrados en la Pokédex: Regis, Rayquaza y el de la portada (RZ), los seis en Esmeralda; Rayquaza, Deoxys y el de la portada (Episodio Delta) en ROZA."
     },
     {
       "id": "alola-postliga",
