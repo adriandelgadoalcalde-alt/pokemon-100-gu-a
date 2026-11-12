@@ -386,3 +386,10 @@ extrae los paquetes `script/lua/bin/release/*` y recoge 1567 nombres de banderas
 - **Torneo de la Academia:** solo `FEVT_1ST_BATTLE_TOURNAMENT_LOST`; no hay bandera de victoria con nombre.
 - Otros nombres útiles para más adelante: `FSYS_SCENARIO_LAST_EPISODE_CLEAR` (0x4EF04CF2), `WEVT_SDC02_*_CLEAR_NUM`
   (retos del Alto Mando Arándano), `FEVT_SDC02_FAIRY_QUIZ_PERFECT`.
+
+### 12/11/2026 — Leyendas Z-A: Juegos Z-A infinitos
+
+El rango no tiene variable con nombre, pero la recompensa del rango 15 (vencer a Urbi/Muni) es el Floette flor eterna de
+A. Z. La Pokédex de Z-A guarda las formas capturadas (`PokeDexEntry9a`, bit 5 de la especie 670). El extractor exporta
+`za9.floetteEternalCaught` y el objetivo se acredita con `za.floetteEternal`. La partida del propietario lo tiene (y un
+Floette de forma 5 en las cajas); la pública del corpus también.

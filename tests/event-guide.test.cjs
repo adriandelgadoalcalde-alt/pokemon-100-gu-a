@@ -684,3 +684,8 @@ test('Escarlata/Púrpura: vuelo contrarreloj de Amarys en sus cuatro niveles',()
  const O=require('../src/engine/objectives.js'),f=vals=>O.fromDiagnosis({game:'SCARLET',progressSignals:['elementary','intermediate','advanced','superlative'].map((k,i)=>({id:'dlc.flyingTrial.'+k,value:vals[i]}))}).find(x=>x.id==='sv.flyingTrialAll')?.value;
  assert.equal(f([true,true,true,true]),true);assert.equal(f([true,true,true,false]),false);assert.equal(f([true,null,true,true]),undefined);
 });
+
+test('Leyendas Z-A: rango 15 de los Juegos Z-A infinitos por el Floette flor eterna en la Pokédex',()=>{
+ const O=require('../src/engine/objectives.js'),f=z=>O.fromDiagnosis({game:'ZA',za9:z}).find(x=>x.id==='za.floetteEternal')?.value;
+ assert.equal(f({floetteEternalCaught:true}),true);assert.equal(f({floetteEternalCaught:false}),false);assert.equal(f(undefined),undefined);
+});

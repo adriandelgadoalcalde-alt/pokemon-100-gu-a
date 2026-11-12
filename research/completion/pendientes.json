@@ -53,8 +53,8 @@
     {
       "id": "za-dlc",
       "titulo": "Leyendas Z-A: rango de los Juegos Z-A infinitos desde la partida (objetivo ya concretado con WikiDex: rango 15 y Floette flor eterna)",
-      "estado": "bloqueado",
-      "motivo": "El rango de los Juegos Z-A infinitos no tiene variable con nombre en system_work/quest_work de la ROM (solo SYS_WORK_ROYALE_MATCHING_INFO y loterías de premios). PKHeX expone InfiniteRoyale9a (campos sin nombre: 109 0 0 0 1 0 en la partida del propietario y 103 0 4 391 1 0 en la fixture pública) y EventInfiniteRank (claves u64 sin nombre); con dos partidas no se puede deducir el rango. El objetivo queda concretado con WikiDex y se marca a mano."
+      "estado": "hecho",
+      "nota": "12/11/2026: el rango 15 de los Juegos Z-A infinitos se acredita por su recompensa, el Floette flor eterna (670, forma 5) capturado en la Pokédex (PokeDexEntry9a.GetIsFormCaught(5)). Contrastado: la partida del propietario lo tiene en cajas y Pokédex; la pública también."
     },
     {
       "id": "unova-postliga",

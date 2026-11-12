@@ -211,6 +211,9 @@ public static class Audit
             // Diamante Brillante/Perla Reluciente: racha actual y máxima de cada modalidad de la Torre Batalla (BattleTowerWork8b).
             // DP: récord de racha de la Torre Batalla = GameStats 0x35/0x37/0x39/0x3B/0x3D (Record16 9-17 impares);
             // GetTrainerCardLevel de pokediamond (arm9/asm/unk_02064E90.s) da la estrella con alguno >= 100.
+            // Leyendas Z-A: Floette flor eterna (670, forma 5) registrado como capturado en la Pokédex (bit de forma de
+            // PokeDexEntry9a). Es la recompensa del rango 15 de los Juegos Z-A infinitos (WikiDex «Juegos Z-A»).
+            ["za9"] = save is SAV9ZA zaf ? new { floetteEternalCaught = zaf.Zukan.GetEntry(670).GetIsFormCaught(5) } : null,
             ["tower4dp"] = save is SAV4DP dp4 ? new { maxStreaks = new[] { 9, 11, 13, 15, 17 }.Select(i => (long)dp4.Records.GetRecord16(i)).ToArray() } : null,
             ["tower8b"] = save is SAV8BS bs ? new { maxStreaks = bs.BattleTower.Records.Select(r => (long)Math.Max(r.RenshouCount, r.RenshouCountOld)).ToArray() } : null,
             // Diamante Brillante/Perla Reluciente: tipos de estatua distintos que se poseen (estrella de la tarjeta: el juego cuenta
