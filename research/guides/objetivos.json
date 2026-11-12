@@ -1469,6 +1469,16 @@
    "fase": 2,
    "orden": 270,
    "como": "Requiere la expansión de pago Megadimensión y haber terminado la historia principal. Empieza ayudando a Anya, la pastelera del Gran Hotel Ricachilton, y entra con Hoopa en Luminalia Dimensional por los portales de Ciudad Luminalia. Cada zona dimensional (salvaje, de combate o ???) tiene de 1 a 5 estrellas y tres misiones que dan puntos para avanzar; la historia termina tras vencer y capturar a Darkrai y encontrar a Rayquaza. Los dónuts de Anya suben a tus Pokémon por encima del nivel 100. Fuente: WikiDex «Megadimensión» y «Luminalia Dimensional»."
+  },
+  {
+   "juegos": [
+    "LETGOP",
+    "LETGOE"
+   ],
+   "id": "postgame",
+   "fase": 2,
+   "orden": 200,
+   "como": "Tras el Salón de la Fama, vuelve a la Meseta Añil y vence otra vez al Alto Mando y al campeón: en la revancha cambian sus Pokémon (WikiDex «Liga Pokémon (Kanto)»). Cómo lo sabe la guía: después de capturar a Mewtwo en la Cueva Celeste y vencer allí a Verde, Verde solo vuelve a aparecer en Ciudad Celeste cuando vences de nuevo a la Liga (WikiDex «Verde (personaje)»); la partida guarda si Verde está visible en la ciudad (bandera de desaparición FV_T03_GREEN, oculta desde la partida nueva). Si la ves allí, la revancha está ganada. Si ya la venciste en la ciudad vuelve a ocultarse y la guía no puede confirmarlo: márcalo a mano."
   }
  ]
 }

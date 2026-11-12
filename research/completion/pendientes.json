@@ -109,8 +109,9 @@
     {
       "id": "lgpe-revancha",
       "titulo": "Let's Go: revancha de la Liga de Kanto",
-      "estado": "bloqueado",
-      "motivo": "Demostrado que el guardado no la registra: en script_amx.gfpak (705 AMX de Pawn de 64 bits, código compact; descompilados con lgpe_amxdec.py) la sala del campeón escribe en las victorias siguientes solo FE_WATARU_WIN y WK_SCENE_CHAMPION_REMATCH = 10, el mismo valor que tras la primera; las salas del Alto Mando ponen y borran FE_*_WIN. Ninguna otra variable de flagwork cambia. 12/11/2026: tampoco fuera de flagwork: las 1024 banderas de entrenador (0x22F0-0x236F, PKHeX EventWork7b) registran a los entrenadores vencidos, pero los combates con guion no las ponen (Alto Mando = trname 41-44 y revancha 414-417, texto español de trname.dat; ninguna de las tres partidas del propietario tiene marcada ninguna por debajo de 53) y los bloques sin nombre (_01, _15, _20 y Misc) no tienen forma de Salón de la Fama."
+      "estado": "hecho",
+      "motivo": "",
+      "nota": "12/11/2026: lo que cambia tras la revancha: Verde reaparece en Ciudad Celeste (WikiDex «Verde (personaje)»: tras su combate en la Cueva Celeste, «hay que vencer a la Liga Pokémon para que vuelva a aparecer»). FV_T03_GREEN (desaparición 12, bandera 652 de EventWork7b) se oculta en el script de partida nueva y solo la vuelve visible esa victoria. Visible => sí; oculta tras vencerla => sin dato; sin la Liga => no. Las tres partidas del propietario: visible, sí."
     }
   ]
 }

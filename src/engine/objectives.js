@@ -380,6 +380,15 @@
    if(lr.proof===true)add('hgss.rematchLeague',true,'leagueRematch4');
    else if(lr.hallOfFame<=1||(Number.isInteger(lr.kantoBadges)&&lr.kantoBadges<8))add('hgss.rematchLeague',false,'leagueRematch4');
   }
+  // Let's Go: revancha de la Liga. Verde está oculta en Ciudad Celeste desde la partida nueva (FV_T03_GREEN, desaparición 12 =
+  // bandera 652 de EventWork7b; script de inicio de script_amx.gfpak) y, tras su combate en la Cueva Celeste (posterior a
+  // Mewtwo y por tanto a la primera Liga), solo reaparece en la ciudad al volver a vencer a la Liga (WikiDex «Verde
+  // (personaje)»). Verde visible en Ciudad Celeste => revancha ganada. Al vencerla se oculta de nuevo, así que oculta no
+  // prueba el «no»; solo sin la Liga terminada es seguro que no.
+  if(['LETGOP','LETGOE'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
+   if(!d.events.activeFlags.includes(128))add('lgpe.leagueRematch',false,'events');
+   else if(!d.events.activeFlags.includes(652))add('lgpe.leagueRematch',true,'events');
+  }
   if(Array.isArray(d.tower4dp?.maxStreaks)&&d.tower4dp.maxStreaks.length)add('battle.dp.tower100',d.tower4dp.maxStreaks.some(v=>v>=100),'tower4dp');
   // Diamante Brillante/Perla Reluciente: 100 rivales seguidos en alguna modalidad de la Torre Batalla.
   if(Array.isArray(d.tower8b?.maxStreaks)&&d.tower8b.maxStreaks.length)add('battle.bdsp.tower100',d.tower8b.maxStreaks.some(v=>v>=100),'tower8b');

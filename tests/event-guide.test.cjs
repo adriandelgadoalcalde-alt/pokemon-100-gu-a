@@ -745,3 +745,8 @@ test('HGSS: revancha de Lance por el Salón de la Fama',()=>{
  assert.ok(f({hallOfFame:1,kantoBadges:8,evidence:0,proof:false}).includes(false));
  assert.deepEqual(f({hallOfFame:4,kantoBadges:8,evidence:0,proof:false}).filter(v=>v===true),[]);
 });
+
+test("Let's Go: revancha de la Liga por Verde en Ciudad Celeste",()=>{
+ const O=require('../src/engine/objectives.js'),f=fl=>O.fromDiagnosis({game:'LETGOE',events:{activeFlags:fl}}).find(x=>x.id==='lgpe.leagueRematch')?.value;
+ assert.equal(f([128,640]),true);assert.equal(f([128,652]),undefined);assert.equal(f([652]),false);
+});
