@@ -190,6 +190,13 @@ public static class Audit
                 normalCurrent = s7.BattleTree.GetTreeStreak(t, false, false), superCurrent = s7.BattleTree.GetTreeStreak(t, true, false),
                 normalBest = s7.BattleTree.GetTreeStreak(t, false, true), superBest = s7.BattleTree.GetTreeStreak(t, true, true) }).ToArray(),
                 source = "PKHeX.Core BattleTree7.GetTreeStreak" } : null,
+            // Sol/Luna: estado de las 95 células de Zygarde; Ultrasol/Ultraluna: el mismo vector son las 100 pegatinas dominantes
+            // (EventWork7.GetZygardeCell: 0 nada, 1 disponible, 2 recogida; SAV_ZygardeCell de PKHeX las rotula así). Más las
+            // mejores puntuaciones de los cuatro recorridos de Mantine Surf (Misc7.GetSurfScore, solo USUL).
+            ["cells7"] = save is SAV7 c7 ? new { kind = c7 is SAV7USUM ? "totemStickers" : "zygardeCells",
+                total = c7.EventWork.TotalZygardeCellCount,
+                received = Enumerable.Range(0, c7.EventWork.TotalZygardeCellCount).Count(i => c7.EventWork.GetZygardeCell(i) == 2),
+                surf = c7 is SAV7USUM ? Enumerable.Range(0, 4).Select(i => c7.Misc.GetSurfScore(i)).ToArray() : null } : null,
             // Diamante Brillante/Perla Reluciente: racha actual y máxima de cada modalidad de la Torre Batalla (BattleTowerWork8b).
             ["tower8b"] = save is SAV8BS bs ? new { maxStreaks = bs.BattleTower.Records.Select(r => (long)Math.Max(r.RenshouCount, r.RenshouCountOld)).ToArray() } : null,
             // Espada/Escudo: marcas de Pokédex completa de la tarjeta de entrenador (TrainerCard8 de PKHeX).

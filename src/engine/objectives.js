@@ -237,6 +237,12 @@
   }
   // Esmeralda: combate con Máximo en la Cascada Meteoro tras la Liga, FLAG_DEFEATED_METEOR_FALLS_STEVEN 0x4F8 (pokeemerald).
   if(d.field&&Array.isArray(d.field.flags)&&(d.field.family?d.field.family==='E':d.game==='EMERALD'))add('battle.emerald.stevenMeteorFalls',d.field.flags.includes(0x4F8),'field');
+  // Alola: células de Zygarde (SL, 95) y pegatinas dominantes (USUL, 100) recogidas, y los cuatro recorridos de Mantine Surf
+  // con puntuación (USUL). Vector de EventWork7 de PKHeX (cells7 de Audit.cs).
+  if(d.cells7&&Number.isInteger(d.cells7.received)&&Number.isInteger(d.cells7.total)&&d.cells7.total>0){
+   add(d.cells7.kind==='totemStickers'?'alola.usum.totemStickers':'alola.sm.zygardeCells',d.cells7.received>=d.cells7.total,'cells7');
+   if(Array.isArray(d.cells7.surf)&&d.cells7.surf.length===4)add('alola.usum.mantineSurf4',d.cells7.surf.every(x=>Number.isInteger(x)&&x>0),'cells7');
+  }
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).

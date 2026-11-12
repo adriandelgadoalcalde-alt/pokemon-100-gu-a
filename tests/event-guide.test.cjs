@@ -545,3 +545,12 @@ test('Leyendas Arceus: 94 peticiones del juego base y 122 con las del Despertar 
  assert.equal(v({...r(base),'006':1},'la.requests.base'),false);
  assert.equal(v({},'la.requests.base'),undefined);
 });
+
+test('Alola: células de Zygarde (SL), dominsignias y Mantine Surf (USUL) desde cells7',()=>{
+ const O=require('../src/engine/objectives.js'),v=(d,id)=>O.fromDiagnosis({game:d.g,cells7:d.c}).find(x=>x.id===id)?.value;
+ assert.equal(v({g:'SUN',c:{kind:'zygardeCells',total:95,received:95,surf:null}},'alola.sm.zygardeCells'),true);
+ assert.equal(v({g:'SUN',c:{kind:'zygardeCells',total:95,received:94,surf:null}},'alola.sm.zygardeCells'),false);
+ assert.equal(v({g:'ULTRAMOON',c:{kind:'totemStickers',total:100,received:100,surf:[1,2,3,4]}},'alola.usum.totemStickers'),true);
+ assert.equal(v({g:'ULTRAMOON',c:{kind:'totemStickers',total:100,received:100,surf:[1,2,3,0]}},'alola.usum.mantineSurf4'),false);
+ assert.equal(v({g:'SUN',c:{kind:'zygardeCells',total:95,received:95,surf:null}},'alola.usum.mantineSurf4'),undefined);
+});

@@ -169,6 +169,11 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   está probado, se acredita con el total de las 122. La partida del propietario tiene las 94 del juego base completadas y
   ninguna del Despertar.
 
+- **Alola (12/11/2026):** células de Zygarde de Sol/Luna (las 95 en estado «recogida» de `EventWork7.GetZygardeCell`),
+  las 100 dominsignias de USUL (el mismo vector: en USUL son pegatinas, como rotula `SAV_ZygardeCell` de PKHeX y confirma el
+  récord 72 «Stickers Collected»; WikiDex «Dominsignia») y los cuatro recorridos de Mantine Surf con puntuación
+  (`Misc7.GetSurfScore`). Los 5 núcleos de Zygarde (SL) y las células de USUL no tienen bloque documentado: a mano.
+
 Pendiente con motivo (no se acredita solo para no adivinar):
 
 - **Torre Batalla de Diamante/Perla (racha de 100):** en pokediamond el bloque (`FrontierData`) solo guarda BP, banderas y
