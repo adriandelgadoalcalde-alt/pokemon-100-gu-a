@@ -516,6 +516,508 @@
     "requisitos": "Templo Puntaneva, en Ciudad Puntaneva, en la última sala.",
     "consejo": "Regigigas nivel 1 en Platino (no es un error del juego)."
    }
+  },
+  "HEARTGOLD": {
+   "243": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, tras la escena del sótano de la Torre Quemada (Ciudad Iris).",
+    "requisitos": "Raikou vaga por las rutas de Johto: síguelo con el mapa del Pokégear y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Raikou nivel 40."
+   },
+   "244": {
+    "fase": 0,
+    "orden": 141,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Entei vaga por las rutas de Johto: síguelo con el mapa del Pokégear.",
+    "consejo": "Entei nivel 40."
+   },
+   "245": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Tras la Torre Quemada aparece varias veces; ya en Kanto, combate por fin en el Cabo Celeste (Ruta 25).",
+    "requisitos": "Sigue las apariciones de Suicune con Eusine por Johto y Kanto hasta la Ruta 25, al norte de Ciudad Celeste.",
+    "consejo": "Suicune nivel 40; no huye en ese combate."
+   },
+   "144": {
+    "fase": 2,
+    "orden": 225,
+    "cuando": "Ya en Kanto, con Surf y Fuerza.",
+    "requisitos": "Islas Espuma (Ruta 20), en la parte más profunda.",
+    "consejo": "Articuno nivel 50."
+   },
+   "145": {
+    "fase": 2,
+    "orden": 226,
+    "cuando": "Ya en Kanto.",
+    "requisitos": "Ruta 10, a la entrada de la Central Energía (Surf).",
+    "consejo": "Zapdos nivel 50."
+   },
+   "146": {
+    "fase": 2,
+    "orden": 235,
+    "cuando": "Con las 16 medallas (acceso al Monte Plateado).",
+    "requisitos": "Cueva del Monte Plateado.",
+    "consejo": "Moltres nivel 50."
+   },
+   "150": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Con las 16 medallas.",
+    "requisitos": "Cueva Celeste (al noroeste de Ciudad Celeste). Si se debilita o huyes, reaparece tras vencer de nuevo al Alto Mando.",
+    "consejo": "Mewtwo nivel 70."
+   },
+   "384": {
+    "fase": 2,
+    "orden": 275,
+    "cuando": "Tras capturar a Kyogre y Groudon (el de la otra edición, intercambiado) y enseñárselos al profesor Oak en Pueblo Paleta: te da la Esfera Verde.",
+    "requisitos": "Con la Esfera Verde, vuelve a la Torre Oculta (Paso Acantilado, Ciudad Orquídea / Ruta 47).",
+    "consejo": "Rayquaza nivel 50."
+   },
+   "250": {
+    "fase": 0,
+    "orden": 185,
+    "cuando": "Durante la historia, tras recibir el Ala Arcoíris y la Campana Clara (Torre Radio).",
+    "requisitos": "Sube a la cima de la Torre Campana de Ciudad Iris.",
+    "consejo": "Ho-Oh nivel 45: es obligatorio en la historia; si lo debilitas, vuelve tras el Alto Mando."
+   },
+   "249": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Ya en Kanto (posliga): el anciano de Ciudad Plateada te da el Ala Plateada.",
+    "requisitos": "Islas Remolino (Surf, Torbellino y Cascada), en la sala más profunda.",
+    "consejo": "Lugia nivel 70."
+   },
+   "382": {
+    "fase": 2,
+    "orden": 270,
+    "cuando": "Con las 8 medallas de Kanto, tras vencer a Rojo en el Monte Plateado y recibir el inicial de Kanto del profesor Oak: el Señor Pokémon (Ruta 30) te da la Esfera Azul.",
+    "requisitos": "Con la Esfera Azul, ve a la Torre Oculta: entra por el Paso Acantilado de Ciudad Orquídea y sigue por la Ruta 47.",
+    "consejo": "Kyogre nivel 50."
+   },
+   "380": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Con la Pokédex Nacional, tras hablar con Máximo al salir del Club de Fans de Pokémon de Ciudad Carmín.",
+    "requisitos": "Latias vaga por las rutas de Kanto: síguelo con el mapa del Pokégear.",
+    "consejo": "Latias nivel 35."
+   }
+  },
+  "SOULSILVER": {
+   "243": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, tras la escena del sótano de la Torre Quemada (Ciudad Iris).",
+    "requisitos": "Raikou vaga por las rutas de Johto: síguelo con el mapa del Pokégear y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Raikou nivel 40."
+   },
+   "244": {
+    "fase": 0,
+    "orden": 141,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Entei vaga por las rutas de Johto: síguelo con el mapa del Pokégear.",
+    "consejo": "Entei nivel 40."
+   },
+   "245": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Tras la Torre Quemada aparece varias veces; ya en Kanto, combate por fin en el Cabo Celeste (Ruta 25).",
+    "requisitos": "Sigue las apariciones de Suicune con Eusine por Johto y Kanto hasta la Ruta 25, al norte de Ciudad Celeste.",
+    "consejo": "Suicune nivel 40; no huye en ese combate."
+   },
+   "144": {
+    "fase": 2,
+    "orden": 225,
+    "cuando": "Ya en Kanto, con Surf y Fuerza.",
+    "requisitos": "Islas Espuma (Ruta 20), en la parte más profunda.",
+    "consejo": "Articuno nivel 50."
+   },
+   "145": {
+    "fase": 2,
+    "orden": 226,
+    "cuando": "Ya en Kanto.",
+    "requisitos": "Ruta 10, a la entrada de la Central Energía (Surf).",
+    "consejo": "Zapdos nivel 50."
+   },
+   "146": {
+    "fase": 2,
+    "orden": 235,
+    "cuando": "Con las 16 medallas (acceso al Monte Plateado).",
+    "requisitos": "Cueva del Monte Plateado.",
+    "consejo": "Moltres nivel 50."
+   },
+   "150": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Con las 16 medallas.",
+    "requisitos": "Cueva Celeste (al noroeste de Ciudad Celeste). Si se debilita o huyes, reaparece tras vencer de nuevo al Alto Mando.",
+    "consejo": "Mewtwo nivel 70."
+   },
+   "384": {
+    "fase": 2,
+    "orden": 275,
+    "cuando": "Tras capturar a Kyogre y Groudon (el de la otra edición, intercambiado) y enseñárselos al profesor Oak en Pueblo Paleta: te da la Esfera Verde.",
+    "requisitos": "Con la Esfera Verde, vuelve a la Torre Oculta (Paso Acantilado, Ciudad Orquídea / Ruta 47).",
+    "consejo": "Rayquaza nivel 50."
+   },
+   "249": {
+    "fase": 0,
+    "orden": 185,
+    "cuando": "Durante la historia, tras recibir el Ala Plateada y la Campana Oleaje (Torre Radio).",
+    "requisitos": "Islas Remolino: Lugia espera en la sala más profunda.",
+    "consejo": "Lugia nivel 45: es obligatorio en la historia; si lo debilitas, vuelve tras el Alto Mando."
+   },
+   "250": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Ya en Kanto (posliga): el anciano de Ciudad Plateada te da el Ala Arcoíris.",
+    "requisitos": "Cima de la Torre Campana de Ciudad Iris.",
+    "consejo": "Ho-Oh nivel 70."
+   },
+   "383": {
+    "fase": 2,
+    "orden": 270,
+    "cuando": "Con las 8 medallas de Kanto, tras vencer a Rojo y recibir el inicial de Kanto: el Señor Pokémon (Ruta 30) te da la Esfera Roja.",
+    "requisitos": "Con la Esfera Roja, ve a la Torre Oculta (Paso Acantilado de Ciudad Orquídea y Ruta 47).",
+    "consejo": "Groudon nivel 50."
+   },
+   "381": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Con la Pokédex Nacional, tras hablar con Máximo al salir del Club de Fans de Pokémon de Ciudad Carmín.",
+    "requisitos": "Latios vaga por las rutas de Kanto: síguelo con el mapa del Pokégear.",
+    "consejo": "Latios nivel 35."
+   }
+  },
+  "BLACK": {
+   "638": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después del Hall de la Fama; es el primero de los tres Espadachines Místicos.",
+    "requisitos": "Estancia Orientación, dentro de la Cueva Loza (Surf y Fuerza).",
+    "consejo": "Cobalion nivel 42."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Después del Hall de la Fama, tras haber visto a Cobalion.",
+    "requisitos": "Cámara de Pruebas, en la Calle Victoria.",
+    "consejo": "Terrakion nivel 42."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Después del Hall de la Fama, tras haber visto a Cobalion y a Terrakion.",
+    "requisitos": "Claro Filosofía, en el Bosque Azulejo.",
+    "consejo": "Virizion nivel 42."
+   },
+   "646": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Boquete Gigante (Ruta 22, con Surf): cruza el bosque interior hasta la cueva del fondo.",
+    "consejo": "Kyurem nivel 75: el más fuerte de la edición."
+   },
+   "645": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Tornadus y Thundurus en el equipo (uno de ellos intercambiado desde la otra edición).",
+    "requisitos": "Santuario Abundancia (Ruta 14).",
+    "consejo": "Landorus nivel 70."
+   },
+   "643": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Final de la historia, en el Castillo de N.",
+    "requisitos": "Reshiram se une a ti en el Palacio de N antes del combate contra N; hay que capturarlo para seguir (si lo debilitas, el combate se repite).",
+    "consejo": "Reshiram nivel 50."
+   },
+   "641": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Con las 8 medallas: la recepcionista del acceso a la Ruta 10 avisa de un clima extraño en la Ruta 7.",
+    "requisitos": "Ve a la casa de la anciana de la Ruta 7; Tornadus aparece y empieza a vagar por Teselia. Síguelo con el mapa del Navegador C-Gear y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Tornadus nivel 40."
+   },
+   "642": {
+    "fase": 7,
+    "orden": 720,
+    "cuando": "Exclusivo de Blanco.",
+    "requisitos": "Solo por intercambio desde Blanco (o desde Negro 2/Blanco 2 vía el RAdar Pokémon).",
+    "consejo": "Hace falta para Landorus."
+   }
+  },
+  "WHITE": {
+   "638": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después del Hall de la Fama; es el primero de los tres Espadachines Místicos.",
+    "requisitos": "Estancia Orientación, dentro de la Cueva Loza (Surf y Fuerza).",
+    "consejo": "Cobalion nivel 42."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Después del Hall de la Fama, tras haber visto a Cobalion.",
+    "requisitos": "Cámara de Pruebas, en la Calle Victoria.",
+    "consejo": "Terrakion nivel 42."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Después del Hall de la Fama, tras haber visto a Cobalion y a Terrakion.",
+    "requisitos": "Claro Filosofía, en el Bosque Azulejo.",
+    "consejo": "Virizion nivel 42."
+   },
+   "646": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Boquete Gigante (Ruta 22, con Surf): cruza el bosque interior hasta la cueva del fondo.",
+    "consejo": "Kyurem nivel 75: el más fuerte de la edición."
+   },
+   "645": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Tornadus y Thundurus en el equipo (uno de ellos intercambiado desde la otra edición).",
+    "requisitos": "Santuario Abundancia (Ruta 14).",
+    "consejo": "Landorus nivel 70."
+   },
+   "644": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Final de la historia, en el Castillo de N.",
+    "requisitos": "Zekrom se une a ti en el Palacio de N antes del combate contra N; hay que capturarlo para seguir.",
+    "consejo": "Zekrom nivel 50."
+   },
+   "642": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Con las 8 medallas: la recepcionista del acceso a la Ruta 10 avisa de un clima extraño en la Ruta 7.",
+    "requisitos": "Ve a la casa de la anciana de la Ruta 7; Thundurus aparece y empieza a vagar por Teselia. Síguelo con el mapa del Navegador C-Gear.",
+    "consejo": "Thundurus nivel 40."
+   },
+   "641": {
+    "fase": 7,
+    "orden": 720,
+    "cuando": "Exclusivo de Negro.",
+    "requisitos": "Solo por intercambio desde Negro.",
+    "consejo": "Hace falta para Landorus."
+   }
+  },
+  "BLACK2": {
+   "638": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruta 13, en un claro al que se llega por la playa.",
+    "consejo": "Cobalion nivel 45."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruta 22.",
+    "consejo": "Terrakion nivel 45."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruta 11.",
+    "consejo": "Virizion nivel 45."
+   },
+   "480": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Después del Hall de la Fama, tras entrar en la Cueva Psique (Ruta 20, junto a Pueblo Ocre).",
+    "requisitos": "Uxie aparece en un punto concreto delante del Museo de Ciudad Esmalte.",
+    "consejo": "Uxie nivel 65."
+   },
+   "481": {
+    "fase": 2,
+    "orden": 221,
+    "cuando": "Tras entrar en la Cueva Psique.",
+    "requisitos": "En la cima de la Torre de los Cielos, en un punto concreto.",
+    "consejo": "Mesprit nivel 65."
+   },
+   "482": {
+    "fase": 2,
+    "orden": 222,
+    "cuando": "Tras entrar en la Cueva Psique.",
+    "requisitos": "En el lado izquierdo de la Ruta 23, en un punto concreto.",
+    "consejo": "Azelf nivel 65."
+   },
+   "377": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruinas Subterráneas del Túnel Yakón: desde el centro, 6 pasos abajo y 9 a la derecha, y pulsa abajo para abrir la Sala Pico Roca.",
+    "consejo": "Regirock nivel 65."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo.",
+    "requisitos": "Sótano del Monte Tuerca.",
+    "consejo": "Regigigas nivel 68."
+   },
+   "488": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después del Hall de la Fama: resuelve el puzle de las casas de Villa Horroris (Ruta 13) para recibir la Pluma Lunar.",
+    "requisitos": "Lleva la Pluma Lunar al Puente Progreso; Cresselia aparece en el centro.",
+    "consejo": "Cresselia nivel 68."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 241,
+    "cuando": "Después del Hall de la Fama: recoge la Piedra Magma en la Ruta 18.",
+    "requisitos": "Llévala a la Montaña Reversia; Heatran aparece en la sala del fondo.",
+    "consejo": "Heatran nivel 68."
+   },
+   "644": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Torre Duodraco: Zekrom te espera en la cima.",
+    "consejo": "Zekrom nivel 70; captúralo antes de Kyurem."
+   },
+   "646": {
+    "fase": 2,
+    "orden": 265,
+    "cuando": "Después de capturar a Zekrom en la Torre Duodraco.",
+    "requisitos": "Boquete Gigante, en la cueva del fondo.",
+    "consejo": "Kyurem nivel 70."
+   },
+   "381": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Solar de los Sueños (al lado de Ciudad Esmalte), en la zona del fondo.",
+    "consejo": "Latios nivel 68."
+   },
+   "379": {
+    "fase": 2,
+    "orden": 231,
+    "cuando": "Con la Clave Hierro activada en el Teselia Link (llave de Registeel).",
+    "requisitos": "Ruinas Subterráneas, Sala Hierro.",
+    "consejo": "Registeel nivel 65."
+   },
+   "378": {
+    "fase": 2,
+    "orden": 232,
+    "cuando": "Con la Clave Iceberg, que hay que recibir de un amigo con Blanco 2.",
+    "requisitos": "Ruinas Subterráneas, Sala Iceberg.",
+    "consejo": "Regice nivel 65."
+   }
+  },
+  "WHITE2": {
+   "638": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruta 13, en un claro al que se llega por la playa.",
+    "consejo": "Cobalion nivel 45."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruta 22.",
+    "consejo": "Terrakion nivel 45."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruta 11.",
+    "consejo": "Virizion nivel 45."
+   },
+   "480": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Después del Hall de la Fama, tras entrar en la Cueva Psique (Ruta 20, junto a Pueblo Ocre).",
+    "requisitos": "Uxie aparece en un punto concreto delante del Museo de Ciudad Esmalte.",
+    "consejo": "Uxie nivel 65."
+   },
+   "481": {
+    "fase": 2,
+    "orden": 221,
+    "cuando": "Tras entrar en la Cueva Psique.",
+    "requisitos": "En la cima de la Torre de los Cielos, en un punto concreto.",
+    "consejo": "Mesprit nivel 65."
+   },
+   "482": {
+    "fase": 2,
+    "orden": 222,
+    "cuando": "Tras entrar en la Cueva Psique.",
+    "requisitos": "En el lado izquierdo de la Ruta 23, en un punto concreto.",
+    "consejo": "Azelf nivel 65."
+   },
+   "377": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruinas Subterráneas del Túnel Yakón: desde el centro, 6 pasos abajo y 9 a la derecha, y pulsa abajo para abrir la Sala Pico Roca.",
+    "consejo": "Regirock nivel 65."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo.",
+    "requisitos": "Sótano del Monte Tuerca.",
+    "consejo": "Regigigas nivel 68."
+   },
+   "488": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después del Hall de la Fama: resuelve el puzle de las casas de Villa Horroris (Ruta 13) para recibir la Pluma Lunar.",
+    "requisitos": "Lleva la Pluma Lunar al Puente Progreso; Cresselia aparece en el centro.",
+    "consejo": "Cresselia nivel 68."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 241,
+    "cuando": "Después del Hall de la Fama: recoge la Piedra Magma en la Ruta 18.",
+    "requisitos": "Llévala a la Montaña Reversia; Heatran aparece en la sala del fondo.",
+    "consejo": "Heatran nivel 68."
+   },
+   "643": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Torre Duodraco: Reshiram te espera en la cima.",
+    "consejo": "Reshiram nivel 70; captúralo antes de Kyurem."
+   },
+   "646": {
+    "fase": 2,
+    "orden": 265,
+    "cuando": "Después de capturar a Reshiram en la Torre Duodraco.",
+    "requisitos": "Boquete Gigante, en la cueva del fondo.",
+    "consejo": "Kyurem nivel 70."
+   },
+   "380": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Solar de los Sueños, en la zona del fondo.",
+    "consejo": "Latias nivel 68."
+   },
+   "378": {
+    "fase": 2,
+    "orden": 231,
+    "cuando": "Con la Clave Iceberg activada en el Teselia Link (llave de Regice).",
+    "requisitos": "Ruinas Subterráneas, Sala Iceberg.",
+    "consejo": "Regice nivel 65."
+   },
+   "379": {
+    "fase": 2,
+    "orden": 232,
+    "cuando": "Con la Clave Hierro, que hay que recibir de un amigo con Negro 2.",
+    "requisitos": "Ruinas Subterráneas, Sala Hierro.",
+    "consejo": "Registeel nivel 65."
+   }
   }
  }
 }
