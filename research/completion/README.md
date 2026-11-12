@@ -393,3 +393,12 @@ El rango no tiene variable con nombre, pero la recompensa del rango 15 (vencer a
 A. Z. La Pokédex de Z-A guarda las formas capturadas (`PokeDexEntry9a`, bit 5 de la especie 670). El extractor exporta
 `za9.floetteEternalCaught` y el objetivo se acredita con `za.floetteEternal`. La partida del propietario lo tiene (y un
 Floette de forma 5 en las cajas); la pública del corpus también.
+
+### 12/11/2026 — Cristal: Torre Batalla desde la SRAM
+
+`ram/sram.asm` de pokecrystal sitúa «SRAM Battle Tower» justo detrás de `sGSBallFlagBackup` (0x3E44 internacional, 0xA083
+japonesa; las mismas direcciones que usa `SAV2.EnableGSBallMobileEvent` de PKHeX): `sBattleTowerChallengeState` en 0x3E45
+y `sBattleTowerReward` 11 bytes después. `maps/BattleTower1F.asm`: al ganar los 7 combates el estado pasa a 3 y, con el
+premio, a 4, y así se queda hasta empezar otro desafío (perder lo deja en 0); el premio se elige al entrar en la sala, de
+modo que 0 significa que nunca se empezó un desafío. Regla: 3 o 4 = hecho; premio 0 = no hecho; si no, sin evidencia.
+La partida del propietario (estado 0, premio 0, explicación leída) y la pública: no hecho.

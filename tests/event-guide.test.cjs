@@ -689,3 +689,8 @@ test('Leyendas Z-A: rango 15 de los Juegos Z-A infinitos por el Floette flor ete
  const O=require('../src/engine/objectives.js'),f=z=>O.fromDiagnosis({game:'ZA',za9:z}).find(x=>x.id==='za.floetteEternal')?.value;
  assert.equal(f({floetteEternalCaught:true}),true);assert.equal(f({floetteEternalCaught:false}),false);assert.equal(f(undefined),undefined);
 });
+
+test('Cristal: desafío completo de la Torre Batalla por el estado de la SRAM',()=>{
+ const O=require('../src/engine/objectives.js'),f=t=>O.fromDiagnosis({game:'CRYSTAL',tower2:t}).find(x=>x.id==='battle.crystal.towerComplete')?.value;
+ assert.equal(f({state:4,reward:0x26}),true);assert.equal(f({state:0,reward:0}),false);assert.equal(f({state:0,reward:0x26}),undefined);
+});

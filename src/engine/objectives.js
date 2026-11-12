@@ -354,6 +354,11 @@
   // Escarlata/Púrpura: las tres máscaras de Ogerpon en la mochila (Cimiento 2406, Fuente 2407, Horno 2408; text_Items de PKHeX).
   if(['SCARLET','VIOLET'].includes(d.game)&&Array.isArray(d.inventory)){const have=new Set(d.inventory.flatMap(p=>(p?.items||[]).filter(i=>i?.count>0).map(i=>i.id)));
    if([2406,2407,2408].every(id=>have.has(id)))add('inventory.sv.ogerponMasks',true,'inventory');}
+  // Cristal: desafío de 7 combates de la Torre Batalla (pokecrystal battle_tower.asm y maps/BattleTower1F.asm). Estado 3/4 =
+  // el último desafío se ganó; premio 0 = nunca se empezó un desafío (el premio se elige al entrar). Otro caso: sin evidencia.
+  if(Number.isInteger(d.tower2?.state)&&Number.isInteger(d.tower2?.reward)){
+   if(d.tower2.state===3||d.tower2.state===4)add('battle.crystal.towerComplete',true,'tower2');
+   else if(d.tower2.reward===0)add('battle.crystal.towerComplete',false,'tower2');}
   // Leyendas Z-A: Floette flor eterna capturado (forma 5 de 670 en la Pokédex), recompensa del rango 15 de los Juegos Z-A infinitos.
   if(typeof d.za9?.floetteEternalCaught==='boolean')add('za.floetteEternal',d.za9.floetteEternalCaught,'za9');
   // Diamante/Perla: récord de racha de la Torre Batalla (GameStats 0x35-0x3D de pokediamond, GetTrainerCardLevel).

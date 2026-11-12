@@ -214,6 +214,11 @@ public static class Audit
             // Leyendas Z-A: Floette flor eterna (670, forma 5) registrado como capturado en la Pokédex (bit de forma de
             // PokeDexEntry9a). Es la recompensa del rango 15 de los Juegos Z-A infinitos (WikiDex «Juegos Z-A»).
             ["za9"] = save is SAV9ZA zaf ? new { floetteEternalCaught = zaf.Zukan.GetEntry(670).GetIsFormCaught(5) } : null,
+            // Cristal: «SRAM Battle Tower» de pokecrystal (ram/sram.asm), justo tras sGSBallFlagBackup (0x3E44; 0xA083 en la
+            // japonesa, mismas direcciones que SAV2.EnableGSBallMobileEvent): estado del desafío (3 = ganado, 4 = premio
+            // recibido; se mantiene hasta el siguiente desafío) y premio elegido al empezar un desafío (0 = nunca empezado).
+            ["tower2"] = save is SAV2 c2 && c2.Version == GameVersion.C ? new {
+                state = (int)c2.Data[c2.Japanese ? 0xA084 : 0x3E45], reward = (int)c2.Data[c2.Japanese ? 0xA084 + 11 : 0x3E45 + 11] } : null,
             ["tower4dp"] = save is SAV4DP dp4 ? new { maxStreaks = new[] { 9, 11, 13, 15, 17 }.Select(i => (long)dp4.Records.GetRecord16(i)).ToArray() } : null,
             ["tower8b"] = save is SAV8BS bs ? new { maxStreaks = bs.BattleTower.Records.Select(r => (long)Math.Max(r.RenshouCount, r.RenshouCountOld)).ToArray() } : null,
             // Diamante Brillante/Perla Reluciente: tipos de estatua distintos que se poseen (estrella de la tarjeta: el juego cuenta

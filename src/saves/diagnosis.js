@@ -24,7 +24,7 @@
    .map(i=>({id:i.id,count:i.count}));
   if(Array.isArray(e.unownForms))result.unownForms=e.unownForms.filter(x=>Number.isInteger(x)&&x>=0&&x<28);
   if(e.extractor&&typeof e.extractor==='object')result.extractor={engine:String(e.extractor.engine||''),engineCommit:String(e.extractor.engineCommit||'')};
-  for(const key of ['integrity','events','medals','passport','battleTree','cells7','records7','pokeathlon','pokewalker','field','namedBlocks','location','switchPosition','questWork9a','requests8a','clear8','underground4','subway5','musical5','pwt5','entralink5','pokestar5','unown2','tower4','hallOfFame1','dex9','chateau','za9','tower4dp','tower8b','statues8b','card8'])
+  for(const key of ['integrity','events','medals','passport','battleTree','cells7','records7','pokeathlon','pokewalker','field','namedBlocks','location','switchPosition','questWork9a','requests8a','clear8','underground4','subway5','musical5','pwt5','entralink5','pokestar5','unown2','tower4','hallOfFame1','dex9','chateau','za9','tower2','tower4dp','tower8b','statues8b','card8'])
    if(e[key]&&typeof e[key]==='object'&&!Array.isArray(e[key]))result[key]=JSON.parse(JSON.stringify(e[key]));
   return result;
  }
