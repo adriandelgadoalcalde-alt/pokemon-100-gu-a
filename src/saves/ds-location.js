@@ -110,8 +110,14 @@
    return {mapId:m[1],map:pos.map,name:S.LA[m[1]],detail:m[2]?'dentro de un edificio o zona interior':'',source:'switch-position'};
   }
   if(['SWORD','SHIELD'].includes(game)){
-   const code=swshZones()[String(pos.mapHash||'').toUpperCase()];if(!code)return null;const [name,detail]=S.SWSH[code];
-   return {mapId:code,map:code,name,detail,source:'switch-position'};
+   // Un área puede abarcar varios lugares (a_0101: Pueblo Yarda, Ruta 1, Pueblo Par y Ruta 2): se elige la zona con el
+   // punto colocado más cercano. Coordinates8 guarda el plano horizontal en X/Y; la colocación del juego, en X/Z.
+   const code=swshZones()[String(pos.mapHash||'').toUpperCase()];if(!code)return null;const rows=S.SWSH[code];
+   let best=rows.length>1?null:rows[0],dist=Infinity;
+   if(rows.length>1&&Number.isFinite(pos.x)&&Number.isFinite(pos.y))for(const row of rows)for(let i=0;i<row[2].length;i+=2){
+    const d=(row[2][i]-pos.x)**2+(row[2][i+1]-pos.y)**2;if(d<dist){dist=d;best=row;}}
+   if(!best)return {mapId:code,map:code,name:S.SWSH_REGION[code],detail:'',precision:'region',source:'switch-position'};
+   return {mapId:code,map:code,name:best[0],detail:best[1],source:'switch-position'};
   }
   if(['LETGOP','LETGOE'].includes(game)){
    const code=lgpeAreas()[String(pos.mapHash||'').toUpperCase()];if(!code)return null;const [name,detail]=S.LGPE[code];

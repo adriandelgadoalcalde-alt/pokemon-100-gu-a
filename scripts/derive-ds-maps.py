@@ -194,17 +194,48 @@ def switch_names():
         if name not in [x.strip() for x in swsh]:
             fail(f'«{name}» no está en los lugares de Espada/Escudo de PKHeX')
     kinds = {'g': 'estadio', 'pc': 'Centro Pokémon', 'i': 'dentro de un edificio', 'h': 'dentro de un edificio', 's': 'dentro de un edificio', 'b': 'dentro de un edificio'}
+    # Cada área trae sus zonas (research/switch/swsh-zones.json, placement.gfpak de la copia propia): nombre interno, hash y
+    # puntos (x, z) de lo colocado en ella. El lugar de la zona sale de su código (pueblos, rutas, Área Silvestre...) o, más
+    # preciso, de la tabla zona -> lugar de pkNX (research/switch/swsh-zone-locations.json: cuevas y subzonas silvestres).
+    # En un área con varias zonas la web elige la zona del punto más cercano a la posición del guardado.
+    zone_loc = json.loads((ROOT / 'research' / 'switch' / 'swsh-zone-locations.json').read_text(encoding='utf-8'))['zones']
+    known = set(json.loads((ROOT / 'research' / 'switch' / 'swsh-areas.json').read_text(encoding='utf-8'))['areas'])
     swsh_table = {}
-    for code in json.loads((ROOT / 'research' / 'switch' / 'swsh-areas.json').read_text(encoding='utf-8'))['areas']:
-        m = re.fullmatch(r'a_(?:btl\d\d_)?([tc]\d\d|wr0[123]|bt|r\d\d)(?:\d\d){0,2}(?:_([a-z]+)\d+)?', code)
-        if not m:
-            continue
-        place, kind = m.group(1), m.group(2)
-        name = f'Ruta {int(place[1:])}' if place.startswith('r') and not place.startswith('wr') else places.get(place)
-        if not name:
-            continue
-        detail = 'combate' if code.startswith('a_btl') else kinds.get(kind, '') if kind else ''
-        swsh_table[code] = [name, detail]
+    for area, zones in json.loads((ROOT / 'research' / 'switch' / 'swsh-zones.json').read_text(encoding='utf-8')).items():
+        if area not in known:
+            fail(f'el área {area} no está en la tabla de áreas de Espada/Escudo')
+        rows = []
+        for zone, zone_hash, raw in zones:
+            # Fuera los puntos pegados a un eje (colocaciones relativas al origen, no del mapa).
+            pts = [v for i in range(0, len(raw), 2) if abs(raw[i]) > 100 and abs(raw[i + 1]) > 100 for v in raw[i:i + 2]]
+            m = re.fullmatch(r'z_(?:btl\d\d_)?([tc]\d\d|wr0[123]|bt|r\d\d)(?:\d\d){0,2}(?:_([a-z]+)\d+)?', zone)
+            kind = m.group(2) if m else None
+            if zone_hash in zone_loc and swsh[zone_loc[zone_hash]].strip():
+                name = swsh[zone_loc[zone_hash]].strip()
+            elif m:
+                place = m.group(1)
+                name = f'Ruta {int(place[1:])}' if place.startswith('r') and not place.startswith('wr') else places.get(place)
+            else:
+                name = None
+            if not name:
+                continue
+            detail = 'combate' if zone.startswith('z_btl') else kinds.get(kind, '') if kind else ''
+            region = re.match(r'a_(wr0[123])', area)
+            if region and name != places[region.group(1)]:
+                detail = places[region.group(1)] + (', ' + detail if detail else '')
+            rows.append([name, detail, pts])
+        if rows:
+            # La zona general de una región (z_wr0101 = toda el Área Silvestre) va al final: ante un empate de distancia
+            # gana la subzona concreta.
+            region = re.match(r'a_(wr0[123])', area)
+            swsh_table[area] = sorted(rows, key=lambda r: bool(region) and r[0] == places[region.group(1)])
+    # Sin coordenadas, un área de varias zonas se nombra por su región (Área Silvestre, Isla de la Armadura...) o por la
+    # lista de sus lugares.
+    swsh_region = {}
+    for area, rows in swsh_table.items():
+        if len(rows) > 1:
+            region = re.match(r'a_(wr0[123])', area)
+            swsh_region[area] = places[region.group(1)] if region else ' / '.join(dict.fromkeys(r[0] for r in rows))
     gg = (base / 'gen7' / 'text_gg_00000_es.txt').read_text(encoding='utf-8-sig').split('\n')
     for index, name in [(3, 'Ruta 1'), (28, 'Pueblo Paleta'), (38, 'Ciudad Azafrán'), (39, 'Bosque Verde'), (46, 'Cueva Celeste'), (50, 'GO Park'), (53, 'Liga Pokémon')]:
         if gg[index].strip() != name:
@@ -231,6 +262,7 @@ def switch_names():
     return {'SV': {i: n.strip() for i, n in enumerate(sv) if n.strip() and not n.strip().startswith('－')},
             'LGPE': lgpe,
             'SWSH': swsh_table,
+            'SWSH_REGION': swsh_region,
             'LA': {f'ha_area0{i}': la[6 + i].strip() for i in range(6)},
             'ZA': {'t1': xy[22].strip()},
             'source': 'PKHeX.Core gen9/text_sv, gen8a/text_la y gen6/text_xy (es)'}

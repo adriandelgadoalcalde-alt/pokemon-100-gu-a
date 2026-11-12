@@ -204,6 +204,15 @@ test('posición Switch desde el motor: SV por identificador de lugar, Leyendas p
  assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_wr0101')}).name,'Área Silvestre');
  assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_btl24_c0301')}).name,'Ciudad Artejo');
  assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_r0501_i0101')}).name,'Ruta 5');
+ // Áreas con varias zonas: la posición elige la del punto colocado más cercano (plano X/Y del guardado).
+ const maps=require('../src/saves/ds-maps-data.js'),a0101=maps.SWITCH.SWSH.a_0101,r1=a0101.find(r=>r[0]==='Ruta 1')[2];
+ assert.equal(L.read(null,'SHIELD',0,0,{},{mapHash:L.fnv64('a_0101'),x:19456.9,y:54360.2,z:1549.6}).name,'Pueblo Yarda');
+ assert.equal(L.read(null,'SHIELD',0,0,{},{mapHash:L.fnv64('a_0101'),x:r1[0],y:r1[1],z:0}).name,'Ruta 1');
+ assert.equal(L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_0401'),x:12407.1,y:8118,z:-366.2}).name,'Pueblo Amura');
+ const sinPos=L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_0101')});assert.equal(sinPos.precision,'region');assert.match(sinPos.name,/Pueblo Yarda \/ Ruta 1/);
+ const lake=maps.SWITCH.SWSH.a_wr0101.find(r=>r[0]==='Lago Milotic (norte)')[2];
+ const wr=L.read(null,'SWORD',0,0,{},{mapHash:L.fnv64('a_wr0101'),x:lake[0],y:lake[1]});
+ assert.equal(wr.name,'Lago Milotic (norte)');assert.equal(wr.detail,'Área Silvestre');
 });
 
 test('Espada/Escudo: historia por medallas y título solo con prueba de la Torre Batalla',()=>{
