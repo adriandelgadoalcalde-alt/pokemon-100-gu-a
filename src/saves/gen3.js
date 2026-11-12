@@ -101,7 +101,10 @@
    integrity:{activeSlot:active.index,saveCounter:active.counter,sectorsValid:true,copies:complete.length},
    location:{mapGroup:s8(large[4]),mapNum:s8(large[5]),x:u16(large,0)<<16>>16,y:u16(large,2)<<16>>16,
     name:mapEntry?data.locationNames[mapEntry[0]]:null,map:mapEntry?mapEntry[1]:null},
-   party,boxes,flags:activeFlags,vars,warnings,hallOfFame
+   party,boxes,flags:activeFlags,vars,warnings,hallOfFame,
+   // Rubí/Zafiro: SaveBlock2.battleTower (0xA8) .totalBattleTowerWins y .bestBattleTowerWinStreak (0x570/0x572,
+   // pokeruby include/global.h); la estrella de la tarjeta exige una racha mejor de más de 49 (trainer_card.c).
+   battleTower:fam==='RS'?{totalWins:u16(small,0x570),bestStreak:u16(small,0x572)}:null
   };
  }
  const api={read,LAYOUT};

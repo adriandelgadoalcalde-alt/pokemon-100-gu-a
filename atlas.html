@@ -29,7 +29,7 @@ function masteryEvaluation(goal,g){
    if(byLabel(['PLATINUM'],/^Huellas de oro/))auto='event.pt.frontier_prints';
    if(byLabel(['HEARTGOLD','SOULSILVER'],/cámaras secretas/))auto='event.hgss.alph';
    if(byLabel(['FIRERED','LEAFGREEN'],/Rubí y el Zafiro a Celio/))auto='event.gen3.frlg.sevii_gems';
-   if(byLabel(['RUBY','SAPPHIRE'],/^50 victorias consecutivas en Torre Batalla/))auto='event.gen3.shields.FLAG_RECEIVED_SILVER_SHIELD';
+   if(byLabel(['RUBY','SAPPHIRE'],/^50 victorias consecutivas en Torre Batalla/))auto='card.rs.battleTower';
    if(byLabel(['X','Y'],/Dama del Combate/))rule=anyEvent('pkhex.xy.maison');
    if(byLabel(['OMEGARUBY','ALPHASAPPHIRE'],/Dama del Combate/))rule=anyEvent('pkhex.oras.maison');
    if(byLabel(['OMEGARUBY','ALPHASAPPHIRE'],/^Completar las instalaciones de combate/))auto='event.pkhex.oras.maison';

@@ -132,6 +132,8 @@
    const flag=G?.families?.[d.field.family]?.flags?.FLAG_SYS_GAME_CLEAR;
    if(Number.isInteger(flag))add('story.gameClear',d.field.flags.includes(flag),'field');
   }
+  // Rubí/Zafiro: estrella de la Torre Batalla = mejor racha > 49 (pokeruby trainer_card.c, TrainerCard_GetStarCount).
+  if(d.field?.family==='RS'&&Number.isInteger(d.field.battleTower?.bestStreak))add('card.rs.battleTower',d.field.battleTower.bestStreak>49,'field');
   // Coleccionables que el guardado registra en bloques con nombre de PKHeX (solo lectura; umbrales según Serebii).
   const nb=d.namedBlocks&&typeof d.namedBlocks==='object'?d.namedBlocks:null;
   if(nb){

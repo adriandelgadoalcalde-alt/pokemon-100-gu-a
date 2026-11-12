@@ -308,3 +308,8 @@ test('Leyendas Z-A: misiones desde KEventWorkQuest (FNV-1a del nombre, 255 = com
  assert.equal(O.fromDiagnosis(full).find(f=>f.id==='story.gameClear').value,true);
  assert.equal(D.zaQuests({game:'ZA',questWork9a:{questWork:{}}}).gameClear,undefined); // sin claves no se deduce nada
 });
+
+test('Rubí/Zafiro: estrella de la Torre Batalla con la mejor racha (> 49, pokeruby)',()=>{
+ const O=require('../src/engine/objectives.js'),get=bt=>O.fromDiagnosis({game:'RUBY',field:{family:'RS',flags:[],battleTower:bt}}).find(f=>f.id==='card.rs.battleTower')?.value;
+ assert.equal(get({totalWins:70,bestStreak:50}),true);assert.equal(get({totalWins:70,bestStreak:49}),false);assert.equal(get(null),undefined);
+});
