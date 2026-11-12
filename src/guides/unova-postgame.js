@@ -22,12 +22,12 @@
       "Para Heatran consigue la Piedra Magma en Ruta 18, accesible por las aguas de Ruta 17 desde Ruta 1. Regresa a la cámara de Montaña Reversia que señaló Bel para activar su encuentro.",
       "Para Cresselia resuelve el recorrido de la Villa Horroris, junto a Chamota: baja por la izquierda y sube por la derecha; asciende al nivel superior y avanza hacia la izquierda, vuelve a bajar y rodea hacia la derecha. Sigue las apariciones de la niña hasta acceder a la habitación central y recoger la Pluma Lunar; llévala a Puente Progreso para el encuentro.",
       "Regresa a Arenisca para el combate de Cintia cuando esté disponible en primavera o verano. Conserva aparte su victoria, la revancha de Iris y los encuentros únicos: tener sus especies registradas no acredita esos combates.",
-      "En la bahía de Arenisca las Ruinas Abisales requieren Buceo, que entrega el rival en Arenisca durante el postgame. Lleva también Destello y Fuerza para las plantas interiores. Hay límite de movimientos por incursión, de modo que prepara el trayecto antes de entrar."
+      "En la bahía de Arenisca las Caverna Abisal requieren Buceo, que entrega el rival en Arenisca durante el postgame. Lleva también Destello y Fuerza para las plantas interiores. Hay límite de movimientos por incursión, de modo que prepara el trayecto antes de entrar."
     ],
     "check": "Cadena de los dragones y accesos de encuentros únicos revisados por separado.",
     "pitfalls": [
       "El dragón de N de Negro 2/Blanco 2 es el opuesto al dragón del jugador en Negro/Blanco. No importes la exclusividad del juego anterior.",
-      "El listado no sustituye un inventario completo de regalos, zonas, MT y demás actividades; las Ruinas Abisales aún necesitan el mapa y recorrido íntegro de sus plantas."
+      "El listado no sustituye un inventario completo de regalos, zonas, MT y demás actividades; las Caverna Abisal aún necesitan el mapa y recorrido íntegro de sus plantas."
     ],
     "sources": [
       "https://bulbapedia.bulbagarden.net/wiki/Walkthrough:Pok%C3%A9mon_Black_2_and_White_2/Part_11",

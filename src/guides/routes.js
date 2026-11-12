@@ -1568,7 +1568,7 @@
       "En Pueblo Cahíz conoces a Nemona y eliges inicial: Sprigatito, Fuecoco o Quaxly. Tras el combate de prueba con ella, baja a la playa a buscar la mochila de tu hermana o hermano.",
       "En la Gruta Caleta encuentras a Koraidon (Escarlata) o Miraidon (Púrpura), debilitado. Dale un bocadillo y te acompañará; ya puedes montarlo por el Sendero de Cahíz.",
       "Sigue a Nemona hasta Pueblo Ataifor y continúa hasta Ciudad Meseta. Al llegar a la Academia (Naranja en Escarlata, Uva en Púrpura) el director Clavell presenta la Búsqueda del Tesoro.",
-      "La búsqueda abre tres historias que puedes hacer en el orden que quieras: Travesía de la Victoria (gimnasios), Senda Legendaria (titanes, con Arven) y Vía Stardust (Team Star, con un tal Cassiopeia). Ordénalas por el nivel de los rivales: misiones 02, 03 y 04."
+      "La búsqueda abre tres historias que puedes hacer en el orden que quieras: Travesía de la victoria (gimnasios), Senda legendaria (titanes, con Damián) y Vía Stardust (Team Star, con un tal Cassiopeia). Ordénalas por el nivel de los rivales: misiones 02, 03 y 04."
     ],
     "check": "Tienes a Koraidon o Miraidon y la Búsqueda del Tesoro ha empezado en la Academia.",
     "pitfalls": [
@@ -1850,10 +1850,10 @@
     "mission": "11",
     "location": "Noroteo: epílogo Melodía de los mochis",
     "requires": [
-      "Torneo de la Academia ganado; historias de los dos DLC terminadas; Baya Meloc singular obtenida mediante el método de distribución disponible"
+      "Gran Pugna Académica ganado; historias de los dos DLC terminadas; Baya Meloc singular obtenida mediante el método de distribución disponible"
     ],
     "steps": [
-      "Comprueba el cierre del Torneo de la Academia y de El disco índigo. Tener instalados los DLC no demuestra que sus historias estén completas.",
+      "Comprueba el cierre del Gran Pugna Académica y de El disco índigo. Tener instalados los DLC no demuestra que sus historias estén completas.",
       "Revisa en Objetos Clave la Baya Meloc singular recibida por Regalo Misterioso. Si no dispones de ella, comprueba la disponibilidad actual de la distribución antes de viajar.",
       "Ve al establecimiento de Villa Versui en Noroteo e interactúa con el adorno relacionado con la baya para activar el epílogo.",
       "Sigue las llamadas y la reunión con tus compañeros; resuelve los encuentros de la aldea y el recorrido hacia el salón que marca la historia.",
@@ -1878,10 +1878,10 @@
     "mission": "DETAIL1",
     "location": "Noroteo: epílogo Melodía de los mochis",
     "requires": [
-      "Torneo de la Academia ganado; historias de los dos DLC terminadas; Baya Meloc singular obtenida mediante el método de distribución disponible"
+      "Gran Pugna Académica ganado; historias de los dos DLC terminadas; Baya Meloc singular obtenida mediante el método de distribución disponible"
     ],
     "steps": [
-      "Comprueba el cierre del Torneo de la Academia y de El disco índigo. Tener instalados los DLC no demuestra que sus historias estén completas.",
+      "Comprueba el cierre del Gran Pugna Académica y de El disco índigo. Tener instalados los DLC no demuestra que sus historias estén completas.",
       "Revisa en Objetos Clave la Baya Meloc singular recibida por Regalo Misterioso. Si no dispones de ella, comprueba la disponibilidad actual de la distribución antes de viajar.",
       "Ve al establecimiento de Villa Versui en Noroteo e interactúa con el adorno relacionado con la baya para activar el epílogo.",
       "Sigue las llamadas y la reunión con tus compañeros; resuelve los encuentros de la aldea y el recorrido hacia el salón que marca la historia.",
@@ -2155,13 +2155,13 @@
     "steps": [
       "Ultraumbrales: desde la Ultrópolis (abierta en la historia) se vuela por el Ultraespacio a lomos de Lunala (Ultrasol) o Solgaleo (Ultraluna); se puede cambiar en la Ultrópolis. Al principio se controla con el giroscopio; en el edificio de GAME FREAK de Ciudad Kantai te dejan usar el stick.",
       "Durante el vuelo recoge las esferas naranjas de energía y evita las eléctricas azules. Cuantos más años luz recorras, más probable es que el portal tenga borde especial (tipos 2 a 4) y lleve a un legendario: por ejemplo, a 3.000 años luz sale un 16 % de tipo 3 y un 2 % de tipo 4. No está garantizado.",
-      "Episodio RR: después de resolver lo de Blacephalon y Stakataka en Poni, Sophocles (Chris) te avisa de que la Isla Festiva ha sido pirateada. Entra con él y combate con Pokémon prestados de la Agencia de Combate hasta recuperar el control.",
+      "Episodio RR: después de resolver lo de Blacephalon y Stakataka en Poni, Sophocles (Chris) te avisa de que la Festi Plaza ha sido pirateada. Entra con él y combate con Pokémon prestados de la Agencia de Combate hasta recuperar el control.",
       "Por la tele ves cómo Giovanni irrumpe en la rueda de prensa de Lusamine. Sigue a Lillie al Paraíso Æther, convertido en castillo, y vence a Faba en combate múltiple junto a ella.",
       "Dentro del castillo recorre las salas, vence a los jefes de otros mundos que ha reunido el Team Rainbow Rocket y, al final, a Giovanni."
     ],
     "check": "Episodio RR terminado y Ultraumbrales explorados en busca de legendarios.",
     "pitfalls": [
-      "En la Isla Festiva pirateada no puedes usar tus Pokémon: solo los prestados de la Agencia.",
+      "En la Festi Plaza pirateada no puedes usar tus Pokémon: solo los prestados de la Agencia.",
       "Los personajes van con su nombre inglés (Serebii) cuando no se ha podido comprobar el oficial en español."
     ],
     "sources": [

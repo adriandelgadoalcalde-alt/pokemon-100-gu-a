@@ -346,7 +346,7 @@
    "id": "event-0",
    "fase": 7,
    "orden": 700,
-   "como": "Mew (Isla Remota, Ticket Viejo de Esmeralda), Deoxys (Isla Origen, Ticket Aurora de Rojo Fuego/Verde Hoja y Esmeralda) y Jirachi (disco de bonificación / Pokémon Channel) solo llegaron por eventos. En Rubí Omega/Zafiro Alfa, Deoxys sí está en el juego (Episodio Delta).",
+   "como": "Mew (Isla Suprema, Ticket Viejo de Esmeralda), Deoxys (Isla Origen, Ticket Aurora de Rojo Fuego/Verde Hoja y Esmeralda) y Jirachi (disco de bonificación / Pokémon Channel) solo llegaron por eventos. En Rubí Omega/Zafiro Alfa, Deoxys sí está en el juego (Episodio Delta).",
    "pokekeep": "Añade el objeto de evento (Ticket Viejo o Ticket Aurora) y activa su bandera para jugar el evento, o añade el singular legal desde la Librería."
   },
   {
@@ -1354,8 +1354,8 @@
    "id": "pecharunt",
    "fase": 2,
    "orden": 260,
-   "como": "Epílogo Misterio Mochi: tras El disco índigo, recibe la Baya Meloc Singular (Regalo Misterioso) y llévala a Noroteo; al final se captura Pecharunt.",
-   "pokekeep": "Si no tienes la Baya Meloc Singular, añádela a la mochila (objeto clave) para activar el epílogo."
+   "como": "Epílogo Misterio Mochi: tras El disco índigo, recibe la Baya Meloc singular (Regalo Misterioso) y llévala a Noroteo; al final se captura Pecharunt.",
+   "pokekeep": "Si no tienes la Baya Meloc singular, añádela a la mochila (objeto clave) para activar el epílogo."
   },
   {
    "juegos": [
@@ -1365,8 +1365,8 @@
    "id": "event-0",
    "fase": 7,
    "orden": 700,
-   "como": "El epílogo de Pecharunt necesita la Baya Meloc Singular, que solo llegó por Regalo Misterioso.",
-   "pokekeep": "Añade la Baya Meloc Singular a la mochila para activar el epílogo, o Pecharunt legal desde la Librería."
+   "como": "El epílogo de Pecharunt necesita la Baya Meloc singular, que solo llegó por Regalo Misterioso.",
+   "pokekeep": "Añade la Baya Meloc singular a la mochila para activar el epílogo, o Pecharunt legal desde la Librería."
   },
   {
    "juegos": [
@@ -1423,7 +1423,7 @@
    "id": "postgame",
    "fase": 2,
    "orden": 200,
-   "como": "La historia de Paldea acaba en el Área Cero (Camino de la Victoria, Senda Leyendas y Operación Estrella deben estar hechas para bajar). Después: Torneo de la Academia (repetible), revanchas de líderes y, con los DLC, La máscara turquesa (Noroteo) y El disco índigo (Academia Arándano), en ese orden, más el epílogo de Pecharunt."
+   "como": "La historia de Paldea acaba en el Área Cero (Travesía de la victoria, Senda legendaria y Vía Stardust deben estar hechas; la última historia, Camino a casa, baja al Área Cero). Después: Gran Pugna Académica (repetible), revanchas de líderes y, con los DLC, La máscara turquesa (Noroteo) y El disco índigo (Academia Arándano), en ese orden, más el epílogo de Pecharunt."
   }
  ]
 }

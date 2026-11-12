@@ -15,7 +15,7 @@
     },
     {
       "id": "sv-dlc",
-      "titulo": "Escarlata/Púrpura: Torneo de la Academia (el resto de retos de Paldea y de los DLC ya se acredita)",
+      "titulo": "Escarlata/Púrpura: Gran Pugna Académica (el resto de retos de Paldea y de los DLC ya se acredita)",
       "estado": "bloqueado",
       "motivo": "En las constantes de los scripts Lua de la ROM solo existe FEVT_1ST_BATTLE_TOURNAMENT_LOST (derrota en el primer torneo); ninguna bandera con nombre registra la victoria. Las escenas .trsog usan hashes, sin texto.",
       "nota": "12/11/2026: Ogre Oustin' en difícil = OniballoonSave_isCleardHard (0x17AD6C82); Liga Arándano y Terapagos = FSYS_SCENARIO_GAME_CLEAR_SU2; Ogerpon = SU1; Perrin = captura de los dos paradoja de la versión (1020/1021 o 1022/1023); Pecharunt = captura de 1025. 12/11/2026: vuelo contrarreloj = FEVT_SDC02_HAGANE_CLEAR_ELEMENTARY/INTERMEDIANTE/ADVANCED/SUPERLATIVE (scripts Lua de la ROM; claves = mitad baja del FNV-1a de 64 bits; los cuatro bloques existen en la Púrpura pública 3.0)."
