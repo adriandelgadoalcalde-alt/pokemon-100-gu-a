@@ -1,0 +1,19 @@
+{
+  "acerca": "Lista viva de lo que falta del plan. El hook Stop (scripts/stop-hook-pendientes.cjs) no deja terminar el turno mientras quede algo en estado 'pendiente'. Estados: 'pendiente' (hay trabajo posible), 'bloqueado' (imposible ahora; 'motivo' obligatorio, con la fuente), 'hecho'.",
+  "items": [
+    { "id": "la-peticiones", "titulo": "Leyendas Arceus: localizar en los datos del juego la tabla de peticiones y el bloque del guardado que la registra", "estado": "pendiente" },
+    { "id": "la-fero-sendas", "titulo": "Leyendas Arceus: aclarar qué son «las dos sendas» de Fero y su dato en el guardado", "estado": "pendiente" },
+    { "id": "sv-dlc", "titulo": "Escarlata/Púrpura: retos de los DLC (ogros, vuelo contrarreloj, fotos de Perrin, Liga Arándano, Pecharunt) desde los datos del juego", "estado": "pendiente" },
+    { "id": "sv-dlc-fin", "titulo": "Escarlata/Púrpura: contrastar FSYS_SCENARIO_GAME_CLEAR_SU1/SU2 con una partida con los DLC acabados", "estado": "pendiente" },
+    { "id": "usum-rainbow", "titulo": "Ultrasol/Ultraluna: dato fiable del episodio Rainbow Rocket", "estado": "pendiente" },
+    { "id": "xy-handsome", "titulo": "X/Y: dato del final del capítulo de Handsome", "estado": "pendiente" },
+    { "id": "bdsp-postliga", "titulo": "Diamante Brillante/Perla Reluciente: Parque Hansa, pedestales y 100 estatuas del Gran Subsuelo", "estado": "pendiente" },
+    { "id": "galar-postliga", "titulo": "Espada/Escudo: crisis posliga y fin de los DLC", "estado": "pendiente" },
+    { "id": "za-dlc", "titulo": "Leyendas Z-A: Megadimensión (DLC), revanchas y megapiedras", "estado": "pendiente" },
+    { "id": "unova-postliga", "titulo": "Negro/Blanco y N2/B2: capítulos posliga, Pokéstar Studios, torre de Ciudad Negra/Bosque Blanco y poderes del Nexárbol", "estado": "pendiente" },
+    { "id": "sinnoh-postliga", "titulo": "Diamante/Perla/Platino: Isla Batalla, revanchas y Torre Batalla de DP", "estado": "pendiente" },
+    { "id": "hoenn-postliga", "titulo": "Hoenn: encuentros legendarios y contenido posterior a la Liga", "estado": "pendiente" },
+    { "id": "alola-postliga", "titulo": "Alola: capítulos posliga, enfrentamientos destacados, núcleos de Zygarde, pegatinas y Mantine Surf", "estado": "pendiente" },
+    { "id": "ipad", "titulo": "iPad: prueba real en Safari de iPadOS (lectura de todos los formatos de guardado)", "estado": "pendiente" }
+  ]
+}

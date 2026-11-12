@@ -14,5 +14,19 @@
       "mcp__claude-code-remote",
       "mcp__github"
     ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/stop-hook-pendientes.cjs\"",
+            "timeout": 20,
+            "statusMessage": "Comprobando pendientes del plan"
+          }
+        ]
+      }
+    ]
   }
 }
