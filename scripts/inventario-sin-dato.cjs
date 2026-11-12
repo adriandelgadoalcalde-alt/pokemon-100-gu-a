@@ -50,12 +50,13 @@ const server=http.createServer((req,res)=>{
      console.log(`NO LEÍDO | ${rel} | ${(body.match(/[^\n]*(?:no |error|Selecciona)[^\n]*/i)||[''])[0].slice(0,160)}`);continue;}
     // La casilla manual vacía no es un «no»: se simula como falsa para que solo quede «sin dato» lo que la partida no dice.
     const info=await page.evaluate(()=>{const g=game(store.game),orig=PokemonObjectives.evaluate;
-     PokemonObjectives.evaluate=(nodes,facts,id)=>orig(nodes,facts.concat(nodes.filter(n=>!facts.some(f=>f.id==='manual.mastery.'+n.id))
-      .map(n=>({id:'manual.mastery.'+n.id,value:false,gameId:id,type:'manual',validation:'declared'}))),id);
+     let seen=[];PokemonObjectives.evaluate=(nodes,facts,id)=>(seen=nodes,orig(nodes,facts.concat(nodes.filter(n=>!facts.some(f=>f.id==='manual.mastery.'+n.id))
+      .map(n=>({id:'manual.mastery.'+n.id,value:false,gameId:id,type:'manual',validation:'declared'}))),id));
      masteryCache.delete(g.id);
      const all=PokemonObjectives.fromDiagnosis(evidenceFor(g));
      try{return masteryGoals(g).map(o=>{const e=masteryEvaluation(o,g);
-     const v=e.status==='COMPLETED_VERIFIED'||e.status==='COMPLETED_MANUAL'?'hecho':e.verification?.value===false?'no':'sin-dato';return [o.id,v+(v==='sin-dato'?'/'+e.status:''),o.label,(e.verification?.facts||[]).filter(f=>!f.startsWith('manual.')).map(id=>id+'='+JSON.stringify(all.filter(x=>x.id===id).map(x=>[x.value,x.type,x.validation]))).join(',')];});}finally{PokemonObjectives.evaluate=orig;masteryCache.delete(g.id);}});
+     const v=e.status==='COMPLETED_VERIFIED'||e.status==='COMPLETED_MANUAL'?'hecho':e.verification?.value===false?'no':'sin-dato';const rule=JSON.stringify((seen.find(n=>n.id===o.id)?.verification?.any||[])[0]||null);
+      return [o.id,v+(v==='sin-dato'?'/'+e.status:''),o.label+' | regla '+rule,(e.verification?.facts||[]).filter(f=>!f.startsWith('manual.')).map(id=>id+'='+JSON.stringify(all.filter(x=>x.id===id).map(x=>[x.value,x.type,x.validation]))).join(',')];});}finally{PokemonObjectives.evaluate=orig;masteryCache.delete(g.id);}});
     for(const [id,v,label,facts] of info)console.log(['GOAL',st.game,id,v,label,facts].join('\t'));
     if(errors.length)fallos++;
    }catch(e){fallos++;console.log(`FALLO | ${rel} | ${String(e.message).split('\n')[0].slice(0,160)}`);}
