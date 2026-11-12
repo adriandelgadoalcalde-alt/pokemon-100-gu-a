@@ -526,3 +526,9 @@ test('Diploma de Sinnoh de DP: 150 vistos de la Pokédex de Sinnoh sin Manaphy (
  assert.equal(C.dexStatus({game:'PEARL',caught:[],seen:seen.filter(i=>i!==387)}).sinnoh.complete,false);
  assert.equal(C.dexStatus({game:'PLATINUM',caught:[],seen}).sinnoh,undefined);
 });
+
+test('Diplomas de HGSS por sus banderas (0x143 Johto, 0x144 Nacional)',()=>{
+ const O=require('../src/engine/objectives.js'),v=(f,id)=>O.fromDiagnosis({game:'HEARTGOLD',events:{activeFlags:f}}).find(x=>x.id===id)?.value;
+ assert.equal(v([0x143],'card.hgss.diplomaJohto'),true);assert.equal(v([0x143],'card.hgss.diplomaNational'),undefined);
+ assert.equal(v([0x144],'card.hgss.diplomaNational'),true);
+});

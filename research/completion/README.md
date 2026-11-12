@@ -28,13 +28,14 @@ Cómo se acreditan los nuevos objetivos del pilar 2 y 3 (todos con fuente en su 
   Kanto de Let's Go.
 - **Diplomas por su bandera de entrega**: Platino `FLAG_RECEIVED_LOCAL_DEX_DIPLOMA` 0xAB y
   `FLAG_RECEIVED_NATIONAL_DEX_DIPLOMA` 0xAC (pokeplatinum; misma numeración de `generated/vars_flags.txt` que la
-  0x69 de la enfermera, contrastada con la partida del propietario).
+  0x69 de la enfermera, contrastada con la partida del propietario); HGSS `FLAG_SAW_JOHTO_DEX_CERTIFICATE` 0x143 y
+  `FLAG_SAW_NATIONAL_DEX_CERTIFICATE` 0x144 (pokeheartgold, Mansión Azulona).
 - **Amuletos por el objeto clave**: Amuleto Iris 632 y Amuleto Oval 631 (`ItemStorage*` de PKHeX los lista en los
   objetos clave de cada edición). En Sol/Luna, Ultrasol/Ultraluna, Espada/Escudo y DBPR el Amuleto Oval lo da
   Morimoto la primera vez que se le vence, así que acredita ese combate (WikiDex «Amuleto Oval»).
 - **Máximo en la Cascada Meteoro** (Esmeralda): `FLAG_DEFEATED_METEOR_FALLS_STEVEN` 0x4F8 (pokeemerald).
 
-Sin dato en la partida (se marcan a mano; motivo en `pendientes.json`): diploma de Sinnoh de DBPR, diplomas de HGSS, Teselia, Kalos, ROZA, DBPR y Galar, y Morimoto/Nishino en Teselia (combate
+Sin dato en la partida (se marcan a mano; motivo en `pendientes.json`): diploma de Sinnoh de DBPR, diplomas de Teselia, Kalos, ROZA, DBPR y Galar, y Morimoto/Nishino en Teselia (combate
 diario sin registro conocido).
 
 ## Fuentes y cómo se contrastan

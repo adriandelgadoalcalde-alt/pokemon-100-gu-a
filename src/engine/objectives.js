@@ -228,6 +228,13 @@
    if(fl.has(0xAB))add('card.pt.diplomaSinnoh',true,'events');
    if(fl.has(0xAC))add('card.pt.diplomaNational',true,'events');
   }
+  // HGSS: el director de la Mansión Azulona pone FLAG_SAW_JOHTO_DEX_CERTIFICATE 0x143 y FLAG_SAW_NATIONAL_DEX_CERTIFICATE
+  // 0x144 al enseñar cada diploma (pokeheartgold, scr_seq_0798_T07R0203 y include/constants/flags.h).
+  if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
+   const fl=new Set(d.events.activeFlags);
+   if(fl.has(0x143))add('card.hgss.diplomaJohto',true,'events');
+   if(fl.has(0x144))add('card.hgss.diplomaNational',true,'events');
+  }
   // Esmeralda: combate con Máximo en la Cascada Meteoro tras la Liga, FLAG_DEFEATED_METEOR_FALLS_STEVEN 0x4F8 (pokeemerald).
   if(d.field&&Array.isArray(d.field.flags)&&(d.field.family?d.field.family==='E':d.game==='EMERALD'))add('battle.emerald.stevenMeteorFalls',d.field.flags.includes(0x4F8),'field');
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
