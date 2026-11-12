@@ -27,6 +27,12 @@ public static class ProgressSignals
             (0xF0D246CC, "pokedex.paldea.diplomaAvailable", "Diploma de Paldea disponible", "FSYS_POKEDEX_SYOUJOU_ENABLE"),
             (0xF7900D11, "pokedex.paldea.diplomaClaimed", "Indicador de diploma de Paldea recibido", "FSYS_POKEDEX_SYOUJOU_EVENT"),
             (0x17AD6C82, "dlc.ogreOustin.hardCleared", "Ogre Oustin' superado en difícil", "OniballoonSave_isCleardHard"),
+            // Nombres sacados de las constantes de los scripts Lua de la ROM (script/lua/bin/release/main); la clave del
+            // bloque es la mitad baja del FNV-1a de 64 bits del nombre, igual que las de SaveBlockAccessor9SV.
+            (0x370AAED3, "dlc.flyingTrial.elementary", "Vuelo contrarreloj de Amarys: nivel básico", "FEVT_SDC02_HAGANE_CLEAR_ELEMENTARY"),
+            (0x3EB0BCA0, "dlc.flyingTrial.intermediate", "Vuelo contrarreloj de Amarys: nivel medio", "FEVT_SDC02_HAGANE_CLEAR_INTERMEDIANTE"),
+            (0x96EDAF73, "dlc.flyingTrial.advanced", "Vuelo contrarreloj de Amarys: nivel avanzado", "FEVT_SDC02_HAGANE_CLEAR_ADVANCED"),
+            (0x7D215B69, "dlc.flyingTrial.superlative", "Vuelo contrarreloj de Amarys: nivel máximo", "FEVT_SDC02_HAGANE_CLEAR_SUPERLATIVE"),
         ];
         return definitions.Select(d =>
         {

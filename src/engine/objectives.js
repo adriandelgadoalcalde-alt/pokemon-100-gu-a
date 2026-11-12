@@ -348,6 +348,8 @@
    const sig=id=>{const x=d.progressSignals.find(s=>s.id===id);return typeof x?.value==='boolean'?x.value:null;};
    for(const [id,fact] of [['story.tealMask.clear','sv.tealMaskClear'],['story.indigoDisk.clear','sv.indigoDiskClear'],['dlc.ogreOustin.hardCleared','sv.ogreOustinHard']]){
     const v=sig(id);if(v!==null)add(fact,v,'progressSignals');}
+   const fly=['elementary','intermediate','advanced','superlative'].map(k=>sig('dlc.flyingTrial.'+k));
+   if(fly.every(v=>v!==null))add('sv.flyingTrialAll',fly.every(Boolean),'progressSignals');
   }
   // Escarlata/Púrpura: las tres máscaras de Ogerpon en la mochila (Cimiento 2406, Fuente 2407, Horno 2408; text_Items de PKHeX).
   if(['SCARLET','VIOLET'].includes(d.game)&&Array.isArray(d.inventory)){const have=new Set(d.inventory.flatMap(p=>(p?.items||[]).filter(i=>i?.count>0).map(i=>i.id)));

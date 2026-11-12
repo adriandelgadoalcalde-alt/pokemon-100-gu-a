@@ -5,7 +5,7 @@
 let notifyAssembly;
 const assemblyReady=new Promise(resolve=>{notifyAssembly=resolve;});
 window.pokemonLocalAssemblyReady=()=>notifyAssembly();
-const ready=Promise.all([Blazor.start({loadBootResource:(type,name,uri)=>name==='dotnet.js'?'_framework/dotnet.jkmvv7ppij.js':uri}),assemblyReady]);
+const ready=Promise.all([Blazor.start({loadBootResource:(type,name,uri)=>name==='dotnet.js'?'_framework/dotnet.1xygd3n10p.js':uri}),assemblyReady]);
 let busy=false;
 addEventListener('message',async event=>{
  if(event.origin!==location.origin||event.source!==parent||event.data?.type!=='pokemon-local-analyze'||typeof event.data.id!=='string')return;

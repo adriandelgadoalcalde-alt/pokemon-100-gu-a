@@ -372,3 +372,17 @@ PC (solo lectura, a temporal): `lgpe_gfpak.py`, `lgpe_amxdec.py`, `lgpe_amxllama
 - Sala del campeón (369): primer recorrido `WK_SCENE_MAIN_MASTER` = 320; en las victorias siguientes solo `FE_WATARU_WIN`
   y `WK_SCENE_CHAMPION_REMATCH = 10`, el mismo valor que ya deja la primera.
 - Conclusión: la revancha superada no deja rastro en el guardado. Las dos partidas del propietario tienen la escena 25 = 10.
+
+### 12/11/2026 — Escarlata/Púrpura: nombres de banderas desde los scripts Lua de la ROM
+
+El romfs usa el formato Trinity (data.trpfd/trpfs, Oodle). `sv_nombres.py` (PC, solo lectura, reutiliza `za_trinity.py`)
+extrae los paquetes `script/lua/bin/release/*` y recoge 1567 nombres de banderas y variables (FSYS_, FEVT_, WEVT_, WSYS_,
+`*Save_*`). La clave del bloque en el guardado es la mitad baja del FNV-1a de 64 bits del nombre (comprobado con
+`FSYS_SCENARIO_GAME_CLEAR` = 0x92CE2CF6, `FSYS_YMAP_FLY_01` y `..._SU1` de PKHeX).
+
+- **Vuelo contrarreloj de Amarys:** `FEVT_SDC02_HAGANE_CLEAR_ELEMENTARY` (0x370AAED3), `_INTERMEDIANTE` (0x3EB0BCA0),
+  `_ADVANCED` (0x96EDAF73) y `_SUPERLATIVE` (0x7D215B69). Los cuatro bloques existen (falsos) en la Púrpura pública de
+  la versión 3.0; no hay partida con El disco índigo para el caso positivo. Hecho `sv.flyingTrialAll`.
+- **Torneo de la Academia:** solo `FEVT_1ST_BATTLE_TOURNAMENT_LOST`; no hay bandera de victoria con nombre.
+- Otros nombres útiles para más adelante: `FSYS_SCENARIO_LAST_EPISODE_CLEAR` (0x4EF04CF2), `WEVT_SDC02_*_CLEAR_NUM`
+  (retos del Alto Mando Arándano), `FEVT_SDC02_FAIRY_QUIZ_PERFECT`.
