@@ -83,6 +83,16 @@
       "titulo": "Reconocimiento de la enfermera en Diamante/Perla y en Negro/Blanco y N2/B2 (WikiDex «Ficha de entrenador»: ocurre al alcanzar el último nivel de la ficha)",
       "estado": "pendiente",
       "nota": "Hecho en Esmeralda, Platino y HGSS (bandera del script). DP: falta el número de su bandera (pokediamond sin scripts con nombres). Teselia: depende de las 5 estrellas; faltan por leer los poderes regalo del Nexárbol (N/B) y las películas de Pokéstar (N2/B2)."
+    },
+    {
+      "id": "diplomas-sin-dato",
+      "titulo": "Diplomas sin comprobación desde la partida: Sinnoh de DP/DBPR (tabla regional de la ROM), HGSS, Teselia, Kalos, ROZA, DBPR y Galar; Morimoto/Nishino en Teselia",
+      "estado": "pendiente"
+    },
+    {
+      "id": "jefes-finales",
+      "titulo": "Jefe definitivo con fuente en las ediciones que aún no lo tienen (Cintia en Teselia, Máximo en ROZA, DP/Pt, X/Y, Z-A)",
+      "estado": "pendiente"
     }
   ]
 }

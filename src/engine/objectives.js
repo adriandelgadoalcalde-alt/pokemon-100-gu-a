@@ -220,6 +220,16 @@
    const flags=d.game==='EMERALD'?d.field?.flags:d.events?.activeFlags;
    if(nurse!==undefined&&Array.isArray(flags)&&flags.includes(nurse))add('card.nurseRecognition',true,d.game==='EMERALD'?'field':'events');
   }
+  // Diplomas del director del juego en Platino (Hotel Gran Lago): el script pone FLAG_RECEIVED_LOCAL_DEX_DIPLOMA (0xAB) y
+  // FLAG_RECEIVED_NATIONAL_DEX_DIPLOMA (0xAC) al entregarlos (pokeplatinum, grand_lake_valor_lakefront_west_house y
+  // generated/vars_flags.txt; misma numeración que la 0x69 de la enfermera). Solo se acredita la presencia.
+  if(d.game==='PLATINUM'&&Array.isArray(d.events?.activeFlags)){
+   const fl=new Set(d.events.activeFlags);
+   if(fl.has(0xAB))add('card.pt.diplomaSinnoh',true,'events');
+   if(fl.has(0xAC))add('card.pt.diplomaNational',true,'events');
+  }
+  // Esmeralda: combate con Máximo en la Cascada Meteoro tras la Liga, FLAG_DEFEATED_METEOR_FALLS_STEVEN 0x4F8 (pokeemerald).
+  if(d.field&&Array.isArray(d.field.flags)&&(d.field.family?d.field.family==='E':d.game==='EMERALD'))add('battle.emerald.stevenMeteorFalls',d.field.flags.includes(0x4F8),'field');
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).

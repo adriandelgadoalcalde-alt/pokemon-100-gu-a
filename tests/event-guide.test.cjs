@@ -497,3 +497,23 @@ test('N2/B2: las 40 películas de Pokéstar Studios',()=>{
  const O=require('../src/engine/objectives.js'),f=n=>O.fromDiagnosis({game:'BLACK2',pokestar5:{completed:n,total:40}}).find(x=>x.id==='pokestar.b2w2.allMovies')?.value;
  assert.equal(f(40),true);assert.equal(f(0),false);
 });
+
+test('Diplomas de Platino por sus banderas de entrega y Máximo en la Cascada Meteoro (Esmeralda)',()=>{
+ const O=require('../src/engine/objectives.js'),v=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
+ assert.equal(v({game:'PLATINUM',events:{activeFlags:[0xAB]}},'card.pt.diplomaSinnoh'),true);
+ assert.equal(v({game:'PLATINUM',events:{activeFlags:[0xAB]}},'card.pt.diplomaNational'),undefined);
+ assert.equal(v({game:'PLATINUM',events:{activeFlags:[0xAC]}},'card.pt.diplomaNational'),true);
+ assert.equal(v({game:'EMERALD',field:{family:'E',flags:[0x4F8]}},'battle.emerald.stevenMeteorFalls'),true);
+ assert.equal(v({game:'EMERALD',field:{family:'E',flags:[0x4F7]}},'battle.emerald.stevenMeteorFalls'),false);
+});
+
+test('Diploma nacional de Rubí/Zafiro (pokeruby, con su error de índice) frente al de Esmeralda',()=>{
+ const C=require('../src/engine/completion.js'),all=Array.from({length:386},(_,i)=>i+1);
+ const without=ids=>all.filter(i=>!ids.includes(i));
+ // Rubí: sin Mew, Chikorita, Celebi, Jirachi ni Deoxys sigue completo; sin Lugia, no.
+ assert.equal(C.dexStatus({game:'RUBY',caught:without([151,152,251,385,386])}).national.complete,true);
+ assert.equal(C.dexStatus({game:'RUBY',caught:without([249])}).national.complete,false);
+ // Esmeralda: Lugia y Ho-Oh no cuentan; Chikorita sí.
+ assert.equal(C.dexStatus({game:'EMERALD',caught:without([151,249,250,251,385,386])}).national.complete,true);
+ assert.equal(C.dexStatus({game:'EMERALD',caught:without([152])}).national.complete,false);
+});

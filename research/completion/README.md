@@ -3,6 +3,39 @@
 La lista de objetivos de la web (`MASTER_DATA` en `atlas.html`) define qué significa terminar al 100 % cada
 edición. Cada objetivo cita su fuente en el texto «cómo».
 
+## Definición del 100 % (indicada por el propietario el 12/11/2026)
+
+Un juego está al 100 % cuando la partida cumple tres pilares, y la guía lleva paso a paso y en orden por cada uno
+con las metas, desafíos y legendarios propios de esa edición:
+
+1. **Tarjeta de entrenador al máximo** (estrellas, color o sellos del pasaporte): Hall de la Fama, Pokédex, instalación
+   de combate, concursos/minijuegos de la región y la mecánica de exploración o cooperación de cada edición
+   (Subsuelo, Pokéwood, Árbol de Combate…). Objetivos `card-*` y sellos de cada juego.
+2. **Reconocimientos del desarrollador**: los diplomas del director del juego (regional y nacional, y los de cada
+   Pokédex de zona o DLC) y el Amuleto Iris; también el Amuleto Oval cuando es un premio de Pokédex o de combate.
+   Objetivos `diploma-regional`, `diploma-nacional`, `shiny-charm` y `oval-charm`.
+3. **Cierre de tramas y jefes ocultos**: episodios posliga (Delta, Rainbow Rocket, Sabios de Plasma…), todos los
+   legendarios fijos del mapa y el entrenador más fuerte de la edición (Rojo, Máximo en la Cascada Meteoro, Morimoto
+   en las oficinas de Game Freak…). Objetivos `postgame`, `pokemon-*` y `final-boss`.
+
+Cómo se acreditan los nuevos objetivos del pilar 2 y 3 (todos con fuente en su texto «cómo»):
+
+- **Diplomas por el mismo recuento que hace el juego** (pret): Hoenn de RZE (`HasAllHoennMons`), nacional de RZ
+  (`CompletedNationalPokedex` de pokeruby: 380 especies, con su error de índice que no pide a Chikorita y sí a Lugia y
+  Ho-Oh), nacional de Esmeralda y RFVH (`HasAllMons`), Kanto de RFVH (`HasAllKantoMons`), nacional de DP
+  (`Pokedex_NationalDexIsComplete`: 482 sin los 11 singulares del juego) y Kanto de Let's Go.
+- **Diplomas por su bandera de entrega**: Platino `FLAG_RECEIVED_LOCAL_DEX_DIPLOMA` 0xAB y
+  `FLAG_RECEIVED_NATIONAL_DEX_DIPLOMA` 0xAC (pokeplatinum; misma numeración de `generated/vars_flags.txt` que la
+  0x69 de la enfermera, contrastada con la partida del propietario).
+- **Amuletos por el objeto clave**: Amuleto Iris 632 y Amuleto Oval 631 (`ItemStorage*` de PKHeX los lista en los
+  objetos clave de cada edición). En Sol/Luna, Ultrasol/Ultraluna, Espada/Escudo y DBPR el Amuleto Oval lo da
+  Morimoto la primera vez que se le vence, así que acredita ese combate (WikiDex «Amuleto Oval»).
+- **Máximo en la Cascada Meteoro** (Esmeralda): `FLAG_DEFEATED_METEOR_FALLS_STEVEN` 0x4F8 (pokeemerald).
+
+Sin dato en la partida (se marcan a mano; motivo en `pendientes.json`): diploma de Sinnoh de DP y DBPR (falta la tabla
+regional de la ROM), diplomas de HGSS, Teselia, Kalos, ROZA, DBPR y Galar, y Morimoto/Nishino en Teselia (combate
+diario sin registro conocido).
+
 ## Fuentes y cómo se contrastan
 
 - **Código del juego** (decompilaciones de pret, revisión fijada): estrellas de la tarjeta de Rubí/Zafiro,
