@@ -633,7 +633,7 @@
    "id": "card-3",
    "fase": 6,
    "orden": 630,
-   "como": "Estrella por ganar el Torneo Campeones del PWT."
+   "como": "Tras la Liga, en el Pokémon World Tournament (junto a Ciudad Fayenza): gana los torneos regionales para desbloquear el Torneo Campeones y gánalo."
   },
   {
    "juegos": [
@@ -704,7 +704,7 @@
    "id": "card-1",
    "fase": 6,
    "orden": 610,
-   "como": "Estrella por haber visto todos los Pokémon de la Pokédex de Kalos (las tres secciones)."
+   "como": "Estrella por haber visto (no hace falta capturar) todas las especies de las tres Pokédex de Kalos (Central, Costa y Montaña). Las de la otra edición cuentan si las ves en combate o en intercambio. Se va completando durante la historia."
   },
   {
    "juegos": [
@@ -747,7 +747,7 @@
    "id": "diploma-nacional",
    "fase": 6,
    "orden": 605,
-   "como": "Con la Pokédex Nacional completa (sin singulares de evento), en el mismo Motel Aguacala."
+   "como": "Con la Pokédex Nacional completa (sin los singulares de evento; Deoxys sí cuenta), habla con el equipo de Game Freak en el Motel Aguacala de Ciudad Calagua."
   },
   {
    "juegos": [
@@ -767,7 +767,7 @@
    "id": "card-1",
    "fase": 6,
    "orden": 610,
-   "como": "Estrella por haber visto todas las especies de la Pokédex de Hoenn."
+   "como": "Estrella por haber visto todas las especies de la Pokédex de Hoenn. Las de la otra edición cuentan si las ves en combate o intercambio; el Pokénav (DexNav) ayuda a encontrar las que faltan."
   },
   {
    "juegos": [
@@ -828,7 +828,7 @@
    "id": "card-0",
    "fase": 6,
    "orden": 600,
-   "como": "Sello de la tarjeta: Sello que se consigue al empezar: ser entrenador oficial."
+   "como": "Sello que se consigue al empezar la aventura, cuando el profesor Kukui te inscribe como entrenador oficial y recibes la tarjeta. No hay que hacer nada."
   },
   {
    "juegos": [
@@ -840,7 +840,7 @@
    "id": "card-1",
    "fase": 6,
    "orden": 601,
-   "como": "Sello de la tarjeta: Supera la gran prueba de Melemele."
+   "como": "Durante la historia, en Melemele: tras superar la prueba del capitán, el kahuna de la isla te espera en Pueblo Lili para la gran prueba. Ganarla da el sello y el Cristal Z de tipo Lucha."
   },
   {
    "juegos": [
@@ -852,7 +852,7 @@
    "id": "card-2",
    "fase": 6,
    "orden": 602,
-   "como": "Sello de la tarjeta: Supera la gran prueba de Akala."
+   "como": "Durante la historia, en Akala: supera las tres pruebas de la isla (agua, fuego y planta) y vence a la kahuna en Ciudad Konikoni. Da el sello y el Cristal Z de tipo Roca."
   },
   {
    "juegos": [
@@ -864,7 +864,7 @@
    "id": "card-3",
    "fase": 6,
    "orden": 603,
-   "como": "Sello de la tarjeta: Supera la gran prueba de Ula-Ula."
+   "como": "Durante la historia, en Ula-Ula: supera las pruebas de la isla y vence al kahuna, que está en Pueblo Po. Da el sello y el Cristal Z de tipo Siniestro."
   },
   {
    "juegos": [
@@ -876,7 +876,7 @@
    "id": "card-4",
    "fase": 6,
    "orden": 604,
-   "como": "Sello de la tarjeta: Supera la gran prueba de Poni."
+   "como": "Durante la historia, en Poni: supera la última prueba y vence a la kahuna de la isla. Da el sello y el Cristal Z de tipo Tierra; con ella termina el recorrido insular."
   },
   {
    "juegos": [
@@ -900,7 +900,7 @@
    "id": "card-6",
    "fase": 6,
    "orden": 606,
-   "como": "Sello de la tarjeta: Completa la Pokédex de Melemele."
+   "como": "Captura todas las especies de la sección de Melemele de la Pokédex de Alola. Casi todas salen durante la historia; algunas solo de noche, con el tiempo o por evolución."
   },
   {
    "juegos": [
@@ -912,7 +912,7 @@
    "id": "card-7",
    "fase": 6,
    "orden": 607,
-   "como": "Sello de la tarjeta: Completa la Pokédex de Akala."
+   "como": "Captura todas las especies de la sección de Akala. Algunas solo aparecen tras la Liga o por evolución por intercambio."
   },
   {
    "juegos": [
@@ -924,7 +924,7 @@
    "id": "card-8",
    "fase": 6,
    "orden": 608,
-   "como": "Sello de la tarjeta: Completa la Pokédex de Ula-Ula."
+   "como": "Captura todas las especies de la sección de Ula-Ula. Varias son exclusivas de una edición (intercambio) o aparecen tras la Liga."
   },
   {
    "juegos": [
@@ -936,7 +936,7 @@
    "id": "card-9",
    "fase": 6,
    "orden": 609,
-   "como": "Sello de la tarjeta: Completa la Pokédex de Poni."
+   "como": "Captura todas las especies de la sección de Poni. Muchas están en el Gran Cañón de Poni y en zonas que se abren tras la Liga."
   },
   {
    "juegos": [
@@ -948,7 +948,7 @@
    "id": "card-10",
    "fase": 6,
    "orden": 610,
-   "como": "Sello de la tarjeta: Completa la Pokédex de Alola."
+   "como": "Completa la Pokédex de Alola entera (las cuatro islas, sin contar a los singulares de evento). Es la misma condición que el diploma y el Amuleto Iris del director del juego."
   },
   {
    "juegos": [
@@ -960,7 +960,7 @@
    "id": "card-11",
    "fase": 6,
    "orden": 611,
-   "como": "Sello de la tarjeta: 50 victorias seguidas en el Árbol Batalla, Individual."
+   "como": "Tras la Liga, en el Árbol Batalla (isla de Poni): gana 50 combates seguidos en la modalidad Individual (a partir de la 20.ª entran los rivales fuertes)."
   },
   {
    "juegos": [
@@ -972,7 +972,7 @@
    "id": "card-12",
    "fase": 6,
    "orden": 612,
-   "como": "Sello de la tarjeta: 50 victorias seguidas en el Árbol Batalla, Doble."
+   "como": "Tras la Liga, en el Árbol Batalla (isla de Poni): gana 50 combates seguidos en la modalidad Doble; lleva un equipo pensado para dobles."
   },
   {
    "juegos": [
@@ -1093,7 +1093,7 @@
    "id": "shiny-charm",
    "fase": 6,
    "orden": 610,
-   "como": "El mismo director del juego te da el Amuleto Iris al completar la Pokédex de Kanto."
+   "como": "Con la Pokédex de Kanto completa (151 especies, más Meltan y Melmetal de Pokémon GO), el director del juego de la 3.ª planta de la Mansión Azulona te da el Amuleto Iris junto con el diploma."
   },
   {
    "juegos": [
