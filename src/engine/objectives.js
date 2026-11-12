@@ -223,7 +223,7 @@
   // primera vez. Esmeralda FLAG_NURSE_MENTIONS_GOLD_CARD 0x159 (pokeemerald), Platino FLAG_POKECENTER_GOLD_TRAINER_CARD_SEEN
   // 0x69 (pokeplatinum), HGSS FLAG_NURSE_NOTICED_CARD 0x64 (pokeheartgold). Solo se acredita la presencia.
   {
-   const nurse={EMERALD:0x159,PLATINUM:0x69,DIAMOND:0x69,PEARL:0x69,HEARTGOLD:0x64,SOULSILVER:0x64}[d.game];
+   const nurse={EMERALD:0x159,PLATINUM:0x69,DIAMOND:0x69,PEARL:0x69,HEARTGOLD:0x64,SOULSILVER:0x64,BD:68,SP:68}[d.game];
    const flags=d.game==='EMERALD'?d.field?.flags:d.events?.activeFlags;
    if(nurse!==undefined&&Array.isArray(flags)&&flags.includes(nurse))add('card.nurseRecognition',true,d.game==='EMERALD'?'field':'events');
   }
@@ -261,6 +261,14 @@
   if(['OMEGARUBY','ALPHASAPPHIRE'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags);
    if(fl.has(0x8F9))add('oras.stevenRematch',fl.has(0x974)||fl.has(0xA7A),'events');
+  }
+  // DBPR: EvWork.FLAG_INDEX de uDPR: FE_RECONGNIZE_SHINOU/NATIONAL 132/133 (diplomas) y FE_C10R0111_LEAGUE2_CHAMP_WIN 1713
+  // (victoria contra Cintia en la revancha de la Liga; la primera es FE_C10R0111_CHAMP_WIN 141). Solo presencia.
+  if(['BD','SP'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
+   const fl=new Set(d.events.activeFlags);
+   if(fl.has(132))add('card.bdsp.diplomaSinnoh',true,'events');
+   if(fl.has(133))add('card.bdsp.diplomaNational',true,'events');
+   if(fl.has(1713))add('bdsp.cynthiaRematch',true,'events');
   }
   // HGSS: el director de la Mansión Azulona pone FLAG_SAW_JOHTO_DEX_CERTIFICATE 0x143 y FLAG_SAW_NATIONAL_DEX_CERTIFICATE
   // 0x144 al enseñar cada diploma (pokeheartgold, scr_seq_0798_T07R0203 y include/constants/flags.h).
