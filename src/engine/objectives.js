@@ -137,9 +137,9 @@
   if(['RS','E'].includes(d.field?.family)&&Array.isArray(d.field.vars)&&Number.isInteger(d.field.vars[0x44]))add('challenge.hoenn.trickHouse',d.field.vars[0x44]>=8,'field');
   // Rubí Omega/Zafiro Alfa: «Contest Spectacular Progress» (variable 215 de PKHeX const_oras): 21 = Plubio y Lisia vencidos.
   if(['OMEGARUBY','ALPHASAPPHIRE'].includes(d.game)&&Array.isArray(d.events?.work)&&Number.isInteger(d.events.work[215]))add('contest.oras.spectacular',d.events.work[215]>=21,'events');
-  // Rojo Fuego/Verde Hoja: revancha del Campeón = bandera de entrenador de TRAINER_CHAMPION_REMATCH_* (pokefirered
-  // PokemonLeague_ChampionsRoom; TRAINER_FLAGS_START 0x500 + 739..741), una por cada inicial del rival.
-  if(d.field?.family==='FRLG'&&Array.isArray(d.field.flags)){const set=new Set(d.field.flags);add('story.frlg.championRematch',[0x500+739,0x500+740,0x500+741].some(f=>set.has(f)),'field');}
+  // Rojo Fuego/Verde Hoja: revancha de la Liga = banderas de entrenador de TRAINER_ELITE_FOUR_*_2 (pokefirered; 0x500 +
+  // 735..738). Las del Campeón no sirven: EventScript_ResetEliteFour (hall_of_fame.inc) las borra al entrar en el Salón.
+  if(d.field?.family==='FRLG'&&Array.isArray(d.field.flags)){const set=new Set(d.field.flags);add('story.frlg.championRematch',[735,736,737,738].every(i=>set.has(0x500+i)),'field');}
   // Rubí/Zafiro: estrella de la Torre Batalla = mejor racha > 49 (pokeruby trainer_card.c, TrainerCard_GetStarCount).
   if(d.field?.family==='RS'&&Number.isInteger(d.field.battleTower?.bestStreak))add('card.rs.battleTower',d.field.battleTower.bestStreak>49,'field');
   // Rojo Fuego/Verde Hoja: estrella de minijuegos = 200 bayas en Dodrio Berry Picking y 200 saltos seguidos en Pokémon Jump.

@@ -438,7 +438,7 @@ test('Gen. I: revancha de la Liga (segunda entrada del Salón de la Fama)',()=>{
  assert.equal(f(2),true);assert.equal(f(1),false);
 });
 
-test('Rojo Fuego/Verde Hoja: revancha del Campeón (bandera de entrenador)',()=>{
+test('Rojo Fuego/Verde Hoja: revancha de la Liga (banderas del Alto Mando 2)',()=>{
  const O=require('../src/engine/objectives.js'),f=fl=>O.fromDiagnosis({game:'FIRERED',field:{family:'FRLG',flags:fl}}).find(x=>x.id==='story.frlg.championRematch')?.value;
- assert.equal(f([0x500+740]),true);assert.equal(f([0x500+439]),false);
+ assert.equal(f([735,736,737,738].map(i=>0x500+i)),true);assert.equal(f([0x500+740,0x500+735]),false);
 });
