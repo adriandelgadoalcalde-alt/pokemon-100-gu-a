@@ -246,6 +246,14 @@ foreach (var version in new[] { GameVersion.B2, GameVersion.W2, GameVersion.X, G
         // Reserved top bit and a bag-alignment gap must not contaminate ID/count.
         model.Data[3]|=0x80;
         BinaryPrimitives.WriteUInt32LittleEndian(model.Data[0xE28..],807u|(37u<<10));
+        // Pegatinas dominantes, células, Surfeo Mantine y defensas del título con valores distintos de cero (paridad con la web).
+        if(model is SAV7USUM u7)
+        {
+            for(var i=0;i<100;i+=3)u7.EventWork.SetZygardeCell(i,(ushort)(i%2==0?2:1));
+            u7.EventWork.ZygardeCellTotal=40;u7.EventWork.ZygardeCellCount=73;
+            for(var i=0;i<4;i++)u7.Misc.SetSurfScore(i,i==2?0:12345*(i+1));
+            u7.SetRecord(100,version==GameVersion.US?9:0);
+        }
 
     }
     if (model is IEventFlagProvider37 flags) { flags.EventWork.SetEventFlag(5, true); flags.EventWork.SetWork(7, 123); }
