@@ -13,7 +13,8 @@ const JUEGOS={'Rojo':'RED','Azul':'BLUE','Amarillo':'YELLOW','Verde (Japón)':'G
  'Negro':'BLACK','Blanco':'WHITE','Negro 2':'BLACK2','Blanco 2':'WHITE2','X':'X','Y':'Y','Rubí Omega':'OMEGARUBY',
  'Zafiro Alfa':'ALPHASAPPHIRE','Sol':'SUN','Luna':'MOON','Ultrasol':'ULTRASUN','Ultraluna':'ULTRAMOON',
  "Let's Go Pikachu":'LETGOP',"Let's Go Eevee":'LETGOE','Espada':'SWORD','Escudo':'SHIELD','Diamante Brillante':'BD',
- 'Perla Reluciente':'SP','Leyendas Arceus':'ARCEUS','Escarlata':'SCARLET','Púrpura':'VIOLET','Leyendas Z-A':'ZA'};
+ 'Perla Reluciente':'SP','Leyendas Arceus':'ARCEUS','Escarlata':'SCARLET','Púrpura':'VIOLET','Leyendas Z-A':'ZA',
+ 'espada-escudo':'SWORD','rojofuego-switch':'FIRERED'};
 const files=[];
 (function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){const p=path.join(d,e.name);
  if(e.isDirectory())walk(p);else if(!/\.(txt|md|json)$/i.test(e.name))files.push(p);}})(folder);
