@@ -127,6 +127,24 @@ public static class Audit
         return new { hallOfFame = total, arrested, nationalDex = s.NationalDex, evidence = evidence.Count, proof = proof || journal, journal };
     }
 
+
+    // Escarlata/Púrpura: estado de la historia guardado como texto ASCII. 0x9ABA6CF6 = carga del mundo
+    // (SYS_LOAD_COMMON_INIT/…/CLEAR, CLEAR al acabar el Área Cero: common_1290/champ_0010 del Lua), 0xB200597B = escena
+    // principal en curso (COMMON_NNNN) y 0x95BC36BE = objetivo del mapa (ymap_title_SCENARIO_COMMON_NNNN). La cadena de
+    // escenas acaba en common_2150 (ceremonia tras ganar la Gran Pugna Académica) y common_2160.
+    private static object? Story9(SAV9SV sv)
+    {
+        string? Text(uint key)
+        {
+            var b = sv.Accessor.BlockInfo.FirstOrDefault(x => x.Key == key);
+            if (b is null) return null;
+            var d = b.Data; int n = d.IndexOf((byte)0); if (n < 0) n = d.Length;
+            var t = Encoding.ASCII.GetString(d[..n]);
+            return t.All(c => c is >= ' ' and <= '~') ? t : null;
+        }
+        return new { load = Text(0x9ABA6CF6), scene = Text(0xB200597B), title = Text(0x95BC36BE) };
+    }
+
     public static string? GameId(SaveFile save) => save is SAV3FRLG ? null : save.Version switch
     {
         GameVersion.RD => "RED", GameVersion.GN => save.Language == 1 ? "GREEN" : "BLUE",
@@ -248,6 +266,7 @@ public static class Audit
             ["hallOfFame1"] = save is SAV1 hf1 ? new { count = (int)hf1.HallOfFameCount } : null,
             // Escarlata/Púrpura y Z-A: capturados de cada Pokédex regional según los números de PersonalInfo9SV/9ZA de PKHeX
             // (DexPaldea/DexKitakami/DexBlueberry de cualquier forma; DexIndex ≤ 232 = Luminalia, > 232 = Hiperespacio).
+            ["story9"] = save is SAV9SV st9 ? Story9(st9) : null,
             ["dex9"] = save is SAV9SV sv9 ? DexCounts<PersonalInfo9SV[]>(sv9, Forms(sv9.MaxSpeciesID, (sp, f) => PersonalTable.SV.GetFormEntry(sp, f), sp => PersonalTable.SV[sp].FormCount),
                     ("paldea", x => x.p.Any(e => e.DexPaldea != 0)), ("kitakami", x => x.p.Any(e => e.DexKitakami != 0)), ("blueberry", x => x.p.Any(e => e.DexBlueberry != 0)))
                 : save is SAV9ZA za9 ? DexCounts<PersonalInfo9ZA[]>(za9, Forms(za9.MaxSpeciesID, (sp, f) => PersonalTable.ZA.GetFormEntry(sp, f), sp => PersonalTable.ZA[sp].FormCount),
