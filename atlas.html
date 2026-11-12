@@ -61,6 +61,8 @@ function masteryEvaluation(goal,g){
    const anyEvent=id=>{const parts=facts.filter(f=>f.id.startsWith('event.'+id+'.')).map(f=>({fact:f.id}));return parts.length?{any:parts}:null;};
    const byLabel=(games,re)=>games.includes(g.id)&&re.test(item.label);
    let rule=null;
+   // Leyendas Arceus: posjuego = las 94 peticiones del juego base y Arceus («el Pokémon Alfa») vencido (FSYS_SCENARIO_CLEARED_URA).
+   if(g.id==='ARCEUS'&&item.id==='postgame')rule={all:[{fact:'la.requests.base'},{fact:'la.arceusDefeated'}]};
    if(['SWORD','SHIELD'].includes(g.id)&&item.id==='league-card-stars')rule={all:[{fact:'story.gameClear'},{fact:'swsh.armorClear'},{fact:'swsh.crownClear'}]};
    if(byLabel(['HEARTGOLD','SOULSILVER'],/^Huellas de oro/))auto='event.hgss.frontier_prints';
    if(byLabel(['PLATINUM'],/^Huellas de oro/))auto='event.pt.frontier_prints';if(byLabel(['HEARTGOLD','SOULSILVER'],/^Desafío de Torre Batalla o Frente Batalla/))rule={any:[{fact:'battle.hgss.tower100'},{fact:'event.hgss.frontier_prints'}]};if(byLabel(['PLATINUM'],/^Superar instalaciones de combate de Sinnoh/))rule={any:[{fact:'battle.pt.tower100'},{fact:'event.pt.frontier_prints'}]};
