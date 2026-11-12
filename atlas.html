@@ -19,8 +19,28 @@ function masteryEvaluation(goal,g){
    if(['SUN','MOON','ULTRASUN','ULTRAMOON'].includes(g.id)&&item.id==='pokedex')auto='pokedex.completion.alola';
    if(['LETGOP','LETGOE'].includes(g.id)&&item.id==='pokedex')auto='pokedex.completion.kanto';
    if(['BD','SP'].includes(g.id)&&item.id==='pokedex')auto='pokedex.completion.national';
+   // Amuleto Iris = objeto 632 de la lista común de PKHeX (text_Items); el guardado lo trae en los objetos clave.
+   if(/^Amuleto Iris/.test(item.label))auto='inventory.keyItem.632.present';
+   // Objetivos que acreditan los paquetes de eventos (banderas documentadas): el secreto completo o cualquiera de sus condiciones.
+   const anyEvent=id=>{const parts=facts.filter(f=>f.id.startsWith('event.'+id+'.')).map(f=>({fact:f.id}));return parts.length?{any:parts}:null;};
+   const byLabel=(games,re)=>games.includes(g.id)&&re.test(item.label);
+   let rule=null;
+   if(byLabel(['HEARTGOLD','SOULSILVER'],/^Huellas de oro/))auto='event.hgss.frontier_prints';
+   if(byLabel(['PLATINUM'],/^Huellas de oro/))auto='event.pt.frontier_prints';
+   if(byLabel(['HEARTGOLD','SOULSILVER'],/cámaras secretas/))auto='event.hgss.alph';
+   if(byLabel(['FIRERED','LEAFGREEN'],/Rubí y el Zafiro a Celio/))auto='event.gen3.frlg.sevii_gems';
+   if(byLabel(['RUBY','SAPPHIRE'],/^50 victorias consecutivas en Torre Batalla/))auto='event.gen3.shields.FLAG_RECEIVED_SILVER_SHIELD';
+   if(byLabel(['X','Y'],/Dama del Combate/))rule=anyEvent('pkhex.xy.maison');
+   if(byLabel(['OMEGARUBY','ALPHASAPPHIRE'],/Dama del Combate/))rule=anyEvent('pkhex.oras.maison');
+   if(byLabel(['OMEGARUBY','ALPHASAPPHIRE'],/^Completar las instalaciones de combate/))auto='event.pkhex.oras.maison';
+   if(byLabel(['DIAMOND','PEARL'],/^Un Superconcurso rango Maestro/))rule=anyEvent('pkhex.dp.contests');
+   if(byLabel(['PLATINUM'],/^Un Superconcurso rango Maestro/))rule=anyEvent('pt.contest_masters');
+   if(byLabel(['LETGOP','LETGOE'],/^Desafiar a Rojo/))auto='event.pkhex.lgpe.red';
+   if(byLabel(['LETGOP','LETGOE'],/^Título de Gran Maestro/))auto='event.pkhex.lgpe.masters';
+   if(byLabel(['SWORD','SHIELD'],/^Superar Torre Batalla/))auto='event.swsh.tower';
+   if(byLabel(['ARCEUS'],/^Completar la Pokédex de Hisui/))auto='event.la.pokedex';
    auto=PokemonPassport.factForGoal(g.id,item.id)||auto;
-   const automatic=item.id==='orb-red-blue'&&['SOULSILVER','HEARTGOLD'].includes(g.id)?{all:[{fact:'inventory.keyItem.'+(g.id==='SOULSILVER'?534:535)+'.present'},{fact:'hgss.orb.originalDelivery'}]}:auto?{fact:auto}:null;
+   const automatic=item.id==='orb-red-blue'&&['SOULSILVER','HEARTGOLD'].includes(g.id)?{all:[{fact:'inventory.keyItem.'+(g.id==='SOULSILVER'?534:535)+'.present'},{fact:'hgss.orb.originalDelivery'}]}:rule||(auto?{fact:auto}:null);
    const manual='manual.mastery.'+item.id;
    if(store.masterChecks?.[g.id+':'+item.id])facts.push({id:manual,value:true,gameId:g.id,type:'manual',validation:'declared'});
    return {id:item.id,gameId:g.id,verification:automatic?{any:[automatic,{fact:manual}]}:{fact:manual}};
@@ -33,7 +53,8 @@ function masteryProof(goal,g){
  if(masteryEvaluation(goal,g).status!=='COMPLETED_VERIFIED')return null;
  if(goal.id==='medals')return '255 medallas recibidas registradas; integridad del bloque comprobada';
  if(PokemonPassport.factForGoal(g.id,goal.id))return 'Sello registrado en el pasaporte; integridad comprobada';
- return goal.auto==='gameClear'?'Fin de historia registrado; integridad comprobada':'Registro de Pokédex; integridad del bloque comprobada';
+ if(goal.auto==='gameClear'||goal.label==='Hall de la Fama')return 'Fin de historia registrado; integridad comprobada';
+ return Number.isInteger(goal.species)||/Pokédex/.test(goal.label)?'Registro de Pokédex; integridad del bloque comprobada':'Registrado en el guardado (dato documentado); integridad comprobada';
 }
 function masterySignal(goal,g){return masteryEvaluation(goal,g).status==='PARTIAL_EVIDENCE';}
 function mastery(){

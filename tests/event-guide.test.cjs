@@ -275,3 +275,17 @@ test('Rubí/Zafiro/Esmeralda: estrella de los cinco cuadros del museo; Rojo Fueg
  assert.equal(get({family:'E',flags:[0xA0,0xA1,0xA2,0xA3]}),false);
  assert.equal(get({family:'FRLG',flags:[0xA0,0xA1,0xA2,0xA3,0xA4]}),undefined);
 });
+
+test('Gen. III con el lector nativo: fin de la historia por FLAG_SYS_GAME_CLEAR de cada familia',()=>{
+ const O=require('../src/engine/objectives.js'),clear=(game,family,flags,extra={})=>O.fromDiagnosis({game,field:{family,flags},...extra}).find(f=>f.id==='story.gameClear')?.value;
+ assert.equal(clear('EMERALD','E',[2148]),true);assert.equal(clear('EMERALD','E',[2052]),false);
+ assert.equal(clear('RUBY','RS',[2052]),true);assert.equal(clear('FIRERED','FRLG',[2092]),true);assert.equal(clear('LEAFGREEN','FRLG',[]),false);
+ assert.equal(clear('EMERALD','E',[2148],{gameClear:false}),false); // manda el dato directo
+});
+
+test('Espada/Escudo: fin de la historia por victorias en la Torre Batalla o el Torneo de las Estrellas, nunca falso por un cero',()=>{
+ const O=require('../src/engine/objectives.js'),clear=nb=>O.fromDiagnosis({game:'SWORD',namedBlocks:nb}).find(f=>f.id==='story.gameClear')?.value;
+ assert.equal(clear({KBattleTowerSinglesVictory:9,KBattleTowerDoublesVictory:0}),true);
+ assert.equal(clear({KBattleTowerSinglesVictory:0,KBattleTowerDoublesVictory:0,KGSTVictoriesTotal:1}),true);
+ assert.equal(clear({KBattleTowerSinglesVictory:0,KBattleTowerDoublesVictory:0}),undefined);
+});

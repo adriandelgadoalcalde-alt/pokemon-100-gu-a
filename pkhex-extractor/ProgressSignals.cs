@@ -30,8 +30,11 @@ public static class ProgressSignals
         return definitions.Select(d =>
         {
             bool found = sv.Blocks.TryGetBlock(d.Key, out var block);
+            // FSYS_SCENARIO_GAME_CLEAR: contraste natural con dos partidas reales del propietario (12/11/2026): Púrpura con
+            // la historia acabada = verdadero (y diploma recibido); Escarlata sin acabar = falso (sin diploma disponible).
+            bool contrasted = d.Id == "story.paldea.clear";
             return (object)new { id = d.Id, label = d.Label,
-                value = DecodeBooleanType(found ? block!.Type : null), validation = "documented",
+                value = DecodeBooleanType(found ? block!.Type : null), validation = contrasted ? "verified" : "documented",
                 source = new { url = Source, engineCommit = Audit.EngineCommit, blockKey = $"0x{d.Key:X8}", scriptName = d.ScriptName },
                 limitation = "Interpretación documentada en upstream; pendiente de contraste natural controlado. Un bloque ausente o de otro tipo no se interpreta como falso." };
         }).ToArray();

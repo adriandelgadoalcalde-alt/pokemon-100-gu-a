@@ -125,6 +125,13 @@
   if(d.field&&Array.isArray(d.field.flags)&&['RS','E'].includes(d.field.family)){
    const set=new Set(d.field.flags);add('card.hoenn.paintings',[0xA0,0xA1,0xA2,0xA3,0xA4].every(f=>set.has(f)),'field');
   }
+  // Gen. III leído con el lector nativo: FLAG_SYS_GAME_CLEAR (pokeruby/pokeemerald/pokefirered; lo activa el Salón
+  // de la Fama) dentro de las banderas de campo, cuando el motor no aporta ya la señal documentada.
+  if(typeof d.gameClear!=='boolean'&&d.field&&Array.isArray(d.field.flags)&&!d.progressSignals?.some(s=>s.id==='story.gba.gameClear')){
+   const G=typeof module==='object'&&module.exports?require('../saves/gen3-data.js'):root.PokemonGen3Data;
+   const flag=G?.families?.[d.field.family]?.flags?.FLAG_SYS_GAME_CLEAR;
+   if(Number.isInteger(flag))add('story.gameClear',d.field.flags.includes(flag),'field');
+  }
   // Coleccionables que el guardado registra en bloques con nombre de PKHeX (solo lectura; umbrales según Serebii).
   const nb=d.namedBlocks&&typeof d.namedBlocks==='object'?d.namedBlocks:null;
   if(nb){
@@ -134,11 +141,27 @@
    if(prints.every(v=>v!==null))add('collection.swsh.footprints',prints.every(v=>v>=100),'namedBlocks');
    if(num('KDojoWattDonationProgress')!==null)add('collection.swsh.dojoWatts',num('KDojoWattDonationProgress')>=15,'namedBlocks');
    if(num('KRecordSparringTypesCleared')!==null)add('battle.swsh.restrictedSparring',num('KRecordSparringTypesCleared')>=18,'namedBlocks');
+   // Espada/Escudo: la Torre Batalla y el Torneo de las Estrellas solo se abren tras ser campeón; una victoria en
+   // cualquiera prueba el fin de la historia (nunca se deduce lo contrario de un cero).
+   if(['SWORD','SHIELD'].includes(d.game)&&typeof d.gameClear!=='boolean'){
+    const wins=['KBattleTowerSinglesVictory','KBattleTowerDoublesVictory','KGSTVictoriesTotal'].map(num).filter(v=>v!==null);
+    if(wins.some(v=>v>0))add('story.gameClear',true,'namedBlocks');
+   }
    const wisps=['00','01','02','03','04','05'].map(a=>num('KWispsFoundArea'+a));
    if(wisps.every(v=>v!==null))add('collection.la.wisps',wisps.reduce((a,b)=>a+b,0)>=107,'namedBlocks');
   }
+  // Resultados de los paquetes de eventos (banderas documentadas): 'event.<secreto>' cuando el secreto está completo y
+  // 'event.<secreto>.<bandera>' por cada condición con valor conocido; nunca se deduce un falso de una bandera ausente.
+  const guide=typeof module==='object'&&module.exports?require('./event-guide.js'):root.PokemonEventGuide;
+  let analysis=null;try{analysis=guide?.analyze(d,d.game);}catch{}
+  if(analysis&&!analysis.mismatch)for(const secret of analysis.secrets||[]){
+   if(secret.status==='completado')add('event.'+secret.id,true,'events');
+   for(const cond of secret.done||[])if(typeof cond.set==='boolean'&&cond.flag)add(`event.${secret.id}.${cond.flag}`,cond.set,'events');
+  }
   const signal=(typeof module==='object'&&module.exports?require('../saves/diagnosis.js'):root.PokemonDiagnosis)?.documentedClear(d);
-  if(signal)facts.push({id:'story.gameClear',value:signal.value,gameId:d.game,type:'derived',validation:'documented',source:signal.source});
+  // Una señal documentada que ya tiene contraste natural (positivo y negativo con partidas reales) cuenta como directa.
+  if(signal)facts.push({id:'story.gameClear',value:signal.value,gameId:d.game,type:signal.validation==='verified'?'direct':'derived',
+   validation:signal.validation==='verified'?'verified':'documented',source:signal.source});
   return facts;
  }
  const api={order,evaluate,next,fromDiagnosis};

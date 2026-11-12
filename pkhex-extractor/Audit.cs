@@ -125,14 +125,24 @@ public static class Audit
             ["passport"] = save is SAV7 passport7 ? new { mask = passport7.Misc.Stamps } : null,
             ["integrity"] = new { engine = "PKHeX.Core", checksumsValid = checksums,
                 scope = "Propiedad de integridad upstream; algunos formatos no tienen checksums propios" },
-            ["gameClear"] = save is SAV4 s4 ? s4.GameClear : save is SAV5 or SAV6 or SAV7 ? save.SecondsToFame > 0 : null,
+            // Gen. I: contador del Salón de la Fama (wNumHoFTeams, se incrementa al entrar; pokered hall_of_fame.asm).
+            // Gen. II: EVENT_BEAT_ELITE_FOUR = 68 (pokegold/pokecrystal constants/event_flags.asm; HallOfFame.asm lo activa).
+            // Negro/Blanco: bandera 2400 «Defeated Ghetsis (First game clear)» de PKHeX (flags_bw), además del tiempo a la fama.
+            ["gameClear"] = save is SAV1 s1 ? s1.HallOfFameCount > 0 : save is SAV2 s2 ? s2.GetEventFlag(68) :
+                save is SAV4 s4 ? s4.GameClear : save is SAV5BW bw ? bw.EventWork.GetEventFlag(2400) || bw.SecondsToFame > 0 :
+                save is SAV5 or SAV6 or SAV7 ? save.SecondsToFame > 0 :
+                // Let's Go: FSYS_GAME_CLEAR = bandera de sistema 0 «Completed Main Story» (PKHeX flags_gg).
+                save is SAV7b lg ? lg.EventWork.GetFlag(EventVarType.System, 0) : null,
             ["nationalDex"] = save is SAV3 n3 ? n3.NationalDex : save is SAV4 n4 ? n4.NationalDex : save is SAV5 n5 ? n5.Zukan.IsNationalDexUnlocked :
                 save is SAV6XY nx ? nx.Zukan.IsNationalDexUnlocked : save is SAV6AO na ? na.Zukan.IsNationalDexUnlocked : null,
             ["badgesMask"] = save is SAV3 b3 ? b3.Badges : (int?)null,
-            ["badgesTotal"] = save is SAV3 badges3 ? BitOperations.PopCount((uint)badges3.Badges) : save is SAV4HGSS hg ? BitOperations.PopCount(hg.Badges) + BitOperations.PopCount((uint)hg.Badges16) :
+            ["badgesTotal"] = save is SAV1 badges1 ? BitOperations.PopCount((uint)badges1.Badges) : save is SAV2 badges2 ? BitOperations.PopCount((uint)badges2.Badges) :
+                save is SAV3 badges3 ? BitOperations.PopCount((uint)badges3.Badges) : save is SAV4HGSS hg ? BitOperations.PopCount(hg.Badges) + BitOperations.PopCount((uint)hg.Badges16) :
                 save is SAV4 d4 ? BitOperations.PopCount(d4.Badges) : save is SAV5 b5 ? BitOperations.PopCount((uint)b5.Misc.Badges) :
                 save is SAV6 b6 ? BitOperations.PopCount((uint)b6.Badges) :
-                save is SAV8SWSH b8 ? BitOperations.PopCount((uint)b8.Badges) : null,
+                save is SAV8SWSH b8 ? BitOperations.PopCount((uint)b8.Badges) :
+                // Let's Go: FSYS_GYM_CLEAR_* = banderas de sistema 12-19 (un líder cada una; PKHeX flags_gg).
+                save is SAV7b lgb ? Enumerable.Range(12, 8).Count(i => lgb.EventWork.GetFlag(EventVarType.System, i)) : null,
             ["progressSignals"] = ProgressSignals.Read(save),
             ["unparsed"] = unparsed,
             ["warnings"] = new[] { "Diagnóstico de estado, no certificación de legitimidad ni del 100 %.",
