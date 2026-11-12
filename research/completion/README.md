@@ -76,6 +76,8 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
 - **Objetos de acceso de Hoenn:** Gafas Aislantes (279) y Detector Devon (288), y el Emblema Magma (375) en Esmeralda
   (pokeruby/pokeemerald `items.h`). Rubí, Zafiro y Esmeralda del propietario los conservan. La Llave Sótano (zona opcional)
   y el Escáner (se entrega al capitán) no cuentan.
+- **Objetos clave de la 6.ª generación:** Megaaro (696) en X/Y; Gafas Aislantes (728), Detector Devon (735) y Flauta Eón
+  (775) en Rubí Omega/Zafiro Alfa (números de objeto de PKHeX). Las cuatro partidas del propietario los tienen.
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
