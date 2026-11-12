@@ -447,3 +447,8 @@ test('Gen. II: Billete Barco y Pase (solo presencia)',()=>{
  const O=require('../src/engine/objectives.js'),f=ids=>O.fromDiagnosis({game:'GOLD',integrity:{checksumsValid:true},inventory:[{pocket:'KeyItems',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.gen2.tickets')?.value;
  assert.equal(f([0x44,0x86]),true);assert.equal(f([0x44]),undefined);
 });
+
+test('Hoenn: objetos clave de acceso (Esmeralda exige además el Emblema Magma)',()=>{
+ const O=require('../src/engine/objectives.js'),f=(g,ids)=>O.fromDiagnosis({game:g,integrity:{checksumsValid:true},inventory:[{pocket:'KeyItems',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.hoenn.accessItems')?.value;
+ assert.equal(f('RUBY',[279,288]),true);assert.equal(f('EMERALD',[279,288]),undefined);assert.equal(f('EMERALD',[279,288,375]),true);
+});

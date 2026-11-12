@@ -73,6 +73,9 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   Mando, 0x500 + 410-413, están activas; las del Campeón, borradas).
 - **Monte Plateado en Oro/Plata/Cristal:** `EVENT_OPENED_MT_SILVER` (OaksLab de pokegold/pokecrystal) más el Billete Barco
   (0x44) y el Pase (0x86) en el inventario. Acreditado en las tres partidas del propietario.
+- **Objetos de acceso de Hoenn:** Gafas Aislantes (279) y Detector Devon (288), y el Emblema Magma (375) en Esmeralda
+  (pokeruby/pokeemerald `items.h`). Rubí, Zafiro y Esmeralda del propietario los conservan. La Llave Sótano (zona opcional)
+  y el Escáner (se entrega al capitán) no cuentan.
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.

@@ -179,6 +179,14 @@
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
    if(have.has(0x44)&&have.has(0x86))add('inventory.gen2.tickets',true,'inventory');
   }
+  // Rubí/Zafiro/Esmeralda: objetos clave de acceso (pokeruby/pokeemerald items.h): Gafas Aislantes 279 (desierto y
+  // Ruinas de Regirock), Detector Devon 288 (Kecleon que cortan el paso) y, en Esmeralda, Emblema Magma 375 (Pico
+  // Pirámide/Monte Pírico hacia Groudon). Solo se acredita la presencia: los objetos clave no se pueden tirar.
+  if(['RUBY','SAPPHIRE','EMERALD'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
+   const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
+   const need=d.game==='EMERALD'?[279,288,375]:[279,288];
+   if(need.every(id=>have.has(id)))add('inventory.hoenn.accessItems',true,'inventory');
+  }
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).
