@@ -792,3 +792,10 @@ test('Sin 8 medallas la historia no está acabada (salvo juegos sin gimnasios)',
  assert.deepEqual(v({game:'ULTRASUN',badgesTotal:0}),[]);
  assert.deepEqual(v({game:'SHIELD',badgesTotal:0,gameClear:true}),[true]);
 });
+
+test("Let's Go: el Amuleto Iris va en el bolsillo general",()=>{
+ const O=require('../src/engine/objectives.js'),v=d=>O.fromDiagnosis(d).filter(x=>x.id==='inventory.keyItem.632.present').map(x=>x.value);
+ assert.deepEqual(v({game:'LETGOP',keyItems:[],inventory:[{pocket:'Items',items:[{id:632,count:1}]}]}),[true]);
+ assert.deepEqual(v({game:'LETGOE',keyItems:[],inventory:[{pocket:'Items',items:[{id:1,count:1}]}]}),[false]);
+ assert.deepEqual(v({game:'X',keyItems:[{id:632,count:1}]}),[true]);
+});

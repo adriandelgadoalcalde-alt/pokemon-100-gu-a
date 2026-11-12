@@ -125,8 +125,15 @@
   for(const item of d.keyItems||[])if(item.count>0)add(`inventory.keyItem.${item.id}.present`,true,'keyItems');
   // Amuleto Oval (631) e Iris (632): objetos clave que no se pueden tirar, guardar ni gastar; con el bolsillo leído, su
   // ausencia es un «no». Los demás objetos clave siguen acreditándose solo por su presencia (algunos se entregan o gastan).
-  if(Array.isArray(d.keyItems)&&d.keyItems.some(i=>i?.count>0))for(const id of ['X','Y'].includes(d.game)?[631,632,696]:[631,632])
-   if(!d.keyItems.some(i=>i?.id===id&&i.count>0))add(`inventory.keyItem.${id}.present`,false,'keyItems');
+  // Let's Go no tiene bolsillo de objetos clave: el Amuleto Iris va en el general (PlayerBag7b de PKHeX), así que se busca
+  // en toda la mochila.
+  {
+   const bag=[...(d.keyItems||[]),...(['LETGOP','LETGOE'].includes(d.game)?(d.inventory||[]).flatMap(p=>p?.items||[]):[])];
+   if(bag.some(i=>i?.count>0))for(const id of ['X','Y'].includes(d.game)?[631,632,696]:[631,632]){
+    const has=bag.some(i=>i?.id===id&&i.count>0);
+    if(!has||!(d.keyItems||[]).some(i=>i?.id===id&&i.count>0))add(`inventory.keyItem.${id}.present`,has,has?'inventory':'keyItems');
+   }
+  }
   // Esmeralda: estrella del Frente Batalla = plata y oro de las 7 instalaciones (HasAllFrontierSymbols, pokeemerald).
   if(d.field&&Array.isArray(d.field.flags)&&(d.field.family?d.field.family==='E':d.game==='EMERALD')){
    const G=typeof module==='object'&&module.exports?require('../saves/gen3-data.js'):root.PokemonGen3Data;
