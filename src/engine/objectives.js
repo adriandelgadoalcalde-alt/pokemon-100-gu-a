@@ -408,7 +408,7 @@
   if(typeof d.za9?.floetteEternalCaught==='boolean')add('za.floetteEternal',d.za9.floetteEternalCaught,'za9');
   // Diamante/Perla: récord de racha de la Torre Batalla (GameStats 0x35-0x3D de pokediamond, GetTrainerCardLevel).
   // Platino: revancha del Alto Mando y de Cintia por el Salón de la Fama (pkhex-extractor/Audit.cs, LeagueRematch4): una
-  // entrada posterior al arresto de Carón (Heatran propio, su reaparición o el Diario) la prueba; con una sola entrada o sin
+  // entrada posterior al arresto de Plutón (Heatran propio, su reaparición o el Diario) la prueba; con una sola entrada o sin
   // el arresto, aún no. Diamante/Perla no tienen equipos de revancha (pokediamond: un solo entrenador por miembro del Alto
   // Mando y Cintia, trainers.h 261-267; WikiDex «Liga Pokémon (Sinnoh)»): el objetivo es volver a vencerlos, y cada
   // victoria deja una entrada en el Salón, así que dos o más entradas lo prueban y una sola lo descarta.

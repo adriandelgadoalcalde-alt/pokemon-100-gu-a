@@ -436,7 +436,7 @@ Platino también el Diario (evento 12 con el entrenador 870). No: una sola entra
 Liga). Partidas: Diamante, Perla, HeartGold, SoulSilver y un Platino público «no»; el Platino del propietario, sin dato.
 
 Ampliado el mismo día con lo que cambia después en Platino (pokeplatinum `stark_mountain_room_3` y
-`pokemon_league_hall_of_fame`): Carón es arrestado en el primer combate contra Heatran (banderas 214 y 215 a la vez). Si
+`pokemon_league_hall_of_fame`): Plutón es arrestado en el primer combate contra Heatran (banderas 214 y 215 a la vez). Si
 Heatran se derrota o huye (bandera 2435 del Buscapelea nivel 5, que solo se activa si no pierdes) desaparece con
 `VAR_STARK_MOUNTAIN_ROOM_3_STATE` (trabajo 158) = 2. Solo vuelve a 1 si pierdes contra él (sin la 2435) o si entras en el
 Salón con Heatran sin capturar (bandera 288) tras hablar con Gerardo en el Área Combate, que solo se abre después del

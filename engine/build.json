@@ -4,7 +4,7 @@
   "sources": [
     {
       "file": "pkhex-extractor/Audit.cs",
-      "sha256": "27f9c233e546149aa5b5cdbabb0d217a5dda0b94e7a5a9c2f68df208487d1aeb"
+      "sha256": "f1b52bee0ffe746edb6729a0805c12119d5940ade302819d5bdd52e61257ed4d"
     },
     {
       "file": "pkhex-extractor/ProgressSignals.cs",
@@ -188,14 +188,14 @@
       "sha256": "baeae5589326de8f4a21ab467c1774d0c98008f277e6244721df16901f609a04"
     },
     {
-      "file": "PKHeX.Core.aesbhl4qhh.wasm",
+      "file": "PKHeX.Core.rp7q1of4gv.wasm",
       "bytes": 19025689,
-      "sha256": "7eb65016ef24c6edb9997c39e8667bca94211517870f17e78d13e725f86f8cc2"
+      "sha256": "7165dde7264c6850d85df47f76f143a5c08dcaf50f307e731654c9265b48345b"
     },
     {
-      "file": "Pokemon.LocalReader.dsya4fqw8q.wasm",
+      "file": "Pokemon.LocalReader.pnycafpniz.wasm",
       "bytes": 92437,
-      "sha256": "637102dd19fba8d0f8de448c2eebf9d13302a88f71e6e936584696116cc81165"
+      "sha256": "7570b75f7b5c12907a5101d3660413502e41ad2b31e5bbbcfa8a07262b514a04"
     },
     {
       "file": "System.AppContext.2dp0f0ejq7.wasm",
@@ -1028,11 +1028,6 @@
       "sha256": "9435ec0d81609bad85f9852fc444bb20e4c25d8a621e9537b91e3961d0ba9aae"
     },
     {
-      "file": "dotnet.4nknaxkvf0.js",
-      "bytes": 88156,
-      "sha256": "4036164e1efd7cb304dae3e6cd9aedeae3c94555cd9f8e8e07ceb821d98e0b1f"
-    },
-    {
       "file": "dotnet.native.3bptkeu1pi.wasm",
       "bytes": 3002122,
       "sha256": "5fd1cd34ed0f5a877b82e5288408eb489323e90c582c29be4a58cd61a4fc361a"
@@ -1041,6 +1036,11 @@
       "file": "dotnet.native.6ilbvndvcf.js",
       "bytes": 145050,
       "sha256": "62f362d90fb21e75e2f224fb44ecdad0e1165afdad0a9b932361a069ebab6b75"
+    },
+    {
+      "file": "dotnet.pvz0wy0qyu.js",
+      "bytes": 88156,
+      "sha256": "a51d1b837d7e9ef10a2e9682942fa05594e92acc34d6569a0dc66308a03e9033"
     },
     {
       "file": "dotnet.runtime.v2rwe8u38b.js",

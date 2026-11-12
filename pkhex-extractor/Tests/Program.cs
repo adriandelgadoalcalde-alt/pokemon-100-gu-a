@@ -131,7 +131,7 @@ var bytes = SyntheticHgss(); var before = SHA256.HashData(bytes);
 var parsed = SaveUtil.GetSaveFile(bytes.ToArray().AsMemory()) ?? throw new Exception("Synthetic fixture detection failed");
 Check(parsed is SAV4HGSS, "Synthetic HGSS detection failed");
 Check(parsed.ChecksumsValid, "Synthetic HGSS full checksums failed");
-// Platino: Heatran reaparecido tras el arresto de Carón = una entrada del Salón posterior = revancha (pret/pokeplatinum).
+// Platino: Heatran reaparecido tras el arresto de Plutón = una entrada del Salón posterior = revancha (pret/pokeplatinum).
 foreach (var (caught, vs5, state, expected) in new[] { (false, true, 1, true), (true, true, 1, false), (false, true, 2, false), (false, false, 1, false) })
 {
     var pt=(SAV4)SyntheticSinnoh(GameVersion.Pt);
