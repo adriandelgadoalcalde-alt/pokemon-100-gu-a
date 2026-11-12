@@ -74,6 +74,8 @@ Pendiente con motivo (no se acredita solo para no adivinar):
   núcleos que pide el objetivo. El récord 72 («Stickers Collected») marca 102 en una partida de Ultraluna, más que las 100
   pegatinas que existen, así que no cuenta pegatinas distintas; y los récords de Mantine Surf (73, 189, 198) son puntos y
   partidas, no los cuatro recorridos superados.
+- **Revanchas de Let's Go y estrellas de la Tarjeta de Liga (Espada/Escudo):** la tabla de banderas de PKHeX para Let's Go
+  (`flags_gg`) no tiene ninguna de revancha de líderes, y `TrainerCard8` no guarda las estrellas de la tarjeta.
 - **Expansiones de Escarlata/Púrpura:** las señales `FSYS_SCENARIO_GAME_CLEAR_SU1/SU2` existen, pero ninguna partida
   disponible tiene el DLC acabado para un contraste positivo.
 
