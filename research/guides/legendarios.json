@@ -365,7 +365,7 @@
    "485": {
     "fase": 2,
     "orden": 230,
-    "cuando": "Posliga, en el Zona de Combate (requiere la Pokédex Nacional).",
+    "cuando": "Posliga, en la Zona de Combate (requiere la Pokédex Nacional).",
     "requisitos": "Acompaña a Bulgur por la Montaña Dura hasta el fondo; al terminar su exploración, Heatran aparece.",
     "consejo": "Heatran nivel 70."
    },
@@ -423,7 +423,7 @@
    "485": {
     "fase": 2,
     "orden": 230,
-    "cuando": "Posliga, en el Zona de Combate (requiere la Pokédex Nacional).",
+    "cuando": "Posliga, en la Zona de Combate (requiere la Pokédex Nacional).",
     "requisitos": "Acompaña a Bulgur por la Montaña Dura hasta el fondo; al terminar su exploración, Heatran aparece.",
     "consejo": "Heatran nivel 70."
    },
@@ -502,7 +502,7 @@
    "485": {
     "fase": 2,
     "orden": 230,
-    "cuando": "Posliga, en el Zona de Combate (Pokédex Nacional).",
+    "cuando": "Posliga, en la Zona de Combate (Pokédex Nacional).",
     "requisitos": "Acompaña a Bulgur por la Montaña Dura; al acabar, Heatran aparece al fondo.",
     "consejo": "Heatran nivel 50."
    },
@@ -2093,7 +2093,7 @@
    "485": {
     "fase": 2,
     "orden": 230,
-    "cuando": "Posliga, en el Zona de Combate (requiere la Pokédex Nacional).",
+    "cuando": "Posliga, en la Zona de Combate (requiere la Pokédex Nacional).",
     "requisitos": "Acompaña a Bulgur por la Montaña Dura hasta el fondo; al terminar su exploración, Heatran aparece.",
     "consejo": "Heatran nivel 70."
    },
@@ -2151,7 +2151,7 @@
    "485": {
     "fase": 2,
     "orden": 230,
-    "cuando": "Posliga, en el Zona de Combate (requiere la Pokédex Nacional).",
+    "cuando": "Posliga, en la Zona de Combate (requiere la Pokédex Nacional).",
     "requisitos": "Acompaña a Bulgur por la Montaña Dura hasta el fondo; al terminar su exploración, Heatran aparece.",
     "consejo": "Heatran nivel 70."
    },

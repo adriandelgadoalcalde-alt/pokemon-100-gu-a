@@ -286,7 +286,7 @@
   }
   // Esmeralda: combate con Máximo en la Cascada Meteoro tras la Liga, FLAG_DEFEATED_METEOR_FALLS_STEVEN 0x4F8 (pokeemerald).
   if(d.field&&Array.isArray(d.field.flags)&&(d.field.family?d.field.family==='E':d.game==='EMERALD'))add('battle.emerald.stevenMeteorFalls',d.field.flags.includes(0x4F8),'field');
-  // Alola: células de Zygarde (SL, 95) y pegatinas dominantes (USUL, 100) recogidas, y los cuatro recorridos de Mantine Surf
+  // Alola: células de Zygarde (SL, 95) y pegatinas dominantes (USUL, 100) recogidas, y los cuatro recorridos del Surfeo Mantine
   // con puntuación (USUL). Vector de EventWork7 de PKHeX (cells7 de Audit.cs).
   if(d.cells7&&Number.isInteger(d.cells7.received)&&Number.isInteger(d.cells7.total)&&d.cells7.total>0){
    add(d.cells7.kind==='totemStickers'?'alola.usum.totemStickers':'alola.sm.zygardeCells',d.cells7.received>=d.cells7.total,'cells7');
@@ -365,7 +365,7 @@
   if(Array.isArray(d.tower4dp?.maxStreaks)&&d.tower4dp.maxStreaks.length)add('battle.dp.tower100',d.tower4dp.maxStreaks.some(v=>v>=100),'tower4dp');
   // Diamante Brillante/Perla Reluciente: 100 rivales seguidos en alguna modalidad de la Torre Batalla.
   if(Array.isArray(d.tower8b?.maxStreaks)&&d.tower8b.maxStreaks.length)add('battle.bdsp.tower100',d.tower8b.maxStreaks.some(v=>v>=100),'tower8b');
-  // X/Y: rango máximo del Castillo Batalla = Gran Duque (5).
+  // X/Y: rango máximo del Bastión Batalla = Gran duque (5).
   if(Number.isInteger(d.chateau?.rank))add('battle.xy.chateauGrandDuke',d.chateau.rank>=5,'chateau');
   // Coleccionables que el guardado registra en bloques con nombre de PKHeX (solo lectura; umbrales según Serebii).
   const nb=d.namedBlocks&&typeof d.namedBlocks==='object'?d.namedBlocks:null;

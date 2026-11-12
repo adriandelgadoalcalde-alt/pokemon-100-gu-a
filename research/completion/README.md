@@ -183,7 +183,7 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
 
 - **Alola (12/11/2026):** células de Zygarde de Sol/Luna (las 95 en estado «recogida» de `EventWork7.GetZygardeCell`),
   las 100 dominsignias de USUL (el mismo vector: en USUL son pegatinas, como rotula `SAV_ZygardeCell` de PKHeX y confirma el
-  récord 72 «Stickers Collected»; WikiDex «Dominsignia») y los cuatro recorridos de Mantine Surf con puntuación
+  récord 72 «Stickers Collected»; WikiDex «Dominsignia») y los cuatro recorridos del Surfeo Mantine con puntuación
   (`Misc7.GetSurfScore`). Los 5 núcleos de Zygarde (SL) y las células de USUL no tienen bloque documentado: a mano.
 
 - **Estrella de las estatuas de DBPR (12/11/2026):** `PlayerWork.GetTrainerRank` (uDPR, revisión de la 1.3.0) da la estrella

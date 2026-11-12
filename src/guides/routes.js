@@ -2094,11 +2094,11 @@
       "Para Yveltal, completa las simulaciones de revancha contra Mega-Victreebel, Mega-Hawlucha y Mega-Tyranitar. Vuelve a informar y busca a Yveltal en la azotea indicada de la galería del sector rojo.",
       "Después de capturar a Xerneas y Yveltal, vuelve con L y supera su combate. Continúa la escena en la que Zygarde dirige al jugador hacia la Torre Prisma.",
       "Afronta el desafío de Zygarde por fases: primero 10 %, después 50 % y finalmente la Forma Completa. Mantén recursos y atención a los ataques de área durante el cambio de fase.",
-      "Al terminar el desafío, completa la oportunidad de captura y revisa las escenas posteriores. Esta cadena no exige haber completado el DLC de Mega Dimension."
+      "Al terminar el desafío, completa la oportunidad de captura y revisa las escenas posteriores. Esta cadena no exige haber completado el DLC de Megadimensión."
     ],
     "check": "Las tres capturas y sus escenas de postgame revisadas.",
     "pitfalls": [
-      "Las distribuciones adicionales de Mewtwo o Diancie y las misiones de Mega Dimension tienen accesos propios. No se desbloquean automáticamente por capturar a Zygarde."
+      "Las distribuciones adicionales de Mewtwo o Diancie y las misiones de Megadimensión tienen accesos propios. No se desbloquean automáticamente por capturar a Zygarde."
     ],
     "sources": [
       "https://www.serebii.net/legendsz-a/legendary.shtml"

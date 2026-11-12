@@ -1391,29 +1391,11 @@
    "juegos": [
     "ZA"
    ],
-   "id": "mega-dimension",
-   "fase": 2,
-   "orden": 270,
-   "como": "DLC Megadimensión: sigue la historia con Hoopa y las zonas ??? dimensionales, donde aparecen legendarios de otras regiones."
-  },
-  {
-   "juegos": [
-    "ZA"
-   ],
    "id": "event-0",
    "fase": 7,
    "orden": 700,
    "como": "Diancie y otros regalos llegaron por evento o por la historia del DLC.",
    "pokekeep": "Añádelos legales desde la Librería."
-  },
-  {
-   "juegos": [
-    "ZA"
-   ],
-   "id": "event-1",
-   "fase": 7,
-   "orden": 710,
-   "como": "Megadimensión: Hoopa y los legendarios de las zonas ??? dimensionales (Groudon, Kyogre, Rayquaza…)."
   },
   {
    "juegos": [
@@ -1424,6 +1406,69 @@
    "fase": 2,
    "orden": 200,
    "como": "La historia de Paldea acaba en el Área Cero (Travesía de la victoria, Senda legendaria y Vía Stardust deben estar hechas; la última historia, Camino a casa, baja al Área Cero). Después: Gran Pugna Académica (repetible), revanchas de líderes y, con los DLC, La máscara turquesa (Noroteo) y El disco índigo (Academia Arándano), en ese orden, más el epílogo de Pecharunt."
+  },
+  {
+   "juegos": [
+    "HEARTGOLD",
+    "SOULSILVER"
+   ],
+   "id": "unown",
+   "fase": 2,
+   "orden": 290,
+   "nivel": 1,
+   "como": "Ruinas Alfa (al oeste de Ciudad Malva). 1) Resuelve los cuatro puzles de piedra: Kabuto (sobre el centro de investigación), Omanyte y Ho-Oh (por la Cueva Unión con Surf y Fuerza) y Aerodactyl (bajo el centro, cruzando el lago con Surf); cada uno abre la sala de abajo y libera un grupo de letras. 2) Abre las cuatro cámaras secretas con la palabra grabada al fondo de cada sala: en la de Kabuto usa una Cuerda Huida, en la de Aerodactyl usa Destello, en la de Omanyte usa una Piedra Agua y en la de Ho-Oh entra con Ho-Oh en el equipo (posliga). 3) Habla con el investigador para que te dé el Bloc Unown y captura las 26 letras en las salas interiores. 4) Con las 26, la pared dorada revela dos formas más: captura «!» y «?» en la entrada de las ruinas, antes de bajar la escalera. Fuente: WikiDex «Ruinas Alfa».",
+   "pokekeep": "si no tienes a Ho-Oh para la última cámara, crea uno legal con la Librería o «Legalizar automáticamente» y ponlo primero del equipo."
+  },
+  {
+   "juegos": [
+    "BLACK2",
+    "WHITE2"
+   ],
+   "id": "medals",
+   "fase": 6,
+   "orden": 680,
+   "como": "El Medallero de Ciudad Gres (sala de la Liga de Medallas) registra 255 medallas de cinco tipos: Avance (historia), Aventura, Batalla, Conexión y Especiales. Ve a por ellas en este orden: las de Avance salen solas con la historia; las de Aventura y Batalla, jugando (pesca, bici, cajas, evoluciones, instalaciones de combate); cada vez que el señor de la Liga de Medallas te llama, recoge las nuevas y sube de rango. Las de Conexión que exigían Pokémon Global Link, la GTS, los combates aleatorios por Wi-Fi, Pokémon Dream Radar o eventos ya no se pueden ganar jugando porque esos servicios cerraron. El bloque del Medallero guarda cada medalla y su fecha.",
+   "pokekeep": "abre la partida, pestaña SAV, botón «Insignias» (Editor de Insignias): marca las que falten una a una o pulsa «Dar todas», y después «Guardar»; finalmente exporta la partida."
+  },
+  {
+   "juegos": [
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "stickers",
+   "fase": 4,
+   "orden": 420,
+   "nivel": 1,
+   "como": "Las dominsignias son pegatinas brillantes que aparecen por el mapa a partir de la isla de Melemele: hay 17 en Melemele, 33 en Akala, 34 en Ula-Ula y 16 en Poni. Recógelas mientras avanzas cada isla y entrégalas a Gabriel Oak en la Playa de Kantai: según cuántas lleves te regala Pokémon del tamaño de un dominante, y con las 100 un Ribombee (Ultrasol) o un Kommo-o (Ultraluna). Las últimas de Poni piden haber llegado a esa isla. No son los sellos del pasaporte. Fuente: WikiDex «Dominsignia»."
+  },
+  {
+   "juegos": [
+    "ZA"
+   ],
+   "id": "mega-stones-special",
+   "fase": 4,
+   "orden": 420,
+   "como": "Sceptilita, Blazikenita, Swampertita, Chesnaughtita, Delphoxita, Greninjanita y Baxcaliburita solo se ganaban subiendo de rango en los combates clasificatorios en línea de cada temporada; Diancita, Mewtwoita X, Mewtwoita Y y Garchompita Z llegaron por regalo misterioso. Dependen de temporadas y distribuciones, así que no cuentan para el cierre base. Fuente: WikiDex «Megapiedra» y la lista de megapiedras de PKHeX (ItemStorage9ZA).",
+   "pokekeep": "pestaña SAV, botón «Objetos»: añade las megapiedras que te falten (Pokekeep solo deja poner las que PKHeX admite en Leyendas Z-A) y guarda."
+  },
+  {
+   "juegos": [
+    "ZA"
+   ],
+   "id": "event-1",
+   "fase": 2,
+   "orden": 275,
+   "nivel": 1,
+   "como": "Con la expansión Megadimensión, tras la historia principal: ayuda a Anya con su dónut y ve al Canal Saison para entrar por primera vez en Luminalia Dimensional; desde entonces Hoopa abre portales con los dónuts de Anya. Sigue la historia de la expansión: completa misiones en las zonas dimensionales para ganar puntos, vence a los Pokémon megaevolucionados descontrolados y a Darkrai en la Isla Lunanueva de Pesadilla, y busca después a Rayquaza para Anya. Los lugares dimensionales tienen a Heatran (Averno Abrasador), Groudon (Tierra del Ocaso), Kyogre (Mar del Albor) y Rayquaza (Gran Pilar Celeste). Las zonas ??? de 5 estrellas traen a Cobalion, Terrakion, Virizion, Latios, Latias y Meloetta; Keldeo aparece tras capturar a los otros tres espadachines místicos. Fuente: WikiDex «Luminalia Dimensional»."
+  },
+  {
+   "juegos": [
+    "ZA"
+   ],
+   "id": "mega-dimension",
+   "fase": 2,
+   "orden": 270,
+   "como": "Requiere la expansión de pago Megadimensión y haber terminado la historia principal. Empieza ayudando a Anya, la pastelera del Gran Hotel Ricachilton, y entra con Hoopa en Luminalia Dimensional por los portales de Ciudad Luminalia. Cada zona dimensional (salvaje, de combate o ???) tiene de 1 a 5 estrellas y tres misiones que dan puntos para avanzar; la historia termina tras vencer y capturar a Darkrai y encontrar a Rayquaza. Los dónuts de Anya suben a tus Pokémon por encima del nivel 100. Fuente: WikiDex «Megadimensión» y «Luminalia Dimensional»."
   }
  ]
 }

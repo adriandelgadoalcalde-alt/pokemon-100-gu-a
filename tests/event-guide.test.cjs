@@ -702,3 +702,15 @@ test('Combates repetibles: solo se niegan mientras no son posibles',()=>{
  assert.equal(v({game:'HEARTGOLD',gameClear:true,badgesTotal:12},'hgss.rematchLeague'),false);
  assert.equal(v({game:'HEARTGOLD',gameClear:true,badgesTotal:16},'hgss.rematchLeague'),undefined);
 });
+
+test('Guía: cada objetivo tiene fase y orden cronológico, y lo de evento dice qué hacer con Pokekeep',()=>{
+ const s=require('node:fs').readFileSync(require('node:path').join(__dirname,'..','atlas.html'),'utf8');
+ const i=s.indexOf('MASTER_DATA=')+12,data=JSON.parse(s.slice(i,s.indexOf('};',i)+1));
+ for(const [g,goals] of Object.entries(data))for(const x of goals){
+  assert.ok(Number.isInteger(x.phase)&&x.phase>=0&&x.phase<=7,g+'/'+x.id+': fase');
+  assert.ok(Number.isInteger(x.order),g+'/'+x.id+': orden');
+  assert.ok((x.how||'').length>=80,g+'/'+x.id+': paso a paso');
+  if(x.tier===2)assert.match(x.how,/Con Pokekeep/,g+'/'+x.id+': falta el paso con Pokekeep');
+  assert.doesNotMatch(x.how,/Con PKHeX/,g+"/"+x.id+": el paso es con Pokekeep");
+ }
+});
