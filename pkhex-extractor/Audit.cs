@@ -52,6 +52,63 @@ public static class Audit
             interpretation = "Recibidas en el guardado, no comprobación de consecución jugando." };
     }
 
+
+    // Revancha del Alto Mando y de Cintia en Diamante/Perla/Platino. Las salas de la Liga no dejan bandera permanente
+    // (pokeplatinum pokemon_league_*_room/scripts.s), pero el Salón de la Fama (bloque extra 0 en 0x20000 de cada mitad de
+    // 0x40000: 30 entradas de 0x16C bytes, 6 Pokémon de 0x3C con especie, nivel, PID y OTID, y la fecha u16 año, u8 mes,
+    // u8 día; luego índice siguiente y total; pie de 0x10 con revisión y tamaño 0x2AB0; hall_of_fame_entries.h) guarda la
+    // fecha de cada victoria. La revancha se activa con la Pokédex Nacional en DP y con FLAG_ARRESTED_CHARON_STARK_MOUNTAIN
+    // (214) en Platino. Una entrada del Salón posterior a la fecha de encuentro de un Pokémon propio que solo se puede
+    // conseguir después de esa condición (o que lo lleva en el equipo) prueba que se ganó con los equipos de revancha:
+    // en DP, Pokémon de la Zona de Combate (rutas 225-230 y áreas 81-85); en Platino, Heatran de la Montaña Dura (84),
+    // que solo aparece tras el arresto de Helio (stark_mountain_room_3/scripts.s).
+    private static object LeagueRematch4(SAV4Sinnoh s)
+    {
+        var d = s.Data;
+        int best = -1; uint bestRev = 0;
+        foreach (var half in new[] { 0, 0x40000 })
+        {
+            int f = half + 0x20000 + 0x2AB0;
+            if (f + 0x10 > d.Length) continue;
+            uint rev = System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(f + 4)..]);
+            int size = System.Buffers.Binary.BinaryPrimitives.ReadInt32LittleEndian(d[(f + 8)..]);
+            if (rev == 0xFFFFFFFF || size != 0x2AB0) continue;
+            if (best < 0 || rev > bestRev) { best = half; bestRev = rev; }
+        }
+        var entries = new List<(DateOnly? date, HashSet<(uint, uint)> mons)>();
+        long total = 0;
+        if (best >= 0)
+        {
+            int o = best + 0x20000;
+            total = System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(o + 0x2AA8 + 4)..]);
+            for (int i = 0; i < Math.Min(total, 30); i++)
+            {
+                int e = o + i * 0x16C;
+                int y = System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(d[(e + 0x168)..]), m = d[e + 0x16A], dd = d[e + 0x16B];
+                if (y < 100) y += 2000;
+                DateOnly? date = m is >= 1 and <= 12 && dd is >= 1 and <= 31 && y is >= 2000 and <= 2099 ? new DateOnly(y, m, Math.Min(dd, DateTime.DaysInMonth(y, m))) : null;
+                var mons = new HashSet<(uint, uint)>();
+                for (int k = 0; k < 6; k++)
+                {
+                    int q = e + k * 0x3C;
+                    if (System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(d[q..]) == 0) continue;
+                    mons.Add((System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(q + 4)..]), System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(q + 8)..])));
+                }
+                entries.Add((date, mons));
+            }
+        }
+        bool pt = s is SAV4Pt;
+        bool? arrested = pt ? s.GetEventFlag(214) : null;
+        var dpAreas = new HashSet<ushort> { 40, 41, 42, 43, 44, 45, 81, 82, 83, 84, 85 };
+        var evidence = s.PartyData.Concat(s.BoxData).Where(pk => pk.Species != 0 && !pk.IsEgg && pk.ID32 == s.ID32
+                && pk.OriginalTrainerName == s.OT && pk.MetDate is not null
+                && (pt ? pk.Version == GameVersion.Pt && pk.Species == 485 && pk.MetLocation == 84
+                       : (pk.Version == GameVersion.D || pk.Version == GameVersion.P) && dpAreas.Contains(pk.MetLocation)))
+            .Select(pk => (met: pk.MetDate!.Value, key: (pk.EncryptionConstant, pk.ID32))).ToList();
+        bool proof = entries.Any(en => evidence.Any(ev => (en.date is { } dt && dt > ev.met) || en.mons.Contains(ev.key)));
+        return new { hallOfFame = total, arrested, nationalDex = s.NationalDex, evidence = evidence.Count, proof };
+    }
+
     public static string? GameId(SaveFile save) => save is SAV3FRLG ? null : save.Version switch
     {
         GameVersion.RD => "RED", GameVersion.GN => save.Language == 1 ? "GREEN" : "BLUE",
@@ -219,6 +276,7 @@ public static class Audit
             // recibido; se mantiene hasta el siguiente desafío) y premio elegido al empezar un desafío (0 = nunca empezado).
             ["tower2"] = save is SAV2 c2 && c2.Version == GameVersion.C ? new {
                 state = (int)c2.Data[c2.Japanese ? 0xA084 : 0x3E45], reward = (int)c2.Data[c2.Japanese ? 0xA084 + 11 : 0x3E45 + 11] } : null,
+            ["leagueRematch4"] = save is SAV4Sinnoh lr4 ? LeagueRematch4(lr4) : null,
             ["tower4dp"] = save is SAV4DP dp4 ? new { maxStreaks = new[] { 9, 11, 13, 15, 17 }.Select(i => (long)dp4.Records.GetRecord16(i)).ToArray() } : null,
             ["tower8b"] = save is SAV8BS bs ? new { maxStreaks = bs.BattleTower.Records.Select(r => (long)Math.Max(r.RenshouCount, r.RenshouCountOld)).ToArray() } : null,
             // Diamante Brillante/Perla Reluciente: tipos de estatua distintos que se poseen (estrella de la tarjeta: el juego cuenta

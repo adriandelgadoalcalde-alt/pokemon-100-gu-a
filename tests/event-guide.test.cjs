@@ -726,3 +726,13 @@ test('Guía: cada regla por título encuentra su objetivo (un título cambiado n
  assert.equal(n,(s.match(/byLabel\(/g)||[]).length,'todas las reglas por título se comprueban');
  assert.deepEqual(muertas,[]);
 });
+
+test('Sinnoh: revancha de la Liga por el Salón de la Fama (sí con prueba de fecha, no si aún no es posible, sin dato en otro caso)',()=>{
+ const O=require('../src/engine/objectives.js'),f=(game,lr)=>O.fromDiagnosis({game,leagueRematch4:lr}).find(x=>x.id==='battle.sinnoh.leagueRematch')?.value;
+ assert.equal(f('PLATINUM',{hallOfFame:3,arrested:true,nationalDex:true,evidence:1,proof:true}),true);
+ assert.equal(f('PLATINUM',{hallOfFame:3,arrested:false,nationalDex:true,evidence:0,proof:false}),false);
+ assert.equal(f('PLATINUM',{hallOfFame:3,arrested:true,nationalDex:true,evidence:0,proof:false}),undefined);
+ assert.equal(f('DIAMOND',{hallOfFame:0,arrested:null,nationalDex:false,evidence:0,proof:false}),false);
+ assert.equal(f('PEARL',{hallOfFame:2,arrested:null,nationalDex:false,evidence:0,proof:false}),false);
+ assert.equal(f('PEARL',{hallOfFame:2,arrested:null,nationalDex:true,evidence:4,proof:false}),undefined);
+});

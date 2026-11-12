@@ -65,9 +65,9 @@ function masteryEvaluation(goal,g){
    const byLabel=(games,re)=>games.includes(g.id)&&re.test(item.label);
    let rule=null;
    if(['SCARLET','VIOLET'].includes(g.id)&&item.id==='battle0')auto='postgame.repeatableBattles';
-   if(g.id==='DIAMOND'&&item.id==='battle1')auto='postgame.repeatableBattles';
-   if(g.id==='PEARL'&&item.id==='battle1')auto='postgame.repeatableBattles';
-   if(g.id==='PLATINUM'&&item.id==='battle1')auto='postgame.repeatableBattles';
+   if(g.id==='DIAMOND'&&item.id==='battle1')auto='battle.sinnoh.leagueRematch';
+   if(g.id==='PEARL'&&item.id==='battle1')auto='battle.sinnoh.leagueRematch';
+   if(g.id==='PLATINUM'&&item.id==='battle1')auto='battle.sinnoh.leagueRematch';
    if(g.id==='WHITE'&&item.id==='final-boss-cynthia')auto='postgame.repeatableBattles';
    if(g.id==='BLACK'&&item.id==='final-boss-cynthia')auto='postgame.repeatableBattles';
    if(g.id==='WHITE2'&&item.id==='final-boss-cynthia')auto='postgame.repeatableBattles';
@@ -76,7 +76,7 @@ function masteryEvaluation(goal,g){
    if(g.id==='BLACK'&&item.id==='final-boss')auto='postgame.repeatableBattles';
    if(g.id==='WHITE2'&&item.id==='final-boss')auto='postgame.repeatableBattles';
    if(g.id==='BLACK2'&&item.id==='final-boss')auto='postgame.repeatableBattles';
-   if(g.id==='PLATINUM'&&item.id==='final-boss')auto='postgame.repeatableBattles';
+   if(g.id==='PLATINUM'&&item.id==='final-boss')auto='battle.sinnoh.leagueRematch';
    if(g.id==='LETGOE'&&item.id==='postgame')auto='postgame.repeatableBattles';
    if(g.id==='LETGOP'&&item.id==='postgame')auto='postgame.repeatableBattles';
    if(g.id==='HEARTGOLD'&&item.id==='battle0')auto='hgss.rematchLeague';

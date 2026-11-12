@@ -362,6 +362,14 @@
   // Leyendas Z-A: Floette flor eterna capturado (forma 5 de 670 en la Pokédex), recompensa del rango 15 de los Juegos Z-A infinitos.
   if(typeof d.za9?.floetteEternalCaught==='boolean')add('za.floetteEternal',d.za9.floetteEternalCaught,'za9');
   // Diamante/Perla: récord de racha de la Torre Batalla (GameStats 0x35-0x3D de pokediamond, GetTrainerCardLevel).
+  // Diamante/Perla/Platino: revancha del Alto Mando y de Cintia por el Salón de la Fama (pkhex-extractor/Audit.cs,
+  // LeagueRematch4): una entrada posterior al encuentro de un Pokémon propio que solo existe tras la condición de la
+  // revancha (Nacional en DP, arresto de Helio en Platino) la prueba; sin Salón, sin Nacional o sin el arresto, aún no es posible.
+  if(['DIAMOND','PEARL','PLATINUM'].includes(d.game)&&d.leagueRematch4&&Number.isInteger(d.leagueRematch4.hallOfFame)){
+   const lr=d.leagueRematch4,pt=d.game==='PLATINUM';
+   if(lr.proof===true)add('battle.sinnoh.leagueRematch',true,'leagueRematch4');
+   else if(lr.hallOfFame===0||(pt&&lr.arrested===false)||(!pt&&lr.nationalDex===false))add('battle.sinnoh.leagueRematch',false,'leagueRematch4');
+  }
   if(Array.isArray(d.tower4dp?.maxStreaks)&&d.tower4dp.maxStreaks.length)add('battle.dp.tower100',d.tower4dp.maxStreaks.some(v=>v>=100),'tower4dp');
   // Diamante Brillante/Perla Reluciente: 100 rivales seguidos en alguna modalidad de la Torre Batalla.
   if(Array.isArray(d.tower8b?.maxStreaks)&&d.tower8b.maxStreaks.length)add('battle.bdsp.tower100',d.tower8b.maxStreaks.some(v=>v>=100),'tower8b');
