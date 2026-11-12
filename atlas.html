@@ -189,6 +189,8 @@ const $=q=>document.querySelector(q);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let store={checks:{},history:[],game:'SOULSILVER',evidence:{},goalChecks:{},masterChecks:{}};
 let recoveryRaw=null;try {recoveryRaw=localStorage.getItem(KEY);if(recoveryRaw)store=PokemonProgress.restoreAtlas(store,JSON.parse(recoveryRaw),CATALOG.games.map(g=>g.id),compactEvidence)} catch(e){if(recoveryRaw)store.recoveryBackup=recoveryRaw;store.recoveryWarning=true;}
+// Enlace directo a una edición (p. ej. desde el menú de ediciones de la guía clásica): atlas.html?game=EMERALD.
+try{const q=new URLSearchParams(location.search).get('game');if(q&&CATALOG.games.some(g=>g.id===q))store.game=q;}catch{}
 if(!CATALOG.games.some(g=>g.id===store.game))store.game='SOULSILVER';
 let genFilter=CATALOG.games.find(g=>g.id===store.game).generation,view='mission',textFilter='',pending=false;
 const formatTime=t=>typeof t==='string'&&t.trim()?t:'sin dato';
