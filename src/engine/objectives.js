@@ -270,6 +270,12 @@
    if(fl.has(133))add('card.bdsp.diplomaNational',true,'events');
    if(fl.has(1713))add('bdsp.cynthiaRematch',true,'events');
   }
+  // Alola: núcleos de Zygarde recogidos = SYS_FLAG_ZIGARUDE_CORE1..5_GET (SL 0xC63-0xC67, USUL 0x1023-0x1027;
+  // FlagsEditorEXPlugin). Contrastado: Sol pública acabada (95 células) 5/5, partidas recién empezadas 0/5.
+  if(['SUN','MOON','ULTRASUN','ULTRAMOON'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
+   const fl=new Set(d.events.activeFlags),b=['SUN','MOON'].includes(d.game)?0xC63:0x1023;
+   add('alola.zygardeCores',[0,1,2,3,4].every(i=>fl.has(b+i)),'events');
+  }
   // HGSS: el director de la Mansión Azulona pone FLAG_SAW_JOHTO_DEX_CERTIFICATE 0x143 y FLAG_SAW_NATIONAL_DEX_CERTIFICATE
   // 0x144 al enseñar cada diploma (pokeheartgold, scr_seq_0798_T07R0203 y include/constants/flags.h).
   if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){

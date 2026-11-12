@@ -644,3 +644,9 @@ test('DBPR: enfermera (68), diplomas (132/133) y revancha de Cintia (1713) por E
  assert.equal(v([68],'card.nurseRecognition'),true);assert.equal(v([133],'card.bdsp.diplomaNational'),true);
  assert.equal(v([141],'bdsp.cynthiaRematch'),undefined);assert.equal(v([1713],'bdsp.cynthiaRematch'),true);
 });
+
+test('Alola: 5 núcleos de Zygarde (SL 0xC63-0xC67, USUL 0x1023-0x1027)',()=>{
+ const O=require('../src/engine/objectives.js'),v=(g,f)=>O.fromDiagnosis({game:g,events:{activeFlags:f}}).find(x=>x.id==='alola.zygardeCores')?.value;
+ assert.equal(v('SUN',[0xC63,0xC64,0xC65,0xC66,0xC67]),true);assert.equal(v('SUN',[0xC63]),false);
+ assert.equal(v('ULTRAMOON',[0x1023,0x1024,0x1025,0x1026,0x1027]),true);
+});
