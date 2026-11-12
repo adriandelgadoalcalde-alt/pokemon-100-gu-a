@@ -216,6 +216,14 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   zona del Rascacielos Negro) y 148/149 «Cavernogal Profundo/Abismal» (Cavernogal Blanco). La partida guarda cada
   medalla (Medallero), así que el objetivo se acredita sin adivinar.
 
+- **Combates repetibles de Teselia: comprobado en los scripts de la ROM (12/11/2026).** Con un lector propio de los scripts
+  de 5.ª generación (`gen5_scripts.py`/`gen5_dump.py` en el PC; textos con `gen5_textos.py`, incluido el formato comprimido
+  de 9 bits) se leyó qué escribe el juego al ganar: Cintia en Pueblo Arenisca (N/B a/0/5/7 archivo 834; N2/B2 a/0/5/6
+  archivo 832) y Morimoto/Nishino en Game Freak (archivo 96) solo ponen banderas `TMFLG_` (diarias, se borran cada día).
+  Los combates con guion tampoco usan la bandera de entrenador (0x58C/0x5F0 + ID): las partidas del propietario tienen
+  282/360 entrenadores normales marcados y ninguno de estos jefes, ni siquiera Iris o Mirto. Por eso estos objetivos son
+  manuales: el juego no guarda la victoria.
+
 Pendiente con motivo (no se acredita solo para no adivinar):
 
 - **Torre Batalla de Diamante/Perla (racha de 100):** en pokediamond el bloque (`FrontierData`) solo guarda BP, banderas y
