@@ -799,3 +799,8 @@ test("Let's Go: el Amuleto Iris va en el bolsillo general",()=>{
  assert.deepEqual(v({game:'LETGOE',keyItems:[],inventory:[{pocket:'Items',items:[{id:1,count:1}]}]}),[false]);
  assert.deepEqual(v({game:'X',keyItems:[{id:632,count:1}]}),[true]);
 });
+
+test('Verde japonés usa las banderas de Rojo/Azul (Mewtwo vencido = EVENT_BEAT_MEWTWO)',()=>{
+ const O=require('../src/engine/objectives.js'),v=flags=>O.fromDiagnosis({game:'GREEN',events:{activeFlags:flags,work:[]}}).find(x=>x.id==='event.gen1.mewtwo')?.value;
+ assert.equal(v([2241]),true);assert.equal(v([119]),false);
+});
