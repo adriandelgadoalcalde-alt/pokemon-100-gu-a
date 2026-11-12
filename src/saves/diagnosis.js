@@ -23,9 +23,22 @@
   if(Array.isArray(e.keyItems))result.keyItems=e.keyItems.filter(i=>i&&Number.isInteger(i.id)&&i.id>0&&Number.isInteger(i.count)&&i.count>0)
    .map(i=>({id:i.id,count:i.count}));
   if(e.extractor&&typeof e.extractor==='object')result.extractor={engine:String(e.extractor.engine||''),engineCommit:String(e.extractor.engineCommit||'')};
-  for(const key of ['integrity','events','medals','passport','battleTree','pokeathlon','pokewalker','field','namedBlocks','location','switchPosition'])
+  for(const key of ['integrity','events','medals','passport','battleTree','pokeathlon','pokewalker','field','namedBlocks','location','switchPosition','questWork9a'])
    if(e[key]&&typeof e[key]==='object'&&!Array.isArray(e[key]))result[key]=JSON.parse(JSON.stringify(e[key]));
   return result;
+ }
+ // Leyendas Z-A: KEventWorkQuest guarda cada misión con clave FNV-1a 64 de su nombre interno y 255 al completarla
+ // (research/switch/za-quests.json). Se traducen a marcadores de historia (ZA_MISSION_NN) y al fin de la historia
+ // (misión 37, el combate final en la Torre Prisma).
+ function zaQuests(parsed){
+  const Q=typeof module==='object'&&module.exports?require('./za-quests-data.js'):root.PokemonZAQuests;
+  const work=parsed.questWork9a?.questWork;if(!Q||!work||typeof work!=='object')return parsed;
+  const blocks={...(parsed.namedBlocks||{})};let mainDone=0,sideDone=0,sideBase=0;
+  for(const [n,hash]of Q.main){if(!(hash in work))continue;const done=Number(work[hash])===Q.done;blocks['ZA_MISSION_'+String(n).padStart(2,'0')]=done;if(done)mainDone++;}
+  for(const [n,hash,title]of Q.side){if(!(hash in work)||!title)continue;sideBase++;if(Number(work[hash])===Q.done)sideDone++;}
+  blocks.ZA_MISSIONS_DONE=mainDone;blocks.ZA_SIDE_BASE_DONE=sideDone;blocks.ZA_SIDE_BASE_ALL=sideBase>0&&sideDone===sideBase;
+  const clear=blocks['ZA_MISSION_'+String(Q.clearMission).padStart(2,'0')];
+  return {...parsed,namedBlocks:blocks,gameClear:typeof parsed.gameClear==='boolean'?parsed.gameClear:typeof clear==='boolean'?clear:parsed.gameClear};
  }
  function documentedClear(e){
   const id=['RUBY','SAPPHIRE','EMERALD','FIRERED','LEAFGREEN'].includes(e?.game)?'story.gba.gameClear':['SCARLET','VIOLET'].includes(e?.game)?'story.paldea.clear':null;
@@ -54,6 +67,7 @@
    const extra=root.PokemonBDSPFlags.read(bytes);
    if(extra)parsed={...parsed,events:extra.events,badgesTotal:parsed.badgesTotal??extra.badgesTotal,gameClear:parsed.gameClear??extra.gameClear};
   }
+  if(parsed.game==='ZA'&&parsed.questWork9a)parsed=zaQuests(parsed);
   if(root.PokemonDSLocation&&!parsed.location){
    try{const location=root.PokemonDSLocation.read(bytes,parsed.game,parsed.saveBase,parsed.languageId,parsed.namedBlocks,parsed.switchPosition);if(location)parsed={...parsed,location};}catch{}
   }
@@ -94,6 +108,6 @@
   if(old&&!identical){next.evidenceArchive=next.evidenceArchive||{};next.evidenceArchive[game]=[old,...(next.evidenceArchive[game]||[])];}
   next.evidence[game]=diagnosis;next.game=game;return next;
  }
- const api={normalize,read,profile,apply,supported,documentedClear};
+ const api={normalize,read,profile,apply,supported,documentedClear,zaQuests};
  if(typeof module==='object'&&module.exports)module.exports=api;else root.PokemonDiagnosis=api;
 })(typeof globalThis==='object'?globalThis:this);

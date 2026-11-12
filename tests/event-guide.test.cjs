@@ -297,3 +297,14 @@ test("Let's Go: áreas exteriores por rectángulos de zona (el menor gana si se 
  const sin=L.read(null,'LETGOP',0,0,{},{mapHash:L.fnv64('area02')});assert.equal(sin.precision,'region');assert.match(sin.name,/Pueblo Paleta/);
  assert.equal(L.read(null,'LETGOP',0,0,{},{mapHash:L.fnv64('t001r01')}).name,'Pueblo Paleta');
 });
+
+test('Leyendas Z-A: misiones desde KEventWorkQuest (FNV-1a del nombre, 255 = completada) e historia por misión',()=>{
+ const D=require('../src/saves/diagnosis.js'),Q=require('../src/saves/za-quests-data.js'),G=require('../src/engine/event-guide.js'),O=require('../src/engine/objectives.js');
+ const work=done=>Object.fromEntries([...Q.main.map(([n,h])=>[h,n<=done?255:0]),...Q.side.map(([n,h])=>[h,0])]);
+ const half=D.zaQuests({game:'ZA',questWork9a:{questWork:work(20)}});
+ assert.equal(half.namedBlocks.ZA_MISSION_20,true);assert.equal(half.namedBlocks.ZA_MISSION_21,false);assert.equal(half.gameClear,false);
+ const a=G.analyze(half,'ZA');assert.equal(a.story.next.label,'Misión principal 21: '+Q.main[20][3]);
+ const full=D.zaQuests({game:'ZA',questWork9a:{questWork:work(42)}});assert.equal(full.gameClear,true);assert.equal(full.namedBlocks.ZA_MISSIONS_DONE,42);
+ assert.equal(O.fromDiagnosis(full).find(f=>f.id==='story.gameClear').value,true);
+ assert.equal(D.zaQuests({game:'ZA',questWork9a:{questWork:{}}}).gameClear,undefined); // sin claves no se deduce nada
+});

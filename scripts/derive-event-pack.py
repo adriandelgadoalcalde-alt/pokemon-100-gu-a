@@ -5,6 +5,7 @@ Cada bandera o variable citada se resuelve en la cabecera de su edición y debe 
 al menos un sitio que la escriba (scripts o código), fuera de depuración. No usa ROM
 ni partidas. Uso: python3 -I scripts/derive-event-pack.py <pack> [--check]
 """
+import hashlib
 import json
 import re
 import subprocess
@@ -162,6 +163,28 @@ def build(pack):
     spec = json.loads((ROOT / 'research' / 'events' / f'{pack}.json').read_text())
     families = {}
     for family, source in spec['repos'].items():
+        if source['kind'] == 'zaquests':
+            # Leyendas Z-A: marcadores calculados en src/saves/diagnosis.js (zaQuests) desde KEventWorkQuest con la tabla
+            # research/switch/za-quests.json; aquí solo se admite lo que esa tabla define.
+            raw = (ROOT / source['file']).read_bytes()
+            if 'sha256:' + hashlib.sha256(raw).hexdigest()[:16] != source['rev']:
+                fail(f'{source["file"]} cambió; actualiza su huella en el paquete')
+            table = json.loads(raw.decode('utf-8'))
+            valid = {'ZA_MISSION_%02d' % r['mission'] for r in table['main'] if 'mission' in r} | {'ZA_SIDE_BASE_ALL', 'ZA_MISSIONS_DONE', 'ZA_SIDE_BASE_DONE'}
+            names, where = set(), {}
+            for row in spec['story'].get(family, []):
+                names.update(x[6:] for x in [row.get('flag', ''), *row.get('anyFlags', [])] if x.startswith('block:'))
+            for entry in spec['secrets']:
+                cond = entry.get('conditions', {}).get(family) or {}
+                for x in [cond.get('done'), cond.get('doneAlso'), *cond.get('doneAll', [])]:
+                    if x and x.startswith('block:'):
+                        names.add(x[6:])
+            for name in sorted(names):
+                if name not in valid:
+                    fail(f'{name} no está definido por {source["file"]}')
+                where['block:' + name] = [source['file']]
+            families[family] = {'flags': {}, 'vars': {}, 'sources': where}
+            continue
         if source['kind'] == 'pkhexblocks':
             pkhex = ROOT / '.cache' / 'pkhex'
             head = subprocess.run(['git', '-C', str(pkhex), 'rev-parse', 'HEAD'], capture_output=True, text=True).stdout.strip()

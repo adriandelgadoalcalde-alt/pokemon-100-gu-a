@@ -1,5 +1,5 @@
 {
-  "about": "Hitos y secretos de Espada/Escudo, Leyendas: Arceus y Escarlata/Púrpura a partir de los bloques con nombre del accesor fijado de PKHeX.",
+  "about": "Hitos y secretos de Espada/Escudo, Leyendas: Arceus y Escarlata/Púrpura a partir de los bloques con nombre del accesor fijado de PKHeX; Leyendas Z-A a partir de sus variables de misión (KEventWorkQuest), con los nombres y títulos sacados de la copia propia.",
   "pack": "gen89",
   "confidence": "documentado en PKHeX (nombres de bloques), sin script fuente",
   "repos": {
@@ -17,6 +17,12 @@
       "kind": "pkhexblocks",
       "rev": "96e33e7432d900e5345afdfd117eabfac43f5bbd",
       "file": "PKHeX.Core/Saves/Access/SaveBlockAccessor9SV.cs"
+    },
+    "ZA": {
+      "kind": "zaquests",
+      "repo": "za-quests.json",
+      "rev": "sha256:5343070e5bb61040",
+      "file": "research/switch/za-quests.json"
     }
   },
   "families": {
@@ -30,6 +36,9 @@
     "SV": [
       "SCARLET",
       "VIOLET"
+    ],
+    "ZA": [
+      "ZA"
     ]
   },
   "story": {
@@ -116,6 +125,218 @@
           "block:KBattleTowerDoublesVictory"
         ],
         "label": "Campeón de Galar (consta por victorias en la Torre Batalla, que se abre tras el título)"
+      }
+    ],
+    "ZA": [
+      {
+        "mission": "01",
+        "flag": "block:ZA_MISSION_01",
+        "label": "Misión principal 1: ¡Recupera tu bolsa!"
+      },
+      {
+        "mission": "01",
+        "flag": "block:ZA_MISSION_02",
+        "label": "Misión principal 2: Sal de la zona de combate"
+      },
+      {
+        "mission": "01",
+        "flag": "block:ZA_MISSION_03",
+        "label": "Misión principal 3: Vida nueva en Ciudad Luminalia"
+      },
+      {
+        "mission": "01",
+        "flag": "block:ZA_MISSION_04",
+        "label": "Misión principal 4: Los Juegos Z-A"
+      },
+      {
+        "mission": "02",
+        "flag": "block:ZA_MISSION_05",
+        "label": "Misión principal 5: La ciudad a los pies de la Torre Prisma"
+      },
+      {
+        "mission": "02",
+        "flag": "block:ZA_MISSION_06",
+        "label": "Misión principal 6: A por el rango X"
+      },
+      {
+        "mission": "02",
+        "flag": "block:ZA_MISSION_07",
+        "label": "Misión principal 7: A por el rango W"
+      },
+      {
+        "mission": "02",
+        "flag": "block:ZA_MISSION_08",
+        "label": "Misión principal 8: A por el rango V"
+      },
+      {
+        "mission": "02",
+        "flag": "block:ZA_MISSION_09",
+        "label": "Misión principal 9: Persigue al Pokémon misterioso"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_10",
+        "label": "Misión principal 10: Los secretos de la megaevolución"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_11",
+        "label": "Misión principal 11: El Mega-Slowbro descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_12",
+        "label": "Misión principal 12: El Mega-Camerupt descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_13",
+        "label": "Misión principal 13: El Mega-Victreebel descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_14",
+        "label": "Misión principal 14: A por el rango E"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_15",
+        "label": "Misión principal 15: Una misión para el Equipo MZ"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_16",
+        "label": "Misión principal 16: A por el rango D"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_17",
+        "label": "Misión principal 17: El Mega-Beedrill descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_18",
+        "label": "Misión principal 18: El Mega-Hawlucha descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_19",
+        "label": "Misión principal 19: El Mega-Banette descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_20",
+        "label": "Misión principal 20: El encargo del Clan Corrosión"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_21",
+        "label": "Misión principal 21: El Mega-Mawile descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_22",
+        "label": "Misión principal 22: El Mega-Barbaracle descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_23",
+        "label": "Misión principal 23: El Mega-Ampharos descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_24",
+        "label": "Misión principal 24: A por el rango C"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_25",
+        "label": "Misión principal 25: Combate Pokémon en la arena"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_26",
+        "label": "Misión principal 26: La invitación de la SCL"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_27",
+        "label": "Misión principal 27: El Mega-Froslass descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_28",
+        "label": "Misión principal 28: El Mega-Altaria descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_29",
+        "label": "Misión principal 29: El Mega-Venusaur descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_30",
+        "label": "Misión principal 30: A por el rango B"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_31",
+        "label": "Misión principal 31: Reunión con Airén"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_32",
+        "label": "Misión principal 32: El Mega-Dragonite descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_33",
+        "label": "Misión principal 33: El Mega-Tyranitar descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_34",
+        "label": "Misión principal 34: El Mega-Starmie descontrolado"
+      },
+      {
+        "mission": "04",
+        "flag": "block:ZA_MISSION_35",
+        "label": "Misión principal 35: A por el rango A"
+      },
+      {
+        "mission": "05",
+        "flag": "block:ZA_MISSION_36",
+        "label": "Misión principal 36: Actividad irregular en la Torre Prisma"
+      },
+      {
+        "mission": "05",
+        "flag": "block:ZA_MISSION_37",
+        "label": "Misión principal 37: El plan para salvar Ciudad Luminalia"
+      },
+      {
+        "mission": "06",
+        "flag": "block:ZA_MISSION_38",
+        "label": "Misión principal 38: El futuro de Ciudad Luminalia"
+      },
+      {
+        "mission": "06",
+        "flag": "block:ZA_MISSION_39",
+        "label": "Misión principal 39: Los Juegos Z-A Infinitos"
+      },
+      {
+        "mission": "06",
+        "flag": "block:ZA_MISSION_40",
+        "label": "Misión principal 40: El que da"
+      },
+      {
+        "mission": "06",
+        "flag": "block:ZA_MISSION_41",
+        "label": "Misión principal 41: El que quita"
+      },
+      {
+        "mission": "06",
+        "flag": "block:ZA_MISSION_42",
+        "label": "Misión principal 42: La preservación del equilibrio"
       }
     ]
   },
@@ -766,6 +987,29 @@
             }
           ],
           "meaning": "Bloques documentados en PKHeX."
+        }
+      }
+    },
+    {
+      "id": "za.side",
+      "families": [
+        "ZA"
+      ],
+      "category": "Colección",
+      "mission": "06",
+      "title": "Misiones secundarias de Ciudad Luminalia (juego base)",
+      "placeName": {
+        "ZA": "Ciudad Luminalia"
+      },
+      "requires": "Se desbloquean a lo largo de la historia; algunas solo tras el final.",
+      "steps": [
+        "Abre la lista de misiones del menú: cada secundaria indica quién la encarga y dónde.",
+        "Las que el guardado marca como no completadas aparecen como pendientes en la lista del juego."
+      ],
+      "conditions": {
+        "ZA": {
+          "done": "block:ZA_SIDE_BASE_ALL",
+          "meaning": "Las secundarias con título del juego base completadas (KEventWorkQuest = 255)."
         }
       }
     }

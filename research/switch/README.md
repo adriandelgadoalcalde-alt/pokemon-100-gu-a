@@ -14,7 +14,19 @@ PKHeX.Core fijadas, en solo lectura:
 
 Herramienta local para leer juegos propios de Switch: un programa de consola con LibHac 0.19.0 (NuGet) en el PC, con las claves propias; abre el NSP/XCI con su actualización y busca o extrae ficheros de la RomFS. No se publica ni sale del PC.
 
-Leyendas Z-A: la historia vive en `KEventWorkQuest` (pares hash → valor) y los nombres de esas misiones no son públicos; sin ellos no se interpreta su avance (se muestra solo la ubicación).
+Leyendas Z-A: la historia vive en `KEventWorkQuest` (0xB9B223B9, pares clave u64 → valor u64). Los nombres de las
+variables (`SYS_WORK_MAINQUEST_AA_BB`, `SYS_WORK_QUEST_N`) y los títulos en español de cada misión salen de la copia
+propia (`ik_event/bin/flag/quest_work.bin`, `ik_message/dat/Spanish/common/questlist_main|questlist_sub`): los paquetes
+Trinity (`arc/data.trpfd` + `arc/data.trpfs`, esquemas de pkNX) están comprimidos con Oodle Kraken y se leen en el PC
+con `tools/ooz` (descompresor abierto de powzix, GPL-3.0); el juego base viene en `.nsz` y se descomprime con `nsz`
+pasándole las claves en su sitio. La clave de cada variable es el FNV-1a de 64 bits de su nombre: casan las 322 de la
+partida del propietario y las 301 de la pública de RoC's PC (también `system_work`, `system_flag` y `event_flag`).
+Valores: 0 sin hacer y 255 completada (partida del propietario: las 42 principales y 256 de 263 secundarias; pública:
+118 de 256 secundarias). La numeración de las 42 misiones principales con título coincide con la del juego (40, 41 y
+42 = Xerneas, Yveltal y Zygarde); el combate final de la historia es la misión 37 («El plan para salvar Ciudad
+Luminalia», `t1_last_battle`), que marca el fin de la historia. Tabla: `za-quests.json` → `src/saves/za-quests-data.js`
+(`scripts/derive-za-quests.py`). Límite: no hay partida pública a mitad de la historia principal para un contraste
+negativo de las principales (sí de las secundarias); las 60 secundarias 204-263 no tienen título en `questlist_sub`.
 
 El motor se compila con `scripts/build-browser-engine.sh` (SDK de .NET 10 de Ubuntu, sin el componente wasm-tools,
 como la versión anterior) y `scripts/audit-browser-engine.cjs` comprueba los hashes.

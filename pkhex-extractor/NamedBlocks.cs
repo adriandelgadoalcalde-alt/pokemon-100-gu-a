@@ -47,6 +47,37 @@ public static class NamedBlocks
         return result;
     }
 
+    // Leyendas Z-A: pares (clave u64, valor u64) de KEventWorkQuest (0xB9B223B9, quest_work) y de KEventWork
+    // (0xFADA7742, system_work), en solo lectura. La clave es el FNV-1a 64 del nombre interno de la variable
+    // (research/switch/za-quests.json); los nombres y su significado se resuelven fuera.
+    public static SortedDictionary<string, object>? QuestWork9a(SaveFile save)
+    {
+        if (save is not SAV9ZA za)
+            return null;
+        var r = new SortedDictionary<string, object>(StringComparer.Ordinal);
+        try
+        {
+            foreach (var (name, key) in new[] { ("questWork", 0xB9B223B9u), ("systemWork", 0xFADA7742u) })
+            {
+                var data = za.Blocks.GetBlock(key).Data;
+                var pairs = new SortedDictionary<string, ulong>(StringComparer.Ordinal);
+                for (int i = 0; i + 16 <= data.Length; i += 16)
+                {
+                    ulong k = System.Buffers.Binary.BinaryPrimitives.ReadUInt64LittleEndian(data[i..]);
+                    if (k is 0 or 0xCBF29CE484222645)
+                        continue;
+                    pairs[k.ToString("X16")] = System.Buffers.Binary.BinaryPrimitives.ReadUInt64LittleEndian(data[(i + 8)..]);
+                }
+                r[name] = pairs;
+            }
+        }
+        catch (Exception)
+        {
+            return r.Count == 0 ? null : r;
+        }
+        return r;
+    }
+
     // Posición del jugador en Switch, con las clases de PKHeX (solo lectura). Se exporta en bruto: el nombre
     // interno del mapa (Leyendas), su hash (Let's Go, Espada/Escudo) o los bloques de Escarlata/Púrpura;
     // la traducción a lugares oficiales se hace fuera, con tablas documentadas.

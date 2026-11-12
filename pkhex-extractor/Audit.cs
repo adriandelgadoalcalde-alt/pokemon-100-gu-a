@@ -178,6 +178,8 @@ public static class Audit
             var position = NamedBlocks.Position(save);
             if (position is not null)
                 result["switchPosition"] = position;
+            if (NamedBlocks.QuestWork9a(save) is { } quests)
+                result["questWork9a"] = quests;
         }
         return result;
     }
