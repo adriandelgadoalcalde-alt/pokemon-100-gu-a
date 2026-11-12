@@ -556,15 +556,15 @@
         "E"
       ],
       "category": "Evento de legado",
-      "legacy": "Requiere el Ticket Aurora de una distribución.",
+      "legacy": "Requiere el Ori-Ticket de una distribución.",
       "species": [
         386
       ],
       "title": "Isla Origen: Deoxys",
       "place": "MAPSEC_BIRTH_ISLAND",
-      "requires": "Ticket Aurora.",
+      "requires": "Ori-Ticket.",
       "steps": [
-        "Enseña el Ticket Aurora en el puerto de Ciudad Portual o Ciudad Calagua.",
+        "Enseña el Ori-Ticket en el puerto de Ciudad Portual o Ciudad Calagua.",
         "Toca el triángulo y síguelo cada vez que se mueva hasta completar la secuencia; entonces aparece Deoxys (nivel 30)."
       ],
       "conditions": {
@@ -801,15 +801,15 @@
         "FRLG"
       ],
       "category": "Evento de legado",
-      "legacy": "Requiere el Ticket Aurora de una distribución.",
+      "legacy": "Requiere el Ori-Ticket de una distribución.",
       "species": [
         386
       ],
       "title": "Isla Origen: Deoxys",
       "place": "MAPSEC_BIRTH_ISLAND",
-      "requires": "Ticket Aurora y Red de Celio conectada.",
+      "requires": "Ori-Ticket y Red de Celio conectada.",
       "steps": [
-        "Enseña el Ticket Aurora en el puerto de Ciudad Carmín o de las Islas Sete.",
+        "Enseña el Ori-Ticket en el puerto de Ciudad Carmín o de las Islas Sete.",
         "Toca el triángulo y síguelo hasta completar la secuencia; aparece Deoxys (nivel 30)."
       ],
       "conditions": {
@@ -877,7 +877,7 @@
       "category": "Desafío",
       "title": "Frente Batalla: los siete símbolos de plata",
       "place": "MAPSEC_BATTLE_FRONTIER",
-      "requires": "Liga superada y Ticket Barco hasta el Frente Batalla.",
+      "requires": "Liga superada y Ticket del Barco hasta el Frente Batalla.",
       "steps": [
         "Cada As del Frente aparece en individual al alcanzar su racha: Torre Batalla: combate 35 (primer encuentro); Domo Batalla: torneo 5.º (primer encuentro); Palacio Batalla: combate 21 (primer encuentro); Sala Batalla: combate 28 (primer encuentro); Fábrica Batalla: combate 21 (primer encuentro); Tubo Batalla: sala 28 (primer encuentro); Pirámide Batalla: piso 21 (primer encuentro).",
         "Venciendo al As por primera vez obtienes el símbolo de plata de esa instalación; se guarda en tu Pase Frente."

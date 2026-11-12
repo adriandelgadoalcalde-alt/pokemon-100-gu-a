@@ -276,11 +276,11 @@
       "Primera Liga"
     ],
     "steps": [
-      "Ve al laboratorio de Elm para recibir el Ticket Barco tras el Hall de la Fama. Dirígete al puerto de Olivo; Oak actualiza la Pokédex a Nacional antes de embarcar.",
+      "Ve al laboratorio de Elm para recibir el Ticket del Barco tras el Hall de la Fama. Dirígete al puerto de Olivo; Oak actualiza la Pokédex a Nacional antes de embarcar.",
       "Sube al S.S. Aqua y atiende al abuelo que busca a su nieta. Para avanzar por la cubierta inferior localiza al marinero que no ha vuelto a su puesto y despiértalo en su camarote.",
       "Encuentra a la niña en la zona del capitán y sigue su juego hasta devolverla al abuelo. Completa la conversación para que termine el primer viaje y puedas desembarcar.",
       "En Ciudad Carmín puedes empezar el gimnasio de Lt. Surge. A partir de aquí el recorrido de medallas de Kanto admite variaciones; la avería de la Central y Snorlax condicionan varias conexiones entre ciudades.",
-      "Conserva el Ticket Barco para los viajes posteriores; el Magnetotrén requiere reparar la Central y conseguir por separado el Abono de la Copiona."
+      "Conserva el Ticket del Barco para los viajes posteriores; el Magnetotrén requiere reparar la Central y conseguir por separado el Abono de la Copiona."
     ],
     "check": "Nacional y primer desembarco en Kanto.",
     "pitfalls": [],

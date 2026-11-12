@@ -151,7 +151,7 @@
    "id": "items0",
    "fase": 0,
    "orden": 500,
-   "como": "En la historia: Ticket Barco del profesor Elm tras la Liga (S.S. Aqua a Kanto) y el Pase del Tren Magnético, que te da Imitadora en Ciudad Azafrán al devolverle el objeto perdido que encuentras en el Club de Fans de Ciudad Carmín (tras arreglar la Central Energía) y, para el Monte Plateado, las 16 medallas: con ellas el profesor Oak te deja pasar por la Ruta 28."
+   "como": "En la historia: Ticket del Barco del profesor Elm tras la Liga (S.S. Aqua a Kanto) y el Pase del Tren Magnético, que te da Imitadora en Ciudad Azafrán al devolverle el objeto perdido que encuentras en el Club de Fans de Ciudad Carmín (tras arreglar la Central Energía) y, para el Monte Plateado, las 16 medallas: con ellas el profesor Oak te deja pasar por la Ruta 28."
   },
   {
    "juegos": [
@@ -346,8 +346,8 @@
    "id": "event-0",
    "fase": 7,
    "orden": 700,
-   "como": "Mew (Isla Suprema, Ticket Viejo de Esmeralda), Deoxys (Isla Origen, Ticket Aurora de Rojo Fuego/Verde Hoja y Esmeralda) y Jirachi (disco de bonificación / Pokémon Channel) solo llegaron por eventos. En Rubí Omega/Zafiro Alfa, Deoxys sí está en el juego (Episodio Delta).",
-   "pokekeep": "Añade el objeto de evento (Ticket Viejo o Ticket Aurora) y activa su bandera para jugar el evento, o añade el singular legal desde la Librería."
+   "como": "Mew (Isla Suprema, Mapa Viejo de Esmeralda), Deoxys (Isla Origen, Ori-Ticket de Rojo Fuego/Verde Hoja y Esmeralda) y Jirachi (disco de bonificación / Pokémon Channel) solo llegaron por eventos. En Rubí Omega/Zafiro Alfa, Deoxys sí está en el juego (Episodio Delta).",
+   "pokekeep": "Añade el objeto de evento (Mapa Viejo o Ori-Ticket) y activa su bandera para jugar el evento, o añade el singular legal desde la Librería."
   },
   {
    "juegos": [

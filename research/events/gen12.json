@@ -231,7 +231,7 @@
       {
         "mission": "10",
         "flag": "EVENT_GOT_SS_TICKET_FROM_ELM",
-        "label": "Ticket Barco para Kanto"
+        "label": "Ticket del Barco para Kanto"
       },
       {
         "mission": "11",
@@ -305,7 +305,7 @@
       {
         "mission": "10",
         "flag": "EVENT_GOT_SS_TICKET_FROM_ELM",
-        "label": "Ticket Barco para Kanto"
+        "label": "Ticket del Barco para Kanto"
       },
       {
         "mission": "11",
