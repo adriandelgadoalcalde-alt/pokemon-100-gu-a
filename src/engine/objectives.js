@@ -125,7 +125,7 @@
   for(const item of d.keyItems||[])if(item.count>0)add(`inventory.keyItem.${item.id}.present`,true,'keyItems');
   // Amuleto Oval (631) e Iris (632): objetos clave que no se pueden tirar, guardar ni gastar; con el bolsillo leído, su
   // ausencia es un «no». Los demás objetos clave siguen acreditándose solo por su presencia (algunos se entregan o gastan).
-  if(Array.isArray(d.keyItems)&&d.keyItems.some(i=>i?.count>0))for(const id of [631,632])
+  if(Array.isArray(d.keyItems)&&d.keyItems.some(i=>i?.count>0))for(const id of ['X','Y'].includes(d.game)?[631,632,696]:[631,632])
    if(!d.keyItems.some(i=>i?.id===id&&i.count>0))add(`inventory.keyItem.${id}.present`,false,'keyItems');
   // Esmeralda: estrella del Frente Batalla = plata y oro de las 7 instalaciones (HasAllFrontierSymbols, pokeemerald).
   if(d.field&&Array.isArray(d.field.flags)&&(d.field.family?d.field.family==='E':d.game==='EMERALD')){
@@ -185,37 +185,37 @@
   // Oro/Plata/Cristal: las 26 letras de Unown de la Pokédex (wUnownDex).
   if(Number.isInteger(d.unown2?.forms))add('pokedex.gen2.unown26',d.unown2.forms>=26,'unown2');
   // Rojo/Azul/Verde/Amarillo: Visor Silph (0x48), Poké Flauta (0x49) y MO01-MO05 (0xC4-0xC8) en la mochila o el PC
-  // (índices internos de pokered, constants/item_constants.asm). Las MO se pueden tirar, así que la ausencia no prueba
-  // nada: solo se acredita la presencia de todas.
+  // (índices internos de pokered, constants/item_constants.asm). Ni las MO ni esos objetos clave se pueden tirar (IsKeyItem_
+  // de pokered los trata igual) y el inventario incluye el PC: si falta alguno, no se tiene.
   if(['RED','BLUE','GREEN','YELLOW'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
-   if([0x48,0x49,0xC4,0xC5,0xC6,0xC7,0xC8].every(id=>have.has(id)))add('inventory.gen1.fieldItems',true,'inventory');
+   add('inventory.gen1.fieldItems',[0x48,0x49,0xC4,0xC5,0xC6,0xC7,0xC8].every(id=>have.has(id)),'inventory');
   }
   // Oro/Plata/Cristal: Billete Barco (0x44) y Pase del Magnetotrén (0x86) en el inventario (pokecrystal item_constants;
-  // objetos clave que no se pueden tirar). Solo se acredita la presencia.
+  // objetos clave que no se pueden tirar; el inventario incluye el PC).
   if(['GOLD','SILVER','CRYSTAL'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
-   if(have.has(0x44)&&have.has(0x86))add('inventory.gen2.tickets',true,'inventory');
+   add('inventory.gen2.tickets',have.has(0x44)&&have.has(0x86),'inventory');
   }
   // Rubí/Zafiro/Esmeralda: objetos clave de acceso (pokeruby/pokeemerald items.h): Gafas Aislantes 279 (desierto y
   // Ruinas de Regirock), Detector Devon 288 (Kecleon que cortan el paso) y, en Esmeralda, Emblema Magma 375 (Pico
-  // Pirámide/Monte Pírico hacia Groudon). Solo se acredita la presencia: los objetos clave no se pueden tirar.
+  // Pirámide/Monte Pírico hacia Groudon). Los objetos clave no se pueden tirar y el inventario incluye el PC.
   if(['RUBY','SAPPHIRE','EMERALD'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
    const need=d.game==='EMERALD'?[279,288,375]:[279,288];
-   if(need.every(id=>have.has(id)))add('inventory.hoenn.accessItems',true,'inventory');
+   add('inventory.hoenn.accessItems',need.every(id=>have.has(id)),'inventory');
   }
   // Alola: los 18 cristales Z de tipo (807-824), el Arca de Zygarde (847) y la Pulsera Z (797) o Superpulsera Z (933 en
-  // USUM), números de objeto de PKHeX. Solo se acredita la presencia en el inventario.
+  // USUM), números de objeto de PKHeX. Son objetos clave o cristales que no se pueden tirar ni gastar.
   if(['SUN','MOON','ULTRASUN','ULTRAMOON'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
    const ring=['ULTRASUN','ULTRAMOON'].includes(d.game)?933:797;
-   if(Array.from({length:18},(_,i)=>807+i).every(id=>have.has(id))&&have.has(847)&&have.has(ring))add('inventory.alola.zResources',true,'inventory');
+   add('inventory.alola.zResources',Array.from({length:18},(_,i)=>807+i).every(id=>have.has(id))&&have.has(847)&&have.has(ring),'inventory');
   }
   // Rojo Fuego/Verde Hoja: Visor Silph (359), Poké Flauta (350) y MO01-MO07 (339-345), ids de pokefirered items.h.
   if(['FIRERED','LEAFGREEN'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
-   if([359,350,339,340,341,342,343,344,345].every(id=>have.has(id)))add('inventory.frlg.fieldItems',true,'inventory');
+   add('inventory.frlg.fieldItems',[359,350,339,340,341,342,343,344,345].every(id=>have.has(id)),'inventory'); // objetos clave y MO: no se tiran; incluye el PC
   }
   // Ultrasol/Ultraluna: episodio Rainbow Rocket terminado. flags_usum de PKHeX: 211 = «la mansión de Samina NO es el
   // castillo del Team Rocket» (también vale antes del episodio) y 1730-1732 = Electrode desaparecidos dentro del castillo

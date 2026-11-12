@@ -411,10 +411,10 @@ test('Leyendas Arceus: Arceus vencido y ensueño de combates sin fin de Fero',()
  assert.equal(f({KCompletedEternalBattleReverie:true},'la.eternalReverie'),true);
 });
 
-test('Gen. I: Visor Silph, Poké Flauta y las cinco MO (solo se acredita la presencia)',()=>{
+test('Gen. I: Visor Silph, Poké Flauta y las cinco MO (no se pueden tirar: sin ellos, «no»)',()=>{
  const O=require('../src/engine/objectives.js'),f=items=>O.fromDiagnosis({game:'GREEN',integrity:{checksumsValid:true},inventory:[{pocket:'Items',items:items.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.gen1.fieldItems')?.value;
  assert.equal(f([0x48,0x49,0xC4,0xC5,0xC6,0xC7,0xC8]),true);
- assert.equal(f([0x48,0x49,0xC8]),undefined);
+ assert.equal(f([0x48,0x49,0xC8]),false);
 });
 
 test('HGSS: estrellas del Pokéathlon (FLAG_UNK_0F1) y de la corona de hojas (FLAG_UNK_184)',()=>{
@@ -443,25 +443,25 @@ test('Rojo Fuego/Verde Hoja: revancha de la Liga (banderas del Alto Mando 2)',()
  assert.equal(f([735,736,737,738].map(i=>0x500+i)),true);assert.equal(f([0x500+740,0x500+735]),false);
 });
 
-test('Gen. II: Billete Barco y Pase (solo presencia)',()=>{
+test('Gen. II: Billete Barco y Pase (objetos clave: sin ellos, «no»)',()=>{
  const O=require('../src/engine/objectives.js'),f=ids=>O.fromDiagnosis({game:'GOLD',integrity:{checksumsValid:true},inventory:[{pocket:'KeyItems',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.gen2.tickets')?.value;
- assert.equal(f([0x44,0x86]),true);assert.equal(f([0x44]),undefined);
+ assert.equal(f([0x44,0x86]),true);assert.equal(f([0x44]),false);
 });
 
 test('Hoenn: objetos clave de acceso (Esmeralda exige además el Emblema Magma)',()=>{
  const O=require('../src/engine/objectives.js'),f=(g,ids)=>O.fromDiagnosis({game:g,integrity:{checksumsValid:true},inventory:[{pocket:'KeyItems',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.hoenn.accessItems')?.value;
- assert.equal(f('RUBY',[279,288]),true);assert.equal(f('EMERALD',[279,288]),undefined);assert.equal(f('EMERALD',[279,288,375]),true);
+ assert.equal(f('RUBY',[279,288]),true);assert.equal(f('EMERALD',[279,288]),false);assert.equal(f('EMERALD',[279,288,375]),true);
 });
 
 test('Alola: cristales Z de tipo, Arca de Zygarde y Pulsera Z',()=>{
  const O=require('../src/engine/objectives.js'),f=(g,ids)=>O.fromDiagnosis({game:g,integrity:{checksumsValid:true},inventory:[{pocket:'ZCrystals',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.alola.zResources')?.value;
  const z=Array.from({length:18},(_,i)=>807+i);
- assert.equal(f('MOON',[...z,847,797]),true);assert.equal(f('ULTRASUN',[...z,847,797]),undefined);assert.equal(f('ULTRASUN',[...z,847,933]),true);
+ assert.equal(f('MOON',[...z,847,797]),true);assert.equal(f('ULTRASUN',[...z,847,797]),false);assert.equal(f('ULTRASUN',[...z,847,933]),true);
 });
 
 test('Rojo Fuego/Verde Hoja: Visor Silph, Poké Flauta y MO01-MO07',()=>{
  const O=require('../src/engine/objectives.js'),f=ids=>O.fromDiagnosis({game:'LEAFGREEN',integrity:{checksumsValid:true},inventory:[{pocket:'KeyItems',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.frlg.fieldItems')?.value;
- assert.equal(f([359,350,339,340,341,342,343,344,345]),true);assert.equal(f([359,350]),undefined);
+ assert.equal(f([359,350,339,340,341,342,343,344,345]),true);assert.equal(f([359,350]),false);
 });
 
 test('Gen. IX: Pokédex regionales completas (capturados = total)',()=>{
