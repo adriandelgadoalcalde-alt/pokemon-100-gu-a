@@ -428,6 +428,12 @@
   // Una señal documentada que ya tiene contraste natural (positivo y negativo con partidas reales) cuenta como directa.
   if(signal)facts.push({id:'story.gameClear',value:signal.value,gameId:d.game,type:signal.validation==='verified'?'direct':'derived',
    validation:signal.validation==='verified'?'verified':'documented',source:signal.source});
+  // Combates repetibles que la partida no registra (revanchas, Cintia, Morimoto...): solo se puede afirmar el «no» cuando
+  // todavía no son posibles, porque todos exigen haber acabado la historia (y la revancha de HGSS, las 16 medallas).
+  const clear=facts.filter(f=>f.id==='story.gameClear'&&typeof f.value==='boolean');
+  if(clear.length&&clear.every(f=>f.value===false))add('postgame.repeatableBattles',false,'gameClear');
+  if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Number.isInteger(d.badgesTotal??d.badges)&&(d.badgesTotal??d.badges)<16)add('hgss.rematchLeague',false,'badgesTotal');
+  else if(clear.length&&clear.every(f=>f.value===false)&&['HEARTGOLD','SOULSILVER'].includes(d.game))add('hgss.rematchLeague',false,'gameClear');
   return facts;
  }
  const api={order,evaluate,next,fromDiagnosis};

@@ -694,3 +694,11 @@ test('Cristal: desafío completo de la Torre Batalla por el estado de la SRAM',(
  const O=require('../src/engine/objectives.js'),f=t=>O.fromDiagnosis({game:'CRYSTAL',tower2:t}).find(x=>x.id==='battle.crystal.towerComplete')?.value;
  assert.equal(f({state:4,reward:0x26}),true);assert.equal(f({state:0,reward:0}),false);assert.equal(f({state:0,reward:0x26}),undefined);
 });
+
+test('Combates repetibles: solo se niegan mientras no son posibles',()=>{
+ const O=require('../src/engine/objectives.js'),v=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
+ assert.equal(v({game:'WHITE',gameClear:false},'postgame.repeatableBattles'),false);
+ assert.equal(v({game:'WHITE',gameClear:true},'postgame.repeatableBattles'),undefined);
+ assert.equal(v({game:'HEARTGOLD',gameClear:true,badgesTotal:12},'hgss.rematchLeague'),false);
+ assert.equal(v({game:'HEARTGOLD',gameClear:true,badgesTotal:16},'hgss.rematchLeague'),undefined);
+});
