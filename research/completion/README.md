@@ -428,7 +428,7 @@ Condición de la revancha: Pokédex Nacional (DP), `FLAG_ARRESTED_CHARON_STARK_M
 (HGSS, `VAR_UNK_4135`). Sí: una entrada del Salón posterior al encuentro de un Pokémon propio que solo existe tras la
 condición (Zona de Combate en DP, Heatran de la Montaña Dura en Platino, Monte Plateado en HGSS) o con él en el equipo; en
 Platino también el Diario (evento 12 con el entrenador 870). No: una sola entrada (la condición siempre llega tras la primera
-Liga). Partidas: Diamante, Perla, HeartGold, SoulSilver y un Platino «no»; el otro Platino (público de RoC's PC), sin dato.
+Liga). Partidas: Diamante, Perla, HeartGold, SoulSilver y un Platino público «no»; el Platino del propietario, sin dato.
 
 Ampliado el mismo día con lo que cambia después en Platino (pokeplatinum `stark_mountain_room_3` y
 `pokemon_league_hall_of_fame`): Carón es arrestado en el primer combate contra Heatran (banderas 214 y 215 a la vez). Si
@@ -436,7 +436,7 @@ Heatran se derrota o huye (bandera 2435 del Buscapelea nivel 5, que solo se acti
 `VAR_STARK_MOUNTAIN_ROOM_3_STATE` (trabajo 158) = 2. Solo vuelve a 1 si pierdes contra él (sin la 2435) o si entras en el
 Salón con Heatran sin capturar (bandera 288) tras hablar con Gerardo en el Área Combate, que solo se abre después del
 arresto. Así que 2435 + estado 1 + sin capturar = una entrada del Salón posterior al arresto = revancha hecha (prueba
-sintética en `pkhex-extractor/Tests`). El Platino público sin dato tiene a Heatran capturado, de modo que nada se
+sintética en `pkhex-extractor/Tests`). El Platino del propietario sin dato tiene a Heatran capturado, de modo que nada se
 reinicia, y su Heatran y su equipo del Salón (Arceus, Dialga, Palkia, Giratina…) están editados con otra herramienta
 (Ruta 225, nivel 99; PKHeX los marca como ilegales). La fecha del arresto, que es lo que habría que comparar, se perdió
 al editar la partida. No es un hueco de la guía: con una partida sin editar, Heatran, su reaparición o el Diario lo dicen.
