@@ -19,7 +19,7 @@ GitHub Pages se publica desde la rama `main` y la raíz del repositorio. La apli
 - **Primera lectura:** descarga unos 45 MB, que luego quedan en caché para usarlos sin conexión. Los límites de
   descarga y lectura son de 5 minutos.
 
-Comprobado el 12/11/2026 con WebKit (iPad Pro 11 emulado): las 40 partidas del propietario que lee el lector propio
+Comprobado el 12/11/2026 con WebKit (iPad Pro 11 emulado): las partidas del propietario que lee el lector propio
 se leen igual que en Chromium. El WebKit para Windows de Playwright no termina el lector ampliado (se queda parado o
 falla dentro de WebAssembly), mientras que la integración continua lo pasa en el WebKit de Linux con el corpus
 público. Eso apunta a la adaptación de WebKit para Windows, pero falta la prueba en un iPad físico.
