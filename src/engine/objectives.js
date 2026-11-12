@@ -245,6 +245,19 @@
   }
   // DBPR: estrella de las estatuas = 100 tipos distintos (PlayerWork.GetTrainerRank y UgItemWork.GetHaveStatueKindNum, uDPR).
   if(Number.isInteger(d.statues8b?.kinds))add('card.bdsp.statues100',d.statues8b.kinds>=100,'statues8b');
+  // Leyendas Z-A: megapiedras (ItemStorage9ZA.MegaStones de PKHeX). WikiDex «Megapiedra»: todas se consiguen jugando salvo
+  // 7 de los combates clasificatorios en línea (Sceptilita, Blazikenita, Swampertita, Chesnaughtita, Delphoxita,
+  // Greninjanita, Baxcaliburita) y 4 de regalo misterioso (Diancita, Mewtwoita X e Y, Garchompita Z). Las 2635-2650 son de
+  // Megadimensión. Solo se acredita la presencia: una megapiedra equipada a un Pokémon puede no estar en la bolsa.
+  if(d.game==='ZA'&&Array.isArray(d.inventory)){
+   const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
+   const r=(a,b)=>Array.from({length:b-a+1},(_,k)=>a+k),special=[753,664,752,2575,2576,2577,2648,764,662,663,2640];
+   const all=[...r(656,685),...r(752,764),...r(767,770),...r(2559,2587),...r(2635,2650)];
+   const base=all.filter(x=>x<2635&&!special.includes(x)),dlc=all.filter(x=>x>=2635&&!special.includes(x));
+   if(base.every(x=>have.has(x)))add('za.megaStones.base',true,'inventory');
+   if(dlc.every(x=>have.has(x)))add('za.megaStones.dlc',true,'inventory');
+   if(special.every(x=>have.has(x)))add('za.megaStones.special',true,'inventory');
+  }
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).

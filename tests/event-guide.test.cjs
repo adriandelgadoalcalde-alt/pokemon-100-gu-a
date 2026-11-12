@@ -559,3 +559,15 @@ test('DBPR: estrella de las 100 estatuas distintas (statues8b)',()=>{
  const O=require('../src/engine/objectives.js'),v=k=>O.fromDiagnosis({game:'BD',statues8b:{kinds:k}}).find(x=>x.id==='card.bdsp.statues100')?.value;
  assert.equal(v(100),true);assert.equal(v(99),false);
 });
+
+test('Leyendas Z-A: megapiedras del juego base (67), de Megadimensión (14) y especiales (11)',()=>{
+ const O=require('../src/engine/objectives.js'),r=(a,b)=>Array.from({length:b-a+1},(_,k)=>a+k);
+ const all=[...r(656,685),...r(752,764),...r(767,770),...r(2559,2587),...r(2635,2650)];
+ const v=(ids,id)=>O.fromDiagnosis({game:'ZA',inventory:[{pocket:'MegaStones',items:ids.map(x=>({id:x,count:1}))}]}).find(x=>x.id===id)?.value;
+ // Como la partida del propietario: le faltan Blazikenita, Swampertita, Sceptilita y Garchompita Z.
+ const owner=all.filter(x=>![664,752,753,2640].includes(x));
+ assert.equal(v(owner,'za.megaStones.base'),true);assert.equal(v(owner,'za.megaStones.dlc'),true);
+ assert.equal(v(owner,'za.megaStones.special'),undefined);
+ assert.equal(v(owner.filter(x=>x!==656),'za.megaStones.base'),undefined);
+ assert.equal(v(all,'za.megaStones.special'),true);
+});

@@ -180,6 +180,12 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   las otras estrellas: Hall de la Fama, Pokédex Nacional sin los 11 excluidos, 100 victorias seguidas en cualquier
   modalidad de la Torre Batalla y rango Maestro en cualquier categoría de Superconcurso.
 
+- **Megapiedras de Leyendas Z-A (12/11/2026):** de las 92 legales de PKHeX (`ItemStorage9ZA.MegaStones`), WikiDex
+  «Megapiedra» excluye 7 que solo dan los combates clasificatorios en línea y 4 de regalo misterioso; quedan 67 del juego
+  base y 14 de Megadimensión (2635-2650) que se consiguen jugando. La partida del propietario tiene 88: le faltan
+  Blazikenita, Swampertita, Sceptilita (clasificatorias) y Garchompita Z (regalo), así que las dos metas jugables quedan
+  acreditadas. Solo se acredita la presencia en la bolsa (una megapiedra equipada podría no estar).
+
 Pendiente con motivo (no se acredita solo para no adivinar):
 
 - **Torre Batalla de Diamante/Perla (racha de 100):** en pokediamond el bloque (`FrontierData`) solo guarda BP, banderas y
