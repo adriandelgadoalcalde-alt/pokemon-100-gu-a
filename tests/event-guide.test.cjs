@@ -484,6 +484,7 @@ test('Rojo Fuego/Verde Hoja: Torre Desafío en las cuatro modalidades',()=>{
 test('USUM: episodio Rainbow Rocket (mansión normal y Electrode del castillo)',()=>{
  const O=require('../src/engine/objectives.js'),f=fl=>O.fromDiagnosis({game:'ULTRAMOON',events:{activeFlags:fl}}).find(x=>x.id==='story.usum.rainbowRocket')?.value;
  assert.equal(f([211,1731]),true);assert.equal(f([211]),undefined);assert.equal(f([1730]),undefined);
+ assert.equal(f([211,0xB4F]),true);assert.equal(f([0xB4F]),undefined); // objeto recogido dentro del castillo
 });
 
 test('Enfermera que reconoce la tarjeta de oro (Esmeralda, Platino, HGSS)',()=>{

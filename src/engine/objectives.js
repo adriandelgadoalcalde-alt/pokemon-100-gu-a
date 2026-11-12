@@ -230,7 +230,10 @@
   // ausencia no prueba nada (los Electrode son opcionales): solo se acredita la presencia.
   if(['ULTRASUN','ULTRAMOON'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags);
-   if(fl.has(211)&&[1730,1731,1732].some(f=>fl.has(f)))add('story.usum.rainbowRocket',true,'events');
+   // También vale cualquier objeto recogido dentro del castillo (FV_FLD_ITEM_362-378, 0xB46-0xB56 de flags_usum): el
+   // castillo solo existe durante el episodio. Contrastado con Ultrasol y Ultraluna del propietario (ambos recogidos).
+   const castle=[1730,1731,1732,...Array.from({length:17},(_,i)=>0xB46+i)];
+   if(fl.has(211)&&castle.some(f=>fl.has(f)))add('story.usum.rainbowRocket',true,'events');
   }
   // La enfermera reconoce la tarjeta de oro (te llama por tu nombre y cura sin preguntar): bandera que el script pone la
   // primera vez. Esmeralda FLAG_NURSE_MENTIONS_GOLD_CARD 0x159 (pokeemerald), Platino FLAG_POKECENTER_GOLD_TRAINER_CARD_SEEN
