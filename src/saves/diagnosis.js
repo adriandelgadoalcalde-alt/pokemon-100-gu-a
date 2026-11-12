@@ -24,7 +24,7 @@
    .map(i=>({id:i.id,count:i.count}));
   if(Array.isArray(e.unownForms))result.unownForms=e.unownForms.filter(x=>Number.isInteger(x)&&x>=0&&x<28);
   if(e.extractor&&typeof e.extractor==='object')result.extractor={engine:String(e.extractor.engine||''),engineCommit:String(e.extractor.engineCommit||'')};
-  for(const key of ['integrity','events','medals','passport','battleTree','pokeathlon','pokewalker','field','namedBlocks','location','switchPosition','questWork9a','underground4','subway5','musical5','pwt5','entralink5','unown2','tower4','chateau','tower8b','card8'])
+  for(const key of ['integrity','events','medals','passport','battleTree','pokeathlon','pokewalker','field','namedBlocks','location','switchPosition','questWork9a','underground4','subway5','musical5','pwt5','entralink5','unown2','tower4','hallOfFame1','chateau','tower8b','card8'])
    if(e[key]&&typeof e[key]==='object'&&!Array.isArray(e[key]))result[key]=JSON.parse(JSON.stringify(e[key]));
   return result;
  }

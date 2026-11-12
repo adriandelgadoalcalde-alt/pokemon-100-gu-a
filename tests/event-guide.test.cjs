@@ -432,3 +432,8 @@ test('HGSS: estrella de la Torre Batalla (récord de 100)',()=>{
  const O=require('../src/engine/objectives.js'),f=r=>O.fromDiagnosis({game:'SOULSILVER',tower4:{records:r}}).find(x=>x.id==='battle.hgss.tower100')?.value;
  assert.equal(f([105,0,0,0,0]),true);assert.equal(f([0,0,0,0,0]),false);
 });
+
+test('Gen. I: revancha de la Liga (segunda entrada del Salón de la Fama)',()=>{
+ const O=require('../src/engine/objectives.js'),f=n=>O.fromDiagnosis({game:'RED',hallOfFame1:{count:n}}).find(x=>x.id==='story.gen1.leagueRematch')?.value;
+ assert.equal(f(2),true);assert.equal(f(1),false);
+});

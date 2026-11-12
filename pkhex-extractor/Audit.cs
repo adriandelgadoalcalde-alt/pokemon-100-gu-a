@@ -158,6 +158,8 @@ public static class Audit
             // BP de 0x65F8) y en HGSS (contrastado con una partida pública).
             ["tower4"] = save is SAV4Pt pt ? new { records = Enumerable.Range(0, 5).Select(i =>
                 (int)System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(pt.General[(0x64EC + Chatter4.SIZE + 4 + i * 4)..])).ToArray() } : null,
+            // Rojo/Azul/Verde/Amarillo: entradas del Salón de la Fama (wHallOfFameCount de pokered; una por cada Liga ganada).
+            ["hallOfFame1"] = save is SAV1 hf1 ? new { count = (int)hf1.HallOfFameCount } : null,
             // Oro/Plata/Cristal: letras de Unown registradas (wUnownDex de pokecrystal, 26 bytes tras la Pokédex de vistos;
             // SAV2Offsets.PokedexSeen + 0x20 en PKHeX). Cada byte es una letra 1-26; 0 = hueco libre.
             ["unown2"] = save is SAV2 un2 ? new { forms = Enumerable.Range(0x20, 26).Select(i => (int)un2.Data[new SAV2Offsets(un2).PokedexSeen + i])

@@ -158,6 +158,9 @@
   // Platino: estrella de la Torre Batalla = récord ≥ 100 en cualquier modalidad (TrainerCase_CalculateTrainerCardLevel).
   if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.tower4?.records)&&d.tower4.records.every(Number.isInteger))add('battle.hgss.tower100',d.tower4.records.some(v=>v>=100),'events');
   if(d.game==='PLATINUM'&&Array.isArray(d.tower4?.records)&&d.tower4.records.every(Number.isInteger))add('battle.pt.tower100',d.tower4.records.some(v=>v>=100),'tower4');
+  // Rojo/Azul/Verde/Amarillo: revancha de la Liga = segunda entrada en el Salón de la Fama (wHallOfFameCount de pokered,
+  // que crece con cada victoria ante el Campeón).
+  if(Number.isInteger(d.hallOfFame1?.count))add('story.gen1.leagueRematch',d.hallOfFame1.count>=2,'hallOfFame1');
   // Oro/Plata/Cristal: las 26 letras de Unown de la Pokédex (wUnownDex).
   if(Number.isInteger(d.unown2?.forms))add('pokedex.gen2.unown26',d.unown2.forms>=26,'unown2');
   // Rojo/Azul/Verde/Amarillo: Visor Silph (0x48), Poké Flauta (0x49) y MO01-MO05 (0xC4-0xC8) en la mochila o el PC
