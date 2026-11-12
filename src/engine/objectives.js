@@ -212,6 +212,14 @@
    const fl=new Set(d.events.activeFlags);
    if(fl.has(211)&&[1730,1731,1732].some(f=>fl.has(f)))add('story.usum.rainbowRocket',true,'events');
   }
+  // La enfermera reconoce la tarjeta de oro (te llama por tu nombre y cura sin preguntar): bandera que el script pone la
+  // primera vez. Esmeralda FLAG_NURSE_MENTIONS_GOLD_CARD 0x159 (pokeemerald), Platino FLAG_POKECENTER_GOLD_TRAINER_CARD_SEEN
+  // 0x69 (pokeplatinum), HGSS FLAG_NURSE_NOTICED_CARD 0x64 (pokeheartgold). Solo se acredita la presencia.
+  {
+   const nurse={EMERALD:0x159,PLATINUM:0x69,HEARTGOLD:0x64,SOULSILVER:0x64}[d.game];
+   const flags=d.game==='EMERALD'?d.field?.flags:d.events?.activeFlags;
+   if(nurse!==undefined&&Array.isArray(flags)&&flags.includes(nurse))add('card.nurseRecognition',true,d.game==='EMERALD'?'field':'events');
+  }
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).

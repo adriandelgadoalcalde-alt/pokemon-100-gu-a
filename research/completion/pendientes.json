@@ -1,5 +1,5 @@
 {
-  "acerca": "Lista viva de lo que falta del plan. El hook Stop (scripts/stop-hook-pendientes.cjs) no deja terminar el turno mientras quede algo en estado 'pendiente'. Estados: 'pendiente' (hay trabajo posible), 'bloqueado' (imposible ahora; 'motivo' obligatorio, con la fuente), 'hecho'.",
+  "acerca": "Lista viva de lo que falta del plan. Estados: 'pendiente' (hay trabajo posible), 'bloqueado' (imposible ahora; 'motivo' obligatorio, con la fuente), 'hecho'.",
   "items": [
     {
       "id": "la-peticiones",
@@ -73,6 +73,11 @@
     {
       "id": "ipad",
       "titulo": "iPad: prueba real en Safari de iPadOS (lectura de todos los formatos de guardado)",
+      "estado": "pendiente"
+    },
+    {
+      "id": "enfermera-otras",
+      "titulo": "Reconocimiento de la enfermera en Diamante/Perla y generaciones 5-9: comprobar si existe y qué dato del guardado lo registra",
       "estado": "pendiente"
     }
   ]

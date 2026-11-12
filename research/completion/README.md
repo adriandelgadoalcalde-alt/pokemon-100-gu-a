@@ -112,6 +112,10 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   Heatran, Regigigas, Giratina, Cresselia y el de la portada; en Sol/Luna, los Ultraentes de la edición y Necrozma).
 - **Posliga de Teselia y DLC de Z-A:** Negro/Blanco: Cobalion, Terrakion, Virizion y Kyurem; N2/B2: los tres Regis, Regigigas
   y las Espadas de la Justicia; Megadimensión de Z-A: Hoopa. Todos por el registro de capturados de la Pokédex.
+- **La enfermera te reconoce (tarjeta de oro):** nuevo objetivo en Esmeralda, Platino y HGSS. Con 4 estrellas o más la
+  enfermera te llama por tu nombre y cura sin preguntar (pokeemerald `pkmn_center_nurse.inc`, pokeplatinum `common.s`,
+  pokeheartgold `scr_seq_0003`); la primera vez queda una bandera (0x159, 0x69 y 0x64). Esmeralda y Platino del propietario
+  la tienen; HGSS no (no llega a 4 estrellas). Rubí/Zafiro y RF/VH no tienen este saludo; DP sin decompilación con nombres.
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.

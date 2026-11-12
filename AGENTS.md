@@ -47,11 +47,9 @@
 - **Trabajo continuo hasta el final.** El agente no se detiene hasta completar absolutamente todos los objetivos pendientes de
   todos los juegos y de todos los guardados (lista viva en `research/completion/README.md` y en el informe de cobertura).
   Al acabar un punto pasa al siguiente sin esperar; si una vía se bloquea, busca otra y lo anota.
-- **Candado automático (hook `Stop`).** `.claude/settings.json` ejecuta `scripts/stop-hook-pendientes.cjs` cada vez que el agente
-  va a terminar un turno: si `research/completion/pendientes.json` tiene algún elemento en estado `pendiente`, bloquea el final
-  y le devuelve la lista. Un elemento solo sale de `pendiente` como `hecho` (comprobado) o `bloqueado` (con `motivo` y fuente,
-  nunca para esquivar el candado). Si la lista no cambia en tres intentos seguidos, deja parar con un aviso para no quedarse
-  en bucle. Todo pendiente nuevo que aparezca se añade a esa lista.
+- **Sin hooks ni avisos programados** (decisión del propietario, 12/11/2026): el agente encadena el trabajo dentro del mismo
+  turno hasta vaciar `research/completion/pendientes.json`, la lista viva de lo que falta (estados `pendiente`, `hecho` y
+  `bloqueado` con motivo y fuente).
 - **Permiso total y sin confirmaciones.** El propietario autoriza todo lo necesario para el proyecto y no quiere que se le pida
   confirmación: puede no estar presente (por ejemplo, durmiendo). Las decisiones técnicas se toman y se documentan.
 - Lo único que esta regla no cambia son los límites de privacidad y de seguridad de los puntos 3 y 4 (partidas, claves y datos

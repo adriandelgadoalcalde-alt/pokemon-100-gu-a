@@ -485,3 +485,10 @@ test('USUM: episodio Rainbow Rocket (mansión normal y Electrode del castillo)',
  const O=require('../src/engine/objectives.js'),f=fl=>O.fromDiagnosis({game:'ULTRAMOON',events:{activeFlags:fl}}).find(x=>x.id==='story.usum.rainbowRocket')?.value;
  assert.equal(f([211,1731]),true);assert.equal(f([211]),undefined);assert.equal(f([1730]),undefined);
 });
+
+test('Enfermera que reconoce la tarjeta de oro (Esmeralda, Platino, HGSS)',()=>{
+ const O=require('../src/engine/objectives.js'),f=d=>O.fromDiagnosis(d).find(x=>x.id==='card.nurseRecognition')?.value;
+ assert.equal(f({game:'EMERALD',field:{family:'E',flags:[0x159]}}),true);
+ assert.equal(f({game:'PLATINUM',events:{activeFlags:[0x69]}}),true);
+ assert.equal(f({game:'SOULSILVER',events:{activeFlags:[0x63]}}),undefined);
+});
