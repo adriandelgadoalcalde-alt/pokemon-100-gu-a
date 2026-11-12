@@ -2,43 +2,520 @@
  "acerca": "Momento, requisitos y orden cronológico de cada legendario fijo por edición. Lugar y nivel salen de PKHeX (legendarios-pkhex.json); esto añade cuándo se puede hacer y qué hace falta. fase: 0 historia, 2 posliga y legendarios, 7 eventos. orden: posición cronológica dentro de la fase. Fuentes: WikiDex (páginas de cada Pokémon y lugar) y Bulbapedia; contrastado con pret cuando hay desensamblado.",
  "grupos": {
   "RSE_REGIS": {
-   "377": {"fase": 2, "orden": 210, "cuando": "Tras conseguir Buceo (MO08) en Arrecípolis; se puede antes o después de la Liga.", "requisitos": "Abre la Cámara Sellada (bajo el agua en la Ruta 134) con Wailord y Relicanth en el equipo (en Esmeralda, Relicanth primero y Wailord último). Luego, en las Ruinas Desierto (Ruta 111), sigue las instrucciones en braille de la pared.", "consejo": "Regirock nivel 40: lleva Pokémon para debilitarlo y muchas Ultra Balls."},
-   "378": {"fase": 2, "orden": 211, "cuando": "Tras abrir la Cámara Sellada (igual que Regirock).", "requisitos": "Cueva Insular (Ruta 105). En Rubí/Zafiro rodea la sala pegado a la pared; en Esmeralda espera dos minutos dentro sin moverte.", "consejo": "Regice nivel 40."},
-   "379": {"fase": 2, "orden": 212, "cuando": "Tras abrir la Cámara Sellada y tener Vuelo.", "requisitos": "Tumba Antigua (Ruta 120): colócate en el centro de la sala y usa Vuelo (MO02).", "consejo": "Registeel nivel 40."}
+   "377": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Tras conseguir Buceo (MO08) en Arrecípolis; se puede antes o después de la Liga.",
+    "requisitos": "Abre la Cámara Sellada (bajo el agua en la Ruta 134) con Wailord y Relicanth en el equipo (en Esmeralda, Relicanth primero y Wailord último). Luego, en las Ruinas Desierto (Ruta 111), sigue las instrucciones en braille de la pared.",
+    "consejo": "Regirock nivel 40: lleva Pokémon para debilitarlo y muchas Ultra Balls."
+   },
+   "378": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Tras abrir la Cámara Sellada (igual que Regirock).",
+    "requisitos": "Cueva Insular (Ruta 105). En Rubí/Zafiro rodea la sala pegado a la pared; en Esmeralda espera dos minutos dentro sin moverte.",
+    "consejo": "Regice nivel 40."
+   },
+   "379": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Tras abrir la Cámara Sellada y tener Vuelo.",
+    "requisitos": "Tumba Antigua (Ruta 120): colócate en el centro de la sala y usa Vuelo (MO02).",
+    "consejo": "Registeel nivel 40."
+   }
   }
  },
  "juegos": {
   "RUBY": {
-   "grupos": ["RSE_REGIS"],
-   "383": {"fase": 0, "orden": 150, "cuando": "Durante la historia, antes de la octava medalla: tras el despertar de Groudon en Arrecípolis.", "requisitos": "Entra en la Cueva Ancestral de Arrecípolis con Buceo (MO08); Groudon espera al fondo.", "consejo": "Groudon nivel 45. Si lo debilitas no reaparece: guarda antes de entrar."},
-   "384": {"fase": 2, "orden": 220, "cuando": "Después del Hall de la Fama.", "requisitos": "Pilar Celeste (Ruta 131): necesitas la Bici Carrera para cruzar el suelo frágil de los pisos superiores.", "consejo": "Rayquaza nivel 70."},
-   "381": {"fase": 2, "orden": 230, "cuando": "Después del Hall de la Fama: tu madre te pregunta por la tele y Latios empieza a vagar por Hoenn.", "requisitos": "Es errante: cambia de ruta al cambiar de zona y huye en el primer turno. Usa la Pokédex (zona) para seguirlo y Bal Masters, Mean Look o Pokémon con Bloqueo.", "consejo": "Latios nivel 40."},
-   "380": {"fase": 7, "orden": 710, "cuando": "Solo con el Ticket Eón (distribución de evento).", "requisitos": "Con el Ticket Eón, el barco de Portual lleva a la Isla del Sur, donde espera Latias.", "consejo": "Latias nivel 50. Sin el ticket no se puede en esta edición."}
+   "grupos": [
+    "RSE_REGIS"
+   ],
+   "383": {
+    "fase": 0,
+    "orden": 150,
+    "cuando": "Durante la historia, antes de la octava medalla: tras el despertar de Groudon en Arrecípolis.",
+    "requisitos": "Entra en la Cueva Ancestral de Arrecípolis con Buceo (MO08); Groudon espera al fondo.",
+    "consejo": "Groudon nivel 45. Si lo debilitas no reaparece: guarda antes de entrar."
+   },
+   "384": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Pilar Celeste (Ruta 131): necesitas la Bici Carrera para cruzar el suelo frágil de los pisos superiores.",
+    "consejo": "Rayquaza nivel 70."
+   },
+   "381": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama: tu madre te pregunta por la tele y Latios empieza a vagar por Hoenn.",
+    "requisitos": "Es errante: cambia de ruta al cambiar de zona y huye en el primer turno. Usa la Pokédex (zona) para seguirlo y Bal Masters, Mean Look o Pokémon con Bloqueo.",
+    "consejo": "Latios nivel 40."
+   },
+   "380": {
+    "fase": 7,
+    "orden": 710,
+    "cuando": "Solo con el Ticket Eón (distribución de evento).",
+    "requisitos": "Con el Ticket Eón, el barco de Portual lleva a la Isla del Sur, donde espera Latias.",
+    "consejo": "Latias nivel 50. Sin el ticket no se puede en esta edición."
+   }
   },
   "SAPPHIRE": {
-   "grupos": ["RSE_REGIS"],
-   "382": {"fase": 0, "orden": 150, "cuando": "Durante la historia, antes de la octava medalla: tras el despertar de Kyogre en Arrecípolis.", "requisitos": "Entra en la Cueva Ancestral de Arrecípolis con Buceo; Kyogre espera al fondo.", "consejo": "Kyogre nivel 45. Si lo debilitas no reaparece: guarda antes de entrar."},
-   "384": {"fase": 2, "orden": 220, "cuando": "Después del Hall de la Fama.", "requisitos": "Pilar Celeste (Ruta 131), con la Bici Carrera para los pisos de suelo frágil.", "consejo": "Rayquaza nivel 70."},
-   "380": {"fase": 2, "orden": 230, "cuando": "Después del Hall de la Fama: Latias empieza a vagar por Hoenn.", "requisitos": "Es errante y huye: síguelo con la Pokédex y usa la Master Ball o Mal de Ojo o Bloqueo.", "consejo": "Latias nivel 40."},
-   "381": {"fase": 7, "orden": 710, "cuando": "Solo con el Ticket Eón (distribución de evento).", "requisitos": "Con el Ticket Eón, el barco de Portual lleva a la Isla del Sur, donde espera Latios.", "consejo": "Latios nivel 50."}
+   "grupos": [
+    "RSE_REGIS"
+   ],
+   "382": {
+    "fase": 0,
+    "orden": 150,
+    "cuando": "Durante la historia, antes de la octava medalla: tras el despertar de Kyogre en Arrecípolis.",
+    "requisitos": "Entra en la Cueva Ancestral de Arrecípolis con Buceo; Kyogre espera al fondo.",
+    "consejo": "Kyogre nivel 45. Si lo debilitas no reaparece: guarda antes de entrar."
+   },
+   "384": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Pilar Celeste (Ruta 131), con la Bici Carrera para los pisos de suelo frágil.",
+    "consejo": "Rayquaza nivel 70."
+   },
+   "380": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama: Latias empieza a vagar por Hoenn.",
+    "requisitos": "Es errante y huye: síguelo con la Pokédex y usa la Master Ball o Mal de Ojo o Bloqueo.",
+    "consejo": "Latias nivel 40."
+   },
+   "381": {
+    "fase": 7,
+    "orden": 710,
+    "cuando": "Solo con el Ticket Eón (distribución de evento).",
+    "requisitos": "Con el Ticket Eón, el barco de Portual lleva a la Isla del Sur, donde espera Latios.",
+    "consejo": "Latios nivel 50."
+   }
   },
   "EMERALD": {
-   "grupos": ["RSE_REGIS"],
-   "384": {"fase": 2, "orden": 205, "cuando": "Después del Hall de la Fama (en la historia solo lo despiertas).", "requisitos": "Vuelve a la cima del Pilar Celeste (Ruta 131) con la Bici Carrera.", "consejo": "Rayquaza nivel 70: es el primero que conviene capturar porque lo pide el evento de Kyogre/Groudon."},
-   "381": {"fase": 2, "orden": 230, "cuando": "Después del Hall de la Fama: tu madre pregunta de qué color era el Pokémon de la tele.", "requisitos": "Si respondes azul vaga Latios; si respondes rojo, Latias. El elegido es errante y huye: síguelo con la Pokédex.", "consejo": "Nivel 40. El otro de los dos solo con el Ticket Eón (Isla del Sur, nivel 50)."},
-   "380": {"fase": 2, "orden": 231, "cuando": "Después del Hall de la Fama (el que no elegiste con tu madre, solo con el Ticket Eón).", "requisitos": "Respuesta roja a tu madre = Latias errante. Si elegiste azul, Latias solo está en la Isla del Sur con el Ticket Eón (evento).", "consejo": "Nivel 40 errante o 50 en la Isla del Sur."},
-   "382": {"fase": 2, "orden": 240, "cuando": "Después del Hall de la Fama y de capturar o vencer a Rayquaza.", "requisitos": "En el Instituto Meteorológico (Ruta 119) un científico avisa de lluvias intensas: busca la ruta con lluvia y bucea hasta la Cueva Marina (rutas 105-108 y 124-129).", "consejo": "Kyogre nivel 70. La cueva cambia de sitio cada día."},
-   "383": {"fase": 2, "orden": 241, "cuando": "Después del Hall de la Fama y de capturar o vencer a Rayquaza.", "requisitos": "El Instituto Meteorológico avisa de una sequía: busca la ruta soleada y la Cueva Terrena (rutas 114-120).", "consejo": "Groudon nivel 70. La cueva cambia de sitio cada día."}
+   "grupos": [
+    "RSE_REGIS"
+   ],
+   "384": {
+    "fase": 2,
+    "orden": 205,
+    "cuando": "Después del Hall de la Fama (en la historia solo lo despiertas).",
+    "requisitos": "Vuelve a la cima del Pilar Celeste (Ruta 131) con la Bici Carrera.",
+    "consejo": "Rayquaza nivel 70: es el primero que conviene capturar porque lo pide el evento de Kyogre/Groudon."
+   },
+   "381": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama: tu madre pregunta de qué color era el Pokémon de la tele.",
+    "requisitos": "Si respondes azul vaga Latios; si respondes rojo, Latias. El elegido es errante y huye: síguelo con la Pokédex.",
+    "consejo": "Nivel 40. El otro de los dos solo con el Ticket Eón (Isla del Sur, nivel 50)."
+   },
+   "380": {
+    "fase": 2,
+    "orden": 231,
+    "cuando": "Después del Hall de la Fama (el que no elegiste con tu madre, solo con el Ticket Eón).",
+    "requisitos": "Respuesta roja a tu madre = Latias errante. Si elegiste azul, Latias solo está en la Isla del Sur con el Ticket Eón (evento).",
+    "consejo": "Nivel 40 errante o 50 en la Isla del Sur."
+   },
+   "382": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después del Hall de la Fama y de capturar o vencer a Rayquaza.",
+    "requisitos": "En el Instituto Meteorológico (Ruta 119) un científico avisa de lluvias intensas: busca la ruta con lluvia y bucea hasta la Cueva Marina (rutas 105-108 y 124-129).",
+    "consejo": "Kyogre nivel 70. La cueva cambia de sitio cada día."
+   },
+   "383": {
+    "fase": 2,
+    "orden": 241,
+    "cuando": "Después del Hall de la Fama y de capturar o vencer a Rayquaza.",
+    "requisitos": "El Instituto Meteorológico avisa de una sequía: busca la ruta soleada y la Cueva Terrena (rutas 114-120).",
+    "consejo": "Groudon nivel 70. La cueva cambia de sitio cada día."
+   }
   },
   "FIRERED": {
-   "144": {"fase": 0, "orden": 160, "cuando": "Durante la historia, en cuanto tengas Surf y Fuerza.", "requisitos": "Islas Espuma (Ruta 20): mueve rocas con Fuerza para frenar las corrientes hasta el sótano más profundo.", "consejo": "Articuno nivel 50."},
-   "145": {"fase": 0, "orden": 155, "cuando": "Durante la historia, con Surf.", "requisitos": "Central Energía: entra surfeando por la Ruta 10 (al norte de Pueblo Lavanda).", "consejo": "Zapdos nivel 50."},
-   "146": {"fase": 0, "orden": 170, "cuando": "Tras la medalla de Isla Canela, al viajar a las Islas Sete (Isla Prima).", "requisitos": "Mt. Ascuas en Isla Prima: sube a la cima con Fuerza y Golpe Roca.", "consejo": "Moltres nivel 50."},
-   "150": {"fase": 2, "orden": 250, "cuando": "Después del Hall de la Fama y de completar las Islas Sete (Rubí y Zafiro entregados).", "requisitos": "Cueva Celeste, al noroeste de Ciudad Celeste (Surf).", "consejo": "Mewtwo nivel 70: lleva Ultra Balls y algo que lo duerma."},
-   "243": {"fase": 2, "orden": 260, "cuando": "Tras recibir la Pokédex Nacional y si elegiste a Squirtle: Raikou vaga por Kanto.", "requisitos": "Es errante y huye: síguelo con la Pokédex (zona) y usa Mal de Ojo o Bloqueo.", "consejo": "Raikou nivel 50."},
-   "244": {"fase": 2, "orden": 260, "cuando": "Tras recibir la Pokédex Nacional y si elegiste a Bulbasaur: Entei vaga por Kanto.", "requisitos": "Es errante y huye: síguelo con la Pokédex y usa Mal de Ojo o Bloqueo.", "consejo": "Entei nivel 50."},
-   "245": {"fase": 2, "orden": 260, "cuando": "Tras recibir la Pokédex Nacional y si elegiste a Charmander: Suicune vaga por Kanto.", "requisitos": "Es errante y huye: síguelo con la Pokédex y usa Mal de Ojo o Bloqueo.", "consejo": "Suicune nivel 50."}
+   "144": {
+    "fase": 0,
+    "orden": 160,
+    "cuando": "Durante la historia, en cuanto tengas Surf y Fuerza.",
+    "requisitos": "Islas Espuma (Ruta 20): mueve rocas con Fuerza para frenar las corrientes hasta el sótano más profundo.",
+    "consejo": "Articuno nivel 50."
+   },
+   "145": {
+    "fase": 0,
+    "orden": 155,
+    "cuando": "Durante la historia, con Surf.",
+    "requisitos": "Central Energía: entra surfeando por la Ruta 10 (al norte de Pueblo Lavanda).",
+    "consejo": "Zapdos nivel 50."
+   },
+   "146": {
+    "fase": 0,
+    "orden": 170,
+    "cuando": "Tras la medalla de Isla Canela, al viajar a las Islas Sete (Isla Prima).",
+    "requisitos": "Mt. Ascuas en Isla Prima: sube a la cima con Fuerza y Golpe Roca.",
+    "consejo": "Moltres nivel 50."
+   },
+   "150": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Después del Hall de la Fama y de completar las Islas Sete (Rubí y Zafiro entregados).",
+    "requisitos": "Cueva Celeste, al noroeste de Ciudad Celeste (Surf).",
+    "consejo": "Mewtwo nivel 70: lleva Ultra Balls y algo que lo duerma."
+   },
+   "243": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Tras recibir la Pokédex Nacional y si elegiste a Squirtle: Raikou vaga por Kanto.",
+    "requisitos": "Es errante y huye: síguelo con la Pokédex (zona) y usa Mal de Ojo o Bloqueo.",
+    "consejo": "Raikou nivel 50."
+   },
+   "244": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Tras recibir la Pokédex Nacional y si elegiste a Bulbasaur: Entei vaga por Kanto.",
+    "requisitos": "Es errante y huye: síguelo con la Pokédex y usa Mal de Ojo o Bloqueo.",
+    "consejo": "Entei nivel 50."
+   },
+   "245": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Tras recibir la Pokédex Nacional y si elegiste a Charmander: Suicune vaga por Kanto.",
+    "requisitos": "Es errante y huye: síguelo con la Pokédex y usa Mal de Ojo o Bloqueo.",
+    "consejo": "Suicune nivel 50."
+   }
   },
-  "LEAFGREEN": {"copia": "FIRERED"}
+  "LEAFGREEN": {
+   "copia": "FIRERED"
+  },
+  "RED": {
+   "145": {
+    "fase": 0,
+    "orden": 150,
+    "cuando": "Durante la historia, en cuanto tengas Surf.",
+    "requisitos": "Central Energía: surfea por el río de la Ruta 10, al norte de Pueblo Lavanda, y busca a Zapdos al fondo.",
+    "consejo": "Zapdos nivel 50."
+   },
+   "144": {
+    "fase": 0,
+    "orden": 160,
+    "cuando": "Durante la historia, con Surf y Fuerza (camino a Isla Canela por mar).",
+    "requisitos": "Islas Espuma (Ruta 20): empuja rocas con Fuerza a los agujeros para frenar las corrientes y llega al sótano donde está Articuno.",
+    "consejo": "Articuno nivel 50."
+   },
+   "146": {
+    "fase": 0,
+    "orden": 170,
+    "cuando": "Durante la historia, en la Calle Victoria camino de la Liga.",
+    "requisitos": "Calle Victoria: avanza resolviendo los interruptores con Fuerza; Moltres está en la segunda planta.",
+    "consejo": "Moltres nivel 50."
+   },
+   "150": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Cueva Celeste, al noroeste de Ciudad Celeste (Surf): baja hasta el fondo.",
+    "consejo": "Mewtwo nivel 70: guarda antes y usa la Master Ball si la conservas."
+   }
+  },
+  "GREEN": {
+   "copia": "RED"
+  },
+  "BLUE": {
+   "copia": "RED"
+  },
+  "YELLOW": {
+   "copia": "RED"
+  },
+  "GOLD": {
+   "243": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, tras la escena del sótano de la Torre Quemada (Ciudad Iris).",
+    "requisitos": "Raikou huye y empieza a vagar por las rutas de Johto. Síguelo con el mapa de la Pokégear y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Raikou nivel 40."
+   },
+   "244": {
+    "fase": 0,
+    "orden": 141,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Entei vaga por Johto; síguelo con el mapa de la Pokégear.",
+    "consejo": "Entei nivel 40."
+   },
+   "245": {
+    "fase": 0,
+    "orden": 142,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Suicune vaga por Johto; síguelo con el mapa de la Pokégear.",
+    "consejo": "Suicune nivel 40."
+   },
+   "250": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Tras liberar la Torre Radio de Ciudad Trigal: el director te da el Ala Arcoíris.",
+    "requisitos": "Con el Ala Arcoíris (y la medalla de Ciudad Iris) sube a la cima de la Torre Hojalata.",
+    "consejo": "Ho-Oh nivel 40."
+   },
+   "249": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Ya en Kanto (posliga): un anciano de Ciudad Plateada te da el Ala Plateada.",
+    "requisitos": "Islas Remolino (Surf, Torbellino y Cascada): Lugia está en lo más hondo.",
+    "consejo": "Lugia nivel 70."
+   }
+  },
+  "SILVER": {
+   "243": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, tras la escena del sótano de la Torre Quemada (Ciudad Iris).",
+    "requisitos": "Raikou huye y empieza a vagar por las rutas de Johto. Síguelo con el mapa de la Pokégear y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Raikou nivel 40."
+   },
+   "244": {
+    "fase": 0,
+    "orden": 141,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Entei vaga por Johto; síguelo con el mapa de la Pokégear.",
+    "consejo": "Entei nivel 40."
+   },
+   "245": {
+    "fase": 0,
+    "orden": 142,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Suicune vaga por Johto; síguelo con el mapa de la Pokégear.",
+    "consejo": "Suicune nivel 40."
+   },
+   "250": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Ya en Kanto (posliga): un anciano de Ciudad Plateada te da el Ala Arcoíris.",
+    "requisitos": "Con el Ala Arcoíris sube a la cima de la Torre Hojalata (Ciudad Iris).",
+    "consejo": "Ho-Oh nivel 70."
+   },
+   "249": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Tras liberar la Torre Radio de Ciudad Trigal: el director te da el Ala Plateada.",
+    "requisitos": "Islas Remolino (Surf, Torbellino y Cascada): Lugia está en lo más hondo.",
+    "consejo": "Lugia nivel 40."
+   }
+  },
+  "CRYSTAL": {
+   "243": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada (Ciudad Iris).",
+    "requisitos": "Raikou vaga por Johto; síguelo con el mapa de la Pokégear.",
+    "consejo": "Raikou nivel 40."
+   },
+   "244": {
+    "fase": 0,
+    "orden": 141,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Entei vaga por Johto; síguelo con el mapa de la Pokégear.",
+    "consejo": "Entei nivel 40."
+   },
+   "245": {
+    "fase": 0,
+    "orden": 185,
+    "cuando": "Tras liberar la Torre Radio de Ciudad Trigal y recibir la Campana Clara.",
+    "requisitos": "Suicune no vaga en Cristal: tras perseguirlo con Eusine por Johto, te espera en la Torre Hojalata.",
+    "consejo": "Suicune nivel 40."
+   },
+   "250": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Después de capturar a Raikou, Entei y Suicune: el sabio de la Torre Hojalata te da el Ala Arcoíris.",
+    "requisitos": "Sube a la cima de la Torre Hojalata con el Ala Arcoíris.",
+    "consejo": "Ho-Oh nivel 60."
+   },
+   "249": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Ya en Kanto (posliga): un anciano de Ciudad Plateada te da el Ala Plateada.",
+    "requisitos": "Islas Remolino (Surf, Torbellino y Cascada).",
+    "consejo": "Lugia nivel 60."
+   }
+  },
+  "DIAMOND": {
+   "480": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Tras el combate de la Columna Lanza (fin de la historia del Equipo Galaxia).",
+    "requisitos": "Caverna Agudeza, en el Lago Agudeza (al norte de Ciudad Puntaneva).",
+    "consejo": "Uxie nivel 50."
+   },
+   "482": {
+    "fase": 0,
+    "orden": 191,
+    "cuando": "Tras el combate de la Columna Lanza.",
+    "requisitos": "Caverna Valor, en el Lago Valor (Surf).",
+    "consejo": "Azelf nivel 50."
+   },
+   "481": {
+    "fase": 0,
+    "orden": 192,
+    "cuando": "Tras el combate de la Columna Lanza: visita la Caverna Veraz del Lago Veraz.",
+    "requisitos": "Mesprit huye y vaga por Sinnoh: síguelo con el marcamapa del Pokéreloj y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Mesprit nivel 50."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Posliga, en el Área de Combate (requiere la Pokédex Nacional).",
+    "requisitos": "Acompaña a Bulgur por la Montaña Dura hasta el fondo; al terminar su exploración, Heatran aparece.",
+    "consejo": "Heatran nivel 70."
+   },
+   "487": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Con la Pokédex Nacional.",
+    "requisitos": "Cueva Retorno, al final del Sendero Primavera (Ruta 214): Giratina aparece al llegar a la última sala.",
+    "consejo": "Giratina nivel 70."
+   },
+   "488": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Posliga: tras el sueño del hijo del marinero de Ciudad Canal.",
+    "requisitos": "Viaja a la Isla Plenilunio; Cresselia huye y vaga por Sinnoh. Síguelo con el marcamapa.",
+    "consejo": "Cresselia nivel 50."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo (traídos al Parque Compi).",
+    "requisitos": "Templo Puntaneva, en Ciudad Puntaneva: baja hasta la última sala con los tres Regis.",
+    "consejo": "Regigigas nivel 70."
+   },
+   "483": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Final de la historia del Equipo Galaxia, en la cima del Monte Corona.",
+    "requisitos": "Columna Lanza: tras vencer a los comandantes y a Helio, Dialga aparece. Es obligatorio continuar.",
+    "consejo": "Dialga nivel 47. Si lo debilitas, vuelve tras la Liga; guarda antes."
+   }
+  },
+  "PEARL": {
+   "480": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Tras el combate de la Columna Lanza (fin de la historia del Equipo Galaxia).",
+    "requisitos": "Caverna Agudeza, en el Lago Agudeza (al norte de Ciudad Puntaneva).",
+    "consejo": "Uxie nivel 50."
+   },
+   "482": {
+    "fase": 0,
+    "orden": 191,
+    "cuando": "Tras el combate de la Columna Lanza.",
+    "requisitos": "Caverna Valor, en el Lago Valor (Surf).",
+    "consejo": "Azelf nivel 50."
+   },
+   "481": {
+    "fase": 0,
+    "orden": 192,
+    "cuando": "Tras el combate de la Columna Lanza: visita la Caverna Veraz del Lago Veraz.",
+    "requisitos": "Mesprit huye y vaga por Sinnoh: síguelo con el marcamapa del Pokéreloj y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Mesprit nivel 50."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Posliga, en el Área de Combate (requiere la Pokédex Nacional).",
+    "requisitos": "Acompaña a Bulgur por la Montaña Dura hasta el fondo; al terminar su exploración, Heatran aparece.",
+    "consejo": "Heatran nivel 70."
+   },
+   "487": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Con la Pokédex Nacional.",
+    "requisitos": "Cueva Retorno, al final del Sendero Primavera (Ruta 214): Giratina aparece al llegar a la última sala.",
+    "consejo": "Giratina nivel 70."
+   },
+   "488": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Posliga: tras el sueño del hijo del marinero de Ciudad Canal.",
+    "requisitos": "Viaja a la Isla Plenilunio; Cresselia huye y vaga por Sinnoh. Síguelo con el marcamapa.",
+    "consejo": "Cresselia nivel 50."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo (traídos al Parque Compi).",
+    "requisitos": "Templo Puntaneva, en Ciudad Puntaneva: baja hasta la última sala con los tres Regis.",
+    "consejo": "Regigigas nivel 70."
+   },
+   "484": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Final de la historia del Equipo Galaxia, en la cima del Monte Corona.",
+    "requisitos": "Columna Lanza: tras vencer a los comandantes y a Helio, Palkia aparece.",
+    "consejo": "Palkia nivel 47."
+   }
+  },
+  "PLATINUM": {
+   "487": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Final de la historia del Equipo Galaxia, en el Mundo Distorsión.",
+    "requisitos": "Tras resolver el Mundo Distorsión, Giratina (forma Origen) te espera. Si lo debilitas o huyes, reaparece en la Cueva Retorno tras la Liga.",
+    "consejo": "Giratina nivel 47."
+   },
+   "480": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Al salir del Mundo Distorsión, habla con el profesor Serbal en Pueblo Arena.",
+    "requisitos": "Caverna Agudeza, en el Lago Agudeza.",
+    "consejo": "Uxie nivel 50."
+   },
+   "482": {
+    "fase": 0,
+    "orden": 191,
+    "cuando": "Al salir del Mundo Distorsión y hablar con Serbal.",
+    "requisitos": "Caverna Valor, en el Lago Valor.",
+    "consejo": "Azelf nivel 50."
+   },
+   "481": {
+    "fase": 0,
+    "orden": 192,
+    "cuando": "Al salir del Mundo Distorsión y hablar con Serbal: visita la Caverna Veraz.",
+    "requisitos": "Mesprit huye y vaga por Sinnoh: síguelo con el marcamapa del Pokéreloj.",
+    "consejo": "Mesprit nivel 50."
+   },
+   "483": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Tras ganar la Liga: habla con la anciana de Pueblo Caelestis y lleva la Diamansfera en la mochila.",
+    "requisitos": "Sube a la Columna Lanza (Monte Corona) con la Diamansfera.",
+    "consejo": "Dialga nivel 70."
+   },
+   "484": {
+    "fase": 2,
+    "orden": 221,
+    "cuando": "Tras ganar la Liga: habla con la anciana de Pueblo Caelestis y lleva la Lustresfera en la mochila.",
+    "requisitos": "Sube a la Columna Lanza con la Lustresfera.",
+    "consejo": "Palkia nivel 70."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Posliga, en el Área de Combate (Pokédex Nacional).",
+    "requisitos": "Acompaña a Bulgur por la Montaña Dura; al acabar, Heatran aparece al fondo.",
+    "consejo": "Heatran nivel 50."
+   },
+   "488": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Posliga: tras el sueño del hijo del marinero de Ciudad Canal.",
+    "requisitos": "Isla Plenilunio; luego Cresselia vaga por Sinnoh.",
+    "consejo": "Cresselia nivel 50."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo.",
+    "requisitos": "Templo Puntaneva, en Ciudad Puntaneva, en la última sala.",
+    "consejo": "Regigigas nivel 1 en Platino (no es un error del juego)."
+   }
+  }
  }
 }
