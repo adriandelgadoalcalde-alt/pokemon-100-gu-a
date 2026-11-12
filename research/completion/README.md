@@ -71,6 +71,8 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   (pokefirered; 0x500 + 735-738). Las del Campeón no valen: `EventScript_ResetEliteFour` (hall_of_fame.inc) las borra al
   entrar en el Salón de la Fama. La numeración se contrastó con las partidas del propietario (las banderas del primer Alto
   Mando, 0x500 + 410-413, están activas; las del Campeón, borradas).
+- **Monte Plateado en Oro/Plata/Cristal:** `EVENT_OPENED_MT_SILVER` (OaksLab de pokegold/pokecrystal) más el Billete Barco
+  (0x44) y el Pase (0x86) en el inventario. Acreditado en las tres partidas del propietario.
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
