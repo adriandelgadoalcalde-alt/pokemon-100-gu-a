@@ -400,4 +400,6 @@ test('HGSS: las 28 formas de Unown de la Pokédex',()=>{
  const O=require('../src/engine/objectives.js'),f=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
  assert.equal(f({game:'HEARTGOLD',unownForms:Array.from({length:28},(_,i)=>i)},'pokedex.hgss.unown28'),true);
  assert.equal(f({game:'SOULSILVER',unownForms:[0]},'pokedex.hgss.unown28'),false);
+ assert.equal(f({game:'CRYSTAL',unown2:{forms:26}},'pokedex.gen2.unown26'),true);
+ assert.equal(f({game:'CRYSTAL',unown2:{forms:14}},'pokedex.gen2.unown26'),false);
 });

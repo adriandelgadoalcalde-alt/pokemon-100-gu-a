@@ -45,6 +45,9 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   `Entralink5`, umbral de la tarjeta según Serebii). Contrastado con la partida «100» de Negro 2 del propietario (100
   complementos, Torneo Campeones ganado, niveles 100/100) y con las de Blanco 2 y Negro/Blanco (15-17 complementos, sin
   Torneo Campeones). Los bloques 42, 53 y 63 entran en la comprobación de integridad del lector propio.
+- **Formas de Unown:** las 28 de HeartGold/SoulSilver (lista de formas de `Zukan4`, Pokédex + 0x10C; HeartGold del
+  propietario 28, SoulSilver 1) y las 26 letras de Oro/Plata/Cristal (`wUnownDex` de pokecrystal, `SAV2Offsets.PokedexSeen`
+  + 0x20; Cristal del propietario 14). Las cámaras de las Ruinas Alfa de HGSS exigen además las 28 formas.
 
 Pendiente con motivo (no se acredita solo para no adivinar):
 
@@ -58,6 +61,8 @@ Pendiente con motivo (no se acredita solo para no adivinar):
   zonas superadas.
 - **Poderes regalo de la Zona Nexo (Negro/Blanco):** PKHeX solo expone `MissionsComplete`, que no distingue qué poderes
   se han recibido.
+- **Corona de hojas doradas (HGSS):** se guarda en cada Pokémon (`ShinyLeaf`, bit 5), pero ninguna partida disponible tiene
+  un Pokémon coronado para contrastarlo, y que no esté en las cajas no prueba que no se hiciera.
 - **Expansiones de Escarlata/Púrpura:** las señales `FSYS_SCENARIO_GAME_CLEAR_SU1/SU2` existen, pero ninguna partida
   disponible tiene el DLC acabado para un contraste positivo.
 

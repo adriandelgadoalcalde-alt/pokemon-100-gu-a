@@ -152,6 +152,10 @@ public static class Audit
             ["subway5"] = save is SAV5 sub ? new { singleRecord = sub.BattleSubway.SingleRecord, doubleRecord = sub.BattleSubway.DoubleRecord,
                 superSingleRecord = sub.BattleSubway.SuperSingleRecord, superDoubleRecord = sub.BattleSubway.SuperDoubleRecord,
                 superMultiNpcRecord = sub.BattleSubway.SuperMultiNPCRecord } : null,
+            // Oro/Plata/Cristal: letras de Unown registradas (wUnownDex de pokecrystal, 26 bytes tras la Pokédex de vistos;
+            // SAV2Offsets.PokedexSeen + 0x20 en PKHeX). Cada byte es una letra 1-26; 0 = hueco libre.
+            ["unown2"] = save is SAV2 un2 ? new { forms = Enumerable.Range(0x20, 26).Select(i => (int)un2.Data[new SAV2Offsets(un2).PokedexSeen + i])
+                .Where(v => v is >= 1 and <= 26).Distinct().Count() } : null,
             // Negro/Blanco y Negro 2/Blanco 2: complementos del Musical (Musical5.GetHasProp de PKHeX, 100 bits).
             ["musical5"] = save is SAV5 mu ? new { props = Enumerable.Range(0, 100).Count(i => mu.Musical.GetHasProp(i)), total = 100 } : null,
             // Negro 2/Blanco 2: niveles blanco y negro de la Zona Nexo (Entralink5.WhiteForestLevel/BlackCityLevel de PKHeX).

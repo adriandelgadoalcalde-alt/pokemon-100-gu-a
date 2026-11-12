@@ -149,6 +149,8 @@
   if(sw&&Number.isInteger(sw.superSingleRecord)&&Number.isInteger(sw.superDoubleRecord))add('battle.unova.subwayBosses',sw.superSingleRecord>=49&&sw.superDoubleRecord>=49,'subway5');
   // HeartGold/SoulSilver: las 28 formas de Unown en la Pokédex (lista de formas de Zukan4).
   if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.unownForms))add('pokedex.hgss.unown28',d.unownForms.length>=28,'caught');
+  // Oro/Plata/Cristal: las 26 letras de Unown de la Pokédex (wUnownDex).
+  if(Number.isInteger(d.unown2?.forms))add('pokedex.gen2.unown26',d.unown2.forms>=26,'unown2');
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).
