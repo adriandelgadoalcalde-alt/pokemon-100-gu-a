@@ -137,6 +137,9 @@
   if(['RS','E'].includes(d.field?.family)&&Array.isArray(d.field.vars)&&Number.isInteger(d.field.vars[0x44]))add('challenge.hoenn.trickHouse',d.field.vars[0x44]>=8,'field');
   // Rubí Omega/Zafiro Alfa: «Contest Spectacular Progress» (variable 215 de PKHeX const_oras): 21 = Plubio y Lisia vencidos.
   if(['OMEGARUBY','ALPHASAPPHIRE'].includes(d.game)&&Array.isArray(d.events?.work)&&Number.isInteger(d.events.work[215]))add('contest.oras.spectacular',d.events.work[215]>=21,'events');
+  // Rojo Fuego/Verde Hoja: revancha del Campeón = bandera de entrenador de TRAINER_CHAMPION_REMATCH_* (pokefirered
+  // PokemonLeague_ChampionsRoom; TRAINER_FLAGS_START 0x500 + 739..741), una por cada inicial del rival.
+  if(d.field?.family==='FRLG'&&Array.isArray(d.field.flags)){const set=new Set(d.field.flags);add('story.frlg.championRematch',[0x500+739,0x500+740,0x500+741].some(f=>set.has(f)),'field');}
   // Rubí/Zafiro: estrella de la Torre Batalla = mejor racha > 49 (pokeruby trainer_card.c, TrainerCard_GetStarCount).
   if(d.field?.family==='RS'&&Number.isInteger(d.field.battleTower?.bestStreak))add('card.rs.battleTower',d.field.battleTower.bestStreak>49,'field');
   // Rojo Fuego/Verde Hoja: estrella de minijuegos = 200 bayas en Dodrio Berry Picking y 200 saltos seguidos en Pokémon Jump.

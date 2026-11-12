@@ -67,6 +67,8 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   en las partidas del propietario (0 BP) todo es cero.
 - **Revancha de la Liga en la 1.ª generación:** segunda entrada del Salón de la Fama (`wHallOfFameCount` de pokered,
   `SAV1.HallOfFameCount` de PKHeX). El Verde del propietario tiene 2 (acreditado); Rojo, Azul y Amarillo, 1.
+- **Revancha del Campeón en Rojo Fuego/Verde Hoja:** bandera de entrenador de `TRAINER_CHAMPION_REMATCH_*` (pokefirered,
+  `PokemonLeague_ChampionsRoom`; 0x500 + 739-741).
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
