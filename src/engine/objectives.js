@@ -147,6 +147,12 @@
   // Metro Batalla: Fero y Caril, combate 49 de los súper trenes individual y doble (récord >= 49 en ambos).
   const sw=d.subway5;
   if(sw&&Number.isInteger(sw.superSingleRecord)&&Number.isInteger(sw.superDoubleRecord))add('battle.unova.subwayBosses',sw.superSingleRecord>=49&&sw.superDoubleRecord>=49,'subway5');
+  // HeartGold/SoulSilver: estrellas de la tarjeta (pokeheartgold sub_020691E8, ScrCmd_GetTrcardStars). FLAG_UNK_0F1 =
+  // mejor récord en las 10 pruebas del Pokéathlon (abre la sala «Potential», scr_seq_0127_D49R0106); FLAG_UNK_184 = corona
+  // de hojas doradas entregada (scr_seq_0849_T20R0402, tras TryGiveShinyLeafCrown).
+  if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
+   const fl=new Set(d.events.activeFlags);add('card.hgss.pokeathlon',fl.has(0xF1),'events');add('card.hgss.leafCrown',fl.has(0x184),'events');
+  }
   // HeartGold/SoulSilver: las 28 formas de Unown en la Pokédex (lista de formas de Zukan4).
   if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.unownForms))add('pokedex.hgss.unown28',d.unownForms.length>=28,'caught');
   // Oro/Plata/Cristal: las 26 letras de Unown de la Pokédex (wUnownDex).

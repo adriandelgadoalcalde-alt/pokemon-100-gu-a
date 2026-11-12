@@ -27,7 +27,7 @@ function masteryEvaluation(goal,g){
    let rule=null;
    if(byLabel(['HEARTGOLD','SOULSILVER'],/^Huellas de oro/))auto='event.hgss.frontier_prints';
    if(byLabel(['PLATINUM'],/^Huellas de oro/))auto='event.pt.frontier_prints';
-   if(byLabel(['HEARTGOLD','SOULSILVER'],/cámaras secretas/))rule={all:[{fact:'event.hgss.alph'},{fact:'pokedex.hgss.unown28'}]};if(byLabel(['HEARTGOLD','SOULSILVER'],/^Registrar las 28 formas de Unown/))auto='pokedex.hgss.unown28';if(byLabel(['GOLD','SILVER','CRYSTAL'],/^Registrar las 26 formas de Unown/))auto='pokedex.gen2.unown26';
+   if(byLabel(['HEARTGOLD','SOULSILVER'],/cámaras secretas/))rule={all:[{fact:'event.hgss.alph'},{fact:'pokedex.hgss.unown28'}]};if(byLabel(['HEARTGOLD','SOULSILVER'],/^Registrar las 28 formas de Unown/))auto='pokedex.hgss.unown28';if(byLabel(['HEARTGOLD','SOULSILVER'],/^Batir los récords de las 10 pruebas Pokéathlon/))auto='card.hgss.pokeathlon';if(byLabel(['HEARTGOLD','SOULSILVER'],/^Coronar Pokémon con cinco hojas doradas/))auto='card.hgss.leafCrown';if(byLabel(['GOLD','SILVER','CRYSTAL'],/^Registrar las 26 formas de Unown/))auto='pokedex.gen2.unown26';
    const red=['HEARTGOLD','SOULSILVER'].includes(g.id)?'event.hgss.red':'event.gen2.red';
    if(byLabel(['HEARTGOLD','SOULSILVER','GOLD','SILVER','CRYSTAL'],/^Derrotar a Rojo en Monte Plateado/))auto=red;
    if(byLabel(['HEARTGOLD','SOULSILVER','GOLD','SILVER','CRYSTAL'],/^Superar ocho gimnasios de Kanto y vencer a Rojo/))rule={all:[{fact:'story.badges.count',atLeast:16},{fact:red}]};

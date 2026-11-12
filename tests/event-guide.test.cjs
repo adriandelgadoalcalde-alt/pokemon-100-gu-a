@@ -416,3 +416,9 @@ test('Gen. I: Visor Silph, Poké Flauta y las cinco MO (solo se acredita la pres
  assert.equal(f([0x48,0x49,0xC4,0xC5,0xC6,0xC7,0xC8]),true);
  assert.equal(f([0x48,0x49,0xC8]),undefined);
 });
+
+test('HGSS: estrellas del Pokéathlon (FLAG_UNK_0F1) y de la corona de hojas (FLAG_UNK_184)',()=>{
+ const O=require('../src/engine/objectives.js'),f=(flags,id)=>O.fromDiagnosis({game:'HEARTGOLD',events:{activeFlags:flags}}).find(x=>x.id===id)?.value;
+ assert.equal(f([0xF1],'card.hgss.pokeathlon'),true);assert.equal(f([0xF0],'card.hgss.pokeathlon'),false);
+ assert.equal(f([0x184],'card.hgss.leafCrown'),true);assert.equal(f([],'card.hgss.leafCrown'),false);
+});

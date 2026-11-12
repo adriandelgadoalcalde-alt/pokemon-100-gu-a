@@ -51,6 +51,11 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
 - **Objetos de campo de la 1.ª generación:** Visor Silph, Poké Flauta y MO01-MO05 en la mochila o el PC (índices de
   pokered 0x48, 0x49, 0xC4-0xC8). Solo se acredita si están todos, porque las MO se pueden tirar: el Verde del propietario
   los tiene en el PC; Rojo, Azul y Amarillo no conservan todas las MO y quedan sin acreditar.
+- **Tarjeta de HeartGold/SoulSilver:** la función que cuenta sus estrellas (pokeheartgold `sub_020691E8`, que usa
+  `ScrCmd_GetTrcardStars`) da las cinco condiciones: fin de la historia, Pokédex Nacional, estadísticas 0/2/4/6/8 del Frente
+  Batalla ≥ 100, `FLAG_UNK_0F1` y `FLAG_UNK_184`. La 0xF1 abre la sala «Potential» del Pokéathlon («mejor récord en todas
+  las pruebas», scr_seq_0127_D49R0106) y la 0x184 se pone al entregar la corona de hojas doradas (scr_seq_0849_T20R0402).
+  Las dos se acreditan; las rachas del Frente Batalla siguen sin poder leerse (ver abajo).
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
@@ -67,8 +72,6 @@ Pendiente con motivo (no se acredita solo para no adivinar):
   zonas superadas.
 - **Poderes regalo de la Zona Nexo (Negro/Blanco):** PKHeX solo expone `MissionsComplete`, que no distingue qué poderes
   se han recibido.
-- **Corona de hojas doradas (HGSS):** se guarda en cada Pokémon (`ShinyLeaf`, bit 5), pero ninguna partida disponible tiene
-  un Pokémon coronado para contrastarlo, y que no esté en las cajas no prueba que no se hiciera.
 - **Zygarde, pegatinas dominantes y Mantine Surf (Alola):** PKHeX da las células recogidas (`EventWork7`, trabajo 169 y
   lista de 95/100 posiciones; Sol 95/95, Ultrasol y Ultraluna 100/100 en las partidas del propietario), pero no los cinco
   núcleos que pide el objetivo. El récord 72 («Stickers Collected») marca 102 en una partida de Ultraluna, más que las 100
