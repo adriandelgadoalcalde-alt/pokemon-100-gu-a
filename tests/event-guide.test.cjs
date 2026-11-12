@@ -583,3 +583,8 @@ test('Alola: defensa del título de campeón (récord 100 de PKHeX)',()=>{
  const O=require('../src/engine/objectives.js'),v=n=>O.fromDiagnosis({game:'MOON',records7:{titleDefense:n}}).find(x=>x.id==='alola.titleDefense')?.value;
  assert.equal(v(3),true);assert.equal(v(0),false);
 });
+
+test('DBPR: Griseosfera en la bolsa (Sala de la Distorsión del Parque Hansa)',()=>{
+ const O=require('../src/engine/objectives.js'),v=items=>O.fromDiagnosis({game:'SP',inventory:[{pocket:'Items',items}]}).find(x=>x.id==='bdsp.griseousOrb')?.value;
+ assert.equal(v([{id:112,count:1}]),true);assert.equal(v([{id:111,count:1}]),undefined);
+});

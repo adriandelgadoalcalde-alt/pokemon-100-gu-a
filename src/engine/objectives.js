@@ -260,6 +260,8 @@
   }
   // Sol/Luna y USUL: defensas del título de campeón (récord 100 de PKHeX).
   if(Number.isInteger(d.records7?.titleDefense))add('alola.titleDefense',d.records7.titleDefense>=1,'records7');
+  // DBPR: Griseosfera (objeto 112) en la bolsa = Giratina vencido en la Sala de la Distorsión del Parque Hansa (WikiDex).
+  if(['BD','SP'].includes(d.game)&&Array.isArray(d.inventory)&&d.inventory.some(p=>(p?.items||[]).some(i=>i?.id===112&&i.count>0)))add('bdsp.griseousOrb',true,'inventory');
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).
