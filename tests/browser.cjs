@@ -195,6 +195,7 @@ async function run() {
     const allContext=await browser.newContext(ctx({serviceWorkers:'block'})),allPage=await allContext.newPage();
     allPage.on('pageerror',e=>errors.push(e.message));await allPage.setViewportSize({width:390,height:1000});await allPage.goto(`${base}/atlas.html`);
     for(const game of catalog.games){
+      if(process.env.POKEMON_DEBUG)console.log('juego',game.id);
       await allPage.evaluate(id=>localStorage.setItem('pokemon-atlas9-progress-v1',JSON.stringify({game:id,checks:{}})),game.id);
       await allPage.reload();
       assert.equal(await allPage.locator('#mobile-gen').inputValue(),String(game.generation));
