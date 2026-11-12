@@ -410,3 +410,9 @@ test('Leyendas Arceus: Arceus vencido y ensueño de combates sin fin de Fero',()
  assert.equal(f({KCompletedEternalBattleReverie:false},'la.eternalReverie'),false);
  assert.equal(f({KCompletedEternalBattleReverie:true},'la.eternalReverie'),true);
 });
+
+test('Gen. I: Visor Silph, Poké Flauta y las cinco MO (solo se acredita la presencia)',()=>{
+ const O=require('../src/engine/objectives.js'),f=items=>O.fromDiagnosis({game:'GREEN',integrity:{checksumsValid:true},inventory:[{pocket:'Items',items:items.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.gen1.fieldItems')?.value;
+ assert.equal(f([0x48,0x49,0xC4,0xC5,0xC6,0xC7,0xC8]),true);
+ assert.equal(f([0x48,0x49,0xC8]),undefined);
+});

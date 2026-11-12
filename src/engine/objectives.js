@@ -151,6 +151,13 @@
   if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.unownForms))add('pokedex.hgss.unown28',d.unownForms.length>=28,'caught');
   // Oro/Plata/Cristal: las 26 letras de Unown de la Pokédex (wUnownDex).
   if(Number.isInteger(d.unown2?.forms))add('pokedex.gen2.unown26',d.unown2.forms>=26,'unown2');
+  // Rojo/Azul/Verde/Amarillo: Visor Silph (0x48), Poké Flauta (0x49) y MO01-MO05 (0xC4-0xC8) en la mochila o el PC
+  // (índices internos de pokered, constants/item_constants.asm). Las MO se pueden tirar, así que la ausencia no prueba
+  // nada: solo se acredita la presencia de todas.
+  if(['RED','BLUE','GREEN','YELLOW'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
+   const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
+   if([0x48,0x49,0xC4,0xC5,0xC6,0xC7,0xC8].every(id=>have.has(id)))add('inventory.gen1.fieldItems',true,'inventory');
+  }
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).
