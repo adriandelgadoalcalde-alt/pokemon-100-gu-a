@@ -100,6 +100,8 @@
   const facts=[],add=(id,value,field)=>facts.push({id,value,gameId:d.game,type:'direct',
    validation:validated||d.integrity?.verifiedFields?.includes(field)?'verified':'unverified',source:{kind:'save_field',engine:d.extractor?.engine||'PokemonSaveReader'}});
   for(const id of d.caught||[])add(`pokedex.caught.${id}`,true,'caught');
+  // La lista de capturados es la Pokédex entera leída (PKHeX GetCaught de 1 al máximo): lo que no está, no está capturado.
+  if(Array.isArray(d.caught)){const caught=new Set(d.caught);for(let id=1;id<=1025;id++)if(!caught.has(id))add(`pokedex.caught.${id}`,false,'caught');}
   for(const id of d.seen||[])add(`pokedex.seen.${id}`,true,'seen');
   const completion=(typeof module==='object'&&module.exports?require('./completion.js'):root.PokemonCompletion)?.dexStatus(d);
   if(completion)for(const [key,status]of Object.entries(completion)){
@@ -121,6 +123,21 @@
   if(typeof d.nationalDex==='boolean')add('pokedex.nationalUnlocked',d.nationalDex,'nationalDex');
   if(Number.isInteger(d.badgesTotal??d.badges))add('story.badges.count',d.badgesTotal??d.badges,'badgesTotal');
   for(const item of d.keyItems||[])if(item.count>0)add(`inventory.keyItem.${item.id}.present`,true,'keyItems');
+  // Amuleto Oval (631) e Iris (632): objetos clave que no se pueden tirar, guardar ni gastar; con el bolsillo leído, su
+  // ausencia es un «no». Los demás objetos clave siguen acreditándose solo por su presencia (algunos se entregan o gastan).
+  // Let's Go no tiene bolsillo de objetos clave: el Amuleto Iris va en el general (PlayerBag7b de PKHeX), así que se busca
+  // en toda la mochila.
+  {
+   const bag=[...(d.keyItems||[]),...(['LETGOP','LETGOE'].includes(d.game)?(d.inventory||[]).flatMap(p=>p?.items||[]):[])];
+   // Objetos clave que el juego nunca retira (los que cambian de número al usarse, Punta ADN 628/629, Necrosol 943/945,
+   // Necroluna 944/946 y Riendas Unión 1590/1591, cuentan por pares en las reglas).
+   const lasting={X:[696],Y:[696],OMEGARUBY:[728,735,775],ALPHASAPPHIRE:[728,735,775],BLACK2:[628,629,638,458],WHITE2:[628,629,638,458],
+    SWORD:[1077,1278,628,629,943,944,945,946,1590,1591,1584,1597],SHIELD:[1077,1278,628,629,943,944,945,946,1590,1591,1584,1597]}[d.game]||[];
+   if(bag.some(i=>i?.count>0))for(const id of [631,632,...lasting]){
+    const has=bag.some(i=>i?.id===id&&i.count>0);
+    if(!has||!(d.keyItems||[]).some(i=>i?.id===id&&i.count>0))add(`inventory.keyItem.${id}.present`,has,has?'inventory':'keyItems');
+   }
+  }
   // Esmeralda: estrella del Frente Batalla = plata y oro de las 7 instalaciones (HasAllFrontierSymbols, pokeemerald).
   if(d.field&&Array.isArray(d.field.flags)&&(d.field.family?d.field.family==='E':d.game==='EMERALD')){
    const G=typeof module==='object'&&module.exports?require('../saves/gen3-data.js'):root.PokemonGen3Data;
@@ -179,37 +196,37 @@
   // Oro/Plata/Cristal: las 26 letras de Unown de la Pokédex (wUnownDex).
   if(Number.isInteger(d.unown2?.forms))add('pokedex.gen2.unown26',d.unown2.forms>=26,'unown2');
   // Rojo/Azul/Verde/Amarillo: Visor Silph (0x48), Poké Flauta (0x49) y MO01-MO05 (0xC4-0xC8) en la mochila o el PC
-  // (índices internos de pokered, constants/item_constants.asm). Las MO se pueden tirar, así que la ausencia no prueba
-  // nada: solo se acredita la presencia de todas.
+  // (índices internos de pokered, constants/item_constants.asm). Ni las MO ni esos objetos clave se pueden tirar (IsKeyItem_
+  // de pokered los trata igual) y el inventario incluye el PC: si falta alguno, no se tiene.
   if(['RED','BLUE','GREEN','YELLOW'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
-   if([0x48,0x49,0xC4,0xC5,0xC6,0xC7,0xC8].every(id=>have.has(id)))add('inventory.gen1.fieldItems',true,'inventory');
+   add('inventory.gen1.fieldItems',[0x48,0x49,0xC4,0xC5,0xC6,0xC7,0xC8].every(id=>have.has(id)),'inventory');
   }
   // Oro/Plata/Cristal: Billete Barco (0x44) y Pase del Magnetotrén (0x86) en el inventario (pokecrystal item_constants;
-  // objetos clave que no se pueden tirar). Solo se acredita la presencia.
+  // objetos clave que no se pueden tirar; el inventario incluye el PC).
   if(['GOLD','SILVER','CRYSTAL'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
-   if(have.has(0x44)&&have.has(0x86))add('inventory.gen2.tickets',true,'inventory');
+   add('inventory.gen2.tickets',have.has(0x44)&&have.has(0x86),'inventory');
   }
   // Rubí/Zafiro/Esmeralda: objetos clave de acceso (pokeruby/pokeemerald items.h): Gafas Aislantes 279 (desierto y
   // Ruinas de Regirock), Detector Devon 288 (Kecleon que cortan el paso) y, en Esmeralda, Emblema Magma 375 (Pico
-  // Pirámide/Monte Pírico hacia Groudon). Solo se acredita la presencia: los objetos clave no se pueden tirar.
+  // Pirámide/Monte Pírico hacia Groudon). Los objetos clave no se pueden tirar y el inventario incluye el PC.
   if(['RUBY','SAPPHIRE','EMERALD'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
    const need=d.game==='EMERALD'?[279,288,375]:[279,288];
-   if(need.every(id=>have.has(id)))add('inventory.hoenn.accessItems',true,'inventory');
+   add('inventory.hoenn.accessItems',need.every(id=>have.has(id)),'inventory');
   }
   // Alola: los 18 cristales Z de tipo (807-824), el Arca de Zygarde (847) y la Pulsera Z (797) o Superpulsera Z (933 en
-  // USUM), números de objeto de PKHeX. Solo se acredita la presencia en el inventario.
+  // USUM), números de objeto de PKHeX. Son objetos clave o cristales que no se pueden tirar ni gastar.
   if(['SUN','MOON','ULTRASUN','ULTRAMOON'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
    const ring=['ULTRASUN','ULTRAMOON'].includes(d.game)?933:797;
-   if(Array.from({length:18},(_,i)=>807+i).every(id=>have.has(id))&&have.has(847)&&have.has(ring))add('inventory.alola.zResources',true,'inventory');
+   add('inventory.alola.zResources',Array.from({length:18},(_,i)=>807+i).every(id=>have.has(id))&&have.has(847)&&have.has(ring),'inventory');
   }
   // Rojo Fuego/Verde Hoja: Visor Silph (359), Poké Flauta (350) y MO01-MO07 (339-345), ids de pokefirered items.h.
   if(['FIRERED','LEAFGREEN'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
-   if([359,350,339,340,341,342,343,344,345].every(id=>have.has(id)))add('inventory.frlg.fieldItems',true,'inventory');
+   add('inventory.frlg.fieldItems',[359,350,339,340,341,342,343,344,345].every(id=>have.has(id)),'inventory'); // objetos clave y MO: no se tiran; incluye el PC
   }
   // Ultrasol/Ultraluna: episodio Rainbow Rocket terminado. flags_usum de PKHeX: 211 = «la mansión de Samina NO es el
   // castillo del Team Rocket» (también vale antes del episodio) y 1730-1732 = Electrode desaparecidos dentro del castillo
@@ -217,40 +234,43 @@
   // ausencia no prueba nada (los Electrode son opcionales): solo se acredita la presencia.
   if(['ULTRASUN','ULTRAMOON'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags);
-   if(fl.has(211)&&[1730,1731,1732].some(f=>fl.has(f)))add('story.usum.rainbowRocket',true,'events');
+   // También vale cualquier objeto recogido dentro del castillo (FV_FLD_ITEM_362-378, 0xB46-0xB56 de flags_usum): el
+   // castillo solo existe durante el episodio. Contrastado con Ultrasol y Ultraluna del propietario (ambos recogidos).
+   const castle=[1730,1731,1732,...Array.from({length:17},(_,i)=>0xB46+i)];
+   if(fl.has(211)&&castle.some(f=>fl.has(f)))add('story.usum.rainbowRocket',true,'events');
   }
   // La enfermera reconoce la tarjeta de oro (te llama por tu nombre y cura sin preguntar): bandera que el script pone la
   // primera vez. Esmeralda FLAG_NURSE_MENTIONS_GOLD_CARD 0x159 (pokeemerald), Platino FLAG_POKECENTER_GOLD_TRAINER_CARD_SEEN
-  // 0x69 (pokeplatinum), HGSS FLAG_NURSE_NOTICED_CARD 0x64 (pokeheartgold). Solo se acredita la presencia.
+  // 0x69 (pokeplatinum), HGSS FLAG_NURSE_NOTICED_CARD 0x64 (pokeheartgold). El conjunto de banderas se lee entero: sin la bandera, la enfermera aún no te ha reconocido.
   {
    const nurse={EMERALD:0x159,PLATINUM:0x69,DIAMOND:0x69,PEARL:0x69,HEARTGOLD:0x64,SOULSILVER:0x64,BD:68,SP:68}[d.game];
    const flags=d.game==='EMERALD'?d.field?.flags:d.events?.activeFlags;
-   if(nurse!==undefined&&Array.isArray(flags)&&flags.includes(nurse))add('card.nurseRecognition',true,d.game==='EMERALD'?'field':'events');
+   if(nurse!==undefined&&Array.isArray(flags))add('card.nurseRecognition',flags.includes(nurse),d.game==='EMERALD'?'field':'events');
   }
   // Diplomas del director del juego en Platino (Hotel Gran Lago): el script pone FLAG_RECEIVED_LOCAL_DEX_DIPLOMA (0xAB) y
   // FLAG_RECEIVED_NATIONAL_DEX_DIPLOMA (0xAC) al entregarlos (pokeplatinum, grand_lake_valor_lakefront_west_house y
-  // generated/vars_flags.txt; misma numeración que la 0x69 de la enfermera). Solo se acredita la presencia.
+  // generated/vars_flags.txt; misma numeración que la 0x69 de la enfermera). Sin la bandera, el diploma no se ha recibido.
   // Diamante/Perla: las mismas banderas, FE_RECONGNIZE_SHINOU/NATIONAL 0xAB/0xAC y FE_PC_GOLD 0x69 (FlagsEditorEXPlugin flags_gen4dp).
   if(['PLATINUM','DIAMOND','PEARL'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags);
-   if(fl.has(0xAB))add('card.pt.diplomaSinnoh',true,'events');
-   if(fl.has(0xAC))add('card.pt.diplomaNational',true,'events');
+   add('card.pt.diplomaSinnoh',fl.has(0xAB),'events');
+   add('card.pt.diplomaNational',fl.has(0xAC),'events');
   }
   // X/Y: diplomas del director del juego (hotel de Ciudad Témpera), SYS_FLAG_C05R0302_AWARD_01-05 = 0xA7A-0xA7E (Kalos
   // Centro, Costa, Montaña, Kalos completa y Nacional). ROZA: SYS_FLAG_ZUKAN_AWARD_CHI 0xBC6 (Hoenn) y _ZEN 0xBC7 (Nacional).
-  // Nombres y números de FlagsEditorEXPlugin (flags_gen6xy_en / flags_gen6oras_en). Solo se acredita la presencia.
+  // Nombres y números de FlagsEditorEXPlugin (flags_gen6xy_en / flags_gen6oras_en). Sin la bandera, no recibido.
   if(['X','Y','OMEGARUBY','ALPHASAPPHIRE'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags),xy=['X','Y'].includes(d.game);
-   if(xy?[0xA7A,0xA7B,0xA7C,0xA7D].every(f=>fl.has(f)):fl.has(0xBC6))add('card.gen6.diplomaRegional',true,'events');
-   if(fl.has(xy?0xA7E:0xBC7))add('card.gen6.diplomaNational',true,'events');
+   add('card.gen6.diplomaRegional',xy?[0xA7A,0xA7B,0xA7C,0xA7D].every(f=>fl.has(f)):fl.has(0xBC6),'events');
+   add('card.gen6.diplomaNational',fl.has(xy?0xA7E:0xBC7),'events');
   }
   // Teselia: FE_AWARD_LOCAL / FE_AWARD_NATIONAL (FlagsEditorEXPlugin; N/B 0x11F/0x120, N2/B2 0xDD/0xDE). Contrastado con las
   // cuatro partidas del propietario: Negro solo el regional (su habitación muestra solo ese diploma), Negro 2 «100» los dos,
-  // Blanco y Blanco 2 ninguno. Solo se acredita la presencia.
+  // Blanco y Blanco 2 ninguno (el «no» también está contrastado).
   if(['BLACK','WHITE','BLACK2','WHITE2'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags),bw=['BLACK','WHITE'].includes(d.game);
-   if(fl.has(bw?0x11F:0xDD))add('card.unova.diplomaRegional',true,'events');
-   if(fl.has(bw?0x120:0xDE))add('card.unova.diplomaNational',true,'events');
+   add('card.unova.diplomaRegional',fl.has(bw?0x11F:0xDD),'events');
+   add('card.unova.diplomaNational',fl.has(bw?0x120:0xDE),'events');
   }
   // X/Y: capítulo de Handsome completo = FE_HANDSOME_QUEST_ALL_CLEAR (0xC9, FlagsEditorEXPlugin flags_gen6xy). Contrastado
   // con las partidas del propietario: Y lo tiene (WK_SCENE_HANDSOME_QUEST = 7 y los seis episodios con estado), X no lo empezó.
@@ -263,13 +283,13 @@
    if(fl.has(0x8F9))add('oras.stevenRematch',fl.has(0x974)||fl.has(0xA7A),'events');
   }
   // DBPR: EvWork.FLAG_INDEX de uDPR: FE_RECONGNIZE_SHINOU/NATIONAL 132/133 (diplomas) y FE_C10R0111_LEAGUE2_CHAMP_WIN 1713
-  // (victoria contra Cintia en la revancha de la Liga; la primera es FE_C10R0111_CHAMP_WIN 141). Solo presencia.
+  // (victoria contra Cintia en la revancha de la Liga; la primera es FE_C10R0111_CHAMP_WIN 141). Sin la bandera, no.
   if(['BD','SP'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags);
-   if(fl.has(132))add('card.bdsp.diplomaSinnoh',true,'events');
-   if(fl.has(133))add('card.bdsp.diplomaNational',true,'events');
-   if(fl.has(1713))add('bdsp.cynthiaRematch',true,'events');
-   if(fl.has(1426))add('bdsp.towerMaster',true,'events'); // FE_TOWER_MASTER_WINED: victoria contra el As de la Torre Batalla.
+   add('card.bdsp.diplomaSinnoh',fl.has(132),'events');
+   add('card.bdsp.diplomaNational',fl.has(133),'events');
+   add('bdsp.cynthiaRematch',fl.has(1713),'events');
+   add('bdsp.towerMaster',fl.has(1426),'events'); // FE_TOWER_MASTER_WINED: victoria contra el As de la Torre Batalla.
   }
   // Alola: núcleos de Zygarde recogidos = SYS_FLAG_ZIGARUDE_CORE1..5_GET (SL 0xC63-0xC67, USUL 0x1023-0x1027;
   // FlagsEditorEXPlugin). Contrastado: Sol pública acabada (95 células) 5/5, partidas recién empezadas 0/5.
@@ -281,8 +301,8 @@
   // 0x144 al enseñar cada diploma (pokeheartgold, scr_seq_0798_T07R0203 y include/constants/flags.h).
   if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags);
-   if(fl.has(0x143))add('card.hgss.diplomaJohto',true,'events');
-   if(fl.has(0x144))add('card.hgss.diplomaNational',true,'events');
+   add('card.hgss.diplomaJohto',fl.has(0x143),'events');
+   add('card.hgss.diplomaNational',fl.has(0x144),'events');
   }
   // Esmeralda: combate con Máximo en la Cascada Meteoro tras la Liga, FLAG_DEFEATED_METEOR_FALLS_STEVEN 0x4F8 (pokeemerald).
   if(d.field&&Array.isArray(d.field.flags)&&(d.field.family?d.field.family==='E':d.game==='EMERALD'))add('battle.emerald.stevenMeteorFalls',d.field.flags.includes(0x4F8),'field');
@@ -306,7 +326,9 @@
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
    const r=(a,b)=>Array.from({length:b-a+1},(_,k)=>a+k),special=[753,664,752,2575,2576,2577,2648,764,662,663,2640];
    const all=[...r(656,685),...r(752,764),...r(767,770),...r(2559,2587),...r(2635,2650)];
-   const base=all.filter(x=>x<2635&&!special.includes(x)),dlc=all.filter(x=>x>=2635&&!special.includes(x));
+   // Heatranita (2567), Darkrainita (2568) y Zeraoranita (2586) tienen número bajo pero son de Megadimensión (WikiDex).
+   const inDlc=x=>x>=2635||[2567,2568,2586].includes(x);
+   const base=all.filter(x=>!inDlc(x)&&!special.includes(x)),dlc=all.filter(x=>inDlc(x)&&!special.includes(x));
    if(base.every(x=>have.has(x)))add('za.megaStones.base',true,'inventory');
    if(dlc.every(x=>have.has(x)))add('za.megaStones.dlc',true,'inventory');
    if(special.every(x=>have.has(x)))add('za.megaStones.special',true,'inventory');
@@ -320,6 +342,23 @@
    if(typeof d.clear8.armor==='boolean')add('swsh.armorClear',d.clear8.armor,'clear8');
    if(typeof d.clear8.crown==='boolean')add('swsh.crownClear',d.clear8.crown,'clear8');
   }
+  // Revisión del guardado (SaveRevisionString de PKHeX): una partida guardada por última vez con una versión anterior a un
+  // DLC no ha podido jugarlo (el juego actualiza el guardado al cargarlo con el DLC). Espada/Escudo: -Base, -IoA (La isla de
+  // la armadura), -CT (Las nieves de la corona). Escarlata/Púrpura: -Base, -TM (La máscara turquesa), -ID (El disco índigo).
+  {
+   const rev={'-Base':0,'-IoA':1,'-CT':2,'-TM':1,'-ID':2}[d.revision];
+   if(Number.isInteger(rev)&&['SWORD','SHIELD'].includes(d.game)){
+    if(rev<1){add('swsh.armorClear',false,'revision');add('collection.swsh.alolanDiglett',false,'revision');add('collection.swsh.dojoWatts',false,'revision');add('battle.swsh.restrictedSparring',false,'revision');}
+    if(rev<2){add('swsh.crownClear',false,'revision');add('swsh.crownCaptures',false,'revision');add('collection.swsh.footprints',false,'revision');}
+   }
+   if(Number.isInteger(rev)&&['SCARLET','VIOLET'].includes(d.game)){
+    if(rev<1){add('sv.tealMaskClear',false,'revision');add('sv.ogreOustinHard',false,'revision');add('inventory.sv.ogerponMasks',false,'revision');}
+    if(rev<2){add('sv.indigoDiskClear',false,'revision');add('sv.flyingTrialAll',false,'revision');}
+   }
+  }
+  // Sin las 8 medallas no se puede haber acabado la historia (juegos con gimnasios; Alola, Hisui y Z-A no los tienen).
+  if(typeof d.gameClear!=='boolean'&&Number.isInteger(d.badgesTotal)&&d.badgesTotal<8&&
+   !['SUN','MOON','ULTRASUN','ULTRAMOON','ARCEUS','ZA'].includes(d.game))add('story.gameClear',false,'badgesTotal');
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).
@@ -359,7 +398,9 @@
   }
   // Escarlata/Púrpura: las tres máscaras de Ogerpon en la mochila (Cimiento 2406, Fuente 2407, Horno 2408; text_Items de PKHeX).
   if(['SCARLET','VIOLET'].includes(d.game)&&Array.isArray(d.inventory)){const have=new Set(d.inventory.flatMap(p=>(p?.items||[]).filter(i=>i?.count>0).map(i=>i.id)));
-   if([2406,2407,2408].every(id=>have.has(id)))add('inventory.sv.ogerponMasks',true,'inventory');}
+   // Si falta alguna y Ogerpon (1017) no está capturado, nadie puede llevarla equipada: aún no se tienen las tres.
+   if([2406,2407,2408].every(id=>have.has(id)))add('inventory.sv.ogerponMasks',true,'inventory');
+   else if(Array.isArray(d.caught)&&!d.caught.includes(1017))add('inventory.sv.ogerponMasks',false,'inventory');}
   // Cristal: desafío de 7 combates de la Torre Batalla (pokecrystal battle_tower.asm y maps/BattleTower1F.asm). Estado 3/4 =
   // el último desafío se ganó; premio 0 = nunca se empezó un desafío (el premio se elige al entrar). Otro caso: sin evidencia.
   if(Number.isInteger(d.tower2?.state)&&Number.isInteger(d.tower2?.reward)){
@@ -368,14 +409,16 @@
   // Leyendas Z-A: Floette flor eterna capturado (forma 5 de 670 en la Pokédex), recompensa del rango 15 de los Juegos Z-A infinitos.
   if(typeof d.za9?.floetteEternalCaught==='boolean')add('za.floetteEternal',d.za9.floetteEternalCaught,'za9');
   // Diamante/Perla: récord de racha de la Torre Batalla (GameStats 0x35-0x3D de pokediamond, GetTrainerCardLevel).
-  // Diamante/Perla/Platino: revancha del Alto Mando y de Cintia por el Salón de la Fama (pkhex-extractor/Audit.cs,
-  // LeagueRematch4): una entrada posterior al encuentro de un Pokémon propio que solo existe tras la condición de la
-  // revancha (Nacional en DP, arresto de Helio en Platino) la prueba. Las dos condiciones llegan después de la primera Liga,
-  // así que con una sola entrada en el Salón (o sin Nacional o sin el arresto) la revancha aún no se ha hecho.
+  // Platino: revancha del Alto Mando y de Cintia por el Salón de la Fama (pkhex-extractor/Audit.cs, LeagueRematch4): una
+  // entrada posterior al arresto de Plutón (Heatran propio, su reaparición o el Diario) la prueba; con una sola entrada o sin
+  // el arresto, aún no. Diamante/Perla no tienen equipos de revancha (pokediamond: un solo entrenador por miembro del Alto
+  // Mando y Cintia, trainers.h 261-267; WikiDex «Liga Pokémon (Sinnoh)»): el objetivo es volver a vencerlos, y cada
+  // victoria deja una entrada en el Salón, así que dos o más entradas lo prueban y una sola lo descarta.
   if(['DIAMOND','PEARL','PLATINUM'].includes(d.game)&&d.leagueRematch4&&Number.isInteger(d.leagueRematch4.hallOfFame)){
-   const lr=d.leagueRematch4,pt=d.game==='PLATINUM';
-   if(lr.proof===true)add('battle.sinnoh.leagueRematch',true,'leagueRematch4');
-   else if(lr.hallOfFame<=1||(pt&&lr.arrested===false)||(!pt&&lr.nationalDex===false))add('battle.sinnoh.leagueRematch',false,'leagueRematch4');
+   const lr=d.leagueRematch4;
+   if(d.game!=='PLATINUM')add('battle.sinnoh.leagueRematch',lr.hallOfFame>=2,'leagueRematch4');
+   else if(lr.proof===true)add('battle.sinnoh.leagueRematch',true,'leagueRematch4');
+   else if(lr.hallOfFame<=1||lr.arrested===false)add('battle.sinnoh.leagueRematch',false,'leagueRematch4');
   }
   // HGSS: revancha de Lance y del Alto Mando (TRAINER_CHAMPION_LANCE_2 con las 8 medallas de Kanto; pokeheartgold
   // scr_seq_0824_T10R0601). Sí: entrada del Salón de la Fama posterior a un Pokémon propio del Monte Plateado (solo con 16
@@ -454,12 +497,16 @@
   let analysis=null;try{analysis=guide?.analyze(d,d.game);}catch{}
   if(analysis&&!analysis.mismatch)for(const secret of analysis.secrets||[]){
    if(secret.status==='completado')add('event.'+secret.id,true,'events');
+   // Todas sus banderas de cierre leídas y alguna sin poner: el secreto no está completo (no hay nada que adivinar).
+   else if(secret.status!=='calculado'&&secret.done?.length&&secret.done.every(c=>typeof c.set==='boolean'))add('event.'+secret.id,false,'events');
    for(const cond of secret.done||[])if(typeof cond.set==='boolean'&&cond.flag)add(`event.${secret.id}.${cond.flag}`,cond.set,'events');
   }
   const signal=(typeof module==='object'&&module.exports?require('../saves/diagnosis.js'):root.PokemonDiagnosis)?.documentedClear(d);
   // Una señal documentada que ya tiene contraste natural (positivo y negativo con partidas reales) cuenta como directa.
-  if(signal)facts.push({id:'story.gameClear',value:signal.value,gameId:d.game,type:signal.validation==='verified'?'direct':'derived',
-   validation:signal.validation==='verified'?'verified':'documented',source:signal.source});
+  // Solo con la integridad del guardado comprobada, como el resto de datos directos.
+  const contrasted=signal?.validation==='verified'&&validated;
+  if(signal)facts.push({id:'story.gameClear',value:signal.value,gameId:d.game,type:contrasted?'direct':'derived',
+   validation:contrasted?'verified':'documented',source:signal.source});
   // Combates repetibles que la partida no registra (revanchas, Cintia, Morimoto...): solo se puede afirmar el «no» cuando
   // todavía no son posibles, porque todos exigen haber acabado la historia (y la revancha de HGSS, las 16 medallas).
   const clear=facts.filter(f=>f.id==='story.gameClear'&&typeof f.value==='boolean');

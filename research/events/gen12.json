@@ -31,7 +31,8 @@
   "families": {
     "RB": [
       "RED",
-      "BLUE"
+      "BLUE",
+      "GREEN"
     ],
     "Y": [
       "YELLOW"

@@ -128,7 +128,7 @@ public static class Audit
                     if ((ev & 0x3F) == 12 && ((ev >> 6) & 0x3FF) == 870) { journal = true; break; }
                 }
         }
-        // Platino, lo que cambia después (pret/pokeplatinum, stark_mountain_room_3 y pokemon_league_hall_of_fame): Carón es
+        // Platino, lo que cambia después (pret/pokeplatinum, stark_mountain_room_3 y pokemon_league_hall_of_fame): Plutón es
         // arrestado en el primer combate contra Heatran (FLAG_ARRESTED 214 y FLAG_BATTLED 215 a la vez) y desde entonces todo
         // combate de la Liga es la revancha. Si Heatran se derrota o huye (FLAG_UNLOCKED_VS_SEEKER_LVL_5 2435, solo si no se
         // pierde) desaparece con VAR_STARK_MOUNTAIN_ROOM_3_STATE (0x409E, trabajo 158) = 2; solo vuelve a 1 al perder contra

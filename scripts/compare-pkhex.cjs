@@ -18,6 +18,9 @@ for(const name of fixtures){
  if(fromJS.keyItems)assert.deepEqual(JSON.parse(JSON.stringify(fromJS.keyItems)),fromCore.keyItems,name+': key items');
  if(fromJS.inventory)assert.deepEqual(JSON.parse(JSON.stringify(fromJS.inventory)),fromCore.inventory,name+': full inventory');
  if(fromJS.passport)assert.deepEqual(JSON.parse(JSON.stringify(fromJS.passport)),fromCore.passport,name+': passport stamps');
+ if(fromJS.cells7)assert.deepEqual(JSON.parse(JSON.stringify(fromJS.cells7)),fromCore.cells7,name+': Alola cells, stickers and surf');
+ if(fromJS.records7)assert.deepEqual(JSON.parse(JSON.stringify(fromJS.records7)),fromCore.records7,name+': title defenses');
+ if(['ULTRASUN','ULTRAMOON'].includes(fromCore.game))assert.ok(fromJS.cells7&&fromJS.records7,name+': Alola records missing in the browser reader');
  if(fromJS.medals)assert.deepEqual(JSON.parse(JSON.stringify(fromJS.medals)),fromCore.medals,name+': medals');
  const corrupt=bytes.slice();corrupt[fromJS.generation===4?0x12bc:fromJS.generation===5?0x21408:fromJS.game==='ULTRASUN'?0x2c88:0x15008]^=1;
  assert.throws(()=>reader().parse(corrupt),/integridad/,name+': corrupt data accepted');

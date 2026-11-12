@@ -411,10 +411,10 @@ test('Leyendas Arceus: Arceus vencido y ensueño de combates sin fin de Fero',()
  assert.equal(f({KCompletedEternalBattleReverie:true},'la.eternalReverie'),true);
 });
 
-test('Gen. I: Visor Silph, Poké Flauta y las cinco MO (solo se acredita la presencia)',()=>{
+test('Gen. I: Visor Silph, Poké Flauta y las cinco MO (no se pueden tirar: sin ellos, «no»)',()=>{
  const O=require('../src/engine/objectives.js'),f=items=>O.fromDiagnosis({game:'GREEN',integrity:{checksumsValid:true},inventory:[{pocket:'Items',items:items.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.gen1.fieldItems')?.value;
  assert.equal(f([0x48,0x49,0xC4,0xC5,0xC6,0xC7,0xC8]),true);
- assert.equal(f([0x48,0x49,0xC8]),undefined);
+ assert.equal(f([0x48,0x49,0xC8]),false);
 });
 
 test('HGSS: estrellas del Pokéathlon (FLAG_UNK_0F1) y de la corona de hojas (FLAG_UNK_184)',()=>{
@@ -443,25 +443,25 @@ test('Rojo Fuego/Verde Hoja: revancha de la Liga (banderas del Alto Mando 2)',()
  assert.equal(f([735,736,737,738].map(i=>0x500+i)),true);assert.equal(f([0x500+740,0x500+735]),false);
 });
 
-test('Gen. II: Billete Barco y Pase (solo presencia)',()=>{
+test('Gen. II: Billete Barco y Pase (objetos clave: sin ellos, «no»)',()=>{
  const O=require('../src/engine/objectives.js'),f=ids=>O.fromDiagnosis({game:'GOLD',integrity:{checksumsValid:true},inventory:[{pocket:'KeyItems',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.gen2.tickets')?.value;
- assert.equal(f([0x44,0x86]),true);assert.equal(f([0x44]),undefined);
+ assert.equal(f([0x44,0x86]),true);assert.equal(f([0x44]),false);
 });
 
 test('Hoenn: objetos clave de acceso (Esmeralda exige además el Emblema Magma)',()=>{
  const O=require('../src/engine/objectives.js'),f=(g,ids)=>O.fromDiagnosis({game:g,integrity:{checksumsValid:true},inventory:[{pocket:'KeyItems',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.hoenn.accessItems')?.value;
- assert.equal(f('RUBY',[279,288]),true);assert.equal(f('EMERALD',[279,288]),undefined);assert.equal(f('EMERALD',[279,288,375]),true);
+ assert.equal(f('RUBY',[279,288]),true);assert.equal(f('EMERALD',[279,288]),false);assert.equal(f('EMERALD',[279,288,375]),true);
 });
 
 test('Alola: cristales Z de tipo, Arca de Zygarde y Pulsera Z',()=>{
  const O=require('../src/engine/objectives.js'),f=(g,ids)=>O.fromDiagnosis({game:g,integrity:{checksumsValid:true},inventory:[{pocket:'ZCrystals',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.alola.zResources')?.value;
  const z=Array.from({length:18},(_,i)=>807+i);
- assert.equal(f('MOON',[...z,847,797]),true);assert.equal(f('ULTRASUN',[...z,847,797]),undefined);assert.equal(f('ULTRASUN',[...z,847,933]),true);
+ assert.equal(f('MOON',[...z,847,797]),true);assert.equal(f('ULTRASUN',[...z,847,797]),false);assert.equal(f('ULTRASUN',[...z,847,933]),true);
 });
 
 test('Rojo Fuego/Verde Hoja: Visor Silph, Poké Flauta y MO01-MO07',()=>{
  const O=require('../src/engine/objectives.js'),f=ids=>O.fromDiagnosis({game:'LEAFGREEN',integrity:{checksumsValid:true},inventory:[{pocket:'KeyItems',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.frlg.fieldItems')?.value;
- assert.equal(f([359,350,339,340,341,342,343,344,345]),true);assert.equal(f([359,350]),undefined);
+ assert.equal(f([359,350,339,340,341,342,343,344,345]),true);assert.equal(f([359,350]),false);
 });
 
 test('Gen. IX: Pokédex regionales completas (capturados = total)',()=>{
@@ -484,13 +484,15 @@ test('Rojo Fuego/Verde Hoja: Torre Desafío en las cuatro modalidades',()=>{
 test('USUM: episodio Rainbow Rocket (mansión normal y Electrode del castillo)',()=>{
  const O=require('../src/engine/objectives.js'),f=fl=>O.fromDiagnosis({game:'ULTRAMOON',events:{activeFlags:fl}}).find(x=>x.id==='story.usum.rainbowRocket')?.value;
  assert.equal(f([211,1731]),true);assert.equal(f([211]),undefined);assert.equal(f([1730]),undefined);
+ assert.equal(f([211,0xB4F]),true);assert.equal(f([0xB4F]),undefined); // objeto recogido dentro del castillo
 });
 
 test('Enfermera que reconoce la tarjeta de oro (Esmeralda, Platino, HGSS)',()=>{
  const O=require('../src/engine/objectives.js'),f=d=>O.fromDiagnosis(d).find(x=>x.id==='card.nurseRecognition')?.value;
  assert.equal(f({game:'EMERALD',field:{family:'E',flags:[0x159]}}),true);
  assert.equal(f({game:'PLATINUM',events:{activeFlags:[0x69]}}),true);
- assert.equal(f({game:'SOULSILVER',events:{activeFlags:[0x63]}}),undefined);
+ assert.equal(f({game:'SOULSILVER',events:{activeFlags:[0x63]}}),false);
+ assert.equal(f({game:'SOULSILVER'}),undefined); // sin banderas leídas no hay respuesta
 });
 
 test('N2/B2: las 40 películas de Pokéstar Studios',()=>{
@@ -501,7 +503,7 @@ test('N2/B2: las 40 películas de Pokéstar Studios',()=>{
 test('Diplomas de Platino por sus banderas de entrega y Máximo en la Cascada Meteoro (Esmeralda)',()=>{
  const O=require('../src/engine/objectives.js'),v=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
  assert.equal(v({game:'PLATINUM',events:{activeFlags:[0xAB]}},'card.pt.diplomaSinnoh'),true);
- assert.equal(v({game:'PLATINUM',events:{activeFlags:[0xAB]}},'card.pt.diplomaNational'),undefined);
+ assert.equal(v({game:'PLATINUM',events:{activeFlags:[0xAB]}},'card.pt.diplomaNational'),false);
  assert.equal(v({game:'PLATINUM',events:{activeFlags:[0xAC]}},'card.pt.diplomaNational'),true);
  assert.equal(v({game:'EMERALD',field:{family:'E',flags:[0x4F8]}},'battle.emerald.stevenMeteorFalls'),true);
  assert.equal(v({game:'EMERALD',field:{family:'E',flags:[0x4F7]}},'battle.emerald.stevenMeteorFalls'),false);
@@ -529,7 +531,7 @@ test('Diploma de Sinnoh de DP: 150 vistos de la Pokédex de Sinnoh sin Manaphy (
 
 test('Diplomas de HGSS por sus banderas (0x143 Johto, 0x144 Nacional)',()=>{
  const O=require('../src/engine/objectives.js'),v=(f,id)=>O.fromDiagnosis({game:'HEARTGOLD',events:{activeFlags:f}}).find(x=>x.id===id)?.value;
- assert.equal(v([0x143],'card.hgss.diplomaJohto'),true);assert.equal(v([0x143],'card.hgss.diplomaNational'),undefined);
+ assert.equal(v([0x143],'card.hgss.diplomaJohto'),true);assert.equal(v([0x143],'card.hgss.diplomaNational'),false);
  assert.equal(v([0x144],'card.hgss.diplomaNational'),true);
 });
 
@@ -592,7 +594,7 @@ test('DBPR: Griseosfera en la bolsa (Sala de la Distorsión del Parque Hansa)',(
 test('Diplomas de X/Y (0xA7A-0xA7E) y ROZA (0xBC6, 0xBC7) por sus banderas de entrega',()=>{
  const O=require('../src/engine/objectives.js'),v=(g,f,id)=>O.fromDiagnosis({game:g,events:{activeFlags:f}}).find(x=>x.id===id)?.value;
  assert.equal(v('X',[0xA7A,0xA7B,0xA7C,0xA7D],'card.gen6.diplomaRegional'),true);
- assert.equal(v('Y',[0xA7A,0xA7B,0xA7C],'card.gen6.diplomaRegional'),undefined);
+ assert.equal(v('Y',[0xA7A,0xA7B,0xA7C],'card.gen6.diplomaRegional'),false);
  assert.equal(v('Y',[0xA7E],'card.gen6.diplomaNational'),true);
  assert.equal(v('OMEGARUBY',[0xBC6],'card.gen6.diplomaRegional'),true);
  assert.equal(v('ALPHASAPPHIRE',[0xBC7],'card.gen6.diplomaNational'),true);
@@ -600,7 +602,7 @@ test('Diplomas de X/Y (0xA7A-0xA7E) y ROZA (0xBC6, 0xBC7) por sus banderas de en
 
 test('Diplomas de Teselia por FE_AWARD_LOCAL/NATIONAL (N/B 0x11F/0x120, N2/B2 0xDD/0xDE)',()=>{
  const O=require('../src/engine/objectives.js'),v=(g,f,id)=>O.fromDiagnosis({game:g,events:{activeFlags:f}}).find(x=>x.id===id)?.value;
- assert.equal(v('BLACK',[0x11F],'card.unova.diplomaRegional'),true);assert.equal(v('BLACK',[0x11F],'card.unova.diplomaNational'),undefined);
+ assert.equal(v('BLACK',[0x11F],'card.unova.diplomaRegional'),true);assert.equal(v('BLACK',[0x11F],'card.unova.diplomaNational'),false);
  assert.equal(v('WHITE2',[0xDD,0xDE],'card.unova.diplomaNational'),true);
 });
 
@@ -642,7 +644,7 @@ test('ROZA: revancha de Máximo por la bandera del campeón de revancha',()=>{
 test('DBPR: enfermera (68), diplomas (132/133) y revancha de Cintia (1713) por EvWork de uDPR',()=>{
  const O=require('../src/engine/objectives.js'),v=(f,id)=>O.fromDiagnosis({game:'SP',events:{activeFlags:f}}).find(x=>x.id===id)?.value;
  assert.equal(v([68],'card.nurseRecognition'),true);assert.equal(v([133],'card.bdsp.diplomaNational'),true);
- assert.equal(v([141],'bdsp.cynthiaRematch'),undefined);assert.equal(v([1713],'bdsp.cynthiaRematch'),true);
+ assert.equal(v([141],'bdsp.cynthiaRematch'),false);assert.equal(v([1713],'bdsp.cynthiaRematch'),true);
 });
 
 test('Alola: 5 núcleos de Zygarde (SL 0xC63-0xC67, USUL 0x1023-0x1027)',()=>{
@@ -653,7 +655,7 @@ test('Alola: 5 núcleos de Zygarde (SL 0xC63-0xC67, USUL 0x1023-0x1027)',()=>{
 
 test('BDSP: victoria contra el As de la Torre Batalla por FE_TOWER_MASTER_WINED (1426)',()=>{
  const O=require('../src/engine/objectives.js'),f=flags=>O.fromDiagnosis({game:'BD',events:{activeFlags:flags,systemOffset:4000}}).find(x=>x.id==='bdsp.towerMaster')?.value;
- assert.equal(f([1426]),true);assert.equal(f([1425]),undefined);
+ assert.equal(f([1426]),true);assert.equal(f([1425]),false);
 });
 
 test('Diamante/Perla: estrella de la Torre Batalla por el récord de racha (GameStats 0x35-0x3D)',()=>{
@@ -734,8 +736,9 @@ test('Sinnoh: revancha de la Liga por el Salón de la Fama (sí con prueba de fe
  assert.equal(f('PLATINUM',{hallOfFame:3,arrested:false,nationalDex:true,evidence:0,proof:false}),false);
  assert.equal(f('PLATINUM',{hallOfFame:3,arrested:true,nationalDex:true,evidence:0,proof:false}),undefined);
  assert.equal(f('DIAMOND',{hallOfFame:0,arrested:null,nationalDex:false,evidence:0,proof:false}),false);
- assert.equal(f('PEARL',{hallOfFame:2,arrested:null,nationalDex:false,evidence:0,proof:false}),false);
- assert.equal(f('PEARL',{hallOfFame:2,arrested:null,nationalDex:true,evidence:4,proof:false}),undefined);
+ // Diamante/Perla no tienen equipos de revancha: volver a vencer a la Liga deja una segunda entrada en el Salón.
+ assert.equal(f('PEARL',{hallOfFame:2,arrested:null,nationalDex:false,evidence:0,proof:false}),true);
+ assert.equal(f('PEARL',{hallOfFame:2,arrested:null,nationalDex:true,evidence:4,proof:false}),true);
  assert.equal(f('DIAMOND',{hallOfFame:1,arrested:null,nationalDex:true,evidence:5,proof:false}),false);
 });
 
@@ -756,4 +759,57 @@ test('Escarlata/Púrpura: Gran Pugna Académica por la llamada de Cinio y los so
  assert.equal(f([s('story.paldea.clear',true),s('postgame.raidSurvey4',true),s('postgame.raidSurvey6',false),s('postgame.raidRelease6',false)]),true);
  assert.equal(f([s('story.paldea.clear',true),s('postgame.raidSurvey4',false),s('postgame.raidSurvey6',false),s('postgame.raidRelease6',false)]),undefined);
  assert.equal(f([s('story.paldea.clear',false),s('postgame.raidSurvey4',false)]),false);
+});
+
+test('Pokédex leída entera: lo que no figura como capturado es un «no»; sin Pokédex leída, sin dato',()=>{
+ const O=require('../src/engine/objectives.js'),v=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
+ assert.equal(v({game:'SHIELD',caught:[25]},'pokedex.caught.25'),true);
+ assert.equal(v({game:'SHIELD',caught:[25]},'pokedex.caught.898'),false);
+ assert.equal(v({game:'SHIELD'},'pokedex.caught.898'),undefined);
+});
+
+test('Amuletos Oval e Iris: con el bolsillo de objetos clave leído, su ausencia es un «no»',()=>{
+ const O=require('../src/engine/objectives.js'),v=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
+ assert.equal(v({game:'X',keyItems:[{id:632,count:1}]},'inventory.keyItem.632.present'),true);
+ assert.equal(v({game:'X',keyItems:[{id:632,count:1}]},'inventory.keyItem.631.present'),false);
+ assert.equal(v({game:'X',keyItems:[]},'inventory.keyItem.631.present'),undefined);
+ assert.equal(v({game:'X',keyItems:[{id:632,count:1}]},'inventory.keyItem.700.present'),undefined);
+});
+
+test('Revisión del guardado: sin la actualización del DLC, su contenido es un «no»',()=>{
+ const O=require('../src/engine/objectives.js'),v=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
+ assert.equal(v({game:'VIOLET',revision:'-Base'},'sv.tealMaskClear'),false);
+ assert.equal(v({game:'VIOLET',revision:'-TM'},'sv.tealMaskClear'),undefined);
+ assert.equal(v({game:'VIOLET',revision:'-TM'},'sv.indigoDiskClear'),false);
+ assert.equal(v({game:'VIOLET',revision:'-ID'},'sv.indigoDiskClear'),undefined);
+ assert.equal(v({game:'SHIELD',revision:'-IoA'},'swsh.crownClear'),false);
+ assert.equal(v({game:'SHIELD',revision:'-IoA'},'swsh.armorClear'),undefined);
+ assert.equal(v({game:'SHIELD'},'swsh.armorClear'),undefined);
+});
+
+test('Sin 8 medallas la historia no está acabada (salvo juegos sin gimnasios)',()=>{
+ const O=require('../src/engine/objectives.js'),v=d=>O.fromDiagnosis(d).filter(x=>x.id==='story.gameClear').map(x=>x.value);
+ assert.deepEqual(v({game:'SHIELD',badgesTotal:0}),[false]);
+ assert.deepEqual(v({game:'SHIELD',badgesTotal:8}),[]);
+ assert.deepEqual(v({game:'ULTRASUN',badgesTotal:0}),[]);
+ assert.deepEqual(v({game:'SHIELD',badgesTotal:0,gameClear:true}),[true]);
+});
+
+test("Let's Go: el Amuleto Iris va en el bolsillo general",()=>{
+ const O=require('../src/engine/objectives.js'),v=d=>O.fromDiagnosis(d).filter(x=>x.id==='inventory.keyItem.632.present').map(x=>x.value);
+ assert.deepEqual(v({game:'LETGOP',keyItems:[],inventory:[{pocket:'Items',items:[{id:632,count:1}]}]}),[true]);
+ assert.deepEqual(v({game:'LETGOE',keyItems:[],inventory:[{pocket:'Items',items:[{id:1,count:1}]}]}),[false]);
+ assert.deepEqual(v({game:'X',keyItems:[{id:632,count:1}]}),[true]);
+});
+
+test('Verde japonés usa las banderas de Rojo/Azul (Mewtwo vencido = EVENT_BEAT_MEWTWO)',()=>{
+ const O=require('../src/engine/objectives.js'),v=flags=>O.fromDiagnosis({game:'GREEN',events:{activeFlags:flags,work:[]}}).find(x=>x.id==='event.gen1.mewtwo')?.value;
+ assert.equal(v([2241]),true);assert.equal(v([119]),false);
+});
+
+test('Máscaras de Ogerpon: sin ellas en la mochila y sin Ogerpon capturado, «no»',()=>{
+ const O=require('../src/engine/objectives.js'),v=d=>O.fromDiagnosis({game:'SCARLET',inventory:[{pocket:'Items',items:d.items}],caught:d.caught}).filter(x=>x.id==='inventory.sv.ogerponMasks').map(x=>x.value);
+ assert.deepEqual(v({items:[{id:2406,count:1},{id:2407,count:1},{id:2408,count:1}],caught:[]}),[true]);
+ assert.deepEqual(v({items:[{id:2406,count:1}],caught:[25]}),[false]);
+ assert.deepEqual(v({items:[{id:2406,count:1}],caught:[1017]}),[]); // Ogerpon puede llevar las demás equipadas
 });

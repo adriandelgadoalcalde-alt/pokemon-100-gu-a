@@ -300,7 +300,7 @@ async function run() {
     allPage.on('dialog',d=>d.accept());
     await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-frlg.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(frlg))});
     await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.FIRERED?.caught?.includes(151));
-    assert.match(await allPage.locator('#master-card-2').innerText(),/Pendiente/);
+    assert.match(await allPage.locator('#master-card-2').innerText(),/Según tu partida, todavía no/);
     await allPage.locator('[data-view="diagnostic"]').first().click();
     assert.match(await allPage.locator('#dex-completion').innerText(),/Nacional: 379\/380/);
     await allPage.locator('#dex-completion details > summary').first().click();
@@ -341,7 +341,9 @@ async function run() {
       const gap={game,caught:national5.filter(id=>id!==249).concat(151),seen:[],integrity:{verifiedFields:['caught']}};
       await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-unova-gap.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(gap))});
       await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.[g]?.caught?.includes(151),game);
-      assert.match(await allPage.locator('#master-card-1').innerText(),/Pendiente/);
+      assert.match(await allPage.locator('#master-card-1').innerText(),/Según tu partida, todavía no/);
+      // Morimoto no deja nada en la partida: la guía lo pregunta en vez de darlo por pendiente.
+      assert.match(await allPage.locator('#master-final-boss').innerText(),/Tu partida no guarda este dato: ¿lo has hecho\?/);
       await allPage.locator('[data-view="diagnostic"]').first().click();
       assert.match(await allPage.locator('#dex-completion').innerText(),/Nacional: 635\/636/);
       await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-unova-full.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...gap,caught:national5}))});
@@ -362,7 +364,7 @@ async function run() {
       const d={game,caught:kalosRequired,seen:kalosRequired.filter(id=>id!==650).concat(719),integrity:{verifiedFields:['seen']}};
       await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-kalos-gap.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(d))});
       await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.[g]?.seen?.includes(719),game);
-      assert.match(await allPage.locator('#master-card-1').innerText(),/Pendiente/);
+      assert.match(await allPage.locator('#master-card-1').innerText(),/Según tu partida, todavía no/);
       await allPage.locator('[data-view="diagnostic"]').first().click();
       assert.match(await allPage.locator('#dex-completion').innerText(),/Kalos: 449\/450 vistas/);
       await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-kalos-full.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...d,caught:[],seen:kalosRequired}))});
@@ -380,7 +382,7 @@ async function run() {
       const d={game,caught:hoennRequired,seen:hoennRequired.filter(id=>id!==252).concat(384),integrity:{verifiedFields:['seen']}};
       await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-hoenn-gap.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(d))});
       await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.[g]?.seen?.includes(384),game);
-      assert.match(await allPage.locator('#master-card-1').innerText(),/Pendiente/);
+      assert.match(await allPage.locator('#master-card-1').innerText(),/Según tu partida, todavía no/);
       await allPage.locator('[data-view="diagnostic"]').first().click();
       assert.match(await allPage.locator('#dex-completion').innerText(),/Hoenn: 207\/208 vistas/);
       await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-hoenn-full.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...d,caught:[],seen:hoennRequired}))});
@@ -530,8 +532,9 @@ async function run() {
     assert.match(await allPage.locator('#app').innerText(),/indicador documentado de Liga superada/);
     assert.equal(await allPage.locator('[data-step]:checked').count(),0);
     assert.equal(await allPage.locator('[data-focus]').first().getAttribute('data-focus'),'FIRERED-15');
-    // Documented modern signals guide the route while mastery remains partial.
-    const modern={game:'SCARLET',caught:[],seen:[],gameClear:null,integrity:{checksumsValid:true},progressSignals:[
+    // Documented modern signals guide the route while mastery remains partial (without integrity, even the contrasted
+    // end-of-Paldea signal stays partial).
+    const modern={game:'SCARLET',caught:[],seen:[],gameClear:null,integrity:{checksumsValid:false},progressSignals:[
       {id:'story.paldea.clear',label:'Indicador de final de Paldea',value:true,validation:'documented'},
       {id:'story.tealMask.clear',label:'Indicador de final de La máscara turquesa',value:null,validation:'documented'}]};
     await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-modern.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(modern))});
