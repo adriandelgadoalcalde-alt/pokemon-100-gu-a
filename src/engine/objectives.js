@@ -326,7 +326,9 @@
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
    const r=(a,b)=>Array.from({length:b-a+1},(_,k)=>a+k),special=[753,664,752,2575,2576,2577,2648,764,662,663,2640];
    const all=[...r(656,685),...r(752,764),...r(767,770),...r(2559,2587),...r(2635,2650)];
-   const base=all.filter(x=>x<2635&&!special.includes(x)),dlc=all.filter(x=>x>=2635&&!special.includes(x));
+   // Heatranita (2567), Darkrainita (2568) y Zeraoranita (2586) tienen número bajo pero son de Megadimensión (WikiDex).
+   const inDlc=x=>x>=2635||[2567,2568,2586].includes(x);
+   const base=all.filter(x=>!inDlc(x)&&!special.includes(x)),dlc=all.filter(x=>inDlc(x)&&!special.includes(x));
    if(base.every(x=>have.has(x)))add('za.megaStones.base',true,'inventory');
    if(dlc.every(x=>have.has(x)))add('za.megaStones.dlc',true,'inventory');
    if(special.every(x=>have.has(x)))add('za.megaStones.special',true,'inventory');
