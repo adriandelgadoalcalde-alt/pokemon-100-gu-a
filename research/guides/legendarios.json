@@ -1018,6 +1018,462 @@
     "requisitos": "Ruinas Subterráneas, Sala Hierro.",
     "consejo": "Registeel nivel 65."
    }
+  },
+  "X": {
+   "718": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Cueva Desenlace (Ruta 18): baja hasta la sala más profunda.",
+    "consejo": "Zygarde nivel 70."
+   },
+   "150": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Después de vencer al Alto Mando.",
+    "requisitos": "Mazmorra Rara: se llega surfeando desde la Aldea Pokémon (Ruta 20).",
+    "consejo": "Mewtwo nivel 70; lleva la Master Ball si la conservas."
+   },
+   "144": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de la Liga, solo si elegiste a Chespin como inicial.",
+    "requisitos": "El ave vaga por Kalos y huye: encuéntrala 11 veces por las rutas y acabará esperando en la Cueva Talasia (Ruta 21), donde ya no huye. Las otras dos aves, por intercambio.",
+    "consejo": "Nivel 70."
+   },
+   "145": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de la Liga, solo si elegiste a Fennekin como inicial.",
+    "requisitos": "El ave vaga por Kalos y huye: encuéntrala 11 veces por las rutas y acabará esperando en la Cueva Talasia (Ruta 21), donde ya no huye. Las otras dos aves, por intercambio.",
+    "consejo": "Nivel 70."
+   },
+   "146": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de la Liga, solo si elegiste a Froakie como inicial.",
+    "requisitos": "El ave vaga por Kalos y huye: encuéntrala 11 veces por las rutas y acabará esperando en la Cueva Talasia (Ruta 21), donde ya no huye. Las otras dos aves, por intercambio.",
+    "consejo": "Nivel 70."
+   },
+   "716": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Final de la historia, en la Guarida del Team Flare.",
+    "requisitos": "Xerneas despierta al final del arma definitiva del Team Flare: hay que capturarlo para seguir (si lo debilitas, el combate se repite).",
+    "consejo": "Xerneas nivel 50; la Master Ball no hace falta, el índice de captura es alto."
+   }
+  },
+  "Y": {
+   "718": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Cueva Desenlace (Ruta 18): baja hasta la sala más profunda.",
+    "consejo": "Zygarde nivel 70."
+   },
+   "150": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Después de vencer al Alto Mando.",
+    "requisitos": "Mazmorra Rara: se llega surfeando desde la Aldea Pokémon (Ruta 20).",
+    "consejo": "Mewtwo nivel 70; lleva la Master Ball si la conservas."
+   },
+   "144": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de la Liga, solo si elegiste a Chespin como inicial.",
+    "requisitos": "El ave vaga por Kalos y huye: encuéntrala 11 veces por las rutas y acabará esperando en la Cueva Talasia (Ruta 21), donde ya no huye. Las otras dos aves, por intercambio.",
+    "consejo": "Nivel 70."
+   },
+   "145": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de la Liga, solo si elegiste a Fennekin como inicial.",
+    "requisitos": "El ave vaga por Kalos y huye: encuéntrala 11 veces por las rutas y acabará esperando en la Cueva Talasia (Ruta 21), donde ya no huye. Las otras dos aves, por intercambio.",
+    "consejo": "Nivel 70."
+   },
+   "146": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de la Liga, solo si elegiste a Froakie como inicial.",
+    "requisitos": "El ave vaga por Kalos y huye: encuéntrala 11 veces por las rutas y acabará esperando en la Cueva Talasia (Ruta 21), donde ya no huye. Las otras dos aves, por intercambio.",
+    "consejo": "Nivel 70."
+   },
+   "717": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Final de la historia, en la Guarida del Team Flare.",
+    "requisitos": "Yveltal despierta al final del arma definitiva del Team Flare: hay que capturarlo para seguir.",
+    "consejo": "Yveltal nivel 50."
+   }
+  },
+  "OMEGARUBY": {
+   "377": {
+    "fase": 2,
+    "orden": 205,
+    "cuando": "Tras conseguir Buceo; antes o después de la Liga.",
+    "requisitos": "Abre la Cámara Sellada (bajo el agua en la Ruta 134) y lee el braille. Regirock está en las Ruinas del Desierto (Ruta 111): usa Golpe Roca en el centro de la sala.",
+    "consejo": "Regirock nivel 40."
+   },
+   "378": {
+    "fase": 2,
+    "orden": 206,
+    "cuando": "Tras abrir la Cámara Sellada.",
+    "requisitos": "Cueva Insular (Ruta 105): espera dentro sin moverte hasta que se abra la puerta.",
+    "consejo": "Regice nivel 40."
+   },
+   "379": {
+    "fase": 2,
+    "orden": 207,
+    "cuando": "Tras abrir la Cámara Sellada.",
+    "requisitos": "Tumba Antigua (Ruta 120): ponte en el centro y usa Vuelo.",
+    "consejo": "Registeel nivel 40."
+   },
+   "384": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Durante el Episodio Delta (posliga).",
+    "requisitos": "En la cima del Pilar Celeste, tras despertarlo con Zinnia. Es obligatorio para seguir el episodio.",
+    "consejo": "Rayquaza nivel 70."
+   },
+   "386": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Al terminar el Episodio Delta.",
+    "requisitos": "Vuelve con Rayquaza (megaevolucionado) al espacio y de nuevo a la cima del Pilar Celeste: Deoxys te espera.",
+    "consejo": "Deoxys nivel 80."
+   },
+   "381": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, al cruzar el mar de la Ruta 118.",
+    "requisitos": "El otro Pokémon eón te lleva a la Isla del Sur; tras vencer al equipo villano, este se une a tu equipo (regalo). Después te da la Flauta Eón para volar.",
+    "consejo": "Nivel 30, regalo."
+   },
+   "380": {
+    "fase": 7,
+    "orden": 710,
+    "cuando": "Solo con el Ticket Eón (evento).",
+    "requisitos": "Isla del Sur con el Ticket Eón.",
+    "consejo": "Distribución de evento."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo (tras capturar los tres).",
+    "requisitos": "Cueva Insular de día, con Regirock, Regice y Registeel en el equipo y Regice con mote y un objeto helado.",
+    "consejo": "Nivel 50."
+   },
+   "250": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Malvamar: lleva el escáner del sótano al capitán de Ciudad Portual, que te da el Cascabel Claro; tócalo en la cubierta.",
+    "consejo": "Nivel 50."
+   },
+   "249": {
+    "fase": 7,
+    "orden": 730,
+    "cuando": "Exclusivo de Zafiro Alfa: por intercambio.",
+    "requisitos": "Solo por intercambio desde la otra edición.",
+    "consejo": ""
+   },
+   "485": {
+    "fase": 2,
+    "orden": 225,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Portal al fondo de la Gruta Solar, después de lo de Groudon/Kyogre primigenios.",
+    "consejo": "Nivel 50."
+   },
+   "480": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 20:00 a 21:00.",
+    "consejo": "Nivel 50."
+   },
+   "481": {
+    "fase": 2,
+    "orden": 231,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 04:00 a 19:59.",
+    "consejo": "Nivel 50."
+   },
+   "482": {
+    "fase": 2,
+    "orden": 232,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 21:00 a 03:59.",
+    "consejo": "Nivel 50."
+   },
+   "484": {
+    "fase": 2,
+    "orden": 235,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Grieta al sur de Pueblo Azuliza volando, con Uxie, Mesprit y Azelf en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "483": {
+    "fase": 7,
+    "orden": 730,
+    "cuando": "Exclusivo de Zafiro Alfa: por intercambio.",
+    "requisitos": "Solo por intercambio desde la otra edición.",
+    "consejo": ""
+   },
+   "487": {
+    "fase": 2,
+    "orden": 236,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "La misma grieta, con Dialga y Palkia en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "638": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Llanura Sinnombre junto a Pueblo Oromar, con tres Pokémon de esfuerzo máximo; domingo, miércoles y viernes.",
+    "consejo": "Nivel 50."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 251,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; martes y sábado.",
+    "consejo": "Nivel 50."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 252,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; lunes y jueves.",
+    "consejo": "Nivel 50."
+   },
+   "643": {
+    "fase": 2,
+    "orden": 255,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Incierta junto a Ciudad Malvalona, con un Pokémon de nivel 100 en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "646": {
+    "fase": 2,
+    "orden": 256,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Boquete Irregular junto a Pueblo Pardal, con Reshiram y Zekrom en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "243": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Bosque Virgen junto a Ciudad Férrica, con Lugia o Ho-Oh en el equipo; minutos 00-20 de cada hora.",
+    "consejo": "Nivel 50."
+   },
+   "244": {
+    "fase": 2,
+    "orden": 261,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Bosque Virgen, con Lugia o Ho-Oh en el equipo; minutos 20-40 de cada hora.",
+    "consejo": "Nivel 50."
+   },
+   "245": {
+    "fase": 2,
+    "orden": 262,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Bosque Virgen, con Lugia o Ho-Oh en el equipo; minutos 40-00 de cada hora.",
+    "consejo": "Nivel 50."
+   },
+   "383": {
+    "fase": 0,
+    "orden": 160,
+    "cuando": "Durante la historia, antes de la octava medalla.",
+    "requisitos": "Cueva Ancestral de Arrecípolis: tras la regresión primigenia de Groudon, enfréntate a él al fondo.",
+    "consejo": "Groudon nivel 45; si lo debilitas, vuelve tras la Liga."
+   }
+  },
+  "ALPHASAPPHIRE": {
+   "377": {
+    "fase": 2,
+    "orden": 205,
+    "cuando": "Tras conseguir Buceo; antes o después de la Liga.",
+    "requisitos": "Abre la Cámara Sellada (bajo el agua en la Ruta 134) y lee el braille. Regirock está en las Ruinas del Desierto (Ruta 111): usa Golpe Roca en el centro de la sala.",
+    "consejo": "Regirock nivel 40."
+   },
+   "378": {
+    "fase": 2,
+    "orden": 206,
+    "cuando": "Tras abrir la Cámara Sellada.",
+    "requisitos": "Cueva Insular (Ruta 105): espera dentro sin moverte hasta que se abra la puerta.",
+    "consejo": "Regice nivel 40."
+   },
+   "379": {
+    "fase": 2,
+    "orden": 207,
+    "cuando": "Tras abrir la Cámara Sellada.",
+    "requisitos": "Tumba Antigua (Ruta 120): ponte en el centro y usa Vuelo.",
+    "consejo": "Registeel nivel 40."
+   },
+   "384": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Durante el Episodio Delta (posliga).",
+    "requisitos": "En la cima del Pilar Celeste, tras despertarlo con Zinnia. Es obligatorio para seguir el episodio.",
+    "consejo": "Rayquaza nivel 70."
+   },
+   "386": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Al terminar el Episodio Delta.",
+    "requisitos": "Vuelve con Rayquaza (megaevolucionado) al espacio y de nuevo a la cima del Pilar Celeste: Deoxys te espera.",
+    "consejo": "Deoxys nivel 80."
+   },
+   "380": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, al cruzar el mar de la Ruta 118.",
+    "requisitos": "El otro Pokémon eón te lleva a la Isla del Sur; tras vencer al equipo villano, este se une a tu equipo (regalo). Después te da la Flauta Eón para volar.",
+    "consejo": "Nivel 30, regalo."
+   },
+   "381": {
+    "fase": 7,
+    "orden": 710,
+    "cuando": "Solo con el Ticket Eón (evento).",
+    "requisitos": "Isla del Sur con el Ticket Eón.",
+    "consejo": "Distribución de evento."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo (tras capturar los tres).",
+    "requisitos": "Cueva Insular de día, con Regirock, Regice y Registeel en el equipo y Regice con mote y un objeto helado.",
+    "consejo": "Nivel 50."
+   },
+   "250": {
+    "fase": 7,
+    "orden": 730,
+    "cuando": "Exclusivo de Rubí Omega: por intercambio.",
+    "requisitos": "Solo por intercambio desde la otra edición.",
+    "consejo": ""
+   },
+   "249": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Malvamar: lleva el escáner del sótano al capitán de Ciudad Portual, que te da el Cascabel Oleaje; tócalo en el sótano submarino.",
+    "consejo": "Nivel 50."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 225,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Portal al fondo de la Gruta Solar, después de lo de Groudon/Kyogre primigenios.",
+    "consejo": "Nivel 50."
+   },
+   "480": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 20:00 a 21:00.",
+    "consejo": "Nivel 50."
+   },
+   "481": {
+    "fase": 2,
+    "orden": 231,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 04:00 a 19:59.",
+    "consejo": "Nivel 50."
+   },
+   "482": {
+    "fase": 2,
+    "orden": 232,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 21:00 a 03:59.",
+    "consejo": "Nivel 50."
+   },
+   "484": {
+    "fase": 7,
+    "orden": 730,
+    "cuando": "Exclusivo de Rubí Omega: por intercambio.",
+    "requisitos": "Solo por intercambio desde la otra edición.",
+    "consejo": ""
+   },
+   "483": {
+    "fase": 2,
+    "orden": 235,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Grieta al sur de Pueblo Azuliza volando, con Uxie, Mesprit y Azelf en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "487": {
+    "fase": 2,
+    "orden": 236,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "La misma grieta, con Dialga y Palkia en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "638": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Llanura Sinnombre junto a Pueblo Oromar, con tres Pokémon de esfuerzo máximo; domingo, miércoles y viernes.",
+    "consejo": "Nivel 50."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 251,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; martes y sábado.",
+    "consejo": "Nivel 50."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 252,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; lunes y jueves.",
+    "consejo": "Nivel 50."
+   },
+   "644": {
+    "fase": 2,
+    "orden": 255,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Incierta junto a Ciudad Malvalona, con un Pokémon de nivel 100 en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "646": {
+    "fase": 2,
+    "orden": 256,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Boquete Irregular junto a Pueblo Pardal, con Reshiram y Zekrom en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "243": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Bosque Virgen junto a Ciudad Férrica, con Lugia o Ho-Oh en el equipo; minutos 00-20 de cada hora.",
+    "consejo": "Nivel 50."
+   },
+   "244": {
+    "fase": 2,
+    "orden": 261,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Bosque Virgen, con Lugia o Ho-Oh en el equipo; minutos 20-40 de cada hora.",
+    "consejo": "Nivel 50."
+   },
+   "245": {
+    "fase": 2,
+    "orden": 262,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Bosque Virgen, con Lugia o Ho-Oh en el equipo; minutos 40-00 de cada hora.",
+    "consejo": "Nivel 50."
+   },
+   "382": {
+    "fase": 0,
+    "orden": 160,
+    "cuando": "Durante la historia, antes de la octava medalla.",
+    "requisitos": "Cueva Ancestral de Arrecípolis: tras la regresión primigenia de Kyogre, enfréntate a él al fondo.",
+    "consejo": "Kyogre nivel 45; si lo debilitas, vuelve tras la Liga."
+   }
   }
  }
 }
