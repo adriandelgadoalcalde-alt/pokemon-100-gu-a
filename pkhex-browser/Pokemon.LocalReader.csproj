@@ -13,6 +13,9 @@
     <WasmBuildNative>false</WasmBuildNative>
     <DebugType>none</DebugType>
     <BlazorEnableCompression>false</BlazorEnableCompression>
+    <!-- Safari/WebKit: el jiterpreter de .NET provoca «Out of bounds memory access» al arrancar en WebKit; sin él, el
+         intérprete normal arranca bien (comprobado con Playwright WebKit). -->
+    <BlazorWebAssemblyJiterpreter>false</BlazorWebAssemblyJiterpreter>
   </PropertyGroup>
 
   <ItemGroup>
