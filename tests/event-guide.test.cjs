@@ -468,3 +468,10 @@ test('Gen. IX: Pokédex regionales completas (capturados = total)',()=>{
  const O=require('../src/engine/objectives.js'),f=(dex,id)=>O.fromDiagnosis({game:'SCARLET',dex9:dex}).find(x=>x.id===id)?.value;
  assert.equal(f({paldea:{caught:400,total:400}},'pokedex.gen9.paldea'),true);assert.equal(f({kitakami:{caught:10,total:200}},'pokedex.gen9.kitakami'),false);
 });
+
+test('Espada/Escudo: capturas de las Nieves de la Corona',()=>{
+ const O=require('../src/engine/objectives.js');
+ const nb={KCapturedGalarianArticuno:true,KCapturedGalarianZapdos:true,KCapturedGalarianMoltres:true,KCapturedRegirock:true,KCapturedRegice:true,KCapturedRegisteel:true,KCapturedRegigigas:true,KCapturedRegieleki:false,KCapturedRegidrago:true};
+ const f=(n,c)=>O.fromDiagnosis({game:'SWORD',namedBlocks:n,caught:c}).find(x=>x.id==='swsh.crownCaptures')?.value;
+ assert.equal(f(nb,[898]),true);assert.equal(f(nb,[]),false);assert.equal(f({...nb,KCapturedRegidrago:false},[898]),false);
+});

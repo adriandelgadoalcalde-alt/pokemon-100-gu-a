@@ -237,6 +237,13 @@
     const wins=['KBattleTowerSinglesVictory','KBattleTowerDoublesVictory','KGSTVictoriesTotal'].map(num).filter(v=>v!==null);
     if(wins.some(v=>v>0))add('story.gameClear',true,'namedBlocks');
    }
+   // Espada/Escudo, Nieves de la Corona: aves de Galar, Regirock/Regice/Registeel/Regigigas, Regieleki o Regidrago
+   // (excluyentes) por sus banderas de captura (SaveBlockAccessor8SWSH) y Calyrex (898) por la Pokédex.
+   if(['SWORD','SHIELD'].includes(d.game)){
+    const caps=['KCapturedGalarianArticuno','KCapturedGalarianZapdos','KCapturedGalarianMoltres','KCapturedRegirock','KCapturedRegice','KCapturedRegisteel','KCapturedRegigigas'];
+    if(caps.every(k=>typeof nb[k]==='boolean')&&typeof nb.KCapturedRegieleki==='boolean'&&typeof nb.KCapturedRegidrago==='boolean')
+     add('swsh.crownCaptures',caps.every(k=>nb[k]===true)&&(nb.KCapturedRegieleki===true||nb.KCapturedRegidrago===true)&&(d.caught||[]).includes(898),'namedBlocks');
+   }
    // Leyendas Z-A: misiones principales y secundarias (marcadores de diagnosis.js zaQuests desde KEventWorkQuest).
    for(const [k,v]of Object.entries(nb)){const m=/^ZA_MISSION_(\d\d)$/.exec(k);if(m&&typeof v==='boolean')add('za.mission.'+m[1],v,'namedBlocks');}
    if(typeof nb.ZA_SIDE_BASE_ALL==='boolean')add('za.side.base',nb.ZA_SIDE_BASE_ALL,'namedBlocks');
