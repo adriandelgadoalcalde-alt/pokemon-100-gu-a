@@ -1309,7 +1309,7 @@
       "Primera Liga completada; incidente de Festi Plaza activado"
     ],
     "steps": [
-      "Continúa las escenas de postgame en casa y entra en Festi Plaza cuando Sophocles solicite ayuda. Resuelve el combate de la Agencia de Combate que forma parte del incidente.",
+      "Continúa las escenas de postgame en casa y entra en Festi Plaza cuando Chris solicite ayuda. Resuelve el combate de la Agencia de Combate que forma parte del incidente.",
       "Tras el cambio en Paraíso Æther, habla con Lylia y accede a la mansión ocupada. Sigue el recorrido hasta la sala central del castillo.",
       "Resuelve las alas laterales con sus puzles de movimiento y portales. Derrota a los líderes invitados de otras organizaciones para abrir sus accesos.",
       "Completa los sectores de Aquiles, Magno, Helio, Lysson y Ghechis según los bloqueos del castillo. Habla con los personajes de la sala central cuando un jefe deje de impedir el paso.",
@@ -1565,9 +1565,9 @@
     "location": "Pueblo Cahíz → Gruta Caleta → Sendero de Cahíz → Pueblo Ataifor → Ciudad Meseta",
     "requires": [],
     "steps": [
-      "En Pueblo Cahíz conoces a Nemona y eliges inicial: Sprigatito, Fuecoco o Quaxly. Tras el combate de prueba con ella, baja a la playa a buscar la mochila de tu hermana o hermano.",
+      "En Pueblo Cahíz conoces a Mencía y eliges inicial: Sprigatito, Fuecoco o Quaxly. Tras el combate de prueba con ella, baja a la playa a buscar la mochila de tu hermana o hermano.",
       "En la Gruta Caleta encuentras a Koraidon (Escarlata) o Miraidon (Púrpura), debilitado. Dale un bocadillo y te acompañará; ya puedes montarlo por el Sendero de Cahíz.",
-      "Sigue a Nemona hasta Pueblo Ataifor y continúa hasta Ciudad Meseta. Al llegar a la Academia (Naranja en Escarlata, Uva en Púrpura) el director Clavell presenta la Búsqueda del Tesoro.",
+      "Sigue a Mencía hasta Pueblo Ataifor y continúa hasta Ciudad Meseta. Al llegar a la Academia (Naranja en Escarlata, Uva en Púrpura) el director Clavel presenta la Búsqueda del Tesoro.",
       "La búsqueda abre tres historias que puedes hacer en el orden que quieras: Travesía de la victoria (gimnasios), Senda legendaria (titanes, con Damián) y Vía Stardust (Team Star, con un tal Cassiopeia). Ordénalas por el nivel de los rivales: misiones 02, 03 y 04."
     ],
     "check": "Tienes a Koraidon o Miraidon y la Búsqueda del Tesoro ha empezado en la Academia.",
@@ -1591,13 +1591,13 @@
     "location": "Travesía de la Victoria: los 8 gimnasios de Paldea",
     "requires": [],
     "steps": [
-      "Pueblo Pirotín, tipo Bicho (Katy). Prueba: empujar una aceituna gigante por un laberinto hasta la meta. Premio: MT021.",
-      "Pueblo Altamía, tipo Planta (Brassius). Prueba: reunir los 10 Sunflora escondidos por el pueblo; algunos combaten.",
-      "Ciudad Leudal, tipo Eléctrico (Iono). Prueba: en su directo, encuentra tres veces al director Clavell disfrazado entre la gente y vence a un entrenador cada vez.",
-      "Ciudad Cántara, tipo Agua (Kofu). Prueba: lleva a Pueblo Marinada la cartera que olvidó el líder y gana la subasta que te encarga allí.",
-      "Pueblo Mestura, tipo Normal (Larry). Prueba: consigue las pistas del menú secreto venciendo a otros alumnos y haz el pedido secreto en el restaurante (en inglés: «Grilled Rice Balls, Medium, Extra Crispy with Lemon»). Premio: MT025.",
-      "Pueblo Hozkailu (en la Sierra Napada), tipo Fantasma (Ryme). Prueba: combates dobles ante un público que, si lo animas, te sube estadísticas. Premio: MT114.",
-      "Pueblo Alforno, tipo Psíquico (Tulip). Prueba: imita las emociones que pide la instructora y vence a un entrenador, dos veces. Premio: MT120.",
+      "Pueblo Pirotín, tipo Bicho (Araceli). Prueba: empujar una aceituna gigante por un laberinto hasta la meta. Premio: MT021.",
+      "Pueblo Altamía, tipo Planta (Brais). Prueba: reunir los 10 Sunflora escondidos por el pueblo; algunos combaten.",
+      "Ciudad Leudal, tipo Eléctrico (E-Nigma). Prueba: en su directo, encuentra tres veces al director Clavel disfrazado entre la gente y vence a un entrenador cada vez.",
+      "Ciudad Cántara, tipo Agua (Fuco). Prueba: lleva a Pueblo Marinada la cartera que olvidó el líder y gana la subasta que te encarga allí.",
+      "Pueblo Mestura, tipo Normal (Laureano). Prueba: consigue las pistas del menú secreto venciendo a otros alumnos y haz el pedido secreto en el restaurante (en inglés: «Grilled Rice Balls, Medium, Extra Crispy with Lemon»). Premio: MT025.",
+      "Pueblo Hozkailu (en la Sierra Napada), tipo Fantasma (Lima). Prueba: combates dobles ante un público que, si lo animas, te sube estadísticas. Premio: MT114.",
+      "Pueblo Alforno, tipo Psíquico (Tuli). Prueba: imita las emociones que pide la instructora y vence a un entrenador, dos veces. Premio: MT120.",
       "Gimnasio de la Sierra Napada (aislado en la montaña), tipo Hielo (Grusha). Prueba: bajar la pista de nieve con tu montura pasando por todas las puertas en 1 minuto y 30 segundos. Premio: MT124.",
       "Todas las pruebas se pueden repetir después para ganar recompensas, y los líderes admiten revancha en el postgame."
     ],
@@ -1623,13 +1623,13 @@
     "location": "Senda Legendaria: los 5 titanes y las Hierbas Mística",
     "requires": [],
     "steps": [
-      "Arven busca las Hierbas Mística, guardadas por Pokémon titánicos. Cada titán se vence dos veces: la segunda, tras comerse la hierba, con la ayuda de Arven. Después, Arven te prepara un bocadillo que despierta un poder de tu montura.",
+      "Damián busca las Hierbas Mística, guardadas por Pokémon titánicos. Cada titán se vence dos veces: la segunda, tras comerse la hierba, con la ayuda de Damián. Después, Damián te prepara un bocadillo que despierta un poder de tu montura.",
       "Klawf, titán del acantilado (tipo Roca), en el Área 3 (Sur). Desbloquea el acelerón.",
       "Bombirdier, titán de las alturas (tipo Volador), en el Área 1 (Oeste); tira rocas desde la montaña. Desbloquea nadar.",
       "Orthworm, titán de acero (tipo Acero), en las minas del Área 3 (Este): persíguelo por los túneles. Desbloquea el salto alto.",
       "Gran Colmillo (Escarlata) o Ferrodada (Púrpura), titán sísmico (tipo Tierra), en el Desierto Rostiz. Desbloquea planear.",
       "Tatsugiri y Dondozo, falso titán (tipo Dragón), en el Lago Cazola. Desbloquea escalar.",
-      "Con los cinco, vuelve al Sendero de Cahíz: en el laboratorio del faro, Arven cura a Mabosstiff y te reta a un combate. Los titanes se pueden capturar más adelante con una marca especial."
+      "Con los cinco, vuelve al Sendero de Cahíz: en el laboratorio del faro, Damián cura a Mabosstiff y te reta a un combate. Los titanes se pueden capturar más adelante con una marca especial."
     ],
     "check": "Cinco titanes vencidos y las cinco habilidades de tu montura activas.",
     "pitfalls": [
@@ -1653,12 +1653,12 @@
     "requires": [],
     "steps": [
       "Cassiopeia te llama para acabar con el Team Star. En cada base vences a 30 Pokémon en 10 minutos con el combate automático («Let's Go» en inglés: tu Pokémon combate solo). Clive puede curarte, y después te enfrentas al jefe y a su Starmobile.",
-      "Escuadrón Segin, tipo Siniestro (Giacomo), en el Área 1 (Oeste). Premio: MT062.",
-      "Escuadrón Schedar, tipo Fuego (Mela), en el Área 1 (Este). Premio: MT038.",
-      "Escuadrón Navi, tipo Veneno (Atticus), en Bosquejada. Premio: MT102.",
-      "Escuadrón Ruchbah, tipo Hada (Ortega), en el Área 3 (Norte). Premio: MT079.",
-      "Escuadrón Caph, tipo Lucha (Eri), en el Área 2 (Norte). Premio: MT167.",
-      "Tras cada jefe, Penny (división de suministros) te da materiales y PL. Al vencer a los cinco, Cassiopeia revela quién es en la misión 06."
+      "Escuadrón Segin, tipo Siniestro (Anán), en el Área 1 (Oeste). Premio: MT062.",
+      "Escuadrón Schedar, tipo Fuego (Melo), en el Área 1 (Este). Premio: MT038.",
+      "Escuadrón Navi, tipo Veneno (Henzo), en Bosquejada. Premio: MT102.",
+      "Escuadrón Ruchbah, tipo Hada (Gus), en el Área 3 (Norte). Premio: MT079.",
+      "Escuadrón Caph, tipo Lucha (Erin), en el Área 2 (Norte). Premio: MT167.",
+      "Tras cada jefe, Noa (división de suministros) te da materiales y PL. Al vencer a los cinco, Cassiopeia revela quién es en la misión 06."
     ],
     "check": "Las cinco bases derrotadas.",
     "pitfalls": [
@@ -1685,8 +1685,8 @@
     ],
     "steps": [
       "En la Liga Pokémon, la Evaluación de Campeón empieza con una entrevista: responde a las preguntas sobre tu viaje.",
-      "Vence al Alto Mando en orden: tipo Tierra, tipo Acero, tipo Volador (es el mismo Larry del gimnasio Normal) y tipo Dragón. Puedes curarte entre combates.",
-      "Final contra la Campeona Geeta, que dirige la Liga. Al ganar obtienes el rango de Campeón."
+      "Vence al Alto Mando en orden: tipo Tierra, tipo Acero, tipo Volador (es el mismo Laureano del gimnasio Normal) y tipo Dragón. Puedes curarte entre combates.",
+      "Final contra la Campeona Ságita, que dirige la Liga. Al ganar obtienes el rango de Campeón."
     ],
     "check": "Rango de Campeón registrado.",
     "pitfalls": [
@@ -1711,12 +1711,12 @@
       "Rango de Campeón y las tres historias completadas."
     ],
     "steps": [
-      "Nemona te reta al combate que llevaba esperando: combate de campeonas o campeones.",
-      "Senda Legendaria: el combate con Arven en el faro del Sendero de Cahíz, si no lo hiciste ya.",
+      "Mencía te reta al combate que llevaba esperando: combate de campeonas o campeones.",
+      "Senda Legendaria: el combate con Damián en el faro del Sendero de Cahíz, si no lo hiciste ya.",
       "Vía Stardust: en la Academia se revela quién es Cassiopeia y combates contra ella, que usa un equipo de Eevee y sus evoluciones.",
       "Con las tres terminadas, los tres amigos te proponen ir juntos al Área Cero: es la misión 07."
     ],
-    "check": "Combates finales con Nemona, Arven y Cassiopeia completados.",
+    "check": "Combates finales con Mencía, Damián y Cassiopeia completados.",
     "pitfalls": [
       "Los líderes y personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
     ],
@@ -1739,9 +1739,9 @@
       "Misión 06 completada."
     ],
     "steps": [
-      "Con Nemona, Arven y Penny entra por la puerta del foso de Paldea y baja al Área Cero con la ayuda de Koraidon o Miraidon.",
+      "Con Mencía, Damián y Noa entra por la puerta del foso de Paldea y baja al Área Cero con la ayuda de Koraidon o Miraidon.",
       "Recorre las cuatro estaciones de investigación en orden. En cada una hay que desbloquear la puerta, y entre ellas aparecen Pokémon paradoja y cristales de teracristal.",
-      "En el laboratorio del fondo te espera la IA del profesor (Sada en Escarlata, Turo en Púrpura). Vence a su equipo de Pokémon paradoja.",
+      "En el laboratorio del fondo te espera la IA del profesor (Albora en Escarlata, Turo en Púrpura). Vence a su equipo de Pokémon paradoja.",
       "En el combate final, Koraidon o Miraidon lucha a tu lado. Después llegan los créditos y el epílogo en la Academia."
     ],
     "check": "Créditos vistos y el indicador de final de Paldea activo (la web lo lee del guardado).",
@@ -1766,7 +1766,7 @@
       "Final de Paldea (misión 07)."
     ],
     "steps": [
-      "Torneo Academia: se juega en la Academia y se puede repetir. Entre los rivales hay líderes de gimnasio, el Alto Mando, la Campeona, Nemona, Arven y Penny; ganarlo da premios.",
+      "Torneo Academia: se juega en la Academia y se puede repetir. Entre los rivales hay líderes de gimnasio, el Alto Mando, la Campeona, Mencía, Damián y Noa; ganarlo da premios.",
       "Revanchas: los líderes de gimnasio y los jefes del Team Star admiten un combate más fuerte. Las pruebas de gimnasio también se repiten por recompensa.",
       "Captura de los titanes con su marca especial y de los legendarios de las estacas (misión 12).",
       "Completa la Pokédex de Paldea para recibir el diploma. Con los DLC siguen las misiones 09 a 11 (Noroteo, Academia Arándano y el epílogo)."
@@ -1824,7 +1824,7 @@
     "steps": [
       "Acepta la invitación a la Academia Arándano y completa la introducción al Biodomo y a sus Tareas Extraescolares para reunir Puntos Arándano.",
       "Abre el recorrido de la Liga Arándano y supera las pruebas de sus cuatro miembros. Prepara equipos para combates dobles y revisa los requisitos particulares de cada prueba.",
-      "Supera el enfrentamiento decisivo con Kieran y continúa la expedición al Área Cero cuando la historia lo indique.",
+      "Supera el enfrentamiento decisivo con Cass y continúa la expedición al Área Cero cuando la historia lo indique.",
       "En las profundidades del Área Cero sigue los bloqueos de los Pokémon de teratipo Astral y continúa hasta el episodio de Terapagos. Completa sus fases y el cierre de la expedición.",
       "Tras la historia vuelve al Club de la Liga: sus mejoras abren iniciales del Biodomo, invitaciones y recompensas. No se obtienen todas simplemente por vencer al Campeón.",
       "Revisa la misión de las fotografías de Gama y sus capturas Paradoja según versión. Los Snacks de Galletano y las Tareas de Círculo Unión tienen condiciones propias de cooperación."
@@ -1935,7 +1935,7 @@
     "requires": [],
     "steps": [
       "Misión principal 1: nada más llegar a Ciudad Luminalia, un Pancham te roba la bolsa de viaje. Persíguelo por las calles hasta recuperarla.",
-      "Misión 2: al caer la noche la ciudad se convierte en zona de combate. Sigue a tu nueva amiga o amigo (Taunie o Urbain, según tu protagonista) para salir de ella y refugiarte en el Hotel Z.",
+      "Misión 2: al caer la noche la ciudad se convierte en zona de combate. Sigue a tu nueva amiga o amigo (Muni o Urbi, según tu protagonista) para salir de ella y refugiarte en el Hotel Z.",
       "Misión 3: tu acompañante te enseña lo básico de la vida en Luminalia: Centro Pokémon, tiendas, zonas salvajes urbanas y el sistema de combate en tiempo real, con movimientos y esquivas.",
       "Antes de seguir, captura algún Pokémon en las zonas salvajes cercanas y forma un equipo de al menos tres para las primeras noches del Torneo Z-A."
     ],
@@ -2010,12 +2010,12 @@
     "steps": [
       "Misión 10: aprende los secretos de la megaevolución y consigue el Mega-Aro.",
       "Misiones 11 a 13: megaevoluciones descontroladas de Slowbro (Distrito Azul), Camerupt (Distrito Amarillo) y Victreebel (Distrito Rosa). Si el contador llega a cero pierdes el combate: ataca rápido y esquiva sus ataques de área.",
-      "Misión 14: rango E contra Canari, la streamer; primero tienes que encontrarla.",
+      "Misión 14: rango E contra Naria, la streamer; primero tienes que encontrarla.",
       "Misiones 15 a 18 (encargo del Equipo MZ, «Team MZ» en inglés): Beedrill (Distrito Verde), Hawlucha (Distrito Rosa) y Banette (Distrito Amarillo).",
-      "Misión 19: antes del ascenso a D, busca a Gwynn, la hermana pequeña de Ivor, que ha desaparecido. Después vence a Ivor.",
+      "Misión 19: antes del ascenso a D, busca a Gwynn, la hermana pequeña de Albar, que ha desaparecido. Después vence a Albar.",
       "Misiones 20 a 23: encargos del Sindicato (Rust Syndicate) para saldar la deuda, y las megaevoluciones de Mawile (Distrito Rosa), Barbaracle (Distrito Azul) y Ampharos (Distrito Rojo).",
-      "Misión 24: rango C contra Corbeau, jefe del Sindicato (Rust Syndicate). Misión 25: combate en una pista de verdad, ya resuelta la deuda.",
-      "Misiones 26 a 29: Froslass (Distrito Azul), Altaria (Distrito Rosa) y Venusaur (Distrito Amarillo), antes del torneo de Jacinthe (SBC). Misión 30: rango B contra Jacinthe.",
+      "Misión 24: rango C contra Córax, jefe del Sindicato (Rust Syndicate). Misión 25: combate en una pista de verdad, ya resuelta la deuda.",
+      "Misiones 26 a 29: Froslass (Distrito Azul), Altaria (Distrito Rosa) y Venusaur (Distrito Amarillo), antes del torneo de Lilette (SBC). Misión 30: rango B contra Lilette.",
       "Misiones 31 a 34: Dragonite (Distrito Verde), Tyranitar (Distrito Amarillo) y Starmie (Distrito Azul)."
     ],
     "check": "Las 15 megaevoluciones descontroladas de la historia vencidas y rango B alcanzado (misión principal 34).",
@@ -2038,7 +2038,7 @@
     "location": "Rango A, Torre Prisma y el futuro de Luminalia",
     "requires": [],
     "steps": [
-      "Misión 35: tu rival para el rango A es Grisham. Solo tienes su foto, así que búscalo por la ciudad antes de enfrentarte a él.",
+      "Misión 35: tu rival para el rango A es Grisel. Solo tienes su foto, así que búscalo por la ciudad antes de enfrentarte a él.",
       "Misión 36: una luz extraña sale de la Torre Prisma. Reúnete con tus amigos para proteger la ciudad.",
       "Misión 37 («Operation Protect Lumiose»): deja atrás las rivalidades y ve a por Zygarde, que te espera en el lugar indicado.",
       "Misión 38: con la ciudad recuperada, decide con tu acompañante qué hacer con los deseos ganados al llegar al rango A. Es el final de la historia principal."
@@ -2065,8 +2065,8 @@
     "steps": [
       "Misión 39: se abre el Torneo Z-A Infinito. Ya no hay más ascensos de rango, pero cada noche hay tres zonas de combate y los rivales suben de nivel a medida que completas torneos.",
       "Con el billete de aspirante (Challenger's Ticket) puedes llamar a un rival en Quasartico Inc. para los combates de recompensa: pepitas grandes, vitaminas, Chapas Plateadas o Doradas, Poké Balls especiales y, con suerte, una Master Ball. Las rachas largas dan más Caramelos Exp.",
-      "Misiones 40 a 42: la amenaza de «el que da» (con Mable, antes miembro del Team Flare), la de «el que quita» (con Grisham y Vinnie) y el equilibrio del mundo con Zygarde. Los encuentros y capturas de Xerneas, Yveltal y Zygarde se detallan en la misión 06.",
-      "Completa la Pokédex de Luminalia y, si tienes el DLC, la del Hiperespacio (misión 07). Revisa también los títulos de entrenador y la investigación de Pokédex de Mable."
+      "Misiones 40 a 42: la amenaza de «el que da» (con Melia, antes miembro del Team Flare), la de «el que quita» (con Grisel y Airén) y el equilibrio del mundo con Zygarde. Los encuentros y capturas de Xerneas, Yveltal y Zygarde se detallan en la misión 06.",
+      "Completa la Pokédex de Luminalia y, si tienes el DLC, la del Hiperespacio (misión 07). Revisa también los títulos de entrenador y la investigación de Pokédex de Melia."
     ],
     "check": "Misiones principales 39 a 42 completadas, Torneo Infinito iniciado y Pokédex revisadas.",
     "pitfalls": [
@@ -2155,8 +2155,8 @@
     "steps": [
       "Ultraumbrales: desde la Ultrópolis (abierta en la historia) se vuela por el Ultraespacio a lomos de Lunala (Ultrasol) o Solgaleo (Ultraluna); se puede cambiar en la Ultrópolis. Al principio se controla con el giroscopio; en el edificio de GAME FREAK de Ciudad Kantai te dejan usar el stick.",
       "Durante el vuelo recoge las esferas naranjas de energía y evita las eléctricas azules. Cuantos más años luz recorras, más probable es que el portal tenga borde especial (tipos 2 a 4) y lleve a un legendario: por ejemplo, a 3.000 años luz sale un 16 % de tipo 3 y un 2 % de tipo 4. No está garantizado.",
-      "Episodio RR: después de resolver lo de Blacephalon y Stakataka en Poni, Sophocles (Chris) te avisa de que la Festi Plaza ha sido pirateada. Entra con él y combate con Pokémon prestados de la Agencia de Combate hasta recuperar el control.",
-      "Por la tele ves cómo Giovanni irrumpe en la rueda de prensa de Lusamine. Sigue a Lillie al Paraíso Æther, convertido en castillo, y vence a Faba en combate múltiple junto a ella.",
+      "Episodio RR: después de resolver lo de Blacephalon y Stakataka en Poni, Chris (Chris) te avisa de que la Festi Plaza ha sido pirateada. Entra con él y combate con Pokémon prestados de la Agencia de Combate hasta recuperar el control.",
+      "Por la tele ves cómo Giovanni irrumpe en la rueda de prensa de Samina. Sigue a Lylia al Paraíso Æther, convertido en castillo, y vence a Fabio en combate múltiple junto a ella.",
       "Dentro del castillo recorre las salas, vence a los jefes de otros mundos que ha reunido el Team Rainbow Rocket y, al final, a Giovanni."
     ],
     "check": "Episodio RR terminado y Ultraumbrales explorados en busca de legendarios.",

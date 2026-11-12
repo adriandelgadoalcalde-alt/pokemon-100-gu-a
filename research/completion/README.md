@@ -166,7 +166,7 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
 - **Pokéstar Studios (N2/B2):** bloque 71 (0x25A00, ahora en la comprobación de integridad): 40 registros de 20 bytes desde
   +0x28 con la mejor puntuación (−9999 sin rodar) y un indicador en +16 que vale 1 al completar la película. Deducido
   comparando la partida «100» de Negro 2 (40/40) con la de Blanco 2 (un intento fallido) y las públicas (0/40).
-- **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
+- **Leyendas Arceus:** «Derrotar a Volus y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
 
@@ -234,7 +234,7 @@ Pendiente con motivo (no se acredita solo para no adivinar):
 
 - **Torre Batalla de Diamante/Perla (racha de 100):** en pokediamond el bloque (`FrontierData`) solo guarda BP, banderas y
   contadores por modalidad (`u_C[5]`), sin la racha récord, y PKHeX no tiene un récord de juego equivalente.
-- **Episodio Rainbow Rocket (USUM):** la bandera 211 («Lusamine's Mansion is NOT Team Rocket's Castle») también vale antes
+- **Episodio Rainbow Rocket (USUM):** la bandera 211 («Samina's Mansion is NOT Team Rocket's Castle») también vale antes
   del episodio, así que sola no sirve. Ahora se acredita con la 211 más alguno de los Electrode desaparecidos dentro del
   castillo (1730-1732, solo posibles durante el episodio): Ultraluna del propietario la cumple. Si no se capturó ningún
   Electrode no se puede probar, y no se acredita.
@@ -252,7 +252,7 @@ Pendiente con motivo (no se acredita solo para no adivinar):
   de Kanto, pokeheartgold scr_seq_0824_T10R0601) llega a 8, pero ni la Liga normal ni la reforzada dejan banderas de
   entrenador (`TRAINER_FLAG_BASE` 0x550): en las dos partidas del propietario, con la Liga ganada, están todas a cero. Solo se
   sabe que está disponible, no que se haya ganado.
-- **Minijuegos y retos de los DLC de Escarlata/Púrpura** (ogros de Noroteo, vuelo contrarreloj, fotos de Perrin, Liga
+- **Minijuegos y retos de los DLC de Escarlata/Púrpura** (ogros de Noroteo, vuelo contrarreloj, fotos de Gama, Liga
   Arándano, Pecharunt): `SaveBlockAccessor9SV` no tiene bloques con nombre para ellos; habría que localizarlos en los datos
   del juego, como se hizo con las misiones de Z-A.
 - **Expansiones de Escarlata/Púrpura:** las señales `FSYS_SCENARIO_GAME_CLEAR_SU1/SU2` existen, pero ninguna partida
@@ -321,7 +321,7 @@ Bloques con nombre de `SaveBlockAccessor9SV` (PKHeX 96e33e7), leídos por `Progr
 | La máscara turquesa | `FSYS_SCENARIO_GAME_CLEAR_SU1` (0x0DDBBC62) | Escarlata pública: verdadero, con Ogerpon, Okidogi, Munkidori y Fezandipiti capturados y Noroteo 200/200 |
 | El disco índigo y Liga Arándano (el campeón es parte de la historia) | `FSYS_SCENARIO_GAME_CLEAR_SU2` (0x0DDBBAAF) | sin caso positivo |
 | Ogre Oustin' en difícil | `OniballoonSave_isCleardHard` (0x17AD6C82) | la misma Escarlata: verdadero |
-| Fotos de Perrin | captura de los dos paradoja de la versión (1020/1021 en Escarlata, 1022/1023 en Púrpura) | Pokédex |
+| Fotos de Gama | captura de los dos paradoja de la versión (1020/1021 en Escarlata, 1022/1023 en Púrpura) | Pokédex |
 | Pecharunt | captura de 1025 | Pokédex |
 
 Un bloque ausente (partida de una versión anterior al DLC) se deja sin interpretar. Sin dato: vuelo contrarreloj y
@@ -380,7 +380,7 @@ extrae los paquetes `script/lua/bin/release/*` y recoge 1567 nombres de banderas
 `*Save_*`). La clave del bloque en el guardado es la mitad baja del FNV-1a de 64 bits del nombre (comprobado con
 `FSYS_SCENARIO_GAME_CLEAR` = 0x92CE2CF6, `FSYS_YMAP_FLY_01` y `..._SU1` de PKHeX).
 
-- **Vuelo contrarreloj de Amarys:** `FEVT_SDC02_HAGANE_CLEAR_ELEMENTARY` (0x370AAED3), `_INTERMEDIANTE` (0x3EB0BCA0),
+- **Vuelo contrarreloj de Nerina:** `FEVT_SDC02_HAGANE_CLEAR_ELEMENTARY` (0x370AAED3), `_INTERMEDIANTE` (0x3EB0BCA0),
   `_ADVANCED` (0x96EDAF73) y `_SUPERLATIVE` (0x7D215B69). Los cuatro bloques existen (falsos) en la Púrpura pública de
   la versión 3.0; no hay partida con El disco índigo para el caso positivo. Hecho `sv.flyingTrialAll`.
 - **Torneo de la Academia:** solo `FEVT_1ST_BATTLE_TOURNAMENT_LOST`; no hay bandera de victoria con nombre.

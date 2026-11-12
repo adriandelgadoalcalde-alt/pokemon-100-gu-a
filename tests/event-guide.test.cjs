@@ -680,7 +680,7 @@ test('N/B: poderes regalo del Nexárbol solo se niegan con el Nexo sin tocar',()
  assert.equal(O.fromDiagnosis({game:'BLACK',entralink5:{white:40,black:40}}).find(x=>x.id==='entralink.b2w2.level30'),undefined);
 });
 
-test('Escarlata/Púrpura: vuelo contrarreloj de Amarys en sus cuatro niveles',()=>{
+test('Escarlata/Púrpura: vuelo contrarreloj de Nerina en sus cuatro niveles',()=>{
  const O=require('../src/engine/objectives.js'),f=vals=>O.fromDiagnosis({game:'SCARLET',progressSignals:['elementary','intermediate','advanced','superlative'].map((k,i)=>({id:'dlc.flyingTrial.'+k,value:vals[i]}))}).find(x=>x.id==='sv.flyingTrialAll')?.value;
  assert.equal(f([true,true,true,true]),true);assert.equal(f([true,true,true,false]),false);assert.equal(f([true,null,true,true]),undefined);
 });

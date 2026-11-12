@@ -1791,8 +1791,8 @@
    "888": {
     "fase": 2,
     "orden": 210,
-    "cuando": "Después de ser campeón, al terminar el episodio de Sordward y Shielbert.",
-    "requisitos": "Tras perseguir a Sordward y Shielbert por los estadios de Galar, el episodio termina en la Corona de la Torre de la Planta Eléctrica, donde el legendario de tu edición se deja capturar.",
+    "cuando": "Después de ser campeón, al terminar el episodio de Tizonio y Dargo.",
+    "requisitos": "Tras perseguir a Tizonio y Dargo por los estadios de Galar, el episodio termina en la Corona de la Torre de la Planta Eléctrica, donde el legendario de tu edición se deja capturar.",
     "consejo": "Nivel 70."
    },
    "889": {
@@ -1848,35 +1848,35 @@
    "894": {
     "fase": 2,
     "orden": 250,
-    "cuando": "Nieves de la Corona: tras la segunda pista legendaria de Peonio.",
+    "cuando": "Nieves de la Corona: tras la segunda pista legendaria de Peony.",
     "requisitos": "Ruinas del Dilema: elige Regieleki (huellas eléctricas). Es excluyente con Regidrago.",
     "consejo": "Regieleki nivel 70; el otro, desde la Librería con Pokekeep."
    },
    "895": {
     "fase": 2,
     "orden": 250,
-    "cuando": "Nieves de la Corona: tras la segunda pista legendaria de Peonio.",
+    "cuando": "Nieves de la Corona: tras la segunda pista legendaria de Peony.",
     "requisitos": "Ruinas del Dilema: elige Regidrago. Es excluyente con Regieleki.",
     "consejo": "Regidrago nivel 70; el otro, desde la Librería con Pokekeep."
    },
    "377": {
     "fase": 2,
     "orden": 251,
-    "cuando": "Nieves de la Corona, segunda pista de Peonio.",
+    "cuando": "Nieves de la Corona, segunda pista de Peony.",
     "requisitos": "Ruinas Pico Roca: abre la puerta resolviendo la inscripción.",
     "consejo": "Regirock nivel 70."
    },
    "378": {
     "fase": 2,
     "orden": 252,
-    "cuando": "Nieves de la Corona, segunda pista de Peonio.",
+    "cuando": "Nieves de la Corona, segunda pista de Peony.",
     "requisitos": "Ruinas Iceberg.",
     "consejo": "Regice nivel 70."
    },
    "379": {
     "fase": 2,
     "orden": 253,
-    "cuando": "Nieves de la Corona, segunda pista de Peonio.",
+    "cuando": "Nieves de la Corona, segunda pista de Peony.",
     "requisitos": "Ruinas Hierro.",
     "consejo": "Registeel nivel 70."
    },
@@ -1935,8 +1935,8 @@
    "889": {
     "fase": 2,
     "orden": 210,
-    "cuando": "Después de ser campeón, al terminar el episodio de Sordward y Shielbert.",
-    "requisitos": "Tras perseguir a Sordward y Shielbert por los estadios de Galar, el episodio termina en la Corona de la Torre de la Planta Eléctrica, donde el legendario de tu edición se deja capturar.",
+    "cuando": "Después de ser campeón, al terminar el episodio de Tizonio y Dargo.",
+    "requisitos": "Tras perseguir a Tizonio y Dargo por los estadios de Galar, el episodio termina en la Corona de la Torre de la Planta Eléctrica, donde el legendario de tu edición se deja capturar.",
     "consejo": "Nivel 70."
    },
    "888": {
@@ -1992,35 +1992,35 @@
    "894": {
     "fase": 2,
     "orden": 250,
-    "cuando": "Nieves de la Corona: tras la segunda pista legendaria de Peonio.",
+    "cuando": "Nieves de la Corona: tras la segunda pista legendaria de Peony.",
     "requisitos": "Ruinas del Dilema: elige Regieleki (huellas eléctricas). Es excluyente con Regidrago.",
     "consejo": "Regieleki nivel 70; el otro, desde la Librería con Pokekeep."
    },
    "895": {
     "fase": 2,
     "orden": 250,
-    "cuando": "Nieves de la Corona: tras la segunda pista legendaria de Peonio.",
+    "cuando": "Nieves de la Corona: tras la segunda pista legendaria de Peony.",
     "requisitos": "Ruinas del Dilema: elige Regidrago. Es excluyente con Regieleki.",
     "consejo": "Regidrago nivel 70; el otro, desde la Librería con Pokekeep."
    },
    "377": {
     "fase": 2,
     "orden": 251,
-    "cuando": "Nieves de la Corona, segunda pista de Peonio.",
+    "cuando": "Nieves de la Corona, segunda pista de Peony.",
     "requisitos": "Ruinas Pico Roca: abre la puerta resolviendo la inscripción.",
     "consejo": "Regirock nivel 70."
    },
    "378": {
     "fase": 2,
     "orden": 252,
-    "cuando": "Nieves de la Corona, segunda pista de Peonio.",
+    "cuando": "Nieves de la Corona, segunda pista de Peony.",
     "requisitos": "Ruinas Iceberg.",
     "consejo": "Regice nivel 70."
    },
    "379": {
     "fase": 2,
     "orden": 253,
-    "cuando": "Nieves de la Corona, segunda pista de Peonio.",
+    "cuando": "Nieves de la Corona, segunda pista de Peony.",
     "requisitos": "Ruinas Hierro.",
     "consejo": "Registeel nivel 70."
    },

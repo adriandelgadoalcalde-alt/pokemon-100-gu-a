@@ -1114,7 +1114,7 @@
    "id": "postgame",
    "fase": 2,
    "orden": 200,
-   "como": "Tras ser campeón: episodio de Sordward y Shielbert (Zacian/Zamazenta), Torre Batalla de Puntera y, con los DLC, la Isla de la Armadura y las Nieves de la Corona."
+   "como": "Tras ser campeón: episodio de Tizonio y Dargo (Zacian/Zamazenta), Torre Batalla de Puntera y, con los DLC, la Isla de la Armadura y las Nieves de la Corona."
   },
   {
    "juegos": [
@@ -1267,7 +1267,7 @@
    "id": "battle0",
    "fase": 3,
    "orden": 300,
-   "como": "Tras los créditos, la encomienda final con Volo en el Templo de Sinnoh: véncelo a él y a Giratina."
+   "como": "Tras los créditos, la encomienda final con Volus en el Templo de Sinnoh: véncelo a él y a Giratina."
   },
   {
    "juegos": [

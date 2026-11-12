@@ -12,7 +12,7 @@
     "steps": [
       "Sigue al profesor Lavender por Playa del Albor y captura los tres Pokémon que se escaparon usando las Poké Balls del tutorial. Recoge el Arceusmóvil y acompáñalo a Villa Jubileo.",
       "Completa la reunión y el alojamiento de la primera noche. A la mañana siguiente habla con Selena en la sede del Equipo Galaxia para aceptar la prueba de ingreso.",
-      "Elige a Rowlet, Cyndaquil u Oshawott en el laboratorio. Antes de salir de la villa vence a Volus; no se llama Volo en la localización española.",
+      "Elige a Rowlet, Cyndaquil u Oshawott en el laboratorio. Antes de salir de la villa vence a Volus (Volo en la versión inglesa).",
       "En Pradera Obsidiana captura Bidoof, Starly y Shinx para la prueba. Acércate agachado al Starly para que no huya; Shinx exige aprender a iniciar el combate cuando está alerta.",
       "Regresa con el resultado de las tres capturas y recibe el uniforme del equipo. Preséntate ante Sorbus para terminar el ingreso oficial.",
       "Aprende la artesanía en la villa: combina materiales en una mesa para fabricar Poké Balls. Recibe la Pokédex y el equipo de elaboración; recoger materiales y registrar tareas sostiene la progresión posterior."
