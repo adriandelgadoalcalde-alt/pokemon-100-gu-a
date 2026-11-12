@@ -1630,6 +1630,29 @@
       }
     },
     {
+      "id": "hgss.mt_silver_open",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Acceso",
+      "mission": "13",
+      "title": "Permiso del Prof. Oak para el Monte Plateado",
+      "placeName": {
+        "HGSS": "Pueblo Paleta"
+      },
+      "requires": "Las 16 medallas de Johto y Kanto.",
+      "steps": [
+        "Con las 16 medallas, habla con el Prof. Oak en su laboratorio de Pueblo Paleta.",
+        "Desde ese momento el guardia de la Ruta 28 te deja pasar hacia el Monte Plateado."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_UNLOCKED_MT_SILVER",
+          "meaning": "pokeheartgold scr_seq_0740_T01R0301 (laboratorio de Oak): SetFlag FLAG_UNLOCKED_MT_SILVER al ver las 16 medallas; ningún script la borra."
+        }
+      }
+    },
+    {
       "id": "hgss.red",
       "families": [
         "HGSS"
