@@ -17,3 +17,6 @@ generó desde el cartucho con el mismo método: su tabla de Negro 2 coincide en 
 Blanco 2. Contraste con partidas reales: las públicas de Negro/Blanco salen en Ciudad Gres y la de Twitch Plays
 Pokémon Negro, guardada al final de la historia, en el Palacio de N. El bloque de posición de Negro/Blanco mide 0x9C
 bytes, con su CRC16 en 0x1959E (SaveBlockAccessor5BW).
+
+Contraste con las copias propias en español (12/11/2026, `a/0/1/2` leído en el PC): Negro y Blanco dan las mismas
+427 zonas que `bw-zones.json` (0 diferencias) y Negro 2 y Blanco 2 las mismas 615 que `b2w2-zones.json`.

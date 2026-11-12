@@ -38,3 +38,7 @@ Las medallas salen de `Misc8.Badges` (byte de bits; el motor las cuenta como `ba
 medallas) ya traen una fecha, así que el juego lo rellena antes. El título se da por hecho solo con victorias en la
 Torre Batalla (`KBattleTowerSinglesVictory`/`KBattleTowerDoublesVictory`), que se abre después; sin ellas la web dice
 que el Salón de la Fama aún no consta (historia parcial).
+
+Contraste entre ediciones (12/11/2026, copias propias): Escudo trae exactamente el mismo `data_table.gfpak` (áreas) y
+`placement.gfpak` (zonas) que Espada, y Let's Go Pikachu los mismos 254 ficheros de zona y colocación que Let's Go Eevee
+(mismos tamaños; Ciudad Azafrán byte a byte igual).

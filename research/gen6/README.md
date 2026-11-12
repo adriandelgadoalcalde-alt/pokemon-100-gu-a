@@ -11,3 +11,6 @@ Ciudad Novarte y Ciudad Petalia. La posición se lee del bloque 4 «Situation» 
 tras comprobar su CRC16-CCITT en la tabla de bloques del final del guardado.
 
 Séptima generación: ver `research/gen7/README.md`.
+
+Contraste con las otras ediciones (12/11/2026, copias propias): X da exactamente la misma tabla que Y y Zafiro Alfa la
+misma que Rubí Omega (mismo SHA-256 del miembro de zonas).
