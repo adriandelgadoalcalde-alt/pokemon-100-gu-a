@@ -85,6 +85,8 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   Negro 2 y Espada del propietario los tienen; Blanco 2 y Escudo, no.
 - **Recursos de Alola:** los 18 cristales Z de tipo (807-824), el Arca de Zygarde (847) y la Pulsera Z (797) o la
   Superpulsera Z (933 en USUM). Luna, Ultrasol y Ultraluna del propietario los tienen; a Sol le faltan tres cristales.
+- **Objetos de Leyendas Arceus:** Tabla Legendaria (1828), Cadena Roja (441), Flauta Azur (455) y las grandes esferas
+  Diamansfera, Lustresfera y Griseosfera (1777-1779). La partida del propietario los tiene todos.
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
