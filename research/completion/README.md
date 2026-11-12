@@ -41,6 +41,8 @@ Cómo se acreditan los nuevos objetivos del pilar 2 y 3 (todos con fuente en su 
   Morimoto la primera vez que se le vence, así que acredita ese combate (WikiDex «Amuleto Oval»).
 - **Diplomas de Galar, Isla de la Armadura y Nieves de la Corona**: las tres marcas de Pokédex completa de la tarjeta
   (`TrainerCard8` de PKHeX), que el juego pone con la misma Pokédex que pide el director.
+- **Defensa del título de campeón de Alola**: récord 100 «Champion Title Defense» de PKHeX (`records7`); contrastado con
+  una partida pública de Sol acabada (24 defensas) y cuatro sin acabar (0).
 - **Máximo en la Cascada Meteoro** (Esmeralda): `FLAG_DEFEATED_METEOR_FALLS_STEVEN` 0x4F8 (pokeemerald).
 
 Sin dato en la partida (se marcan a mano; motivo en `pendientes.json`): diplomas de Teselia, Kalos y ROZA, y Morimoto/Nishino en Teselia (combate

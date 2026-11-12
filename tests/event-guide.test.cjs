@@ -578,3 +578,8 @@ test('DBPR: diploma de Sinnoh con la lista de ZukanWork (vistos, sin Manaphy) y 
  assert.equal(C.dexStatus({game:'SP',caught:[],seen:seen.filter(i=>i!==484)}).sinnoh.complete,false);
  assert.equal(C.dexStatus({game:'SP',caught:[],seen}).national.required,482);
 });
+
+test('Alola: defensa del título de campeón (récord 100 de PKHeX)',()=>{
+ const O=require('../src/engine/objectives.js'),v=n=>O.fromDiagnosis({game:'MOON',records7:{titleDefense:n}}).find(x=>x.id==='alola.titleDefense')?.value;
+ assert.equal(v(3),true);assert.equal(v(0),false);
+});

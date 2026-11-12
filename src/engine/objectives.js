@@ -258,6 +258,8 @@
    if(dlc.every(x=>have.has(x)))add('za.megaStones.dlc',true,'inventory');
    if(special.every(x=>have.has(x)))add('za.megaStones.special',true,'inventory');
   }
+  // Sol/Luna y USUL: defensas del título de campeón (récord 100 de PKHeX).
+  if(Number.isInteger(d.records7?.titleDefense))add('alola.titleDefense',d.records7.titleDefense>=1,'records7');
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).
