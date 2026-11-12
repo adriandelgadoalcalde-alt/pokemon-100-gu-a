@@ -118,7 +118,7 @@ def sites(repo, name, verb):
         root = base / folder
         if not root.exists():
             continue
-        for path in root.rglob('*'):
+        for path in sorted(root.rglob('*')):
             if path.suffix not in ('.s', '.inc', '.c', '.asm', '.pory') or 'debug' in str(path).lower():
                 continue
             text = path.read_text(encoding='utf-8', errors='replace')

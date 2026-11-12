@@ -34,7 +34,7 @@ try{
    row.game=core.game;row.generation=core.generation;row.format=core.format;
    row.atlasDiagnosisCompatible=normalize({...core,game:core.game||'UNIDENTIFIED_FAMILY'})!==null;if(!row.atlasDiagnosisCompatible)failures.push('atlas.normalization');
    if('paldeaSignal' in sample.expected){const signal=core.progressSignals?.find(s=>s.id==='story.paldea.clear');
-    if(signal?.value!==sample.expected.paldeaSignal||signal?.validation!=='documented')failures.push('documented.paldeaSignal');
+    if(signal?.value!==sample.expected.paldeaSignal||!['documented','verified'].includes(signal?.validation))failures.push('documented.paldeaSignal');
     row.documentedPaldeaSignalRead=signal?.value===sample.expected.paldeaSignal;
    }
   }else{

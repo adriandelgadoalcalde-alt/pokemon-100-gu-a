@@ -49,7 +49,8 @@ public static class ProgressSignals
             return (object)new { id = d.Id, label = d.Label,
                 value = DecodeBooleanType(found ? block!.Type : null), validation = contrasted ? "verified" : "documented",
                 source = new { url = Source, engineCommit = Audit.EngineCommit, blockKey = $"0x{d.Key:X8}", scriptName = d.ScriptName },
-                limitation = "Interpretación documentada en upstream; pendiente de contraste natural controlado. Un bloque ausente o de otro tipo no se interpreta como falso." };
+                limitation = (contrasted ? "Interpretación documentada en upstream y contrastada con partidas reales." : "Interpretación documentada en upstream; pendiente de contraste natural controlado.")
+                    + " Un bloque ausente o de otro tipo no se interpreta como falso." };
         }).ToArray();
     }
 

@@ -294,7 +294,8 @@
         "game": null,
         "candidates": [
           "RED",
-          "BLUE"
+          "BLUE",
+          "GREEN"
         ],
         "format": "SAV1",
         "generation": 1
@@ -320,7 +321,8 @@
         "game": null,
         "candidates": [
           "RED",
-          "BLUE"
+          "BLUE",
+          "GREEN"
         ],
         "format": "SAV1",
         "generation": 1
