@@ -48,6 +48,9 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
 - **Formas de Unown:** las 28 de HeartGold/SoulSilver (lista de formas de `Zukan4`, Pokédex + 0x10C; HeartGold del
   propietario 28, SoulSilver 1) y las 26 letras de Oro/Plata/Cristal (`wUnownDex` de pokecrystal, `SAV2Offsets.PokedexSeen`
   + 0x20; Cristal del propietario 14). Las cámaras de las Ruinas Alfa de HGSS exigen además las 28 formas.
+- **Objetos de campo de la 1.ª generación:** Visor Silph, Poké Flauta y MO01-MO05 en la mochila o el PC (índices de
+  pokered 0x48, 0x49, 0xC4-0xC8). Solo se acredita si están todos, porque las MO se pueden tirar: el Verde del propietario
+  los tiene en el PC; Rojo, Azul y Amarillo no conservan todas las MO y quedan sin acreditar.
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
