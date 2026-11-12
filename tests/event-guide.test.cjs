@@ -385,3 +385,13 @@ test('Casa Trampa (VAR 0x4044 = 8) y Concursos Espectáculo de ORAS (variable 21
  const work=v=>{const a=Array(376).fill(0);a[215]=v;return a;},c=v=>O.fromDiagnosis({game:'OMEGARUBY',events:{activeFlags:[],work:work(v)}}).find(x=>x.id==='contest.oras.spectacular')?.value;
  assert.equal(c(21),true);assert.equal(c(13),false);
 });
+
+test('Musical (100 complementos) y Torneo Campeones del PWT (récord 17)',()=>{
+ const O=require('../src/engine/objectives.js'),f=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
+ assert.equal(f({game:'BLACK',musical5:{props:100}},'musical.unova.allProps'),true);
+ assert.equal(f({game:'WHITE',musical5:{props:99}},'musical.unova.allProps'),false);
+ const r=Array(29).fill(0);assert.equal(f({game:'WHITE2',pwt5:{records:r}},'battle.b2w2.pwtChampions'),false);
+ r[17]=1;assert.equal(f({game:'BLACK2',pwt5:{records:r}},'battle.b2w2.pwtChampions'),true);
+ assert.equal(f({game:'BLACK2',entralink5:{white:30,black:30}},'entralink.b2w2.level30'),true);
+ assert.equal(f({game:'WHITE2',entralink5:{white:1,black:0}},'entralink.b2w2.level30'),false);
+});

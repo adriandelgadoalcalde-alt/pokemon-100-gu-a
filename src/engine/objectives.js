@@ -147,6 +147,13 @@
   // Metro Batalla: Fero y Caril, combate 49 de los súper trenes individual y doble (récord >= 49 en ambos).
   const sw=d.subway5;
   if(sw&&Number.isInteger(sw.superSingleRecord)&&Number.isInteger(sw.superDoubleRecord))add('battle.unova.subwayBosses',sw.superSingleRecord>=49&&sw.superDoubleRecord>=49,'subway5');
+  // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
+  if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
+  // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).
+  const en=d.entralink5;
+  if(Number.isInteger(en?.white)&&Number.isInteger(en?.black))add('entralink.b2w2.level30',en.white>=30&&en.black>=30,'entralink5');
+  // PWT: el récord 17 (PWTRecordID.Champion) cuenta las victorias en el Torneo Campeones.
+  if(Array.isArray(d.pwt5?.records)&&Number.isInteger(d.pwt5.records[17]))add('battle.b2w2.pwtChampions',d.pwt5.records[17]>=1,'pwt5');
   // Árbol de Combate: los Campeones Legendarios esperan en el supercombate 50 (WikiDex «Árbol de Combate»).
   const tree=Array.isArray(d.battleTree?.modes)?d.battleTree.modes.slice(0,3).map(m=>m?.superBest).filter(Number.isInteger):[];
   if(tree.length)add('battle.alola.treeSuper50',tree.some(v=>v>=50),'battleTree');

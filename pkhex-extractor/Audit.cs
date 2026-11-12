@@ -152,6 +152,12 @@ public static class Audit
             ["subway5"] = save is SAV5 sub ? new { singleRecord = sub.BattleSubway.SingleRecord, doubleRecord = sub.BattleSubway.DoubleRecord,
                 superSingleRecord = sub.BattleSubway.SuperSingleRecord, superDoubleRecord = sub.BattleSubway.SuperDoubleRecord,
                 superMultiNpcRecord = sub.BattleSubway.SuperMultiNPCRecord } : null,
+            // Negro/Blanco y Negro 2/Blanco 2: complementos del Musical (Musical5.GetHasProp de PKHeX, 100 bits).
+            ["musical5"] = save is SAV5 mu ? new { props = Enumerable.Range(0, 100).Count(i => mu.Musical.GetHasProp(i)), total = 100 } : null,
+            // Negro 2/Blanco 2: niveles blanco y negro de la Zona Nexo (Entralink5.WhiteForestLevel/BlackCityLevel de PKHeX).
+            ["entralink5"] = save is SAV5B2W2 en ? new { white = (int)en.Entralink.WhiteForestLevel, black = (int)en.Entralink.BlackCityLevel } : null,
+            // Negro 2/Blanco 2: récords del PWT por torneo (PWTBlock5.GetPWTRecord, orden de PWTRecordID: 17 = Campeones).
+            ["pwt5"] = save is SAV5B2W2 pw ? new { records = Enumerable.Range(0, 29).Select(i => (int)pw.PWT.GetPWTRecord(i)).ToArray() } : null,
             // Sol/Luna y Ultrasol/Ultraluna: rachas del Árbol de Combate (BattleTree7.GetTreeStreak de PKHeX), mismo formato que el
             // lector propio (modalidad: normal y súper, actual y máxima).
             ["battleTree"] = save is SAV7 s7 ? new { modes = Enumerable.Range(0, 4).Select(t => new {

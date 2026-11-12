@@ -40,6 +40,11 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   Batalla (HGSS, Platino); Mansión Batalla (X/Y, Rubí Omega/Zafiro Alfa); un Superconcurso rango Maestro (DP, Platino);
   cámaras secretas de las Ruinas Alfa (HGSS); Rubí y Zafiro para Celio (RF/VH); Rojo y los títulos de Entrenador
   Maestro (Let's Go); Torre Batalla (Espada/Escudo); Pokédex de Hisui; misiones 38-42 y secundarias de Z-A.
+- **Quinta generación:** los 100 complementos del Musical (Negro/Blanco y Negro 2/Blanco 2; bits de `Musical5`), el
+  Torneo Campeones del PWT (récord 17 de `PWTBlock5`) y la Zona Nexo con los niveles blanco y negro a 30 (Negro 2/Blanco 2;
+  `Entralink5`, umbral de la tarjeta según Serebii). Contrastado con la partida «100» de Negro 2 del propietario (100
+  complementos, Torneo Campeones ganado, niveles 100/100) y con las de Blanco 2 y Negro/Blanco (15-17 complementos, sin
+  Torneo Campeones). Los bloques 42, 53 y 63 entran en la comprobación de integridad del lector propio.
 
 Pendiente con motivo (no se acredita solo para no adivinar):
 
@@ -48,6 +53,11 @@ Pendiente con motivo (no se acredita solo para no adivinar):
   partida con la que contrastarlo de forma independiente.
 - **Episodio Rainbow Rocket (USUM):** la única bandera candidata de PKHeX (211, «Lusamine's Mansion is NOT Team
   Rocket's Castle») está activa también en una partida pública que aún no es campeona, así que no marca el episodio.
+- **Pokéstar Studios y torre de Ciudad Negra / Bosque Blanco (N2/B2):** PKHeX no da el formato de su bloque (solo las
+  películas descargadas, `PokestarMovie5`); el récord 48 («Tower/Treehollow Trainers Defeated») cuenta entrenadores, no
+  zonas superadas.
+- **Poderes regalo de la Zona Nexo (Negro/Blanco):** PKHeX solo expone `MissionsComplete`, que no distingue qué poderes
+  se han recibido.
 - **Expansiones de Escarlata/Púrpura:** las señales `FSYS_SCENARIO_GAME_CLEAR_SU1/SU2` existen, pero ninguna partida
   disponible tiene el DLC acabado para un contraste positivo.
 
