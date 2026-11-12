@@ -328,6 +328,9 @@
     if(caps.every(k=>typeof nb[k]==='boolean')&&typeof nb.KCapturedRegieleki==='boolean'&&typeof nb.KCapturedRegidrago==='boolean')
      add('swsh.crownCaptures',caps.every(k=>nb[k]===true)&&(nb.KCapturedRegieleki===true||nb.KCapturedRegidrago===true)&&(d.caught||[]).includes(898),'namedBlocks');
    }
+   // Escarlata/Púrpura: diploma de la Pokédex de Paldea recibido del director Clavel (KClaimedPokedexDiplomaPaldea,
+   // FSYS_POKEDEX_SYOUJOU_EVENT de SaveBlockAccessor9SV; WikiDex, guía «Camino a casa»).
+   if(['SCARLET','VIOLET'].includes(d.game)&&typeof nb.KClaimedPokedexDiplomaPaldea==='boolean')add('card.sv.diplomaPaldea',nb.KClaimedPokedexDiplomaPaldea,'namedBlocks');
    // Leyendas Z-A: misiones principales y secundarias (marcadores de diagnosis.js zaQuests desde KEventWorkQuest).
    for(const [k,v]of Object.entries(nb)){const m=/^ZA_MISSION_(\d\d)$/.exec(k);if(m&&typeof v==='boolean')add('za.mission.'+m[1],v,'namedBlocks');}
    if(typeof nb.ZA_SIDE_BASE_ALL==='boolean')add('za.side.base',nb.ZA_SIDE_BASE_ALL,'namedBlocks');

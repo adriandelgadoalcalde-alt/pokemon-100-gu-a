@@ -610,3 +610,8 @@ test('Espada/Escudo: fin de los dos DLC desde clear8 (FSYS_R1/R2_GAME_CLEAR)',()
  assert.equal(v({game:true,armor:true,crown:false},'swsh.crownClear'),false);
  assert.equal(v({game:true},'swsh.crownClear'),undefined);
 });
+
+test('Escarlata/Púrpura: diploma de Paldea (KClaimedPokedexDiplomaPaldea)',()=>{
+ const O=require('../src/engine/objectives.js'),v=b=>O.fromDiagnosis({game:'VIOLET',namedBlocks:{KClaimedPokedexDiplomaPaldea:b}}).find(x=>x.id==='card.sv.diplomaPaldea')?.value;
+ assert.equal(v(true),true);assert.equal(v(false),false);
+});
