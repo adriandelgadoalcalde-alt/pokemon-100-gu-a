@@ -395,3 +395,9 @@ test('Musical (100 complementos) y Torneo Campeones del PWT (récord 17)',()=>{
  assert.equal(f({game:'BLACK2',entralink5:{white:30,black:30}},'entralink.b2w2.level30'),true);
  assert.equal(f({game:'WHITE2',entralink5:{white:1,black:0}},'entralink.b2w2.level30'),false);
 });
+
+test('HGSS: las 28 formas de Unown de la Pokédex',()=>{
+ const O=require('../src/engine/objectives.js'),f=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
+ assert.equal(f({game:'HEARTGOLD',unownForms:Array.from({length:28},(_,i)=>i)},'pokedex.hgss.unown28'),true);
+ assert.equal(f({game:'SOULSILVER',unownForms:[0]},'pokedex.hgss.unown28'),false);
+});
