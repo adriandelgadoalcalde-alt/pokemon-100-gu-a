@@ -223,14 +223,15 @@
   // primera vez. Esmeralda FLAG_NURSE_MENTIONS_GOLD_CARD 0x159 (pokeemerald), Platino FLAG_POKECENTER_GOLD_TRAINER_CARD_SEEN
   // 0x69 (pokeplatinum), HGSS FLAG_NURSE_NOTICED_CARD 0x64 (pokeheartgold). Solo se acredita la presencia.
   {
-   const nurse={EMERALD:0x159,PLATINUM:0x69,HEARTGOLD:0x64,SOULSILVER:0x64}[d.game];
+   const nurse={EMERALD:0x159,PLATINUM:0x69,DIAMOND:0x69,PEARL:0x69,HEARTGOLD:0x64,SOULSILVER:0x64}[d.game];
    const flags=d.game==='EMERALD'?d.field?.flags:d.events?.activeFlags;
    if(nurse!==undefined&&Array.isArray(flags)&&flags.includes(nurse))add('card.nurseRecognition',true,d.game==='EMERALD'?'field':'events');
   }
   // Diplomas del director del juego en Platino (Hotel Gran Lago): el script pone FLAG_RECEIVED_LOCAL_DEX_DIPLOMA (0xAB) y
   // FLAG_RECEIVED_NATIONAL_DEX_DIPLOMA (0xAC) al entregarlos (pokeplatinum, grand_lake_valor_lakefront_west_house y
   // generated/vars_flags.txt; misma numeración que la 0x69 de la enfermera). Solo se acredita la presencia.
-  if(d.game==='PLATINUM'&&Array.isArray(d.events?.activeFlags)){
+  // Diamante/Perla: las mismas banderas, FE_RECONGNIZE_SHINOU/NATIONAL 0xAB/0xAC y FE_PC_GOLD 0x69 (FlagsEditorEXPlugin flags_gen4dp).
+  if(['PLATINUM','DIAMOND','PEARL'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags);
    if(fl.has(0xAB))add('card.pt.diplomaSinnoh',true,'events');
    if(fl.has(0xAC))add('card.pt.diplomaNational',true,'events');

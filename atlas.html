@@ -41,11 +41,11 @@ function masteryEvaluation(goal,g){
    if(/^Amuleto Oval/.test(item.label)||(['SUN','MOON','ULTRASUN','ULTRAMOON','SWORD','SHIELD','BD','SP'].includes(g.id)&&item.id==='final-boss'))auto='inventory.keyItem.631.present';
    // Diplomas del director del juego: el mismo recuento que hace el juego al entregarlos (pret) o la bandera de entrega.
    if(['RUBY','SAPPHIRE','EMERALD'].includes(g.id)&&item.id==='diploma-regional')auto='pokedex.completion.hoenn';
-   if(['RUBY','SAPPHIRE','EMERALD','FIRERED','LEAFGREEN','DIAMOND','PEARL','BD','SP'].includes(g.id)&&item.id==='diploma-nacional')auto='pokedex.completion.national';
+   if(['RUBY','SAPPHIRE','EMERALD','FIRERED','LEAFGREEN','BD','SP'].includes(g.id)&&item.id==='diploma-nacional')auto='pokedex.completion.national';
    if(['FIRERED','LEAFGREEN','LETGOP','LETGOE'].includes(g.id)&&item.id==='diploma-regional')auto='pokedex.completion.kanto';
-   if(['DIAMOND','PEARL','BD','SP'].includes(g.id)&&item.id==='diploma-regional')auto='pokedex.completion.sinnoh';
+   if(['BD','SP'].includes(g.id)&&item.id==='diploma-regional')auto='pokedex.completion.sinnoh';if(['DIAMOND','PEARL'].includes(g.id)&&item.id==='diploma-regional')auto='card.pt.diplomaSinnoh';
    if(['HEARTGOLD','SOULSILVER'].includes(g.id)&&item.id==='diploma-regional')auto='card.hgss.diplomaJohto';if(['HEARTGOLD','SOULSILVER'].includes(g.id)&&item.id==='diploma-nacional')auto='card.hgss.diplomaNational';
-   if(g.id==='PLATINUM'&&item.id==='diploma-regional')auto='card.pt.diplomaSinnoh';if(g.id==='PLATINUM'&&item.id==='diploma-nacional')auto='card.pt.diplomaNational';
+   if(['PLATINUM','DIAMOND','PEARL'].includes(g.id)&&item.id==='diploma-regional')auto='card.pt.diplomaSinnoh';if(['PLATINUM','DIAMOND','PEARL'].includes(g.id)&&item.id==='diploma-nacional')auto='card.pt.diplomaNational';
    if(g.id==='ARCEUS'&&item.id==='requests')auto='la.requests.all';if(g.id==='ARCEUS'&&item.id==='ingo')auto='la.requests.all';
    if(['SUN','MOON'].includes(g.id)&&item.id==='zygarde-cells')auto='alola.sm.zygardeCells';if(['ULTRASUN','ULTRAMOON'].includes(g.id)&&item.id==='stickers')auto='alola.usum.totemStickers';if(['ULTRASUN','ULTRAMOON'].includes(g.id)&&item.id==='mantine-surf')auto='alola.usum.mantineSurf4';
    if(['BD','SP'].includes(g.id)&&item.id==='card-3')auto='card.bdsp.statues100';
@@ -109,7 +109,7 @@ function masteryEvaluation(goal,g){
    if(/^card-\d+$/.test(item.id))cardRule[item.id]=automatic;
    // Enfermera en N/B, N2/B2 y DP: el juego no deja bandera documentada; se acredita con todas las estrellas de la tarjeta
    // (WikiDex «Ficha de entrenador»: con el último nivel la enfermera cura sin decir nada).
-   if(item.id==='nurse-gold'&&['BLACK','WHITE','BLACK2','WHITE2','DIAMOND','PEARL'].includes(g.id)){const r=Object.values(cardRule);automatic=r.length===5&&r.every(Boolean)?{all:r}:null;}
+   if(item.id==='nurse-gold'&&['BLACK','WHITE','BLACK2','WHITE2'].includes(g.id)){const r=Object.values(cardRule);automatic=r.length===5&&r.every(Boolean)?{all:r}:null;}
    masteryHasRule[g.id+':'+item.id]=!!automatic;
    const manual='manual.mastery.'+item.id;
    if(store.masterChecks?.[g.id+':'+item.id])facts.push({id:manual,value:true,gameId:g.id,type:'manual',validation:'declared'});

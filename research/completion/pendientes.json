@@ -88,7 +88,7 @@
       "id": "enfermera-otras",
       "titulo": "Reconocimiento de la enfermera en Diamante/Perla y en Negro/Blanco y N2/B2 (WikiDex «Ficha de entrenador»: ocurre al alcanzar el último nivel de la ficha)",
       "estado": "hecho",
-      "nota": "Hecho en Esmeralda, Platino y HGSS (bandera del script). N/B, N2/B2 y DP: objetivo añadido y acreditado con todas las estrellas de la tarjeta (WikiDex «Ficha de entrenador»); N2/B2 ya tiene las cinco; en N/B falta la estrella de los poderes del Nexárbol y en DP la de la Torre Batalla (bloqueadas, ver unova-postliga y sinnoh-postliga)."
+      "nota": "Esmeralda, Platino, HGSS y DP por su bandera (DP: FE_PC_GOLD 0x69 de FlagsEditorEXPlugin); N/B y N2/B2 por todas las estrellas de la tarjeta."
     },
     {
       "id": "diplomas-sin-dato",

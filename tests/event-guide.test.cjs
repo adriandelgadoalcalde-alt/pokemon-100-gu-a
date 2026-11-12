@@ -627,3 +627,9 @@ test('X/Y: capítulo de Handsome completo (FE_HANDSOME_QUEST_ALL_CLEAR 0xC9)',()
  const O=require('../src/engine/objectives.js'),v=f=>O.fromDiagnosis({game:'Y',events:{activeFlags:f}}).find(x=>x.id==='xy.handsomeComplete')?.value;
  assert.equal(v([0xC8,0xC9]),true);assert.equal(v([0xC8]),false);
 });
+
+test('Diamante/Perla: enfermera (FE_PC_GOLD 0x69) y diplomas (FE_RECONGNIZE_SHINOU/NATIONAL 0xAB/0xAC)',()=>{
+ const O=require('../src/engine/objectives.js'),v=(f,id)=>O.fromDiagnosis({game:'PEARL',events:{activeFlags:f}}).find(x=>x.id===id)?.value;
+ assert.equal(v([0x69],'card.nurseRecognition'),true);
+ assert.equal(v([0xAB],'card.pt.diplomaSinnoh'),true);assert.equal(v([0xAC],'card.pt.diplomaNational'),true);
+});
