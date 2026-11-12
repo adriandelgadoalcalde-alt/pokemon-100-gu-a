@@ -350,3 +350,10 @@ test('Leyendas Arceus: rango 10, 28 Unown y fin de la historia por Dialga o Palk
  assert.equal(f({KTotalUnownCaptured:6},'la.unown'),false);assert.equal(f({KTotalUnownCaptured:28},'la.unown'),true);
  assert.equal(f({KDefeatedOriginPalkia:true},'story.gameClear'),true);assert.equal(f({KDefeatedOriginDialga:false},'story.gameClear'),undefined);
 });
+
+test('Metro Batalla (Fero y Caril en el combate 49) y Castillo Batalla (Gran Duque)',()=>{
+ const O=require('../src/engine/objectives.js'),f=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
+ assert.equal(f({game:'BLACK',subway5:{superSingleRecord:49,superDoubleRecord:60}},'battle.unova.subwayBosses'),true);
+ assert.equal(f({game:'BLACK',subway5:{superSingleRecord:48,superDoubleRecord:60}},'battle.unova.subwayBosses'),false);
+ assert.equal(f({game:'X',chateau:{rank:5}},'battle.xy.chateauGrandDuke'),true);assert.equal(f({game:'Y',chateau:{rank:4}},'battle.xy.chateauGrandDuke'),false);
+});

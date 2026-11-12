@@ -147,6 +147,11 @@ public static class Audit
             // Diamante/Perla/Platino: banderas capturadas registradas en el PC del Subsuelo (UG_FlagsCaptured); la bandera
             // de platino de la tarjeta exige 50 (pokeplatinum underground.c, FLAG_CAPTURED_COUNT_PLATINUM).
             ["underground4"] = save is SAV4Sinnoh ug ? new { flagsCaptured = ug.UG_FlagsCaptured } : null,
+            // Negro/Blanco y Negro 2/Blanco 2: récords del Metro Batalla (BattleSubway5 de PKHeX). Fero y Caril esperan en el
+            // combate 49 de los súper trenes individual y doble (WikiDex «Ingo/Fero», «Emmet/Caril»).
+            ["subway5"] = save is SAV5 sub ? new { singleRecord = sub.BattleSubway.SingleRecord, doubleRecord = sub.BattleSubway.DoubleRecord,
+                superSingleRecord = sub.BattleSubway.SuperSingleRecord, superDoubleRecord = sub.BattleSubway.SuperDoubleRecord,
+                superMultiNpcRecord = sub.BattleSubway.SuperMultiNPCRecord } : null,
             ["progressSignals"] = ProgressSignals.Read(save),
             ["unparsed"] = unparsed,
             ["warnings"] = new[] { "Diagnóstico de estado, no certificación de legitimidad ni del 100 %.",
