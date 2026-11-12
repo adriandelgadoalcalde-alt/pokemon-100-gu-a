@@ -41,6 +41,16 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   cámaras secretas de las Ruinas Alfa (HGSS); Rubí y Zafiro para Celio (RF/VH); Rojo y los títulos de Entrenador
   Maestro (Let's Go); Torre Batalla (Espada/Escudo); Pokédex de Hisui; misiones 38-42 y secundarias de Z-A.
 
+Pendiente con motivo (no se acredita solo para no adivinar):
+
+- **Torre Batalla de la 4.ª generación (racha de 100):** el bloque del Frente Batalla de DP/Pt/HGSS no lo expone PKHeX y
+  su posición exige reconstruir la tabla de bloques del guardado (pokeplatinum `SaveData_GetBattleFrontier`), sin una
+  partida con la que contrastarlo de forma independiente.
+- **Episodio Rainbow Rocket (USUM):** la única bandera candidata de PKHeX (211, «Lusamine's Mansion is NOT Team
+  Rocket's Castle») está activa también en una partida pública que aún no es campeona, así que no marca el episodio.
+- **Expansiones de Escarlata/Púrpura:** las señales `FSYS_SCENARIO_GAME_CLEAR_SU1/SU2` existen, pero ninguna partida
+  disponible tiene el DLC acabado para un contraste positivo.
+
 ## Matriz por juego
 
 | Juego | Objetivos | Se comprueban solos con el guardado | Por categoría |

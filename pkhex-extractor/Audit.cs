@@ -144,6 +144,9 @@ public static class Audit
                 save is SAV8SWSH b8 ? BitOperations.PopCount((uint)b8.Badges) :
                 // Let's Go: FSYS_GYM_CLEAR_* = banderas de sistema 12-19 (un líder cada una; PKHeX flags_gg).
                 save is SAV7b lgb ? Enumerable.Range(12, 8).Count(i => lgb.EventWork.GetFlag(EventVarType.System, i)) : null,
+            // Diamante/Perla/Platino: banderas capturadas registradas en el PC del Subsuelo (UG_FlagsCaptured); la bandera
+            // de platino de la tarjeta exige 50 (pokeplatinum underground.c, FLAG_CAPTURED_COUNT_PLATINUM).
+            ["underground4"] = save is SAV4Sinnoh ug ? new { flagsCaptured = ug.UG_FlagsCaptured } : null,
             ["progressSignals"] = ProgressSignals.Read(save),
             ["unparsed"] = unparsed,
             ["warnings"] = new[] { "Diagnóstico de estado, no certificación de legitimidad ni del 100 %.",

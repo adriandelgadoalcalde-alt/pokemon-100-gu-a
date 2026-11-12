@@ -137,6 +137,8 @@
   // Rojo Fuego/Verde Hoja: estrella de minijuegos = 200 bayas en Dodrio Berry Picking y 200 saltos seguidos en Pokémon Jump.
   const mg=d.field?.family==='FRLG'?d.field.minigames:null;
   if(mg&&Number.isInteger(mg.jumpsInRow)&&Number.isInteger(mg.berriesPicked))add('card.frlg.minigames',mg.jumpsInRow>=200&&mg.berriesPicked>=200,'field');
+  // Diamante/Perla/Platino: bandera de platino del Subsuelo = 50 banderas capturadas (pokeplatinum underground.c).
+  if(Number.isInteger(d.underground4?.flagsCaptured))add('card.sinnoh.platinumFlag',d.underground4.flagsCaptured>=50,'underground4');
   // Coleccionables que el guardado registra en bloques con nombre de PKHeX (solo lectura; umbrales según Serebii).
   const nb=d.namedBlocks&&typeof d.namedBlocks==='object'?d.namedBlocks:null;
   if(nb){
