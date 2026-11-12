@@ -33,6 +33,12 @@ public static class ProgressSignals
             (0x3EB0BCA0, "dlc.flyingTrial.intermediate", "Vuelo contrarreloj de Amarys: nivel medio", "FEVT_SDC02_HAGANE_CLEAR_INTERMEDIANTE"),
             (0x96EDAF73, "dlc.flyingTrial.advanced", "Vuelo contrarreloj de Amarys: nivel avanzado", "FEVT_SDC02_HAGANE_CLEAR_ADVANCED"),
             (0x7D215B69, "dlc.flyingTrial.superlative", "Vuelo contrarreloj de Amarys: nivel máximo", "FEVT_SDC02_HAGANE_CLEAR_SUPERLATIVE"),
+            // Gran Pugna Académica: tras ganarla por primera vez llama Cinio («Enhorabuena por salir victorioso en la Gran Pugna
+            // Académica», message/dat/Spanish/script/sub_032) y su misión activa el sondeo de 4★; la siguiente (sub_033) activa el
+            // sondeo y el desbloqueo de 6★ (Lua main_dynamic, funciones de sub_032/sub_033). Serebii: el 6★ llega tras el torneo.
+            (0x2985A8E7, "postgame.raidSurvey4", "Sondeo de teraincursiones de Cinio tras la Gran Pugna Académica", "FSYS_RAID_DIFFICTLTY4_SURVEY"),
+            (0xAD1DC231, "postgame.raidSurvey6", "Sondeo de teraincursiones de 6★", "FSYS_RAID_DIFFICTLTY6_SURVEY"),
+            (0x6E7F8220, "postgame.raidRelease6", "Teraincursiones de 6★ desbloqueadas", "FSYS_RAID_DIFFICTLTY6_RELEASE"),
         ];
         return definitions.Select(d =>
         {

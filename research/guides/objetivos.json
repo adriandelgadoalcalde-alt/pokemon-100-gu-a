@@ -1479,6 +1479,16 @@
    "fase": 2,
    "orden": 200,
    "como": "Tras el Salón de la Fama, vuelve a la Meseta Añil y vence otra vez al Alto Mando y al campeón: en la revancha cambian sus Pokémon (WikiDex «Liga Pokémon (Kanto)»). Cómo lo sabe la guía: después de capturar a Mewtwo en la Cueva Celeste y vencer allí a Verde, Verde solo vuelve a aparecer en Ciudad Celeste cuando vences de nuevo a la Liga (WikiDex «Verde (personaje)»); la partida guarda si Verde está visible en la ciudad (bandera de desaparición FV_T03_GREEN, oculta desde la partida nueva). Si la ves allí, la revancha está ganada. Si ya la venciste en la ciudad vuelve a ocultarse y la guía no puede confirmarlo: márcalo a mano."
+  },
+  {
+   "juegos": [
+    "SCARLET",
+    "VIOLET"
+   ],
+   "id": "battle0",
+   "fase": 3,
+   "orden": 300,
+   "como": "Tras acabar la historia, vuelve a vencer a los ocho líderes de gimnasio (revanchas) y habla con la recepcionista del estadio de la Academia: es un torneo de eliminación en combates individuales contra alumnos, profesores, líderes y el Alto Mando, con Mencía en la final. Si pierdes, puedes reintentarlo. Cómo lo sabe la guía: al ganarla por primera vez te llama Cinio («Enhorabuena por salir victorioso en la Gran Pugna Académica») y te pide investigar teraincursiones; esa misión deja en la partida el sondeo de 4★ (FSYS_RAID_DIFFICTLTY4_SURVEY), y la siguiente el de 6★ y su desbloqueo. Cualquiera de ellos prueba la victoria (textos del juego y scripts Lua; Serebii «Tera Raid Battles»). Si ganaste y aún no te ha llamado, la guía no puede confirmarlo hasta la llamada."
   }
  ]
 }

@@ -750,3 +750,10 @@ test("Let's Go: revancha de la Liga por Verde en Ciudad Celeste",()=>{
  const O=require('../src/engine/objectives.js'),f=fl=>O.fromDiagnosis({game:'LETGOE',events:{activeFlags:fl}}).find(x=>x.id==='lgpe.leagueRematch')?.value;
  assert.equal(f([128,640]),true);assert.equal(f([128,652]),undefined);assert.equal(f([652]),false);
 });
+
+test('Escarlata/Púrpura: Gran Pugna Académica por la llamada de Cinio y los sondeos de teraincursiones',()=>{
+ const O=require('../src/engine/objectives.js'),s=(id,value)=>({id,value}),f=sig=>O.fromDiagnosis({game:'VIOLET',progressSignals:sig}).find(x=>x.id==='sv.academyAceTournament')?.value;
+ assert.equal(f([s('story.paldea.clear',true),s('postgame.raidSurvey4',true),s('postgame.raidSurvey6',false),s('postgame.raidRelease6',false)]),true);
+ assert.equal(f([s('story.paldea.clear',true),s('postgame.raidSurvey4',false),s('postgame.raidSurvey6',false),s('postgame.raidRelease6',false)]),undefined);
+ assert.equal(f([s('story.paldea.clear',false),s('postgame.raidSurvey4',false)]),false);
+});

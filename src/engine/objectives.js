@@ -351,6 +351,11 @@
     const v=sig(id);if(v!==null)add(fact,v,'progressSignals');}
    const fly=['elementary','intermediate','advanced','superlative'].map(k=>sig('dlc.flyingTrial.'+k));
    if(fly.every(v=>v!==null))add('sv.flyingTrialAll',fly.every(Boolean),'progressSignals');
+   // Gran Pugna Académica: la llamada de Cinio que la felicita (sub_032) activa el sondeo de 4★, y la siguiente el de 6★ y su
+   // desbloqueo; cualquiera de las tres prueba la victoria. Sin la historia de Paldea acabada, aún no es posible.
+   const raid=['postgame.raidSurvey4','postgame.raidSurvey6','postgame.raidRelease6'].map(sig),clear=sig('story.paldea.clear');
+   if(raid.some(v=>v===true))add('sv.academyAceTournament',true,'progressSignals');
+   else if(clear===false)add('sv.academyAceTournament',false,'progressSignals');
   }
   // Escarlata/Púrpura: las tres máscaras de Ogerpon en la mochila (Cimiento 2406, Fuente 2407, Horno 2408; text_Items de PKHeX).
   if(['SCARLET','VIOLET'].includes(d.game)&&Array.isArray(d.inventory)){const have=new Set(d.inventory.flatMap(p=>(p?.items||[]).filter(i=>i?.count>0).map(i=>i.id)));
