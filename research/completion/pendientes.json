@@ -75,7 +75,8 @@
     {
       "id": "alola-postliga",
       "titulo": "Alola: núcleos de Zygarde (SL) y células de Zygarde (USUL) (células de SL, dominsignias, Mantine Surf y defensa del título ya se acreditan)",
-      "estado": "pendiente"
+      "estado": "bloqueado",
+      "motivo": "Núcleos de Zygarde: las únicas banderas documentadas son FV_ZIGARUDE_CORE01-05 (FlagsEditorEX: 0x375-0x379 en SL, 0x479-0x47D en USUL), de tipo «ocultar objeto»; están activas tanto en dos partidas públicas de Luna recién empezadas (0 células) como en una de Sol acabada (95 células), así que no indican si se recogió el núcleo. Células de USUL: PKHeX no las localiza (su vector son las dominsignias) y solo hay 17 banderas FV de células, reutilizadas. Células de SL, dominsignias, Mantine Surf y defensa del título sí se acreditan."
     },
     {
       "id": "ipad",
