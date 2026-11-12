@@ -2606,6 +2606,38 @@
     ],
     "review": "reference-checked",
     "reviewedAt": "2026-11-10"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
+    "mission": "DETAIL1",
+    "location": "Megadimensión: lista del 100 % del DLC, en orden",
+    "requires": [
+      "DLC Megadimensión y la historia base terminada (misiones principales hasta la 42).",
+      "Dónuts de Ansha de tantas estrellas como la zona del Hiperespacio que vayas a visitar."
+    ],
+    "steps": [
+      "1. Historia del DLC: las 14 misiones del Hiperespacio en orden (sondeos n.º 1 a n.º 6 y las escenas del Hotel Z). Es lo que desbloquea todo lo demás.",
+      "2. Legendarios de la historia del DLC, en este orden: Rayquaza (misión 12, distorsión esmeralda), Groudon (misión 13, distorsión rubí) y Kyogre (misión 14, distorsión zafiro). Cada uno pide su dónut especial.",
+      "3. Darkrai: al terminar la historia del DLC; vencerlo abre las Arenas Mega Rebeldes del Hiperespacio.",
+      "4. Arenas Mega Rebeldes del Hiperespacio: revanchas de nivel 200 con límite de tiempo contra cada megaevolución descontrolada.",
+      "5. Misión secundaria 188: a partir de ella, cada 25.000 puntos de sondeo, Philippe escanea zonas especiales. Las zonas desconocidas de 5 estrellas traen a Latias, Latios, Cobalion, Terrakion, Virizion, Meloetta y, con los tres Espadachines capturados, Keldeo. Repite escaneos hasta tenerlos todos.",
+      "6. Megapiedras nuevas del DLC: Raichu X e Y, Chimecho, Absol Z, Staraptor, Garchomp Z, Lucario Z, Heatran, Darkrai, Golurk, Meowstic, Crabominable, Golisopod, Magearna, Zeraora, Scovillain, Glimmora, Tatsugiri y Baxcalibur (portales a zonas desconocidas y misiones secundarias).",
+      "7. Pokédex de Megadimensión: registra las especies nuevas que aparecen en el Hiperespacio."
+    ],
+    "check": "Las 14 misiones del Hiperespacio, Rayquaza, Groudon, Kyogre y Darkrai, las Arenas Mega Rebeldes y los legendarios de las zonas de 5 estrellas registrados.",
+    "pitfalls": [
+      "Keldeo no sale en los escaneos hasta tener a Cobalion, Terrakion y Virizion.",
+      "Sin la misión secundaria 188 no hay escaneos de zonas especiales."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/megadimension.shtml",
+      "https://www.serebii.net/legendsz-a/hyperspacemissions.shtml",
+      "https://www.wikidex.net/wiki/Keldeo"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-12"
   }
 ];
  routes.push(...(typeof module==='object'&&module.exports?require('./hoenn.js'):root.PokemonHoennRoutes));
