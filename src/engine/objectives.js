@@ -251,6 +251,9 @@
    if(fl.has(bw?0x11F:0xDD))add('card.unova.diplomaRegional',true,'events');
    if(fl.has(bw?0x120:0xDE))add('card.unova.diplomaNational',true,'events');
   }
+  // X/Y: capítulo de Handsome completo = FE_HANDSOME_QUEST_ALL_CLEAR (0xC9, FlagsEditorEXPlugin flags_gen6xy). Contrastado
+  // con las partidas del propietario: Y lo tiene (WK_SCENE_HANDSOME_QUEST = 7 y los seis episodios con estado), X no lo empezó.
+  if(['X','Y'].includes(d.game)&&Array.isArray(d.events?.activeFlags))add('xy.handsomeComplete',d.events.activeFlags.includes(0xC9),'events');
   // HGSS: el director de la Mansión Azulona pone FLAG_SAW_JOHTO_DEX_CERTIFICATE 0x143 y FLAG_SAW_NATIONAL_DEX_CERTIFICATE
   // 0x144 al enseñar cada diploma (pokeheartgold, scr_seq_0798_T07R0203 y include/constants/flags.h).
   if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){

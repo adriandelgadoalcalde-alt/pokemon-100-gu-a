@@ -34,8 +34,8 @@
     {
       "id": "xy-handsome",
       "titulo": "X/Y: dato del final del capítulo de Handsome",
-      "estado": "bloqueado",
-      "motivo": "PKHeX (const_xy/flags_xy, 15 + 79 entradas) no documenta ninguna bandera del capítulo de Handsome y el Boleto Handsome se recoge en la primera misión (WikiDex «Boleto Handsome»), no al final; haría falta localizar la bandera en los scripts de la ROM, que no tienen nombres."
+      "estado": "hecho",
+      "nota": "FE_HANDSOME_QUEST_ALL_CLEAR (0xC9) de FlagsEditorEXPlugin; Y del propietario 1 (capítulo hecho), X 0 (sin empezar)."
     },
     {
       "id": "bdsp-postliga",

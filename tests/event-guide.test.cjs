@@ -622,3 +622,8 @@ test('N2/B2: 10.ª zona del Rascacielos Negro / Cavernogal Blanco por su medalla
  assert.equal(v('BLACK2',medals(148,4)),true);assert.equal(v('BLACK2',medals(148,3)),true);
  assert.equal(v('BLACK2',medals(150,4)),false);assert.equal(v('WHITE2',medals(150,4)),true);
 });
+
+test('X/Y: capítulo de Handsome completo (FE_HANDSOME_QUEST_ALL_CLEAR 0xC9)',()=>{
+ const O=require('../src/engine/objectives.js'),v=f=>O.fromDiagnosis({game:'Y',events:{activeFlags:f}}).find(x=>x.id==='xy.handsomeComplete')?.value;
+ assert.equal(v([0xC8,0xC9]),true);assert.equal(v([0xC8]),false);
+});
