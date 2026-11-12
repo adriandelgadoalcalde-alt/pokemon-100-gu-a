@@ -452,3 +452,9 @@ test('Hoenn: objetos clave de acceso (Esmeralda exige además el Emblema Magma)'
  const O=require('../src/engine/objectives.js'),f=(g,ids)=>O.fromDiagnosis({game:g,integrity:{checksumsValid:true},inventory:[{pocket:'KeyItems',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.hoenn.accessItems')?.value;
  assert.equal(f('RUBY',[279,288]),true);assert.equal(f('EMERALD',[279,288]),undefined);assert.equal(f('EMERALD',[279,288,375]),true);
 });
+
+test('Alola: cristales Z de tipo, Arca de Zygarde y Pulsera Z',()=>{
+ const O=require('../src/engine/objectives.js'),f=(g,ids)=>O.fromDiagnosis({game:g,integrity:{checksumsValid:true},inventory:[{pocket:'ZCrystals',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.alola.zResources')?.value;
+ const z=Array.from({length:18},(_,i)=>807+i);
+ assert.equal(f('MOON',[...z,847,797]),true);assert.equal(f('ULTRASUN',[...z,847,797]),undefined);assert.equal(f('ULTRASUN',[...z,847,933]),true);
+});

@@ -187,6 +187,13 @@
    const need=d.game==='EMERALD'?[279,288,375]:[279,288];
    if(need.every(id=>have.has(id)))add('inventory.hoenn.accessItems',true,'inventory');
   }
+  // Alola: los 18 cristales Z de tipo (807-824), el Arca de Zygarde (847) y la Pulsera Z (797) o Superpulsera Z (933 en
+  // USUM), números de objeto de PKHeX. Solo se acredita la presencia en el inventario.
+  if(['SUN','MOON','ULTRASUN','ULTRAMOON'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
+   const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
+   const ring=['ULTRASUN','ULTRAMOON'].includes(d.game)?933:797;
+   if(Array.from({length:18},(_,i)=>807+i).every(id=>have.has(id))&&have.has(847)&&have.has(ring))add('inventory.alola.zResources',true,'inventory');
+  }
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).
