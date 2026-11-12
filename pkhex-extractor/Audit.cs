@@ -75,7 +75,7 @@ public static class Audit
             if (rev == 0xFFFFFFFF || size != 0x2AB0) continue;
             if (best < 0 || rev > bestRev) { best = half; bestRev = rev; }
         }
-        var entries = new List<(DateOnly? date, HashSet<(uint, uint)> mons)>();
+        var entries = new List<(DateOnly? date, HashSet<(uint, uint)> mons, bool heatran)>();
         long total = 0;
         if (best >= 0)
         {
@@ -88,13 +88,16 @@ public static class Audit
                 if (y < 100) y += 2000;
                 DateOnly? date = m is >= 1 and <= 12 && dd is >= 1 and <= 31 && y is >= 2000 and <= 2099 ? new DateOnly(y, m, Math.Min(dd, DateTime.DaysInMonth(y, m))) : null;
                 var mons = new HashSet<(uint, uint)>();
+                bool heatran = false;
                 for (int k = 0; k < 6; k++)
                 {
                     int q = e + k * 0x3C;
-                    if (System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(d[q..]) == 0) continue;
+                    ushort sp = System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(d[q..]);
+                    if (sp == 0) continue;
+                    if (sp == 485 && System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(q + 8)..]) == s.ID32) heatran = true;
                     mons.Add((System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(q + 4)..]), System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(q + 8)..])));
                 }
-                entries.Add((date, mons));
+                entries.Add((date, mons, heatran));
             }
         }
         bool pt = s is SAV4Pt;
@@ -105,7 +108,8 @@ public static class Audit
                 && (pt ? pk.Version == GameVersion.Pt && pk.Species == 485 && pk.MetLocation == 84
                        : (pk.Version == GameVersion.D || pk.Version == GameVersion.P) && dpAreas.Contains(pk.MetLocation)))
             .Select(pk => (met: pk.MetDate!.Value, key: (pk.EncryptionConstant, pk.ID32))).ToList();
-        bool proof = entries.Any(en => evidence.Any(ev => (en.date is { } dt && dt > ev.met) || en.mons.Contains(ev.key)));
+        // En Platino, un Heatran propio en el equipo de una entrada del Salón también la sitúa después del arresto.
+        bool proof = entries.Any(en => (pt && en.heatran) || evidence.Any(ev => (en.date is { } dt && dt > ev.met) || en.mons.Contains(ev.key)));
         // Platino: el Diario (10 entradas de 112 bytes en 0x5720 del bloque general; journal.h) guarda los últimos días;
         // la victoria contra Cintia en la revancha es el evento 12 (LOCATION_EVENT_BEAT_CHAMPION) con el entrenador 870
         // (TRAINER_CHAMPION_CYNTHIA_REMATCH), empaquetado como lugar << 16 | entrenador << 6 | tipo (journal.c).
