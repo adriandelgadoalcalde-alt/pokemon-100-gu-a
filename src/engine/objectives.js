@@ -145,6 +145,9 @@
   // Rojo Fuego/Verde Hoja: estrella de minijuegos = 200 bayas en Dodrio Berry Picking y 200 saltos seguidos en Pokémon Jump.
   const mg=d.field?.family==='FRLG'?d.field.minigames:null;
   if(mg&&Number.isInteger(mg.jumpsInRow)&&Number.isInteger(mg.berriesPicked))add('card.frlg.minigames',mg.jumpsInRow>=200&&mg.berriesPicked>=200,'field');
+  // Rojo Fuego/Verde Hoja: Torre Desafío superada en las cuatro modalidades = récord por debajo del máximo en cada una.
+  const tt=d.field?.family==='FRLG'?d.field.trainerTower:null;
+  if(Array.isArray(tt)&&tt.length===4&&tt.every(x=>Number.isInteger(x?.bestTime)))add('challenge.frlg.trainerTower',tt.every(x=>x.bestTime<215999),'field');
   // Diamante/Perla/Platino: bandera de platino del Subsuelo = 50 banderas capturadas (pokeplatinum underground.c).
   if(Number.isInteger(d.underground4?.flagsCaptured))add('card.sinnoh.platinumFlag',d.underground4.flagsCaptured>=50,'underground4');
   // Metro Batalla: Fero y Caril, combate 49 de los súper trenes individual y doble (récord >= 49 en ambos).

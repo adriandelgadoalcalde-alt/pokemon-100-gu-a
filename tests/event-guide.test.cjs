@@ -475,3 +475,8 @@ test('Espada/Escudo: capturas de las Nieves de la Corona',()=>{
  const f=(n,c)=>O.fromDiagnosis({game:'SWORD',namedBlocks:n,caught:c}).find(x=>x.id==='swsh.crownCaptures')?.value;
  assert.equal(f(nb,[898]),true);assert.equal(f(nb,[]),false);assert.equal(f({...nb,KCapturedRegidrago:false},[898]),false);
 });
+
+test('Rojo Fuego/Verde Hoja: Torre Desafío en las cuatro modalidades',()=>{
+ const O=require('../src/engine/objectives.js'),f=t=>O.fromDiagnosis({game:'FIRERED',field:{family:'FRLG',trainerTower:t.map(bestTime=>({bestTime}))}}).find(x=>x.id==='challenge.frlg.trainerTower')?.value;
+ assert.equal(f([3000,4000,5000,6000]),true);assert.equal(f([3000,215999,5000,6000]),false);
+});

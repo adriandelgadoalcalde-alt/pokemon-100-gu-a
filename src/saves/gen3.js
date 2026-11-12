@@ -107,7 +107,10 @@
    battleTower:fam==='RS'?{totalWins:u16(small,0x570),bestStreak:u16(small,0x572)}:null,
    // Rojo Fuego/Verde Hoja: récords de minijuegos de SaveBlock2 (pokefirered include/global.h: pokeJump 0xB00,
    // berryPick 0xB10 + 4); la estrella de la tarjeta pide 200 de cada (trainer_card.c).
-   minigames:fam==='FRLG'?{jumpsInRow:u16(small,0xB00),berriesPicked:u16(small,0xB14)}:null
+   minigames:fam==='FRLG'?{jumpsInRow:u16(small,0xB00),berriesPicked:u16(small,0xB14)}:null,
+   // Rojo Fuego/Verde Hoja: Torre Desafío (pokefirered SaveBlock1.trainerTower[4] en 0x3D38, 12 bytes cada una; bestTime
+   // cifrado con SaveBlock2.encryptionKey en 0xF20; 215999 = TRAINER_TOWER_MAX_TIME, sin récord).
+   trainerTower:fam==='FRLG'?Array.from({length:4},(_,i)=>({bestTime:(u32(large,0x3D38+i*12+4)^u32(small,0xF20))>>>0,receivedPrize:!!(large[0x3D38+i*12+10]&1)})):null
   };
  }
  const api={read,LAYOUT};

@@ -100,6 +100,9 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   de Paldea, Noroteo y Arándano (cualquier forma con número en esa Pokédex) y de Luminalia e Hiperespacio, hasta el
   `MaxSpeciesID` de la partida. «Completar Pokédex de Paldea, Noroteo y Arándano» exige las tres; la de Z-A, las dos. Una
   partida pública de Escarlata da Paldea 398/398, Noroteo 100/191 y Arándano 62/220.
+- **Torre Desafío de Rojo Fuego/Verde Hoja:** `trainerTower[4]` de SaveBlock1 (0x3D38, pokefirered) con el mejor tiempo
+  cifrado con la clave de SaveBlock2 (0xF20); superada = tiempo < 215999 en las cuatro. Contrastado con PKHeX en las tres
+  partidas del propietario: el descifrado da exactamente 215999 (sin récord) en todas.
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
