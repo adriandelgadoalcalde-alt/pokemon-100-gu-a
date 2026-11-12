@@ -41,6 +41,8 @@ function masteryEvaluation(goal,g){
    if(byLabel(['BD','SP'],/^100 rivales consecutivos en Torre Batalla/))auto='battle.bdsp.tower100';
    if(byLabel(['BD','SP'],/^Un Superconcurso rango Maestro/))auto='contest.bdsp.anyMaster';
    if(byLabel(['SWORD','SHIELD'],/^Completar Pokédex de Galar y de cada DLC/))auto='pokedex.swsh.allCards';
+   if(byLabel(['RUBY','SAPPHIRE','EMERALD'],/^Superar los ocho retos de la Casa Trampa/))auto='challenge.hoenn.trickHouse';
+   if(byLabel(['OMEGARUBY','ALPHASAPPHIRE'],/^Concursos Pokémon y sus recompensas principales/))auto='contest.oras.spectacular';
    if(byLabel(['RED','BLUE','GREEN','YELLOW'],/^Explorar Cueva Celeste/))auto='event.gen1.mewtwo';
    if(byLabel(['FIRERED','LEAFGREEN'],/^Explorar Cueva Celeste/))rule={all:[{fact:'event.gen3.frlg.mewtwo'},{fact:'event.gen3.frlg.sevii_gems'}]};
    if(byLabel(['FIRERED','LEAFGREEN'],/Rubí y el Zafiro a Celio/))auto='event.gen3.frlg.sevii_gems';

@@ -132,6 +132,11 @@
    const flag=G?.families?.[d.field.family]?.flags?.FLAG_SYS_GAME_CLEAR;
    if(Number.isInteger(flag))add('story.gameClear',d.field.flags.includes(flag),'field');
   }
+  // Casa Trampa (Ruta 110): VAR 0x4044 llega a 8 con los ocho puzles (pokeemerald VAR_TRICK_HOUSE_LEVEL,
+  // pokeruby VAR_TRICK_HOUSE_ROOMS_COMPLETED; Route110_TrickHouseEntrance compara con 8).
+  if(['RS','E'].includes(d.field?.family)&&Array.isArray(d.field.vars)&&Number.isInteger(d.field.vars[0x44]))add('challenge.hoenn.trickHouse',d.field.vars[0x44]>=8,'field');
+  // Rubí Omega/Zafiro Alfa: «Contest Spectacular Progress» (variable 215 de PKHeX const_oras): 21 = Plubio y Lisia vencidos.
+  if(['OMEGARUBY','ALPHASAPPHIRE'].includes(d.game)&&Array.isArray(d.events?.work)&&Number.isInteger(d.events.work[215]))add('contest.oras.spectacular',d.events.work[215]>=21,'events');
   // Rubí/Zafiro: estrella de la Torre Batalla = mejor racha > 49 (pokeruby trainer_card.c, TrainerCard_GetStarCount).
   if(d.field?.family==='RS'&&Number.isInteger(d.field.battleTower?.bestStreak))add('card.rs.battleTower',d.field.battleTower.bestStreak>49,'field');
   // Rojo Fuego/Verde Hoja: estrella de minijuegos = 200 bayas en Dodrio Berry Picking y 200 saltos seguidos en Pokémon Jump.

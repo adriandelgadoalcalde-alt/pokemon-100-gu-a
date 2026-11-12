@@ -377,3 +377,11 @@ test('Espada/Escudo: Pokédex completas según la tarjeta de entrenador',()=>{
  const O=require('../src/engine/objectives.js'),f=c=>O.fromDiagnosis({game:'SWORD',card8:c}).find(x=>x.id==='pokedex.swsh.allCards')?.value;
  assert.equal(f({galarDex:true,armorDex:true,crownDex:true}),true);assert.equal(f({galarDex:true,armorDex:false,crownDex:true}),false);
 });
+
+test('Casa Trampa (VAR 0x4044 = 8) y Concursos Espectáculo de ORAS (variable 215 = 21)',()=>{
+ const O=require('../src/engine/objectives.js'),vars=v=>{const a=Array(256).fill(0);a[0x44]=v;return a;};
+ const th=v=>O.fromDiagnosis({game:'EMERALD',field:{family:'E',flags:[],vars:vars(v)}}).find(x=>x.id==='challenge.hoenn.trickHouse')?.value;
+ assert.equal(th(8),true);assert.equal(th(7),false);
+ const work=v=>{const a=Array(376).fill(0);a[215]=v;return a;},c=v=>O.fromDiagnosis({game:'OMEGARUBY',events:{activeFlags:[],work:work(v)}}).find(x=>x.id==='contest.oras.spectacular')?.value;
+ assert.equal(c(21),true);assert.equal(c(13),false);
+});
