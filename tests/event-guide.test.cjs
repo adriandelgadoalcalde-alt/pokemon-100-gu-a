@@ -492,3 +492,8 @@ test('Enfermera que reconoce la tarjeta de oro (Esmeralda, Platino, HGSS)',()=>{
  assert.equal(f({game:'PLATINUM',events:{activeFlags:[0x69]}}),true);
  assert.equal(f({game:'SOULSILVER',events:{activeFlags:[0x63]}}),undefined);
 });
+
+test('N2/B2: las 40 películas de Pokéstar Studios',()=>{
+ const O=require('../src/engine/objectives.js'),f=n=>O.fromDiagnosis({game:'BLACK2',pokestar5:{completed:n,total:40}}).find(x=>x.id==='pokestar.b2w2.allMovies')?.value;
+ assert.equal(f(40),true);assert.equal(f(0),false);
+});

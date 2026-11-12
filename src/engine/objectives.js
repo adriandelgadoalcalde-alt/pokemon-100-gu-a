@@ -225,6 +225,8 @@
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).
   const en=d.entralink5;
   if(Number.isInteger(en?.white)&&Number.isInteger(en?.black))add('entralink.b2w2.level30',en.white>=30&&en.black>=30,'entralink5');
+  // Pokéstar Studios (N2/B2): las 40 películas completadas.
+  if(Number.isInteger(d.pokestar5?.completed))add('pokestar.b2w2.allMovies',d.pokestar5.completed>=d.pokestar5.total,'pokestar5');
   // PWT: el récord 17 (PWTRecordID.Champion) cuenta las victorias en el Torneo Campeones.
   if(Array.isArray(d.pwt5?.records)&&Number.isInteger(d.pwt5.records[17]))add('battle.b2w2.pwtChampions',d.pwt5.records[17]>=1,'pwt5');
   // Árbol de Combate: los Campeones Legendarios esperan en el supercombate 50 (WikiDex «Árbol de Combate»).

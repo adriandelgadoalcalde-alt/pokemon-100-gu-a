@@ -116,6 +116,9 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   enfermera te llama por tu nombre y cura sin preguntar (pokeemerald `pkmn_center_nurse.inc`, pokeplatinum `common.s`,
   pokeheartgold `scr_seq_0003`); la primera vez queda una bandera (0x159, 0x69 y 0x64). Esmeralda y Platino del propietario
   la tienen; HGSS no (no llega a 4 estrellas). Rubí/Zafiro y RF/VH no tienen este saludo; DP sin decompilación con nombres.
+- **Pokéstar Studios (N2/B2):** bloque 71 (0x25A00, ahora en la comprobación de integridad): 40 registros de 20 bytes desde
+  +0x28 con la mejor puntuación (−9999 sin rodar) y un indicador en +16 que vale 1 al completar la película. Deducido
+  comparando la partida «100» de Negro 2 (40/40) con la de Blanco 2 (un intento fallido) y las públicas (0/40).
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
@@ -128,9 +131,8 @@ Pendiente con motivo (no se acredita solo para no adivinar):
   del episodio, así que sola no sirve. Ahora se acredita con la 211 más alguno de los Electrode desaparecidos dentro del
   castillo (1730-1732, solo posibles durante el episodio): Ultraluna del propietario la cumple. Si no se capturó ningún
   Electrode no se puede probar, y no se acredita.
-- **Pokéstar Studios y torre de Ciudad Negra / Bosque Blanco (N2/B2):** PKHeX no da el formato de su bloque (solo las
-  películas descargadas, `PokestarMovie5`); el récord 48 («Tower/Treehollow Trainers Defeated») cuenta entrenadores, no
-  zonas superadas.
+- **Torre de Ciudad Negra / Bosque Blanco (N2/B2):** el récord 48 («Tower/Treehollow Trainers Defeated») cuenta
+  entrenadores, no zonas superadas.
 - **Poderes regalo de la Zona Nexo (Negro/Blanco):** PKHeX solo expone `MissionsComplete`, que no distingue qué poderes
   se han recibido.
 - **Zygarde, pegatinas dominantes y Mantine Surf (Alola):** PKHeX da las células recogidas (`EventWork7`, trabajo 169 y
