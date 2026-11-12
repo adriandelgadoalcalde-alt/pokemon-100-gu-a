@@ -333,3 +333,8 @@ test('Rojo del Monte Plateado: Oro/Plata/Cristal por su bandera de objeto y HGSS
  const v=H.families.HGSS.vars.VAR_UNK_40FD,work=Array(256).fill(0);work[v]=1;
  assert.equal(G.analyze({game:'SOULSILVER',events:{activeFlags:[],work}},'SOULSILVER').secrets.find(s=>s.id==='hgss.red').status,'completado');
 });
+
+test('Rojo Fuego/Verde Hoja: estrella de minijuegos con 200 saltos y 200 bayas (pokefirered)',()=>{
+ const O=require('../src/engine/objectives.js'),get=mg=>O.fromDiagnosis({game:'FIRERED',field:{family:'FRLG',flags:[],minigames:mg}}).find(f=>f.id==='card.frlg.minigames')?.value;
+ assert.equal(get({jumpsInRow:200,berriesPicked:250}),true);assert.equal(get({jumpsInRow:199,berriesPicked:250}),false);assert.equal(get(null),undefined);
+});

@@ -104,7 +104,10 @@
    party,boxes,flags:activeFlags,vars,warnings,hallOfFame,
    // Rubí/Zafiro: SaveBlock2.battleTower (0xA8) .totalBattleTowerWins y .bestBattleTowerWinStreak (0x570/0x572,
    // pokeruby include/global.h); la estrella de la tarjeta exige una racha mejor de más de 49 (trainer_card.c).
-   battleTower:fam==='RS'?{totalWins:u16(small,0x570),bestStreak:u16(small,0x572)}:null
+   battleTower:fam==='RS'?{totalWins:u16(small,0x570),bestStreak:u16(small,0x572)}:null,
+   // Rojo Fuego/Verde Hoja: récords de minijuegos de SaveBlock2 (pokefirered include/global.h: pokeJump 0xB00,
+   // berryPick 0xB10 + 4); la estrella de la tarjeta pide 200 de cada (trainer_card.c).
+   minigames:fam==='FRLG'?{jumpsInRow:u16(small,0xB00),berriesPicked:u16(small,0xB14)}:null
   };
  }
  const api={read,LAYOUT};

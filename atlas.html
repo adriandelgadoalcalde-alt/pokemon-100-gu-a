@@ -32,6 +32,9 @@ function masteryEvaluation(goal,g){
    if(byLabel(['HEARTGOLD','SOULSILVER','GOLD','SILVER','CRYSTAL'],/^Derrotar a Rojo en Monte Plateado/))auto=red;
    if(byLabel(['HEARTGOLD','SOULSILVER','GOLD','SILVER','CRYSTAL'],/^Superar ocho gimnasios de Kanto y vencer a Rojo/))rule={all:[{fact:'story.badges.count',atLeast:16},{fact:red}]};
    if(byLabel(['BLACK','WHITE'],/^Vencer a Ghechis y Equipo Plasma/))auto='story.gameClear';
+   if(byLabel(['FIRERED','LEAFGREEN'],/^200 saltos de Pokémon Jump/))auto='card.frlg.minigames';
+   if(byLabel(['RED','BLUE','GREEN','YELLOW'],/^Explorar Cueva Celeste/))auto='event.gen1.mewtwo';
+   if(byLabel(['FIRERED','LEAFGREEN'],/^Explorar Cueva Celeste/))rule={all:[{fact:'event.gen3.frlg.mewtwo'},{fact:'event.gen3.frlg.sevii_gems'}]};
    if(byLabel(['FIRERED','LEAFGREEN'],/Rubí y el Zafiro a Celio/))auto='event.gen3.frlg.sevii_gems';
    if(byLabel(['RUBY','SAPPHIRE'],/^50 victorias consecutivas en Torre Batalla/))auto='card.rs.battleTower';
    if(byLabel(['X','Y'],/Dama del Combate/))rule=anyEvent('pkhex.xy.maison');
