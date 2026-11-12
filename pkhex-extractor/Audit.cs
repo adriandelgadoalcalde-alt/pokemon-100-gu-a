@@ -160,6 +160,9 @@ public static class Audit
                 source = "PKHeX.Core BattleTree7.GetTreeStreak" } : null,
             // Diamante Brillante/Perla Reluciente: racha actual y máxima de cada modalidad de la Torre Batalla (BattleTowerWork8b).
             ["tower8b"] = save is SAV8BS bs ? new { maxStreaks = bs.BattleTower.Records.Select(r => (long)Math.Max(r.RenshouCount, r.RenshouCountOld)).ToArray() } : null,
+            // Espada/Escudo: marcas de Pokédex completa de la tarjeta de entrenador (TrainerCard8 de PKHeX).
+            ["card8"] = save is SAV8SWSH c8 ? new { galarDex = c8.TrainerCard.PokeDexComplete, armorDex = c8.TrainerCard.ArmorDexComplete,
+                crownDex = c8.TrainerCard.CrownDexComplete } : null,
             ["progressSignals"] = ProgressSignals.Read(save),
             ["unparsed"] = unparsed,
             ["warnings"] = new[] { "Diagnóstico de estado, no certificación de legitimidad ni del 100 %.",

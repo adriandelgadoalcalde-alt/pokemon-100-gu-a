@@ -372,3 +372,8 @@ test('BDSP: rango Maestro de un Superconcurso por las banderas de sistema SYS_FL
  const O=require('../src/engine/objectives.js'),f=flags=>O.fromDiagnosis({game:'SP',events:{activeFlags:flags,systemOffset:4000}}).find(x=>x.id==='contest.bdsp.anyMaster')?.value;
  assert.equal(f([4011]),true);assert.equal(f([4005]),false);
 });
+
+test('Espada/Escudo: Pokédex completas según la tarjeta de entrenador',()=>{
+ const O=require('../src/engine/objectives.js'),f=c=>O.fromDiagnosis({game:'SWORD',card8:c}).find(x=>x.id==='pokedex.swsh.allCards')?.value;
+ assert.equal(f({galarDex:true,armorDex:true,crownDex:true}),true);assert.equal(f({galarDex:true,armorDex:false,crownDex:true}),false);
+});

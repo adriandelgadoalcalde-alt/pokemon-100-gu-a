@@ -28,7 +28,7 @@
   const blocks=[
    [27,0x19400,0xb0,0x194b2,0x25f36], [37,0x1d900,0x5c,0x1d95e,0x25f4a],
    [45,0x1ff00,0x4e0,0x203e2,0x25f5a], [52,0x21100,0xf0,0x211f2,0x25f68],
-   [54,0x21400,0x4dc,0x218de,0x25f6c], [68,0x25300,0x498,0x2579a,0x25f88],
+   [54,0x21400,0x4dc,0x218de,0x25f6c], [57,0x21b00,0x1ac,0x21cae,0x25f72], [68,0x25300,0x498,0x2579a,0x25f88],
    [73,0x25f00,0x94,0x25fa2,0x25fa2]
   ];
   for(const [id,start,length,checksum,mirror]of blocks){
@@ -37,8 +37,8 @@
     throw Error('El guardado de Negro 2/Blanco 2 no supera el control de integridad de los datos analizados.');
   }
   return {selectedChecksumsValid:true,checkedBlocks:blocks.map(b=>b[0]),
-   verifiedFields:['caught','seen','gameClear','nationalDex','badges','badgesTotal','events','medals'],
-   scope:'Datos de entrenador, aventura, eventos, medallas, Pokédex, medallero y tabla CRC; otros bloques pendientes.'};
+   verifiedFields:['caught','seen','gameClear','nationalDex','badges','badgesTotal','events','medals','subway5'],
+   scope:'Datos de entrenador, aventura, eventos, medallas, Pokédex, medallero, Metro Batalla y tabla CRC; otros bloques pendientes.'};
  }
  const api={beef,b2w2,usb};if(typeof module==='object'&&module.exports)module.exports=api;else root.PokemonSaveIntegrity=api;
 })(typeof globalThis==='object'?globalThis:this);

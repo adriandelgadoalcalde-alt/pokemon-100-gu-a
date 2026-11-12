@@ -145,6 +145,9 @@
   // Árbol de Combate: los Campeones Legendarios esperan en el supercombate 50 (WikiDex «Árbol de Combate»).
   const tree=Array.isArray(d.battleTree?.modes)?d.battleTree.modes.slice(0,3).map(m=>m?.superBest).filter(Number.isInteger):[];
   if(tree.length)add('battle.alola.treeSuper50',tree.some(v=>v>=50),'battleTree');
+  // Espada/Escudo: Pokédex de Galar, de la Isla de la Armadura y de las Nieves de la Corona completas (tarjeta de entrenador).
+  if(d.card8&&typeof d.card8.galarDex==='boolean'){add('pokedex.swsh.galarCard',d.card8.galarDex,'card8');
+   if(typeof d.card8.armorDex==='boolean'&&typeof d.card8.crownDex==='boolean')add('pokedex.swsh.allCards',d.card8.galarDex&&d.card8.armorDex&&d.card8.crownDex,'card8');}
   // Diamante Brillante/Perla Reluciente: rango Maestro de concursos = SYS_FLAG_CON_*_MASTER, banderas de sistema 9-13
   // (PKHeX system_bdsp; bdsp-flags.js las sitúa tras las 4000 normales).
   if(['BD','SP'].includes(d.game)&&Array.isArray(d.events?.activeFlags)&&d.events.systemOffset===4000)
