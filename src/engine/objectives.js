@@ -324,7 +324,10 @@
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).
   const en=d.entralink5;
-  if(Number.isInteger(en?.white)&&Number.isInteger(en?.black))add('entralink.b2w2.level30',en.white>=30&&en.black>=30,'entralink5');
+  if(['BLACK2','WHITE2'].includes(d.game)&&Number.isInteger(en?.white)&&Number.isInteger(en?.black))add('entralink.b2w2.level30',en.white>=30&&en.black>=30,'entralink5');
+  // N/B: los poderes regalo se ganan con las misiones del Nexo. Solo se afirma el «no»: Nexo sin tocar (0 misiones, niveles a 0 y
+  // el bloque vacío). Con el Nexo usado no hay estructura documentada para el «sí» y el hecho queda sin evidencia.
+  if(['BLACK','WHITE'].includes(d.game)&&en?.untouched===true&&en.missions===0&&en.white===0&&en.black===0)add('entralink.bw.allPowers',false,'entralink5');
   // Pokéstar Studios (N2/B2): las 40 películas completadas.
   if(Number.isInteger(d.pokestar5?.completed))add('pokestar.b2w2.allMovies',d.pokestar5.completed>=d.pokestar5.total,'pokestar5');
   // PWT: el récord 17 (PWTRecordID.Champion) cuenta las victorias en el Torneo Campeones.
@@ -346,6 +349,9 @@
    for(const [id,fact] of [['story.tealMask.clear','sv.tealMaskClear'],['story.indigoDisk.clear','sv.indigoDiskClear'],['dlc.ogreOustin.hardCleared','sv.ogreOustinHard']]){
     const v=sig(id);if(v!==null)add(fact,v,'progressSignals');}
   }
+  // Escarlata/Púrpura: las tres máscaras de Ogerpon en la mochila (Cimiento 2406, Fuente 2407, Horno 2408; text_Items de PKHeX).
+  if(['SCARLET','VIOLET'].includes(d.game)&&Array.isArray(d.inventory)){const have=new Set(d.inventory.flatMap(p=>(p?.items||[]).filter(i=>i?.count>0).map(i=>i.id)));
+   if([2406,2407,2408].every(id=>have.has(id)))add('inventory.sv.ogerponMasks',true,'inventory');}
   // Diamante/Perla: récord de racha de la Torre Batalla (GameStats 0x35-0x3D de pokediamond, GetTrainerCardLevel).
   if(Array.isArray(d.tower4dp?.maxStreaks)&&d.tower4dp.maxStreaks.length)add('battle.dp.tower100',d.tower4dp.maxStreaks.some(v=>v>=100),'tower4dp');
   // Diamante Brillante/Perla Reluciente: 100 rivales seguidos en alguna modalidad de la Torre Batalla.

@@ -184,7 +184,12 @@ public static class Audit
             // Negro/Blanco y Negro 2/Blanco 2: complementos del Musical (Musical5.GetHasProp de PKHeX, 100 bits).
             ["musical5"] = save is SAV5 mu ? new { props = Enumerable.Range(0, 100).Count(i => mu.Musical.GetHasProp(i)), total = 100 } : null,
             // Negro 2/Blanco 2: niveles blanco y negro de la Zona Nexo (Entralink5.WhiteForestLevel/BlackCityLevel de PKHeX).
-            ["entralink5"] = save is SAV5B2W2 en ? new { white = (int)en.Entralink.WhiteForestLevel, black = (int)en.Entralink.BlackCityLevel } : null,
+            ["entralink5"] = save is SAV5B2W2 en ? new { white = (int)en.Entralink.WhiteForestLevel, black = (int)en.Entralink.BlackCityLevel }
+                // N/B: bloque 53 del Nexo (0x1B0). Sin estructura documentada salvo niveles y MissionsComplete (0x1A4); «untouched» =
+                // todo a cero salvo la cabecera (0x00-0x05) y las tres casillas de poder equipado (0x1A0-0x1A2, 48 = ninguno).
+                : save is SAV5BW enb ? new { white = (int)enb.Entralink.WhiteForestLevel, black = (int)enb.Entralink.BlackCityLevel,
+                    missions = (int)enb.Entralink.MissionsComplete,
+                    untouched = enb.Entralink.Data.ToArray().Select((x, i) => (x, i)).All(t => t.i < 6 || (t.i >= 0x1A0 && t.i <= 0x1A2 && t.x == 48) || t.x == 0) } : null,
             // Negro 2/Blanco 2: récords del PWT por torneo (PWTBlock5.GetPWTRecord, orden de PWTRecordID: 17 = Campeones).
             ["pwt5"] = save is SAV5B2W2 pw ? new { records = Enumerable.Range(0, 29).Select(i => (int)pw.PWT.GetPWTRecord(i)).ToArray() } : null,
             // Sol/Luna y Ultrasol/Ultraluna: rachas del Árbol de Combate (BattleTree7.GetTreeStreak de PKHeX), mismo formato que el

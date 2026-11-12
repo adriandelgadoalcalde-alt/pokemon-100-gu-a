@@ -673,3 +673,9 @@ test('USUL: células y núcleos de Zygarde por la variable 169 (ZygardeCellCount
  const O=require('../src/engine/objectives.js'),f=w=>O.fromDiagnosis({game:'ULTRASUN',cells7:{kind:'totemStickers',total:100,received:0,cellWork:w}}).find(x=>x.id==='alola.usum.zygardeCells')?.value;
  assert.equal(f([40,100]),true);assert.equal(f([40,60]),false);assert.equal(f(null),undefined);
 });
+
+test('N/B: poderes regalo del Nexárbol solo se niegan con el Nexo sin tocar',()=>{
+ const O=require('../src/engine/objectives.js'),f=en=>O.fromDiagnosis({game:'BLACK',entralink5:en}).find(x=>x.id==='entralink.bw.allPowers')?.value;
+ assert.equal(f({white:0,black:0,missions:0,untouched:true}),false);assert.equal(f({white:0,black:0,missions:3,untouched:false}),undefined);
+ assert.equal(O.fromDiagnosis({game:'BLACK',entralink5:{white:40,black:40}}).find(x=>x.id==='entralink.b2w2.level30'),undefined);
+});

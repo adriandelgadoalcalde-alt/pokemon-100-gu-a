@@ -342,3 +342,20 @@ dominsignias, pero la variable 169 (`ZygardeCellCount` de PKHeX) cuenta las cél
 | Ultraluna del propietario | 0 | 100 | (dominsignias) | 5 |
 
 Hecho `alola.usum.zygardeCells` = variable 169 ≥ 100.
+
+### 12/11/2026 — Nexárbol de N/B, máscaras de Ogerpon y limpieza de Escarlata/Púrpura
+
+- **N/B, poderes regalo del Nexárbol:** el bloque 53 (Nexo, 0x1B0) solo tiene documentados los niveles, `MissionsComplete`
+  (0x1A4) y las tres casillas de poder equipado (0x1A0-0x1A2; 48 = ninguno, como en `PassPower5`). Con el Nexo sin tocar
+  (0 misiones, niveles 0 y el resto a cero) se acredita el «no» (`entralink.bw.allPowers` = falso): así lo tienen las dos
+  partidas públicas y las dos del propietario. Sin caso positivo, el «sí» queda sin evidencia. La enfermera de N/B
+  (todas las estrellas) hereda ese criterio.
+- **Escarlata/Púrpura:** «Objetos legendarios, máscaras…» pasa a «Recuperar las máscaras Cimiento, Fuente y Horno de
+  Ogerpon» (mochila con 2406, 2407 y 2408, o historia del DLC acabada). Contrastado con la Escarlata pública que tiene el
+  DLC acabado. «Distribuciones y raids temporales: documentar sin exigirlos» se retira: no es una meta del 100 %.
+  «Torneo de la Academia» se separa de la Liga Arándano (ya acreditada) y queda a mano: ningún bloque con nombre lo registra.
+- **Let's Go, revancha de la Liga:** las tablas `bin/flagwork/*.tbl` de la ROM (formato AHTB: hash, longitud, nombre; el
+  índice es el orden, contrastado con PKHeX: `FE_MASTER_RED_BATTLE_TALKED` = 116) nombran `WK_SCENE_CHAMPION_REMATCH`
+  (variable de escena 25) y `FE_KANNA_WIN`/`FE_SHIBA_WIN`/`FE_KIKUKO_WIN`/`FE_WATARU_WIN` (banderas 149-152). Las dos partidas
+  del propietario tienen la escena 25 = 10 y las públicas recién empezadas 0. Los AMX de `script_amx.gfpak` no conservan
+  nombres, así que falta saber qué valor marca la revancha superada: sigue a mano.
