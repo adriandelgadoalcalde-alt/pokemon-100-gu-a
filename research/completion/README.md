@@ -132,7 +132,10 @@ Pendiente con motivo (no se acredita solo para no adivinar):
 - **Minijuegos y retos de los DLC de Escarlata/Púrpura** (ogros de Noroteo, vuelo contrarreloj, fotos de Perrin, Liga
   Arándano, Pecharunt): `SaveBlockAccessor9SV` no tiene bloques con nombre para ellos; habría que localizarlos en los datos
   del juego, como se hizo con las misiones de Z-A.
-- **Peticiones de Leyendas Arceus y «las dos sendas» de Fero:** `SaveBlockAccessor8LA` no expone las peticiones; mismo caso.
+- **Peticiones de Leyendas Arceus y «las dos sendas» de Fero:** `SaveBlockAccessor8LA` no expone las peticiones. En la
+  partida del propietario, entre los bloques sin nombre de PKHeX, `48CE01F7` resulta ser los nombres de las cajas de objetos
+  y `B8E961AD` (251 bytes) un campo de bits sin estructura evidente; sin una partida con las peticiones completas o la tabla
+  del juego no se puede asignar.
 - **Expansiones de Escarlata/Púrpura:** las señales `FSYS_SCENARIO_GAME_CLEAR_SU1/SU2` existen, pero ninguna partida
   disponible tiene el DLC acabado para un contraste positivo.
 
