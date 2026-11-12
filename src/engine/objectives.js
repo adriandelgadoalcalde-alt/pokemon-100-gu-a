@@ -371,6 +371,14 @@
    if(lr.proof===true)add('battle.sinnoh.leagueRematch',true,'leagueRematch4');
    else if(lr.hallOfFame<=1||(pt&&lr.arrested===false)||(!pt&&lr.nationalDex===false))add('battle.sinnoh.leagueRematch',false,'leagueRematch4');
   }
+  // HGSS: revancha de Lance y del Alto Mando (TRAINER_CHAMPION_LANCE_2 con las 8 medallas de Kanto; pokeheartgold
+  // scr_seq_0824_T10R0601). Sí: entrada del Salón de la Fama posterior a un Pokémon propio del Monte Plateado (solo con 16
+  // medallas). No: una sola entrada (la primera Liga es antes de Kanto) o menos de 8 medallas de Kanto.
+  if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&d.leagueRematch4&&Number.isInteger(d.leagueRematch4.hallOfFame)){
+   const lr=d.leagueRematch4;
+   if(lr.proof===true)add('hgss.rematchLeague',true,'leagueRematch4');
+   else if(lr.hallOfFame<=1||(Number.isInteger(lr.kantoBadges)&&lr.kantoBadges<8))add('hgss.rematchLeague',false,'leagueRematch4');
+  }
   if(Array.isArray(d.tower4dp?.maxStreaks)&&d.tower4dp.maxStreaks.length)add('battle.dp.tower100',d.tower4dp.maxStreaks.some(v=>v>=100),'tower4dp');
   // Diamante Brillante/Perla Reluciente: 100 rivales seguidos en alguna modalidad de la Torre Batalla.
   if(Array.isArray(d.tower8b?.maxStreaks)&&d.tower8b.maxStreaks.length)add('battle.bdsp.tower100',d.tower8b.maxStreaks.some(v=>v>=100),'tower8b');

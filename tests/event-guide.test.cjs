@@ -737,3 +737,10 @@ test('Sinnoh: revancha de la Liga por el Salón de la Fama (sí con prueba de fe
  assert.equal(f('PEARL',{hallOfFame:2,arrested:null,nationalDex:true,evidence:4,proof:false}),undefined);
  assert.equal(f('DIAMOND',{hallOfFame:1,arrested:null,nationalDex:true,evidence:5,proof:false}),false);
 });
+
+test('HGSS: revancha de Lance por el Salón de la Fama',()=>{
+ const O=require('../src/engine/objectives.js'),f=lr=>O.fromDiagnosis({game:'SOULSILVER',leagueRematch4:lr}).filter(x=>x.id==='hgss.rematchLeague').map(x=>x.value);
+ assert.ok(f({hallOfFame:4,kantoBadges:8,evidence:2,proof:true}).includes(true));
+ assert.ok(f({hallOfFame:1,kantoBadges:8,evidence:0,proof:false}).includes(false));
+ assert.deepEqual(f({hallOfFame:4,kantoBadges:8,evidence:0,proof:false}).filter(v=>v===true),[]);
+});

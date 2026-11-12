@@ -62,13 +62,16 @@ public static class Audit
     // conseguir después de esa condición (o que lo lleva en el equipo) prueba que se ganó con los equipos de revancha:
     // en DP, Pokémon de la Zona de Combate (rutas 225-230 y áreas 81-85); en Platino, Heatran de la Montaña Dura (84),
     // que solo aparece tras el arresto de Helio (stark_mountain_room_3/scripts.s).
-    private static object LeagueRematch4(SAV4Sinnoh s)
+    // HGSS: Salón en 0x23000 (pokeheartgold hall_of_fame.h, mismo formato); la revancha de Lance y del Alto Mando usa
+    // TRAINER_CHAMPION_LANCE_2 cuando VAR_UNK_4135 (medallas de Kanto) >= 8 (scr_seq_0824_T10R0601); el Monte Plateado
+    // (lugar 137) solo se abre con las 16 medallas, así que un Pokémon propio encontrado allí es posterior a la condición.
+    private static object LeagueRematch4(SAV4 s)
     {
-        var d = s.Data;
+        var d = s.Data; bool hg = s is SAV4HGSS; int hof = hg ? 0x23000 : 0x20000;
         int best = -1; uint bestRev = 0;
         foreach (var half in new[] { 0, 0x40000 })
         {
-            int f = half + 0x20000 + 0x2AB0;
+            int f = half + hof + 0x2AB0;
             if (f + 0x10 > d.Length) continue;
             uint rev = System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(f + 4)..]);
             int size = System.Buffers.Binary.BinaryPrimitives.ReadInt32LittleEndian(d[(f + 8)..]);
@@ -79,7 +82,7 @@ public static class Audit
         long total = 0;
         if (best >= 0)
         {
-            int o = best + 0x20000;
+            int o = best + hof;
             total = System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(o + 0x2AA8 + 4)..]);
             for (int i = 0; i < Math.Min(total, 30); i++)
             {
@@ -105,7 +108,8 @@ public static class Audit
         var dpAreas = new HashSet<ushort> { 40, 41, 42, 43, 44, 45, 81, 82, 83, 84, 85 };
         var evidence = s.PartyData.Concat(s.BoxData).Where(pk => pk.Species != 0 && !pk.IsEgg && pk.ID32 == s.ID32
                 && pk.OriginalTrainerName == s.OT && pk.MetDate is not null
-                && (pt ? pk.Version == GameVersion.Pt && pk.Species == 485 && pk.MetLocation == 84
+                && (hg ? (pk.Version == GameVersion.HG || pk.Version == GameVersion.SS) && pk.MetLocation == 137
+                    : pt ? pk.Version == GameVersion.Pt && pk.Species == 485 && pk.MetLocation == 84
                        : (pk.Version == GameVersion.D || pk.Version == GameVersion.P) && dpAreas.Contains(pk.MetLocation)))
             .Select(pk => (met: pk.MetDate!.Value, key: (pk.EncryptionConstant, pk.ID32))).ToList();
         // En Platino, un Heatran propio en el equipo de una entrada del Salón también la sitúa después del arresto.
@@ -124,7 +128,8 @@ public static class Audit
                     if ((ev & 0x3F) == 12 && ((ev >> 6) & 0x3FF) == 870) { journal = true; break; }
                 }
         }
-        return new { hallOfFame = total, arrested, nationalDex = s.NationalDex, evidence = evidence.Count, proof = proof || journal, journal };
+        int? kanto = s is SAV4HGSS h4 ? BitOperations.PopCount((uint)h4.Badges16) : null;
+        return new { hallOfFame = total, arrested, nationalDex = s.NationalDex, kantoBadges = kanto, evidence = evidence.Count, proof = proof || journal, journal };
     }
 
 
@@ -313,7 +318,7 @@ public static class Audit
             // recibido; se mantiene hasta el siguiente desafío) y premio elegido al empezar un desafío (0 = nunca empezado).
             ["tower2"] = save is SAV2 c2 && c2.Version == GameVersion.C ? new {
                 state = (int)c2.Data[c2.Japanese ? 0xA084 : 0x3E45], reward = (int)c2.Data[c2.Japanese ? 0xA084 + 11 : 0x3E45 + 11] } : null,
-            ["leagueRematch4"] = save is SAV4Sinnoh lr4 ? LeagueRematch4(lr4) : null,
+            ["leagueRematch4"] = save is SAV4 lr4 ? LeagueRematch4(lr4) : null,
             ["tower4dp"] = save is SAV4DP dp4 ? new { maxStreaks = new[] { 9, 11, 13, 15, 17 }.Select(i => (long)dp4.Records.GetRecord16(i)).ToArray() } : null,
             ["tower8b"] = save is SAV8BS bs ? new { maxStreaks = bs.BattleTower.Records.Select(r => (long)Math.Max(r.RenshouCount, r.RenshouCountOld)).ToArray() } : null,
             // Diamante Brillante/Perla Reluciente: tipos de estatua distintos que se poseen (estrella de la tarjeta: el juego cuenta
