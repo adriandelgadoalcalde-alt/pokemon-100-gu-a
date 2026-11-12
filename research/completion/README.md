@@ -93,6 +93,10 @@ Pendiente con motivo (no se acredita solo para no adivinar):
   partidas, no los cuatro recorridos superados.
 - **Revanchas de Let's Go y estrellas de la Tarjeta de Liga (Espada/Escudo):** la tabla de banderas de PKHeX para Let's Go
   (`flags_gg`) no tiene ninguna de revancha de líderes, y `TrainerCard8` no guarda las estrellas de la tarjeta.
+- **Liga reforzada de HeartGold/SoulSilver:** el combate pasa a `TRAINER_CHAMPION_LANCE_2` cuando `VAR_UNK_4135` (medallas
+  de Kanto, pokeheartgold scr_seq_0824_T10R0601) llega a 8, pero ni la Liga normal ni la reforzada dejan banderas de
+  entrenador (`TRAINER_FLAG_BASE` 0x550): en las dos partidas del propietario, con la Liga ganada, están todas a cero. Solo se
+  sabe que está disponible, no que se haya ganado.
 - **Expansiones de Escarlata/Púrpura:** las señales `FSYS_SCENARIO_GAME_CLEAR_SU1/SU2` existen, pero ninguna partida
   disponible tiene el DLC acabado para un contraste positivo.
 
