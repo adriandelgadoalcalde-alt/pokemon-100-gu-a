@@ -236,6 +236,14 @@
    if(xy?[0xA7A,0xA7B,0xA7C,0xA7D].every(f=>fl.has(f)):fl.has(0xBC6))add('card.gen6.diplomaRegional',true,'events');
    if(fl.has(xy?0xA7E:0xBC7))add('card.gen6.diplomaNational',true,'events');
   }
+  // Teselia: FE_AWARD_LOCAL / FE_AWARD_NATIONAL (FlagsEditorEXPlugin; N/B 0x11F/0x120, N2/B2 0xDD/0xDE). Contrastado con las
+  // cuatro partidas del propietario: Negro solo el regional (su habitación muestra solo ese diploma), Negro 2 «100» los dos,
+  // Blanco y Blanco 2 ninguno. Solo se acredita la presencia.
+  if(['BLACK','WHITE','BLACK2','WHITE2'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
+   const fl=new Set(d.events.activeFlags),bw=['BLACK','WHITE'].includes(d.game);
+   if(fl.has(bw?0x11F:0xDD))add('card.unova.diplomaRegional',true,'events');
+   if(fl.has(bw?0x120:0xDE))add('card.unova.diplomaNational',true,'events');
+  }
   // HGSS: el director de la Mansión Azulona pone FLAG_SAW_JOHTO_DEX_CERTIFICATE 0x143 y FLAG_SAW_NATIONAL_DEX_CERTIFICATE
   // 0x144 al enseñar cada diploma (pokeheartgold, scr_seq_0798_T07R0203 y include/constants/flags.h).
   if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){

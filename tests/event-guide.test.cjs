@@ -597,3 +597,9 @@ test('Diplomas de X/Y (0xA7A-0xA7E) y ROZA (0xBC6, 0xBC7) por sus banderas de en
  assert.equal(v('OMEGARUBY',[0xBC6],'card.gen6.diplomaRegional'),true);
  assert.equal(v('ALPHASAPPHIRE',[0xBC7],'card.gen6.diplomaNational'),true);
 });
+
+test('Diplomas de Teselia por FE_AWARD_LOCAL/NATIONAL (N/B 0x11F/0x120, N2/B2 0xDD/0xDE)',()=>{
+ const O=require('../src/engine/objectives.js'),v=(g,f,id)=>O.fromDiagnosis({game:g,events:{activeFlags:f}}).find(x=>x.id===id)?.value;
+ assert.equal(v('BLACK',[0x11F],'card.unova.diplomaRegional'),true);assert.equal(v('BLACK',[0x11F],'card.unova.diplomaNational'),undefined);
+ assert.equal(v('WHITE2',[0xDD,0xDE],'card.unova.diplomaNational'),true);
+});

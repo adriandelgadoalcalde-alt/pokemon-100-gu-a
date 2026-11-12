@@ -36,7 +36,8 @@ Cómo se acreditan los nuevos objetivos del pilar 2 y 3 (todos con fuente en su 
   `FLAG_RECEIVED_NATIONAL_DEX_DIPLOMA` 0xAC (pokeplatinum; misma numeración de `generated/vars_flags.txt` que la
   0x69 de la enfermera, contrastada con la partida del propietario); HGSS `FLAG_SAW_JOHTO_DEX_CERTIFICATE` 0x143 y
   `FLAG_SAW_NATIONAL_DEX_CERTIFICATE` 0x144 (pokeheartgold, Mansión Azulona); X/Y `SYS_FLAG_C05R0302_AWARD_01-05` (0xA7A-0xA7E: Kalos Centro, Costa, Montaña,
-  Kalos completa y Nacional) y ROZA `SYS_FLAG_ZUKAN_AWARD_CHI`/`_ZEN` (0xBC6/0xBC7), de FlagsEditorEXPlugin.
+  Kalos completa y Nacional) y ROZA `SYS_FLAG_ZUKAN_AWARD_CHI`/`_ZEN` (0xBC6/0xBC7), de FlagsEditorEXPlugin; Teselia `FE_AWARD_LOCAL`/`FE_AWARD_NATIONAL` (N/B 0x11F/0x120, N2/B2 0xDD/0xDE), contrastadas
+  con las cuatro partidas del propietario (Negro solo el regional, Negro 2 «100» los dos, Blanco y Blanco 2 ninguno).
 - **Amuletos por el objeto clave**: Amuleto Iris 632 y Amuleto Oval 631 (`ItemStorage*` de PKHeX los lista en los
   objetos clave de cada edición). En Sol/Luna, Ultrasol/Ultraluna, Espada/Escudo y DBPR el Amuleto Oval lo da
   Morimoto la primera vez que se le vence, así que acredita ese combate (WikiDex «Amuleto Oval»).
@@ -46,7 +47,7 @@ Cómo se acreditan los nuevos objetivos del pilar 2 y 3 (todos con fuente en su 
   una partida pública de Sol acabada (24 defensas) y cuatro sin acabar (0).
 - **Máximo en la Cascada Meteoro** (Esmeralda): `FLAG_DEFEATED_METEOR_FALLS_STEVEN` 0x4F8 (pokeemerald).
 
-Sin dato en la partida (se marcan a mano; motivo en `pendientes.json`): diplomas de Teselia, y Morimoto/Nishino en Teselia (combate
+Sin dato en la partida (se marcan a mano; motivo en `pendientes.json`): Morimoto/Nishino en Teselia (combate
 diario sin registro conocido).
 
 ## Fuentes y cómo se contrastan

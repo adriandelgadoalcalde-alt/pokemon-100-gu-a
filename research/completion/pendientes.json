@@ -92,8 +92,9 @@
     },
     {
       "id": "diplomas-sin-dato",
-      "titulo": "Diplomas sin comprobación desde la partida: Teselia (N/B y N2/B2: FlagsEditorEX no documenta su bandera); Morimoto/Nishino en Teselia",
-      "estado": "pendiente"
+      "titulo": "Diplomas del director del juego desde la partida en todas las ediciones con diploma",
+      "estado": "hecho",
+      "nota": "Teselia por FE_AWARD_LOCAL/NATIONAL, contrastado con las cuatro partidas del propietario. Morimoto/Nishino de Teselia: TMFLG_C03R0402_BATTLE es una bandera diaria (se borra), sin registro permanente: se marca a mano."
     },
     {
       "id": "jefes-finales",
