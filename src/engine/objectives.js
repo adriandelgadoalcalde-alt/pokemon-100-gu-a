@@ -125,9 +125,9 @@
   if(d.field&&Array.isArray(d.field.flags)&&['RS','E'].includes(d.field.family)){
    const set=new Set(d.field.flags);add('card.hoenn.paintings',[0xA0,0xA1,0xA2,0xA3,0xA4].every(f=>set.has(f)),'field');
   }
-  // Gen. III leído con el lector nativo: FLAG_SYS_GAME_CLEAR (pokeruby/pokeemerald/pokefirered; lo activa el Salón
-  // de la Fama) dentro de las banderas de campo, cuando el motor no aporta ya la señal documentada.
-  if(typeof d.gameClear!=='boolean'&&d.field&&Array.isArray(d.field.flags)&&!d.progressSignals?.some(s=>s.id==='story.gba.gameClear')){
+  // Gen. III: FLAG_SYS_GAME_CLEAR (pokeruby/pokeemerald/pokefirered; lo activa el Salón de la Fama) leída directamente
+  // de las banderas de campo. Es la misma bandera que la señal documentada del motor, que queda como respaldo.
+  if(typeof d.gameClear!=='boolean'&&d.field&&Array.isArray(d.field.flags)){
    const G=typeof module==='object'&&module.exports?require('../saves/gen3-data.js'):root.PokemonGen3Data;
    const flag=G?.families?.[d.field.family]?.flags?.FLAG_SYS_GAME_CLEAR;
    if(Number.isInteger(flag))add('story.gameClear',d.field.flags.includes(flag),'field');

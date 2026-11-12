@@ -259,8 +259,26 @@ def switch_names():
         index = 27 + n if m.group(1) == 't' and 1 <= n <= 11 else 2 + n if m.group(1) == 'r' and 1 <= n <= 25 else None
         if index is not None:
             lgpe[code] = [gg[index].strip(), kinds[m.group(3)]]
+    # Áreas exteriores de Let's Go (area01..area09): cada una reúne pueblos y rutas; sus rectángulos de zona salen de los
+    # *_zone.gfbcol de la copia propia (research/switch/lgpe-zones.json). townNNN y roadNNN[_k] siguen la misma numeración.
+    lgpe_zones = {}
+    for area, zones in json.loads((ROOT / 'research' / 'switch' / 'lgpe-zones.json').read_text(encoding='utf-8'))['areas'].items():
+        rows = []
+        for zone, boxes in zones:
+            m = re.fullmatch(r'(town|road|t)(\d{3})(?:_\d|r\d+)?', zone)
+            if not m:
+                fail(f'zona de Let\'s Go no reconocida: {zone}')
+            n = int(m.group(2))
+            index = 27 + n if m.group(1) in ('town', 't') and 1 <= n <= 11 else 2 + n if m.group(1) == 'road' and 1 <= n <= 25 else None
+            if index is None:
+                fail(f'zona de Let\'s Go fuera de rango: {zone}')
+            rows.append([gg[index].strip(), [v for box in boxes for v in box]])
+        lgpe_zones[area] = rows
+    if lgpe_zones['area07'][0][0] != 'Ciudad Azafrán' or lgpe_zones['area02'][9][0] != 'Pueblo Paleta':
+        fail('las áreas exteriores de Let\'s Go no corresponden a sus pueblos')
     return {'SV': {i: n.strip() for i, n in enumerate(sv) if n.strip() and not n.strip().startswith('－')},
             'LGPE': lgpe,
+            'LGPE_ZONES': lgpe_zones,
             'SWSH': swsh_table,
             'SWSH_REGION': swsh_region,
             'LA': {f'ha_area0{i}': la[6 + i].strip() for i in range(6)},

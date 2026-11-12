@@ -289,3 +289,11 @@ test('Espada/Escudo: fin de la historia por victorias en la Torre Batalla o el T
  assert.equal(clear({KBattleTowerSinglesVictory:0,KBattleTowerDoublesVictory:0,KGSTVictoriesTotal:1}),true);
  assert.equal(clear({KBattleTowerSinglesVictory:0,KBattleTowerDoublesVictory:0}),undefined);
 });
+
+test("Let's Go: áreas exteriores por rectángulos de zona (el menor gana si se solapan)",()=>{
+ const L=require('../src/saves/ds-location.js'),at=(area,x,y)=>L.read(null,'LETGOE',0,0,{},{mapHash:L.fnv64(area),x,y});
+ assert.equal(at('area07',2450,6300).name,'Ciudad Azafrán'); // partida del propietario
+ assert.equal(at('area02',2000,1000).name,'Pueblo Paleta');assert.equal(at('area02',2000,-2000).name,'Ruta 1');
+ const sin=L.read(null,'LETGOP',0,0,{},{mapHash:L.fnv64('area02')});assert.equal(sin.precision,'region');assert.match(sin.name,/Pueblo Paleta/);
+ assert.equal(L.read(null,'LETGOP',0,0,{},{mapHash:L.fnv64('t001r01')}).name,'Pueblo Paleta');
+});

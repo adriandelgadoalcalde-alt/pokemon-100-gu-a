@@ -94,7 +94,7 @@
  let swshCache=null;
  function swshZones(){if(swshCache)return swshCache;swshCache={};const S=data()?.SWITCH;if(S)for(const code of Object.keys(S.SWSH))swshCache[fnv64(code)]=code;return swshCache;}
  let lgpeCache=null;
- function lgpeAreas(){if(lgpeCache)return lgpeCache;lgpeCache={};const S=data()?.SWITCH;if(S)for(const code of Object.keys(S.LGPE))lgpeCache[fnv64(code)]=code;return lgpeCache;}
+ function lgpeAreas(){if(lgpeCache)return lgpeCache;lgpeCache={};const S=data()?.SWITCH;if(S)for(const code of [...Object.keys(S.LGPE),...Object.keys(S.LGPE_ZONES||{})])lgpeCache[fnv64(code)]=code;return lgpeCache;}
  // Posición que exporta el motor (switchPosition, NamedBlocks.Position): Escarlata/Púrpura dan el identificador de
  // ubicación (int32 LE en el bloque PlayerSave_CurrentLocationId); Leyendas Arceus y Z-A, el nombre interno del mapa.
  function fromPosition(game,pos,blocks){
@@ -120,8 +120,17 @@
    return {mapId:code,map:code,name:best[0],detail:best[1],source:'switch-position'};
   }
   if(['LETGOP','LETGOE'].includes(game)){
-   const code=lgpeAreas()[String(pos.mapHash||'').toUpperCase()];if(!code)return null;const [name,detail]=S.LGPE[code];
-   return {mapId:code,map:code,name,detail,source:'switch-position'};
+   const code=lgpeAreas()[String(pos.mapHash||'').toUpperCase()];if(!code)return null;
+   if(S.LGPE[code]){const [name,detail]=S.LGPE[code];return {mapId:code,map:code,name,detail,source:'switch-position'};}
+   // Área exterior (area01..area09): la zona cuyo rectángulo contiene la posición (X/Y del guardado = X/Z del mapa)
+   // o, si ninguno la contiene, la del rectángulo más cercano. Sin posición, la lista de lugares del área.
+   // Si varios rectángulos contienen el punto (se solapan en los bordes de rutas), gana el de menor superficie.
+   const rows=S.LGPE_ZONES[code];let best=rows.length===1?rows[0]:null,dist=Infinity,size=Infinity;
+   if(!best&&Number.isFinite(pos.x)&&Number.isFinite(pos.y))for(const row of rows)for(let i=0;i<row[1].length;i+=4){
+    const [x0,z0,x1,z1]=row[1].slice(i,i+4),dx=Math.max(x0-pos.x,0,pos.x-x1),dz=Math.max(z0-pos.y,0,pos.y-z1),d=dx*dx+dz*dz,a=(x1-x0)*(z1-z0);
+    if(d<dist||(d===dist&&a<size)){dist=d;size=a;best=row;}}
+   if(!best)return {mapId:code,map:code,name:[...new Set(rows.map(r=>r[0]))].join(' / '),detail:'',precision:'region',source:'switch-position'};
+   return {mapId:code,map:code,name:best[0],detail:'',source:'switch-position'};
   }
   if(game==='ZA'){
    const m=/^(t1)(?:_.*)?$/.exec(String(pos.map||''));if(!m)return null;
