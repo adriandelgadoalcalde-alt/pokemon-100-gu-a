@@ -204,6 +204,13 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   `FSYS_` de PKHeX: activos en la Espada del propietario y en una fixture pública acabada, ausentes sin DLC y con R1 activo
   y R2 no en una partida que solo terminó La isla de la armadura.
 
+- **Objetivos genéricos retirados o concretados (12/11/2026):** se quitan los que repetían otro objetivo o no se aplican a la
+  edición: «Liga reforzada» en Oro/Plata/Cristal (no hay revancha; solo HGSS, tras las 8 medallas de Kanto), «torneos o
+  instalaciones exclusivos» en Teselia (ya están Metro Batalla y PWT), «objetos clave de acceso» en N/B (ningún legendario
+  fijo pide objeto fuera de la historia), «instalaciones de combate» en DP (solo Torre Batalla, ya es estrella de la
+  tarjeta) y «acceso a zonas finales» en DP/Pt (ya cubierto por la posliga de la Isla Batalla). Las revanchas de la Liga
+  de HGSS, Sinnoh y Let's Go pasan a ser objetivos concretos con su fuente.
+
 Pendiente con motivo (no se acredita solo para no adivinar):
 
 - **Torre Batalla de Diamante/Perla (racha de 100):** en pokediamond el bloque (`FrontierData`) solo guarda BP, banderas y
