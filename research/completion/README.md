@@ -311,3 +311,18 @@ Pendiente con motivo (no se acredita solo para no adivinar):
 - **DBPR:** el extractor exporta ya las banderas de sistema (4000 + índice) y la victoria contra el As de la Torre es
   `FE_TOWER_MASTER_WINED` (1426, `EvWork.FLAG_INDEX` de uDPR). Partidas públicas con racha 14 y 0: sin la bandera, como
   corresponde (el As sale en la 21 y la 49).
+
+### 12/11/2026 — Retos de los DLC de Escarlata/Púrpura
+
+Bloques con nombre de `SaveBlockAccessor9SV` (PKHeX 96e33e7), leídos por `ProgressSignals.cs`:
+
+| Objetivo | Dato del guardado | Contraste |
+|---|---|---|
+| La máscara turquesa | `FSYS_SCENARIO_GAME_CLEAR_SU1` (0x0DDBBC62) | Escarlata pública: verdadero, con Ogerpon, Okidogi, Munkidori y Fezandipiti capturados y Noroteo 200/200 |
+| El disco índigo y Liga Arándano (el campeón es parte de la historia) | `FSYS_SCENARIO_GAME_CLEAR_SU2` (0x0DDBBAAF) | sin caso positivo |
+| Ogre Oustin' en difícil | `OniballoonSave_isCleardHard` (0x17AD6C82) | la misma Escarlata: verdadero |
+| Fotos de Perrin | captura de los dos paradoja de la versión (1020/1021 en Escarlata, 1022/1023 en Púrpura) | Pokédex |
+| Pecharunt | captura de 1025 | Pokédex |
+
+Un bloque ausente (partida de una versión anterior al DLC) se deja sin interpretar. Sin dato: vuelo contrarreloj y
+Torneo de la Academia.

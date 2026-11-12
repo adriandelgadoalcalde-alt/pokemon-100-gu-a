@@ -27,7 +27,7 @@ async function run() {
   const engine=process.env.POKEMON_BROWSER||'chromium';
   if(!['chromium','webkit'].includes(engine))throw Error('Unsupported browser engine');
   const resultDir=path.join('test-results',engine);
-  const browser = await ({chromium,webkit}[engine]).launch({headless: true});
+  const browser = await ({chromium,webkit}[engine]).launch({headless: true, ...(process.env.POKEMON_BROWSER_PATH?{executablePath:process.env.POKEMON_BROWSER_PATH}:{})});
   const errors = [];
   try {
     fs.mkdirSync(resultDir, {recursive: true});

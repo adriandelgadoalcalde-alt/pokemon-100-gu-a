@@ -335,6 +335,13 @@
   // (PKHeX system_bdsp; bdsp-flags.js las sitúa tras las 4000 normales).
   if(['BD','SP'].includes(d.game)&&Array.isArray(d.events?.activeFlags)&&d.events.systemOffset===4000)
    add('contest.bdsp.anyMaster',[9,10,11,12,13].some(i=>d.events.activeFlags.includes(4000+i)),'events');
+  // Escarlata/Púrpura: bloques con nombre de SaveBlockAccessor9SV (PKHeX 96e33e7): FSYS_SCENARIO_GAME_CLEAR_SU1/SU2 (final de
+  // La máscara turquesa y de El disco índigo) y OniballoonSave_isCleardHard (Ogre Oustin' en difícil). Solo valores booleanos.
+  if(['SCARLET','VIOLET'].includes(d.game)&&Array.isArray(d.progressSignals)){
+   const sig=id=>{const x=d.progressSignals.find(s=>s.id===id);return typeof x?.value==='boolean'?x.value:null;};
+   for(const [id,fact] of [['story.tealMask.clear','sv.tealMaskClear'],['story.indigoDisk.clear','sv.indigoDiskClear'],['dlc.ogreOustin.hardCleared','sv.ogreOustinHard']]){
+    const v=sig(id);if(v!==null)add(fact,v,'progressSignals');}
+  }
   // Diamante/Perla: récord de racha de la Torre Batalla (GameStats 0x35-0x3D de pokediamond, GetTrainerCardLevel).
   if(Array.isArray(d.tower4dp?.maxStreaks)&&d.tower4dp.maxStreaks.length)add('battle.dp.tower100',d.tower4dp.maxStreaks.some(v=>v>=100),'tower4dp');
   // Diamante Brillante/Perla Reluciente: 100 rivales seguidos en alguna modalidad de la Torre Batalla.

@@ -62,6 +62,14 @@ function masteryEvaluation(goal,g){
    const anyEvent=id=>{const parts=facts.filter(f=>f.id.startsWith('event.'+id+'.')).map(f=>({fact:f.id}));return parts.length?{any:parts}:null;};
    const byLabel=(games,re)=>games.includes(g.id)&&re.test(item.label);
    let rule=null;
+   if(['SCARLET','VIOLET'].includes(g.id)){
+    if(item.id==='dlc-ogerpon')auto='sv.tealMaskClear';
+    if(item.id==='dlc-terapagos'||item.id==='blueberry-league')auto='sv.indigoDiskClear';
+    if(item.id==='ogre-oustin')auto='sv.ogreOustinHard';
+    if(item.id==='postgame')rule={all:[{fact:'story.gameClear'},{fact:'sv.tealMaskClear'},{fact:'sv.indigoDiskClear'}]};
+    if(item.id==='perrin')rule={all:(g.id==='SCARLET'?[1020,1021]:[1022,1023]).map(i=>({fact:'pokedex.caught.'+i}))};
+    if(item.id==='pecharunt'||item.id==='event-0')rule={all:[{fact:'pokedex.caught.1025'}]};
+   }
    if(['DIAMOND','PEARL'].includes(g.id)&&item.id==='card-4')auto='battle.dp.tower100';
    if(['BD','SP'].includes(g.id)&&item.id==='battle0')auto='bdsp.towerMaster';
    if(['SUN','MOON','ULTRASUN','ULTRAMOON'].includes(g.id)&&item.id==='zygarde-cores')auto='alola.zygardeCores';

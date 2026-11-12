@@ -26,6 +26,7 @@ public static class ProgressSignals
             (0x0DDBBAAF, "story.indigoDisk.clear", "Indicador de final de El disco índigo", "FSYS_SCENARIO_GAME_CLEAR_SU2"),
             (0xF0D246CC, "pokedex.paldea.diplomaAvailable", "Diploma de Paldea disponible", "FSYS_POKEDEX_SYOUJOU_ENABLE"),
             (0xF7900D11, "pokedex.paldea.diplomaClaimed", "Indicador de diploma de Paldea recibido", "FSYS_POKEDEX_SYOUJOU_EVENT"),
+            (0x17AD6C82, "dlc.ogreOustin.hardCleared", "Ogre Oustin' superado en difícil", "OniballoonSave_isCleardHard"),
         ];
         return definitions.Select(d =>
         {

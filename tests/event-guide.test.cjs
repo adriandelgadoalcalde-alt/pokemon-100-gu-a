@@ -660,3 +660,11 @@ test('Diamante/Perla: estrella de la Torre Batalla por el récord de racha (Game
  const O=require('../src/engine/objectives.js'),f=s=>O.fromDiagnosis({game:'DIAMOND',tower4dp:{maxStreaks:s}}).find(x=>x.id==='battle.dp.tower100')?.value;
  assert.equal(f([0,100,0,0,0]),true);assert.equal(f([99,0,0,0,0]),false);assert.equal(f([]),undefined);
 });
+
+test('Escarlata/Púrpura: finales de los DLC y Ogre Oustin\' en difícil por bloques con nombre de PKHeX',()=>{
+ const O=require('../src/engine/objectives.js');
+ const sig=(id,value)=>({id,value});
+ const facts=O.fromDiagnosis({game:'VIOLET',progressSignals:[sig('story.tealMask.clear',true),sig('story.indigoDisk.clear',false),sig('dlc.ogreOustin.hardCleared',null)]});
+ const v=id=>facts.find(x=>x.id===id)?.value;
+ assert.equal(v('sv.tealMaskClear'),true);assert.equal(v('sv.indigoDiskClear'),false);assert.equal(v('sv.ogreOustinHard'),undefined);
+});

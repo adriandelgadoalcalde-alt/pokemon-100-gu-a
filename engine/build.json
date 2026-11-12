@@ -8,7 +8,7 @@
     },
     {
       "file": "pkhex-extractor/ProgressSignals.cs",
-      "sha256": "20b36b2fbc92b4158054d8c0b4a6e0b74c4bf7c2e9a24d03325a1e2d4a8b4b18"
+      "sha256": "7f818a012101ec5cef072ead5fb68ecb763ef9b7c9d73c10a170e0cef4b95d29"
     },
     {
       "file": "pkhex-browser/Pokemon.LocalReader.csproj",
@@ -188,14 +188,14 @@
       "sha256": "baeae5589326de8f4a21ab467c1774d0c98008f277e6244721df16901f609a04"
     },
     {
-      "file": "PKHeX.Core.q0jzgpkhu3.wasm",
+      "file": "PKHeX.Core.a09tw5vep5.wasm",
       "bytes": 19025689,
-      "sha256": "f6201985a3961c5d8ca878433bf34dc8cee08ab64448b79173308d15f6a637d9"
+      "sha256": "2669aa0e8de7f920a659ff42b65a40e3348e1ea29ec7d3492158708c4a8e6a68"
     },
     {
-      "file": "Pokemon.LocalReader.v0ih24imbw.wasm",
-      "bytes": 78101,
-      "sha256": "7fe78d39f175474b6f36ca4b5f01fa4fe9cd719aead592b56ecb8c627d300440"
+      "file": "Pokemon.LocalReader.evc0zatrbj.wasm",
+      "bytes": 78613,
+      "sha256": "d6c3172760d388d7a083954b6daf85b337046e122f1a0f3aa62cad25ac1c8141"
     },
     {
       "file": "System.AppContext.2dp0f0ejq7.wasm",
@@ -1028,9 +1028,9 @@
       "sha256": "9435ec0d81609bad85f9852fc444bb20e4c25d8a621e9537b91e3961d0ba9aae"
     },
     {
-      "file": "dotnet.afvma1qcvu.js",
+      "file": "dotnet.7zkgnc5wk6.js",
       "bytes": 88156,
-      "sha256": "96d644c0af659efe1ecaf1a8b9839b6cee6c94753e57d2fe592c9beb24ec7194"
+      "sha256": "334578dd1c1eca0852c3e2af87cb078d4b17b2e77e1365dc08167ce3a9e3e0a0"
     },
     {
       "file": "dotnet.native.3bptkeu1pi.wasm",
