@@ -278,6 +278,11 @@
   if(Number.isInteger(d.records7?.titleDefense))add('alola.titleDefense',d.records7.titleDefense>=1,'records7');
   // DBPR: Griseosfera (objeto 112) en la bolsa = Giratina vencido en la Sala de la Distorsión del Parque Hansa (WikiDex).
   if(['BD','SP'].includes(d.game)&&Array.isArray(d.inventory)&&d.inventory.some(p=>(p?.items||[]).some(i=>i?.id===112&&i.count>0)))add('bdsp.griseousOrb',true,'inventory');
+  // Espada/Escudo: fin de La isla de la armadura y de Las nieves de la corona (FSYS_R1/R2_GAME_CLEAR, clear8 de Audit.cs).
+  if(['SWORD','SHIELD'].includes(d.game)&&d.clear8&&typeof d.clear8==='object'){
+   if(typeof d.clear8.armor==='boolean')add('swsh.armorClear',d.clear8.armor,'clear8');
+   if(typeof d.clear8.crown==='boolean')add('swsh.crownClear',d.clear8.crown,'clear8');
+  }
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).

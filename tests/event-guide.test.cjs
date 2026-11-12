@@ -603,3 +603,10 @@ test('Diplomas de Teselia por FE_AWARD_LOCAL/NATIONAL (N/B 0x11F/0x120, N2/B2 0x
  assert.equal(v('BLACK',[0x11F],'card.unova.diplomaRegional'),true);assert.equal(v('BLACK',[0x11F],'card.unova.diplomaNational'),undefined);
  assert.equal(v('WHITE2',[0xDD,0xDE],'card.unova.diplomaNational'),true);
 });
+
+test('Espada/Escudo: fin de los dos DLC desde clear8 (FSYS_R1/R2_GAME_CLEAR)',()=>{
+ const O=require('../src/engine/objectives.js'),v=(c,id)=>O.fromDiagnosis({game:'SWORD',clear8:c}).find(x=>x.id===id)?.value;
+ assert.equal(v({game:true,armor:true,crown:false},'swsh.armorClear'),true);
+ assert.equal(v({game:true,armor:true,crown:false},'swsh.crownClear'),false);
+ assert.equal(v({game:true},'swsh.crownClear'),undefined);
+});

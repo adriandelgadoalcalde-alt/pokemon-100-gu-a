@@ -154,4 +154,21 @@ public static class NamedBlocks
         }
         return r.Count == 0 ? null : r;
     }
+    // Espada/Escudo: FSYS_GAME_CLEAR, FSYS_R1_GAME_CLEAR (La isla de la armadura) y FSYS_R2_GAME_CLEAR (Las nieves de la corona).
+    // Nombres comprobados por su hash (FNV-1a 64, 32 bits bajos, como las constantes FSYS_ de SaveBlockAccessor8SWSH);
+    // contrastados con partidas del propietario y públicas. Solo se exportan los bloques que existen.
+    public static SortedDictionary<string, bool>? ClearFlags8(SaveFile save)
+    {
+        if (save is not SAV8SWSH sw)
+            return null;
+        var r = new SortedDictionary<string, bool>(StringComparer.Ordinal);
+        foreach (var (k, n) in new[] { ("game", "FSYS_GAME_CLEAR"), ("armor", "FSYS_R1_GAME_CLEAR"), ("crown", "FSYS_R2_GAME_CLEAR") })
+        {
+            ulong h = 0xCBF29CE484222645;
+            foreach (var c in n) { h ^= (byte)c; h *= 0x100000001B3; }
+            if (sw.Blocks.TryGetBlock((uint)h, out var b) && b.Type is SCTypeCode.Bool1 or SCTypeCode.Bool2)
+                r[k] = b.Type == SCTypeCode.Bool2;
+        }
+        return r.Count == 0 ? null : r;
+    }
 }

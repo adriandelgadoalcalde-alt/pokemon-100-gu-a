@@ -246,6 +246,8 @@ public static class Audit
                 result["questWork9a"] = quests;
             if (NamedBlocks.Requests8a(save) is { } requests)
                 result["requests8a"] = requests;
+            if (NamedBlocks.ClearFlags8(save) is { } clear8)
+                result["clear8"] = clear8;
         }
         return result;
     }

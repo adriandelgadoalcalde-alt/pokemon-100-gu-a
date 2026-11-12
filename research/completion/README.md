@@ -198,6 +198,12 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   Blazikenita, Swampertita, Sceptilita (clasificatorias) y Garchompita Z (regalo), así que las dos metas jugables quedan
   acreditadas. Solo se acredita la presencia en la bolsa (una megapiedra equipada podría no estar).
 
+- **Tarjeta de Liga de Espada/Escudo (12/11/2026):** siete estrellas (WikiDex «Ficha de entrenador»): empezar, tres medallas,
+  ganar la Liga y terminar los dos DLC. El fin de cada DLC está en los bloques `FSYS_R1_GAME_CLEAR` y `FSYS_R2_GAME_CLEAR`
+  (y el de la historia en `FSYS_GAME_CLEAR`), localizados por el hash de su nombre con el mismo esquema que las constantes
+  `FSYS_` de PKHeX: activos en la Espada del propietario y en una fixture pública acabada, ausentes sin DLC y con R1 activo
+  y R2 no en una partida que solo terminó La isla de la armadura.
+
 Pendiente con motivo (no se acredita solo para no adivinar):
 
 - **Torre Batalla de Diamante/Perla (racha de 100):** en pokediamond el bloque (`FrontierData`) solo guarda BP, banderas y
