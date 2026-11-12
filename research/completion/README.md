@@ -27,6 +27,20 @@ Dojo y combates restringidos (Espada/Escudo) y fuegos fatuos (Leyendas Arceus). 
 públicas reales (por ejemplo, una partida de Escudo con las tres huellas al 100 % y otra de Leyendas Arceus con los
 107 fuegos fatuos). En Rubí/Zafiro/Esmeralda también se acreditan la Pokédex de Hoenn de la tarjeta (las 200 primeras de HOENN_DEX, generadas desde pokeemerald), los cinco cuadros del museo (FLAG_*_PAINTING_MADE) y, en Esmeralda, los 14 símbolos del Frente Batalla (HasAllFrontierSymbols).
 
+Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las partidas del propietario de los 39 juegos):
+
+- **Fin de la historia:** Gen. I (contador del Salón de la Fama), Gen. II (`EVENT_BEAT_ELITE_FOUR`), Gen. III
+  (`FLAG_SYS_GAME_CLEAR` de cada familia), Negro/Blanco (bandera 2400 de PKHeX), Let's Go (`FSYS_GAME_CLEAR`),
+  Espada/Escudo (victorias en la Torre Batalla o el Torneo de las Estrellas, que se abren tras ser campeón),
+  Escarlata/Púrpura (`FSYS_SCENARIO_GAME_CLEAR`, contrastado con una partida acabada y otra sin acabar) y Leyendas Z-A
+  (misión 37, el combate final; tabla de misiones sacada de la copia propia).
+- **Historia por pasos:** las 42 misiones principales de Z-A con su título y las pruebas de Alola por sus cristales Z.
+- **Reconocimientos y desafíos:** Amuleto Iris (objeto 632) en Espada/Escudo, Leyendas Arceus, Escarlata/Púrpura y Z-A;
+  estrella de la Torre Batalla de Rubí/Zafiro (mejor racha > 49, pokeruby); huellas de oro de los Ases del Frente
+  Batalla (HGSS, Platino); Mansión Batalla (X/Y, Rubí Omega/Zafiro Alfa); un Superconcurso rango Maestro (DP, Platino);
+  cámaras secretas de las Ruinas Alfa (HGSS); Rubí y Zafiro para Celio (RF/VH); Rojo y los títulos de Entrenador
+  Maestro (Let's Go); Torre Batalla (Espada/Escudo); Pokédex de Hisui; misiones 38-42 y secundarias de Z-A.
+
 ## Matriz por juego
 
 | Juego | Objetivos | Se comprueban solos con el guardado | Por categoría |
