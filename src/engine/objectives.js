@@ -129,7 +129,11 @@
   // en toda la mochila.
   {
    const bag=[...(d.keyItems||[]),...(['LETGOP','LETGOE'].includes(d.game)?(d.inventory||[]).flatMap(p=>p?.items||[]):[])];
-   if(bag.some(i=>i?.count>0))for(const id of ['X','Y'].includes(d.game)?[631,632,696]:[631,632]){
+   // Objetos clave que el juego nunca retira (los que cambian de número al usarse, Punta ADN 628/629, Necrosol 943/945,
+   // Necroluna 944/946 y Riendas Unión 1590/1591, cuentan por pares en las reglas).
+   const lasting={X:[696],Y:[696],OMEGARUBY:[728,735,775],ALPHASAPPHIRE:[728,735,775],BLACK2:[628,629,638,458],WHITE2:[628,629,638,458],
+    SWORD:[1077,1278,628,629,943,944,945,946,1590,1591,1584,1597],SHIELD:[1077,1278,628,629,943,944,945,946,1590,1591,1584,1597]}[d.game]||[];
+   if(bag.some(i=>i?.count>0))for(const id of [631,632,...lasting]){
     const has=bag.some(i=>i?.id===id&&i.count>0);
     if(!has||!(d.keyItems||[]).some(i=>i?.id===id&&i.count>0))add(`inventory.keyItem.${id}.present`,has,has?'inventory':'keyItems');
    }
