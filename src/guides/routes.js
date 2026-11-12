@@ -1595,7 +1595,7 @@
       "Pueblo Altamía, tipo Planta (Brais). Prueba: reunir los 10 Sunflora escondidos por el pueblo; algunos combaten.",
       "Ciudad Leudal, tipo Eléctrico (E-Nigma). Prueba: en su directo, encuentra tres veces al director Clavel disfrazado entre la gente y vence a un entrenador cada vez.",
       "Ciudad Cántara, tipo Agua (Fuco). Prueba: lleva a Pueblo Marinada la cartera que olvidó el líder y gana la subasta que te encarga allí.",
-      "Pueblo Mestura, tipo Normal (Laureano). Prueba: consigue las pistas del menú secreto venciendo a otros alumnos y haz el pedido secreto en el restaurante (en inglés: «Grilled Rice Balls, Medium, Extra Crispy with Lemon»). Premio: MT025.",
+      "Pueblo Mestura, tipo Normal (Laureano). Prueba: consigue las pistas del menú secreto venciendo a otros alumnos y pide la comanda secreta en el Mesón El Tesoro: Onigiris a la parrilla, Dos, Llamarada y Limón. Premio: MT025.",
       "Pueblo Hozkailu (en la Sierra Napada), tipo Fantasma (Lima). Prueba: combates dobles ante un público que, si lo animas, te sube estadísticas. Premio: MT114.",
       "Pueblo Alforno, tipo Psíquico (Tuli). Prueba: imita las emociones que pide la instructora y vence a un entrenador, dos veces. Premio: MT120.",
       "Gimnasio de la Sierra Napada (aislado en la montaña), tipo Hielo (Grusha). Prueba: bajar la pista de nieve con tu montura pasando por todas las puertas en 1 minuto y 30 segundos. Premio: MT124.",
@@ -1937,7 +1937,7 @@
       "Misión principal 1: nada más llegar a Ciudad Luminalia, un Pancham te roba la bolsa de viaje. Persíguelo por las calles hasta recuperarla.",
       "Misión 2: al caer la noche la ciudad se convierte en zona de combate. Sigue a tu nueva amiga o amigo (Muni o Urbi, según tu protagonista) para salir de ella y refugiarte en el Hotel Z.",
       "Misión 3: tu acompañante te enseña lo básico de la vida en Luminalia: Centro Pokémon, tiendas, zonas salvajes urbanas y el sistema de combate en tiempo real, con movimientos y esquivas.",
-      "Antes de seguir, captura algún Pokémon en las zonas salvajes cercanas y forma un equipo de al menos tres para las primeras noches del Torneo Z-A."
+      "Antes de seguir, captura algún Pokémon en las zonas salvajes cercanas y forma un equipo de al menos tres para las primeras noches de los Juegos Z-A."
     ],
     "check": "Bolsa recuperada, primera noche superada y misión principal 3 marcada como completada.",
     "pitfalls": [
@@ -1955,7 +1955,7 @@
       "ZA"
     ],
     "mission": "02",
-    "location": "Torneo Z-A: rangos Z → Y → X → W → V",
+    "location": "Juegos Z-A: rangos Z → Y → X → W → V",
     "requires": [],
     "steps": [
       "Por la noche aparecen zonas de combate por toda la ciudad, también en las azoteas. Vence entrenadores para sumar puntos (hasta 2.500 por combate según tu rango) y recoge medallas de premio y tarjetas de bonificación.",
@@ -2040,7 +2040,7 @@
     "steps": [
       "Misión 35: tu rival para el rango A es Grisel. Solo tienes su foto, así que búscalo por la ciudad antes de enfrentarte a él.",
       "Misión 36: una luz extraña sale de la Torre Prisma. Reúnete con tus amigos para proteger la ciudad.",
-      "Misión 37 («Operation Protect Lumiose»): deja atrás las rivalidades y ve a por Zygarde, que te espera en el lugar indicado.",
+      "Misión 37 («El plan para salvar Ciudad Luminalia»): deja atrás las rivalidades y ve a por Zygarde, que te espera en el lugar indicado.",
       "Misión 38: con la ciudad recuperada, decide con tu acompañante qué hacer con los deseos ganados al llegar al rango A. Es el final de la historia principal."
     ],
     "check": "Misión principal 38 completada y rango A alcanzado.",
@@ -2060,10 +2060,10 @@
       "ZA"
     ],
     "mission": "08",
-    "location": "Postgame: Torneo Z-A Infinito, Pokédex y reconocimiento",
+    "location": "Postgame: Juegos Z-A Infinitos, Pokédex y reconocimiento",
     "requires": [],
     "steps": [
-      "Misión 39: se abre el Torneo Z-A Infinito. Ya no hay más ascensos de rango, pero cada noche hay tres zonas de combate y los rivales suben de nivel a medida que completas torneos.",
+      "Misión 39: se abren los Juegos Z-A Infinitos. Ya no hay más ascensos de rango, pero cada noche hay tres zonas de combate y los rivales suben de nivel a medida que completas torneos.",
       "Con el Cupón Desafío puedes llamar a un rival en Quastelar S. A. para los combates de recompensa: pepitas grandes, vitaminas, Chapas Plateadas o Doradas, Poké Balls especiales y, con suerte, una Master Ball. Las rachas largas dan más Caramelos Exp.",
       "Misiones 40 a 42: la amenaza de «el que da» (con Melia, antes miembro del Team Flare), la de «el que quita» (con Grisel y Airén) y el equilibrio del mundo con Zygarde. Los encuentros y capturas de Xerneas, Yveltal y Zygarde se detallan en la misión 06.",
       "Completa la Pokédex de Luminalia y, si tienes el DLC, la del Hiperespacio (misión 07). Revisa también los títulos de entrenador y la investigación de Pokédex de Melia."
