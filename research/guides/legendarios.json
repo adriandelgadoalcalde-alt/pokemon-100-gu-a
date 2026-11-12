@@ -56,7 +56,8 @@
     "orden": 710,
     "cuando": "Solo con el Ticket Eón (distribución de evento).",
     "requisitos": "Con el Ticket Eón, el barco de Portual lleva a la Isla del Sur, donde espera Latias.",
-    "consejo": "Latias nivel 50. Sin el ticket no se puede en esta edición."
+    "consejo": "Latias nivel 50. Sin el ticket no se puede en esta edición.",
+    "pokekeep": "En la mochila, añade el objeto clave Ticket Eón y activa la bandera de su evento (Pokekeep, editor de objetos y de banderas); luego habla con el marinero del puerto de Portual."
    }
   },
   "SAPPHIRE": {
@@ -89,7 +90,8 @@
     "orden": 710,
     "cuando": "Solo con el Ticket Eón (distribución de evento).",
     "requisitos": "Con el Ticket Eón, el barco de Portual lleva a la Isla del Sur, donde espera Latios.",
-    "consejo": "Latios nivel 50."
+    "consejo": "Latios nivel 50.",
+    "pokekeep": "En la mochila, añade el objeto clave Ticket Eón y activa la bandera de su evento (Pokekeep, editor de objetos y de banderas); luego habla con el marinero del puerto de Portual."
    }
   },
   "EMERALD": {
@@ -108,14 +110,16 @@
     "orden": 230,
     "cuando": "Después del Hall de la Fama: tu madre pregunta de qué color era el Pokémon de la tele.",
     "requisitos": "Si respondes azul vaga Latios; si respondes rojo, Latias. El elegido es errante y huye: síguelo con la Pokédex.",
-    "consejo": "Nivel 40. El otro de los dos solo con el Ticket Eón (Isla del Sur, nivel 50)."
+    "consejo": "Nivel 40. El otro de los dos solo con el Ticket Eón (Isla del Sur, nivel 50).",
+    "pokekeep": "Si el de la Isla del Sur es el que te falta, añade el Ticket Eón y activa su bandera de evento; o añádelo legal desde la Librería."
    },
    "380": {
     "fase": 2,
     "orden": 231,
     "cuando": "Después del Hall de la Fama (el que no elegiste con tu madre, solo con el Ticket Eón).",
     "requisitos": "Respuesta roja a tu madre = Latias errante. Si elegiste azul, Latias solo está en la Isla del Sur con el Ticket Eón (evento).",
-    "consejo": "Nivel 40 errante o 50 en la Isla del Sur."
+    "consejo": "Nivel 40 errante o 50 en la Isla del Sur.",
+    "pokekeep": "Si el de la Isla del Sur es el que te falta, añade el Ticket Eón y activa su bandera de evento; o añádelo legal desde la Librería."
    },
    "382": {
     "fase": 2,
@@ -744,7 +748,8 @@
     "orden": 720,
     "cuando": "Exclusivo de Blanco.",
     "requisitos": "Solo por intercambio desde Blanco (o desde Negro 2/Blanco 2 vía el RAdar Pokémon).",
-    "consejo": "Hace falta para Landorus."
+    "consejo": "Hace falta para Landorus.",
+    "pokekeep": "Añádelo legal desde la Librería (origen de la otra edición)."
    }
   },
   "WHITE": {
@@ -802,7 +807,8 @@
     "orden": 720,
     "cuando": "Exclusivo de Negro.",
     "requisitos": "Solo por intercambio desde Negro.",
-    "consejo": "Hace falta para Landorus."
+    "consejo": "Hace falta para Landorus.",
+    "pokekeep": "Añádelo legal desde la Librería (origen de la otra edición)."
    }
   },
   "BLACK2": {
@@ -1155,7 +1161,8 @@
     "orden": 710,
     "cuando": "Solo con el Ticket Eón (evento).",
     "requisitos": "Isla del Sur con el Ticket Eón.",
-    "consejo": "Distribución de evento."
+    "consejo": "Distribución de evento.",
+    "pokekeep": "Añade el Ticket Eón a la mochila (objeto clave) o el Pokémon legal desde la Librería."
    },
    "486": {
     "fase": 2,
@@ -1176,7 +1183,8 @@
     "orden": 730,
     "cuando": "Exclusivo de Zafiro Alfa: por intercambio.",
     "requisitos": "Solo por intercambio desde la otra edición.",
-    "consejo": ""
+    "consejo": "",
+    "pokekeep": "Añádelo legal desde la Librería."
    },
    "485": {
     "fase": 2,
@@ -1218,7 +1226,8 @@
     "orden": 730,
     "cuando": "Exclusivo de Zafiro Alfa: por intercambio.",
     "requisitos": "Solo por intercambio desde la otra edición.",
-    "consejo": ""
+    "consejo": "",
+    "pokekeep": "Añádelo legal desde la Librería."
    },
    "487": {
     "fase": 2,
@@ -1339,7 +1348,8 @@
     "orden": 710,
     "cuando": "Solo con el Ticket Eón (evento).",
     "requisitos": "Isla del Sur con el Ticket Eón.",
-    "consejo": "Distribución de evento."
+    "consejo": "Distribución de evento.",
+    "pokekeep": "Añade el Ticket Eón a la mochila (objeto clave) o el Pokémon legal desde la Librería."
    },
    "486": {
     "fase": 2,
@@ -1353,7 +1363,8 @@
     "orden": 730,
     "cuando": "Exclusivo de Rubí Omega: por intercambio.",
     "requisitos": "Solo por intercambio desde la otra edición.",
-    "consejo": ""
+    "consejo": "",
+    "pokekeep": "Añádelo legal desde la Librería."
    },
    "249": {
     "fase": 2,
@@ -1395,7 +1406,8 @@
     "orden": 730,
     "cuando": "Exclusivo de Rubí Omega: por intercambio.",
     "requisitos": "Solo por intercambio desde la otra edición.",
-    "consejo": ""
+    "consejo": "",
+    "pokekeep": "Añádelo legal desde la Librería."
    },
    "483": {
     "fase": 2,

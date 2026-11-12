@@ -18,7 +18,8 @@ PKHEX = json.loads((ROOT / 'research/guides/legendarios-pkhex.json').read_text(e
 def places(game, species):
     out = []
     for e in PKHEX.get(game, {}).get(str(species), []):
-        if not e['lugar'] or e['lugar'].startswith('('):
+        # Fuera: lugares entre paréntesis (orígenes especiales de PKHeX) y los de nivel 3 de Let's Go (Parque GO).
+        if not e['lugar'] or e['lugar'].startswith('(') or (game.startswith('LETGO') and e['nivel'] < 10):
             continue
         # En los errantes PKHeX guarda la ruta de partida del encuentro, no un lugar fijo: se dice «errante por la región».
         place = 'errante por la región' if e['errante'] else e['lugar']
@@ -53,13 +54,15 @@ def main():
             if not isinstance(sp, int) or str(sp) not in info:
                 continue
             e = info[str(sp)]
-            where = places(game, sp)
+            where = [e['donde']] if e.get('donde') else places(game, sp)
             parts = ['Cuándo: ' + e['cuando']]
             if where:
                 parts.append('Dónde: ' + '; '.join(where) + '.')
             parts.append('Cómo: ' + e['requisitos'])
             if e.get('consejo'):
                 parts.append('Consejo: ' + e['consejo'])
+            if e.get('pokekeep'):
+                parts.append('Con Pokekeep: ' + e['pokekeep'])
             parts.append('Se acredita con el registro en la Pokédex de la partida.')
             item['how'] = ' '.join(parts)
             item['phase'] = e['fase']
