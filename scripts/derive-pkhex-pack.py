@@ -201,6 +201,18 @@ def build():
         }
         if family in BADGE_STORY and hall is not None:
             story[family] = [{'mission': m, 'badgesAtLeast': n, 'label': l} for m, n, l in BADGE_STORY[family]] + story[family]
+        if family in ('SM', 'USUM') and hall is not None:
+            # Pruebas de Alola: cada capitán o kahuna entrega un cristal Z (WikiDex «Reto de las islas/Recorrido
+            # insular»); los identificadores son los de PKHeX (src/guides/alola-inventory.js). El cristal queda en la
+            # mochila, así que su presencia prueba la prueba superada.
+            trials = [('02', 807, 'Prueba de Liam (Normastal Z)'), ('02', 813, 'Gran prueba de Kaudan (Lizastal Z)'),
+                      ('03', 809, 'Prueba de Nereida (Hidrostal Z)'), ('03', 808, 'Prueba de Kiawe (Pirostal Z)'),
+                      ('03', 811, 'Prueba de Lulú (Fitostal Z)'), ('04', 819, 'Gran prueba de Olivia (Litostal Z)'),
+                      ('05', 810, 'Prueba de Chris (Electrostal Z)'), ('05', 820, 'Prueba de Zarala (Espectrostal Z)'),
+                      ('05', 822, 'Gran prueba de Denio (Nictostal Z)')]
+            trials += ([('07', 824, 'Prueba de Mina (Feeristal Z)')] if family == 'USUM' else [])
+            trials += [('07', 821, 'Prueba del Cañón de Poni (Dracostal Z)'), ('07', 815, 'Gran prueba de Hela (Geostal Z)')]
+            story[family] = [{'mission': m, 'item': i, 'label': l} for m, i, l in trials] + story[family]
         if family in ('DP', 'BDSP') and hall is not None:
             # Medallas leídas por PKHeX.Core (DP) o por las banderas de sistema 124-131 (BDSP, src/saves/bdsp-flags.js);
             # orden de DP, que BDSP conserva con las mismas misiones: Lignito, Bosque, Adoquín, Ciénaga, Reliquia (tras Surf), Mina, Carámbano, Faro.

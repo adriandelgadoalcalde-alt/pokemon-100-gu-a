@@ -313,3 +313,14 @@ test('Rubí/Zafiro: estrella de la Torre Batalla con la mejor racha (> 49, poker
  const O=require('../src/engine/objectives.js'),get=bt=>O.fromDiagnosis({game:'RUBY',field:{family:'RS',flags:[],battleTower:bt}}).find(f=>f.id==='card.rs.battleTower')?.value;
  assert.equal(get({totalWins:70,bestStreak:50}),true);assert.equal(get({totalWins:70,bestStreak:49}),false);assert.equal(get(null),undefined);
 });
+
+test('Alola: historia por pruebas con los cristales Z de la mochila (solo con integridad comprobada)',()=>{
+ const G=require('../src/engine/event-guide.js');
+ const d=(items,ok=true)=>({game:'SUN',events:{activeFlags:[]},integrity:{checksumsValid:ok},inventory:[{pocket:'ZCrystals',items:items.map(id=>({id,count:1}))}]});
+ const a=G.analyze(d([807]),'SUN');
+ assert.equal(a.story.rows.find(r=>r.item===807).state,'direct');
+ assert.equal(a.story.next.label,'Gran prueba de Kaudan (Lizastal Z)');
+ const u=G.analyze({...d([807,813,809,808,811,819,810,820,822]),game:'ULTRAMOON'},'ULTRAMOON');
+ assert.equal(u.story.next.label,'Prueba de Mina (Feeristal Z)');
+ assert.equal(G.analyze(d([807],false),'SUN').story.rows.find(r=>r.item===807).set,null); // sin integridad no se deduce
+});

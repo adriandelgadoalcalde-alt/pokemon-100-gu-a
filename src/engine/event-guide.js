@@ -32,7 +32,7 @@
    }
    const n=fam.flags[name];return n===undefined?null:set.has(n);};
   const varValue=name=>{const i=fam.vars?.[name];return i===undefined?null:vars[i]??null;};
-  const check=c=>c.titlesAtLeast!==undefined?(Array.isArray(meta.titles)?meta.titles.filter(i=>!c.titlesRange||(i>=c.titlesRange[0]&&i<=c.titlesRange[1])).length>=c.titlesAtLeast:null):Array.isArray(c.anyFlags)?(c.anyFlags.some(f=>has(f)===true)?true:c.anyFlags.every(f=>has(f)===false)?false:null):Array.isArray(c.flags)?(c.flags.some(f=>has(f)===null)?null:c.flags.every(f=>has(f))):c.badgesAtLeast!==undefined?(Number.isInteger(meta.badges)?meta.badges>=c.badgesAtLeast:null):c.flag?has(c.flag):c.var?(()=>{const v=varValue(c.var);return v===null?null:c.atLeast!==undefined?v>=c.atLeast:v===c.equals;})():null;
+  const check=c=>c.titlesAtLeast!==undefined?(Array.isArray(meta.titles)?meta.titles.filter(i=>!c.titlesRange||(i>=c.titlesRange[0]&&i<=c.titlesRange[1])).length>=c.titlesAtLeast:null):Array.isArray(c.anyFlags)?(c.anyFlags.some(f=>has(f)===true)?true:c.anyFlags.every(f=>has(f)===false)?false:null):Array.isArray(c.flags)?(c.flags.some(f=>has(f)===null)?null:c.flags.every(f=>has(f))):c.badgesAtLeast!==undefined?(Number.isInteger(meta.badges)?meta.badges>=c.badgesAtLeast:null):c.item!==undefined?(meta.items?meta.items.has(c.item):null):c.flag?has(c.flag):c.var?(()=>{const v=varValue(c.var);return v===null?null:c.atLeast!==undefined?v>=c.atLeast:v===c.equals;})():null;
   const rows=(pack.story[family]||[]).map(r=>({...r,id:game+'-'+r.mission,set:check(r)}));
   let later=false;
   for(let i=rows.length-1;i>=0;i--){rows[i].state=rows[i].set?'direct':later?'derived':'pending';if(rows[i].set)later=true;}
@@ -54,12 +54,18 @@
   });
   return {story:{rows,next:rows.find(r=>r.state==='pending')||null},secrets};
  }
+ // Objetos de la mochila con integridad comprobada (para hitos que deja un objeto clave, p. ej. los cristales Z).
+ function inventoryItems(e){
+  if(e?.integrity?.checksumsValid!==true||!Array.isArray(e.inventory))return null;
+  const set=new Set();for(const pocket of e.inventory)for(const item of pocket?.items||[])if(Number.isInteger(item?.id)&&item.count>0)set.add(item.id);
+  return set;
+ }
  function analyze(e,game){
   const where=locate(game),src=where&&sourceOf(e,where.pack);
   if(!where||!src)return null;
   if(Number.isInteger(e.languageId)&&(where.pack.excludeLanguages||[]).includes(e.languageId))return null;
   if(src.kind==='field'&&e.field.family&&e.field.family!==where.family)return {mismatch:true};
-  const result=evaluate(where.pack,where.family,game,src.flags,src.vars,e.caught,{badges:e.badgesTotal,blocks:e.namedBlocks,signals:e.progressSignals,titles:e.events?.titles});
+  const result=evaluate(where.pack,where.family,game,src.flags,src.vars,e.caught,{badges:e.badgesTotal,blocks:e.namedBlocks,signals:e.progressSignals,titles:e.events?.titles,items:inventoryItems(e)});
   return {...result,storyPartial:Boolean(where.pack.storyPartial||(where.pack.storyPartialFamilies||[]).includes(where.family)),family:where.family,location:src.location,sourceKind:src.kind,revisions:where.pack.revisions,
    confidence:where.pack.confidence||'documentado en código'};
  }
