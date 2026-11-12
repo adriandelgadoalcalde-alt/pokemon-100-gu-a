@@ -138,7 +138,7 @@
    "id": "trainer-tower",
    "fase": 3,
    "orden": 310,
-   "como": "En la Isla Sétima (tras la Pokédex Nacional y abrir las islas 6 y 7): la Torre Desafío tiene cuatro modos (Individual, Doble, Eliminatorio y Mixto). Supera cada uno subiendo los pisos y venciendo al entrenador de la azotea; cuanto más rápido, mejor premio."
+   "como": "Al norte de la Isla Sétima, con Surf (tras la Pokédex Nacional y abrir las islas 6 y 7): la Torre Desafío tiene cuatro modos (Individual, Doble, Eliminatorio y Mixto). Supera cada uno subiendo los pisos y venciendo al entrenador de la azotea; cuanto más rápido, mejor premio."
   },
   {
    "juegos": [
@@ -653,7 +653,7 @@
    "id": "battle0",
    "fase": 3,
    "orden": 300,
-   "como": "Mansión Batalla (tras la Liga; se llega en el tren TMV desde Ciudad Luminalia): Individual, Doble, Triple, Rotatoria y Múltiple. Hay que vencer a una Dama del Combate en la 50.ª batalla consecutiva (en Super)."
+   "como": "Mansión Batalla de Ciudad Batik (tras la Liga; se llega en el tren TMV desde Ciudad Luminalia; en ROZA está en el Resort Batalla): Individual, Doble, Triple, Rotatoria y Múltiple. Hay que vencer a una Dama del Combate en la 50.ª batalla consecutiva (en Super)."
   },
   {
    "juegos": [
@@ -815,7 +815,7 @@
    "id": "pokedex",
    "fase": 5,
    "orden": 500,
-   "como": "Completa la Pokédex de Alola (las cuatro islas). Con ella, habla con el director del juego (lugar en el objetivo del diploma): te da el diploma y el Amuleto Iris.",
+   "como": "Completa la Pokédex de Alola (las cuatro islas). Cada vez que completes la sección de una isla, enséñasela al director del juego en las oficinas de Game Freak de Ciudad Kantai (Akala) para que selle tu pasaporte; con la de Alola completa (sin singulares) te da el diploma y el Amuleto Iris.",
    "pokekeep": "Las especies exclusivas de la otra edición, añádelas legales desde la Librería si no puedes intercambiarlas."
   },
   {
@@ -900,7 +900,7 @@
    "id": "card-6",
    "fase": 6,
    "orden": 606,
-   "como": "Captura todas las especies de la sección de Melemele de la Pokédex de Alola. Casi todas salen durante la historia; algunas solo de noche, con el tiempo o por evolución."
+   "como": "Captura todas las especies de la sección de Melemele de la Pokédex de Alola. Casi todas salen durante la historia; algunas solo de noche, con el tiempo o por evolución. Después, enséñasela al director del juego en las oficinas de Game Freak de Ciudad Kantai (Akala): él sella el pasaporte."
   },
   {
    "juegos": [
@@ -912,7 +912,7 @@
    "id": "card-7",
    "fase": 6,
    "orden": 607,
-   "como": "Captura todas las especies de la sección de Akala. Algunas solo aparecen tras la Liga o por evolución por intercambio."
+   "como": "Captura todas las especies de la sección de Akala. Algunas solo aparecen tras la Liga o por evolución por intercambio. Después, enséñasela al director del juego en las oficinas de Game Freak de Ciudad Kantai (Akala): él sella el pasaporte."
   },
   {
    "juegos": [
@@ -924,7 +924,7 @@
    "id": "card-8",
    "fase": 6,
    "orden": 608,
-   "como": "Captura todas las especies de la sección de Ula-Ula. Varias son exclusivas de una edición (intercambio) o aparecen tras la Liga."
+   "como": "Captura todas las especies de la sección de Ula-Ula. Varias son exclusivas de una edición (intercambio) o aparecen tras la Liga. Después, enséñasela al director del juego en las oficinas de Game Freak de Ciudad Kantai (Akala): él sella el pasaporte."
   },
   {
    "juegos": [
@@ -936,7 +936,7 @@
    "id": "card-9",
    "fase": 6,
    "orden": 609,
-   "como": "Captura todas las especies de la sección de Poni. Muchas están en el Gran Cañón de Poni y en zonas que se abren tras la Liga."
+   "como": "Captura todas las especies de la sección de Poni. Muchas están en el Gran Cañón de Poni y en zonas que se abren tras la Liga. Después, enséñasela al director del juego en las oficinas de Game Freak de Ciudad Kantai (Akala): él sella el pasaporte."
   },
   {
    "juegos": [
@@ -948,7 +948,7 @@
    "id": "card-10",
    "fase": 6,
    "orden": 610,
-   "como": "Completa la Pokédex de Alola entera (las cuatro islas, sin contar a los singulares de evento). Es la misma condición que el diploma y el Amuleto Iris del director del juego."
+   "como": "Completa la Pokédex de Alola entera (las cuatro islas, sin contar a los singulares de evento). El sello te lo pone el director del juego en las oficinas de Game Freak de Ciudad Kantai, junto con el diploma y el Amuleto Iris."
   },
   {
    "juegos": [
@@ -1083,7 +1083,7 @@
    "id": "diploma-regional",
    "fase": 6,
    "orden": 600,
-   "como": "Con la Pokédex de Kanto completa, habla con el director del juego en la 3.ª planta de la Mansión Azulona."
+   "como": "Con la Pokédex de Kanto completa, habla con el director del juego en la 3.ª planta de la Edificio Azulona (Mansión Azulona)."
   },
   {
    "juegos": [
@@ -1093,7 +1093,7 @@
    "id": "shiny-charm",
    "fase": 6,
    "orden": 610,
-   "como": "Con la Pokédex de Kanto completa (151 especies, más Meltan y Melmetal de Pokémon GO), el director del juego de la 3.ª planta de la Mansión Azulona te da el Amuleto Iris junto con el diploma."
+   "como": "Con la Pokédex de Kanto completa (151 especies, más Meltan y Melmetal de Pokémon GO), el director del juego de la 3.ª planta de la Edificio Azulona (Mansión Azulona) te da el Amuleto Iris junto con el diploma."
   },
   {
    "juegos": [
@@ -1144,7 +1144,7 @@
    "id": "pokedex",
    "fase": 5,
    "orden": 500,
-   "como": "Completa la Pokédex de Galar (400) y, con los DLC, las de la Isla de la Armadura y las Nieves de la Corona. Al completar la de Galar, el director del juego del Hotel Ionia te da el diploma.",
+   "como": "Completa la Pokédex de Galar (400) y, con los DLC, las de la Isla de la Armadura y las Nieves de la Corona. El director del juego está en el Hotel Jonia de Pueblo Auriga (última habitación de la izquierda): primero te da el Amuleto Captura y, con la Pokédex de Galar capturada, el diploma y el Amuleto Iris.",
    "pokekeep": "Las exclusivas de la otra edición, añádelas legales desde la Librería."
   },
   {
@@ -1294,7 +1294,7 @@
    "id": "recognition-2",
    "fase": 6,
    "orden": 610,
-   "como": "Con la Pokédex de Hisui completa (todas las entradas al nivel 10 de investigación), el profesor Laventon en Villa Jubileo te da el Amuleto Iris."
+   "como": "Con todas las especies de la Pokédex de Hisui capturadas y sus entradas al menos al nivel 10 de investigación (Phione, Manaphy y Arceus incluidos; Darkrai y Shaymin no cuentan), el profesor Lavender te da el Amuleto Iris en la Sede Galaxia de Villa Jubileo."
   },
   {
    "juegos": [
