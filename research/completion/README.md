@@ -78,6 +78,11 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   y el Escáner (se entrega al capitán) no cuentan.
 - **Objetos clave de la 6.ª generación:** Megaaro (696) en X/Y; Gafas Aislantes (728), Detector Devon (735) y Flauta Eón
   (775) en Rubí Omega/Zafiro Alfa (números de objeto de PKHeX). Las cuatro partidas del propietario los tienen.
+- **Objetos clave de Negro 2/Blanco 2 y Espada/Escudo:** N2/B2 exige Punta ADN (628), Espejo Veraz (638) y Piedra Magma
+  (458), leídos por el lector propio del bolsillo de objetos clave (bloque 25, `PlayerBag5B2W2`, ahora dentro de la
+  comprobación de integridad). Espada/Escudo exige Maximuñequera (1077), Catálogo Rotom (1278), Punta ADN (629),
+  Necrosol/Necroluna (945/946), Riendas Unión (1591) y los pases de Isla de la Armadura y Nieves de la Corona (1584/1597).
+  Negro 2 y Espada del propietario los tienen; Blanco 2 y Escudo, no.
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
