@@ -326,6 +326,23 @@
    if(typeof d.clear8.armor==='boolean')add('swsh.armorClear',d.clear8.armor,'clear8');
    if(typeof d.clear8.crown==='boolean')add('swsh.crownClear',d.clear8.crown,'clear8');
   }
+  // Revisión del guardado (SaveRevisionString de PKHeX): una partida guardada por última vez con una versión anterior a un
+  // DLC no ha podido jugarlo (el juego actualiza el guardado al cargarlo con el DLC). Espada/Escudo: -Base, -IoA (La isla de
+  // la armadura), -CT (Las nieves de la corona). Escarlata/Púrpura: -Base, -TM (La máscara turquesa), -ID (El disco índigo).
+  {
+   const rev={'-Base':0,'-IoA':1,'-CT':2,'-TM':1,'-ID':2}[d.revision];
+   if(Number.isInteger(rev)&&['SWORD','SHIELD'].includes(d.game)){
+    if(rev<1){add('swsh.armorClear',false,'revision');add('collection.swsh.alolanDiglett',false,'revision');add('collection.swsh.dojoWatts',false,'revision');add('battle.swsh.restrictedSparring',false,'revision');}
+    if(rev<2){add('swsh.crownClear',false,'revision');add('swsh.crownCaptures',false,'revision');add('collection.swsh.footprints',false,'revision');}
+   }
+   if(Number.isInteger(rev)&&['SCARLET','VIOLET'].includes(d.game)){
+    if(rev<1){add('sv.tealMaskClear',false,'revision');add('sv.ogreOustinHard',false,'revision');}
+    if(rev<2){add('sv.indigoDiskClear',false,'revision');add('sv.flyingTrialAll',false,'revision');}
+   }
+  }
+  // Sin las 8 medallas no se puede haber acabado la historia (juegos con gimnasios; Alola, Hisui y Z-A no los tienen).
+  if(typeof d.gameClear!=='boolean'&&Number.isInteger(d.badgesTotal)&&d.badgesTotal<8&&
+   !['SUN','MOON','ULTRASUN','ULTRAMOON','ARCEUS','ZA'].includes(d.game))add('story.gameClear',false,'badgesTotal');
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).

@@ -773,3 +773,22 @@ test('Amuletos Oval e Iris: con el bolsillo de objetos clave leído, su ausencia
  assert.equal(v({game:'X',keyItems:[]},'inventory.keyItem.631.present'),undefined);
  assert.equal(v({game:'X',keyItems:[{id:632,count:1}]},'inventory.keyItem.700.present'),undefined);
 });
+
+test('Revisión del guardado: sin la actualización del DLC, su contenido es un «no»',()=>{
+ const O=require('../src/engine/objectives.js'),v=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
+ assert.equal(v({game:'VIOLET',revision:'-Base'},'sv.tealMaskClear'),false);
+ assert.equal(v({game:'VIOLET',revision:'-TM'},'sv.tealMaskClear'),undefined);
+ assert.equal(v({game:'VIOLET',revision:'-TM'},'sv.indigoDiskClear'),false);
+ assert.equal(v({game:'VIOLET',revision:'-ID'},'sv.indigoDiskClear'),undefined);
+ assert.equal(v({game:'SHIELD',revision:'-IoA'},'swsh.crownClear'),false);
+ assert.equal(v({game:'SHIELD',revision:'-IoA'},'swsh.armorClear'),undefined);
+ assert.equal(v({game:'SHIELD'},'swsh.armorClear'),undefined);
+});
+
+test('Sin 8 medallas la historia no está acabada (salvo juegos sin gimnasios)',()=>{
+ const O=require('../src/engine/objectives.js'),v=d=>O.fromDiagnosis(d).filter(x=>x.id==='story.gameClear').map(x=>x.value);
+ assert.deepEqual(v({game:'SHIELD',badgesTotal:0}),[false]);
+ assert.deepEqual(v({game:'SHIELD',badgesTotal:8}),[]);
+ assert.deepEqual(v({game:'ULTRASUN',badgesTotal:0}),[]);
+ assert.deepEqual(v({game:'SHIELD',badgesTotal:0,gameClear:true}),[true]);
+});
