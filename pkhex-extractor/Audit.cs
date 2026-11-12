@@ -12,6 +12,14 @@ public static class Audit
     public const string EngineCommit = "96e33e7432d900e5345afdfd117eabfac43f5bbd";
     public static readonly JsonSerializerOptions JsonOptions = new() { WriteIndented = true };
 
+    // Capturados y total de cada Pokédex regional (especie con forma 0; capturado según la Pokédex de la partida).
+    // Entradas de todas las formas de cada especie (una especie cuenta en una Pokédex si alguna de sus formas está en ella).
+    private static (ushort sp, T[] p)[] Forms<T>(int max, Func<ushort, byte, T> entry, Func<ushort, byte> count) =>
+        Enumerable.Range(1, max).Select(i => (ushort)i).Select(sp => (sp, Enumerable.Range(0, Math.Max((int)count(sp), 1)).Select(f => entry(sp, (byte)f)).ToArray())).ToArray();
+
+    private static Dictionary<string, object> DexCounts<T>(SaveFile save, (ushort sp, T p)[] all, params (string name, Func<(ushort sp, T p), bool> inDex)[] dexes) =>
+        dexes.ToDictionary(d => d.name, d => { var req = all.Where(d.inDex).ToArray(); return (object)new { caught = req.Count(x => save.GetCaught(x.sp)), total = req.Length }; });
+
     private static object? ReadMedals(SaveFile save)
     {
         if (save is not SAV5B2W2 b2w2) return null;
@@ -160,6 +168,12 @@ public static class Audit
                 (int)System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(pt.General[(0x64EC + Chatter4.SIZE + 4 + i * 4)..])).ToArray() } : null,
             // Rojo/Azul/Verde/Amarillo: entradas del Salón de la Fama (wHallOfFameCount de pokered; una por cada Liga ganada).
             ["hallOfFame1"] = save is SAV1 hf1 ? new { count = (int)hf1.HallOfFameCount } : null,
+            // Escarlata/Púrpura y Z-A: capturados de cada Pokédex regional según los números de PersonalInfo9SV/9ZA de PKHeX
+            // (DexPaldea/DexKitakami/DexBlueberry de cualquier forma; DexIndex ≤ 232 = Luminalia, > 232 = Hiperespacio).
+            ["dex9"] = save is SAV9SV sv9 ? DexCounts<PersonalInfo9SV[]>(sv9, Forms(sv9.MaxSpeciesID, (sp, f) => PersonalTable.SV.GetFormEntry(sp, f), sp => PersonalTable.SV[sp].FormCount),
+                    ("paldea", x => x.p.Any(e => e.DexPaldea != 0)), ("kitakami", x => x.p.Any(e => e.DexKitakami != 0)), ("blueberry", x => x.p.Any(e => e.DexBlueberry != 0)))
+                : save is SAV9ZA za9 ? DexCounts<PersonalInfo9ZA[]>(za9, Forms(za9.MaxSpeciesID, (sp, f) => PersonalTable.ZA.GetFormEntry(sp, f), sp => PersonalTable.ZA[sp].FormCount),
+                    ("lumiose", x => x.p.Any(e => e.IsLumioseNative)), ("hyperspace", x => x.p.Any(e => e.IsHyperspaceNative))) : null,
             // Oro/Plata/Cristal: letras de Unown registradas (wUnownDex de pokecrystal, 26 bytes tras la Pokédex de vistos;
             // SAV2Offsets.PokedexSeen + 0x20 en PKHeX). Cada byte es una letra 1-26; 0 = hueco libre.
             ["unown2"] = save is SAV2 un2 ? new { forms = Enumerable.Range(0x20, 26).Select(i => (int)un2.Data[new SAV2Offsets(un2).PokedexSeen + i])

@@ -96,6 +96,10 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   Batalla en Esmeralda y la estrella de la Torre Batalla en Rubí/Zafiro; «Concursos Pokémon y sus recompensas principales»,
   los cinco cuadros del museo (solo se pintan al ganar un rango Maestro); en DB/PR, «Superar Torre Batalla y retos de
   concursos avanzados» exige la racha de 100 y un Superconcurso Maestro.
+- **Pokédex regionales de la 9.ª generación:** el motor cuenta, con `PersonalInfo9SV`/`PersonalInfo9ZA` de PKHeX, las especies
+  de Paldea, Noroteo y Arándano (cualquier forma con número en esa Pokédex) y de Luminalia e Hiperespacio, hasta el
+  `MaxSpeciesID` de la partida. «Completar Pokédex de Paldea, Noroteo y Arándano» exige las tres; la de Z-A, las dos. Una
+  partida pública de Escarlata da Paldea 398/398, Noroteo 100/191 y Arándano 62/220.
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.

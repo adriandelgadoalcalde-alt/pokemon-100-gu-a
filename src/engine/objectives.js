@@ -164,6 +164,8 @@
   // Rojo/Azul/Verde/Amarillo: revancha de la Liga = segunda entrada en el Salón de la Fama (wHallOfFameCount de pokered,
   // que crece con cada victoria ante el Campeón).
   if(Number.isInteger(d.hallOfFame1?.count))add('story.gen1.leagueRematch',d.hallOfFame1.count>=2,'hallOfFame1');
+  // Escarlata/Púrpura y Z-A: cada Pokédex regional completa (capturados = total según PersonalInfo9 de PKHeX).
+  if(d.dex9&&typeof d.dex9==='object')for(const [k,v]of Object.entries(d.dex9))if(Number.isInteger(v?.caught)&&Number.isInteger(v?.total)&&v.total>0)add('pokedex.gen9.'+k,v.caught>=v.total,'dex9');
   // Oro/Plata/Cristal: las 26 letras de Unown de la Pokédex (wUnownDex).
   if(Number.isInteger(d.unown2?.forms))add('pokedex.gen2.unown26',d.unown2.forms>=26,'unown2');
   // Rojo/Azul/Verde/Amarillo: Visor Silph (0x48), Poké Flauta (0x49) y MO01-MO05 (0xC4-0xC8) en la mochila o el PC

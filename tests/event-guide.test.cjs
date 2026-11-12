@@ -463,3 +463,8 @@ test('Rojo Fuego/Verde Hoja: Visor Silph, Poké Flauta y MO01-MO07',()=>{
  const O=require('../src/engine/objectives.js'),f=ids=>O.fromDiagnosis({game:'LEAFGREEN',integrity:{checksumsValid:true},inventory:[{pocket:'KeyItems',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.frlg.fieldItems')?.value;
  assert.equal(f([359,350,339,340,341,342,343,344,345]),true);assert.equal(f([359,350]),undefined);
 });
+
+test('Gen. IX: Pokédex regionales completas (capturados = total)',()=>{
+ const O=require('../src/engine/objectives.js'),f=(dex,id)=>O.fromDiagnosis({game:'SCARLET',dex9:dex}).find(x=>x.id===id)?.value;
+ assert.equal(f({paldea:{caught:400,total:400}},'pokedex.gen9.paldea'),true);assert.equal(f({kitakami:{caught:10,total:200}},'pokedex.gen9.kitakami'),false);
+});
