@@ -62,7 +62,8 @@
     {
       "id": "sinnoh-postliga",
       "titulo": "Diamante/Perla/Platino: revanchas, accesos finales y Torre Batalla de DP (los legendarios posliga ya se acreditan)",
-      "estado": "pendiente"
+      "estado": "bloqueado",
+      "motivo": "Platino: la revancha del Alto Mando y de Cintia usa StartTrainerBattle *_REMATCH sin SetTrainerFlag (pokeplatinum pokemon_league_*_room/scripts.s) y las de los líderes en el Área de Combate solo ponen banderas FLAG_DAILY_* que se borran cada día (battleground/scripts.s): no queda registro permanente. Diamante/Perla: pokediamond no tiene scripts con nombres y su FrontierData no guarda la racha récord de la Torre Batalla. Los legendarios posliga sí se acreditan."
     },
     {
       "id": "hoenn-postliga",
