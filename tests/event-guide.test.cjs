@@ -442,3 +442,8 @@ test('Rojo Fuego/Verde Hoja: revancha de la Liga (banderas del Alto Mando 2)',()
  const O=require('../src/engine/objectives.js'),f=fl=>O.fromDiagnosis({game:'FIRERED',field:{family:'FRLG',flags:fl}}).find(x=>x.id==='story.frlg.championRematch')?.value;
  assert.equal(f([735,736,737,738].map(i=>0x500+i)),true);assert.equal(f([0x500+740,0x500+735]),false);
 });
+
+test('Gen. II: Billete Barco y Pase (solo presencia)',()=>{
+ const O=require('../src/engine/objectives.js'),f=ids=>O.fromDiagnosis({game:'GOLD',integrity:{checksumsValid:true},inventory:[{pocket:'KeyItems',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.gen2.tickets')?.value;
+ assert.equal(f([0x44,0x86]),true);assert.equal(f([0x44]),undefined);
+});

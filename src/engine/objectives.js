@@ -173,6 +173,12 @@
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
    if([0x48,0x49,0xC4,0xC5,0xC6,0xC7,0xC8].every(id=>have.has(id)))add('inventory.gen1.fieldItems',true,'inventory');
   }
+  // Oro/Plata/Cristal: Billete Barco (0x44) y Pase del Magnetotrén (0x86) en el inventario (pokecrystal item_constants;
+  // objetos clave que no se pueden tirar). Solo se acredita la presencia.
+  if(['GOLD','SILVER','CRYSTAL'].includes(d.game)&&d.integrity?.checksumsValid===true&&Array.isArray(d.inventory)){
+   const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
+   if(have.has(0x44)&&have.has(0x86))add('inventory.gen2.tickets',true,'inventory');
+  }
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).

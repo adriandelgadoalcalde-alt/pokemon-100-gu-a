@@ -1061,6 +1061,35 @@
       }
     },
     {
+      "id": "gen2.mt_silver_open",
+      "families": [
+        "GS",
+        "C"
+      ],
+      "category": "Acceso",
+      "mission": "13",
+      "title": "Permiso del Prof. Oak para el Monte Plateado",
+      "placeName": {
+        "GS": "Pueblo Paleta",
+        "C": "Pueblo Paleta"
+      },
+      "requires": "Las 16 medallas de Johto y Kanto.",
+      "steps": [
+        "Con las 16 medallas, habla con el Prof. Oak en su laboratorio de Pueblo Paleta.",
+        "El guardia de la caseta de la Calle Victoria (Ruta 28) te deja pasar hacia el Monte Plateado."
+      ],
+      "conditions": {
+        "GS": {
+          "done": "EVENT_OPENED_MT_SILVER",
+          "meaning": "pokecrystal/pokegold OaksLab: el Prof. Oak abre el paso al Monte Plateado al ver las 16 medallas (setevent EVENT_OPENED_MT_SILVER; VictoryRoadGate deja pasar al guardia)."
+        },
+        "C": {
+          "done": "EVENT_OPENED_MT_SILVER",
+          "meaning": "pokecrystal/pokegold OaksLab: el Prof. Oak abre el paso al Monte Plateado al ver las 16 medallas (setevent EVENT_OPENED_MT_SILVER; VictoryRoadGate deja pasar al guardia)."
+        }
+      }
+    },
+    {
       "id": "gen2.red",
       "families": [
         "GS",

@@ -57,7 +57,7 @@ function masteryEvaluation(goal,g){
    if(byLabel(['SWORD','SHIELD'],/^Superar Torre Batalla/))auto='event.swsh.tower';
    if(byLabel(['ARCEUS'],/^Completar la Pokédex de Hisui/))auto='event.la.pokedex';
    if(byLabel(['ARCEUS'],/^Rango 10★ de investigación/))auto='la.rank10';
-   if(byLabel(['ARCEUS'],/^Capturar las 28 formas de Unown/))auto='la.unown';if(byLabel(['RED','BLUE','GREEN','YELLOW'],/^Visor Silph, Poké Flauta y MO/))auto='inventory.gen1.fieldItems';if(byLabel(['RED','BLUE','GREEN','YELLOW'],/^Revancha frente al Campeón/))auto='story.gen1.leagueRematch';if(byLabel(['FIRERED','LEAFGREEN'],/^Revancha frente al Campeón/))auto='story.frlg.championRematch';if(byLabel(['ARCEUS'],/^Derrotar a Volo y superar desafíos/))rule={all:[{fact:'la.arceusDefeated'},{fact:'la.eternalReverie'}]};
+   if(byLabel(['ARCEUS'],/^Capturar las 28 formas de Unown/))auto='la.unown';if(byLabel(['RED','BLUE','GREEN','YELLOW'],/^Visor Silph, Poké Flauta y MO/))auto='inventory.gen1.fieldItems';if(byLabel(['RED','BLUE','GREEN','YELLOW'],/^Revancha frente al Campeón/))auto='story.gen1.leagueRematch';if(byLabel(['GOLD','SILVER','CRYSTAL'],/^Acceso al Monte Plateado, billetes/))rule={all:[{fact:'event.gen2.mt_silver_open'},{fact:'inventory.gen2.tickets'}]};if(byLabel(['FIRERED','LEAFGREEN'],/^Revancha frente al Campeón/))auto='story.frlg.championRematch';if(byLabel(['ARCEUS'],/^Derrotar a Volo y superar desafíos/))rule={all:[{fact:'la.arceusDefeated'},{fact:'la.eternalReverie'}]};
    const zaMissions=(a,b)=>({all:Array.from({length:b-a+1},(_,i)=>({fact:'za.mission.'+String(a+i).padStart(2,'0')}))});
    if(byLabel(['ZA'],/^Completar misiones 40, 41 y 42/))rule=zaMissions(40,42);
    if(byLabel(['ZA'],/^Superar misiones principales 38–42/))rule=zaMissions(38,42);
