@@ -324,3 +324,12 @@ test('Alola: historia por pruebas con los cristales Z de la mochila (solo con in
  assert.equal(u.story.next.label,'Prueba de Mina (Feeristal Z)');
  assert.equal(G.analyze(d([807],false),'SUN').story.rows.find(r=>r.item===807).set,null); // sin integridad no se deduce
 });
+
+test('Rojo del Monte Plateado: Oro/Plata/Cristal por su bandera de objeto y HGSS por VAR_UNK_40FD',()=>{
+ const G=require('../src/engine/event-guide.js'),P=require('../src/saves/gen12-data.js'),H=require('../src/saves/gen4-data.js');
+ const f=P.families.C.flags,red=(flags)=>G.analyze({game:'CRYSTAL',events:{activeFlags:flags,work:[]}},'CRYSTAL').secrets.find(s=>s.id==='gen2.red').status;
+ assert.equal(red([f.EVENT_BEAT_ELITE_FOUR,f.EVENT_RED_IN_MT_SILVER]),'completado');
+ assert.equal(red([f.EVENT_BEAT_ELITE_FOUR]),'en curso');
+ const v=H.families.HGSS.vars.VAR_UNK_40FD,work=Array(256).fill(0);work[v]=1;
+ assert.equal(G.analyze({game:'SOULSILVER',events:{activeFlags:[],work}},'SOULSILVER').secrets.find(s=>s.id==='hgss.red').status,'completado');
+});

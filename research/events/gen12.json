@@ -1059,6 +1059,37 @@
           "meaning": "Los cuatro puzles resueltos."
         }
       }
+    },
+    {
+      "id": "gen2.red",
+      "families": [
+        "GS",
+        "C"
+      ],
+      "category": "Desafío",
+      "mission": "13",
+      "title": "Rojo en la cima del Monte Plateado",
+      "placeName": {
+        "GS": "Monte Plateado",
+        "C": "Monte Plateado"
+      },
+      "requires": "Las 16 medallas y el permiso del Prof. Oak.",
+      "steps": [
+        "Sube por el Monte Plateado hasta la sala del fondo, donde espera Rojo.",
+        "Al vencerle se ven los créditos."
+      ],
+      "conditions": {
+        "GS": {
+          "done": "EVENT_BEAT_ELITE_FOUR",
+          "doneAlso": "EVENT_RED_IN_MT_SILVER",
+          "meaning": "Rojo se oculta (EVENT_RED_IN_MT_SILVER) al vencerle (SilverCaveRoom3: disappear) y reaparece en cada entrada al Salón de la Fama (HallOfFame: clearevent). Con la Liga superada, la bandera activa prueba la victoria; si se repite la Liga después, vuelve a constar como pendiente."
+        },
+        "C": {
+          "done": "EVENT_BEAT_ELITE_FOUR",
+          "doneAlso": "EVENT_RED_IN_MT_SILVER",
+          "meaning": "Rojo se oculta (EVENT_RED_IN_MT_SILVER) al vencerle (SilverCaveRoom3: disappear) y reaparece en cada entrada al Salón de la Fama (HallOfFame: clearevent). Con la Liga superada, la bandera activa prueba la victoria; si se repite la Liga después, vuelve a constar como pendiente."
+        }
+      }
     }
   ],
   "excludeLanguages": [

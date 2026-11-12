@@ -1628,6 +1628,32 @@
           "meaning": "Banderas de victoria en rango Master por categoría."
         }
       }
+    },
+    {
+      "id": "hgss.red",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Desafío",
+      "mission": "13",
+      "title": "Rojo en la cima del Monte Plateado",
+      "placeName": {
+        "HGSS": "Monte Plateado"
+      },
+      "requires": "Las 16 medallas y el permiso del Prof. Oak para entrar en el Monte Plateado.",
+      "steps": [
+        "Sube por el Monte Plateado hasta la cima; Rojo te espera al fondo.",
+        "Al vencerle se ven los créditos; volver a la Liga hace que reaparezca para la revancha."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_UNK_40FD",
+            "atLeast": 1
+          },
+          "meaning": "pokeheartgold scr_seq_0107_D41R0108: al vencer a Rojo se pone VAR_UNK_40FD = 1 y ningún script la vuelve a 0."
+        }
+      }
     }
   ]
 }

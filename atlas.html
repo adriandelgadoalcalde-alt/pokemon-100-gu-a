@@ -28,6 +28,10 @@ function masteryEvaluation(goal,g){
    if(byLabel(['HEARTGOLD','SOULSILVER'],/^Huellas de oro/))auto='event.hgss.frontier_prints';
    if(byLabel(['PLATINUM'],/^Huellas de oro/))auto='event.pt.frontier_prints';
    if(byLabel(['HEARTGOLD','SOULSILVER'],/cámaras secretas/))auto='event.hgss.alph';
+   const red=['HEARTGOLD','SOULSILVER'].includes(g.id)?'event.hgss.red':'event.gen2.red';
+   if(byLabel(['HEARTGOLD','SOULSILVER','GOLD','SILVER','CRYSTAL'],/^Derrotar a Rojo en Monte Plateado/))auto=red;
+   if(byLabel(['HEARTGOLD','SOULSILVER','GOLD','SILVER','CRYSTAL'],/^Superar ocho gimnasios de Kanto y vencer a Rojo/))rule={all:[{fact:'story.badges.count',atLeast:16},{fact:red}]};
+   if(byLabel(['BLACK','WHITE'],/^Vencer a Ghechis y Equipo Plasma/))auto='story.gameClear';
    if(byLabel(['FIRERED','LEAFGREEN'],/Rubí y el Zafiro a Celio/))auto='event.gen3.frlg.sevii_gems';
    if(byLabel(['RUBY','SAPPHIRE'],/^50 victorias consecutivas en Torre Batalla/))auto='card.rs.battleTower';
    if(byLabel(['X','Y'],/Dama del Combate/))rule=anyEvent('pkhex.xy.maison');
