@@ -458,3 +458,8 @@ test('Alola: cristales Z de tipo, Arca de Zygarde y Pulsera Z',()=>{
  const z=Array.from({length:18},(_,i)=>807+i);
  assert.equal(f('MOON',[...z,847,797]),true);assert.equal(f('ULTRASUN',[...z,847,797]),undefined);assert.equal(f('ULTRASUN',[...z,847,933]),true);
 });
+
+test('Rojo Fuego/Verde Hoja: Visor Silph, Poké Flauta y MO01-MO07',()=>{
+ const O=require('../src/engine/objectives.js'),f=ids=>O.fromDiagnosis({game:'LEAFGREEN',integrity:{checksumsValid:true},inventory:[{pocket:'KeyItems',items:ids.map(id=>({id,count:1}))}]}).find(x=>x.id==='inventory.frlg.fieldItems')?.value;
+ assert.equal(f([359,350,339,340,341,342,343,344,345]),true);assert.equal(f([359,350]),undefined);
+});
