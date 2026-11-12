@@ -364,11 +364,12 @@
   // Diamante/Perla: récord de racha de la Torre Batalla (GameStats 0x35-0x3D de pokediamond, GetTrainerCardLevel).
   // Diamante/Perla/Platino: revancha del Alto Mando y de Cintia por el Salón de la Fama (pkhex-extractor/Audit.cs,
   // LeagueRematch4): una entrada posterior al encuentro de un Pokémon propio que solo existe tras la condición de la
-  // revancha (Nacional en DP, arresto de Helio en Platino) la prueba; sin Salón, sin Nacional o sin el arresto, aún no es posible.
+  // revancha (Nacional en DP, arresto de Helio en Platino) la prueba. Las dos condiciones llegan después de la primera Liga,
+  // así que con una sola entrada en el Salón (o sin Nacional o sin el arresto) la revancha aún no se ha hecho.
   if(['DIAMOND','PEARL','PLATINUM'].includes(d.game)&&d.leagueRematch4&&Number.isInteger(d.leagueRematch4.hallOfFame)){
    const lr=d.leagueRematch4,pt=d.game==='PLATINUM';
    if(lr.proof===true)add('battle.sinnoh.leagueRematch',true,'leagueRematch4');
-   else if(lr.hallOfFame===0||(pt&&lr.arrested===false)||(!pt&&lr.nationalDex===false))add('battle.sinnoh.leagueRematch',false,'leagueRematch4');
+   else if(lr.hallOfFame<=1||(pt&&lr.arrested===false)||(!pt&&lr.nationalDex===false))add('battle.sinnoh.leagueRematch',false,'leagueRematch4');
   }
   if(Array.isArray(d.tower4dp?.maxStreaks)&&d.tower4dp.maxStreaks.length)add('battle.dp.tower100',d.tower4dp.maxStreaks.some(v=>v>=100),'tower4dp');
   // Diamante Brillante/Perla Reluciente: 100 rivales seguidos en alguna modalidad de la Torre Batalla.

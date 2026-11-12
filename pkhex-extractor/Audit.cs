@@ -106,7 +106,21 @@ public static class Audit
                        : (pk.Version == GameVersion.D || pk.Version == GameVersion.P) && dpAreas.Contains(pk.MetLocation)))
             .Select(pk => (met: pk.MetDate!.Value, key: (pk.EncryptionConstant, pk.ID32))).ToList();
         bool proof = entries.Any(en => evidence.Any(ev => (en.date is { } dt && dt > ev.met) || en.mons.Contains(ev.key)));
-        return new { hallOfFame = total, arrested, nationalDex = s.NationalDex, evidence = evidence.Count, proof };
+        // Platino: el Diario (10 entradas de 112 bytes en 0x5720 del bloque general; journal.h) guarda los últimos días;
+        // la victoria contra Cintia en la revancha es el evento 12 (LOCATION_EVENT_BEAT_CHAMPION) con el entrenador 870
+        // (TRAINER_CHAMPION_CYNTHIA_REMATCH), empaquetado como lugar << 16 | entrenador << 6 | tipo (journal.c).
+        bool journal = false;
+        if (pt)
+        {
+            var g = s.General;
+            for (int i = 0; i < 10 && !journal; i++)
+                for (int k = 0; k < 4; k++)
+                {
+                    uint ev = System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(g[(0x5720 + i * 112 + 4 + k * 4)..]);
+                    if ((ev & 0x3F) == 12 && ((ev >> 6) & 0x3FF) == 870) { journal = true; break; }
+                }
+        }
+        return new { hallOfFame = total, arrested, nationalDex = s.NationalDex, evidence = evidence.Count, proof = proof || journal, journal };
     }
 
     public static string? GameId(SaveFile save) => save is SAV3FRLG ? null : save.Version switch
