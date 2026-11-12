@@ -141,7 +141,9 @@ public static class Audit
                 save is SAV4 s4 ? s4.GameClear : save is SAV5BW bw ? bw.EventWork.GetEventFlag(2400) || bw.SecondsToFame > 0 :
                 save is SAV5 or SAV6 or SAV7 ? save.SecondsToFame > 0 :
                 // Let's Go: FSYS_GAME_CLEAR = bandera de sistema 0 «Completed Main Story» (PKHeX flags_gg).
-                save is SAV7b lg ? lg.EventWork.GetFlag(EventVarType.System, 0) : null,
+                save is SAV7b lg ? lg.EventWork.GetFlag(EventVarType.System, 0) :
+                // DBPR: SYS_FLAG_GAME_CLEAR = bandera de sistema 5 (EvWork.SYSFLAG_INDEX de uDPR; la usa GetTrainerRank).
+                save is SAV8BS bsc ? bsc.FlagWork.GetSystemFlag(5) : null,
             ["nationalDex"] = save is SAV3 n3 ? n3.NationalDex : save is SAV4 n4 ? n4.NationalDex : save is SAV5 n5 ? n5.Zukan.IsNationalDexUnlocked :
                 save is SAV6XY nx ? nx.Zukan.IsNationalDexUnlocked : save is SAV6AO na ? na.Zukan.IsNationalDexUnlocked : null,
             ["badgesMask"] = save is SAV3 b3 ? b3.Badges : (int?)null,
@@ -150,6 +152,7 @@ public static class Audit
                 save is SAV4 d4 ? BitOperations.PopCount(d4.Badges) : save is SAV5 b5 ? BitOperations.PopCount((uint)b5.Misc.Badges) :
                 save is SAV6 b6 ? BitOperations.PopCount((uint)b6.Badges) :
                 save is SAV8SWSH b8 ? BitOperations.PopCount((uint)b8.Badges) :
+                save is SAV8BS b8b ? (int)b8b.MyStatus.BadgeCount :
                 // Let's Go: FSYS_GYM_CLEAR_* = banderas de sistema 12-19 (un líder cada una; PKHeX flags_gg).
                 save is SAV7b lgb ? Enumerable.Range(12, 8).Count(i => lgb.EventWork.GetFlag(EventVarType.System, i)) : null,
             // Diamante/Perla/Platino: banderas capturadas registradas en el PC del Subsuelo (UG_FlagsCaptured); la bandera
