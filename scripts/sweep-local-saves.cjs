@@ -24,7 +24,6 @@ const server=http.createServer((req,res)=>{
  const type={'.js':'text/javascript','.wasm':'application/wasm','.json':'application/json','.svg':'image/svg+xml','.html':'text/html','.webmanifest':'application/manifest+json'}[path.extname(file)]||'application/octet-stream';
  res.writeHead(200,{'Content-Type':type});res.end(fs.readFileSync(file));
 });
-const pick=(text,head)=>{const i=text.indexOf(head);return i<0?'':text.slice(i+head.length,i+head.length+160).split('\n').map(s=>s.trim()).filter(Boolean)[0]||'';};
 (async()=>{
  await new Promise(r=>server.listen(0,'127.0.0.1',r));
  const base='http://127.0.0.1:'+server.address().port;
@@ -48,10 +47,15 @@ const pick=(text,head)=>{const i=text.indexOf(head);return i<0?'':text.slice(i+h
     if(!read){fallos++;const body=await page.locator('body').innerText();
      console.log(`NO LEÍDO | ${rel} | ${(body.match(/[^\n]*(?:no |error|Selecciona)[^\n]*/i)||[''])[0].slice(0,160)}`);continue;}
     await page.locator('[data-view="mission"]').first().click().catch(()=>{});
-    const text=await page.locator('body').innerText();
-    const loc=read.location?`${read.location.name||'?'}${read.location.detail?' · '+read.location.detail:''}`:'(sin ubicación)';
+    const info=await page.evaluate(()=>{
+     const w=document.querySelector('#gen3-where'),g=game(store.game),goals=masteryGoals(g);
+     const sin=goals.filter(o=>!masteryProof(o,g));
+     return {where:w?w.innerText.split('\n').map(s=>s.trim()).filter(Boolean).slice(1,3).join(' · '):'',
+      total:goals.length,ok:goals.length-sin.length,sin:sin.map(o=>`[${o.tier}] ${o.label}`)};
+    });
     const ok=game&&st.game!==game?` | OJO juego ${st.game} ≠ carpeta ${game}`:'';
-    console.log(`${st.game} | ${rel} | dónde: ${loc} | medallas ${read.badgesTotal??'-'} | fin ${read.gameClear??'-'} | capturados ${read.caught?.length??'-'} | siguiente: ${pick(text,'Siguiente objetivo').slice(0,90)}${ok}${errors.length?' | ERRORES '+errors.join(' / '):''}`);
+    console.log(`${st.game} | ${rel} | ${info.where||'(sin panel de ubicación)'} | medallas ${read.badgesTotal??'-'} | acreditados ${info.ok}/${info.total}${ok}${errors.length?' | ERRORES '+errors.join(' / '):''}`);
+    for(const x of info.sin)console.log('    sin acreditar: '+x);
     if(ok||errors.length)fallos++;
    }catch(e){fallos++;console.log(`FALLO | ${rel} | ${String(e.message).split('\n')[0].slice(0,160)}`);}
    finally{await context.close();}
