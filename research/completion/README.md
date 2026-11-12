@@ -129,6 +129,10 @@ Pendiente con motivo (no se acredita solo para no adivinar):
   de Kanto, pokeheartgold scr_seq_0824_T10R0601) llega a 8, pero ni la Liga normal ni la reforzada dejan banderas de
   entrenador (`TRAINER_FLAG_BASE` 0x550): en las dos partidas del propietario, con la Liga ganada, están todas a cero. Solo se
   sabe que está disponible, no que se haya ganado.
+- **Minijuegos y retos de los DLC de Escarlata/Púrpura** (ogros de Noroteo, vuelo contrarreloj, fotos de Perrin, Liga
+  Arándano, Pecharunt): `SaveBlockAccessor9SV` no tiene bloques con nombre para ellos; habría que localizarlos en los datos
+  del juego, como se hizo con las misiones de Z-A.
+- **Peticiones de Leyendas Arceus y «las dos sendas» de Fero:** `SaveBlockAccessor8LA` no expone las peticiones; mismo caso.
 - **Expansiones de Escarlata/Púrpura:** las señales `FSYS_SCENARIO_GAME_CLEAR_SU1/SU2` existen, pero ninguna partida
   disponible tiene el DLC acabado para un contraste positivo.
 
