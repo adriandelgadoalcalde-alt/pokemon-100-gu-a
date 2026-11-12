@@ -37,6 +37,9 @@ function masteryEvaluation(goal,g){
    if(byLabel(['BLACK','WHITE'],/^Derrotar a Fero y Caril/))auto='battle.unova.subwayBosses';
    if(byLabel(['BLACK','WHITE','BLACK2','WHITE2'],/^Superar Metro Batalla/))auto='battle.unova.subwayBosses';
    if(byLabel(['X','Y'],/^Rango máximo del Castillo Batalla/))auto='battle.xy.chateauGrandDuke';
+   if(byLabel(['SUN','MOON','ULTRASUN','ULTRAMOON'],/^Superar el Árbol de Combate/))auto='battle.alola.treeSuper50';
+   if(byLabel(['BD','SP'],/^100 rivales consecutivos en Torre Batalla/))auto='battle.bdsp.tower100';
+   if(byLabel(['BD','SP'],/^Un Superconcurso rango Maestro/))auto='contest.bdsp.anyMaster';
    if(byLabel(['RED','BLUE','GREEN','YELLOW'],/^Explorar Cueva Celeste/))auto='event.gen1.mewtwo';
    if(byLabel(['FIRERED','LEAFGREEN'],/^Explorar Cueva Celeste/))rule={all:[{fact:'event.gen3.frlg.mewtwo'},{fact:'event.gen3.frlg.sevii_gems'}]};
    if(byLabel(['FIRERED','LEAFGREEN'],/Rubí y el Zafiro a Celio/))auto='event.gen3.frlg.sevii_gems';

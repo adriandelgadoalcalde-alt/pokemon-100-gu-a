@@ -152,6 +152,14 @@ public static class Audit
             ["subway5"] = save is SAV5 sub ? new { singleRecord = sub.BattleSubway.SingleRecord, doubleRecord = sub.BattleSubway.DoubleRecord,
                 superSingleRecord = sub.BattleSubway.SuperSingleRecord, superDoubleRecord = sub.BattleSubway.SuperDoubleRecord,
                 superMultiNpcRecord = sub.BattleSubway.SuperMultiNPCRecord } : null,
+            // Sol/Luna y Ultrasol/Ultraluna: rachas del Árbol de Combate (BattleTree7.GetTreeStreak de PKHeX), mismo formato que el
+            // lector propio (modalidad: normal y súper, actual y máxima).
+            ["battleTree"] = save is SAV7 s7 ? new { modes = Enumerable.Range(0, 4).Select(t => new {
+                normalCurrent = s7.BattleTree.GetTreeStreak(t, false, false), superCurrent = s7.BattleTree.GetTreeStreak(t, true, false),
+                normalBest = s7.BattleTree.GetTreeStreak(t, false, true), superBest = s7.BattleTree.GetTreeStreak(t, true, true) }).ToArray(),
+                source = "PKHeX.Core BattleTree7.GetTreeStreak" } : null,
+            // Diamante Brillante/Perla Reluciente: racha actual y máxima de cada modalidad de la Torre Batalla (BattleTowerWork8b).
+            ["tower8b"] = save is SAV8BS bs ? new { maxStreaks = bs.BattleTower.Records.Select(r => (long)Math.Max(r.RenshouCount, r.RenshouCountOld)).ToArray() } : null,
             ["progressSignals"] = ProgressSignals.Read(save),
             ["unparsed"] = unparsed,
             ["warnings"] = new[] { "Diagnóstico de estado, no certificación de legitimidad ni del 100 %.",

@@ -142,6 +142,15 @@
   // Metro Batalla: Fero y Caril, combate 49 de los súper trenes individual y doble (récord >= 49 en ambos).
   const sw=d.subway5;
   if(sw&&Number.isInteger(sw.superSingleRecord)&&Number.isInteger(sw.superDoubleRecord))add('battle.unova.subwayBosses',sw.superSingleRecord>=49&&sw.superDoubleRecord>=49,'subway5');
+  // Árbol de Combate: los Campeones Legendarios esperan en el supercombate 50 (WikiDex «Árbol de Combate»).
+  const tree=Array.isArray(d.battleTree?.modes)?d.battleTree.modes.slice(0,3).map(m=>m?.superBest).filter(Number.isInteger):[];
+  if(tree.length)add('battle.alola.treeSuper50',tree.some(v=>v>=50),'battleTree');
+  // Diamante Brillante/Perla Reluciente: rango Maestro de concursos = SYS_FLAG_CON_*_MASTER, banderas de sistema 9-13
+  // (PKHeX system_bdsp; bdsp-flags.js las sitúa tras las 4000 normales).
+  if(['BD','SP'].includes(d.game)&&Array.isArray(d.events?.activeFlags)&&d.events.systemOffset===4000)
+   add('contest.bdsp.anyMaster',[9,10,11,12,13].some(i=>d.events.activeFlags.includes(4000+i)),'events');
+  // Diamante Brillante/Perla Reluciente: 100 rivales seguidos en alguna modalidad de la Torre Batalla.
+  if(Array.isArray(d.tower8b?.maxStreaks)&&d.tower8b.maxStreaks.length)add('battle.bdsp.tower100',d.tower8b.maxStreaks.some(v=>v>=100),'tower8b');
   // X/Y: rango máximo del Castillo Batalla = Gran Duque (5).
   if(Number.isInteger(d.chateau?.rank))add('battle.xy.chateauGrandDuke',d.chateau.rank>=5,'chateau');
   // Coleccionables que el guardado registra en bloques con nombre de PKHeX (solo lectura; umbrales según Serebii).

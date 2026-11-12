@@ -357,3 +357,18 @@ test('Metro Batalla (Fero y Caril en el combate 49) y Castillo Batalla (Gran Duq
  assert.equal(f({game:'BLACK',subway5:{superSingleRecord:48,superDoubleRecord:60}},'battle.unova.subwayBosses'),false);
  assert.equal(f({game:'X',chateau:{rank:5}},'battle.xy.chateauGrandDuke'),true);assert.equal(f({game:'Y',chateau:{rank:4}},'battle.xy.chateauGrandDuke'),false);
 });
+
+test('Árbol de Combate: supercombate 50 en cualquier modalidad',()=>{
+ const O=require('../src/engine/objectives.js'),f=modes=>O.fromDiagnosis({game:'ULTRASUN',battleTree:{modes}}).find(x=>x.id==='battle.alola.treeSuper50')?.value;
+ assert.equal(f([{superBest:12},{superBest:50},{superBest:0},{superBest:999}]),true);assert.equal(f([{superBest:49},{superBest:3},{superBest:0},{superBest:999}]),false);
+});
+
+test('Diamante Brillante/Perla Reluciente: 100 rivales seguidos en alguna modalidad de la Torre Batalla',()=>{
+ const O=require('../src/engine/objectives.js'),f=s=>O.fromDiagnosis({game:'BD',tower8b:{maxStreaks:s}}).find(x=>x.id==='battle.bdsp.tower100')?.value;
+ assert.equal(f([3,100,0,0]),true);assert.equal(f([99,0,0,0]),false);assert.equal(f([]),undefined);
+});
+
+test('BDSP: rango Maestro de un Superconcurso por las banderas de sistema SYS_FLAG_CON_*_MASTER',()=>{
+ const O=require('../src/engine/objectives.js'),f=flags=>O.fromDiagnosis({game:'SP',events:{activeFlags:flags,systemOffset:4000}}).find(x=>x.id==='contest.bdsp.anyMaster')?.value;
+ assert.equal(f([4011]),true);assert.equal(f([4005]),false);
+});

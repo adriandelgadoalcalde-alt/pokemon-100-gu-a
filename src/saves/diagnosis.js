@@ -23,7 +23,7 @@
   if(Array.isArray(e.keyItems))result.keyItems=e.keyItems.filter(i=>i&&Number.isInteger(i.id)&&i.id>0&&Number.isInteger(i.count)&&i.count>0)
    .map(i=>({id:i.id,count:i.count}));
   if(e.extractor&&typeof e.extractor==='object')result.extractor={engine:String(e.extractor.engine||''),engineCommit:String(e.extractor.engineCommit||'')};
-  for(const key of ['integrity','events','medals','passport','battleTree','pokeathlon','pokewalker','field','namedBlocks','location','switchPosition','questWork9a','underground4','subway5','chateau'])
+  for(const key of ['integrity','events','medals','passport','battleTree','pokeathlon','pokewalker','field','namedBlocks','location','switchPosition','questWork9a','underground4','subway5','chateau','tower8b'])
    if(e[key]&&typeof e[key]==='object'&&!Array.isArray(e[key]))result[key]=JSON.parse(JSON.stringify(e[key]));
   return result;
  }
