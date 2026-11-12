@@ -17,7 +17,7 @@
       "id": "sv-dlc",
       "titulo": "Escarlata/Púrpura: Gran Pugna Académica (el resto de retos de Paldea y de los DLC ya se acredita)",
       "estado": "bloqueado",
-      "motivo": "En las constantes de los scripts Lua de la ROM solo existe FEVT_1ST_BATTLE_TOURNAMENT_LOST (derrota en el primer torneo); ninguna bandera con nombre registra la victoria. Las escenas .trsog usan hashes, sin texto.",
+      "motivo": "En las constantes de los scripts Lua de la ROM solo existe FEVT_1ST_BATTLE_TOURNAMENT_LOST (derrota en el primer torneo); ninguna bandera con nombre registra la victoria. Las escenas .trsog usan hashes, sin texto. 12/11/2026: las escenas del torneo (EV_COMMON_2090 a 2140 del Lua main_dynamic) solo escriben esa bandera; FSYS_SCENARIO_LAST_EPISODE_CLEAR es del epílogo de la expansión (S2_Sub042), no del torneo. La victoria la guarda el código C++ en un bloque con nombre hasheado: en main (Escarlata 3.0) solo aparecen school_tournament, Tournament0-2 y tournament_id, y ninguno es clave de bloque en las cuatro partidas; quedan 5.000-7.700 bloques sin nombre por partida. Hace falta un par de partidas antes/después de ganar el torneo para aislar el bloque por diferencia.",
       "nota": "12/11/2026: Ogre Oustin' en difícil = OniballoonSave_isCleardHard (0x17AD6C82); Liga Arándano y Terapagos = FSYS_SCENARIO_GAME_CLEAR_SU2; Ogerpon = SU1; Gama = captura de los dos paradoja de la versión (1020/1021 o 1022/1023); Pecharunt = captura de 1025. 12/11/2026: vuelo contrarreloj = FEVT_SDC02_HAGANE_CLEAR_ELEMENTARY/INTERMEDIANTE/ADVANCED/SUPERLATIVE (scripts Lua de la ROM; claves = mitad baja del FNV-1a de 64 bits; los cuatro bloques existen en la Púrpura pública 3.0)."
     },
     {
@@ -66,9 +66,9 @@
     {
       "id": "sinnoh-postliga",
       "titulo": "Diamante/Perla/Platino: revanchas del Alto Mando y de Cintia (los legendarios posliga y la Torre Batalla de DP ya se acreditan)",
-      "estado": "bloqueado",
-      "motivo": "Platino: la revancha del Alto Mando y de Cintia usa StartTrainerBattle *_REMATCH sin SetTrainerFlag (pokeplatinum pokemon_league_*_room/scripts.s) y las de los líderes en el Área de Combate solo ponen banderas FLAG_DAILY_* que se borran cada día (battleground/scripts.s): no queda registro permanente. Los legendarios posliga sí se acreditan.",
-      "nota": "12/11/2026: la Torre Batalla de DP SÍ queda guardada: GetTrainerCardLevel de pokediamond (arm9/asm/unk_02064E90.s) lee los récords GameStats 0x35/0x37/0x39/0x3B/0x3D (Record16 9-17 impares de PKHeX Record4) y da la estrella con alguno >= 100. Hecho battle.dp.tower100."
+      "estado": "hecho",
+      "motivo": "",
+      "nota": "12/11/2026: la Torre Batalla de DP SÍ queda guardada: GetTrainerCardLevel de pokediamond (arm9/asm/unk_02064E90.s) lee los récords GameStats 0x35/0x37/0x39/0x3B/0x3D (Record16 9-17 impares de PKHeX Record4) y da la estrella con alguno >= 100. Hecho battle.dp.tower100. 12/11/2026: la revancha se lee del guardado aunque las salas no dejen bandera: Salón de la Fama (bloque extra 0 en 0x20000; 30 entradas con equipo y fecha; pokeplatinum hall_of_fame_entries.h), condición de la revancha (Nacional en DP; FLAG_ARRESTED_CHARON_STARK_MOUNTAIN = 214 en Platino) y fechas de encuentro de los Pokémon. Sí: entrada del Salón posterior al encuentro de un Pokémon propio de la Zona de Combate (DP) o de Heatran de la Montaña Dura (Platino), o con él en el equipo; en Platino también el Diario (0x5720 del bloque general, evento 12 con el entrenador 870). No: una sola entrada en el Salón (las dos condiciones llegan después de la primera Liga), sin Nacional o sin el arresto. Partidas del propietario: Diamante y Perla «no» (1 entrada); Platino con 3 entradas y sin Heatran queda sin dato hasta capturarlo."
     },
     {
       "id": "hoenn-postliga",
@@ -110,7 +110,7 @@
       "id": "lgpe-revancha",
       "titulo": "Let's Go: revancha de la Liga de Kanto",
       "estado": "bloqueado",
-      "motivo": "Demostrado que el guardado no la registra: en script_amx.gfpak (705 AMX de Pawn de 64 bits, código compact; descompilados con lgpe_amxdec.py) la sala del campeón escribe en las victorias siguientes solo FE_WATARU_WIN y WK_SCENE_CHAMPION_REMATCH = 10, el mismo valor que tras la primera; las salas del Alto Mando ponen y borran FE_*_WIN. Ninguna otra variable de flagwork cambia."
+      "motivo": "Demostrado que el guardado no la registra: en script_amx.gfpak (705 AMX de Pawn de 64 bits, código compact; descompilados con lgpe_amxdec.py) la sala del campeón escribe en las victorias siguientes solo FE_WATARU_WIN y WK_SCENE_CHAMPION_REMATCH = 10, el mismo valor que tras la primera; las salas del Alto Mando ponen y borran FE_*_WIN. Ninguna otra variable de flagwork cambia. 12/11/2026: tampoco fuera de flagwork: las 1024 banderas de entrenador (0x22F0-0x236F, PKHeX EventWork7b) registran a los entrenadores vencidos, pero los combates con guion no las ponen (Alto Mando = trname 41-44 y revancha 414-417, texto español de trname.dat; ninguna de las tres partidas del propietario tiene marcada ninguna por debajo de 53) y los bloques sin nombre (_01, _15, _20 y Misc) no tienen forma de Salón de la Fama."
     }
   ]
 }
