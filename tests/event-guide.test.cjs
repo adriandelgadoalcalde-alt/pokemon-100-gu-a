@@ -532,3 +532,16 @@ test('Diplomas de HGSS por sus banderas (0x143 Johto, 0x144 Nacional)',()=>{
  assert.equal(v([0x143],'card.hgss.diplomaJohto'),true);assert.equal(v([0x143],'card.hgss.diplomaNational'),undefined);
  assert.equal(v([0x144],'card.hgss.diplomaNational'),true);
 });
+
+test('Leyendas Arceus: 94 peticiones del juego base y 122 con las del Despertar (sub_NNN = 255)',()=>{
+ const O=require('../src/engine/objectives.js'),pad=n=>String(n).padStart(3,'0');
+ const base=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,30,31,32,33,34,35,36,37,38,39,41,42,43,44,45,46,47,48,49,50,51,53,54,56,57,58,59,60,61,62,63,64,65,66,68,69,70,71,73,74,76,77,82,83,84,85,86,88,89,90,91,92,93,94,95,96,97,98,99,100,110,114,115,116,117,122,123];
+ const day=[201,202,203,204,205,206,207,208,250,252,256,257,258,...Array.from({length:15},(_,i)=>261+i)];
+ assert.equal(base.length,94);assert.equal(day.length,28);
+ const r=(ids,v=255)=>Object.fromEntries(ids.map(n=>[pad(n),v]));
+ const v=(req,id)=>O.fromDiagnosis({game:'ARCEUS',namedBlocks:{},requests8a:req}).find(x=>x.id===id)?.value;
+ assert.equal(v(r(base),'la.requests.base'),true);assert.equal(v(r(base),'la.requests.all'),false);
+ assert.equal(v({...r(base),...r(day)},'la.requests.all'),true);
+ assert.equal(v({...r(base),'006':1},'la.requests.base'),false);
+ assert.equal(v({},'la.requests.base'),undefined);
+});

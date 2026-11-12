@@ -4,12 +4,14 @@
     {
       "id": "la-peticiones",
       "titulo": "Leyendas Arceus: localizar en los datos del juego la tabla de peticiones y el bloque del guardado que la registra",
-      "estado": "pendiente"
+      "estado": "hecho",
+      "nota": "Bloques sub_NNN (255 = completada): 94 del juego base + 28 de la versión 1.1, contrastados con la ROM, WikiDex y cuatro partidas."
     },
     {
       "id": "la-fero-sendas",
       "titulo": "Leyendas Arceus: aclarar qué son «las dos sendas» de Fero y su dato en el guardado",
-      "estado": "pendiente"
+      "estado": "hecho",
+      "nota": "No hay «dos sendas» documentadas: son las 15 vías solitarias del Dojo (peticiones 108-122); se acreditan con las 122 peticiones."
     },
     {
       "id": "sv-dlc",

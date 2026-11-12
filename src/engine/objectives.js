@@ -292,6 +292,15 @@
    // combates sin fin de Fero (racha de 50; KCompletedEternalBattleReverie de PKHeX).
    if(typeof nb.KDefeatedArceus==='boolean')add('la.arceusDefeated',nb.KDefeatedArceus,'namedBlocks');
    if(typeof nb.KCompletedEternalBattleReverie==='boolean')add('la.eternalReverie',nb.KCompletedEternalBattleReverie,'namedBlocks');
+   // Peticiones: las 94 claves sub_NNN que crea cualquier partida (peticiones 1-94 de WikiDex, emparejadas por título con
+   // questlist_sub de la ROM) y las 28 que añade la actualización 1.1 (95-122: 13 del Despertar y las 15 vías solitarias
+   // de Fero). Contrastado con una partida nueva (94 claves), la fixture de PKHeX y dos partidas 1.1 (las mismas 28).
+   if(d.game==='ARCEUS'&&d.requests8a&&typeof d.requests8a==='object'){
+    const st=n=>d.requests8a[String(n).padStart(3,'0')],done=ids=>ids.every(n=>st(n)===255);
+    const base=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,30,31,32,33,34,35,36,37,38,39,41,42,43,44,45,46,47,48,49,50,51,53,54,56,57,58,59,60,61,62,63,64,65,66,68,69,70,71,73,74,76,77,82,83,84,85,86,88,89,90,91,92,93,94,95,96,97,98,99,100,110,114,115,116,117,122,123];
+    const daybreak=[201,202,203,204,205,206,207,208,250,252,256,257,258,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275];
+    if(base.some(n=>st(n)!==undefined)){add('la.requests.base',done(base),'namedBlocks');add('la.requests.all',done(base)&&done(daybreak),'namedBlocks');}
+   }
    if(num('KTotalUnownCaptured')!==null)add('la.unown',num('KTotalUnownCaptured')>=28,'namedBlocks');
    if(d.game==='ARCEUS'&&typeof d.gameClear!=='boolean'&&(nb.KDefeatedOriginDialga===true||nb.KDefeatedOriginPalkia===true))add('story.gameClear',true,'namedBlocks');
    const wisps=['00','01','02','03','04','05'].map(a=>num('KWispsFoundArea'+a));

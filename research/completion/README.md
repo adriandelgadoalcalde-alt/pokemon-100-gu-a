@@ -158,6 +158,17 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
 
+- **Peticiones de Leyendas Arceus (resuelto el 12/11/2026):** cada petición es un bloque de 1 byte cuya clave es el FNV-1a 64
+  (32 bits bajos) de `sub_NNN`; 255 = completada (0, 1, 10 y 20 son estados intermedios). Los títulos oficiales salen de
+  `bin/message/Spanish/common/questlist_sub` de la ROM y se emparejan con WikiDex «Petición»: las 94 claves que crea
+  cualquier partida son las peticiones 1-94 (93 por título exacto; la 33 interna es «Volutas de luz nocturna», la 22 de
+  WikiDex). Las 28 de la actualización 1.1 (95-122: 13 del Despertar y las 15 vías solitarias de Fero) son
+  `sub_201-208`, `250`, `252`, `256-258` y `261-275`: las mismas en las dos partidas 1.1 (la del propietario y una pública
+  «Completed»), ausentes en las 1.0 y 94 + 28 = 122, el total de WikiDex. El objetivo de Fero se corrige: lo documentado son
+  las 15 vías solitarias del Dojo (Garret, peticiones 108-122), no «dos sendas»; como el reparto exacto de las 28 claves no
+  está probado, se acredita con el total de las 122. La partida del propietario tiene las 94 del juego base completadas y
+  ninguna del Despertar.
+
 Pendiente con motivo (no se acredita solo para no adivinar):
 
 - **Torre Batalla de Diamante/Perla (racha de 100):** en pokediamond el bloque (`FrontierData`) solo guarda BP, banderas y
@@ -184,10 +195,6 @@ Pendiente con motivo (no se acredita solo para no adivinar):
 - **Minijuegos y retos de los DLC de Escarlata/Púrpura** (ogros de Noroteo, vuelo contrarreloj, fotos de Perrin, Liga
   Arándano, Pecharunt): `SaveBlockAccessor9SV` no tiene bloques con nombre para ellos; habría que localizarlos en los datos
   del juego, como se hizo con las misiones de Z-A.
-- **Peticiones de Leyendas Arceus y «las dos sendas» de Fero:** `SaveBlockAccessor8LA` no expone las peticiones. En la
-  partida del propietario, entre los bloques sin nombre de PKHeX, `48CE01F7` resulta ser los nombres de las cajas de objetos
-  y `B8E961AD` (251 bytes) un campo de bits sin estructura evidente; sin una partida con las peticiones completas o la tabla
-  del juego no se puede asignar.
 - **Expansiones de Escarlata/Púrpura:** las señales `FSYS_SCENARIO_GAME_CLEAR_SU1/SU2` existen, pero ninguna partida
   disponible tiene el DLC acabado para un contraste positivo.
 

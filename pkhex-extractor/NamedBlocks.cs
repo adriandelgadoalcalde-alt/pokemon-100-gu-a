@@ -138,4 +138,20 @@ public static class NamedBlocks
                 return "hex:" + Convert.ToHexString(data[..Math.Min(data.Length, 64)]);
         return System.Text.Encoding.ASCII.GetString(text);
     }
+    // Leyendas Arceus: estado de cada petición, bloque de 1 byte con clave FNV-1a 64 (32 bits bajos) de «sub_NNN»
+    // (255 = completada; 0, 1, 10, 20 = sin empezar o en curso). Solo se exportan las claves que existen en la partida.
+    public static SortedDictionary<string, int>? Requests8a(SaveFile save)
+    {
+        if (save is not SAV8LA la)
+            return null;
+        var r = new SortedDictionary<string, int>(StringComparer.Ordinal);
+        for (int i = 1; i < 400; i++)
+        {
+            ulong h = 0xCBF29CE484222645;
+            foreach (var c in $"sub_{i:000}") { h ^= (byte)c; h *= 0x100000001B3; }
+            if (la.Blocks.TryGetBlock((uint)h, out var block) && block.Data.Length == 1)
+                r[i.ToString("000")] = block.Data[0];
+        }
+        return r.Count == 0 ? null : r;
+    }
 }

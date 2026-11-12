@@ -232,6 +232,8 @@ public static class Audit
                 result["switchPosition"] = position;
             if (NamedBlocks.QuestWork9a(save) is { } quests)
                 result["questWork9a"] = quests;
+            if (NamedBlocks.Requests8a(save) is { } requests)
+                result["requests8a"] = requests;
         }
         return result;
     }
