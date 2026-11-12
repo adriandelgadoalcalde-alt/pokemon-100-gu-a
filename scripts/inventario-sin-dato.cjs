@@ -55,7 +55,7 @@ const server=http.createServer((req,res)=>{
      masteryCache.delete(g.id);
      const all=PokemonObjectives.fromDiagnosis(evidenceFor(g));
      try{return masteryGoals(g).map(o=>{const e=masteryEvaluation(o,g);
-     const v=e.status==='COMPLETED_VERIFIED'||e.status==='COMPLETED_MANUAL'?'hecho':e.verification?.value===false?'no':'sin-dato';return [o.id,v,o.label,(e.verification?.facts||[]).filter(f=>!f.startsWith('manual.')).map(id=>id+'='+JSON.stringify(all.filter(x=>x.id===id).map(x=>x.value))).join(',')];});}finally{PokemonObjectives.evaluate=orig;masteryCache.delete(g.id);}});
+     const v=e.status==='COMPLETED_VERIFIED'||e.status==='COMPLETED_MANUAL'?'hecho':e.verification?.value===false?'no':'sin-dato';return [o.id,v+(v==='sin-dato'?'/'+e.status:''),o.label,(e.verification?.facts||[]).filter(f=>!f.startsWith('manual.')).map(id=>id+'='+JSON.stringify(all.filter(x=>x.id===id).map(x=>[x.value,x.type,x.validation]))).join(',')];});}finally{PokemonObjectives.evaluate=orig;masteryCache.delete(g.id);}});
     for(const [id,v,label,facts] of info)console.log(['GOAL',st.game,id,v,label,facts].join('\t'));
     if(errors.length)fallos++;
    }catch(e){fallos++;console.log(`FALLO | ${rel} | ${String(e.message).split('\n')[0].slice(0,160)}`);}
