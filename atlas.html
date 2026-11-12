@@ -54,7 +54,7 @@ function masteryEvaluation(goal,g){
    if(byLabel(['DIAMOND','PEARL'],/^Un Superconcurso rango Maestro/))rule=anyEvent('pkhex.dp.contests');
    if(byLabel(['PLATINUM'],/^Un Superconcurso rango Maestro/))rule=anyEvent('pt.contest_masters');
    if(byLabel(['LETGOP','LETGOE'],/^Desafiar a Rojo/))auto='event.pkhex.lgpe.red';
-   if(byLabel(['LETGOP','LETGOE'],/^Título de Gran Maestro/))auto='event.pkhex.lgpe.masters';
+   if(byLabel(['LETGOP','LETGOE'],/^Título de Gran Maestro/))auto='event.pkhex.lgpe.masters';if(byLabel(['LETGOP','LETGOE'],/^Vencer a los entrenadores Maestros/))auto='event.pkhex.lgpe.masters';if(byLabel(['LETGOP','LETGOE'],/^Acceso a Cueva Celeste/))rule={all:[{fact:'event.pkhex.lgpe.mewtwo'},{fact:'event.pkhex.lgpe.techniques'}]};
    if(byLabel(['SWORD','SHIELD'],/^Superar Torre Batalla/))auto='event.swsh.tower';
    if(byLabel(['ARCEUS'],/^Completar la Pokédex de Hisui/))auto='event.la.pokedex';
    if(byLabel(['ARCEUS'],/^Rango 10★ de investigación/))auto='la.rank10';
