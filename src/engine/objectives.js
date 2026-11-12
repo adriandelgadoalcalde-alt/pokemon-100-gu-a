@@ -100,6 +100,8 @@
   const facts=[],add=(id,value,field)=>facts.push({id,value,gameId:d.game,type:'direct',
    validation:validated||d.integrity?.verifiedFields?.includes(field)?'verified':'unverified',source:{kind:'save_field',engine:d.extractor?.engine||'PokemonSaveReader'}});
   for(const id of d.caught||[])add(`pokedex.caught.${id}`,true,'caught');
+  // La lista de capturados es la Pokédex entera leída (PKHeX GetCaught de 1 al máximo): lo que no está, no está capturado.
+  if(Array.isArray(d.caught)){const caught=new Set(d.caught);for(let id=1;id<=1025;id++)if(!caught.has(id))add(`pokedex.caught.${id}`,false,'caught');}
   for(const id of d.seen||[])add(`pokedex.seen.${id}`,true,'seen');
   const completion=(typeof module==='object'&&module.exports?require('./completion.js'):root.PokemonCompletion)?.dexStatus(d);
   if(completion)for(const [key,status]of Object.entries(completion)){
@@ -121,6 +123,10 @@
   if(typeof d.nationalDex==='boolean')add('pokedex.nationalUnlocked',d.nationalDex,'nationalDex');
   if(Number.isInteger(d.badgesTotal??d.badges))add('story.badges.count',d.badgesTotal??d.badges,'badgesTotal');
   for(const item of d.keyItems||[])if(item.count>0)add(`inventory.keyItem.${item.id}.present`,true,'keyItems');
+  // Amuleto Oval (631) e Iris (632): objetos clave que no se pueden tirar, guardar ni gastar; con el bolsillo leído, su
+  // ausencia es un «no». Los demás objetos clave siguen acreditándose solo por su presencia (algunos se entregan o gastan).
+  if(Array.isArray(d.keyItems)&&d.keyItems.some(i=>i?.count>0))for(const id of [631,632])
+   if(!d.keyItems.some(i=>i?.id===id&&i.count>0))add(`inventory.keyItem.${id}.present`,false,'keyItems');
   // Esmeralda: estrella del Frente Batalla = plata y oro de las 7 instalaciones (HasAllFrontierSymbols, pokeemerald).
   if(d.field&&Array.isArray(d.field.flags)&&(d.field.family?d.field.family==='E':d.game==='EMERALD')){
    const G=typeof module==='object'&&module.exports?require('../saves/gen3-data.js'):root.PokemonGen3Data;
@@ -454,6 +460,8 @@
   let analysis=null;try{analysis=guide?.analyze(d,d.game);}catch{}
   if(analysis&&!analysis.mismatch)for(const secret of analysis.secrets||[]){
    if(secret.status==='completado')add('event.'+secret.id,true,'events');
+   // Todas sus banderas de cierre leídas y alguna sin poner: el secreto no está completo (no hay nada que adivinar).
+   else if(secret.status!=='calculado'&&secret.done?.length&&secret.done.every(c=>typeof c.set==='boolean'))add('event.'+secret.id,false,'events');
    for(const cond of secret.done||[])if(typeof cond.set==='boolean'&&cond.flag)add(`event.${secret.id}.${cond.flag}`,cond.set,'events');
   }
   const signal=(typeof module==='object'&&module.exports?require('../saves/diagnosis.js'):root.PokemonDiagnosis)?.documentedClear(d);

@@ -758,3 +758,18 @@ test('Escarlata/Púrpura: Gran Pugna Académica por la llamada de Cinio y los so
  assert.equal(f([s('story.paldea.clear',true),s('postgame.raidSurvey4',false),s('postgame.raidSurvey6',false),s('postgame.raidRelease6',false)]),undefined);
  assert.equal(f([s('story.paldea.clear',false),s('postgame.raidSurvey4',false)]),false);
 });
+
+test('Pokédex leída entera: lo que no figura como capturado es un «no»; sin Pokédex leída, sin dato',()=>{
+ const O=require('../src/engine/objectives.js'),v=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
+ assert.equal(v({game:'SHIELD',caught:[25]},'pokedex.caught.25'),true);
+ assert.equal(v({game:'SHIELD',caught:[25]},'pokedex.caught.898'),false);
+ assert.equal(v({game:'SHIELD'},'pokedex.caught.898'),undefined);
+});
+
+test('Amuletos Oval e Iris: con el bolsillo de objetos clave leído, su ausencia es un «no»',()=>{
+ const O=require('../src/engine/objectives.js'),v=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
+ assert.equal(v({game:'X',keyItems:[{id:632,count:1}]},'inventory.keyItem.632.present'),true);
+ assert.equal(v({game:'X',keyItems:[{id:632,count:1}]},'inventory.keyItem.631.present'),false);
+ assert.equal(v({game:'X',keyItems:[]},'inventory.keyItem.631.present'),undefined);
+ assert.equal(v({game:'X',keyItems:[{id:632,count:1}]},'inventory.keyItem.700.present'),undefined);
+});
