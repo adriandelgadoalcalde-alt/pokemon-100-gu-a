@@ -6,7 +6,7 @@
     "fase": 2,
     "orden": 210,
     "cuando": "Tras conseguir Buceo (MO08, de Máximo en Algaria); se puede antes o después de la Liga.",
-    "requisitos": "Abre la Cámara Sellada (bajo el agua en la Ruta 134) con Wailord y Relicanth en el equipo (en Esmeralda, Relicanth primero y Wailord último). Luego, en las Ruinas Desierto (Ruta 111), sigue las instrucciones en braille de la pared.",
+    "requisitos": "Abre la Cámara Sellada (bajo el agua en la Ruta 134) con Wailord y Relicanth en el equipo (en Esmeralda, Relicanth primero y Wailord último). Luego, en las Ruinas del Desierto (Ruta 111), sigue las instrucciones en braille de la pared.",
     "consejo": "Regirock nivel 40: lleva Pokémon para debilitarlo y muchas Ultra Balls."
    },
    "378": {
@@ -99,11 +99,11 @@
     "RSE_REGIS"
    ],
    "384": {
-    "fase": 2,
-    "orden": 205,
-    "cuando": "Después del Hall de la Fama (en la historia solo lo despiertas).",
-    "requisitos": "Vuelve a la cima del Pilar Celeste (Ruta 131) con la Bici Carrera.",
-    "consejo": "Rayquaza nivel 70: es el primero que conviene capturar porque lo pide el evento de Kyogre/Groudon."
+    "fase": 0,
+    "orden": 175,
+    "cuando": "Durante la historia, tras calmar a Groudon y Kyogre en Arrecípolis (antes de la octava medalla o en cualquier momento después).",
+    "requisitos": "Vuelve a la cima del Pilar Celeste (Ruta 131) con la Bici Carrera para los suelos frágiles.",
+    "consejo": "Rayquaza nivel 70: captúralo antes de los eventos de Kyogre y Groudon de la posliga, que lo piden."
    },
    "381": {
     "fase": 2,
@@ -148,20 +148,20 @@
     "fase": 0,
     "orden": 155,
     "cuando": "Durante la historia, con Surf.",
-    "requisitos": "Central Energía: entra surfeando por la Ruta 10 (al norte de Pueblo Lavanda).",
+    "requisitos": "Central de Energía: entra surfeando por la Ruta 10 (al norte de Pueblo Lavanda).",
     "consejo": "Zapdos nivel 50."
    },
    "146": {
     "fase": 0,
     "orden": 170,
     "cuando": "Tras la medalla de Isla Canela, al viajar a las Islas Sete (Isla Prima).",
-    "requisitos": "Mt. Ascuas en Isla Prima: sube a la cima con Fuerza y Golpe Roca.",
+    "requisitos": "Monte Ascuas en Isla Prima: sube a la cima con Fuerza y Golpe Roca.",
     "consejo": "Moltres nivel 50."
    },
    "150": {
     "fase": 2,
     "orden": 250,
-    "cuando": "Después del Hall de la Fama y de completar las Islas Sete (Rubí y Zafiro entregados).",
+    "cuando": "Después del Hall de la Fama y de activar la máquina de la Red de Celio (Rubí y Zafiro entregados en las Islas Sete).",
     "requisitos": "Cueva Celeste, al noroeste de Ciudad Celeste (Surf).",
     "consejo": "Mewtwo nivel 70: lleva Ultra Balls y algo que lo duerma."
    },
@@ -195,7 +195,7 @@
     "fase": 0,
     "orden": 150,
     "cuando": "Durante la historia, en cuanto tengas Surf.",
-    "requisitos": "Central Energía: surfea por el río de la Ruta 10, al norte de Pueblo Lavanda, y busca a Zapdos al fondo.",
+    "requisitos": "Central de Energía: surfea por el río de la Ruta 10, al norte de Pueblo Lavanda, y busca a Zapdos al fondo.",
     "consejo": "Zapdos nivel 50."
    },
    "144": {
@@ -553,15 +553,15 @@
    "145": {
     "fase": 2,
     "orden": 226,
-    "cuando": "Ya en Kanto.",
-    "requisitos": "Ruta 10, a la entrada de la Central Energía (Surf).",
+    "cuando": "En Kanto, después de conseguir las 8 medallas de Kanto.",
+    "requisitos": "Ruta 10, en la puerta de la Central de Energía (Surf).",
     "consejo": "Zapdos nivel 50."
    },
    "146": {
     "fase": 2,
     "orden": 235,
     "cuando": "Con las 16 medallas (acceso al Monte Plateado).",
-    "requisitos": "Cueva del Monte Plateado.",
+    "requisitos": "Cueva Monte Plateado (Monte Plateado).",
     "consejo": "Moltres nivel 50."
    },
    "150": {
@@ -639,15 +639,15 @@
    "145": {
     "fase": 2,
     "orden": 226,
-    "cuando": "Ya en Kanto.",
-    "requisitos": "Ruta 10, a la entrada de la Central Energía (Surf).",
+    "cuando": "En Kanto, después de conseguir las 8 medallas de Kanto.",
+    "requisitos": "Ruta 10, en la puerta de la Central de Energía (Surf).",
     "consejo": "Zapdos nivel 50."
    },
    "146": {
     "fase": 2,
     "orden": 235,
     "cuando": "Con las 16 medallas (acceso al Monte Plateado).",
-    "requisitos": "Cueva del Monte Plateado.",
+    "requisitos": "Cueva Monte Plateado (Monte Plateado).",
     "consejo": "Moltres nivel 50."
    },
    "150": {
@@ -733,7 +733,7 @@
     "fase": 0,
     "orden": 190,
     "cuando": "Final de la historia, en el Castillo de N.",
-    "requisitos": "Reshiram se une a ti en el Palacio de N antes del combate contra N; hay que capturarlo para seguir (si lo debilitas, el combate se repite).",
+    "requisitos": "Antes del combate contra N en su palacio, el Orbe Claro (te lo da Aloe en Ciudad Esmalte tras el Castillo Ancestral) despierta a Reshiram: hay que capturarlo para seguir. Si tienes el equipo y las cajas llenos, aparece después en la Torre Duodraco.",
     "consejo": "Reshiram nivel 50."
    },
    "641": {
@@ -792,7 +792,7 @@
     "fase": 0,
     "orden": 190,
     "cuando": "Final de la historia, en el Castillo de N.",
-    "requisitos": "Zekrom se une a ti en el Palacio de N antes del combate contra N; hay que capturarlo para seguir.",
+    "requisitos": "Antes del combate contra N en su palacio, el Orbe Oscuro (te lo da Aloe en Ciudad Esmalte tras el Castillo Ancestral) despierta a Zekrom: hay que capturarlo para seguir. Si tienes el equipo y las cajas llenos, aparece después en la Torre Duodraco.",
     "consejo": "Zekrom nivel 50."
    },
    "642": {
@@ -858,7 +858,7 @@
     "fase": 2,
     "orden": 230,
     "cuando": "Después del Hall de la Fama.",
-    "requisitos": "Ruinas Subterráneas del Túnel Yakón: desde el centro, 6 pasos abajo y 9 a la derecha, y pulsa abajo para abrir la Sala Pico Roca.",
+    "requisitos": "Activa la Clave Pico Roca en el sistema de claves (Teselia Link) y entra en las Ruinas Subterráneas del Túnel Yakón: desde el centro, 6 pasos abajo y 9 a la derecha, y pulsa abajo para abrir la Sala Pico Roca.",
     "consejo": "Regirock nivel 65."
    },
    "486": {
@@ -885,8 +885,8 @@
    "644": {
     "fase": 2,
     "orden": 260,
-    "cuando": "Después del Hall de la Fama.",
-    "requisitos": "Torre Duodraco: Zekrom te espera en la cima.",
+    "cuando": "Después del Hall de la Fama: entra en el Palacio de N desde la Calle Victoria, vence a N y a su Zekrom y te da el Orbe Oscuro.",
+    "requisitos": "Lleva el Orbe Oscuro a lo alto de la Torre Duodraco para invocar a Zekrom.",
     "consejo": "Zekrom nivel 70; captúralo antes de Kyurem."
    },
    "646": {
@@ -965,7 +965,7 @@
     "fase": 2,
     "orden": 230,
     "cuando": "Después del Hall de la Fama.",
-    "requisitos": "Ruinas Subterráneas del Túnel Yakón: desde el centro, 6 pasos abajo y 9 a la derecha, y pulsa abajo para abrir la Sala Pico Roca.",
+    "requisitos": "Activa la Clave Pico Roca en el sistema de claves (Teselia Link) y entra en las Ruinas Subterráneas del Túnel Yakón: desde el centro, 6 pasos abajo y 9 a la derecha, y pulsa abajo para abrir la Sala Pico Roca.",
     "consejo": "Regirock nivel 65."
    },
    "486": {
@@ -992,8 +992,8 @@
    "643": {
     "fase": 2,
     "orden": 260,
-    "cuando": "Después del Hall de la Fama.",
-    "requisitos": "Torre Duodraco: Reshiram te espera en la cima.",
+    "cuando": "Después del Hall de la Fama: entra en el Palacio de N desde la Calle Victoria, vence a N y a su Reshiram y te da el Orbe Claro.",
+    "requisitos": "Lleva el Orbe Claro a lo alto de la Torre Duodraco para invocar a Reshiram.",
     "consejo": "Reshiram nivel 70; captúralo antes de Kyurem."
    },
    "646": {
@@ -1167,15 +1167,15 @@
    "486": {
     "fase": 2,
     "orden": 240,
-    "cuando": "Con Regirock, Regice y Registeel en el equipo (tras capturar los tres).",
-    "requisitos": "Cueva Insular de día, con Regirock, Regice y Registeel en el equipo y Regice con mote y un objeto helado.",
+    "cuando": "De día, tras capturar o vencer a Groudon/Kyogre y con Regirock, Regice y Registeel en el equipo.",
+    "requisitos": "Cueva Insular (Ruta 105). Regice debe tener mote y llevar un Porcehelado, una Bola de Nieve o un Antiderretir.",
     "consejo": "Nivel 50."
    },
    "250": {
     "fase": 2,
     "orden": 245,
     "cuando": "Después del Hall de la Fama.",
-    "requisitos": "Malvamar: lleva el escáner del sótano al capitán de Ciudad Portual, que te da el Cascabel Claro; tócalo en la cubierta.",
+    "requisitos": "Malvamar: lleva el escáner del sótano al capitán de Ciudad Portual, que te da el Cascabel Claro; tócalo en la cubierta. Necesitas la Campana Clara.",
     "consejo": "Nivel 50."
    },
    "249": {
@@ -1204,7 +1204,7 @@
     "fase": 2,
     "orden": 231,
     "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
-    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 04:00 a 19:59.",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 04:00 a 19:59. Mesprit solo está entre las 4:00 y las 20:00.",
     "consejo": "Nivel 50."
    },
    "482": {
@@ -1240,21 +1240,21 @@
     "fase": 2,
     "orden": 250,
     "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
-    "requisitos": "Llanura Sinnombre junto a Pueblo Oromar, con tres Pokémon de esfuerzo máximo; domingo, miércoles y viernes.",
+    "requisitos": "Llanura Sinnombre junto a Pueblo Oromar, con tres Pokémon de esfuerzo máximo; domingo, miércoles y viernes. Solo aparece los miércoles, viernes y domingos.",
     "consejo": "Nivel 50."
    },
    "639": {
     "fase": 2,
     "orden": 251,
     "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
-    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; martes y sábado.",
+    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; martes y sábado. Solo aparece los martes y sábados.",
     "consejo": "Nivel 50."
    },
    "640": {
     "fase": 2,
     "orden": 252,
     "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
-    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; lunes y jueves.",
+    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; lunes y jueves. Solo aparece los lunes y jueves.",
     "consejo": "Nivel 50."
    },
    "643": {
@@ -1354,8 +1354,8 @@
    "486": {
     "fase": 2,
     "orden": 240,
-    "cuando": "Con Regirock, Regice y Registeel en el equipo (tras capturar los tres).",
-    "requisitos": "Cueva Insular de día, con Regirock, Regice y Registeel en el equipo y Regice con mote y un objeto helado.",
+    "cuando": "De día, tras capturar o vencer a Groudon/Kyogre y con Regirock, Regice y Registeel en el equipo.",
+    "requisitos": "Cueva Insular (Ruta 105). Regice debe tener mote y llevar un Porcehelado, una Bola de Nieve o un Antiderretir.",
     "consejo": "Nivel 50."
    },
    "250": {
@@ -1370,7 +1370,7 @@
     "fase": 2,
     "orden": 245,
     "cuando": "Después del Hall de la Fama.",
-    "requisitos": "Malvamar: lleva el escáner del sótano al capitán de Ciudad Portual, que te da el Cascabel Oleaje; tócalo en el sótano submarino.",
+    "requisitos": "Malvamar: lleva el escáner del sótano al capitán de Ciudad Portual, que te da el Cascabel Oleaje; tócalo en el sótano submarino. Necesitas la Campana Oleaje.",
     "consejo": "Nivel 50."
    },
    "485": {
@@ -1391,7 +1391,7 @@
     "fase": 2,
     "orden": 231,
     "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
-    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 04:00 a 19:59.",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 04:00 a 19:59. Mesprit solo está entre las 4:00 y las 20:00.",
     "consejo": "Nivel 50."
    },
    "482": {
@@ -1427,21 +1427,21 @@
     "fase": 2,
     "orden": 250,
     "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
-    "requisitos": "Llanura Sinnombre junto a Pueblo Oromar, con tres Pokémon de esfuerzo máximo; domingo, miércoles y viernes.",
+    "requisitos": "Llanura Sinnombre junto a Pueblo Oromar, con tres Pokémon de esfuerzo máximo; domingo, miércoles y viernes. Solo aparece los miércoles, viernes y domingos.",
     "consejo": "Nivel 50."
    },
    "639": {
     "fase": 2,
     "orden": 251,
     "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
-    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; martes y sábado.",
+    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; martes y sábado. Solo aparece los martes y sábados.",
     "consejo": "Nivel 50."
    },
    "640": {
     "fase": 2,
     "orden": 252,
     "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
-    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; lunes y jueves.",
+    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; lunes y jueves. Solo aparece los lunes y jueves.",
     "consejo": "Nivel 50."
    },
    "644": {
