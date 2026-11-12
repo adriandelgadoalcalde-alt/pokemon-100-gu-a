@@ -23,8 +23,9 @@
     {
       "id": "sv-dlc-fin",
       "titulo": "Escarlata/Púrpura: contrastar FSYS_SCENARIO_GAME_CLEAR_SU2 con una partida con El disco índigo acabado",
-      "estado": "bloqueado",
-      "motivo": "SU1 ya está contrastado (partida pública de Escarlata: verdadero, con Ogerpon y los tres Leales capturados y Noroteo 200/200; otras: falso o bloque ausente). Ninguna partida disponible tiene El disco índigo acabado; SU2 se usa por el nombre de PKHeX, sin contraste positivo."
+      "estado": "hecho",
+      "motivo": "",
+      "nota": "12/11/2026: contrastado con el código en lugar de con una partida (Project Pokémon prohíbe compartir partidas de SV): en el Lua (unluac --disassemble, nombres de PokeDocs) FSYS_SCENARIO_GAME_CLEAR_SU2 lo pone la rutina de fin de juego junto a la de FSYS_SCENARIO_GAME_CLEAR (contrastada con partidas reales): SystemCommand.ResetWeather, ResetGameTime, PokemonCommand.PokePartyRecover, la bandera y SystemCommand.Report (guardado). La tabla de escenas finales de al lado es common_1320 / sdc01_0490 / sdc02_0350 (final de El disco índigo) / s2_side01_0200."
     },
     {
       "id": "usum-rainbow",
