@@ -348,7 +348,7 @@
     ],
     "check": "Medalla Volcán y regalos de fósiles revisados.",
     "pitfalls": [
-      "Las Islas Sete pertenecen a Rojo Fuego/Verde Hoja; no hay un viaje a ellas en los originales de generación I."
+      "Las Archi7 pertenecen a Rojo Fuego/Verde Hoja; no hay un viaje a ellas en los originales de generación I."
     ],
     "sources": [
       "https://www.serebii.net/rb/gift.shtml",
@@ -1367,7 +1367,7 @@
     "steps": [
       "Desde Ruta 10 usa Surcaaguas para llegar a la Central de Energía y recorrerla hasta Zapdos.",
       "Para Articuno entra en Islas Espuma y usa Empuje para mover los bloques y detener las corrientes. En Let’s Go se usan técnicas secretas; no necesitas enseñar las antiguas MO.",
-      "Busca a Moltres en Calle Victoria. Monte Ascuas e Islas Sete no forman parte de estos juegos.",
+      "Busca a Moltres en Calle Victoria. Monte Ascuas e Archi7 no forman parte de estos juegos.",
       "Después de la Liga entra en Cueva Celeste desde Ciudad Celeste. Recorre el laberinto hasta Mewtwo y prepara el combate con límite de tiempo previo a la fase de captura.",
       "Tras capturarlo vuelve a la cueva para el encuentro de postgame con la entrenadora destacada y su recompensa. No lo confundas con la primera captura de Mewtwo."
     ],
@@ -2287,7 +2287,7 @@
       "LEAFGREEN"
     ],
     "mission": "E01",
-    "location": "Islas Sete: Isla Prima, Isla Quarta, Isla Inta e Isla Sesta",
+    "location": "Archi7: Isla Prima, Isla Quarta, Isla Inta e Isla Sesta",
     "requires": [
       "Primera visita con Bill completada; Liga y 60 especies capturadas para la mejora Nacional"
     ],

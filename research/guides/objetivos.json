@@ -74,7 +74,7 @@
    "id": "postgame",
    "fase": 2,
    "orden": 200,
-   "como": "Tras el Hall de la Fama se abre la Cueva Celeste (al noroeste de Ciudad Celeste, con Surf), con Mewtwo al fondo. En Rojo Fuego/Verde Hoja la posliga sigue en las Islas Sete: recupera el Rubí (Mt. Ascuas, Isla Prima) y el Zafiro (Isla Sexta) para activar la máquina de la Red; Oak te da la Pokédex Nacional y se abren las islas 6 y 7."
+   "como": "Tras el Hall de la Fama se abre la Cueva Celeste (al noroeste de Ciudad Celeste, con Surf), con Mewtwo al fondo. En Rojo Fuego/Verde Hoja la posliga sigue en Archi7: recupera el Rubí (Mt. Ascuas, Isla Prima) y el Zafiro (Isla Exta) para activar la máquina de la Red; Oak te da la Pokédex Nacional y se abren las islas 6 y 7."
   },
   {
    "juegos": [
@@ -231,7 +231,7 @@
    "id": "battle0",
    "fase": 3,
    "orden": 300,
-   "como": "Rubí/Zafiro: Torre Batalla (Isla Batalla) — 50 victorias seguidas para la estrella. Esmeralda: Frente Batalla, con sus 7 instalaciones y los símbolos de plata y oro de cada As. Rubí Omega/Zafiro Alfa: Mansión Batalla (Isla Batalla), donde la estrella pide vencer a una Dama del Combate en la 50.ª."
+   "como": "Rubí/Zafiro: Torre Batalla (en barco desde Portual tras la Liga) — 50 victorias seguidas para la estrella. Esmeralda: Frente Batalla, con sus 7 instalaciones y los símbolos de plata y oro de cada As. Rubí Omega/Zafiro Alfa: Mansión Batalla (Resort Batalla), donde la estrella pide vencer a una Dama del Combate en la 50.ª."
   },
   {
    "juegos": [
@@ -315,7 +315,7 @@
    "id": "card-3",
    "fase": 6,
    "orden": 630,
-   "como": "Estrella por 50 victorias seguidas en la Torre Batalla (Isla Batalla, tras la Liga), en cualquiera de sus dos niveles."
+   "como": "Estrella por 50 victorias seguidas en la Torre Batalla (en barco desde Portual, tras la Liga), en cualquiera de sus dos niveles."
   },
   {
    "juegos": [
@@ -358,7 +358,7 @@
    "id": "postgame",
    "fase": 2,
    "orden": 200,
-   "como": "Tras la Liga: Pokédex Nacional (al ver todas las especies de Sinnoh, Serbal te la da), la Isla Batalla/Área de Combate en barco desde Ciudad Puntaneva, Bulgur y Heatran en la Montaña Dura, Giratina en la Cueva Retorno y Cresselia en la Isla Plenilunio."
+   "como": "Tras la Liga: Pokédex Nacional (al ver todas las especies de Sinnoh, Serbal te la da), la Zona de Combate en barco desde Ciudad Puntaneva, Bulgur y Heatran en la Montaña Dura, Giratina en la Cueva Retorno y Cresselia en la Isla Plenilunio."
   },
   {
    "juegos": [
@@ -840,7 +840,7 @@
    "id": "card-1",
    "fase": 6,
    "orden": 601,
-   "como": "Durante la historia, en Melemele: tras superar la prueba del capitán, el kahuna de la isla te espera en Pueblo Lili para la gran prueba. Ganarla da el sello y el Cristal Z de tipo Lucha."
+   "como": "Durante la historia, en Melemele: tras superar la prueba del capitán, el kahuna de la isla te espera en Pueblo Lilii para la gran prueba. Ganarla da el sello y el Cristal Z de tipo Lucha."
   },
   {
    "juegos": [
@@ -1177,7 +1177,7 @@
    "id": "postgame",
    "fase": 2,
    "orden": 200,
-   "como": "Tras la Liga: Pokédex Nacional, Parque Hansa (Ruta 221) con los legendarios de otras regiones, Área de Combate, Heatran, Giratina, Cresselia y Regigigas."
+   "como": "Tras la Liga: Pokédex Nacional, Parque Hansa (Ruta 221) con los legendarios de otras regiones, Zona de Combate, Heatran, Giratina, Cresselia y Regigigas."
   },
   {
    "juegos": [
