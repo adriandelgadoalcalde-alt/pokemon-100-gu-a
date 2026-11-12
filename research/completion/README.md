@@ -18,6 +18,11 @@ con las metas, desafíos y legendarios propios de esa edición:
    legendarios fijos del mapa y el entrenador más fuerte de la edición (Rojo, Máximo en la Cascada Meteoro, Morimoto
    en las oficinas de Game Freak…). Objetivos `postgame`, `pokemon-*` y `final-boss`.
 
+La pestaña de maestría muestra los objetivos de cada juego como una ruta en ocho pasos, en este orden: historia y Liga;
+objetos clave y accesos; posliga y legendarios; combates y jefes ocultos; concursos, minijuegos y coleccionables;
+Pokédex; diplomas, amuletos y tarjeta al máximo; eventos. El botón «Siguiente objetivo pendiente» sigue ese mismo orden
+(`MASTERY_PHASES` en `atlas.html`).
+
 Cómo se acreditan los nuevos objetivos del pilar 2 y 3 (todos con fuente en su texto «cómo»):
 
 - **Diplomas por el mismo recuento que hace el juego** (pret): Hoenn de RZE (`HasAllHoennMons`), nacional de RZ
