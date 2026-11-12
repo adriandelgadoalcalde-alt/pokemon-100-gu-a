@@ -350,7 +350,7 @@
     if(rev<2){add('swsh.crownClear',false,'revision');add('swsh.crownCaptures',false,'revision');add('collection.swsh.footprints',false,'revision');}
    }
    if(Number.isInteger(rev)&&['SCARLET','VIOLET'].includes(d.game)){
-    if(rev<1){add('sv.tealMaskClear',false,'revision');add('sv.ogreOustinHard',false,'revision');}
+    if(rev<1){add('sv.tealMaskClear',false,'revision');add('sv.ogreOustinHard',false,'revision');add('inventory.sv.ogerponMasks',false,'revision');}
     if(rev<2){add('sv.indigoDiskClear',false,'revision');add('sv.flyingTrialAll',false,'revision');}
    }
   }
@@ -396,7 +396,9 @@
   }
   // Escarlata/Púrpura: las tres máscaras de Ogerpon en la mochila (Cimiento 2406, Fuente 2407, Horno 2408; text_Items de PKHeX).
   if(['SCARLET','VIOLET'].includes(d.game)&&Array.isArray(d.inventory)){const have=new Set(d.inventory.flatMap(p=>(p?.items||[]).filter(i=>i?.count>0).map(i=>i.id)));
-   if([2406,2407,2408].every(id=>have.has(id)))add('inventory.sv.ogerponMasks',true,'inventory');}
+   // Si falta alguna y Ogerpon (1017) no está capturado, nadie puede llevarla equipada: aún no se tienen las tres.
+   if([2406,2407,2408].every(id=>have.has(id)))add('inventory.sv.ogerponMasks',true,'inventory');
+   else if(Array.isArray(d.caught)&&!d.caught.includes(1017))add('inventory.sv.ogerponMasks',false,'inventory');}
   // Cristal: desafío de 7 combates de la Torre Batalla (pokecrystal battle_tower.asm y maps/BattleTower1F.asm). Estado 3/4 =
   // el último desafío se ganó; premio 0 = nunca se empezó un desafío (el premio se elige al entrar). Otro caso: sin evidencia.
   if(Number.isInteger(d.tower2?.state)&&Number.isInteger(d.tower2?.reward)){

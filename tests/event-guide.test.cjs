@@ -806,3 +806,10 @@ test('Verde japonés usa las banderas de Rojo/Azul (Mewtwo vencido = EVENT_BEAT_
  const O=require('../src/engine/objectives.js'),v=flags=>O.fromDiagnosis({game:'GREEN',events:{activeFlags:flags,work:[]}}).find(x=>x.id==='event.gen1.mewtwo')?.value;
  assert.equal(v([2241]),true);assert.equal(v([119]),false);
 });
+
+test('Máscaras de Ogerpon: sin ellas en la mochila y sin Ogerpon capturado, «no»',()=>{
+ const O=require('../src/engine/objectives.js'),v=d=>O.fromDiagnosis({game:'SCARLET',inventory:[{pocket:'Items',items:d.items}],caught:d.caught}).filter(x=>x.id==='inventory.sv.ogerponMasks').map(x=>x.value);
+ assert.deepEqual(v({items:[{id:2406,count:1},{id:2407,count:1},{id:2408,count:1}],caught:[]}),[true]);
+ assert.deepEqual(v({items:[{id:2406,count:1}],caught:[25]}),[false]);
+ assert.deepEqual(v({items:[{id:2406,count:1}],caught:[1017]}),[]); // Ogerpon puede llevar las demás equipadas
+});
