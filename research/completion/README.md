@@ -57,10 +57,10 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   las pruebas», scr_seq_0127_D49R0106) y la 0x184 se pone al entregar la corona de hojas doradas (scr_seq_0849_T20R0402).
   Las dos se acreditan; las rachas del Frente Batalla siguen sin poder leerse (ver abajo).
 - **Torre Batalla de Platino:** `TrainerCase_CalculateTrainerCardLevel` (pokeplatinum) da la estrella con un récord ≥ 100
-  en cualquiera de las cinco modalidades (`BattleFrontierStats.soloStats`, parejas récord/actual). El bloque se ancla en
-  los BP que PKHeX lee en 0x7234 (`WifiBattleTowerRecord.battlePoints`, campo `unk_950`): inicio = 0x7234 - 0x950 =
-  0x68E4. En la partida de Platino del propietario salen cinco parejas coherentes (récord ≥ racha actual), seguidas de los
-  datos de la Fábrica Batalla.
+  en cualquiera de las cinco modalidades (`BattleFrontierStats.soloStats`, parejas récord/actual). El bloque empieza 4 bytes
+  tras el grito de Chatot de PKHeX (0x68DC), el mismo desfase que da pokediamond en Diamante/Perla (4 + 0x3C bytes hasta
+  los BP que PKHeX lee en 0x65F8) y el que se contrastó en HGSS. En la partida de Platino del propietario salen parejas
+  coherentes (récord ≥ racha actual) seguidas de los datos de la Fábrica Batalla, con la misma forma que en HGSS.
 - **Torre Batalla de HeartGold/SoulSilver:** `FrontierSave` de pokeheartgold (`u16 unk_000[112]`, tamaño 0x1628); la tarjeta
   lee las estadísticas 0/2/4/6/8. El bloque empieza en 0x5264 de la partición general (4 bytes tras el grito de Chatot de
   PKHeX): en una partida pública con 534 BP sale Torre 105/105 y Fábrica 49/49 con 39 cambios, una secuencia coherente;
@@ -71,8 +71,8 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
 
 Pendiente con motivo (no se acredita solo para no adivinar):
 
-- **Torre Batalla de Diamante/Perla (racha de 100):** PKHeX no expone su bloque, su estructura difiere de las de Platino
-  y HGSS, y ninguna partida disponible tiene BP para contrastarla.
+- **Torre Batalla de Diamante/Perla (racha de 100):** en pokediamond el bloque (`FrontierData`) solo guarda BP, banderas y
+  contadores por modalidad (`u_C[5]`), sin la racha récord, y PKHeX no tiene un récord de juego equivalente.
 - **Episodio Rainbow Rocket (USUM):** la única bandera candidata de PKHeX (211, «Lusamine's Mansion is NOT Team
   Rocket's Castle») está activa también en una partida pública que aún no es campeona, así que no marca el episodio.
 - **Pokéstar Studios y torre de Ciudad Negra / Bosque Blanco (N2/B2):** PKHeX no da el formato de su bloque (solo las

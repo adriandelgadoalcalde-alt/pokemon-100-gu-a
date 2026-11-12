@@ -153,10 +153,11 @@ public static class Audit
                 superSingleRecord = sub.BattleSubway.SuperSingleRecord, superDoubleRecord = sub.BattleSubway.SuperDoubleRecord,
                 superMultiNpcRecord = sub.BattleSubway.SuperMultiNPCRecord } : null,
             // Platino: récords de la Torre Batalla (BattleFrontierStats.soloStats de pokeplatinum: récord y racha actual de
-            // individual, doble, múltiple, múltiple con conexión y Wi-Fi). El bloque se ancla en los BP que PKHeX lee en
-            // 0x7234 (WifiBattleTowerRecord.battlePoints, campo unk_950 de BattleFrontierSave): inicio = 0x7234 - 0x950.
+            // individual, doble, múltiple, múltiple con conexión y Wi-Fi). El bloque empieza 4 bytes tras el grito de Chatot de
+            // PKHeX (0x64EC + Chatter4.SIZE + 4 = 0x68DC), el mismo desfase que en Diamante/Perla (pokediamond: 4 + 0x3C hasta los
+            // BP de 0x65F8) y en HGSS (contrastado con una partida pública).
             ["tower4"] = save is SAV4Pt pt ? new { records = Enumerable.Range(0, 5).Select(i =>
-                (int)System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(pt.General[(0x7234 - 0x950 + i * 4)..])).ToArray() } : null,
+                (int)System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(pt.General[(0x64EC + Chatter4.SIZE + 4 + i * 4)..])).ToArray() } : null,
             // Oro/Plata/Cristal: letras de Unown registradas (wUnownDex de pokecrystal, 26 bytes tras la Pokédex de vistos;
             // SAV2Offsets.PokedexSeen + 0x20 en PKHeX). Cada byte es una letra 1-26; 0 = hueco libre.
             ["unown2"] = save is SAV2 un2 ? new { forms = Enumerable.Range(0x20, 26).Select(i => (int)un2.Data[new SAV2Offsets(un2).PokedexSeen + i])
