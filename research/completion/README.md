@@ -224,6 +224,12 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   282/360 entrenadores normales marcados y ninguno de estos jefes, ni siquiera Iris o Mirto. Por eso estos objetivos son
   manuales: el juego no guarda la victoria.
 
+- **Más huecos cerrados con las listas de FlagsEditorEXPlugin (12/11/2026):** X/Y `FE_HANDSOME_QUEST_ALL_CLEAR` (0xC9;
+  Y del propietario 1, X 0); DP `FE_PC_GOLD` 0x69 (enfermera) y `FE_RECONGNIZE_SHINOU/NATIONAL` 0xAB/0xAC (diplomas, las mismas
+  posiciones que Platino); ROZA `TRID_CHAMPION_P_01/_P_02` (revancha del campeón; el primer combate queda en
+  `TRID_CHAMPION_01`, activo en las dos partidas del propietario). HGSS: la revancha de Lance y del Alto Mando no deja
+  bandera (pokeheartgold `scr_seq_0824_T10R0601`).
+
 Pendiente con motivo (no se acredita solo para no adivinar):
 
 - **Torre Batalla de Diamante/Perla (racha de 100):** en pokediamond el bloque (`FrontierData`) solo guarda BP, banderas y

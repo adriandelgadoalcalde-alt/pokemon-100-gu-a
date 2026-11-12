@@ -633,3 +633,8 @@ test('Diamante/Perla: enfermera (FE_PC_GOLD 0x69) y diplomas (FE_RECONGNIZE_SHIN
  assert.equal(v([0x69],'card.nurseRecognition'),true);
  assert.equal(v([0xAB],'card.pt.diplomaSinnoh'),true);assert.equal(v([0xAC],'card.pt.diplomaNational'),true);
 });
+
+test('ROZA: revancha de Máximo por la bandera del campeón de revancha',()=>{
+ const O=require('../src/engine/objectives.js'),v=f=>O.fromDiagnosis({game:'OMEGARUBY',events:{activeFlags:f}}).find(x=>x.id==='oras.stevenRematch')?.value;
+ assert.equal(v([0x8F9]),false);assert.equal(v([0x8F9,0x974]),true);assert.equal(v([]),undefined);
+});

@@ -255,6 +255,13 @@
   // X/Y: capítulo de Handsome completo = FE_HANDSOME_QUEST_ALL_CLEAR (0xC9, FlagsEditorEXPlugin flags_gen6xy). Contrastado
   // con las partidas del propietario: Y lo tiene (WK_SCENE_HANDSOME_QUEST = 7 y los seis episodios con estado), X no lo empezó.
   if(['X','Y'].includes(d.game)&&Array.isArray(d.events?.activeFlags))add('xy.handsomeComplete',d.events.activeFlags.includes(0xC9),'events');
+  // ROZA: revancha del campeón (Máximo con su equipo reforzado) = TRID_CHAMPION_P_01/_P_02 (0x974/0xA7A, FlagsEditorEXPlugin
+  // flags_gen6oras). En ROZA el combate con el campeón sí marca su bandera de entrenador: TRID_CHAMPION_01 (0x8F9) está activa
+  // en las dos partidas del propietario, que solo han ganado la Liga una vez (WK_OTHER_BIGFOUR = 1) y tienen las de revancha a 0.
+  if(['OMEGARUBY','ALPHASAPPHIRE'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
+   const fl=new Set(d.events.activeFlags);
+   if(fl.has(0x8F9))add('oras.stevenRematch',fl.has(0x974)||fl.has(0xA7A),'events');
+  }
   // HGSS: el director de la Mansión Azulona pone FLAG_SAW_JOHTO_DEX_CERTIFICATE 0x143 y FLAG_SAW_NATIONAL_DEX_CERTIFICATE
   // 0x144 al enseñar cada diploma (pokeheartgold, scr_seq_0798_T07R0203 y include/constants/flags.h).
   if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
