@@ -52,7 +52,7 @@ const server=http.createServer((req,res)=>{
      const w=document.querySelector('#gen3-where'),g=game(store.game),goals=masteryGoals(g);
      const sin=goals.filter(o=>!masteryProof(o,g));
      return {where:w?w.innerText.split('\n').map(s=>s.trim()).filter(Boolean).slice(1,3).join(' · '):'',
-      total:goals.length,ok:goals.length-sin.length,sin:sin.map(o=>`[${o.tier}] ${o.label}`)};
+      total:goals.length,ok:goals.length-sin.length,sin:sin.map(o=>`[${o.tier}]${masteryHasRule[g.id+':'+o.id]?'':' (sin criterio)'} ${o.label}`)};
     });
     const ok=game&&st.game!==game?` | OJO juego ${st.game} ≠ carpeta ${game}`:'';
     console.log(`${st.game} | ${rel} | ${info.where||'(sin panel de ubicación)'} | medallas ${read.badgesTotal??'-'} | acreditados ${info.ok}/${info.total}${ok}${errors.length?' | ERRORES '+errors.join(' / '):''}`);
