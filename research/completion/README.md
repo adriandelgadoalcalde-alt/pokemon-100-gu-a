@@ -422,6 +422,11 @@ La partida del propietario (estado 0, premio 0, explicación leída) y la públi
 
 ### 12/11/2026 — Revanchas de la Liga en Gen 4 (Salón de la Fama)
 
+Corregido después (12/11/2026): Diamante y Perla no tienen equipos de revancha. pokediamond solo define un entrenador por
+miembro del Alto Mando y Cintia (`trainers.h` 261-267) y WikiDex («Liga Pokémon (Sinnoh)») lo confirma; los equipos
+reforzados son de Platino. En DP el objetivo pasa a ser volver a vencer a la Liga, y cada victoria deja una entrada en el
+Salón de la Fama: dos o más entradas lo prueban y una sola lo descarta, sin depender de la Pokédex Nacional.
+
 Las salas de la Liga no dejan bandera, pero la partida guarda el Salón de la Fama (bloque extra en 0x20000 en DP/Platino y
 0x23000 en HGSS; 30 entradas con equipo y fecha; pokeplatinum `hall_of_fame_entries.h`, pokeheartgold `hall_of_fame.h`).
 Condición de la revancha: Pokédex Nacional (DP), `FLAG_ARRESTED_CHARON_STARK_MOUNTAIN` (Platino) y 8 medallas de Kanto

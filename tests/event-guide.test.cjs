@@ -736,8 +736,9 @@ test('Sinnoh: revancha de la Liga por el Salón de la Fama (sí con prueba de fe
  assert.equal(f('PLATINUM',{hallOfFame:3,arrested:false,nationalDex:true,evidence:0,proof:false}),false);
  assert.equal(f('PLATINUM',{hallOfFame:3,arrested:true,nationalDex:true,evidence:0,proof:false}),undefined);
  assert.equal(f('DIAMOND',{hallOfFame:0,arrested:null,nationalDex:false,evidence:0,proof:false}),false);
- assert.equal(f('PEARL',{hallOfFame:2,arrested:null,nationalDex:false,evidence:0,proof:false}),false);
- assert.equal(f('PEARL',{hallOfFame:2,arrested:null,nationalDex:true,evidence:4,proof:false}),undefined);
+ // Diamante/Perla no tienen equipos de revancha: volver a vencer a la Liga deja una segunda entrada en el Salón.
+ assert.equal(f('PEARL',{hallOfFame:2,arrested:null,nationalDex:false,evidence:0,proof:false}),true);
+ assert.equal(f('PEARL',{hallOfFame:2,arrested:null,nationalDex:true,evidence:4,proof:false}),true);
  assert.equal(f('DIAMOND',{hallOfFame:1,arrested:null,nationalDex:true,evidence:5,proof:false}),false);
 });
 
