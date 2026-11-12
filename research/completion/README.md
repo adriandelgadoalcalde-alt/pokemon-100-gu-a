@@ -87,6 +87,11 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   Superpulsera Z (933 en USUM). Luna, Ultrasol y Ultraluna del propietario los tienen; a Sol le faltan tres cristales.
 - **Objetos de Leyendas Arceus:** Tabla Legendaria (1828), Cadena Roja (441), Flauta Azur (455) y las grandes esferas
   Diamansfera, Lustresfera y Griseosfera (1777-1779). La partida del propietario los tiene todos.
+- **Pokédex y singulares sin criterio hasta ahora:** «Completar Pokédex de Kanto» (diploma de la 1.ª gen. y recuento de
+  Kanto de RF/VH), «Completar Pokédex Nacional aplicable» (diploma de la 2.ª gen.), «Completar Pokédex de Hoenn» (recuento de
+  Hoenn de RZE y ROZA) y los objetivos de singulares de evento (Mew, Celebi, Victini/Keldeo/Meloetta/Genesect, Magearna,
+  Marshadow/Zeraora, Diancie/Hoopa/Volcanion, Mew/Deoxys/Jirachi —cualquiera—, Darkrai/Shaymin/Arceus, Manaphy, Zarude y
+  Celebi + Arceus en HGSS) se acreditan con el registro de capturados de la Pokédex, igual que los «Registrar a…».
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
