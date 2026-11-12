@@ -422,3 +422,8 @@ test('HGSS: estrellas del Pokéathlon (FLAG_UNK_0F1) y de la corona de hojas (FL
  assert.equal(f([0xF1],'card.hgss.pokeathlon'),true);assert.equal(f([0xF0],'card.hgss.pokeathlon'),false);
  assert.equal(f([0x184],'card.hgss.leafCrown'),true);assert.equal(f([],'card.hgss.leafCrown'),false);
 });
+
+test('Platino: estrella de la Torre Batalla (récord de 100 en cualquier modalidad)',()=>{
+ const O=require('../src/engine/objectives.js'),f=r=>O.fromDiagnosis({game:'PLATINUM',tower4:{records:r}}).find(x=>x.id==='battle.pt.tower100')?.value;
+ assert.equal(f([0,0,0,100,0]),true);assert.equal(f([99,42,0,0,49]),false);
+});

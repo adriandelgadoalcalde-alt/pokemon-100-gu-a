@@ -56,15 +56,19 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   Batalla ≥ 100, `FLAG_UNK_0F1` y `FLAG_UNK_184`. La 0xF1 abre la sala «Potential» del Pokéathlon («mejor récord en todas
   las pruebas», scr_seq_0127_D49R0106) y la 0x184 se pone al entregar la corona de hojas doradas (scr_seq_0849_T20R0402).
   Las dos se acreditan; las rachas del Frente Batalla siguen sin poder leerse (ver abajo).
+- **Torre Batalla de Platino:** `TrainerCase_CalculateTrainerCardLevel` (pokeplatinum) da la estrella con un récord ≥ 100
+  en cualquiera de las cinco modalidades (`BattleFrontierStats.soloStats`, parejas récord/actual). El bloque se ancla en
+  los BP que PKHeX lee en 0x7234 (`WifiBattleTowerRecord.battlePoints`, campo `unk_950`): inicio = 0x7234 - 0x950 =
+  0x68E4. En la partida de Platino del propietario salen cinco parejas coherentes (récord ≥ racha actual), seguidas de los
+  datos de la Fábrica Batalla.
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
 
 Pendiente con motivo (no se acredita solo para no adivinar):
 
-- **Torre Batalla de la 4.ª generación (racha de 100):** el bloque del Frente Batalla de DP/Pt/HGSS no lo expone PKHeX y
-  su posición exige reconstruir la tabla de bloques del guardado (pokeplatinum `SaveData_GetBattleFrontier`), sin una
-  partida con la que contrastarlo de forma independiente.
+- **Torre Batalla de Diamante/Perla y HeartGold/SoulSilver (racha de 100):** PKHeX no expone su bloque y sus estructuras
+  difieren de las de Platino, así que no se reutiliza su posición. En Platino sí se acredita (ver arriba).
 - **Episodio Rainbow Rocket (USUM):** la única bandera candidata de PKHeX (211, «Lusamine's Mansion is NOT Team
   Rocket's Castle») está activa también en una partida pública que aún no es campeona, así que no marca el episodio.
 - **Pokéstar Studios y torre de Ciudad Negra / Bosque Blanco (N2/B2):** PKHeX no da el formato de su bloque (solo las

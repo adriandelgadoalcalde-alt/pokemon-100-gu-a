@@ -152,6 +152,11 @@ public static class Audit
             ["subway5"] = save is SAV5 sub ? new { singleRecord = sub.BattleSubway.SingleRecord, doubleRecord = sub.BattleSubway.DoubleRecord,
                 superSingleRecord = sub.BattleSubway.SuperSingleRecord, superDoubleRecord = sub.BattleSubway.SuperDoubleRecord,
                 superMultiNpcRecord = sub.BattleSubway.SuperMultiNPCRecord } : null,
+            // Platino: récords de la Torre Batalla (BattleFrontierStats.soloStats de pokeplatinum: récord y racha actual de
+            // individual, doble, múltiple, múltiple con conexión y Wi-Fi). El bloque se ancla en los BP que PKHeX lee en
+            // 0x7234 (WifiBattleTowerRecord.battlePoints, campo unk_950 de BattleFrontierSave): inicio = 0x7234 - 0x950.
+            ["tower4"] = save is SAV4Pt pt ? new { records = Enumerable.Range(0, 5).Select(i =>
+                (int)System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(pt.General[(0x7234 - 0x950 + i * 4)..])).ToArray() } : null,
             // Oro/Plata/Cristal: letras de Unown registradas (wUnownDex de pokecrystal, 26 bytes tras la Pokédex de vistos;
             // SAV2Offsets.PokedexSeen + 0x20 en PKHeX). Cada byte es una letra 1-26; 0 = hueco libre.
             ["unown2"] = save is SAV2 un2 ? new { forms = Enumerable.Range(0x20, 26).Select(i => (int)un2.Data[new SAV2Offsets(un2).PokedexSeen + i])

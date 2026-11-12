@@ -155,6 +155,8 @@
   }
   // HeartGold/SoulSilver: las 28 formas de Unown en la Pokédex (lista de formas de Zukan4).
   if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.unownForms))add('pokedex.hgss.unown28',d.unownForms.length>=28,'caught');
+  // Platino: estrella de la Torre Batalla = récord ≥ 100 en cualquier modalidad (TrainerCase_CalculateTrainerCardLevel).
+  if(d.game==='PLATINUM'&&Array.isArray(d.tower4?.records)&&d.tower4.records.every(Number.isInteger))add('battle.pt.tower100',d.tower4.records.some(v=>v>=100),'tower4');
   // Oro/Plata/Cristal: las 26 letras de Unown de la Pokédex (wUnownDex).
   if(Number.isInteger(d.unown2?.forms))add('pokedex.gen2.unown26',d.unown2.forms>=26,'unown2');
   // Rojo/Azul/Verde/Amarillo: Visor Silph (0x48), Poké Flauta (0x49) y MO01-MO05 (0xC4-0xC8) en la mochila o el PC

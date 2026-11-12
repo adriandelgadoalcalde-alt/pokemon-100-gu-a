@@ -38,7 +38,7 @@ function masteryEvaluation(goal,g){
    if(byLabel(['BLACK','WHITE','BLACK2','WHITE2'],/^Superar Metro Batalla/))auto='battle.unova.subwayBosses';
    if(byLabel(['X','Y'],/^Rango máximo del Castillo Batalla/))auto='battle.xy.chateauGrandDuke';if(byLabel(['BLACK','WHITE','BLACK2','WHITE2'],/^Todos los complementos del Musical/))auto='musical.unova.allProps';if(byLabel(['BLACK2','WHITE2'],/^(Completar el )?Torneo Campeones/))auto='battle.b2w2.pwtChampions';if(byLabel(['BLACK2','WHITE2'],/^Nexárbol a nivel 30/))auto='entralink.b2w2.level30';
    if(byLabel(['SUN','MOON','ULTRASUN','ULTRAMOON'],/^Superar el Árbol de Combate/))auto='battle.alola.treeSuper50';
-   if(byLabel(['BD','SP'],/^100 rivales consecutivos en Torre Batalla/))auto='battle.bdsp.tower100';
+   if(byLabel(['BD','SP'],/^100 rivales consecutivos en Torre Batalla/))auto='battle.bdsp.tower100';if(byLabel(['PLATINUM'],/^100 rivales consecutivos en Torre Batalla/))auto='battle.pt.tower100';
    if(byLabel(['BD','SP'],/^Un Superconcurso rango Maestro/))auto='contest.bdsp.anyMaster';
    if(byLabel(['SWORD','SHIELD'],/^Completar Pokédex de Galar y de cada DLC/))auto='pokedex.swsh.allCards';
    if(byLabel(['RUBY','SAPPHIRE','EMERALD'],/^Superar los ocho retos de la Casa Trampa/))auto='challenge.hoenn.trickHouse';
