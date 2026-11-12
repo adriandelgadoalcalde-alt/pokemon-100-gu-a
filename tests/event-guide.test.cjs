@@ -714,3 +714,15 @@ test('Guía: cada objetivo tiene fase y orden cronológico, y lo de evento dice 
   assert.doesNotMatch(x.how,/Con PKHeX/,g+"/"+x.id+": el paso es con Pokekeep");
  }
 });
+
+test('Guía: cada regla por título encuentra su objetivo (un título cambiado no deja un objetivo sin criterio)',()=>{
+ const s=require('node:fs').readFileSync(require('node:path').join(__dirname,'..','atlas.html'),'utf8');
+ const i=s.indexOf('MASTER_DATA=')+12,data=JSON.parse(s.slice(i,s.indexOf('};',i)+1));
+ const muertas=[];let n=0;
+ for(const m of s.matchAll(/byLabel\(\[([^\]]*)\],\/((?:\\\/|[^\/])+)\/([a-z]*)\)/g)){
+  const games=[...m[1].matchAll(/'([A-Z0-9]+)'/g)].map(x=>x[1]),rx=new RegExp(m[2],m[3]);n++;
+  if(!games.some(g=>(data[g]||[]).some(x=>rx.test(x.label))))muertas.push(games.join(',')+' '+m[2]);
+ }
+ assert.equal(n,(s.match(/byLabel\(/g)||[]).length,'todas las reglas por título se comprueban');
+ assert.deepEqual(muertas,[]);
+});
