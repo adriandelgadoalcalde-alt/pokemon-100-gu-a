@@ -62,6 +62,7 @@ function masteryEvaluation(goal,g){
    const anyEvent=id=>{const parts=facts.filter(f=>f.id.startsWith('event.'+id+'.')).map(f=>({fact:f.id}));return parts.length?{any:parts}:null;};
    const byLabel=(games,re)=>games.includes(g.id)&&re.test(item.label);
    let rule=null;
+   if(['DIAMOND','PEARL'].includes(g.id)&&item.id==='card-4')auto='battle.dp.tower100';
    if(['BD','SP'].includes(g.id)&&item.id==='battle0')auto='bdsp.towerMaster';
    if(['SUN','MOON','ULTRASUN','ULTRAMOON'].includes(g.id)&&item.id==='zygarde-cores')auto='alola.zygardeCores';
    if(['OMEGARUBY','ALPHASAPPHIRE'].includes(g.id)&&item.id==='final-boss')auto='oras.stevenRematch';

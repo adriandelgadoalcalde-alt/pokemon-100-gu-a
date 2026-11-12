@@ -335,6 +335,8 @@
   // (PKHeX system_bdsp; bdsp-flags.js las sitúa tras las 4000 normales).
   if(['BD','SP'].includes(d.game)&&Array.isArray(d.events?.activeFlags)&&d.events.systemOffset===4000)
    add('contest.bdsp.anyMaster',[9,10,11,12,13].some(i=>d.events.activeFlags.includes(4000+i)),'events');
+  // Diamante/Perla: récord de racha de la Torre Batalla (GameStats 0x35-0x3D de pokediamond, GetTrainerCardLevel).
+  if(Array.isArray(d.tower4dp?.maxStreaks)&&d.tower4dp.maxStreaks.length)add('battle.dp.tower100',d.tower4dp.maxStreaks.some(v=>v>=100),'tower4dp');
   // Diamante Brillante/Perla Reluciente: 100 rivales seguidos en alguna modalidad de la Torre Batalla.
   if(Array.isArray(d.tower8b?.maxStreaks)&&d.tower8b.maxStreaks.length)add('battle.bdsp.tower100',d.tower8b.maxStreaks.some(v=>v>=100),'tower8b');
   // X/Y: rango máximo del Castillo Batalla = Gran Duque (5).

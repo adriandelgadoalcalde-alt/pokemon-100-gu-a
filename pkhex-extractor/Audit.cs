@@ -203,6 +203,9 @@ public static class Audit
             // Sol/Luna y USUL: récord 100 «Champion Title Defense» (RecordLists.RecordList_7 de PKHeX): defensas del título de campeón.
             ["records7"] = save is SAV7 rc7 ? new { titleDefense = rc7.GetRecord(100) } : null,
             // Diamante Brillante/Perla Reluciente: racha actual y máxima de cada modalidad de la Torre Batalla (BattleTowerWork8b).
+            // DP: récord de racha de la Torre Batalla = GameStats 0x35/0x37/0x39/0x3B/0x3D (Record16 9-17 impares);
+            // GetTrainerCardLevel de pokediamond (arm9/asm/unk_02064E90.s) da la estrella con alguno >= 100.
+            ["tower4dp"] = save is SAV4DP dp4 ? new { maxStreaks = new[] { 9, 11, 13, 15, 17 }.Select(i => (long)dp4.Records.GetRecord16(i)).ToArray() } : null,
             ["tower8b"] = save is SAV8BS bs ? new { maxStreaks = bs.BattleTower.Records.Select(r => (long)Math.Max(r.RenshouCount, r.RenshouCountOld)).ToArray() } : null,
             // Diamante Brillante/Perla Reluciente: tipos de estatua distintos que se poseen (estrella de la tarjeta: el juego cuenta
             // los objetos del Subsuelo de categoría estatua con cantidad > 0 y pide 100; UgItemWork.GetHaveStatueKindNum, uDPR).

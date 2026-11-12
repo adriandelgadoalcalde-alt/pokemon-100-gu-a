@@ -301,3 +301,13 @@ Pendiente con motivo (no se acredita solo para no adivinar):
 | SCARLET | 25 | 11 | Historia 1, Postgame 6, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 10, Evento histórico 3, Tarjeta / reconocimiento 1 |
 | VIOLET | 25 | 11 | Historia 1, Postgame 6, Combates 2, Objetos clave 1, Pokédex 1, Legendarios 10, Evento histórico 3, Tarjeta / reconocimiento 1 |
 | ZA | 14 | 4 | Historia 1, Postgame 4, Combates 1, Objetos clave 1, Pokédex 1, Legendarios 3, Tarjeta / reconocimiento 1, Evento histórico 2 |
+
+### 12/11/2026 — Torre Batalla de Diamante/Perla y As de la Torre en DBPR
+
+- **DP:** la estrella de la Torre de la tarjeta la calcula `GetTrainerCardLevel` (pokediamond, `arm9/asm/unk_02064E90.s`)
+  con los récords de partida `GameStats` 0x35, 0x37, 0x39, 0x3B y 0x3D ≥ 100. `GameStats_GetValue`
+  (`arm9/src/unk_02029FB0.c`) guarda los índices ≥ 44 como récords de 16 bits, así que son `Record16` 9, 11, 13, 15 y 17
+  del `Record4` de PKHeX. El extractor los exporta como `tower4dp.maxStreaks`; hecho `battle.dp.tower100`.
+- **DBPR:** el extractor exporta ya las banderas de sistema (4000 + índice) y la victoria contra el As de la Torre es
+  `FE_TOWER_MASTER_WINED` (1426, `EvWork.FLAG_INDEX` de uDPR). Partidas públicas con racha 14 y 0: sin la bandera, como
+  corresponde (el As sale en la 21 y la 49).

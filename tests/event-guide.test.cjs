@@ -655,3 +655,8 @@ test('BDSP: victoria contra el As de la Torre Batalla por FE_TOWER_MASTER_WINED 
  const O=require('../src/engine/objectives.js'),f=flags=>O.fromDiagnosis({game:'BD',events:{activeFlags:flags,systemOffset:4000}}).find(x=>x.id==='bdsp.towerMaster')?.value;
  assert.equal(f([1426]),true);assert.equal(f([1425]),undefined);
 });
+
+test('Diamante/Perla: estrella de la Torre Batalla por el récord de racha (GameStats 0x35-0x3D)',()=>{
+ const O=require('../src/engine/objectives.js'),f=s=>O.fromDiagnosis({game:'DIAMOND',tower4dp:{maxStreaks:s}}).find(x=>x.id==='battle.dp.tower100')?.value;
+ assert.equal(f([0,100,0,0,0]),true);assert.equal(f([99,0,0,0,0]),false);assert.equal(f([]),undefined);
+});
