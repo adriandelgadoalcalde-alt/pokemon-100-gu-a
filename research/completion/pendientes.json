@@ -30,7 +30,8 @@
     {
       "id": "xy-handsome",
       "titulo": "X/Y: dato del final del capítulo de Handsome",
-      "estado": "pendiente"
+      "estado": "bloqueado",
+      "motivo": "PKHeX (const_xy/flags_xy, 15 + 79 entradas) no documenta ninguna bandera del capítulo de Handsome y el Boleto Handsome se recoge en la primera misión (WikiDex «Boleto Handsome»), no al final; haría falta localizar la bandera en los scripts de la ROM, que no tienen nombres."
     },
     {
       "id": "bdsp-postliga",
@@ -40,7 +41,8 @@
     {
       "id": "galar-postliga",
       "titulo": "Espada/Escudo: crisis posliga y fin de los DLC",
-      "estado": "pendiente"
+      "estado": "hecho",
+      "nota": "Historia + legendario de la edición (888/889) + Urshifu (892) + capturas de las Nieves de la Corona."
     },
     {
       "id": "za-dlc",
