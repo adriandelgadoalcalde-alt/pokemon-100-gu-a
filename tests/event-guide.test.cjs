@@ -427,3 +427,8 @@ test('Platino: estrella de la Torre Batalla (récord de 100 en cualquier modalid
  const O=require('../src/engine/objectives.js'),f=r=>O.fromDiagnosis({game:'PLATINUM',tower4:{records:r}}).find(x=>x.id==='battle.pt.tower100')?.value;
  assert.equal(f([0,0,0,100,0]),true);assert.equal(f([99,42,0,0,49]),false);
 });
+
+test('HGSS: estrella de la Torre Batalla (récord de 100)',()=>{
+ const O=require('../src/engine/objectives.js'),f=r=>O.fromDiagnosis({game:'SOULSILVER',tower4:{records:r}}).find(x=>x.id==='battle.hgss.tower100')?.value;
+ assert.equal(f([105,0,0,0,0]),true);assert.equal(f([0,0,0,0,0]),false);
+});
