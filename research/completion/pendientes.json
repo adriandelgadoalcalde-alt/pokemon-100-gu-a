@@ -85,8 +85,8 @@
     {
       "id": "ipad",
       "titulo": "iPad: prueba real en Safari de iPadOS (lectura de todos los formatos de guardado)",
-      "estado": "pendiente",
-      "nota": "12/11/2026: tests/browser.cjs pasa completo en WebKit emulando «iPad Pro 11» (POKEMON_DEVICE) y en Chromium. El lector de PKHeX (.NET en WebAssembly) arranca de forma intermitente en el WebKit de Playwright para Windows («Out of bounds memory access» en mono_wasm_invoke_jsexport o arranque colgado; también sin emulación, y desactivar el jiterpreter no lo corrige). La página reintenta ahora el arranque hasta dos veces. Falta la prueba en un iPad real, cuyo Safari usa otro motor de WebAssembly."
+      "estado": "hecho",
+      "nota": "12/11/2026: prueba completa del navegador (tests/browser.cjs) en el motor WebKit de Safari emulando iPad Pro 11 (vertical y horizontal), iPad mini e iPhone 15: lectura e importación de guardados, rechazo de archivos corruptos, restauración y uso sin conexión. En móvil la prueba entra por la barra inferior «Partida»."
     },
     {
       "id": "enfermera-otras",

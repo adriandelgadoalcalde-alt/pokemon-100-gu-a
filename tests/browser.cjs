@@ -120,7 +120,7 @@ async function run() {
     await page.waitForFunction(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.snapshots?.SOULSILVER?.filename==='same.sav');
     assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2')).comparisons),progress.comparisons);
     // The diagnosis lists unknown requirements without converting them into completions.
-    await page.locator('#openSaved').click();
+    await page.locator('#openSaved:visible, .menu-mobile [data-view="save"]:visible').first().click(); // en móvil (≤760 px) se entra por la barra inferior «Partida»
     await page.getByRole('heading', {name: 'Qué hemos leído de tu partida', exact: true}).waitFor();
     assert.ok(await page.locator('.reading-gaps [data-open]').count() > 0);
     await page.locator('.reading-gaps').locator('..').locator('summary').click();
