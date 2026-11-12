@@ -9,7 +9,7 @@
   const task=pending.get(event.data.id);if(!task)return;
   clearTimeout(task.timer);pending.delete(event.data.id);
   if(event.data.ok&&event.data.diagnosis)task.resolve(event.data.diagnosis);
-  else task.reject(Error(event.data.error||'No se ha podido interpretar el guardado. No se ha cambiado el progreso.'));
+  else{const e=Error(event.data.error||'No se ha podido interpretar el guardado. No se ha cambiado el progreso.');e.startup=event.data.startup===true;task.reject(e);}
  });
  // El motor (.NET 10 en WebAssembly) exige SIMD y gestión de excepciones de WebAssembly (dotnet.runtime los comprueba
  // al arrancar). Se detectan antes con dos módulos mínimos (los de wasm-feature-detect) para avisar con claridad:
@@ -28,8 +28,19 @@
    frame.src=engineURL.href;document.body.append(frame);
   });return loading;
  }
+ // Si el motor de WebAssembly no arranca (fallo intermitente observado en WebKit), se recarga el marco y se reintenta
+ // hasta dos veces; los errores de interpretación del guardado no se reintentan.
  async function read(bytes){
   if(!(bytes instanceof Uint8Array)||!bytes.length||bytes.length>8*1024*1024)throw Error('Selecciona el guardado interno de hasta 8 MiB.');
+  for(let attempt=0;;attempt++){
+   try{return await readOnce(bytes);}
+   catch(error){
+    if(!error?.startup||attempt>=2)throw error;
+    frame?.remove();frame=null;loading=null;
+   }
+  }
+ }
+ async function readOnce(bytes){
   await load();const id=String(++sequence);
   return new Promise((resolve,reject)=>{
    const timer=setTimeout(()=>{pending.delete(id);reject(Error('La lectura local ha tardado demasiado. No se ha cambiado el progreso.'));},300000);
