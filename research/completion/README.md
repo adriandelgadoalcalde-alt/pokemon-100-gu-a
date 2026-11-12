@@ -111,8 +111,10 @@ Pendiente con motivo (no se acredita solo para no adivinar):
 
 - **Torre Batalla de Diamante/Perla (racha de 100):** en pokediamond el bloque (`FrontierData`) solo guarda BP, banderas y
   contadores por modalidad (`u_C[5]`), sin la racha récord, y PKHeX no tiene un récord de juego equivalente.
-- **Episodio Rainbow Rocket (USUM):** la única bandera candidata de PKHeX (211, «Lusamine's Mansion is NOT Team
-  Rocket's Castle») está activa también en una partida pública que aún no es campeona, así que no marca el episodio.
+- **Episodio Rainbow Rocket (USUM):** la bandera 211 («Lusamine's Mansion is NOT Team Rocket's Castle») también vale antes
+  del episodio, así que sola no sirve. Ahora se acredita con la 211 más alguno de los Electrode desaparecidos dentro del
+  castillo (1730-1732, solo posibles durante el episodio): Ultraluna del propietario la cumple. Si no se capturó ningún
+  Electrode no se puede probar, y no se acredita.
 - **Pokéstar Studios y torre de Ciudad Negra / Bosque Blanco (N2/B2):** PKHeX no da el formato de su bloque (solo las
   películas descargadas, `PokestarMovie5`); el récord 48 («Tower/Treehollow Trainers Defeated») cuenta entrenadores, no
   zonas superadas.

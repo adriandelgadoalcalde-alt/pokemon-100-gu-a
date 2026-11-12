@@ -204,6 +204,14 @@
    const have=new Set();for(const p of d.inventory)for(const i of p?.items||[])if(i?.count>0)have.add(i.id);
    if([359,350,339,340,341,342,343,344,345].every(id=>have.has(id)))add('inventory.frlg.fieldItems',true,'inventory');
   }
+  // Ultrasol/Ultraluna: episodio Rainbow Rocket terminado. flags_usum de PKHeX: 211 = «la mansión de Samina NO es el
+  // castillo del Team Rocket» (también vale antes del episodio) y 1730-1732 = Electrode desaparecidos dentro del castillo
+  // (solo durante el episodio). Las dos cosas juntas prueban que se entró y que la mansión volvió a la normalidad. La
+  // ausencia no prueba nada (los Electrode son opcionales): solo se acredita la presencia.
+  if(['ULTRASUN','ULTRAMOON'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
+   const fl=new Set(d.events.activeFlags);
+   if(fl.has(211)&&[1730,1731,1732].some(f=>fl.has(f)))add('story.usum.rainbowRocket',true,'events');
+  }
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).

@@ -480,3 +480,8 @@ test('Rojo Fuego/Verde Hoja: Torre Desafío en las cuatro modalidades',()=>{
  const O=require('../src/engine/objectives.js'),f=t=>O.fromDiagnosis({game:'FIRERED',field:{family:'FRLG',trainerTower:t.map(bestTime=>({bestTime}))}}).find(x=>x.id==='challenge.frlg.trainerTower')?.value;
  assert.equal(f([3000,4000,5000,6000]),true);assert.equal(f([3000,215999,5000,6000]),false);
 });
+
+test('USUM: episodio Rainbow Rocket (mansión normal y Electrode del castillo)',()=>{
+ const O=require('../src/engine/objectives.js'),f=fl=>O.fromDiagnosis({game:'ULTRAMOON',events:{activeFlags:fl}}).find(x=>x.id==='story.usum.rainbowRocket')?.value;
+ assert.equal(f([211,1731]),true);assert.equal(f([211]),undefined);assert.equal(f([1730]),undefined);
+});
