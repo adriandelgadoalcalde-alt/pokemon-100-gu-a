@@ -328,7 +328,7 @@
   // N/B: los poderes regalo se ganan con las misiones del Nexo. Solo se afirma el «no»: Nexo sin tocar (0 misiones, niveles a 0 y
   // el bloque vacío). Con el Nexo usado no hay estructura documentada para el «sí» y el hecho queda sin evidencia.
   if(['BLACK','WHITE'].includes(d.game)&&en?.untouched===true&&en.missions===0&&en.white===0&&en.black===0)add('entralink.bw.allPowers',false,'entralink5');
-  // Pokéstar Studios (N2/B2): las 40 películas completadas.
+  // Estudios Cinematográficos Pokéwood (N2/B2): las 40 películas completadas.
   if(Number.isInteger(d.pokestar5?.completed))add('pokestar.b2w2.allMovies',d.pokestar5.completed>=d.pokestar5.total,'pokestar5');
   // PWT: el récord 17 (PWTRecordID.Champion) cuenta las victorias en el Torneo Campeones.
   if(Array.isArray(d.pwt5?.records)&&Number.isInteger(d.pwt5.records[17]))add('battle.b2w2.pwtChampions',d.pwt5.records[17]>=1,'pwt5');
@@ -376,7 +376,7 @@
    if(prints.every(v=>v!==null))add('collection.swsh.footprints',prints.every(v=>v>=100),'namedBlocks');
    if(num('KDojoWattDonationProgress')!==null)add('collection.swsh.dojoWatts',num('KDojoWattDonationProgress')>=15,'namedBlocks');
    if(num('KRecordSparringTypesCleared')!==null)add('battle.swsh.restrictedSparring',num('KRecordSparringTypesCleared')>=18,'namedBlocks');
-   // Espada/Escudo: la Torre Batalla y el Torneo de las Estrellas solo se abren tras ser campeón; una victoria en
+   // Espada/Escudo: la Torre Batalla y el Torneo Estrellas de Galar solo se abren tras ser campeón; una victoria en
    // cualquiera prueba el fin de la historia (nunca se deduce lo contrario de un cero).
    if(['SWORD','SHIELD'].includes(d.game)&&typeof d.gameClear!=='boolean'){
     const wins=['KBattleTowerSinglesVictory','KBattleTowerDoublesVictory','KGSTVictoriesTotal'].map(num).filter(v=>v!==null);

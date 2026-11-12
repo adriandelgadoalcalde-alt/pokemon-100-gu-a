@@ -623,7 +623,7 @@
    "id": "card-2",
    "fase": 6,
    "orden": 620,
-   "como": "Estrella por terminar las películas exigidas de Pokéstar Studios (Ciudad Engobe): rueda cada película siguiendo el guion hasta el final bueno."
+   "como": "Estrella por terminar las películas exigidas de Estudios Cinematográficos Pokéwood (Ciudad Hormigón): rueda cada película siguiendo el guion hasta el final bueno."
   },
   {
    "juegos": [
@@ -791,7 +791,7 @@
    "id": "battle0",
    "fase": 3,
    "orden": 300,
-   "como": "Árbol Batalla (isla de Poni, tras la Liga): combates Individual, Doble y Múltiple contra entrenadores y leyendas invitadas (Rojo, Azul...). Hay sellos por 50 victorias seguidas en cada modalidad."
+   "como": "Árbol de Combate (al final de la Pendiente de Poni, tras la Liga): combates Individual, Doble y Múltiple contra entrenadores y leyendas invitadas (Rojo, Azul...). Hay sellos por 50 victorias seguidas en cada modalidad."
   },
   {
    "juegos": [
@@ -960,7 +960,7 @@
    "id": "card-11",
    "fase": 6,
    "orden": 611,
-   "como": "Tras la Liga, en el Árbol Batalla (isla de Poni): gana 50 combates seguidos en la modalidad Individual (a partir de la 20.ª entran los rivales fuertes)."
+   "como": "Tras la Liga, en el Árbol de Combate (al final de la Pendiente de Poni): gana 50 combates seguidos en la modalidad Individual (a partir de la 20.ª entran los rivales fuertes)."
   },
   {
    "juegos": [
@@ -972,7 +972,7 @@
    "id": "card-12",
    "fase": 6,
    "orden": 612,
-   "como": "Tras la Liga, en el Árbol Batalla (isla de Poni): gana 50 combates seguidos en la modalidad Doble; lleva un equipo pensado para dobles."
+   "como": "Tras la Liga, en el Árbol de Combate (al final de la Pendiente de Poni): gana 50 combates seguidos en la modalidad Doble; lleva un equipo pensado para dobles."
   },
   {
    "juegos": [
@@ -996,7 +996,7 @@
    "id": "card-14",
    "fase": 6,
    "orden": 614,
-   "como": "Sello de la tarjeta: 50 victorias seguidas en el Árbol Batalla, Múltiple (con un compañero)."
+   "como": "Sello de la tarjeta: 50 victorias seguidas en el Árbol de Combate, Múltiple (con un compañero)."
   },
   {
    "juegos": [
@@ -1124,7 +1124,7 @@
    "id": "battle0",
    "fase": 3,
    "orden": 300,
-   "como": "Torre Batalla (Puntera): sube de rango Poké Ball hasta Master Ball. El Torneo de las Estrellas de Galar (Nieves de la Corona) se juega en el estadio de Puntera."
+   "como": "Torre Batalla (Puntera): sube de rango Poké Ball hasta Master Ball. El Torneo Estrellas de Galar (Nieves de la Corona) se juega en el estadio de Puntera."
   },
   {
    "juegos": [

@@ -1459,7 +1459,7 @@
       "Activa la escena del árbol de las aves y persíguelas en sus regiones: Articuno en las Nieves, Zapdos en el Área Silvestre y Moltres en la Isla de la Armadura.",
       "Revisa las huellas para Cobalion, Terrakion y Virizion y sus encuentros. Keldeo requiere un procedimiento posterior con el trío; no es una recompensa automática por contar huellas.",
       "En Aventuras Dinamax registra cada legendario capturado: puedes conservar una captura de cada especie por partida. Distingue la lista de versión de los caminos que consigues mediante cooperación.",
-      "Tras las tres expediciones principales, revisa las pistas posteriores de Peony, las Ultracriaturas y el Torneo de las Estrellas de Galar cuando se habilite."
+      "Tras las tres expediciones principales, revisa las pistas posteriores de Peony, las Ultracriaturas y el Torneo Estrellas de Galar cuando se habilite."
     ],
     "check": "Tres expediciones y elecciones excluyentes documentadas; capturas de la instalación revisadas aparte.",
     "pitfalls": [
@@ -2182,7 +2182,7 @@
     "steps": [
       "Pegatinas dominantes: hay más de 100 escondidas por Alola (17 en Melemele, 33 en Akala y el resto en Ula-Ula y Poni). Algunas quedan tapadas por objetos, por el ángulo de cámara o por Pokémon.",
       "Al llegar a 20 pegatinas te llama Samson Oak: visítalo y te da un Pokémon de tamaño dominante. Las recompensas van por cantidad y edición: 20 → Gumshoos (Ultrasol) o Raticate (Ultraluna); 40 → Marowak o Araquanid; 50 → Lurantis o Salazzle; 70 → Vikavolt o Togedemaru; 80 → Mimikyu (en las dos); 100 → Ribombee o Kommo-o. Ninguno puede salir variocolor.",
-      "Pasaporte de entrenador, con 15 sellos: entrenador oficial; las cuatro Grandes Pruebas (Melemele, Akala, Ula-Ula y Poni, que suben el nivel al que te obedecen los Pokémon: 35, 50, 65 y 80); recorrido insular completado; las Pokédex de Melemele, Akala, Ula-Ula, Poni y Alola; 50 victorias seguidas en el Árbol Batalla en individual, dobles y múltiple; y el Pokévisor en su versión final.",
+      "Pasaporte de entrenador, con 15 sellos: entrenador oficial; las cuatro Grandes Pruebas (Melemele, Akala, Ula-Ula y Poni, que suben el nivel al que te obedecen los Pokémon: 35, 50, 65 y 80); recorrido insular completado; las Pokédex de Melemele, Akala, Ula-Ula, Poni y Alola; 50 victorias seguidas en el Árbol de Combate en individual, dobles y múltiple; y el Pokévisor en su versión final.",
       "Comprueba cada sello en la página del pasaporte: la web lo cruza con lo que lee del guardado."
     ],
     "check": "Los 15 sellos del pasaporte y las pegatinas dominantes que te faltan.",

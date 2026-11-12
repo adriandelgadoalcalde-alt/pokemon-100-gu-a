@@ -252,7 +252,7 @@ function eventAudit(o,b){let off,workBase,flagBase,flagCount,workCount;
   // Zona Nexo (bloque 53, Entralink5 de PKHeX): niveles blanco (+0x0C) y negro (+0x0E).
   // Objetos clave (bloque 25, PlayerBag5B2W2 de PKHeX: bolsillo KeyItems en +0x4D8, entradas u16 id + u16 cantidad).
   const keyItems=[];for(let i=0;i<(0x624-0x4D8)/4;i++){const id=u16(b,base+0x18400+0x4D8+i*4),count=u16(b,base+0x18400+0x4DA+i*4);if(id>0&&id<1000&&count>0)keyItems.push({id,count});}
-  // Pokéstar Studios (bloque 71 de SaveBlockAccessor5B2W2, 0x25A00): 40 registros de 20 bytes desde +0x28 (mejor puntuación
+  // Estudios Cinematográficos Pokéwood (bloque 71 de SaveBlockAccessor5B2W2, 0x25A00): 40 registros de 20 bytes desde +0x28 (mejor puntuación
   // u32, −9999 si nunca se rodó; u16 en +16 = 1 al completar la película). Contrastado con las partidas del propietario.
   const ps=base+0x25A00,pokestar5={completed:Array.from({length:40},(_,i)=>u16(b,ps+0x28+i*20+16)===1).filter(Boolean).length,total:40};
   const entralink5={white:u16(b,base+0x21200+0x0C),black:u16(b,base+0x21200+0x0E)};

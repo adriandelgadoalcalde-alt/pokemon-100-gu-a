@@ -38,7 +38,7 @@
   }
   return {selectedChecksumsValid:true,checkedBlocks:blocks.map(b=>b[0]),
    verifiedFields:['caught','seen','gameClear','nationalDex','badges','badgesTotal','events','medals','subway5','musical5','pwt5','entralink5','keyItems','pokestar5'],
-   scope:'Mochila, datos de entrenador, aventura, eventos, medallas, Pokédex, medallero, Musical, Pokéstar Studios, Zona Nexo, Metro Batalla, PWT y tabla CRC; otros bloques pendientes.'};
+   scope:'Mochila, datos de entrenador, aventura, eventos, medallas, Pokédex, medallero, Musical, Estudios Cinematográficos Pokéwood, Zona Nexo, Metro Batalla, PWT y tabla CRC; otros bloques pendientes.'};
  }
  const api={beef,b2w2,usb};if(typeof module==='object'&&module.exports)module.exports=api;else root.PokemonSaveIntegrity=api;
 })(typeof globalThis==='object'?globalThis:this);
