@@ -185,7 +185,7 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
 - **Alola (12/11/2026):** células de Zygarde de Sol/Luna (las 95 en estado «recogida» de `EventWork7.GetZygardeCell`),
   las 100 dominsignias de USUL (el mismo vector: en USUL son pegatinas, como rotula `SAV_ZygardeCell` de PKHeX y confirma el
   récord 72 «Stickers Collected»; WikiDex «Dominsignia») y los cuatro recorridos del Surfeo Mantine con puntuación
-  (`Misc7.GetSurfScore`). Los 5 núcleos de Zygarde (SL) y las células de USUL no tienen bloque documentado: a mano.
+  (`Misc7.GetSurfScore`). (Actualizado después: núcleos y células también se acreditan; ver «Células de Zygarde en Ultrasol/Ultraluna».)
 
 - **Estrella de las estatuas de DBPR (12/11/2026):** `PlayerWork.GetTrainerRank` (uDPR, revisión de la 1.3.0) da la estrella
   con `UgItemWork.GetHaveStatueKindNum() >= 100`: objetos del Subsuelo de categoría estatua con cantidad > 0. El extractor
@@ -325,8 +325,8 @@ Bloques con nombre de `SaveBlockAccessor9SV` (PKHeX 96e33e7), leídos por `Progr
 | Fotos de Gama | captura de los dos paradoja de la versión (1020/1021 en Escarlata, 1022/1023 en Púrpura) | Pokédex |
 | Pecharunt | captura de 1025 | Pokédex |
 
-Un bloque ausente (partida de una versión anterior al DLC) se deja sin interpretar. Sin dato: vuelo contrarreloj y
-Torneo de la Academia.
+Un bloque ausente (partida de una versión anterior al DLC) se deja sin interpretar. El vuelo contrarreloj y la Gran Pugna
+Académica también se leen ya (ver más abajo).
 
 ### 12/11/2026 — Células de Zygarde en Ultrasol/Ultraluna
 
@@ -354,12 +354,14 @@ Hecho `alola.usum.zygardeCells` = variable 169 ≥ 100.
 - **Escarlata/Púrpura:** «Objetos legendarios, máscaras…» pasa a «Recuperar las máscaras Cimiento, Fuente y Horno de
   Ogerpon» (mochila con 2406, 2407 y 2408, o historia del DLC acabada). Contrastado con la Escarlata pública que tiene el
   DLC acabado. «Distribuciones y raids temporales: documentar sin exigirlos» se retira: no es una meta del 100 %.
-  «Torneo de la Academia» se separa de la Liga Arándano (ya acreditada) y queda a mano: ningún bloque con nombre lo registra.
+  «Torneo de la Academia» se separa de la Liga Arándano (ya acreditada). Resuelto el 12/11/2026: la llamada de Cinio que
+  felicita por la Gran Pugna activa FSYS_RAID_DIFFICTLTY4_SURVEY (ver `pendientes.json`, `sv-dlc`).
 - **Let's Go, revancha de la Liga:** las tablas `bin/flagwork/*.tbl` de la ROM (formato AHTB: hash, longitud, nombre; el
   índice es el orden, contrastado con PKHeX: `FE_MASTER_RED_BATTLE_TALKED` = 116) nombran `WK_SCENE_CHAMPION_REMATCH`
   (variable de escena 25) y `FE_KANNA_WIN`/`FE_SHIBA_WIN`/`FE_KIKUKO_WIN`/`FE_WATARU_WIN` (banderas 149-152). Las dos partidas
   del propietario tienen la escena 25 = 10 y las públicas recién empezadas 0. Los AMX de `script_amx.gfpak` no conservan
-  nombres, así que falta saber qué valor marca la revancha superada: sigue a mano.
+  nombres, así que el valor no distingue la revancha. Resuelto el 12/11/2026 con lo que cambia después: Verde reaparece en
+  Ciudad Celeste solo al volver a vencer a la Liga (FV_T03_GREEN; ver `pendientes.json`, `lgpe-revancha`).
 
 ### 12/11/2026 — Let's Go: scripts de la Liga descompilados
 
