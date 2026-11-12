@@ -37,8 +37,16 @@ test('Core diagnostics retain limitations, inventory, language and revision acro
  result.inventory[0].items[0].count=99;assert.equal(raw.inventory[0].items[0].count,2);
 });
 test('documented event signals retain unknowns and cannot claim verified validation',()=>{
- const d=normalize({game:'SCARLET',caught:[],seen:[],progressSignals:[{id:'story.paldea.clear',value:true,validation:'verified'},{id:'story.tealMask.clear',value:'false'}]});
+ const d=normalize({game:'SCARLET',caught:[],seen:[],progressSignals:[{id:'story.tealMask.clear',value:true,validation:'verified'},{id:'story.indigoDisk.clear',value:'false'}]});
  assert.equal(d.progressSignals[0].validation,'documented');assert.equal(d.progressSignals[0].value,true);assert.equal(d.progressSignals[1].value,null);
+});
+test('only signals contrasted with real saves are verified, whatever the file declares',()=>{
+ const d=normalize({game:'VIOLET',caught:[],seen:[],progressSignals:[{id:'story.paldea.clear',value:true,validation:'documented'}]});
+ assert.equal(d.progressSignals[0].validation,'verified');
+ const objectives=require('../src/engine/objectives.js');
+ const fact=ok=>objectives.fromDiagnosis({...d,integrity:{checksumsValid:ok}}).find(f=>f.id==='story.gameClear');
+ assert.equal(fact(true).type,'direct');assert.equal(fact(true).validation,'verified');
+ assert.equal(fact(false).type,'derived');assert.equal(fact(false).validation,'documented');
 });
 test('local Core fallback only handles explicitly unsupported formats, never integrity failures',async()=>{
  let calls=0;const bytes=new Uint8Array(100);

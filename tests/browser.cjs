@@ -530,8 +530,9 @@ async function run() {
     assert.match(await allPage.locator('#app').innerText(),/indicador documentado de Liga superada/);
     assert.equal(await allPage.locator('[data-step]:checked').count(),0);
     assert.equal(await allPage.locator('[data-focus]').first().getAttribute('data-focus'),'FIRERED-15');
-    // Documented modern signals guide the route while mastery remains partial.
-    const modern={game:'SCARLET',caught:[],seen:[],gameClear:null,integrity:{checksumsValid:true},progressSignals:[
+    // Documented modern signals guide the route while mastery remains partial (without integrity, even the contrasted
+    // end-of-Paldea signal stays partial).
+    const modern={game:'SCARLET',caught:[],seen:[],gameClear:null,integrity:{checksumsValid:false},progressSignals:[
       {id:'story.paldea.clear',label:'Indicador de final de Paldea',value:true,validation:'documented'},
       {id:'story.tealMask.clear',label:'Indicador de final de La máscara turquesa',value:null,validation:'documented'}]};
     await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-modern.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(modern))});

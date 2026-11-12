@@ -458,8 +458,10 @@
   }
   const signal=(typeof module==='object'&&module.exports?require('../saves/diagnosis.js'):root.PokemonDiagnosis)?.documentedClear(d);
   // Una señal documentada que ya tiene contraste natural (positivo y negativo con partidas reales) cuenta como directa.
-  if(signal)facts.push({id:'story.gameClear',value:signal.value,gameId:d.game,type:signal.validation==='verified'?'direct':'derived',
-   validation:signal.validation==='verified'?'verified':'documented',source:signal.source});
+  // Solo con la integridad del guardado comprobada, como el resto de datos directos.
+  const contrasted=signal?.validation==='verified'&&validated;
+  if(signal)facts.push({id:'story.gameClear',value:signal.value,gameId:d.game,type:contrasted?'direct':'derived',
+   validation:contrasted?'verified':'documented',source:signal.source});
   // Combates repetibles que la partida no registra (revanchas, Cintia, Morimoto...): solo se puede afirmar el «no» cuando
   // todavía no son posibles, porque todos exigen haber acabado la historia (y la revancha de HGSS, las 16 medallas).
   const clear=facts.filter(f=>f.id==='story.gameClear'&&typeof f.value==='boolean');

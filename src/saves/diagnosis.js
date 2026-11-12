@@ -17,7 +17,7 @@
   for(const key of ['unparsed','warnings','gameCandidates'])if(Array.isArray(e[key]))result[key]=e[key].filter(x=>typeof x==='string');
   for(const key of ['revision','region','detectedVersion','schemaVersion'])if(typeof e[key]==='string'||e[key]===null)result[key]=e[key];
   if(integer(e.languageId)!==null)result.languageId=e.languageId;
-  if(Array.isArray(e.progressSignals))result.progressSignals=e.progressSignals.filter(s=>s&&typeof s.id==='string').map(s=>({id:s.id,label:typeof s.label==='string'?s.label:s.id,value:tri(s.value),validation:'documented',source:s.source&&typeof s.source==='object'?JSON.parse(JSON.stringify(s.source)):null}));
+  if(Array.isArray(e.progressSignals))result.progressSignals=e.progressSignals.filter(s=>s&&typeof s.id==='string').map(s=>({id:s.id,label:typeof s.label==='string'?s.label:s.id,value:tri(s.value),validation:CONTRASTED_SIGNALS.has(s.id)?'verified':'documented',source:s.source&&typeof s.source==='object'?JSON.parse(JSON.stringify(s.source)):null}));
   if(Array.isArray(e.inventory))result.inventory=JSON.parse(JSON.stringify(e.inventory));
   for(const key of ['tid','sid','generation','version','badgesMask'])if(integer(e[key])!==null)result[key]=e[key];
   if(Array.isArray(e.keyItems))result.keyItems=e.keyItems.filter(i=>i&&Number.isInteger(i.id)&&i.id>0&&Number.isInteger(i.count)&&i.count>0)
@@ -41,6 +41,9 @@
   const clear=blocks['ZA_MISSION_'+String(Q.clearMission).padStart(2,'0')];
   return {...parsed,namedBlocks:blocks,gameClear:typeof parsed.gameClear==='boolean'?parsed.gameClear:typeof clear==='boolean'?clear:parsed.gameClear};
  }
+ // Señales con contraste natural (positivo y negativo con partidas reales; ProgressSignals.cs). La validación la decide
+ // esta lista y nunca lo que declare el archivo importado.
+ const CONTRASTED_SIGNALS=new Set(['story.paldea.clear']);
  function documentedClear(e){
   const id=['RUBY','SAPPHIRE','EMERALD','FIRERED','LEAFGREEN'].includes(e?.game)?'story.gba.gameClear':['SCARLET','VIOLET'].includes(e?.game)?'story.paldea.clear':null;
   const signal=id?e?.progressSignals?.find(s=>s.id===id):null;
