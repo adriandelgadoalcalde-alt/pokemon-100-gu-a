@@ -1961,7 +1961,7 @@
       "Por la noche aparecen zonas de combate por toda la ciudad, también en las azoteas. Vence entrenadores para sumar puntos (hasta 2.500 por combate según tu rango) y recoge medallas de premio y tarjetas de bonificación.",
       "Las tarjetas de bonificación piden tareas concretas: quemar o paralizar, golpes supereficaces, ataques por sorpresa o derrotar a entrenadores de rango superior. Las raras dan hasta 20.000 puntos. Atacar sin ser visto te da ventaja al empezar el combate.",
       "Algunos entrenadores ayudan tras vencerlos: dependientes del Centro Pokémon y camareros curan, los niños ricos dan medallas, los Entrenadores Guay dan una tarjeta y los mensajeros dan objetos. Al amanecer las medallas se convierten en dinero, multiplicado según cuántos entrenadores hayas vencido (×1 a ×3).",
-      "Misión 4: con suficientes puntos consigues el billete de aspirante (Challenger's Ticket) y puedes disputar el combate de ascenso al rango Y.",
+      "Misión 4: con suficientes puntos consigues el Cupón Desafío y puedes disputar el combate de ascenso al rango Y.",
       "Misiones 6 a 8: repite el ciclo para subir a X (rival: Yvon, oficinista), W (Xavi, colegial) y V (Rintaro, camarero). Cada ascenso se disputa con el billete en el lugar que indica la misión.",
       "Entre combates, la misión 5 te enseña más de la ciudad junto a tu acompañante."
     ],
@@ -2012,9 +2012,9 @@
       "Misiones 11 a 13: megaevoluciones descontroladas de Slowbro (Distrito Azul), Camerupt (Distrito Amarillo) y Victreebel (Distrito Rosa). Si el contador llega a cero pierdes el combate: ataca rápido y esquiva sus ataques de área.",
       "Misión 14: rango E contra Naria, la streamer; primero tienes que encontrarla.",
       "Misiones 15 a 18 (encargo del Equipo MZ, «Team MZ» en inglés): Beedrill (Distrito Verde), Hawlucha (Distrito Rosa) y Banette (Distrito Amarillo).",
-      "Misión 19: antes del ascenso a D, busca a Gwynn, la hermana pequeña de Albar, que ha desaparecido. Después vence a Albar.",
-      "Misiones 20 a 23: encargos del Sindicato (Rust Syndicate) para saldar la deuda, y las megaevoluciones de Mawile (Distrito Rosa), Barbaracle (Distrito Azul) y Ampharos (Distrito Rojo).",
-      "Misión 24: rango C contra Córax, jefe del Sindicato (Rust Syndicate). Misión 25: combate en una pista de verdad, ya resuelta la deuda.",
+      "Misión 19: antes del ascenso a D, busca a Inma, la hermana pequeña de Albar, que ha desaparecido. Después vence a Albar.",
+      "Misiones 20 a 23: encargos del Clan Corrosión para saldar la deuda, y las megaevoluciones de Mawile (Distrito Rosa), Barbaracle (Distrito Azul) y Ampharos (Distrito Rojo).",
+      "Misión 24: rango C contra Córax, jefe del Clan Corrosión. Misión 25: combate en una pista de verdad, ya resuelta la deuda.",
       "Misiones 26 a 29: Froslass (Distrito Azul), Altaria (Distrito Rosa) y Venusaur (Distrito Amarillo), antes del torneo de Lilette (SBC). Misión 30: rango B contra Lilette.",
       "Misiones 31 a 34: Dragonite (Distrito Verde), Tyranitar (Distrito Amarillo) y Starmie (Distrito Azul)."
     ],
@@ -2064,7 +2064,7 @@
     "requires": [],
     "steps": [
       "Misión 39: se abre el Torneo Z-A Infinito. Ya no hay más ascensos de rango, pero cada noche hay tres zonas de combate y los rivales suben de nivel a medida que completas torneos.",
-      "Con el billete de aspirante (Challenger's Ticket) puedes llamar a un rival en Quasartico Inc. para los combates de recompensa: pepitas grandes, vitaminas, Chapas Plateadas o Doradas, Poké Balls especiales y, con suerte, una Master Ball. Las rachas largas dan más Caramelos Exp.",
+      "Con el Cupón Desafío puedes llamar a un rival en Quastelar S. A. para los combates de recompensa: pepitas grandes, vitaminas, Chapas Plateadas o Doradas, Poké Balls especiales y, con suerte, una Master Ball. Las rachas largas dan más Caramelos Exp.",
       "Misiones 40 a 42: la amenaza de «el que da» (con Melia, antes miembro del Team Flare), la de «el que quita» (con Grisel y Airén) y el equilibrio del mundo con Zygarde. Los encuentros y capturas de Xerneas, Yveltal y Zygarde se detallan en la misión 06.",
       "Completa la Pokédex de Luminalia y, si tienes el DLC, la del Hiperespacio (misión 07). Revisa también los títulos de entrenador y la investigación de Pokédex de Melia."
     ],
@@ -2125,7 +2125,7 @@
       "Misión 12: Ansha aún busca un legendario. Prepara el dónut especial, cruza la distorsión esmeralda y captura a Rayquaza.",
       "Misión 13: prepara el dónut especial de la distorsión rubí y captura a Groudon. Misión 14: el de la distorsión zafiro, para capturar a Kyogre.",
       "Postgame del DLC: tras terminar la historia principal y vencer a Darkrai aparecen las Arenas Mega Rebeldes del Hiperespacio. Son revanchas de las megaevoluciones descontroladas a nivel 200 y con límite de tiempo; a veces sueltan una esfera que congela la cuenta atrás.",
-      "Cuando completes la misión secundaria 188, cada 25.000 puntos de sondeo puedes pedir un escaneo de zonas especiales en las oficinas del encargo (habla con Philippe). A veces sale una zona desconocida de 5 estrellas con un legendario o singular: Latias, Latios, Cobalion, Terrakion, Virizion, Keldeo y Meloetta.",
+      "Cuando completes la misión secundaria 188, cada 25.000 puntos de sondeo puedes pedir un escaneo de zonas especiales en las oficinas del encargo (habla con Giso). A veces sale una zona desconocida de 5 estrellas con un legendario o singular: Latias, Latios, Cobalion, Terrakion, Virizion, Keldeo y Meloetta.",
       "Las zonas desconocidas a las que llevan algunos portales suelen ligarse a misiones secundarias o dan Megapiedras nuevas. Revisa la lista de Megapiedras para las megaevoluciones del DLC: Raichu X e Y, Chimecho, Absol Z, Staraptor, Garchomp Z, Lucario Z, Heatran, Darkrai, Golurk, Meowstic, Crabominable, Golisopod, Magearna, Zeraora, Scovillain, Glimmora, Tatsugiri y Baxcalibur."
     ],
     "check": "Las 14 misiones del Hiperespacio marcadas, Rayquaza, Groudon y Kyogre capturados, las Arenas Mega Rebeldes del Hiperespacio superadas y los legendarios de las zonas escaneadas registrados.",
@@ -2622,7 +2622,7 @@
       "2. Legendarios de la historia del DLC, en este orden: Rayquaza (misión 12, distorsión esmeralda), Groudon (misión 13, distorsión rubí) y Kyogre (misión 14, distorsión zafiro). Cada uno pide su dónut especial.",
       "3. Darkrai: al terminar la historia del DLC; vencerlo abre las Arenas Mega Rebeldes del Hiperespacio.",
       "4. Arenas Mega Rebeldes del Hiperespacio: revanchas de nivel 200 con límite de tiempo contra cada megaevolución descontrolada.",
-      "5. Misión secundaria 188: a partir de ella, cada 25.000 puntos de sondeo, Philippe escanea zonas especiales. Las zonas desconocidas de 5 estrellas traen a Latias, Latios, Cobalion, Terrakion, Virizion, Meloetta y, con los tres Espadachines capturados, Keldeo. Repite escaneos hasta tenerlos todos.",
+      "5. Misión secundaria 188: a partir de ella, cada 25.000 puntos de sondeo, Giso escanea zonas especiales. Las zonas desconocidas de 5 estrellas traen a Latias, Latios, Cobalion, Terrakion, Virizion, Meloetta y, con los tres Espadachines capturados, Keldeo. Repite escaneos hasta tenerlos todos.",
       "6. Megapiedras nuevas del DLC: Raichu X e Y, Chimecho, Absol Z, Staraptor, Garchomp Z, Lucario Z, Heatran, Darkrai, Golurk, Meowstic, Crabominable, Golisopod, Magearna, Zeraora, Scovillain, Glimmora, Tatsugiri y Baxcalibur (portales a zonas desconocidas y misiones secundarias).",
       "7. Pokédex de Megadimensión: registra las especies nuevas que aparecen en el Hiperespacio."
     ],
