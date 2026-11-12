@@ -152,13 +152,23 @@ test('posición X/Y y ROZA: bloque Situation con suma de su tabla y zonas con no
  xy[0x1400]^=1;assert.equal(L.read(xy,'X'),null);
 });
 
-test('posición Ultrasol/Ultraluna: CRC16 invertido del bloque Situation y Sol/Luna sin tabla',()=>{
+test('posición Ultrasol/Ultraluna: CRC16 invertido del bloque Situation y otra tabla en Sol/Luna',()=>{
  const L=require('../src/saves/ds-location.js'),size=0x6CC00,b=new Uint8Array(size),v=new DataView(b.buffer),bo=size-0x200,info=bo+0x14+8;
  v.setUint32(bo+0x10,0x42454546,true);v.setUint16(info+4,1,true);v.setUint16(0x1000,22,true);v.setFloat32(0x1008,2400,true);v.setFloat32(0x1010,2160,true);
  v.setUint16(info+6,L.crc16inv(b.subarray(0x1000,0x107C)),true);
  const r=L.read(b,'ULTRASUN');assert.equal(r.name,'Ruinas de la Guerra');assert.equal(r.x,2400);
  assert.equal(L.read(b,'SUN'),null);
  b[0x1001]^=1;assert.equal(L.read(b,'ULTRAMOON'),null);
+});
+
+test('posición Sol/Luna: bloque Situation en 0xE00, su propia tabla de zonas y subtítulo del lugar',()=>{
+ const L=require('../src/saves/ds-location.js'),size=0x6BE00,b=new Uint8Array(size),v=new DataView(b.buffer),bo=size-0x200,info=bo+0x14+8;
+ v.setUint32(bo+0x10,0x42454546,true);v.setUint16(info+4,1,true);
+ const put=zone=>{v.setUint16(0xE00,zone,true);v.setUint16(info+6,L.crc16inv(b.subarray(0xE00,0xE7C)),true);};
+ put(80);assert.equal(L.read(b,'SUN').name,'Ruinas de la Vida');
+ put(7);assert.equal(L.read(b,'MOON').name,'Ciudad Hauoli (Paseo Marítimo)');
+ assert.equal(L.read(b,'ULTRASUN'),null);
+ b[0xE01]^=1;assert.equal(L.read(b,'SUN'),null);
 });
 
 test('posición BDSP por zona = ubicación y región de Escarlata/Púrpura por bloques',()=>{

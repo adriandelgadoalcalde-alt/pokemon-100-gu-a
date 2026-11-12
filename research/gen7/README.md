@@ -10,4 +10,7 @@ Contraste: zona 0 = Ruta 1 (inicio); las partidas públicas de USUM salen en la 
 Guerra. La posición se lee del bloque 1 «Situation» (0x1000, `Situation7`) tras comprobar su CRC16 reflejado e
 invertido (`BlockInfo7`). Nota: el GARC `a/0/1/7` con registros de 84 bytes es la tabla de especies, no las zonas.
 
-Sol/Luna numeran sus zonas de otra forma; sin una copia de esos juegos no se muestra su ubicación.
+`sm-zones.json` es lo mismo para las 295 zonas de Sol/Luna (mismo GARC y registro; Sol y Luna dan la misma tabla, sha256
+`765f87bd…`), extraído con `extract-3ds-zones.py sm`. En Sol/Luna el bloque «Situation» está en 0xE00 (`SaveBlockAccessor7SM`).
+Ultraluna da exactamente la misma tabla que Ultrasol. En la lista de lugares de la 7.ª generación la línea siguiente a cada
+nombre es su subtítulo («Ciudad Hauoli» / «Paseo Marítimo»); la guía lo muestra entre paréntesis.

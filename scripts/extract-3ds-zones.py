@@ -6,9 +6,9 @@ Solo lectura: RomFS -> GARC -> miembro con las cabeceras de zona. Guarda únicam
 nombre de lugar de cada zona, nunca otros bytes del juego.
   xy:   a/0/1/2, miembro 360, 56 bytes por zona (360 zonas); 9 bits bajos del u16 en 0x1C
   oras: a/0/1/3, miembro 536, 56 bytes por zona (536 zonas); 9 bits bajos del u16 en 0x1C
-  usum: a/0/7/7 (GARC «zonedata»), miembro 0 comprimido con LZ11, 0x54 bytes por zona; int32 en 0x1C
+  sm, usum: a/0/7/7 (GARC «zonedata»), miembro 0 comprimido con LZ11, 0x54 bytes por zona; int32 en 0x1C
         («ParentMap», índice de la lista de lugares; ZoneData7 de pk3DS)
-Uso: python3 -I scripts/extract-3ds-zones.py <xy|oras|usum> <rom.3ds> "<nombre del juego>" [salida.json]
+Uso: python3 -I scripts/extract-3ds-zones.py <xy|oras|sm|usum> <rom.3ds> "<nombre del juego>" [salida.json]
 """
 import hashlib
 import json
@@ -18,7 +18,7 @@ from pathlib import Path
 
 # juego: (GARC, miembro, zonas esperadas o None, tamaño de registro, campo, máscara, LZ11)
 LAYOUTS = {'xy': ('a/0/1/2', 360, 360, 56, 0x1C, 0x1FF, False), 'oras': ('a/0/1/3', 536, 536, 56, 0x1C, 0x1FF, False),
-           'usum': ('a/0/7/7', 0, None, 0x54, 0x1C, 0xFFFF, True)}
+           'sm': ('a/0/7/7', 0, None, 0x54, 0x1C, 0xFFFF, True), 'usum': ('a/0/7/7', 0, None, 0x54, 0x1C, 0xFFFF, True)}
 
 
 def lz11(b):
@@ -122,7 +122,7 @@ def main():
     head = {'game': sys.argv[3], 'garc': path, 'member': member, 'entrySize': size, 'nameField': field, 'nameMask': mask,
             'count': count, 'sha256': hashlib.sha256(zones).hexdigest(),
             'note': 'Índice del nombre de lugar de cada cabecera de zona. Extraído de una copia propia del juego con scripts/extract-3ds-zones.py; no se guarda ningún otro byte del juego.'}
-    out = Path(sys.argv[4]) if len(sys.argv) == 5 else Path(__file__).resolve().parent.parent / 'research' / ('gen7' if sys.argv[1] == 'usum' else 'gen6') / f'{sys.argv[1]}-zones.json'
+    out = Path(sys.argv[4]) if len(sys.argv) == 5 else Path(__file__).resolve().parent.parent / 'research' / ('gen7' if sys.argv[1] in ('sm', 'usum') else 'gen6') / f'{sys.argv[1]}-zones.json'
     out.write_text(json.dumps(head, ensure_ascii=False, indent=1)[:-2] + ',\n "names": ' + json.dumps(names, separators=(',', ':')) + '\n}\n', encoding='utf-8', newline='\n')
     print(f'Escrito {out.name}: {len(names)} zonas.')
 

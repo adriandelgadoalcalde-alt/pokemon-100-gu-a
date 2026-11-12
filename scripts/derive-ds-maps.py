@@ -133,7 +133,10 @@ def unova2():
 
 
 def kalos_hoenn(key, expected, gen='gen6', text='text_xy_00000_es.txt'):
-    """X/Y, ROZA y USUM: zona → índice del nombre (research/<gen>/<key>-zones.json, extraído de la ROM propia)."""
+    """X/Y, ROZA, SM y USUM: zona → índice del nombre (research/<gen>/<key>-zones.json, extraído de la ROM propia).
+
+    En la séptima generación la línea siguiente al nombre es el subtítulo del lugar («Ciudad Hauoli» + «Paseo Marítimo»);
+    si existe, se añade entre paréntesis."""
     spec = json.loads((ROOT / 'research' / gen / f'{key}-zones.json').read_text(encoding='utf-8'))
     names = (PKHEX / 'Resources' / 'text' / 'locations' / gen / text).read_text(encoding='utf-8-sig').split('\n')
     if spec['count'] != len(spec['names']):
@@ -145,7 +148,8 @@ def kalos_hoenn(key, expected, gen='gen6', text='text_xy_00000_es.txt'):
     for zone, index in enumerate(spec['names']):
         if index == 0 or index >= len(names) or not names[index].strip():
             continue
-        used[index] = names[index].strip()
+        name, sub = names[index].strip(), names[index + 1].strip() if gen == 'gen7' and index + 1 < len(names) else ''
+        used[index] = f'{name} ({sub})' if sub else name
         table[zone] = [index, f'ZONE_{zone}']
     return {'maps': table, 'names': used, 'source': 'ROM propia (' + spec['game'] + ') sha256:' + spec['sha256'][:16]}
 
@@ -361,6 +365,8 @@ def build():
     data['BDSP'] = bdsp()
     data['SWITCH'] = switch_names()
     data['XY'] = kalos_hoenn('xy', [(0, 'Pueblo Boceto'), (8, 'Pueblo Acuarela'), (53, 'Ciudad Novarte')])
+    data['SM'] = kalos_hoenn('sm', [(0, 'Ruta 1'), (7, 'Ciudad Hauoli'), (25, 'Cueva Sotobosque'), (80, 'Ruinas de la Vida')],
+                             'gen7', 'text_sm_00000_es.txt')
     data['USUM'] = kalos_hoenn('usum', [(0, 'Ruta 1'), (7, 'Ruta 2'), (22, 'Ruinas de la Guerra')], 'gen7', 'text_sm_00000_es.txt')
     data['ORAS'] = kalos_hoenn('oras', [(0, 'Villa Raíz'), (13, 'Ciudad Petalia')])
     data['RB'] = kanto_gb('pokered', '0dbf95cd12f5b1511c62ce69efe283000f780a8f')

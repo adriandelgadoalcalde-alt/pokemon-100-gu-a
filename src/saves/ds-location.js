@@ -56,15 +56,16 @@
   const mapId=v.getUint16(block+2,true),entry=D[G.maps].maps[mapId];if(!entry)return null;
   return {mapId,map:entry[1],name:D[G.maps].names[entry[0]],x:Math.round(v.getFloat32(block+0x10,true)),y:Math.round(v.getFloat32(block+0x18,true)),source:'ds-location'};
  }
- // Ultrasol/Ultraluna: bloque 1 «Situation» (0x1000, 0x7C bytes); suma CRC16 reflejada e invertida (BlockInfo7 de PKHeX)
- // en la tabla de bloques del final. Situation7: mapa u16 en +0, X float en +8, Y en +0x10. Zonas: research/gen7/usum-zones.json.
- // Sol/Luna numeran sus zonas de otra forma y no hay copia de esos juegos: sin ubicación.
- const GEN7={ULTRASUN:{size:0x6CC00,maps:'USUM'},ULTRAMOON:{size:0x6CC00,maps:'USUM'}};
+ // Séptima generación: bloque 1 «Situation» (0x7C bytes; 0xE00 en Sol/Luna y 0x1000 en Ultrasol/Ultraluna); suma CRC16
+ // reflejada e invertida (BlockInfo7 de PKHeX) en la tabla de bloques del final. Situation7: mapa u16 en +0, X float en +8,
+ // Y en +0x10. Zonas: research/gen7/sm-zones.json y usum-zones.json (cada pareja numera sus zonas a su manera).
+ const GEN7={SUN:{size:0x6BE00,block:0xE00,maps:'SM'},MOON:{size:0x6BE00,block:0xE00,maps:'SM'},
+  ULTRASUN:{size:0x6CC00,block:0x1000,maps:'USUM'},ULTRAMOON:{size:0x6CC00,block:0x1000,maps:'USUM'}};
  const CRC7=(()=>{const t=[];for(let i=0;i<256;i++){let c=i;for(let k=0;k<8;k++)c=c&1?(c>>>1)^0xA001:c>>>1;t.push(c);}return t;})();
  const crc16inv=d=>{let c=0xFFFF;for(const b of d)c=CRC7[(b^c)&0xFF]^(c>>>8);return (~c)&0xFFFF;};
  function readGen7(bytes,game){
   const G=GEN7[game],D=data();if(!G||!D||bytes.length!==G.size)return null;
-  const v=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength),block=0x1000,info=G.size-0x200+0x14+1*8;
+  const v=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength),block=G.block,info=G.size-0x200+0x14+1*8;
   if(v.getUint32(G.size-0x200+0x10,true)!==0x42454546||v.getUint16(info+4,true)!==1)return null;
   if(crc16inv(bytes.subarray(block,block+0x7C))!==v.getUint16(info+6,true))return null;
   const mapId=v.getUint16(block,true),entry=D[G.maps].maps[mapId];if(!entry)return null;
