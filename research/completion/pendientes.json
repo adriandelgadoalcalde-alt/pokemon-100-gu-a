@@ -59,9 +59,9 @@
     {
       "id": "unova-postliga",
       "titulo": "Negro/Blanco: poderes regalo del Nexárbol (Rascacielos Negro / Cavernogal Blanco ya se acreditan por sus medallas)",
-      "estado": "bloqueado",
-      "motivo": "Poderes del Nexárbol (N/B): PKHeX solo expone Entralink5BW.MissionsComplete y las dos partidas del propietario lo tienen a 0, sin caso positivo con el que contrastar.",
-      "nota": "12/11/2026: el «no» ya se acredita: con el Nexo sin tocar (MissionsComplete 0, niveles 0 y el bloque 53 vacío salvo cabecera y casillas de poder = 48) los poderes regalo no se han conseguido (públicas y las dos del propietario). Falta un caso positivo para el «sí»."
+      "estado": "hecho",
+      "motivo": "",
+      "nota": "12/11/2026: resuelto con fuentes de la comunidad: todos los poderes Nexo = los dos niveles del Nexo (★Negro y ☆Blanco, 0x0C/0x0E del bloque 53) a 30 o más (Bulbapedia «Entree»; Serebii «Trainer Card» de N/B: estrella «Obtain all Entralink powers»). Se acredita el sí y el no. Partidas del propietario: niveles 0, no."
     },
     {
       "id": "sinnoh-postliga",

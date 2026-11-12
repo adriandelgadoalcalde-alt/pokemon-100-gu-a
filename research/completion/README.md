@@ -227,7 +227,7 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
 - **Más huecos cerrados con las listas de FlagsEditorEXPlugin (12/11/2026):** X/Y `FE_HANDSOME_QUEST_ALL_CLEAR` (0xC9;
   Y del propietario 1, X 0); DP `FE_PC_GOLD` 0x69 (enfermera) y `FE_RECONGNIZE_SHINOU/NATIONAL` 0xAB/0xAC (diplomas, las mismas
   posiciones que Platino); ROZA `TRID_CHAMPION_P_01/_P_02` (revancha del campeón; el primer combate queda en
-  `TRID_CHAMPION_01`, activo en las dos partidas del propietario). HGSS: la revancha de Lance y del Alto Mando no deja
+  `TRID_CHAMPION_01`, activo en las dos partidas del propietario). HGSS: la revancha de Lance y del Alto Mando no deja (resuelto el 12/11/2026 con el Salón de la Fama: ver «Revanchas de la Liga en Gen 4» más abajo)
   bandera (pokeheartgold `scr_seq_0824_T10R0601`).
 
 Pendiente con motivo (no se acredita solo para no adivinar):
@@ -239,8 +239,8 @@ Pendiente con motivo (no se acredita solo para no adivinar):
   castillo (1730-1732, solo posibles durante el episodio): Ultraluna del propietario la cumple. Si no se capturó ningún
   Electrode no se puede probar, y no se acredita.
 - **Torre de Ciudad Negra / Bosque Blanco (N2/B2):** resuelto con las medallas (ver arriba).
-- **Poderes regalo de la Zona Nexo (Negro/Blanco):** PKHeX solo expone `MissionsComplete`, que no distingue qué poderes
-  se han recibido.
+- **Poderes Nexo (Negro/Blanco):** resuelto: los 33 poderes se tienen todos con los dos niveles del Nexo (★Negro y ☆Blanco,
+  0x0C/0x0E del bloque 53) a 30 o más (Bulbapedia «Entree»; Serebii «Trainer Card»: estrella «Obtain all Entralink powers»).
 - **Zygarde, pegatinas dominantes y Mantine Surf (Alola):** PKHeX da las células recogidas (`EventWork7`, trabajo 169 y
   lista de 95/100 posiciones; Sol 95/95, Ultrasol y Ultraluna 100/100 en las partidas del propietario), pero no los cinco
   núcleos que pide el objetivo. El récord 72 («Stickers Collected») marca 102 en una partida de Ultraluna, más que las 100
@@ -416,3 +416,14 @@ La partida del propietario (estado 0, premio 0, explicación leída) y la públi
   legal desde la Librería).
 - `scripts/build-chronology.py` lo vuelca en MASTER_DATA (`how`, `phase`, `order`); la vista de maestría y «Siguiente
   objetivo» ordenan por fase y orden. Corregido de paso: en Negro el errante es Tornadus y en Blanco, Thundurus.
+
+### 12/11/2026 — Revanchas de la Liga en Gen 4 (Salón de la Fama)
+
+Las salas de la Liga no dejan bandera, pero la partida guarda el Salón de la Fama (bloque extra en 0x20000 en DP/Platino y
+0x23000 en HGSS; 30 entradas con equipo y fecha; pokeplatinum `hall_of_fame_entries.h`, pokeheartgold `hall_of_fame.h`).
+Condición de la revancha: Pokédex Nacional (DP), `FLAG_ARRESTED_CHARON_STARK_MOUNTAIN` (Platino) y 8 medallas de Kanto
+(HGSS, `VAR_UNK_4135`). Sí: una entrada del Salón posterior al encuentro de un Pokémon propio que solo existe tras la
+condición (Zona de Combate en DP, Heatran de la Montaña Dura en Platino, Monte Plateado en HGSS) o con él en el equipo; en
+Platino también el Diario (evento 12 con el entrenador 870). No: una sola entrada (la condición siempre llega tras la primera
+Liga). Partidas del propietario: Diamante, Perla, HeartGold, SoulSilver y un Platino «no»; el otro Platino, sin dato hasta
+capturar a Heatran.

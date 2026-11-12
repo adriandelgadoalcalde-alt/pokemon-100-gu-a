@@ -325,9 +325,10 @@
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).
   const en=d.entralink5;
   if(['BLACK2','WHITE2'].includes(d.game)&&Number.isInteger(en?.white)&&Number.isInteger(en?.black))add('entralink.b2w2.level30',en.white>=30&&en.black>=30,'entralink5');
-  // N/B: los poderes regalo se ganan con las misiones del Nexo. Solo se afirma el «no»: Nexo sin tocar (0 misiones, niveles a 0 y
-  // el bloque vacío). Con el Nexo usado no hay estructura documentada para el «sí» y el hecho queda sin evidencia.
-  if(['BLACK','WHITE'].includes(d.game)&&en?.untouched===true&&en.missions===0&&en.white===0&&en.black===0)add('entralink.bw.allPowers',false,'entralink5');
+  // N/B: los 33 poderes Nexo se tienen todos cuando los dos niveles del Nexo (★Negro y ☆Blanco: 0x0C/0x0E del bloque 53,
+  // Entralink5 de PKHeX) llegan a 30; es la estrella «Obtain all Entralink powers» de la tarjeta (Serebii «Trainer Card» de
+  // N/B; Bulbapedia «Entree»: ambos niveles al menos 30).
+  if(['BLACK','WHITE'].includes(d.game)&&Number.isInteger(en?.white)&&Number.isInteger(en?.black))add('entralink.bw.allPowers',en.white>=30&&en.black>=30,'entralink5');
   // Estudios Cinematográficos Pokéwood (N2/B2): las 40 películas completadas.
   if(Number.isInteger(d.pokestar5?.completed))add('pokestar.b2w2.allMovies',d.pokestar5.completed>=d.pokestar5.total,'pokestar5');
   // PWT: el récord 17 (PWTRecordID.Champion) cuenta las victorias en el Torneo Campeones.
