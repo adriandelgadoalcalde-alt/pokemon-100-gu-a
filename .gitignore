@@ -18,3 +18,4 @@ fixtures/private/
 
 __pycache__/
 *.pyc
+.claude/.pendientes-estado.json

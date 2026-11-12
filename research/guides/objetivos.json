@@ -1,0 +1,1494 @@
+{
+ "acerca": "Paso a paso de cada objetivo no legendario: cómo se hace, qué hace falta, fase y orden cronológico, y qué hacer con Pokekeep cuando solo llega por evento.",
+ "objetivos": [
+  {
+   "juegos": [
+    "RED",
+    "GREEN",
+    "BLUE",
+    "YELLOW",
+    "GOLD",
+    "SILVER",
+    "CRYSTAL",
+    "RUBY",
+    "SAPPHIRE",
+    "EMERALD",
+    "FIRERED",
+    "LEAFGREEN",
+    "DIAMOND",
+    "PEARL",
+    "PLATINUM",
+    "HEARTGOLD",
+    "SOULSILVER",
+    "BLACK",
+    "WHITE",
+    "BLACK2",
+    "WHITE2",
+    "X",
+    "Y",
+    "OMEGARUBY",
+    "ALPHASAPPHIRE",
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON",
+    "LETGOP",
+    "LETGOE",
+    "SWORD",
+    "SHIELD",
+    "BD",
+    "SP",
+    "ARCEUS",
+    "SCARLET",
+    "VIOLET",
+    "ZA"
+   ],
+   "id": "story",
+   "fase": 0,
+   "orden": 999,
+   "como": "Es el primer gran objetivo y el que desbloquea casi todo lo demás. Sigue la historia: consigue las medallas o pruebas en orden, vence al equipo villano y supera la Liga (o el final equivalente de la edición) hasta el Hall de la Fama o los créditos. Usa la pestaña «Dónde estás» con tu guardado: te dice la siguiente medalla y la zona a la que ir."
+  },
+  {
+   "juegos": [
+    "RED",
+    "GREEN",
+    "BLUE",
+    "YELLOW",
+    "FIRERED",
+    "LEAFGREEN"
+   ],
+   "id": "items0",
+   "fase": 0,
+   "orden": 500,
+   "como": "Se consiguen durante la historia, en este orden: MO01 Corte (S.S. Anne, Ciudad Carmín), MO05 Destello (ayudante de Oak en la Ruta 2, con 10 especies), Poké Flauta (Mr. Fuji, Pueblo Lavanda, tras rescatarlo de la Torre Pokémon con el Visor Silph del Casino Rocket de Ciudad Azulona), MO02 Vuelo (casa de la Ruta 16), MO03 Surf (Zona Safari), MO04 Fuerza (guarda de la Zona Safari, con el Diente de Oro). Sin la Poké Flauta no se despierta a los Snorlax de las rutas 12 y 16."
+  },
+  {
+   "juegos": [
+    "RED",
+    "GREEN",
+    "BLUE",
+    "YELLOW",
+    "FIRERED",
+    "LEAFGREEN"
+   ],
+   "id": "postgame",
+   "fase": 2,
+   "orden": 200,
+   "como": "Tras el Hall de la Fama se abre la Cueva Celeste (al noroeste de Ciudad Celeste, con Surf), con Mewtwo al fondo. En Rojo Fuego/Verde Hoja la posliga sigue en Archi7: recupera el Rubí (Mt. Ascuas, Isla Prima) y el Zafiro (Isla Exta) para activar la máquina de la Red; Oak te da la Pokédex Nacional y se abren las islas 6 y 7."
+  },
+  {
+   "juegos": [
+    "RED",
+    "GREEN",
+    "BLUE",
+    "YELLOW",
+    "FIRERED",
+    "LEAFGREEN"
+   ],
+   "id": "battle0",
+   "fase": 3,
+   "orden": 300,
+   "como": "Tras el Hall de la Fama puedes volver a la Meseta Añil y repetir el Alto Mando y el combate contra el campeón (tu rival); en Rojo Fuego/Verde Hoja, con la Pokédex Nacional, sus equipos suben de nivel. En Rojo Fuego/Verde Hoja hay además la Torre Desafío (Isla Sétima) y las revanchas con el Buscapelea."
+  },
+  {
+   "juegos": [
+    "RED",
+    "GREEN",
+    "BLUE",
+    "YELLOW",
+    "FIRERED",
+    "LEAFGREEN"
+   ],
+   "id": "pokedex",
+   "fase": 5,
+   "orden": 500,
+   "como": "Completa la Pokédex de Kanto (150; Mew no cuenta). Las exclusivas de la otra edición y las evoluciones por intercambio solo por intercambio. El ayudante de Oak o el propio Oak te premian según los registros; con la Pokédex completa, el diseñador del juego (Mansión Azulona) te da el diploma.",
+   "pokekeep": "Las especies que te falten por intercambio o de la otra edición puedes añadirlas legales desde la Librería."
+  },
+  {
+   "juegos": [
+    "RED",
+    "GREEN",
+    "BLUE",
+    "YELLOW",
+    "FIRERED",
+    "LEAFGREEN"
+   ],
+   "id": "event-0",
+   "fase": 7,
+   "orden": 700,
+   "como": "Mew no se encuentra en el juego normal: llegó por eventos (y por el famoso fallo de Rojo/Azul, que no cuenta como evento legal).",
+   "pokekeep": "Añade el Mew de evento legal desde la Librería; Pokekeep conserva sus datos originales de distribución."
+  },
+  {
+   "juegos": [
+    "FIRERED",
+    "LEAFGREEN"
+   ],
+   "id": "diploma-regional",
+   "fase": 6,
+   "orden": 600,
+   "como": "Con los 150 de Kanto capturados (Mew no hace falta), habla con el diseñador del juego en la 3.ª planta de la Mansión Azulona (Ciudad Azulona)."
+  },
+  {
+   "juegos": [
+    "FIRERED",
+    "LEAFGREEN"
+   ],
+   "id": "trainer-tower",
+   "fase": 3,
+   "orden": 310,
+   "como": "Al norte de la Isla Sétima, con Surf (tras la Pokédex Nacional y abrir las islas 6 y 7): la Torre Desafío tiene cuatro modos (Individual, Doble, Eliminatorio y Mixto). Supera cada uno subiendo los pisos y venciendo al entrenador de la azotea; cuanto más rápido, mejor premio."
+  },
+  {
+   "juegos": [
+    "GOLD",
+    "SILVER",
+    "CRYSTAL",
+    "HEARTGOLD",
+    "SOULSILVER"
+   ],
+   "id": "items0",
+   "fase": 0,
+   "orden": 500,
+   "como": "En la historia: Ticket del Barco del profesor Elm tras la Liga (S.S. Aqua a Kanto) y el Pase del Tren Magnético, que te da Imitadora en Ciudad Azafrán al devolverle el objeto perdido que encuentras en el Club de Fans de Ciudad Carmín (tras arreglar la Central Energía) y, para el Monte Plateado, las 16 medallas: con ellas el profesor Oak te deja pasar por la Ruta 28."
+  },
+  {
+   "juegos": [
+    "GOLD",
+    "SILVER",
+    "CRYSTAL",
+    "HEARTGOLD",
+    "SOULSILVER"
+   ],
+   "id": "postgame",
+   "fase": 2,
+   "orden": 200,
+   "como": "Tras la Liga de Johto viajas a Kanto (S.S. Aqua desde Ciudad Olivo): gana las 8 medallas de Kanto (la Central Energía se arregla devolviendo la Pieza robada de Ciudad Celeste), habla con Oak para el permiso del Monte Plateado y vence a Rojo en su cima."
+  },
+  {
+   "juegos": [
+    "GOLD",
+    "SILVER",
+    "CRYSTAL",
+    "HEARTGOLD",
+    "SOULSILVER"
+   ],
+   "id": "pokedex",
+   "fase": 5,
+   "orden": 500,
+   "como": "Completa la Pokédex Nacional de la edición (251, los singulares por evento aparte). Las exclusivas y los iniciales que no elegiste, por intercambio.",
+   "pokekeep": "Las que te falten por intercambio o de evento, añádelas legales desde la Librería."
+  },
+  {
+   "juegos": [
+    "GOLD",
+    "SILVER",
+    "CRYSTAL",
+    "HEARTGOLD",
+    "SOULSILVER"
+   ],
+   "id": "event-0",
+   "fase": 7,
+   "orden": 700,
+   "como": "Celebi solo llegó por eventos (en Cristal japonés, con el GS Ball del servicio móvil; en HGSS, llevando un Celebi de evento al santuario del Encinar se juega la historia con Giovanni).",
+   "pokekeep": "Añade el Celebi de evento legal desde la Librería. En Cristal, también puedes activar el evento del GS Ball (bandera del GS Ball en la partida) y llevar el GS Ball al santuario del Encinar."
+  },
+  {
+   "juegos": [
+    "RUBY",
+    "SAPPHIRE",
+    "EMERALD",
+    "OMEGARUBY",
+    "ALPHASAPPHIRE"
+   ],
+   "id": "items0",
+   "fase": 0,
+   "orden": 500,
+   "como": "Durante la historia: Bici Carrera o Acrobática (Ciudad Malvalona; para el Pilar Celeste hace falta la Carrera), Buceo (MO08, te lo da Máximo en Algaria tras la séptima medalla), el Escáner del Barco Abandonado y, en Esmeralda, el Pase de Barco para el Frente Batalla. En Rubí Omega/Zafiro Alfa, además, la Flauta Eón para volar."
+  },
+  {
+   "juegos": [
+    "RUBY",
+    "SAPPHIRE",
+    "EMERALD",
+    "OMEGARUBY",
+    "ALPHASAPPHIRE"
+   ],
+   "id": "postgame",
+   "fase": 2,
+   "orden": 200,
+   "como": "Tras el Hall de la Fama: Rayquaza en el Pilar Celeste, Latios/Latias errante, los Regis (Cámara Sellada) y, en Esmeralda, Kyogre/Groudon por el Instituto Meteorológico y el Frente Batalla. En Rubí Omega/Zafiro Alfa, el Episodio Delta (Rayquaza y Deoxys) y los parajes espejismo."
+  },
+  {
+   "juegos": [
+    "RUBY",
+    "SAPPHIRE",
+    "EMERALD",
+    "OMEGARUBY",
+    "ALPHASAPPHIRE"
+   ],
+   "id": "battle0",
+   "fase": 3,
+   "orden": 300,
+   "como": "Rubí/Zafiro: Torre Batalla (en barco desde Portual tras la Liga) — 50 victorias seguidas para la estrella. Esmeralda: Frente Batalla, con sus 7 instalaciones y los símbolos de plata y oro de cada As. Rubí Omega/Zafiro Alfa: Mansión Batalla (Resort Batalla), donde la estrella pide vencer a una Dama del Combate en la 50.ª."
+  },
+  {
+   "juegos": [
+    "RUBY",
+    "SAPPHIRE",
+    "EMERALD",
+    "OMEGARUBY",
+    "ALPHASAPPHIRE"
+   ],
+   "id": "battle1",
+   "fase": 4,
+   "orden": 400,
+   "como": "Gana el rango Maestro en las 5 categorías (Carisma, Belleza, Dulzura, Ingenio y Dureza) con Pokémon de condición alta (Pokécubos). En Rubí/Zafiro los cuadros ganadores se exponen en el Museo de Ciudad Calagua; en Esmeralda, el cuadro aparece en el Museo de Arte de Ciudad Calagua tras cada Maestro."
+  },
+  {
+   "juegos": [
+    "RUBY",
+    "SAPPHIRE",
+    "EMERALD",
+    "OMEGARUBY",
+    "ALPHASAPPHIRE"
+   ],
+   "id": "pokedex",
+   "fase": 5,
+   "orden": 500,
+   "como": "Completa la Pokédex de Hoenn (Jirachi y Deoxys no cuentan). Las exclusivas por intercambio. Con ella completa, el diseñador del juego del Motel Aguacala (Ciudad Calagua) te da el diploma.",
+   "pokekeep": "Las que te falten por intercambio o de evento, añádelas legales desde la Librería."
+  },
+  {
+   "juegos": [
+    "RUBY",
+    "SAPPHIRE",
+    "EMERALD",
+    "FIRERED",
+    "LEAFGREEN",
+    "DIAMOND",
+    "PEARL",
+    "PLATINUM",
+    "HEARTGOLD",
+    "SOULSILVER",
+    "BLACK2",
+    "WHITE2",
+    "X",
+    "Y",
+    "OMEGARUBY",
+    "ALPHASAPPHIRE",
+    "BD",
+    "SP"
+   ],
+   "id": "card-0",
+   "fase": 6,
+   "orden": 600,
+   "como": "Estrella o sello por entrar en el Hall de la Fama: se consigue sola al terminar la historia (objetivo «Finalizar la historia principal»). Compruébalo en tu tarjeta de entrenador."
+  },
+  {
+   "juegos": [
+    "RUBY",
+    "SAPPHIRE",
+    "EMERALD"
+   ],
+   "id": "card-1",
+   "fase": 6,
+   "orden": 610,
+   "como": "Estrella por la Pokédex de Hoenn completa (sin Jirachi ni Deoxys): la misma condición que el diploma del Motel Aguacala."
+  },
+  {
+   "juegos": [
+    "RUBY",
+    "SAPPHIRE"
+   ],
+   "id": "card-2",
+   "fase": 6,
+   "orden": 620,
+   "como": "Estrella por exponer los cinco cuadros de rango Maestro (una por categoría) en el Museo de Ciudad Calagua: gana los cinco Concursos rango Maestro."
+  },
+  {
+   "juegos": [
+    "RUBY",
+    "SAPPHIRE"
+   ],
+   "id": "card-3",
+   "fase": 6,
+   "orden": 630,
+   "como": "Estrella por 50 victorias seguidas en la Torre Batalla (en barco desde Portual, tras la Liga), en cualquiera de sus dos niveles."
+  },
+  {
+   "juegos": [
+    "EMERALD"
+   ],
+   "id": "card-2",
+   "fase": 6,
+   "orden": 620,
+   "como": "Estrella por los cinco cuadros de rango Maestro: gana el Concurso Maestro en las cinco categorías."
+  },
+  {
+   "juegos": [
+    "EMERALD"
+   ],
+   "id": "card-3",
+   "fase": 6,
+   "orden": 630,
+   "como": "Estrella por los siete símbolos de oro del Frente Batalla: vence por segunda vez a cada As (Torre, Fábrica, Palacio, Cúpula, Pirámide, Sala y Tubo) en sus rachas."
+  },
+  {
+   "juegos": [
+    "RUBY",
+    "SAPPHIRE",
+    "EMERALD",
+    "OMEGARUBY",
+    "ALPHASAPPHIRE"
+   ],
+   "id": "event-0",
+   "fase": 7,
+   "orden": 700,
+   "como": "Mew (Isla Suprema, Mapa Viejo de Esmeralda), Deoxys (Isla Origen, Ori-Ticket de Rojo Fuego/Verde Hoja y Esmeralda) y Jirachi (disco de bonificación / Pokémon Channel) solo llegaron por eventos. En Rubí Omega/Zafiro Alfa, Deoxys sí está en el juego (Episodio Delta).",
+   "pokekeep": "Añade el objeto de evento (Mapa Viejo o Ori-Ticket) y activa su bandera para jugar el evento, o añade el singular legal desde la Librería."
+  },
+  {
+   "juegos": [
+    "DIAMOND",
+    "PEARL",
+    "PLATINUM"
+   ],
+   "id": "postgame",
+   "fase": 2,
+   "orden": 200,
+   "como": "Tras la Liga: Pokédex Nacional (al ver todas las especies de Sinnoh, Serbal te la da), la Zona de Combate en barco desde Ciudad Puntaneva, Bulgur y Heatran en la Montaña Dura, Giratina en la Cueva Retorno y Cresselia en la Isla Plenilunio."
+  },
+  {
+   "juegos": [
+    "DIAMOND",
+    "PEARL",
+    "PLATINUM",
+    "BLACK",
+    "WHITE",
+    "BLACK2",
+    "WHITE2"
+   ],
+   "id": "pokedex",
+   "fase": 5,
+   "orden": 500,
+   "como": "Completa la Pokédex Nacional de la edición; los singulares de evento no cuentan para el diploma. Muchas especies llegan por el Parque Compi (4.ª gen.) o el Pokétransfer (5.ª gen.) desde ediciones anteriores, o por intercambio.",
+   "pokekeep": "Lo que te falte de otras ediciones, añádelo legal desde la Librería."
+  },
+  {
+   "juegos": [
+    "DIAMOND",
+    "PEARL",
+    "PLATINUM",
+    "HEARTGOLD",
+    "SOULSILVER",
+    "BLACK",
+    "WHITE",
+    "BLACK2",
+    "WHITE2",
+    "BD",
+    "SP"
+   ],
+   "id": "card-1",
+   "fase": 6,
+   "orden": 610,
+   "como": "Estrella por la Pokédex Nacional completa (sin singulares de evento): la misma condición que el diploma Nacional del juego."
+  },
+  {
+   "juegos": [
+    "DIAMOND",
+    "PEARL",
+    "PLATINUM"
+   ],
+   "id": "card-2",
+   "fase": 6,
+   "orden": 620,
+   "como": "Estrella por ganar un Superconcurso de rango Maestro en cualquier categoría (Sala de Concursos de Ciudad Corazón)."
+  },
+  {
+   "juegos": [
+    "DIAMOND",
+    "PEARL",
+    "PLATINUM"
+   ],
+   "id": "card-3",
+   "fase": 6,
+   "orden": 630,
+   "como": "Estrella por conseguir la bandera de platino de tu base secreta en el Subsuelo: roba banderas de otras bases (juego en local) hasta subir de bronce a plata, oro y platino."
+  },
+  {
+   "juegos": [
+    "DIAMOND",
+    "PEARL",
+    "PLATINUM",
+    "HEARTGOLD",
+    "SOULSILVER",
+    "BD",
+    "SP"
+   ],
+   "id": "card-4",
+   "fase": 6,
+   "orden": 640,
+   "como": "Estrella por 100 victorias seguidas en la Torre Batalla (tras la Liga), en cualquier modalidad; el As de la Torre aparece en las rachas 21 y 49."
+  },
+  {
+   "juegos": [
+    "DIAMOND",
+    "PEARL",
+    "PLATINUM"
+   ],
+   "id": "event-0",
+   "fase": 7,
+   "orden": 700,
+   "como": "Darkrai (Isla Lunanueva, Carné Socio), Shaymin (Paraíso Flor, Carta Oaks) y Arceus (Sala del Origen, Flauta Azur) solo llegaron por eventos.",
+   "pokekeep": "Añade el objeto clave del evento (Carné Socio, Carta Oaks o Flauta Azur) para jugar el evento, o el singular legal desde la Librería."
+  },
+  {
+   "juegos": [
+    "DIAMOND",
+    "PEARL",
+    "PLATINUM"
+   ],
+   "id": "event-1",
+   "fase": 7,
+   "orden": 710,
+   "como": "Manaphy llegó con el Pokémon Ranger (huevo) y otros singulares por transferencia desde ediciones anteriores.",
+   "pokekeep": "Añade el huevo de Manaphy o el singular legal desde la Librería."
+  },
+  {
+   "juegos": [
+    "PLATINUM"
+   ],
+   "id": "battle0",
+   "fase": 3,
+   "orden": 300,
+   "como": "Frente Batalla (tras la Liga): Torre, Fábrica, Arcade, Castillo y Sala Batalla. Vence a los cinco Ases dos veces para sus símbolos de oro."
+  },
+  {
+   "juegos": [
+    "HEARTGOLD",
+    "SOULSILVER"
+   ],
+   "id": "battle1",
+   "fase": 3,
+   "orden": 300,
+   "como": "Frente Batalla (Ruta 40, tras la Liga): Torre, Fábrica, Arcade, Castillo y Sala Batalla. Vence dos veces a cada As para sus símbolos de oro; la Torre Batalla cuenta además para la estrella de la tarjeta (100 seguidas)."
+  },
+  {
+   "juegos": [
+    "HEARTGOLD",
+    "SOULSILVER"
+   ],
+   "id": "red-battle",
+   "fase": 3,
+   "orden": 320,
+   "como": "El jefe definitivo: con las 16 medallas, Oak te da permiso para la Ruta 28 y el Monte Plateado. Sube hasta la cima y vence a Rojo (equipo de nivel 80-88). Lleva Antídotos para el granizo y muchas Revivir."
+  },
+  {
+   "juegos": [
+    "HEARTGOLD",
+    "SOULSILVER"
+   ],
+   "id": "card-2",
+   "fase": 6,
+   "orden": 620,
+   "como": "Estrella por batir los récords de las 10 pruebas del Pokéathlon (Cúpula Pokéathlon, Ruta 35): consigue una puntuación récord en cada prueba, con Pokémon de buenas estadísticas de rendimiento."
+  },
+  {
+   "juegos": [
+    "HEARTGOLD",
+    "SOULSILVER"
+   ],
+   "id": "card-3",
+   "fase": 6,
+   "orden": 630,
+   "como": "Estrella por enseñar a tu vecino (Eco o Lira) un Pokémon con cinco hojas doradas: con el Pokémon acompañándote, habla con él en la hierba alta de ciertas rutas de Johto y Kanto; cada ruta da como mucho una hoja y las rutas que comparten hoja son excluyentes (dependen de la naturaleza del Pokémon; tabla en WikiDex «Hoja brillante»). Te da la Corona Dorada y el diploma."
+  },
+  {
+   "juegos": [
+    "HEARTGOLD",
+    "SOULSILVER"
+   ],
+   "id": "event-1",
+   "fase": 7,
+   "orden": 710,
+   "como": "Dos historias que solo se juegan con un singular de evento: llevar un Celebi de evento al santuario del Encinar (viaje en el tiempo con Giovanni) y llevar un Arceus de evento a las Ruinas Alfa (Ruinas Sinjoh, donde eliges Dialga, Palkia o Giratina).",
+   "pokekeep": "Añade el Celebi o el Arceus de evento legal desde la Librería y llévalo en el equipo; luego sigue la historia en el juego."
+  },
+  {
+   "juegos": [
+    "HEARTGOLD",
+    "SOULSILVER"
+   ],
+   "id": "collect-unown",
+   "fase": 4,
+   "orden": 410,
+   "como": "Resuelve los cuatro puzles de las Ruinas Alfa (Kabuto, Omanyte, Aerodactyl y Ho-Oh) y las salas que abren (con Destello, Fuerza y el Ala Arcoíris/Plateada según la sala). Los Unown aparecen en las cámaras; «!» y «?» salen tras registrar los otros 26."
+  },
+  {
+   "juegos": [
+    "BLACK",
+    "WHITE",
+    "BLACK2",
+    "WHITE2"
+   ],
+   "id": "postgame",
+   "fase": 2,
+   "orden": 200,
+   "como": "Negro/Blanco: tras la Liga se abre el este de Teselia (Ciudad Caolín y rutas 14-18), con Cintia, los Espadachines y Kyurem. Negro 2/Blanco 2: tras la Liga, Torre Duodraco, Ruinas Subterráneas (Regis), Nexárbol y Cintia en Pueblo Arenisca."
+  },
+  {
+   "juegos": [
+    "BLACK",
+    "WHITE",
+    "BLACK2",
+    "WHITE2"
+   ],
+   "id": "battle0",
+   "fase": 3,
+   "orden": 300,
+   "como": "Metro Batalla (Ciudad Mayólica): líneas Individual, Doble y Múltiple. Los Jefes de Metro (Fero y Caril) aparecen en la victoria 21 de las líneas normales; ganarles abre la línea Súper, donde vuelven en la victoria 49."
+  },
+  {
+   "juegos": [
+    "BLACK",
+    "WHITE",
+    "BLACK2",
+    "WHITE2"
+   ],
+   "id": "diploma-nacional",
+   "fase": 6,
+   "orden": 605,
+   "como": "Con la Pokédex Nacional completa (sin singulares de evento), habla con el director del juego en el Game Freak de Ciudad Porcelana."
+  },
+  {
+   "juegos": [
+    "BLACK",
+    "WHITE"
+   ],
+   "id": "card-0",
+   "fase": 6,
+   "orden": 600,
+   "como": "Estrella por vencer a Ghechis y al Equipo Plasma en el Castillo de N: llega al terminar la historia."
+  },
+  {
+   "juegos": [
+    "BLACK",
+    "WHITE"
+   ],
+   "id": "card-4",
+   "fase": 6,
+   "orden": 640,
+   "como": "Estrella por vencer a Fero y Caril (Jefes de Metro) en el Súper Individual y en el Súper Doble del Metro Batalla, en sus rachas de 49 victorias."
+  },
+  {
+   "juegos": [
+    "BLACK",
+    "WHITE",
+    "BLACK2",
+    "WHITE2"
+   ],
+   "id": "event-0",
+   "fase": 7,
+   "orden": 700,
+   "como": "Victini (Isla Libertad, con el Pase Libertad), Keldeo, Meloetta y Genesect solo llegaron por eventos (Meloetta y Genesect con historia propia en Negro 2/Blanco 2).",
+   "pokekeep": "Añade el Pase Libertad (objeto clave) para jugar el evento de Victini, o los singulares legales desde la Librería."
+  },
+  {
+   "juegos": [
+    "BLACK2",
+    "WHITE2"
+   ],
+   "id": "items0",
+   "fase": 0,
+   "orden": 500,
+   "como": "Para las escenas legendarias: Orbe Oscuro (Negro 2) u Orbe Claro (Blanco 2), que te da N en el Palacio de N tras vencerle (entrada desde la Calle Victoria tras la Liga), para la Torre Duodraco, Pluma Lunar (Villa Horroris), Piedra Magma (Ruta 18) y las Claves del Teselia Link (Hierro e Iceberg) para las Ruinas Subterráneas."
+  },
+  {
+   "juegos": [
+    "BLACK2",
+    "WHITE2"
+   ],
+   "id": "pwt",
+   "fase": 3,
+   "orden": 310,
+   "como": "Pokémon World Tournament (junto a Ciudad Fayenza, tras la Liga): gana el Torneo Campeones contra los campeones de todas las regiones."
+  },
+  {
+   "juegos": [
+    "BLACK2",
+    "WHITE2"
+   ],
+   "id": "card-2",
+   "fase": 6,
+   "orden": 620,
+   "como": "Estrella por terminar las películas exigidas de Estudios Cinematográficos Pokéwood (Ciudad Hormigón): rueda cada película siguiendo el guion hasta el final bueno."
+  },
+  {
+   "juegos": [
+    "BLACK2",
+    "WHITE2"
+   ],
+   "id": "card-3",
+   "fase": 6,
+   "orden": 630,
+   "como": "Tras la Liga, en el Pokémon World Tournament (junto a Ciudad Fayenza): gana los torneos regionales para desbloquear el Torneo Campeones y gánalo."
+  },
+  {
+   "juegos": [
+    "BLACK2",
+    "WHITE2"
+   ],
+   "id": "card-4",
+   "fase": 6,
+   "orden": 640,
+   "como": "Estrella por subir el Nexárbol a nivel 30 tanto en el Bosque Blanco como en la Ciudad Negra (Zona Nexo, misiones y visitas)."
+  },
+  {
+   "juegos": [
+    "X",
+    "Y"
+   ],
+   "id": "battle0",
+   "fase": 3,
+   "orden": 300,
+   "como": "Mansión Batalla de Ciudad Batik (tras la Liga; se llega en el tren TMV desde Ciudad Luminalia; en ROZA está en el Resort Batalla): Individual, Doble, Triple, Rotatoria y Múltiple. Hay que vencer a una Dama del Combate en la 50.ª batalla consecutiva (en Super)."
+  },
+  {
+   "juegos": [
+    "X",
+    "Y"
+   ],
+   "id": "items0",
+   "fase": 0,
+   "orden": 500,
+   "como": "Mega-Aro: te lo da Corelia en la Torre Maestra de Ciudad Yantra, tras vencerla con el Lucario que te regala; las megapiedras van llegando por la historia y por la posliga (tienda y rutas de noche, con el Amuleto Iris la búsqueda es más fácil)."
+  },
+  {
+   "juegos": [
+    "X",
+    "Y"
+   ],
+   "id": "pokedex",
+   "fase": 5,
+   "orden": 500,
+   "como": "Ve todas las especies de las tres Pokédex de Kalos (Central, Costa y Montaña). Las exclusivas de la otra edición basta con verlas en combate o intercambio.",
+   "pokekeep": "Las que te falten por intercambio, añádelas legales desde la Librería."
+  },
+  {
+   "juegos": [
+    "X",
+    "Y"
+   ],
+   "id": "diploma-nacional",
+   "fase": 6,
+   "orden": 605,
+   "como": "Con la Pokédex Nacional completa (sin singulares de evento), habla con el director del juego en el lugar que indica el título del objetivo."
+  },
+  {
+   "juegos": [
+    "X",
+    "Y"
+   ],
+   "id": "shiny-charm",
+   "fase": 6,
+   "orden": 610,
+   "como": "Con la Pokédex Nacional capturada (sin singulares de evento), habla con el profesor Ciprés en su laboratorio de Ciudad Luminalia: te da el Amuleto Iris."
+  },
+  {
+   "juegos": [
+    "X",
+    "Y"
+   ],
+   "id": "card-1",
+   "fase": 6,
+   "orden": 610,
+   "como": "Estrella por haber visto (no hace falta capturar) todas las especies de las tres Pokédex de Kalos (Central, Costa y Montaña). Las de la otra edición cuentan si las ves en combate o en intercambio. Se va completando durante la historia."
+  },
+  {
+   "juegos": [
+    "X",
+    "Y",
+    "OMEGARUBY",
+    "ALPHASAPPHIRE"
+   ],
+   "id": "card-2",
+   "fase": 6,
+   "orden": 620,
+   "como": "Estrella por vencer a una Dama del Combate en la 50.ª batalla consecutiva de la Mansión Batalla."
+  },
+  {
+   "juegos": [
+    "X",
+    "Y"
+   ],
+   "id": "event-0",
+   "fase": 7,
+   "orden": 700,
+   "como": "Diancie, Hoopa y Volcanion solo llegaron como regalos de evento.",
+   "pokekeep": "Añádelos legales desde la Librería."
+  },
+  {
+   "juegos": [
+    "OMEGARUBY",
+    "ALPHASAPPHIRE"
+   ],
+   "id": "diploma-regional",
+   "fase": 6,
+   "orden": 600,
+   "como": "Con la Pokédex de Hoenn completa, habla con el equipo de Game Freak en el Motel Aguacala (Ciudad Calagua)."
+  },
+  {
+   "juegos": [
+    "OMEGARUBY",
+    "ALPHASAPPHIRE"
+   ],
+   "id": "diploma-nacional",
+   "fase": 6,
+   "orden": 605,
+   "como": "Con la Pokédex Nacional completa (sin los singulares de evento; Deoxys sí cuenta), habla con el equipo de Game Freak en el Motel Aguacala de Ciudad Calagua."
+  },
+  {
+   "juegos": [
+    "OMEGARUBY",
+    "ALPHASAPPHIRE"
+   ],
+   "id": "shiny-charm",
+   "fase": 6,
+   "orden": 610,
+   "como": "Con la Pokédex Nacional capturada (Deoxys incluido, sin el resto de singulares de evento), el profesor Abedul te da el Amuleto Iris en su laboratorio de Villa Raíz."
+  },
+  {
+   "juegos": [
+    "OMEGARUBY",
+    "ALPHASAPPHIRE"
+   ],
+   "id": "card-1",
+   "fase": 6,
+   "orden": 610,
+   "como": "Estrella por haber visto todas las especies de la Pokédex de Hoenn. Las de la otra edición cuentan si las ves en combate o intercambio; el Pokénav (DexNav) ayuda a encontrar las que faltan."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "postgame",
+   "fase": 2,
+   "orden": 200,
+   "como": "Tras ser campeón: defensa del título en la Liga, tapus en sus ruinas, Necrozma y Código Cero. En Sol/Luna, las misiones de los ultraentes con Handsome y Anabel; en Ultrasol/Ultraluna, el Episodio RR (Team Rainbow Rocket) en el Paraíso Æther y el Ultraviaje."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "battle0",
+   "fase": 3,
+   "orden": 300,
+   "como": "Árbol de Combate (al final de la Pendiente de Poni, tras la Liga): combates Individual, Doble y Múltiple contra entrenadores y leyendas invitadas (Rojo, Azul...). Hay sellos por 50 victorias seguidas en cada modalidad."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "items0",
+   "fase": 0,
+   "orden": 500,
+   "como": "Cristales Z: uno por cada prueba y gran prueba del recorrido insular (los de tipo, en orden de la historia) y los exclusivos de Pokémon concretos por la posliga. Arca de Zygarde: Ruta 16 (Akala)."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "pokedex",
+   "fase": 5,
+   "orden": 500,
+   "como": "Completa la Pokédex de Alola (las cuatro islas). Cada vez que completes la sección de una isla, enséñasela al director del juego en las oficinas de Game Freak de Ciudad Kantai (Akala) para que selle tu pasaporte; con la de Alola completa (sin singulares) te da el diploma y el Amuleto Iris.",
+   "pokekeep": "Las especies exclusivas de la otra edición, añádelas legales desde la Librería si no puedes intercambiarlas."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-0",
+   "fase": 6,
+   "orden": 600,
+   "como": "Sello que se consigue al empezar la aventura, cuando el profesor Kukui te inscribe como entrenador oficial y recibes la tarjeta. No hay que hacer nada."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-1",
+   "fase": 6,
+   "orden": 601,
+   "como": "Durante la historia, en Melemele: tras superar la prueba del capitán, el kahuna de la isla te espera en Pueblo Lilii para la gran prueba. Ganarla da el sello y el Cristal Z de tipo Lucha."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-2",
+   "fase": 6,
+   "orden": 602,
+   "como": "Durante la historia, en Akala: supera las tres pruebas de la isla (agua, fuego y planta) y vence a la kahuna en Ciudad Konikoni. Da el sello y el Cristal Z de tipo Roca."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-3",
+   "fase": 6,
+   "orden": 603,
+   "como": "Durante la historia, en Ula-Ula: supera las pruebas de la isla y vence al kahuna, que está en Pueblo Po. Da el sello y el Cristal Z de tipo Siniestro."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-4",
+   "fase": 6,
+   "orden": 604,
+   "como": "Durante la historia, en Poni: supera la última prueba y vence a la kahuna de la isla. Da el sello y el Cristal Z de tipo Tierra; con ella termina el recorrido insular."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-5",
+   "fase": 6,
+   "orden": 605,
+   "como": "Sello de la tarjeta: Termina el recorrido insular y conviértete en campeón de la Liga de Alola."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-6",
+   "fase": 6,
+   "orden": 606,
+   "como": "Captura todas las especies de la sección de Melemele de la Pokédex de Alola. Casi todas salen durante la historia; algunas solo de noche, con el tiempo o por evolución. Después, enséñasela al director del juego en las oficinas de Game Freak de Ciudad Kantai (Akala): él sella el pasaporte."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-7",
+   "fase": 6,
+   "orden": 607,
+   "como": "Captura todas las especies de la sección de Akala. Algunas solo aparecen tras la Liga o por evolución por intercambio. Después, enséñasela al director del juego en las oficinas de Game Freak de Ciudad Kantai (Akala): él sella el pasaporte."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-8",
+   "fase": 6,
+   "orden": 608,
+   "como": "Captura todas las especies de la sección de Ula-Ula. Varias son exclusivas de una edición (intercambio) o aparecen tras la Liga. Después, enséñasela al director del juego en las oficinas de Game Freak de Ciudad Kantai (Akala): él sella el pasaporte."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-9",
+   "fase": 6,
+   "orden": 609,
+   "como": "Captura todas las especies de la sección de Poni. Muchas están en el Gran Cañón de Poni y en zonas que se abren tras la Liga. Después, enséñasela al director del juego en las oficinas de Game Freak de Ciudad Kantai (Akala): él sella el pasaporte."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-10",
+   "fase": 6,
+   "orden": 610,
+   "como": "Completa la Pokédex de Alola entera (las cuatro islas, sin contar a los singulares de evento). El sello te lo pone el director del juego en las oficinas de Game Freak de Ciudad Kantai, junto con el diploma y el Amuleto Iris."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-11",
+   "fase": 6,
+   "orden": 611,
+   "como": "Tras la Liga, en el Árbol de Combate (al final de la Pendiente de Poni): gana 50 combates seguidos en la modalidad Individual (a partir de la 20.ª entran los rivales fuertes)."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-12",
+   "fase": 6,
+   "orden": 612,
+   "como": "Tras la Liga, en el Árbol de Combate (al final de la Pendiente de Poni): gana 50 combates seguidos en la modalidad Doble; lleva un equipo pensado para dobles."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-13",
+   "fase": 6,
+   "orden": 613,
+   "como": "Sello de la tarjeta: Consigue la última mejora del Pokévisor (Pokévisor Pro) haciendo fotos en los puntos de foto hasta llegar al máximo de valoraciones."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "card-14",
+   "fase": 6,
+   "orden": 614,
+   "como": "Sello de la tarjeta: 50 victorias seguidas en el Árbol de Combate, Múltiple (con un compañero)."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "event-0",
+   "fase": 7,
+   "orden": 700,
+   "como": "Magearna: se recibía tras ser campeón escaneando su código QR oficial (evento) con el escáner QR.",
+   "pokekeep": "Añade Magearna legal desde la Librería."
+  },
+  {
+   "juegos": [
+    "SUN",
+    "MOON",
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "event-1",
+   "fase": 7,
+   "orden": 710,
+   "como": "Marshadow y Zeraora solo llegaron por distribuciones.",
+   "pokekeep": "Añádelos legales desde la Librería."
+  },
+  {
+   "juegos": [
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "zygarde-cores",
+   "fase": 4,
+   "orden": 410,
+   "como": "En USUL los cinco núcleos vienen dentro del Arca de Zygarde que te dan en la Ruta 16 tras la Liga (WikiDex «Arca de Zygarde»): no hay que buscarlos por Alola."
+  },
+  {
+   "juegos": [
+    "LETGOP",
+    "LETGOE"
+   ],
+   "id": "battle0",
+   "fase": 3,
+   "orden": 300,
+   "como": "Tras ser campeón aparecen los 153 Entrenadores Maestros por todo Kanto (uno por especie): combate con un único Pokémon de su misma especie. Venciendo a todos se gana el título de gran maestro."
+  },
+  {
+   "juegos": [
+    "LETGOP",
+    "LETGOE"
+   ],
+   "id": "battle1",
+   "fase": 3,
+   "orden": 310,
+   "como": "Tras vencer al menos a 6 Entrenadores Maestros, Rojo te espera en la Meseta Añil; derrotarlo da el título de maestro del combate."
+  },
+  {
+   "juegos": [
+    "LETGOP",
+    "LETGOE"
+   ],
+   "id": "items0",
+   "fase": 0,
+   "orden": 500,
+   "como": "Técnicas secretas del compañero (Corte Rápido, Surfeo Marino, Empuje Fuerte, Alumbrado y Vuelo Celeste) durante la historia; la Cueva Celeste se abre tras la Liga."
+  },
+  {
+   "juegos": [
+    "LETGOP",
+    "LETGOE"
+   ],
+   "id": "pokedex",
+   "fase": 5,
+   "orden": 500,
+   "como": "Completa la Pokédex de Kanto (151 + Meltan y Melmetal). Meltan y Melmetal llegan desde Pokémon GO (Parque GO).",
+   "pokekeep": "Lo que no puedas traer de GO o por intercambio, añádelo legal desde la Librería."
+  },
+  {
+   "juegos": [
+    "LETGOP",
+    "LETGOE"
+   ],
+   "id": "diploma-regional",
+   "fase": 6,
+   "orden": 600,
+   "como": "Con la Pokédex de Kanto completa, habla con el director del juego en la 3.ª planta de la Edificio Azulona (Mansión Azulona)."
+  },
+  {
+   "juegos": [
+    "LETGOP",
+    "LETGOE"
+   ],
+   "id": "shiny-charm",
+   "fase": 6,
+   "orden": 610,
+   "como": "Con la Pokédex de Kanto completa (151 especies, más Meltan y Melmetal de Pokémon GO), el director del juego de la 3.ª planta de la Edificio Azulona (Mansión Azulona) te da el Amuleto Iris junto con el diploma."
+  },
+  {
+   "juegos": [
+    "LETGOP",
+    "LETGOE"
+   ],
+   "id": "event-0",
+   "fase": 7,
+   "orden": 700,
+   "como": "Mew llegó con la Poké Ball Plus; Meltan y Melmetal, por Pokémon GO.",
+   "pokekeep": "Añade Mew legal desde la Librería."
+  },
+  {
+   "juegos": [
+    "SWORD",
+    "SHIELD"
+   ],
+   "id": "postgame",
+   "fase": 2,
+   "orden": 200,
+   "como": "Tras ser campeón: episodio de Tizonio y Dargo (Zacian/Zamazenta), Torre Batalla de Puntera y, con los DLC, la Isla de la Armadura y las Nieves de la Corona."
+  },
+  {
+   "juegos": [
+    "SWORD",
+    "SHIELD"
+   ],
+   "id": "battle0",
+   "fase": 3,
+   "orden": 300,
+   "como": "Torre Batalla (Puntera): sube de rango Poké Ball hasta Master Ball. El Torneo Estrellas de Galar (Nieves de la Corona) se juega en el estadio de Puntera."
+  },
+  {
+   "juegos": [
+    "SWORD",
+    "SHIELD"
+   ],
+   "id": "items0",
+   "fase": 1,
+   "orden": 120,
+   "como": "Muñequera Dinamax (historia), Gigamaxificación por la sopa máxima (Isla de la Armadura), Riendas Unión (Nieves de la Corona) y la Espada/Escudo oxidados (posliga)."
+  },
+  {
+   "juegos": [
+    "SWORD",
+    "SHIELD"
+   ],
+   "id": "pokedex",
+   "fase": 5,
+   "orden": 500,
+   "como": "Completa la Pokédex de Galar (400) y, con los DLC, las de la Isla de la Armadura y las Nieves de la Corona. El director del juego está en el Hotel Jonia de Pueblo Auriga (última habitación de la izquierda): primero te da el Amuleto Captura y, con la Pokédex de Galar capturada, el diploma y el Amuleto Iris.",
+   "pokekeep": "Las exclusivas de la otra edición, añádelas legales desde la Librería."
+  },
+  {
+   "juegos": [
+    "SWORD",
+    "SHIELD"
+   ],
+   "id": "event-0",
+   "fase": 7,
+   "orden": 700,
+   "como": "Zarude y otros singulares solo llegaron por distribución.",
+   "pokekeep": "Añádelos legales desde la Librería."
+  },
+  {
+   "juegos": [
+    "SWORD",
+    "SHIELD"
+   ],
+   "id": "event-1",
+   "fase": 7,
+   "orden": 710,
+   "como": "Elecciones excluyentes del DLC: Glastrier o Spectrier, Regieleki o Regidrago, Urshifu brusco o fluido. Solo se puede obtener uno de cada pareja por partida.",
+   "pokekeep": "Añade el que no elegiste legal desde la Librería."
+  },
+  {
+   "juegos": [
+    "BD",
+    "SP"
+   ],
+   "id": "postgame",
+   "fase": 2,
+   "orden": 200,
+   "como": "Tras la Liga: Pokédex Nacional, Parque Hansa (Ruta 221) con los legendarios de otras regiones, Zona de Combate, Heatran, Giratina, Cresselia y Regigigas."
+  },
+  {
+   "juegos": [
+    "BD",
+    "SP"
+   ],
+   "id": "pokedex",
+   "fase": 5,
+   "orden": 500,
+   "como": "Completa la Pokédex Nacional del juego. Muchas especies están en el Gran Subsuelo (grutas Pokémon) y en el Parque Hansa.",
+   "pokekeep": "Las exclusivas o de evento, añádelas legales desde la Librería."
+  },
+  {
+   "juegos": [
+    "BD",
+    "SP"
+   ],
+   "id": "diploma-regional",
+   "fase": 6,
+   "orden": 600,
+   "como": "Con la Pokédex de Sinnoh completa, el director del juego en el Hotel Gran Lago (Orilla Valor) te da el diploma."
+  },
+  {
+   "juegos": [
+    "BD",
+    "SP"
+   ],
+   "id": "diploma-nacional",
+   "fase": 6,
+   "orden": 605,
+   "como": "Con la Pokédex Nacional completa (sin singulares de evento), el mismo director del Hotel Gran Lago."
+  },
+  {
+   "juegos": [
+    "BD",
+    "SP"
+   ],
+   "id": "shiny-charm",
+   "fase": 6,
+   "orden": 610,
+   "como": "Con la Pokédex Nacional capturada (sin singulares), el director del Hotel Gran Lago te da el Amuleto Iris."
+  },
+  {
+   "juegos": [
+    "BD",
+    "SP"
+   ],
+   "id": "card-2",
+   "fase": 6,
+   "orden": 620,
+   "como": "Estrella por ganar un Superconcurso de rango Maestro en cualquier categoría (Sala de Concursos de Ciudad Corazón)."
+  },
+  {
+   "juegos": [
+    "BD",
+    "SP"
+   ],
+   "id": "card-3",
+   "fase": 6,
+   "orden": 630,
+   "como": "Estrella por colocar 100 variantes de estatua en tu base secreta del Gran Subsuelo (las estatuas se excavan en las paredes del Subsuelo)."
+  },
+  {
+   "juegos": [
+    "BD",
+    "SP"
+   ],
+   "id": "event-0",
+   "fase": 7,
+   "orden": 700,
+   "como": "Darkrai (Isla Lunanueva, Carné Socio), Shaymin (Paraíso Flor, Carta de Oak) y Arceus (Columnas Lanza, Flauta Azur) piden objetos de evento o tener partidas de Espada/Escudo y Leyendas Arceus en la consola.",
+   "pokekeep": "Añade el objeto clave del evento (Carné Socio, Carta de Oak o Flauta Azur) para jugarlo, o el singular legal desde la Librería."
+  },
+  {
+   "juegos": [
+    "ARCEUS"
+   ],
+   "id": "postgame",
+   "fase": 2,
+   "orden": 200,
+   "como": "Tras los créditos: encomiendas de las tablas (Heatran, Cresselia, Regigigas…), peticiones finales (Giratina, avatares de Hisui con Enamorus) e investigación de Arceus."
+  },
+  {
+   "juegos": [
+    "ARCEUS"
+   ],
+   "id": "battle0",
+   "fase": 3,
+   "orden": 300,
+   "como": "Tras los créditos, la encomienda final con Volus en el Templo de Sinnoh: véncelo a él y a Giratina."
+  },
+  {
+   "juegos": [
+    "ARCEUS"
+   ],
+   "id": "items0",
+   "fase": 1,
+   "orden": 120,
+   "como": "Las tablas de Arceus se consiguen en las encomiendas posteriores a los créditos; las placas de cada señor y los objetos de Dialga/Palkia, durante la historia."
+  },
+  {
+   "juegos": [
+    "ARCEUS"
+   ],
+   "id": "pokedex",
+   "fase": 5,
+   "orden": 500,
+   "como": "Registra todas las especies de la Pokédex de Hisui y completa sus tareas de investigación; con todo capturado, Arceus te espera en el Templo de Sinnoh."
+  },
+  {
+   "juegos": [
+    "ARCEUS"
+   ],
+   "id": "recognition-2",
+   "fase": 6,
+   "orden": 610,
+   "como": "Con todas las especies de la Pokédex de Hisui capturadas y sus entradas al menos al nivel 10 de investigación (Phione, Manaphy y Arceus incluidos; Darkrai y Shaymin no cuentan), el profesor Lavender te da el Amuleto Iris en la Sede Galaxia de Villa Jubileo."
+  },
+  {
+   "juegos": [
+    "ARCEUS"
+   ],
+   "id": "event-0",
+   "fase": 7,
+   "orden": 700,
+   "como": "Manaphy y Phione están en el juego; Shaymin y Darkrai piden tener partidas guardadas de Espada/Escudo y de Diamante Brillante/Perla Reluciente en la consola.",
+   "pokekeep": "Añade Shaymin o Darkrai legales desde la Librería si no tienes esas partidas."
+  },
+  {
+   "juegos": [
+    "ARCEUS"
+   ],
+   "id": "unown",
+   "fase": 4,
+   "orden": 410,
+   "como": "Encuentra los 28 Unown repartidos por Hisui (petición «Unown misteriosos»): cada uno en un lugar concreto, algunos de noche o con Poké Ride."
+  },
+  {
+   "juegos": [
+    "SCARLET",
+    "VIOLET"
+   ],
+   "id": "pokedex",
+   "fase": 5,
+   "orden": 500,
+   "como": "Completa la Pokédex de Paldea (y, con los DLC, la de Noroteo y la de Arándano). Con la de Paldea completa, el director Clavel te da el diploma en la Academia; las de los DLC tienen el suyo.",
+   "pokekeep": "Las exclusivas de la otra edición, añádelas legales desde la Librería."
+  },
+  {
+   "juegos": [
+    "SCARLET",
+    "VIOLET"
+   ],
+   "id": "dlc-ogerpon",
+   "fase": 2,
+   "orden": 230,
+   "como": "La máscara turquesa: viaje escolar a Noroteo; sigue la historia de Ogerpon, recupera las máscaras de los Leales y vence a Ogerpon en la Gruta del Pavor."
+  },
+  {
+   "juegos": [
+    "SCARLET",
+    "VIOLET"
+   ],
+   "id": "dlc-terapagos",
+   "fase": 2,
+   "orden": 250,
+   "como": "El disco índigo: intercambio con la Academia Arándano; vence al Alto Mando y al campeón de la Liga Arándano y baja a la Caverna Abisal Cero con Terapagos."
+  },
+  {
+   "juegos": [
+    "SCARLET",
+    "VIOLET"
+   ],
+   "id": "pecharunt",
+   "fase": 2,
+   "orden": 260,
+   "como": "Epílogo Misterio Mochi: tras El disco índigo, recibe la Baya Meloc singular (Regalo Misterioso) y llévala a Noroteo; al final se captura Pecharunt.",
+   "pokekeep": "Si no tienes la Baya Meloc singular, añádela a la mochila (objeto clave) para activar el epílogo."
+  },
+  {
+   "juegos": [
+    "SCARLET",
+    "VIOLET"
+   ],
+   "id": "event-0",
+   "fase": 7,
+   "orden": 700,
+   "como": "El epílogo de Pecharunt necesita la Baya Meloc singular, que solo llegó por Regalo Misterioso.",
+   "pokekeep": "Añade la Baya Meloc singular a la mochila para activar el epílogo, o Pecharunt legal desde la Librería."
+  },
+  {
+   "juegos": [
+    "ZA"
+   ],
+   "id": "postgame",
+   "fase": 2,
+   "orden": 200,
+   "como": "Tras la historia: misiones principales 38-42 (Zygarde), los Juegos Z-A infinitos y, con el DLC, Megadimensión."
+  },
+  {
+   "juegos": [
+    "ZA"
+   ],
+   "id": "pokedex",
+   "fase": 5,
+   "orden": 500,
+   "como": "Completa la Pokédex de Luminalia (y la de Megadimensión con el DLC).",
+   "pokekeep": "Las exclusivas o de evento, añádelas legales desde la Librería."
+  },
+  {
+   "juegos": [
+    "ZA"
+   ],
+   "id": "event-0",
+   "fase": 7,
+   "orden": 700,
+   "como": "Diancie y otros regalos llegaron por evento o por la historia del DLC.",
+   "pokekeep": "Añádelos legales desde la Librería."
+  },
+  {
+   "juegos": [
+    "SCARLET",
+    "VIOLET"
+   ],
+   "id": "postgame",
+   "fase": 2,
+   "orden": 200,
+   "como": "La historia de Paldea acaba en el Área Cero (Travesía de la victoria, Senda legendaria y Vía Stardust deben estar hechas; la última historia, Camino a casa, baja al Área Cero). Después: Gran Pugna Académica (repetible), revanchas de líderes y, con los DLC, La máscara turquesa (Noroteo) y El disco índigo (Academia Arándano), en ese orden, más el epílogo de Pecharunt."
+  },
+  {
+   "juegos": [
+    "HEARTGOLD",
+    "SOULSILVER"
+   ],
+   "id": "unown",
+   "fase": 2,
+   "orden": 290,
+   "nivel": 1,
+   "como": "Ruinas Alfa (al oeste de Ciudad Malva). 1) Resuelve los cuatro puzles de piedra: Kabuto (sobre el centro de investigación), Omanyte y Ho-Oh (por la Cueva Unión con Surf y Fuerza) y Aerodactyl (bajo el centro, cruzando el lago con Surf); cada uno abre la sala de abajo y libera un grupo de letras. 2) Abre las cuatro cámaras secretas con la palabra grabada al fondo de cada sala: en la de Kabuto usa una Cuerda Huida, en la de Aerodactyl usa Destello, en la de Omanyte usa una Piedra Agua y en la de Ho-Oh entra con Ho-Oh en el equipo (posliga). 3) Habla con el investigador para que te dé el Bloc Unown y captura las 26 letras en las salas interiores. 4) Con las 26, la pared dorada revela dos formas más: captura «!» y «?» en la entrada de las ruinas, antes de bajar la escalera. Fuente: WikiDex «Ruinas Alfa».",
+   "pokekeep": "si no tienes a Ho-Oh para la última cámara, crea uno legal con la Librería o «Legalizar automáticamente» y ponlo primero del equipo."
+  },
+  {
+   "juegos": [
+    "BLACK2",
+    "WHITE2"
+   ],
+   "id": "medals",
+   "fase": 6,
+   "orden": 680,
+   "como": "El Medallero de Ciudad Gres (sala de la Liga de Medallas) registra 255 medallas de cinco tipos: Avance (historia), Aventura, Batalla, Conexión y Especiales. Ve a por ellas en este orden: las de Avance salen solas con la historia; las de Aventura y Batalla, jugando (pesca, bici, cajas, evoluciones, instalaciones de combate); cada vez que el señor de la Liga de Medallas te llama, recoge las nuevas y sube de rango. Las de Conexión que exigían Pokémon Global Link, la GTS, los combates aleatorios por Wi-Fi, Pokémon Dream Radar o eventos ya no se pueden ganar jugando porque esos servicios cerraron. El bloque del Medallero guarda cada medalla y su fecha.",
+   "pokekeep": "abre la partida, pestaña SAV, botón «Insignias» (Editor de Insignias): marca las que falten una a una o pulsa «Dar todas», y después «Guardar»; finalmente exporta la partida."
+  },
+  {
+   "juegos": [
+    "ULTRASUN",
+    "ULTRAMOON"
+   ],
+   "id": "stickers",
+   "fase": 4,
+   "orden": 420,
+   "nivel": 1,
+   "como": "Las dominsignias son pegatinas brillantes que aparecen por el mapa a partir de la isla de Melemele: hay 17 en Melemele, 33 en Akala, 34 en Ula-Ula y 16 en Poni. Recógelas mientras avanzas cada isla y entrégalas a Gabriel Oak en la Playa de Kantai: según cuántas lleves te regala Pokémon del tamaño de un dominante, y con las 100 un Ribombee (Ultrasol) o un Kommo-o (Ultraluna). Las últimas de Poni piden haber llegado a esa isla. No son los sellos del pasaporte. Fuente: WikiDex «Dominsignia»."
+  },
+  {
+   "juegos": [
+    "ZA"
+   ],
+   "id": "mega-stones-special",
+   "fase": 4,
+   "orden": 420,
+   "como": "Sceptilita, Blazikenita, Swampertita, Chesnaughtita, Delphoxita, Greninjanita y Baxcaliburita solo se ganaban subiendo de rango en los combates clasificatorios en línea de cada temporada; Diancita, Mewtwoita X, Mewtwoita Y y Garchompita Z llegaron por regalo misterioso. Dependen de temporadas y distribuciones, así que no cuentan para el cierre base. Fuente: WikiDex «Megapiedra» y la lista de megapiedras de PKHeX (ItemStorage9ZA).",
+   "pokekeep": "pestaña SAV, botón «Objetos»: añade las megapiedras que te falten (Pokekeep solo deja poner las que PKHeX admite en Leyendas Z-A) y guarda."
+  },
+  {
+   "juegos": [
+    "ZA"
+   ],
+   "id": "event-1",
+   "fase": 2,
+   "orden": 275,
+   "nivel": 1,
+   "como": "Con la expansión Megadimensión, tras la historia principal: ayuda a Anya con su dónut y ve al Canal Saison para entrar por primera vez en Luminalia Dimensional; desde entonces Hoopa abre portales con los dónuts de Anya. Sigue la historia de la expansión: completa misiones en las zonas dimensionales para ganar puntos, vence a los Pokémon megaevolucionados descontrolados y a Darkrai en la Isla Lunanueva de Pesadilla, y busca después a Rayquaza para Anya. Los lugares dimensionales tienen a Heatran (Averno Abrasador), Groudon (Tierra del Ocaso), Kyogre (Mar del Albor) y Rayquaza (Gran Pilar Celeste). Las zonas ??? de 5 estrellas traen a Cobalion, Terrakion, Virizion, Latios, Latias y Meloetta; Keldeo aparece tras capturar a los otros tres espadachines místicos. Fuente: WikiDex «Luminalia Dimensional». Se acredita cuando los doce están registrados en la Pokédex de la partida."
+  },
+  {
+   "juegos": [
+    "ZA"
+   ],
+   "id": "mega-dimension",
+   "fase": 2,
+   "orden": 270,
+   "como": "Requiere la expansión de pago Megadimensión y haber terminado la historia principal. Empieza ayudando a Anya, la pastelera del Gran Hotel Ricachilton, y entra con Hoopa en Luminalia Dimensional por los portales de Ciudad Luminalia. Cada zona dimensional (salvaje, de combate o ???) tiene de 1 a 5 estrellas y tres misiones que dan puntos para avanzar; la historia termina tras vencer y capturar a Darkrai y encontrar a Rayquaza. Los dónuts de Anya suben a tus Pokémon por encima del nivel 100. Fuente: WikiDex «Megadimensión» y «Luminalia Dimensional»."
+  },
+  {
+   "juegos": [
+    "LETGOP",
+    "LETGOE"
+   ],
+   "id": "postgame",
+   "fase": 2,
+   "orden": 200,
+   "como": "Tras el Salón de la Fama, vuelve a la Meseta Añil y vence otra vez al Alto Mando y al campeón: en la revancha cambian sus Pokémon (WikiDex «Liga Pokémon (Kanto)»). Cómo lo sabe la guía: después de capturar a Mewtwo en la Cueva Celeste y vencer allí a Verde, Verde solo vuelve a aparecer en Ciudad Celeste cuando vences de nuevo a la Liga (WikiDex «Verde (personaje)»); la partida guarda si Verde está visible en la ciudad (bandera de desaparición FV_T03_GREEN, oculta desde la partida nueva). Si la ves allí, la revancha está ganada. Si ya la venciste en la ciudad vuelve a ocultarse y la guía no puede confirmarlo: márcalo a mano."
+  },
+  {
+   "juegos": [
+    "SCARLET",
+    "VIOLET"
+   ],
+   "id": "battle0",
+   "fase": 3,
+   "orden": 300,
+   "como": "Tras acabar la historia, vuelve a vencer a los ocho líderes de gimnasio (revanchas) y habla con la recepcionista del estadio de la Academia: es un torneo de eliminación en combates individuales contra alumnos, profesores, líderes y el Alto Mando, con Mencía en la final. Si pierdes, puedes reintentarlo. Cómo lo sabe la guía: al ganarla por primera vez te llama Cinio («Enhorabuena por salir victorioso en la Gran Pugna Académica») y te pide investigar teraincursiones; esa misión deja en la partida el sondeo de 4★ (FSYS_RAID_DIFFICTLTY4_SURVEY), y la siguiente el de 6★ y su desbloqueo. Cualquiera de ellos prueba la victoria (textos del juego y scripts Lua; Serebii «Tera Raid Battles»). Si ganaste y aún no te ha llamado, la guía no puede confirmarlo hasta la llamada."
+  }
+ ]
+}

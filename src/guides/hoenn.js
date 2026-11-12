@@ -194,7 +194,7 @@
     ],
     "steps": [
       "Regresa a Ciudad Petalia tras conseguir las cuatro primeras medallas. Habla con Norman en el gimnasio y entra en la cadena de salas: cada puerta indica una estrategia del rival; escoge una salida de cada pareja para ascender.",
-      "Prepara el combate contra sus Pokémon de tipo Normal, especialmente los turnos de Truant/Ausente de Slaking. Guarda las curaciones para los turnos en los que puede atacar y evita depender de una sola criatura debilitada.",
+      "Prepara el combate contra sus Pokémon de tipo Normal, especialmente los turnos de Pereza de Slaking. Guarda las curaciones para los turnos en los que puede atacar y evita depender de una sola criatura debilitada.",
       "Derrota a Norman y recoge la Medalla Equilibrio. Completa después la entrega de Surf en la casa de Blasco, situada junto al gimnasio: el padre de Blasco te da la MO03.",
       "Enseña Surf a un Pokémon compatible y vuelve a Ciudad Malvalona. Dirígete al este por Ruta 118 y cruza el agua para abrir el recorrido hacia Ruta 119."
     ],

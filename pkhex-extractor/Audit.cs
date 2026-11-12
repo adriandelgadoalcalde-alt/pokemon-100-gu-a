@@ -12,6 +12,14 @@ public static class Audit
     public const string EngineCommit = "96e33e7432d900e5345afdfd117eabfac43f5bbd";
     public static readonly JsonSerializerOptions JsonOptions = new() { WriteIndented = true };
 
+    // Capturados y total de cada Pokédex regional (especie con forma 0; capturado según la Pokédex de la partida).
+    // Entradas de todas las formas de cada especie (una especie cuenta en una Pokédex si alguna de sus formas está en ella).
+    private static (ushort sp, T[] p)[] Forms<T>(int max, Func<ushort, byte, T> entry, Func<ushort, byte> count) =>
+        Enumerable.Range(1, max).Select(i => (ushort)i).Select(sp => (sp, Enumerable.Range(0, Math.Max((int)count(sp), 1)).Select(f => entry(sp, (byte)f)).ToArray())).ToArray();
+
+    private static Dictionary<string, object> DexCounts<T>(SaveFile save, (ushort sp, T p)[] all, params (string name, Func<(ushort sp, T p), bool> inDex)[] dexes) =>
+        dexes.ToDictionary(d => d.name, d => { var req = all.Where(d.inDex).ToArray(); return (object)new { caught = req.Count(x => save.GetCaught(x.sp)), total = req.Length }; });
+
     private static object? ReadMedals(SaveFile save)
     {
         if (save is not SAV5B2W2 b2w2) return null;
@@ -42,6 +50,113 @@ public static class Audit
             mostCommonDate = commonDate?.Key, mostCommonDateCount = commonDate?.Count() ?? 0,
             source = "PKHeX.Core SaveBlockAccessor5B2W2 (bloque 68), MedalList5 y Medal5",
             interpretation = "Recibidas en el guardado, no comprobación de consecución jugando." };
+    }
+
+
+    // Revancha del Alto Mando y de Cintia en Diamante/Perla/Platino. Las salas de la Liga no dejan bandera permanente
+    // (pokeplatinum pokemon_league_*_room/scripts.s), pero el Salón de la Fama (bloque extra 0 en 0x20000 de cada mitad de
+    // 0x40000: 30 entradas de 0x16C bytes, 6 Pokémon de 0x3C con especie, nivel, PID y OTID, y la fecha u16 año, u8 mes,
+    // u8 día; luego índice siguiente y total; pie de 0x10 con revisión y tamaño 0x2AB0; hall_of_fame_entries.h) guarda la
+    // fecha de cada victoria. La revancha se activa con la Pokédex Nacional en DP y con FLAG_ARRESTED_CHARON_STARK_MOUNTAIN
+    // (214) en Platino. Una entrada del Salón posterior a la fecha de encuentro de un Pokémon propio que solo se puede
+    // conseguir después de esa condición (o que lo lleva en el equipo) prueba que se ganó con los equipos de revancha:
+    // en DP, Pokémon de la Zona de Combate (rutas 225-230 y áreas 81-85); en Platino, Heatran de la Montaña Dura (84),
+    // que solo aparece tras el arresto de Helio (stark_mountain_room_3/scripts.s).
+    // HGSS: Salón en 0x23000 (pokeheartgold hall_of_fame.h, mismo formato); la revancha de Lance y del Alto Mando usa
+    // TRAINER_CHAMPION_LANCE_2 cuando VAR_UNK_4135 (medallas de Kanto) >= 8 (scr_seq_0824_T10R0601); el Monte Plateado
+    // (lugar 137) solo se abre con las 16 medallas, así que un Pokémon propio encontrado allí es posterior a la condición.
+    private static object LeagueRematch4(SAV4 s)
+    {
+        var d = s.Data; bool hg = s is SAV4HGSS; int hof = hg ? 0x23000 : 0x20000;
+        int best = -1; uint bestRev = 0;
+        foreach (var half in new[] { 0, 0x40000 })
+        {
+            int f = half + hof + 0x2AB0;
+            if (f + 0x10 > d.Length) continue;
+            uint rev = System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(f + 4)..]);
+            int size = System.Buffers.Binary.BinaryPrimitives.ReadInt32LittleEndian(d[(f + 8)..]);
+            if (rev == 0xFFFFFFFF || size != 0x2AB0) continue;
+            if (best < 0 || rev > bestRev) { best = half; bestRev = rev; }
+        }
+        var entries = new List<(DateOnly? date, HashSet<(uint, uint)> mons, bool heatran)>();
+        long total = 0;
+        if (best >= 0)
+        {
+            int o = best + hof;
+            total = System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(o + 0x2AA8 + 4)..]);
+            for (int i = 0; i < Math.Min(total, 30); i++)
+            {
+                int e = o + i * 0x16C;
+                int y = System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(d[(e + 0x168)..]), m = d[e + 0x16A], dd = d[e + 0x16B];
+                if (y < 100) y += 2000;
+                DateOnly? date = m is >= 1 and <= 12 && dd is >= 1 and <= 31 && y is >= 2000 and <= 2099 ? new DateOnly(y, m, Math.Min(dd, DateTime.DaysInMonth(y, m))) : null;
+                var mons = new HashSet<(uint, uint)>();
+                bool heatran = false;
+                for (int k = 0; k < 6; k++)
+                {
+                    int q = e + k * 0x3C;
+                    ushort sp = System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(d[q..]);
+                    if (sp == 0) continue;
+                    if (sp == 485 && System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(q + 8)..]) == s.ID32) heatran = true;
+                    mons.Add((System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(q + 4)..]), System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(d[(q + 8)..])));
+                }
+                entries.Add((date, mons, heatran));
+            }
+        }
+        bool pt = s is SAV4Pt;
+        bool? arrested = pt ? s.GetEventFlag(214) : null;
+        var dpAreas = new HashSet<ushort> { 40, 41, 42, 43, 44, 45, 81, 82, 83, 84, 85 };
+        var evidence = s.PartyData.Concat(s.BoxData).Where(pk => pk.Species != 0 && !pk.IsEgg && pk.ID32 == s.ID32
+                && pk.OriginalTrainerName == s.OT && pk.MetDate is not null
+                && (hg ? (pk.Version == GameVersion.HG || pk.Version == GameVersion.SS) && pk.MetLocation == 137
+                    : pt ? pk.Version == GameVersion.Pt && pk.Species == 485 && pk.MetLocation == 84
+                       : (pk.Version == GameVersion.D || pk.Version == GameVersion.P) && dpAreas.Contains(pk.MetLocation)))
+            .Select(pk => (met: pk.MetDate!.Value, key: (pk.EncryptionConstant, pk.ID32))).ToList();
+        // En Platino, un Heatran propio en el equipo de una entrada del Salón también la sitúa después del arresto.
+        bool proof = entries.Any(en => (pt && en.heatran) || evidence.Any(ev => (en.date is { } dt && dt > ev.met) || en.mons.Contains(ev.key)));
+        // Platino: el Diario (10 entradas de 112 bytes en 0x5720 del bloque general; journal.h) guarda los últimos días;
+        // la victoria contra Cintia en la revancha es el evento 12 (LOCATION_EVENT_BEAT_CHAMPION) con el entrenador 870
+        // (TRAINER_CHAMPION_CYNTHIA_REMATCH), empaquetado como lugar << 16 | entrenador << 6 | tipo (journal.c).
+        bool journal = false;
+        if (pt)
+        {
+            var g = s.General;
+            for (int i = 0; i < 10 && !journal; i++)
+                for (int k = 0; k < 4; k++)
+                {
+                    uint ev = System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(g[(0x5720 + i * 112 + 4 + k * 4)..]);
+                    if ((ev & 0x3F) == 12 && ((ev >> 6) & 0x3FF) == 870) { journal = true; break; }
+                }
+        }
+        // Platino, lo que cambia después (pret/pokeplatinum, stark_mountain_room_3 y pokemon_league_hall_of_fame): Carón es
+        // arrestado en el primer combate contra Heatran (FLAG_ARRESTED 214 y FLAG_BATTLED 215 a la vez) y desde entonces todo
+        // combate de la Liga es la revancha. Si Heatran se derrota o huye (FLAG_UNLOCKED_VS_SEEKER_LVL_5 2435, solo si no se
+        // pierde) desaparece con VAR_STARK_MOUNTAIN_ROOM_3_STATE (0x409E, trabajo 158) = 2; solo vuelve a 1 al perder contra
+        // él (sin la bandera 2435 de ese combate) o al entrar en el Salón con Heatran sin capturar (FLAG_CAUGHT_HEATRAN 288)
+        // después de hablar con Gerardo en el Área Combate, que solo se abre tras el arresto. Bandera 2435 + estado 1 +
+        // sin capturar = una entrada del Salón posterior al arresto, es decir, la revancha.
+        int? heatranState = pt ? s.GetWork(158) : null;
+        bool heatranReset = pt && arrested == true && !s.GetEventFlag(288) && s.GetEventFlag(2435) && heatranState == 1;
+        int? kanto = s is SAV4HGSS h4 ? BitOperations.PopCount((uint)h4.Badges16) : null;
+        return new { hallOfFame = total, arrested, nationalDex = s.NationalDex, kantoBadges = kanto, evidence = evidence.Count, proof = proof || journal || heatranReset, journal, heatranState, heatranReset };
+    }
+
+
+    // Escarlata/Púrpura: estado de la historia guardado como texto ASCII. 0x9ABA6CF6 = carga del mundo
+    // (SYS_LOAD_COMMON_INIT/…/CLEAR, CLEAR al acabar el Área Cero: common_1290/champ_0010 del Lua), 0xB200597B = escena
+    // principal en curso (COMMON_NNNN) y 0x95BC36BE = objetivo del mapa (ymap_title_SCENARIO_COMMON_NNNN). La cadena de
+    // escenas acaba en common_2150 (ceremonia tras ganar la Gran Pugna Académica) y common_2160.
+    private static object? Story9(SAV9SV sv)
+    {
+        string? Text(uint key)
+        {
+            var b = sv.Accessor.BlockInfo.FirstOrDefault(x => x.Key == key);
+            if (b is null) return null;
+            var d = b.Data; int n = d.IndexOf((byte)0); if (n < 0) n = d.Length;
+            var t = Encoding.ASCII.GetString(d[..n]);
+            return t.All(c => c is >= ' ' and <= '~') ? t : null;
+        }
+        return new { load = Text(0x9ABA6CF6), scene = Text(0xB200597B), title = Text(0x95BC36BE) };
     }
 
     public static string? GameId(SaveFile save) => save is SAV3FRLG ? null : save.Version switch
@@ -109,7 +224,8 @@ public static class Audit
             ["schemaVersion"] = "1.0.0", ["game"] = game, ["generation"] = save.Generation,
             ["gameCandidates"] = game is not null ? new[] { game } : save is SAV3FRLG ? new[] { "FIRERED", "LEAFGREEN" } :
                 save is SAV3RS ? new[] { "RUBY", "SAPPHIRE" } : save is SAV4DP ? new[] { "DIAMOND", "PEARL" } : save is SAV1 g1 ?
-                (g1.Japanese ? new[] { "RED", "GREEN", "BLUE" } : new[] { "RED", "BLUE" }) :
+                // Verde solo salió en Japón, pero su traducción al inglés guarda con el formato internacional.
+                (g1.Japanese ? new[] { "RED", "GREEN", "BLUE" } : new[] { "RED", "BLUE", "GREEN" }) :
                 save is SAV2 ? new[] { "GOLD", "SILVER" } : Array.Empty<string>(),
             ["extractor"] = new { name = "pokemon-save-audit", engine = "PKHeX.Core", engineCommit = EngineCommit, readOnly = true },
             ["format"] = save.GetType().Name, ["detectedVersion"] = save.Version.ToString(),
@@ -125,13 +241,101 @@ public static class Audit
             ["passport"] = save is SAV7 passport7 ? new { mask = passport7.Misc.Stamps } : null,
             ["integrity"] = new { engine = "PKHeX.Core", checksumsValid = checksums,
                 scope = "Propiedad de integridad upstream; algunos formatos no tienen checksums propios" },
-            ["gameClear"] = save is SAV4 s4 ? s4.GameClear : save is SAV5 or SAV6 or SAV7 ? save.SecondsToFame > 0 : null,
+            // Gen. I: contador del Salón de la Fama (wNumHoFTeams, se incrementa al entrar; pokered hall_of_fame.asm).
+            // Gen. II: EVENT_BEAT_ELITE_FOUR = 68 (pokegold/pokecrystal constants/event_flags.asm; HallOfFame.asm lo activa).
+            // Negro/Blanco: bandera 2400 «Defeated Ghetsis (First game clear)» de PKHeX (flags_bw), además del tiempo a la fama.
+            ["gameClear"] = save is SAV1 s1 ? s1.HallOfFameCount > 0 : save is SAV2 s2 ? s2.GetEventFlag(68) :
+                save is SAV4 s4 ? s4.GameClear : save is SAV5BW bw ? bw.EventWork.GetEventFlag(2400) || bw.SecondsToFame > 0 :
+                save is SAV5 or SAV6 or SAV7 ? save.SecondsToFame > 0 :
+                // Let's Go: FSYS_GAME_CLEAR = bandera de sistema 0 «Completed Main Story» (PKHeX flags_gg).
+                save is SAV7b lg ? lg.EventWork.GetFlag(EventVarType.System, 0) :
+                // DBPR: SYS_FLAG_GAME_CLEAR = bandera de sistema 5 (EvWork.SYSFLAG_INDEX de uDPR; la usa GetTrainerRank).
+                save is SAV8BS bsc ? bsc.FlagWork.GetSystemFlag(5) : null,
             ["nationalDex"] = save is SAV3 n3 ? n3.NationalDex : save is SAV4 n4 ? n4.NationalDex : save is SAV5 n5 ? n5.Zukan.IsNationalDexUnlocked :
                 save is SAV6XY nx ? nx.Zukan.IsNationalDexUnlocked : save is SAV6AO na ? na.Zukan.IsNationalDexUnlocked : null,
             ["badgesMask"] = save is SAV3 b3 ? b3.Badges : (int?)null,
-            ["badgesTotal"] = save is SAV3 badges3 ? BitOperations.PopCount((uint)badges3.Badges) : save is SAV4HGSS hg ? BitOperations.PopCount(hg.Badges) + BitOperations.PopCount((uint)hg.Badges16) :
+            ["badgesTotal"] = save is SAV1 badges1 ? BitOperations.PopCount((uint)badges1.Badges) : save is SAV2 badges2 ? BitOperations.PopCount((uint)badges2.Badges) :
+                save is SAV3 badges3 ? BitOperations.PopCount((uint)badges3.Badges) : save is SAV4HGSS hg ? BitOperations.PopCount(hg.Badges) + BitOperations.PopCount((uint)hg.Badges16) :
                 save is SAV4 d4 ? BitOperations.PopCount(d4.Badges) : save is SAV5 b5 ? BitOperations.PopCount((uint)b5.Misc.Badges) :
-                save is SAV6 b6 ? BitOperations.PopCount((uint)b6.Badges) : null,
+                save is SAV6 b6 ? BitOperations.PopCount((uint)b6.Badges) :
+                save is SAV8SWSH b8 ? BitOperations.PopCount((uint)b8.Badges) :
+                save is SAV8BS b8b ? (int)b8b.MyStatus.BadgeCount :
+                // Let's Go: FSYS_GYM_CLEAR_* = banderas de sistema 12-19 (un líder cada una; PKHeX flags_gg).
+                save is SAV7b lgb ? Enumerable.Range(12, 8).Count(i => lgb.EventWork.GetFlag(EventVarType.System, i)) : null,
+            // Diamante/Perla/Platino: banderas capturadas registradas en el PC del Subsuelo (UG_FlagsCaptured); la bandera
+            // de platino de la tarjeta exige 50 (pokeplatinum underground.c, FLAG_CAPTURED_COUNT_PLATINUM).
+            ["underground4"] = save is SAV4Sinnoh ug ? new { flagsCaptured = ug.UG_FlagsCaptured } : null,
+            // Negro/Blanco y Negro 2/Blanco 2: récords del Metro Batalla (BattleSubway5 de PKHeX). Fero y Caril esperan en el
+            // combate 49 de los súper trenes individual y doble (WikiDex «Ingo/Fero», «Emmet/Caril»).
+            ["subway5"] = save is SAV5 sub ? new { singleRecord = sub.BattleSubway.SingleRecord, doubleRecord = sub.BattleSubway.DoubleRecord,
+                superSingleRecord = sub.BattleSubway.SuperSingleRecord, superDoubleRecord = sub.BattleSubway.SuperDoubleRecord,
+                superMultiNpcRecord = sub.BattleSubway.SuperMultiNPCRecord } : null,
+            // Platino: récords de la Torre Batalla (BattleFrontierStats.soloStats de pokeplatinum: récord y racha actual de
+            // individual, doble, múltiple, múltiple con conexión y Wi-Fi). El bloque empieza 4 bytes tras el grito de Chatot de
+            // PKHeX (0x64EC + Chatter4.SIZE + 4 = 0x68DC), el mismo desfase que en Diamante/Perla (pokediamond: 4 + 0x3C hasta los
+            // BP de 0x65F8) y en HGSS (contrastado con una partida pública).
+            ["tower4"] = save is SAV4Pt pt ? new { records = Enumerable.Range(0, 5).Select(i =>
+                (int)System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(pt.General[(0x64EC + Chatter4.SIZE + 4 + i * 4)..])).ToArray() } : null,
+            // Rojo/Azul/Verde/Amarillo: entradas del Salón de la Fama (wHallOfFameCount de pokered; una por cada Liga ganada).
+            ["hallOfFame1"] = save is SAV1 hf1 ? new { count = (int)hf1.HallOfFameCount } : null,
+            // Escarlata/Púrpura y Z-A: capturados de cada Pokédex regional según los números de PersonalInfo9SV/9ZA de PKHeX
+            // (DexPaldea/DexKitakami/DexBlueberry de cualquier forma; DexIndex ≤ 232 = Luminalia, > 232 = Hiperespacio).
+            ["story9"] = save is SAV9SV st9 ? Story9(st9) : null,
+            ["dex9"] = save is SAV9SV sv9 ? DexCounts<PersonalInfo9SV[]>(sv9, Forms(sv9.MaxSpeciesID, (sp, f) => PersonalTable.SV.GetFormEntry(sp, f), sp => PersonalTable.SV[sp].FormCount),
+                    ("paldea", x => x.p.Any(e => e.DexPaldea != 0)), ("kitakami", x => x.p.Any(e => e.DexKitakami != 0)), ("blueberry", x => x.p.Any(e => e.DexBlueberry != 0)))
+                : save is SAV9ZA za9 ? DexCounts<PersonalInfo9ZA[]>(za9, Forms(za9.MaxSpeciesID, (sp, f) => PersonalTable.ZA.GetFormEntry(sp, f), sp => PersonalTable.ZA[sp].FormCount),
+                    ("lumiose", x => x.p.Any(e => e.IsLumioseNative)), ("hyperspace", x => x.p.Any(e => e.IsHyperspaceNative))) : null,
+            // Oro/Plata/Cristal: letras de Unown registradas (wUnownDex de pokecrystal, 26 bytes tras la Pokédex de vistos;
+            // SAV2Offsets.PokedexSeen + 0x20 en PKHeX). Cada byte es una letra 1-26; 0 = hueco libre.
+            ["unown2"] = save is SAV2 un2 ? new { forms = Enumerable.Range(0x20, 26).Select(i => (int)un2.Data[new SAV2Offsets(un2).PokedexSeen + i])
+                .Where(v => v is >= 1 and <= 26).Distinct().Count() } : null,
+            // Negro/Blanco y Negro 2/Blanco 2: complementos del Musical (Musical5.GetHasProp de PKHeX, 100 bits).
+            ["musical5"] = save is SAV5 mu ? new { props = Enumerable.Range(0, 100).Count(i => mu.Musical.GetHasProp(i)), total = 100 } : null,
+            // Negro 2/Blanco 2: niveles blanco y negro de la Zona Nexo (Entralink5.WhiteForestLevel/BlackCityLevel de PKHeX).
+            ["entralink5"] = save is SAV5B2W2 en ? new { white = (int)en.Entralink.WhiteForestLevel, black = (int)en.Entralink.BlackCityLevel }
+                // N/B: bloque 53 del Nexo (0x1B0). Sin estructura documentada salvo niveles y MissionsComplete (0x1A4); «untouched» =
+                // todo a cero salvo la cabecera (0x00-0x05) y las tres casillas de poder equipado (0x1A0-0x1A2, 48 = ninguno).
+                : save is SAV5BW enb ? new { white = (int)enb.Entralink.WhiteForestLevel, black = (int)enb.Entralink.BlackCityLevel,
+                    missions = (int)enb.Entralink.MissionsComplete,
+                    untouched = enb.Entralink.Data.ToArray().Select((x, i) => (x, i)).All(t => t.i < 6 || (t.i >= 0x1A0 && t.i <= 0x1A2 && t.x == 48) || t.x == 0) } : null,
+            // Negro 2/Blanco 2: récords del PWT por torneo (PWTBlock5.GetPWTRecord, orden de PWTRecordID: 17 = Campeones).
+            ["pwt5"] = save is SAV5B2W2 pw ? new { records = Enumerable.Range(0, 29).Select(i => (int)pw.PWT.GetPWTRecord(i)).ToArray() } : null,
+            // Sol/Luna y Ultrasol/Ultraluna: rachas del Árbol de Combate (BattleTree7.GetTreeStreak de PKHeX), mismo formato que el
+            // lector propio (modalidad: normal y súper, actual y máxima).
+            ["battleTree"] = save is SAV7 s7 ? new { modes = Enumerable.Range(0, 4).Select(t => new {
+                normalCurrent = s7.BattleTree.GetTreeStreak(t, false, false), superCurrent = s7.BattleTree.GetTreeStreak(t, true, false),
+                normalBest = s7.BattleTree.GetTreeStreak(t, false, true), superBest = s7.BattleTree.GetTreeStreak(t, true, true) }).ToArray(),
+                source = "PKHeX.Core BattleTree7.GetTreeStreak" } : null,
+            // Sol/Luna: estado de las 95 células de Zygarde; Ultrasol/Ultraluna: el mismo vector son las 100 pegatinas dominantes
+            // (EventWork7.GetZygardeCell: 0 nada, 1 disponible, 2 recogida; SAV_ZygardeCell de PKHeX las rotula así). Más las
+            // mejores puntuaciones de los cuatro recorridos de Mantine Surf (Misc7.GetSurfScore, solo USUL).
+            ["cells7"] = save is SAV7 c7 ? new { kind = c7 is SAV7USUM ? "totemStickers" : "zygardeCells",
+                total = c7.EventWork.TotalZygardeCellCount,
+                received = Enumerable.Range(0, c7.EventWork.TotalZygardeCellCount).Count(i => c7.EventWork.GetZygardeCell(i) == 2),
+                surf = c7 is SAV7USUM ? Enumerable.Range(0, 4).Select(i => c7.Misc.GetSurfScore(i)).ToArray() : null,
+                cellWork = new[] { (int)c7.EventWork.ZygardeCellTotal, (int)c7.EventWork.ZygardeCellCount } } : null,
+            // Sol/Luna y USUL: récord 100 «Champion Title Defense» (RecordLists.RecordList_7 de PKHeX): defensas del título de campeón.
+            ["records7"] = save is SAV7 rc7 ? new { titleDefense = rc7.GetRecord(100) } : null,
+            // Diamante Brillante/Perla Reluciente: racha actual y máxima de cada modalidad de la Torre Batalla (BattleTowerWork8b).
+            // DP: récord de racha de la Torre Batalla = GameStats 0x35/0x37/0x39/0x3B/0x3D (Record16 9-17 impares);
+            // GetTrainerCardLevel de pokediamond (arm9/asm/unk_02064E90.s) da la estrella con alguno >= 100.
+            // Leyendas Z-A: Floette flor eterna (670, forma 5) registrado como capturado en la Pokédex (bit de forma de
+            // PokeDexEntry9a). Es la recompensa del rango 15 de los Juegos Z-A infinitos (WikiDex «Juegos Z-A»).
+            ["za9"] = save is SAV9ZA zaf ? new { floetteEternalCaught = zaf.Zukan.GetEntry(670).GetIsFormCaught(5) } : null,
+            // Cristal: «SRAM Battle Tower» de pokecrystal (ram/sram.asm), justo tras sGSBallFlagBackup (0x3E44; 0xA083 en la
+            // japonesa, mismas direcciones que SAV2.EnableGSBallMobileEvent): estado del desafío (3 = ganado, 4 = premio
+            // recibido; se mantiene hasta el siguiente desafío) y premio elegido al empezar un desafío (0 = nunca empezado).
+            ["tower2"] = save is SAV2 c2 && c2.Version == GameVersion.C ? new {
+                state = (int)c2.Data[c2.Japanese ? 0xA084 : 0x3E45], reward = (int)c2.Data[c2.Japanese ? 0xA084 + 11 : 0x3E45 + 11] } : null,
+            ["leagueRematch4"] = save is SAV4 lr4 ? LeagueRematch4(lr4) : null,
+            ["tower4dp"] = save is SAV4DP dp4 ? new { maxStreaks = new[] { 9, 11, 13, 15, 17 }.Select(i => (long)dp4.Records.GetRecord16(i)).ToArray() } : null,
+            ["tower8b"] = save is SAV8BS bs ? new { maxStreaks = bs.BattleTower.Records.Select(r => (long)Math.Max(r.RenshouCount, r.RenshouCountOld)).ToArray() } : null,
+            // Diamante Brillante/Perla Reluciente: tipos de estatua distintos que se poseen (estrella de la tarjeta: el juego cuenta
+            // los objetos del Subsuelo de categoría estatua con cantidad > 0 y pide 100; UgItemWork.GetHaveStatueKindNum, uDPR).
+            ["statues8b"] = save is SAV8BS st8 ? new { kinds = st8.Underground.ReadItems().Count(i => i.Count > 0 && i.Type == UgItemType.Statue) } : null,
+            // Espada/Escudo: marcas de Pokédex completa de la tarjeta de entrenador (TrainerCard8 de PKHeX).
+            ["card8"] = save is SAV8SWSH c8 ? new { galarDex = c8.TrainerCard.PokeDexComplete, armorDex = c8.TrainerCard.ArmorDexComplete,
+                crownDex = c8.TrainerCard.CrownDexComplete } : null,
             ["progressSignals"] = ProgressSignals.Read(save),
             ["unparsed"] = unparsed,
             ["warnings"] = new[] { "Diagnóstico de estado, no certificación de legitimidad ni del 100 %.",
@@ -141,7 +345,29 @@ public static class Audit
         {
             IEventFlagArray? flags = save as IEventFlagArray;
             if (save is IEventFlagProvider37 provider) flags = provider.EventWork;
-            if (flags is not null)
+            if (save is SAV7b lgpe)
+            {
+                // Let's Go: banderas en bruto de EventWork7b (zona 0, sistema 128, desaparición 640, evento 2176) y títulos de Maestro.
+                var ew = lgpe.EventWork;
+                var active = Enumerable.Range(0, ew.CountFlag).Where(i => ew.GetFlag(i)).ToArray();
+                var work = Enumerable.Range(0, ew.CountWork).Select(i => ew.GetWork(i)).ToArray();
+                var titles = Enumerable.Range(0, EventWork7b.MaxTitleFlag).Where(i => ew.GetTitleFlag(i)).ToArray();
+                result["events"] = new { flagCount = ew.CountFlag, activeFlags = active, work, titles,
+                    layout = "EventWork7b: zona 0, sistema 128, desaparición 640, evento 2176",
+                    interpretation = "Datos crudos sin equivalencia automática a misiones", engineCommit = EngineCommit };
+            }
+            else if (save is SAV8BS bdsp)
+            {
+                // DBPR: FlagWork8b (banderas de 32 bits; índices de EvWork.FLAG_INDEX de uDPR) y trabajo.
+                var fw = bdsp.FlagWork;
+                // Banderas normales 0..3999 y, a continuación, las de sistema como 4000 + índice (SYSFLAG_INDEX de uDPR).
+                var active = Enumerable.Range(0, FlagWork8b.COUNT_FLAG).Where(fw.GetFlag)
+                    .Concat(Enumerable.Range(0, FlagWork8b.COUNT_SYSTEM).Where(fw.GetSystemFlag).Select(i => FlagWork8b.COUNT_FLAG + i)).ToArray();
+                var work = Enumerable.Range(0, FlagWork8b.COUNT_WORK).Select(fw.GetWork).ToArray();
+                result["events"] = new { flagCount = FlagWork8b.COUNT_FLAG + FlagWork8b.COUNT_SYSTEM, activeFlags = active, work, systemOffset = FlagWork8b.COUNT_FLAG,
+                    interpretation = "Datos crudos sin equivalencia automática a misiones", engineCommit = EngineCommit };
+            }
+            else if (flags is not null)
             {
                 var active = Enumerable.Range(0, flags.EventFlagCount).Where(flags.GetEventFlag).ToArray();
                 object? work = flags is IEventWorkArray<ushort> w16 ? Enumerable.Range(0,w16.EventWorkCount).Select(w16.GetWork).ToArray() :
@@ -150,6 +376,18 @@ public static class Audit
                     interpretation = "Datos crudos sin equivalencia automática a misiones", engineCommit = EngineCommit };
             }
             else unparsed.Add("Flags/work no expuestos como arrays por esta familia; bloques hash requieren adaptador específico");
+            var named = NamedBlocks.Read(save);
+            if (named is not null)
+                result["namedBlocks"] = named;
+            var position = NamedBlocks.Position(save);
+            if (position is not null)
+                result["switchPosition"] = position;
+            if (NamedBlocks.QuestWork9a(save) is { } quests)
+                result["questWork9a"] = quests;
+            if (NamedBlocks.Requests8a(save) is { } requests)
+                result["requests8a"] = requests;
+            if (NamedBlocks.ClearFlags8(save) is { } clear8)
+                result["clear8"] = clear8;
         }
         return result;
     }

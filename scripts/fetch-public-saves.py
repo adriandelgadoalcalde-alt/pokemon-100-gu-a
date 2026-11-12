@@ -86,6 +86,8 @@ def store_new(destination, payload, descriptor):
         os.link(temporary, destination)  # Atomic and refuses replacement.
     finally:
         if temporary is not None:
+            if temporary.exists():
+                os.chmod(temporary, 0o600)  # Windows no permite borrar un archivo de solo lectura.
             temporary.unlink(missing_ok=True)
 
 

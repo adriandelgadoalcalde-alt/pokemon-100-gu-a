@@ -20,7 +20,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="10.0.14" PrivateAssets="all" />
   </ItemGroup>
 
-  <ItemGroup><ProjectReference Include="$(PKHeXSource)/PKHeX.Core/PKHeX.Core.csproj" /><Compile Include="../pkhex-extractor/Audit.cs" Link="Audit.cs" /><Compile Include="../pkhex-extractor/ProgressSignals.cs" Link="ProgressSignals.cs" /></ItemGroup>
+  <ItemGroup><ProjectReference Include="$(PKHeXSource)/PKHeX.Core/PKHeX.Core.csproj" /><Compile Include="../pkhex-extractor/Audit.cs" Link="Audit.cs" /><Compile Include="../pkhex-extractor/ProgressSignals.cs" Link="ProgressSignals.cs" /><Compile Include="../pkhex-extractor/NamedBlocks.cs" Link="NamedBlocks.cs" /></ItemGroup>
   <Target Name="VerifyPKHeXRevision" BeforeTargets="BeforeBuild">
     <Exec Command="git -C &quot;$(PKHeXSource)&quot; rev-parse HEAD" ConsoleToMSBuild="true" StandardOutputImportance="Low">
       <Output TaskParameter="ConsoleOutput" PropertyName="PKHeXRevision" />

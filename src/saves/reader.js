@@ -176,6 +176,11 @@ function eventAudit(o,b){let off,workBase,flagBase,flagCount,workCount;
  function keyItemsHGSS(b,base){const items=[];for(let i=0;i<38;i++){const id=u16(b,base+0x8D8+i*4),count=u16(b,base+0x8DA+i*4);if(id>0&&id<=536&&count>0)items.push({id,count});}return items;}
  function details(o,b,dexData){o.caught=dexData.caught;o.seen=dexData.seen;o.caughtCount=o.caught.length;o.seenCount=o.seen.length;o.legendary=(LEGENDARY[o.game]||[]).map(id=>({id,name:NAME_BY_ID[id]||`#${id}`,caught:o.caught.includes(id),seen:o.seen.includes(id)}));o.readonly=true;o.events=eventAudit(o,b);return o;}
  function ensureReal(b){let n=0;for(const v of b){if(v!==0&&v!==255&&++n>=3)return;}fail('El archivo no contiene datos de una partida reconocible (vacío o sin descifrar).')}
+ // Torre Batalla (FrontierSave de pokeheartgold, u16 unk_000[112]): récords de las cinco modalidades en las estadísticas
+ // 0, 2, 4, 6 y 8, como las lee la tarjeta (sub_020691E8). El bloque empieza en 0x5264 de la partición general, 4 bytes tras
+ // el grito de Chatot de PKHeX (0x4E74 + 0x3EC); contrastado con una partida pública (Torre 105/105 y Fábrica 49/39).
+ // Formas de Unown registradas (Zukan4 de PKHeX: lista de 28 bytes en Pokédex+0x10C, 0xFF = fin).
+ function unownHGSS(b,base){const seen=new Set();for(let i=0;i<28;i++){const v=u8(b,base+0x12B8+0x10C+i);if(v===0xFF)break;if(v<28)seen.add(v);}return [...seen].sort((x,y)=>x-y);}
  function tryHGSS(b,base){const end=base+0xF628;
   if(end>b.length)return null;
   const magic=u32(b,end-8),sz=u32(b,end-12),v=u8(b,base+0x64+0x1c);
@@ -233,14 +238,26 @@ function eventAudit(o,b){let off,workBase,flagBase,flagCount,workCount;
   const d=dex(b,{ofs:base+0x12B8,caught:4,seen:0x44,region:0x40,regions:1,max:493});
   const required=Array.from({length:493},(_,i)=>i+1).filter(i=>!MYTHICAL4.has(i));
   const missing=required.filter(i=>!d.caught.includes(i));
-  return details({game:ver===7?'HEARTGOLD':'SOULSILVER',keyItems:keyItemsHGSS(b,base),integrity,version:ver,generation:4,format:'DS 512 KiB',trainer:str4(b,base+0x64,16),tid:u16(b,base+0x74),sid:u16(b,base+0x76),playtime:time(b,base+0x86),firstHallOfFameSeconds:u32(b,base+0x3C),badgesJohto:bits(johto),badgesKanto:bits(kanto),badgesJohtoMask:johto,badgesKantoMask:kanto,badgesTotal:bits(johto)+bits(kanto),gameClear:!!(prog&1),nationalDex:!!(prog&2),missingRequired:missing,requiredCount:required.length,requiredCaught:required.length-missing.length,pokeathlon:parsePokeathlon4(b,base),pokewalker:parsePokewalker4(b,base),saveBase:base,slotInfo:`Ranura de guardado ${base?'secundaria':'principal'}`,notes:['Pokédex: «capturado» incluye intercambios; no acredita dónde apareció ni si completaste la escena.','Bloque general seleccionado por contadores mayor/menor y comprobado por CRC. Cajas y bloques adicionales aún no tienen validación de integridad en este lector.']},b,d);
+  return details({game:ver===7?'HEARTGOLD':'SOULSILVER',keyItems:keyItemsHGSS(b,base),unownForms:unownHGSS(b,base),tower4:{records:[0,2,4,6,8].map(i=>u16(b,base+0x5264+i*2))},integrity,version:ver,generation:4,format:'DS 512 KiB',trainer:str4(b,base+0x64,16),tid:u16(b,base+0x74),sid:u16(b,base+0x76),playtime:time(b,base+0x86),firstHallOfFameSeconds:u32(b,base+0x3C),badgesJohto:bits(johto),badgesKanto:bits(kanto),badgesJohtoMask:johto,badgesKantoMask:kanto,badgesTotal:bits(johto)+bits(kanto),gameClear:!!(prog&1),nationalDex:!!(prog&2),missingRequired:missing,requiredCount:required.length,requiredCaught:required.length-missing.length,pokeathlon:parsePokeathlon4(b,base),pokewalker:parsePokewalker4(b,base),saveBase:base,slotInfo:`Ranura de guardado ${base?'secundaria':'principal'}`,notes:['Pokédex: «capturado» incluye intercambios; no acredita dónde apareció ni si completaste la escena.','Bloque general seleccionado por contadores mayor/menor y comprobado por CRC. Cajas y bloques adicionales aún no tienen validación de integridad en este lector.']},b,d);
  }
  function tryB2W2(b,base){if(base+0x26000>b.length)return null;const v=u8(b,base+0x1941F);if(![22,23].includes(v))return null;return {base,v};}
  function parseB2W2(b){const candidate=tryB2W2(b,0);if(!candidate)return null;const {base,v}=candidate;validateVersion(v,[22,23]);const integrity=root.PokemonSaveIntegrity.b2w2(b);
   const d=dex(b,{ofs:base+0x21400,caught:8,seen:0x5c,region:0x54,regions:4,max:649});
   const required=Array.from({length:649},(_,i)=>i+1).filter(i=>!MYTHICAL5.has(i));const missing=required.filter(i=>!d.caught.includes(i));
   const toFameLow=u32(b,base+0x1D900+0x3C),toFameHigh=u32(b,base+0x1D900+0x40);
-  return details({game:v===22?'WHITE2':'BLACK2',integrity,version:v,generation:5,format:'DS 512 KiB',trainer:str(b,base+0x19404,16),tid:u16(b,base+0x19414),sid:u16(b,base+0x19416),playtime:time(b,base+0x19424),badges:bits(u8(b,base+0x21104)),badgesMask:u8(b,base+0x21104),gameClear:!!(toFameLow||toFameHigh),nationalDex:!!(u32(b,base+0x21404)&1),missingRequired:missing,requiredCount:required.length,requiredCaught:required.length-missing.length,medals:parseMedals5(b,base),saveBase:base,slotInfo:'Bloques nativos de quinta generación; no se seleccionan por horas jugadas',notes:['Guardado detectado como '+(v===22?'Blanco 2':'Negro 2')+'. Las especies, premios y escenarios exclusivos cambian según la edición.','La Pokédex registra posesión histórica, no necesariamente especies presentes en las cajas.']},b,d);
+  // Metro Batalla: bloque 57 «Battle Subway Score Info» (0x21B00 + base; BattleSubway5 de PKHeX).
+  const sw=base+0x21B00,subway5={singleRecord:u16(b,sw+0x1A),doubleRecord:u16(b,sw+0x1C),superSingleRecord:u16(b,sw+0x24),superDoubleRecord:u16(b,sw+0x26),superMultiNpcRecord:u16(b,sw+0x28)};
+  // Musical (bloque 42, Musical5 de PKHeX): 100 bits de complementos en +0x258. PWT (bloque 63, PWTBlock5): u16 por torneo en +0x5C.
+  const mus=base+0x1F700+0x258,musical5={props:Array.from({length:100},(_,i)=>(u8(b,mus+(i>>3))>>(i&7))&1).reduce((a,x)=>a+x,0),total:100};
+  // Zona Nexo (bloque 53, Entralink5 de PKHeX): niveles blanco (+0x0C) y negro (+0x0E).
+  // Objetos clave (bloque 25, PlayerBag5B2W2 de PKHeX: bolsillo KeyItems en +0x4D8, entradas u16 id + u16 cantidad).
+  const keyItems=[];for(let i=0;i<(0x624-0x4D8)/4;i++){const id=u16(b,base+0x18400+0x4D8+i*4),count=u16(b,base+0x18400+0x4DA+i*4);if(id>0&&id<1000&&count>0)keyItems.push({id,count});}
+  // Estudios Cinematográficos Pokéwood (bloque 71 de SaveBlockAccessor5B2W2, 0x25A00): 40 registros de 20 bytes desde +0x28 (mejor puntuación
+  // u32, −9999 si nunca se rodó; u16 en +16 = 1 al completar la película). Contrastado con las partidas del propietario.
+  const ps=base+0x25A00,pokestar5={completed:Array.from({length:40},(_,i)=>u16(b,ps+0x28+i*20+16)===1).filter(Boolean).length,total:40};
+  const entralink5={white:u16(b,base+0x21200+0x0C),black:u16(b,base+0x21200+0x0E)};
+  const pwt5={records:Array.from({length:29},(_,i)=>u16(b,base+0x23700+0x5C+i*2))};
+  return details({game:v===22?'WHITE2':'BLACK2',subway5,musical5,pwt5,entralink5,keyItems,pokestar5,integrity,version:v,generation:5,format:'DS 512 KiB',trainer:str(b,base+0x19404,16),tid:u16(b,base+0x19414),sid:u16(b,base+0x19416),playtime:time(b,base+0x19424),badges:bits(u8(b,base+0x21104)),badgesMask:u8(b,base+0x21104),gameClear:!!(toFameLow||toFameHigh),nationalDex:!!(u32(b,base+0x21404)&1),missingRequired:missing,requiredCount:required.length,requiredCaught:required.length-missing.length,medals:parseMedals5(b,base),saveBase:base,slotInfo:'Bloques nativos de quinta generación; no se seleccionan por horas jugadas',notes:['Guardado detectado como '+(v===22?'Blanco 2':'Negro 2')+'. Las especies, premios y escenarios exclusivos cambian según la edición.','La Pokédex registra posesión histórica, no necesariamente especies presentes en las cajas.']},b,d);
  }
  // PKHeX PlayerBag6XY/AO, InventoryPouch4 and SaveBlockAccessor6XY/AO at the pinned revision.
  // Pocket slot counts follow the API, not the unused padding between pockets.
@@ -262,7 +279,10 @@ function eventAudit(o,b){let off,workBase,flagBase,flagCount,workCount;
  function beef(b){return u32(b,b.length-0x1f0)===0x42454546}
  function parseXY(b){const v=u8(b,0x14004);validateVersion(v,[24,25]);if(!beef(b))fail('No se encuentra la firma BEEF de un guardado 3DS descifrado. Exporta el archivo main del emulador o de Checkpoint.');const d=dex(b,{ofs:0x15000,caught:8,seen:0x68,region:0x60,regions:4,max:721});
   const integrity=root.PokemonSaveIntegrity.beef(b,55,'ccitt'),inventory=inventory6(b,false);
-  return details({game:v===24?'X':'Y',inventory,keyItems:inventory.find(p=>p.pocket==='KeyItems').items,integrity,version:v,generation:6,format:'3DS main descifrado',trainer:str(b,0x14048,26),tid:u16(b,0x14000),sid:u16(b,0x14002),playtime:time(b,0x1800),badges:bits(u8(b,0x420C)),badgesMask:u8(b,0x420C),gameClear:u32(b,0x1220)>0,secondsToFame:u32(b,0x1220),nationalDex:!!(u32(b,0x15004)&1),requiredCount:null,missingRequired:null,notes:['La tarjeta de Y exige registrar avistamientos de la Pokédex regional de Kalos: el conteo nacional por sí solo no permite validarla.','No se puede demostrar que un legendario fuera capturado en su encuentro original usando solamente la Pokédex.']},b,d);
+  // Castillo Batalla: bloque 42 «SubEvent Log» (0x1D800); rango en los 4 bits bajos del u16 (BattleChateauRank6 de
+  // PKHeX: 0 Barón … 5 Gran Duque) y puntos en los 12 altos.
+  const chateau={rank:u16(b,0x1D800)&0xF,points:u16(b,0x1D800)>>>4};
+  return details({game:v===24?'X':'Y',chateau,inventory,keyItems:inventory.find(p=>p.pocket==='KeyItems').items,integrity,version:v,generation:6,format:'3DS main descifrado',trainer:str(b,0x14048,26),tid:u16(b,0x14000),sid:u16(b,0x14002),playtime:time(b,0x1800),badges:bits(u8(b,0x420C)),badgesMask:u8(b,0x420C),gameClear:u32(b,0x1220)>0,secondsToFame:u32(b,0x1220),nationalDex:!!(u32(b,0x15004)&1),requiredCount:null,missingRequired:null,notes:['La tarjeta de Y exige registrar avistamientos de la Pokédex regional de Kalos: el conteo nacional por sí solo no permite validarla.','No se puede demostrar que un legendario fuera capturado en su encuentro original usando solamente la Pokédex.']},b,d);
  }
  function parseORAS(b){const v=u8(b,0x14004);validateVersion(v,[26,27]);if(!beef(b))fail('Guardado 3DS sin firma BEEF. Necesitamos el archivo main descifrado.');const d=dex(b,{ofs:0x15000,caught:8,seen:0x68,region:0x60,regions:4,max:721});
   const integrity=root.PokemonSaveIntegrity.beef(b,58,'ccitt'),inventory=inventory6(b,true);

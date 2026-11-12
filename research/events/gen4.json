@@ -1,0 +1,1682 @@
+{
+  "about": "Hitos y secretos de la cuarta generación a partir de nombres de pret. scripts/derive-event-pack.py resuelve cada bandera o variable en la revisión fijada y exige un sitio que la active. Sin datos de partidas.",
+  "pack": "gen4",
+  "confidence": "documentado en el código del juego (decompilación pret)",
+  "repos": {
+    "HGSS": {
+      "repo": "pokeheartgold",
+      "rev": "6bf138d6035aa6b43d6f8f4132a12df70f86dcec",
+      "kind": "c"
+    },
+    "PT": {
+      "repo": "pokeplatinum",
+      "rev": "62bdaacdca6c56a6a396f3e9911e2f922b79bba8",
+      "kind": "enumlist",
+      "list": "generated/vars_flags.txt"
+    }
+  },
+  "families": {
+    "HGSS": [
+      "HEARTGOLD",
+      "SOULSILVER"
+    ],
+    "PT": [
+      "PLATINUM"
+    ]
+  },
+  "story": {
+    "HGSS": [
+      {
+        "mission": "01",
+        "flag": "FLAG_GOT_STARTER",
+        "label": "Inicial recibido del Prof. Elm"
+      },
+      {
+        "mission": "02",
+        "badgesAtLeast": 1,
+        "label": "Medalla Céfiro"
+      },
+      {
+        "mission": "03",
+        "badgesAtLeast": 2,
+        "label": "Medalla Colmena"
+      },
+      {
+        "mission": "04",
+        "badgesAtLeast": 3,
+        "label": "Medalla Planicie"
+      },
+      {
+        "mission": "05",
+        "badgesAtLeast": 4,
+        "label": "Medalla Niebla"
+      },
+      {
+        "mission": "06",
+        "badgesAtLeast": 6,
+        "label": "Medallas Mineral y Tormenta"
+      },
+      {
+        "mission": "07",
+        "badgesAtLeast": 7,
+        "label": "Medalla Glaciar"
+      },
+      {
+        "mission": "08",
+        "label": "Medalla Dragón (tras liberar la Torre Radio)",
+        "badgesAtLeast": 8
+      },
+      {
+        "mission": "09",
+        "flag": "FLAG_GAME_CLEAR",
+        "label": "Liga de Johto superada"
+      },
+      {
+        "mission": "10",
+        "flag": "FLAG_GOT_SS_TICKET_FROM_ELM",
+        "label": "Ticket del Barco recibido para viajar a Kanto"
+      },
+      {
+        "mission": "11",
+        "flag": "FLAG_RESTORED_POWER",
+        "label": "Central Energía restaurada"
+      },
+      {
+        "mission": "12",
+        "badgesAtLeast": 16,
+        "label": "Dieciséis medallas"
+      },
+      {
+        "mission": "13",
+        "var": "VAR_UNK_40FD",
+        "equals": 1,
+        "label": "Rojo derrotado en el Monte Plateado"
+      }
+    ],
+    "PT": [
+      {
+        "mission": "01",
+        "flag": "FLAG_HAS_POKEDEX",
+        "label": "Inicial y Pokédex del Prof. Serbal"
+      },
+      {
+        "mission": "02",
+        "badgesAtLeast": 1,
+        "label": "Medalla Lignito"
+      },
+      {
+        "mission": "03",
+        "badgesAtLeast": 2,
+        "label": "Medalla Bosque"
+      },
+      {
+        "mission": "04",
+        "badgesAtLeast": 4,
+        "label": "Medallas Reliquia y Adoquín"
+      },
+      {
+        "mission": "05",
+        "badgesAtLeast": 5,
+        "label": "Medalla Ciénaga"
+      },
+      {
+        "mission": "06",
+        "badgesAtLeast": 6,
+        "label": "Medalla Mina"
+      },
+      {
+        "mission": "07",
+        "badgesAtLeast": 7,
+        "label": "Medalla Carámbano"
+      },
+      {
+        "mission": "09",
+        "badgesAtLeast": 8,
+        "label": "Medalla Faro"
+      },
+      {
+        "mission": "10",
+        "flag": "FLAG_GAME_COMPLETED",
+        "label": "Liga de Sinnoh superada"
+      }
+    ]
+  },
+  "secrets": [
+    {
+      "id": "hgss.oak_kanto_starter",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Regalo",
+      "mission": "E02",
+      "species": [
+        1,
+        4,
+        7
+      ],
+      "title": "Inicial de Kanto del Prof. Oak",
+      "placeName": {
+        "HGSS": "Pueblo Paleta"
+      },
+      "requires": "Haber vencido a Rojo en el Monte Plateado.",
+      "steps": [
+        "Tras vencer a Rojo, vuelve a Pueblo Paleta y entra en el laboratorio del Prof. Oak.",
+        "Habla con Oak: te ofrece elegir uno de los tres iniciales de Kanto. Ten un hueco libre en el equipo.",
+        "Este regalo es el requisito que desbloquea el Orbe del Sr. Pokémon."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_UNK_4131",
+            "atLeast": 3
+          },
+          "meaning": "Fase del regalo de Oak: 3 o más tras entregar el Pokémon (variable sin nombre en pret, documentada en el script del laboratorio)."
+        }
+      }
+    },
+    {
+      "id": "hgss.embedded_orb",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Objeto clave",
+      "mission": "E02",
+      "title": "Orbe del Sr. Pokémon (Rojo en SoulSilver, Azul en HeartGold)",
+      "placeName": {
+        "HGSS": "Ruta 30"
+      },
+      "requires": "Regalo del inicial de Kanto de Oak.",
+      "steps": [
+        "Ve a la casa del Sr. Pokémon en la Ruta 30 y habla con él.",
+        "SoulSilver: recibes el Orbe Rojo. HeartGold: el Orbe Azul."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_SCENE_EMBEDDED_TOWER",
+            "atLeast": 2
+          },
+          "meaning": "Escena de la Torre Oculta en fase 2 o superior: el Sr. Pokémon ya inició la entrega del orbe."
+        }
+      }
+    },
+    {
+      "id": "hgss.groudon",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "SOULSILVER"
+      ],
+      "category": "Legendario",
+      "species": [
+        383
+      ],
+      "mission": "E02",
+      "title": "Groudon en la Torre Oculta",
+      "placeName": {
+        "HGSS": "Torre Oculta"
+      },
+      "requires": "Orbe Rojo.",
+      "steps": [
+        "Con el Orbe Rojo en la bolsa, entra en la Torre Oculta (Ruta 47, Cueva Acantilado).",
+        "Guarda antes de acercarte al altar: Groudon de nivel 50."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_GROUDON",
+          "meaning": "Capturado en la Torre Oculta."
+        }
+      }
+    },
+    {
+      "id": "hgss.kyogre",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "HEARTGOLD"
+      ],
+      "category": "Legendario",
+      "species": [
+        382
+      ],
+      "title": "Kyogre en la Torre Oculta",
+      "placeName": {
+        "HGSS": "Torre Oculta"
+      },
+      "requires": "Orbe Azul.",
+      "steps": [
+        "Con el Orbe Azul en la bolsa, entra en la Torre Oculta (Ruta 47, Cueva Acantilado).",
+        "Guarda antes del altar: Kyogre de nivel 50."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_KYOGRE",
+          "meaning": "Capturado en la Torre Oculta."
+        }
+      }
+    },
+    {
+      "id": "hgss.rayquaza",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario",
+      "species": [
+        384
+      ],
+      "title": "Rayquaza en la Torre Oculta",
+      "placeName": {
+        "HGSS": "Torre Oculta"
+      },
+      "requires": "Un Groudon de SoulSilver y un Kyogre de HeartGold capturados en la Torre Oculta, ambos en tu equipo.",
+      "steps": [
+        "Consigue por intercambio el legendario de la otra edición, capturado en su Torre Oculta.",
+        "Entra en la torre con Groudon y Kyogre en el equipo: aparece Rayquaza (nivel 50)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_RAYQUAZA",
+          "meaning": "Capturado en la Torre Oculta."
+        }
+      }
+    },
+    {
+      "id": "hgss.lugia.ss",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "SOULSILVER"
+      ],
+      "category": "Legendario",
+      "species": [
+        249
+      ],
+      "title": "Lugia en las Islas Remolino",
+      "placeName": {
+        "HGSS": "Islas Remolino"
+      },
+      "requires": "Ala Plateada de las chicas kimono (historia) y Surf, Remolino y Cascada.",
+      "steps": [
+        "Tras el baile de las chicas kimono en la Torre Campana recibes el Ala Plateada.",
+        "En las Islas Remolino baja hasta la sala más profunda; las chicas kimono calman la marea y aparece Lugia (nivel 45)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_LUGIA",
+          "meaning": "Capturado en las Islas Remolino."
+        }
+      }
+    },
+    {
+      "id": "hgss.lugia.hg",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "HEARTGOLD"
+      ],
+      "category": "Legendario",
+      "species": [
+        249
+      ],
+      "title": "Lugia en las Islas Remolino",
+      "placeName": {
+        "HGSS": "Islas Remolino"
+      },
+      "requires": "Ala Plateada del anciano de Ciudad Plateada (postgame).",
+      "steps": [
+        "En Kanto, habla con el anciano de la casa de Ciudad Plateada para recibir el Ala Plateada.",
+        "Vuelve a las Islas Remolino y baja hasta la sala más profunda: Lugia de nivel 70."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_LUGIA",
+          "meaning": "Capturado en las Islas Remolino."
+        }
+      }
+    },
+    {
+      "id": "hgss.hooh.hg",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "HEARTGOLD"
+      ],
+      "category": "Legendario",
+      "species": [
+        250
+      ],
+      "title": "Ho-Oh en la Torre Campana",
+      "placeName": {
+        "HGSS": "Torre Campana"
+      },
+      "requires": "Ala Arcoíris de las chicas kimono (historia).",
+      "steps": [
+        "Tras el baile de las chicas kimono recibes el Ala Arcoíris.",
+        "Sube por la Torre Campana de Ciudad Iris hasta la azotea: Ho-Oh de nivel 45."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_HO_OH",
+          "meaning": "Capturado en la Torre Campana."
+        }
+      }
+    },
+    {
+      "id": "hgss.hooh.ss",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "SOULSILVER"
+      ],
+      "category": "Legendario",
+      "species": [
+        250
+      ],
+      "title": "Ho-Oh en la Torre Campana",
+      "placeName": {
+        "HGSS": "Torre Campana"
+      },
+      "requires": "Ala Arcoíris del anciano de Ciudad Plateada (postgame).",
+      "steps": [
+        "En Kanto, habla con el anciano de Ciudad Plateada para recibir el Ala Arcoíris.",
+        "Sube por la Torre Campana hasta la azotea: Ho-Oh de nivel 70."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_HO_OH",
+          "meaning": "Capturado en la Torre Campana."
+        }
+      }
+    },
+    {
+      "id": "hgss.suicune",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario",
+      "species": [
+        245
+      ],
+      "mission": "E01",
+      "title": "Suicune: la cadena con Eusine",
+      "placeName": {
+        "HGSS": "Ruta 25"
+      },
+      "requires": "Ver la cadena completa de apariciones; consulta la misión de esta edición.",
+      "steps": [
+        "Sigue el recorrido exacto de la misión «Suicune: cadena exacta de apariciones».",
+        "El encuentro final es en la Ruta 25, al norte de Ciudad Celeste (nivel 40)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_SUICUNE",
+          "meaning": "Capturado (bandera de captura del script)."
+        }
+      }
+    },
+    {
+      "id": "hgss.raikou",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario errante",
+      "species": [
+        243
+      ],
+      "title": "Raikou errante por Johto",
+      "placeName": {
+        "HGSS": "Torre Quemada"
+      },
+      "requires": "Despertar a las bestias en el sótano de la Torre Quemada.",
+      "steps": [
+        "Tras la escena del sótano de la Torre Quemada, Raikou empieza a vagar por Johto.",
+        "Usa el mapa del Pokégear para ver en qué ruta está y retenlo con Mal de Ojo, Bloqueo o Ball Rápida: huye al primer turno."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_ROAMER_RAIKOU_STATUS",
+            "equals": 1
+          },
+          "progress": [
+            {
+              "var": "VAR_ROAMER_RAIKOU_STATUS",
+              "equals": 2,
+              "label": "Derrotado: vuelve a vagar tras la Liga"
+            }
+          ],
+          "meaning": "Estado del errante: 1 capturado, 2 derrotado (la Liga lo recrea), 0 sin resolver."
+        }
+      }
+    },
+    {
+      "id": "hgss.entei",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario errante",
+      "species": [
+        244
+      ],
+      "title": "Entei errante por Johto",
+      "placeName": {
+        "HGSS": "Torre Quemada"
+      },
+      "requires": "Despertar a las bestias en el sótano de la Torre Quemada.",
+      "steps": [
+        "Tras la escena del sótano de la Torre Quemada, Entei empieza a vagar por Johto.",
+        "Localízalo con el mapa del Pokégear y retenlo: huye al primer turno."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_ROAMER_ENTEI_STATUS",
+            "equals": 1
+          },
+          "progress": [
+            {
+              "var": "VAR_ROAMER_ENTEI_STATUS",
+              "equals": 2,
+              "label": "Derrotado: vuelve a vagar tras la Liga"
+            }
+          ],
+          "meaning": "Estado del errante: 1 capturado, 2 derrotado (la Liga lo recrea), 0 sin resolver."
+        }
+      }
+    },
+    {
+      "id": "hgss.latias",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "HEARTGOLD"
+      ],
+      "category": "Legendario errante",
+      "species": [
+        380
+      ],
+      "title": "Latias errante por Kanto",
+      "placeName": {
+        "HGSS": "Ciudad Carmín"
+      },
+      "requires": "Hablar con Máximo Peñas en Ciudad Carmín (cadena de la muñeca perdida del Club de Fans).",
+      "steps": [
+        "En Ciudad Carmín, al salir del Club de Fans durante la cadena de la muñeca, Máximo te habla de Latias.",
+        "Desde ese momento vaga por las rutas de Kanto: localízalo con el Pokégear y retenlo."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_ROAMER_LATIAS_STATUS",
+            "equals": 1
+          },
+          "progress": [
+            {
+              "var": "VAR_ROAMER_LATIAS_STATUS",
+              "equals": 2,
+              "label": "Derrotado: vuelve a vagar tras la Liga"
+            }
+          ],
+          "meaning": "Estado del errante: 1 capturado, 2 derrotado, 0 sin resolver."
+        }
+      }
+    },
+    {
+      "id": "hgss.latios",
+      "families": [
+        "HGSS"
+      ],
+      "games": [
+        "SOULSILVER"
+      ],
+      "category": "Legendario errante",
+      "species": [
+        381
+      ],
+      "title": "Latios errante por Kanto",
+      "placeName": {
+        "HGSS": "Ciudad Carmín"
+      },
+      "requires": "Hablar con Máximo Peñas en Ciudad Carmín (cadena de la muñeca perdida del Club de Fans).",
+      "steps": [
+        "En Ciudad Carmín, al salir del Club de Fans durante la cadena de la muñeca, Máximo te habla de Latios.",
+        "Desde ese momento vaga por las rutas de Kanto: localízalo con el Pokégear y retenlo."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_ROAMER_LATIOS_STATUS",
+            "equals": 1
+          },
+          "progress": [
+            {
+              "var": "VAR_ROAMER_LATIOS_STATUS",
+              "equals": 2,
+              "label": "Derrotado: vuelve a vagar tras la Liga"
+            }
+          ],
+          "meaning": "Estado del errante: 1 capturado, 2 derrotado, 0 sin resolver."
+        }
+      }
+    },
+    {
+      "id": "hgss.red_gyarados",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Encuentro único",
+      "species": [
+        130
+      ],
+      "title": "Gyarados rojo del Lago de la Furia",
+      "placeName": {
+        "HGSS": "Lago de la Furia"
+      },
+      "requires": "Surf.",
+      "steps": [
+        "Surfea hasta el centro del Lago de la Furia: el Gyarados rojo (nivel 30) es un encuentro fijo.",
+        "Tras el combate recoges la Escama Roja."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_RED_GYARADOS",
+          "meaning": "Capturado en el lago."
+        }
+      }
+    },
+    {
+      "id": "hgss.sudowoodo",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Encuentro único",
+      "species": [
+        185
+      ],
+      "mission": "05",
+      "title": "Sudowoodo de la Ruta 36",
+      "placeName": {
+        "HGSS": "Ruta 36"
+      },
+      "requires": "Regadera de la floristería de Ciudad Trigal (tras la Medalla Planicie).",
+      "steps": [
+        "Usa la Regadera sobre el árbol que bloquea la Ruta 36 (nivel 20)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_SUDOWOODO",
+          "meaning": "Capturado."
+        }
+      }
+    },
+    {
+      "id": "hgss.snorlax",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Encuentro único",
+      "species": [
+        143
+      ],
+      "title": "Snorlax de Kanto",
+      "placeName": {
+        "HGSS": "Ruta 11"
+      },
+      "requires": "Tarjeta Radio con la Poké Flauta sintonizada.",
+      "steps": [
+        "Junto a la entrada de la Cueva Diglett (Ruta 11), sintoniza la Poké Flauta en el Pokégear para despertar a Snorlax (nivel 50)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_SNORLAX",
+          "meaning": "Capturado."
+        }
+      }
+    },
+    {
+      "id": "hgss.zapdos",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario",
+      "species": [
+        145
+      ],
+      "title": "Zapdos junto a la Central Energía",
+      "placeName": {
+        "HGSS": "Ruta 10"
+      },
+      "requires": "Surf.",
+      "steps": [
+        "Surfea desde la Ruta 10 hasta el exterior de la Central Energía: Zapdos espera fuera (nivel 50)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_ZAPDOS",
+          "meaning": "Capturado en su lugar original (no basta con la Pokédex)."
+        }
+      }
+    },
+    {
+      "id": "hgss.articuno",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario",
+      "species": [
+        144
+      ],
+      "title": "Articuno en las Islas Espuma",
+      "placeName": {
+        "HGSS": "Islas Espuma"
+      },
+      "requires": "Surf, Fuerza y Cascada.",
+      "steps": [
+        "Resuelve el recorrido con Fuerza y Cascada hasta el sótano más profundo: Articuno (nivel 50)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_ARTICUNO",
+          "meaning": "Capturado en su lugar original."
+        }
+      }
+    },
+    {
+      "id": "hgss.moltres",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario",
+      "species": [
+        146
+      ],
+      "title": "Moltres en el Monte Plateado",
+      "placeName": {
+        "HGSS": "Monte Plateado"
+      },
+      "requires": "Acceso al Monte Plateado (dieciséis medallas), Surf, Cascada y Golpe Roca.",
+      "steps": [
+        "Dentro del Monte Plateado busca la sala interior a la que se llega surfeando y subiendo la cascada: Moltres (nivel 50)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_MOLTRES",
+          "meaning": "Capturado en su lugar original."
+        }
+      }
+    },
+    {
+      "id": "hgss.mewtwo",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Legendario",
+      "species": [
+        150
+      ],
+      "title": "Mewtwo en la Cueva Celeste",
+      "placeName": {
+        "HGSS": "Cueva Celeste"
+      },
+      "requires": "Dieciséis medallas, Surf y Golpe Roca.",
+      "steps": [
+        "Surfea al norte de Ciudad Celeste hasta la cueva y baja hasta el sótano: Mewtwo (nivel 70)."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_CAUGHT_MEWTWO",
+          "meaning": "Capturado en su lugar original."
+        }
+      }
+    },
+    {
+      "id": "hgss.hoenn_starter",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Regalo",
+      "species": [
+        252,
+        255,
+        258
+      ],
+      "title": "Inicial de Hoenn de Máximo Peñas",
+      "placeName": {
+        "HGSS": "Silph S.A. (Ciudad Azafrán)"
+      },
+      "requires": "Haber vencido a Rojo y haber visto las escenas previas con Máximo (Ciudad Carmín).",
+      "steps": [
+        "Tras vencer a Rojo, Máximo Peñas aparece en la sede de Silph S.A. de Ciudad Azafrán.",
+        "Habla con él para elegir Treecko, Torchic o Mudkip. Es un regalo distinto del inicial de Kanto de Oak."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_GOT_HOENN_STARTER_FROM_STEVEN",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "hgss.alph",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Puzle",
+      "mission": "E03",
+      "title": "Ruinas Alfa: cuatro puzles y cuatro cámaras secretas",
+      "placeName": {
+        "HGSS": "Ruinas Alfa"
+      },
+      "requires": "Destello, Cuerda Huida, Piedra Agua y Ho-Oh en el equipo para las cámaras.",
+      "steps": [
+        "Resuelve el puzle deslizante de cada una de las cuatro cámaras: Kabuto, Omanyte, Aerodactyl y Ho-Oh.",
+        "Para las salas secretas: usa Cuerda Huida, Destello o una Piedra Agua frente a la pared con su inscripción, o entra con Ho-Oh en el equipo. Pasos detallados en la misión «Ruinas Alfa: cuatro cámaras secretas»."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_OPENED_ALPH_HO_OH_SECRET_ROOM",
+          "doneAll": [
+            "FLAG_OPENED_ALPH_ESCAPE_ROPE_SECRET_ROOM",
+            "FLAG_OPENED_ALPH_FLASH_SECRET_ROOM",
+            "FLAG_OPENED_ALPH_WATER_STONE_SECRET_ROOM"
+          ],
+          "progress": [
+            {
+              "flag": "FLAG_SYS_ALPH_PUZZLE_KABUTO",
+              "label": "Puzle Kabuto"
+            },
+            {
+              "flag": "FLAG_SYS_ALPH_PUZZLE_OMANYTE",
+              "label": "Puzle Omanyte"
+            },
+            {
+              "flag": "FLAG_SYS_ALPH_PUZZLE_AERODACTYL",
+              "label": "Puzle Aerodactyl"
+            },
+            {
+              "flag": "FLAG_SYS_ALPH_PUZZLE_HO_OH",
+              "label": "Puzle Ho-Oh"
+            }
+          ],
+          "meaning": "Las cuatro salas secretas abiertas; se muestran los puzles resueltos."
+        }
+      }
+    },
+    {
+      "id": "pt.giratina",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        487
+      ],
+      "mission": "DETAIL1",
+      "title": "Giratina en el Mundo Distorsión",
+      "placeName": {
+        "PT": "Mundo Distorsión"
+      },
+      "requires": "Clímax de la historia en la Columna Lanza.",
+      "steps": [
+        "Tras la Columna Lanza cruzas el Mundo Distorsión siguiendo sus plataformas.",
+        "Giratina (nivel 47) espera al final. Si no lo capturas, reaparece en la Cueva Retorno tras la Liga."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_GIRATINA",
+          "meaning": "Capturado en el Mundo Distorsión o en la Cueva Retorno."
+        }
+      }
+    },
+    {
+      "id": "pt.dialga",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        483
+      ],
+      "title": "Dialga en la Columna Lanza",
+      "placeName": {
+        "PT": "Columna Lanza"
+      },
+      "requires": "Liga superada, investigación de la abuela de Cintia y Diamansfera en la bolsa.",
+      "steps": [
+        "Tras la Liga habla con la anciana de la casa del norte de Pueblo Caelestis: abre el acceso a la Columna Lanza.",
+        "Recoge la Diamansfera del suelo de la cuarta planta del Monte Corona.",
+        "Sube a la cima del Monte Corona con la Diamansfera: Dialga de nivel 70."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_DIALGA",
+          "progress": [
+            {
+              "flag": "FLAG_UNLOCKED_DIALGA_PALKIA_SPEAR_PILLAR",
+              "label": "Acceso abierto por la abuela de Cintia"
+            }
+          ],
+          "meaning": "Capturado en la Columna Lanza."
+        }
+      }
+    },
+    {
+      "id": "pt.palkia",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        484
+      ],
+      "title": "Palkia en la Columna Lanza",
+      "placeName": {
+        "PT": "Columna Lanza"
+      },
+      "requires": "Liga superada, investigación de la abuela de Cintia y Lustresfera en la bolsa.",
+      "steps": [
+        "Con el acceso abierto, recoge la Lustresfera del suelo de la cuarta planta del Monte Corona.",
+        "Sube a la cima del Monte Corona con la Lustresfera: Palkia de nivel 70."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_PALKIA",
+          "progress": [
+            {
+              "flag": "FLAG_UNLOCKED_DIALGA_PALKIA_SPEAR_PILLAR",
+              "label": "Acceso abierto por la abuela de Cintia"
+            }
+          ],
+          "meaning": "Capturado en la Columna Lanza."
+        }
+      }
+    },
+    {
+      "id": "pt.heatran",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        485
+      ],
+      "title": "Heatran en la Montaña Dura",
+      "placeName": {
+        "PT": "Montaña Dura"
+      },
+      "requires": "Acceso a la Zona de Combate y la escena de Buck y Charon en la Montaña Dura.",
+      "steps": [
+        "Acompaña a Buck por la Montaña Dura hasta la sala del fondo, donde se arresta a Charon.",
+        "Sal y vuelve a entrar en la sala del fondo: Heatran de nivel 50."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_HEATRAN",
+          "progress": [
+            {
+              "flag": "FLAG_ARRESTED_CHARON_STARK_MOUNTAIN",
+              "label": "Charon arrestado"
+            }
+          ],
+          "meaning": "Capturado en la Montaña Dura."
+        }
+      }
+    },
+    {
+      "id": "pt.azelf",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        482
+      ],
+      "title": "Azelf en la Caverna Valor",
+      "placeName": {
+        "PT": "Caverna Valor"
+      },
+      "requires": "Clímax de la historia completado; Surf.",
+      "steps": [
+        "Surfea hasta la isla del Lago Valor y entra en la Caverna Valor: Azelf de nivel 50."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_AZELF",
+          "meaning": "Capturado en la caverna."
+        }
+      }
+    },
+    {
+      "id": "pt.uxie",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        480
+      ],
+      "title": "Uxie en la Caverna Agudeza",
+      "placeName": {
+        "PT": "Caverna Agudeza"
+      },
+      "requires": "Clímax de la historia completado; Surf.",
+      "steps": [
+        "Surfea hasta la isla del Lago Agudeza y entra en la Caverna Agudeza: Uxie de nivel 50."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_UXIE",
+          "meaning": "Capturado en la caverna."
+        }
+      }
+    },
+    {
+      "id": "pt.mesprit",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario errante",
+      "species": [
+        481
+      ],
+      "title": "Mesprit errante por Sinnoh",
+      "placeName": {
+        "PT": "Caverna Veraz"
+      },
+      "requires": "Clímax de la historia completado.",
+      "steps": [
+        "Entra en la Caverna Veraz (Lago Veraz): Mesprit huye y empieza a vagar.",
+        "Localízalo en el mapa del Poké-reloj (aplicación Marcamapa) y retenlo: huye al primer turno."
+      ],
+      "conditions": {
+        "PT": {
+          "doneVar": {
+            "var": "VAR_ROAMING_MESPRIT_STATE",
+            "equalsName": "ROAMER_STATE_CAPTURED"
+          },
+          "progress": [
+            {
+              "var": "VAR_ROAMING_MESPRIT_STATE",
+              "equalsName": "ROAMER_STATE_DEFEATED",
+              "label": "Derrotado: vuelve a vagar tras la Liga"
+            }
+          ],
+          "meaning": "Estado del errante en pret: 0 vagando, 1 capturado, 2 derrotado, 3 reinicio tras la Liga."
+        }
+      }
+    },
+    {
+      "id": "pt.cresselia",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario errante",
+      "species": [
+        488
+      ],
+      "title": "Cresselia de la Isla Plenilunio",
+      "placeName": {
+        "PT": "Isla Plenilunio"
+      },
+      "requires": "Liga superada y visitar al niño con pesadillas de Ciudad Canal.",
+      "steps": [
+        "En Ciudad Canal habla con el marinero cuyo hijo tiene pesadillas y viaja a la Isla Plenilunio.",
+        "En el claro del bosque Cresselia huye y empieza a vagar; recoge la Pluma Lunar.",
+        "Localízalo con el Poké-reloj y retenlo."
+      ],
+      "conditions": {
+        "PT": {
+          "doneVar": {
+            "var": "VAR_ROAMING_CRESSELIA_STATE",
+            "equalsName": "ROAMER_STATE_CAPTURED"
+          },
+          "progress": [
+            {
+              "flag": "FLAG_MET_CRESSELIA",
+              "label": "Visto en la Isla Plenilunio"
+            },
+            {
+              "var": "VAR_ROAMING_CRESSELIA_STATE",
+              "equalsName": "ROAMER_STATE_DEFEATED",
+              "label": "Derrotado: vuelve a vagar tras la Liga"
+            }
+          ],
+          "meaning": "Estado del errante en pret: 0 vagando, 1 capturado, 2 derrotado, 3 reinicio tras la Liga."
+        }
+      }
+    },
+    {
+      "id": "pt.birds",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendarios errantes",
+      "species": [
+        144,
+        145,
+        146
+      ],
+      "title": "Articuno, Zapdos y Moltres errantes",
+      "placeName": {
+        "PT": "Ciudad Vetusta"
+      },
+      "requires": "Pokédex Nacional.",
+      "steps": [
+        "Con la Pokédex Nacional, habla con el Prof. Oak en la casa del sur de Ciudad Vetusta: los tres pájaros empiezan a vagar por Sinnoh.",
+        "Localízalos con el Poké-reloj y retenlos. Al capturar los tres, vuelve a hablar con Oak."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_ROAMING_LEGENDARY_BIRDS",
+          "progress": [
+            {
+              "flag": "FLAG_ACTIVATED_ROAMING_LEGENDARY_BIRDS",
+              "label": "Errantes activados por Oak"
+            },
+            {
+              "var": "VAR_ROAMING_ARTICUNO_STATE",
+              "equalsName": "ROAMER_STATE_CAPTURED",
+              "label": "Articuno capturado"
+            },
+            {
+              "var": "VAR_ROAMING_ZAPDOS_STATE",
+              "equalsName": "ROAMER_STATE_CAPTURED",
+              "label": "Zapdos capturado"
+            },
+            {
+              "var": "VAR_ROAMING_MOLTRES_STATE",
+              "equalsName": "ROAMER_STATE_CAPTURED",
+              "label": "Moltres capturado"
+            }
+          ],
+          "meaning": "Oak registra los tres capturados."
+        }
+      }
+    },
+    {
+      "id": "pt.regigigas",
+      "families": [
+        "PT"
+      ],
+      "category": "Legendario",
+      "species": [
+        486
+      ],
+      "title": "Regigigas en el Templo Puntaneva",
+      "placeName": {
+        "PT": "Templo Puntaneva"
+      },
+      "requires": "Regirock, Regice y Registeel en el equipo.",
+      "steps": [
+        "Baja hasta la sala más profunda del Templo Puntaneva con los tres Regis en el equipo.",
+        "Examina la estatua: Regigigas de nivel 1."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_REGIGIGAS",
+          "meaning": "Capturado en el templo."
+        }
+      }
+    },
+    {
+      "id": "pt.regirock",
+      "families": [
+        "PT"
+      ],
+      "category": "Evento de legado",
+      "legacy": "El script exige un Regigigas de evento (encuentro fatídico) en el equipo.",
+      "species": [
+        377
+      ],
+      "title": "Regirock en las Ruinas Pico Roca",
+      "placeName": {
+        "PT": "Ruinas Pico Roca"
+      },
+      "requires": "Liga superada y un Regigigas de evento en el equipo.",
+      "steps": [
+        "Entra en las Ruinas Pico Roca con el Regigigas de evento en el equipo.",
+        "Pisa los siete puntos marcados del suelo alrededor de la estatua y examínala: algo cambia en el aire.",
+        "Examínala de nuevo: Regirock de nivel 30. Si no lo capturas, la estatua deja de emanar poder."
+      ],
+      "conditions": {
+        "PT": {
+          "doneVar": {
+            "var": "VAR_ROCK_PEAK_RUINS_STATE",
+            "equalsName": "RUINS_STATE_CAUGHT_REGI"
+          },
+          "lostVar": [
+            {
+              "var": "VAR_ROCK_PEAK_RUINS_STATE",
+              "equalsName": "RUINS_STATE_DID_NOT_CATCH_REGI"
+            }
+          ],
+          "progress": [
+            {
+              "var": "VAR_ROCK_PEAK_RUINS_STATE",
+              "equalsName": "RUINS_STATE_ACTIVATED_STATUE",
+              "label": "Estatua activada"
+            }
+          ],
+          "meaning": "Estado de las ruinas: capturado, no capturado (definitivo) o estatua activada."
+        }
+      }
+    },
+    {
+      "id": "pt.regice",
+      "families": [
+        "PT"
+      ],
+      "category": "Evento de legado",
+      "legacy": "El script exige un Regigigas de evento (encuentro fatídico) en el equipo.",
+      "species": [
+        378
+      ],
+      "title": "Regice en las Ruinas Iceberg",
+      "placeName": {
+        "PT": "Ruinas Iceberg"
+      },
+      "requires": "Liga superada y un Regigigas de evento en el equipo.",
+      "steps": [
+        "Entra en las Ruinas Iceberg con el Regigigas de evento en el equipo.",
+        "Pisa los siete puntos marcados del suelo alrededor de la estatua y examínala: algo cambia en el aire.",
+        "Examínala de nuevo: Regice de nivel 30. Si no lo capturas, la estatua deja de emanar poder."
+      ],
+      "conditions": {
+        "PT": {
+          "doneVar": {
+            "var": "VAR_ICEBERG_RUINS_STATE",
+            "equalsName": "RUINS_STATE_CAUGHT_REGI"
+          },
+          "lostVar": [
+            {
+              "var": "VAR_ICEBERG_RUINS_STATE",
+              "equalsName": "RUINS_STATE_DID_NOT_CATCH_REGI"
+            }
+          ],
+          "progress": [
+            {
+              "var": "VAR_ICEBERG_RUINS_STATE",
+              "equalsName": "RUINS_STATE_ACTIVATED_STATUE",
+              "label": "Estatua activada"
+            }
+          ],
+          "meaning": "Estado de las ruinas: capturado, no capturado (definitivo) o estatua activada."
+        }
+      }
+    },
+    {
+      "id": "pt.registeel",
+      "families": [
+        "PT"
+      ],
+      "category": "Evento de legado",
+      "legacy": "El script exige un Regigigas de evento (encuentro fatídico) en el equipo.",
+      "species": [
+        379
+      ],
+      "title": "Registeel en las Ruinas Hierro",
+      "placeName": {
+        "PT": "Ruinas Hierro"
+      },
+      "requires": "Liga superada y un Regigigas de evento en el equipo.",
+      "steps": [
+        "Entra en las Ruinas Hierro con el Regigigas de evento en el equipo.",
+        "Pisa los siete puntos marcados del suelo alrededor de la estatua y examínala: algo cambia en el aire.",
+        "Examínala de nuevo: Registeel de nivel 30. Si no lo capturas, la estatua deja de emanar poder."
+      ],
+      "conditions": {
+        "PT": {
+          "doneVar": {
+            "var": "VAR_IRON_RUINS_STATE",
+            "equalsName": "RUINS_STATE_CAUGHT_REGI"
+          },
+          "lostVar": [
+            {
+              "var": "VAR_IRON_RUINS_STATE",
+              "equalsName": "RUINS_STATE_DID_NOT_CATCH_REGI"
+            }
+          ],
+          "progress": [
+            {
+              "var": "VAR_IRON_RUINS_STATE",
+              "equalsName": "RUINS_STATE_ACTIVATED_STATUE",
+              "label": "Estatua activada"
+            }
+          ],
+          "meaning": "Estado de las ruinas: capturado, no capturado (definitivo) o estatua activada."
+        }
+      }
+    },
+    {
+      "id": "pt.rotom",
+      "families": [
+        "PT"
+      ],
+      "category": "Encuentro único",
+      "species": [
+        479
+      ],
+      "title": "Rotom de la Vieja Mansión",
+      "placeName": {
+        "PT": "Vieja Mansión"
+      },
+      "requires": "Pokédex Nacional.",
+      "steps": [
+        "Por la noche, entra en la Vieja Mansión y examina el televisor de la habitación del fondo: Rotom de nivel 20."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_OLD_CHATEAU_ROTOM",
+          "meaning": "Capturado en la mansión."
+        }
+      }
+    },
+    {
+      "id": "pt.riolu",
+      "families": [
+        "PT"
+      ],
+      "category": "Regalo",
+      "species": [
+        447
+      ],
+      "title": "Huevo de Riolu de Quinoa",
+      "placeName": {
+        "PT": "Isla Hierro"
+      },
+      "requires": "Acompañar a Quinoa por la Isla Hierro.",
+      "steps": [
+        "Recorre la Isla Hierro junto a Quinoa y vence a los soldados Galaxia.",
+        "Al final, Quinoa te regala un Huevo de Riolu; ten un hueco libre."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_RECEIVED_RIOLU_EGG_FROM_RILEY",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "pt.eevee",
+      "families": [
+        "PT"
+      ],
+      "category": "Regalo",
+      "species": [
+        133
+      ],
+      "title": "Eevee de Bebe",
+      "placeName": {
+        "PT": "Ciudad Corazón"
+      },
+      "requires": "Pokédex Nacional.",
+      "steps": [
+        "Habla con Bebe en su casa, junto al Centro Pokémon de Ciudad Corazón."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_RECEIVED_HEARTHOME_CITY_NORTHWEST_HOUSE_EEVEE",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "pt.porygon",
+      "families": [
+        "PT"
+      ],
+      "category": "Regalo",
+      "species": [
+        137
+      ],
+      "title": "Porygon de Ciudad Rocavelo",
+      "placeName": {
+        "PT": "Ciudad Rocavelo"
+      },
+      "requires": "Pokédex Nacional.",
+      "steps": [
+        "Visita la casa del noreste de Ciudad Rocavelo y habla con el científico."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_RECEIVED_VEILSTONE_CITY_NORTHEAST_HOUSE_PORYGON",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "pt.darkrai",
+      "families": [
+        "PT"
+      ],
+      "category": "Evento de legado",
+      "legacy": "Requiere la Tarjeta Socio de una distribución.",
+      "species": [
+        491
+      ],
+      "title": "Darkrai en la Isla Lunanueva",
+      "placeName": {
+        "PT": "Isla Lunanueva"
+      },
+      "requires": "Tarjeta Socio.",
+      "steps": [
+        "Duerme en el hostal de Ciudad Canal con la Tarjeta Socio y habla con el marinero al despertar.",
+        "En la Isla Lunanueva, Darkrai (nivel 50) espera en el claro."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_DARKRAI",
+          "meaning": "Capturado."
+        }
+      }
+    },
+    {
+      "id": "pt.shaymin",
+      "families": [
+        "PT"
+      ],
+      "category": "Evento de legado",
+      "legacy": "Requiere la Carta de Oak de una distribución.",
+      "species": [
+        492
+      ],
+      "title": "Shaymin en el Paraíso Floral",
+      "placeName": {
+        "PT": "Paraíso Floral"
+      },
+      "requires": "Carta de Oak.",
+      "steps": [
+        "Con la Carta de Oak ve a la Ruta 224 y examina la roca del fondo.",
+        "En el Paraíso Floral, Shaymin (nivel 30) espera entre las flores."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_SHAYMIN",
+          "meaning": "Capturado."
+        }
+      }
+    },
+    {
+      "id": "pt.arceus",
+      "families": [
+        "PT"
+      ],
+      "category": "Evento de legado",
+      "legacy": "Requiere la Flauta Azur, que nunca se distribuyó oficialmente.",
+      "species": [
+        493
+      ],
+      "title": "Arceus en la Sala del Origen",
+      "placeName": {
+        "PT": "Sala del Origen"
+      },
+      "requires": "Flauta Azur.",
+      "steps": [
+        "Toca la Flauta Azur en la cima de la Columna Lanza: aparece una escalera hacia la Sala del Origen.",
+        "Arceus espera arriba (nivel 80)."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CAUGHT_ARCEUS",
+          "meaning": "Capturado."
+        }
+      }
+    },
+    {
+      "id": "hgss.frontier_prints",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Desafío",
+      "title": "Frente Batalla: las cinco impresiones de oro",
+      "placeName": {
+        "HGSS": "Frente Batalla"
+      },
+      "requires": "Liga superada y acceso al Frente Batalla.",
+      "steps": [
+        "En combates individuales, cada As del Frente aparece en estos combates de la racha: Torre Batalla (Palmer): 21 y 49; Fábrica Batalla (Thorton): 21 y 49; Castillo Batalla (Darach): 21 y 49; Ruleta Batalla (Dahlia): 21 y 49; Sala Batalla (Argenta): 50 y 170. (Cifras tomadas del código de Platino, que comparte el Frente Batalla; en HGSS no están descompiladas.)",
+        "La primera victoria contra el As da la impresión de plata; la segunda, la de oro. Recógela en el mostrador de la instalación.",
+        "Si pierdes, la racha vuelve a cero en esa instalación."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_GOT_ALL_FOUR_FRONTIER_PRINTS",
+          "progress": [
+            {
+              "var": "VAR_BATTLE_TOWER_PRINT_PROGRESS",
+              "atLeast": 2,
+              "label": "Torre Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_FACTORY_PRINT_PROGRESS",
+              "atLeast": 2,
+              "label": "Fábrica Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_CASTLE_PRINT_PROGRESS",
+              "atLeast": 2,
+              "label": "Castillo Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_ARCADE_PRINT_PROGRESS",
+              "atLeast": 2,
+              "label": "Ruleta Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_HALL_PRINT_PROGRESS",
+              "atLeast": 2,
+              "label": "Sala Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_TOWER_PRINT_PROGRESS",
+              "atLeast": 4,
+              "label": "Torre Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_FACTORY_PRINT_PROGRESS",
+              "atLeast": 4,
+              "label": "Fábrica Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_CASTLE_PRINT_PROGRESS",
+              "atLeast": 4,
+              "label": "Castillo Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_ARCADE_PRINT_PROGRESS",
+              "atLeast": 4,
+              "label": "Ruleta Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_HALL_PRINT_PROGRESS",
+              "atLeast": 4,
+              "label": "Sala Batalla: impresión de oro"
+            }
+          ],
+          "meaning": "Bandera que el juego activa al tener las cinco impresiones de oro; el progreso usa el estado de cada impresión (2 plata y 4 oro recibidas, según el script que exige 4 en todas)."
+        }
+      }
+    },
+    {
+      "id": "pt.frontier_prints",
+      "families": [
+        "PT"
+      ],
+      "category": "Desafío",
+      "title": "Frente Batalla: las cinco impresiones de oro",
+      "placeName": {
+        "PT": "Frente Batalla"
+      },
+      "requires": "Liga superada y acceso al Frente Batalla.",
+      "steps": [
+        "En combates individuales, cada As del Frente aparece en estos combates de la racha: Torre Batalla (Palmer): 21 y 49; Fábrica Batalla (Thorton): 21 y 49; Castillo Batalla (Darach): 21 y 49; Ruleta Batalla (Dahlia): 21 y 49; Sala Batalla (Argenta): 50 y 170.",
+        "La primera victoria contra el As da la impresión de plata; la segunda, la de oro. Recógela en el mostrador de la instalación.",
+        "Si pierdes, la racha vuelve a cero en esa instalación."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_OBTAINED_ALL_BATTLE_FRONTIER_GOLD_PRINTS",
+          "progress": [
+            {
+              "var": "VAR_BATTLE_TOWER_PRINT_STATE",
+              "atLeast": 2,
+              "label": "Torre Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_FACTORY_PRINT_STATE",
+              "atLeast": 2,
+              "label": "Fábrica Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_CASTLE_PRINT_STATE",
+              "atLeast": 2,
+              "label": "Castillo Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_ARCADE_PRINT_STATE",
+              "atLeast": 2,
+              "label": "Ruleta Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_HALL_PRINT_STATE",
+              "atLeast": 2,
+              "label": "Sala Batalla: impresión de plata"
+            },
+            {
+              "var": "VAR_BATTLE_TOWER_PRINT_STATE",
+              "atLeast": 4,
+              "label": "Torre Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_FACTORY_PRINT_STATE",
+              "atLeast": 4,
+              "label": "Fábrica Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_CASTLE_PRINT_STATE",
+              "atLeast": 4,
+              "label": "Castillo Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_ARCADE_PRINT_STATE",
+              "atLeast": 4,
+              "label": "Ruleta Batalla: impresión de oro"
+            },
+            {
+              "var": "VAR_BATTLE_HALL_PRINT_STATE",
+              "atLeast": 4,
+              "label": "Sala Batalla: impresión de oro"
+            }
+          ],
+          "meaning": "Bandera que el juego activa al tener las cinco impresiones de oro; el progreso usa el estado de cada impresión (2 plata y 4 oro recibidas, según el script que exige 4 en todas)."
+        }
+      }
+    },
+    {
+      "id": "pt.contest_masters",
+      "families": [
+        "PT"
+      ],
+      "category": "Desafío",
+      "title": "Concursos: rango Master en las cinco categorías",
+      "placeName": {
+        "PT": "Ciudad Corazón"
+      },
+      "requires": "Ganar los rangos Normal, Grande y Ultra de cada categoría.",
+      "steps": [
+        "En la Sala de Concursos de Ciudad Corazón gana el rango Master de Carisma, Belleza, Dulzura, Ingenio y Dureza.",
+        "Cada victoria en Master se registra en el juego; Mr. Goods (Ciudad Corazón) entrega las copas correspondientes."
+      ],
+      "conditions": {
+        "PT": {
+          "done": "FLAG_CONTEST_MASTER_COOL",
+          "doneAll": [
+            "FLAG_CONTEST_MASTER_BEAUTY",
+            "FLAG_CONTEST_MASTER_CUTE",
+            "FLAG_CONTEST_MASTER_SMART",
+            "FLAG_CONTEST_MASTER_TOUGH"
+          ],
+          "progress": [
+            {
+              "flag": "FLAG_CONTEST_MASTER_COOL",
+              "label": "Carisma"
+            },
+            {
+              "flag": "FLAG_CONTEST_MASTER_BEAUTY",
+              "label": "Belleza"
+            },
+            {
+              "flag": "FLAG_CONTEST_MASTER_CUTE",
+              "label": "Dulzura"
+            },
+            {
+              "flag": "FLAG_CONTEST_MASTER_SMART",
+              "label": "Ingenio"
+            },
+            {
+              "flag": "FLAG_CONTEST_MASTER_TOUGH",
+              "label": "Dureza"
+            }
+          ],
+          "meaning": "Banderas de victoria en rango Master por categoría."
+        }
+      }
+    },
+    {
+      "id": "hgss.mt_silver_open",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Acceso",
+      "mission": "13",
+      "title": "Permiso del Prof. Oak para el Monte Plateado",
+      "placeName": {
+        "HGSS": "Pueblo Paleta"
+      },
+      "requires": "Las 16 medallas de Johto y Kanto.",
+      "steps": [
+        "Con las 16 medallas, habla con el Prof. Oak en su laboratorio de Pueblo Paleta.",
+        "Desde ese momento el guardia de la Ruta 28 te deja pasar hacia el Monte Plateado."
+      ],
+      "conditions": {
+        "HGSS": {
+          "done": "FLAG_UNLOCKED_MT_SILVER",
+          "meaning": "pokeheartgold scr_seq_0740_T01R0301 (laboratorio de Oak): SetFlag FLAG_UNLOCKED_MT_SILVER al ver las 16 medallas; ningún script la borra."
+        }
+      }
+    },
+    {
+      "id": "hgss.red",
+      "families": [
+        "HGSS"
+      ],
+      "category": "Desafío",
+      "mission": "13",
+      "title": "Rojo en la cima del Monte Plateado",
+      "placeName": {
+        "HGSS": "Monte Plateado"
+      },
+      "requires": "Las 16 medallas y el permiso del Prof. Oak para entrar en el Monte Plateado.",
+      "steps": [
+        "Sube por el Monte Plateado hasta la cima; Rojo te espera al fondo.",
+        "Al vencerle se ven los créditos; volver a la Liga hace que reaparezca para la revancha."
+      ],
+      "conditions": {
+        "HGSS": {
+          "doneVar": {
+            "var": "VAR_UNK_40FD",
+            "atLeast": 1
+          },
+          "meaning": "pokeheartgold scr_seq_0107_D41R0108: al vencer a Rojo se pone VAR_UNK_40FD = 1 y ningún script la vuelve a 0."
+        }
+      }
+    }
+  ]
+}

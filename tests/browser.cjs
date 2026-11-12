@@ -1,4 +1,7 @@
-const {chromium,webkit} = require('playwright');
+const {chromium,webkit,devices} = require('playwright');
+// POKEMON_DEVICE (p. ej. "iPad Pro 11") emula un dispositivo de Playwright; con POKEMON_BROWSER=webkit es Safari de iPadOS.
+const DEVICE=process.env.POKEMON_DEVICE?devices[process.env.POKEMON_DEVICE]:null;if(process.env.POKEMON_DEVICE&&!DEVICE)throw Error('Unknown device');
+const ctx=(o={})=>DEVICE?{...DEVICE,...o,viewport:o.viewport||DEVICE.viewport}:o;
 const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -24,12 +27,12 @@ async function run() {
   const engine=process.env.POKEMON_BROWSER||'chromium';
   if(!['chromium','webkit'].includes(engine))throw Error('Unsupported browser engine');
   const resultDir=path.join('test-results',engine);
-  const browser = await ({chromium,webkit}[engine]).launch({headless: true});
+  const browser = await ({chromium,webkit}[engine]).launch({headless: true, ...(process.env.POKEMON_BROWSER_PATH?{executablePath:process.env.POKEMON_BROWSER_PATH}:{})});
   const errors = [];
   try {
     fs.mkdirSync(resultDir, {recursive: true});
     for (const width of [390, 768, 1024, 1366, 1440]) {
-      const context = await browser.newContext({viewport: {width, height: 1000}, serviceWorkers: 'block'});
+      const context = await browser.newContext(ctx({viewport: {width, height: 1000}, serviceWorkers: 'block'}));
       const page = await context.newPage();
       page.on('pageerror', e => errors.push(e.message));
       for (const file of ['index.html', 'atlas.html']) {
@@ -42,7 +45,7 @@ async function run() {
       await context.close();
     }
     // Restore the user's exported Atlas evidence along with every checklist layer.
-    const context = await browser.newContext({serviceWorkers: 'block'});
+    const context = await browser.newContext(ctx({serviceWorkers: 'block'}));
     const page = await context.newPage();
     page.on('pageerror', e => errors.push(e.message));
     page.on('dialog', d => d.accept());
@@ -117,7 +120,7 @@ async function run() {
     await page.waitForFunction(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.snapshots?.SOULSILVER?.filename==='same.sav');
     assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2')).comparisons),progress.comparisons);
     // The diagnosis lists unknown requirements without converting them into completions.
-    await page.locator('#openSaved').click();
+    await page.locator('#openSaved:visible, .menu-mobile [data-view="save"]:visible').first().click(); // en móvil (≤760 px) se entra por la barra inferior «Partida»
     await page.getByRole('heading', {name: 'Qué hemos leído de tu partida', exact: true}).waitFor();
     assert.ok(await page.locator('.reading-gaps [data-open]').count() > 0);
     await page.locator('.reading-gaps').locator('..').locator('summary').click();
@@ -131,7 +134,7 @@ async function run() {
     assert.deepEqual(exported.quiz, historical.quiz);
     assert.deepEqual(exported.v8Manual, historical.v8Manual);
     assert.deepEqual(exported.v8Profiles, historical.v8Profiles);
-    const restoreContext = await browser.newContext({serviceWorkers: 'block'});
+    const restoreContext = await browser.newContext(ctx({serviceWorkers: 'block'}));
     const restorePage = await restoreContext.newPage();
     restorePage.on('pageerror', e => errors.push(e.message));
     restorePage.on('dialog', d => d.accept());
@@ -165,7 +168,7 @@ async function run() {
     assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2')).checked['soulsilver-36#2']),undefined);
     await context.close();
     // A new reader learning SID must retain manual records for the exact same binary.
-    const identityContext=await browser.newContext({serviceWorkers:'block'}),identityPage=await identityContext.newPage();
+    const identityContext=await browser.newContext(ctx({serviceWorkers:'block'})),identityPage=await identityContext.newPage();
     identityPage.on('pageerror',e=>errors.push(e.message));identityPage.on('dialog',d=>d.accept());
     await identityPage.goto(`${base}/index.html`);
     const identityFile={name:'identity.sav',mimeType:'application/octet-stream',buffer:Buffer.from(fixture({sid:456}))};
@@ -189,9 +192,10 @@ async function run() {
     // Every catalogued edition must render its goals without duplicate IDs or runtime errors.
     const {catalogue}=require('../scripts/audit.cjs');
     const catalog=catalogue(fs.readFileSync(path.join(root,'atlas.html'),'utf8'));
-    const allContext=await browser.newContext({serviceWorkers:'block'}),allPage=await allContext.newPage();
+    const allContext=await browser.newContext(ctx({serviceWorkers:'block'})),allPage=await allContext.newPage();
     allPage.on('pageerror',e=>errors.push(e.message));await allPage.setViewportSize({width:390,height:1000});await allPage.goto(`${base}/atlas.html`);
     for(const game of catalog.games){
+      if(process.env.POKEMON_DEBUG)console.log('juego',game.id);
       await allPage.evaluate(id=>localStorage.setItem('pokemon-atlas9-progress-v1',JSON.stringify({game:id,checks:{}})),game.id);
       await allPage.reload();
       assert.equal(await allPage.locator('#mobile-gen').inputValue(),String(game.generation));
@@ -423,13 +427,15 @@ async function run() {
       assert.ok(await allPage.locator(`[data-mid="${game}-03"] .route-details`).isVisible());
       assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
     }
-    // BDSP registration cannot confer its distinct card achievement or a received prize.
+    // BDSP: la estrella de la Pokédex Nacional es CheckZenkokuZukanCompGet (PlayerWork.GetTrainerRank, uDPR), es decir, la
+    // propia Pokédex capturada; un premio recibido (Amuleto Iris) sí exige su objeto.
     for(const game of ['BD','SP']){
       const excluded=new Set([151,249,250,251,385,386,489,490,491,492,493]),caught=Array.from({length:493},(_,i)=>i+1).filter(id=>!excluded.has(id));
       await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-bdsp-national.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({game,caught,seen:[],integrity:{verifiedFields:['caught']}}))});
       await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.game===g,game);
       assert.match(await allPage.locator('#master-pokedex').innerText(),/Evidencia/);
-      assert.doesNotMatch(await allPage.locator('#master-card-1').innerText(),/Evidencia/);
+      assert.match(await allPage.locator('#master-card-1').innerText(),/Evidencia/);
+      assert.doesNotMatch(await allPage.locator('#master-shiny-charm').innerText(),/Evidencia/);
       await allPage.locator('[data-view="diagnostic"]').first().click();
       assert.match(await allPage.locator('#dex-completion').innerText(),/Nacional: 482\/482 registradas/);
       assert.equal(await allPage.locator('[data-master]:checked').count(),0);
@@ -546,7 +552,7 @@ async function run() {
     assert.equal(recoveredRaw.recoveryBackup,damaged);
     await allContext.close();
     // Storage failure must leave an exportable diagnosis and a persistent warning.
-    const quotaContext=await browser.newContext({serviceWorkers:'block'});
+    const quotaContext=await browser.newContext(ctx({serviceWorkers:'block'}));
     await quotaContext.addInitScript(()=>{const original=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){
       if(k==='archivo-pokemon-v2')throw new DOMException('Synthetic quota limit','QuotaExceededError');
       return original.call(this,k,v);
@@ -560,7 +566,7 @@ async function run() {
     assert.deepEqual(inMemory.snapshots.SOULSILVER.caught,[145]);
     await quotaContext.close();
     // Install, go offline, reload both entry points and the new reader module.
-    const offline = await browser.newContext();
+    const offline = await browser.newContext(ctx());
     const offlinePage = await offline.newPage();
     offlinePage.on('pageerror', e => errors.push(e.message));
     await offlinePage.goto(base);

@@ -1,0 +1,143 @@
+# Paquetes de hitos y secretos leídos de las banderas
+
+Cada paquete de `research/events/<paquete>.json` declara:
+
+- las familias de ediciones;
+- los hitos de historia enlazados a las misiones del Atlas;
+- los secretos, legendarios y regalos importantes.
+
+Las condiciones se expresan con nombres de pret, nunca con números: banderas, variables guardadas o un mínimo de medallas. `scripts/derive-event-pack.py <paquete>` comprueba en la revisión fijada de la decompilación que cada nombre existe y que algún script o código lo escribe. Después genera `src/saves/<paquete>-data.js`. Las medallas salen del diagnóstico del lector.
+
+`src/engine/event-guide.js` evalúa el paquete con las banderas y variables del diagnóstico. Valen las del lector ligero o las de PKHeX.Core en el navegador. Distingue completado, en curso, perdido, pendiente y legado. Un registro en la Pokédex se muestra aparte y nunca completa un encuentro.
+
+## Cuarta generación: HeartGold/SoulSilver
+
+- Historia y postgame hasta Rojo: 13 hitos.
+- 22 secretos con exclusivas por edición.
+- Errantes con su estado real: 1 capturado, 2 derrotado, 0 sin resolver. El valor 2 se comprobó en el código ensamblador del combate y el script de la Liga lo recrea.
+- Regalo de Oak, orbe del Sr. Pokémon, inicial de Hoenn (Silph S.A., tras Rojo) y las cuatro salas de las Ruinas Alfa.
+- Los índices coinciden con los siete mapeos investigados antes: Zapdos 0x14A, Moltres 0x16D, Groudon 0x179, Rojo work 253, Oak work 305, Torre Oculta work 249.
+- Contraste con partidas públicas: una partida natural de HeartGold con 16 medallas muestra pendientes justamente Lugia (Ala Plateada de Ciudad Plateada), Entei y Latias. Las partidas preparadas de Pokédex no muestran eventos: estructura válida sin recorrido natural.
+
+Confianza: documentada en código. Faltan comparaciones antes/después con partidas propias.
+
+## Cuarta generación: Platino
+
+- Fuente: la lista enumerada `generated/vars_flags.txt` de pokeplatinum, más las constantes `ROAMER_STATE_*` y `RUINS_STATE_*`.
+- 9 hitos y 20 secretos.
+- Matices del código:
+  - Los Regis exigen un **Regigigas de evento** (encuentro fatídico): se muestran como legado. Si no capturas al Regi, la estatua deja de emanar poder y no vuelve.
+  - Regigigas exige los tres Regis en el equipo y es de nivel 1.
+  - Diamansfera y Lustresfera están en el suelo de la 4.ª planta del Monte Corona.
+  - El acceso a la Columna Lanza lo abre la abuela de Cintia tras la Liga.
+- Contraste con la partida de Platino cedida por el propietario (privada, fuera de Git), leída con PKHeX.Core:
+  - 8 medallas, Liga superada y lo capturado coherente con las banderas.
+  - Pendientes: Mesprit, Cresselia (vista, sin capturar), los pájaros errantes, Regigigas, Rotom y Porygon.
+
+Diamante y Perla no tienen todavía banderas con nombre en pokediamond. No se reutilizan los índices de Platino: requieren investigación propia con partidas antes/después.
+
+## Primera y segunda generación
+
+- Fuentes: pokered, pokeyellow, pokegold y pokecrystal, en revisiones fijadas.
+- Las constantes `const_def`/`const_skip`/`const_next` se evalúan igual que las macros de pret. El índice resultante coincide con el bit de `wEventFlags` que lee PKHeX: el máximo de Rojo/Azul es 2522, por debajo de los 2560 de `SAV1`.
+- Rojo/Azul y Amarillo son familias separadas: comparten la mayoría de índices, pero no todos.
+- 13 hitos de Kanto, 12 de Johto y 26 secretos. Incluye los legendarios, los dos Snorlax, el Dojo, los fósiles, los iniciales de Amarillo, Ho-Oh y Lugia, las bestias, Suicune, los regalos (Togepi, Eevee, Tyrogue, Dratini, Huevo Raro) y los puzles de las Ruinas Alfa.
+- Matiz de Cristal comprobado en `BeastsCheck`: el Ala Arcoíris exige la Liga y poseer Raikou, Entei y Suicune con tu nombre e ID, en el equipo o en las cajas.
+- En Oro/Plata/Cristal, `EVENT_FOUGHT_*` se activa al empezar el encuentro: consumido, no necesariamente capturado.
+- Las ediciones japonesas y coreanas de Game Boy se excluyen: pret describe las internacionales.
+- Contraste con partidas públicas: un Cristal completo marca todo salvo el Tyrogue de Kiyo, un Cristal temprano indica la Medalla Céfiro y las partidas preparadas no muestran eventos.
+
+## Generaciones IV a VIII sin decompilación con nombres: listas de PKHeX
+
+`scripts/derive-pkhex-pack.py` usa las listas que PKHeX.Core incluye para su editor de eventos (`Resources/text/script/genN/flags_*_en.txt`, revisión fijada). Cubre Diamante/Perla, Negro/Blanco, Negro 2/Blanco 2, X/Y, Rubí Omega/Zafiro Alfa, Sol/Luna, Ultrasol/Ultraluna y BDSP.
+
+- Toma las capturas, derrotas y regalos de legendarios y encuentros únicos, más la entrada al Salón de la Fama.
+- Las exclusivas se separan por las etiquetas de versión de la propia lista, por ejemplo `(OR)` y `(AS)`.
+- Los títulos usan los nombres oficiales en español de PKHeX.
+
+Confianza: **documentado por la comunidad en PKHeX**, sin script fuente. Es inferior a la de las decompilaciones y la interfaz lo indica.
+
+- La historia de estos paquetes solo contiene el Salón de la Fama. No se usa para recomendar la Liga desde el principio, sino para pasar al postgame cuando consta.
+- Los pasos remiten al recorrido de postgame de cada edición; no se inventan detalles.
+- Contraste:
+  - Negro 2 cedido por el propietario: 21 de 21 completados y Salón de la Fama registrado.
+  - Un Sol público natural: 6 de 6.
+  - Las partidas preparadas no muestran eventos.
+- BDSP aún no se evalúa: el motor del navegador no exporta sus banderas. Hay que recompilarlo con .NET, que no está disponible en este entorno.
+
+## Desafíos de la cuarta generación
+
+- Impresiones del Frente Batalla en Platino y HGSS: estado de cada instalación (2 plata, 4 oro) y bandera de las cinco de oro.
+- Combates del As según `include/constants/battle_frontier.h` de pokeplatinum: Torre, Fábrica, Castillo y Ruleta en el 21 y el 49; Sala en el 50 y el 170. HGSS comparte el Frente, pero su código no está descompilado: las cifras se indican como tomadas de Platino.
+- Concursos de Platino: rango Master en las cinco categorías.
+- Contraste con la partida de Platino cedida: las cinco impresiones de oro y los cinco concursos Master constan.
+- Bulbapedia y Serebii no son accesibles desde esta sesión (red restringida). Las cifras proceden del código.
+
+## Switch: Espada/Escudo, Leyendas Arceus y Escarlata/Púrpura
+
+- El motor WebAssembly se ha recompilado con `pkhex-extractor/NamedBlocks.cs`. Exporta, por el nombre de su constante en el accesor fijado de PKHeX, los bloques booleanos y enteros de Espada/Escudo, Leyendas Arceus, Escarlata/Púrpura y Z-A.
+- Compilación: .NET 10 en el PC del propietario, con el runtime de WebAssembly 10.0.12. El manifiesto `engine/build.json` registra los hashes con saltos de línea Unix, y `.gitattributes` impide convertir los archivos del motor.
+- Paquete `gen89`. Cada nombre se comprueba contra el accesor fijado.
+
+| Juego | Qué se lee |
+| --- | --- |
+| Espada/Escudo | Pájaros de Galar, los seis Regis, Spiritomb, legendarios de la Aventura Dinamax y Torre Batalla |
+| Leyendas Arceus | Señores calmados como historia, zonas, monturas, Pokédex completa y perfecta, Arceus y Eterna Ensoñación |
+| Escarlata/Púrpura | DLC y diploma (señales documentadas) y dificultades de teraincursión |
+
+- Contraste con 15 partidas públicas de Switch leídas en el navegador: entre 47 y 1111 bloques por partida, con resultados coherentes. Por ejemplo, un Arceus completado marca Arceus y la Pokédex completos.
+- Z-A todavía no tiene interpretación: su progreso está en matrices de eventos sin nombres públicos.
+- Las partidas personales de Switch del propietario no se han sacado de su PC (regla de sus archivos LEEME).
+
+## Let's Go Pikachu/Eevee
+
+- El extractor exporta las banderas en bruto de `EventWork7b` (zona 0, sistema 128, desaparición 640, evento 2176) y los títulos de Entrenador Maestro.
+- Las referencias de la lista de PKHeX (`flags_gg_en.txt`, con prefijos `s`, `v` y `e`) se convierten a ese índice en bruto. El generador comprueba la descripción de cada índice.
+- Historia:
+  - los ocho gimnasios (banderas de sistema por líder);
+  - el final de la historia principal.
+- Secretos y desafíos:
+  - Rojo, los dos Snorlax, los pájaros y Mewtwo (encuentro resuelto por bandera de desaparición), el Dojo, los regalos y las cinco técnicas secretas;
+  - los **153 títulos de Entrenador Maestro**, contados solo en los índices 1 a 153.
+
+## Dónde estás: HeartGold/SoulSilver y Platino
+
+| | HeartGold/SoulSilver | Platino |
+| --- | --- | --- |
+| Estructura con la posición | `LocalFieldData.currentPosition` | `FieldOverworldState.player` |
+| Qué lo precede | `SaveVarsFlags` | `SaveVarsFlags` y el Poké-reloj |
+| Desplazamiento | `0x1234` | `0x1280` |
+
+- Los desplazamientos salen de los tamaños de pret, con 4 bytes de suma por bloque.
+- La posición contiene mapa, salida, x, y y dirección.
+- Copia activa:
+  - Platino: contadores del pie y CRC sobre el bloque menos 0x14 bytes, como en `SAV4.cs`. Coincide en la partida cedida.
+  - HGSS: la del lector ligero.
+- `scripts/derive-ds-maps.py` traduce el número de mapa a su nombre oficial en español:
+  - HGSS: `MAPSEC` desde las cabeceras de pokeheartgold.
+  - Platino: `locationName` de cada `header.json`, con el índice del banco de nombres de lugar.
+  - En ambos casos, los textos de PKHeX.
+  - El generador comprueba varios nombres conocidos.
+- Si el número de mapa no existe, no se muestra ninguna ubicación.
+- Contraste:
+  - HeartGold público: Carpa Pokéathlon.
+  - HGSS preparadas: Ciudad Cerezo.
+  - Platino público: Pueblo Arena.
+  - Platino cedido: Ciudad Vetusta. Su entrada previa, una casa de la misma ciudad, es coherente con esa posición.
+
+## Dónde estás: Game Boy
+
+| | Rojo/Azul/Amarillo | Oro/Plata | Cristal |
+| --- | --- | --- | --- |
+| Campos (pret) | `wCurMap`, `wYCoord`, `wXCoord` | `wMapGroup`, `wMapNumber`, coordenadas | `wMapGroup`, `wMapNumber`, coordenadas |
+| Desplazamiento | `0x260A`, `0x260D` y `0x260E` | `0x2868` | `0x2843` |
+| Cómo se obtiene | Campos tras `wMapPalOffset`, referencia: medallas de PKHeX | 34 bytes antes del equipo de PKHeX, por `wScreenSave` | Igual que Oro/Plata |
+
+- Nombres:
+  - Kanto: lugar del mapa de `town_map_entries.asm`.
+  - Johto: punto de referencia de `data/maps/maps.asm`.
+  - En ambos casos, traducidos con los textos oficiales de PKHeX (listas de RF/VH y HGSS).
+- Equivalencias de HGSS: Torre Campana, Cueva M Plateado y S.S. Aqua.
+- Pasos subterráneos: Túnel Trigal y Vía Subterránea. La «Sea Cottage» de Bill, sin nombre oficial en esas listas, se muestra en inglés con su ruta.
+- Las ediciones japonesas y coreanas se excluyen.
+- Contraste con partidas públicas: Rojo/Amarillo en Ciudad Verde, Oro en Ciudad Cerezo y un Cristal completo en la Mansión Azulona.

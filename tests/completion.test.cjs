@@ -12,7 +12,15 @@ test('FRLG completion requires its exact species sets, not equal totals or event
   assert.equal(sameCount.kanto.complete,false);
   assert.equal(dexStatus({game,caught:full.concat([...excluded],full)}).national.registered,380);
  }
- assert.equal(dexStatus({game:'RED',caught:full}),null);
+});
+test('diploma de la 1.ª y 2.ª generación: total de capturados como en el código del juego (Mew cuenta si lo tienes)',()=>{
+ const all=n=>Array.from({length:n},(_,i)=>i+1);
+ assert.equal(dexStatus({game:'RED',caught:all(150)}).diploma.complete,true);
+ assert.equal(dexStatus({game:'BLUE',caught:all(151).filter(id=>id!==150)}).diploma.complete,true);
+ assert.equal(dexStatus({game:'YELLOW',caught:all(149)}).diploma.complete,false);
+ assert.equal(dexStatus({game:'GOLD',caught:all(249)}).diploma.complete,true);
+ assert.equal(dexStatus({game:'CRYSTAL',caught:all(248)}).diploma.complete,false);
+ assert.equal(dexStatus({game:'SILVER',caught:all(251).filter(id=>id!==1&&id!==2)}).diploma.complete,true);
  assert.equal(dexStatus({game:'FIRERED',caught:null}),null);
 });
 test('a complete FRLG registration needs validated read fields and never creates encounter or prize facts',()=>{
@@ -133,4 +141,11 @@ test('BDSP national recognition excludes Lugia/Ho-Oh and nine mythicals without 
   assert.equal(engine.evaluate(nodes,engine.fromDiagnosis({...d,integrity:{verifiedFields:['seen']}}),game)[0].status,'PARTIAL_EVIDENCE');
   assert.ok(!engine.fromDiagnosis(d).some(f=>/star|reward|diploma|encounter|charm/i.test(f.id)));
  }
+});
+
+test('Rubí/Zafiro/Esmeralda: Pokédex de Hoenn de la tarjeta = 200 primeras de HOENN_DEX (pokeemerald)',()=>{
+ const H=require('../src/engine/hoenn-gen3-dex.js');
+ assert.equal(H.required.length,200);assert.equal(H.required[0],252);assert.equal(H.required.includes(385),false);assert.equal(H.required.includes(386),false);
+ assert.equal(dexStatus({game:'EMERALD',caught:H.required}).hoenn.complete,true);
+ assert.deepEqual(dexStatus({game:'SAPPHIRE',caught:H.required.filter(id=>id!==384)}).hoenn.missing,[384]);
 });

@@ -8,6 +8,22 @@ Aplicación de seguimiento Pokémon con dos rutas de acceso:
 ## Publicación
 GitHub Pages se publica desde la rama `main` y la raíz del repositorio. La aplicación puede instalarse desde Safari en iPad y Chrome en Android, sujeto a disponibilidad del navegador.
 
+## Uso en iPad
+
+- **Elegir el guardado:** el selector ya no filtra por extensión, así que en la app Archivos se pueden elegir
+  guardados sin extensión (`main` de 3DS y Switch), `sav.dat`, `.gci`, etc. La web reconoce el formato por su contenido.
+- **Lector propio:** las partidas de DS, de Ultrasol/Ultraluna y de X/Y y Rubí Omega/Zafiro Alfa, más la lectura de
+  campo de la 3.ª generación, funcionan en cualquier Safari.
+- **Lector ampliado (PKHeX en WebAssembly):** es el que lee el resto. Exige WebAssembly con SIMD y excepciones,
+  presentes desde iPadOS 16.4; en un Safari anterior la web lo detecta y lo explica.
+- **Primera lectura:** descarga unos 45 MB, que luego quedan en caché para usarlos sin conexión. Los límites de
+  descarga y lectura son de 5 minutos.
+
+Comprobado el 12/11/2026 con WebKit (iPad Pro 11 emulado): las partidas del propietario que lee el lector propio
+se leen igual que en Chromium. El WebKit para Windows de Playwright no termina el lector ampliado (se queda parado o
+falla dentro de WebAssembly), mientras que la integración continua lo pasa en el WebKit de Linux con el corpus
+público. Eso apunta a la adaptación de WebKit para Windows, pero falta la prueba en un iPad físico.
+
 ## Seguridad y progreso
 Los archivos de guardado personales no están en este repositorio. Importar registros de Pokédex no certifica que se hayan completado los eventos originales. Exporta las casillas a JSON antes de cambiar de dispositivo.
 
@@ -46,7 +62,7 @@ no amplía por sí solo los formatos compatibles ni certifica nuevos eventos.
 
 Las misiones incorporan recorridos con ubicación, requisitos, instrucciones,
 comprobación final y fuentes, disponibles también offline. La ampliación actual
-contiene 236 rutas enlazadas a 486 misiones de las 39 ediciones. Mantiene todas las
+contiene 245 rutas enlazadas a 495 misiones de las 39 ediciones. Mantiene todas las
 casillas previas. El [seguimiento editorial](docs/guide-completion.md) define qué
 falta para cerrar las guías exhaustivas de las nueve generaciones; los recuentos
 no certifican el 100 % de los juegos. Hoenn GBA incluye las diferencias de
@@ -128,3 +144,8 @@ los cristales presentes no certifican pruebas ni sellos del pasaporte.
 Alola separa las listas exactas de Pokédex (300 originales/400 Ultra y cada isla)
 de los quince sellos que constan en el pasaporte. Cumplir el registro no acredita
 por sí solo haber recibido su sello ni haber realizado todos los encuentros.
+
+La tercera generación lee además del propio guardado la ubicación, el equipo, las cajas y todas las banderas.
+Con ello muestra dónde estás, el siguiente hito de la historia y el estado de 23 secretos y legendarios,
+y calcula la Isla Espejismo con tus Pokémon. El lector coincide con PKHeX.Core. Método y límites en
+`research/gen3/README.md`.

@@ -86,11 +86,11 @@
       "Acceso por Túnel Roca y Ciudad Azulona"
     ],
     "steps": [
-      "En la primera visita a la Torre de Lavanda sigue las escenas con el rival y Cubone. Los fantasmas no se resuelven aún: necesitas Visor Silph de la guarida Rocket de Azulona.",
+      "En la primera visita a la Torre Pokémon de Pueblo Lavanda sigue las escenas con el rival y Cubone. Los fantasmas no se resuelven aún: necesitas Visor Silph de la guarida Rocket de Azulona.",
       "En el salón de juegos de Azulona vence al recluta que protege el póster y activa el interruptor de detrás para abrir la escalera secreta.",
       "Baja por la guarida, supera las baldosas de giro y llega al recluta de la Llave Ascensor. Tras vencerlo, examina dónde la lanza y la rejilla de ventilación; mueve la silla azul bajo la rejilla.",
       "Controla a Pikachu o Eevee por la ventilación y las pasarelas superiores para recoger la llave. Regresa al ascensor y baja al sector del despacho; vence a Jessie y James, al ejecutivo Rocket y finalmente a Giovanni para el Visor Silph.",
-      "Al salir, habla con el hombre del vehículo de globos junto al salón: enseña Surcacielos. Regresa a la Torre de Lavanda con Visor Silph para identificar a los fantasmas y resolver la escena de Marowak y Cubone.",
+      "Al salir, habla con el hombre del vehículo de globos junto al salón: enseña Surcacielos. Regresa a la Torre Pokémon de Pueblo Lavanda con Visor Silph para identificar a los fantasmas y resolver la escena de Marowak y Cubone.",
       "Llega a la planta superior, supera la intervención del Team Rocket y rescata al Sr. Fuji. Habla con él en su casa para recibir Poké Flauta, necesaria para despertar a los Snorlax de las rutas 12 y 16.",
       "En Azulona recoge el Té que entrega Brock delante del edificio de apartamentos. Llévalo a uno de los guardias de las entradas a Azafrán para que abran el paso; no se utiliza una bebida de las máquinas de los originales.",
       "En Silph S.A. vence a Azul en el encuentro inicial y sube hasta la quinta planta. Combate junto al rival contra el ejecutivo Rocket y el recluta; tras el combate recibes la Tarjeta Llave. No se recoge sola del suelo como en otros Kanto.",

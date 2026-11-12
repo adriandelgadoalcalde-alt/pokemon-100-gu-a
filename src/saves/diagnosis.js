@@ -22,10 +22,24 @@
   for(const key of ['tid','sid','generation','version','badgesMask'])if(integer(e[key])!==null)result[key]=e[key];
   if(Array.isArray(e.keyItems))result.keyItems=e.keyItems.filter(i=>i&&Number.isInteger(i.id)&&i.id>0&&Number.isInteger(i.count)&&i.count>0)
    .map(i=>({id:i.id,count:i.count}));
+  if(Array.isArray(e.unownForms))result.unownForms=e.unownForms.filter(x=>Number.isInteger(x)&&x>=0&&x<28);
   if(e.extractor&&typeof e.extractor==='object')result.extractor={engine:String(e.extractor.engine||''),engineCommit:String(e.extractor.engineCommit||'')};
-  for(const key of ['integrity','events','medals','passport','battleTree','pokeathlon','pokewalker'])
+  for(const key of ['integrity','events','medals','passport','battleTree','cells7','records7','pokeathlon','pokewalker','field','namedBlocks','location','switchPosition','questWork9a','requests8a','clear8','underground4','subway5','musical5','pwt5','entralink5','pokestar5','unown2','tower4','hallOfFame1','dex9','chateau','za9','tower2','tower4dp','leagueRematch4','tower8b','statues8b','card8'])
    if(e[key]&&typeof e[key]==='object'&&!Array.isArray(e[key]))result[key]=JSON.parse(JSON.stringify(e[key]));
   return result;
+ }
+ // Leyendas Z-A: KEventWorkQuest guarda cada misión con clave FNV-1a 64 de su nombre interno y 255 al completarla
+ // (research/switch/za-quests.json). Se traducen a marcadores de historia (ZA_MISSION_NN) y al fin de la historia
+ // (misión 37, el combate final en la Torre Prisma).
+ function zaQuests(parsed){
+  const Q=typeof module==='object'&&module.exports?require('./za-quests-data.js'):root.PokemonZAQuests;
+  const work=parsed.questWork9a?.questWork;if(!Q||!work||typeof work!=='object')return parsed;
+  const blocks={...(parsed.namedBlocks||{})};let mainDone=0,sideDone=0,sideBase=0;
+  for(const [n,hash]of Q.main){if(!(hash in work))continue;const done=Number(work[hash])===Q.done;blocks['ZA_MISSION_'+String(n).padStart(2,'0')]=done;if(done)mainDone++;}
+  for(const [n,hash,title]of Q.side){if(!(hash in work)||!title)continue;sideBase++;if(Number(work[hash])===Q.done)sideDone++;}
+  blocks.ZA_MISSIONS_DONE=mainDone;blocks.ZA_SIDE_BASE_DONE=sideDone;blocks.ZA_SIDE_BASE_ALL=sideBase>0&&sideDone===sideBase;
+  const clear=blocks['ZA_MISSION_'+String(Q.clearMission).padStart(2,'0')];
+  return {...parsed,namedBlocks:blocks,gameClear:typeof parsed.gameClear==='boolean'?parsed.gameClear:typeof clear==='boolean'?clear:parsed.gameClear};
  }
  function documentedClear(e){
   const id=['RUBY','SAPPHIRE','EMERALD','FIRERED','LEAFGREEN'].includes(e?.game)?'story.gba.gameClear':['SCARLET','VIOLET'].includes(e?.game)?'story.paldea.clear':null;
@@ -49,6 +63,18 @@
   if(!parsed.game&&Array.isArray(parsed.gameCandidates)){
    if(!parsed.gameCandidates.includes(options.selectedGame))throw Error('El formato no distingue la edición. Selecciona primero una edición de su familia en el Atlas e importa de nuevo.');
    parsed={...parsed,game:options.selectedGame,editionIdentification:'selected-in-atlas'};
+  }
+  if(root.PokemonBDSPFlags&&['BD','SP'].includes(parsed.game)&&!parsed.events){
+   const extra=root.PokemonBDSPFlags.read(bytes);
+   if(extra)parsed={...parsed,events:extra.events,badgesTotal:parsed.badgesTotal??extra.badgesTotal,gameClear:parsed.gameClear??extra.gameClear};
+  }
+  if(parsed.game==='ZA'&&parsed.questWork9a)parsed=zaQuests(parsed);
+  if(root.PokemonDSLocation&&!parsed.location){
+   try{const location=root.PokemonDSLocation.read(bytes,parsed.game,parsed.saveBase,parsed.languageId,parsed.namedBlocks,parsed.switchPosition);if(location)parsed={...parsed,location};}catch{}
+  }
+  if(root.PokemonGen3Field&&bytes.length>=0x10000&&bytes.length<=0x20040){
+   // Lectura de campo complementaria (ubicación, equipo, cajas, banderas). Si falla, el diagnóstico sigue igual.
+   try{const field=root.PokemonGen3Field.read(bytes);if(field.games.includes(parsed.game))parsed={...parsed,field};}catch{}
   }
   const result=normalize({...parsed,readAt:new Date().toISOString(),sourceType:'local-save'});
   if(!result)throw Error('El lector no devolvió un diagnóstico compatible. No se ha cambiado el progreso.');
@@ -83,6 +109,6 @@
   if(old&&!identical){next.evidenceArchive=next.evidenceArchive||{};next.evidenceArchive[game]=[old,...(next.evidenceArchive[game]||[])];}
   next.evidence[game]=diagnosis;next.game=game;return next;
  }
- const api={normalize,read,profile,apply,supported,documentedClear};
+ const api={normalize,read,profile,apply,supported,documentedClear,zaQuests};
  if(typeof module==='object'&&module.exports)module.exports=api;else root.PokemonDiagnosis=api;
 })(typeof globalThis==='object'?globalThis:this);

@@ -131,6 +131,15 @@ var bytes = SyntheticHgss(); var before = SHA256.HashData(bytes);
 var parsed = SaveUtil.GetSaveFile(bytes.ToArray().AsMemory()) ?? throw new Exception("Synthetic fixture detection failed");
 Check(parsed is SAV4HGSS, "Synthetic HGSS detection failed");
 Check(parsed.ChecksumsValid, "Synthetic HGSS full checksums failed");
+// Platino: Heatran reaparecido tras el arresto de Carón = una entrada del Salón posterior = revancha (pret/pokeplatinum).
+foreach (var (caught, vs5, state, expected) in new[] { (false, true, 1, true), (true, true, 1, false), (false, true, 2, false), (false, false, 1, false) })
+{
+    var pt=(SAV4)SyntheticSinnoh(GameVersion.Pt);
+    pt.SetEventFlag(214,true);pt.SetEventFlag(215,true);pt.SetEventFlag(288,caught);pt.SetEventFlag(2435,vs5);pt.SetWork(158,(ushort)state);
+    using var lr=JsonDocument.Parse(JsonSerializer.Serialize(Audit.Extract(pt,"synthetic",false)["leagueRematch4"],Audit.JsonOptions));
+    Check(lr.RootElement.GetProperty("heatranReset").GetBoolean()==expected&&lr.RootElement.GetProperty("proof").GetBoolean()==expected,
+        $"Platinum Heatran reset misread (caught={caught}, vs5={vs5}, state={state})");
+}
 var report = Audit.Extract(parsed, Convert.ToHexStringLower(before), true);
 Check((string?)report["game"] == "SOULSILVER", "Game identification mismatch");
 Check((int?)report["badgesTotal"] == 16, "Badges mismatch");

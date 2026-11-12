@@ -657,3 +657,76 @@ de campo usan Poké-reloj; la tarjeta exige variantes de estatuas, no banderas.
 La lista exacta de 482 obtenidos se compara sin acreditar estrella ni premio.
 La lógica reconstruida y sus límites se documentan en `research/routes/bdsp.md`;
 no se equipara el cierre del catálogo con todos los mapas/encuentros/colecciones.
+
+### Hisui: señoriales, monturas, crisis y tablas
+
+Nueve rutas nuevas y 70 instrucciones amplían las nueve conexiones restantes de
+Leyendas: Arceus. Total: 245 recorridos/495 conexiones; quedan 30 misiones sin
+ampliación. Se mantienen las dos rutas de Arceus y las casillas, se localiza el
+nombre de Volus y se distinguen investigación, monturas, señoriales y capturas.
+Templo Puntaneva y Uxie incluyen sus respuestas; Regigigas exige tablas y las
+fases de Giratina no equivalen a capturarlo. El cierre de las once misiones del
+catálogo no cierra peticiones, mapas ni colecciones: `research/routes/hisui.md`.
+## Tercera generación: el guardado dice dónde estás y qué secretos faltan
+
+Fecha: 11 de noviembre de 2026.
+
+**Lector nativo de campo** para R/Z, E y RF/VH. Lee:
+
+- la copia activa con sus checksums;
+- la ubicación (nombre oficial en español);
+- equipo y cajas;
+- todas las banderas y variables.
+
+Paridad con PKHeX.Core: 8 de 8 archivos coinciden por completo (6 públicos y 2 privados cedidos, fuera de Git).
+
+**Catálogo de 23 secretos y legendarios.** Cada uno tiene banderas de pret verificadas: existen y algún script las activa. Las semánticas difieren por edición; están documentadas en `research/gen3/README.md`.
+
+**En el Atlas:**
+
+- «Dónde estás ahora» y la historia según las banderas;
+- «Secretos y eventos» con estado, requisitos y pasos;
+- la Isla Espejismo calculada para hoy y los próximos días con tus propios Pokémon;
+- la ruta del clima anómalo de Esmeralda.
+
+El recomendador usa la primera bandera de historia pendiente.
+
+Pruebas: 86 unitarias, auditoría, regresión de navegador (Chromium) y actualización de la PWA. Capturas revisadas a 390, 1024 y 1440 píxeles, sin desbordamiento.
+
+Límites:
+
+- Confianza «documentado en código»; sin pruebas antes/después, nada se certifica automáticamente.
+- El Frente Batalla y los concursos siguen pendientes.
+- Las demás generaciones no tienen todavía esta capa.
+
+## Lectura de progreso por generación (11 de noviembre de 2026)
+
+Qué interpreta ahora la guía a partir del guardado, además de la Pokédex y las medallas que ya leía:
+
+| Gen. | Ediciones | Fuente del significado | Historia | Secretos, legendarios y desafíos |
+| --- | --- | --- | --- | --- |
+| I | Rojo, Azul, Amarillo | pret (pokered, pokeyellow) | 13 hitos y ubicación | Pájaros, Mewtwo, Snorlax, Dojo, fósil, iniciales de Amarillo |
+| II | Oro, Plata, Cristal | pret (pokegold, pokecrystal) | 12 hitos y ubicación | Ho-Oh/Lugia (Cristal con requisito exacto), bestias, Suicune, regalos, Ruinas Alfa |
+| III | Rubí, Zafiro, Esmeralda, RF, VH | pret + lector nativo | 11-13 hitos y ubicación | Regis, legendarios, eventos de ticket, Isla Espejismo calculada, Liga repetida, Frente Batalla, escudos |
+| IV | HeartGold, SoulSilver | pret (pokeheartgold) | 13 hitos hasta Rojo y ubicación | 22 secretos, errantes con estado real, regalo de Oak, Ruinas Alfa, impresiones del Frente |
+| IV | Platino | pret (pokeplatinum) | 9 hitos y ubicación | 22 secretos, Regis con Regigigas de evento, impresiones del Frente, concursos Master |
+| IV | Diamante, Perla | lista de PKHeX; mapas de pokediamond | Medallas, Salón de la Fama y ubicación | Legendarios, regalos y concursos Master |
+| V | Negro, Blanco, Negro 2, Blanco 2 | lista de PKHeX; zonas de N2/B2 desde la ROM y de N/B (pokedaisy, validada) | Salón de la Fama y ubicación | Legendarios y regalos; Medallero de N2/B2 (ya existente) |
+| VI | X, Y, Rubí Omega, Zafiro Alfa | lista de PKHeX; zonas desde la ROM | Salón de la Fama y ubicación | Legendarios, Mansión Batalla, Episodio Delta, revancha del Alto Mando, Regis |
+| VII | Sol, Luna, Ultrasol, Ultraluna | lista de PKHeX; zonas de USUM desde la ROM | Salón de la Fama; ubicación en USUM | Legendarios, regalos, monturas; sellos del pasaporte (ya existente) |
+| VIII | Diamante Brillante, Perla Reluciente | lista de PKHeX + lector propio de banderas | 8 medallas (orden de DP), Salón de la Fama y ubicación (zona = lugar oficial) | Legendarios y regalos |
+| VIII | Espada, Escudo | bloques con nombre de PKHeX | 8 medallas y título (por victorias en la Torre Batalla) | Pájaros de Galar, Regis, Aventura Dinamax, Torre Batalla |
+| VIII | Leyendas Arceus | bloques con nombre de PKHeX | 6 hitos y área actual | Arceus, Pokédex completa y perfecta, zonas, monturas, Eterna Ensoñación |
+| IX | Escarlata, Púrpura | bloques y señales de PKHeX | Señal de final (existente); lugar actual | DLC, diploma, teraincursiones |
+
+Pendiente:
+
+- **Sin interpretación todavía:**
+  - Verde (Japón).
+  - Leyendas Z-A: matrices sin nombres públicos.
+- **Ubicación del jugador:** se lee en las generaciones I a IV (salvo Verde japonés y las versiones japonesa y coreana de Game Boy); en la V, las cuatro ediciones; en la VI, X/Y y ROZA; en la VII, Ultrasol/Ultraluna (falta una copia de Sol/Luna); en Switch, Diamante Brillante/Perla Reluciente y Escarlata/Púrpura (lugar exacto; si falta, la región), Leyendas Arceus (Villa Jubileo o el área) y Leyendas Z-A (Ciudad Luminalia). Espada/Escudo: el hash se traduce con la tabla de áreas del propio juego (192 de 246 áreas con nombre: pueblos, ciudades, estadios, rutas, Área Silvestre, Isla de la Armadura, Nieves de la Corona y Torre Batalla). Let's Go: pueblo, ruta o cueva, con gimnasio, Centro Pokémon, tienda o interior (tabla de áreas del propio juego).
+- **Confianza:**
+  - Pret y PKHeX se marcan como «documentado en código» o «documentado por la comunidad».
+  - Ninguna lectura certifica automáticamente: faltan comparaciones antes/después con partidas propias.
+- **Integración continua:** la rama no la ejecuta en cada envío (el flujo solo corre en `main` y en propuestas de cambio). Las pruebas se han ejecutado aquí: 101 unitarias, auditoría, navegador y actualización de la PWA. La comparación con el extractor de escritorio requiere .NET.
+- **Red:** Bulbapedia y Serebii no son accesibles desde esta sesión. Las cifras salen del código fuente de los juegos.

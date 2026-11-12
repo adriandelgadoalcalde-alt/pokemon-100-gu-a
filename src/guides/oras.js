@@ -149,7 +149,7 @@
       "Cuatro medallas"
     ],
     "steps": [
-      "Regresa al gimnasio de Petalia y elige las salas de entrenamiento hasta llegar a Norman. Sus Slaking descansan por Ausente en turnos alternos; prepara curación y protección para aprovechar esos turnos sin confiarte ante sus otros Pokémon.",
+      "Regresa al gimnasio de Petalia y elige las salas de entrenamiento hasta llegar a Norman. Sus Slaking descansan por Pereza en turnos alternos; prepara curación y protección para aprovechar esos turnos sin confiarte ante sus otros Pokémon.",
       "Derrota a Norman para recibir Medalla Equilibrio y MT67 Represalia. Completa la conversación con la familia de Blasco para obtener MO03 Surf.",
       "Regresa al este de Malvalona y cruza el agua de Ruta 118 con Surf. Allí Máximo y el Pokémon eón conducen a la visita de historia a Isla del Sur.",
       "Protege al Pokémon de la isla combatiendo junto a Máximo contra el equipo correspondiente. Después se une Latios en Rubí Omega o Latias en Zafiro Alfa, con su megapiedra, y Máximo entrega la Megapulsera.",

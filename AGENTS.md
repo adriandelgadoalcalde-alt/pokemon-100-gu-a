@@ -42,6 +42,22 @@
 9. **Utiliza evidencias reproducibles.** Cada mapeo debe guardar juego, región/revisión, fuente de código, campo/índice/offset o key, interpretación, prueba positiva, prueba negativa, matices y confianza. No se permiten «offsets adivinados».
 10. **No prometas trabajo en segundo plano ni digas que una versión es definitiva sin cumplir los criterios de aceptación.** Entrega cambios realmente probados, pendientes verificables y resultados honestos de CI.
 
+### Regla permanente del propietario sobre la forma de trabajar (12/11/2026)
+
+- **Trabajo continuo hasta el final.** El agente no se detiene hasta completar absolutamente todos los objetivos pendientes de
+  todos los juegos y de todos los guardados (lista viva en `research/completion/README.md` y en el informe de cobertura).
+  Al acabar un punto pasa al siguiente sin esperar; si una vía se bloquea, busca otra y lo anota.
+- **Sin hooks ni avisos programados** (decisión del propietario, 12/11/2026): el agente encadena el trabajo dentro del mismo
+  turno hasta vaciar `research/completion/pendientes.json`, la lista viva de lo que falta (estados `pendiente`, `hecho` y
+  `bloqueado` con motivo y fuente).
+- **Permiso total y sin confirmaciones.** El propietario autoriza todo lo necesario para el proyecto y no quiere que se le pida
+  confirmación: puede no estar presente (por ejemplo, durmiendo). Las decisiones técnicas se toman y se documentan.
+- Lo único que esta regla no cambia son los límites de privacidad y de seguridad de los puntos 3 y 4 (partidas, claves y datos
+  del entrenador nunca salen del equipo ni se reescriben) y que nada se presenta como hecho sin comprobarlo (puntos 9 y 10).
+- Material disponible en el PC del propietario: los 42 juegos en `<Keep>\Pokekeep\investigacion\juegos\<consola>\<juego>` y sus
+  partidas en `<Keep>\Pokekeep\saves-prueba\autorizadas\<consola>\<juego>` (todas salvo Verde japonés, Colosseum, XD y Battle
+  Revolution). Barrido por la interfaz real: `node scripts/sweep-local-saves.cjs <carpeta> [chromium|webkit] [dispositivo]`.
+
 ### Mandato de producto en una frase
 
 > Abrir el guardado del jugador, identificar automáticamente todo el progreso que sea **demostrable**, reconstruir una **ruta canónica de objetivos** y sus requisitos, indicar **qué falta exactamente y cómo conseguirlo paso a paso** desde el inicio hasta el postgame, y acreditar de manera conservadora el máximo nivel de tarjeta, sellos o equivalente en **cada una de las nueve generaciones**.

@@ -1,0 +1,2413 @@
+{
+ "acerca": "Momento, requisitos y orden cronológico de cada legendario fijo por edición. Lugar y nivel salen de PKHeX (legendarios-pkhex.json); esto añade cuándo se puede hacer y qué hace falta. fase: 0 historia, 2 posliga y legendarios, 7 eventos. orden: posición cronológica dentro de la fase. Fuentes: WikiDex (páginas de cada Pokémon y lugar) y Bulbapedia; contrastado con pret cuando hay desensamblado.",
+ "grupos": {
+  "RSE_REGIS": {
+   "377": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Tras conseguir Buceo (MO08, de Máximo en Algaria); se puede antes o después de la Liga.",
+    "requisitos": "Abre la Cámara Sellada (bajo el agua en la Ruta 134) con Wailord y Relicanth en el equipo (en Esmeralda, Relicanth primero y Wailord último). Luego, en las Ruinas del Desierto (Ruta 111), sigue las instrucciones en braille de la pared.",
+    "consejo": "Regirock nivel 40: lleva Pokémon para debilitarlo y muchas Ultra Balls."
+   },
+   "378": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Tras abrir la Cámara Sellada (igual que Regirock).",
+    "requisitos": "Cueva Insular (Ruta 105). En Rubí/Zafiro rodea la sala pegado a la pared; en Esmeralda espera dos minutos dentro sin moverte.",
+    "consejo": "Regice nivel 40."
+   },
+   "379": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Tras abrir la Cámara Sellada y tener Vuelo.",
+    "requisitos": "Tumba Antigua (Ruta 120): colócate en el centro de la sala y usa Vuelo (MO02).",
+    "consejo": "Registeel nivel 40."
+   }
+  }
+ },
+ "juegos": {
+  "RUBY": {
+   "grupos": [
+    "RSE_REGIS"
+   ],
+   "383": {
+    "fase": 0,
+    "orden": 150,
+    "cuando": "Durante la historia, antes de la octava medalla: tras el despertar de Groudon en Arrecípolis.",
+    "requisitos": "Entra en la Cueva Ancestral de Arrecípolis con Buceo (MO08); Groudon espera al fondo.",
+    "consejo": "Groudon nivel 45. Si lo debilitas no reaparece: guarda antes de entrar."
+   },
+   "384": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Pilar Celeste (Ruta 131): necesitas la Bici Carrera para cruzar el suelo frágil de los pisos superiores.",
+    "consejo": "Rayquaza nivel 70."
+   },
+   "381": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama: tu madre te pregunta por la tele y Latios empieza a vagar por Hoenn.",
+    "requisitos": "Es errante: cambia de ruta al cambiar de zona y huye en el primer turno. Usa la Pokédex (zona) para seguirlo y atrápalo con la Master Ball o retenlo con Mal de Ojo o Bloqueo.",
+    "consejo": "Latios nivel 40."
+   },
+   "380": {
+    "fase": 7,
+    "orden": 710,
+    "cuando": "Solo con el Ticket Eón (distribución de evento).",
+    "requisitos": "Con el Ticket Eón, el barco de Portual lleva a la Isla del Sur, donde espera Latias.",
+    "consejo": "Latias nivel 50. Sin el ticket no se puede en esta edición.",
+    "pokekeep": "En la mochila, añade el objeto clave Ticket Eón y activa la bandera de su evento (Pokekeep, editor de objetos y de banderas); luego habla con el marinero del puerto de Portual."
+   }
+  },
+  "SAPPHIRE": {
+   "grupos": [
+    "RSE_REGIS"
+   ],
+   "382": {
+    "fase": 0,
+    "orden": 150,
+    "cuando": "Durante la historia, antes de la octava medalla: tras el despertar de Kyogre en Arrecípolis.",
+    "requisitos": "Entra en la Cueva Ancestral de Arrecípolis con Buceo; Kyogre espera al fondo.",
+    "consejo": "Kyogre nivel 45. Si lo debilitas no reaparece: guarda antes de entrar."
+   },
+   "384": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Pilar Celeste (Ruta 131), con la Bici Carrera para los pisos de suelo frágil.",
+    "consejo": "Rayquaza nivel 70."
+   },
+   "380": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama: Latias empieza a vagar por Hoenn.",
+    "requisitos": "Es errante y huye: síguelo con la Pokédex y usa la Master Ball o Mal de Ojo o Bloqueo.",
+    "consejo": "Latias nivel 40."
+   },
+   "381": {
+    "fase": 7,
+    "orden": 710,
+    "cuando": "Solo con el Ticket Eón (distribución de evento).",
+    "requisitos": "Con el Ticket Eón, el barco de Portual lleva a la Isla del Sur, donde espera Latios.",
+    "consejo": "Latios nivel 50.",
+    "pokekeep": "En la mochila, añade el objeto clave Ticket Eón y activa la bandera de su evento (Pokekeep, editor de objetos y de banderas); luego habla con el marinero del puerto de Portual."
+   }
+  },
+  "EMERALD": {
+   "grupos": [
+    "RSE_REGIS"
+   ],
+   "384": {
+    "fase": 0,
+    "orden": 175,
+    "cuando": "Durante la historia, tras calmar a Groudon y Kyogre en Arrecípolis (antes de la octava medalla o en cualquier momento después).",
+    "requisitos": "Vuelve a la cima del Pilar Celeste (Ruta 131) con la Bici Carrera para los suelos frágiles.",
+    "consejo": "Rayquaza nivel 70: captúralo antes de los eventos de Kyogre y Groudon de la posliga, que lo piden."
+   },
+   "381": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama: tu madre pregunta de qué color era el Pokémon de la tele.",
+    "requisitos": "Si respondes azul vaga Latios; si respondes rojo, Latias. El elegido es errante y huye: síguelo con la Pokédex.",
+    "consejo": "Nivel 40. El otro de los dos solo con el Ticket Eón (Isla del Sur, nivel 50).",
+    "pokekeep": "Si el de la Isla del Sur es el que te falta, añade el Ticket Eón y activa su bandera de evento; o añádelo legal desde la Librería."
+   },
+   "380": {
+    "fase": 2,
+    "orden": 231,
+    "cuando": "Después del Hall de la Fama (el que no elegiste con tu madre, solo con el Ticket Eón).",
+    "requisitos": "Respuesta roja a tu madre = Latias errante. Si elegiste azul, Latias solo está en la Isla del Sur con el Ticket Eón (evento).",
+    "consejo": "Nivel 40 errante o 50 en la Isla del Sur.",
+    "pokekeep": "Si el de la Isla del Sur es el que te falta, añade el Ticket Eón y activa su bandera de evento; o añádelo legal desde la Librería."
+   },
+   "382": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después del Hall de la Fama y de capturar o vencer a Rayquaza.",
+    "requisitos": "En el Instituto Meteorológico (Ruta 119) un científico avisa de lluvias intensas: busca la ruta con lluvia y bucea hasta la Cueva Marina (rutas 105-108 y 124-129).",
+    "consejo": "Kyogre nivel 70. La cueva cambia de sitio cada día."
+   },
+   "383": {
+    "fase": 2,
+    "orden": 241,
+    "cuando": "Después del Hall de la Fama y de capturar o vencer a Rayquaza.",
+    "requisitos": "El Instituto Meteorológico avisa de una sequía: busca la ruta soleada y la Cueva Terrena (rutas 114-120).",
+    "consejo": "Groudon nivel 70. La cueva cambia de sitio cada día."
+   }
+  },
+  "FIRERED": {
+   "144": {
+    "fase": 0,
+    "orden": 160,
+    "cuando": "Durante la historia, en cuanto tengas Surf y Fuerza.",
+    "requisitos": "Islas Espuma (Ruta 20): mueve rocas con Fuerza para frenar las corrientes hasta el sótano más profundo.",
+    "consejo": "Articuno nivel 50."
+   },
+   "145": {
+    "fase": 0,
+    "orden": 155,
+    "cuando": "Durante la historia, con Surf.",
+    "requisitos": "Central de Energía: entra surfeando por la Ruta 10 (al norte de Pueblo Lavanda).",
+    "consejo": "Zapdos nivel 50."
+   },
+   "146": {
+    "fase": 0,
+    "orden": 170,
+    "cuando": "Tras la medalla de Isla Canela, al viajar a Archi7 (Isla Prima).",
+    "requisitos": "Monte Ascuas en Isla Prima: sube a la cima con Fuerza y Golpe Roca.",
+    "consejo": "Moltres nivel 50."
+   },
+   "150": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Después del Hall de la Fama y de activar la máquina de la Red de Celio (Rubí y Zafiro entregados en Archi7).",
+    "requisitos": "Cueva Celeste, al noroeste de Ciudad Celeste (Surf).",
+    "consejo": "Mewtwo nivel 70: lleva Ultra Balls y algo que lo duerma."
+   },
+   "243": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Tras recibir la Pokédex Nacional y si elegiste a Squirtle: Raikou vaga por Kanto.",
+    "requisitos": "Es errante y huye: síguelo con la Pokédex (zona) y usa Mal de Ojo o Bloqueo.",
+    "consejo": "Raikou nivel 50."
+   },
+   "244": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Tras recibir la Pokédex Nacional y si elegiste a Bulbasaur: Entei vaga por Kanto.",
+    "requisitos": "Es errante y huye: síguelo con la Pokédex y usa Mal de Ojo o Bloqueo.",
+    "consejo": "Entei nivel 50."
+   },
+   "245": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Tras recibir la Pokédex Nacional y si elegiste a Charmander: Suicune vaga por Kanto.",
+    "requisitos": "Es errante y huye: síguelo con la Pokédex y usa Mal de Ojo o Bloqueo.",
+    "consejo": "Suicune nivel 50."
+   }
+  },
+  "LEAFGREEN": {
+   "copia": "FIRERED"
+  },
+  "RED": {
+   "145": {
+    "fase": 0,
+    "orden": 150,
+    "cuando": "Durante la historia, en cuanto tengas Surf.",
+    "requisitos": "Central de Energía: surfea por el río de la Ruta 10, al norte de Pueblo Lavanda, y busca a Zapdos al fondo.",
+    "consejo": "Zapdos nivel 50."
+   },
+   "144": {
+    "fase": 0,
+    "orden": 160,
+    "cuando": "Durante la historia, con Surf y Fuerza (camino a Isla Canela por mar).",
+    "requisitos": "Islas Espuma (Ruta 20): empuja rocas con Fuerza a los agujeros para frenar las corrientes y llega al sótano donde está Articuno.",
+    "consejo": "Articuno nivel 50."
+   },
+   "146": {
+    "fase": 0,
+    "orden": 170,
+    "cuando": "Durante la historia, en la Calle Victoria camino de la Liga.",
+    "requisitos": "Calle Victoria: avanza resolviendo los interruptores con Fuerza; Moltres está en la segunda planta.",
+    "consejo": "Moltres nivel 50."
+   },
+   "150": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Cueva Celeste, al noroeste de Ciudad Celeste (Surf): baja hasta el fondo.",
+    "consejo": "Mewtwo nivel 70: guarda antes y usa la Master Ball si la conservas."
+   }
+  },
+  "GREEN": {
+   "copia": "RED"
+  },
+  "BLUE": {
+   "copia": "RED"
+  },
+  "YELLOW": {
+   "copia": "RED"
+  },
+  "GOLD": {
+   "243": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, tras la escena del sótano de la Torre Quemada (Ciudad Iris).",
+    "requisitos": "Raikou huye y empieza a vagar por las rutas de Johto. Síguelo con el mapa de la Pokégear y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Raikou nivel 40."
+   },
+   "244": {
+    "fase": 0,
+    "orden": 141,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Entei vaga por Johto; síguelo con el mapa de la Pokégear.",
+    "consejo": "Entei nivel 40."
+   },
+   "245": {
+    "fase": 0,
+    "orden": 142,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Suicune vaga por Johto; síguelo con el mapa de la Pokégear.",
+    "consejo": "Suicune nivel 40."
+   },
+   "250": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Tras liberar la Torre Radio de Ciudad Trigal: el director te da el Ala Arcoíris.",
+    "requisitos": "Con el Ala Arcoíris (y la medalla de Ciudad Iris) sube a la cima de la Torre Hojalata.",
+    "consejo": "Ho-Oh nivel 40."
+   },
+   "249": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Ya en Kanto (posliga): un anciano de Ciudad Plateada te da el Ala Plateada.",
+    "requisitos": "Islas Remolino (Surf, Torbellino y Cascada): Lugia está en lo más hondo.",
+    "consejo": "Lugia nivel 70."
+   }
+  },
+  "SILVER": {
+   "243": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, tras la escena del sótano de la Torre Quemada (Ciudad Iris).",
+    "requisitos": "Raikou huye y empieza a vagar por las rutas de Johto. Síguelo con el mapa de la Pokégear y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Raikou nivel 40."
+   },
+   "244": {
+    "fase": 0,
+    "orden": 141,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Entei vaga por Johto; síguelo con el mapa de la Pokégear.",
+    "consejo": "Entei nivel 40."
+   },
+   "245": {
+    "fase": 0,
+    "orden": 142,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Suicune vaga por Johto; síguelo con el mapa de la Pokégear.",
+    "consejo": "Suicune nivel 40."
+   },
+   "250": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Ya en Kanto (posliga): un anciano de Ciudad Plateada te da el Ala Arcoíris.",
+    "requisitos": "Con el Ala Arcoíris sube a la cima de la Torre Hojalata (Ciudad Iris).",
+    "consejo": "Ho-Oh nivel 70."
+   },
+   "249": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Tras liberar la Torre Radio de Ciudad Trigal: el director te da el Ala Plateada.",
+    "requisitos": "Islas Remolino (Surf, Torbellino y Cascada): Lugia está en lo más hondo.",
+    "consejo": "Lugia nivel 40."
+   }
+  },
+  "CRYSTAL": {
+   "243": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada (Ciudad Iris).",
+    "requisitos": "Raikou vaga por Johto; síguelo con el mapa de la Pokégear.",
+    "consejo": "Raikou nivel 40."
+   },
+   "244": {
+    "fase": 0,
+    "orden": 141,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Entei vaga por Johto; síguelo con el mapa de la Pokégear.",
+    "consejo": "Entei nivel 40."
+   },
+   "245": {
+    "fase": 0,
+    "orden": 185,
+    "cuando": "Tras liberar la Torre Radio de Ciudad Trigal y recibir la Campana Clara.",
+    "requisitos": "Suicune no vaga en Cristal: tras perseguirlo con Eusine por Johto, te espera en la Torre Hojalata.",
+    "consejo": "Suicune nivel 40."
+   },
+   "250": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Después de capturar a Raikou, Entei y Suicune: el sabio de la Torre Hojalata te da el Ala Arcoíris.",
+    "requisitos": "Sube a la cima de la Torre Hojalata con el Ala Arcoíris.",
+    "consejo": "Ho-Oh nivel 60."
+   },
+   "249": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Ya en Kanto (posliga): un anciano de Ciudad Plateada te da el Ala Plateada.",
+    "requisitos": "Islas Remolino (Surf, Torbellino y Cascada).",
+    "consejo": "Lugia nivel 60."
+   }
+  },
+  "DIAMOND": {
+   "480": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Tras el combate de la Columna Lanza (fin de la historia del Equipo Galaxia).",
+    "requisitos": "Caverna Agudeza, en el Lago Agudeza (al norte de Ciudad Puntaneva).",
+    "consejo": "Uxie nivel 50."
+   },
+   "482": {
+    "fase": 0,
+    "orden": 191,
+    "cuando": "Tras el combate de la Columna Lanza.",
+    "requisitos": "Caverna Valor, en el Lago Valor (Surf).",
+    "consejo": "Azelf nivel 50."
+   },
+   "481": {
+    "fase": 0,
+    "orden": 192,
+    "cuando": "Tras el combate de la Columna Lanza: visita la Caverna Veraz del Lago Veraz.",
+    "requisitos": "Mesprit huye y vaga por Sinnoh: síguelo con el marcamapa del Pokéreloj y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Mesprit nivel 50."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Posliga, en la Zona de Combate (requiere la Pokédex Nacional).",
+    "requisitos": "Acompaña a Bulgur por la Montaña Dura hasta el fondo; al terminar su exploración, Heatran aparece.",
+    "consejo": "Heatran nivel 70."
+   },
+   "487": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Con la Pokédex Nacional.",
+    "requisitos": "Cueva Retorno, al final del Sendero Primavera (Ruta 214): Giratina aparece al llegar a la última sala.",
+    "consejo": "Giratina nivel 70."
+   },
+   "488": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Posliga: tras el sueño del hijo del marinero de Ciudad Canal.",
+    "requisitos": "Viaja a la Isla Plenilunio; Cresselia huye y vaga por Sinnoh. Síguelo con el marcamapa.",
+    "consejo": "Cresselia nivel 50."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo (traídos al Parque Compi).",
+    "requisitos": "Templo Puntaneva, en Ciudad Puntaneva: baja hasta la última sala con los tres Regis.",
+    "consejo": "Regigigas nivel 70."
+   },
+   "483": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Final de la historia del Equipo Galaxia, en la cima del Monte Corona.",
+    "requisitos": "Columna Lanza: tras vencer a los comandantes y a Helio, Dialga aparece. Es obligatorio continuar.",
+    "consejo": "Dialga nivel 47. Si lo debilitas, vuelve tras la Liga; guarda antes."
+   }
+  },
+  "PEARL": {
+   "480": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Tras el combate de la Columna Lanza (fin de la historia del Equipo Galaxia).",
+    "requisitos": "Caverna Agudeza, en el Lago Agudeza (al norte de Ciudad Puntaneva).",
+    "consejo": "Uxie nivel 50."
+   },
+   "482": {
+    "fase": 0,
+    "orden": 191,
+    "cuando": "Tras el combate de la Columna Lanza.",
+    "requisitos": "Caverna Valor, en el Lago Valor (Surf).",
+    "consejo": "Azelf nivel 50."
+   },
+   "481": {
+    "fase": 0,
+    "orden": 192,
+    "cuando": "Tras el combate de la Columna Lanza: visita la Caverna Veraz del Lago Veraz.",
+    "requisitos": "Mesprit huye y vaga por Sinnoh: síguelo con el marcamapa del Pokéreloj y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Mesprit nivel 50."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Posliga, en la Zona de Combate (requiere la Pokédex Nacional).",
+    "requisitos": "Acompaña a Bulgur por la Montaña Dura hasta el fondo; al terminar su exploración, Heatran aparece.",
+    "consejo": "Heatran nivel 70."
+   },
+   "487": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Con la Pokédex Nacional.",
+    "requisitos": "Cueva Retorno, al final del Sendero Primavera (Ruta 214): Giratina aparece al llegar a la última sala.",
+    "consejo": "Giratina nivel 70."
+   },
+   "488": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Posliga: tras el sueño del hijo del marinero de Ciudad Canal.",
+    "requisitos": "Viaja a la Isla Plenilunio; Cresselia huye y vaga por Sinnoh. Síguelo con el marcamapa.",
+    "consejo": "Cresselia nivel 50."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo (traídos al Parque Compi).",
+    "requisitos": "Templo Puntaneva, en Ciudad Puntaneva: baja hasta la última sala con los tres Regis.",
+    "consejo": "Regigigas nivel 70."
+   },
+   "484": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Final de la historia del Equipo Galaxia, en la cima del Monte Corona.",
+    "requisitos": "Columna Lanza: tras vencer a los comandantes y a Helio, Palkia aparece.",
+    "consejo": "Palkia nivel 47."
+   }
+  },
+  "PLATINUM": {
+   "487": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Final de la historia del Equipo Galaxia, en el Mundo Distorsión.",
+    "requisitos": "Tras resolver el Mundo Distorsión, Giratina (forma Origen) te espera. Si lo debilitas o huyes, reaparece en la Cueva Retorno tras la Liga.",
+    "consejo": "Giratina nivel 47."
+   },
+   "480": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Al salir del Mundo Distorsión, habla con el profesor Serbal en Pueblo Arena.",
+    "requisitos": "Caverna Agudeza, en el Lago Agudeza.",
+    "consejo": "Uxie nivel 50."
+   },
+   "482": {
+    "fase": 0,
+    "orden": 191,
+    "cuando": "Al salir del Mundo Distorsión y hablar con Serbal.",
+    "requisitos": "Caverna Valor, en el Lago Valor.",
+    "consejo": "Azelf nivel 50."
+   },
+   "481": {
+    "fase": 0,
+    "orden": 192,
+    "cuando": "Al salir del Mundo Distorsión y hablar con Serbal: visita la Caverna Veraz.",
+    "requisitos": "Mesprit huye y vaga por Sinnoh: síguelo con el marcamapa del Pokéreloj.",
+    "consejo": "Mesprit nivel 50."
+   },
+   "483": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Tras ganar la Liga: habla con la anciana de Pueblo Caelestis y lleva la Diamansfera en la mochila.",
+    "requisitos": "Sube a la Columna Lanza (Monte Corona) con la Diamansfera.",
+    "consejo": "Dialga nivel 70."
+   },
+   "484": {
+    "fase": 2,
+    "orden": 221,
+    "cuando": "Tras ganar la Liga: habla con la anciana de Pueblo Caelestis y lleva la Lustresfera en la mochila.",
+    "requisitos": "Sube a la Columna Lanza con la Lustresfera.",
+    "consejo": "Palkia nivel 70."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Posliga, en la Zona de Combate (Pokédex Nacional).",
+    "requisitos": "Acompaña a Bulgur por la Montaña Dura; al acabar, Heatran aparece al fondo.",
+    "consejo": "Heatran nivel 50."
+   },
+   "488": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Posliga: tras el sueño del hijo del marinero de Ciudad Canal.",
+    "requisitos": "Isla Plenilunio; luego Cresselia vaga por Sinnoh.",
+    "consejo": "Cresselia nivel 50."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo.",
+    "requisitos": "Templo Puntaneva, en Ciudad Puntaneva, en la última sala.",
+    "consejo": "Regigigas nivel 1 en Platino (no es un error del juego)."
+   }
+  },
+  "HEARTGOLD": {
+   "243": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, tras la escena del sótano de la Torre Quemada (Ciudad Iris).",
+    "requisitos": "Raikou vaga por las rutas de Johto: síguelo con el mapa del Pokégear y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Raikou nivel 40."
+   },
+   "244": {
+    "fase": 0,
+    "orden": 141,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Entei vaga por las rutas de Johto: síguelo con el mapa del Pokégear.",
+    "consejo": "Entei nivel 40."
+   },
+   "245": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Tras la Torre Quemada aparece varias veces; ya en Kanto, combate por fin en el Cabo Celeste (Ruta 25).",
+    "requisitos": "Sigue las apariciones de Suicune con Eusine por Johto y Kanto hasta la Ruta 25, al norte de Ciudad Celeste.",
+    "consejo": "Suicune nivel 40; no huye en ese combate."
+   },
+   "144": {
+    "fase": 2,
+    "orden": 225,
+    "cuando": "Ya en Kanto, con Surf y Fuerza.",
+    "requisitos": "Islas Espuma (Ruta 20), en la parte más profunda.",
+    "consejo": "Articuno nivel 50."
+   },
+   "145": {
+    "fase": 2,
+    "orden": 226,
+    "cuando": "En Kanto, después de conseguir las 8 medallas de Kanto.",
+    "requisitos": "Ruta 10, en la puerta de la Central de Energía (Surf).",
+    "consejo": "Zapdos nivel 50."
+   },
+   "146": {
+    "fase": 2,
+    "orden": 235,
+    "cuando": "Con las 16 medallas (acceso al Monte Plateado).",
+    "requisitos": "Cueva Monte Plateado (Monte Plateado).",
+    "consejo": "Moltres nivel 50."
+   },
+   "150": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Con las 16 medallas.",
+    "requisitos": "Cueva Celeste (al noroeste de Ciudad Celeste). Si se debilita o huyes, reaparece tras vencer de nuevo al Alto Mando.",
+    "consejo": "Mewtwo nivel 70."
+   },
+   "384": {
+    "fase": 2,
+    "orden": 275,
+    "cuando": "Tras capturar a Kyogre y Groudon (el de la otra edición, intercambiado) y enseñárselos al profesor Oak en Pueblo Paleta: te da la Esfera Verde.",
+    "requisitos": "Con la Esfera Verde, vuelve a la Torre Oculta (Paso Acantilado, Ciudad Orquídea / Ruta 47).",
+    "consejo": "Rayquaza nivel 50."
+   },
+   "250": {
+    "fase": 0,
+    "orden": 185,
+    "cuando": "Durante la historia, tras recibir el Ala Arcoíris y la Campana Clara (Torre Radio).",
+    "requisitos": "Sube a la cima de la Torre Campana de Ciudad Iris.",
+    "consejo": "Ho-Oh nivel 45: es obligatorio en la historia; si lo debilitas, vuelve tras el Alto Mando."
+   },
+   "249": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Ya en Kanto (posliga): el anciano de Ciudad Plateada te da el Ala Plateada.",
+    "requisitos": "Islas Remolino (Surf, Torbellino y Cascada), en la sala más profunda.",
+    "consejo": "Lugia nivel 70."
+   },
+   "382": {
+    "fase": 2,
+    "orden": 270,
+    "cuando": "Con las 8 medallas de Kanto, tras vencer a Rojo en el Monte Plateado y recibir el inicial de Kanto del profesor Oak: el Señor Pokémon (Ruta 30) te da la Esfera Azul.",
+    "requisitos": "Con la Esfera Azul, ve a la Torre Oculta: entra por el Paso Acantilado de Ciudad Orquídea y sigue por la Ruta 47.",
+    "consejo": "Kyogre nivel 50."
+   },
+   "380": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Con la Pokédex Nacional, tras hablar con Máximo al salir del Club de Fans de Pokémon de Ciudad Carmín.",
+    "requisitos": "Latias vaga por las rutas de Kanto: síguelo con el mapa del Pokégear.",
+    "consejo": "Latias nivel 35."
+   }
+  },
+  "SOULSILVER": {
+   "243": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, tras la escena del sótano de la Torre Quemada (Ciudad Iris).",
+    "requisitos": "Raikou vaga por las rutas de Johto: síguelo con el mapa del Pokégear y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Raikou nivel 40."
+   },
+   "244": {
+    "fase": 0,
+    "orden": 141,
+    "cuando": "Durante la historia, tras la escena de la Torre Quemada.",
+    "requisitos": "Entei vaga por las rutas de Johto: síguelo con el mapa del Pokégear.",
+    "consejo": "Entei nivel 40."
+   },
+   "245": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Tras la Torre Quemada aparece varias veces; ya en Kanto, combate por fin en el Cabo Celeste (Ruta 25).",
+    "requisitos": "Sigue las apariciones de Suicune con Eusine por Johto y Kanto hasta la Ruta 25, al norte de Ciudad Celeste.",
+    "consejo": "Suicune nivel 40; no huye en ese combate."
+   },
+   "144": {
+    "fase": 2,
+    "orden": 225,
+    "cuando": "Ya en Kanto, con Surf y Fuerza.",
+    "requisitos": "Islas Espuma (Ruta 20), en la parte más profunda.",
+    "consejo": "Articuno nivel 50."
+   },
+   "145": {
+    "fase": 2,
+    "orden": 226,
+    "cuando": "En Kanto, después de conseguir las 8 medallas de Kanto.",
+    "requisitos": "Ruta 10, en la puerta de la Central de Energía (Surf).",
+    "consejo": "Zapdos nivel 50."
+   },
+   "146": {
+    "fase": 2,
+    "orden": 235,
+    "cuando": "Con las 16 medallas (acceso al Monte Plateado).",
+    "requisitos": "Cueva Monte Plateado (Monte Plateado).",
+    "consejo": "Moltres nivel 50."
+   },
+   "150": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Con las 16 medallas.",
+    "requisitos": "Cueva Celeste (al noroeste de Ciudad Celeste). Si se debilita o huyes, reaparece tras vencer de nuevo al Alto Mando.",
+    "consejo": "Mewtwo nivel 70."
+   },
+   "384": {
+    "fase": 2,
+    "orden": 275,
+    "cuando": "Tras capturar a Kyogre y Groudon (el de la otra edición, intercambiado) y enseñárselos al profesor Oak en Pueblo Paleta: te da la Esfera Verde.",
+    "requisitos": "Con la Esfera Verde, vuelve a la Torre Oculta (Paso Acantilado, Ciudad Orquídea / Ruta 47).",
+    "consejo": "Rayquaza nivel 50."
+   },
+   "249": {
+    "fase": 0,
+    "orden": 185,
+    "cuando": "Durante la historia, tras recibir el Ala Plateada y la Campana Oleaje (Torre Radio).",
+    "requisitos": "Islas Remolino: Lugia espera en la sala más profunda.",
+    "consejo": "Lugia nivel 45: es obligatorio en la historia; si lo debilitas, vuelve tras el Alto Mando."
+   },
+   "250": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Ya en Kanto (posliga): el anciano de Ciudad Plateada te da el Ala Arcoíris.",
+    "requisitos": "Cima de la Torre Campana de Ciudad Iris.",
+    "consejo": "Ho-Oh nivel 70."
+   },
+   "383": {
+    "fase": 2,
+    "orden": 270,
+    "cuando": "Con las 8 medallas de Kanto, tras vencer a Rojo y recibir el inicial de Kanto: el Señor Pokémon (Ruta 30) te da la Esfera Roja.",
+    "requisitos": "Con la Esfera Roja, ve a la Torre Oculta (Paso Acantilado de Ciudad Orquídea y Ruta 47).",
+    "consejo": "Groudon nivel 50."
+   },
+   "381": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Con la Pokédex Nacional, tras hablar con Máximo al salir del Club de Fans de Pokémon de Ciudad Carmín.",
+    "requisitos": "Latios vaga por las rutas de Kanto: síguelo con el mapa del Pokégear.",
+    "consejo": "Latios nivel 35."
+   }
+  },
+  "BLACK": {
+   "638": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después del Hall de la Fama; es el primero de los tres Espadachines Místicos.",
+    "requisitos": "Estancia Orientación, dentro de la Cueva Loza (Surf y Fuerza).",
+    "consejo": "Cobalion nivel 42."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Después del Hall de la Fama, tras haber visto a Cobalion.",
+    "requisitos": "Cámara de Pruebas, en la Calle Victoria.",
+    "consejo": "Terrakion nivel 42."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Después del Hall de la Fama, tras haber visto a Cobalion y a Terrakion.",
+    "requisitos": "Claro Filosofía, en el Bosque Azulejo.",
+    "consejo": "Virizion nivel 42."
+   },
+   "646": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Boquete Gigante (Ruta 22, con Surf): cruza el bosque interior hasta la cueva del fondo.",
+    "consejo": "Kyurem nivel 75: el más fuerte de la edición."
+   },
+   "645": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Tornadus y Thundurus en el equipo (uno de ellos intercambiado desde la otra edición).",
+    "requisitos": "Santuario Abundancia (Ruta 14).",
+    "consejo": "Landorus nivel 70."
+   },
+   "643": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Final de la historia, en el Castillo de N.",
+    "requisitos": "Antes del combate contra N en su palacio, el Orbe Claro (te lo da Aloe en Ciudad Esmalte tras el Castillo Ancestral) despierta a Reshiram: hay que capturarlo para seguir. Si tienes el equipo y las cajas llenos, aparece después en la Torre Duodraco.",
+    "consejo": "Reshiram nivel 50."
+   },
+   "641": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Con las 8 medallas: la recepcionista del acceso a la Ruta 10 avisa de un clima extraño en la Ruta 7.",
+    "requisitos": "Ve a la casa de la anciana de la Ruta 7; Tornadus aparece y empieza a vagar por Teselia. Síguelo con el mapa del Navegador C-Gear y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Tornadus nivel 40."
+   },
+   "642": {
+    "fase": 7,
+    "orden": 720,
+    "cuando": "Exclusivo de Blanco.",
+    "requisitos": "Solo por intercambio desde Blanco (o desde Negro 2/Blanco 2 vía el RAdar Pokémon).",
+    "consejo": "Hace falta para Landorus.",
+    "pokekeep": "Añádelo legal desde la Librería (origen de la otra edición)."
+   }
+  },
+  "WHITE": {
+   "638": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después del Hall de la Fama; es el primero de los tres Espadachines Místicos.",
+    "requisitos": "Estancia Orientación, dentro de la Cueva Loza (Surf y Fuerza).",
+    "consejo": "Cobalion nivel 42."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Después del Hall de la Fama, tras haber visto a Cobalion.",
+    "requisitos": "Cámara de Pruebas, en la Calle Victoria.",
+    "consejo": "Terrakion nivel 42."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Después del Hall de la Fama, tras haber visto a Cobalion y a Terrakion.",
+    "requisitos": "Claro Filosofía, en el Bosque Azulejo.",
+    "consejo": "Virizion nivel 42."
+   },
+   "646": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Boquete Gigante (Ruta 22, con Surf): cruza el bosque interior hasta la cueva del fondo.",
+    "consejo": "Kyurem nivel 75: el más fuerte de la edición."
+   },
+   "645": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Tornadus y Thundurus en el equipo (uno de ellos intercambiado desde la otra edición).",
+    "requisitos": "Santuario Abundancia (Ruta 14).",
+    "consejo": "Landorus nivel 70."
+   },
+   "644": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Final de la historia, en el Castillo de N.",
+    "requisitos": "Antes del combate contra N en su palacio, el Orbe Oscuro (te lo da Aloe en Ciudad Esmalte tras el Castillo Ancestral) despierta a Zekrom: hay que capturarlo para seguir. Si tienes el equipo y las cajas llenos, aparece después en la Torre Duodraco.",
+    "consejo": "Zekrom nivel 50."
+   },
+   "642": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Con las 8 medallas: la recepcionista del acceso a la Ruta 10 avisa de un clima extraño en la Ruta 7.",
+    "requisitos": "Ve a la casa de la anciana de la Ruta 7; Thundurus aparece y empieza a vagar por Teselia. Síguelo con el mapa del Navegador C-Gear.",
+    "consejo": "Thundurus nivel 40."
+   },
+   "641": {
+    "fase": 7,
+    "orden": 720,
+    "cuando": "Exclusivo de Negro.",
+    "requisitos": "Solo por intercambio desde Negro.",
+    "consejo": "Hace falta para Landorus.",
+    "pokekeep": "Añádelo legal desde la Librería (origen de la otra edición)."
+   }
+  },
+  "BLACK2": {
+   "638": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruta 13, en un claro al que se llega por la playa.",
+    "consejo": "Cobalion nivel 45."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruta 22.",
+    "consejo": "Terrakion nivel 45."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruta 11.",
+    "consejo": "Virizion nivel 45."
+   },
+   "480": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Después del Hall de la Fama, tras entrar en la Cueva Psique (Ruta 20, junto a Pueblo Ocre).",
+    "requisitos": "Uxie aparece en un punto concreto delante del Museo de Ciudad Esmalte.",
+    "consejo": "Uxie nivel 65."
+   },
+   "481": {
+    "fase": 2,
+    "orden": 221,
+    "cuando": "Tras entrar en la Cueva Psique.",
+    "requisitos": "En la cima de la Torre de los Cielos, en un punto concreto.",
+    "consejo": "Mesprit nivel 65."
+   },
+   "482": {
+    "fase": 2,
+    "orden": 222,
+    "cuando": "Tras entrar en la Cueva Psique.",
+    "requisitos": "En el lado izquierdo de la Ruta 23, en un punto concreto.",
+    "consejo": "Azelf nivel 65."
+   },
+   "377": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Activa la Clave Pico Roca en el sistema de claves (Teselia Link) y entra en las Ruinas Subterráneas del Túnel Yakón: desde el centro, 6 pasos abajo y 9 a la derecha, y pulsa abajo para abrir la Sala Pico Roca.",
+    "consejo": "Regirock nivel 65."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo.",
+    "requisitos": "Sótano del Monte Tuerca.",
+    "consejo": "Regigigas nivel 68."
+   },
+   "488": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después del Hall de la Fama: resuelve el puzle de las casas de Villa Horroris (Ruta 13) para recibir la Pluma Lunar.",
+    "requisitos": "Lleva la Pluma Lunar al Puente Progreso; Cresselia aparece en el centro.",
+    "consejo": "Cresselia nivel 68."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 241,
+    "cuando": "Después del Hall de la Fama: recoge la Piedra Magma en la Ruta 18.",
+    "requisitos": "Llévala a la Montaña Reversia; Heatran aparece en la sala del fondo.",
+    "consejo": "Heatran nivel 68."
+   },
+   "644": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Después del Hall de la Fama: entra en el Palacio de N desde la Calle Victoria, vence a N y a su Zekrom y te da el Orbe Oscuro.",
+    "requisitos": "Lleva el Orbe Oscuro a lo alto de la Torre Duodraco para invocar a Zekrom.",
+    "consejo": "Zekrom nivel 70; captúralo antes de Kyurem."
+   },
+   "646": {
+    "fase": 2,
+    "orden": 265,
+    "cuando": "Después de capturar a Zekrom en la Torre Duodraco.",
+    "requisitos": "Boquete Gigante, en la cueva del fondo.",
+    "consejo": "Kyurem nivel 70."
+   },
+   "381": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Solar de los Sueños (al lado de Ciudad Esmalte), en la zona del fondo.",
+    "consejo": "Latios nivel 68."
+   },
+   "379": {
+    "fase": 2,
+    "orden": 231,
+    "cuando": "Con la Clave Hierro activada en el Teselia Link (llave de Registeel).",
+    "requisitos": "Ruinas Subterráneas, Sala Hierro.",
+    "consejo": "Registeel nivel 65."
+   },
+   "378": {
+    "fase": 2,
+    "orden": 232,
+    "cuando": "Con la Clave Iceberg, que hay que recibir de un amigo con Blanco 2.",
+    "requisitos": "Ruinas Subterráneas, Sala Iceberg.",
+    "consejo": "Regice nivel 65."
+   }
+  },
+  "WHITE2": {
+   "638": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruta 13, en un claro al que se llega por la playa.",
+    "consejo": "Cobalion nivel 45."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruta 22.",
+    "consejo": "Terrakion nivel 45."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Ruta 11.",
+    "consejo": "Virizion nivel 45."
+   },
+   "480": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Después del Hall de la Fama, tras entrar en la Cueva Psique (Ruta 20, junto a Pueblo Ocre).",
+    "requisitos": "Uxie aparece en un punto concreto delante del Museo de Ciudad Esmalte.",
+    "consejo": "Uxie nivel 65."
+   },
+   "481": {
+    "fase": 2,
+    "orden": 221,
+    "cuando": "Tras entrar en la Cueva Psique.",
+    "requisitos": "En la cima de la Torre de los Cielos, en un punto concreto.",
+    "consejo": "Mesprit nivel 65."
+   },
+   "482": {
+    "fase": 2,
+    "orden": 222,
+    "cuando": "Tras entrar en la Cueva Psique.",
+    "requisitos": "En el lado izquierdo de la Ruta 23, en un punto concreto.",
+    "consejo": "Azelf nivel 65."
+   },
+   "377": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Activa la Clave Pico Roca en el sistema de claves (Teselia Link) y entra en las Ruinas Subterráneas del Túnel Yakón: desde el centro, 6 pasos abajo y 9 a la derecha, y pulsa abajo para abrir la Sala Pico Roca.",
+    "consejo": "Regirock nivel 65."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo.",
+    "requisitos": "Sótano del Monte Tuerca.",
+    "consejo": "Regigigas nivel 68."
+   },
+   "488": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después del Hall de la Fama: resuelve el puzle de las casas de Villa Horroris (Ruta 13) para recibir la Pluma Lunar.",
+    "requisitos": "Lleva la Pluma Lunar al Puente Progreso; Cresselia aparece en el centro.",
+    "consejo": "Cresselia nivel 68."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 241,
+    "cuando": "Después del Hall de la Fama: recoge la Piedra Magma en la Ruta 18.",
+    "requisitos": "Llévala a la Montaña Reversia; Heatran aparece en la sala del fondo.",
+    "consejo": "Heatran nivel 68."
+   },
+   "643": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Después del Hall de la Fama: entra en el Palacio de N desde la Calle Victoria, vence a N y a su Reshiram y te da el Orbe Claro.",
+    "requisitos": "Lleva el Orbe Claro a lo alto de la Torre Duodraco para invocar a Reshiram.",
+    "consejo": "Reshiram nivel 70; captúralo antes de Kyurem."
+   },
+   "646": {
+    "fase": 2,
+    "orden": 265,
+    "cuando": "Después de capturar a Reshiram en la Torre Duodraco.",
+    "requisitos": "Boquete Gigante, en la cueva del fondo.",
+    "consejo": "Kyurem nivel 70."
+   },
+   "380": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Solar de los Sueños, en la zona del fondo.",
+    "consejo": "Latias nivel 68."
+   },
+   "378": {
+    "fase": 2,
+    "orden": 231,
+    "cuando": "Con la Clave Iceberg activada en el Teselia Link (llave de Regice).",
+    "requisitos": "Ruinas Subterráneas, Sala Iceberg.",
+    "consejo": "Regice nivel 65."
+   },
+   "379": {
+    "fase": 2,
+    "orden": 232,
+    "cuando": "Con la Clave Hierro, que hay que recibir de un amigo con Negro 2.",
+    "requisitos": "Ruinas Subterráneas, Sala Hierro.",
+    "consejo": "Registeel nivel 65."
+   }
+  },
+  "X": {
+   "718": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Cueva Desenlace (Ruta 18): baja hasta la sala más profunda.",
+    "consejo": "Zygarde nivel 70."
+   },
+   "150": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Después de vencer al Alto Mando.",
+    "requisitos": "Mazmorra Rara: se llega surfeando desde la Aldea Pokémon (Ruta 20).",
+    "consejo": "Mewtwo nivel 70; lleva la Master Ball si la conservas."
+   },
+   "144": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de la Liga, solo si elegiste a Chespin como inicial.",
+    "requisitos": "El ave vaga por Kalos y huye: encuéntrala 11 veces por las rutas y acabará esperando en la Cueva Talasia (al norte de la Bahía Azul), donde ya no huye. Las otras dos aves, por intercambio.",
+    "consejo": "Nivel 70."
+   },
+   "145": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de la Liga, solo si elegiste a Fennekin como inicial.",
+    "requisitos": "El ave vaga por Kalos y huye: encuéntrala 11 veces por las rutas y acabará esperando en la Cueva Talasia (al norte de la Bahía Azul), donde ya no huye. Las otras dos aves, por intercambio.",
+    "consejo": "Nivel 70."
+   },
+   "146": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de la Liga, solo si elegiste a Froakie como inicial.",
+    "requisitos": "El ave vaga por Kalos y huye: encuéntrala 11 veces por las rutas y acabará esperando en la Cueva Talasia (al norte de la Bahía Azul), donde ya no huye. Las otras dos aves, por intercambio.",
+    "consejo": "Nivel 70."
+   },
+   "716": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Final de la historia, en la Guarida del Team Flare.",
+    "requisitos": "Xerneas despierta al final del arma definitiva del Team Flare: hay que capturarlo para seguir (si lo debilitas, el combate se repite).",
+    "consejo": "Xerneas nivel 50; la Master Ball no hace falta, el índice de captura es alto."
+   }
+  },
+  "Y": {
+   "718": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Cueva Desenlace (Ruta 18): baja hasta la sala más profunda.",
+    "consejo": "Zygarde nivel 70."
+   },
+   "150": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Después de vencer al Alto Mando.",
+    "requisitos": "Mazmorra Rara: se llega surfeando desde la Aldea Pokémon (Ruta 20).",
+    "consejo": "Mewtwo nivel 70; lleva la Master Ball si la conservas."
+   },
+   "144": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de la Liga, solo si elegiste a Chespin como inicial.",
+    "requisitos": "El ave vaga por Kalos y huye: encuéntrala 11 veces por las rutas y acabará esperando en la Cueva Talasia (al norte de la Bahía Azul), donde ya no huye. Las otras dos aves, por intercambio.",
+    "consejo": "Nivel 70."
+   },
+   "145": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de la Liga, solo si elegiste a Fennekin como inicial.",
+    "requisitos": "El ave vaga por Kalos y huye: encuéntrala 11 veces por las rutas y acabará esperando en la Cueva Talasia (al norte de la Bahía Azul), donde ya no huye. Las otras dos aves, por intercambio.",
+    "consejo": "Nivel 70."
+   },
+   "146": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de la Liga, solo si elegiste a Froakie como inicial.",
+    "requisitos": "El ave vaga por Kalos y huye: encuéntrala 11 veces por las rutas y acabará esperando en la Cueva Talasia (al norte de la Bahía Azul), donde ya no huye. Las otras dos aves, por intercambio.",
+    "consejo": "Nivel 70."
+   },
+   "717": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Final de la historia, en la Guarida del Team Flare.",
+    "requisitos": "Yveltal despierta al final del arma definitiva del Team Flare: hay que capturarlo para seguir.",
+    "consejo": "Yveltal nivel 50."
+   }
+  },
+  "OMEGARUBY": {
+   "377": {
+    "fase": 2,
+    "orden": 205,
+    "cuando": "Tras conseguir Buceo; antes o después de la Liga.",
+    "requisitos": "Abre la Cámara Sellada (bajo el agua en la Ruta 134) y lee el braille. Regirock está en las Ruinas del Desierto (Ruta 111): usa Golpe Roca en el centro de la sala.",
+    "consejo": "Regirock nivel 40."
+   },
+   "378": {
+    "fase": 2,
+    "orden": 206,
+    "cuando": "Tras abrir la Cámara Sellada.",
+    "requisitos": "Cueva Insular (Ruta 105): espera dentro sin moverte hasta que se abra la puerta.",
+    "consejo": "Regice nivel 40."
+   },
+   "379": {
+    "fase": 2,
+    "orden": 207,
+    "cuando": "Tras abrir la Cámara Sellada.",
+    "requisitos": "Tumba Antigua (Ruta 120): ponte en el centro y usa Vuelo.",
+    "consejo": "Registeel nivel 40."
+   },
+   "384": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Durante el Episodio Delta (posliga).",
+    "requisitos": "En la cima del Pilar Celeste, tras despertarlo con Zinnia. Es obligatorio para seguir el episodio.",
+    "consejo": "Rayquaza nivel 70."
+   },
+   "386": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Al terminar el Episodio Delta.",
+    "requisitos": "Vuelve con Rayquaza (megaevolucionado) al espacio y de nuevo a la cima del Pilar Celeste: Deoxys te espera.",
+    "consejo": "Deoxys nivel 80."
+   },
+   "381": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, al cruzar el mar de la Ruta 118.",
+    "requisitos": "El otro Pokémon eón te lleva a la Isla del Sur; tras vencer al equipo villano, este se une a tu equipo (regalo). Después te da la Flauta Eón para volar.",
+    "consejo": "Nivel 30, regalo."
+   },
+   "380": {
+    "fase": 7,
+    "orden": 710,
+    "cuando": "Solo con el Ticket Eón (evento).",
+    "requisitos": "Isla del Sur con el Ticket Eón.",
+    "consejo": "Distribución de evento.",
+    "pokekeep": "Añade el Ticket Eón a la mochila (objeto clave) o el Pokémon legal desde la Librería."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "De día, tras capturar o vencer a Groudon/Kyogre y con Regirock, Regice y Registeel en el equipo.",
+    "requisitos": "Cueva Insular (Ruta 105). Regice debe tener mote y llevar un Porcehelado, una Bola de Nieve o un Antiderretir.",
+    "consejo": "Nivel 50."
+   },
+   "250": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Malvamar: lleva el escáner del sótano al capitán de Ciudad Portual, que te da el Cascabel Claro; tócalo en la cubierta. Necesitas la Campana Clara.",
+    "consejo": "Nivel 50."
+   },
+   "249": {
+    "fase": 7,
+    "orden": 730,
+    "cuando": "Exclusivo de Zafiro Alfa: por intercambio.",
+    "requisitos": "Solo por intercambio desde la otra edición.",
+    "consejo": "",
+    "pokekeep": "Añádelo legal desde la Librería."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 225,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Portal al fondo de la Gruta Solar, después de lo de Groudon/Kyogre primigenios.",
+    "consejo": "Nivel 50."
+   },
+   "480": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 20:00 a 21:00.",
+    "consejo": "Nivel 50."
+   },
+   "481": {
+    "fase": 2,
+    "orden": 231,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 04:00 a 19:59. Mesprit solo está entre las 4:00 y las 20:00.",
+    "consejo": "Nivel 50."
+   },
+   "482": {
+    "fase": 2,
+    "orden": 232,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 21:00 a 03:59.",
+    "consejo": "Nivel 50."
+   },
+   "484": {
+    "fase": 2,
+    "orden": 235,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Grieta al sur de Pueblo Azuliza volando, con Uxie, Mesprit y Azelf en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "483": {
+    "fase": 7,
+    "orden": 730,
+    "cuando": "Exclusivo de Zafiro Alfa: por intercambio.",
+    "requisitos": "Solo por intercambio desde la otra edición.",
+    "consejo": "",
+    "pokekeep": "Añádelo legal desde la Librería."
+   },
+   "487": {
+    "fase": 2,
+    "orden": 236,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "La misma grieta, con Dialga y Palkia en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "638": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Llanura Sinnombre junto a Pueblo Oromar, con tres Pokémon de esfuerzo máximo; domingo, miércoles y viernes. Solo aparece los miércoles, viernes y domingos.",
+    "consejo": "Nivel 50."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 251,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; martes y sábado. Solo aparece los martes y sábados.",
+    "consejo": "Nivel 50."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 252,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; lunes y jueves. Solo aparece los lunes y jueves.",
+    "consejo": "Nivel 50."
+   },
+   "643": {
+    "fase": 2,
+    "orden": 255,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Incierta junto a Ciudad Malvalona, con un Pokémon de nivel 100 en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "646": {
+    "fase": 2,
+    "orden": 256,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Boquete Irregular junto a Pueblo Pardal, con Reshiram y Zekrom en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "243": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Bosque Virgen junto a Ciudad Férrica, con Lugia o Ho-Oh en el equipo; minutos 00-20 de cada hora.",
+    "consejo": "Nivel 50."
+   },
+   "244": {
+    "fase": 2,
+    "orden": 261,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Bosque Virgen, con Lugia o Ho-Oh en el equipo; minutos 20-40 de cada hora.",
+    "consejo": "Nivel 50."
+   },
+   "245": {
+    "fase": 2,
+    "orden": 262,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Bosque Virgen, con Lugia o Ho-Oh en el equipo; minutos 40-00 de cada hora.",
+    "consejo": "Nivel 50."
+   },
+   "383": {
+    "fase": 0,
+    "orden": 160,
+    "cuando": "Durante la historia, antes de la octava medalla.",
+    "requisitos": "Cueva Ancestral de Arrecípolis: tras la regresión primigenia de Groudon, enfréntate a él al fondo.",
+    "consejo": "Groudon nivel 45; si lo debilitas, vuelve tras la Liga."
+   }
+  },
+  "ALPHASAPPHIRE": {
+   "377": {
+    "fase": 2,
+    "orden": 205,
+    "cuando": "Tras conseguir Buceo; antes o después de la Liga.",
+    "requisitos": "Abre la Cámara Sellada (bajo el agua en la Ruta 134) y lee el braille. Regirock está en las Ruinas del Desierto (Ruta 111): usa Golpe Roca en el centro de la sala.",
+    "consejo": "Regirock nivel 40."
+   },
+   "378": {
+    "fase": 2,
+    "orden": 206,
+    "cuando": "Tras abrir la Cámara Sellada.",
+    "requisitos": "Cueva Insular (Ruta 105): espera dentro sin moverte hasta que se abra la puerta.",
+    "consejo": "Regice nivel 40."
+   },
+   "379": {
+    "fase": 2,
+    "orden": 207,
+    "cuando": "Tras abrir la Cámara Sellada.",
+    "requisitos": "Tumba Antigua (Ruta 120): ponte en el centro y usa Vuelo.",
+    "consejo": "Registeel nivel 40."
+   },
+   "384": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Durante el Episodio Delta (posliga).",
+    "requisitos": "En la cima del Pilar Celeste, tras despertarlo con Zinnia. Es obligatorio para seguir el episodio.",
+    "consejo": "Rayquaza nivel 70."
+   },
+   "386": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Al terminar el Episodio Delta.",
+    "requisitos": "Vuelve con Rayquaza (megaevolucionado) al espacio y de nuevo a la cima del Pilar Celeste: Deoxys te espera.",
+    "consejo": "Deoxys nivel 80."
+   },
+   "380": {
+    "fase": 0,
+    "orden": 140,
+    "cuando": "Durante la historia, al cruzar el mar de la Ruta 118.",
+    "requisitos": "El otro Pokémon eón te lleva a la Isla del Sur; tras vencer al equipo villano, este se une a tu equipo (regalo). Después te da la Flauta Eón para volar.",
+    "consejo": "Nivel 30, regalo."
+   },
+   "381": {
+    "fase": 7,
+    "orden": 710,
+    "cuando": "Solo con el Ticket Eón (evento).",
+    "requisitos": "Isla del Sur con el Ticket Eón.",
+    "consejo": "Distribución de evento.",
+    "pokekeep": "Añade el Ticket Eón a la mochila (objeto clave) o el Pokémon legal desde la Librería."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "De día, tras capturar o vencer a Groudon/Kyogre y con Regirock, Regice y Registeel en el equipo.",
+    "requisitos": "Cueva Insular (Ruta 105). Regice debe tener mote y llevar un Porcehelado, una Bola de Nieve o un Antiderretir.",
+    "consejo": "Nivel 50."
+   },
+   "250": {
+    "fase": 7,
+    "orden": 730,
+    "cuando": "Exclusivo de Rubí Omega: por intercambio.",
+    "requisitos": "Solo por intercambio desde la otra edición.",
+    "consejo": "",
+    "pokekeep": "Añádelo legal desde la Librería."
+   },
+   "249": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Malvamar: lleva el escáner del sótano al capitán de Ciudad Portual, que te da el Cascabel Oleaje; tócalo en el sótano submarino. Necesitas la Campana Oleaje.",
+    "consejo": "Nivel 50."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 225,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Portal al fondo de la Gruta Solar, después de lo de Groudon/Kyogre primigenios.",
+    "consejo": "Nivel 50."
+   },
+   "480": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 20:00 a 21:00.",
+    "consejo": "Nivel 50."
+   },
+   "481": {
+    "fase": 2,
+    "orden": 231,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 04:00 a 19:59. Mesprit solo está entre las 4:00 y las 20:00.",
+    "consejo": "Nivel 50."
+   },
+   "482": {
+    "fase": 2,
+    "orden": 232,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Ignota junto a Arrecípolis, con tres Pokémon de amistad máxima; de 21:00 a 03:59.",
+    "consejo": "Nivel 50."
+   },
+   "484": {
+    "fase": 7,
+    "orden": 730,
+    "cuando": "Exclusivo de Rubí Omega: por intercambio.",
+    "requisitos": "Solo por intercambio desde la otra edición.",
+    "consejo": "",
+    "pokekeep": "Añádelo legal desde la Librería."
+   },
+   "483": {
+    "fase": 2,
+    "orden": 235,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Grieta al sur de Pueblo Azuliza volando, con Uxie, Mesprit y Azelf en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "487": {
+    "fase": 2,
+    "orden": 236,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "La misma grieta, con Dialga y Palkia en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "638": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Llanura Sinnombre junto a Pueblo Oromar, con tres Pokémon de esfuerzo máximo; domingo, miércoles y viernes. Solo aparece los miércoles, viernes y domingos.",
+    "consejo": "Nivel 50."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 251,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; martes y sábado. Solo aparece los martes y sábados.",
+    "consejo": "Nivel 50."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 252,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Llanura Sinnombre, con tres Pokémon de esfuerzo máximo; lunes y jueves. Solo aparece los lunes y jueves.",
+    "consejo": "Nivel 50."
+   },
+   "644": {
+    "fase": 2,
+    "orden": 255,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Cueva Incierta junto a Ciudad Malvalona, con un Pokémon de nivel 100 en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "646": {
+    "fase": 2,
+    "orden": 256,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Boquete Irregular junto a Pueblo Pardal, con Reshiram y Zekrom en el equipo.",
+    "consejo": "Nivel 50."
+   },
+   "243": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Bosque Virgen junto a Ciudad Férrica, con Lugia o Ho-Oh en el equipo; minutos 00-20 de cada hora.",
+    "consejo": "Nivel 50."
+   },
+   "244": {
+    "fase": 2,
+    "orden": 261,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Bosque Virgen, con Lugia o Ho-Oh en el equipo; minutos 20-40 de cada hora.",
+    "consejo": "Nivel 50."
+   },
+   "245": {
+    "fase": 2,
+    "orden": 262,
+    "cuando": "Tras el Episodio Delta, volando con la Flauta Eón (parajes espejismo).",
+    "requisitos": "Bosque Virgen, con Lugia o Ho-Oh en el equipo; minutos 40-00 de cada hora.",
+    "consejo": "Nivel 50."
+   },
+   "382": {
+    "fase": 0,
+    "orden": 160,
+    "cuando": "Durante la historia, antes de la octava medalla.",
+    "requisitos": "Cueva Ancestral de Arrecípolis: tras la regresión primigenia de Kyogre, enfréntate a él al fondo.",
+    "consejo": "Kyogre nivel 45; si lo debilitas, vuelve tras la Liga."
+   }
+  },
+  "SUN": {
+   "785": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas de la Guerra (Melemele) y acércate al altar del fondo.",
+    "consejo": "Tapu Koko nivel 60."
+   },
+   "786": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas de la Vida (Akala) y acércate al altar del fondo.",
+    "consejo": "Tapu Lele nivel 60."
+   },
+   "787": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas de la Cosecha (Ula-Ula) y acércate al altar del fondo.",
+    "consejo": "Tapu Bulu nivel 60."
+   },
+   "788": {
+    "fase": 2,
+    "orden": 213,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas del Tránsito (Poni) y acércate al altar del fondo.",
+    "consejo": "Tapu Fini nivel 60."
+   },
+   "789": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Después de ser campeón.",
+    "requisitos": "De noche, cruza la fisura dimensional del Altar del Sol con Solgaleo y llega al Lago Corosol: un Cosmog se une a tu equipo.",
+    "consejo": "Cosmog nivel 5, regalo."
+   },
+   "791": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Final de la historia, en el Altar del Sol/de la Luna (Poni).",
+    "requisitos": "Tras la evolución de Nebulilla, el legendario te espera en el altar: hay que capturarlo para seguir.",
+    "consejo": "Nivel 55."
+   },
+   "800": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de ser campeón y de completar la quinta misión de los ultraentes (con Handsome y Anabel).",
+    "requisitos": "Colina Dequilate, en la Caldera Remota (la zona más alejada, con Machamp Empuje).",
+    "consejo": "Necrozma nivel 75."
+   },
+   "772": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Después de ser campeón.",
+    "requisitos": "Gladio te lo da en la planta 1 del Paraíso Æther.",
+    "consejo": "Código Cero nivel 40, regalo."
+   },
+   "718": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Cuando tengas el Arca de Zygarde (te la dan en la Ruta 16) y suficientes células.",
+    "requisitos": "En el laboratorio Æther de la Ruta 16 sintetiza Zygarde al 10 % (10 células) o al 50 % (50 células); con 100 (95 + 5 núcleos), forma completa.",
+    "consejo": "Las células se cuentan en el objetivo «Reunir las células de Zygarde»."
+   }
+  },
+  "MOON": {
+   "785": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas de la Guerra (Melemele) y acércate al altar del fondo.",
+    "consejo": "Tapu Koko nivel 60."
+   },
+   "786": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas de la Vida (Akala) y acércate al altar del fondo.",
+    "consejo": "Tapu Lele nivel 60."
+   },
+   "787": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas de la Cosecha (Ula-Ula) y acércate al altar del fondo.",
+    "consejo": "Tapu Bulu nivel 60."
+   },
+   "788": {
+    "fase": 2,
+    "orden": 213,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas del Tránsito (Poni) y acércate al altar del fondo.",
+    "consejo": "Tapu Fini nivel 60."
+   },
+   "789": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Después de ser campeón.",
+    "requisitos": "De noche, cruza la fisura dimensional del Altar del la Luna con Lunala y llega al Lago Coroluna: un Cosmog se une a tu equipo.",
+    "consejo": "Cosmog nivel 5, regalo."
+   },
+   "792": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Final de la historia, en el Altar del Sol/de la Luna (Poni).",
+    "requisitos": "Tras la evolución de Nebulilla, el legendario te espera en el altar: hay que capturarlo para seguir.",
+    "consejo": "Nivel 55."
+   },
+   "800": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de ser campeón y de completar la quinta misión de los ultraentes (con Handsome y Anabel).",
+    "requisitos": "Colina Dequilate, en la Caldera Remota (la zona más alejada, con Machamp Empuje).",
+    "consejo": "Necrozma nivel 75."
+   },
+   "772": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Después de ser campeón.",
+    "requisitos": "Gladio te lo da en la planta 1 del Paraíso Æther.",
+    "consejo": "Código Cero nivel 40, regalo."
+   },
+   "718": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Cuando tengas el Arca de Zygarde (te la dan en la Ruta 16) y suficientes células.",
+    "requisitos": "En el laboratorio Æther de la Ruta 16 sintetiza Zygarde al 10 % (10 células) o al 50 % (50 células); con 100 (95 + 5 núcleos), forma completa.",
+    "consejo": "Las células se cuentan en el objetivo «Reunir las células de Zygarde»."
+   }
+  },
+  "ULTRASUN": {
+   "785": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas de la Guerra (Melemele) y acércate al altar del fondo.",
+    "consejo": "Tapu Koko nivel 60."
+   },
+   "786": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas de la Vida (Akala) y acércate al altar del fondo.",
+    "consejo": "Tapu Lele nivel 60."
+   },
+   "787": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas de la Cosecha (Ula-Ula) y acércate al altar del fondo.",
+    "consejo": "Tapu Bulu nivel 60."
+   },
+   "788": {
+    "fase": 2,
+    "orden": 213,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas del Tránsito (Poni) y acércate al altar del fondo.",
+    "consejo": "Tapu Fini nivel 60."
+   },
+   "789": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Después de ser campeón.",
+    "requisitos": "Un Cosmog te espera en el Lago Corosol: se une a tu equipo.",
+    "consejo": "Cosmog nivel 5, regalo."
+   },
+   "791": {
+    "fase": 0,
+    "orden": 185,
+    "cuando": "Durante la historia, tras superar la prueba de Rika en la isla de Poni.",
+    "requisitos": "Vuelve a la Senda Mahalo (Puente Colgante, Melemele): el legendario te espera allí.",
+    "consejo": "Nivel 60."
+   },
+   "800": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de ser campeón (tras el combate contra Ultra-Necrozma en la historia).",
+    "requisitos": "En la cima del Monte Lanakila.",
+    "consejo": "Necrozma nivel 65."
+   },
+   "772": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Después de ser campeón.",
+    "requisitos": "Zyra te lo da en el Antiguo Paso de Poni.",
+    "consejo": "Código Cero nivel 60, regalo."
+   },
+   "718": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después de ser campeón (no hay células repartidas por Alola).",
+    "requisitos": "Dexio te da un Zygarde al 10 % y el Arca (Ruta 16); hay otro al 50 % en la Gruta Desenlace. Con las 100 células del Arca, forma completa en el laboratorio Æther de la Ruta 16.",
+    "consejo": "Zygarde 50 % nivel 63 en la Gruta Desenlace."
+   }
+  },
+  "ULTRAMOON": {
+   "785": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas de la Guerra (Melemele) y acércate al altar del fondo.",
+    "consejo": "Tapu Koko nivel 60."
+   },
+   "786": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas de la Vida (Akala) y acércate al altar del fondo.",
+    "consejo": "Tapu Lele nivel 60."
+   },
+   "787": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas de la Cosecha (Ula-Ula) y acércate al altar del fondo.",
+    "consejo": "Tapu Bulu nivel 60."
+   },
+   "788": {
+    "fase": 2,
+    "orden": 213,
+    "cuando": "Después de ser campeón de la Liga de Alola.",
+    "requisitos": "Entra en las Ruinas del Tránsito (Poni) y acércate al altar del fondo.",
+    "consejo": "Tapu Fini nivel 60."
+   },
+   "789": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Después de ser campeón.",
+    "requisitos": "Un Cosmog te espera en el Lago Coroluna: se une a tu equipo.",
+    "consejo": "Cosmog nivel 5, regalo."
+   },
+   "792": {
+    "fase": 0,
+    "orden": 185,
+    "cuando": "Durante la historia, tras superar la prueba de Rika en la isla de Poni.",
+    "requisitos": "Vuelve a la Senda Mahalo (Puente Colgante, Melemele): el legendario te espera allí.",
+    "consejo": "Nivel 60."
+   },
+   "800": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Después de ser campeón (tras el combate contra Ultra-Necrozma en la historia).",
+    "requisitos": "En la cima del Monte Lanakila.",
+    "consejo": "Necrozma nivel 65."
+   },
+   "772": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Después de ser campeón.",
+    "requisitos": "Zyra te lo da en el Antiguo Paso de Poni.",
+    "consejo": "Código Cero nivel 60, regalo."
+   },
+   "718": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Después de ser campeón (no hay células repartidas por Alola).",
+    "requisitos": "Dexio te da un Zygarde al 10 % y el Arca (Ruta 16); hay otro al 50 % en la Gruta Desenlace. Con las 100 células del Arca, forma completa en el laboratorio Æther de la Ruta 16.",
+    "consejo": "Zygarde 50 % nivel 63 en la Gruta Desenlace."
+   }
+  },
+  "LETGOP": {
+   "145": {
+    "fase": 0,
+    "orden": 150,
+    "cuando": "Durante la historia, cuando puedas surfear (Surfeo Marino).",
+    "requisitos": "Central de Energía (Ruta 10): Zapdos espera al fondo.",
+    "consejo": "Zapdos nivel 50; es un combate largo con captura, como los legendarios del juego."
+   },
+   "144": {
+    "fase": 0,
+    "orden": 160,
+    "cuando": "Durante la historia, con Surfeo Marino y Empuje Fuerte.",
+    "requisitos": "Islas Espuma (Ruta 20): baja hasta la zona inferior.",
+    "consejo": "Articuno nivel 50."
+   },
+   "146": {
+    "fase": 0,
+    "orden": 170,
+    "cuando": "Durante la historia, camino de la Liga.",
+    "requisitos": "Calle Victoria: Moltres está en el interior de la cueva.",
+    "consejo": "Moltres nivel 50."
+   },
+   "150": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Después del Hall de la Fama.",
+    "requisitos": "Cueva Celeste (Ciudad Celeste): baja hasta el fondo.",
+    "consejo": "Mewtwo nivel 70."
+   }
+  },
+  "LETGOE": {
+   "copia": "LETGOP"
+  },
+  "SWORD": {
+   "890": {
+    "fase": 0,
+    "orden": 195,
+    "cuando": "Final de la historia, tras el combate contra el presidente Rose en la Planta Eléctrica.",
+    "requisitos": "En la Corona de la Torre: debilítalo en forma normal y captúralo en el combate Dinamax infinito (captura asegurada).",
+    "consejo": "Eternatus nivel 60."
+   },
+   "888": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después de ser campeón, al terminar el episodio de Tizonio y Dargo.",
+    "requisitos": "Tras perseguir a Tizonio y Dargo por los estadios de Galar, el episodio termina en la Corona de la Torre de la Planta Eléctrica, donde el legendario de tu edición se deja capturar.",
+    "consejo": "Nivel 70."
+   },
+   "889": {
+    "fase": 7,
+    "orden": 720,
+    "cuando": "Exclusivo de la otra edición.",
+    "requisitos": "Solo por intercambio.",
+    "consejo": "",
+    "pokekeep": "Si lo necesitas sin intercambio, añádelo legal desde la Librería."
+   },
+   "772": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Después de ser campeón.",
+    "requisitos": "Una empleada de la Torre Batalla (Puntera) te lo da.",
+    "consejo": "Código Cero nivel 50, regalo."
+   },
+   "891": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Isla de la Armadura (DLC): tras superar las tres pruebas de Mostaza.",
+    "requisitos": "Mostaza te da a Kubfu en el Dojo Maestro.",
+    "consejo": "Kubfu nivel 10, regalo."
+   },
+   "892": {
+    "fase": 2,
+    "orden": 231,
+    "cuando": "Isla de la Armadura (DLC): con Kubfu de amigo.",
+    "requisitos": "Supera la Torre de las Sombras (estilo brusco) o la Torre de las Aguas (estilo fluido) con Kubfu y examina el manuscrito: evoluciona a Urshifu.",
+    "consejo": "El estilo es excluyente: el otro, desde la Librería con Pokekeep."
+   },
+   "898": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Nieves de la Corona (DLC), siendo ya campeón.",
+    "requisitos": "Sigue la historia de Calyrex: planta la zanahoria (Glastrier o Spectrier), atrapa al corcel y lleva a Calyrex al Templo Corona.",
+    "consejo": "Calyrex nivel 80, montado en el corcel elegido."
+   },
+   "896": {
+    "fase": 2,
+    "orden": 241,
+    "cuando": "Nieves de la Corona: si plantas la zanahoria en el Desfiladero Nevado.",
+    "requisitos": "Capturas a Calyrex jinete glacial; sepáralos con las Riendas Unión.",
+    "consejo": "Glastrier y Spectrier son excluyentes: el otro, desde la Librería con Pokekeep."
+   },
+   "897": {
+    "fase": 2,
+    "orden": 241,
+    "cuando": "Nieves de la Corona: si plantas la zanahoria en el Viejo Cementerio.",
+    "requisitos": "Capturas a Calyrex jinete espectral; sepáralos con las Riendas Unión.",
+    "consejo": "Excluyente con Glastrier: el otro, desde la Librería con Pokekeep."
+   },
+   "894": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Nieves de la Corona: tras la segunda pista legendaria de Peony.",
+    "requisitos": "Ruinas del Dilema: elige Regieleki (huellas eléctricas). Es excluyente con Regidrago.",
+    "consejo": "Regieleki nivel 70; el otro, desde la Librería con Pokekeep."
+   },
+   "895": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Nieves de la Corona: tras la segunda pista legendaria de Peony.",
+    "requisitos": "Ruinas del Dilema: elige Regidrago. Es excluyente con Regieleki.",
+    "consejo": "Regidrago nivel 70; el otro, desde la Librería con Pokekeep."
+   },
+   "377": {
+    "fase": 2,
+    "orden": 251,
+    "cuando": "Nieves de la Corona, segunda pista de Peony.",
+    "requisitos": "Ruinas Pico Roca: abre la puerta resolviendo la inscripción.",
+    "consejo": "Regirock nivel 70."
+   },
+   "378": {
+    "fase": 2,
+    "orden": 252,
+    "cuando": "Nieves de la Corona, segunda pista de Peony.",
+    "requisitos": "Ruinas Iceberg.",
+    "consejo": "Regice nivel 70."
+   },
+   "379": {
+    "fase": 2,
+    "orden": 253,
+    "cuando": "Nieves de la Corona, segunda pista de Peony.",
+    "requisitos": "Ruinas Hierro.",
+    "consejo": "Registeel nivel 70."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Regirock, Regice, Registeel, Regieleki y Regidrago en el equipo.",
+    "requisitos": "Nido Dinamax rodeado de cuatro piedras en el Lecho del Gigante: incursión especial.",
+    "consejo": "Regigigas nivel 100.",
+    "pokekeep": "El Regi que no elegiste en las Ruinas del Dilema, añádelo legal desde la Librería."
+   },
+   "638": {
+    "fase": 2,
+    "orden": 270,
+    "cuando": "Nieves de la Corona (DLC), en cualquier momento de la expedición.",
+    "requisitos": "Encuentra 50 huellas de Cobalion por la Corona; después te espera en el Mar Gélido.",
+    "consejo": "Cobalion nivel 70."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 271,
+    "cuando": "Nieves de la Corona (DLC), en cualquier momento de la expedición.",
+    "requisitos": "50 huellas de Terrakion; luego, en la Gruta del Lago.",
+    "consejo": "Terrakion nivel 70."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 272,
+    "cuando": "Nieves de la Corona (DLC), en cualquier momento de la expedición.",
+    "requisitos": "50 huellas de Virizion; luego, en el Lecho del Gigante.",
+    "consejo": "Virizion nivel 70."
+   },
+   "647": {
+    "fase": 2,
+    "orden": 275,
+    "cuando": "Con Cobalion, Terrakion y Virizion en el equipo.",
+    "requisitos": "Lago Bolaguna: prepara un curri en la isla de la olla y Keldeo aparece.",
+    "consejo": "Keldeo nivel 65."
+   },
+   "803": {
+    "fase": 2,
+    "orden": 280,
+    "cuando": "Nieves de la Corona: tras completar 5 Aventuras Dinamax contra ultraentes.",
+    "requisitos": "Un científico del Supernido Dinamax te da a Poipole.",
+    "consejo": "Poipole nivel 20, regalo."
+   }
+  },
+  "SHIELD": {
+   "890": {
+    "fase": 0,
+    "orden": 195,
+    "cuando": "Final de la historia, tras el combate contra el presidente Rose en la Planta Eléctrica.",
+    "requisitos": "En la Corona de la Torre: debilítalo en forma normal y captúralo en el combate Dinamax infinito (captura asegurada).",
+    "consejo": "Eternatus nivel 60."
+   },
+   "889": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Después de ser campeón, al terminar el episodio de Tizonio y Dargo.",
+    "requisitos": "Tras perseguir a Tizonio y Dargo por los estadios de Galar, el episodio termina en la Corona de la Torre de la Planta Eléctrica, donde el legendario de tu edición se deja capturar.",
+    "consejo": "Nivel 70."
+   },
+   "888": {
+    "fase": 7,
+    "orden": 720,
+    "cuando": "Exclusivo de la otra edición.",
+    "requisitos": "Solo por intercambio.",
+    "consejo": "",
+    "pokekeep": "Si lo necesitas sin intercambio, añádelo legal desde la Librería."
+   },
+   "772": {
+    "fase": 2,
+    "orden": 215,
+    "cuando": "Después de ser campeón.",
+    "requisitos": "Una empleada de la Torre Batalla (Puntera) te lo da.",
+    "consejo": "Código Cero nivel 50, regalo."
+   },
+   "891": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Isla de la Armadura (DLC): tras superar las tres pruebas de Mostaza.",
+    "requisitos": "Mostaza te da a Kubfu en el Dojo Maestro.",
+    "consejo": "Kubfu nivel 10, regalo."
+   },
+   "892": {
+    "fase": 2,
+    "orden": 231,
+    "cuando": "Isla de la Armadura (DLC): con Kubfu de amigo.",
+    "requisitos": "Supera la Torre de las Sombras (estilo brusco) o la Torre de las Aguas (estilo fluido) con Kubfu y examina el manuscrito: evoluciona a Urshifu.",
+    "consejo": "El estilo es excluyente: el otro, desde la Librería con Pokekeep."
+   },
+   "898": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Nieves de la Corona (DLC), siendo ya campeón.",
+    "requisitos": "Sigue la historia de Calyrex: planta la zanahoria (Glastrier o Spectrier), atrapa al corcel y lleva a Calyrex al Templo Corona.",
+    "consejo": "Calyrex nivel 80, montado en el corcel elegido."
+   },
+   "896": {
+    "fase": 2,
+    "orden": 241,
+    "cuando": "Nieves de la Corona: si plantas la zanahoria en el Desfiladero Nevado.",
+    "requisitos": "Capturas a Calyrex jinete glacial; sepáralos con las Riendas Unión.",
+    "consejo": "Glastrier y Spectrier son excluyentes: el otro, desde la Librería con Pokekeep."
+   },
+   "897": {
+    "fase": 2,
+    "orden": 241,
+    "cuando": "Nieves de la Corona: si plantas la zanahoria en el Viejo Cementerio.",
+    "requisitos": "Capturas a Calyrex jinete espectral; sepáralos con las Riendas Unión.",
+    "consejo": "Excluyente con Glastrier: el otro, desde la Librería con Pokekeep."
+   },
+   "894": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Nieves de la Corona: tras la segunda pista legendaria de Peony.",
+    "requisitos": "Ruinas del Dilema: elige Regieleki (huellas eléctricas). Es excluyente con Regidrago.",
+    "consejo": "Regieleki nivel 70; el otro, desde la Librería con Pokekeep."
+   },
+   "895": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Nieves de la Corona: tras la segunda pista legendaria de Peony.",
+    "requisitos": "Ruinas del Dilema: elige Regidrago. Es excluyente con Regieleki.",
+    "consejo": "Regidrago nivel 70; el otro, desde la Librería con Pokekeep."
+   },
+   "377": {
+    "fase": 2,
+    "orden": 251,
+    "cuando": "Nieves de la Corona, segunda pista de Peony.",
+    "requisitos": "Ruinas Pico Roca: abre la puerta resolviendo la inscripción.",
+    "consejo": "Regirock nivel 70."
+   },
+   "378": {
+    "fase": 2,
+    "orden": 252,
+    "cuando": "Nieves de la Corona, segunda pista de Peony.",
+    "requisitos": "Ruinas Iceberg.",
+    "consejo": "Regice nivel 70."
+   },
+   "379": {
+    "fase": 2,
+    "orden": 253,
+    "cuando": "Nieves de la Corona, segunda pista de Peony.",
+    "requisitos": "Ruinas Hierro.",
+    "consejo": "Registeel nivel 70."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Regirock, Regice, Registeel, Regieleki y Regidrago en el equipo.",
+    "requisitos": "Nido Dinamax rodeado de cuatro piedras en el Lecho del Gigante: incursión especial.",
+    "consejo": "Regigigas nivel 100.",
+    "pokekeep": "El Regi que no elegiste en las Ruinas del Dilema, añádelo legal desde la Librería."
+   },
+   "638": {
+    "fase": 2,
+    "orden": 270,
+    "cuando": "Nieves de la Corona (DLC), en cualquier momento de la expedición.",
+    "requisitos": "Encuentra 50 huellas de Cobalion por la Corona; después te espera en el Mar Gélido.",
+    "consejo": "Cobalion nivel 70."
+   },
+   "639": {
+    "fase": 2,
+    "orden": 271,
+    "cuando": "Nieves de la Corona (DLC), en cualquier momento de la expedición.",
+    "requisitos": "50 huellas de Terrakion; luego, en la Gruta del Lago.",
+    "consejo": "Terrakion nivel 70."
+   },
+   "640": {
+    "fase": 2,
+    "orden": 272,
+    "cuando": "Nieves de la Corona (DLC), en cualquier momento de la expedición.",
+    "requisitos": "50 huellas de Virizion; luego, en el Lecho del Gigante.",
+    "consejo": "Virizion nivel 70."
+   },
+   "647": {
+    "fase": 2,
+    "orden": 275,
+    "cuando": "Con Cobalion, Terrakion y Virizion en el equipo.",
+    "requisitos": "Lago Bolaguna: prepara un curri en la isla de la olla y Keldeo aparece.",
+    "consejo": "Keldeo nivel 65."
+   },
+   "803": {
+    "fase": 2,
+    "orden": 280,
+    "cuando": "Nieves de la Corona: tras completar 5 Aventuras Dinamax contra ultraentes.",
+    "requisitos": "Un científico del Supernido Dinamax te da a Poipole.",
+    "consejo": "Poipole nivel 20, regalo."
+   }
+  },
+  "BD": {
+   "480": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Tras el combate de la Columna Lanza (fin de la historia del Equipo Galaxia).",
+    "requisitos": "Caverna Agudeza, en el Lago Agudeza (al norte de Ciudad Puntaneva).",
+    "consejo": "Uxie nivel 50."
+   },
+   "482": {
+    "fase": 0,
+    "orden": 191,
+    "cuando": "Tras el combate de la Columna Lanza.",
+    "requisitos": "Caverna Valor, en el Lago Valor (Surf).",
+    "consejo": "Azelf nivel 50."
+   },
+   "481": {
+    "fase": 0,
+    "orden": 192,
+    "cuando": "Tras el combate de la Columna Lanza: visita la Caverna Veraz del Lago Veraz.",
+    "requisitos": "Mesprit huye y vaga por Sinnoh: síguelo con el marcamapa del Pokéreloj y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Mesprit nivel 50."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Posliga, en la Zona de Combate (requiere la Pokédex Nacional).",
+    "requisitos": "Acompaña a Bulgur por la Montaña Dura hasta el fondo; al terminar su exploración, Heatran aparece.",
+    "consejo": "Heatran nivel 70."
+   },
+   "487": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Con la Pokédex Nacional.",
+    "requisitos": "Cueva Retorno, al final del Sendero Primavera (Ruta 214): Giratina aparece al llegar a la última sala.",
+    "consejo": "Giratina nivel 70."
+   },
+   "488": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Posliga: tras el sueño del hijo del marinero de Ciudad Canal.",
+    "requisitos": "Viaja a la Isla Plenilunio; Cresselia huye y vaga por Sinnoh. Síguelo con el marcamapa.",
+    "consejo": "Cresselia nivel 50."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo (traídos al Parque Compi).",
+    "requisitos": "Templo Puntaneva, en Ciudad Puntaneva: baja hasta la última sala con los tres Regis.",
+    "consejo": "Regigigas nivel 70."
+   },
+   "483": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Final de la historia del Equipo Galaxia, en la cima del Monte Corona.",
+    "requisitos": "Columnas Lanza: tras vencer a los comandantes y a Helio, Dialga aparece.",
+    "consejo": "Dialga nivel 47. Si lo debilitas, vuelve tras la Liga; guarda antes."
+   }
+  },
+  "SP": {
+   "480": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Tras el combate de la Columna Lanza (fin de la historia del Equipo Galaxia).",
+    "requisitos": "Caverna Agudeza, en el Lago Agudeza (al norte de Ciudad Puntaneva).",
+    "consejo": "Uxie nivel 50."
+   },
+   "482": {
+    "fase": 0,
+    "orden": 191,
+    "cuando": "Tras el combate de la Columna Lanza.",
+    "requisitos": "Caverna Valor, en el Lago Valor (Surf).",
+    "consejo": "Azelf nivel 50."
+   },
+   "481": {
+    "fase": 0,
+    "orden": 192,
+    "cuando": "Tras el combate de la Columna Lanza: visita la Caverna Veraz del Lago Veraz.",
+    "requisitos": "Mesprit huye y vaga por Sinnoh: síguelo con el marcamapa del Pokéreloj y usa Mal de Ojo o la Master Ball.",
+    "consejo": "Mesprit nivel 50."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Posliga, en la Zona de Combate (requiere la Pokédex Nacional).",
+    "requisitos": "Acompaña a Bulgur por la Montaña Dura hasta el fondo; al terminar su exploración, Heatran aparece.",
+    "consejo": "Heatran nivel 70."
+   },
+   "487": {
+    "fase": 2,
+    "orden": 240,
+    "cuando": "Con la Pokédex Nacional.",
+    "requisitos": "Cueva Retorno, al final del Sendero Primavera (Ruta 214): Giratina aparece al llegar a la última sala.",
+    "consejo": "Giratina nivel 70."
+   },
+   "488": {
+    "fase": 2,
+    "orden": 245,
+    "cuando": "Posliga: tras el sueño del hijo del marinero de Ciudad Canal.",
+    "requisitos": "Viaja a la Isla Plenilunio; Cresselia huye y vaga por Sinnoh. Síguelo con el marcamapa.",
+    "consejo": "Cresselia nivel 50."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 260,
+    "cuando": "Con Regirock, Regice y Registeel en el equipo (traídos al Parque Compi).",
+    "requisitos": "Templo Puntaneva, en Ciudad Puntaneva: baja hasta la última sala con los tres Regis.",
+    "consejo": "Regigigas nivel 70."
+   },
+   "484": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Final de la historia del Equipo Galaxia, en la cima del Monte Corona.",
+    "requisitos": "Columna Lanza: tras vencer a los comandantes y a Helio, Palkia aparece.",
+    "consejo": "Palkia nivel 47."
+   }
+  },
+  "ARCEUS": {
+   "483": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Encomienda 17 de la historia (si apoyas al Clan Diamante) o la 18.",
+    "requisitos": "Templo de Sinnoh, en el Monte Corona.",
+    "consejo": "Dialga nivel 65."
+   },
+   "484": {
+    "fase": 0,
+    "orden": 180,
+    "cuando": "Encomienda 17 de la historia (si apoyas al Clan Perla) o la 18.",
+    "requisitos": "Templo de Sinnoh, en el Monte Corona.",
+    "consejo": "Palkia nivel 65."
+   },
+   "485": {
+    "fase": 2,
+    "orden": 220,
+    "cuando": "Tras los créditos: encomienda «La tabla de la isla escupefuego».",
+    "requisitos": "Altar Domo Lava, en el Litoral Cobalto.",
+    "consejo": "Heatran nivel 70."
+   },
+   "488": {
+    "fase": 2,
+    "orden": 221,
+    "cuando": "Tras los créditos: encomienda «La tabla de la Arena de la Luna».",
+    "requisitos": "Arena de la Luna, en la Ladera Corona.",
+    "consejo": "Cresselia nivel 70."
+   },
+   "486": {
+    "fase": 2,
+    "orden": 222,
+    "cuando": "Tras los créditos: encomienda 24.",
+    "requisitos": "Templo Puntaneva, en la Tundra Alba.",
+    "consejo": "Regigigas nivel 70."
+   },
+   "487": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Tras los créditos: petición 91.",
+    "requisitos": "Cueva Retorno, en la Ladera Corona.",
+    "consejo": "Giratina nivel 70."
+   },
+   "905": {
+    "fase": 2,
+    "orden": 235,
+    "cuando": "Tras capturar a Tornadus, Thundurus y Landorus (petición 94: Los avatares de Hisui).",
+    "requisitos": "Ciénaga Bermeja, en el Pantanal Carmesí.",
+    "consejo": "Enamorus nivel 70."
+   },
+   "493": {
+    "fase": 2,
+    "orden": 290,
+    "cuando": "Con todas las especies de la Pokédex de Hisui capturadas.",
+    "requisitos": "Templo de Sinnoh: combate contra Arceus en la encomienda final.",
+    "consejo": "Arceus nivel 75."
+   }
+  },
+  "SCARLET": {
+   "1001": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "En cualquier momento, idealmente tras la historia.",
+    "requisitos": "Arranca las 8 estacas del sello morado: Área 3 del sur, Área 4 del sur, tres en el Área 5 del sur, Área 1 del sur y dos en el Área 1 del este. Luego abre el Santuario Mustiarbor (Área 1 del sur). Si lo debilitas o huyes, vuelve dentro y puedes repetirlo.",
+    "consejo": "Wo-Chien nivel 60."
+   },
+   "1002": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "En cualquier momento, idealmente tras la historia.",
+    "requisitos": "Arranca las 8 estacas del sello naranja: Ciudad Cántara, cuatro en el Área 1 del oeste, Área 2 del sur, Área 6 del sur y Área 4 del sur. Luego abre el Santuario Glaceratio (Área 1 del oeste). Si lo debilitas o huyes, vuelve dentro y puedes repetirlo.",
+    "consejo": "Chien-Pao nivel 60."
+   },
+   "1003": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "En cualquier momento, idealmente tras la historia.",
+    "requisitos": "Arranca las 8 estacas del sello verde: Alameda Socarrada, cuatro en el Lago Cazola, dos en el Área 2 del oeste y una en el Área 3 del oeste. Luego abre el Santuario Detriterra (Alameda Socarrada). Si lo debilitas o huyes, vuelve dentro y puedes repetirlo.",
+    "consejo": "Ting-Lu nivel 60."
+   },
+   "1004": {
+    "fase": 2,
+    "orden": 213,
+    "cuando": "En cualquier momento, idealmente tras la historia.",
+    "requisitos": "Arranca las 8 estacas del sello azul: Sierra Napada, tres en el Área 1 del norte, tres en el Área 2 del norte y una en el Área 2 del este. Luego abre el Santuario Devastigneus (Área 2 del norte). Si lo debilitas o huyes, vuelve dentro y puedes repetirlo.",
+    "consejo": "Chi-Yu nivel 60."
+   },
+   "1017": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Historia de La máscara turquesa (DLC).",
+    "requisitos": "Gruta del Pavor, en el monte de Noroteo: el combate final del DLC.",
+    "consejo": "Ogerpon nivel 70."
+   },
+   "1014": {
+    "fase": 2,
+    "orden": 235,
+    "cuando": "Tras completar la historia de La máscara turquesa.",
+    "requisitos": "Elíseo Baldío, al noroeste de Noroteo.",
+    "consejo": "Okidogi nivel 70."
+   },
+   "1015": {
+    "fase": 2,
+    "orden": 236,
+    "cuando": "Tras completar la historia de La máscara turquesa.",
+    "requisitos": "Pradera Glicina, junto a la Laguna Glicina.",
+    "consejo": "Munkidori nivel 70."
+   },
+   "1016": {
+    "fase": 2,
+    "orden": 237,
+    "cuando": "Tras completar la historia de La máscara turquesa.",
+    "requisitos": "Monte Ogro, junto al acceso a la Cueva Aguafría.",
+    "consejo": "Fezandipiti nivel 70."
+   },
+   "1024": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Final de El disco índigo (DLC).",
+    "requisitos": "Caverna Abisal Cero, bajo el Área Cero: combate final del DLC.",
+    "consejo": "Terapagos nivel 85."
+   },
+   "1007": {
+    "fase": 2,
+    "orden": 200,
+    "cuando": "Tras los créditos de la historia.",
+    "requisitos": "Durante el combate final en el Laboratorio Cero se une a ti; tras los créditos, un segundo Koraidon aparece en el Área Cero para capturarlo.",
+    "consejo": "Koraidon nivel 72."
+   }
+  },
+  "VIOLET": {
+   "1001": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "En cualquier momento, idealmente tras la historia.",
+    "requisitos": "Arranca las 8 estacas del sello morado: Área 3 del sur, Área 4 del sur, tres en el Área 5 del sur, Área 1 del sur y dos en el Área 1 del este. Luego abre el Santuario Mustiarbor (Área 1 del sur). Si lo debilitas o huyes, vuelve dentro y puedes repetirlo.",
+    "consejo": "Wo-Chien nivel 60."
+   },
+   "1002": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "En cualquier momento, idealmente tras la historia.",
+    "requisitos": "Arranca las 8 estacas del sello naranja: Ciudad Cántara, cuatro en el Área 1 del oeste, Área 2 del sur, Área 6 del sur y Área 4 del sur. Luego abre el Santuario Glaceratio (Área 1 del oeste). Si lo debilitas o huyes, vuelve dentro y puedes repetirlo.",
+    "consejo": "Chien-Pao nivel 60."
+   },
+   "1003": {
+    "fase": 2,
+    "orden": 212,
+    "cuando": "En cualquier momento, idealmente tras la historia.",
+    "requisitos": "Arranca las 8 estacas del sello verde: Alameda Socarrada, cuatro en el Lago Cazola, dos en el Área 2 del oeste y una en el Área 3 del oeste. Luego abre el Santuario Detriterra (Alameda Socarrada). Si lo debilitas o huyes, vuelve dentro y puedes repetirlo.",
+    "consejo": "Ting-Lu nivel 60."
+   },
+   "1004": {
+    "fase": 2,
+    "orden": 213,
+    "cuando": "En cualquier momento, idealmente tras la historia.",
+    "requisitos": "Arranca las 8 estacas del sello azul: Sierra Napada, tres en el Área 1 del norte, tres en el Área 2 del norte y una en el Área 2 del este. Luego abre el Santuario Devastigneus (Área 2 del norte). Si lo debilitas o huyes, vuelve dentro y puedes repetirlo.",
+    "consejo": "Chi-Yu nivel 60."
+   },
+   "1017": {
+    "fase": 2,
+    "orden": 230,
+    "cuando": "Historia de La máscara turquesa (DLC).",
+    "requisitos": "Gruta del Pavor, en el monte de Noroteo: el combate final del DLC.",
+    "consejo": "Ogerpon nivel 70."
+   },
+   "1014": {
+    "fase": 2,
+    "orden": 235,
+    "cuando": "Tras completar la historia de La máscara turquesa.",
+    "requisitos": "Elíseo Baldío, al noroeste de Noroteo.",
+    "consejo": "Okidogi nivel 70."
+   },
+   "1015": {
+    "fase": 2,
+    "orden": 236,
+    "cuando": "Tras completar la historia de La máscara turquesa.",
+    "requisitos": "Pradera Glicina, junto a la Laguna Glicina.",
+    "consejo": "Munkidori nivel 70."
+   },
+   "1016": {
+    "fase": 2,
+    "orden": 237,
+    "cuando": "Tras completar la historia de La máscara turquesa.",
+    "requisitos": "Monte Ogro, junto al acceso a la Cueva Aguafría.",
+    "consejo": "Fezandipiti nivel 70."
+   },
+   "1024": {
+    "fase": 2,
+    "orden": 250,
+    "cuando": "Final de El disco índigo (DLC).",
+    "requisitos": "Caverna Abisal Cero, bajo el Área Cero: combate final del DLC.",
+    "consejo": "Terapagos nivel 85."
+   },
+   "1008": {
+    "fase": 2,
+    "orden": 200,
+    "cuando": "Tras los créditos de la historia.",
+    "requisitos": "Durante el combate final en el Laboratorio Cero se une a ti; tras los créditos, un segundo Miraidon aparece en el Área Cero para capturarlo.",
+    "consejo": "Miraidon nivel 72."
+   }
+  },
+  "ZA": {
+   "718": {
+    "fase": 0,
+    "orden": 190,
+    "cuando": "Misión principal 42 «La preservación del equilibrio».",
+    "requisitos": "Zona salvaje 20.",
+    "consejo": ""
+   },
+   "716": {
+    "fase": 2,
+    "orden": 210,
+    "cuando": "Tras terminar la misión en la que aparece.",
+    "requisitos": "Zona salvaje 11.",
+    "consejo": "Xerneas nivel 75."
+   },
+   "717": {
+    "fase": 2,
+    "orden": 211,
+    "cuando": "Tras la historia.",
+    "requisitos": "Tejado de la Galería Claro de Luna, en el sector 2 del Distrito Rojo.",
+    "consejo": "Yveltal nivel 75."
+   }
+  }
+ }
+}

@@ -348,7 +348,7 @@
     ],
     "check": "Medalla Volcán y regalos de fósiles revisados.",
     "pitfalls": [
-      "Las Islas Sete pertenecen a Rojo Fuego/Verde Hoja; no hay un viaje a ellas en los originales de generación I."
+      "Las Archi7 pertenecen a Rojo Fuego/Verde Hoja; no hay un viaje a ellas en los originales de generación I."
     ],
     "sources": [
       "https://www.serebii.net/rb/gift.shtml",
@@ -1309,7 +1309,7 @@
       "Primera Liga completada; incidente de Festi Plaza activado"
     ],
     "steps": [
-      "Continúa las escenas de postgame en casa y entra en Festi Plaza cuando Sophocles solicite ayuda. Resuelve el combate de la Agencia de Combate que forma parte del incidente.",
+      "Continúa las escenas de postgame en casa y entra en Festi Plaza cuando Chris solicite ayuda. Resuelve el combate de la Agencia de Combate que forma parte del incidente.",
       "Tras el cambio en Paraíso Æther, habla con Lylia y accede a la mansión ocupada. Sigue el recorrido hasta la sala central del castillo.",
       "Resuelve las alas laterales con sus puzles de movimiento y portales. Derrota a los líderes invitados de otras organizaciones para abrir sus accesos.",
       "Completa los sectores de Aquiles, Magno, Helio, Lysson y Ghechis según los bloqueos del castillo. Habla con los personajes de la sala central cuando un jefe deje de impedir el paso.",
@@ -1367,7 +1367,7 @@
     "steps": [
       "Desde Ruta 10 usa Surcaaguas para llegar a la Central de Energía y recorrerla hasta Zapdos.",
       "Para Articuno entra en Islas Espuma y usa Empuje para mover los bloques y detener las corrientes. En Let’s Go se usan técnicas secretas; no necesitas enseñar las antiguas MO.",
-      "Busca a Moltres en Calle Victoria. Monte Ascuas e Islas Sete no forman parte de estos juegos.",
+      "Busca a Moltres en Calle Victoria. Monte Ascuas e Archi7 no forman parte de estos juegos.",
       "Después de la Liga entra en Cueva Celeste desde Ciudad Celeste. Recorre el laberinto hasta Mewtwo y prepara el combate con límite de tiempo previo a la fase de captura.",
       "Tras capturarlo vuelve a la cueva para el encuentro de postgame con la entrenadora destacada y su recompensa. No lo confundas con la primera captura de Mewtwo."
     ],
@@ -1459,7 +1459,7 @@
       "Activa la escena del árbol de las aves y persíguelas en sus regiones: Articuno en las Nieves, Zapdos en el Área Silvestre y Moltres en la Isla de la Armadura.",
       "Revisa las huellas para Cobalion, Terrakion y Virizion y sus encuentros. Keldeo requiere un procedimiento posterior con el trío; no es una recompensa automática por contar huellas.",
       "En Aventuras Dinamax registra cada legendario capturado: puedes conservar una captura de cada especie por partida. Distingue la lista de versión de los caminos que consigues mediante cooperación.",
-      "Tras las tres expediciones principales, revisa las pistas posteriores de Peony, las Ultracriaturas y el Torneo de las Estrellas de Galar cuando se habilite."
+      "Tras las tres expediciones principales, revisa las pistas posteriores de Peony, las Ultracriaturas y el Torneo Estrellas de Galar cuando se habilite."
     ],
     "check": "Tres expediciones y elecciones excluyentes documentadas; capturas de la instalación revisadas aparte.",
     "pitfalls": [
@@ -1509,10 +1509,10 @@
     "mission": "09",
     "location": "Hisui: cierre de tablas, Pokédex y Templo de Sinnoh",
     "requires": [
-      "Historia principal, encargo de Volo y tablas completados"
+      "Historia principal, encargo de Volus y tablas completados"
     ],
     "steps": [
-      "Continúa las misiones de las tablas y termina el enfrentamiento de Volo, incluidas las fases de Giratina. Obtén la Flauta Azur como parte de ese cierre.",
+      "Continúa las misiones de las tablas y termina el enfrentamiento de Volus, incluidas las fases de Giratina. Obtén la Flauta Azur como parte de ese cierre.",
       "Captura las especies necesarias de Hisui. Para llegar a Arceus se requiere haber encontrado y capturado a los Pokémon exigidos, no perfeccionar todas las tareas de investigación.",
       "Revisa especialmente las especies de distorsiones, las evoluciones específicas, Spiritomb y los legendarios de las misiones posteriores: pueden faltar aunque hayas explorado todas las zonas.",
       "No exijas Phione, Manaphy, Shaymin o Darkrai para esta condición. Sus encargos o bonificaciones siguen siendo objetivos separados.",
@@ -1536,10 +1536,10 @@
     "mission": "DETAIL1",
     "location": "Hisui: cierre de tablas, Pokédex y Templo de Sinnoh",
     "requires": [
-      "Historia principal, encargo de Volo y tablas completados"
+      "Historia principal, encargo de Volus y tablas completados"
     ],
     "steps": [
-      "Continúa las misiones de las tablas y termina el enfrentamiento de Volo, incluidas las fases de Giratina. Obtén la Flauta Azur como parte de ese cierre.",
+      "Continúa las misiones de las tablas y termina el enfrentamiento de Volus, incluidas las fases de Giratina. Obtén la Flauta Azur como parte de ese cierre.",
       "Captura las especies necesarias de Hisui. Para llegar a Arceus se requiere haber encontrado y capturado a los Pokémon exigidos, no perfeccionar todas las tareas de investigación.",
       "Revisa especialmente las especies de distorsiones, las evoluciones específicas, Spiritomb y los legendarios de las misiones posteriores: pueden faltar aunque hayas explorado todas las zonas.",
       "No exijas Phione, Manaphy, Shaymin o Darkrai para esta condición. Sus encargos o bonificaciones siguen siendo objetivos separados.",
@@ -1555,6 +1555,233 @@
     ],
     "review": "reference-checked",
     "reviewedAt": "2026-11-10"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "01",
+    "location": "Pueblo Cahíz → Gruta Caleta → Sendero de Cahíz → Pueblo Ataifor → Ciudad Meseta",
+    "requires": [],
+    "steps": [
+      "En Pueblo Cahíz conoces a Mencía y eliges inicial: Sprigatito, Fuecoco o Quaxly. Tras el combate de prueba con ella, baja a la playa a buscar la mochila de tu hermana o hermano.",
+      "En la Gruta Caleta encuentras a Koraidon (Escarlata) o Miraidon (Púrpura), debilitado. Dale un bocadillo y te acompañará; ya puedes montarlo por el Sendero de Cahíz.",
+      "Sigue a Mencía hasta Pueblo Ataifor y continúa hasta Ciudad Meseta. Al llegar a la Academia (Naranja en Escarlata, Uva en Púrpura) el director Clavel presenta la Búsqueda del Tesoro.",
+      "La búsqueda abre tres historias que puedes hacer en el orden que quieras: Travesía de la victoria (gimnasios), Senda legendaria (titanes, con Damián) y Vía Stardust (Team Star, con un tal Cassiopeia). Ordénalas por el nivel de los rivales: misiones 02, 03 y 04."
+    ],
+    "check": "Tienes a Koraidon o Miraidon y la Búsqueda del Tesoro ha empezado en la Academia.",
+    "pitfalls": [
+      "Los líderes y personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/gyms.shtml",
+      "https://www.serebii.net/scarletviolet/pathoflegends.shtml",
+      "https://www.serebii.net/scarletviolet/starfallstreet.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "02",
+    "location": "Travesía de la Victoria: los 8 gimnasios de Paldea",
+    "requires": [],
+    "steps": [
+      "Pueblo Pirotín, tipo Bicho (Araceli). Prueba: empujar una aceituna gigante por un laberinto hasta la meta. Premio: MT021.",
+      "Pueblo Altamía, tipo Planta (Brais). Prueba: reunir los 10 Sunflora escondidos por el pueblo; algunos combaten.",
+      "Ciudad Leudal, tipo Eléctrico (E-Nigma). Prueba: en su directo, encuentra tres veces al director Clavel disfrazado entre la gente y vence a un entrenador cada vez.",
+      "Ciudad Cántara, tipo Agua (Fuco). Prueba: lleva a Pueblo Marinada la cartera que olvidó el líder y gana la subasta que te encarga allí.",
+      "Pueblo Mestura, tipo Normal (Laureano). Prueba: consigue las pistas del menú secreto venciendo a otros alumnos y pide la comanda secreta en el Mesón El Tesoro: Onigiris a la parrilla, Dos, Llamarada y Limón. Premio: MT025.",
+      "Pueblo Hozkailu (en la Sierra Napada), tipo Fantasma (Lima). Prueba: combates dobles ante un público que, si lo animas, te sube estadísticas. Premio: MT114.",
+      "Pueblo Alforno, tipo Psíquico (Tuli). Prueba: imita las emociones que pide la instructora y vence a un entrenador, dos veces. Premio: MT120.",
+      "Gimnasio de la Sierra Napada (aislado en la montaña), tipo Hielo (Grusha). Prueba: bajar la pista de nieve con tu montura pasando por todas las puertas en 1 minuto y 30 segundos. Premio: MT124.",
+      "Todas las pruebas se pueden repetir después para ganar recompensas, y los líderes admiten revancha en el postgame."
+    ],
+    "check": "Ocho medallas de gimnasio en la tarjeta de la Liga.",
+    "pitfalls": [
+      "Los gimnasios no tienen orden fijo; el de esta lista va de menor a mayor nivel.",
+      "Los líderes y personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/gyms.shtml",
+      "https://www.serebii.net/scarletviolet/pathoflegends.shtml",
+      "https://www.serebii.net/scarletviolet/starfallstreet.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "03",
+    "location": "Senda Legendaria: los 5 titanes y las Hierbas Mística",
+    "requires": [],
+    "steps": [
+      "Damián busca las Hierbas Mística, guardadas por Pokémon titánicos. Cada titán se vence dos veces: la segunda, tras comerse la hierba, con la ayuda de Damián. Después, Damián te prepara un bocadillo que despierta un poder de tu montura.",
+      "Klawf, titán del acantilado (tipo Roca), en el Área 3 (Sur). Desbloquea el acelerón.",
+      "Bombirdier, titán de las alturas (tipo Volador), en el Área 1 (Oeste); tira rocas desde la montaña. Desbloquea nadar.",
+      "Orthworm, titán de acero (tipo Acero), en las minas del Área 3 (Este): persíguelo por los túneles. Desbloquea el salto alto.",
+      "Gran Colmillo (Escarlata) o Ferrodada (Púrpura), titán sísmico (tipo Tierra), en el Desierto Rostiz. Desbloquea planear.",
+      "Tatsugiri y Dondozo, falso titán (tipo Dragón), en el Lago Cazola. Desbloquea escalar.",
+      "Con los cinco, vuelve al Sendero de Cahíz: en el laboratorio del faro, Damián cura a Mabosstiff y te reta a un combate. Los titanes se pueden capturar más adelante con una marca especial."
+    ],
+    "check": "Cinco titanes vencidos y las cinco habilidades de tu montura activas.",
+    "pitfalls": [
+      "Los líderes y personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/gyms.shtml",
+      "https://www.serebii.net/scarletviolet/pathoflegends.shtml",
+      "https://www.serebii.net/scarletviolet/starfallstreet.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "04",
+    "location": "Vía Stardust: las 5 bases del Team Star",
+    "requires": [],
+    "steps": [
+      "Cassiopeia te llama para acabar con el Team Star. En cada base vences a 30 Pokémon en 10 minutos con el combate automático («Let's Go» en inglés: tu Pokémon combate solo). Clive puede curarte, y después te enfrentas al jefe y a su Starmobile.",
+      "Escuadrón Segin, tipo Siniestro (Anán), en el Área 1 (Oeste). Premio: MT062.",
+      "Escuadrón Schedar, tipo Fuego (Melo), en el Área 1 (Este). Premio: MT038.",
+      "Escuadrón Navi, tipo Veneno (Henzo), en Bosquejada. Premio: MT102.",
+      "Escuadrón Ruchbah, tipo Hada (Gus), en el Área 3 (Norte). Premio: MT079.",
+      "Escuadrón Caph, tipo Lucha (Erin), en el Área 2 (Norte). Premio: MT167.",
+      "Tras cada jefe, Noa (división de suministros) te da materiales y PL. Al vencer a los cinco, Cassiopeia revela quién es en la misión 06."
+    ],
+    "check": "Las cinco bases derrotadas.",
+    "pitfalls": [
+      "Lleva un Pokémon fuerte el primero del equipo: el combate automático usa al que va en cabeza.",
+      "Los líderes y personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/gyms.shtml",
+      "https://www.serebii.net/scarletviolet/pathoflegends.shtml",
+      "https://www.serebii.net/scarletviolet/starfallstreet.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "05",
+    "location": "Liga Pokémon: evaluación de campeón",
+    "requires": [
+      "Ocho medallas de gimnasio."
+    ],
+    "steps": [
+      "En la Liga Pokémon, la Evaluación de Campeón empieza con una entrevista: responde a las preguntas sobre tu viaje.",
+      "Vence al Alto Mando en orden: tipo Tierra, tipo Acero, tipo Volador (es el mismo Laureano del gimnasio Normal) y tipo Dragón. Puedes curarte entre combates.",
+      "Final contra la Campeona Ságita, que dirige la Liga. Al ganar obtienes el rango de Campeón."
+    ],
+    "check": "Rango de Campeón registrado.",
+    "pitfalls": [
+      "Guarda antes de entrar: la evaluación no deja salir a medias.",
+      "Los líderes y personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/elitefour.shtml",
+      "https://www.serebii.net/scarletviolet/gyms.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "06",
+    "location": "Finales de las tres historias",
+    "requires": [
+      "Rango de Campeón y las tres historias completadas."
+    ],
+    "steps": [
+      "Mencía te reta al combate que llevaba esperando: combate de campeonas o campeones.",
+      "Senda Legendaria: el combate con Damián en el faro del Sendero de Cahíz, si no lo hiciste ya.",
+      "Vía Stardust: en la Academia se revela quién es Cassiopeia y combates contra ella, que usa un equipo de Eevee y sus evoluciones.",
+      "Con las tres terminadas, los tres amigos te proponen ir juntos al Área Cero: es la misión 07."
+    ],
+    "check": "Combates finales con Mencía, Damián y Cassiopeia completados.",
+    "pitfalls": [
+      "Los líderes y personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/gyms.shtml",
+      "https://www.serebii.net/scarletviolet/pathoflegends.shtml",
+      "https://www.serebii.net/scarletviolet/starfallstreet.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "07",
+    "location": "Camino a casa: Área Cero y el laboratorio",
+    "requires": [
+      "Misión 06 completada."
+    ],
+    "steps": [
+      "Con Mencía, Damián y Noa entra por la puerta del foso de Paldea y baja al Área Cero con la ayuda de Koraidon o Miraidon.",
+      "Recorre las cuatro estaciones de investigación en orden. En cada una hay que desbloquear la puerta, y entre ellas aparecen Pokémon paradoja y cristales de teracristal.",
+      "En el laboratorio del fondo te espera la IA del profesor (Albora en Escarlata, Turo en Púrpura). Vence a su equipo de Pokémon paradoja.",
+      "En el combate final, Koraidon o Miraidon lucha a tu lado. Después llegan los créditos y el epílogo en la Academia."
+    ],
+    "check": "Créditos vistos y el indicador de final de Paldea activo (la web lo lee del guardado).",
+    "pitfalls": [
+      "Prepara curas antes de bajar: entre estaciones no hay Centro Pokémon.",
+      "Los personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/pathoflegends.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "SCARLET",
+      "VIOLET"
+    ],
+    "mission": "08",
+    "location": "Postgame: Torneo Academia, revanchas y Pokédex",
+    "requires": [
+      "Final de Paldea (misión 07)."
+    ],
+    "steps": [
+      "Torneo Academia: se juega en la Academia y se puede repetir. Entre los rivales hay líderes de gimnasio, el Alto Mando, la Campeona, Mencía, Damián y Noa; ganarlo da premios.",
+      "Revanchas: los líderes de gimnasio y los jefes del Team Star admiten un combate más fuerte. Las pruebas de gimnasio también se repiten por recompensa.",
+      "Captura de los titanes con su marca especial y de los legendarios de las estacas (misión 12).",
+      "Completa la Pokédex de Paldea para recibir el diploma. Con los DLC siguen las misiones 09 a 11 (Noroteo, Academia Arándano y el epílogo)."
+    ],
+    "check": "Torneo Academia ganado al menos una vez y Pokédex de Paldea revisada.",
+    "pitfalls": [
+      "Los personajes van con su nombre inglés (Serebii); los lugares, con el oficial en español (PKHeX)."
+    ],
+    "sources": [
+      "https://www.serebii.net/scarletviolet/academyacetournament.shtml",
+      "https://www.serebii.net/scarletviolet/gymrematches.shtml",
+      "https://www.serebii.net/scarletviolet/teamstarrematches.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
   },
   {
     "games": [
@@ -1597,7 +1824,7 @@
     "steps": [
       "Acepta la invitación a la Academia Arándano y completa la introducción al Biodomo y a sus Tareas Extraescolares para reunir Puntos Arándano.",
       "Abre el recorrido de la Liga Arándano y supera las pruebas de sus cuatro miembros. Prepara equipos para combates dobles y revisa los requisitos particulares de cada prueba.",
-      "Supera el enfrentamiento decisivo con Kieran y continúa la expedición al Área Cero cuando la historia lo indique.",
+      "Supera el enfrentamiento decisivo con Cass y continúa la expedición al Área Cero cuando la historia lo indique.",
       "En las profundidades del Área Cero sigue los bloqueos de los Pokémon de teratipo Astral y continúa hasta el episodio de Terapagos. Completa sus fases y el cierre de la expedición.",
       "Tras la historia vuelve al Club de la Liga: sus mejoras abren iniciales del Biodomo, invitaciones y recompensas. No se obtienen todas simplemente por vencer al Campeón.",
       "Revisa la misión de las fotografías de Gama y sus capturas Paradoja según versión. Los Snacks de Galletano y las Tareas de Círculo Unión tienen condiciones propias de cooperación."
@@ -1623,10 +1850,10 @@
     "mission": "11",
     "location": "Noroteo: epílogo Melodía de los mochis",
     "requires": [
-      "Torneo de la Academia ganado; historias de los dos DLC terminadas; Baya Meloc singular obtenida mediante el método de distribución disponible"
+      "Gran Pugna Académica ganado; historias de los dos DLC terminadas; Baya Meloc singular obtenida mediante el método de distribución disponible"
     ],
     "steps": [
-      "Comprueba el cierre del Torneo de la Academia y de El disco índigo. Tener instalados los DLC no demuestra que sus historias estén completas.",
+      "Comprueba el cierre del Gran Pugna Académica y de El disco índigo. Tener instalados los DLC no demuestra que sus historias estén completas.",
       "Revisa en Objetos Clave la Baya Meloc singular recibida por Regalo Misterioso. Si no dispones de ella, comprueba la disponibilidad actual de la distribución antes de viajar.",
       "Ve al establecimiento de Villa Versui en Noroteo e interactúa con el adorno relacionado con la baya para activar el epílogo.",
       "Sigue las llamadas y la reunión con tus compañeros; resuelve los encuentros de la aldea y el recorrido hacia el salón que marca la historia.",
@@ -1651,10 +1878,10 @@
     "mission": "DETAIL1",
     "location": "Noroteo: epílogo Melodía de los mochis",
     "requires": [
-      "Torneo de la Academia ganado; historias de los dos DLC terminadas; Baya Meloc singular obtenida mediante el método de distribución disponible"
+      "Gran Pugna Académica ganado; historias de los dos DLC terminadas; Baya Meloc singular obtenida mediante el método de distribución disponible"
     ],
     "steps": [
-      "Comprueba el cierre del Torneo de la Academia y de El disco índigo. Tener instalados los DLC no demuestra que sus historias estén completas.",
+      "Comprueba el cierre del Gran Pugna Académica y de El disco índigo. Tener instalados los DLC no demuestra que sus historias estén completas.",
       "Revisa en Objetos Clave la Baya Meloc singular recibida por Regalo Misterioso. Si no dispones de ella, comprueba la disponibilidad actual de la distribución antes de viajar.",
       "Ve al establecimiento de Villa Versui en Noroteo e interactúa con el adorno relacionado con la baya para activar el epílogo.",
       "Sigue las llamadas y la reunión con tus compañeros; resuelve los encuentros de la aldea y el recorrido hacia el salón que marca la historia.",
@@ -1703,6 +1930,160 @@
     "games": [
       "ZA"
     ],
+    "mission": "01",
+    "location": "Ciudad Luminalia: llegada, Hotel Z y primera noche",
+    "requires": [],
+    "steps": [
+      "Misión principal 1: nada más llegar a Ciudad Luminalia, un Pancham te roba la bolsa de viaje. Persíguelo por las calles hasta recuperarla.",
+      "Misión 2: al caer la noche la ciudad se convierte en zona de combate. Sigue a tu nueva amiga o amigo (Muni o Urbi, según tu protagonista) para salir de ella y refugiarte en el Hotel Z.",
+      "Misión 3: tu acompañante te enseña lo básico de la vida en Luminalia: Centro Pokémon, tiendas, zonas salvajes urbanas y el sistema de combate en tiempo real, con movimientos y esquivas.",
+      "Antes de seguir, captura algún Pokémon en las zonas salvajes cercanas y forma un equipo de al menos tres para las primeras noches de los Juegos Z-A."
+    ],
+    "check": "Bolsa recuperada, primera noche superada y misión principal 3 marcada como completada.",
+    "pitfalls": [
+      "Los nombres de personajes son los de la versión inglesa (Serebii); los lugares, los oficiales en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/mainmissions.shtml",
+      "https://www.serebii.net/legendsz-a/z-aroyale.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
+    "mission": "02",
+    "location": "Juegos Z-A: rangos Z → Y → X → W → V",
+    "requires": [],
+    "steps": [
+      "Por la noche aparecen zonas de combate por toda la ciudad, también en las azoteas. Vence entrenadores para sumar puntos (hasta 2.500 por combate según tu rango) y recoge medallas de premio y tarjetas de bonificación.",
+      "Las tarjetas de bonificación piden tareas concretas: quemar o paralizar, golpes supereficaces, ataques por sorpresa o derrotar a entrenadores de rango superior. Las raras dan hasta 20.000 puntos. Atacar sin ser visto te da ventaja al empezar el combate.",
+      "Algunos entrenadores ayudan tras vencerlos: dependientes del Centro Pokémon y camareros curan, los niños ricos dan medallas, los Entrenadores Guay dan una tarjeta y los mensajeros dan objetos. Al amanecer las medallas se convierten en dinero, multiplicado según cuántos entrenadores hayas vencido (×1 a ×3).",
+      "Misión 4: con suficientes puntos consigues el Cupón Desafío y puedes disputar el combate de ascenso al rango Y.",
+      "Misiones 6 a 8: repite el ciclo para subir a X (rival: Yvon, oficinista), W (Xavi, colegial) y V (Rintaro, camarero). Cada ascenso se disputa con el billete en el lugar que indica la misión.",
+      "Entre combates, la misión 5 te enseña más de la ciudad junto a tu acompañante."
+    ],
+    "check": "Rango V alcanzado (misión principal 8 completada).",
+    "pitfalls": [
+      "Los rivales de la noche tienen tu rango o uno más o uno menos.",
+      "Los nombres de personajes son los de la versión inglesa (Serebii); los lugares, los oficiales en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/mainmissions.shtml",
+      "https://www.serebii.net/legendsz-a/z-aroyale.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
+    "mission": "03",
+    "location": "Luminalia: zonas salvajes y el Pokémon misterioso",
+    "requires": [],
+    "steps": [
+      "Explora las zonas salvajes urbanas de cada distrito (Verde, Azul, Rosa, Rojo y Amarillo) y registra especies en la Pokédex de Luminalia. Las apariciones cambian con el día y la noche y con el tiempo.",
+      "Misión principal 9: un Pokémon misterioso aparece ante ti y quiere que lo sigas. Síguelo hasta el final de la escena.",
+      "Aprovecha para completar misiones secundarias: dan objetos, Megapiedras y accesos que la historia no exige."
+    ],
+    "check": "Misión principal 9 completada y zonas salvajes de los cinco distritos visitadas.",
+    "pitfalls": [
+      "Los nombres de personajes son los de la versión inglesa (Serebii); los lugares, los oficiales en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/mainmissions.shtml",
+      "https://www.serebii.net/legendsz-a/z-aroyale.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
+    "mission": "04",
+    "location": "Megaevolución: Mega Aro y megaevoluciones descontroladas (rangos E a A)",
+    "requires": [],
+    "steps": [
+      "Misión 10: aprende los secretos de la megaevolución y consigue el Mega-Aro.",
+      "Misiones 11 a 13: megaevoluciones descontroladas de Slowbro (Distrito Azul), Camerupt (Distrito Amarillo) y Victreebel (Distrito Rosa). Si el contador llega a cero pierdes el combate: ataca rápido y esquiva sus ataques de área.",
+      "Misión 14: rango E contra Naria, la streamer; primero tienes que encontrarla.",
+      "Misiones 15 a 18 (encargo del Equipo MZ, «Team MZ» en inglés): Beedrill (Distrito Verde), Hawlucha (Distrito Rosa) y Banette (Distrito Amarillo).",
+      "Misión 19: antes del ascenso a D, busca a Inma, la hermana pequeña de Albar, que ha desaparecido. Después vence a Albar.",
+      "Misiones 20 a 23: encargos del Clan Corrosión para saldar la deuda, y las megaevoluciones de Mawile (Distrito Rosa), Barbaracle (Distrito Azul) y Ampharos (Distrito Rojo).",
+      "Misión 24: rango C contra Córax, jefe del Clan Corrosión. Misión 25: combate en una pista de verdad, ya resuelta la deuda.",
+      "Misiones 26 a 29: Froslass (Distrito Azul), Altaria (Distrito Rosa) y Venusaur (Distrito Amarillo), antes del torneo de Lilette (SBC). Misión 30: rango B contra Lilette.",
+      "Misiones 31 a 34: Dragonite (Distrito Verde), Tyranitar (Distrito Amarillo) y Starmie (Distrito Azul)."
+    ],
+    "check": "Las 15 megaevoluciones descontroladas de la historia vencidas y rango B alcanzado (misión principal 34).",
+    "pitfalls": [
+      "Cada megaevolución descontrolada tiene límite de tiempo; a veces suelta una esfera que congela la cuenta atrás.",
+      "Los nombres de personajes son los de la versión inglesa (Serebii); los lugares, los oficiales en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/mainmissions.shtml",
+      "https://www.serebii.net/legendsz-a/z-aroyale.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
+    "mission": "05",
+    "location": "Rango A, Torre Prisma y el futuro de Luminalia",
+    "requires": [],
+    "steps": [
+      "Misión 35: tu rival para el rango A es Grisel. Solo tienes su foto, así que búscalo por la ciudad antes de enfrentarte a él.",
+      "Misión 36: una luz extraña sale de la Torre Prisma. Reúnete con tus amigos para proteger la ciudad.",
+      "Misión 37 («El plan para salvar Ciudad Luminalia»): deja atrás las rivalidades y ve a por Zygarde, que te espera en el lugar indicado.",
+      "Misión 38: con la ciudad recuperada, decide con tu acompañante qué hacer con los deseos ganados al llegar al rango A. Es el final de la historia principal."
+    ],
+    "check": "Misión principal 38 completada y rango A alcanzado.",
+    "pitfalls": [
+      "Guarda antes de los combates finales.",
+      "Los nombres de personajes son los de la versión inglesa (Serebii); los lugares, los oficiales en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/mainmissions.shtml",
+      "https://www.serebii.net/legendsz-a/z-aroyale.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
+    "mission": "08",
+    "location": "Postgame: Juegos Z-A Infinitos, Pokédex y reconocimiento",
+    "requires": [],
+    "steps": [
+      "Misión 39: se abren los Juegos Z-A Infinitos. Ya no hay más ascensos de rango, pero cada noche hay tres zonas de combate y los rivales suben de nivel a medida que completas torneos.",
+      "Con el Cupón Desafío puedes llamar a un rival en Quastelar S. A. para los combates de recompensa: pepitas grandes, vitaminas, Chapas Plateadas o Doradas, Poké Balls especiales y, con suerte, una Master Ball. Las rachas largas dan más Caramelos Exp.",
+      "Misiones 40 a 42: la amenaza de «el que da» (con Melia, antes miembro del Team Flare), la de «el que quita» (con Grisel y Airén) y el equilibrio del mundo con Zygarde. Los encuentros y capturas de Xerneas, Yveltal y Zygarde se detallan en la misión 06.",
+      "Completa la Pokédex de Luminalia y, si tienes el DLC, la del Hiperespacio (misión 07). Revisa también los títulos de entrenador y la investigación de Pokédex de Melia."
+    ],
+    "check": "Misiones principales 39 a 42 completadas, Torneo Infinito iniciado y Pokédex revisadas.",
+    "pitfalls": [
+      "Las distribuciones por internet o con código no se desbloquean jugando.",
+      "Los nombres de personajes son los de la versión inglesa (Serebii); los lugares, los oficiales en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/mainmissions.shtml",
+      "https://www.serebii.net/legendsz-a/z-aroyale.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
     "mission": "06",
     "location": "Luminalia: encuentro de Xerneas, Yveltal y Zygarde",
     "requires": [
@@ -1713,17 +2094,134 @@
       "Para Yveltal, completa las simulaciones de revancha contra Mega-Victreebel, Mega-Hawlucha y Mega-Tyranitar. Vuelve a informar y busca a Yveltal en la azotea indicada de la galería del sector rojo.",
       "Después de capturar a Xerneas y Yveltal, vuelve con L y supera su combate. Continúa la escena en la que Zygarde dirige al jugador hacia la Torre Prisma.",
       "Afronta el desafío de Zygarde por fases: primero 10 %, después 50 % y finalmente la Forma Completa. Mantén recursos y atención a los ataques de área durante el cambio de fase.",
-      "Al terminar el desafío, completa la oportunidad de captura y revisa las escenas posteriores. Esta cadena no exige haber completado el DLC de Mega Dimension."
+      "Al terminar el desafío, completa la oportunidad de captura y revisa las escenas posteriores. Esta cadena no exige haber completado el DLC de Megadimensión."
     ],
     "check": "Las tres capturas y sus escenas de postgame revisadas.",
     "pitfalls": [
-      "Las distribuciones adicionales de Mewtwo o Diancie y las misiones de Mega Dimension tienen accesos propios. No se desbloquean automáticamente por capturar a Zygarde."
+      "Las distribuciones adicionales de Mewtwo o Diancie y las misiones de Megadimensión tienen accesos propios. No se desbloquean automáticamente por capturar a Zygarde."
     ],
     "sources": [
       "https://www.serebii.net/legendsz-a/legendary.shtml"
     ],
     "review": "reference-checked",
     "reviewedAt": "2026-11-10"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
+    "mission": "07",
+    "location": "Mega Dimensión (DLC): Luminalia Hiperespacial, Hoopa y los legendarios de Hoenn",
+    "requires": [
+      "DLC Mega Dimensión instalado. Desde el 16 de octubre de 2025 da la ropa Holo-X y Holo-Y; la historia llegó el 10 de diciembre de 2025."
+    ],
+    "steps": [
+      "Con el DLC instalado empiezan a abrirse los agujeros de Hoopa en Ciudad Luminalia. Persigue a Ansha, la repostera que viaja con Hoopa: acabarás en la Luminalia Hiperespacial y, al volver, recibirás el encargo de investigarla (misión del Hiperespacio n.º 1, primer sondeo).",
+      "Para entrar en el Hiperespacio necesitas un dónut de Ansha. Sus sabores activan poderes de Hoopa que suben tu nivel y el de tus Pokémon. Dentro, los Pokémon salvajes superan el nivel 100, así que prepara el equipo y usa dónuts de tantas estrellas como la zona: con menos estrellas, la probabilidad de captura baja mucho.",
+      "Cada zona del Hiperespacio trae tareas que suman puntos de sondeo. Por ejemplo: romper Poké Balls flotantes, rocas, zarzas o lodo; recoger objetos brillantes; capturar especies concretas, de un tipo, alfa o variocolor; capturar sin ser detectado o en la ventana de captura. Al completarlas todas aparece una Bola Bonus con objetos raros, entre ellos Bayas Hiper.",
+      "En las zonas de combate del Hiperespacio vence a entrenadores para sumar sondeo. Algunos ayudan: mensajeros (Bayas Hiper), enfermeras y camareras (curan), maníacos (Poké Balls raras) y niños ricos (monedas de Gimmighoul y pepitas).",
+      "Avanza las 14 misiones del Hiperespacio en orden. Alternan los sondeos n.º 2 a n.º 6 con escenas en el Hotel Z: la llegada de Corelia, un descanso por el museo y la cafetería, un estruendo en la sala de estrategia del Equipo MZ, un compañero que no baja a desayunar y un alboroto a medianoche. Cada sondeo calibra los detectores y abre zonas más peligrosas.",
+      "En los sondeos n.º 4 a n.º 6 investigas la gran distorsión sobre la torre. El hiperespacio amenaza con tragarse la ciudad real. El sondeo n.º 6 resuelve el misterio e impide que la Luminalia Hiperespacial se fusione con la ciudad.",
+      "Misión 12: Ansha aún busca un legendario. Prepara el dónut especial, cruza la distorsión esmeralda y captura a Rayquaza.",
+      "Misión 13: prepara el dónut especial de la distorsión rubí y captura a Groudon. Misión 14: el de la distorsión zafiro, para capturar a Kyogre.",
+      "Postgame del DLC: tras terminar la historia principal y vencer a Darkrai aparecen las Arenas Mega Rebeldes del Hiperespacio. Son revanchas de las megaevoluciones descontroladas a nivel 200 y con límite de tiempo; a veces sueltan una esfera que congela la cuenta atrás.",
+      "Cuando completes la misión secundaria 188, cada 25.000 puntos de sondeo puedes pedir un escaneo de zonas especiales en las oficinas del encargo (habla con Giso). A veces sale una zona desconocida de 5 estrellas con un legendario o singular: Latias, Latios, Cobalion, Terrakion, Virizion, Keldeo y Meloetta.",
+      "Las zonas desconocidas a las que llevan algunos portales suelen ligarse a misiones secundarias o dan Megapiedras nuevas. Revisa la lista de Megapiedras para las megaevoluciones del DLC: Raichu X e Y, Chimecho, Absol Z, Staraptor, Garchomp Z, Lucario Z, Heatran, Darkrai, Golurk, Meowstic, Crabominable, Golisopod, Magearna, Zeraora, Scovillain, Glimmora, Tatsugiri y Baxcalibur."
+    ],
+    "check": "Las 14 misiones del Hiperespacio marcadas, Rayquaza, Groudon y Kyogre capturados, las Arenas Mega Rebeldes del Hiperespacio superadas y los legendarios de las zonas escaneadas registrados.",
+    "pitfalls": [
+      "Entrar con un dónut de menos estrellas que la zona reduce mucho la probabilidad de captura.",
+      "Las zonas escaneadas no aparecen hasta completar la misión secundaria 188.",
+      "Las Arenas Mega Rebeldes del Hiperespacio requieren haber vencido antes a Darkrai."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/megadimension.shtml",
+      "https://www.serebii.net/legendsz-a/hyperspacemissions.shtml",
+      "https://www.serebii.net/legendsz-a/hyperspacelumiose.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ULTRASUN",
+      "ULTRAMOON"
+    ],
+    "mission": "09",
+    "location": "Postgame de Alola: Ultraumbrales y Episodio RR",
+    "requires": [
+      "Campeón de Alola."
+    ],
+    "steps": [
+      "Ultraumbrales: desde la Ultrópolis (abierta en la historia) se vuela por el Ultraespacio a lomos de Lunala (Ultrasol) o Solgaleo (Ultraluna); se puede cambiar en la Ultrópolis. Al principio se controla con el giroscopio; en el edificio de GAME FREAK de Ciudad Kantai te dejan usar el stick.",
+      "Durante el vuelo recoge las esferas naranjas de energía y evita las eléctricas azules. Cuantos más años luz recorras, más probable es que el portal tenga borde especial (tipos 2 a 4) y lleve a un legendario: por ejemplo, a 3.000 años luz sale un 16 % de tipo 3 y un 2 % de tipo 4. No está garantizado.",
+      "Episodio RR: después de resolver lo de Blacephalon y Stakataka en Poni, Chris (Chris) te avisa de que la Festi Plaza ha sido pirateada. Entra con él y combate con Pokémon prestados de la Agencia de Combate hasta recuperar el control.",
+      "Por la tele ves cómo Giovanni irrumpe en la rueda de prensa de Samina. Sigue a Lylia al Paraíso Æther, convertido en castillo, y vence a Fabio en combate múltiple junto a ella.",
+      "Dentro del castillo recorre las salas, vence a los jefes de otros mundos que ha reunido el Team Rainbow Rocket y, al final, a Giovanni."
+    ],
+    "check": "Episodio RR terminado y Ultraumbrales explorados en busca de legendarios.",
+    "pitfalls": [
+      "En la Festi Plaza pirateada no puedes usar tus Pokémon: solo los prestados de la Agencia.",
+      "Los personajes van con su nombre inglés (Serebii) cuando no se ha podido comprobar el oficial en español."
+    ],
+    "sources": [
+      "https://www.serebii.net/ultrasunultramoon/teamrainbowrocket.shtml",
+      "https://www.serebii.net/ultrasunultramoon/ultrawormholes.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "ULTRASUN",
+      "ULTRAMOON"
+    ],
+    "mission": "10",
+    "location": "Pasaporte, pegatinas dominantes y colecciones",
+    "requires": [],
+    "steps": [
+      "Pegatinas dominantes: hay más de 100 escondidas por Alola (17 en Melemele, 33 en Akala y el resto en Ula-Ula y Poni). Algunas quedan tapadas por objetos, por el ángulo de cámara o por Pokémon.",
+      "Al llegar a 20 pegatinas te llama Samson Oak: visítalo y te da un Pokémon de tamaño dominante. Las recompensas van por cantidad y edición: 20 → Gumshoos (Ultrasol) o Raticate (Ultraluna); 40 → Marowak o Araquanid; 50 → Lurantis o Salazzle; 70 → Vikavolt o Togedemaru; 80 → Mimikyu (en las dos); 100 → Ribombee o Kommo-o. Ninguno puede salir variocolor.",
+      "Pasaporte de entrenador, con 15 sellos: entrenador oficial; las cuatro Grandes Pruebas (Melemele, Akala, Ula-Ula y Poni, que suben el nivel al que te obedecen los Pokémon: 35, 50, 65 y 80); recorrido insular completado; las Pokédex de Melemele, Akala, Ula-Ula, Poni y Alola; 50 victorias seguidas en el Árbol de Combate en individual, dobles y múltiple; y el Pokévisor en su versión final.",
+      "Comprueba cada sello en la página del pasaporte: la web lo cruza con lo que lee del guardado."
+    ],
+    "check": "Los 15 sellos del pasaporte y las pegatinas dominantes que te faltan.",
+    "pitfalls": [
+      "Las pegatinas no se ven en el mapa; usa la lista por zonas."
+    ],
+    "sources": [
+      "https://www.serebii.net/ultrasunultramoon/totemstickers.shtml",
+      "https://www.serebii.net/ultrasunultramoon/trainerpassport.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
+  },
+  {
+    "games": [
+      "DIAMOND",
+      "PEARL"
+    ],
+    "mission": "12",
+    "location": "Sinnoh: Pokédex Nacional, Superconcursos, Subsuelo y tarjeta negra",
+    "requires": [
+      "Salón de la Fama."
+    ],
+    "steps": [
+      "Tras el Salón de la Fama, cuando hayas visto los 150 Pokémon de la Pokédex de Sinnoh, el profesor Oak, de visita en el laboratorio del profesor Serbal en Pueblo Arena, mejora tu Pokédex a la Nacional y se abre el resto del mapa.",
+      "La tarjeta de entrenador sube de color con cinco hitos, en cualquier orden: vencer al Alto Mando; ganar un Superconcurso de rango Maestro en cualquier categoría; capturar banderas en el Subsuelo; completar la Pokédex Nacional (482 especies, sin Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus); y lograr 100 victorias seguidas en la Torre Batalla. Con los cinco es la tarjeta negra.",
+      "Subsuelo: usa el Kit Explorador para excavar fósiles y esferas, crea tu base secreta y captura banderas en otras bases con amigos.",
+      "Superconcursos: hay cinco categorías (Carisma, Belleza, Dulzura, Ingenio y Dureza). Prepara pokochos y accesorios y ve subiendo de rango Normal a Maestro.",
+      "Revisa la lista de objetivos de esta edición para los legendarios y los eventos."
+    ],
+    "check": "Tarjeta de entrenador negra (cinco estrellas) y Pokédex Nacional completa.",
+    "pitfalls": [
+      "La Pokédex Nacional del premio excluye singulares de evento; no hace falta tenerlos."
+    ],
+    "sources": [
+      "https://www.serebii.net/diamondpearl/trainercard.shtml"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-11"
   },
   {
     "games": [
@@ -1789,7 +2287,7 @@
       "LEAFGREEN"
     ],
     "mission": "E01",
-    "location": "Islas Sete: Isla Prima, Isla Quarta, Isla Inta e Isla Sesta",
+    "location": "Archi7: Isla Prima, Isla Quarta, Isla Inta e Isla Sesta",
     "requires": [
       "Primera visita con Bill completada; Liga y 60 especies capturadas para la mejora Nacional"
     ],
@@ -2108,6 +2606,38 @@
     ],
     "review": "reference-checked",
     "reviewedAt": "2026-11-10"
+  },
+  {
+    "games": [
+      "ZA"
+    ],
+    "mission": "DETAIL1",
+    "location": "Megadimensión: lista del 100 % del DLC, en orden",
+    "requires": [
+      "DLC Megadimensión y la historia base terminada (misiones principales hasta la 42).",
+      "Dónuts de Ansha de tantas estrellas como la zona del Hiperespacio que vayas a visitar."
+    ],
+    "steps": [
+      "1. Historia del DLC: las 14 misiones del Hiperespacio en orden (sondeos n.º 1 a n.º 6 y las escenas del Hotel Z). Es lo que desbloquea todo lo demás.",
+      "2. Legendarios de la historia del DLC, en este orden: Rayquaza (misión 12, distorsión esmeralda), Groudon (misión 13, distorsión rubí) y Kyogre (misión 14, distorsión zafiro). Cada uno pide su dónut especial.",
+      "3. Darkrai: al terminar la historia del DLC; vencerlo abre las Arenas Mega Rebeldes del Hiperespacio.",
+      "4. Arenas Mega Rebeldes del Hiperespacio: revanchas de nivel 200 con límite de tiempo contra cada megaevolución descontrolada.",
+      "5. Misión secundaria 188: a partir de ella, cada 25.000 puntos de sondeo, Giso escanea zonas especiales. Las zonas desconocidas de 5 estrellas traen a Latias, Latios, Cobalion, Terrakion, Virizion, Meloetta y, con los tres Espadachines capturados, Keldeo. Repite escaneos hasta tenerlos todos.",
+      "6. Megapiedras nuevas del DLC: Raichu X e Y, Chimecho, Absol Z, Staraptor, Garchomp Z, Lucario Z, Heatran, Darkrai, Golurk, Meowstic, Crabominable, Golisopod, Magearna, Zeraora, Scovillain, Glimmora, Tatsugiri y Baxcalibur (portales a zonas desconocidas y misiones secundarias).",
+      "7. Pokédex de Megadimensión: registra las especies nuevas que aparecen en el Hiperespacio."
+    ],
+    "check": "Las 14 misiones del Hiperespacio, Rayquaza, Groudon, Kyogre y Darkrai, las Arenas Mega Rebeldes y los legendarios de las zonas de 5 estrellas registrados.",
+    "pitfalls": [
+      "Keldeo no sale en los escaneos hasta tener a Cobalion, Terrakion y Virizion.",
+      "Sin la misión secundaria 188 no hay escaneos de zonas especiales."
+    ],
+    "sources": [
+      "https://www.serebii.net/legendsz-a/megadimension.shtml",
+      "https://www.serebii.net/legendsz-a/hyperspacemissions.shtml",
+      "https://www.wikidex.net/wiki/Keldeo"
+    ],
+    "review": "reference-checked",
+    "reviewedAt": "2026-11-12"
   }
 ];
  routes.push(...(typeof module==='object'&&module.exports?require('./hoenn.js'):root.PokemonHoennRoutes));
@@ -2123,6 +2653,7 @@
  routes.push(...(typeof module==='object'&&module.exports?require('./lets-go.js'):root.PokemonLetsGoRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./galar.js'):root.PokemonGalarRoutes));
  routes.push(...(typeof module==='object'&&module.exports?require('./bdsp.js'):root.PokemonBDSPRoutes));
+ routes.push(...(typeof module==='object'&&module.exports?require('./hisui.js'):root.PokemonHisuiRoutes));
  const ice=typeof module==='object'&&module.exports?require('./ice-puzzle.js'):root.PokemonIcePuzzle;
  const byMission=new Map();
  for(const route of routes)for(const game of route.games){const id=game+'-'+route.mission;if(byMission.has(id))throw Error('Ruta editorial duplicada: '+id);byMission.set(id,route);}

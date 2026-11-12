@@ -10,7 +10,7 @@
   "place": "Resort Batalla",
   "phase": "Delta",
   "steps": [
-   "Termina el Episodio Delta y usa el Ticket Barco para llegar al Resort Batalla.",
+   "Termina el Episodio Delta y usa el Ticket del Barco para llegar al Resort Batalla.",
    "Rodea la isla por el nivel de la playa hasta la cabaña del encargado, en el lado norte. Dentro, recoge el objeto del extremo izquierdo junto a la pared del fondo."
   ],
   "sources": [
@@ -80,7 +80,7 @@
   "place": "S.S. Marea",
   "phase": "Delta",
   "steps": [
-   "Recibe el Ticket Barco después del Episodio Delta y embarca en el S.S. Marea.",
+   "Recibe el Ticket del Barco después del Episodio Delta y embarca en el S.S. Marea.",
    "Sal a la cubierta delantera y examina su esquina superior derecha."
   ],
   "sources": [

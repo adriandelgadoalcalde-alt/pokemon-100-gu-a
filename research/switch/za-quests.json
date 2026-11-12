@@ -1,0 +1,1946 @@
+{
+ "game": "Pokémon Leyendas Z-A (base + actualización 2.0.2)",
+ "source": "ik_event/bin/flag/quest_work.bin (nombres de las variables), ik_event/bin/quest/main_quest.bin y ik_message/dat/Spanish/common/questlist_main|questlist_sub (títulos), leídos en el PC de la copia propia con scripts propios y ooz (GPL-3.0)",
+ "hash": "FNV-1a de 64 bits del nombre; es la clave de KEventWorkQuest (0xB9B223B9) en la partida (322 de 322 claves casan en la partida del propietario y 301 de 301 en la pública de RoCs PC)",
+ "values": "0 = sin hacer, 255 = completada (contraste: partida completa del propietario y partida pública a medias)",
+ "note": "Solo nombres internos, hashes y títulos; ningún otro byte del juego.",
+ "main": [
+  {
+   "work": "SYS_WORK_MAINQUEST_01_01",
+   "hash": "496A81FE151FD180",
+   "chapter": 1,
+   "step": 1,
+   "title": "¡Recupera tu bolsa!",
+   "mission": 1
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_01_02",
+   "hash": "496A84FE151FD699",
+   "chapter": 1,
+   "step": 2,
+   "title": "Sal de la zona de combate",
+   "mission": 2
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_02_01",
+   "hash": "73E899F2CBB74A97",
+   "chapter": 2,
+   "step": 1,
+   "title": "Vida nueva en Ciudad Luminalia",
+   "mission": 3
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_02_02",
+   "hash": "73E89AF2CBB74C4A",
+   "chapter": 2,
+   "step": 2,
+   "title": "Los Juegos Z-A",
+   "mission": 4
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_03_01",
+   "hash": "72AD4DEDA4A9AE22",
+   "chapter": 3,
+   "step": 1,
+   "title": "La ciudad a los pies de la Torre Prisma",
+   "mission": 5
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_03_02",
+   "hash": "72AD4CEDA4A9AC6F",
+   "chapter": 3,
+   "step": 2,
+   "title": "A por el rango X",
+   "mission": 6
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_03_03",
+   "hash": "72AD4BEDA4A9AABC",
+   "chapter": 3,
+   "step": 3,
+   "title": "A por el rango W",
+   "mission": 7
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_03_04",
+   "hash": "72AD4AEDA4A9A909",
+   "chapter": 3,
+   "step": 4,
+   "title": "A por el rango V",
+   "mission": 8
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_03_05",
+   "hash": "72AD49EDA4A9A756",
+   "chapter": 3,
+   "step": 5,
+   "title": "Persigue al Pokémon misterioso",
+   "mission": 9
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_04_01",
+   "hash": "7B0F9627CE58E631",
+   "chapter": 4,
+   "step": 1,
+   "title": "Los secretos de la megaevolución",
+   "mission": 10
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_04_02",
+   "hash": "7B0F9327CE58E118",
+   "chapter": 4,
+   "step": 2,
+   "title": "El Mega-Slowbro descontrolado",
+   "mission": 11
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_04_03",
+   "hash": "7B0F9427CE58E2CB",
+   "chapter": 4,
+   "step": 3,
+   "title": "El Mega-Camerupt descontrolado",
+   "mission": 12
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_04_04",
+   "hash": "7B0F9927CE58EB4A",
+   "chapter": 4,
+   "step": 4,
+   "title": "El Mega-Victreebel descontrolado",
+   "mission": 13
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_04_05",
+   "hash": "7B0F9A27CE58ECFD",
+   "chapter": 4,
+   "step": 5,
+   "title": "A por el rango E",
+   "mission": 14
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_05_00",
+   "hash": "A58E0B1C84F0FD4F",
+   "chapter": 5,
+   "step": 0,
+   "title": "Una misión para el Equipo MZ",
+   "mission": 15
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_05_01",
+   "hash": "A58E0A1C84F0FB9C",
+   "chapter": 5,
+   "step": 1,
+   "title": "A por el rango D",
+   "mission": 16
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_05_02",
+   "hash": "A58E0D1C84F100B5",
+   "chapter": 5,
+   "step": 2,
+   "title": "El Mega-Beedrill descontrolado",
+   "mission": 17
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_05_03",
+   "hash": "A58E0C1C84F0FF02",
+   "chapter": 5,
+   "step": 3,
+   "title": "El Mega-Hawlucha descontrolado",
+   "mission": 18
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_05_04",
+   "hash": "A58E071C84F0F683",
+   "chapter": 5,
+   "step": 4,
+   "title": "El Mega-Banette descontrolado",
+   "mission": 19
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_06_01",
+   "hash": "798702162386E953",
+   "chapter": 6,
+   "step": 1,
+   "title": "El encargo del Clan Corrosión",
+   "mission": 20
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_06_02",
+   "hash": "798703162386EB06",
+   "chapter": 6,
+   "step": 2,
+   "title": "El Mega-Mawile descontrolado",
+   "mission": 21
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_06_03",
+   "hash": "798704162386ECB9",
+   "chapter": 6,
+   "step": 3,
+   "title": "El Mega-Barbaracle descontrolado",
+   "mission": 22
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_06_04",
+   "hash": "798705162386EE6C",
+   "chapter": 6,
+   "step": 4,
+   "title": "El Mega-Ampharos descontrolado",
+   "mission": 23
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_06_05",
+   "hash": "798706162386F01F",
+   "chapter": 6,
+   "step": 5,
+   "title": "A por el rango C",
+   "mission": 24
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_07_00",
+   "hash": "CD1D570C13086BF1",
+   "chapter": 7,
+   "step": 0,
+   "title": "Combate Pokémon en la arena",
+   "mission": 25
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_07_01",
+   "hash": "CD1D560C13086A3E",
+   "chapter": 7,
+   "step": 1,
+   "title": "La invitación de la SCL",
+   "mission": 26
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_07_02",
+   "hash": "CD1D550C1308688B",
+   "chapter": 7,
+   "step": 2,
+   "title": "El Mega-Froslass descontrolado",
+   "mission": 27
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_07_03",
+   "hash": "CD1D540C130866D8",
+   "chapter": 7,
+   "step": 3,
+   "title": "El Mega-Altaria descontrolado",
+   "mission": 28
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_07_04",
+   "hash": "CD1D5B0C130872BD",
+   "chapter": 7,
+   "step": 4,
+   "title": "El Mega-Venusaur descontrolado",
+   "mission": 29
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_07_05",
+   "hash": "CD1D5A0C1308710A",
+   "chapter": 7,
+   "step": 5,
+   "title": "A por el rango B",
+   "mission": 30
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_08_01",
+   "hash": "D7331E463E2A104D",
+   "chapter": 8,
+   "step": 1,
+   "title": "Reunión con Airén",
+   "mission": 31
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_08_02",
+   "hash": "D7331B463E2A0B34",
+   "chapter": 8,
+   "step": 2,
+   "title": "El Mega-Dragonite descontrolado",
+   "mission": 32
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_08_03",
+   "hash": "D7331C463E2A0CE7",
+   "chapter": 8,
+   "step": 3,
+   "title": "El Mega-Tyranitar descontrolado",
+   "mission": 33
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_08_04",
+   "hash": "D73319463E2A07CE",
+   "chapter": 8,
+   "step": 4,
+   "title": "El Mega-Starmie descontrolado",
+   "mission": 34
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_08_05",
+   "hash": "D7331A463E2A0981",
+   "chapter": 8,
+   "step": 5,
+   "title": "A por el rango A",
+   "mission": 35
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_09_01",
+   "hash": "A979123FDB4E62B8",
+   "chapter": 9,
+   "step": 1,
+   "title": "Actividad irregular en la Torre Prisma",
+   "mission": 36
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_09_02",
+   "hash": "A979153FDB4E67D1",
+   "chapter": 9,
+   "step": 2,
+   "title": "El plan para salvar Ciudad Luminalia",
+   "mission": 37
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_09_03",
+   "hash": "A979143FDB4E661E",
+   "chapter": 9,
+   "step": 3,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_09_04",
+   "hash": "A979173FDB4E6B37",
+   "chapter": 9,
+   "step": 4,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_10_01",
+   "hash": "30FCADD0C5E77672",
+   "chapter": 10,
+   "step": 1,
+   "title": "El futuro de Ciudad Luminalia",
+   "mission": 38
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_10_02",
+   "hash": "30FCACD0C5E774BF",
+   "chapter": 10,
+   "step": 2,
+   "title": "Los Juegos Z-A Infinitos",
+   "mission": 39
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_10_03",
+   "hash": "30FCABD0C5E7730C",
+   "chapter": 10,
+   "step": 3,
+   "title": "El que da",
+   "mission": 40
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_10_04",
+   "hash": "30FCAAD0C5E77159",
+   "chapter": 10,
+   "step": 4,
+   "title": "El que quita",
+   "mission": 41
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_10_05",
+   "hash": "30FCA9D0C5E76FA6",
+   "chapter": 10,
+   "step": 5,
+   "title": "La preservación del equilibrio",
+   "mission": 42
+  },
+  {
+   "work": "SYS_WORK_MAINQUEST_20",
+   "hash": "4C371356E172F44B",
+   "chapter": 20,
+   "step": 0,
+   "title": ""
+  }
+ ],
+ "side": [
+  {
+   "work": "SYS_WORK_QUEST_1",
+   "hash": "58145BE185020DF7",
+   "number": 1,
+   "title": "¡Quiero usar una piedra evolutiva!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_2",
+   "hash": "58145CE185020FAA",
+   "number": 2,
+   "title": "Un Bunnelby descomunal"
+  },
+  {
+   "work": "SYS_WORK_QUEST_3",
+   "hash": "58145DE18502115D",
+   "number": 3,
+   "title": "El Sableye del cementerio"
+  },
+  {
+   "work": "SYS_WORK_QUEST_4",
+   "hash": "581456E185020578",
+   "number": 4,
+   "title": "Mi estilo: la distancia"
+  },
+  {
+   "work": "SYS_WORK_QUEST_5",
+   "hash": "581457E18502072B",
+   "number": 5,
+   "title": "Amante del tipo Hada"
+  },
+  {
+   "work": "SYS_WORK_QUEST_6",
+   "hash": "581458E1850208DE",
+   "number": 6,
+   "title": "Un Ekans de cerca"
+  },
+  {
+   "work": "SYS_WORK_QUEST_7",
+   "hash": "581459E185020A91",
+   "number": 7,
+   "title": "La mayor experta en Kakuna"
+  },
+  {
+   "work": "SYS_WORK_QUEST_8",
+   "hash": "581452E18501FEAC",
+   "number": 8,
+   "title": "La cafetería favorita de Slurpuff"
+  },
+  {
+   "work": "SYS_WORK_QUEST_9",
+   "hash": "581453E18502005F",
+   "number": 9,
+   "title": "Los sentimientos de Audino"
+  },
+  {
+   "work": "SYS_WORK_QUEST_10",
+   "hash": "ACA5E735027D6925",
+   "number": 10,
+   "title": "¿Veneno o parálisis? He ahí la cuestión"
+  },
+  {
+   "work": "SYS_WORK_QUEST_11",
+   "hash": "ACA5E635027D6772",
+   "number": 11,
+   "title": "El concurso de Budew"
+  },
+  {
+   "work": "SYS_WORK_QUEST_12",
+   "hash": "ACA5E535027D65BF",
+   "number": 12,
+   "title": "Las fragantes hojas de Skiddo"
+  },
+  {
+   "work": "SYS_WORK_QUEST_13",
+   "hash": "ACA5E435027D640C",
+   "number": 13,
+   "title": "La fragante nieve de Vanillite"
+  },
+  {
+   "work": "SYS_WORK_QUEST_14",
+   "hash": "ACA5E335027D6259",
+   "number": 14,
+   "title": "Pillapilla con Abra"
+  },
+  {
+   "work": "SYS_WORK_QUEST_15",
+   "hash": "ACA5E235027D60A6",
+   "number": 15,
+   "title": "Un Gogoat XL"
+  },
+  {
+   "work": "SYS_WORK_QUEST_16",
+   "hash": "ACA5E135027D5EF3",
+   "number": 16,
+   "title": "Un té muy monete"
+  },
+  {
+   "work": "SYS_WORK_QUEST_17",
+   "hash": "ACA5E035027D5D40",
+   "number": 17,
+   "title": "El interrogatorio policíaco"
+  },
+  {
+   "work": "SYS_WORK_QUEST_18",
+   "hash": "ACA5EF35027D76BD",
+   "number": 18,
+   "title": "Slowpoke por Slowpoke"
+  },
+  {
+   "work": "SYS_WORK_QUEST_19",
+   "hash": "ACA5EE35027D750A",
+   "number": 19,
+   "title": "Los movimientos de estado"
+  },
+  {
+   "work": "SYS_WORK_QUEST_20",
+   "hash": "ACA96D35028082AE",
+   "number": 20,
+   "title": "Nuestro afecto nos hace más fuertes"
+  },
+  {
+   "work": "SYS_WORK_QUEST_21",
+   "hash": "ACA96E3502808461",
+   "number": 21,
+   "title": "Barreras que mitigan el daño"
+  },
+  {
+   "work": "SYS_WORK_QUEST_22",
+   "hash": "ACA96B3502807F48",
+   "number": 22,
+   "title": "Avivando la llama de Litleo"
+  },
+  {
+   "work": "SYS_WORK_QUEST_23",
+   "hash": "ACA96C35028080FB",
+   "number": 23,
+   "title": "Un Weedle muy molesto"
+  },
+  {
+   "work": "SYS_WORK_QUEST_24",
+   "hash": "ACA971350280897A",
+   "number": 24,
+   "title": "El Magikarp más grande"
+  },
+  {
+   "work": "SYS_WORK_QUEST_25",
+   "hash": "ACA9723502808B2D",
+   "number": 25,
+   "title": "¡¿Cuál es el mejor de los dos?!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_26",
+   "hash": "ACA96F3502808614",
+   "number": 26,
+   "title": "Los Trubbish y la cafetería"
+  },
+  {
+   "work": "SYS_WORK_QUEST_27",
+   "hash": "ACA97035028087C7",
+   "number": 27,
+   "title": "¡Delibird en apuros!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_28",
+   "hash": "ACA9653502807516",
+   "number": 28,
+   "title": "Los misteriosos sucesos del bloque"
+  },
+  {
+   "work": "SYS_WORK_QUEST_29",
+   "hash": "ACA96635028076C9",
+   "number": 29,
+   "title": "La sanadora de corazones y su Sylveon"
+  },
+  {
+   "work": "SYS_WORK_QUEST_30",
+   "hash": "ACACF33502839C37",
+   "number": 30,
+   "title": "Pokémon restaurados a partir de fósiles"
+  },
+  {
+   "work": "SYS_WORK_QUEST_31",
+   "hash": "ACACF23502839A84",
+   "number": 31,
+   "title": "Apertura de la peluquería para Furfrou"
+  },
+  {
+   "work": "SYS_WORK_QUEST_32",
+   "hash": "ACACF53502839F9D",
+   "number": 32,
+   "title": "Mejorando la peluquería para Furfrou"
+  },
+  {
+   "work": "SYS_WORK_QUEST_33",
+   "hash": "ACACF43502839DEA",
+   "number": 33,
+   "title": "Completando la peluquería para Furfrou"
+  },
+  {
+   "work": "SYS_WORK_QUEST_34",
+   "hash": "ACACEF350283956B",
+   "number": 34,
+   "title": "Mucho ojo con las trampas"
+  },
+  {
+   "work": "SYS_WORK_QUEST_35",
+   "hash": "ACACEE35028393B8",
+   "number": 35,
+   "title": "Los Pokémon pájaro alzan el vuelo"
+  },
+  {
+   "work": "SYS_WORK_QUEST_36",
+   "hash": "ACACF135028398D1",
+   "number": 36,
+   "title": "El Eelektrik más electrificante de todos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_37",
+   "hash": "ACACF0350283971E",
+   "number": 37,
+   "title": "¡Máxima energía en combate!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_38",
+   "hash": "ACACEB3502838E9F",
+   "number": 38,
+   "title": "Más vale detectar que proteger"
+  },
+  {
+   "work": "SYS_WORK_QUEST_39",
+   "hash": "ACACEA3502838CEC",
+   "number": 39,
+   "title": "Un combate por todo lo alto"
+  },
+  {
+   "work": "SYS_WORK_QUEST_40",
+   "hash": "AC94E935026EF958",
+   "number": 40,
+   "title": "Que llueva, que llueva"
+  },
+  {
+   "work": "SYS_WORK_QUEST_41",
+   "hash": "AC94EA35026EFB0B",
+   "number": 41,
+   "title": "Un combate con mucho arte"
+  },
+  {
+   "work": "SYS_WORK_QUEST_42",
+   "hash": "AC94EB35026EFCBE",
+   "number": 42,
+   "title": "Echemos los Restos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_43",
+   "hash": "AC94EC35026EFE71",
+   "number": 43,
+   "title": "¡En busca de un Stunfisk de Galar!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_44",
+   "hash": "AC94ED35026F0024",
+   "number": 44,
+   "title": "La fragante tinta de Inkay"
+  },
+  {
+   "work": "SYS_WORK_QUEST_45",
+   "hash": "AC94EE35026F01D7",
+   "number": 45,
+   "title": "Chatarra al gusto de los Aron"
+  },
+  {
+   "work": "SYS_WORK_QUEST_46",
+   "hash": "AC94EF35026F038A",
+   "number": 46,
+   "title": "La taxista novata"
+  },
+  {
+   "work": "SYS_WORK_QUEST_47",
+   "hash": "AC94F035026F053D",
+   "number": 47,
+   "title": "Movimiento que amedrenta vale por dos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_48",
+   "hash": "AC94E135026EEBC0",
+   "number": 48,
+   "title": "Jugándosela con Metrónomo"
+  },
+  {
+   "work": "SYS_WORK_QUEST_49",
+   "hash": "AC94E235026EED73",
+   "number": 49,
+   "title": "Pokémon de lo más exclusivos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_50",
+   "hash": "AC986F35027212E1",
+   "number": 50,
+   "title": "Atacar y curar al mismo tiempo"
+  },
+  {
+   "work": "SYS_WORK_QUEST_51",
+   "hash": "AC986E350272112E",
+   "number": 51,
+   "title": "Un refrigerio para el operario"
+  },
+  {
+   "work": "SYS_WORK_QUEST_52",
+   "hash": "AC986D3502720F7B",
+   "number": 52,
+   "title": "El Holotransportador sin corriente"
+  },
+  {
+   "work": "SYS_WORK_QUEST_53",
+   "hash": "AC986C3502720DC8",
+   "number": 53,
+   "title": "Un combate durante el descanso"
+  },
+  {
+   "work": "SYS_WORK_QUEST_54",
+   "hash": "AC987335027219AD",
+   "number": 54,
+   "title": "El Holotransportador favorito del recluta"
+  },
+  {
+   "work": "SYS_WORK_QUEST_55",
+   "hash": "AC987235027217FA",
+   "number": 55,
+   "title": "El hoyo del Holotransportador"
+  },
+  {
+   "work": "SYS_WORK_QUEST_56",
+   "hash": "AC98713502721647",
+   "number": 56,
+   "title": "La atemorizadora mirada de Watchog"
+  },
+  {
+   "work": "SYS_WORK_QUEST_57",
+   "hash": "AC98703502721494",
+   "number": 57,
+   "title": "Una disputa chisporroteante"
+  },
+  {
+   "work": "SYS_WORK_QUEST_58",
+   "hash": "AC98673502720549",
+   "number": 58,
+   "title": "Los cuatro Beldum"
+  },
+  {
+   "work": "SYS_WORK_QUEST_59",
+   "hash": "AC98663502720396",
+   "number": 59,
+   "title": "¡Un buen golpe todo lo arregla!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_60",
+   "hash": "AC9BF53502752C6A",
+   "number": 60,
+   "title": "Un nuevo negocio con Camerupt"
+  },
+  {
+   "work": "SYS_WORK_QUEST_61",
+   "hash": "AC9BF63502752E1D",
+   "number": 61,
+   "title": "¡Desafía a la Liga Furfrou!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_62",
+   "hash": "AC9BF33502752904",
+   "number": 62,
+   "title": "El tipo Dragón en desventaja"
+  },
+  {
+   "work": "SYS_WORK_QUEST_63",
+   "hash": "AC9BF43502752AB7",
+   "number": 63,
+   "title": "Un combate helado"
+  },
+  {
+   "work": "SYS_WORK_QUEST_64",
+   "hash": "AC9BF1350275259E",
+   "number": 64,
+   "title": "Mi amor eterno por el tipo Bicho"
+  },
+  {
+   "work": "SYS_WORK_QUEST_65",
+   "hash": "AC9BF23502752751",
+   "number": 65,
+   "title": "Nada puede con el tipo Normal"
+  },
+  {
+   "work": "SYS_WORK_QUEST_66",
+   "hash": "AC9BEF3502752238",
+   "number": 66,
+   "title": "La maldición del tipo Fantasma"
+  },
+  {
+   "work": "SYS_WORK_QUEST_67",
+   "hash": "AC9BF035027523EB",
+   "number": 67,
+   "title": "La tenacidad del tipo Acero"
+  },
+  {
+   "work": "SYS_WORK_QUEST_68",
+   "hash": "AC9BED3502751ED2",
+   "number": 68,
+   "title": "El filo de Honedge"
+  },
+  {
+   "work": "SYS_WORK_QUEST_69",
+   "hash": "AC9BEE3502752085",
+   "number": 69,
+   "title": "Especialista en curación"
+  },
+  {
+   "work": "SYS_WORK_QUEST_70",
+   "hash": "AC9F5B3502780F93",
+   "number": 70,
+   "title": "El canto que atrae la desgracia"
+  },
+  {
+   "work": "SYS_WORK_QUEST_71",
+   "hash": "AC9F5A3502780DE0",
+   "number": 71,
+   "title": "El Pikachu más fuerte del mundo"
+  },
+  {
+   "work": "SYS_WORK_QUEST_72",
+   "hash": "AC9F5D35027812F9",
+   "number": 72,
+   "title": "El Raichu de Alola"
+  },
+  {
+   "work": "SYS_WORK_QUEST_73",
+   "hash": "AC9F5C3502781146",
+   "number": 73,
+   "title": "Bonitos, pero matones"
+  },
+  {
+   "work": "SYS_WORK_QUEST_74",
+   "hash": "AC9F5F350278165F",
+   "number": 74,
+   "title": "¿Un Mareep variocolor?"
+  },
+  {
+   "work": "SYS_WORK_QUEST_75",
+   "hash": "AC9F5E35027814AC",
+   "number": 75,
+   "title": "¡En menudos líos se meten algunos!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_76",
+   "hash": "AC9F6135027819C5",
+   "number": 76,
+   "title": "Shuppet, compañero de patrulla"
+  },
+  {
+   "work": "SYS_WORK_QUEST_77",
+   "hash": "AC9F603502781812",
+   "number": 77,
+   "title": "Una lección de megaevolución"
+  },
+  {
+   "work": "SYS_WORK_QUEST_78",
+   "hash": "AC9F633502781D2B",
+   "number": 78,
+   "title": "Carvanha, el terror de los ríos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_79",
+   "hash": "AC9F623502781B78",
+   "number": 79,
+   "title": "Trevenant, el antiguo árbol maldito"
+  },
+  {
+   "work": "SYS_WORK_QUEST_80",
+   "hash": "AC8771350263A314",
+   "number": 80,
+   "title": "Tyrantrum y su terrorífica mandíbula"
+  },
+  {
+   "work": "SYS_WORK_QUEST_81",
+   "hash": "AC8772350263A4C7",
+   "number": 81,
+   "title": "Menú degustación de una estrella"
+  },
+  {
+   "work": "SYS_WORK_QUEST_82",
+   "hash": "AC8773350263A67A",
+   "number": 82,
+   "title": "Menú degustación de dos estrellas"
+  },
+  {
+   "work": "SYS_WORK_QUEST_83",
+   "hash": "AC8774350263A82D",
+   "number": 83,
+   "title": "Menú degustación de tres estrellas"
+  },
+  {
+   "work": "SYS_WORK_QUEST_84",
+   "hash": "AC876D3502639C48",
+   "number": 84,
+   "title": "Menú degustación tres delicias"
+  },
+  {
+   "work": "SYS_WORK_QUEST_85",
+   "hash": "AC876E3502639DFB",
+   "number": 85,
+   "title": "Mega-Camerupt entra por los ojos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_86",
+   "hash": "AC876F3502639FAE",
+   "number": 86,
+   "title": "Mega-Sableye entra por los ojos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_87",
+   "hash": "AC8770350263A161",
+   "number": 87,
+   "title": "Mega-Medicham entra por los ojos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_88",
+   "hash": "AC8769350263957C",
+   "number": 88,
+   "title": "El Torneo Lilette Suprême D"
+  },
+  {
+   "work": "SYS_WORK_QUEST_89",
+   "hash": "AC876A350263972F",
+   "number": 89,
+   "title": "Flabébé de lo más variopintos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_90",
+   "hash": "AC8AF7350266BC9D",
+   "number": 90,
+   "title": "La danza florida de los Floette"
+  },
+  {
+   "work": "SYS_WORK_QUEST_91",
+   "hash": "AC8AF6350266BAEA",
+   "number": 91,
+   "title": "¿Quién ha destrozado el jardín?"
+  },
+  {
+   "work": "SYS_WORK_QUEST_92",
+   "hash": "AC8AF5350266B937",
+   "number": 92,
+   "title": "Un Pumpkaboo Variante Enorme"
+  },
+  {
+   "work": "SYS_WORK_QUEST_93",
+   "hash": "AC8AF4350266B784",
+   "number": 93,
+   "title": "¡Hawlucha busca la revancha!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_94",
+   "hash": "AC8AF3350266B5D1",
+   "number": 94,
+   "title": "La llave perdida de Klefki"
+  },
+  {
+   "work": "SYS_WORK_QUEST_95",
+   "hash": "AC8AF2350266B41E",
+   "number": 95,
+   "title": "Invasión de Binacle frente a la barca"
+  },
+  {
+   "work": "SYS_WORK_QUEST_96",
+   "hash": "AC8AF1350266B26B",
+   "number": 96,
+   "title": "Las enseñanzas de la maestra de yoga"
+  },
+  {
+   "work": "SYS_WORK_QUEST_97",
+   "hash": "AC8AF0350266B0B8",
+   "number": 97,
+   "title": "¡Que alguien detenga a Whirlipede!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_98",
+   "hash": "AC8AEF350266AF05",
+   "number": 98,
+   "title": "Phantump y la fuente"
+  },
+  {
+   "work": "SYS_WORK_QUEST_99",
+   "hash": "AC8AEE350266AD52",
+   "number": 99,
+   "title": "¿Adónde te guía Froslass?"
+  },
+  {
+   "work": "SYS_WORK_QUEST_100",
+   "hash": "DB50F4133B198EAF",
+   "number": 100,
+   "title": "Starmie del espacio exterior"
+  },
+  {
+   "work": "SYS_WORK_QUEST_101",
+   "hash": "DB50F3133B198CFC",
+   "number": 101,
+   "title": "Una pluma de Skarmory"
+  },
+  {
+   "work": "SYS_WORK_QUEST_102",
+   "hash": "DB50F6133B199215",
+   "number": 102,
+   "title": "Las fragancias de Spritzee"
+  },
+  {
+   "work": "SYS_WORK_QUEST_103",
+   "hash": "DB50F5133B199062",
+   "number": 103,
+   "title": "El Pancham transportista"
+  },
+  {
+   "work": "SYS_WORK_QUEST_104",
+   "hash": "DB50F0133B1987E3",
+   "number": 104,
+   "title": "Los Spewpa perdidos por el museo"
+  },
+  {
+   "work": "SYS_WORK_QUEST_105",
+   "hash": "DB50EF133B198630",
+   "number": 105,
+   "title": "El Numel congelado hasta los huesos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_106",
+   "hash": "DB50F2133B198B49",
+   "number": 106,
+   "title": "Una demostración del poder de Aurorus"
+  },
+  {
+   "work": "SYS_WORK_QUEST_107",
+   "hash": "DB50F1133B198996",
+   "number": 107,
+   "title": "El Mawile que no se deja atrapar"
+  },
+  {
+   "work": "SYS_WORK_QUEST_108",
+   "hash": "DB50FC133B199C47",
+   "number": 108,
+   "title": "Buscando piso para Heliolisk"
+  },
+  {
+   "work": "SYS_WORK_QUEST_109",
+   "hash": "DB50FB133B199A94",
+   "number": 109,
+   "title": "¿Qué trama Litwick?"
+  },
+  {
+   "work": "SYS_WORK_QUEST_110",
+   "hash": "DB4D6E133B167526",
+   "number": 110,
+   "title": "¡Clauncher, necesito tu Pistola Agua!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_111",
+   "hash": "DB4D6F133B1676D9",
+   "number": 111,
+   "title": "Un Chespin insaciable"
+  },
+  {
+   "work": "SYS_WORK_QUEST_112",
+   "hash": "DB4D6C133B1671C0",
+   "number": 112,
+   "title": "El pobre Fennekin..."
+  },
+  {
+   "work": "SYS_WORK_QUEST_113",
+   "hash": "DB4D6D133B167373",
+   "number": 113,
+   "title": "El desafío de Froakie"
+  },
+  {
+   "work": "SYS_WORK_QUEST_114",
+   "hash": "DB4D72133B167BF2",
+   "number": 114,
+   "title": "Cecilia, la quinta discípula"
+  },
+  {
+   "work": "SYS_WORK_QUEST_115",
+   "hash": "DB4D73133B167DA5",
+   "number": 115,
+   "title": "¡Atrapa al Emolga!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_116",
+   "hash": "DB4D70133B16788C",
+   "number": 116,
+   "title": "\"Bergmite sur l'Avalugg\""
+  },
+  {
+   "work": "SYS_WORK_QUEST_117",
+   "hash": "DB4D71133B167A3F",
+   "number": 117,
+   "title": "Adiós, Gengar"
+  },
+  {
+   "work": "SYS_WORK_QUEST_118",
+   "hash": "DB4D76133B1682BE",
+   "number": 118,
+   "title": "La llamada de Melia"
+  },
+  {
+   "work": "SYS_WORK_QUEST_119",
+   "hash": "DB4D77133B168471",
+   "number": 119,
+   "title": "Brillante como una joya"
+  },
+  {
+   "work": "SYS_WORK_QUEST_120",
+   "hash": "DB4A08133B1391FD",
+   "number": 120,
+   "title": "Proyecto M"
+  },
+  {
+   "work": "SYS_WORK_QUEST_121",
+   "hash": "DB4A07133B13904A",
+   "number": 121,
+   "title": "La ventaja de la Baya Aranja"
+  },
+  {
+   "work": "SYS_WORK_QUEST_122",
+   "hash": "DB4A06133B138E97",
+   "number": 122,
+   "title": "¡Dónuts de rechupete!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_123",
+   "hash": "DB4A05133B138CE4",
+   "number": 123,
+   "title": "Enormes vínculos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_124",
+   "hash": "DB4A04133B138B31",
+   "number": 124,
+   "title": "El dúo de Raichu más fuerte del mundo"
+  },
+  {
+   "work": "SYS_WORK_QUEST_125",
+   "hash": "DB4A03133B13897E",
+   "number": 125,
+   "title": "Una carta de otra dimensión"
+  },
+  {
+   "work": "SYS_WORK_QUEST_126",
+   "hash": "DB4A02133B1387CB",
+   "number": 126,
+   "title": "Cementerio en solitario"
+  },
+  {
+   "work": "SYS_WORK_QUEST_127",
+   "hash": "DB4A01133B138618",
+   "number": 127,
+   "title": "Demostración de Rotom"
+  },
+  {
+   "work": "SYS_WORK_QUEST_128",
+   "hash": "DB4A00133B138465",
+   "number": 128,
+   "title": "¿Qué Meowth prrrfieres?"
+  },
+  {
+   "work": "SYS_WORK_QUEST_129",
+   "hash": "DB49FF133B1382B2",
+   "number": 129,
+   "title": "Un Indeedee bien galante"
+  },
+  {
+   "work": "SYS_WORK_QUEST_130",
+   "hash": "DB4702133B1151F4",
+   "number": 130,
+   "title": "Mi vecina Tinkatuff"
+  },
+  {
+   "work": "SYS_WORK_QUEST_131",
+   "hash": "DB4703133B1153A7",
+   "number": 131,
+   "title": "¡La Fiesta del Habanero de Scovillain!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_132",
+   "hash": "DB4704133B11555A",
+   "number": 132,
+   "title": "El banco de la foto"
+  },
+  {
+   "work": "SYS_WORK_QUEST_133",
+   "hash": "DB4705133B11570D",
+   "number": 133,
+   "title": "Porygon y sus polígonos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_134",
+   "hash": "DB46FE133B114B28",
+   "number": 134,
+   "title": "Un Gulpin goloso"
+  },
+  {
+   "work": "SYS_WORK_QUEST_135",
+   "hash": "DB46FF133B114CDB",
+   "number": 135,
+   "title": "Las tapas del Distrito Rojo"
+  },
+  {
+   "work": "SYS_WORK_QUEST_136",
+   "hash": "DB4700133B114E8E",
+   "number": 136,
+   "title": "¡El nombre perfecto para la calle!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_137",
+   "hash": "DB4701133B115041",
+   "number": 137,
+   "title": "Una novela de aventuras"
+  },
+  {
+   "work": "SYS_WORK_QUEST_138",
+   "hash": "DB46FA133B11445C",
+   "number": 138,
+   "title": "Una novela rosa"
+  },
+  {
+   "work": "SYS_WORK_QUEST_139",
+   "hash": "DB46FB133B11460F",
+   "number": 139,
+   "title": "Una novela de misterio"
+  },
+  {
+   "work": "SYS_WORK_QUEST_140",
+   "hash": "DB437C133B0E386B",
+   "number": 140,
+   "title": "En Ciudad Luminalia"
+  },
+  {
+   "work": "SYS_WORK_QUEST_141",
+   "hash": "DB437B133B0E36B8",
+   "number": 141,
+   "title": "El lamento de Bárbara"
+  },
+  {
+   "work": "SYS_WORK_QUEST_142",
+   "hash": "DB437E133B0E3BD1",
+   "number": 142,
+   "title": "La voluntad férrea de Acris"
+  },
+  {
+   "work": "SYS_WORK_QUEST_143",
+   "hash": "DB437D133B0E3A1E",
+   "number": 143,
+   "title": "¡Búsqueda especial!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_144",
+   "hash": "DB4380133B0E3F37",
+   "number": 144,
+   "title": "¡El combate definitivo de Lucario!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_145",
+   "hash": "DB437F133B0E3D84",
+   "number": 145,
+   "title": "La indomable Entrenadora de Dragalge"
+  },
+  {
+   "work": "SYS_WORK_QUEST_146",
+   "hash": "DB4382133B0E429D",
+   "number": 146,
+   "title": "Un Mimikyu para mi hija"
+  },
+  {
+   "work": "SYS_WORK_QUEST_147",
+   "hash": "DB4381133B0E40EA",
+   "number": 147,
+   "title": "Esquiva como puedas"
+  },
+  {
+   "work": "SYS_WORK_QUEST_148",
+   "hash": "DB4374133B0E2AD3",
+   "number": 148,
+   "title": "Café y aromas de antaño"
+  },
+  {
+   "work": "SYS_WORK_QUEST_149",
+   "hash": "DB4373133B0E2920",
+   "number": 149,
+   "title": "Curación mediante Octopresa"
+  },
+  {
+   "work": "SYS_WORK_QUEST_150",
+   "hash": "DB3FF6133B0B1EE2",
+   "number": 150,
+   "title": "Musha Modorra"
+  },
+  {
+   "work": "SYS_WORK_QUEST_151",
+   "hash": "DB3FF7133B0B2095",
+   "number": 151,
+   "title": "¿Seviper o no Seviper? Esa es la cuestión"
+  },
+  {
+   "work": "SYS_WORK_QUEST_152",
+   "hash": "DB3FF4133B0B1B7C",
+   "number": 152,
+   "title": "El primer trabajo de Mime Jr."
+  },
+  {
+   "work": "SYS_WORK_QUEST_153",
+   "hash": "DB3FF5133B0B1D2F",
+   "number": 153,
+   "title": "Café de Nacli"
+  },
+  {
+   "work": "SYS_WORK_QUEST_154",
+   "hash": "DB3FF2133B0B1816",
+   "number": 154,
+   "title": "La evolución de Gimmighoul"
+  },
+  {
+   "work": "SYS_WORK_QUEST_155",
+   "hash": "DB3FF3133B0B19C9",
+   "number": 155,
+   "title": "De sumas y quioscos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_156",
+   "hash": "DB3FF0133B0B14B0",
+   "number": 156,
+   "title": "Paseando a Fidough"
+  },
+  {
+   "work": "SYS_WORK_QUEST_157",
+   "hash": "DB3FF1133B0B1663",
+   "number": 157,
+   "title": "El terror de las arenas"
+  },
+  {
+   "work": "SYS_WORK_QUEST_158",
+   "hash": "DB3FFE133B0B2C7A",
+   "number": 158,
+   "title": "Al rescate del Dondozo atascado"
+  },
+  {
+   "work": "SYS_WORK_QUEST_159",
+   "hash": "DB3FFF133B0B2E2D",
+   "number": 159,
+   "title": "Aumento de ventas con Foongus"
+  },
+  {
+   "work": "SYS_WORK_QUEST_160",
+   "hash": "DB3C70133B080559",
+   "number": 160,
+   "title": "El Nickit ladrón"
+  },
+  {
+   "work": "SYS_WORK_QUEST_161",
+   "hash": "DB3C6F133B0803A6",
+   "number": 161,
+   "title": "Combate dimensional (Electribu Dinamo)"
+  },
+  {
+   "work": "SYS_WORK_QUEST_162",
+   "hash": "DB3C6E133B0801F3",
+   "number": 162,
+   "title": "Combate dimensional (Círculo Justiciero)"
+  },
+  {
+   "work": "SYS_WORK_QUEST_163",
+   "hash": "DB3C6D133B080040",
+   "number": 163,
+   "title": "Combate dimensional (Clan Corrosión)"
+  },
+  {
+   "work": "SYS_WORK_QUEST_164",
+   "hash": "DB3C74133B080C25",
+   "number": 164,
+   "title": "Combate dimensional (SCL)"
+  },
+  {
+   "work": "SYS_WORK_QUEST_165",
+   "hash": "DB3C73133B080A72",
+   "number": 165,
+   "title": "Combate dimensional (Team Flare Nouveau)"
+  },
+  {
+   "work": "SYS_WORK_QUEST_166",
+   "hash": "DB3C72133B0808BF",
+   "number": 166,
+   "title": "Revancha dimensional (Electribu Dinamo)"
+  },
+  {
+   "work": "SYS_WORK_QUEST_167",
+   "hash": "DB3C71133B08070C",
+   "number": 167,
+   "title": "Revancha dimensional (Círculo Justiciero)"
+  },
+  {
+   "work": "SYS_WORK_QUEST_168",
+   "hash": "DB3C78133B0812F1",
+   "number": 168,
+   "title": "Revancha dimensional (Clan Corrosión)"
+  },
+  {
+   "work": "SYS_WORK_QUEST_169",
+   "hash": "DB3C77133B08113E",
+   "number": 169,
+   "title": "Revancha dimensional (SCL)"
+  },
+  {
+   "work": "SYS_WORK_QUEST_170",
+   "hash": "DB396A133B05C550",
+   "number": 170,
+   "title": "Revancha dimensional (Team Flare Nouveau)"
+  },
+  {
+   "work": "SYS_WORK_QUEST_171",
+   "hash": "DB396B133B05C703",
+   "number": 171,
+   "title": "Sawk contra Throh"
+  },
+  {
+   "work": "SYS_WORK_QUEST_172",
+   "hash": "DB396C133B05C8B6",
+   "number": 172,
+   "title": "La llama azul contra la llama carmesí"
+  },
+  {
+   "work": "SYS_WORK_QUEST_173",
+   "hash": "DB396D133B05CA69",
+   "number": 173,
+   "title": "Feebas, el nuevo amigo de Magikarp"
+  },
+  {
+   "work": "SYS_WORK_QUEST_174",
+   "hash": "DB396E133B05CC1C",
+   "number": 174,
+   "title": "La búsqueda del Corvisquire"
+  },
+  {
+   "work": "SYS_WORK_QUEST_175",
+   "hash": "DB396F133B05CDCF",
+   "number": 175,
+   "title": "Frigibax busca amigos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_176",
+   "hash": "DB3970133B05CF82",
+   "number": 176,
+   "title": "Choque de puerros entre Farfetch’d"
+  },
+  {
+   "work": "SYS_WORK_QUEST_177",
+   "hash": "DB3971133B05D135",
+   "number": 177,
+   "title": "¡Despierta, Cofagrigus!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_178",
+   "hash": "DB3972133B05D2E8",
+   "number": 178,
+   "title": "El Wigglytuff apestoso"
+  },
+  {
+   "work": "SYS_WORK_QUEST_179",
+   "hash": "DB3973133B05D49B",
+   "number": 179,
+   "title": "¡Combate exprés!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_180",
+   "hash": "DB6C04133B307197",
+   "number": 180,
+   "title": "El gran robo del Museo de Arte"
+  },
+  {
+   "work": "SYS_WORK_QUEST_181",
+   "hash": "DB6C03133B306FE4",
+   "number": 181,
+   "title": "La cangrejopelea descontrolada"
+  },
+  {
+   "work": "SYS_WORK_QUEST_182",
+   "hash": "DB6C06133B3074FD",
+   "number": 182,
+   "title": "Una Rosita despreocupada"
+  },
+  {
+   "work": "SYS_WORK_QUEST_183",
+   "hash": "DB6C05133B30734A",
+   "number": 183,
+   "title": "Un señor nada despistado"
+  },
+  {
+   "work": "SYS_WORK_QUEST_184",
+   "hash": "DB6C00133B306ACB",
+   "number": 184,
+   "title": "¡¡¡Los Squawkabilly folloneros!!!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_185",
+   "hash": "DB6BFF133B306918",
+   "number": 185,
+   "title": "¿Sushi o Tatsugiri?"
+  },
+  {
+   "work": "SYS_WORK_QUEST_186",
+   "hash": "DB6C02133B306E31",
+   "number": 186,
+   "title": "La calidad tiene un precio"
+  },
+  {
+   "work": "SYS_WORK_QUEST_187",
+   "hash": "DB6C01133B306C7E",
+   "number": 187,
+   "title": "Una encuesta con Cubone"
+  },
+  {
+   "work": "SYS_WORK_QUEST_188",
+   "hash": "DB6BFC133B3063FF",
+   "number": 188,
+   "title": "La loca de los Purrloin"
+  },
+  {
+   "work": "SYS_WORK_QUEST_189",
+   "hash": "DB6BFB133B30624C",
+   "number": 189,
+   "title": "Un Jolteon muy activo"
+  },
+  {
+   "work": "SYS_WORK_QUEST_190",
+   "hash": "DB68FE133B2E318E",
+   "number": 190,
+   "title": "¡A la carga!"
+  },
+  {
+   "work": "SYS_WORK_QUEST_191",
+   "hash": "DB68FF133B2E3341",
+   "number": 191,
+   "title": "La belleza del ataque múltiple"
+  },
+  {
+   "work": "SYS_WORK_QUEST_192",
+   "hash": "DB68FC133B2E2E28",
+   "number": 192,
+   "title": "Cyclizar a todo trapo"
+  },
+  {
+   "work": "SYS_WORK_QUEST_193",
+   "hash": "DB68FD133B2E2FDB",
+   "number": 193,
+   "title": "Imitando al imitador"
+  },
+  {
+   "work": "SYS_WORK_QUEST_194",
+   "hash": "DB6902133B2E385A",
+   "number": 194,
+   "title": "Movimientos definitivos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_195",
+   "hash": "DB6903133B2E3A0D",
+   "number": 195,
+   "title": "Morpeko de seguridad"
+  },
+  {
+   "work": "SYS_WORK_QUEST_196",
+   "hash": "DB6900133B2E34F4",
+   "number": 196,
+   "title": "Trueque de cartuchos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_197",
+   "hash": "DB6901133B2E36A7",
+   "number": 197,
+   "title": "La sombra silenciosa"
+  },
+  {
+   "work": "SYS_WORK_QUEST_198",
+   "hash": "DB68F6133B2E23F6",
+   "number": 198,
+   "title": "Hermanos de altos vuelos"
+  },
+  {
+   "work": "SYS_WORK_QUEST_199",
+   "hash": "DB68F7133B2E25A9",
+   "number": 199,
+   "title": "Reactivación de Magearna"
+  },
+  {
+   "work": "SYS_WORK_QUEST_200",
+   "hash": "E4672F13405DF27A",
+   "number": 200,
+   "title": "Sueños de Meltan"
+  },
+  {
+   "work": "SYS_WORK_QUEST_201",
+   "hash": "E4673013405DF42D",
+   "number": 201,
+   "title": "Libera a Volcanion"
+  },
+  {
+   "work": "SYS_WORK_QUEST_202",
+   "hash": "E4672D13405DEF14",
+   "number": 202,
+   "title": "El genio desatado"
+  },
+  {
+   "work": "SYS_WORK_QUEST_203",
+   "hash": "E4672E13405DF0C7",
+   "number": 203,
+   "title": "Un poder fulgurante"
+  },
+  {
+   "work": "SYS_WORK_QUEST_204",
+   "hash": "E4672B13405DEBAE",
+   "number": 204,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_205",
+   "hash": "E4672C13405DED61",
+   "number": 205,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_206",
+   "hash": "E4672913405DE848",
+   "number": 206,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_207",
+   "hash": "E4672A13405DE9FB",
+   "number": 207,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_208",
+   "hash": "E4672713405DE4E2",
+   "number": 208,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_209",
+   "hash": "E4672813405DE695",
+   "number": 209,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_210",
+   "hash": "E46A95134060D5A3",
+   "number": 210,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_211",
+   "hash": "E46A94134060D3F0",
+   "number": 211,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_212",
+   "hash": "E46A97134060D909",
+   "number": 212,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_213",
+   "hash": "E46A96134060D756",
+   "number": 213,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_214",
+   "hash": "E46A99134060DC6F",
+   "number": 214,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_215",
+   "hash": "E46A98134060DABC",
+   "number": 215,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_216",
+   "hash": "E46A9B134060DFD5",
+   "number": 216,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_217",
+   "hash": "E46A9A134060DE22",
+   "number": 217,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_218",
+   "hash": "E46A9D134060E33B",
+   "number": 218,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_219",
+   "hash": "E46A9C134060E188",
+   "number": 219,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_220",
+   "hash": "E460A313405898E8",
+   "number": 220,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_221",
+   "hash": "E460A41340589A9B",
+   "number": 221,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_222",
+   "hash": "E460A51340589C4E",
+   "number": 222,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_223",
+   "hash": "E460A61340589E01",
+   "number": 223,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_224",
+   "hash": "E460A71340589FB4",
+   "number": 224,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_225",
+   "hash": "E460A8134058A167",
+   "number": 225,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_226",
+   "hash": "E460A9134058A31A",
+   "number": 226,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_227",
+   "hash": "E460AA134058A4CD",
+   "number": 227,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_228",
+   "hash": "E4609B1340588B50",
+   "number": 228,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_229",
+   "hash": "E4609C1340588D03",
+   "number": 229,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_230",
+   "hash": "E463A913405AD8F1",
+   "number": 230,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_231",
+   "hash": "E463A813405AD73E",
+   "number": 231,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_232",
+   "hash": "E463A713405AD58B",
+   "number": 232,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_233",
+   "hash": "E463A613405AD3D8",
+   "number": 233,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_234",
+   "hash": "E463AD13405ADFBD",
+   "number": 234,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_235",
+   "hash": "E463AC13405ADE0A",
+   "number": 235,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_236",
+   "hash": "E463AB13405ADC57",
+   "number": 236,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_237",
+   "hash": "E463AA13405ADAA4",
+   "number": 237,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_238",
+   "hash": "E463A113405ACB59",
+   "number": 238,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_239",
+   "hash": "E463A013405AC9A6",
+   "number": 239,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_240",
+   "hash": "E474A713406948BE",
+   "number": 240,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_241",
+   "hash": "E474A81340694A71",
+   "number": 241,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_242",
+   "hash": "E474A51340694558",
+   "number": 242,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_243",
+   "hash": "E474A6134069470B",
+   "number": 243,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_244",
+   "hash": "E474AB1340694F8A",
+   "number": 244,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_245",
+   "hash": "E474AC134069513D",
+   "number": 245,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_246",
+   "hash": "E474A91340694C24",
+   "number": 246,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_247",
+   "hash": "E474AA1340694DD7",
+   "number": 247,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_248",
+   "hash": "E4749F1340693B26",
+   "number": 248,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_249",
+   "hash": "E474A01340693CD9",
+   "number": 249,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_250",
+   "hash": "E4782D13406C6247",
+   "number": 250,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_251",
+   "hash": "E4782C13406C6094",
+   "number": 251,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_252",
+   "hash": "E4782F13406C65AD",
+   "number": 252,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_253",
+   "hash": "E4782E13406C63FA",
+   "number": 253,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_254",
+   "hash": "E4782913406C5B7B",
+   "number": 254,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_255",
+   "hash": "E4782813406C59C8",
+   "number": 255,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_256",
+   "hash": "E4782B13406C5EE1",
+   "number": 256,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_301",
+   "hash": "ED7D491345A21E32",
+   "number": 301,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_302",
+   "hash": "ED7D481345A21C7F",
+   "number": 302,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_303",
+   "hash": "ED7D471345A21ACC",
+   "number": 303,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_304",
+   "hash": "ED7D461345A21919",
+   "number": 304,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_305",
+   "hash": "ED7D451345A21766",
+   "number": 305,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_306",
+   "hash": "ED7D441345A215B3",
+   "number": 306,
+   "title": ""
+  },
+  {
+   "work": "SYS_WORK_QUEST_307",
+   "hash": "ED7D431345A21400",
+   "number": 307,
+   "title": ""
+  }
+ ]
+}

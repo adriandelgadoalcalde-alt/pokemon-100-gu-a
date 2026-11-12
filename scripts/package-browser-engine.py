@@ -28,7 +28,11 @@ blazor = next(p.name for p in files if re.fullmatch(r"blazor\.webassembly\.[^.]+
 dotnet = next(p.name for p in files if re.fullmatch(r"dotnet\.[^.]+\.js", p.name))
 destination.mkdir(exist_ok=True)
 shutil.copyfile(upstream / 'LICENSE', destination / 'COPYING-PKHeX.txt')
-runtime = Path(os.environ.get('NUGET_PACKAGES',Path.home()/'.nuget/packages')) / 'microsoft.netcore.app.runtime.mono.browser-wasm/10.0.14'
+runtime_root = Path(os.environ.get('NUGET_PACKAGES',Path.home()/'.nuget/packages')) / 'microsoft.netcore.app.runtime.mono.browser-wasm'
+# Avisos de licencia del runtime de WebAssembly instalado (la versión más reciente disponible).
+candidates = sorted(runtime_root.iterdir(), key=lambda p: [int(x) for x in p.name.split('.') if x.isdigit()], reverse=True)
+runtime = candidates[0]
+print('Runtime de .NET para avisos de licencia:', runtime.name)
 shutil.copyfile(runtime / 'LICENSE.TXT',destination / 'LICENSE-DOTNET.txt')
 shutil.copyfile(runtime / 'THIRD-PARTY-NOTICES.TXT',destination / 'THIRD-PARTY-NOTICES-DOTNET.txt')
 with (destination / 'PKHeX-corresponding-source.tar.gz').open('wb') as archive:

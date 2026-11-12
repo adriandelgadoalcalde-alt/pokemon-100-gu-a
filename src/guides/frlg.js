@@ -337,7 +337,7 @@
       "LEAFGREEN"
     ],
     "mission": "12",
-    "location": "Surf hacia Isla Canela → Mansión Pokémon → Blaine → primera visita a Islas Sete",
+    "location": "Surf hacia Isla Canela → Mansión Pokémon → Blaine → primera visita a Archi7",
     "requires": [
       "Surf y Medalla Alma"
     ],

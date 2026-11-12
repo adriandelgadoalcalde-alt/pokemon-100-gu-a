@@ -1,0 +1,1043 @@
+{
+  "about": "Catálogo de hitos y secretos de la tercera generación. Cada condición usa nombres de pret; scripts/derive-gen3-semantics.py resuelve su índice en la revisión fijada y exige que algún script o código de esa edición la active. Nada de este archivo contiene datos de partidas.",
+  "families": {
+    "E": [
+      "EMERALD"
+    ],
+    "RS": [
+      "RUBY",
+      "SAPPHIRE"
+    ],
+    "FRLG": [
+      "FIRERED",
+      "LEAFGREEN"
+    ]
+  },
+  "story": {
+    "E": [
+      {
+        "mission": "01",
+        "flag": "FLAG_SYS_POKEMON_GET",
+        "label": "Primer Pokémon recibido"
+      },
+      {
+        "mission": "02",
+        "flag": "FLAG_BADGE01_GET",
+        "label": "Medalla Piedra"
+      },
+      {
+        "mission": "03",
+        "flag": "FLAG_BADGE02_GET",
+        "label": "Medalla Puño"
+      },
+      {
+        "mission": "04",
+        "flag": "FLAG_BADGE03_GET",
+        "label": "Medalla Dinamo"
+      },
+      {
+        "mission": "05",
+        "flag": "FLAG_BADGE04_GET",
+        "label": "Medalla Calor"
+      },
+      {
+        "mission": "06",
+        "flag": "FLAG_BADGE05_GET",
+        "label": "Medalla Equilibrio"
+      },
+      {
+        "mission": "07",
+        "flag": "FLAG_BADGE06_GET",
+        "label": "Medalla Pluma"
+      },
+      {
+        "mission": "08",
+        "flag": "FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT",
+        "label": "Groudon despierta en la Guarida Magma"
+      },
+      {
+        "mission": "09",
+        "flag": "FLAG_BADGE07_GET",
+        "label": "Medalla Mente"
+      },
+      {
+        "mission": "10",
+        "flag": "FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN",
+        "label": "Kyogre escapa de la Caverna Abisal"
+      },
+      {
+        "mission": "11",
+        "flag": "FLAG_BADGE08_GET",
+        "label": "Medalla Lluvia"
+      },
+      {
+        "mission": "12",
+        "flag": "FLAG_SYS_GAME_CLEAR",
+        "label": "Liga superada (Salón de la Fama)"
+      }
+    ],
+    "RS": [
+      {
+        "mission": "01",
+        "flag": "FLAG_SYS_POKEMON_GET",
+        "label": "Primer Pokémon recibido"
+      },
+      {
+        "mission": "02",
+        "flag": "FLAG_BADGE01_GET",
+        "label": "Medalla Piedra"
+      },
+      {
+        "mission": "03",
+        "flag": "FLAG_BADGE02_GET",
+        "label": "Medalla Puño"
+      },
+      {
+        "mission": "04",
+        "flag": "FLAG_BADGE03_GET",
+        "label": "Medalla Dinamo"
+      },
+      {
+        "mission": "05",
+        "flag": "FLAG_BADGE04_GET",
+        "label": "Medalla Calor"
+      },
+      {
+        "mission": "06",
+        "flag": "FLAG_BADGE05_GET",
+        "label": "Medalla Equilibrio"
+      },
+      {
+        "mission": "07",
+        "flag": "FLAG_BADGE06_GET",
+        "label": "Medalla Pluma"
+      },
+      {
+        "mission": "09",
+        "flag": "FLAG_BADGE07_GET",
+        "label": "Medalla Mente"
+      },
+      {
+        "mission": "10",
+        "flag": "FLAG_LEGENDARY_BATTLE_COMPLETED",
+        "label": "Combate de la Cueva Ancestral resuelto"
+      },
+      {
+        "mission": "11",
+        "flag": "FLAG_BADGE08_GET",
+        "label": "Medalla Lluvia"
+      },
+      {
+        "mission": "12",
+        "flag": "FLAG_SYS_GAME_CLEAR",
+        "label": "Liga superada (Salón de la Fama)"
+      }
+    ],
+    "FRLG": [
+      {
+        "mission": "01",
+        "flag": "FLAG_SYS_POKEDEX_GET",
+        "label": "Pokédex recibida"
+      },
+      {
+        "mission": "02",
+        "flag": "FLAG_BADGE01_GET",
+        "label": "Medalla Roca"
+      },
+      {
+        "mission": "03",
+        "flag": "FLAG_GOT_FOSSIL_FROM_MT_MOON",
+        "label": "Fósil del Mt. Moon"
+      },
+      {
+        "mission": "04",
+        "flag": "FLAG_BADGE02_GET",
+        "label": "Medalla Cascada"
+      },
+      {
+        "mission": "05",
+        "flag": "FLAG_GOT_HM01",
+        "label": "MO01 Corte recibida"
+      },
+      {
+        "mission": "06",
+        "flag": "FLAG_BADGE03_GET",
+        "label": "Medalla Trueno"
+      },
+      {
+        "mission": "08",
+        "flag": "FLAG_BADGE04_GET",
+        "label": "Medalla Arcoíris"
+      },
+      {
+        "mission": "09",
+        "flag": "FLAG_GOT_POKE_FLUTE",
+        "label": "Poké Flauta recibida"
+      },
+      {
+        "mission": "10",
+        "flag": "FLAG_BADGE05_GET",
+        "label": "Medalla Alma"
+      },
+      {
+        "mission": "11",
+        "flag": "FLAG_BADGE06_GET",
+        "label": "Medalla Pantano"
+      },
+      {
+        "mission": "12",
+        "flag": "FLAG_BADGE07_GET",
+        "label": "Medalla Volcán"
+      },
+      {
+        "mission": "13",
+        "flag": "FLAG_BADGE08_GET",
+        "label": "Medalla Tierra"
+      },
+      {
+        "mission": "14",
+        "flag": "FLAG_SYS_GAME_CLEAR",
+        "label": "Liga superada (Salón de la Fama)"
+      }
+    ]
+  },
+  "secrets": [
+    {
+      "id": "gen3.sealed_chamber",
+      "families": [
+        "E",
+        "RS"
+      ],
+      "category": "Puzle",
+      "title": "Cámara Sellada: abrir las tres cámaras de los Regis",
+      "place": "MAPSEC_SEALED_CHAMBER",
+      "requires": "Buceo (MO08) y un Pokémon que sepa Excavar; Relicanth y Wailord en el equipo.",
+      "steps": [
+        "En la Ruta 134 busca la zona de agua oscura y usa Buceo para bajar a la Cámara Sellada.",
+        "En la primera sala lee las inscripciones en braille: la del fondo pide excavar. Ponte frente a ella y usa Excavar para abrir la sala interior.",
+        "Coloca a Relicanth en el primer puesto del equipo y a Wailord en el último. Lee la inscripción del fondo de la sala interior: tras un temblor quedan abiertas las tres cámaras de Hoenn."
+      ],
+      "conditions": {
+        "E": {
+          "progress": [
+            {
+              "flag": "FLAG_SYS_BRAILLE_DIG",
+              "label": "Pared excavada"
+            }
+          ],
+          "done": "FLAG_REGI_DOORS_OPENED",
+          "meaning": "Puertas de las tres cámaras abiertas."
+        },
+        "RS": {
+          "progress": [
+            {
+              "flag": "FLAG_SYS_BRAILLE_DIG",
+              "label": "Pared excavada"
+            }
+          ],
+          "done": "FLAG_REGI_DOORS_OPENED",
+          "meaning": "Puertas de las tres cámaras abiertas."
+        }
+      }
+    },
+    {
+      "id": "gen3.regirock",
+      "families": [
+        "E",
+        "RS"
+      ],
+      "category": "Legendario",
+      "species": [
+        377
+      ],
+      "title": "Regirock en las Ruinas Desierto",
+      "place": "MAPSEC_DESERT_RUINS",
+      "requires": "Cámaras abiertas, Gafas Aislantes para cruzar el desierto de la Ruta 111.",
+      "steps": [
+        "Entra en las Ruinas Desierto, al sur del desierto de la Ruta 111.",
+        "Esmeralda: desde la inscripción del centro avanza dos pasos a la derecha y dos hacia abajo y usa Golpe Roca. Rubí/Zafiro: el mismo recorrido, pero usando Fuerza.",
+        "Se abre la sala del fondo. Guarda la partida antes de hablar con Regirock (nivel 40)."
+      ],
+      "conditions": {
+        "E": {
+          "progress": [
+            {
+              "flag": "FLAG_SYS_REGIROCK_PUZZLE_COMPLETED",
+              "label": "Puzle de la sala resuelto"
+            }
+          ],
+          "done": "FLAG_DEFEATED_REGIROCK",
+          "meaning": "Encuentro resuelto: capturado o derrotado. Si huyes vuelve a aparecer."
+        },
+        "RS": {
+          "progress": [
+            {
+              "flag": "FLAG_SYS_BRAILLE_STRENGTH",
+              "label": "Puzle de la sala resuelto"
+            }
+          ],
+          "done": "FLAG_HIDE_REGIROCK",
+          "meaning": "Encuentro consumido: el script lo oculta al empezar el combate, así que tampoco vuelve si huiste o lo derrotaste."
+        }
+      }
+    },
+    {
+      "id": "gen3.regice",
+      "families": [
+        "E",
+        "RS"
+      ],
+      "category": "Legendario",
+      "species": [
+        378
+      ],
+      "title": "Regice en la Cueva Insular",
+      "place": "MAPSEC_ISLAND_CAVE",
+      "requires": "Cámaras abiertas y Surf hasta la Ruta 105.",
+      "steps": [
+        "Entra en la Cueva Insular de la Ruta 105.",
+        "Esmeralda: recorre una vuelta completa de la sala pegado a las paredes, sin salir de ella. Rubí/Zafiro: quédate quieto frente a la inscripción unos dos minutos sin pulsar nada.",
+        "Se abre la sala interior. Guarda antes de hablar con Regice (nivel 40)."
+      ],
+      "conditions": {
+        "E": {
+          "progress": [
+            {
+              "flag": "FLAG_SYS_BRAILLE_REGICE_COMPLETED",
+              "label": "Puzle de la sala resuelto"
+            }
+          ],
+          "done": "FLAG_DEFEATED_REGICE",
+          "meaning": "Encuentro resuelto: capturado o derrotado. Si huyes vuelve a aparecer."
+        },
+        "RS": {
+          "progress": [
+            {
+              "flag": "FLAG_SYS_BRAILLE_WAIT",
+              "label": "Puzle de la sala resuelto"
+            }
+          ],
+          "done": "FLAG_HIDE_REGICE",
+          "meaning": "Encuentro consumido: no vuelve aunque huyas o lo derrotes."
+        }
+      }
+    },
+    {
+      "id": "gen3.registeel",
+      "families": [
+        "E",
+        "RS"
+      ],
+      "category": "Legendario",
+      "species": [
+        379
+      ],
+      "title": "Registeel en la Tumba Antigua",
+      "place": "MAPSEC_ANCIENT_TOMB",
+      "requires": "Cámaras abiertas; Destello (Esmeralda) o Vuelo (Rubí/Zafiro).",
+      "steps": [
+        "Entra en la Tumba Antigua de la Ruta 120.",
+        "Colócate en el centro exacto de la sala. Esmeralda: usa Destello. Rubí/Zafiro: usa Vuelo desde el menú del Pokémon.",
+        "Se abre la sala interior. Guarda antes de hablar con Registeel (nivel 40)."
+      ],
+      "conditions": {
+        "E": {
+          "progress": [
+            {
+              "flag": "FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED",
+              "label": "Puzle de la sala resuelto"
+            }
+          ],
+          "done": "FLAG_DEFEATED_REGISTEEL",
+          "meaning": "Encuentro resuelto: capturado o derrotado. Si huyes vuelve a aparecer."
+        },
+        "RS": {
+          "progress": [
+            {
+              "flag": "FLAG_SYS_BRAILLE_FLY",
+              "label": "Puzle de la sala resuelto"
+            }
+          ],
+          "done": "FLAG_HIDE_REGISTEEL",
+          "meaning": "Encuentro consumido: no vuelve aunque huyas o lo derrotes."
+        }
+      }
+    },
+    {
+      "id": "gen3.rayquaza",
+      "families": [
+        "E",
+        "RS"
+      ],
+      "category": "Legendario",
+      "species": [
+        384
+      ],
+      "title": "Rayquaza en la cima del Pilar Celeste",
+      "place": "MAPSEC_SKY_PILLAR",
+      "requires": "Bici Carrera para los suelos agrietados. Esmeralda: tras la crisis de Arrecípolis. Rubí/Zafiro: tras entrar en el Salón de la Fama.",
+      "steps": [
+        "Vuela a Pueblo Oromar y surfea hasta la Ruta 131 para entrar en el Pilar Celeste.",
+        "Sube con la Bici Carrera sin detenerte sobre los suelos agrietados; si caes, vuelve a la planta inferior y repite.",
+        "En la cima, guarda antes de hablar con Rayquaza (nivel 70)."
+      ],
+      "conditions": {
+        "E": {
+          "done": "FLAG_DEFEATED_RAYQUAZA",
+          "meaning": "Encuentro resuelto: capturado o derrotado."
+        },
+        "RS": {
+          "done": "FLAG_HIDE_RAYQUAZA",
+          "meaning": "Encuentro consumido al iniciar el combate."
+        }
+      }
+    },
+    {
+      "id": "gen3.e.weather_legendary",
+      "families": [
+        "E"
+      ],
+      "category": "Legendario",
+      "species": [
+        382,
+        383
+      ],
+      "title": "Kyogre y Groudon: Cueva Marina y Cueva Terrena",
+      "place": "MAPSEC_ROUTE_119",
+      "requires": "Liga superada. Buceo para la Cueva Marina.",
+      "steps": [
+        "Tras el Salón de la Fama habla con el científico de la segunda planta del Instituto Meteorológico (Ruta 119): anuncia en qué ruta hay un clima anómalo.",
+        "Ve a esa ruta. Lluvia intensa: busca la zona de agua oscura y bucea hasta la Cueva Marina (Kyogre). Sol abrasador: busca la entrada de la Cueva Terrena (Groudon).",
+        "El clima se mueve tras caminar un tiempo; si desaparece, vuelve a preguntar. Guarda antes del combate (nivel 70)."
+      ],
+      "conditions": {
+        "E": {
+          "done": "FLAG_DEFEATED_KYOGRE",
+          "doneAlso": "FLAG_DEFEATED_GROUDON",
+          "meaning": "Cada encuentro resuelto: capturado o derrotado."
+        }
+      },
+      "abnormalWeather": true
+    },
+    {
+      "id": "gen3.roaming_lati",
+      "families": [
+        "E",
+        "RS"
+      ],
+      "category": "Legendario",
+      "species": [
+        380,
+        381
+      ],
+      "title": "Latias o Latios errante por Hoenn",
+      "place": "MAPSEC_LITTLEROOT_TOWN",
+      "requires": "Liga superada.",
+      "steps": [
+        "Tras el Salón de la Fama vuelve a casa en Villa Raíz y habla con tu madre frente a la televisión.",
+        "Esmeralda: eliges el color del Pokémon que aparece en el reportaje y ese es el que empieza a vagar. Rubí: vaga Latios. Zafiro: vaga Latias.",
+        "Se mueve de ruta en ruta y huye en el primer turno. Usa la Pokédex (área) para localizarlo, y Ball Rápida, Mal de Ojo o Bloqueo para retenerlo."
+      ],
+      "conditions": {
+        "E": {
+          "done": "FLAG_LATIOS_OR_LATIAS_ROAMING",
+          "meaning": "El errante está activado; la bandera no indica si ya lo capturaste."
+        },
+        "RS": {
+          "done": "FLAG_LATIOS_OR_LATIAS_ROAMING",
+          "meaning": "El errante está activado; la bandera no indica si ya lo capturaste."
+        }
+      }
+    },
+    {
+      "id": "gen3.e.sudowoodo",
+      "families": [
+        "E"
+      ],
+      "category": "Encuentro único",
+      "species": [
+        185
+      ],
+      "title": "Sudowoodo del Frente Batalla",
+      "place": "MAPSEC_BATTLE_FRONTIER",
+      "requires": "Acceso al Frente Batalla y la Regadera Wailmer.",
+      "steps": [
+        "En la zona este del Frente Batalla hay un árbol extraño que bloquea un camino.",
+        "Riégalo con la Regadera Wailmer. Guarda antes: es un Sudowoodo de nivel 40."
+      ],
+      "conditions": {
+        "E": {
+          "done": "FLAG_DEFEATED_SUDOWOODO",
+          "meaning": "Encuentro resuelto: capturado o derrotado."
+        }
+      }
+    },
+    {
+      "id": "gen3.mirage_island",
+      "families": [
+        "E",
+        "RS"
+      ],
+      "category": "Secreto",
+      "title": "Isla Espejismo",
+      "place": "MAPSEC_MIRAGE_ISLAND",
+      "requires": "Surf. Un Pokémon del equipo cuyo número de personalidad coincida con el valor del día.",
+      "steps": [
+        "La isla solo es visible el día en que los 16 bits bajos del valor de personalidad de algún Pokémon del equipo coinciden con el valor diario guardado.",
+        "Pon ese Pokémon en el equipo (vale un huevo) y surfea por la Ruta 130, al oeste de Pueblo Oromar.",
+        "En la isla hay Wynaut salvajes y una Baya Lichi en el suelo."
+      ],
+      "computed": "mirage"
+    },
+    {
+      "id": "gen3.e.southern_island",
+      "families": [
+        "E"
+      ],
+      "category": "Evento de legado",
+      "legacy": "Requiere el Ticket Eón de una distribución o un intercambio de la época.",
+      "species": [
+        380,
+        381
+      ],
+      "title": "Isla del Sur (Ticket Eón)",
+      "place": "MAPSEC_SOUTHERN_ISLAND",
+      "requires": "Ticket Eón en la mochila.",
+      "steps": [
+        "Enseña el Ticket Eón en el puerto de Ciudad Portual o Ciudad Calagua y viaja a la Isla del Sur.",
+        "Al fondo encontrarás al otro de la pareja: si vaga Latios aparece Latias, y al revés (nivel 50)."
+      ],
+      "conditions": {
+        "E": {
+          "progress": [
+            {
+              "flag": "FLAG_ENABLE_SHIP_SOUTHERN_ISLAND",
+              "label": "Barco a la isla habilitado"
+            }
+          ],
+          "done": "FLAG_CAUGHT_LATIAS_OR_LATIOS",
+          "meaning": "Capturado en la Isla del Sur. Si lo derrotas sin capturarlo, vuelve tras pasar de nuevo por el Salón de la Fama."
+        }
+      }
+    },
+    {
+      "id": "gen3.e.faraway_island",
+      "families": [
+        "E"
+      ],
+      "category": "Evento de legado",
+      "legacy": "Requiere el Mapa Viejo Mar de una distribución.",
+      "species": [
+        151
+      ],
+      "title": "Isla Suprema: Mew",
+      "place": "MAPSEC_FARAWAY_ISLAND",
+      "requires": "Mapa Viejo Mar.",
+      "steps": [
+        "Enseña el Mapa Viejo Mar en el puerto de Ciudad Calagua.",
+        "En la Isla Suprema persigue a Mew por la hierba alta: cada paso que das lo mueve. Acorrálalo contra una esquina para que no pueda escapar. Guarda antes (nivel 30)."
+      ],
+      "conditions": {
+        "E": {
+          "progress": [
+            {
+              "flag": "FLAG_ARRIVED_ON_FARAWAY_ISLAND",
+              "label": "Has llegado a la isla"
+            }
+          ],
+          "done": "FLAG_CAUGHT_MEW",
+          "meaning": "Mew capturado en la Isla Suprema. Si lo derrotas sin capturarlo, vuelve tras pasar de nuevo por el Salón de la Fama."
+        }
+      }
+    },
+    {
+      "id": "gen3.e.birth_island",
+      "families": [
+        "E"
+      ],
+      "category": "Evento de legado",
+      "legacy": "Requiere el Ori-Ticket de una distribución.",
+      "species": [
+        386
+      ],
+      "title": "Isla Origen: Deoxys",
+      "place": "MAPSEC_BIRTH_ISLAND",
+      "requires": "Ori-Ticket.",
+      "steps": [
+        "Enseña el Ori-Ticket en el puerto de Ciudad Portual o Ciudad Calagua.",
+        "Toca el triángulo y síguelo cada vez que se mueva hasta completar la secuencia; entonces aparece Deoxys (nivel 30)."
+      ],
+      "conditions": {
+        "E": {
+          "progress": [
+            {
+              "flag": "FLAG_DEOXYS_ROCK_COMPLETE",
+              "label": "Secuencia del triángulo completada"
+            }
+          ],
+          "done": "FLAG_BATTLED_DEOXYS",
+          "meaning": "Capturado en la Isla Origen (la bandera de derrota es otra y se reinicia). Si lo derrotas sin capturarlo, vuelve tras pasar de nuevo por el Salón de la Fama."
+        }
+      }
+    },
+    {
+      "id": "gen3.e.navel_rock",
+      "families": [
+        "E"
+      ],
+      "category": "Evento de legado",
+      "legacy": "Requiere el Ticket Misterio de una distribución.",
+      "species": [
+        249,
+        250
+      ],
+      "title": "Roca Ombligo: Lugia y Ho-Oh",
+      "place": "MAPSEC_NAVEL_ROCK",
+      "requires": "Ticket Misterio.",
+      "steps": [
+        "Enseña el Ticket Misterio en el puerto de Ciudad Portual o Ciudad Calagua.",
+        "Ho-Oh espera en la cima y Lugia en el fondo de la Roca Ombligo (nivel 70). Guarda antes de cada uno."
+      ],
+      "conditions": {
+        "E": {
+          "done": "FLAG_CAUGHT_LUGIA",
+          "doneAlso": "FLAG_CAUGHT_HO_OH",
+          "meaning": "Cada uno capturado en la Roca Ombligo. Si lo derrotas sin capturarlo, vuelve tras pasar de nuevo por el Salón de la Fama."
+        }
+      }
+    },
+    {
+      "id": "gen3.frlg.lapras",
+      "families": [
+        "FRLG"
+      ],
+      "category": "Regalo",
+      "species": [
+        131
+      ],
+      "title": "Lapras de Silph S.A.",
+      "place": "MAPSEC_SAFFRON_CITY",
+      "requires": "Llave Ascensor y Team Rocket expulsado de Silph S.A.",
+      "steps": [
+        "En la 7.ª planta de Silph S.A. habla con el empleado que está junto a la ventana: te regala un Lapras."
+      ],
+      "conditions": {
+        "FRLG": {
+          "done": "FLAG_GOT_LAPRAS_FROM_SILPH",
+          "meaning": "Regalo recibido."
+        }
+      }
+    },
+    {
+      "id": "gen3.frlg.snorlax",
+      "families": [
+        "FRLG"
+      ],
+      "category": "Encuentro único",
+      "species": [
+        143
+      ],
+      "title": "Los dos Snorlax de las Rutas 12 y 16",
+      "place": "MAPSEC_ROUTE_12",
+      "requires": "Poké Flauta.",
+      "steps": [
+        "Toca la Poké Flauta junto al Snorlax que bloquea la Ruta 12 y el de la Ruta 16. Guarda antes de cada uno (nivel 30)."
+      ],
+      "conditions": {
+        "FRLG": {
+          "done": "FLAG_WOKE_UP_ROUTE_12_SNORLAX",
+          "doneAlso": "FLAG_HIDE_ROUTE_16_SNORLAX",
+          "meaning": "Cada Snorlax despertado y retirado del camino."
+        }
+      }
+    },
+    {
+      "id": "gen3.frlg.zapdos",
+      "families": [
+        "FRLG"
+      ],
+      "category": "Legendario",
+      "species": [
+        145
+      ],
+      "title": "Zapdos en la Central Energía",
+      "place": "MAPSEC_POWER_PLANT",
+      "requires": "Surf.",
+      "steps": [
+        "Surfea por la Ruta 10 hacia el sur desde el Centro Pokémon y entra en la Central Energía.",
+        "Zapdos está al fondo (nivel 50). Cuidado con los Voltorb y Electrode que imitan objetos."
+      ],
+      "conditions": {
+        "FRLG": {
+          "done": "FLAG_FOUGHT_ZAPDOS",
+          "meaning": "Encuentro resuelto: capturado o derrotado. Si huyes vuelve a aparecer."
+        }
+      }
+    },
+    {
+      "id": "gen3.frlg.articuno",
+      "families": [
+        "FRLG"
+      ],
+      "category": "Legendario",
+      "species": [
+        144
+      ],
+      "title": "Articuno en las Islas Espuma",
+      "place": "MAPSEC_SEAFOAM_ISLANDS",
+      "requires": "Surf y Fuerza.",
+      "steps": [
+        "Empuja con Fuerza las rocas a los huecos para frenar la corriente de las plantas inferiores.",
+        "Articuno está en el sótano más profundo (nivel 50)."
+      ],
+      "conditions": {
+        "FRLG": {
+          "done": "FLAG_FOUGHT_ARTICUNO",
+          "meaning": "Encuentro resuelto: capturado o derrotado. Si huyes vuelve a aparecer."
+        }
+      }
+    },
+    {
+      "id": "gen3.frlg.moltres",
+      "families": [
+        "FRLG"
+      ],
+      "category": "Legendario",
+      "species": [
+        146
+      ],
+      "title": "Moltres en la cima del Mt. Ascuas",
+      "place": "MAPSEC_MT_EMBER",
+      "requires": "Acceso a las Islas Sete (Isla Prima) y Golpe Roca y Fuerza.",
+      "steps": [
+        "En Isla Prima sigue el camino del Mt. Ascuas y sube hasta la cumbre.",
+        "Moltres espera en la cima (nivel 50)."
+      ],
+      "conditions": {
+        "FRLG": {
+          "done": "FLAG_FOUGHT_MOLTRES",
+          "meaning": "Encuentro resuelto: capturado o derrotado. Si huyes vuelve a aparecer."
+        }
+      }
+    },
+    {
+      "id": "gen3.frlg.sevii_gems",
+      "families": [
+        "FRLG"
+      ],
+      "category": "Historia del postgame",
+      "title": "Islas Sete: Rubí y Zafiro para la Red de Celio",
+      "place": "MAPSEC_ONE_ISLAND",
+      "requires": "Liga superada.",
+      "steps": [
+        "Isla Prima: habla con Celio en el Centro Pokémon.",
+        "Mt. Ascuas: en la sala interior de la base del volcán obtienes el Rubí.",
+        "Isla Exta: en la Cueva Punteada resuelve el recorrido hasta el Zafiro; un Rocket te lo roba y lo recuperas en el Almacén de Isla Quinta.",
+        "Entrega ambas gemas a Celio: se conecta la red y recibes la Pokédex Nacional del Prof. Oak."
+      ],
+      "conditions": {
+        "FRLG": {
+          "progress": [
+            {
+              "flag": "FLAG_GOT_RUBY",
+              "label": "Rubí obtenido"
+            },
+            {
+              "flag": "FLAG_RECOVERED_SAPPHIRE",
+              "label": "Zafiro recuperado"
+            }
+          ],
+          "done": "FLAG_SYS_NATIONAL_DEX",
+          "meaning": "Pokédex Nacional activada."
+        }
+      }
+    },
+    {
+      "id": "gen3.frlg.tanoby",
+      "families": [
+        "FRLG"
+      ],
+      "category": "Puzle",
+      "title": "Cámaras Sete: Unown",
+      "place": "MAPSEC_TANOBY_CHAMBERS",
+      "requires": "Pokédex Nacional y Fuerza.",
+      "steps": [
+        "En el Cañón Sete de Isla Sétima empuja las rocas hasta la cámara del fondo para resolver el puzle de la llave.",
+        "Se abren las siete cámaras de las Ruinas Sete, donde aparecen las formas de Unown."
+      ],
+      "conditions": {
+        "FRLG": {
+          "done": "FLAG_SYS_UNLOCKED_TANOBY_RUINS",
+          "meaning": "Cámaras desbloqueadas."
+        }
+      }
+    },
+    {
+      "id": "gen3.frlg.mewtwo",
+      "families": [
+        "FRLG"
+      ],
+      "category": "Legendario",
+      "species": [
+        150
+      ],
+      "title": "Mewtwo en la Cueva Celeste",
+      "place": "MAPSEC_CERULEAN_CAVE",
+      "requires": "Islas Sete completadas hasta la Pokédex Nacional; Surf.",
+      "steps": [
+        "Al norte de Ciudad Celeste surfea hasta la entrada de la Cueva Celeste.",
+        "Mewtwo espera en el sótano (nivel 70). Guarda antes."
+      ],
+      "conditions": {
+        "FRLG": {
+          "done": "FLAG_FOUGHT_MEWTWO",
+          "meaning": "Encuentro resuelto: capturado o derrotado. Si huyes vuelve a aparecer."
+        }
+      }
+    },
+    {
+      "id": "gen3.frlg.birth_island",
+      "families": [
+        "FRLG"
+      ],
+      "category": "Evento de legado",
+      "legacy": "Requiere el Ori-Ticket de una distribución.",
+      "species": [
+        386
+      ],
+      "title": "Isla Origen: Deoxys",
+      "place": "MAPSEC_BIRTH_ISLAND",
+      "requires": "Ori-Ticket y Red de Celio conectada.",
+      "steps": [
+        "Enseña el Ori-Ticket en el puerto de Ciudad Carmín o de las Islas Sete.",
+        "Toca el triángulo y síguelo hasta completar la secuencia; aparece Deoxys (nivel 30)."
+      ],
+      "conditions": {
+        "FRLG": {
+          "done": "FLAG_FOUGHT_DEOXYS",
+          "lost": [
+            "FLAG_DEOXYS_FLEW_AWAY"
+          ],
+          "meaning": "Activa solo al capturarlo. Si lo derrotas, el script marca que se ha ido volando."
+        }
+      }
+    },
+    {
+      "id": "gen3.frlg.navel_rock",
+      "families": [
+        "FRLG"
+      ],
+      "category": "Evento de legado",
+      "legacy": "Requiere el Ticket Misterio de una distribución.",
+      "species": [
+        249,
+        250
+      ],
+      "title": "Roca Ombligo: Lugia y Ho-Oh",
+      "place": "MAPSEC_NAVEL_ROCK",
+      "requires": "Ticket Misterio y Red de Celio conectada.",
+      "steps": [
+        "Enseña el Ticket Misterio en el puerto de Ciudad Carmín o de las Islas Sete.",
+        "Ho-Oh espera en la cima y Lugia en el fondo (nivel 70)."
+      ],
+      "conditions": {
+        "FRLG": {
+          "done": "FLAG_FOUGHT_LUGIA",
+          "doneAlso": "FLAG_FOUGHT_HO_OH",
+          "lost": [
+            "FLAG_LUGIA_FLEW_AWAY",
+            "FLAG_HO_OH_FLEW_AWAY"
+          ],
+          "meaning": "Cada bandera se activa solo al capturarlo. Derrotarlo marca que se ha ido volando."
+        }
+      }
+    },
+    {
+      "id": "gen3.hall_of_fame",
+      "families": [
+        "E",
+        "RS",
+        "FRLG"
+      ],
+      "category": "Desafío",
+      "computed": "hallOfFame",
+      "title": "Volver a vencer a la Liga",
+      "place": "MAPSEC_EVER_GRANDE_CITY",
+      "requires": "Haber entrado una vez en el Salón de la Fama.",
+      "steps": [
+        "Tras la primera victoria, vuelve a la Liga: en Esmeralda y Rojo Fuego/Verde Hoja el Alto Mando y el Campeón usan equipos más fuertes.",
+        "Cada victoria añade un equipo al Salón de la Fama (hasta 50 registros); el guardado los conserva."
+      ]
+    },
+    {
+      "id": "gen3.e.frontier_silver",
+      "families": [
+        "E"
+      ],
+      "category": "Desafío",
+      "title": "Frente Batalla: los siete símbolos de plata",
+      "place": "MAPSEC_BATTLE_FRONTIER",
+      "requires": "Liga superada y Ticket del Barco hasta el Frente Batalla.",
+      "steps": [
+        "Cada As del Frente aparece en individual al alcanzar su racha: Torre Batalla: combate 35 (primer encuentro); Domo Batalla: torneo 5.º (primer encuentro); Palacio Batalla: combate 21 (primer encuentro); Sala Batalla: combate 28 (primer encuentro); Fábrica Batalla: combate 21 (primer encuentro); Tubo Batalla: sala 28 (primer encuentro); Pirámide Batalla: piso 21 (primer encuentro).",
+        "Venciendo al As por primera vez obtienes el símbolo de plata de esa instalación; se guarda en tu Pase Frente."
+      ],
+      "conditions": {
+        "E": {
+          "done": "FLAG_SYS_TOWER_SILVER",
+          "doneAll": [
+            "FLAG_SYS_DOME_SILVER",
+            "FLAG_SYS_PALACE_SILVER",
+            "FLAG_SYS_ARENA_SILVER",
+            "FLAG_SYS_FACTORY_SILVER",
+            "FLAG_SYS_PIKE_SILVER",
+            "FLAG_SYS_PYRAMID_SILVER"
+          ],
+          "progress": [
+            {
+              "flag": "FLAG_SYS_TOWER_SILVER",
+              "label": "Torre Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_DOME_SILVER",
+              "label": "Domo Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_PALACE_SILVER",
+              "label": "Palacio Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_ARENA_SILVER",
+              "label": "Sala Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_FACTORY_SILVER",
+              "label": "Fábrica Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_PIKE_SILVER",
+              "label": "Tubo Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_PYRAMID_SILVER",
+              "label": "Pirámide Batalla"
+            }
+          ],
+          "meaning": "Banderas de sistema de los símbolos de plata del Pase Frente."
+        }
+      }
+    },
+    {
+      "id": "gen3.e.frontier_gold",
+      "families": [
+        "E"
+      ],
+      "category": "Desafío",
+      "title": "Frente Batalla: los siete símbolos de oro",
+      "place": "MAPSEC_BATTLE_FRONTIER",
+      "requires": "Los símbolos de plata y mantener la racha hasta la segunda aparición de cada As.",
+      "steps": [
+        "Segunda aparición de cada As en individual: Torre Batalla: combates 35 y 70 (Anabel); Domo Batalla: torneos 5.º y 10.º (Tucker); Palacio Batalla: combates 21 y 42 (Spenser); Sala Batalla: combates 28 y 56 (Greta); Fábrica Batalla: combates 21 y 42 (Noland); Tubo Batalla: salas 28 y 140 (Lucy); Pirámide Batalla: pisos 21 y 70 (Brandon).",
+        "La racha debe ser continua: si pierdes, vuelve a empezar desde cero en esa instalación."
+      ],
+      "conditions": {
+        "E": {
+          "done": "FLAG_SYS_TOWER_GOLD",
+          "doneAll": [
+            "FLAG_SYS_DOME_GOLD",
+            "FLAG_SYS_PALACE_GOLD",
+            "FLAG_SYS_ARENA_GOLD",
+            "FLAG_SYS_FACTORY_GOLD",
+            "FLAG_SYS_PIKE_GOLD",
+            "FLAG_SYS_PYRAMID_GOLD"
+          ],
+          "progress": [
+            {
+              "flag": "FLAG_SYS_TOWER_GOLD",
+              "label": "Torre Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_DOME_GOLD",
+              "label": "Domo Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_PALACE_GOLD",
+              "label": "Palacio Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_ARENA_GOLD",
+              "label": "Sala Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_FACTORY_GOLD",
+              "label": "Fábrica Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_PIKE_GOLD",
+              "label": "Tubo Batalla"
+            },
+            {
+              "flag": "FLAG_SYS_PYRAMID_GOLD",
+              "label": "Pirámide Batalla"
+            }
+          ],
+          "meaning": "Banderas de sistema de los símbolos de oro del Pase Frente."
+        }
+      }
+    },
+    {
+      "id": "gen3.shields",
+      "families": [
+        "E",
+        "RS"
+      ],
+      "category": "Desafío",
+      "title": "Escudos de plata y oro de la Torre Batalla",
+      "place": "MAPSEC_BATTLE_FRONTIER",
+      "requires": "Racha en la Torre Batalla (combates individuales).",
+      "steps": [
+        "Esmeralda: con una racha actual de 50 victorias en individual de la Torre Batalla, visita la casa de Scott en el Frente Batalla para el Escudo de Plata; con 100, el de Oro.",
+        "Rubí/Zafiro: el recepcionista del vestíbulo de la Torre Batalla los entrega por tu mejor racha de 50 y 100.",
+        "Necesitas espacio libre en el PC de decoraciones."
+      ],
+      "conditions": {
+        "E": {
+          "done": "FLAG_RECEIVED_SILVER_SHIELD",
+          "doneAlso": "FLAG_RECEIVED_GOLD_SHIELD",
+          "meaning": "Decoraciones recibidas."
+        },
+        "RS": {
+          "done": "FLAG_RECEIVED_SILVER_SHIELD",
+          "doneAlso": "FLAG_RECEIVED_GOLD_SHIELD",
+          "meaning": "Decoraciones recibidas."
+        }
+      }
+    }
+  ],
+  "indirectSets": {
+    "E": {
+      "file": "src/frontier_util.c",
+      "lines": [
+        "FlagSet(FLAG_SYS_TOWER_SILVER + facility * 2);",
+        "FlagSet(FLAG_SYS_TOWER_GOLD + facility * 2);"
+      ],
+      "flags": [
+        "FLAG_SYS_TOWER_SILVER",
+        "FLAG_SYS_TOWER_GOLD",
+        "FLAG_SYS_DOME_SILVER",
+        "FLAG_SYS_DOME_GOLD",
+        "FLAG_SYS_PALACE_SILVER",
+        "FLAG_SYS_PALACE_GOLD",
+        "FLAG_SYS_ARENA_SILVER",
+        "FLAG_SYS_ARENA_GOLD",
+        "FLAG_SYS_FACTORY_SILVER",
+        "FLAG_SYS_FACTORY_GOLD",
+        "FLAG_SYS_PIKE_SILVER",
+        "FLAG_SYS_PIKE_GOLD",
+        "FLAG_SYS_PYRAMID_SILVER",
+        "FLAG_SYS_PYRAMID_GOLD"
+      ],
+      "note": "GiveFacilitySymbol: plata y oro de cada instalación como base + instalación × 2."
+    }
+  }
+}

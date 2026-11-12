@@ -1,3 +1,3 @@
 # Preserve upstream runtime bytes and license text exactly; asset hashes depend on them.
-engine/_framework/** -whitespace linguist-generated=true
+engine/_framework/** -text -whitespace linguist-generated=true
 engine/THIRD-PARTY-NOTICES-DOTNET.txt -whitespace

@@ -1,0 +1,118 @@
+{
+  "acerca": "Lista viva de lo que falta del plan. Estados: 'pendiente' (hay trabajo posible), 'bloqueado' (imposible ahora; 'motivo' obligatorio, con la fuente), 'hecho'.",
+  "items": [
+    {
+      "id": "la-peticiones",
+      "titulo": "Leyendas Arceus: localizar en los datos del juego la tabla de peticiones y el bloque del guardado que la registra",
+      "estado": "hecho",
+      "nota": "Bloques sub_NNN (255 = completada): 94 del juego base + 28 de la versión 1.1, contrastados con la ROM, WikiDex y cuatro partidas."
+    },
+    {
+      "id": "la-fero-sendas",
+      "titulo": "Leyendas Arceus: aclarar qué son «las dos sendas» de Fero y su dato en el guardado",
+      "estado": "hecho",
+      "nota": "No hay «dos sendas» documentadas: son las 15 vías solitarias del Dojo (peticiones 108-122); se acreditan con las 122 peticiones."
+    },
+    {
+      "id": "sv-dlc",
+      "titulo": "Escarlata/Púrpura: Gran Pugna Académica (el resto de retos de Paldea y de los DLC ya se acredita)",
+      "estado": "hecho",
+      "motivo": "",
+      "nota": "12/11/2026: Ogre Oustin' en difícil = OniballoonSave_isCleardHard (0x17AD6C82); Liga Arándano y Terapagos = FSYS_SCENARIO_GAME_CLEAR_SU2; Ogerpon = SU1; Gama = captura de los dos paradoja de la versión (1020/1021 o 1022/1023); Pecharunt = captura de 1025. 12/11/2026: vuelo contrarreloj = FEVT_SDC02_HAGANE_CLEAR_ELEMENTARY/INTERMEDIANTE/ADVANCED/SUPERLATIVE (scripts Lua de la ROM; claves = mitad baja del FNV-1a de 64 bits; los cuatro bloques existen en la Púrpura pública 3.0). 12/11/2026 (bytecode Lua 5.4 desensamblado con unluac en el PC): la primera Gran Pugna es la cadena de escenas common_2080-2150 de la historia del posgame (registro de escenas: common_1200...1320, 2000-2160; el nombre interno del torneo es «schoolwars»: rival/pepper/botan_schoolwars). Al perder, el guion vuelve a common_2090; al ganar, pasa a common_2150 (ceremonia) y 2160. La partida guarda el estado de la historia como texto: 0x9ABA6CF6 (SYS_LOAD_COMMON_INIT/CLEAR; CLEAR = fin del Área Cero, common_1290/champ_0010), 0x4B779A90/0x7BC599C0/0x9425E29C (TEAM/LEGEND/CHAMP), 0xB200597B (última escena cargada: COMMON_0185, DAN_AKU, GYM_DENKI_CLEAR...) y 0x95BC36BE (objetivo del mapa, ymap_title_...). Ninguno distingue aún la victoria del torneo. Hay ~700 bloques de estado en texto (None/Start/InProgress) con clave FNV-1a 64 de nombres «Clase+Save_Campo» (PlayerSave_LastRoomMapName...) cuyo nombre falta; el historial KDefeatedTrainers01/02 (FNV-1a 64 del id de trdata) solo guarda entrenadores del mapa. 12/11/2026: con las listas de hashes de la comunidad (pkZukan/PokeDocs, SV/Hashlists/Lua) el gestor es main.event.base.manager.ScenarioProgressManager (s_eventProgressList); IsFinished(escena) devuelve progress == «End» (estados None/Start/InProgress/End; CanStart = no End y no None). El estado lo lee y escribe una clase nativa de C++ (hash de 32 bits c28E81899, sin nombre en PokeDocs ni en main) a partir del nombre de la escena: falta su clave de bloque. Los ~700 bloques de texto None/Start/InProgress no son estos (no hay ningún End en partidas acabadas). 12/11/2026 RESUELTO con «qué cambia después»: al ganar la primera Gran Pugna llama Cinio (sub_032: «Enhorabuena por salir victorioso en la Gran Pugna Académica») y su misión activa FSYS_RAID_DIFFICTLTY4_SURVEY (0x2985A8E7); la siguiente (sub_033) activa FSYS_RAID_DIFFICTLTY6_SURVEY y _RELEASE. Púrpura del propietario: sondeo 4★ activo, ganada; Escarlata pública: las tres; Escarlata del propietario: historia sin acabar, no."
+    },
+    {
+      "id": "sv-dlc-fin",
+      "titulo": "Escarlata/Púrpura: contrastar FSYS_SCENARIO_GAME_CLEAR_SU2 con una partida con El disco índigo acabado",
+      "estado": "hecho",
+      "motivo": "",
+      "nota": "12/11/2026: contrastado con el código en lugar de con una partida (Project Pokémon prohíbe compartir partidas de SV): en el Lua (unluac --disassemble, nombres de PokeDocs) FSYS_SCENARIO_GAME_CLEAR_SU2 lo pone la rutina de fin de juego junto a la de FSYS_SCENARIO_GAME_CLEAR (contrastada con partidas reales): SystemCommand.ResetWeather, ResetGameTime, PokemonCommand.PokePartyRecover, la bandera y SystemCommand.Report (guardado). La tabla de escenas finales de al lado es common_1320 / sdc01_0490 / sdc02_0350 (final de El disco índigo) / s2_side01_0200."
+    },
+    {
+      "id": "usum-rainbow",
+      "titulo": "Ultrasol/Ultraluna: dato fiable del episodio Rainbow Rocket",
+      "estado": "hecho",
+      "nota": "Bandera 211 + Electrode del castillo (1730-1732); contrastado con Ultraluna del propietario. Sin Electrode capturados no se puede probar."
+    },
+    {
+      "id": "xy-handsome",
+      "titulo": "X/Y: dato del final del capítulo de Handsome",
+      "estado": "hecho",
+      "nota": "FE_HANDSOME_QUEST_ALL_CLEAR (0xC9) de FlagsEditorEXPlugin; Y del propietario 1 (capítulo hecho), X 0 (sin empezar)."
+    },
+    {
+      "id": "bdsp-postliga",
+      "titulo": "Diamante Brillante/Perla Reluciente: pedestales y salas de legendarios del Gran Subsuelo (Parque Hansa, legendarios y estrella de las 100 estatuas ya se acreditan)",
+      "estado": "hecho",
+      "nota": "Parque Hansa: objetivo concreto de las 11 salas y sus pedestales (WikiDex «Parque Hansa»), acreditado por la Griseosfera de la última sala; legendarios por Pokédex; estrella de las 100 estatuas por la bolsa del Subsuelo."
+    },
+    {
+      "id": "galar-postliga",
+      "titulo": "Espada/Escudo: crisis posliga y fin de los DLC",
+      "estado": "hecho",
+      "nota": "Historia + legendario de la edición (888/889) + Urshifu (892) + capturas de las Nieves de la Corona."
+    },
+    {
+      "id": "za-dlc",
+      "titulo": "Leyendas Z-A: rango de los Juegos Z-A infinitos desde la partida (objetivo ya concretado con WikiDex: rango 15 y Floette flor eterna)",
+      "estado": "hecho",
+      "nota": "12/11/2026: el rango 15 de los Juegos Z-A infinitos se acredita por su recompensa, el Floette flor eterna (670, forma 5) capturado en la Pokédex (PokeDexEntry9a.GetIsFormCaught(5)). Contrastado: la partida del propietario lo tiene en cajas y Pokédex; la pública también."
+    },
+    {
+      "id": "unova-postliga",
+      "titulo": "Negro/Blanco: poderes regalo del Nexárbol (Rascacielos Negro / Cavernogal Blanco ya se acreditan por sus medallas)",
+      "estado": "hecho",
+      "motivo": "",
+      "nota": "12/11/2026: resuelto con fuentes de la comunidad: todos los poderes Nexo = los dos niveles del Nexo (★Negro y ☆Blanco, 0x0C/0x0E del bloque 53) a 30 o más (Bulbapedia «Entree»; Serebii «Trainer Card» de N/B: estrella «Obtain all Entralink powers»). Se acredita el sí y el no. Partidas del propietario: niveles 0, no."
+    },
+    {
+      "id": "sinnoh-postliga",
+      "titulo": "Diamante/Perla/Platino: revanchas del Alto Mando y de Cintia (los legendarios posliga y la Torre Batalla de DP ya se acreditan)",
+      "estado": "hecho",
+      "motivo": "",
+      "nota": "12/11/2026: la Torre Batalla de DP SÍ queda guardada: GetTrainerCardLevel de pokediamond (arm9/asm/unk_02064E90.s) lee los récords GameStats 0x35/0x37/0x39/0x3B/0x3D (Record16 9-17 impares de PKHeX Record4) y da la estrella con alguno >= 100. Hecho battle.dp.tower100. 12/11/2026: la revancha se lee del guardado aunque las salas no dejen bandera: Salón de la Fama (bloque extra 0 en 0x20000; 30 entradas con equipo y fecha; pokeplatinum hall_of_fame_entries.h), condición de la revancha (Nacional en DP; FLAG_ARRESTED_CHARON_STARK_MOUNTAIN = 214 en Platino) y fechas de encuentro de los Pokémon. Sí: entrada del Salón posterior al encuentro de un Pokémon propio de la Zona de Combate (DP) o de Heatran de la Montaña Dura (Platino), o con él en el equipo; en Platino también el Diario (0x5720 del bloque general, evento 12 con el entrenador 870). No: una sola entrada en el Salón (las dos condiciones llegan después de la primera Liga), sin Nacional o sin el arresto. Partidas del propietario: Diamante y Perla «no» (1 entrada); Platino con 3 entradas y sin Heatran queda sin dato hasta capturarlo."
+    },
+    {
+      "id": "hoenn-postliga",
+      "titulo": "Hoenn: encuentros legendarios y contenido posterior a la Liga",
+      "estado": "hecho",
+      "nota": "Legendarios de cada edición registrados en la Pokédex: Regis, Rayquaza y el de la portada (RZ), los seis en Esmeralda; Rayquaza, Deoxys y el de la portada (Episodio Delta) en ROZA."
+    },
+    {
+      "id": "alola-postliga",
+      "titulo": "Alola: células de Zygarde en USUL (núcleos, células de SL, dominsignias, Mantine Surf y defensa del título ya se acreditan)",
+      "estado": "hecho",
+      "nota": "12/11/2026: en USUL no hay células por Alola (WikiDex «Arca de Zygarde»: el Arca trae 40, Dexio da un Zygarde al 10 % y la Gruta Desenlace tiene uno al 50 %). La variable 169 de EventWork7 (ZygardeCellCount) cuenta células y núcleos reunidos: Sol pública 100, Sol del propietario 95, Luna 75 (71 células + 4 núcleos), Ultrasol y Ultraluna del propietario 100 (Ultrasol con 40 en la 161). Hecho alola.usum.zygardeCells."
+    },
+    {
+      "id": "ipad",
+      "titulo": "iPad: prueba real en Safari de iPadOS (lectura de todos los formatos de guardado)",
+      "estado": "hecho",
+      "nota": "12/11/2026: prueba completa del navegador (tests/browser.cjs) en el motor WebKit de Safari emulando iPad Pro 11 (vertical y horizontal), iPad mini e iPhone 15: lectura e importación de guardados, rechazo de archivos corruptos, restauración y uso sin conexión. En móvil la prueba entra por la barra inferior «Partida»."
+    },
+    {
+      "id": "enfermera-otras",
+      "titulo": "Reconocimiento de la enfermera en Diamante/Perla y en Negro/Blanco y N2/B2 (WikiDex «Ficha de entrenador»: ocurre al alcanzar el último nivel de la ficha)",
+      "estado": "hecho",
+      "nota": "Esmeralda, Platino, HGSS y DP por su bandera (DP: FE_PC_GOLD 0x69 de FlagsEditorEXPlugin); N/B y N2/B2 por todas las estrellas de la tarjeta."
+    },
+    {
+      "id": "diplomas-sin-dato",
+      "titulo": "Diplomas del director del juego desde la partida en todas las ediciones con diploma",
+      "estado": "hecho",
+      "nota": "Teselia por FE_AWARD_LOCAL/NATIONAL, contrastado con las cuatro partidas del propietario. Morimoto/Nishino de Teselia: TMFLG_C03R0402_BATTLE es una bandera diaria (se borra), sin registro permanente: se marca a mano."
+    },
+    {
+      "id": "jefes-finales",
+      "titulo": "Jefe definitivo en DP y X/Y (ya están Rojo, Máximo en Esmeralda y ROZA, Cintia en Teselia y Platino, Morimoto/Iwao/Nishino y la defensa del título en Alola y los Juegos Z-A infinitos)",
+      "estado": "hecho",
+      "nota": "Rojo (Johto), Máximo (Esmeralda y ROZA), Cintia (Teselia, Platino y DBPR), Morimoto/Iwao/Nishino, defensa del título (Alola) y Juegos Z-A infinitos. DP: Cintia no tiene equipo de revancha (WikiDex «Cintia»), su combate de la historia es el último. X/Y: la Liga no tiene revancha (WikiDex «Liga Pokémon (Kalos)»); el reto final es la Mansión Batalla."
+    },
+    {
+      "id": "lgpe-revancha",
+      "titulo": "Let's Go: revancha de la Liga de Kanto",
+      "estado": "hecho",
+      "motivo": "",
+      "nota": "12/11/2026: lo que cambia tras la revancha: Verde reaparece en Ciudad Celeste (WikiDex «Verde (personaje)»: tras su combate en la Cueva Celeste, «hay que vencer a la Liga Pokémon para que vuelva a aparecer»). FV_T03_GREEN (desaparición 12, bandera 652 de EventWork7b) se oculta en el script de partida nueva y solo la vuelve visible esa victoria. Visible => sí; oculta tras vencerla => sin dato; sin la Liga => no. Las tres partidas del propietario: visible, sí."
+    }
+  ]
+}

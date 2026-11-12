@@ -1,7 +1,8 @@
 // Public inputs stay private. Only pass/fail counts and source references may be published.
 const fs=require('node:fs'),http=require('node:http'),path=require('node:path'),os=require('node:os'),crypto=require('node:crypto');
 const {spawnSync}=require('node:child_process');
-const {chromium,webkit}=require('playwright');
+const {chromium,webkit,devices}=require('playwright');
+const DEVICE=process.env.POKEMON_DEVICE?devices[process.env.POKEMON_DEVICE]:null;if(process.env.POKEMON_DEVICE&&!DEVICE)throw Error('Unknown device');
 const root=path.resolve(__dirname,'..'),manifest=require('../research/saves/public-corpus.json');
 const folder=path.resolve(process.argv[2]||'fixtures/private/public-corpus');
 const engine=process.env.POKEMON_BROWSER||'chromium';
@@ -20,7 +21,7 @@ const server=http.createServer((req,res)=>{
  const browser=await ({chromium,webkit}[engine]).launch({headless:true});
  const results=[],errors=[],requests=[];
  try{
-  const context=await browser.newContext(),page=await context.newPage();
+  const context=await browser.newContext(DEVICE?{...DEVICE}:{}),page=await context.newPage();
   page.on('pageerror',()=>errors.push('page error'));
   context.on('request',r=>{requests.push({url:r.url(),method:r.method(),body:r.postData()});});
   await page.goto(base);await page.waitForFunction(()=>!!globalThis.PokemonCoreBrowser);

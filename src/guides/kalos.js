@@ -8,11 +8,11 @@
       "Y"
     ],
     "mission": "01",
-    "location": "Villa Boceto → Pueblo Acua → Ruta 2 → Bosque Novarte",
+    "location": "Pueblo Boceto → Pueblo Acuarela → Ruta 2 → Bosque Novarte",
     "requires": [],
     "steps": [
-      "Baja de tu habitación, habla con tu madre y sal de Villa Boceto por Ruta 1. En Pueblo Acua reúnete con los amigos en la mesa para elegir Chespin, Fennekin o Froakie y recibir la Pokédex.",
-      "Recibe la carta del profesor, completa el primer combate con Xana y vuelve a Villa Boceto para entregársela a tu madre. Recoge el Mapa antes de retomar Pueblo Acua.",
+      "Baja de tu habitación, habla con tu madre y sal de Pueblo Boceto por Ruta 1. En Pueblo Acuarela reúnete con los amigos en la mesa para elegir Chespin, Fennekin o Froakie y recibir la Pokédex.",
+      "Recibe la carta del profesor, completa el primer combate con Xana y vuelve a Pueblo Boceto para entregársela a tu madre. Recoge el Mapa antes de retomar Pueblo Acuarela.",
       "En Ruta 2 participa en la demostración de captura y recibe las Poké Balls. Entra en Bosque Novarte y sigue el recorrido con Xana, que puede curar al equipo durante este tramo.",
       "Sal por el norte hacia Ruta 3 y continúa hasta Ciudad Novarte. La primera medalla se obtiene allí; el acceso lateral de Ruta 22 no lleva al primer gimnasio."
     ],
@@ -65,7 +65,7 @@
       "Ve por Ruta 6 hasta Palacio Cénit para recuperar la Poké Flauta. En los jardines recoge MO01 Corte del laberinto suroeste y ayuda a localizar al Furfrou del propietario.",
       "Para acorralarlo, deja a Xana en la entrada del laberinto cuando se ofrezca a bloquearlo y acércate a Furfrou por el oeste para que corra al norte. Recoloca a Xana en el lado este y rodéalo desde el oeste hasta encerrarlo.",
       "Ve al balcón del palacio para los fuegos artificiales y recibe del mayordomo la Poké Flauta y MT17 Protección. Regresa a Ruta 7 para despertar al Snorlax y resolver su encuentro.",
-      "Continúa por Ruta 7, completa los encuentros del grupo y atraviesa Gruta Unión hasta la zona alta de Ruta 8. Baja hacia Pueblo Petroglifo y acude al laboratorio de fósiles para conocer el encargo de Cueva Brillante.",
+      "Continúa por Ruta 7, completa los encuentros del grupo y atraviesa Galería Unión hasta la zona alta de Ruta 8. Baja hacia Pueblo Petroglifo y acude al laboratorio de fósiles para conocer el encargo de Cueva Brillante.",
       "Desde Ruta 9 utiliza el Rhyhorn para cruzar el terreno rocoso hasta Cueva Brillante. Avanza al interior, resuelve el incidente del Team Flare y elige Fósil Mandíbula para Tyrunt o Fósil Aleta para Amaura.",
       "Regresa al laboratorio para revivir el fósil y baja a la costa de Ruta 8 hacia Ciudad Relieve. Las elecciones de inicial y fósil no permiten conseguir sus alternativas por repetir el diálogo."
     ],
@@ -96,7 +96,7 @@
       "Visita la tienda de bicicletas de Relieve y consigue la Bicicleta. Sigue después la carretera que sube por la ladera para encontrarte con Lino.",
       "Recibe MO04 Fuerza de Lino en la carretera junto al circuito. Recibirla no permite usarla todavía fuera de combate: hace falta la medalla de su gimnasio.",
       "Entra en el gimnasio y escala las paredes rocosas hasta la cima. Derrota a Lino para obtener Medalla Muro y MT39 Tumba Rocas; desde entonces puedes usar Fuerza en el campo.",
-      "Cura al equipo y sal hacia Ruta 10, que conduce a Pueblo Crómlech. Puedes volver a Gruta Unión para abrir con Fuerza los atajos que antes estaban bloqueados."
+      "Cura al equipo y sal hacia Ruta 10, que conduce a Pueblo Crómlech. Puedes volver a Galería Unión para abrir con Fuerza los atajos que antes estaban bloqueados."
     ],
     "check": "Segunda medalla, Bicicleta y uso de Fuerza desbloqueado.",
     "pitfalls": [],

@@ -26,14 +26,31 @@ public static class ProgressSignals
             (0x0DDBBAAF, "story.indigoDisk.clear", "Indicador de final de El disco índigo", "FSYS_SCENARIO_GAME_CLEAR_SU2"),
             (0xF0D246CC, "pokedex.paldea.diplomaAvailable", "Diploma de Paldea disponible", "FSYS_POKEDEX_SYOUJOU_ENABLE"),
             (0xF7900D11, "pokedex.paldea.diplomaClaimed", "Indicador de diploma de Paldea recibido", "FSYS_POKEDEX_SYOUJOU_EVENT"),
+            (0x17AD6C82, "dlc.ogreOustin.hardCleared", "Ogre Oustin' superado en difícil", "OniballoonSave_isCleardHard"),
+            // Nombres sacados de las constantes de los scripts Lua de la ROM (script/lua/bin/release/main); la clave del
+            // bloque es la mitad baja del FNV-1a de 64 bits del nombre, igual que las de SaveBlockAccessor9SV.
+            (0x370AAED3, "dlc.flyingTrial.elementary", "Vuelo contrarreloj de Amarys: nivel básico", "FEVT_SDC02_HAGANE_CLEAR_ELEMENTARY"),
+            (0x3EB0BCA0, "dlc.flyingTrial.intermediate", "Vuelo contrarreloj de Amarys: nivel medio", "FEVT_SDC02_HAGANE_CLEAR_INTERMEDIANTE"),
+            (0x96EDAF73, "dlc.flyingTrial.advanced", "Vuelo contrarreloj de Amarys: nivel avanzado", "FEVT_SDC02_HAGANE_CLEAR_ADVANCED"),
+            (0x7D215B69, "dlc.flyingTrial.superlative", "Vuelo contrarreloj de Amarys: nivel máximo", "FEVT_SDC02_HAGANE_CLEAR_SUPERLATIVE"),
+            // Gran Pugna Académica: tras ganarla por primera vez llama Cinio («Enhorabuena por salir victorioso en la Gran Pugna
+            // Académica», message/dat/Spanish/script/sub_032) y su misión activa el sondeo de 4★; la siguiente (sub_033) activa el
+            // sondeo y el desbloqueo de 6★ (Lua main_dynamic, funciones de sub_032/sub_033). Serebii: el 6★ llega tras el torneo.
+            (0x2985A8E7, "postgame.raidSurvey4", "Sondeo de teraincursiones de Cinio tras la Gran Pugna Académica", "FSYS_RAID_DIFFICTLTY4_SURVEY"),
+            (0xAD1DC231, "postgame.raidSurvey6", "Sondeo de teraincursiones de 6★", "FSYS_RAID_DIFFICTLTY6_SURVEY"),
+            (0x6E7F8220, "postgame.raidRelease6", "Teraincursiones de 6★ desbloqueadas", "FSYS_RAID_DIFFICTLTY6_RELEASE"),
         ];
         return definitions.Select(d =>
         {
             bool found = sv.Blocks.TryGetBlock(d.Key, out var block);
+            // FSYS_SCENARIO_GAME_CLEAR: contraste natural con dos partidas reales del propietario (12/11/2026): Púrpura con
+            // la historia acabada = verdadero (y diploma recibido); Escarlata sin acabar = falso (sin diploma disponible).
+            bool contrasted = d.Id == "story.paldea.clear";
             return (object)new { id = d.Id, label = d.Label,
-                value = DecodeBooleanType(found ? block!.Type : null), validation = "documented",
+                value = DecodeBooleanType(found ? block!.Type : null), validation = contrasted ? "verified" : "documented",
                 source = new { url = Source, engineCommit = Audit.EngineCommit, blockKey = $"0x{d.Key:X8}", scriptName = d.ScriptName },
-                limitation = "Interpretación documentada en upstream; pendiente de contraste natural controlado. Un bloque ausente o de otro tipo no se interpreta como falso." };
+                limitation = (contrasted ? "Interpretación documentada en upstream y contrastada con partidas reales." : "Interpretación documentada en upstream; pendiente de contraste natural controlado.")
+                    + " Un bloque ausente o de otro tipo no se interpreta como falso." };
         }).ToArray();
     }
 
