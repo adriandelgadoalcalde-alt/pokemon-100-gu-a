@@ -243,6 +243,8 @@
    add(d.cells7.kind==='totemStickers'?'alola.usum.totemStickers':'alola.sm.zygardeCells',d.cells7.received>=d.cells7.total,'cells7');
    if(Array.isArray(d.cells7.surf)&&d.cells7.surf.length===4)add('alola.usum.mantineSurf4',d.cells7.surf.every(x=>Number.isInteger(x)&&x>0),'cells7');
   }
+  // DBPR: estrella de las estatuas = 100 tipos distintos (PlayerWork.GetTrainerRank y UgItemWork.GetHaveStatueKindNum, uDPR).
+  if(Number.isInteger(d.statues8b?.kinds))add('card.bdsp.statues100',d.statues8b.kinds>=100,'statues8b');
   // Musical: los 100 complementos (bits de Musical5 de PKHeX). Se exige la colección entera, sin excluir los de evento.
   if(Number.isInteger(d.musical5?.props))add('musical.unova.allProps',d.musical5.props>=100,'musical5');
   // Zona Nexo de Negro 2/Blanco 2: estrella de la tarjeta con los niveles blanco y negro a 30 (Serebii, «Trainer Card» de B2W2).

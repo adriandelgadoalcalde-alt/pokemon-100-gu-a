@@ -554,3 +554,8 @@ test('Alola: células de Zygarde (SL), dominsignias y Mantine Surf (USUL) desde 
  assert.equal(v({g:'ULTRAMOON',c:{kind:'totemStickers',total:100,received:100,surf:[1,2,3,0]}},'alola.usum.mantineSurf4'),false);
  assert.equal(v({g:'SUN',c:{kind:'zygardeCells',total:95,received:95,surf:null}},'alola.usum.mantineSurf4'),undefined);
 });
+
+test('DBPR: estrella de las 100 estatuas distintas (statues8b)',()=>{
+ const O=require('../src/engine/objectives.js'),v=k=>O.fromDiagnosis({game:'BD',statues8b:{kinds:k}}).find(x=>x.id==='card.bdsp.statues100')?.value;
+ assert.equal(v(100),true);assert.equal(v(99),false);
+});

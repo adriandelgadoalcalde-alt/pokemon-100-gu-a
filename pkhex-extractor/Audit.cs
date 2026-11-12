@@ -199,6 +199,9 @@ public static class Audit
                 surf = c7 is SAV7USUM ? Enumerable.Range(0, 4).Select(i => c7.Misc.GetSurfScore(i)).ToArray() : null } : null,
             // Diamante Brillante/Perla Reluciente: racha actual y máxima de cada modalidad de la Torre Batalla (BattleTowerWork8b).
             ["tower8b"] = save is SAV8BS bs ? new { maxStreaks = bs.BattleTower.Records.Select(r => (long)Math.Max(r.RenshouCount, r.RenshouCountOld)).ToArray() } : null,
+            // Diamante Brillante/Perla Reluciente: tipos de estatua distintos que se poseen (estrella de la tarjeta: el juego cuenta
+            // los objetos del Subsuelo de categoría estatua con cantidad > 0 y pide 100; UgItemWork.GetHaveStatueKindNum, uDPR).
+            ["statues8b"] = save is SAV8BS st8 ? new { kinds = st8.Underground.ReadItems().Count(i => i.Count > 0 && i.Type == UgItemType.Statue) } : null,
             // Espada/Escudo: marcas de Pokédex completa de la tarjeta de entrenador (TrainerCard8 de PKHeX).
             ["card8"] = save is SAV8SWSH c8 ? new { galarDex = c8.TrainerCard.PokeDexComplete, armorDex = c8.TrainerCard.ArmorDexComplete,
                 crownDex = c8.TrainerCard.CrownDexComplete } : null,

@@ -174,6 +174,12 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   récord 72 «Stickers Collected»; WikiDex «Dominsignia») y los cuatro recorridos de Mantine Surf con puntuación
   (`Misc7.GetSurfScore`). Los 5 núcleos de Zygarde (SL) y las células de USUL no tienen bloque documentado: a mano.
 
+- **Estrella de las estatuas de DBPR (12/11/2026):** `PlayerWork.GetTrainerRank` (uDPR, revisión de la 1.3.0) da la estrella
+  con `UgItemWork.GetHaveStatueKindNum() >= 100`: objetos del Subsuelo de categoría estatua con cantidad > 0. El extractor
+  los cuenta igual con `UndergroundItemList8b` y `UgItemUtil.GetType` de PKHeX (`statues8b`). Las mismas funciones fijan
+  las otras estrellas: Hall de la Fama, Pokédex Nacional sin los 11 excluidos, 100 victorias seguidas en cualquier
+  modalidad de la Torre Batalla y rango Maestro en cualquier categoría de Superconcurso.
+
 Pendiente con motivo (no se acredita solo para no adivinar):
 
 - **Torre Batalla de Diamante/Perla (racha de 100):** en pokediamond el bloque (`FrontierData`) solo guarda BP, banderas y
