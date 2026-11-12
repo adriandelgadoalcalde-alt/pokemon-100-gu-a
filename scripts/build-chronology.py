@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Escribe en MASTER_DATA (atlas.html) el paso a paso cronológico de los legendarios fijos.
+"""Escribe en MASTER_DATA (atlas.html) el paso a paso cronológico de los legendarios fijos y del resto de objetivos.
 
 Junta research/guides/legendarios-pkhex.json (lugar, nivel y si es errante, sacado de las tablas de encuentros de
 PKHeX.Core) con research/guides/legendarios.json (cuándo se puede, requisitos, consejo, fase y orden, con fuentes) y
@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parent.parent
 ATLAS = ROOT / 'atlas.html'
 CHRONO = json.loads((ROOT / 'research/guides/legendarios.json').read_text(encoding='utf-8'))
 PKHEX = json.loads((ROOT / 'research/guides/legendarios-pkhex.json').read_text(encoding='utf-8'))
+GOALS = json.loads((ROOT / 'research/guides/objetivos.json').read_text(encoding='utf-8'))['objetivos']
 
 
 def places(game, species):
@@ -68,6 +69,19 @@ def main():
             item['phase'] = e['fase']
             item['order'] = e['orden']
             done += 1
+    # Objetivos no legendarios (research/guides/objetivos.json): cómo, qué hace falta, fase, orden y paso con Pokekeep.
+    for goal in GOALS:
+        for game in goal['juegos']:
+            for item in data.get(game, []):
+                if item['id'] != goal['id']:
+                    continue
+                text = goal['como']
+                if goal.get('pokekeep'):
+                    text += ' Con Pokekeep: ' + goal['pokekeep']
+                item['how'] = text
+                item['phase'] = goal['fase']
+                item['order'] = goal['orden']
+                done += 1
     ATLAS.write_text(s[:i] + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + s[end:], encoding='utf-8')
     print(f'Paso a paso escrito en {done} objetivos.')
 

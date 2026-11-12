@@ -402,3 +402,17 @@ y `sBattleTowerReward` 11 bytes después. `maps/BattleTower1F.asm`: al ganar los
 premio, a 4, y así se queda hasta empezar otro desafío (perder lo deja en 0); el premio se elige al entrar en la sala, de
 modo que 0 significa que nunca se empezó un desafío. Regla: 3 o 4 = hecho; premio 0 = no hecho; si no, sin evidencia.
 La partida del propietario (estado 0, premio 0, explicación leída) y la pública: no hecho.
+
+### 12/11/2026 — Guía paso a paso y cronológica
+
+- `research/guides/legendarios-pkhex.json`: lugar, nivel y si es errante o regalo de los 353 legendarios fijos, sacado
+  de las tablas de encuentros de PKHeX.Core (`EncounterMovesetGenerator`).
+- `research/guides/legendarios.json`: para cada edición, cuándo se puede (historia, posliga, DLC, evento), qué hace
+  falta (objetos, NPC, retos, compañeros de equipo) y orden cronológico; contrastado con WikiDex (cada página de
+  Pokémon y lugar) y con pret donde hay desensamblado.
+- `research/guides/objetivos.json`: lo mismo para el resto de objetivos (historia, accesos, posliga, combates,
+  concursos, Pokédex, diplomas, Amuleto Iris, sellos y estrellas, eventos).
+- Lo que solo llega por evento o intercambio lleva un paso «Con Pokekeep: …» (qué objeto o bandera activar, o qué añadir
+  legal desde la Librería).
+- `scripts/build-chronology.py` lo vuelca en MASTER_DATA (`how`, `phase`, `order`); la vista de maestría y «Siguiente
+  objetivo» ordenan por fase y orden. Corregido de paso: en Negro el errante es Tornadus y en Blanco, Thundurus.
