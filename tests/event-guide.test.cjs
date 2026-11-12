@@ -403,3 +403,10 @@ test('HGSS: las 28 formas de Unown de la Pokédex',()=>{
  assert.equal(f({game:'CRYSTAL',unown2:{forms:26}},'pokedex.gen2.unown26'),true);
  assert.equal(f({game:'CRYSTAL',unown2:{forms:14}},'pokedex.gen2.unown26'),false);
 });
+
+test('Leyendas Arceus: Arceus vencido y ensueño de combates sin fin de Fero',()=>{
+ const O=require('../src/engine/objectives.js'),f=(d,id)=>O.fromDiagnosis({game:'ARCEUS',namedBlocks:d}).find(x=>x.id===id)?.value;
+ assert.equal(f({KDefeatedArceus:true},'la.arceusDefeated'),true);
+ assert.equal(f({KCompletedEternalBattleReverie:false},'la.eternalReverie'),false);
+ assert.equal(f({KCompletedEternalBattleReverie:true},'la.eternalReverie'),true);
+});

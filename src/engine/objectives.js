@@ -193,6 +193,10 @@
    // Leyendas Arceus: rango del Equipo Galaxia (0-10), Unown capturados (0-28) y fin de la historia (Dialga o Palkia
    // origen vencidos, como la fila final de la historia del paquete); nunca se deduce un falso de bloques ausentes.
    if(num('KExpeditionTeamRank')!==null)add('la.rank10',num('KExpeditionTeamRank')>=10,'namedBlocks');
+   // Leyendas Arceus: FSYS_SCENARIO_CLEARED_URA (tras Volo, Giratina y Arceus) y la marca de la tarjeta del ensueño de
+   // combates sin fin de Fero (racha de 50; KCompletedEternalBattleReverie de PKHeX).
+   if(typeof nb.KDefeatedArceus==='boolean')add('la.arceusDefeated',nb.KDefeatedArceus,'namedBlocks');
+   if(typeof nb.KCompletedEternalBattleReverie==='boolean')add('la.eternalReverie',nb.KCompletedEternalBattleReverie,'namedBlocks');
    if(num('KTotalUnownCaptured')!==null)add('la.unown',num('KTotalUnownCaptured')>=28,'namedBlocks');
    if(d.game==='ARCEUS'&&typeof d.gameClear!=='boolean'&&(nb.KDefeatedOriginDialga===true||nb.KDefeatedOriginPalkia===true))add('story.gameClear',true,'namedBlocks');
    const wisps=['00','01','02','03','04','05'].map(a=>num('KWispsFoundArea'+a));
