@@ -23,7 +23,9 @@
  const sm={source:alolaData.requirementsSource,requirements:alolaData.original};
  const usum={source:alolaData.requirementsSource,requirements:alolaData.ultra};
  const letsgo={source:'https://bulbapedia.bulbagarden.net/wiki/Diploma',requirements:{kanto:range(150)}};
- const bdsp={source:'https://github.com/shatter9652/uDPR/blob/becc1c369460026fbd33ca28d83e8c18d3e30526/Assets/Scripts/Game/ZukanWork.cs',requirements:{national:range(493,[...mythicals4,249,250])}};
+ const bdsp={source:'https://github.com/shatter9652/uDPR/blob/becc1c369460026fbd33ca28d83e8c18d3e30526/Assets/Scripts/Game/ZukanWork.cs',requirements:{national:range(493,[...mythicals4,249,250]),
+  // ZukanWork.CheckShinouZukanCompSee: vistos todos los de ShinouZukanNos salvo Manaphy (la misma lista que DP).
+  sinnoh:{atLeast:150,of:sinnohDP,field:'seen',source:'https://github.com/shatter9652/uDPR/blob/becc1c369460026fbd33ca28d83e8c18d3e30526/Assets/Scripts/Game/ZukanWork.cs'}}};
  // Diploma de GAME FREAK (Mansión Azulona, 3.ª planta): el juego cuenta TODOS los capturados y exige un total, no una
  // lista: pokered pide al menos 150 de 151 («discount Mew»); pokegold/pokecrystal, más de 248 de 251 (sin Mew ni Celebi).
  const gen1={source:'https://github.com/pret/pokered/blob/0dbf95cd12f5b1511c62ce69efe283000f780a8f/scripts/CeladonMansion3F.asm',requirements:{diploma:{atLeast:150,of:range(151)}}};

@@ -571,3 +571,10 @@ test('Leyendas Z-A: megapiedras del juego base (67), de Megadimensión (14) y es
  assert.equal(v(owner.filter(x=>x!==656),'za.megaStones.base'),undefined);
  assert.equal(v(all,'za.megaStones.special'),true);
 });
+
+test('DBPR: diploma de Sinnoh con la lista de ZukanWork (vistos, sin Manaphy) y nacional',()=>{
+ const C=require('../src/engine/completion.js'),seen=Array.from({length:493},(_,i)=>i+1).filter(i=>i!==490);
+ assert.equal(C.dexStatus({game:'BD',caught:[],seen}).sinnoh.complete,true);
+ assert.equal(C.dexStatus({game:'SP',caught:[],seen:seen.filter(i=>i!==484)}).sinnoh.complete,false);
+ assert.equal(C.dexStatus({game:'SP',caught:[],seen}).national.required,482);
+});

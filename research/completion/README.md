@@ -25,7 +25,8 @@ Cómo se acreditan los nuevos objetivos del pilar 2 y 3 (todos con fuente en su 
   Ho-Oh), nacional de Esmeralda y RFVH (`HasAllMons`), Kanto de RFVH (`HasAllKantoMons`), nacional de DP
   (`Pokedex_NationalDexIsComplete`: 482 sin los 11 singulares del juego), Sinnoh de DP (`Pokedex_SinnohDexIsComplete`:
   150 VISTOS de la Pokédex de Sinnoh sin Manaphy; lista sacada de `poketool/shinzukan.narc` de la ROM de Diamante) y
-  Kanto de Let's Go.
+  Kanto de Let's Go. En DBPR, las funciones de `ZukanWork` (uDPR): `CheckShinouZukanCompSee` (la misma lista de
+  Sinnoh, vistos, sin Manaphy) y `CheckZenkokuZukanCompGet` (482 sin los 11 excluidos).
 - **Diplomas por su bandera de entrega**: Platino `FLAG_RECEIVED_LOCAL_DEX_DIPLOMA` 0xAB y
   `FLAG_RECEIVED_NATIONAL_DEX_DIPLOMA` 0xAC (pokeplatinum; misma numeración de `generated/vars_flags.txt` que la
   0x69 de la enfermera, contrastada con la partida del propietario); HGSS `FLAG_SAW_JOHTO_DEX_CERTIFICATE` 0x143 y
@@ -33,9 +34,11 @@ Cómo se acreditan los nuevos objetivos del pilar 2 y 3 (todos con fuente en su 
 - **Amuletos por el objeto clave**: Amuleto Iris 632 y Amuleto Oval 631 (`ItemStorage*` de PKHeX los lista en los
   objetos clave de cada edición). En Sol/Luna, Ultrasol/Ultraluna, Espada/Escudo y DBPR el Amuleto Oval lo da
   Morimoto la primera vez que se le vence, así que acredita ese combate (WikiDex «Amuleto Oval»).
+- **Diplomas de Galar, Isla de la Armadura y Nieves de la Corona**: las tres marcas de Pokédex completa de la tarjeta
+  (`TrainerCard8` de PKHeX), que el juego pone con la misma Pokédex que pide el director.
 - **Máximo en la Cascada Meteoro** (Esmeralda): `FLAG_DEFEATED_METEOR_FALLS_STEVEN` 0x4F8 (pokeemerald).
 
-Sin dato en la partida (se marcan a mano; motivo en `pendientes.json`): diploma de Sinnoh de DBPR, diplomas de Teselia, Kalos, ROZA, DBPR y Galar, y Morimoto/Nishino en Teselia (combate
+Sin dato en la partida (se marcan a mano; motivo en `pendientes.json`): diplomas de Teselia, Kalos y ROZA, y Morimoto/Nishino en Teselia (combate
 diario sin registro conocido).
 
 ## Fuentes y cómo se contrastan
