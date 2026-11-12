@@ -1792,7 +1792,7 @@
     "fase": 2,
     "orden": 210,
     "cuando": "Después de ser campeón, al terminar el episodio de Sordward y Shielbert.",
-    "requisitos": "Tras perseguir a los hermanos por los estadios y volver al Bosque Oniria, el legendario te espera en la Corona de la Torre.",
+    "requisitos": "Tras perseguir a Sordward y Shielbert por los estadios de Galar, el episodio termina en la Corona de la Torre de la Planta Eléctrica, donde el legendario de tu edición se deja capturar.",
     "consejo": "Nivel 70."
    },
    "889": {
@@ -1885,26 +1885,27 @@
     "orden": 260,
     "cuando": "Con Regirock, Regice, Registeel, Regieleki y Regidrago en el equipo.",
     "requisitos": "Nido Dinamax rodeado de cuatro piedras en el Lecho del Gigante: incursión especial.",
-    "consejo": "Regigigas nivel 100."
+    "consejo": "Regigigas nivel 100.",
+    "pokekeep": "El Regi que no elegiste en las Ruinas del Dilema, añádelo legal desde la Librería."
    },
    "638": {
     "fase": 2,
     "orden": 270,
-    "cuando": "Nieves de la Corona, tercera pista de Peonio.",
+    "cuando": "Nieves de la Corona (DLC), en cualquier momento de la expedición.",
     "requisitos": "Encuentra 50 huellas de Cobalion por la Corona; después te espera en el Mar Gélido.",
     "consejo": "Cobalion nivel 70."
    },
    "639": {
     "fase": 2,
     "orden": 271,
-    "cuando": "Nieves de la Corona, tercera pista de Peonio.",
+    "cuando": "Nieves de la Corona (DLC), en cualquier momento de la expedición.",
     "requisitos": "50 huellas de Terrakion; luego, en la Gruta del Lago.",
     "consejo": "Terrakion nivel 70."
    },
    "640": {
     "fase": 2,
     "orden": 272,
-    "cuando": "Nieves de la Corona, tercera pista de Peonio.",
+    "cuando": "Nieves de la Corona (DLC), en cualquier momento de la expedición.",
     "requisitos": "50 huellas de Virizion; luego, en el Lecho del Gigante.",
     "consejo": "Virizion nivel 70."
    },
@@ -1935,7 +1936,7 @@
     "fase": 2,
     "orden": 210,
     "cuando": "Después de ser campeón, al terminar el episodio de Sordward y Shielbert.",
-    "requisitos": "Tras perseguir a los hermanos por los estadios y volver al Bosque Oniria, el legendario te espera en la Corona de la Torre.",
+    "requisitos": "Tras perseguir a Sordward y Shielbert por los estadios de Galar, el episodio termina en la Corona de la Torre de la Planta Eléctrica, donde el legendario de tu edición se deja capturar.",
     "consejo": "Nivel 70."
    },
    "888": {
@@ -2028,26 +2029,27 @@
     "orden": 260,
     "cuando": "Con Regirock, Regice, Registeel, Regieleki y Regidrago en el equipo.",
     "requisitos": "Nido Dinamax rodeado de cuatro piedras en el Lecho del Gigante: incursión especial.",
-    "consejo": "Regigigas nivel 100."
+    "consejo": "Regigigas nivel 100.",
+    "pokekeep": "El Regi que no elegiste en las Ruinas del Dilema, añádelo legal desde la Librería."
    },
    "638": {
     "fase": 2,
     "orden": 270,
-    "cuando": "Nieves de la Corona, tercera pista de Peonio.",
+    "cuando": "Nieves de la Corona (DLC), en cualquier momento de la expedición.",
     "requisitos": "Encuentra 50 huellas de Cobalion por la Corona; después te espera en el Mar Gélido.",
     "consejo": "Cobalion nivel 70."
    },
    "639": {
     "fase": 2,
     "orden": 271,
-    "cuando": "Nieves de la Corona, tercera pista de Peonio.",
+    "cuando": "Nieves de la Corona (DLC), en cualquier momento de la expedición.",
     "requisitos": "50 huellas de Terrakion; luego, en la Gruta del Lago.",
     "consejo": "Terrakion nivel 70."
    },
    "640": {
     "fase": 2,
     "orden": 272,
-    "cuando": "Nieves de la Corona, tercera pista de Peonio.",
+    "cuando": "Nieves de la Corona (DLC), en cualquier momento de la expedición.",
     "requisitos": "50 huellas de Virizion; luego, en el Lecho del Gigante.",
     "consejo": "Virizion nivel 70."
    },
