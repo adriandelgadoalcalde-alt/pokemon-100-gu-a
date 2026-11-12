@@ -63,7 +63,7 @@ function masteryEvaluation(goal,g){
    if(byLabel(['ZA'],/^Superar misiones principales 38–42/))rule=zaMissions(38,42);
    if(byLabel(['ZA'],/^Completar todas las misiones secundarias/))auto='za.side.base';
    auto=PokemonPassport.factForGoal(g.id,item.id)||auto;
-   const automatic=item.id==='orb-red-blue'&&['SOULSILVER','HEARTGOLD'].includes(g.id)?{all:[{fact:'inventory.keyItem.'+(g.id==='SOULSILVER'?534:535)+'.present'},{fact:'hgss.orb.originalDelivery'}]}:rule||(auto?{fact:auto}:null);
+   const automatic=item.id==='orb-red-blue'&&['SOULSILVER','HEARTGOLD'].includes(g.id)?{all:[{fact:'inventory.keyItem.'+(g.id==='SOULSILVER'?534:535)+'.present'},{fact:'event.hgss.embedded_orb'}]}:rule||(auto?{fact:auto}:null);
    const manual='manual.mastery.'+item.id;
    if(store.masterChecks?.[g.id+':'+item.id])facts.push({id:manual,value:true,gameId:g.id,type:'manual',validation:'declared'});
    return {id:item.id,gameId:g.id,verification:automatic?{any:[automatic,{fact:manual}]}:{fact:manual}};
