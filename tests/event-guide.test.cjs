@@ -588,3 +588,12 @@ test('DBPR: Griseosfera en la bolsa (Sala de la Distorsión del Parque Hansa)',(
  const O=require('../src/engine/objectives.js'),v=items=>O.fromDiagnosis({game:'SP',inventory:[{pocket:'Items',items}]}).find(x=>x.id==='bdsp.griseousOrb')?.value;
  assert.equal(v([{id:112,count:1}]),true);assert.equal(v([{id:111,count:1}]),undefined);
 });
+
+test('Diplomas de X/Y (0xA7A-0xA7E) y ROZA (0xBC6, 0xBC7) por sus banderas de entrega',()=>{
+ const O=require('../src/engine/objectives.js'),v=(g,f,id)=>O.fromDiagnosis({game:g,events:{activeFlags:f}}).find(x=>x.id===id)?.value;
+ assert.equal(v('X',[0xA7A,0xA7B,0xA7C,0xA7D],'card.gen6.diplomaRegional'),true);
+ assert.equal(v('Y',[0xA7A,0xA7B,0xA7C],'card.gen6.diplomaRegional'),undefined);
+ assert.equal(v('Y',[0xA7E],'card.gen6.diplomaNational'),true);
+ assert.equal(v('OMEGARUBY',[0xBC6],'card.gen6.diplomaRegional'),true);
+ assert.equal(v('ALPHASAPPHIRE',[0xBC7],'card.gen6.diplomaNational'),true);
+});

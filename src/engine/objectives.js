@@ -228,6 +228,14 @@
    if(fl.has(0xAB))add('card.pt.diplomaSinnoh',true,'events');
    if(fl.has(0xAC))add('card.pt.diplomaNational',true,'events');
   }
+  // X/Y: diplomas del director del juego (hotel de Ciudad Témpera), SYS_FLAG_C05R0302_AWARD_01-05 = 0xA7A-0xA7E (Kalos
+  // Centro, Costa, Montaña, Kalos completa y Nacional). ROZA: SYS_FLAG_ZUKAN_AWARD_CHI 0xBC6 (Hoenn) y _ZEN 0xBC7 (Nacional).
+  // Nombres y números de FlagsEditorEXPlugin (flags_gen6xy_en / flags_gen6oras_en). Solo se acredita la presencia.
+  if(['X','Y','OMEGARUBY','ALPHASAPPHIRE'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
+   const fl=new Set(d.events.activeFlags),xy=['X','Y'].includes(d.game);
+   if(xy?[0xA7A,0xA7B,0xA7C,0xA7D].every(f=>fl.has(f)):fl.has(0xBC6))add('card.gen6.diplomaRegional',true,'events');
+   if(fl.has(xy?0xA7E:0xBC7))add('card.gen6.diplomaNational',true,'events');
+  }
   // HGSS: el director de la Mansión Azulona pone FLAG_SAW_JOHTO_DEX_CERTIFICATE 0x143 y FLAG_SAW_NATIONAL_DEX_CERTIFICATE
   // 0x144 al enseñar cada diploma (pokeheartgold, scr_seq_0798_T07R0203 y include/constants/flags.h).
   if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
