@@ -110,6 +110,8 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   Rubí/Zafiro; los seis (con Groudon y Kyogre) en Esmeralda; Rayquaza, Deoxys y el de la portada (Episodio Delta) en ROZA.
 - **Posliga de Sinnoh, DB/PR y Sol/Luna:** legendarios de cada edición registrados en la Pokédex (trío de los lagos,
   Heatran, Regigigas, Giratina, Cresselia y el de la portada; en Sol/Luna, los Ultraentes de la edición y Necrozma).
+- **Posliga de Teselia y DLC de Z-A:** Negro/Blanco: Cobalion, Terrakion, Virizion y Kyurem; N2/B2: los tres Regis, Regigigas
+  y las Espadas de la Justicia; Megadimensión de Z-A: Hoopa. Todos por el registro de capturados de la Pokédex.
 - **Leyendas Arceus:** «Derrotar a Volo y superar desafíos de combate posteriores» exige `KDefeatedArceus`
   (FSYS_SCENARIO_CLEARED_URA) y `KCompletedEternalBattleReverie` (marca de la tarjeta por la racha de 50 con Fero). En la
   partida del propietario la primera está activa y la segunda no (récord 0), así que sigue sin acreditar.
