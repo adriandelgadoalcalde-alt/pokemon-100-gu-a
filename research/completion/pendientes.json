@@ -57,9 +57,9 @@
     },
     {
       "id": "unova-postliga",
-      "titulo": "Negro/Blanco y N2/B2: torre de Ciudad Negra/Bosque Blanco y poderes del Nexárbol (Pokéstar y posliga ya se acreditan)",
+      "titulo": "Negro/Blanco: poderes regalo del Nexárbol (Rascacielos Negro / Cavernogal Blanco ya se acreditan por sus medallas)",
       "estado": "bloqueado",
-      "motivo": "Torre de Ciudad Negra/Bosque Blanco: PKHeX no documenta su variable (const_b2w2 solo trae 2 entradas) y los bloques 39 y 43 no la contienen (comparados Negro 2 «100» y Blanco 2); el récord 48 cuenta entrenadores, no zonas. Poderes del Nexárbol (N/B): PKHeX solo expone Entralink5BW.MissionsComplete y las dos partidas del propietario lo tienen a 0, sin caso positivo con el que contrastar."
+      "motivo": "Poderes del Nexárbol (N/B): PKHeX solo expone Entralink5BW.MissionsComplete y las dos partidas del propietario lo tienen a 0, sin caso positivo con el que contrastar."
     },
     {
       "id": "sinnoh-postliga",

@@ -108,6 +108,13 @@
   }
   const medals=(typeof module==='object'&&module.exports?require('../guides/medals.js'):root.PokemonMedalBook)?.snapshot(d);
   if(medals)add('medals.b2w2.allReceived',medals.complete,'medals');
+  // N2/B2: Rascacielos Negro (Negro 2) / Cavernogal Blanco (Blanco 2). Medallas de la ROM (a/0/0/2, textos 80 y 83):
+  // 146/148 = llegar a la 5.ª zona, 147/149 = llegar a la 10.ª zona (índices desde 0; id = índice + 1). Cuenta el estado
+  // «lista para recoger» (3) o «recibida» (4).
+  if(medals&&Array.isArray(medals.entries)){
+   const zone10=medals.entries.find(m=>m.id===(d.game==='BLACK2'?148:150));
+   if(zone10&&zone10.state!==null)add('b2w2.dominionZone10',zone10.state>=3,'medals');
+  }
   const passport=(typeof module==='object'&&module.exports?require('../saves/passport.js'):root.PokemonPassport)?.snapshot(d);
   if(passport)for(const stamp of passport.entries)add('passport.stamp.'+stamp.index,stamp.registered,'passport');
   if(typeof d.gameClear==='boolean')add('story.gameClear',d.gameClear,'gameClear');

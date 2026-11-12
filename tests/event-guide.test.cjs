@@ -615,3 +615,10 @@ test('Escarlata/Púrpura: diploma de Paldea (KClaimedPokedexDiplomaPaldea)',()=>
  const O=require('../src/engine/objectives.js'),v=b=>O.fromDiagnosis({game:'VIOLET',namedBlocks:{KClaimedPokedexDiplomaPaldea:b}}).find(x=>x.id==='card.sv.diplomaPaldea')?.value;
  assert.equal(v(true),true);assert.equal(v(false),false);
 });
+
+test('N2/B2: 10.ª zona del Rascacielos Negro / Cavernogal Blanco por su medalla (ids 148 y 150)',()=>{
+ const O=require('../src/engine/objectives.js'),medals=(id,state)=>({medals:Array.from({length:255},(_,i)=>({id:i+1,state:i+1===id?state:0}))});
+ const v=(g,m)=>O.fromDiagnosis({game:g,medals:m}).find(x=>x.id==='b2w2.dominionZone10')?.value;
+ assert.equal(v('BLACK2',medals(148,4)),true);assert.equal(v('BLACK2',medals(148,3)),true);
+ assert.equal(v('BLACK2',medals(150,4)),false);assert.equal(v('WHITE2',medals(150,4)),true);
+});

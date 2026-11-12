@@ -211,6 +211,11 @@ Desde el 12/11/2026 se acreditan también desde el guardado (comprobado con las 
   tarjeta) y «acceso a zonas finales» en DP/Pt (ya cubierto por la posliga de la Isla Batalla). Las revanchas de la Liga
   de HGSS, Sinnoh y Let's Go pasan a ser objetivos concretos con su fuente.
 
+- **Rascacielos Negro / Cavernogal Blanco (N2/B2, 12/11/2026):** los textos de medallas de la ROM española (a/0/0/2,
+  archivos 80 y 83, leídos con `gen5_textos.py` en el PC) dan las medallas 146/147 «Mitad/Ático Rascacielos» (5.ª y 10.ª
+  zona del Rascacielos Negro) y 148/149 «Cavernogal Profundo/Abismal» (Cavernogal Blanco). La partida guarda cada
+  medalla (Medallero), así que el objetivo se acredita sin adivinar.
+
 Pendiente con motivo (no se acredita solo para no adivinar):
 
 - **Torre Batalla de Diamante/Perla (racha de 100):** en pokediamond el bloque (`FrontierData`) solo guarda BP, banderas y
@@ -219,8 +224,7 @@ Pendiente con motivo (no se acredita solo para no adivinar):
   del episodio, así que sola no sirve. Ahora se acredita con la 211 más alguno de los Electrode desaparecidos dentro del
   castillo (1730-1732, solo posibles durante el episodio): Ultraluna del propietario la cumple. Si no se capturó ningún
   Electrode no se puede probar, y no se acredita.
-- **Torre de Ciudad Negra / Bosque Blanco (N2/B2):** el récord 48 («Tower/Treehollow Trainers Defeated») cuenta
-  entrenadores, no zonas superadas.
+- **Torre de Ciudad Negra / Bosque Blanco (N2/B2):** resuelto con las medallas (ver arriba).
 - **Poderes regalo de la Zona Nexo (Negro/Blanco):** PKHeX solo expone `MissionsComplete`, que no distingue qué poderes
   se han recibido.
 - **Zygarde, pegatinas dominantes y Mantine Surf (Alola):** PKHeX da las células recogidas (`EventWork7`, trabajo 169 y
