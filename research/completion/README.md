@@ -47,8 +47,9 @@ Cómo se acreditan los nuevos objetivos del pilar 2 y 3 (todos con fuente en su 
   una partida pública de Sol acabada (24 defensas) y cuatro sin acabar (0).
 - **Máximo en la Cascada Meteoro** (Esmeralda): `FLAG_DEFEATED_METEOR_FALLS_STEVEN` 0x4F8 (pokeemerald).
 
-Sin dato en la partida (se marcan a mano; motivo en `pendientes.json`): Morimoto/Nishino en Teselia (combate
-diario sin registro conocido).
+Sin dato en la partida (se marcan a mano): Morimoto/Nishino en Teselia. Aplicando «qué cambia después»: nada. WikiDex
+(«Morimoto», «Torre de Game Freak»): «No entrega nada al ser derrotado» y se le reta una vez al día; FlagsEditorEXPlugin
+(listas de N/B y N2/B2) no tiene bandera suya. Lo único que podría quedar es la marca diaria, que se borra al cambiar el día.
 
 ## Fuentes y cómo se contrastan
 
