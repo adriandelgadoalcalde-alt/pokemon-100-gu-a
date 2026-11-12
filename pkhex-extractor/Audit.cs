@@ -128,8 +128,17 @@ public static class Audit
                     if ((ev & 0x3F) == 12 && ((ev >> 6) & 0x3FF) == 870) { journal = true; break; }
                 }
         }
+        // Platino, lo que cambia después (pret/pokeplatinum, stark_mountain_room_3 y pokemon_league_hall_of_fame): Carón es
+        // arrestado en el primer combate contra Heatran (FLAG_ARRESTED 214 y FLAG_BATTLED 215 a la vez) y desde entonces todo
+        // combate de la Liga es la revancha. Si Heatran se derrota o huye (FLAG_UNLOCKED_VS_SEEKER_LVL_5 2435, solo si no se
+        // pierde) desaparece con VAR_STARK_MOUNTAIN_ROOM_3_STATE (0x409E, trabajo 158) = 2; solo vuelve a 1 al perder contra
+        // él (sin la bandera 2435 de ese combate) o al entrar en el Salón con Heatran sin capturar (FLAG_CAUGHT_HEATRAN 288)
+        // después de hablar con Gerardo en el Área Combate, que solo se abre tras el arresto. Bandera 2435 + estado 1 +
+        // sin capturar = una entrada del Salón posterior al arresto, es decir, la revancha.
+        int? heatranState = pt ? s.GetWork(158) : null;
+        bool heatranReset = pt && arrested == true && !s.GetEventFlag(288) && s.GetEventFlag(2435) && heatranState == 1;
         int? kanto = s is SAV4HGSS h4 ? BitOperations.PopCount((uint)h4.Badges16) : null;
-        return new { hallOfFame = total, arrested, nationalDex = s.NationalDex, kantoBadges = kanto, evidence = evidence.Count, proof = proof || journal, journal };
+        return new { hallOfFame = total, arrested, nationalDex = s.NationalDex, kantoBadges = kanto, evidence = evidence.Count, proof = proof || journal || heatranReset, journal, heatranState, heatranReset };
     }
 
 
