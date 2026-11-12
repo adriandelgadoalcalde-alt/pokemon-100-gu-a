@@ -650,3 +650,8 @@ test('Alola: 5 núcleos de Zygarde (SL 0xC63-0xC67, USUL 0x1023-0x1027)',()=>{
  assert.equal(v('SUN',[0xC63,0xC64,0xC65,0xC66,0xC67]),true);assert.equal(v('SUN',[0xC63]),false);
  assert.equal(v('ULTRAMOON',[0x1023,0x1024,0x1025,0x1026,0x1027]),true);
 });
+
+test('BDSP: victoria contra el As de la Torre Batalla por FE_TOWER_MASTER_WINED (1426)',()=>{
+ const O=require('../src/engine/objectives.js'),f=flags=>O.fromDiagnosis({game:'BD',events:{activeFlags:flags,systemOffset:4000}}).find(x=>x.id==='bdsp.towerMaster')?.value;
+ assert.equal(f([1426]),true);assert.equal(f([1425]),undefined);
+});

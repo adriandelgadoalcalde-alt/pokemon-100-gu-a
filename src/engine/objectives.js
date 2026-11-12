@@ -269,6 +269,7 @@
    if(fl.has(132))add('card.bdsp.diplomaSinnoh',true,'events');
    if(fl.has(133))add('card.bdsp.diplomaNational',true,'events');
    if(fl.has(1713))add('bdsp.cynthiaRematch',true,'events');
+   if(fl.has(1426))add('bdsp.towerMaster',true,'events'); // FE_TOWER_MASTER_WINED: victoria contra el As de la Torre Batalla.
   }
   // Alola: núcleos de Zygarde recogidos = SYS_FLAG_ZIGARUDE_CORE1..5_GET (SL 0xC63-0xC67, USUL 0x1023-0x1027;
   // FlagsEditorEXPlugin). Contrastado: Sol pública acabada (95 células) 5/5, partidas recién empezadas 0/5.

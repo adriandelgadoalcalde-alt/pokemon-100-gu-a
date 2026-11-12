@@ -234,9 +234,11 @@ public static class Audit
             {
                 // DBPR: FlagWork8b (banderas de 32 bits; índices de EvWork.FLAG_INDEX de uDPR) y trabajo.
                 var fw = bdsp.FlagWork;
-                var active = Enumerable.Range(0, FlagWork8b.COUNT_FLAG).Where(fw.GetFlag).ToArray();
+                // Banderas normales 0..3999 y, a continuación, las de sistema como 4000 + índice (SYSFLAG_INDEX de uDPR).
+                var active = Enumerable.Range(0, FlagWork8b.COUNT_FLAG).Where(fw.GetFlag)
+                    .Concat(Enumerable.Range(0, FlagWork8b.COUNT_SYSTEM).Where(fw.GetSystemFlag).Select(i => FlagWork8b.COUNT_FLAG + i)).ToArray();
                 var work = Enumerable.Range(0, FlagWork8b.COUNT_WORK).Select(fw.GetWork).ToArray();
-                result["events"] = new { flagCount = FlagWork8b.COUNT_FLAG, activeFlags = active, work,
+                result["events"] = new { flagCount = FlagWork8b.COUNT_FLAG + FlagWork8b.COUNT_SYSTEM, activeFlags = active, work, systemOffset = FlagWork8b.COUNT_FLAG,
                     interpretation = "Datos crudos sin equivalencia automática a misiones", engineCommit = EngineCommit };
             }
             else if (flags is not null)
