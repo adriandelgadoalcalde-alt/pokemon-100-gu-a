@@ -63,6 +63,11 @@ Pendiente con motivo (no se acredita solo para no adivinar):
   se han recibido.
 - **Corona de hojas doradas (HGSS):** se guarda en cada Pokémon (`ShinyLeaf`, bit 5), pero ninguna partida disponible tiene
   un Pokémon coronado para contrastarlo, y que no esté en las cajas no prueba que no se hiciera.
+- **Zygarde, pegatinas dominantes y Mantine Surf (Alola):** PKHeX da las células recogidas (`EventWork7`, trabajo 169 y
+  lista de 95/100 posiciones; Sol 95/95, Ultrasol y Ultraluna 100/100 en las partidas del propietario), pero no los cinco
+  núcleos que pide el objetivo. El récord 72 («Stickers Collected») marca 102 en una partida de Ultraluna, más que las 100
+  pegatinas que existen, así que no cuenta pegatinas distintas; y los récords de Mantine Surf (73, 189, 198) son puntos y
+  partidas, no los cuatro recorridos superados.
 - **Expansiones de Escarlata/Púrpura:** las señales `FSYS_SCENARIO_GAME_CLEAR_SU1/SU2` existen, pero ninguna partida
   disponible tiene el DLC acabado para un contraste positivo.
 
