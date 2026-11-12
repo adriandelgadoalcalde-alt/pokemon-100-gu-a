@@ -22,7 +22,8 @@
  }
  // Game Boy (versiones internacionales): pokered wCurMap/wYCoord/wXCoord tras wMapPalOffset (badges 0x2602 de PKHeX);
  // pokegold/pokecrystal wMapGroup..wXCoord: 4 + 30 bytes (wScreenSave) antes del equipo (Party de PKHeX).
- const GB={RED:{maps:'RB',map:0x260A,y:0x260D,x:0x260E},BLUE:{maps:'RB',map:0x260A,y:0x260D,x:0x260E},YELLOW:{maps:'Y',map:0x260A,y:0x260D,x:0x260E},
+ // Verde (traducción al inglés, formato internacional) comparte los mapas de Kanto de Rojo/Azul.
+ const GB={RED:{maps:'RB',map:0x260A,y:0x260D,x:0x260E},BLUE:{maps:'RB',map:0x260A,y:0x260D,x:0x260E},GREEN:{maps:'RB',map:0x260A,y:0x260D,x:0x260E},YELLOW:{maps:'Y',map:0x260A,y:0x260D,x:0x260E},
   GOLD:{maps:'GS',group:0x2868},SILVER:{maps:'GS',group:0x2868},CRYSTAL:{maps:'C',group:0x2843}};
  function readGB(bytes,game,languageId){
   const G=GB[game],D=data();if(!G||!D||bytes.length<0x8000||languageId===1||languageId===8)return null;

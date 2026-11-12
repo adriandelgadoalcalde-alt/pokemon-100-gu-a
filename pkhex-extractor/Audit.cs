@@ -109,7 +109,8 @@ public static class Audit
             ["schemaVersion"] = "1.0.0", ["game"] = game, ["generation"] = save.Generation,
             ["gameCandidates"] = game is not null ? new[] { game } : save is SAV3FRLG ? new[] { "FIRERED", "LEAFGREEN" } :
                 save is SAV3RS ? new[] { "RUBY", "SAPPHIRE" } : save is SAV4DP ? new[] { "DIAMOND", "PEARL" } : save is SAV1 g1 ?
-                (g1.Japanese ? new[] { "RED", "GREEN", "BLUE" } : new[] { "RED", "BLUE" }) :
+                // Verde solo salió en Japón, pero su traducción al inglés guarda con el formato internacional.
+                (g1.Japanese ? new[] { "RED", "GREEN", "BLUE" } : new[] { "RED", "BLUE", "GREEN" }) :
                 save is SAV2 ? new[] { "GOLD", "SILVER" } : Array.Empty<string>(),
             ["extractor"] = new { name = "pokemon-save-audit", engine = "PKHeX.Core", engineCommit = EngineCommit, readOnly = true },
             ["format"] = save.GetType().Name, ["detectedVersion"] = save.Version.ToString(),
