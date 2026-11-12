@@ -490,7 +490,8 @@ test('Enfermera que reconoce la tarjeta de oro (Esmeralda, Platino, HGSS)',()=>{
  const O=require('../src/engine/objectives.js'),f=d=>O.fromDiagnosis(d).find(x=>x.id==='card.nurseRecognition')?.value;
  assert.equal(f({game:'EMERALD',field:{family:'E',flags:[0x159]}}),true);
  assert.equal(f({game:'PLATINUM',events:{activeFlags:[0x69]}}),true);
- assert.equal(f({game:'SOULSILVER',events:{activeFlags:[0x63]}}),undefined);
+ assert.equal(f({game:'SOULSILVER',events:{activeFlags:[0x63]}}),false);
+ assert.equal(f({game:'SOULSILVER'}),undefined); // sin banderas leídas no hay respuesta
 });
 
 test('N2/B2: las 40 películas de Pokéstar Studios',()=>{
@@ -501,7 +502,7 @@ test('N2/B2: las 40 películas de Pokéstar Studios',()=>{
 test('Diplomas de Platino por sus banderas de entrega y Máximo en la Cascada Meteoro (Esmeralda)',()=>{
  const O=require('../src/engine/objectives.js'),v=(d,id)=>O.fromDiagnosis(d).find(x=>x.id===id)?.value;
  assert.equal(v({game:'PLATINUM',events:{activeFlags:[0xAB]}},'card.pt.diplomaSinnoh'),true);
- assert.equal(v({game:'PLATINUM',events:{activeFlags:[0xAB]}},'card.pt.diplomaNational'),undefined);
+ assert.equal(v({game:'PLATINUM',events:{activeFlags:[0xAB]}},'card.pt.diplomaNational'),false);
  assert.equal(v({game:'PLATINUM',events:{activeFlags:[0xAC]}},'card.pt.diplomaNational'),true);
  assert.equal(v({game:'EMERALD',field:{family:'E',flags:[0x4F8]}},'battle.emerald.stevenMeteorFalls'),true);
  assert.equal(v({game:'EMERALD',field:{family:'E',flags:[0x4F7]}},'battle.emerald.stevenMeteorFalls'),false);
@@ -529,7 +530,7 @@ test('Diploma de Sinnoh de DP: 150 vistos de la Pokédex de Sinnoh sin Manaphy (
 
 test('Diplomas de HGSS por sus banderas (0x143 Johto, 0x144 Nacional)',()=>{
  const O=require('../src/engine/objectives.js'),v=(f,id)=>O.fromDiagnosis({game:'HEARTGOLD',events:{activeFlags:f}}).find(x=>x.id===id)?.value;
- assert.equal(v([0x143],'card.hgss.diplomaJohto'),true);assert.equal(v([0x143],'card.hgss.diplomaNational'),undefined);
+ assert.equal(v([0x143],'card.hgss.diplomaJohto'),true);assert.equal(v([0x143],'card.hgss.diplomaNational'),false);
  assert.equal(v([0x144],'card.hgss.diplomaNational'),true);
 });
 
@@ -592,7 +593,7 @@ test('DBPR: Griseosfera en la bolsa (Sala de la Distorsión del Parque Hansa)',(
 test('Diplomas de X/Y (0xA7A-0xA7E) y ROZA (0xBC6, 0xBC7) por sus banderas de entrega',()=>{
  const O=require('../src/engine/objectives.js'),v=(g,f,id)=>O.fromDiagnosis({game:g,events:{activeFlags:f}}).find(x=>x.id===id)?.value;
  assert.equal(v('X',[0xA7A,0xA7B,0xA7C,0xA7D],'card.gen6.diplomaRegional'),true);
- assert.equal(v('Y',[0xA7A,0xA7B,0xA7C],'card.gen6.diplomaRegional'),undefined);
+ assert.equal(v('Y',[0xA7A,0xA7B,0xA7C],'card.gen6.diplomaRegional'),false);
  assert.equal(v('Y',[0xA7E],'card.gen6.diplomaNational'),true);
  assert.equal(v('OMEGARUBY',[0xBC6],'card.gen6.diplomaRegional'),true);
  assert.equal(v('ALPHASAPPHIRE',[0xBC7],'card.gen6.diplomaNational'),true);
@@ -600,7 +601,7 @@ test('Diplomas de X/Y (0xA7A-0xA7E) y ROZA (0xBC6, 0xBC7) por sus banderas de en
 
 test('Diplomas de Teselia por FE_AWARD_LOCAL/NATIONAL (N/B 0x11F/0x120, N2/B2 0xDD/0xDE)',()=>{
  const O=require('../src/engine/objectives.js'),v=(g,f,id)=>O.fromDiagnosis({game:g,events:{activeFlags:f}}).find(x=>x.id===id)?.value;
- assert.equal(v('BLACK',[0x11F],'card.unova.diplomaRegional'),true);assert.equal(v('BLACK',[0x11F],'card.unova.diplomaNational'),undefined);
+ assert.equal(v('BLACK',[0x11F],'card.unova.diplomaRegional'),true);assert.equal(v('BLACK',[0x11F],'card.unova.diplomaNational'),false);
  assert.equal(v('WHITE2',[0xDD,0xDE],'card.unova.diplomaNational'),true);
 });
 
@@ -642,7 +643,7 @@ test('ROZA: revancha de Máximo por la bandera del campeón de revancha',()=>{
 test('DBPR: enfermera (68), diplomas (132/133) y revancha de Cintia (1713) por EvWork de uDPR',()=>{
  const O=require('../src/engine/objectives.js'),v=(f,id)=>O.fromDiagnosis({game:'SP',events:{activeFlags:f}}).find(x=>x.id===id)?.value;
  assert.equal(v([68],'card.nurseRecognition'),true);assert.equal(v([133],'card.bdsp.diplomaNational'),true);
- assert.equal(v([141],'bdsp.cynthiaRematch'),undefined);assert.equal(v([1713],'bdsp.cynthiaRematch'),true);
+ assert.equal(v([141],'bdsp.cynthiaRematch'),false);assert.equal(v([1713],'bdsp.cynthiaRematch'),true);
 });
 
 test('Alola: 5 núcleos de Zygarde (SL 0xC63-0xC67, USUL 0x1023-0x1027)',()=>{
@@ -653,7 +654,7 @@ test('Alola: 5 núcleos de Zygarde (SL 0xC63-0xC67, USUL 0x1023-0x1027)',()=>{
 
 test('BDSP: victoria contra el As de la Torre Batalla por FE_TOWER_MASTER_WINED (1426)',()=>{
  const O=require('../src/engine/objectives.js'),f=flags=>O.fromDiagnosis({game:'BD',events:{activeFlags:flags,systemOffset:4000}}).find(x=>x.id==='bdsp.towerMaster')?.value;
- assert.equal(f([1426]),true);assert.equal(f([1425]),undefined);
+ assert.equal(f([1426]),true);assert.equal(f([1425]),false);
 });
 
 test('Diamante/Perla: estrella de la Torre Batalla por el récord de racha (GameStats 0x35-0x3D)',()=>{

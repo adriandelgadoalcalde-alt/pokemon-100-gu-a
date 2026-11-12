@@ -221,36 +221,36 @@
   }
   // La enfermera reconoce la tarjeta de oro (te llama por tu nombre y cura sin preguntar): bandera que el script pone la
   // primera vez. Esmeralda FLAG_NURSE_MENTIONS_GOLD_CARD 0x159 (pokeemerald), Platino FLAG_POKECENTER_GOLD_TRAINER_CARD_SEEN
-  // 0x69 (pokeplatinum), HGSS FLAG_NURSE_NOTICED_CARD 0x64 (pokeheartgold). Solo se acredita la presencia.
+  // 0x69 (pokeplatinum), HGSS FLAG_NURSE_NOTICED_CARD 0x64 (pokeheartgold). El conjunto de banderas se lee entero: sin la bandera, la enfermera aún no te ha reconocido.
   {
    const nurse={EMERALD:0x159,PLATINUM:0x69,DIAMOND:0x69,PEARL:0x69,HEARTGOLD:0x64,SOULSILVER:0x64,BD:68,SP:68}[d.game];
    const flags=d.game==='EMERALD'?d.field?.flags:d.events?.activeFlags;
-   if(nurse!==undefined&&Array.isArray(flags)&&flags.includes(nurse))add('card.nurseRecognition',true,d.game==='EMERALD'?'field':'events');
+   if(nurse!==undefined&&Array.isArray(flags))add('card.nurseRecognition',flags.includes(nurse),d.game==='EMERALD'?'field':'events');
   }
   // Diplomas del director del juego en Platino (Hotel Gran Lago): el script pone FLAG_RECEIVED_LOCAL_DEX_DIPLOMA (0xAB) y
   // FLAG_RECEIVED_NATIONAL_DEX_DIPLOMA (0xAC) al entregarlos (pokeplatinum, grand_lake_valor_lakefront_west_house y
-  // generated/vars_flags.txt; misma numeración que la 0x69 de la enfermera). Solo se acredita la presencia.
+  // generated/vars_flags.txt; misma numeración que la 0x69 de la enfermera). Sin la bandera, el diploma no se ha recibido.
   // Diamante/Perla: las mismas banderas, FE_RECONGNIZE_SHINOU/NATIONAL 0xAB/0xAC y FE_PC_GOLD 0x69 (FlagsEditorEXPlugin flags_gen4dp).
   if(['PLATINUM','DIAMOND','PEARL'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags);
-   if(fl.has(0xAB))add('card.pt.diplomaSinnoh',true,'events');
-   if(fl.has(0xAC))add('card.pt.diplomaNational',true,'events');
+   add('card.pt.diplomaSinnoh',fl.has(0xAB),'events');
+   add('card.pt.diplomaNational',fl.has(0xAC),'events');
   }
   // X/Y: diplomas del director del juego (hotel de Ciudad Témpera), SYS_FLAG_C05R0302_AWARD_01-05 = 0xA7A-0xA7E (Kalos
   // Centro, Costa, Montaña, Kalos completa y Nacional). ROZA: SYS_FLAG_ZUKAN_AWARD_CHI 0xBC6 (Hoenn) y _ZEN 0xBC7 (Nacional).
-  // Nombres y números de FlagsEditorEXPlugin (flags_gen6xy_en / flags_gen6oras_en). Solo se acredita la presencia.
+  // Nombres y números de FlagsEditorEXPlugin (flags_gen6xy_en / flags_gen6oras_en). Sin la bandera, no recibido.
   if(['X','Y','OMEGARUBY','ALPHASAPPHIRE'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags),xy=['X','Y'].includes(d.game);
-   if(xy?[0xA7A,0xA7B,0xA7C,0xA7D].every(f=>fl.has(f)):fl.has(0xBC6))add('card.gen6.diplomaRegional',true,'events');
-   if(fl.has(xy?0xA7E:0xBC7))add('card.gen6.diplomaNational',true,'events');
+   add('card.gen6.diplomaRegional',xy?[0xA7A,0xA7B,0xA7C,0xA7D].every(f=>fl.has(f)):fl.has(0xBC6),'events');
+   add('card.gen6.diplomaNational',fl.has(xy?0xA7E:0xBC7),'events');
   }
   // Teselia: FE_AWARD_LOCAL / FE_AWARD_NATIONAL (FlagsEditorEXPlugin; N/B 0x11F/0x120, N2/B2 0xDD/0xDE). Contrastado con las
   // cuatro partidas del propietario: Negro solo el regional (su habitación muestra solo ese diploma), Negro 2 «100» los dos,
-  // Blanco y Blanco 2 ninguno. Solo se acredita la presencia.
+  // Blanco y Blanco 2 ninguno (el «no» también está contrastado).
   if(['BLACK','WHITE','BLACK2','WHITE2'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags),bw=['BLACK','WHITE'].includes(d.game);
-   if(fl.has(bw?0x11F:0xDD))add('card.unova.diplomaRegional',true,'events');
-   if(fl.has(bw?0x120:0xDE))add('card.unova.diplomaNational',true,'events');
+   add('card.unova.diplomaRegional',fl.has(bw?0x11F:0xDD),'events');
+   add('card.unova.diplomaNational',fl.has(bw?0x120:0xDE),'events');
   }
   // X/Y: capítulo de Handsome completo = FE_HANDSOME_QUEST_ALL_CLEAR (0xC9, FlagsEditorEXPlugin flags_gen6xy). Contrastado
   // con las partidas del propietario: Y lo tiene (WK_SCENE_HANDSOME_QUEST = 7 y los seis episodios con estado), X no lo empezó.
@@ -263,13 +263,13 @@
    if(fl.has(0x8F9))add('oras.stevenRematch',fl.has(0x974)||fl.has(0xA7A),'events');
   }
   // DBPR: EvWork.FLAG_INDEX de uDPR: FE_RECONGNIZE_SHINOU/NATIONAL 132/133 (diplomas) y FE_C10R0111_LEAGUE2_CHAMP_WIN 1713
-  // (victoria contra Cintia en la revancha de la Liga; la primera es FE_C10R0111_CHAMP_WIN 141). Solo presencia.
+  // (victoria contra Cintia en la revancha de la Liga; la primera es FE_C10R0111_CHAMP_WIN 141). Sin la bandera, no.
   if(['BD','SP'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags);
-   if(fl.has(132))add('card.bdsp.diplomaSinnoh',true,'events');
-   if(fl.has(133))add('card.bdsp.diplomaNational',true,'events');
-   if(fl.has(1713))add('bdsp.cynthiaRematch',true,'events');
-   if(fl.has(1426))add('bdsp.towerMaster',true,'events'); // FE_TOWER_MASTER_WINED: victoria contra el As de la Torre Batalla.
+   add('card.bdsp.diplomaSinnoh',fl.has(132),'events');
+   add('card.bdsp.diplomaNational',fl.has(133),'events');
+   add('bdsp.cynthiaRematch',fl.has(1713),'events');
+   add('bdsp.towerMaster',fl.has(1426),'events'); // FE_TOWER_MASTER_WINED: victoria contra el As de la Torre Batalla.
   }
   // Alola: núcleos de Zygarde recogidos = SYS_FLAG_ZIGARUDE_CORE1..5_GET (SL 0xC63-0xC67, USUL 0x1023-0x1027;
   // FlagsEditorEXPlugin). Contrastado: Sol pública acabada (95 células) 5/5, partidas recién empezadas 0/5.
@@ -281,8 +281,8 @@
   // 0x144 al enseñar cada diploma (pokeheartgold, scr_seq_0798_T07R0203 y include/constants/flags.h).
   if(['HEARTGOLD','SOULSILVER'].includes(d.game)&&Array.isArray(d.events?.activeFlags)){
    const fl=new Set(d.events.activeFlags);
-   if(fl.has(0x143))add('card.hgss.diplomaJohto',true,'events');
-   if(fl.has(0x144))add('card.hgss.diplomaNational',true,'events');
+   add('card.hgss.diplomaJohto',fl.has(0x143),'events');
+   add('card.hgss.diplomaNational',fl.has(0x144),'events');
   }
   // Esmeralda: combate con Máximo en la Cascada Meteoro tras la Liga, FLAG_DEFEATED_METEOR_FALLS_STEVEN 0x4F8 (pokeemerald).
   if(d.field&&Array.isArray(d.field.flags)&&(d.field.family?d.field.family==='E':d.game==='EMERALD'))add('battle.emerald.stevenMeteorFalls',d.field.flags.includes(0x4F8),'field');
