@@ -105,6 +105,12 @@
       "titulo": "Jefe definitivo en DP y X/Y (ya están Rojo, Máximo en Esmeralda y ROZA, Cintia en Teselia y Platino, Morimoto/Iwao/Nishino y la defensa del título en Alola y los Juegos Z-A infinitos)",
       "estado": "hecho",
       "nota": "Rojo (Johto), Máximo (Esmeralda y ROZA), Cintia (Teselia, Platino y DBPR), Morimoto/Iwao/Nishino, defensa del título (Alola) y Juegos Z-A infinitos. DP: Cintia no tiene equipo de revancha (WikiDex «Cintia»), su combate de la historia es el último. X/Y: la Liga no tiene revancha (WikiDex «Liga Pokémon (Kalos)»); el reto final es la Mansión Batalla."
+    },
+    {
+      "id": "lgpe-revancha",
+      "titulo": "Let's Go: revancha de la Liga de Kanto",
+      "estado": "bloqueado",
+      "motivo": "Demostrado que el guardado no la registra: en script_amx.gfpak (705 AMX de Pawn de 64 bits, código compact; descompilados con lgpe_amxdec.py) la sala del campeón escribe en las victorias siguientes solo FE_WATARU_WIN y WK_SCENE_CHAMPION_REMATCH = 10, el mismo valor que tras la primera; las salas del Alto Mando ponen y borran FE_*_WIN. Ninguna otra variable de flagwork cambia."
     }
   ]
 }

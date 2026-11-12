@@ -359,3 +359,16 @@ Hecho `alola.usum.zygardeCells` = variable 169 ≥ 100.
   (variable de escena 25) y `FE_KANNA_WIN`/`FE_SHIBA_WIN`/`FE_KIKUKO_WIN`/`FE_WATARU_WIN` (banderas 149-152). Las dos partidas
   del propietario tienen la escena 25 = 10 y las públicas recién empezadas 0. Los AMX de `script_amx.gfpak` no conservan
   nombres, así que falta saber qué valor marca la revancha superada: sigue a mano.
+
+### 12/11/2026 — Let's Go: scripts de la Liga descompilados
+
+`bin/archive/script_amx.gfpak` (GFPAK con LZ4) contiene 705 scripts AMX de Pawn de 64 bits (magic 0xF1E1, versión 10,
+código «compact» de amx.c, opcodes empaquetados `operando << 32 | opcode`). Las variables se pasan como el hash de 64
+bits de su nombre en `bin/flagwork/*.tbl`, así que tras descomprimir se localizan todas sus escrituras. Herramientas en el
+PC (solo lectura, a temporal): `lgpe_gfpak.py`, `lgpe_amxdec.py`, `lgpe_amxllamadas.py`.
+
+- Salas del Alto Mando (366-368): primer recorrido `WK_SCENE_MAIN_MASTER` = 290/300/310 y `FE_<miembro>_WIN`; al acabar
+  se borran las cuatro `FE_*_WIN`.
+- Sala del campeón (369): primer recorrido `WK_SCENE_MAIN_MASTER` = 320; en las victorias siguientes solo `FE_WATARU_WIN`
+  y `WK_SCENE_CHAMPION_REMATCH = 10`, el mismo valor que ya deja la primera.
+- Conclusión: la revancha superada no deja rastro en el guardado. Las dos partidas del propietario tienen la escena 25 = 10.
