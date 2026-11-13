@@ -267,7 +267,7 @@ async function importSaveFiles(files){
   store.history.unshift({at:diagnosis.readAt,game:diagnosis.game,id:'EVIDENCE',step:0,label:'Guardado leído localmente; marcas manuales conservadas',value:true});count++;
  }catch(e){errors.push(file.name+': '+e.message)}
  status.remove();if(readButton?.isConnected){readButton.disabled=false;readButton.textContent='Leer mi guardado';}
- if(count){save();view='diagnostic';render();}
+ if(count){save();view='mission';render();scrollTo(0,0);}
  if(errors.length)alert('No se ha podido leer:\n'+errors.join('\n'));
 }
 async function importDiagnosis(file){if(!file)return;try{
