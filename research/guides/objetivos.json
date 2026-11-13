@@ -58,8 +58,8 @@
     "LEAFGREEN"
    ],
    "id": "items0",
-   "fase": 0,
-   "orden": 500,
+   "fase": 1,
+   "orden": 150,
    "como": "Se consiguen durante la historia, en este orden: MO01 Corte (S.S. Anne, Ciudad Carmín), MO05 Destello (ayudante de Oak en la Ruta 2, con 10 especies), Poké Flauta (Mr. Fuji, Pueblo Lavanda, tras rescatarlo de la Torre Pokémon con el Visor Silph del Casino Rocket de Ciudad Azulona), MO02 Vuelo (casa de la Ruta 16), MO03 Surf (Zona Safari), MO04 Fuerza (guarda de la Zona Safari, con el Diente de Oro). Sin la Poké Flauta no se despierta a los Snorlax de las rutas 12 y 16."
   },
   {
@@ -149,8 +149,8 @@
     "SOULSILVER"
    ],
    "id": "items0",
-   "fase": 0,
-   "orden": 500,
+   "fase": 1,
+   "orden": 150,
    "como": "En la historia: Ticket del Barco del profesor Elm tras la Liga (S.S. Aqua a Kanto) y el Pase del Tren Magnético, que te da Imitadora en Ciudad Azafrán al devolverle el objeto perdido que encuentras en el Club de Fans de Ciudad Carmín (tras arreglar la Central Energía) y, para el Monte Plateado, las 16 medallas: con ellas el profesor Oak te deja pasar por la Ruta 28."
   },
   {
@@ -203,8 +203,8 @@
     "ALPHASAPPHIRE"
    ],
    "id": "items0",
-   "fase": 0,
-   "orden": 500,
+   "fase": 1,
+   "orden": 150,
    "como": "Durante la historia: Bici Carrera o Acrobática (Ciudad Malvalona; para el Pilar Celeste hace falta la Carrera), Buceo (MO08, te lo da Máximo en Algaria tras la séptima medalla), el Escáner del Barco Abandonado y, en Esmeralda, el Pase de Barco para el Frente Batalla. En Rubí Omega/Zafiro Alfa, además, la Flauta Eón para volar."
   },
   {
@@ -601,8 +601,8 @@
     "WHITE2"
    ],
    "id": "items0",
-   "fase": 0,
-   "orden": 500,
+   "fase": 1,
+   "orden": 150,
    "como": "Para las escenas legendarias: Orbe Oscuro (Negro 2) u Orbe Claro (Blanco 2), que te da N en el Palacio de N tras vencerle (entrada desde la Calle Victoria tras la Liga), para la Torre Duodraco, Pluma Lunar (Villa Horroris), Piedra Magma (Ruta 18) y las Claves del Teselia Link (Hierro e Iceberg) para las Ruinas Subterráneas."
   },
   {
@@ -661,8 +661,8 @@
     "Y"
    ],
    "id": "items0",
-   "fase": 0,
-   "orden": 500,
+   "fase": 1,
+   "orden": 150,
    "como": "Mega-Aro: te lo da Corelia en la Torre Maestra de Ciudad Yantra, tras vencerla con el Lucario que te regala; las megapiedras van llegando por la historia y por la posliga (tienda y rutas de noche, con el Amuleto Iris la búsqueda es más fácil)."
   },
   {
@@ -801,8 +801,8 @@
     "ULTRAMOON"
    ],
    "id": "items0",
-   "fase": 0,
-   "orden": 500,
+   "fase": 1,
+   "orden": 150,
    "como": "Cristales Z: uno por cada prueba y gran prueba del recorrido insular (los de tipo, en orden de la historia) y los exclusivos de Pokémon concretos por la posliga. Arca de Zygarde: Ruta 16 (Akala)."
   },
   {
@@ -1060,8 +1060,8 @@
     "LETGOE"
    ],
    "id": "items0",
-   "fase": 0,
-   "orden": 500,
+   "fase": 1,
+   "orden": 150,
    "como": "Técnicas secretas del compañero (Corte Rápido, Surfeo Marino, Empuje Fuerte, Alumbrado y Vuelo Celeste) durante la historia; la Cueva Celeste se abre tras la Liga."
   },
   {
@@ -1428,7 +1428,7 @@
    "fase": 6,
    "orden": 680,
    "como": "El Medallero de Ciudad Gres (sala de la Liga de Medallas) registra 255 medallas de cinco tipos: Avance (historia), Aventura, Batalla, Conexión y Especiales. Ve a por ellas en este orden: las de Avance salen solas con la historia; las de Aventura y Batalla, jugando (pesca, bici, cajas, evoluciones, instalaciones de combate); cada vez que el señor de la Liga de Medallas te llama, recoge las nuevas y sube de rango. Las de Conexión que exigían Pokémon Global Link, la GTS, los combates aleatorios por Wi-Fi, Pokémon Dream Radar o eventos ya no se pueden ganar jugando porque esos servicios cerraron. El bloque del Medallero guarda cada medalla y su fecha.",
-   "pokekeep": "abre la partida, pestaña SAV, botón «Insignias» (Editor de Insignias): marca las que falten una a una o pulsa «Dar todas», y después «Guardar»; finalmente exporta la partida."
+   "pokekeep": "abre la partida y, en la pestaña «SAV», pulsa el botón «Insignias» (solo aparece con Negro 2 o Blanco 2): en el Editor de Insignias, pestaña «Insignias», pon en «Obtenida» las que falten o pulsa «Dar todas», después «Guardar»; finalmente exporta la partida."
   },
   {
    "juegos": [

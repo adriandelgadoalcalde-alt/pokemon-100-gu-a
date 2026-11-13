@@ -16,3 +16,15 @@ test('las ligaduras conocidas de SoulSilver caen en su misión',()=>{
  assert.equal(goals.missionOf('SOULSILVER','unown'),'SOULSILVER-E03');assert.equal(goals.missionOf('SOULSILVER','card-3'),'SOULSILVER-15');
  assert.equal(goals.missionOf('SOULSILVER','story'),'SOULSILVER-09');assert.equal(goals.missionOf('SOULSILVER','pokemon-250'),'SOULSILVER-14');
 });
+test('orden cronológico: ninguna misión especial o de detalle queda al final, detrás del completismo',()=>{
+ const html=fs.readFileSync('atlas.html','utf8'),cat=catalogue(html);
+ for(const g of cat.games){const last=g.missions[g.missions.length-1].id;assert.doesNotMatch(last,/-(E|N|DETAIL)\d+$/,g.id+': '+last+' al final');}
+ const ss=cat.games.find(g=>g.id==='SOULSILVER').missions.map(m=>m.id.replace('SOULSILVER-',''));
+ assert.ok(ss.indexOf('DETAIL1')<ss.indexOf('E02')&&ss.indexOf('E02')<ss.indexOf('15')&&ss.indexOf('E03')<ss.indexOf('15'),'SoulSilver: orbe antes que el completismo');
+});
+test('Maestría y Expediente ordenan por fase y orden de desbloqueo',()=>{
+ const html=fs.readFileSync('atlas.html','utf8');
+ assert.match(html,/function chronoGoals\(g\)/);
+ assert.match(html,/goals=chronoGoals\(g\),manual=store\.masterChecks/);
+ assert.match(html,/goals=chronoGoals\(g\),e=evidenceFor\(g\),st=goals\.map/);
+});

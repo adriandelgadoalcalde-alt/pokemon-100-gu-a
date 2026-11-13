@@ -547,7 +547,8 @@ async function run() {
     await allPage.locator('[data-view="mission"]').first().click();
     assert.match(await allPage.locator('#app').innerText(),/indicador documentado de Liga superada/);
     assert.equal(await allPage.locator('[data-step]:checked').count(),0);
-    assert.equal(await allPage.locator('[data-focus]').first().getAttribute('data-focus'),'FIRERED-15');
+    // Tras la Liga lo primero es el archipiélago (Rubí y Zafiro): abre la Pokédex Nacional y las bestias errantes.
+    assert.equal(await allPage.locator('[data-focus]').first().getAttribute('data-focus'),'FIRERED-E01');
     // Documented modern signals guide the route while mastery remains partial (without integrity, even the contrasted
     // end-of-Paldea signal stays partial).
     const modern={game:'SCARLET',caught:[],seen:[],gameClear:null,integrity:{checksumsValid:false},progressSignals:[

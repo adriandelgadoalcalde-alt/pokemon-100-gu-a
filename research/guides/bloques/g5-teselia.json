@@ -47,7 +47,7 @@
     },
     {
      "titulo": "Tornadus errante",
-     "texto": "Cuándo: con las ocho medallas; al entrar en el acceso a la Ruta 10 la recepcionista avisa de un clima extraño en la Ruta 7. Si ya lo capturaste, sáltate este bloque. Dónde: errante por las rutas de Teselia (nivel 40). Paso a paso: 1) Ve a la Ruta 7 y entra en la casa de la anciana que curaba a tus Pokémon: al salir, Tornadus aparece y huye. 2) Desde entonces vaga por las rutas; los letreros de los accesos indican en qué ruta hay clima extraño. 3) Encuéntralo en la hierba de esa ruta y usa Mal de Ojo, Bloqueo o un Pokémon con Sombra Trampa para que no huya, o la Master Ball. 4) Captúralo. Consejo: lo necesitas, junto a Thundurus, para Landorus. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon»; WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Liga Pokémon»; Serebii «Legendary Pokémon» (Negro/Blanco)."
+     "texto": "Cuándo: con las ocho medallas; al entrar en el acceso a la Ruta 10 la recepcionista avisa de un clima extraño en la Ruta 7. Si ya lo capturaste, sáltate este bloque. Dónde: errante por las rutas de Teselia (nivel 40). Paso a paso: 1) Ve a la Ruta 7 y entra en la casa de la anciana que curaba a tus Pokémon: al salir, Tornadus aparece y huye. 2) Desde entonces vaga por las rutas; los letreros de los accesos indican en qué ruta hay clima extraño. 3) Encuéntralo en la hierba de esa ruta y usa Mal de Ojo, Bloqueo o un Pokémon con Sombratrampa para que no huya, o la Master Ball. 4) Captúralo. Consejo: lo necesitas, junto a Thundurus, para Landorus. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon»; WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Liga Pokémon»; Serebii «Legendary Pokémon» (Negro/Blanco)."
     },
     {
      "objetivo": "pokemon-642"
@@ -165,7 +165,7 @@
     },
     {
      "titulo": "Thundurus errante",
-     "texto": "Cuándo: con las ocho medallas; al entrar en el acceso a la Ruta 10 la recepcionista avisa de un clima extraño en la Ruta 7. Si ya lo capturaste, sáltate este bloque. Dónde: errante por las rutas de Teselia (nivel 40). Paso a paso: 1) Ve a la Ruta 7 y entra en la casa de la anciana que curaba a tus Pokémon: al salir, Thundurus aparece y huye. 2) Desde entonces vaga por las rutas; los letreros de los accesos indican en qué ruta hay clima extraño. 3) Encuéntralo en la hierba de esa ruta y usa Mal de Ojo, Bloqueo o un Pokémon con Sombra Trampa para que no huya, o la Master Ball. 4) Captúralo. Consejo: lo necesitas, junto a Tornadus, para Landorus. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon»; WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Liga Pokémon»; Serebii «Legendary Pokémon» (Negro/Blanco)."
+     "texto": "Cuándo: con las ocho medallas; al entrar en el acceso a la Ruta 10 la recepcionista avisa de un clima extraño en la Ruta 7. Si ya lo capturaste, sáltate este bloque. Dónde: errante por las rutas de Teselia (nivel 40). Paso a paso: 1) Ve a la Ruta 7 y entra en la casa de la anciana que curaba a tus Pokémon: al salir, Thundurus aparece y huye. 2) Desde entonces vaga por las rutas; los letreros de los accesos indican en qué ruta hay clima extraño. 3) Encuéntralo en la hierba de esa ruta y usa Mal de Ojo, Bloqueo o un Pokémon con Sombratrampa para que no huya, o la Master Ball. 4) Captúralo. Consejo: lo necesitas, junto a Tornadus, para Landorus. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon»; WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Liga Pokémon»; Serebii «Legendary Pokémon» (Negro/Blanco)."
     },
     {
      "objetivo": "pokemon-641"
@@ -317,7 +317,7 @@
    "bloques": [
     {
      "titulo": "Ficha de entrenador: cómo cambia de color",
-     "texto": "Cuándo: desde el principio; se consulta en cualquier momento. Dónde: menú del juego > Ficha de entrenador. Paso a paso: 1) Abre la ficha: empieza de color azul y no tiene estrellas. 2) Cada logro la sube un nivel, en cualquier orden; con los cinco llega al último color, negro en tu edición. Serebii da como colores intermedios morado, naranja, plata y oro; WikiDex da verde, rojo, plata y oro. 3) Los cinco logros son: superar la Liga; la Pokédex Nacional sin los singulares de evento; rodar todas las películas de Pokéwood; ganar el Torneo Campeones del PWT; y el Nexárbol a nivel 30 o más en el nivel negro y en el blanco (cada uno por separado). 4) Comprueba el color tras cada logro; abajo tienes un bloque para cada uno. Consejo: las insignias del Medallero no cuentan para la ficha. Fuente: WikiDex «Ficha de entrenador»; Serebii «The Trainer Card» (Negro 2/Blanco 2)."
+     "texto": "Cuándo: desde el principio; se consulta en cualquier momento. Dónde: menú del juego > Ficha de entrenador. Paso a paso: 1) Abre la ficha: empieza de color azul y no tiene estrellas. 2) Cada logro la sube un nivel, en cualquier orden; con los cinco llega al último color, negro en tu edición. Serebii da como colores intermedios morado, naranja, plata y oro; WikiDex da verde, rojo, plata y oro. 3) Los cinco logros son: superar la Liga; la Pokédex Nacional sin los singulares de evento; rodar todas las películas de Pokéwood; ganar el Torneo Campeones del PWT; y el Nexárbol a nivel 30 o más en el nivel negro y en el blanco (cada uno por separado). 4) Comprueba el color tras cada logro; abajo tienes un bloque para cada uno. Consejo: las insignias de la Caza de Insignias no cuentan para la ficha. Fuente: WikiDex «Ficha de entrenador»; Serebii «The Trainer Card» (Negro 2/Blanco 2)."
     },
     {
      "objetivo": "card-0"
@@ -354,7 +354,7 @@
     },
     {
      "titulo": "Recoger las insignias con Don Insignio",
-     "texto": "Cuándo: cada vez que cumples un logro del Medallero, desde que tienes la Caja de Insignias (Pueblo Ocre). Dónde: cualquier Centro Pokémon, donde espera Don Insignio, y el Insigniárium de Ciudad Porcelana. Paso a paso: 1) Al cumplir un logro, la insignia no llega sola: entra en un Centro Pokémon y habla con Don Insignio, que te da todas las pendientes de una vez. 2) Abre la Caja de Insignias (objeto clave) para ver las conseguidas; las Insignias Pista indican qué falta. 3) Recoge los rangos en el Insigniárium (planta 1 del edificio más al oeste de Ciudad Porcelana). Consejo: el detalle de las 255 insignias está en la misión del Medallero de Teselia. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
+     "texto": "Cuándo: cada vez que cumples un logro de la Caza de Insignias, desde que tienes la Caja Insignias (Pueblo Ocre). Dónde: cualquier Centro Pokémon, donde espera Don Insignio, y el Insigniárium de Ciudad Porcelana. Paso a paso: 1) Al cumplir un logro, la insignia no llega sola: entra en un Centro Pokémon y habla con Don Insignio, que te da todas las pendientes de una vez. 2) Abre la Caja Insignias (objeto clave) para ver las conseguidas; las Insignias Pista indican qué falta. 3) Recoge los rangos en el Insigniárium (planta 1 del edificio más al oeste de Ciudad Porcelana). Consejo: el detalle de las 255 insignias está en la misión de la Caza de Insignias de Teselia. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
     },
     {
      "objetivo": "nurse-gold"
@@ -364,8 +364,8 @@
   "BLACK2-E01": {
    "bloques": [
     {
-     "titulo": "Caja de Insignias y Don Insignio",
-     "texto": "Cuándo: al principio del juego, en Pueblo Ocre. Dónde: a la salida de la casa de Mirto, en Pueblo Ocre. Paso a paso: 1) Al salir por primera vez de casa de Mirto, Don Insignio te habla de la caza de insignias. 2) Acepta participar: te da la Caja de Insignias y la insignia «Primer Paso», además de algunas Insignias Pista. 3) Desde entonces Don Insignio espera en los Centros Pokémon para entregarte las que vayas ganando. Consejo: puedes poner una insignia en la ficha de entrenador para que la vean los demás. Fuente: WikiDex «Insignia» y «Caja de Insignias»."
+     "titulo": "Caja Insignias y Don Insignio",
+     "texto": "Cuándo: al principio del juego, en Pueblo Ocre. Dónde: a la salida de la casa de Mirto, en Pueblo Ocre. Paso a paso: 1) Al salir por primera vez de casa de Mirto, Don Insignio te habla de la caza de insignias. 2) Acepta participar: te da la Caja Insignias y la insignia «Primer Paso», además de algunas Insignias Pista. 3) Desde entonces Don Insignio espera en los Centros Pokémon para entregarte las que vayas ganando. Consejo: puedes poner una insignia en la ficha de entrenador para que la vean los demás. Fuente: WikiDex «Insignia» y «Caja Insignias»."
     },
     {
      "objetivo": "medals"
@@ -379,7 +379,7 @@
     },
     {
      "titulo": "Insignias que dependían de servicios cerrados",
-     "texto": "Cuándo: al final, cuando ya no te falte nada que se pueda ganar jugando. Dónde: Caja de Insignias (para ver qué falta). Paso a paso: 1) Las de intercambio, combates inalámbricos y Misiones Festival se siguen consiguiendo con otra consola por conexión local. 2) Las que exigían la Conexión Wi-Fi de Nintendo (cerrada el 20 de mayo de 2014), Pokémon Global Link o la RAdar Pokémon ya no se pueden ganar jugando. 3) Con Pokekeep: abre la partida, pestaña SAV, botón «Insignias», marca solo las que dependían de esos servicios cerrados, guarda y exporta la partida. Consejo: anota cuáles marcas así para saber que no las ganaste jugando. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
+     "texto": "Cuándo: al final, cuando ya no te falte nada que se pueda ganar jugando. Dónde: Caja Insignias (para ver qué falta). Paso a paso: 1) Las de intercambio, combates inalámbricos y Misiones Festival se siguen consiguiendo con otra consola por conexión local. 2) Las que exigían la Conexión Wi-Fi de Nintendo (cerrada el 20 de mayo de 2014), Pokémon Global Link o la RAdar Pokémon ya no se pueden ganar jugando. 3) Con Pokekeep: abre la partida, en la pestaña «SAV» pulsa el botón «Insignias» (solo aparece con partidas de Negro 2 o Blanco 2); en el Editor de Insignias, pestaña «Insignias», pon en «Obtenida» el estado de las que dependían de esos servicios cerrados, pulsa «Guardar» y exporta la partida. Consejo: anota cuáles marcas así para saber que no las ganaste jugando. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
     }
    ]
   },
@@ -438,7 +438,7 @@
     },
     {
      "titulo": "Claros Ocultos",
-     "texto": "Cuándo: desde la Ruta 5, donde Bel te enseña el primero al darte Vuelo. Dónde: 15 zonas: Rutas 2, 3, 5, 6, 7, 9, 13, 18, 22 y 23, Rancho Ocre, Bosque Azulejo, Bosque de los Perdidos, Boquete Gigante y Santuario Abundancia. Paso a paso: 1) Busca el hueco entre dos árboles y pulsa A. 2) Dentro puede haber un objeto, un objeto oculto (Zahorí) o un Pokémon con su habilidad oculta (el de la Ruta 5 es un Minccino con Encadenado). 3) Cuando lo vacías, cada 256 pasos tiene un 5 % de probabilidad de volver a llenarse: 40 % objeto, 40 % objeto oculto, 20 % Pokémon. 4) No se regenera hasta que recojas el objeto o captures, debilites o huyas del Pokémon. Consejo: los Pokémon de los claros nunca son variocolor; visitar claros, capturar sus Pokémon y ver los recuerdos son objetivos distintos. Fuente: WikiDex «Claro oculto»; Serebii «Hidden Grotto»."
+     "texto": "Cuándo: desde la Ruta 5, donde Bel te enseña el primero al darte Vuelo. Dónde: 15 zonas: Rutas 2, 3, 5, 6, 7, 9, 13, 18, 22 y 23, Rancho Ocre, Bosque Azulejo, Bosque Perdidos, Boquete Gigante y Santuario Abundancia. Paso a paso: 1) Busca el hueco entre dos árboles y pulsa A. 2) Dentro puede haber un objeto, un objeto oculto (Zahorí) o un Pokémon con su habilidad oculta (el de la Ruta 5 es un Minccino con Encadenado). 3) Cuando lo vacías, cada 256 pasos tiene un 5 % de probabilidad de volver a llenarse: 40 % objeto, 40 % objeto oculto, 20 % Pokémon. 4) No se regenera hasta que recojas el objeto o captures, debilites o huyas del Pokémon. Consejo: los Pokémon de los claros nunca son variocolor; visitar claros, capturar sus Pokémon y ver los recuerdos son objetivos distintos. Fuente: WikiDex «Claro oculto»; Serebii «Hidden Grotto»."
     },
     {
      "titulo": "Recuerdos en su sitio: líderes, Musical y Criapokémon",
@@ -497,11 +497,11 @@
     },
     {
      "titulo": "Viaje a la Reserva Natural y Haxorus variocolor",
-     "texto": "Cuándo: con el Pase. Dónde: aeropuerto de Ciudad Loza > Reserva Natural (fuera del mapa de Teselia). Paso a paso: 1) Ve al aeropuerto de Ciudad Loza y vuela a la Reserva Natural; para volver usa también el avión. 2) Guarda antes de buscarlo y lleva Falso Tortazo y Ultra Balls. 3) En la reserva hay un único Haxorus variocolor de nivel 60: debilítalo sin derrotarlo y captúralo. Consejo: un Haxorus variocolor criado o intercambiado no cuenta como este encuentro. Fuente: WikiDex «Reserva Natural»; Serebii «Pokédex Completion Rewards»."
+     "texto": "Cuándo: con el Pase. Dónde: aeropuerto de Ciudad Loza > Reserva Natural (fuera del mapa de Teselia). Paso a paso: 1) Ve al aeropuerto de Ciudad Loza y vuela a la Reserva Natural; para volver usa también el avión. 2) Guarda antes de buscarlo y lleva Falsotortazo y Ultraballs. 3) En la reserva hay un único Haxorus variocolor de nivel 60: debilítalo sin derrotarlo y captúralo. Consejo: un Haxorus variocolor criado o intercambiado no cuenta como este encuentro. Fuente: WikiDex «Reserva Natural»; Serebii «Pokédex Completion Rewards»."
     },
     {
      "titulo": "Reserva Natural: otros Pokémon y objetos",
-     "texto": "Cuándo: con el Pase, en cualquier visita. Dónde: Reserva Natural. Paso a paso: 1) Hierba: Nuzleaf, Altaria, Girafarig, Golduck, Noctowl, Fraxure y Kecleon (nivel 56-59; 64-67 en la hierba oscura). 2) Hierba que se mueve: Audino, Dunsparce y Shiftry. Agua: Basculin, Buizel y Floatzel; pescando con la Supercaña, Magikarp y Gyarados. 3) Objetos: Maxipepita (hierba oscura), Caramelo Raro (sobre la cascada) y Poción Máxima (al norte, con Surf). Consejo: Magikarp y Gyarados pueden salir a cualquier nivel entre 1 y 100. Fuente: WikiDex «Reserva Natural»."
+     "texto": "Cuándo: con el Pase, en cualquier visita. Dónde: Reserva Natural. Paso a paso: 1) Hierba: Nuzleaf, Altaria, Girafarig, Golduck, Noctowl, Fraxure y Kecleon (nivel 56-59; 64-67 en la hierba oscura). 2) Hierba que se mueve: Audino, Dunsparce y Shiftry. Agua: Basculin, Buizel y Floatzel; pescando con la Supercaña, Magikarp y Gyarados. 3) Objetos: Maxipepita (hierba oscura), Carameloraro (sobre la cascada) y Poción Máxima (al norte, con Surf). Consejo: Magikarp y Gyarados pueden salir a cualquier nivel entre 1 y 100. Fuente: WikiDex «Reserva Natural»."
     }
    ]
   },
@@ -586,7 +586,7 @@
    "bloques": [
     {
      "titulo": "Ficha de entrenador: cómo cambia de color",
-     "texto": "Cuándo: desde el principio; se consulta en cualquier momento. Dónde: menú del juego > Ficha de entrenador. Paso a paso: 1) Abre la ficha: empieza de color azul y no tiene estrellas. 2) Cada logro la sube un nivel, en cualquier orden; con los cinco llega al último color, blanco en tu edición. Serebii da como colores intermedios morado, naranja, plata y oro; WikiDex da verde, rojo, plata y oro. 3) Los cinco logros son: superar la Liga; la Pokédex Nacional sin los singulares de evento; rodar todas las películas de Pokéwood; ganar el Torneo Campeones del PWT; y el Nexárbol a nivel 30 o más en el nivel negro y en el blanco (cada uno por separado). 4) Comprueba el color tras cada logro; abajo tienes un bloque para cada uno. Consejo: las insignias del Medallero no cuentan para la ficha. Fuente: WikiDex «Ficha de entrenador»; Serebii «The Trainer Card» (Negro 2/Blanco 2)."
+     "texto": "Cuándo: desde el principio; se consulta en cualquier momento. Dónde: menú del juego > Ficha de entrenador. Paso a paso: 1) Abre la ficha: empieza de color azul y no tiene estrellas. 2) Cada logro la sube un nivel, en cualquier orden; con los cinco llega al último color, blanco en tu edición. Serebii da como colores intermedios morado, naranja, plata y oro; WikiDex da verde, rojo, plata y oro. 3) Los cinco logros son: superar la Liga; la Pokédex Nacional sin los singulares de evento; rodar todas las películas de Pokéwood; ganar el Torneo Campeones del PWT; y el Nexárbol a nivel 30 o más en el nivel negro y en el blanco (cada uno por separado). 4) Comprueba el color tras cada logro; abajo tienes un bloque para cada uno. Consejo: las insignias de la Caza de Insignias no cuentan para la ficha. Fuente: WikiDex «Ficha de entrenador»; Serebii «The Trainer Card» (Negro 2/Blanco 2)."
     },
     {
      "objetivo": "card-0"
@@ -623,7 +623,7 @@
     },
     {
      "titulo": "Recoger las insignias con Don Insignio",
-     "texto": "Cuándo: cada vez que cumples un logro del Medallero, desde que tienes la Caja de Insignias (Pueblo Ocre). Dónde: cualquier Centro Pokémon, donde espera Don Insignio, y el Insigniárium de Ciudad Porcelana. Paso a paso: 1) Al cumplir un logro, la insignia no llega sola: entra en un Centro Pokémon y habla con Don Insignio, que te da todas las pendientes de una vez. 2) Abre la Caja de Insignias (objeto clave) para ver las conseguidas; las Insignias Pista indican qué falta. 3) Recoge los rangos en el Insigniárium (planta 1 del edificio más al oeste de Ciudad Porcelana). Consejo: el detalle de las 255 insignias está en la misión del Medallero de Teselia. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
+     "texto": "Cuándo: cada vez que cumples un logro de la Caza de Insignias, desde que tienes la Caja Insignias (Pueblo Ocre). Dónde: cualquier Centro Pokémon, donde espera Don Insignio, y el Insigniárium de Ciudad Porcelana. Paso a paso: 1) Al cumplir un logro, la insignia no llega sola: entra en un Centro Pokémon y habla con Don Insignio, que te da todas las pendientes de una vez. 2) Abre la Caja Insignias (objeto clave) para ver las conseguidas; las Insignias Pista indican qué falta. 3) Recoge los rangos en el Insigniárium (planta 1 del edificio más al oeste de Ciudad Porcelana). Consejo: el detalle de las 255 insignias está en la misión de la Caza de Insignias de Teselia. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
     },
     {
      "objetivo": "nurse-gold"
@@ -633,8 +633,8 @@
   "WHITE2-E01": {
    "bloques": [
     {
-     "titulo": "Caja de Insignias y Don Insignio",
-     "texto": "Cuándo: al principio del juego, en Pueblo Ocre. Dónde: a la salida de la casa de Mirto, en Pueblo Ocre. Paso a paso: 1) Al salir por primera vez de casa de Mirto, Don Insignio te habla de la caza de insignias. 2) Acepta participar: te da la Caja de Insignias y la insignia «Primer Paso», además de algunas Insignias Pista. 3) Desde entonces Don Insignio espera en los Centros Pokémon para entregarte las que vayas ganando. Consejo: puedes poner una insignia en la ficha de entrenador para que la vean los demás. Fuente: WikiDex «Insignia» y «Caja de Insignias»."
+     "titulo": "Caja Insignias y Don Insignio",
+     "texto": "Cuándo: al principio del juego, en Pueblo Ocre. Dónde: a la salida de la casa de Mirto, en Pueblo Ocre. Paso a paso: 1) Al salir por primera vez de casa de Mirto, Don Insignio te habla de la caza de insignias. 2) Acepta participar: te da la Caja Insignias y la insignia «Primer Paso», además de algunas Insignias Pista. 3) Desde entonces Don Insignio espera en los Centros Pokémon para entregarte las que vayas ganando. Consejo: puedes poner una insignia en la ficha de entrenador para que la vean los demás. Fuente: WikiDex «Insignia» y «Caja Insignias»."
     },
     {
      "objetivo": "medals"
@@ -648,7 +648,7 @@
     },
     {
      "titulo": "Insignias que dependían de servicios cerrados",
-     "texto": "Cuándo: al final, cuando ya no te falte nada que se pueda ganar jugando. Dónde: Caja de Insignias (para ver qué falta). Paso a paso: 1) Las de intercambio, combates inalámbricos y Misiones Festival se siguen consiguiendo con otra consola por conexión local. 2) Las que exigían la Conexión Wi-Fi de Nintendo (cerrada el 20 de mayo de 2014), Pokémon Global Link o la RAdar Pokémon ya no se pueden ganar jugando. 3) Con Pokekeep: abre la partida, pestaña SAV, botón «Insignias», marca solo las que dependían de esos servicios cerrados, guarda y exporta la partida. Consejo: anota cuáles marcas así para saber que no las ganaste jugando. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
+     "texto": "Cuándo: al final, cuando ya no te falte nada que se pueda ganar jugando. Dónde: Caja Insignias (para ver qué falta). Paso a paso: 1) Las de intercambio, combates inalámbricos y Misiones Festival se siguen consiguiendo con otra consola por conexión local. 2) Las que exigían la Conexión Wi-Fi de Nintendo (cerrada el 20 de mayo de 2014), Pokémon Global Link o la RAdar Pokémon ya no se pueden ganar jugando. 3) Con Pokekeep: abre la partida, en la pestaña «SAV» pulsa el botón «Insignias» (solo aparece con partidas de Negro 2 o Blanco 2); en el Editor de Insignias, pestaña «Insignias», pon en «Obtenida» el estado de las que dependían de esos servicios cerrados, pulsa «Guardar» y exporta la partida. Consejo: anota cuáles marcas así para saber que no las ganaste jugando. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
     }
    ]
   },
@@ -707,7 +707,7 @@
     },
     {
      "titulo": "Claros Ocultos",
-     "texto": "Cuándo: desde la Ruta 5, donde Bel te enseña el primero al darte Vuelo. Dónde: 15 zonas: Rutas 2, 3, 5, 6, 7, 9, 13, 18, 22 y 23, Rancho Ocre, Bosque Azulejo, Bosque de los Perdidos, Boquete Gigante y Santuario Abundancia. Paso a paso: 1) Busca el hueco entre dos árboles y pulsa A. 2) Dentro puede haber un objeto, un objeto oculto (Zahorí) o un Pokémon con su habilidad oculta (el de la Ruta 5 es un Minccino con Encadenado). 3) Cuando lo vacías, cada 256 pasos tiene un 5 % de probabilidad de volver a llenarse: 40 % objeto, 40 % objeto oculto, 20 % Pokémon. 4) No se regenera hasta que recojas el objeto o captures, debilites o huyas del Pokémon. Consejo: los Pokémon de los claros nunca son variocolor; visitar claros, capturar sus Pokémon y ver los recuerdos son objetivos distintos. Fuente: WikiDex «Claro oculto»; Serebii «Hidden Grotto»."
+     "texto": "Cuándo: desde la Ruta 5, donde Bel te enseña el primero al darte Vuelo. Dónde: 15 zonas: Rutas 2, 3, 5, 6, 7, 9, 13, 18, 22 y 23, Rancho Ocre, Bosque Azulejo, Bosque Perdidos, Boquete Gigante y Santuario Abundancia. Paso a paso: 1) Busca el hueco entre dos árboles y pulsa A. 2) Dentro puede haber un objeto, un objeto oculto (Zahorí) o un Pokémon con su habilidad oculta (el de la Ruta 5 es un Minccino con Encadenado). 3) Cuando lo vacías, cada 256 pasos tiene un 5 % de probabilidad de volver a llenarse: 40 % objeto, 40 % objeto oculto, 20 % Pokémon. 4) No se regenera hasta que recojas el objeto o captures, debilites o huyas del Pokémon. Consejo: los Pokémon de los claros nunca son variocolor; visitar claros, capturar sus Pokémon y ver los recuerdos son objetivos distintos. Fuente: WikiDex «Claro oculto»; Serebii «Hidden Grotto»."
     },
     {
      "titulo": "Recuerdos en su sitio: líderes, Musical y Criapokémon",
@@ -766,11 +766,11 @@
     },
     {
      "titulo": "Viaje a la Reserva Natural y Haxorus variocolor",
-     "texto": "Cuándo: con el Pase. Dónde: aeropuerto de Ciudad Loza > Reserva Natural (fuera del mapa de Teselia). Paso a paso: 1) Ve al aeropuerto de Ciudad Loza y vuela a la Reserva Natural; para volver usa también el avión. 2) Guarda antes de buscarlo y lleva Falso Tortazo y Ultra Balls. 3) En la reserva hay un único Haxorus variocolor de nivel 60: debilítalo sin derrotarlo y captúralo. Consejo: un Haxorus variocolor criado o intercambiado no cuenta como este encuentro. Fuente: WikiDex «Reserva Natural»; Serebii «Pokédex Completion Rewards»."
+     "texto": "Cuándo: con el Pase. Dónde: aeropuerto de Ciudad Loza > Reserva Natural (fuera del mapa de Teselia). Paso a paso: 1) Ve al aeropuerto de Ciudad Loza y vuela a la Reserva Natural; para volver usa también el avión. 2) Guarda antes de buscarlo y lleva Falsotortazo y Ultraballs. 3) En la reserva hay un único Haxorus variocolor de nivel 60: debilítalo sin derrotarlo y captúralo. Consejo: un Haxorus variocolor criado o intercambiado no cuenta como este encuentro. Fuente: WikiDex «Reserva Natural»; Serebii «Pokédex Completion Rewards»."
     },
     {
      "titulo": "Reserva Natural: otros Pokémon y objetos",
-     "texto": "Cuándo: con el Pase, en cualquier visita. Dónde: Reserva Natural. Paso a paso: 1) Hierba: Nuzleaf, Altaria, Girafarig, Golduck, Noctowl, Fraxure y Kecleon (nivel 56-59; 64-67 en la hierba oscura). 2) Hierba que se mueve: Audino, Dunsparce y Shiftry. Agua: Basculin, Buizel y Floatzel; pescando con la Supercaña, Magikarp y Gyarados. 3) Objetos: Maxipepita (hierba oscura), Caramelo Raro (sobre la cascada) y Poción Máxima (al norte, con Surf). Consejo: Magikarp y Gyarados pueden salir a cualquier nivel entre 1 y 100. Fuente: WikiDex «Reserva Natural»."
+     "texto": "Cuándo: con el Pase, en cualquier visita. Dónde: Reserva Natural. Paso a paso: 1) Hierba: Nuzleaf, Altaria, Girafarig, Golduck, Noctowl, Fraxure y Kecleon (nivel 56-59; 64-67 en la hierba oscura). 2) Hierba que se mueve: Audino, Dunsparce y Shiftry. Agua: Basculin, Buizel y Floatzel; pescando con la Supercaña, Magikarp y Gyarados. 3) Objetos: Maxipepita (hierba oscura), Carameloraro (sobre la cascada) y Poción Máxima (al norte, con Surf). Consejo: Magikarp y Gyarados pueden salir a cualquier nivel entre 1 y 100. Fuente: WikiDex «Reserva Natural»."
     }
    ]
   }
