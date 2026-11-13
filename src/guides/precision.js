@@ -1423,6 +1423,23 @@
 "En una casa de Algaria un pescador te da la Supercaña. Opcional: al norte, en la Ruta 125, está la Cueva Cardumen, cuya marea cambia cada seis horas."
 ]
 },
+"EMERALD-10": {
+"caution": "Despertar a Rayquaza y capturarlo son momentos distintos: Rayquaza (nivel 70) se queda en la cima del Pilar Celeste y puedes capturarlo cuando quieras, pero a partir de ahora el suelo está agrietado y necesitas la Bici carrera. En Esmeralda no puedes capturar aquí a Groudon ni a Kyogre: aparecen tras la Liga, a nivel 70, en la Cueva Terrena y la Cueva Marina.",
+"steps": [
+"Requisitos: Medalla Mente, el asalto al Centro Espacial resuelto y Buceo, Surf, Fuerza y Golpe roca en el equipo.",
+"Sal de Ciudad Algaria por el sur a la Ruta 127 y usa Buceo en la zona de agua oscura; bajo el agua sigue al sur hasta la Ruta 128 y entra por la grieta del fondo marino donde está el submarino robado. Emerge dentro: es la entrada de la Caverna Abisal.",
+"En la primera sala rompe con Golpe roca la roca del noroeste y aparta con Fuerza las dos rocas grandes, la primera hacia el sur y la segunda hacia el este; toma la puerta del noroeste, que lleva directamente a la cuarta sala.",
+"En la cuarta sala despeja el paso con Fuerza y Golpe roca y toma la salida del noroeste hacia las corrientes. Surfea de remanso en remanso hacia el noreste, avanza de nuevo al este y deja que la corriente te lleve al oeste; desde allí alcanza la puerta del noroeste.",
+"En la sala siguiente sigue por el corredor oeste: te espera un combate doble contra un recluta y la administradora Silvina (dos Mightyena, Golbat y Sharpedo). Después llegarás al gran puzle de doce rocas que precede al fondo.",
+"Puzle de las doce rocas: empuja un paso al norte la roca central de la fila inferior y separa hacia fuera las dos de sus lados; desplaza luego aquella primera roca a la izquierda, empuja al norte la siguiente roca central, aparta sus vecinas y lleva hasta el muro norte las dos rocas superiores en diagonal; por último aparta la última roca central para abrir el paso. Si bloqueas una roca, sal de la sala y vuelve a entrar para reiniciar el puzle.",
+"En la zona alta de la última cámara recoge la MT26 Terremoto antes de bajar hacia Kyogre.",
+"En la sala final vence a Aquiles, líder del Equipo Aqua (Mightyena, Crobat y Sharpedo), que despierta a Kyogre con la esfera: caen lluvias torrenciales sobre Hoenn.",
+"Ve a la Ruta 126, bucea junto a la gran isla circular, entra por la abertura submarina de su pared sur y emerge dentro de Arrecípolis: Groudon y Kyogre luchan en el cráter.",
+"Habla con Máximo y Galano, que te llevan a la Cueva Ancestral; dentro, Plubio te pregunta dónde puede estar Rayquaza: responde «Pilar Celeste» y él se adelanta hacia allí.",
+"Nada por las rutas 127 a 131 hasta el Pilar Celeste (al este de Pueblo Oromar) y sube hasta la cima: en esta primera visita el suelo está entero y no hace falta bici. Rayquaza despierta y vuela a Arrecípolis.",
+"Vuelve a Arrecípolis (ya puedes volar): Rayquaza calma a Groudon y a Kyogre y el clima vuelve a la normalidad. Habla con los miembros de los dos equipos junto al gimnasio y con Plubio, que te da la MO07 Cascada; el gimnasio de la octava medalla queda abierto."
+]
+},
 "EMERALD-11": {
 "caution": "Galano usa Kingdra, que solo es débil al tipo Dragón; los tipos Eléctrico y Planta funcionan contra el resto (salvo Whiscash, inmune a Eléctrico, y Sealeo, que resiste Planta).",
 "steps": [
@@ -1431,6 +1448,19 @@
 "Vence al líder Galano (tipo Agua: Luvdisc, Whiscash, Sealeo, Crawdaunt y Kingdra). Recibes la Medalla Lluvia, la MT03 Hidropulso y el permiso para usar Cascada fuera de combate.",
 "Comprueba en tu Ficha de entrenador que tienes las ocho medallas: Piedra, Puño, Dinamo, Calor, Equilibrio, Pluma, Mente y Lluvia.",
 "Opcional: en la casa más alta del lado izquierdo de Arrecípolis te dan la MT31 Demolición."
+]
+},
+"EMERALD-12": {
+"caution": "Plubio es el Campeón en Esmeralda: lleva Eléctrico y Planta y debilita a su Milotic antes de que use Recuperación; no te prepares para el equipo de Máximo de Rubí y Zafiro. Guarda antes de entrar en la Liga. Tener especies registradas por intercambio no equivale a haber superado la Liga.",
+"steps": [
+"Requisitos: las ocho medallas y Surf, Cascada, Fuerza y Golpe roca; Destello es muy recomendable para los sótanos de la Calle Victoria.",
+"Desde la Ruta 128 nada hacia el este hasta la cascada de Ciudad Colosalia, súbela con Cascada y cura a tu equipo en su Centro Pokémon.",
+"Entra en la Calle Victoria: usa Fuerza y Golpe roca para las rocas, Surf para los tramos de agua y Destello para ver en los sótanos. Lleva Cuerdas huida por si necesitas salir a preparar el equipo.",
+"Dentro te reta Blasco con su equipo final (Gardevoir, Altaria, Delcatty, Magneton y Roselia): es un combate obligatorio. Sal por el norte y sigue hasta el edificio de la Liga Pokémon.",
+"Antes de cruzar el control, compra Hiperpociones, Máximas pociones, Revivir, Cura total y recuperadores de PP y ordena el equipo: una vez dentro no puedes volver a la tienda ni al Centro Pokémon entre combates.",
+"Vence en orden al Alto Mando: Sixto (Siniestro), Fátima (Fantasma), Nívea (Hielo) y Dracón (Dragón).",
+"Vence al Campeón de Esmeralda, Plubio, especialista en Agua (Wailord, Tentacruel, Ludicolo, Whiscash, Gyarados y Milotic), y deja que termine el registro del Hall de la Fama y los créditos.",
+"Al continuar despiertas en casa en Villa Raíz: ve la escena de la televisión (tu madre te pregunta el color del Pokémon: rojo = Latias errante, azul = Latios errante) y recibe de tu padre el Ticket barco para el S.S. Marea, que zarpa desde Ciudad Portual y Ciudad Calagua. Desde aquí empieza el posjuego."
 ]
 },
 "EMERALD-13": {
@@ -1558,6 +1588,20 @@
 "La Torre Pokémon de Lavanda tiene fantasmas que no puedes combatir sin el Scope Silph: de momento sigue por la Ruta 8 y el Camino subterráneo hasta Ciudad Azulona."
 ]
 },
+"FIRERED-08": {
+"caution": "El Té es exclusivo de estos remakes y sin él no entras en Ciudad Azafrán. Conseguir el Scope Silph no rescata por sí solo al Sr. Fuji: tienes que subir a la Torre Pokémon de Lavanda.",
+"steps": [
+"Requisitos: haber llegado a Ciudad Azulona (por la Ruta 8 y el Camino subterráneo, o por la Ruta 7) y tener Corte.",
+"Entra en la Mansión Azulona (el gran edificio de viviendas) y habla con la anciana de la planta baja: te da el Té, que pedirá cualquiera de los guardias de las casetas de Ciudad Azafrán. El agua o la limonada de los Rojo y Azul originales no sirven aquí.",
+"Por la entrada trasera de la Mansión Azulona se sube a la habitación de la azotea, donde te regalan un Eevee.",
+"Corta el arbusto de la zona sur que bloquea el gimnasio y vence a la líder Erika (tipo Planta). Recibes la Medalla Arcoíris, la MT19 Gigadrenado y el permiso para usar Fuerza fuera de combate. Gimnasio y casino se pueden hacer en el orden que prefieras.",
+"En el Casino de Azulona, vence al recluta Rocket que vigila el póster del fondo y examina después el póster: es un interruptor que abre la escalera a la Guarida Rocket.",
+"Baja por la guarida usando las baldosas con flechas, que te arrastran hasta una baldosa de parada; si te pierdes, sal y vuelve a entrar.",
+"En el cuarto sótano vence al recluta que guarda la Llave ascensor (si no la suelta, vuelve a hablar con él) y recógela del suelo.",
+"Usa el ascensor para llegar al sector del jefe, vence a los guardias y a Giovanni (Onix, Rhyhorn y Kangaskhan) y recoge el Scope Silph.",
+"Antes de volver a Lavanda puedes salir por el oeste de Azulona a la Ruta 16: corta el arbusto y entra en la casa de detrás, donde una niña te da la MO02 Vuelo."
+]
+},
 "FIRERED-09": {
 "caution": "Solo hay dos Snorlax (rutas 12 y 16) y no reaparecen si los debilitas o huyes: guarda antes de tocar la flauta y lleva Ultra Balls.",
 "steps": [
@@ -1566,6 +1610,32 @@
 "En la séptima planta vence a los reclutas del Team Rocket y rescata al Sr. Fuji.",
 "El Sr. Fuji te lleva a su casa de Lavanda y te da la Poké flauta.",
 "Ve al Snorlax dormido de la Ruta 12 (al sur de Lavanda) o al de la Ruta 16 (al oeste de Azulona) y usa la Poké flauta para despertarlo: empieza el combate."
+]
+},
+"FIRERED-10": {
+"caution": "No uses el reparto de MO de otros juegos: en Rojo Fuego y Verde Hoja Surf se recibe en la Casa Secreta de la Zona Safari y Fuerza al devolver los Dientes oro al guarda.",
+"steps": [
+"Requisitos: un Snorlax despierto con la Poké flauta (Ruta 12 o Ruta 16).",
+"Llega a Ciudad Fucsia bajando por las rutas 12 a 15 por la costa oriental, o por la Ruta 16 y la Ruta Ciclista (Ruta 17) montado en la Bicicleta.",
+"Entra en la Zona Safari con hueco en la mochila y planifica el recorrido: la visita termina cuando gastas los pasos o las Safari Balls.",
+"Desde el área central sal por el este, cruza el área este, sigue por las conexiones del norte hasta el área norte y de ahí al área oeste (Zona 3).",
+"En la Zona 3 recoge los Dientes oro del suelo y entra en la Casa Secreta: su ocupante te da la MO03 Surf. Si la visita se acaba antes de conseguir las dos cosas, vuelve a entrar: son pasos independientes.",
+"Vuelve a Ciudad Fucsia y entrega los Dientes oro al guarda de la Zona Safari en su casa: te da la MO04 Fuerza. Con Fuerza podrás mover la roca de su casa y coger el objeto que tapa.",
+"Vence al líder Koga (tipo Veneno) en el gimnasio de paredes invisibles: recibes la Medalla Alma, la MT06 Tóxico y el permiso para usar Surf fuera de combate. Fuerza ya funcionaba con la Medalla Arcoíris de Erika."
+]
+},
+"FIRERED-11": {
+"caution": "Habla expresamente con el presidente para recibir la Master Ball, que es única; resérvala para Mewtwo o la bestia errante. Tener a Lapras en la Pokédex no significa haber hablado con el empleado que lo regala. Del Dojo solo te puedes llevar uno de los dos Hitmon.",
+"steps": [
+"Requisitos: el Té de la Mansión Azulona.",
+"Entrega el Té al guardia de cualquiera de las casetas que rodean Ciudad Azafrán: el permiso vale para todas. Entra en la ciudad y ve a Silph S.A.",
+"Sube a la quinta planta y recoge la Llave magnética del pasillo inferior; para llegar a ella pisa el teletransportador del tramo bloqueado y vuelve por el mismo punto para rodear el bloqueo.",
+"Vuelve a la tercera planta, abre con la Llave magnética la puerta de la zona central y usa el teletransportador interior hasta la sala de la séptima planta. Vence allí a tu rival y habla con el empleado que te regala un Lapras (necesitas un hueco libre en el equipo o en la caja).",
+"Pisa el otro teletransportador de esa sala para llegar a la planta del presidente (la undécima). Abre la última puerta, vence a Giovanni (Nidorino, Kangaskhan, Rhyhorn y Nidoqueen) y habla con el presidente: te da la Master Ball.",
+"Gimnasio de Sabrina: todas las salas tienen teletransportadores en las esquinas. Pisa el único de la entrada y, en las cuatro salas siguientes, elige por orden la esquina superior derecha → inferior derecha → inferior izquierda → inferior izquierda; llegarás a la sala de Sabrina. (También sirve inferior izquierda → inferior izquierda → superior derecha → inferior izquierda.)",
+"Vence a la líder Sabrina (tipo Psíquico: Kadabra, Mr. Mime, Venomoth y Alakazam): recibes la Medalla Pantano, la MT04 Paz mental y el permiso para usar Golpe roca fuera de combate.",
+"Para salir, pisa el único teletransportador de la sala de Sabrina y luego las esquinas inferior derecha → superior izquierda → superior derecha → inferior derecha: vuelves a la entrada del gimnasio.",
+"El Dojo Karate de Azafrán es un reto aparte: vence a los karatekas y a su maestro y elige como premio a Hitmonlee o a Hitmonchan. No da la Medalla Pantano ni sustituye a Sabrina."
 ]
 },
 "FIRERED-12": {
@@ -1586,6 +1656,46 @@
 "Vence al líder Giovanni (tipo Tierra: Rhyhorn, Dugtrio, Nidoqueen, Nidoking y otro Rhyhorn). Recibes la Medalla Tierra y la MT26 Terremoto; el Team Rocket se disuelve.",
 "Ve al oeste por la Ruta 22: tu rival te reta por última vez antes de la Liga.",
 "En la Ruta 23 los guardias comprueban tus ocho medallas (Roca, Cascada, Trueno, Arcoíris, Alma, Pantano, Volcán y Tierra); necesitarás Surf para cruzarla."
+]
+},
+"FIRERED-14": {
+"caution": "Guarda antes del Campeón: si pierdes vuelves al último Centro Pokémon con la mitad del dinero. Mewtwo no se abre con la Liga: depende de entregar el Zafiro a Celio.",
+"steps": [
+"Requisitos: las ocho medallas, Surf y Fuerza (Golpe roca es útil para recoger todo).",
+"Desde los controles de la Ruta 23, donde los guardias revisan tus medallas, cruza los tramos de tierra y agua hasta la entrada de la Calle Victoria. Cura antes al equipo.",
+"Dentro, empuja con Fuerza las rocas hasta los interruptores del suelo para retirar las barreras. En las plantas superiores, una roca debe caer por un agujero para poder llevarla al interruptor de la planta de abajo; si bloqueas una roca, sal de la sala y vuelve a entrar para reiniciarla.",
+"Sal por el extremo norte a la Meseta Añil y compra Hiperpociones, Revivir, Cura total y recuperadores de PP: son cinco combates seguidos y no puedes volver al Centro Pokémon entre ellos.",
+"Vence en orden al Alto Mando: Lorelei (Hielo), Bruno (Lucha), Agatha (Fantasma y Veneno) y Lance (Dragón).",
+"Vence a tu rival, el Campeón; su equipo depende del inicial que elegiste. El Profesor Oak te lleva al Hall de la Fama y, tras los créditos, despiertas en casa.",
+"Con al menos 60 especies capturadas (no basta con vistas) y habiendo visitado ya Isla Prima, habla con el Profesor Oak en su laboratorio: te da la Pokédex Nacional.",
+"Con la Pokédex Nacional vuelve a Isla Prima y habla con Celio para empezar la búsqueda del Rubí y el Zafiro: es lo que abre la Cueva Celeste, la bestia errante y el intercambio con Hoenn, que la primera victoria en la Liga no abre por sí sola.",
+"Si juegas en la versión de Nintendo Switch, el Ori-ticket y el Misti-ticket aparecen en tu mochila tras el primer Hall de la Fama y dan acceso a la Isla Origen y la Roca Ombligo; en la edición de Game Boy Advance solo llegaban por eventos (ver la misión de los eventos)."
+]
+},
+"FIRERED-15": {
+"caution": "En estos remakes Moltres está en el Monte Ascuas, no en la Calle Victoria. En la edición original de Game Boy Advance, cualquiera de las tres bestias errantes desaparece para siempre si usa Rugido con éxito: guarda antes de buscarla y reserva la Master Ball. La versión de Nintendo Switch corrige ese fallo; no lo confundas con la huida normal del primer turno. Ningún legendario reaparece si lo debilitas.",
+"steps": [
+"Requisitos: Surf; Fuerza para las Islas Espuma y el Monte Ascuas; Golpe roca para el Monte Ascuas; y la red de Celio terminada (Zafiro entregado) para Mewtwo y la bestia errante.",
+"Articuno (nivel 50): surfea hasta las Islas Espuma (Ruta 20). Empuja rocas con Fuerza por los agujeros y síguelas de planta en planta hasta que bloqueen las corrientes del nivel inferior; luego surfea hasta la plataforma de Articuno. Guarda antes del combate.",
+"Zapdos (nivel 50): ve al Centro Pokémon de la Ruta 10, junto a la entrada norte del Túnel Roca, y surfea por el río hasta la Central de Energía. Recorre su interior hasta la sala de Zapdos; algunas «bolas» del suelo son Voltorb o Electrode que pueden explotar.",
+"Moltres (nivel 50): viaja a Isla Prima y recorre el Camino Candente hacia el Monte Ascuas; en el Balneario Ascuas del camino te dan la MO06 Golpe roca. Sube por el exterior y las cuevas del monte, usa Fuerza y Golpe roca en el tramo de rocas de la cima y guarda antes de acercarte.",
+"Mewtwo (nivel 70): entrega primero el Rubí y el Zafiro a Celio; el guardia de la Cueva Celeste se marcha. Desde Ciudad Celeste sube hacia el puente, surfea por el agua del noroeste y entra en la cueva. Recorre sus plantas hasta el encuentro final y guarda antes de combatir.",
+"La entrega del Zafiro activa también la bestia errante de Kanto (nivel 50): Entei si elegiste a Bulbasaur, Suicune si elegiste a Charmander y Raikou si elegiste a Squirtle. Registra el primer encuentro y sigue en la Pokédex sus cambios de ruta.",
+"Mew, Lugia, Ho-Oh, Deoxys y las otras dos bestias llegan por eventos o intercambio, no por capturar a estos cinco. Con Pokekeep: añádelos legales desde la Librería si no puedes conseguirlos."
+]
+},
+"FIRERED-16": {
+"caution": "Los objetos ya gastados pueden no seguir en la mochila. Ninguna estrella exige un evento caducado: las especies de evento están excluidas de los recuentos.",
+"steps": [
+"Regalos únicos: Eevee en la habitación de la azotea de la Mansión Azulona (entrada trasera), Lapras en la séptima planta de Silph S.A. y Hitmonlee o Hitmonchan en el Dojo Karate de Azafrán. Los otros iniciales y el Hitmon que no elijas necesitan intercambio u otra partida.",
+"Recoge el Ámbar viejo por la entrada trasera del Museo de la Ciencia de Ciudad Plateada (con Corte) y revívelo, junto al fósil del Mt. Moon, en el laboratorio de Isla Canela.",
+"Los ayudantes del Profesor Oak premian las especies capturadas, pero hay que visitar a cada uno: 10 → MO05 Destello (caseta de la Ruta 2), 20 → Piedra eterna (Centro Pokémon de la Ruta 10), 30 → Buscaobjetos (caseta este de la Ruta 11), 40 → Moneda amuleto (caseta norte de la Ruta 16) y 50 → Repartir experiencia (caseta oeste de la Ruta 15).",
+"Si una evolución hacia una especie de otra región no se produce (por ejemplo Golbat a Crobat), consigue antes la Pokédex Nacional: hasta entonces el juego bloquea esas evoluciones.",
+"Pokédex de Kanto: captura las 150 especies (Mew no cuenta), incluidas las evoluciones por intercambio (Alakazam, Machamp, Golem y Gengar) y los exclusivos de Verde Hoja. El diseñador del juego de la 3.ª planta de la Mansión Azulona te da el diploma.",
+"Pokédex Nacional: se comprueban 380 especies; no se exigen Mew, Lugia, Ho-Oh, Celebi, Jirachi ni Deoxys. El contador total no basta: revisa la lista especie a especie.",
+"Minijuegos de los Recreativos de Isla Secunda: logra 200 saltos seguidos en Salto Pokémon y 200 bayas en una partida de Dodrio a por bayas. Necesitas otros jugadores (adaptador inalámbrico en Game Boy Advance, conexión local en Nintendo Switch); los retos de Hoenn no los sustituyen.",
+"Comprueba las cuatro estrellas por separado: Hall de la Fama, Pokédex de Kanto, Pokédex Nacional y los dos minijuegos. Una ficha dorada no certifica haber hecho cada escena; los eventos y colecciones extra van en su propia lista.",
+"Con Pokekeep: lo que solo llega por intercambio, por la otra edición o por eventos cerrados, añádelo legal desde la Librería."
 ]
 },
 "FIRERED-E01": {
@@ -2188,6 +2298,20 @@
 "La Torre Pokémon de Lavanda tiene fantasmas que no puedes combatir sin el Scope Silph: de momento sigue por la Ruta 8 y el Camino subterráneo hasta Ciudad Azulona."
 ]
 },
+"LEAFGREEN-08": {
+"caution": "El Té es exclusivo de estos remakes y sin él no entras en Ciudad Azafrán. Conseguir el Scope Silph no rescata por sí solo al Sr. Fuji: tienes que subir a la Torre Pokémon de Lavanda.",
+"steps": [
+"Requisitos: haber llegado a Ciudad Azulona (por la Ruta 8 y el Camino subterráneo, o por la Ruta 7) y tener Corte.",
+"Entra en la Mansión Azulona (el gran edificio de viviendas) y habla con la anciana de la planta baja: te da el Té, que pedirá cualquiera de los guardias de las casetas de Ciudad Azafrán. El agua o la limonada de los Rojo y Azul originales no sirven aquí.",
+"Por la entrada trasera de la Mansión Azulona se sube a la habitación de la azotea, donde te regalan un Eevee.",
+"Corta el arbusto de la zona sur que bloquea el gimnasio y vence a la líder Erika (tipo Planta). Recibes la Medalla Arcoíris, la MT19 Gigadrenado y el permiso para usar Fuerza fuera de combate. Gimnasio y casino se pueden hacer en el orden que prefieras.",
+"En el Casino de Azulona, vence al recluta Rocket que vigila el póster del fondo y examina después el póster: es un interruptor que abre la escalera a la Guarida Rocket.",
+"Baja por la guarida usando las baldosas con flechas, que te arrastran hasta una baldosa de parada; si te pierdes, sal y vuelve a entrar.",
+"En el cuarto sótano vence al recluta que guarda la Llave ascensor (si no la suelta, vuelve a hablar con él) y recógela del suelo.",
+"Usa el ascensor para llegar al sector del jefe, vence a los guardias y a Giovanni (Onix, Rhyhorn y Kangaskhan) y recoge el Scope Silph.",
+"Antes de volver a Lavanda puedes salir por el oeste de Azulona a la Ruta 16: corta el arbusto y entra en la casa de detrás, donde una niña te da la MO02 Vuelo."
+]
+},
 "LEAFGREEN-09": {
 "caution": "Solo hay dos Snorlax (rutas 12 y 16) y no reaparecen si los debilitas o huyes: guarda antes de tocar la flauta y lleva Ultra Balls.",
 "steps": [
@@ -2196,6 +2320,32 @@
 "En la séptima planta vence a los reclutas del Team Rocket y rescata al Sr. Fuji.",
 "El Sr. Fuji te lleva a su casa de Lavanda y te da la Poké flauta.",
 "Ve al Snorlax dormido de la Ruta 12 (al sur de Lavanda) o al de la Ruta 16 (al oeste de Azulona) y usa la Poké flauta para despertarlo: empieza el combate."
+]
+},
+"LEAFGREEN-10": {
+"caution": "No uses el reparto de MO de otros juegos: en Rojo Fuego y Verde Hoja Surf se recibe en la Casa Secreta de la Zona Safari y Fuerza al devolver los Dientes oro al guarda.",
+"steps": [
+"Requisitos: un Snorlax despierto con la Poké flauta (Ruta 12 o Ruta 16).",
+"Llega a Ciudad Fucsia bajando por las rutas 12 a 15 por la costa oriental, o por la Ruta 16 y la Ruta Ciclista (Ruta 17) montado en la Bicicleta.",
+"Entra en la Zona Safari con hueco en la mochila y planifica el recorrido: la visita termina cuando gastas los pasos o las Safari Balls.",
+"Desde el área central sal por el este, cruza el área este, sigue por las conexiones del norte hasta el área norte y de ahí al área oeste (Zona 3).",
+"En la Zona 3 recoge los Dientes oro del suelo y entra en la Casa Secreta: su ocupante te da la MO03 Surf. Si la visita se acaba antes de conseguir las dos cosas, vuelve a entrar: son pasos independientes.",
+"Vuelve a Ciudad Fucsia y entrega los Dientes oro al guarda de la Zona Safari en su casa: te da la MO04 Fuerza. Con Fuerza podrás mover la roca de su casa y coger el objeto que tapa.",
+"Vence al líder Koga (tipo Veneno) en el gimnasio de paredes invisibles: recibes la Medalla Alma, la MT06 Tóxico y el permiso para usar Surf fuera de combate. Fuerza ya funcionaba con la Medalla Arcoíris de Erika."
+]
+},
+"LEAFGREEN-11": {
+"caution": "Habla expresamente con el presidente para recibir la Master Ball, que es única; resérvala para Mewtwo o la bestia errante. Tener a Lapras en la Pokédex no significa haber hablado con el empleado que lo regala. Del Dojo solo te puedes llevar uno de los dos Hitmon.",
+"steps": [
+"Requisitos: el Té de la Mansión Azulona.",
+"Entrega el Té al guardia de cualquiera de las casetas que rodean Ciudad Azafrán: el permiso vale para todas. Entra en la ciudad y ve a Silph S.A.",
+"Sube a la quinta planta y recoge la Llave magnética del pasillo inferior; para llegar a ella pisa el teletransportador del tramo bloqueado y vuelve por el mismo punto para rodear el bloqueo.",
+"Vuelve a la tercera planta, abre con la Llave magnética la puerta de la zona central y usa el teletransportador interior hasta la sala de la séptima planta. Vence allí a tu rival y habla con el empleado que te regala un Lapras (necesitas un hueco libre en el equipo o en la caja).",
+"Pisa el otro teletransportador de esa sala para llegar a la planta del presidente (la undécima). Abre la última puerta, vence a Giovanni (Nidorino, Kangaskhan, Rhyhorn y Nidoqueen) y habla con el presidente: te da la Master Ball.",
+"Gimnasio de Sabrina: todas las salas tienen teletransportadores en las esquinas. Pisa el único de la entrada y, en las cuatro salas siguientes, elige por orden la esquina superior derecha → inferior derecha → inferior izquierda → inferior izquierda; llegarás a la sala de Sabrina. (También sirve inferior izquierda → inferior izquierda → superior derecha → inferior izquierda.)",
+"Vence a la líder Sabrina (tipo Psíquico: Kadabra, Mr. Mime, Venomoth y Alakazam): recibes la Medalla Pantano, la MT04 Paz mental y el permiso para usar Golpe roca fuera de combate.",
+"Para salir, pisa el único teletransportador de la sala de Sabrina y luego las esquinas inferior derecha → superior izquierda → superior derecha → inferior derecha: vuelves a la entrada del gimnasio.",
+"El Dojo Karate de Azafrán es un reto aparte: vence a los karatekas y a su maestro y elige como premio a Hitmonlee o a Hitmonchan. No da la Medalla Pantano ni sustituye a Sabrina."
 ]
 },
 "LEAFGREEN-12": {
@@ -2216,6 +2366,46 @@
 "Vence al líder Giovanni (tipo Tierra: Rhyhorn, Dugtrio, Nidoqueen, Nidoking y otro Rhyhorn). Recibes la Medalla Tierra y la MT26 Terremoto; el Team Rocket se disuelve.",
 "Ve al oeste por la Ruta 22: tu rival te reta por última vez antes de la Liga.",
 "En la Ruta 23 los guardias comprueban tus ocho medallas (Roca, Cascada, Trueno, Arcoíris, Alma, Pantano, Volcán y Tierra); necesitarás Surf para cruzarla."
+]
+},
+"LEAFGREEN-14": {
+"caution": "Guarda antes del Campeón: si pierdes vuelves al último Centro Pokémon con la mitad del dinero. Mewtwo no se abre con la Liga: depende de entregar el Zafiro a Celio.",
+"steps": [
+"Requisitos: las ocho medallas, Surf y Fuerza (Golpe roca es útil para recoger todo).",
+"Desde los controles de la Ruta 23, donde los guardias revisan tus medallas, cruza los tramos de tierra y agua hasta la entrada de la Calle Victoria. Cura antes al equipo.",
+"Dentro, empuja con Fuerza las rocas hasta los interruptores del suelo para retirar las barreras. En las plantas superiores, una roca debe caer por un agujero para poder llevarla al interruptor de la planta de abajo; si bloqueas una roca, sal de la sala y vuelve a entrar para reiniciarla.",
+"Sal por el extremo norte a la Meseta Añil y compra Hiperpociones, Revivir, Cura total y recuperadores de PP: son cinco combates seguidos y no puedes volver al Centro Pokémon entre ellos.",
+"Vence en orden al Alto Mando: Lorelei (Hielo), Bruno (Lucha), Agatha (Fantasma y Veneno) y Lance (Dragón).",
+"Vence a tu rival, el Campeón; su equipo depende del inicial que elegiste. El Profesor Oak te lleva al Hall de la Fama y, tras los créditos, despiertas en casa.",
+"Con al menos 60 especies capturadas (no basta con vistas) y habiendo visitado ya Isla Prima, habla con el Profesor Oak en su laboratorio: te da la Pokédex Nacional.",
+"Con la Pokédex Nacional vuelve a Isla Prima y habla con Celio para empezar la búsqueda del Rubí y el Zafiro: es lo que abre la Cueva Celeste, la bestia errante y el intercambio con Hoenn, que la primera victoria en la Liga no abre por sí sola.",
+"Si juegas en la versión de Nintendo Switch, el Ori-ticket y el Misti-ticket aparecen en tu mochila tras el primer Hall de la Fama y dan acceso a la Isla Origen y la Roca Ombligo; en la edición de Game Boy Advance solo llegaban por eventos (ver la misión de los eventos)."
+]
+},
+"LEAFGREEN-15": {
+"caution": "En estos remakes Moltres está en el Monte Ascuas, no en la Calle Victoria. En la edición original de Game Boy Advance, cualquiera de las tres bestias errantes desaparece para siempre si usa Rugido con éxito: guarda antes de buscarla y reserva la Master Ball. La versión de Nintendo Switch corrige ese fallo; no lo confundas con la huida normal del primer turno. Ningún legendario reaparece si lo debilitas.",
+"steps": [
+"Requisitos: Surf; Fuerza para las Islas Espuma y el Monte Ascuas; Golpe roca para el Monte Ascuas; y la red de Celio terminada (Zafiro entregado) para Mewtwo y la bestia errante.",
+"Articuno (nivel 50): surfea hasta las Islas Espuma (Ruta 20). Empuja rocas con Fuerza por los agujeros y síguelas de planta en planta hasta que bloqueen las corrientes del nivel inferior; luego surfea hasta la plataforma de Articuno. Guarda antes del combate.",
+"Zapdos (nivel 50): ve al Centro Pokémon de la Ruta 10, junto a la entrada norte del Túnel Roca, y surfea por el río hasta la Central de Energía. Recorre su interior hasta la sala de Zapdos; algunas «bolas» del suelo son Voltorb o Electrode que pueden explotar.",
+"Moltres (nivel 50): viaja a Isla Prima y recorre el Camino Candente hacia el Monte Ascuas; en el Balneario Ascuas del camino te dan la MO06 Golpe roca. Sube por el exterior y las cuevas del monte, usa Fuerza y Golpe roca en el tramo de rocas de la cima y guarda antes de acercarte.",
+"Mewtwo (nivel 70): entrega primero el Rubí y el Zafiro a Celio; el guardia de la Cueva Celeste se marcha. Desde Ciudad Celeste sube hacia el puente, surfea por el agua del noroeste y entra en la cueva. Recorre sus plantas hasta el encuentro final y guarda antes de combatir.",
+"La entrega del Zafiro activa también la bestia errante de Kanto (nivel 50): Entei si elegiste a Bulbasaur, Suicune si elegiste a Charmander y Raikou si elegiste a Squirtle. Registra el primer encuentro y sigue en la Pokédex sus cambios de ruta.",
+"Mew, Lugia, Ho-Oh, Deoxys y las otras dos bestias llegan por eventos o intercambio, no por capturar a estos cinco. Con Pokekeep: añádelos legales desde la Librería si no puedes conseguirlos."
+]
+},
+"LEAFGREEN-16": {
+"caution": "Los objetos ya gastados pueden no seguir en la mochila. Ninguna estrella exige un evento caducado: las especies de evento están excluidas de los recuentos.",
+"steps": [
+"Regalos únicos: Eevee en la habitación de la azotea de la Mansión Azulona (entrada trasera), Lapras en la séptima planta de Silph S.A. y Hitmonlee o Hitmonchan en el Dojo Karate de Azafrán. Los otros iniciales y el Hitmon que no elijas necesitan intercambio u otra partida.",
+"Recoge el Ámbar viejo por la entrada trasera del Museo de la Ciencia de Ciudad Plateada (con Corte) y revívelo, junto al fósil del Mt. Moon, en el laboratorio de Isla Canela.",
+"Los ayudantes del Profesor Oak premian las especies capturadas, pero hay que visitar a cada uno: 10 → MO05 Destello (caseta de la Ruta 2), 20 → Piedra eterna (Centro Pokémon de la Ruta 10), 30 → Buscaobjetos (caseta este de la Ruta 11), 40 → Moneda amuleto (caseta norte de la Ruta 16) y 50 → Repartir experiencia (caseta oeste de la Ruta 15).",
+"Si una evolución hacia una especie de otra región no se produce (por ejemplo Golbat a Crobat), consigue antes la Pokédex Nacional: hasta entonces el juego bloquea esas evoluciones.",
+"Pokédex de Kanto: captura las 150 especies (Mew no cuenta), incluidas las evoluciones por intercambio (Alakazam, Machamp, Golem y Gengar) y los exclusivos de Rojo Fuego. El diseñador del juego de la 3.ª planta de la Mansión Azulona te da el diploma.",
+"Pokédex Nacional: se comprueban 380 especies; no se exigen Mew, Lugia, Ho-Oh, Celebi, Jirachi ni Deoxys. El contador total no basta: revisa la lista especie a especie.",
+"Minijuegos de los Recreativos de Isla Secunda: logra 200 saltos seguidos en Salto Pokémon y 200 bayas en una partida de Dodrio a por bayas. Necesitas otros jugadores (adaptador inalámbrico en Game Boy Advance, conexión local en Nintendo Switch); los retos de Hoenn no los sustituyen.",
+"Comprueba las cuatro estrellas por separado: Hall de la Fama, Pokédex de Kanto, Pokédex Nacional y los dos minijuegos. Una ficha dorada no certifica haber hecho cada escena; los eventos y colecciones extra van en su propia lista.",
+"Con Pokekeep: lo que solo llega por intercambio, por la otra edición o por eventos cerrados, añádelo legal desde la Librería."
 ]
 },
 "LEAFGREEN-E01": {
@@ -3213,6 +3403,34 @@
 "Opcional: en la casa más alta del lado izquierdo de Arrecípolis te dan la MT31 Demolición."
 ]
 },
+"RUBY-12": {
+"caution": "Máximo usa Acero y Roca: Fuego y Lucha son tus mejores bazas, salvo contra Claydol (usa Agua o Siniestro). No te prepares para el equipo de Plubio de Esmeralda. Guarda antes de entrar en la Liga. Tener especies registradas por intercambio no equivale a haber superado la Liga.",
+"steps": [
+"Requisitos: las ocho medallas y Surf, Cascada, Fuerza y Golpe roca; Destello es muy recomendable para los sótanos de la Calle Victoria.",
+"Desde la Ruta 128 nada hacia el este hasta la cascada de Ciudad Colosalia, súbela con Cascada y cura a tu equipo en su Centro Pokémon.",
+"Entra en la Calle Victoria: usa Fuerza y Golpe roca para las rocas, Surf para los tramos de agua y Destello para ver en los sótanos. Lleva Cuerdas huida por si necesitas salir a preparar el equipo.",
+"Dentro te reta Blasco con su equipo final (Gardevoir, Altaria, Delcatty, Magneton y Roselia): es un combate obligatorio. Sal por el norte y sigue hasta el edificio de la Liga Pokémon.",
+"Antes de cruzar el control, compra Hiperpociones, Máximas pociones, Revivir, Cura total y recuperadores de PP y ordena el equipo: una vez dentro no puedes volver a la tienda ni al Centro Pokémon entre combates.",
+"Vence en orden al Alto Mando: Sixto (Siniestro), Fátima (Fantasma), Nívea (Hielo) y Dracón (Dragón).",
+"Vence al Campeón de Rubí, Máximo, especialista en Acero con apoyos de Roca (Skarmory, Claydol, Aggron, Cradily, Armaldo y Metagross), y deja que termine el registro del Hall de la Fama y los créditos.",
+"Al continuar despiertas en casa en Villa Raíz: ve la escena de la televisión y recibe de tu padre el Ticket barco para el S.S. Marea, que zarpa desde Ciudad Portual y Ciudad Calagua. Desde aquí empieza el posjuego."
+]
+},
+"RUBY-13": {
+"caution": "Estas son las soluciones de Rubí y Zafiro: Esmeralda invierte el orden de Wailord y Relicanth y cambia los tres acertijos (Golpe roca, vuelta pegado al muro y Destello). Latios errante huye en el primer turno y cambia de ruta cada vez que cambias de zona. Ningún legendario reaparece si lo debilitas: guarda antes.",
+"steps": [
+"Requisitos: Bici carrera, Surf, Buceo, Excavar (MT28, del Fosilmaníaco de la Ruta 114), Fuerza y Vuelo, más un Wailord (surfeando en la Ruta 129 o evolucionando Wailmer a nivel 40) y un Relicanth (buceando en las rutas 124 y 126). Los Regis se pueden hacer antes de la Liga, en cuanto tengas Buceo; Rayquaza, solo después.",
+"Rayquaza: tras el Hall de la Fama ve al Pilar Celeste (Ruta 131, al este de Pueblo Oromar). Cruza los suelos agrietados sin detenerte con la Bici carrera; en la cuarta planta déjate caer por uno de los últimos agujeros de la parte norte para llegar a la escalera. Guarda antes de la cima: está a nivel 70.",
+"Cámara Sellada: en la Ruta 134 deja que las corrientes te lleven a la pequeña zona de agua oscura, bucea, sigue hacia el sur hasta la pared submarina que dice en braille «Sube ahora» y emerge. En la pared del fondo de la primera sala («Cava ahora») usa Excavar.",
+"En la segunda sala pon a Relicanth el primero del equipo y a Wailord el último y lee la inscripción del fondo («Primero Relicanth. Al final Wailord»): la cueva tiembla y se abren las puertas de las tres ruinas.",
+"Regirock, Ruinas del Desierto (sur del desierto de la Ruta 111, con Gafas aislantes): lee el braille («derecha, derecha, abajo, abajo», usa Fuerza), da dos pasos a la derecha y dos hacia abajo desde la inscripción y usa Fuerza.",
+"Regice, Cueva Insular (islote del noroeste de la Ruta 105): lee la inscripción («Para y espera a que el tiempo pase dos veces») y quédate quieto, sin salir ni pulsar nada, durante dos minutos.",
+"Registeel, Tumba Antigua (oeste de la Ruta 120): lee la inscripción («Con ganas vuela al centro»), ponte en el centro exacto de la sala y usa Vuelo. Los tres Regis están a nivel 40 y solo hay uno de cada.",
+"En Rubí, Latios empieza a vagar por Hoenn (nivel 40) tras la Liga: síguelo con el mapa de zonas de la Pokédex y atrápalo con la Master Ball o retenlo con Mal de Ojo, Bloqueo o Sombratrampa.",
+"Latias solo está en la Isla del Sur (nivel 50) con el Ticket eón, que se repartía en eventos y podía pasar de una partida a otra al mezclar récords; viaja desde el puerto de Ciudad Calagua. Usa el Ticket barco para ir a la Torre Batalla.",
+"Con Pokekeep: añade el Ticket eón a la mochila y activa su evento, o añade Latias, Jirachi, Deoxys y Kyogre (exclusivo de Zafiro) legales desde la Librería."
+]
+},
 "RUBY-14": {
 "caution": "En la Torre Batalla no puedes usar dos Pokémon iguales ni dos con el mismo objeto, ni legendarios como Groudon, Kyogre, Rayquaza, Mew, Mewtwo, Lugia, Ho-Oh, Celebi, Jirachi o Deoxys.",
 "steps": [
@@ -3346,6 +3564,34 @@
 "Vence al líder Plubio (tipo Agua: Luvdisc, Whiscash, Sealeo, Seaking y Milotic). Recibes la Medalla Lluvia, la MT03 Hidropulso y el permiso para usar Cascada fuera de combate.",
 "Comprueba en tu Ficha de entrenador que tienes las ocho medallas: Piedra, Puño, Dinamo, Calor, Equilibrio, Pluma, Mente y Lluvia.",
 "Opcional: en la casa más alta del lado izquierdo de Arrecípolis te dan la MT31 Demolición."
+]
+},
+"SAPPHIRE-12": {
+"caution": "Máximo usa Acero y Roca: Fuego y Lucha son tus mejores bazas, salvo contra Claydol (usa Agua o Siniestro). No te prepares para el equipo de Plubio de Esmeralda. Guarda antes de entrar en la Liga. Tener especies registradas por intercambio no equivale a haber superado la Liga.",
+"steps": [
+"Requisitos: las ocho medallas y Surf, Cascada, Fuerza y Golpe roca; Destello es muy recomendable para los sótanos de la Calle Victoria.",
+"Desde la Ruta 128 nada hacia el este hasta la cascada de Ciudad Colosalia, súbela con Cascada y cura a tu equipo en su Centro Pokémon.",
+"Entra en la Calle Victoria: usa Fuerza y Golpe roca para las rocas, Surf para los tramos de agua y Destello para ver en los sótanos. Lleva Cuerdas huida por si necesitas salir a preparar el equipo.",
+"Dentro te reta Blasco con su equipo final (Gardevoir, Altaria, Delcatty, Magneton y Roselia): es un combate obligatorio. Sal por el norte y sigue hasta el edificio de la Liga Pokémon.",
+"Antes de cruzar el control, compra Hiperpociones, Máximas pociones, Revivir, Cura total y recuperadores de PP y ordena el equipo: una vez dentro no puedes volver a la tienda ni al Centro Pokémon entre combates.",
+"Vence en orden al Alto Mando: Sixto (Siniestro), Fátima (Fantasma), Nívea (Hielo) y Dracón (Dragón).",
+"Vence al Campeón de Zafiro, Máximo, especialista en Acero con apoyos de Roca (Skarmory, Claydol, Aggron, Cradily, Armaldo y Metagross), y deja que termine el registro del Hall de la Fama y los créditos.",
+"Al continuar despiertas en casa en Villa Raíz: ve la escena de la televisión y recibe de tu padre el Ticket barco para el S.S. Marea, que zarpa desde Ciudad Portual y Ciudad Calagua. Desde aquí empieza el posjuego."
+]
+},
+"SAPPHIRE-13": {
+"caution": "Estas son las soluciones de Rubí y Zafiro: Esmeralda invierte el orden de Wailord y Relicanth y cambia los tres acertijos (Golpe roca, vuelta pegado al muro y Destello). Latias errante huye en el primer turno y cambia de ruta cada vez que cambias de zona. Ningún legendario reaparece si lo debilitas: guarda antes.",
+"steps": [
+"Requisitos: Bici carrera, Surf, Buceo, Excavar (MT28, del Fosilmaníaco de la Ruta 114), Fuerza y Vuelo, más un Wailord (surfeando en la Ruta 129 o evolucionando Wailmer a nivel 40) y un Relicanth (buceando en las rutas 124 y 126). Los Regis se pueden hacer antes de la Liga, en cuanto tengas Buceo; Rayquaza, solo después.",
+"Rayquaza: tras el Hall de la Fama ve al Pilar Celeste (Ruta 131, al este de Pueblo Oromar). Cruza los suelos agrietados sin detenerte con la Bici carrera; en la cuarta planta déjate caer por uno de los últimos agujeros de la parte norte para llegar a la escalera. Guarda antes de la cima: está a nivel 70.",
+"Cámara Sellada: en la Ruta 134 deja que las corrientes te lleven a la pequeña zona de agua oscura, bucea, sigue hacia el sur hasta la pared submarina que dice en braille «Sube ahora» y emerge. En la pared del fondo de la primera sala («Cava ahora») usa Excavar.",
+"En la segunda sala pon a Relicanth el primero del equipo y a Wailord el último y lee la inscripción del fondo («Primero Relicanth. Al final Wailord»): la cueva tiembla y se abren las puertas de las tres ruinas.",
+"Regirock, Ruinas del Desierto (sur del desierto de la Ruta 111, con Gafas aislantes): lee el braille («derecha, derecha, abajo, abajo», usa Fuerza), da dos pasos a la derecha y dos hacia abajo desde la inscripción y usa Fuerza.",
+"Regice, Cueva Insular (islote del noroeste de la Ruta 105): lee la inscripción («Para y espera a que el tiempo pase dos veces») y quédate quieto, sin salir ni pulsar nada, durante dos minutos.",
+"Registeel, Tumba Antigua (oeste de la Ruta 120): lee la inscripción («Con ganas vuela al centro»), ponte en el centro exacto de la sala y usa Vuelo. Los tres Regis están a nivel 40 y solo hay uno de cada.",
+"En Zafiro, Latias empieza a vagar por Hoenn (nivel 40) tras la Liga: síguelo con el mapa de zonas de la Pokédex y atrápalo con la Master Ball o retenlo con Mal de Ojo, Bloqueo o Sombratrampa.",
+"Latios solo está en la Isla del Sur (nivel 50) con el Ticket eón, que se repartía en eventos y podía pasar de una partida a otra al mezclar récords; viaja desde el puerto de Ciudad Calagua. Usa el Ticket barco para ir a la Torre Batalla.",
+"Con Pokekeep: añade el Ticket eón a la mochila y activa su evento, o añade Latios, Jirachi, Deoxys y Groudon (exclusivo de Rubí) legales desde la Librería."
 ]
 },
 "SAPPHIRE-14": {
