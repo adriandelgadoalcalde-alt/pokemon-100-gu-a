@@ -9,6 +9,9 @@ fixtures/private/
 *.state
 *.pk[1-9]
 **/main
+# Excepción: el código de la app Android (no es una partida de Switch).
+!android/app/src/main
+!android/app/src/main/**
 .env
 .env.*
 
@@ -19,3 +22,9 @@ fixtures/private/
 __pycache__/
 *.pyc
 .claude/.pendientes-estado.json
+android/*.keystore
+android/*.jks
+android/local.properties
+android/.gradle/
+android/build/
+android/app/build/

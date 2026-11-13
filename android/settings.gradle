@@ -1,0 +1,10 @@
+// Aplicación Android mínima que abre la guía Pokémon 100 % a pantalla completa (WebView).
+pluginManagement {
+    repositories { google(); mavenCentral(); gradlePluginPortal() }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories { google(); mavenCentral() }
+}
+rootProject.name = 'Pokemon100'
+include ':app'
