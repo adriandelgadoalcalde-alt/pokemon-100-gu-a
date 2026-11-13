@@ -14,6 +14,10 @@ ATLAS = ROOT / 'atlas.html'
 CHRONO = json.loads((ROOT / 'research/guides/legendarios.json').read_text(encoding='utf-8'))
 PKHEX = json.loads((ROOT / 'research/guides/legendarios-pkhex.json').read_text(encoding='utf-8'))
 GOALS = json.loads((ROOT / 'research/guides/objetivos.json').read_text(encoding='utf-8'))['objetivos']
+# Reescrituras precisas por generación (research/guides/precision/*.json), contrastadas con guías y con fuente al final:
+# {"misiones": {"<misión>": {"pasos": [...], "precaucion": "..."}}, "objetivos": {"<JUEGO>:<objetivo>": "texto"}}.
+# Mandan sobre todo lo anterior: las misiones van al CATALOG y los objetivos a MASTER_DATA.
+PRECISION = [json.loads(f.read_text(encoding='utf-8')) for f in sorted((ROOT / 'research/guides/precision').glob('*.json'))]
 
 
 def places(game, species):
@@ -104,6 +108,18 @@ def main():
                 if 'nivel' in goal:
                     item['tier'] = goal['nivel']
                 done += 1
+    used = set()
+    for pack in PRECISION:
+        for key, text in pack.get('objetivos', {}).items():
+            game, goal = key.split(':', 1)
+            hits = [item for item in data.get(game, []) if item['id'] == goal]
+            if not hits:
+                raise SystemExit(f'precisión: {key} no existe en MASTER_DATA')
+            if 'PKHeX' in text:
+                raise SystemExit(f'precisión: {key} nombra PKHeX (debe decir Pokekeep)')
+            for item in hits:
+                item['how'] = text
+            used.add(key)
     # Fase y orden cronológico por defecto de los objetivos que no los fijan en los JSON de research/guides
     # (índices de MASTERY_PHASES en atlas.html): así ningún objetivo queda fuera del orden de la guía.
     fixed = 0
@@ -118,7 +134,28 @@ def main():
                 raise SystemExit(f'{game}/{item["id"]}: sin fase ni orden cronológico')
             item['phase'], item['order'] = key
             fixed += 1
-    ATLAS.write_text(s[:i] + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + s[end:], encoding='utf-8')
+    s = s[:i] + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + s[end:]
+    # Misiones de la ruta (CATALOG): pasos y precaución precisos.
+    j = s.index('const CATALOG=') + len('const CATALOG=')
+    catalog, cend = json.JSONDecoder().raw_decode(s, j)
+    missions = {m['id']: m for g in catalog['games'] for m in g['missions']}
+    changed = 0
+    for pack in PRECISION:
+        for mid, spec in pack.get('misiones', {}).items():
+            if mid not in missions:
+                raise SystemExit(f'precisión: misión {mid} no existe en CATALOG')
+            steps = spec.get('pasos') or []
+            if len(steps) < 2 or any(not isinstance(x, str) or not x.strip() or 'PKHeX' in x for x in steps):
+                raise SystemExit(f'precisión: misión {mid} con pasos vacíos o que nombran PKHeX')
+            missions[mid]['steps'] = steps
+            if spec.get('precaucion'):
+                if 'PKHeX' in spec['precaucion']:
+                    raise SystemExit(f'precisión: misión {mid} nombra PKHeX')
+                missions[mid]['caution'] = spec['precaucion']
+            changed += 1
+    s = s[:j] + json.dumps(catalog, ensure_ascii=False, separators=(',', ':')) + s[cend:]
+    ATLAS.write_text(s, encoding='utf-8')
+    print(f'Precisión: {changed} misiones y {len(used)} objetivos reescritos.')
     print(f'Paso a paso escrito en {done} objetivos; {fixed} ordenados por la tabla por defecto.')
 
 
