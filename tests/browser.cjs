@@ -215,6 +215,10 @@ async function run() {
       await allPage.locator('[data-mid="'+detailed.id+'"] > summary').click();
       await allPage.locator('[data-mid="'+detailed.id+'"] .route-details').waitFor();
       assert.ok(await allPage.locator('[data-mid="'+detailed.id+'"] .route-details ol > li').count()>=3);
+      // Con todas las misiones y bloques abiertos, nada de lo que se lee nombra PKHeX (en las instrucciones va Pokekeep).
+      await allPage.evaluate(()=>document.querySelectorAll('details').forEach(d=>d.open=true));
+      assert.doesNotMatch(await allPage.locator('main').innerText(),/PKHeX/,game.id+': la guía nombra PKHeX');
+      assert.ok(await allPage.locator('.goal-block').count()>0,game.id+': sin bloques por objetivo');
       const overflow=await allPage.evaluate(()=>{const W=innerWidth;if(document.documentElement.scrollWidth<=W+1)return null;
         return [...document.querySelectorAll('body *')].filter(e=>{const r=e.getBoundingClientRect();return r.right>W+1&&r.width>0;}).slice(-4)
           .map(e=>e.tagName+'.'+String(e.className).slice(0,30)+' derecha='+Math.round(e.getBoundingClientRect().right)+' «'+(e.textContent||'').trim().slice(0,50)+'»').join(' | ');});
