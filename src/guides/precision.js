@@ -484,7 +484,7 @@
 "BD-12": {
 "caution": "La estrella de las Grutas del Subsuelo exige cien variantes de estatuas; no usa las cincuenta banderas de los originales. Mew, Jirachi y Arceus dependen de tener partidas de otros juegos en la consola.",
 "steps": [
-"Para la Pokédex Nacional, registra como vistos los 150 Pokémon de Sinnoh que no son Manaphy y habla con el Profesor Serbal en Pueblo Arena: el Profesor Oak te da la Nacional y desde entonces puedes usar el Pokéradar. Ver especies basta para este desbloqueo, pero los premios de la Nacional exigen capturarlas, y un singular excluido no sustituye a una especie normal que falte.",
+"Para la Pokédex Nacional, registra como vistos los 150 Pokémon de Sinnoh que no son Manaphy y habla con el Profesor Serbal en Pueblo Arena: el Profesor Oak te da la Nacional y desde entonces puedes usar el Poké Radar. Ver especies basta para este desbloqueo, pero los premios de la Nacional exigen capturarlas, y un singular excluido no sustituye a una especie normal que falte.",
 "Entra en las Grutas del Subsuelo con el Kit de Explorador de Ciudad Vetusta, pulsa R para ver los puntos de excavación y pica las paredes que brillan con el pico y el martillo (evita las barras de hierro): salen fósiles, Esquirlas Extrañas y cajas con estatuas.",
 "Crea tu Base Secreta con un Taladro (se venden en las Grutas del Subsuelo y sirven también para moverla) y coloca hasta 18 estatuas: aumentan las apariciones de su tipo en las guaridas Pokémon. Las estatuas colocadas y las variantes obtenidas son contadores distintos.",
 "Reúne 100 variantes de estatua distintas para la estrella de la ficha de entrenador; las estatuas de color cuentan aparte de las normales. No se piden las cincuenta banderas de los originales de DS.",
@@ -631,7 +631,7 @@
 "Al salir del mirador tu rival te reta a tu primer combate. Después Bel te enseña el Centro Pokémon y te regala 10 Poké Balls; tu madre y la hermana del rival te dan las Deportivas y el Mapa, más otro mapa para tu rival.",
 "Cruza la Ruta 19 (el guardia del acceso te da una Poción y Bel te enseña a capturar); al final Mirto te pide que vayas a su casa, al norte de Pueblo Ocre.",
 "En Pueblo Ocre Mirto te manda al Rancho Ocre (Ruta 20) a llevarle el mapa a tu rival; vence a tu rival y busca en el noreste del rancho el Herdier de los criadores: lo tiene un recluta del Equipo Plasma, que te lo entrega junto con la MT21 (Frustración).",
-"Vuelve a casa de Mirto y vence a los dos niños que combaten con monos; al salir Don Insignio te entrega la Caja de Insignias y tu primera insignia.",
+"Vuelve a casa de Mirto y vence a los dos niños que combaten con monos; al salir Don Insignio te entrega la Caja Insignias y tu primera insignia.",
 "Regresa a Ciudad Engobe y vence a Cheren (tipo Normal) en la Escuela de Entrenadores: recibes la Medalla Base y la MT83 (Avivar). Un tipo Lucha como Riolu (Ruta 19, Rancho Ocre) facilita el combate."
 ]
 },
@@ -739,22 +739,22 @@
 ]
 },
 "BLACK2-11": {
-"caution": "Insignias (255, Caja de Insignias) y ficha de entrenador (cinco logros) son registros distintos: tener muchas insignias no cambia el color de la ficha, y cumplir una Pokédex no significa que ya hayas recogido su premio.",
+"caution": "Insignias (255, Caja Insignias) y ficha de entrenador (cinco logros) son registros distintos: tener muchas insignias no cambia el color de la ficha, y cumplir una Pokédex no significa que ya hayas recogido su premio.",
 "steps": [
 "Pokédex Nacional: exige 636 especies, toda la Nacional menos Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta y Genesect (Lugia y Ho-Oh sí cuentan). Compara especie a especie: una especie excluida no sustituye a una exigida.",
 "Pokédex de Teselia: con los 297 Pokémon vistos (sin Victini, Keldeo, Meloetta ni Genesect), la Profesora Encina, en su laboratorio de Pueblo Arcilla, te da el Permiso para la Reserva Natural; con todos capturados, el Amuleto Oval. Son dos premios distintos y hay que recogerlos hablando con ella.",
 "Con la Nacional capturada, habla con Carrasco Encina en Pueblo Arcilla: te dice que su hija tiene un regalo y la Profesora Encina te entrega el Amuleto Iris. El Director del Juego de la Torre de Game Freak (planta 21) te da los diplomas.",
 "Ficha de entrenador: cambia de color (azul, morado, naranja, plata, oro y último color) con cinco logros independientes: superar la Liga, completar la Pokédex Nacional, rodar todas las películas de Pokéwood, ganar el Torneo Campeones del PWT y llevar el Nexárbol a nivel 30 o más en negro y en blanco (cada nivel por separado, no la suma).",
 "Sube el Nexárbol con las Misiones Festival de la Zona Nexo (C-Gear); se pueden hacer solo o con otros jugadores por conexión local.",
-"Insignias: cada vez que ganes una, habla con Don Insignio en cualquier Centro Pokémon para recogerla; las Insignias Pista de la Caja de Insignias te dicen lo que falta y los rangos se recogen en el Insigniárium, planta 1 del edificio más al oeste de Ciudad Porcelana.",
+"Insignias: cada vez que ganes una, habla con Don Insignio en cualquier Centro Pokémon para recogerla; las Insignias Pista de la Caja Insignias te dicen lo que falta y los rangos se recogen en el Insigniárium, planta 1 del edificio más al oeste de Ciudad Porcelana.",
 "Con Pokekeep: lo que solo se conseguía con Blanco 2, con la RAdar Pokémon de 3DS o con eventos cerrados, añádelo legal desde la Librería para completar las Pokédex."
 ]
 },
 "BLACK2-E01": {
 "caution": "La ficha de entrenador tiene cinco logros propios: completar las 255 insignias no la cambia de color.",
 "steps": [
-"Don Insignio te da la Caja de Insignias en Pueblo Ocre al salir de casa de Mirto; después aparece en los Centros Pokémon para entregarte cada insignia nueva.",
-"Hay 255 insignias en cinco categorías: Especial, Aventura, Combate, Diversión y Desafío. Desde el menú, la Caja de Insignias te deja ver las conseguidas y las Insignias Pista dan indicaciones de las que faltan.",
+"Don Insignio te da la Caja Insignias en Pueblo Ocre al salir de casa de Mirto; después aparece en los Centros Pokémon para entregarte cada insignia nueva.",
+"Hay 255 insignias en cinco categorías: Especial, Aventura, Combate, Diversión y Desafío. Desde el menú, la Caja Insignias te deja ver las conseguidas y las Insignias Pista dan indicaciones de las que faltan.",
 "Aventura: pasos por Teselia, Bici, Supercaña, capturas por tipo de la Pokédex de Teselia, cajas del PC llenas, Zona Nexo… Combate: Metro Batalla, PWT, las 10 zonas del rascacielos y ganar la Liga con equipos de un solo tipo. Diversión: Pokéwood, Galería Unión, minijuegos del Videomisor y Misiones Festival.",
 "Ve a recoger rangos al Insigniárium (planta 1 del edificio más al oeste de Ciudad Porcelana): Aspirante con 50, Profesional con 100, Maestría con 150 y Leyenda con 200.",
 "Las insignias de intercambio, combates inalámbricos y Misiones Festival se pueden sacar hoy con otra consola por conexión local; las que exigían la Conexión Wi-Fi de Nintendo (cerrada el 20 de mayo de 2014), Pokémon Global Link o la RAdar Pokémon ya no se pueden ganar jugando.",
@@ -806,8 +806,8 @@
 "Tras la Liga, ve registrando como vistos los Pokémon de la Pokédex de Teselia de esta edición: hacen falta 297; Victini, Keldeo, Meloetta y Genesect no cuentan.",
 "Ve al laboratorio de la Profesora Encina en Pueblo Arcilla y pídele que evalúe la Pokédex: te entrega el Permiso para la Reserva Natural. Tener los 297 vistos no basta; hay que recogerlo.",
 "Ve al aeropuerto de Ciudad Loza y vuela a la Reserva Natural. Para volver usa el avión: la reserva está fuera del mapa de Teselia.",
-"Lleva Falso Tortazo y Ultra Balls y guarda antes: en la Reserva Natural hay un único Haxorus variocolor de nivel 60. Un Haxorus variocolor criado o intercambiado no cuenta como este encuentro.",
-"Aprovecha para capturar Pokémon de nivel 56-67 (Nuzleaf, Altaria, Girafarig, Golduck, Noctowl, Fraxure y Kecleon; Audino, Dunsparce y Shiftry en la hierba que se mueve; Basculin, Buizel y Floatzel en el agua) y recoger la Maxipepita (hierba oscura) y el Caramelo Raro (sobre la cascada)."
+"Lleva Falsotortazo y Ultraballs y guarda antes: en la Reserva Natural hay un único Haxorus variocolor de nivel 60. Un Haxorus variocolor criado o intercambiado no cuenta como este encuentro.",
+"Aprovecha para capturar Pokémon de nivel 56-67 (Nuzleaf, Altaria, Girafarig, Golduck, Noctowl, Fraxure y Kecleon; Audino, Dunsparce y Shiftry en la hierba que se mueve; Basculin, Buizel y Floatzel en el agua) y recoger la Maxipepita (hierba oscura) y el Carameloraro (sobre la cascada)."
 ]
 },
 "BLUE-01": {
@@ -837,8 +837,8 @@
 "steps": [
 "Cruza la Ruta 3 (muchos entrenadores) hasta el Centro Pokémon de la entrada del Monte Moon. Dentro, un hombre te vende un Magikarp de nivel 5 por 500 ₽ (solo una vez).",
 "Entra en el Monte Moon y recorre la planta baja y los sótanos; recoge la MT01 (Megapuño) y las Piedras Lunares (una en la esquina superior izquierda de la planta baja y otra oculta en el sótano 2, cerca de los fósiles).",
-"En el sótano 2 vence a los reclutas del Team Rocket y al Supernecio que custodia dos fósiles.",
-"Elige el Fósil Hélix (revive como Omanyte) o el Fósil Domo (revive como Kabuto); el Supernecio se queda el otro.",
+"En el sótano 2 vence a los reclutas del Team Rocket y al Súper Necio que custodia dos fósiles.",
+"Elige el Fósil Hélix (revive como Omanyte) o el Fósil Domo (revive como Kabuto); el Súper Necio se queda el otro.",
 "Sal por la salida este hacia la Ruta 4 y sigue al este hasta Ciudad Celeste.",
 "Con Pokekeep: el fósil que no escojas (Omanyte/Omastar o Kabuto/Kabutops) solo se consigue por intercambio; añádelo legal desde la Librería."
 ]
@@ -930,7 +930,7 @@
 "En la 5.ª planta recoge la Llave Magnética: abre las puertas cerradas del edificio.",
 "Ve a la 3.ª planta y, abriendo puertas con la Llave Magnética, llega al teletransportador que lleva a la 7.ª planta: apareces en la sala donde espera tu rival. En esa misma sala un empleado de Silph te regala un Lapras de nivel 15.",
 "En la 7.ª planta vence a tu rival y usa el teletransportador que hay a su lado: lleva a la planta 11. Vence a Giovanni; el presidente de Silph te da la Master Ball.",
-"Antes del gimnasio, vence a los karatecas del Dojo Karate (junto al gimnasio) y elige Hitmonlee o Hitmonchan (nivel 30).",
+"Antes del gimnasio, vence a los karatecas del Dojo-Karate (junto al gimnasio) y elige Hitmonlee o Hitmonchan (nivel 30).",
 "Gimnasio de Ciudad Azafrán (salas de teletransportadores): en la sala de entrada pisa el único teletransportador (arriba a la derecha) → sala sureste: el de arriba a la izquierda → sala noreste: el de abajo a la izquierda → sala noroeste: el de abajo a la izquierda → sala central, la de Sabrina.",
 "Vence a Sabrina (Kadabra nv. 38, Mr. Mime nv. 37, Venomoth nv. 38 y Alakazam nv. 43; los Psíquicos son débiles a Bicho; en esta generación los ataques Fantasma no les afectan). Recibe la Medalla Pantano y la MT46 (Psicoonda)."
 ]
@@ -970,7 +970,7 @@
 "BLUE-15": {
 "caution": "Cada legendario es un encuentro único. El Mew del famoso fallo del anciano no es legal: el único Mew válido es el de evento.",
 "steps": [
-"Zapdos (nv. 50): desde el Centro Pokémon de la Ruta 10, haz Surf por el canal hacia el sur hasta la Central de Energía; está al fondo. Las Poké Balls del suelo pueden ser Voltorb (nv. 40) o Electrode (nv. 43).",
+"Zapdos (nv. 50): desde el Centro Pokémon de la Ruta 10, haz Surf por el canal hacia el sur hasta la Central Energía; está al fondo. Las Poké Balls del suelo pueden ser Voltorb (nv. 40) o Electrode (nv. 43).",
 "Articuno (nv. 50): en las Islas Espuma (Ruta 20) empuja con Fuerza dos rocas por los agujeros de cada planta hasta que caigan al sótano 3 y al 4 y frenen las corrientes; después haz Surf hasta Articuno, en el sótano 4.",
 "Moltres (nv. 50): en la 2.ª planta de la Calle Victoria, camino de la Liga.",
 "Mewtwo (nv. 70): tras el Hall de la Fama, haz Surf desde la Ruta 24 por el río del oeste de Ciudad Celeste hasta la cueva (en el juego, Mazmorra Rara); está en el sótano.",
@@ -983,7 +983,7 @@
 "steps": [
 "Captura las exclusivas de tu edición (Sandshrew, Sandslash, Vulpix, Ninetales, Meowth, Persian, Bellsprout, Weepinbell, Victreebel, Pinsir y Magmar) y consigue por intercambio las de Rojo: Ekans, Arbok, Oddish, Gloom, Vileplume, Mankey, Primeape, Growlithe, Arcanine, Scyther y Electabuzz.",
 "Haz los intercambios del juego: Abra por Mr. Mime (casa de la Ruta 2), Nidorino por Nidorina (puesto de la Ruta 11, planta de arriba), Spearow por Farfetch'd (casa de Ciudad Carmín), Poliwhirl por Jynx (casa de Ciudad Celeste), Nidoran♂ por Nidoran♀ (Vía Subterránea, entrada de la Ruta 5), Slowbro por Lickitung (puesto de la Ruta 18, planta de arriba), y en el laboratorio de Isla Canela Ponyta por Seel, Raichu por Electrode y Venonat por Tangela.",
-"Recoge los regalos únicos: Magikarp (Centro Pokémon del Monte Moon, 500 ₽), Eevee (azotea del Edificio Azulona), Lapras (Silph S. A., 7.ª planta), Hitmonlee o Hitmonchan (Dojo Karate), tu fósil y el Ámbar Viejo (Aerodactyl).",
+"Recoge los regalos únicos: Magikarp (Centro Pokémon del Monte Moon, 500 ₽), Eevee (azotea del Edificio Azulona), Lapras (Silph S. A., 7.ª planta), Hitmonlee o Hitmonchan (Dojo-Karate), tu fósil y el Ámbar Viejo (Aerodactyl).",
 "Canjea en la tienda de premios, junto al Casino Rocket, los Pokémon de fichas: Abra (120 fichas, nv. 6), Clefairy (750, nv. 12), Nidorino (1200, nv. 17), Pinsir (2500, nv. 20), Dratini (4600, nv. 24) y Porygon (6500, nv. 18).",
 "Kadabra, Machoke, Graveler y Haunter solo evolucionan (Alakazam, Machamp, Golem y Gengar) al intercambiarlos con otra consola.",
 "Ve recogiendo los premios de los ayudantes de Oak: MO05 Destello (casa de la Ruta 2, 10 especies capturadas), Buscaobjetos (puesto de la Ruta 11, planta de arriba, 30 especies) y Repartir Exp (puesto de la Ruta 15, planta de arriba, 50 especies).",
@@ -994,7 +994,7 @@
 "BLUE-DETAIL1": {
 "caution": "Si debilitas a un legendario no vuelve a aparecer. Comprueba en la Pokédex que cada uno figura como capturado.",
 "steps": [
-"Zapdos (nv. 50) — Central de Energía: con Surf, desde el Centro Pokémon de la Ruta 10 sigue el canal hacia el sur; Zapdos está al fondo del edificio.",
+"Zapdos (nv. 50) — Central Energía: con Surf, desde el Centro Pokémon de la Ruta 10 sigue el canal hacia el sur; Zapdos está al fondo del edificio.",
 "Articuno (nv. 50) — Islas Espuma (Ruta 20): con Fuerza, tira dos rocas por los agujeros en cada planta; cuando caen las del sótano 2 al 3 y las del sótano 3 al 4 se frenan las corrientes y puedes hacer Surf hasta Articuno en el sótano 4.",
 "Moltres (nv. 50) — Calle Victoria, 2.ª planta: llega moviendo con Fuerza las rocas sobre los interruptores.",
 "Mewtwo (nv. 70) — tras el Hall de la Fama, el hombre que bloqueaba la cueva del noroeste de Ciudad Celeste se aparta: haz Surf desde la Ruta 24 por el río del oeste, entra y baja hasta el sótano.",
@@ -1020,7 +1020,7 @@
 "Desde Ciudad Cerezo sube por la Ruta 30 y la Ruta 31 hasta Ciudad Malva.",
 "(Recomendado) Entra en la Torre Bellsprout, al norte de la ciudad, sube a la última planta y vence al sabio mayor: te da la MO05 Destello.",
 "Prepara Pokémon de tipo Eléctrico, Roca o Hielo y entra en el gimnasio de Ciudad Malva: Pegaso usa Pokémon de tipo Volador.",
-"Vence a Pegaso: recibes la Medalla Céfiro (permite usar Destello fuera de combate) y la MT31 Bofetón Lodo.",
+"Vence a Pegaso: recibes la Medalla Céfiro (permite usar Destello fuera de combate) y la MT31 Bofetón-lodo.",
 "El Profesor Elm te llama al Pokégear: ve al Centro Pokémon de Ciudad Malva, donde te espera su ayudante, y acepta el Huevo que te ofrece (necesitas un hueco libre en el equipo).",
 "Lleva el Huevo en el equipo mientras caminas hasta que eclosione: es un Togepi. Enséñaselo después a Elm en su laboratorio y te regala una Piedra Eterna."
 ]
@@ -1032,7 +1032,7 @@
 "Cruza la Cueva Unión y la Ruta 33 hasta Pueblo Azalea: un soldado del Team Rocket bloquea la puerta del gimnasio.",
 "Habla con César, el artesano de Poké Balls, en su casa (al norte del pueblo): sale corriendo al Pozo Slowpoke. Síguelo y entra en el pozo.",
 "Dentro del pozo vence a los cuatro miembros del Team Rocket (el último, el más fuerte, tiene un Pokémon de nivel 14). Al terminar, César te lleva a su casa y te regala una Cebo Ball.",
-"Entra en el gimnasio (ya no hay nadie en la puerta) y vence a Antón, especialista en tipo Bicho (su Scyther de nivel 16 es el más peligroso): usa Pokémon de tipo Fuego, Volador o Roca. Recibes la Medalla Colmena (permite usar Corte fuera de combate) y la MT49 Corte Furia.",
+"Entra en el gimnasio (ya no hay nadie en la puerta) y vence a Antón, especialista en tipo Bicho (su Scyther de nivel 16 es el más peligroso): usa Pokémon de tipo Fuego, Volador o Roca. Recibes la Medalla Colmena (permite usar Corte fuera de combate) y la MT49 Cortefuria.",
 "Al salir del gimnasio tu rival te reta. Después entra en el Encinar, al oeste del pueblo.",
 "En el Encinar el aprendiz del carbonero ha perdido a su Farfetch'd: acércate al Farfetch'd por detrás para que se mueva en la dirección contraria y guíalo así hasta el aprendiz. Su maestro te da la MO01 Corte; un chico del bosque te da además la MT02 Golpe Cabeza.",
 "Usa Corte en el arbusto que bloquea la salida norte del Encinar para llegar a la Ruta 34."
@@ -1111,26 +1111,26 @@
 ]
 },
 "CRYSTAL-10": {
-"caution": "No todos los gimnasios de Kanto están disponibles al llegar: Misty no está hasta resolver lo de la Central de Energía, Azul no abre el de Ciudad Verde hasta que lo encuentras en Isla Canela y a Ciudad Plateada se llega por la Cueva Diglett tras despertar al Snorlax.",
+"caution": "No todos los gimnasios de Kanto están disponibles al llegar: Misty no está hasta resolver lo de la Central Energía, Azul no abre el de Ciudad Verde hasta que lo encuentras en Isla Canela y a Ciudad Plateada se llega por la Cueva Diglett tras despertar al Snorlax.",
 "steps": [
 "Con el Ticket Barco ve al puerto de Ciudad Olivo: el primer viaje del S.S. Aqua sale cualquier día; después zarpa de Olivo los lunes y viernes y de Ciudad Carmín los miércoles y domingos.",
 "Durante el viaje, un anciano te pide que busques a su nieta: encuéntrala en el camarote del capitán y llévasela; él te regala un Revestimiento Metálico. Al terminar, el barco atraca en Ciudad Carmín.",
 "En Ciudad Carmín ya puedes retar a Lt. Surge; al este, un Snorlax dormido bloquea la entrada de la Cueva Diglett.",
 "Sube por la Ruta 6 hasta Ciudad Azafrán: el Magnetotrén no funciona y Sabrina ya acepta combates.",
-"Ve a la Central de Energía (Ruta 10, al norte de Pueblo Lavanda o por la Ruta 9 desde Ciudad Celeste) y habla con el director: alguien ha robado una pieza de la máquina."
+"Ve a la Central Energía (Ruta 10, al norte de Pueblo Lavanda o por la Ruta 9 desde Ciudad Celeste) y habla con el director: alguien ha robado una pieza de la máquina."
 ]
 },
 "CRYSTAL-11": {
 "caution": "El Club de Fans solo te da el Objeto Perdido después de haber hablado con la Copiona y de haber devuelto la Maquinaria: hazlo en ese orden.",
 "steps": [
-"En la Central de Energía (Ruta 10) habla con el director: le han robado la Maquinaria del generador.",
+"En la Central Energía (Ruta 10) habla con el director: le han robado la Maquinaria del generador.",
 "Ve a Ciudad Celeste y entra en el gimnasio vacío: un soldado del Team Rocket sale huyendo.",
 "Sube por la Ruta 24 (el Puente Pepita, al norte de la ciudad), vence al soldado y te confiesa que escondió la pieza en el gimnasio.",
 "Vuelve al gimnasio de Ciudad Celeste y examina el agua de la piscina (es un objeto oculto; el Buscaobjetos ayuda): recoges la Maquinaria.",
-"Llévasela al director de la Central de Energía: te da la MT07 Electrocañón y vuelven a funcionar el Magnetotrén y la Torre Radio de Pueblo Lavanda.",
+"Llévasela al director de la Central Energía: te da la MT07 Electrocañón y vuelven a funcionar el Magnetotrén y la Torre Radio de Pueblo Lavanda.",
 "En la Torre Radio de Pueblo Lavanda te dan la Tarjeta Expansión para escuchar las emisoras de Kanto (incluida la Poké Flauta, que despierta al Snorlax de Ciudad Carmín).",
 "Sigue por la Ruta 25 hasta el Cabo Celeste: Misty está allí con su novio y vuelve al gimnasio de Ciudad Celeste.",
-"Para el Pase: en Ciudad Azafrán habla con la Copiona (en la planta de arriba de su casa); en el Club de Fans de Ciudad Carmín un socio te da el Objeto Perdido (el Pokémuñeco); devuélveselo a la Copiona y te da el Pase del Magnetotrén (une Ciudad Azafrán y Ciudad Trigal)."
+"Para el Pase: en Ciudad Azafrán habla con la Copiona (en la planta de arriba de su casa); en el Club de Fans de Ciudad Carmín un socio te da el Objeto Perdido (el Poké Muñeco); devuélveselo a la Copiona y te da el Pase (une Ciudad Azafrán y Ciudad Trigal)."
 ]
 },
 "CRYSTAL-12": {
@@ -1508,7 +1508,7 @@
 "Regirock, Ruinas del Desierto (sur del desierto de la Ruta 111, con Gafas aislantes): lee la pared («izquierda, izquierda, abajo, abajo», usa Golpe roca), da dos pasos a la izquierda y dos hacia abajo desde la inscripción y usa Golpe roca; se abre la sala de Regirock.",
 "Regice, Cueva Insular (islote del noroeste de la Ruta 105, con Surf): lee la pared («Ponte junto al muro. Da una vuelta completa») y recorre toda la sala pegado a las paredes sin separarte de ellas hasta volver al principio; si te separas, vuelve a leer la inscripción y empieza de nuevo.",
 "Registeel, Tumba Antigua (oeste de la Ruta 120): lee la pared («Quién desee lo que nosotros, que brille en el centro»), colócate en el centro exacto de la sala y usa Destello.",
-"Los tres están a nivel 40 y solo hay uno de cada: guarda antes de cada combate y lleva Ultra Balls y algo para dormirlos o paralizarlos."
+"Los tres están a nivel 40 y solo hay uno de cada: guarda antes de cada combate y lleva Ultraballs y algo para dormirlos o paralizarlos."
 ]
 },
 "EMERALD-DETAIL2": {
@@ -1615,7 +1615,7 @@
 ]
 },
 "FIRERED-09": {
-"caution": "Solo hay dos Snorlax (rutas 12 y 16) y no reaparecen si los debilitas o huyes: guarda antes de tocar la flauta y lleva Ultra Balls.",
+"caution": "Solo hay dos Snorlax (rutas 12 y 16) y no reaparecen si los debilitas o huyes: guarda antes de tocar la flauta y lleva Ultraballs.",
 "steps": [
 "Vuelve a Pueblo Lavanda con el Scope Silph y sube a la Torre Pokémon venciendo a los médiums (en la cuarta planta hay un círculo que cura a tu equipo).",
 "Antes de la escalera de la sexta planta te ataca un fantasma: con el Scope Silph se ve que es el espíritu de la madre de Cubone (un Marowak que no se puede capturar). Vence al fantasma para que descanse.",
@@ -1647,7 +1647,7 @@
 "Gimnasio de Sabrina: todas las salas tienen teletransportadores en las esquinas. Pisa el único de la entrada y, en las cuatro salas siguientes, elige por orden la esquina superior derecha → inferior derecha → inferior izquierda → inferior izquierda; llegarás a la sala de Sabrina. (También sirve inferior izquierda → inferior izquierda → superior derecha → inferior izquierda.)",
 "Vence a la líder Sabrina (tipo Psíquico: Kadabra, Mr. Mime, Venomoth y Alakazam): recibes la Medalla Pantano, la MT04 Paz mental y el permiso para usar Golpe roca fuera de combate.",
 "Para salir, pisa el único teletransportador de la sala de Sabrina y luego las esquinas inferior derecha → superior izquierda → superior derecha → inferior derecha: vuelves a la entrada del gimnasio.",
-"El Dojo Karate de Azafrán es un reto aparte: vence a los karatekas y a su maestro y elige como premio a Hitmonlee o a Hitmonchan. No da la Medalla Pantano ni sustituye a Sabrina."
+"El Dojo-Karate de Azafrán es un reto aparte: vence a los karatekas y a su maestro y elige como premio a Hitmonlee o a Hitmonchan. No da la Medalla Pantano ni sustituye a Sabrina."
 ]
 },
 "FIRERED-12": {
@@ -1699,7 +1699,7 @@
 "FIRERED-16": {
 "caution": "Los objetos ya gastados pueden no seguir en la mochila. Ninguna estrella exige un evento caducado: las especies de evento están excluidas de los recuentos.",
 "steps": [
-"Regalos únicos: Eevee en la habitación de la azotea de la Mansión Azulona (entrada trasera), Lapras en la séptima planta de Silph S.A. y Hitmonlee o Hitmonchan en el Dojo Karate de Azafrán. Los otros iniciales y el Hitmon que no elijas necesitan intercambio u otra partida.",
+"Regalos únicos: Eevee en la habitación de la azotea de la Mansión Azulona (entrada trasera), Lapras en la séptima planta de Silph S.A. y Hitmonlee o Hitmonchan en el Dojo-Karate de Azafrán. Los otros iniciales y el Hitmon que no elijas necesitan intercambio u otra partida.",
 "Recoge el Ámbar viejo por la entrada trasera del Museo de la Ciencia de Ciudad Plateada (con Corte) y revívelo, junto al fósil del Mt. Moon, en el laboratorio de Isla Canela.",
 "Los ayudantes del Profesor Oak premian las especies capturadas, pero hay que visitar a cada uno: 10 → MO05 Destello (caseta de la Ruta 2), 20 → Piedra eterna (Centro Pokémon de la Ruta 10), 30 → Buscaobjetos (caseta este de la Ruta 11), 40 → Moneda amuleto (caseta norte de la Ruta 16) y 50 → Repartir experiencia (caseta oeste de la Ruta 15).",
 "Si una evolución hacia una especie de otra región no se produce (por ejemplo Golbat a Crobat), consigue antes la Pokédex Nacional: hasta entonces el juego bloquea esas evoluciones.",
@@ -1750,7 +1750,7 @@
 "Desde Ciudad Cerezo sube por la Ruta 30 y la Ruta 31 hasta Ciudad Malva.",
 "(Recomendado) Entra en la Torre Bellsprout, al norte de la ciudad, sube a la última planta y vence al sabio mayor: te da la MO05 Destello.",
 "Prepara Pokémon de tipo Eléctrico, Roca o Hielo y entra en el gimnasio de Ciudad Malva: Pegaso usa Pokémon de tipo Volador.",
-"Vence a Pegaso: recibes la Medalla Céfiro (permite usar Destello fuera de combate) y la MT31 Bofetón Lodo.",
+"Vence a Pegaso: recibes la Medalla Céfiro (permite usar Destello fuera de combate) y la MT31 Bofetón-lodo.",
 "El Profesor Elm te llama al Pokégear: ve al Centro Pokémon de Ciudad Malva, donde te espera su ayudante, y acepta el Huevo que te ofrece (necesitas un hueco libre en el equipo).",
 "Lleva el Huevo en el equipo mientras caminas hasta que eclosione: es un Togepi. Enséñaselo después a Elm en su laboratorio y te regala una Piedra Eterna."
 ]
@@ -1762,7 +1762,7 @@
 "Cruza la Cueva Unión y la Ruta 33 hasta Pueblo Azalea: un soldado del Team Rocket bloquea la puerta del gimnasio.",
 "Habla con César, el artesano de Poké Balls, en su casa (al norte del pueblo): sale corriendo al Pozo Slowpoke. Síguelo y entra en el pozo.",
 "Dentro del pozo vence a los cuatro miembros del Team Rocket (el último, el más fuerte, tiene un Pokémon de nivel 14). Al terminar, César te lleva a su casa y te regala una Cebo Ball.",
-"Entra en el gimnasio (ya no hay nadie en la puerta) y vence a Antón, especialista en tipo Bicho (su Scyther de nivel 16 es el más peligroso): usa Pokémon de tipo Fuego, Volador o Roca. Recibes la Medalla Colmena (permite usar Corte fuera de combate) y la MT49 Corte Furia.",
+"Entra en el gimnasio (ya no hay nadie en la puerta) y vence a Antón, especialista en tipo Bicho (su Scyther de nivel 16 es el más peligroso): usa Pokémon de tipo Fuego, Volador o Roca. Recibes la Medalla Colmena (permite usar Corte fuera de combate) y la MT49 Cortefuria.",
 "Al salir del gimnasio tu rival te reta. Después entra en el Encinar, al oeste del pueblo.",
 "En el Encinar el aprendiz del carbonero ha perdido a su Farfetch'd: acércate al Farfetch'd por detrás para que se mueva en la dirección contraria y guíalo así hasta el aprendiz. Su maestro te da la MO01 Corte; un chico del bosque te da además la MT02 Golpe Cabeza.",
 "Usa Corte en el arbusto que bloquea la salida norte del Encinar para llegar a la Ruta 34."
@@ -1841,26 +1841,26 @@
 ]
 },
 "GOLD-10": {
-"caution": "No todos los gimnasios de Kanto están disponibles al llegar: Misty no está hasta resolver lo de la Central de Energía, Azul no abre el de Ciudad Verde hasta que lo encuentras en Isla Canela y a Ciudad Plateada se llega por la Cueva Diglett tras despertar al Snorlax.",
+"caution": "No todos los gimnasios de Kanto están disponibles al llegar: Misty no está hasta resolver lo de la Central Energía, Azul no abre el de Ciudad Verde hasta que lo encuentras en Isla Canela y a Ciudad Plateada se llega por la Cueva Diglett tras despertar al Snorlax.",
 "steps": [
 "Con el Ticket Barco ve al puerto de Ciudad Olivo: el primer viaje del S.S. Aqua sale cualquier día; después zarpa de Olivo los lunes y viernes y de Ciudad Carmín los miércoles y domingos.",
 "Durante el viaje, un anciano te pide que busques a su nieta: encuéntrala en el camarote del capitán y llévasela; él te regala un Revestimiento Metálico. Al terminar, el barco atraca en Ciudad Carmín.",
 "En Ciudad Carmín ya puedes retar a Lt. Surge; al este, un Snorlax dormido bloquea la entrada de la Cueva Diglett.",
 "Sube por la Ruta 6 hasta Ciudad Azafrán: el Magnetotrén no funciona y Sabrina ya acepta combates.",
-"Ve a la Central de Energía (Ruta 10, al norte de Pueblo Lavanda o por la Ruta 9 desde Ciudad Celeste) y habla con el director: alguien ha robado una pieza de la máquina."
+"Ve a la Central Energía (Ruta 10, al norte de Pueblo Lavanda o por la Ruta 9 desde Ciudad Celeste) y habla con el director: alguien ha robado una pieza de la máquina."
 ]
 },
 "GOLD-11": {
 "caution": "El Club de Fans solo te da el Objeto Perdido después de haber hablado con la Copiona y de haber devuelto la Maquinaria: hazlo en ese orden.",
 "steps": [
-"En la Central de Energía (Ruta 10) habla con el director: le han robado la Maquinaria del generador.",
+"En la Central Energía (Ruta 10) habla con el director: le han robado la Maquinaria del generador.",
 "Ve a Ciudad Celeste y entra en el gimnasio vacío: un soldado del Team Rocket sale huyendo.",
 "Sube por la Ruta 24 (el Puente Pepita, al norte de la ciudad), vence al soldado y te confiesa que escondió la pieza en el gimnasio.",
 "Vuelve al gimnasio de Ciudad Celeste y examina el agua de la piscina (es un objeto oculto; el Buscaobjetos ayuda): recoges la Maquinaria.",
-"Llévasela al director de la Central de Energía: te da la MT07 Electrocañón y vuelven a funcionar el Magnetotrén y la Torre Radio de Pueblo Lavanda.",
+"Llévasela al director de la Central Energía: te da la MT07 Electrocañón y vuelven a funcionar el Magnetotrén y la Torre Radio de Pueblo Lavanda.",
 "En la Torre Radio de Pueblo Lavanda te dan la Tarjeta Expansión para escuchar las emisoras de Kanto (incluida la Poké Flauta, que despierta al Snorlax de Ciudad Carmín).",
 "Sigue por la Ruta 25 hasta el Cabo Celeste: Misty está allí con su novio y vuelve al gimnasio de Ciudad Celeste.",
-"Para el Pase: en Ciudad Azafrán habla con la Copiona (en la planta de arriba de su casa); en el Club de Fans de Ciudad Carmín un socio te da el Objeto Perdido (el Pokémuñeco); devuélveselo a la Copiona y te da el Pase del Magnetotrén (une Ciudad Azafrán y Ciudad Trigal)."
+"Para el Pase: en Ciudad Azafrán habla con la Copiona (en la planta de arriba de su casa); en el Club de Fans de Ciudad Carmín un socio te da el Objeto Perdido (el Poké Muñeco); devuélveselo a la Copiona y te da el Pase (une Ciudad Azafrán y Ciudad Trigal)."
 ]
 },
 "GOLD-12": {
@@ -1936,8 +1936,8 @@
 "steps": [
 "Cruza la Ruta 3 (muchos entrenadores) hasta el Centro Pokémon de la entrada del Monte Moon. Dentro, un hombre te vende un Magikarp por 500 ₽ (solo una vez).",
 "Entra en el Monte Moon y recorre la planta baja y los sótanos; recoge la MT01 (Megapuño) y las Piedras Lunares (una en la esquina superior izquierda de la planta baja y otra oculta en el sótano 2, cerca de los fósiles).",
-"En el sótano 2 vence a los reclutas del Team Rocket y al Supernecio que custodia dos fósiles.",
-"Elige el Fósil Hélix (revive como Omanyte) o el Fósil Domo (revive como Kabuto); el Supernecio se queda el otro.",
+"En el sótano 2 vence a los reclutas del Team Rocket y al Súper Necio que custodia dos fósiles.",
+"Elige el Fósil Hélix (revive como Omanyte) o el Fósil Domo (revive como Kabuto); el Súper Necio se queda el otro.",
 "Sal por la salida este hacia la Ruta 4 y sigue al este hasta Ciudad Celeste.",
 "Con Pokekeep: el fósil que no escojas (Omanyte/Omastar o Kabuto/Kabutops) solo se consigue por intercambio; añádelo legal desde la Librería."
 ]
@@ -2029,7 +2029,7 @@
 "En la 5.ª planta recoge la Llave Magnética: abre las puertas cerradas del edificio.",
 "Ve a la 3.ª planta y, abriendo puertas con la Llave Magnética, llega al teletransportador que lleva a la 7.ª planta: apareces en la sala donde espera tu rival. En esa misma sala un empleado de Silph te regala un Lapras.",
 "En la 7.ª planta vence a tu rival y usa el teletransportador que hay a su lado: lleva a la planta 11. Vence a Giovanni; el presidente de Silph te da la Master Ball.",
-"Antes del gimnasio, vence a los karatecas del Dojo Karate (junto al gimnasio) y elige Hitmonlee o Hitmonchan.",
+"Antes del gimnasio, vence a los karatecas del Dojo-Karate (junto al gimnasio) y elige Hitmonlee o Hitmonchan.",
 "Gimnasio de Ciudad Azafrán (salas de teletransportadores): en la sala de entrada pisa el único teletransportador (arriba a la derecha) → sala sureste: el de arriba a la izquierda → sala noreste: el de abajo a la izquierda → sala noroeste: el de abajo a la izquierda → sala central, la de Sabrina.",
 "Vence a Sabrina (tipo Psíquico; son débiles a Bicho y en esta generación los ataques Fantasma no les afectan). Recibe la Medalla Pantano y la MT46 (Psicoonda)."
 ]
@@ -2069,7 +2069,7 @@
 "GREEN-15": {
 "caution": "Cada legendario es un encuentro único. El Mew del famoso fallo del anciano no es legal: el único Mew válido es el de evento.",
 "steps": [
-"Zapdos: desde el Centro Pokémon de la Ruta 10, haz Surf por el canal hacia el sur hasta la Central de Energía; está al fondo. Algunas Poké Balls del suelo son Voltorb o Electrode.",
+"Zapdos: desde el Centro Pokémon de la Ruta 10, haz Surf por el canal hacia el sur hasta la Central Energía; está al fondo. Algunas Poké Balls del suelo son Voltorb o Electrode.",
 "Articuno: en las Islas Espuma (Ruta 20) empuja con Fuerza dos rocas por los agujeros de cada planta hasta que caigan al sótano 3 y al 4 y frenen las corrientes; después haz Surf hasta Articuno, en el sótano 4.",
 "Moltres: en la 2.ª planta de la Calle Victoria, camino de la Liga.",
 "Mewtwo: tras el Hall de la Fama, haz Surf desde la Ruta 24 por el río del oeste de Ciudad Celeste hasta la cueva (en el juego, Mazmorra Rara); está en el sótano.",
@@ -2082,7 +2082,7 @@
 "steps": [
 "Captura las exclusivas de tu edición (Sandshrew, Sandslash, Vulpix, Ninetales, Meowth, Persian, Bellsprout, Weepinbell, Victreebel, Pinsir y Magmar) y consigue por intercambio las de Rojo: Ekans, Arbok, Oddish, Gloom, Vileplume, Mankey, Primeape, Growlithe, Arcanine, Scyther y Electabuzz.",
 "Haz los intercambios del juego: Abra por Mr. Mime (casa de la Ruta 2), Nidorino por Nidorina (puesto de la Ruta 11, planta de arriba), Spearow por Farfetch'd (casa de Ciudad Carmín), Poliwhirl por Jynx (casa de Ciudad Celeste), Nidoran♂ por Nidoran♀ (Vía Subterránea, entrada de la Ruta 5), Slowbro por Lickitung (puesto de la Ruta 18, planta de arriba), y en el laboratorio de Isla Canela Ponyta por Seel, Raichu por Electrode y Venonat por Tangela.",
-"Recoge los regalos únicos: Magikarp (Centro Pokémon del Monte Moon, 500 ₽), Eevee (azotea del Edificio Azulona), Lapras (Silph S. A., 7.ª planta), Hitmonlee o Hitmonchan (Dojo Karate), tu fósil y el Ámbar Viejo (Aerodactyl).",
+"Recoge los regalos únicos: Magikarp (Centro Pokémon del Monte Moon, 500 ₽), Eevee (azotea del Edificio Azulona), Lapras (Silph S. A., 7.ª planta), Hitmonlee o Hitmonchan (Dojo-Karate), tu fósil y el Ámbar Viejo (Aerodactyl).",
 "Porygon solo se consigue canjeando fichas en la tienda de premios que hay junto al Casino Rocket.",
 "Kadabra, Machoke, Graveler y Haunter solo evolucionan (Alakazam, Machamp, Golem y Gengar) al intercambiarlos con otra consola.",
 "Ve recogiendo los premios de los ayudantes de Oak: MO05 Destello (casa de la Ruta 2, 10 especies capturadas), Buscaobjetos (puesto de la Ruta 11, planta de arriba, 30 especies) y Repartir Exp (puesto de la Ruta 15, planta de arriba, 50 especies).",
@@ -2093,7 +2093,7 @@
 "GREEN-DETAIL1": {
 "caution": "Si debilitas a un legendario no vuelve a aparecer. Comprueba en la Pokédex que cada uno figura como capturado.",
 "steps": [
-"Zapdos — Central de Energía: con Surf, desde el Centro Pokémon de la Ruta 10 sigue el canal hacia el sur; Zapdos está al fondo del edificio.",
+"Zapdos — Central Energía: con Surf, desde el Centro Pokémon de la Ruta 10 sigue el canal hacia el sur; Zapdos está al fondo del edificio.",
 "Articuno — Islas Espuma (Ruta 20): con Fuerza, tira dos rocas por los agujeros en cada planta; cuando caen las del sótano 2 al 3 y las del sótano 3 al 4 se frenan las corrientes y puedes hacer Surf hasta Articuno en el sótano 4.",
 "Moltres — Calle Victoria, 2.ª planta: llega moviendo con Fuerza las rocas sobre los interruptores.",
 "Mewtwo — tras el Hall de la Fama, el hombre que bloqueaba la cueva del noroeste de Ciudad Celeste se aparta: haz Surf desde la Ruta 24 por el río del oeste, entra y baja hasta el sótano.",
@@ -2211,26 +2211,26 @@
 "Al desembarcar en Ciudad Carmín verás a Suicune y a Eusine en el puerto.",
 "Vence a Lt. Surge (tipo Eléctrico) en Ciudad Carmín: busca los dos interruptores escondidos en las papeleras para abrir las barreras. Recibes la medalla Trueno.",
 "Por la Ruta 6 llega a Ciudad Azafrán y vence a Sabrina (Psíquico; medalla Pantano); por la Ruta 7 llega a Ciudad Azulona y vence a Erika (Planta; medalla Arcoíris).",
-"En Ciudad Celeste el gimnasio está vacío: ve a la Central de Energía (siguiente misión)."
+"En Ciudad Celeste el gimnasio está vacío: ve a la Central Energía (siguiente misión)."
 ]
 },
 "HEARTGOLD-11": {
-"caution": "Sin la Maquinaria no funcionan el Magnetotrén ni la radio de Kanto, y sin la Pokéflauta no puedes despertar al Snorlax que bloquea la Cueva Diglett.",
+"caution": "Sin la Maquinaria no funcionan el Magnetotrén ni la radio de Kanto, y sin la Poké Flauta no puedes despertar al Snorlax que bloquea la Cueva Diglett.",
 "steps": [
-"Desde Ciudad Celeste ve por la Ruta 9 y haz Surf hacia el sur por el río de la Ruta 10 hasta la Central de Energía: el director ha perdido la Maquinaria.",
+"Desde Ciudad Celeste ve por la Ruta 9 y haz Surf hacia el sur por el río de la Ruta 10 hasta la Central Energía: el director ha perdido la Maquinaria.",
 "Vuelve al gimnasio de Ciudad Celeste, persigue al sospechoso hasta el puente al norte de la ciudad y vence a su Golbat: te dice dónde la escondió.",
 "Recoge la Maquinaria en el gimnasio Celeste, junto a los flotadores a la izquierda del escenario, y llévala a la Central: el director te da la MT57 Rayo carga.",
-"En la Torre Radio de Pueblo Lavanda actualizan tu Pokégear con la Expansión de radio, que incluye la Pokéflauta.",
+"En la Torre Radio de Pueblo Lavanda actualizan tu Pokégear con la Expansión de radio, que incluye la Poké Flauta.",
 "Busca el Poké Muñeco Clefairy en el Club de Fans de Pokémon de Ciudad Carmín y devuélveselo a la Copiona de Ciudad Azafrán: te da el Magnetopase para el Magnetotrén (Azafrán–Trigal).",
 "Ve al Cabo Celeste (Ruta 25, junto a la casa de Bill), interrumpe la cita de Misty y véncela en su gimnasio (Agua) con Eléctrico o Planta."
 ]
 },
 "HEARTGOLD-12": {
-"caution": "Los gimnasios de Kanto no se abren a la vez: la Pokéflauta necesita la Central de Energía arreglada y la Expansión de radio de Pueblo Lavanda, y Azul exige haber vencido antes a los otros siete líderes.",
+"caution": "Los gimnasios de Kanto no se abren a la vez: la Poké Flauta necesita la Central Energía arreglada y la Expansión de radio de Pueblo Lavanda, y Azul exige haber vencido antes a los otros siete líderes.",
 "steps": [
 "Empieza por Lt. Surge (Ciudad Carmín: el segundo interruptor está en una papelera junto a la del primero), Sabrina (Ciudad Azafrán: teletransportadores) y Erika (Ciudad Azulona: corta el árbol de la entrada y recorre el jardín).",
 "Vence a Misty en Ciudad Celeste cuando vuelva de su cita en la Ruta 25. En Ciudad Fucsia busca a Sachiko, la nueva líder (su padre Koga está ahora en el Alto Mando), entre los entrenadores disfrazados de ella y las paredes invisibles; usa Psíquico o Tierra.",
-"Para llegar al oeste por la Cueva Diglett, colócate junto al Snorlax dormido de la Ruta 11, abre la radio del Pokégear con la Expansión de radio y sube el dial hasta la Pokéflauta, en la parte de arriba; el Snorlax (nivel 50) despierta y ataca.",
+"Para llegar al oeste por la Cueva Diglett, colócate junto al Snorlax dormido de la Ruta 11, abre la radio del Pokégear con la Expansión de radio y sube el dial hasta la Poké Flauta, en la parte de arriba; el Snorlax (nivel 50) despierta y ataca.",
 "Cruza la Cueva Diglett y usa Corte en la Ruta 2 hasta Ciudad Plateada; vence a Brock (Roca) con Agua, Planta o Tierra.",
 "En Ciudad Plateada, a la derecha de la Tienda y en lo alto, el anciano de espaldas te da el Ala plateada (Lugia).",
 "En el Monte Moon vence a tu rival, que se va a entrenar a la Guarida Dragón; si vas allí, ganad juntos el combate doble contra Lance y Débora (abre sus revanchas).",
@@ -2259,7 +2259,7 @@
 "Raikou y Entei: tras la escena de la Torre Quemada vagan por las rutas de Johto; mira su posición en el mapa del Pokégear, entra en esa ruta y usa Mal de ojo o un ataque que impida huir (o la Master Ball).",
 "Suicune: sigue sus apariciones (Torre Quemada, norte de Ciudad Orquídea, Ruta 42, Ciudad Carmín, Ruta 14) y, tras vencer a Misty, combátelo en el Cabo Celeste (Ruta 25), nivel 40.",
 "Ho-Oh: en la historia, cima de la Torre Campana (nivel 45). Lugia: ya en Kanto, el anciano de Ciudad Plateada (a la derecha de la Tienda, en lo alto) te da el Ala plateada; ve a la sala más profunda de las Islas Remolino (Torbellino, Surf, Destello, Fuerza y Cascada), nivel 70.",
-"Aves: Articuno en lo más profundo de las Islas Espuma (nivel 50); Zapdos en la Ruta 10, junto a la puerta de la Central de Energía, tras las ocho medallas de Kanto; Moltres en la Cueva Monte Plateado, con Treparrocas.",
+"Aves: Articuno en lo más profundo de las Islas Espuma (nivel 50); Zapdos en la Ruta 10, junto a la puerta de la Central Energía, tras las ocho medallas de Kanto; Moltres en la Cueva Monte Plateado, con Treparrocas.",
 "Mewtwo: en la Cueva Celeste (al norte de Ciudad Celeste), con las 16 medallas; si lo debilitas o huyes, reaparece tras vencer de nuevo al Alto Mando.",
 "Kyogre y Rayquaza: Torre Oculta (Ruta 47), nivel 50 (ver «Rojo → Oak → Orbe azul → Kyogre»). Latias: con la Pokédex Nacional, habla con Máximo al salir del Club de Fans de Ciudad Carmín y búscala errante por las rutas de Kanto.",
 "Con Pokekeep: Groudon y Latios son de Plata SoulSilver; añádelos legales desde la Librería (para la Esfera verde el Groudon debe tener origen en Plata SoulSilver).",
@@ -2418,7 +2418,7 @@
 ]
 },
 "LEAFGREEN-09": {
-"caution": "Solo hay dos Snorlax (rutas 12 y 16) y no reaparecen si los debilitas o huyes: guarda antes de tocar la flauta y lleva Ultra Balls.",
+"caution": "Solo hay dos Snorlax (rutas 12 y 16) y no reaparecen si los debilitas o huyes: guarda antes de tocar la flauta y lleva Ultraballs.",
 "steps": [
 "Vuelve a Pueblo Lavanda con el Scope Silph y sube a la Torre Pokémon venciendo a los médiums (en la cuarta planta hay un círculo que cura a tu equipo).",
 "Antes de la escalera de la sexta planta te ataca un fantasma: con el Scope Silph se ve que es el espíritu de la madre de Cubone (un Marowak que no se puede capturar). Vence al fantasma para que descanse.",
@@ -2450,7 +2450,7 @@
 "Gimnasio de Sabrina: todas las salas tienen teletransportadores en las esquinas. Pisa el único de la entrada y, en las cuatro salas siguientes, elige por orden la esquina superior derecha → inferior derecha → inferior izquierda → inferior izquierda; llegarás a la sala de Sabrina. (También sirve inferior izquierda → inferior izquierda → superior derecha → inferior izquierda.)",
 "Vence a la líder Sabrina (tipo Psíquico: Kadabra, Mr. Mime, Venomoth y Alakazam): recibes la Medalla Pantano, la MT04 Paz mental y el permiso para usar Golpe roca fuera de combate.",
 "Para salir, pisa el único teletransportador de la sala de Sabrina y luego las esquinas inferior derecha → superior izquierda → superior derecha → inferior derecha: vuelves a la entrada del gimnasio.",
-"El Dojo Karate de Azafrán es un reto aparte: vence a los karatekas y a su maestro y elige como premio a Hitmonlee o a Hitmonchan. No da la Medalla Pantano ni sustituye a Sabrina."
+"El Dojo-Karate de Azafrán es un reto aparte: vence a los karatekas y a su maestro y elige como premio a Hitmonlee o a Hitmonchan. No da la Medalla Pantano ni sustituye a Sabrina."
 ]
 },
 "LEAFGREEN-12": {
@@ -2502,7 +2502,7 @@
 "LEAFGREEN-16": {
 "caution": "Los objetos ya gastados pueden no seguir en la mochila. Ninguna estrella exige un evento caducado: las especies de evento están excluidas de los recuentos.",
 "steps": [
-"Regalos únicos: Eevee en la habitación de la azotea de la Mansión Azulona (entrada trasera), Lapras en la séptima planta de Silph S.A. y Hitmonlee o Hitmonchan en el Dojo Karate de Azafrán. Los otros iniciales y el Hitmon que no elijas necesitan intercambio u otra partida.",
+"Regalos únicos: Eevee en la habitación de la azotea de la Mansión Azulona (entrada trasera), Lapras en la séptima planta de Silph S.A. y Hitmonlee o Hitmonchan en el Dojo-Karate de Azafrán. Los otros iniciales y el Hitmon que no elijas necesitan intercambio u otra partida.",
 "Recoge el Ámbar viejo por la entrada trasera del Museo de la Ciencia de Ciudad Plateada (con Corte) y revívelo, junto al fósil del Mt. Moon, en el laboratorio de Isla Canela.",
 "Los ayudantes del Profesor Oak premian las especies capturadas, pero hay que visitar a cada uno: 10 → MO05 Destello (caseta de la Ruta 2), 20 → Piedra eterna (Centro Pokémon de la Ruta 10), 30 → Buscaobjetos (caseta este de la Ruta 11), 40 → Moneda amuleto (caseta norte de la Ruta 16) y 50 → Repartir experiencia (caseta oeste de la Ruta 15).",
 "Si una evolución hacia una especie de otra región no se produce (por ejemplo Golbat a Crobat), consigue antes la Pokédex Nacional: hasta entonces el juego bloquea esas evoluciones.",
@@ -3364,8 +3364,8 @@
 "steps": [
 "Cruza la Ruta 3 (muchos entrenadores) hasta el Centro Pokémon de la entrada del Monte Moon. Dentro, un hombre te vende un Magikarp de nivel 5 por 500 ₽ (solo una vez).",
 "Entra en el Monte Moon y recorre la planta baja y los sótanos; recoge la MT01 (Megapuño) y las Piedras Lunares (una en la esquina superior izquierda de la planta baja y otra oculta en el sótano 2, cerca de los fósiles).",
-"En el sótano 2 vence a los reclutas del Team Rocket y al Supernecio que custodia dos fósiles.",
-"Elige el Fósil Hélix (revive como Omanyte) o el Fósil Domo (revive como Kabuto); el Supernecio se queda el otro.",
+"En el sótano 2 vence a los reclutas del Team Rocket y al Súper Necio que custodia dos fósiles.",
+"Elige el Fósil Hélix (revive como Omanyte) o el Fósil Domo (revive como Kabuto); el Súper Necio se queda el otro.",
 "Sal por la salida este hacia la Ruta 4 y sigue al este hasta Ciudad Celeste.",
 "Con Pokekeep: el fósil que no escojas (Omanyte/Omastar o Kabuto/Kabutops) solo se consigue por intercambio; añádelo legal desde la Librería."
 ]
@@ -3457,7 +3457,7 @@
 "En la 5.ª planta recoge la Llave Magnética: abre las puertas cerradas del edificio.",
 "Ve a la 3.ª planta y, abriendo puertas con la Llave Magnética, llega al teletransportador que lleva a la 7.ª planta: apareces en la sala donde espera tu rival. En esa misma sala un empleado de Silph te regala un Lapras de nivel 15.",
 "En la 7.ª planta vence a tu rival y usa el teletransportador que hay a su lado: lleva a la planta 11. Vence a Giovanni; el presidente de Silph te da la Master Ball.",
-"Antes del gimnasio, vence a los karatecas del Dojo Karate (junto al gimnasio) y elige Hitmonlee o Hitmonchan (nivel 30).",
+"Antes del gimnasio, vence a los karatecas del Dojo-Karate (junto al gimnasio) y elige Hitmonlee o Hitmonchan (nivel 30).",
 "Gimnasio de Ciudad Azafrán (salas de teletransportadores): en la sala de entrada pisa el único teletransportador (arriba a la derecha) → sala sureste: el de arriba a la izquierda → sala noreste: el de abajo a la izquierda → sala noroeste: el de abajo a la izquierda → sala central, la de Sabrina.",
 "Vence a Sabrina (Kadabra nv. 38, Mr. Mime nv. 37, Venomoth nv. 38 y Alakazam nv. 43; los Psíquicos son débiles a Bicho; en esta generación los ataques Fantasma no les afectan). Recibe la Medalla Pantano y la MT46 (Psicoonda)."
 ]
@@ -3497,7 +3497,7 @@
 "RED-15": {
 "caution": "Cada legendario es un encuentro único. El Mew del famoso fallo del anciano no es legal: el único Mew válido es el de evento.",
 "steps": [
-"Zapdos (nv. 50): desde el Centro Pokémon de la Ruta 10, haz Surf por el canal hacia el sur hasta la Central de Energía; está al fondo. Las Poké Balls del suelo pueden ser Voltorb (nv. 40) o Electrode (nv. 43).",
+"Zapdos (nv. 50): desde el Centro Pokémon de la Ruta 10, haz Surf por el canal hacia el sur hasta la Central Energía; está al fondo. Las Poké Balls del suelo pueden ser Voltorb (nv. 40) o Electrode (nv. 43).",
 "Articuno (nv. 50): en las Islas Espuma (Ruta 20) empuja con Fuerza dos rocas por los agujeros de cada planta hasta que caigan al sótano 3 y al 4 y frenen las corrientes; después haz Surf hasta Articuno, en el sótano 4.",
 "Moltres (nv. 50): en la 2.ª planta de la Calle Victoria, camino de la Liga.",
 "Mewtwo (nv. 70): tras el Hall de la Fama, haz Surf desde la Ruta 24 por el río del oeste de Ciudad Celeste hasta la cueva (en el juego, Mazmorra Rara); está en el sótano.",
@@ -3510,7 +3510,7 @@
 "steps": [
 "Captura las exclusivas de tu edición (Ekans, Arbok, Oddish, Gloom, Vileplume, Mankey, Primeape, Growlithe, Arcanine, Scyther y Electabuzz) y consigue por intercambio las de Azul (o Verde japonesa): Sandshrew, Sandslash, Vulpix, Ninetales, Meowth, Persian, Bellsprout, Weepinbell, Victreebel, Pinsir y Magmar.",
 "Haz los intercambios del juego: Abra por Mr. Mime (casa de la Ruta 2), Nidorino por Nidorina (puesto de la Ruta 11, planta de arriba), Spearow por Farfetch'd (casa de Ciudad Carmín), Poliwhirl por Jynx (casa de Ciudad Celeste), Nidoran♂ por Nidoran♀ (Vía Subterránea, entrada de la Ruta 5), Slowbro por Lickitung (puesto de la Ruta 18, planta de arriba), y en el laboratorio de Isla Canela Ponyta por Seel, Raichu por Electrode y Venonat por Tangela.",
-"Recoge los regalos únicos: Magikarp (Centro Pokémon del Monte Moon, 500 ₽), Eevee (azotea del Edificio Azulona), Lapras (Silph S. A., 7.ª planta), Hitmonlee o Hitmonchan (Dojo Karate), tu fósil y el Ámbar Viejo (Aerodactyl).",
+"Recoge los regalos únicos: Magikarp (Centro Pokémon del Monte Moon, 500 ₽), Eevee (azotea del Edificio Azulona), Lapras (Silph S. A., 7.ª planta), Hitmonlee o Hitmonchan (Dojo-Karate), tu fósil y el Ámbar Viejo (Aerodactyl).",
 "Canjea en la tienda de premios, junto al Casino Rocket, los Pokémon de fichas: Abra (180 fichas, nv. 9), Clefairy (500, nv. 8), Nidorina (1200, nv. 17), Dratini (2800, nv. 18), Scyther (5500, nv. 25) y Porygon (9999, nv. 26).",
 "Kadabra, Machoke, Graveler y Haunter solo evolucionan (Alakazam, Machamp, Golem y Gengar) al intercambiarlos con otra consola.",
 "Ve recogiendo los premios de los ayudantes de Oak: MO05 Destello (casa de la Ruta 2, 10 especies capturadas), Buscaobjetos (puesto de la Ruta 11, planta de arriba, 30 especies) y Repartir Exp (puesto de la Ruta 15, planta de arriba, 50 especies).",
@@ -3521,7 +3521,7 @@
 "RED-DETAIL1": {
 "caution": "Si debilitas a un legendario no vuelve a aparecer. Comprueba en la Pokédex que cada uno figura como capturado.",
 "steps": [
-"Zapdos (nv. 50) — Central de Energía: con Surf, desde el Centro Pokémon de la Ruta 10 sigue el canal hacia el sur; Zapdos está al fondo del edificio.",
+"Zapdos (nv. 50) — Central Energía: con Surf, desde el Centro Pokémon de la Ruta 10 sigue el canal hacia el sur; Zapdos está al fondo del edificio.",
 "Articuno (nv. 50) — Islas Espuma (Ruta 20): con Fuerza, tira dos rocas por los agujeros en cada planta; cuando caen las del sótano 2 al 3 y las del sótano 3 al 4 se frenan las corrientes y puedes hacer Surf hasta Articuno en el sótano 4.",
 "Moltres (nv. 50) — Calle Victoria, 2.ª planta: llega moviendo con Fuerza las rocas sobre los interruptores.",
 "Mewtwo (nv. 70) — tras el Hall de la Fama, el hombre que bloqueaba la cueva del noroeste de Ciudad Celeste se aparta: haz Surf desde la Ruta 24 por el río del oeste, entra y baja hasta el sótano.",
@@ -3633,7 +3633,7 @@
 ]
 },
 "RUBY-10": {
-"caution": "Si debilitas a Groudon o huyes, no vuelve a aparecer en esa partida: guarda antes y lleva Ultra Balls. Kyogre no está en Rubí: solo por intercambio. Con Pokekeep: añade desde la Librería un Kyogre legal si no tienes con quién intercambiar.",
+"caution": "Si debilitas a Groudon o huyes, no vuelve a aparecer en esa partida: guarda antes y lleva Ultraballs. Kyogre no está en Rubí: solo por intercambio. Con Pokekeep: añade desde la Librería un Kyogre legal si no tienes con quién intercambiar.",
 "steps": [
 "Sal de Algaria por el sur a la Ruta 127 y usa Buceo en la zona de agua oscura; bajo el agua sigue al sur hasta la Ruta 128 y entra por la grieta del fondo marino.",
 "Emerge junto al submarino robado: estás en la Caverna Abisal. Necesitarás Surf, Fuerza y Golpe roca para recorrerla venciendo a los reclutas.",
@@ -3673,7 +3673,7 @@
 "Rayquaza: tras el Hall de la Fama ve al Pilar Celeste (Ruta 131, al este de Pueblo Oromar). Cruza los suelos agrietados sin detenerte con la Bici carrera; en la cuarta planta déjate caer por uno de los últimos agujeros de la parte norte para llegar a la escalera. Guarda antes de la cima: está a nivel 70.",
 "Cámara Sellada: en la Ruta 134 deja que las corrientes te lleven a la pequeña zona de agua oscura, bucea, sigue hacia el sur hasta la pared submarina que dice en braille «Sube ahora» y emerge. En la pared del fondo de la primera sala («Cava ahora») usa Excavar.",
 "En la segunda sala pon a Relicanth el primero del equipo y a Wailord el último y lee la inscripción del fondo («Primero Relicanth. Al final Wailord»): la cueva tiembla y se abren las puertas de las tres ruinas.",
-"Regirock, Ruinas del Desierto (sur del desierto de la Ruta 111, con Gafas aislantes): lee el braille («derecha, derecha, abajo, abajo», usa Fuerza), da dos pasos a la derecha y dos hacia abajo desde la inscripción y usa Fuerza.",
+"Regirock, Ruinas Desierto (sur del desierto de la Ruta 111, con Gafas aislantes): lee el braille («derecha, derecha, abajo, abajo», usa Fuerza), da dos pasos a la derecha y dos hacia abajo desde la inscripción y usa Fuerza.",
 "Regice, Cueva Insular (islote del noroeste de la Ruta 105): lee la inscripción («Para y espera a que el tiempo pase dos veces») y quédate quieto, sin salir ni pulsar nada, durante dos minutos.",
 "Registeel, Tumba Antigua (oeste de la Ruta 120): lee la inscripción («Con ganas vuela al centro»), ponte en el centro exacto de la sala y usa Vuelo. Los tres Regis están a nivel 40 y solo hay uno de cada.",
 "En Rubí, Latios empieza a vagar por Hoenn (nivel 40) tras la Liga: síguelo con el mapa de zonas de la Pokédex y atrápalo con la Master Ball o retenlo con Mal de Ojo, Bloqueo o Sombratrampa.",
@@ -3796,7 +3796,7 @@
 ]
 },
 "SAPPHIRE-10": {
-"caution": "Si debilitas a Kyogre o huyes, no vuelve a aparecer en esa partida: guarda antes y lleva Ultra Balls. Groudon no está en Zafiro: solo por intercambio. Con Pokekeep: añade desde la Librería un Groudon legal si no tienes con quién intercambiar.",
+"caution": "Si debilitas a Kyogre o huyes, no vuelve a aparecer en esa partida: guarda antes y lleva Ultraballs. Groudon no está en Zafiro: solo por intercambio. Con Pokekeep: añade desde la Librería un Groudon legal si no tienes con quién intercambiar.",
 "steps": [
 "Sal de Algaria por el sur a la Ruta 127 y usa Buceo en la zona de agua oscura; bajo el agua sigue al sur hasta la Ruta 128 y entra por la grieta del fondo marino.",
 "Emerge junto al submarino robado: estás en la Caverna Abisal. Necesitarás Surf, Fuerza y Golpe roca para recorrerla venciendo a los reclutas.",
@@ -3836,7 +3836,7 @@
 "Rayquaza: tras el Hall de la Fama ve al Pilar Celeste (Ruta 131, al este de Pueblo Oromar). Cruza los suelos agrietados sin detenerte con la Bici carrera; en la cuarta planta déjate caer por uno de los últimos agujeros de la parte norte para llegar a la escalera. Guarda antes de la cima: está a nivel 70.",
 "Cámara Sellada: en la Ruta 134 deja que las corrientes te lleven a la pequeña zona de agua oscura, bucea, sigue hacia el sur hasta la pared submarina que dice en braille «Sube ahora» y emerge. En la pared del fondo de la primera sala («Cava ahora») usa Excavar.",
 "En la segunda sala pon a Relicanth el primero del equipo y a Wailord el último y lee la inscripción del fondo («Primero Relicanth. Al final Wailord»): la cueva tiembla y se abren las puertas de las tres ruinas.",
-"Regirock, Ruinas del Desierto (sur del desierto de la Ruta 111, con Gafas aislantes): lee el braille («derecha, derecha, abajo, abajo», usa Fuerza), da dos pasos a la derecha y dos hacia abajo desde la inscripción y usa Fuerza.",
+"Regirock, Ruinas Desierto (sur del desierto de la Ruta 111, con Gafas aislantes): lee el braille («derecha, derecha, abajo, abajo», usa Fuerza), da dos pasos a la derecha y dos hacia abajo desde la inscripción y usa Fuerza.",
 "Regice, Cueva Insular (islote del noroeste de la Ruta 105): lee la inscripción («Para y espera a que el tiempo pase dos veces») y quédate quieto, sin salir ni pulsar nada, durante dos minutos.",
 "Registeel, Tumba Antigua (oeste de la Ruta 120): lee la inscripción («Con ganas vuela al centro»), ponte en el centro exacto de la sala y usa Vuelo. Los tres Regis están a nivel 40 y solo hay uno de cada.",
 "En Zafiro, Latias empieza a vagar por Hoenn (nivel 40) tras la Liga: síguelo con el mapa de zonas de la Pokédex y atrápalo con la Master Ball o retenlo con Mal de Ojo, Bloqueo o Sombratrampa.",
@@ -4154,7 +4154,7 @@
 "Desde Ciudad Cerezo sube por la Ruta 30 y la Ruta 31 hasta Ciudad Malva.",
 "(Recomendado) Entra en la Torre Bellsprout, al norte de la ciudad, sube a la última planta y vence al sabio mayor: te da la MO05 Destello.",
 "Prepara Pokémon de tipo Eléctrico, Roca o Hielo y entra en el gimnasio de Ciudad Malva: Pegaso usa Pokémon de tipo Volador.",
-"Vence a Pegaso: recibes la Medalla Céfiro (permite usar Destello fuera de combate) y la MT31 Bofetón Lodo.",
+"Vence a Pegaso: recibes la Medalla Céfiro (permite usar Destello fuera de combate) y la MT31 Bofetón-lodo.",
 "El Profesor Elm te llama al Pokégear: ve al Centro Pokémon de Ciudad Malva, donde te espera su ayudante, y acepta el Huevo que te ofrece (necesitas un hueco libre en el equipo).",
 "Lleva el Huevo en el equipo mientras caminas hasta que eclosione: es un Togepi. Enséñaselo después a Elm en su laboratorio y te regala una Piedra Eterna."
 ]
@@ -4166,7 +4166,7 @@
 "Cruza la Cueva Unión y la Ruta 33 hasta Pueblo Azalea: un soldado del Team Rocket bloquea la puerta del gimnasio.",
 "Habla con César, el artesano de Poké Balls, en su casa (al norte del pueblo): sale corriendo al Pozo Slowpoke. Síguelo y entra en el pozo.",
 "Dentro del pozo vence a los cuatro miembros del Team Rocket (el último, el más fuerte, tiene un Pokémon de nivel 14). Al terminar, César te lleva a su casa y te regala una Cebo Ball.",
-"Entra en el gimnasio (ya no hay nadie en la puerta) y vence a Antón, especialista en tipo Bicho (su Scyther de nivel 16 es el más peligroso): usa Pokémon de tipo Fuego, Volador o Roca. Recibes la Medalla Colmena (permite usar Corte fuera de combate) y la MT49 Corte Furia.",
+"Entra en el gimnasio (ya no hay nadie en la puerta) y vence a Antón, especialista en tipo Bicho (su Scyther de nivel 16 es el más peligroso): usa Pokémon de tipo Fuego, Volador o Roca. Recibes la Medalla Colmena (permite usar Corte fuera de combate) y la MT49 Cortefuria.",
 "Al salir del gimnasio tu rival te reta. Después entra en el Encinar, al oeste del pueblo.",
 "En el Encinar el aprendiz del carbonero ha perdido a su Farfetch'd: acércate al Farfetch'd por detrás para que se mueva en la dirección contraria y guíalo así hasta el aprendiz. Su maestro te da la MO01 Corte; un chico del bosque te da además la MT02 Golpe Cabeza.",
 "Usa Corte en el arbusto que bloquea la salida norte del Encinar para llegar a la Ruta 34."
@@ -4245,26 +4245,26 @@
 ]
 },
 "SILVER-10": {
-"caution": "No todos los gimnasios de Kanto están disponibles al llegar: Misty no está hasta resolver lo de la Central de Energía, Azul no abre el de Ciudad Verde hasta que lo encuentras en Isla Canela y a Ciudad Plateada se llega por la Cueva Diglett tras despertar al Snorlax.",
+"caution": "No todos los gimnasios de Kanto están disponibles al llegar: Misty no está hasta resolver lo de la Central Energía, Azul no abre el de Ciudad Verde hasta que lo encuentras en Isla Canela y a Ciudad Plateada se llega por la Cueva Diglett tras despertar al Snorlax.",
 "steps": [
 "Con el Ticket Barco ve al puerto de Ciudad Olivo: el primer viaje del S.S. Aqua sale cualquier día; después zarpa de Olivo los lunes y viernes y de Ciudad Carmín los miércoles y domingos.",
 "Durante el viaje, un anciano te pide que busques a su nieta: encuéntrala en el camarote del capitán y llévasela; él te regala un Revestimiento Metálico. Al terminar, el barco atraca en Ciudad Carmín.",
 "En Ciudad Carmín ya puedes retar a Lt. Surge; al este, un Snorlax dormido bloquea la entrada de la Cueva Diglett.",
 "Sube por la Ruta 6 hasta Ciudad Azafrán: el Magnetotrén no funciona y Sabrina ya acepta combates.",
-"Ve a la Central de Energía (Ruta 10, al norte de Pueblo Lavanda o por la Ruta 9 desde Ciudad Celeste) y habla con el director: alguien ha robado una pieza de la máquina."
+"Ve a la Central Energía (Ruta 10, al norte de Pueblo Lavanda o por la Ruta 9 desde Ciudad Celeste) y habla con el director: alguien ha robado una pieza de la máquina."
 ]
 },
 "SILVER-11": {
 "caution": "El Club de Fans solo te da el Objeto Perdido después de haber hablado con la Copiona y de haber devuelto la Maquinaria: hazlo en ese orden.",
 "steps": [
-"En la Central de Energía (Ruta 10) habla con el director: le han robado la Maquinaria del generador.",
+"En la Central Energía (Ruta 10) habla con el director: le han robado la Maquinaria del generador.",
 "Ve a Ciudad Celeste y entra en el gimnasio vacío: un soldado del Team Rocket sale huyendo.",
 "Sube por la Ruta 24 (el Puente Pepita, al norte de la ciudad), vence al soldado y te confiesa que escondió la pieza en el gimnasio.",
 "Vuelve al gimnasio de Ciudad Celeste y examina el agua de la piscina (es un objeto oculto; el Buscaobjetos ayuda): recoges la Maquinaria.",
-"Llévasela al director de la Central de Energía: te da la MT07 Electrocañón y vuelven a funcionar el Magnetotrén y la Torre Radio de Pueblo Lavanda.",
+"Llévasela al director de la Central Energía: te da la MT07 Electrocañón y vuelven a funcionar el Magnetotrén y la Torre Radio de Pueblo Lavanda.",
 "En la Torre Radio de Pueblo Lavanda te dan la Tarjeta Expansión para escuchar las emisoras de Kanto (incluida la Poké Flauta, que despierta al Snorlax de Ciudad Carmín).",
 "Sigue por la Ruta 25 hasta el Cabo Celeste: Misty está allí con su novio y vuelve al gimnasio de Ciudad Celeste.",
-"Para el Pase: en Ciudad Azafrán habla con la Copiona (en la planta de arriba de su casa); en el Club de Fans de Ciudad Carmín un socio te da el Objeto Perdido (el Pokémuñeco); devuélveselo a la Copiona y te da el Pase del Magnetotrén (une Ciudad Azafrán y Ciudad Trigal)."
+"Para el Pase: en Ciudad Azafrán habla con la Copiona (en la planta de arriba de su casa); en el Club de Fans de Ciudad Carmín un socio te da el Objeto Perdido (el Poké Muñeco); devuélveselo a la Copiona y te da el Pase (une Ciudad Azafrán y Ciudad Trigal)."
 ]
 },
 "SILVER-12": {
@@ -4423,26 +4423,26 @@
 "Al desembarcar en Ciudad Carmín verás a Suicune y a Eusine en el puerto.",
 "Vence a Lt. Surge (tipo Eléctrico) en Ciudad Carmín: busca los dos interruptores escondidos en las papeleras para abrir las barreras. Recibes la medalla Trueno.",
 "Por la Ruta 6 llega a Ciudad Azafrán y vence a Sabrina (Psíquico; medalla Pantano); por la Ruta 7 llega a Ciudad Azulona y vence a Erika (Planta; medalla Arcoíris).",
-"En Ciudad Celeste el gimnasio está vacío: ve a la Central de Energía (siguiente misión)."
+"En Ciudad Celeste el gimnasio está vacío: ve a la Central Energía (siguiente misión)."
 ]
 },
 "SOULSILVER-11": {
-"caution": "Sin la Maquinaria no funcionan el Magnetotrén ni la radio de Kanto, y sin la Pokéflauta no puedes despertar al Snorlax que bloquea la Cueva Diglett.",
+"caution": "Sin la Maquinaria no funcionan el Magnetotrén ni la radio de Kanto, y sin la Poké Flauta no puedes despertar al Snorlax que bloquea la Cueva Diglett.",
 "steps": [
-"Desde Ciudad Celeste ve por la Ruta 9 y haz Surf hacia el sur por el río de la Ruta 10 hasta la Central de Energía: el director ha perdido la Maquinaria.",
+"Desde Ciudad Celeste ve por la Ruta 9 y haz Surf hacia el sur por el río de la Ruta 10 hasta la Central Energía: el director ha perdido la Maquinaria.",
 "Vuelve al gimnasio de Ciudad Celeste, persigue al sospechoso hasta el puente al norte de la ciudad y vence a su Golbat: te dice dónde la escondió.",
 "Recoge la Maquinaria en el gimnasio Celeste, junto a los flotadores a la izquierda del escenario, y llévala a la Central: el director te da la MT57 Rayo carga.",
-"En la Torre Radio de Pueblo Lavanda actualizan tu Pokégear con la Expansión de radio, que incluye la Pokéflauta.",
+"En la Torre Radio de Pueblo Lavanda actualizan tu Pokégear con la Expansión de radio, que incluye la Poké Flauta.",
 "Busca el Poké Muñeco Clefairy en el Club de Fans de Pokémon de Ciudad Carmín y devuélveselo a la Copiona de Ciudad Azafrán: te da el Magnetopase para el Magnetotrén (Azafrán–Trigal).",
 "Ve al Cabo Celeste (Ruta 25, junto a la casa de Bill), interrumpe la cita de Misty y véncela en su gimnasio (Agua) con Eléctrico o Planta."
 ]
 },
 "SOULSILVER-12": {
-"caution": "Los gimnasios de Kanto no se abren a la vez: la Pokéflauta necesita la Central de Energía arreglada y la Expansión de radio de Pueblo Lavanda, y Azul exige haber vencido antes a los otros siete líderes.",
+"caution": "Los gimnasios de Kanto no se abren a la vez: la Poké Flauta necesita la Central Energía arreglada y la Expansión de radio de Pueblo Lavanda, y Azul exige haber vencido antes a los otros siete líderes.",
 "steps": [
 "Empieza por Lt. Surge (Ciudad Carmín: el segundo interruptor está en una papelera junto a la del primero), Sabrina (Ciudad Azafrán: teletransportadores) y Erika (Ciudad Azulona: corta el árbol de la entrada y recorre el jardín).",
 "Vence a Misty en Ciudad Celeste cuando vuelva de su cita en la Ruta 25. En Ciudad Fucsia busca a Sachiko, la nueva líder (su padre Koga está ahora en el Alto Mando), entre los entrenadores disfrazados de ella y las paredes invisibles; usa Psíquico o Tierra.",
-"Para llegar al oeste por la Cueva Diglett, colócate junto al Snorlax dormido de la Ruta 11, abre la radio del Pokégear con la Expansión de radio y sube el dial hasta la Pokéflauta, en la parte de arriba; el Snorlax (nivel 50) despierta y ataca.",
+"Para llegar al oeste por la Cueva Diglett, colócate junto al Snorlax dormido de la Ruta 11, abre la radio del Pokégear con la Expansión de radio y sube el dial hasta la Poké Flauta, en la parte de arriba; el Snorlax (nivel 50) despierta y ataca.",
 "Cruza la Cueva Diglett y usa Corte en la Ruta 2 hasta Ciudad Plateada; vence a Brock (Roca) con Agua, Planta o Tierra.",
 "En Ciudad Plateada, a la derecha de la Tienda y en lo alto, el anciano de espaldas te da el Ala arcoíris (Ho-Oh).",
 "En el Monte Moon vence a tu rival, que se va a entrenar a la Guarida Dragón; si vas allí, ganad juntos el combate doble contra Lance y Débora (abre sus revanchas).",
@@ -4471,7 +4471,7 @@
 "Raikou y Entei: tras la escena de la Torre Quemada vagan por las rutas de Johto; mira su posición en el mapa del Pokégear, entra en esa ruta y usa Mal de ojo o un ataque que impida huir (o la Master Ball).",
 "Suicune: sigue sus apariciones (Torre Quemada, norte de Ciudad Orquídea, Ruta 42, Ciudad Carmín, Ruta 14) y, tras vencer a Misty, combátelo en el Cabo Celeste (Ruta 25), nivel 40.",
 "Lugia: en la historia, Islas Remolino (nivel 45). Ho-Oh: ya en Kanto, el anciano de Ciudad Plateada (a la derecha de la Tienda, en lo alto) te da el Ala arcoíris; sube a la cima de la Torre Campana de Ciudad Iris, nivel 70.",
-"Aves: Articuno en lo más profundo de las Islas Espuma (nivel 50); Zapdos en la Ruta 10, junto a la puerta de la Central de Energía, tras las ocho medallas de Kanto; Moltres en la Cueva Monte Plateado, con Treparrocas.",
+"Aves: Articuno en lo más profundo de las Islas Espuma (nivel 50); Zapdos en la Ruta 10, junto a la puerta de la Central Energía, tras las ocho medallas de Kanto; Moltres en la Cueva Monte Plateado, con Treparrocas.",
 "Mewtwo: en la Cueva Celeste (al norte de Ciudad Celeste), con las 16 medallas; si lo debilitas o huyes, reaparece tras vencer de nuevo al Alto Mando.",
 "Groudon y Rayquaza: Torre Oculta (Ruta 47), nivel 50 (ver «Rojo → Oak → Orbe rojo → Groudon»). Latios: con la Pokédex Nacional, habla con Máximo al salir del Club de Fans de Ciudad Carmín y búscalo errante por las rutas de Kanto.",
 "Con Pokekeep: Kyogre y Latias son de Oro HeartGold; añádelos legales desde la Librería (para la Esfera verde el Kyogre debe tener origen en Oro HeartGold).",
@@ -4677,7 +4677,7 @@
 "SP-12": {
 "caution": "La estrella de las Grutas del Subsuelo exige cien variantes de estatuas; no usa las cincuenta banderas de los originales. Mew, Jirachi y Arceus dependen de tener partidas de otros juegos en la consola.",
 "steps": [
-"Para la Pokédex Nacional, registra como vistos los 150 Pokémon de Sinnoh que no son Manaphy y habla con el Profesor Serbal en Pueblo Arena: el Profesor Oak te da la Nacional y desde entonces puedes usar el Pokéradar. Ver especies basta para este desbloqueo, pero los premios de la Nacional exigen capturarlas, y un singular excluido no sustituye a una especie normal que falte.",
+"Para la Pokédex Nacional, registra como vistos los 150 Pokémon de Sinnoh que no son Manaphy y habla con el Profesor Serbal en Pueblo Arena: el Profesor Oak te da la Nacional y desde entonces puedes usar el Poké Radar. Ver especies basta para este desbloqueo, pero los premios de la Nacional exigen capturarlas, y un singular excluido no sustituye a una especie normal que falte.",
 "Entra en las Grutas del Subsuelo con el Kit de Explorador de Ciudad Vetusta, pulsa R para ver los puntos de excavación y pica las paredes que brillan con el pico y el martillo (evita las barras de hierro): salen fósiles, Esquirlas Extrañas y cajas con estatuas.",
 "Crea tu Base Secreta con un Taladro (se venden en las Grutas del Subsuelo y sirven también para moverla) y coloca hasta 18 estatuas: aumentan las apariciones de su tipo en las guaridas Pokémon. Las estatuas colocadas y las variantes obtenidas son contadores distintos.",
 "Reúne 100 variantes de estatua distintas para la estrella de la ficha de entrenador; las estatuas de color cuentan aparte de las normales. No se piden las cincuenta banderas de los originales de DS.",
@@ -5525,7 +5525,7 @@
 "Al salir del mirador tu rival te reta a tu primer combate. Después Bel te enseña el Centro Pokémon y te regala 10 Poké Balls; tu madre y la hermana del rival te dan las Deportivas y el Mapa, más otro mapa para tu rival.",
 "Cruza la Ruta 19 (el guardia del acceso te da una Poción y Bel te enseña a capturar); al final Mirto te pide que vayas a su casa, al norte de Pueblo Ocre.",
 "En Pueblo Ocre Mirto te manda al Rancho Ocre (Ruta 20) a llevarle el mapa a tu rival; vence a tu rival y busca en el noreste del rancho el Herdier de los criadores: lo tiene un recluta del Equipo Plasma, que te lo entrega junto con la MT21 (Frustración).",
-"Vuelve a casa de Mirto y vence a los dos niños que combaten con monos; al salir Don Insignio te entrega la Caja de Insignias y tu primera insignia.",
+"Vuelve a casa de Mirto y vence a los dos niños que combaten con monos; al salir Don Insignio te entrega la Caja Insignias y tu primera insignia.",
 "Regresa a Ciudad Engobe y vence a Cheren (tipo Normal) en la Escuela de Entrenadores: recibes la Medalla Base y la MT83 (Avivar). Un tipo Lucha como Riolu (Ruta 19, Rancho Ocre) facilita el combate."
 ]
 },
@@ -5633,22 +5633,22 @@
 ]
 },
 "WHITE2-11": {
-"caution": "Insignias (255, Caja de Insignias) y ficha de entrenador (cinco logros) son registros distintos: tener muchas insignias no cambia el color de la ficha, y cumplir una Pokédex no significa que ya hayas recogido su premio.",
+"caution": "Insignias (255, Caja Insignias) y ficha de entrenador (cinco logros) son registros distintos: tener muchas insignias no cambia el color de la ficha, y cumplir una Pokédex no significa que ya hayas recogido su premio.",
 "steps": [
 "Pokédex Nacional: exige 636 especies, toda la Nacional menos Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta y Genesect (Lugia y Ho-Oh sí cuentan). Compara especie a especie: una especie excluida no sustituye a una exigida.",
 "Pokédex de Teselia: con los 297 Pokémon vistos (sin Victini, Keldeo, Meloetta ni Genesect), la Profesora Encina, en su laboratorio de Pueblo Arcilla, te da el Permiso para la Reserva Natural; con todos capturados, el Amuleto Oval. Son dos premios distintos y hay que recogerlos hablando con ella.",
 "Con la Nacional capturada, habla con Carrasco Encina en Pueblo Arcilla: te dice que su hija tiene un regalo y la Profesora Encina te entrega el Amuleto Iris. El Director del Juego de la Torre de Game Freak (planta 21) te da los diplomas.",
 "Ficha de entrenador: cambia de color (azul, morado, naranja, plata, oro y último color) con cinco logros independientes: superar la Liga, completar la Pokédex Nacional, rodar todas las películas de Pokéwood, ganar el Torneo Campeones del PWT y llevar el Nexárbol a nivel 30 o más en negro y en blanco (cada nivel por separado, no la suma).",
 "Sube el Nexárbol con las Misiones Festival de la Zona Nexo (C-Gear); se pueden hacer solo o con otros jugadores por conexión local.",
-"Insignias: cada vez que ganes una, habla con Don Insignio en cualquier Centro Pokémon para recogerla; las Insignias Pista de la Caja de Insignias te dicen lo que falta y los rangos se recogen en el Insigniárium, planta 1 del edificio más al oeste de Ciudad Porcelana.",
+"Insignias: cada vez que ganes una, habla con Don Insignio en cualquier Centro Pokémon para recogerla; las Insignias Pista de la Caja Insignias te dicen lo que falta y los rangos se recogen en el Insigniárium, planta 1 del edificio más al oeste de Ciudad Porcelana.",
 "Con Pokekeep: lo que solo se conseguía con Negro 2, con la RAdar Pokémon de 3DS o con eventos cerrados, añádelo legal desde la Librería para completar las Pokédex."
 ]
 },
 "WHITE2-E01": {
 "caution": "La ficha de entrenador tiene cinco logros propios: completar las 255 insignias no la cambia de color.",
 "steps": [
-"Don Insignio te da la Caja de Insignias en Pueblo Ocre al salir de casa de Mirto; después aparece en los Centros Pokémon para entregarte cada insignia nueva.",
-"Hay 255 insignias en cinco categorías: Especial, Aventura, Combate, Diversión y Desafío. Desde el menú, la Caja de Insignias te deja ver las conseguidas y las Insignias Pista dan indicaciones de las que faltan.",
+"Don Insignio te da la Caja Insignias en Pueblo Ocre al salir de casa de Mirto; después aparece en los Centros Pokémon para entregarte cada insignia nueva.",
+"Hay 255 insignias en cinco categorías: Especial, Aventura, Combate, Diversión y Desafío. Desde el menú, la Caja Insignias te deja ver las conseguidas y las Insignias Pista dan indicaciones de las que faltan.",
 "Aventura: pasos por Teselia, Bici, Supercaña, capturas por tipo de la Pokédex de Teselia, cajas del PC llenas, Zona Nexo… Combate: Metro Batalla, PWT, las 10 zonas subterráneas del cavernogal y ganar la Liga con equipos de un solo tipo. Diversión: Pokéwood, Galería Unión, minijuegos del Videomisor y Misiones Festival.",
 "Ve a recoger rangos al Insigniárium (planta 1 del edificio más al oeste de Ciudad Porcelana): Aspirante con 50, Profesional con 100, Maestría con 150 y Leyenda con 200.",
 "Las insignias de intercambio, combates inalámbricos y Misiones Festival se pueden sacar hoy con otra consola por conexión local; las que exigían la Conexión Wi-Fi de Nintendo (cerrada el 20 de mayo de 2014), Pokémon Global Link o la RAdar Pokémon ya no se pueden ganar jugando.",
@@ -5700,8 +5700,8 @@
 "Tras la Liga, ve registrando como vistos los Pokémon de la Pokédex de Teselia de esta edición: hacen falta 297; Victini, Keldeo, Meloetta y Genesect no cuentan.",
 "Ve al laboratorio de la Profesora Encina en Pueblo Arcilla y pídele que evalúe la Pokédex: te entrega el Permiso para la Reserva Natural. Tener los 297 vistos no basta; hay que recogerlo.",
 "Ve al aeropuerto de Ciudad Loza y vuela a la Reserva Natural. Para volver usa el avión: la reserva está fuera del mapa de Teselia.",
-"Lleva Falso Tortazo y Ultra Balls y guarda antes: en la Reserva Natural hay un único Haxorus variocolor de nivel 60. Un Haxorus variocolor criado o intercambiado no cuenta como este encuentro.",
-"Aprovecha para capturar Pokémon de nivel 56-67 (Nuzleaf, Altaria, Girafarig, Golduck, Noctowl, Fraxure y Kecleon; Audino, Dunsparce y Shiftry en la hierba que se mueve; Basculin, Buizel y Floatzel en el agua) y recoger la Maxipepita (hierba oscura) y el Caramelo Raro (sobre la cascada)."
+"Lleva Falsotortazo y Ultraballs y guarda antes: en la Reserva Natural hay un único Haxorus variocolor de nivel 60. Un Haxorus variocolor criado o intercambiado no cuenta como este encuentro.",
+"Aprovecha para capturar Pokémon de nivel 56-67 (Nuzleaf, Altaria, Girafarig, Golduck, Noctowl, Fraxure y Kecleon; Audino, Dunsparce y Shiftry en la hierba que se mueve; Basculin, Buizel y Floatzel en el agua) y recoger la Maxipepita (hierba oscura) y el Carameloraro (sobre la cascada)."
 ]
 },
 "X-01": {
@@ -5759,10 +5759,10 @@
 "steps": [
 "Desde Ciudad Relieve sigue por la Ruta 10 (Camino Menhires) hasta Pueblo Crómlech; al salir, Corelia te reta a un combate.",
 "Cruza la Ruta 11 (Ciprés te pide por Holomisor que visites al Megayayo) y la Cueva Reflejos hasta Ciudad Yantra.",
-"Ve a la Torre Maestra: el Megayayo solo tiene un Megaaro y Serena/Kalm y tú combatís para decidir quién lo merece; gánale.",
+"Ve a la Torre Maestra: el Megayayo solo tiene un Mega-aro y Serena/Kalm y tú combatís para decidir quién lo merece; gánale.",
 "En el Gimnasio de Ciudad Yantra vence a los patinadores en el orden que quieras para completar el puente y derrota a Corelia (tipo Lucha) con Pokémon de tipo Volador, Psíquico o Hada.",
 "Recibe la Medalla Lid (permite usar Surf fuera de combate) y la MT98 Puño Incremento.",
-"Sube a la cima de la Torre Maestra: Corelia te da el Megaaro y te presta un Lucario con Lucarita (nivel 32) para combatir contra el suyo.",
+"Sube a la cima de la Torre Maestra: Corelia te da el Mega-aro y te presta un Lucario con Lucarita (nivel 32) para combatir contra el suyo.",
 "Al terminar, acepta quedarte con el Lucario; en la salida hacia la Ruta 12 tu rival te da la MO03 Surf."
 ]
 },
@@ -5821,7 +5821,7 @@
 "Tras los créditos sal de casa en Pueblo Boceto: Xana te cambia cualquier Pokémon por el inicial de Kalos que no elegiste (nivel 5).",
 "Ve a la estación de Ciudad Luminalia: Ciprés te da el abono del TMV (y la Pokédex Nacional); coge el tren a Ciudad Batik.",
 "En Ciudad Batik combate al menos una vez en la Mansión Batalla; después Serena/Kalm aparece en la ciudad: véncele (megaevoluciona a Absol) y te da la Absolita.",
-"Ve a Ciudad Fluxus, habla con Ciprés junto al reloj solar y toca el reloj: tu Megaaro mejora.",
+"Ve a Ciudad Fluxus, habla con Ciprés junto al reloj solar y toca el reloj: tu Mega-aro mejora.",
 "Desde ahora, solo de 20:00 a 20:59 (hora de la consola), brillan en el suelo nuevas megapiedras: Alakazamita (Cueva Reflejos, cerca del final), Banettita (Estancia Vacua), Garchompita (Calle Victoria, ruinas donde combatiste con tu rival; hace falta Golpe Roca), Gyaradosita (cascadas de Pueblo Mosaico), Kangaskhanita (Cueva Brillante, primer giro a la derecha), Mawilita (Castillo Caduco de Pueblo Vánitas, piso superior), Medichamita (Ciudad Romantis, junto al pozo) y Scizorita (Gruta Helada, detrás del Abomasnow).",
 "Exclusivas de Pokémon X con el mismo horario: Pinsirita (Bosque de Novarte, cerca de la entrada, en la hierba), Manectricita (Ruta 16, en la zona de los dos patinadores) y Tyranitarita (Gimnasio de Ciudad Relieve, en la parte trasera).",
 "Al entrar a pie en Ciudad Luminalia (no volando) recibes la llamada que abre Handsome & Cía.: haz sus seis capítulos (misión «Detective Handsome»).",
@@ -5842,7 +5842,7 @@
 "X-DETAIL1": {
 "caution": "Cada capítulo empieza al volver al despacho de Handsome & Cía. o con una llamada al Holomisor; no basta con entrar una vez. Terminado el sexto, los martes, jueves y sábados puedes volver a combatir con Esprit (Pokémon de nivel 73-75).",
 "steps": [
-"Cumple los requisitos: vence a Dianta, recibe de Ciprés el abono del TMV en la estación de Ciudad Luminalia, viaja a Ciudad Batik, combate una vez en la Mansión Batalla, vence a Serena/Kalm en Ciudad Batik y mejora el Megaaro tocando el reloj solar de Ciudad Fluxus.",
+"Cumple los requisitos: vence a Dianta, recibe de Ciprés el abono del TMV en la estación de Ciudad Luminalia, viaja a Ciudad Batik, combate una vez en la Mansión Batalla, vence a Serena/Kalm en Ciudad Batik y mejora el Mega-aro tocando el reloj solar de Ciudad Fluxus.",
 "Entra a pie en Ciudad Luminalia por una de sus puertas (volando no sirve): recibes una llamada y Handsome te espera en Handsome & Cía., en la calle estrecha entre la Plaza Roja y el Bulevar Norte.",
 "Capítulo 1: encuentra los 5 Boletos Handsome, que brillan: Centro Pokémon de la Plaza Rosa (frente al probador), dentro del gimnasio de la Plaza Central, tienda de medicina tradicional de la Avenida Primavera, planta baja del Gran Hotel Ricachilton (Bulevar Norte) y planta baja del Museo de Arte; vuelve al despacho.",
 "Capítulo 2: en el callejón del Bulevar Sur, junto al restaurante Le Mindundi, vence a los 4 entrenadores; busca al Espurr Peluchín en el callejón del Café Cuco (elige «sonreír») y en el de enfrente del puesto de crepes (elige «bailar»): Matière se muda al despacho.",
@@ -5907,10 +5907,10 @@
 "steps": [
 "Desde Ciudad Relieve sigue por la Ruta 10 (Camino Menhires) hasta Pueblo Crómlech; al salir, Corelia te reta a un combate.",
 "Cruza la Ruta 11 (Ciprés te pide por Holomisor que visites al Megayayo) y la Cueva Reflejos hasta Ciudad Yantra.",
-"Ve a la Torre Maestra: el Megayayo solo tiene un Megaaro y Serena/Kalm y tú combatís para decidir quién lo merece; gánale.",
+"Ve a la Torre Maestra: el Megayayo solo tiene un Mega-aro y Serena/Kalm y tú combatís para decidir quién lo merece; gánale.",
 "En el Gimnasio de Ciudad Yantra vence a los patinadores en el orden que quieras para completar el puente y derrota a Corelia (tipo Lucha) con Pokémon de tipo Volador, Psíquico o Hada.",
 "Recibe la Medalla Lid (permite usar Surf fuera de combate) y la MT98 Puño Incremento.",
-"Sube a la cima de la Torre Maestra: Corelia te da el Megaaro y te presta un Lucario con Lucarita (nivel 32) para combatir contra el suyo.",
+"Sube a la cima de la Torre Maestra: Corelia te da el Mega-aro y te presta un Lucario con Lucarita (nivel 32) para combatir contra el suyo.",
 "Al terminar, acepta quedarte con el Lucario; en la salida hacia la Ruta 12 tu rival te da la MO03 Surf."
 ]
 },
@@ -5969,7 +5969,7 @@
 "Tras los créditos sal de casa en Pueblo Boceto: Xana te cambia cualquier Pokémon por el inicial de Kalos que no elegiste (nivel 5).",
 "Ve a la estación de Ciudad Luminalia: Ciprés te da el abono del TMV (y la Pokédex Nacional); coge el tren a Ciudad Batik.",
 "En Ciudad Batik combate al menos una vez en la Mansión Batalla; después Serena/Kalm aparece en la ciudad: véncele (megaevoluciona a Absol) y te da la Absolita.",
-"Ve a Ciudad Fluxus, habla con Ciprés junto al reloj solar y toca el reloj: tu Megaaro mejora.",
+"Ve a Ciudad Fluxus, habla con Ciprés junto al reloj solar y toca el reloj: tu Mega-aro mejora.",
 "Desde ahora, solo de 20:00 a 20:59 (hora de la consola), brillan en el suelo nuevas megapiedras: Alakazamita (Cueva Reflejos, cerca del final), Banettita (Estancia Vacua), Garchompita (Calle Victoria, ruinas donde combatiste con tu rival; hace falta Golpe Roca), Gyaradosita (cascadas de Pueblo Mosaico), Kangaskhanita (Cueva Brillante, primer giro a la derecha), Mawilita (Castillo Caduco de Pueblo Vánitas, piso superior), Medichamita (Ciudad Romantis, junto al pozo) y Scizorita (Gruta Helada, detrás del Abomasnow).",
 "Exclusivas de Pokémon Y con el mismo horario: Heracrossita (Bosque de Novarte, cerca de la entrada, en la hierba), Houndoomita (Ruta 16, en la zona de los dos patinadores) y Aggronita (Gimnasio de Ciudad Relieve, en la parte trasera).",
 "Al entrar a pie en Ciudad Luminalia (no volando) recibes la llamada que abre Handsome & Cía.: haz sus seis capítulos (misión «Detective Handsome»).",
@@ -5990,7 +5990,7 @@
 "Y-DETAIL1": {
 "caution": "Cada capítulo empieza al volver al despacho de Handsome & Cía. o con una llamada al Holomisor; no basta con entrar una vez. Terminado el sexto, los martes, jueves y sábados puedes volver a combatir con Esprit (Pokémon de nivel 73-75).",
 "steps": [
-"Cumple los requisitos: vence a Dianta, recibe de Ciprés el abono del TMV en la estación de Ciudad Luminalia, viaja a Ciudad Batik, combate una vez en la Mansión Batalla, vence a Serena/Kalm en Ciudad Batik y mejora el Megaaro tocando el reloj solar de Ciudad Fluxus.",
+"Cumple los requisitos: vence a Dianta, recibe de Ciprés el abono del TMV en la estación de Ciudad Luminalia, viaja a Ciudad Batik, combate una vez en la Mansión Batalla, vence a Serena/Kalm en Ciudad Batik y mejora el Mega-aro tocando el reloj solar de Ciudad Fluxus.",
 "Entra a pie en Ciudad Luminalia por una de sus puertas (volando no sirve): recibes una llamada y Handsome te espera en Handsome & Cía., en la calle estrecha entre la Plaza Roja y el Bulevar Norte.",
 "Capítulo 1: encuentra los 5 Boletos Handsome, que brillan: Centro Pokémon de la Plaza Rosa (frente al probador), dentro del gimnasio de la Plaza Central, tienda de medicina tradicional de la Avenida Primavera, planta baja del Gran Hotel Ricachilton (Bulevar Norte) y planta baja del Museo de Arte; vuelve al despacho.",
 "Capítulo 2: en el callejón del Bulevar Sur, junto al restaurante Le Mindundi, vence a los 4 entrenadores; busca al Espurr Peluchín en el callejón del Café Cuco (elige «sonreír») y en el de enfrente del puesto de crepes (elige «bailar»): Matière se muda al despacho.",
@@ -6001,7 +6001,7 @@
 ]
 },
 "YELLOW-01": {
-"caution": "Tu Pikachu inicial rechaza la Piedra Trueno: nunca evolucionará. Raichu solo se consigue por intercambio (o con Pokekeep). El combate opcional con tu rival en la Ruta 22 y el del laboratorio deciden en qué evoluciona su Eevee.",
+"caution": "Tu Pikachu inicial rechaza la Piedratrueno: nunca evolucionará. Raichu solo se consigue por intercambio (o con Pokekeep). El combate opcional con tu rival en la Ruta 22 y el del laboratorio deciden en qué evoluciona su Eevee.",
 "steps": [
 "Sal de tu casa en Pueblo Paleta y entra en la hierba alta de la Ruta 1: el profesor Oak captura un Pikachu salvaje y te lleva a su laboratorio.",
 "Tu rival se queda la Poké Ball de la mesa (Eevee) y a ti te toca Pikachu, tu inicial. Al salir combates contra él.",
@@ -6027,8 +6027,8 @@
 "steps": [
 "Cruza la Ruta 3 (muchos entrenadores) hasta el Centro Pokémon de la entrada del Monte Moon. Dentro, un hombre te vende un Magikarp de nivel 5 por 500 ₽ (solo una vez).",
 "Entra en el Monte Moon y recorre la planta baja y los sótanos; recoge la MT01 (Megapuño) y las Piedras Lunares (una en la esquina superior izquierda de la planta baja y otra oculta en el sótano 2, cerca de los fósiles).",
-"En el sótano 2 vence a los reclutas del Team Rocket y al Supernecio que custodia dos fósiles.",
-"Elige el Fósil Hélix (revive como Omanyte) o el Fósil Domo (revive como Kabuto); el Supernecio se queda el otro.",
+"En el sótano 2 vence a los reclutas del Team Rocket y al Súper Necio que custodia dos fósiles.",
+"Elige el Fósil Hélix (revive como Omanyte) o el Fósil Domo (revive como Kabuto); el Súper Necio se queda el otro.",
 "Al elegir fósil aparecen Jessie y James para quitártelo: véncelos en combate.",
 "Sal por la salida este hacia la Ruta 4 y sigue al este hasta Ciudad Celeste.",
 "Con Pokekeep: el fósil que no escojas (Omanyte/Omastar o Kabuto/Kabutops) solo se consigue por intercambio; añádelo legal desde la Librería."
@@ -6064,13 +6064,13 @@
 "Usa Corte en el arbusto que tapa la entrada del Gimnasio de Ciudad Carmín.",
 "Dentro hay 15 cubos de basura. Examínalos uno a uno: en uno, elegido al azar, está el primer interruptor.",
 "Nada más encontrar el primero, examina un cubo contiguo (arriba, abajo, izquierda o derecha de ese): el segundo interruptor siempre está pegado al primero. Si aciertas, se apaga la barrera eléctrica.",
-"Vence al Teniente Surge (solo lleva un Raichu de nivel 28). Lo más seguro es un Pokémon de tipo Tierra: Diglett de la Cueva Diglett (Ruta 11, al este de Ciudad Carmín).",
+"Vence al Lt. Surge (solo lleva un Raichu de nivel 28). Lo más seguro es un Pokémon de tipo Tierra: Diglett de la Cueva Diglett (Ruta 11, al este de Ciudad Carmín).",
 "Recibe la Medalla Trueno (permite usar Vuelo fuera de combate) y la MT24 (Rayo).",
 "Squirtle: con la Medalla Trueno, habla con la agente de policía de Ciudad Carmín: te regala un Squirtle de nivel 10."
 ]
 },
 "YELLOW-07": {
-"caution": "En la Torre Pokémon de Pueblo Lavanda los fantasmas no se pueden combatir ni capturar sin el Scope Silph (Visor Silph), que se consigue en Ciudad Azulona.",
+"caution": "En la Torre Pokémon de Pueblo Lavanda los fantasmas no se pueden combatir ni capturar sin el Scope Silph (Scope Silph), que se consigue en Ciudad Azulona.",
 "steps": [
 "Antes de ir, consigue la MO05 (Destello): cruza la Cueva Diglett desde la Ruta 11 hasta la Ruta 2 y, en la casa al sur de la salida, el ayudante de Oak te la da si tienes al menos 10 especies capturadas en la Pokédex.",
 "Vuelve a Ciudad Celeste y usa Corte en el arbusto del este para salir a la Ruta 9; síguela hasta la Ruta 10.",
@@ -6088,7 +6088,7 @@
 "Usa Corte para llegar al Gimnasio de Ciudad Azulona y vence a Erika (Tangela nv. 30, Weepinbell nv. 32 y Gloom nv. 32; usa Fuego, Hielo, Volador o Psíquico). Recibe la Medalla Arcoíris (permite usar Fuerza) y la MT21 (Megaagotar).",
 "En el Casino Rocket, vence al recluta que vigila el cartel del fondo y pulsa el interruptor que hay detrás: se abre la escalera a la Guarida Rocket.",
 "En la Guarida baja por las escaleras (los sótanos 2 y 3 tienen baldosas que te arrastran) hasta el sótano 4 y recoge la Llave Ascensor, en el suelo junto a un recluta.",
-"Con la Llave Ascensor usa el ascensor para llegar a la zona de Giovanni en el sótano 4; antes te cortan el paso Jessie y James. Vence a Giovanni y recoge el Scope Silph (Visor Silph) del suelo, junto a él.",
+"Con la Llave Ascensor usa el ascensor para llegar a la zona de Giovanni en el sótano 4; antes te cortan el paso Jessie y James. Vence a Giovanni y recoge el Scope Silph (Scope Silph) del suelo, junto a él.",
 "Por la entrada trasera del Edificio Azulona (rodea el edificio por la derecha del Centro Pokémon), sube a la azotea y entra en la casita: en la Poké Ball de la mesa hay un Eevee de nivel 25."
 ]
 },
@@ -6123,7 +6123,7 @@
 "En la 5.ª planta recoge la Llave Magnética: abre las puertas cerradas del edificio.",
 "Ve a la 3.ª planta y, abriendo puertas con la Llave Magnética, llega al teletransportador que lleva a la 7.ª planta: apareces en la sala donde espera tu rival. En esa misma sala un empleado de Silph te regala un Lapras de nivel 15.",
 "En la 7.ª planta vence a tu rival y usa el teletransportador que hay a su lado: lleva a la planta 11. Allí vence a Jessie y James y después a Giovanni; el presidente de Silph te da la Master Ball.",
-"Antes del gimnasio, vence a los karatecas del Dojo Karate (junto al gimnasio) y elige Hitmonlee o Hitmonchan (nivel 30).",
+"Antes del gimnasio, vence a los karatecas del Dojo-Karate (junto al gimnasio) y elige Hitmonlee o Hitmonchan (nivel 30).",
 "Gimnasio de Ciudad Azafrán (salas de teletransportadores): en la sala de entrada pisa el único teletransportador (arriba a la derecha) → sala sureste: el de arriba a la izquierda → sala noreste: el de abajo a la izquierda → sala noroeste: el de abajo a la izquierda → sala central, la de Sabrina.",
 "Vence a Sabrina (Abra, Kadabra y Alakazam, los tres de nivel 50; son débiles a Bicho y en esta generación los ataques Fantasma no les afectan). Recibe la Medalla Pantano y la MT46 (Psicoonda)."
 ]
@@ -6176,7 +6176,7 @@
 "steps": [
 "En Amarillo no aparecen Weedle, Kakuna, Beedrill, Ekans, Arbok, Raichu, Meowth, Persian, Koffing, Weezing, Jynx, Electabuzz y Magmar: hay que traerlos por intercambio desde Rojo o Azul.",
 "Haz los intercambios del juego: Clefairy por Mr. Mime (casa de la Ruta 2), Lickitung por Dugtrio (puesto de la Ruta 11, planta de arriba), Cubone por Machoke (Vía Subterránea, entrada de la Ruta 5), Tangela por Parasect (puesto de la Ruta 18, planta de arriba), y en el laboratorio de Isla Canela Kangaskhan por Muk, Golduck por Rhydon y Growlithe por Dewgong.",
-"Recoge los regalos únicos: Bulbasaur (Ciudad Celeste, con Pikachu contento), Charmander (Ruta 24), Squirtle (Ciudad Carmín, tras la Medalla Trueno), Magikarp (Centro Pokémon del Monte Moon, 500 ₽), Eevee (azotea del Edificio Azulona), Lapras (Silph S. A., 7.ª planta), Hitmonlee o Hitmonchan (Dojo Karate), tu fósil y el Ámbar Viejo.",
+"Recoge los regalos únicos: Bulbasaur (Ciudad Celeste, con Pikachu contento), Charmander (Ruta 24), Squirtle (Ciudad Carmín, tras la Medalla Trueno), Magikarp (Centro Pokémon del Monte Moon, 500 ₽), Eevee (azotea del Edificio Azulona), Lapras (Silph S. A., 7.ª planta), Hitmonlee o Hitmonchan (Dojo-Karate), tu fósil y el Ámbar Viejo.",
 "Canjea en la tienda de premios, junto al Casino Rocket: Abra (230 fichas, nv. 15), Vulpix (1000, nv. 18), Wigglytuff (2680, nv. 22), Scyther (6500, nv. 30), Pinsir (6500, nv. 30) y Porygon (9999, nv. 26).",
 "Kadabra, Machoke, Graveler y Haunter solo evolucionan (Alakazam, Machamp, Golem y Gengar) al intercambiarlos con otra consola.",
 "Recoge los premios de los ayudantes de Oak: MO05 Destello (casa de la Ruta 2, 10 especies capturadas), Buscaobjetos (puesto de la Ruta 11, planta de arriba, 30 especies) y Repartir Exp (puesto de la Ruta 15, planta de arriba, 50 especies).",
