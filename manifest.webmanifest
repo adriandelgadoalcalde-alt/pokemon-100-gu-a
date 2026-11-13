@@ -4,12 +4,35 @@
   "short_name": "Pokémon 100%",
   "description": "Guía de completismo Pokémon y lector local de partidas",
   "lang": "es",
-  "start_url": "./",
+  "start_url": "./atlas.html",
   "scope": "./",
-  "display": "standalone",
+  "display": "fullscreen",
+  "display_override": [
+    "fullscreen",
+    "standalone"
+  ],
+  "orientation": "any",
   "background_color": "#0a1020",
   "theme_color": "#0a1020",
   "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
     {
       "src": "./icons/icon.svg",
       "sizes": "any",
