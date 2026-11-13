@@ -1428,7 +1428,7 @@
    "fase": 6,
    "orden": 680,
    "como": "El Medallero de Ciudad Gres (sala de la Liga de Medallas) registra 255 medallas de cinco tipos: Avance (historia), Aventura, Batalla, Conexión y Especiales. Ve a por ellas en este orden: las de Avance salen solas con la historia; las de Aventura y Batalla, jugando (pesca, bici, cajas, evoluciones, instalaciones de combate); cada vez que el señor de la Liga de Medallas te llama, recoge las nuevas y sube de rango. Las de Conexión que exigían Pokémon Global Link, la GTS, los combates aleatorios por Wi-Fi, Pokémon Dream Radar o eventos ya no se pueden ganar jugando porque esos servicios cerraron. El bloque del Medallero guarda cada medalla y su fecha.",
-   "pokekeep": "abre la partida, pestaña SAV, botón «Insignias» (Editor de Insignias): marca las que falten una a una o pulsa «Dar todas», y después «Guardar»; finalmente exporta la partida."
+   "pokekeep": "abre la partida y, en la pestaña «SAV», pulsa el botón «Insignias» (solo aparece con Negro 2 o Blanco 2): en el Editor de Insignias, pestaña «Insignias», pon en «Obtenida» las que falten o pulsa «Dar todas», después «Guardar»; finalmente exporta la partida."
   },
   {
    "juegos": [

@@ -758,7 +758,7 @@
 "Aventura: pasos por Teselia, Bici, Supercaña, capturas por tipo de la Pokédex de Teselia, cajas del PC llenas, Zona Nexo… Combate: Metro Batalla, PWT, las 10 zonas del rascacielos y ganar la Liga con equipos de un solo tipo. Diversión: Pokéwood, Galería Unión, minijuegos del Videomisor y Misiones Festival.",
 "Ve a recoger rangos al Insigniárium (planta 1 del edificio más al oeste de Ciudad Porcelana): Aspirante con 50, Profesional con 100, Maestría con 150 y Leyenda con 200.",
 "Las insignias de intercambio, combates inalámbricos y Misiones Festival se pueden sacar hoy con otra consola por conexión local; las que exigían la Conexión Wi-Fi de Nintendo (cerrada el 20 de mayo de 2014), Pokémon Global Link o la RAdar Pokémon ya no se pueden ganar jugando.",
-"Con Pokekeep: abre la partida, pestaña SAV, botón «Insignias» y marca solo las que dependían de esos servicios cerrados; guarda y exporta la partida."
+"Con Pokekeep: abre la partida, en la pestaña «SAV» pulsa el botón «Insignias» (solo aparece con partidas de Negro 2 o Blanco 2); en el Editor de Insignias, pestaña «Insignias», pon en «Obtenida» el estado de las que dependían de esos servicios cerrados, pulsa «Guardar» y exporta la partida."
 ]
 },
 "BLACK2-E02": {
@@ -5652,7 +5652,7 @@
 "Aventura: pasos por Teselia, Bici, Supercaña, capturas por tipo de la Pokédex de Teselia, cajas del PC llenas, Zona Nexo… Combate: Metro Batalla, PWT, las 10 zonas subterráneas del cavernogal y ganar la Liga con equipos de un solo tipo. Diversión: Pokéwood, Galería Unión, minijuegos del Videomisor y Misiones Festival.",
 "Ve a recoger rangos al Insigniárium (planta 1 del edificio más al oeste de Ciudad Porcelana): Aspirante con 50, Profesional con 100, Maestría con 150 y Leyenda con 200.",
 "Las insignias de intercambio, combates inalámbricos y Misiones Festival se pueden sacar hoy con otra consola por conexión local; las que exigían la Conexión Wi-Fi de Nintendo (cerrada el 20 de mayo de 2014), Pokémon Global Link o la RAdar Pokémon ya no se pueden ganar jugando.",
-"Con Pokekeep: abre la partida, pestaña SAV, botón «Insignias» y marca solo las que dependían de esos servicios cerrados; guarda y exporta la partida."
+"Con Pokekeep: abre la partida, en la pestaña «SAV» pulsa el botón «Insignias» (solo aparece con partidas de Negro 2 o Blanco 2); en el Editor de Insignias, pestaña «Insignias», pon en «Obtenida» el estado de las que dependían de esos servicios cerrados, pulsa «Guardar» y exporta la partida."
 ]
 },
 "WHITE2-E02": {
