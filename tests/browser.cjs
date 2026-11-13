@@ -12,7 +12,7 @@ const root = path.resolve(__dirname, '..');
 const server = http.createServer((req, res) => {
   let name = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
   if (name === '/') name = '/index.html';
-  if (!/^\/(index\.html|atlas\.html|sw\.js|manifest\.webmanifest|icons\/[\w.-]+|src\/(saves|engine|guides)\/[\w.-]+)$/.test(name)) {
+  if (!/^\/(index\.html|clasica\.html|atlas\.html|sw\.js|manifest\.webmanifest|icons\/[\w.-]+|src\/(saves|engine|guides)\/[\w.-]+)$/.test(name)) {
     res.writeHead(404).end(); return;
   }
   const file = path.join(root, name);
@@ -35,7 +35,7 @@ async function run() {
       const context = await browser.newContext(ctx({viewport: {width, height: 1000}, serviceWorkers: 'block'}));
       const page = await context.newPage();
       page.on('pageerror', e => errors.push(e.message));
-      for (const file of ['index.html', 'atlas.html']) {
+      for (const file of ['clasica.html', 'atlas.html']) {
         await page.goto(`${base}/${file}`);
         await page.locator('#app button:visible').first().waitFor();
         const dimensions = await page.evaluate(() => ({width: innerWidth, scroll: document.documentElement.scrollWidth}));
@@ -91,7 +91,7 @@ async function run() {
       v8Manual: {'legacy-profile|fact': {value: true, provenance: 'Respuesta histórica'}},
       v8Profiles: {'legacy-profile': {checked: {'soulsilver-2#0': true}}}, v7ChainMigration: true};
     await page.evaluate(data => localStorage.setItem('archivo-pokemon-v2', JSON.stringify(data)), historical);
-    await page.goto(`${base}/index.html`);
+    await page.goto(`${base}/clasica.html`);
     await page.getByRole('heading', {name: 'Importa tu partida', exact: true}).waitFor();
     assert.equal(await page.locator('[data-view="quiz"], #quizForm, #v6QuizForm, #v8QuizForm, input[type="radio"]').count(), 0);
     const requests = [];
@@ -138,7 +138,7 @@ async function run() {
     const restorePage = await restoreContext.newPage();
     restorePage.on('pageerror', e => errors.push(e.message));
     restorePage.on('dialog', d => d.accept());
-    await restorePage.goto(`${base}/index.html`);
+    await restorePage.goto(`${base}/clasica.html`);
     await restorePage.locator('#importFile').setInputFiles({name: 'historical-progress.json', mimeType: 'application/json',
       buffer: Buffer.from(JSON.stringify(exported))});
     await restorePage.waitForFunction(() => JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.v8Manual?.['legacy-profile|fact']?.value === true);
@@ -170,7 +170,7 @@ async function run() {
     // A new reader learning SID must retain manual records for the exact same binary.
     const identityContext=await browser.newContext(ctx({serviceWorkers:'block'})),identityPage=await identityContext.newPage();
     identityPage.on('pageerror',e=>errors.push(e.message));identityPage.on('dialog',d=>d.accept());
-    await identityPage.goto(`${base}/index.html`);
+    await identityPage.goto(`${base}/clasica.html`);
     const identityFile={name:'identity.sav',mimeType:'application/octet-stream',buffer:Buffer.from(fixture({sid:456}))};
     await identityPage.locator('#saveImportFile').setInputFiles(identityFile);
     await identityPage.waitForFunction(()=>JSON.parse(localStorage.getItem('archivo-pokemon-v2'))?.snapshots?.SOULSILVER?.sid===456);
@@ -548,7 +548,7 @@ async function run() {
     // Damaged persisted JSON remains recoverable rather than silently disappearing.
     const damaged='{"checked":';
     await allPage.evaluate(raw=>localStorage.setItem('archivo-pokemon-v2',raw),damaged);
-    await allPage.goto(`${base}/index.html`);
+    await allPage.goto(`${base}/clasica.html`);
     await allPage.locator('#app button:visible').first().waitFor();
     const recoveryDownload=allPage.waitForEvent('download');await allPage.locator('#backup').click();
     const recoveredRaw=JSON.parse(await fs.promises.readFile(await (await recoveryDownload).path(),'utf8'));
@@ -561,7 +561,7 @@ async function run() {
       return original.call(this,k,v);
     };});
     const quotaPage=await quotaContext.newPage();quotaPage.on('pageerror',e=>errors.push(e.message));
-    await quotaPage.goto(`${base}/index.html`);
+    await quotaPage.goto(`${base}/clasica.html`);
     await quotaPage.locator('#saveImportFile').setInputFiles({name:'memory-only.sav',mimeType:'application/octet-stream',buffer:Buffer.from(fixture({caught:[145]}))});
     await quotaPage.getByRole('alert').filter({hasText:'Siguen en memoria'}).waitFor();
     const quotaDownload=quotaPage.waitForEvent('download');await quotaPage.locator('#backup').click();
@@ -580,10 +580,10 @@ async function run() {
     // offline emulation can fail before dispatching the service-worker fetch.
     server.closeAllConnections();
     await new Promise(resolve=>server.close(resolve));
-    for (const file of ['index.html', 'atlas.html']) {
+    for (const file of ['clasica.html', 'atlas.html']) {
       await offlinePage.goto(`${base}/${file}`);
       await offlinePage.locator('#app button:visible').first().waitFor();
-      if (file === 'index.html') assert.equal(await offlinePage.evaluate(() => typeof PokemonHGSSIntegrity.inspect), 'function');
+      if (file === 'clasica.html') assert.equal(await offlinePage.evaluate(() => typeof PokemonHGSSIntegrity.inspect), 'function');
       if(file==='atlas.html'){await offlinePage.setViewportSize({width:390,height:1000});await offlinePage.locator('#mobile-gen').selectOption('1');await offlinePage.locator('#mobile-game').selectOption('RED');await offlinePage.locator('[data-mid="RED-01"] > summary').click();await offlinePage.locator('[data-mid="RED-01"] .route-details').waitFor();assert.match(await offlinePage.locator('[data-mid="RED-01"] .route-details').innerText(),/paquete destinado al profesor/);await offlinePage.locator('#mobile-gen').selectOption('3');await offlinePage.locator('#mobile-game').selectOption('EMERALD');await offlinePage.locator('[data-mid="EMERALD-11"] > summary').click();await offlinePage.locator('[data-ice-platform="3"] [data-ice-delta="1"]').click();assert.equal(await offlinePage.locator('[data-ice-platform="3"]').getAttribute('data-ice-step'),'1');}
       if(file==='atlas.html'){
         await offlinePage.locator('#mobile-gen').selectOption('4');
