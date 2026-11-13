@@ -2657,7 +2657,11 @@
  const ice=typeof module==='object'&&module.exports?require('./ice-puzzle.js'):root.PokemonIcePuzzle;
  const byMission=new Map();
  for(const route of routes)for(const game of route.games){const id=game+'-'+route.mission;if(byMission.has(id))throw Error('Ruta editorial duplicada: '+id);byMission.set(id,route);}
- function get(game,id){if(!id.startsWith(game+'-'))return null;const entry=byMission.get(id);return entry?.games.includes(game)?entry:null;}
+ // Paso a paso preciso por edición (precision.js, generado desde research/guides/precision): manda sobre los pasos y avisos
+ // del recorrido común; ubicación, requisitos, comprobación y fuentes se conservan.
+ const precision=typeof module==='object'&&module.exports?(process.env.POKEMON_SIN_PRECISION?null:require('./precision.js')):root.PokemonPrecision;
+ function get(game,id){if(!id.startsWith(game+'-'))return null;const entry=byMission.get(id);if(!entry?.games.includes(game))return null;
+  const p=precision?.missions?.[id];return p?{...entry,steps:p.steps,pitfalls:p.caution?[p.caution]:[],precise:true}:entry;}
  function stats(game){return routes.filter(r=>r.games.includes(game)).length;}
  function render(game,id,esc){
   const r=get(game,id);if(!r)return '';

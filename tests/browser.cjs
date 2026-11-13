@@ -229,10 +229,10 @@ async function run() {
     await allPage.locator('[data-mid="PLATINUM-04"] > summary').click();
     const platinumOrder=await allPage.locator('[data-mid="PLATINUM-04"] .route-details').innerText();
     assert.match(platinumOrder,/Fantina es la tercera/);
-    assert.match(platinumOrder,/Brega, cuarta/);
+    assert.ok(/Brega, cuarta/.test(platinumOrder)||platinumOrder.search(/Fantina es la tercera/)<platinumOrder.search(/vence a Brega/),'Platino: Fantina (tercera) antes que Brega (cuarta)');
     assert.match(platinumOrder,/Ruinas Sosiego/);
     await allPage.locator('[data-mid="PLATINUM-06"] > summary').click();
-    assert.match(await allPage.locator('[data-mid="PLATINUM-06"] .route-details').innerText(),/Quinoa para recibir MO04 Fuerza/);
+    assert.match(await allPage.locator('[data-mid="PLATINUM-06"] .route-details').innerText(),/Quinoa[^.]*MO04 Fuerza/);
     await allPage.locator('[data-mid="PLATINUM-DETAIL1"] > summary').click();
     assert.match(await allPage.locator('[data-mid="PLATINUM-DETAIL1"] .route-details').innerText(),/habla con Cintia/);
     assert.equal(await allPage.locator('[data-check]:checked').count(),0);
@@ -245,8 +245,8 @@ async function run() {
       assert.match(await allPage.locator('[data-mid="'+game+'-05"] .route-details').innerText(),/Gran Pantano/);
       await allPage.locator('[data-mid="'+game+'-06"] > summary').click();
       const originalRoute=await allPage.locator('[data-mid="'+game+'-06"] .route-details').innerText();
-      assert.match(originalRoute,/15, 40, 39 y 15/);
-      assert.match(originalRoute,/Medalla Reliquia/);
+      assert.match(originalRoute,/15[^.]*40[^.]*39[^.]*15/);
+      assert.match(originalRoute,/[Mm]edalla Reliquia/);
       assert.equal(await allPage.locator('[data-check]:checked').count(),0);
     }
     // Edition-specific puzzles and narrative gates must not inherit R/S instructions in Emerald.
@@ -289,12 +289,12 @@ async function run() {
     }
     // HGSS-specific actions must not inherit G/S gifts or skip the Kimono sequence.
     await allPage.locator('[data-view="mission"]').first().click();
-    await allPage.locator('[data-mid="SOULSILVER-06"] > summary').click();
-    assert.match(await allPage.locator('[data-mid="SOULSILVER-06"] .route-details').innerText(),/montañero junto a Monte Mortero/);
+    await allPage.locator('[data-mid="SOULSILVER-07"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="SOULSILVER-07"] .route-details').innerText(),/montañero[^.]*Monte Mortero/);
     await allPage.locator('[data-mid="SOULSILVER-09"] > summary').click();
     assert.match(await allPage.locator('[data-mid="SOULSILVER-09"] .route-details').innerText(),/cinco combates seguidos/);
     await allPage.locator('[data-mid="SOULSILVER-E03"] > summary').click();
-    assert.match(await allPage.locator('[data-mid="SOULSILVER-E03"] .route-details').innerText(),/usar una Piedra Agua desde la bolsa/);
+    assert.match(await allPage.locator('[data-mid="SOULSILVER-E03"] .route-details').innerText(),/Piedra Agua[^.]*desde la bolsa/);
     await allPage.locator('#mobile-gen').selectOption('3');
     // Remake locations and exact completion sets must not inherit the original GB guide.
     await allPage.locator('#mobile-game').selectOption('FIRERED');
@@ -331,12 +331,13 @@ async function run() {
       for(const suffix of ['05','06','08','09'])await allPage.locator(`[data-mid="${game}-${suffix}"] > summary`).click();
       const text=async suffix=>allPage.locator(`[data-mid="${game}-${suffix}"] .route-details`).innerText();
       if(game.endsWith('2')){
-        assert.match(await text('05'),/Bel para recibir MO02 Vuelo/);
-        assert.match(await text('06'),/Cheren para recibir MO03 Surf/);
-        assert.match(await text('08'),/Negro 2 pide tarjeta y contraseña; Blanco 2, cuatro interruptores/);
-        assert.match(await text('09'),/Derrota a Iris/);
+        assert.match(await text('05'),/Bel[^.]*MO02[^.]*Vuelo/);
+        assert.match(await text('06'),/Cheren[^.]*MO03[^.]*Surf/);
+        assert.match(await text('08'),/cuatro interruptores[^.]*contraseña|contraseña[^.]*cuatro interruptores/);
+        assert.match(await text('09'),/[Dd]errota a Iris|Iris: véncela/);
       }else{
-        assert.match(await text('05'),/Bel.*Vuelo/);
+        assert.match(await text('05'),/Yakón/);
+        assert.match(await text('06'),/Bel[^.]*Vuelo/);
         assert.match(await text('06'),/Huevo Suerte/);
         assert.match(await text('09'),/Mirto.*postgame/);
       }
@@ -361,11 +362,11 @@ async function run() {
     }
     await allPage.locator('[data-view="mission"]').first().click();
     await allPage.locator('[data-mid="WHITE2-N2"] > summary').click();
-    assert.match(await allPage.locator('[data-mid="WHITE2-N2"] .route-details').innerText(),/seis casillas al sur y nueve al este/);
+    assert.match(await allPage.locator('[data-mid="WHITE2-N2"] .route-details').innerText(),/seis casillas al sur y nueve al este|9 pasos al este y 6 al sur/);
     await allPage.locator('[data-mid="WHITE2-E02"] > summary').click();
-    assert.match(await allPage.locator('[data-mid="WHITE2-E02"] .route-details').innerText(),/Líderes del Mundo diez veces/);
+    assert.match(await allPage.locator('[data-mid="WHITE2-E02"] .route-details').innerText(),/(Líderes del Mundo|Torneo Mundial de Líderes)[^.]*(diez|10) veces/);
     await allPage.locator('[data-mid="WHITE2-N3"] > summary').click();
-    assert.match(await allPage.locator('[data-mid="WHITE2-N3"] .route-details').innerText(),/Pase antes de viajar/);
+    assert.match(await allPage.locator('[data-mid="WHITE2-N3"] .route-details').innerText(),/Pase antes de viajar|hay que recogerlo/);
     // Kalos requires seen registrations; full caught data cannot mask a seen gap.
     const kalosRequired=require('../src/engine/kalos-dex.js').required;
     for(const game of ['X','Y']){
@@ -381,9 +382,9 @@ async function run() {
       assert.equal(await allPage.locator('[data-master]:checked').count(),0);
       await allPage.locator('[data-view="mission"]').first().click();
       for(const suffix of ['04','06','08'])await allPage.locator(`[data-mid="${game}-${suffix}"] > summary`).click();
-      assert.match(await allPage.locator(`[data-mid="${game}-04"] .route-details`).innerText(),/MO04 Fuerza de Lino/);
-      assert.match(await allPage.locator(`[data-mid="${game}-06"] .route-details`).innerText(),/ascensores 3, 1, 3 y 2/);
-      assert.match(await allPage.locator(`[data-mid="${game}-08"] .route-details`).innerText(),/Xerneas en X o Yveltal en Y/);
+      assert.match(await allPage.locator(`[data-mid="${game}-04"] .route-details`).innerText(),/Lino[^.]*MO04 Fuerza|MO04 Fuerza de Lino/);
+      assert.match(await allPage.locator(`[data-mid="${game}-06"] .route-details`).innerText(),/Pikachu, Fletchling, Panpour/);
+      assert.match(await allPage.locator(`[data-mid="${game}-08"] .route-details`).innerText(),game==='X'?/Xerneas/:/Yveltal/);
     }
     const hoennRequired=require('../src/engine/hoenn-dex.js').required;
     for(const game of ['OMEGARUBY','ALPHASAPPHIRE']){
@@ -400,11 +401,11 @@ async function run() {
       assert.equal(await allPage.locator('[data-master]:checked').count(),0);
       await allPage.locator('[data-view="mission"]').first().click();
       for(const suffix of ['04','05','09','11','13'])await allPage.locator(`[data-mid="${game}-${suffix}"] > summary`).click();
-      assert.match(await allPage.locator(`[data-mid="${game}-04"] .route-details`).innerText(),/regalo del túnel no es MO04 Fuerza/);
-      assert.match(await allPage.locator(`[data-mid="${game}-05"] .route-details`).innerText(),/Aura o Bruno entrega MO04 Fuerza/);
-      assert.match(await allPage.locator(`[data-mid="${game}-09"] .route-details`).innerText(),/sigue a Máximo a su casa/);
-      assert.match(await allPage.locator(`[data-mid="${game}-11"] .route-details`).innerText(),/Plubio tanto en Rubí Omega como en Zafiro Alfa/);
-      assert.match(await allPage.locator(`[data-mid="${game}-13"] .route-details`).innerText(),/Mesprit aparece de 04:00 a 19:59/);
+      assert.match(await allPage.locator(`[data-mid="${game}-04"] .route-details`).innerText(),/regalo del túnel no es MO04 Fuerza|este regalo no es la MO04 Fuerza/);
+      assert.match(await allPage.locator(`[data-mid="${game}-05"] .route-details`).innerText(),/Aura o Bruno entrega MO04 Fuerza|\(Bruno o Aura\) te da la MO04 Fuerza/);
+      assert.match(await allPage.locator(`[data-mid="${game}-09"] .route-details`).innerText(),/Máximo[^.]*a su casa/);
+      assert.match(await allPage.locator(`[data-mid="${game}-11"] .route-details`).innerText(),/Plubio (tanto en Rubí Omega como en Zafiro Alfa|en las dos ediciones)/);
+      assert.match(await allPage.locator(`[data-mid="${game}-13"] .route-details`).innerText(),/Mesprit (aparece|sale) de 04:00 a 19:59/);
     }
     // Original Alola and Ultra keep distinct required bosses, Poni order and first title.
     await allPage.locator('[data-view="mission"]').first().click();
@@ -413,11 +414,12 @@ async function run() {
       await allPage.locator('#mobile-game').selectOption(game);
       for(const suffix of ['03','05','07','08'])await allPage.locator(`[data-mid="${game}-${suffix}"] > summary`).click();
       const text=async id=>allPage.locator(`[data-mid="${game}-${id}"] .route-details`).innerText();
-      assert.match(await text('03'),game.startsWith('ULTRA')?/Araquanid dominante/:/Wishiwashi dominante/);
-      assert.match(await text('05'),game.startsWith('ULTRA')?/Togedemaru dominante/:/Vikavolt dominante/);
-      assert.match(await text('05'),/Paliza, Golisopod, Skittolate y ¡Nanay!/);
-      assert.match(await text('07'),game.startsWith('ULTRA')?/Ribombee dominante/:/Hela antes de internarte en el cañón/);
-      assert.match(await text('08'),game.startsWith('ULTRA')?/vence a Tilo para obtener el primer título/:/Vence a Kukui/);
+      assert.match(await text('03'),game.startsWith('ULTRA')?/Araquanid dominante|dominante Araquanid/:/Wishiwashi dominante|dominante Wishiwashi/);
+      assert.match(await text('05'),game.startsWith('ULTRA')?/Togedemaru dominante|dominante Togedemaru/:/Vikavolt dominante|dominante Vikavolt/);
+      // Contraseñas de la Mansión Misteriosa: distintas en Ultrasol/Ultraluna (WikiDex «Mansión Misteriosa»).
+      assert.match(await text('05'),game.startsWith('ULTRA')?/Puya Nociva[^.]*Bounsweet[^.]*Skittolate[^.]*Nanay/:/Paliza[^.]*Golisopod[^.]*Skittolate[^.]*Nanay/);
+      assert.match(await text('07'),game.startsWith('ULTRA')?/Ribombee dominante|dominante Ribombee/:/[Vv]ence a (la kahuna )?Hela[\s\S]*Kommo-o/);
+      assert.match(await text('08'),game.startsWith('ULTRA')?/[Vv]ence(r)? a Tilo/:/[Vv]ence a(l profesor)? Kukui/);
       assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
     }
     // A mythical cannot replace Mewtwo in the 150 Kanto registrations; no manual check is created.
@@ -593,32 +595,32 @@ async function run() {
       await offlinePage.goto(`${base}/${file}`);
       await offlinePage.locator('#app button:visible').first().waitFor();
       if (file === 'clasica.html') assert.equal(await offlinePage.evaluate(() => typeof PokemonHGSSIntegrity.inspect), 'function');
-      if(file==='atlas.html'){await offlinePage.setViewportSize({width:390,height:1000});await offlinePage.locator('#mobile-gen').selectOption('1');await offlinePage.locator('#mobile-game').selectOption('RED');await offlinePage.locator('[data-mid="RED-01"] > summary').click();await offlinePage.locator('[data-mid="RED-01"] .route-details').waitFor();assert.match(await offlinePage.locator('[data-mid="RED-01"] .route-details').innerText(),/paquete destinado al profesor/);await offlinePage.locator('#mobile-gen').selectOption('3');await offlinePage.locator('#mobile-game').selectOption('EMERALD');await offlinePage.locator('[data-mid="EMERALD-11"] > summary').click();await offlinePage.locator('[data-ice-platform="3"] [data-ice-delta="1"]').click();assert.equal(await offlinePage.locator('[data-ice-platform="3"]').getAttribute('data-ice-step'),'1');}
+      if(file==='atlas.html'){await offlinePage.setViewportSize({width:390,height:1000});await offlinePage.locator('#mobile-gen').selectOption('1');await offlinePage.locator('#mobile-game').selectOption('RED');await offlinePage.locator('[data-mid="RED-01"] > summary').click();await offlinePage.locator('[data-mid="RED-01"] .route-details').waitFor();assert.match(await offlinePage.locator('[data-mid="RED-01"] .route-details').innerText(),/paquete destinado al profesor|Correo Oak \(el paquete del profesor\)/);await offlinePage.locator('#mobile-gen').selectOption('3');await offlinePage.locator('#mobile-game').selectOption('EMERALD');await offlinePage.locator('[data-mid="EMERALD-11"] > summary').click();await offlinePage.locator('[data-ice-platform="3"] [data-ice-delta="1"]').click();assert.equal(await offlinePage.locator('[data-ice-platform="3"]').getAttribute('data-ice-step'),'1');}
       if(file==='atlas.html'){
         await offlinePage.locator('#mobile-gen').selectOption('4');
         await offlinePage.locator('#mobile-game').selectOption('PLATINUM');
         await offlinePage.locator('[data-mid="PLATINUM-06"] > summary').click();
-        assert.match(await offlinePage.locator('[data-mid="PLATINUM-06"] .route-details').innerText(),/Quinoa para recibir MO04 Fuerza/);
+        assert.match(await offlinePage.locator('[data-mid="PLATINUM-06"] .route-details').innerText(),/Quinoa[^.]*MO04 Fuerza/);
         await offlinePage.locator('#mobile-game').selectOption('DIAMOND');
         await offlinePage.locator('[data-mid="DIAMOND-06"] > summary').click();
-        assert.match(await offlinePage.locator('[data-mid="DIAMOND-06"] .route-details').innerText(),/15, 40, 39 y 15/);
+        assert.match(await offlinePage.locator('[data-mid="DIAMOND-06"] .route-details').innerText(),/15[^.]*40[^.]*39[^.]*15/);
         await offlinePage.locator('#mobile-game').selectOption('SOULSILVER');
         await offlinePage.locator('[data-mid="SOULSILVER-09"] > summary').click();
         assert.match(await offlinePage.locator('[data-mid="SOULSILVER-09"] .route-details').innerText(),/cinco combates seguidos/);
         await offlinePage.locator('#mobile-gen').selectOption('5');
         await offlinePage.locator('#mobile-game').selectOption('WHITE2');
         await offlinePage.locator('[data-mid="WHITE2-08"] > summary').click();
-        assert.match(await offlinePage.locator('[data-mid="WHITE2-08"] .route-details').innerText(),/Tarjeta Plasma y la contraseña/);
+        assert.match(await offlinePage.locator('[data-mid="WHITE2-08"] .route-details').innerText(),/Tarjeta Plasma/);
         await offlinePage.locator('[data-mid="WHITE2-N2"] > summary').click();
-        assert.match(await offlinePage.locator('[data-mid="WHITE2-N2"] .route-details').innerText(),/seis casillas al sur y nueve al este/);
+        assert.match(await offlinePage.locator('[data-mid="WHITE2-N2"] .route-details').innerText(),/seis casillas al sur y nueve al este|9 pasos al este y 6 al sur/);
         await offlinePage.locator('#mobile-gen').selectOption('6');
         await offlinePage.locator('#mobile-game').selectOption('X');
         await offlinePage.locator('[data-mid="X-06"] > summary').click();
-        assert.match(await offlinePage.locator('[data-mid="X-06"] .route-details').innerText(),/ascensores 3, 1, 3 y 2/);
+        assert.match(await offlinePage.locator('[data-mid="X-06"] .route-details').innerText(),/Pikachu, Fletchling, Panpour/);
         assert.equal(await offlinePage.evaluate(()=>PokemonCompletion.dexStatus({game:'X',seen:PokemonKalosDex.required}).kalos.complete),true);
         await offlinePage.locator('#mobile-game').selectOption('OMEGARUBY');
         await offlinePage.locator('[data-mid="OMEGARUBY-05"] > summary').click();
-        assert.match(await offlinePage.locator('[data-mid="OMEGARUBY-05"] .route-details').innerText(),/Aura o Bruno entrega MO04 Fuerza/);
+        assert.match(await offlinePage.locator('[data-mid="OMEGARUBY-05"] .route-details').innerText(),/Aura o Bruno entrega MO04 Fuerza|\(Bruno o Aura\) te da la MO04 Fuerza/);
         assert.equal(await offlinePage.evaluate(()=>PokemonCompletion.dexStatus({game:'OMEGARUBY',seen:PokemonHoennDex.required}).hoenn.complete),true);
         await offlinePage.locator('[data-mid="OMEGARUBY-14"] > summary').click();
         const offlineStones=offlinePage.locator('[data-oras-stones]');
@@ -630,7 +632,7 @@ async function run() {
         await offlinePage.locator('#mobile-gen').selectOption('7');
         await offlinePage.locator('#mobile-game').selectOption('SUN');
         await offlinePage.locator('[data-mid="SUN-05"] > summary').click();
-        assert.match(await offlinePage.locator('[data-mid="SUN-05"] .route-details').innerText(),/RotomDex, Charjabug y Pokémon dominante/);
+        assert.match(await offlinePage.locator('[data-mid="SUN-05"] .route-details').innerText(),/Centro Pokémon[^.]*RotomDex[^.]*Charjabug[^.]*Pokémon dominante/);
         await offlinePage.locator('#mobile-game').selectOption('ULTRAMOON');
         await offlinePage.locator('[data-mid="ULTRAMOON-07"] > summary').click();
         assert.match(await offlinePage.locator('[data-mid="ULTRAMOON-07"] .route-details').innerText(),/Flor Irisada/);
