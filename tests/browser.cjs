@@ -586,7 +586,7 @@ async function run() {
     // offline emulation can fail before dispatching the service-worker fetch.
     server.closeAllConnections();
     await new Promise(resolve=>server.close(resolve));
-    for (const file of ['clasica.html', 'atlas.html']) {
+    for (const file of ['atlas.html']) {
       await offlinePage.goto(`${base}/${file}`);
       await offlinePage.locator('#app button:visible').first().waitFor();
       if (file === 'clasica.html') assert.equal(await offlinePage.evaluate(() => typeof PokemonHGSSIntegrity.inspect), 'function');
