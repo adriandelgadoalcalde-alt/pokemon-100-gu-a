@@ -18,6 +18,15 @@ function json(after){const i=html.indexOf(after)+after.length;let d=0,j=i,str=fa
 const MD=json('MASTER_DATA=');const cat=catalogue(html);
 const manualFile=path.join(ROOT,'research/guides/mision-objetivos.json');
 const manual=fs.existsSync(manualFile)?JSON.parse(fs.readFileSync(manualFile,'utf8')):{};
+// Bloques por misión (research/guides/bloques/*.json): orden cronológico de lo que pide cada misión; un bloque
+// {"objetivo":id} liga ese objetivo a la misión y uno {"titulo","texto"} es una explicación propia.
+const blocksDir=path.join(ROOT,'research/guides/bloques'),BLOCKS={};
+for(const f of fs.existsSync(blocksDir)?fs.readdirSync(blocksDir).filter(f=>f.endsWith('.json')).sort():[]){
+ const pack=JSON.parse(fs.readFileSync(path.join(blocksDir,f),'utf8'));
+ for(const [mid,spec] of Object.entries(pack.misiones||{})){const game=mid.replace(/-[^-]+$/,'');BLOCKS[mid]=spec.bloques;
+  for(const b of spec.bloques){if(b.objetivo){(manual[game]=manual[game]||{})[b.objetivo]=mid;}
+   else{if(!b.titulo||!b.texto)throw Error(mid+': bloque sin título o texto');if(/PKHeX/.test(b.titulo+b.texto))throw Error(mid+': bloque nombra PKHeX');}}}
+}
 const STOP=new Set('registrar pokédex partida esta edición según conseguir completar vencer derrotar obtener todos todas desde tras entre sobre contra hasta donde cuando cuatro cinco tres seis siete ocho nueve diez primera primer segunda tercer combate combates objeto objetos ambas regiones región juego juegos historia aplicable equipo equipos nivel'.split(' '));
 const norm=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
 const words=s=>[...new Set(norm(s).split(/[^a-zñ0-9]+/).filter(w=>w.length>=5&&!STOP.has(w)))];
@@ -47,5 +56,10 @@ for(const g of cat.games){
 }
 const body='// SPDX-License-Identifier: GPL-3.0-or-later\n/* Generado por scripts/build-mission-goals.cjs: misión de la ruta en la que se hace cada objetivo de maestría.\n   No editar a mano; las decisiones manuales van en research/guides/mision-objetivos.json. */\n(function(root){const byGame='+JSON.stringify(out)+';\nfunction missionOf(game,goal){return byGame[game]?.[goal]||null;}\nfunction goalsOf(game,mission){return Object.entries(byGame[game]||{}).filter(([,m])=>m===mission).map(([g])=>g);}\nconst api={byGame,missionOf,goalsOf};if(typeof module===\'object\'&&module.exports)module.exports=api;else root.PokemonMissionGoals=api;\n})(typeof globalThis===\'object\'?globalThis:this);\n';
 fs.writeFileSync(path.join(ROOT,'src/guides/mission-goals.js'),body);
+for(const [mid,list] of Object.entries(BLOCKS)){const game=mid.replace(/-[^-]+$/,'');if(!cat.games.find(g=>g.id===game)?.missions.some(m=>m.id===mid))throw Error('bloques de misión inexistente '+mid);
+ for(const b of list)if(b.objetivo&&!(MD[game]||[]).some(o=>o.id===b.objetivo))throw Error(mid+': objetivo inexistente '+b.objetivo);}
+const slug=t=>t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,60);
+const blocks=Object.fromEntries(Object.entries(BLOCKS).map(([mid,list])=>[mid,list.map(b=>b.objetivo?{goal:b.objetivo}:{key:slug(b.titulo),title:b.titulo,text:b.texto})]));
+fs.writeFileSync(path.join(ROOT,'src/guides/mission-blocks.js'),'// SPDX-License-Identifier: GPL-3.0-or-later\n/* Generado por scripts/build-mission-goals.cjs desde research/guides/bloques/*.json: bloques de cada misión en orden\n   cronológico (objetivo de maestría o explicación propia). No editar a mano. */\n(function(root){const byMission='+JSON.stringify(blocks)+';\nconst api={byMission,get:id=>byMission[id]||null};if(typeof module===\'object\'&&module.exports)module.exports=api;else root.PokemonMissionBlocks=api;\n})(typeof globalThis===\'object\'?globalThis:this);\n');
 if(process.argv.includes('--informe'))console.log(JSON.stringify(report,null,1));
 const n=Object.values(out).reduce((a,m)=>a+Object.keys(m).length,0);console.log('Objetivos ligados a su misión:',n);
