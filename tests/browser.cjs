@@ -229,10 +229,10 @@ async function run() {
     await allPage.locator('[data-mid="PLATINUM-04"] > summary').click();
     const platinumOrder=await allPage.locator('[data-mid="PLATINUM-04"] .route-details').innerText();
     assert.match(platinumOrder,/Fantina es la tercera/);
-    assert.match(platinumOrder,/Brega, cuarta/);
+    assert.ok(/Brega, cuarta/.test(platinumOrder)||platinumOrder.search(/Fantina es la tercera/)<platinumOrder.search(/vence a Brega/),'Platino: Fantina (tercera) antes que Brega (cuarta)');
     assert.match(platinumOrder,/Ruinas Sosiego/);
     await allPage.locator('[data-mid="PLATINUM-06"] > summary').click();
-    assert.match(await allPage.locator('[data-mid="PLATINUM-06"] .route-details').innerText(),/Quinoa para recibir MO04 Fuerza/);
+    assert.match(await allPage.locator('[data-mid="PLATINUM-06"] .route-details').innerText(),/Quinoa[^.]*MO04 Fuerza/);
     await allPage.locator('[data-mid="PLATINUM-DETAIL1"] > summary').click();
     assert.match(await allPage.locator('[data-mid="PLATINUM-DETAIL1"] .route-details').innerText(),/habla con Cintia/);
     assert.equal(await allPage.locator('[data-check]:checked').count(),0);
@@ -245,8 +245,8 @@ async function run() {
       assert.match(await allPage.locator('[data-mid="'+game+'-05"] .route-details').innerText(),/Gran Pantano/);
       await allPage.locator('[data-mid="'+game+'-06"] > summary').click();
       const originalRoute=await allPage.locator('[data-mid="'+game+'-06"] .route-details').innerText();
-      assert.match(originalRoute,/15, 40, 39 y 15/);
-      assert.match(originalRoute,/Medalla Reliquia/);
+      assert.match(originalRoute,/15[^.]*40[^.]*39[^.]*15/);
+      assert.match(originalRoute,/[Mm]edalla Reliquia/);
       assert.equal(await allPage.locator('[data-check]:checked').count(),0);
     }
     // Edition-specific puzzles and narrative gates must not inherit R/S instructions in Emerald.
@@ -289,12 +289,12 @@ async function run() {
     }
     // HGSS-specific actions must not inherit G/S gifts or skip the Kimono sequence.
     await allPage.locator('[data-view="mission"]').first().click();
-    await allPage.locator('[data-mid="SOULSILVER-06"] > summary').click();
-    assert.match(await allPage.locator('[data-mid="SOULSILVER-06"] .route-details').innerText(),/montañero junto a Monte Mortero/);
+    await allPage.locator('[data-mid="SOULSILVER-07"] > summary').click();
+    assert.match(await allPage.locator('[data-mid="SOULSILVER-07"] .route-details').innerText(),/montañero[^.]*Monte Mortero/);
     await allPage.locator('[data-mid="SOULSILVER-09"] > summary').click();
     assert.match(await allPage.locator('[data-mid="SOULSILVER-09"] .route-details').innerText(),/cinco combates seguidos/);
     await allPage.locator('[data-mid="SOULSILVER-E03"] > summary').click();
-    assert.match(await allPage.locator('[data-mid="SOULSILVER-E03"] .route-details').innerText(),/usar una Piedra Agua desde la bolsa/);
+    assert.match(await allPage.locator('[data-mid="SOULSILVER-E03"] .route-details').innerText(),/Piedra Agua[^.]*desde la bolsa/);
     await allPage.locator('#mobile-gen').selectOption('3');
     // Remake locations and exact completion sets must not inherit the original GB guide.
     await allPage.locator('#mobile-game').selectOption('FIRERED');
@@ -600,10 +600,10 @@ async function run() {
         await offlinePage.locator('#mobile-gen').selectOption('4');
         await offlinePage.locator('#mobile-game').selectOption('PLATINUM');
         await offlinePage.locator('[data-mid="PLATINUM-06"] > summary').click();
-        assert.match(await offlinePage.locator('[data-mid="PLATINUM-06"] .route-details').innerText(),/Quinoa para recibir MO04 Fuerza/);
+        assert.match(await offlinePage.locator('[data-mid="PLATINUM-06"] .route-details').innerText(),/Quinoa[^.]*MO04 Fuerza/);
         await offlinePage.locator('#mobile-game').selectOption('DIAMOND');
         await offlinePage.locator('[data-mid="DIAMOND-06"] > summary').click();
-        assert.match(await offlinePage.locator('[data-mid="DIAMOND-06"] .route-details').innerText(),/15, 40, 39 y 15/);
+        assert.match(await offlinePage.locator('[data-mid="DIAMOND-06"] .route-details').innerText(),/15[^.]*40[^.]*39[^.]*15/);
         await offlinePage.locator('#mobile-game').selectOption('SOULSILVER');
         await offlinePage.locator('[data-mid="SOULSILVER-09"] > summary').click();
         assert.match(await offlinePage.locator('[data-mid="SOULSILVER-09"] .route-details').innerText(),/cinco combates seguidos/);
