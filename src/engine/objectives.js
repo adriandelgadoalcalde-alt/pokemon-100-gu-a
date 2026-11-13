@@ -464,6 +464,16 @@
     if(caps.every(k=>typeof nb[k]==='boolean')&&typeof nb.KCapturedRegieleki==='boolean'&&typeof nb.KCapturedRegidrago==='boolean')
      add('swsh.crownCaptures',caps.every(k=>nb[k]===true)&&(nb.KCapturedRegieleki===true||nb.KCapturedRegidrago===true)&&(d.caught||[]).includes(898),'namedBlocks');
    }
+   // Escarlata/Púrpura: las tres sendas por el orden en que se recibió cada medalla (KIndexReceivedBadge<Tipo> de
+   // SaveBlockAccessor9SV; 0 = aún no). Gimnasios: Bicho, Planta, Eléctrico, Agua, Normal, Fantasma, Psíquico y Hielo;
+   // titanes: Roca, Volador, Acero, Tierra y Dragón; Team Star: Siniestro, Fuego, Veneno, Hada y Lucha (WikiDex). Contrastado
+   // con Púrpura del propietario (las 18, del 1 al 18) y Escarlata recién empezada (todas a 0).
+   if(['SCARLET','VIOLET'].includes(d.game)){
+    const b=t=>num('KIndexReceivedBadge'+t),path=ts=>{const v=ts.map(b);return v.every(x=>x!==null)?v.every(x=>x>0):null;};
+    const all=['Bug','Grass','Electric','Water','Normal','Ghost','Psychic','Ice','Rock','Flying','Steel','Ground','Dragon','Dark','Fire','Poison','Fairy','Fighting'];
+    for(const [id,ts] of [['sv.path.victory',all.slice(0,8)],['sv.path.legends',all.slice(8,13)],['sv.path.starfall',all.slice(13)]]){const v=path(ts);if(v!==null)add(id,v,'namedBlocks');}
+    if(all.some(t=>b(t)>0))add('sv.story.started',true,'namedBlocks');
+   }
    // Escarlata/Púrpura: diploma de la Pokédex de Paldea recibido del director Clavel (KClaimedPokedexDiplomaPaldea,
    // FSYS_POKEDEX_SYOUJOU_EVENT de SaveBlockAccessor9SV; WikiDex, guía «Camino a casa»).
    if(['SCARLET','VIOLET'].includes(d.game)&&typeof nb.KClaimedPokedexDiplomaPaldea==='boolean')add('card.sv.diplomaPaldea',nb.KClaimedPokedexDiplomaPaldea,'namedBlocks');

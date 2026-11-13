@@ -49,7 +49,7 @@ const server=http.createServer((req,res)=>{
     if(!read){fallos++;const body=await page.locator('body').innerText();
      console.log(`NO LEÍDO | ${rel} | ${(body.match(/[^\n]*(?:no |error|Selecciona)[^\n]*/i)||[''])[0].slice(0,160)}`);continue;}
     const info=await page.evaluate(()=>{view='mission';render();const g=game(store.game);
-     const rec=PokemonRoute.nextMission(g,evidenceFor(g),missionDone,m=>evidenceState(m,g)?.status==='capturado');
+     const rec=PokemonRoute.nextMission(g,evidenceFor(g),missionDone,m=>!missionSave(m)&&evidenceState(m,g)?.status==='capturado');
      const st=g.missions.map(m=>{const s=missionSave(m);return s?.value===true?'si':s?.value===false?'no':'?';});
      return {next:rec?.mission?(rec.mission.id+' '+rec.mission.title):'(ninguna: todo hecho)',si:st.filter(x=>x==='si').length,no:st.filter(x=>x==='no').length,nd:st.filter(x=>x==='?').length,total:g.missions.length,
       list:g.missions.map((m,k)=>m.id+' '+st[k]+' '+m.title)};});

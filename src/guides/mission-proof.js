@@ -3,7 +3,8 @@
    - Las misiones de historia con fila en los paquetes de eventos usan esa fila (event-guide.js).
    - Una misión de historia queda hecha si la partida demuestra un hito de historia posterior o el final de la historia.
    - Las misiones posteriores a la Liga quedan hechas cuando lo están los objetivos de maestría que resumen (la lista de
-     abajo, con los mismos identificadores que MASTER_DATA de atlas.html); «no» si alguno de ellos es un «no» de la
+     abajo, con los mismos identificadores que MASTER_DATA de atlas.html, o «fact:<dato>» para un dato de la partida de
+     objectives.js); «no» si alguno de ellos es un «no» de la
      partida; si falta algún dato, la guía lo pregunta.
    Una misión sin entrada aquí y sin fila de historia se marca a mano. */
 (function(root){
@@ -25,7 +26,7 @@
  const lgpe={'05':sp(144,145,146,150),'06':['battle0','pokedex']};
  const galar={'07':['postgame'],'08':sp(891,892),'09':['event-1'],'10':['pokedex','battle0']};
  const bdsp={'11':['postgame'],'12':['pokedex','card-2','card-3']};
- const sv={'08':['battle0'],'09':['dlc-ogerpon'],'10':['dlc-terapagos'],'11':['pecharunt'],'12':['pokedex'],'DETAIL1':['dlc-terapagos']};
+ const sv={'01':['fact:sv.story.started'],'02':['fact:sv.path.victory'],'03':['fact:sv.path.legends'],'04':['fact:sv.path.starfall'],'08':['battle0'],'09':['dlc-ogerpon'],'10':['dlc-terapagos'],'11':['pecharunt'],'12':['pokedex'],'DETAIL1':['dlc-terapagos']};
  const byFamily={RED:gen1,GREEN:gen1,BLUE:gen1,YELLOW:gen1,GOLD:gen2,SILVER:gen2,CRYSTAL:{...gen2,'DETAIL1':sp(243,244,245)},
   RUBY:hoenn,SAPPHIRE:hoenn,EMERALD:{...hoenn,'DETAIL1':sp(377,378,379),'DETAIL2':['card-3']},FIRERED:frlg,LEAFGREEN:frlg,
   DIAMOND:sinnoh,PEARL:sinnoh,PLATINUM:{...sinnoh,'DETAIL1':sp(487)},HEARTGOLD:hgss([382,380],382),SOULSILVER:hgss([383,381],383),
