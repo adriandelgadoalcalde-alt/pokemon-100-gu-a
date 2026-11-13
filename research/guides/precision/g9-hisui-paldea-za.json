@@ -36,55 +36,74 @@
   },
   "ARCEUS-04": {
    "pasos": [
-    "Encomiendas 9 y 10: sigue las órdenes de Sorbus y viaja a la Costa Cobalto, la zona que se ha quedado sin Pokémon señorial.",
-    "Consigue a Basculegion como montura (su guardián es Erio, del Clan Diamante, en la Playa Ginkgo): te permite cruzar el agua a toda velocidad.",
-    "Las Tres Malezas se llevan a un Growlithe; el Growlithe que sale a rescatarlo evoluciona en el nuevo señor de la zona, un Arcanine de Hisui, y una distorsión lo enfurece.",
-    "Cruza con Basculegion a la Isla Escupefuego y entra en la Arena del Magma (guardiana: Nina, del Clan Perla).",
-    "Esquiva las cargas y llamaradas de Arcanine (nivel 36), lánzale calmasferas y debilítalo; al calmarlo recibes la Tabla Llama."
+    "Encomienda 10, «Una isla sin señor»: necesitas el rango 3★ (sube con tareas de investigación). Habla con Nambo en la entrada de Villa Jubileo, que te da objetos de esfuerzo, y viaja a la Costa Cobalto.",
+    "Habla con Nákara y gánale el combate (Glaceon de nivel 30 y Eevee de nivel 15). De camino al Cabo Rocavelo verás a Nina con sus dos Growlithe (el señor anterior murió salvando a uno de ellos del agua) y después a Volus.",
+    "Visita a Erio, guardián de Basculegion, en su casa. Para preparar la comida de Basculegion necesita un Dusclops, y a Erio le dan miedo los fantasmas: espera a que anochezca y captura uno en la Arboleda Tétrica, la zona del barco naufragado.",
+    "Vuelve con el Dusclops a casa de Erio, ve con él a la Playa Ginkgo y llama a Basculegion: recibes la Tabla Linfa y Basculegion queda como montura para navegar (también puedes lanzar Poké Balls desde el agua).",
+    "Las Tres Malezas (Jara, Zarza y Ortiga) se llevan a uno de los Growlithe de Nina. Cruza el mar con Basculegion hasta la Isla Escupefuego y sube por el camino del volcán.",
+    "Vence a las tres hermanas una tras otra: una con Abomasnow (nivel 35), Ortiga con Toxicroak (nivel 34) y la tercera con Rhydon (nivel 34) y Gengar (nivel 35).",
+    "El Growlithe que sale a rescatar a su compañero evoluciona en el nuevo señor, Arcanine de Hisui, y una distorsión lo enfurece. En la Arena del Magma (guardiana: Nina) esquiva sus cargas por las franjas seguras, sin pisar las zonas de fuego.",
+    "Cuando cargue su gran ataque y aparezcan esferas de fuego sobre él, acierta con calmasferas para interrumpirlo; aprovecha cuando quede aturdido para combatir con agua, tierra o roca (nivel 36) hasta vaciar su barra.",
+    "Al calmarlo recibes la Tabla Llama. Vuelve a Villa Jubileo e informa al general Sorbus en la Sede Galaxia para cerrar la encomienda."
    ],
-   "precaucion": "Con Basculegion se abren islas y calas que antes no alcanzabas: muchas especies marinas y varias peticiones de la costa solo se pueden hacer a partir de aquí."
+   "precaucion": "Tener a Basculegion como montura o haber calmado al Arcanine señorial no registra esas especies en tu Pokédex: tienes que capturar tus propios ejemplares. Con Basculegion se abren islas y calas con especies marinas y peticiones nuevas."
   },
   "ARCEUS-05": {
    "pasos": [
-    "Encomienda 11: viaja a la Ladera Corona; Kameri, guardián de Electrode (Clan Diamante), te pone trabas porque cree que la furia de su señor es una muestra de fuerza.",
-    "Consigue a Sneasler como montura (su guardián es Fero, del Clan Perla, en el Risco Riscoso): trepa por paredes de roca.",
-    "Cuando Adamas convence a Kameri, ve a la Arena de la Luna.",
-    "Esquiva los rayos dirigidos y los truenos de Electrode de Hisui (nivel 46), lánzale calmasferas y debilítalo; al calmarlo recibes la Tabla Trueno."
+    "Encomienda 11, «Un peligroso ascenso a la montaña»: tras la escena en la Sede Galaxia, sal y vence a Adamas (Leafeon de nivel 36 y Eevee de nivel 18). Necesitas el rango 4★ para continuar.",
+    "En el área de entrenamiento conoce a Fero y viaja a la Ladera Corona. Entra con él en la Cueva Extravío y síguelo; si te separas, vuelve hacia su voz y los puntos de reunión en vez de cruzar la cueva a ciegas.",
+    "Al salir, Kameri, guardián de Electrode (Clan Diamante), te pone trabas porque cree que la furia de su señor es una muestra de fuerza: vence a su Skuntank (nivel 40).",
+    "Atraviesa la Cantera Ancestral y vence a Fero en el Risco Riscoso (Machoke y Tangela de nivel 41, Gliscor de nivel 42): recibes la Tabla Tóxica y Sneasler queda como montura para trepar por las paredes de roca marcadas, sin necesidad de Treparrocas ni de MO.",
+    "Escala la montaña hacia la Arena de la Luna y vuelve a vencer a Kameri (Skuntank de nivel 44, Zubat y Skorupi de nivel 22); con la intervención de Adamas, Kameri permite que calmes a Electrode.",
+    "En la Arena de la Luna no te quedes quieto: Electrode de Hisui (nivel 46) te persigue con rayos dirigidos, lanza truenos con ondas por el suelo y caen Voltorb; no te detengas bajo las explosiones para lanzar calmasferas.",
+    "Cuando prepare su gran explosión, sal del área marcada; al agotarse queda aturdido: envía a un Pokémon de tipo bicho, fuego, veneno o volador para abrir lanzamientos seguros y vacía su barra. Recibes la Tabla Trueno.",
+    "Vuelve a Villa Jubileo e informa al general Sorbus en la Sede Galaxia."
    ],
-   "precaucion": "Sneasler es imprescindible para varios Unown y objetos en lo alto de acantilados (por ejemplo, la cima de la Cantera Ancestral): vuelve a zonas anteriores con él."
+   "precaucion": "Desbloquear a Sneasler como montura no registra a Sneasler en la Pokédex: necesitas evolucionar tu propio Sneasel de Hisui. Sneasler hace falta para varios Unown y objetos en lo alto de acantilados (por ejemplo, la cima de la Cantera Ancestral)."
   },
   "ARCEUS-06": {
    "pasos": [
-    "Encomienda 12: viaja a la Tundra Alba; Rauko, guardián de Avalugg (Clan Perla), no quiere que lo molestes porque Avalugg no ha atacado a nadie.",
-    "Consigue a Braviary de Hisui como montura (su guardiana es Wasabi, del Clan Diamante, en el Templo Puntaneva): te deja planear por el aire.",
-    "Cuando Rauko cede, ve a la Arena del Glaciar.",
-    "Esquiva las ondas de hielo, los pulsos dirigidos y el gran rayo de Avalugg de Hisui (nivel 56), lánzale calmasferas y debilítalo; al calmarlo recibes la Tabla Helada.",
-    "Con esto has calmado a los cinco señores: Kleavor, Lilligant, Arcanine, Electrode y Avalugg."
+    "Encomienda 12, «El Señor de las Nieves durmiente»: necesitas el rango 5★. A la salida de Villa Jubileo vence a Kira o Luka (Mr. Mime y Staravia de nivel 46, Pikachu de nivel 47).",
+    "Viaja a la Tundra Alba y vence a Rauko, guardián de Avalugg (Glalie de nivel 48 y Froslass de nivel 24), que no quiere que molestes a Avalugg porque no ha atacado a nadie.",
+    "Habla con Wasabi, guardiana de Braviary (Clan Diamante), y síguela por la tundra hasta el Templo Puntaneva.",
+    "Dentro, sube hasta la planta superior resolviendo las puertas: cada estatua mira hacia la siguiente y sus símbolos indican el orden. Primera puerta: Roca → Acero → Hielo. Segunda: Hielo → Roca → Acero → Roca → Hielo. Tercera: Acero → Hielo → Roca → Hielo → Acero → Roca.",
+    "Vence a Wasabi (Rhyperior de nivel 50, Magmortar y Electivire de nivel 30), sal a la azotea y vence a Braviary de Hisui (nivel 54): recibes la Tabla Cielo y Braviary queda como montura para planear.",
+    "Con Braviary, sube a lo alto del Témpano Avalugg y después ve a la Arena del Glaciar para empezar el desafío.",
+    "Ante Avalugg de Hisui (nivel 56) esquiva las oleadas de hielo, los pulsos dirigidos, los carámbanos del suelo y el gran rayo; lanza calmasferas en los huecos entre ataques y, cuando quede expuesto, combate con lucha o acero (le hacen daño cuádruple) para abrir otra ocasión.",
+    "Al vaciar su barra recibes la Tabla Helada. Vuelve a informar al general Sorbus en la Sede Galaxia: ya has calmado a los cinco señores, pero eso todavía no resuelve la crisis de la grieta del cielo."
    ],
    "precaucion": "En la Tundra Alba la ventisca, la nevada y la niebla cambian qué Pokémon aparecen; hay especies que solo salen con un tiempo concreto. Duerme en el campamento para cambiar la hora."
   },
   "ARCEUS-07": {
    "pasos": [
-    "Encomienda 13: tras calmar a Avalugg ocurre el desastre; el general Sorbus te expulsa de Villa Jubileo.",
-    "Se te encarga buscar la Cadena Roja: elige si apoyas al Clan Diamante (Adamas) o al Clan Perla (Nákara); esa elección decide qué legendario capturas primero.",
-    "Encomiendas 14 a 16: supera la prueba del guardián de cada lago: Lago Veraz (Pradera Obsidiana), Lago Valor (Pantanal Carmesí) y Lago Agudeza (Tundra Alba).",
-    "Encomienda 17: sube a la cima del Monte Corona, al Templo de Sinnoh, y captura a Dialga (si elegiste a Adamas) o a Palkia (si elegiste a Nákara), de nivel 65.",
-    "Encomienda 18: aparece el otro legendario en forma Origen; fabrica una Origen Ball, vuelve al Templo de Sinnoh, esquiva su Cometa Draco y debilítalo: se captura solo con la Origen Ball.",
-    "Tras esta batalla salen los créditos; la encomienda 19 celebra el festival y te devuelve a la tarea de completar la Pokédex."
+    "Encomienda 13, «El desastre»: sal de tu residencia; tras la escena en la Sede Galaxia te expulsan de Villa Jubileo. Ve al campamento de la Pradera Obsidiana, visita a Nambo en la Arena del Gran Árbol y a Lina en el Puente Erosionado, y llega con Volus hasta Metis, en la Antigua Aldea Oculta.",
+    "Elige si te acompaña Adamas o Nákara en las pruebas. Con Adamas combates primero contra Dialga y después contra Palkia; con Nákara, al revés. Ambos se consiguen en la historia.",
+    "Encomiendas 14 a 16 (en el orden que quieras). Lago Veraz (Pradera Obsidiana): entra en la caverna, vence al Goodra de Hisui alfa (nivel 58) y habla con Mesprit para recibir su Pluma de Mesprit.",
+    "Lago Valor (Pantanal Carmesí): vence al Overqwil alfa (nivel 58), habla con Azelf, elige «No me rindo» tres veces y sigue lanzándole calmasferas hasta recibir el Colmillo de Azelf.",
+    "Lago Agudeza (Tundra Alba): vence al Zoroark de Hisui alfa (nivel 58); Uxie te pide una clave con los ojos de Combee, Zubat, Unown, Magneton y Dusclops: introduce 60131 para recibir la Garra de Uxie.",
+    "Con las tres pruebas superadas obtienes la Cadena Roja y vuelves a Villa Jubileo. Encomienda 17: ve a la entrada de la villa y sube a la cima del Monte Corona; vence al cocinero del Boniato Trepador, que resulta ser un ninja (Mismagius y Sneasler de nivel 59, Gardevoir y Gallade de nivel 60).",
+    "En la cima vence al general Sorbus (Braviary de Hisui, Golem y Clefable de nivel 61, Snorlax de nivel 62). Guarda, ve al altar del Templo de Sinnoh y captura al primer legendario (nivel 65) con tus Poké Balls: la historia no avanza hasta que lo capturas.",
+    "Encomienda 18: aparece el segundo legendario y la Cadena Roja deja de servir. El profesor Lavender fabrica la Origen Ball con los pedazos de la cadena y la mena origen, que se busca con ayuda de Nambo; por el camino vence a una de las Tres Malezas (Rhydon de nivel 61 y Gengar de nivel 62).",
+    "Habla con Lavender en la Arena de la Luna, sube al Templo de Sinnoh, habla con las tres personas que te esperan y guarda. El segundo legendario está en forma Origen: esquiva su Cometa Draco y las ondas, lánzale calmasferas y vacía su barra; se captura con la Origen Ball.",
+    "Tras esta batalla salen los créditos. La encomienda 19 te devuelve a la tarea de completar la Pokédex; los créditos no equivalen al encuentro con Arceus, que llega al final del postgame."
    ],
-   "precaucion": "Elige clan pensando solo en el orden: al final de la historia tendrás a Dialga y a Palkia. Lleva curas para el combate del Templo de Sinnoh, que se encadena con el segundo legendario."
+   "precaucion": "Lleva curas para la cima del Monte Corona: el combate contra el ninja, el de Sorbus y el del legendario van seguidos. Elige clan pensando solo en el orden: al final tendrás a Dialga y a Palkia."
   },
   "ARCEUS-08": {
    "pasos": [
-    "Encomienda 20: tras los créditos, Volus te ayuda a investigar las leyendas de Hisui y Metis, en la Antigua Aldea Oculta, te da pistas sobre las tablas.",
-    "Encomienda 21: vuelve a las cavernas de los tres lagos y captura a Uxie (Lago Agudeza), Mesprit (Lago Veraz) y Azelf (Lago Valor), de nivel 70.",
-    "Encomienda 22: en la Isla Escupefuego entra en el volcán y captura a Heatran (nivel 70, Altar Domo Lava); rompe su escudo de fuego con las bolas de barro de alrededor.",
-    "Encomienda 23: en la Arena de la Luna (Ladera Corona) captura a Cresselia (nivel 70). Encomienda 24: con la Tabla Acero, la Tabla Helada y la Tabla Pétrea abre el sótano del Templo Puntaneva y captura a Regigigas (nivel 70).",
-    "Encomiendas 25 y 26: sigue las pistas de Metis hasta reunir 17 tablas y ve con Volus al Templo de Sinnoh.",
-    "Volus te reta: seis Pokémon de nivel 68 (Spiritomb, Roserade, Togekiss, Lucario, Garchomp y Arcanine de Hisui) y, sin curarte, Giratina de nivel 70 en forma modificada y después en forma Origen. Al ganar, te da la última tabla y la Flauta Azur.",
-    "Petición 91: después, el profesor Lavender te avisa de una sombra en la Costa Cobalto; ve por la Vía Manantial a la Cueva Retorno y captura a Giratina (nivel 70); recibes la Gran Griseosfera."
+    "Encomienda 20: en la Pradera Obsidiana, Volus te propone investigar los mitos; ve a la Foresta Funesta y vence al Vespiquen alfa (nivel 60): recibes la Tabla Pétrea. Después ve a la Antigua Aldea Oculta y escucha las cinco pistas de Metis.",
+    "Encomienda 21, Tabla de los lagos (en cualquier orden con la 22 y la 23): vuelve a las cavernas de los lagos Veraz, Valor y Agudeza y captura a Mesprit, Azelf y Uxie (nivel 70); hay que capturarlos para avanzar. Recibes la Tabla Draco. Los objetos de las pruebas de la historia no cuentan como esas capturas.",
+    "Encomienda 22: en la Isla Escupefuego entra en el Altar Domo Lava; lanza a Heatran las bolas de barro del suelo para romper su escudo de fuego y captúralo (nivel 70). Recibes la Tabla Acero.",
+    "Encomienda 23: en la Arena de la Luna (Ladera Corona) habla primero con Kameri y captura a Cresselia (nivel 70). Recibes la Tabla Oscura.",
+    "Encomienda 24 (solo tras la 22): con la Tabla Pétrea, la Tabla Helada y la Tabla Acero abre el sótano del Templo Puntaneva y captura a Regigigas (nivel 70). Aquí no hace falta llevar a Regirock, Regice y Registeel. Recibes la Tabla Neutra.",
+    "Encomienda 25: en la Playa del Albor vence al general Sorbus (Golem, Heracross y Braviary de Hisui de nivel 65, Snorlax de nivel 66): recibes la Tabla Fuerte.",
+    "Encomienda 26: en la Antigua Aldea Oculta entrega a Metis 3 unidades de madera para recibir la Tabla Duende. Después reúnete con Volus en la explanada de las Ruinas Celestiales (Ladera Corona) y sube al Templo de Sinnoh.",
+    "Guarda: son tres combates seguidos. Vence a los seis Pokémon de Volus (Spiritomb, Roserade, Arcanine de Hisui, Togekiss, Lucario y Garchomp, todos de nivel 68) y, sin curar todo el equipo entre medias, a Giratina modificado y después Giratina Origen (nivel 70, con evasión y características aumentadas; no se puede capturar).",
+    "Al ganar recibes la Tabla Terror y la Flauta Celestial se convierte en la Flauta Azur.",
+    "Petición 91: el profesor Lavender te avisa de una sombra en la Costa Cobalto; ve por la Vía Manantial a la Cueva Retorno y captura a Giratina (nivel 70): recibes la Gran Griseosfera, que cambia su forma.",
+    "Peticiones 89 y 90: vence a Adamas en el Poblado Diamante y a Nákara en el Poblado Perla (sus Eevee evolucionados, nivel 64) para la Gran Diamansfera y la Gran Lustresfera, que cambian la forma de Dialga y Palkia."
    ],
-   "precaucion": "El combate contra Volus son siete Pokémon seguidos sin poder curarte entre medias: lleva un equipo de nivel 70 o más, objetos curativos y movimientos de tipo hada, hielo o dragón contra Giratina y Garchomp."
+   "precaucion": "Lleva un equipo de nivel 70 o más contra Volus, con objetos curativos y movimientos de tipo hada, hielo o dragón para Giratina y Garchomp. Las tablas abren accesos: sin la Tabla Acero no se abre el sótano del Templo Puntaneva, y tener una especie por intercambio no completa su encomienda."
   },
   "ARCEUS-09": {
    "pasos": [
@@ -99,14 +118,17 @@
   },
   "ARCEUS-10": {
    "pasos": [
-    "Volutas: acepta la petición 22 con Alma en Villa Jubileo y toca las 107 volutas repartidas por Villa Jubileo, la Pradera Obsidiana, el Pantanal Carmesí, la Costa Cobalto, la Ladera Corona y la Tundra Alba; de noche, en las Ruinas de la Niebla, Alma te da la última y aparece Spiritomb (nivel 60).",
-    "Unown: tras tu primera visita a las Ruinas Sosiego, captura las 28 formas (3 en Villa Jubileo y 5 en cada zona; algunas exigen a Basculegion, Sneasler o Braviary).",
-    "Alfas: los Pokémon alfa son más grandes, tienen ojos rojos y salen en puntos fijos de cada zona o en distorsiones y apariciones masivas; guarda antes de enfrentarte a ellos.",
-    "Distorsiones espaciotemporales: aparecen al azar desde que calmas a Kleavor; entra antes de que pasen los 5 minutos de aviso para capturar especies exclusivas y recoger objetos raros.",
-    "Iniciales: tras la historia, Lavender te regala los dos iniciales que no elegiste.",
-    "Lleva la cuenta por categorías: volutas (Alma), Unown (registro de Unown de la Pokédex), alfas y variocolores capturados."
+    "Unown: tras tu primera visita a las Ruinas Sosiego, captura las 28 formas (letras y signos ! y ?) con Poké Balls siguiendo las pistas del registro de Unown de la Pokédex: 3 en Villa Jubileo y 5 en cada zona; algunas exigen a Basculegion, Sneasler o Braviary. Con las 28, salen Unown salvajes en las Ruinas Sosiego, incluso alfa o variocolor.",
+    "Volutas: acepta la petición 22 con Alma en Villa Jubileo y toca las 107 volutas repartidas por Villa Jubileo, la Pradera Obsidiana, el Pantanal Carmesí, la Costa Cobalto, la Ladera Corona y la Tundra Alba; el mapa lleva la cuenta por zona y se ven mejor de noche. Con las 107, ve de noche a las Ruinas de la Niebla: Alma te da la última y aparece Spiritomb (nivel 60).",
+    "Distorsiones espaciotemporales: aparecen al azar desde que calmas a Kleavor; tienes unos 5 minutos desde el aviso hasta que se forma. Si cambias de zona o duermes para cambiar la hora, se reinicia la espera; con sol intenso, ventisca o tormenta no se forman.",
+    "Especies de distorsión, entre otras: Pradera Obsidiana, Gengar, Sneasel, Weavile, Leafeon y Sylveon; Pantanal Carmesí, Porygon, Flareon y Umbreon; Costa Cobalto, Magnemite, Magneton, Vaporeon y Flareon; Ladera Corona, Cranidos, Rampardos, Shieldon, Bastiodon, Jolteon y Magmortar; Tundra Alba, Espeon, Scizor y Glaceon. Los iniciales de otras regiones solo salen en ellas tras la historia.",
+    "Manaphy (petición 66): evoluciona un Qwilfish de Hisui a Overqwil, lleva a Buizel, Mantyke y Overqwil en el equipo, cruza por la tarde la roca con forma de cuernos de la Costa Cobalto hasta oír «¡Phy!» y explora la Cueva Costera: captura los Phione y a Manaphy (nivel 50).",
+    "Avatares de Hisui (petición 94, tras las encomiendas): Tornadus en el Páramo Argente (Tundra Alba) con ventisca, Thundurus cerca de la Mano de Arena (Costa Cobalto) con tormenta eléctrica y Landorus en la Isla Hansa (Pradera Obsidiana); rompe sus barreras lanzándoles objetos antes de capturarlos (nivel 70).",
+    "Completa las entradas de los tres, vuelve con Metis y captura a Enamorus (nivel 70) en la Ciénaga Bermeja: capturar a los tres y completar sus entradas son pasos distintos.",
+    "«El despertar de Hisui» (actualización gratuita 1.1): tras los créditos, completa las apariciones supermasivas (peticiones 96-101 y 102) y los combates de Fero en el dojo, incluidas las vías solitarias (108-122). Con las encomiendas y la petición 102 hechas, el Móvil Arceus te avisa: duerme en tu residencia para el reto onírico, combates seguidos contra rivales que eliges hasta que pierdas.",
+    "Los variocolores, la colección de alfas y las entradas «perfectas» son metas aparte: no hacen falta para Arceus. Lleva la cuenta por separado (volutas, Unown, alfas, variocolores, formas, peticiones y nivel de investigación)."
    ],
-   "precaucion": "Si un Unown escapa de la Poké Ball, sal de la zona y vuelve para que reaparezca. No hay forma de forzar una distorsión: si no sale ninguna, cambia la hora durmiendo en un campamento y espera."
+   "precaucion": "Si un Unown escapa de la Poké Ball, sal de la zona y vuelve para que reaparezca. No hay forma de forzar una distorsión: si no sale, cambia la hora durmiendo en un campamento y espera."
   },
   "ARCEUS-DETAIL1": {
    "pasos": [
@@ -427,12 +449,14 @@
   },
   "ZA-02": {
    "pasos": [
-    "Cada noche, entra en la zona de combate activa y vence a entrenadores y completa las tarjetas de bonificación para sumar puntos; al llegar al mínimo recibes el Cupón Desafío.",
-    "Con el cupón, juega el combate de ascenso del rango. Rivales de la historia: rango X, la oficinista Yara; W, Xavi; V, el camarero Wilfredo.",
-    "Rango E: busca y vence a la streamer Naria. Rango D: primero ayuda a encontrar a Inma, la hermana de Albar, y luego vence a Albar.",
-    "Rango C: vence a Córax, jefe del Clan Corrosión, tras saldar la deuda de tu rival con sus encargos. Rango B: vence a Lilette, de la SCL.",
-    "Rango A: localiza y vence a Grisel, del Team Flare Nouveau.",
-    "Desde el rango G, Quastelar S. A. entrega megaaros a los participantes: los rivales empiezan a megaevolucionar."
+    "Cada noche aparecen zonas de combate por la ciudad, también en las azoteas. Vence a entrenadores para sumar puntos (hasta 2.500 por combate, según tu rango) y recoge las medallas de premio que hay por el suelo.",
+    "Al acercarte ves la fuerza del rival respecto a ti; si te descubre, empieza el combate. Atacar por sorpresa sin que te vea te da ventaja. Los rivales tienen tu rango, uno más o uno menos.",
+    "Busca las tarjetas de bonificación: piden tareas como quemar, paralizar, envenenar, congelar o confundir, golpes supereficaces, ataques por sorpresa o vencer a rivales de rango superior. Las raras dan muchos más puntos.",
+    "Habla con algunos entrenadores tras vencerlos: dependientes del Centro Pokémon y camareros te curan, los niños ricos te dan medallas, los Entrenadores Guay te dan una tarjeta y los mensajeros, un objeto.",
+    "Al amanecer, las medallas se cambian por dinero, multiplicado según cuántos entrenadores hayas vencido (×1 con menos de 5, hasta ×3 con 30 o más).",
+    "Con los puntos necesarios recibes el Cupón Desafío y juegas el combate de ascenso en el lugar que indica la misión. Misión 4: rango Y. Misiones 6 a 8: rango X (la oficinista Yara), W (Xavi) y V (el camarero Wilfredo).",
+    "Misión 5: entre ascensos, Urbi o Muni te enseña más rincones de la ciudad.",
+    "Más adelante: rango E (la streamer Naria, a la que antes hay que encontrar), D (Albar, tras encontrar a su hermana Inma), C (Córax, jefe del Clan Corrosión), B (Lilette, de la SCL) y A (Grisel, del Team Flare Nouveau). Desde el rango G, Quastelar S. A. entrega megaaros: los rivales empiezan a megaevolucionar."
    ],
    "precaucion": "Cada rango pide más puntos para el cupón y los puntos solo se ganan de noche, en las zonas de combate. Para que llegue la noche sin esperar, siéntate en un banco. Si un combate de ascenso se te atraganta, entrena en las zonas salvajes."
   },
@@ -448,15 +472,17 @@
   },
   "ZA-04": {
    "pasos": [
-    "Misión 9: sigue al Pokémon misterioso; misión 10: Airén te da el megaaro y A. Z. te entrega la megapiedra de tu inicial (Meganiumita, Emboarita o Feraligatrita).",
-    "Calma las megaevoluciones descontroladas con el megaaro: misiones 11 Slowbro (Distrito Azul), 12 Camerupt (Distrito Amarillo), 13 Victreebel (Distrito Rosa).",
-    "Misiones 16 Beedrill (Distrito Verde), 17 Hawlucha (Distrito Rosa), 18 Banette (Distrito Amarillo).",
-    "Misiones 21 Mawile (Distrito Rosa), 22 Barbaracle (Distrito Azul), 23 Ampharos (Distrito Rojo).",
-    "Misiones 27 Froslass (Distrito Azul), 28 Altaria (Distrito Rosa), 29 Venusaur (Distrito Amarillo).",
-    "Misiones 32 Dragonite (Distrito Verde), 33 Tyranitar (Distrito Amarillo), 34 Starmie (Distrito Azul).",
-    "Cada Pokémon calmado te da su megapiedra (Slowbronita, Cameruptita, Victreebelita, etc.)."
+    "Misión 9: sigue al Pokémon misterioso. Misión 10, «Los secretos de la megaevolución»: Airén te da el megaaro y A. Z. te entrega la megapiedra de tu inicial (Meganiumita, Emboarita o Feraligatrita).",
+    "Misiones 11 a 13: calma a Mega-Slowbro (Distrito Azul), Mega-Camerupt (Distrito Amarillo) y Mega-Victreebel (Distrito Rosa). Cada combate tiene cuenta atrás: si llega a cero, pierdes; ataca rápido y esquiva sus ataques de área.",
+    "Misión 14: ascenso al rango E contra Naria, la streamer; primero tienes que averiguar dónde está.",
+    "Misiones 15 a 18 (encargo para el Equipo MZ): Mega-Beedrill (Distrito Verde), Mega-Hawlucha (Distrito Rosa) y Mega-Banette (Distrito Amarillo).",
+    "Misión 19: antes del ascenso al rango D, ayuda a encontrar a Inma, la hermana pequeña de Albar, que ha desaparecido; después vence a Albar.",
+    "Misiones 20 a 23: cumple los encargos del Clan Corrosión para saldar la deuda de tu rival y calma a Mega-Mawile (Distrito Rosa), Mega-Barbaracle (Distrito Azul) y Mega-Ampharos (Distrito Rojo).",
+    "Misión 24: ascenso al rango C contra Córax, jefe del Clan Corrosión. Misión 25: ya saldada la deuda, disputa un combate en una arena de combate de verdad.",
+    "Misiones 26 a 29: antes del torneo de Lilette (SCL), calma a Mega-Froslass (Distrito Azul), Mega-Altaria (Distrito Rosa) y Mega-Venusaur (Distrito Amarillo). Misión 30: ascenso al rango B contra Lilette.",
+    "Misiones 31 a 34: Mega-Dragonite (Distrito Verde), Mega-Tyranitar (Distrito Amarillo) y Mega-Starmie (Distrito Azul). Cada Pokémon calmado te da su megapiedra (Slowbronita, Cameruptita, Victreebelita, etc.)."
    ],
-   "precaucion": "En estos combates el Pokémon descontrolado te ataca también a ti: esquiva rodando mientras das órdenes a tu Pokémon. Guarda antes de cada uno."
+   "precaucion": "En estos combates el Pokémon descontrolado te ataca también a ti: esquiva rodando mientras das órdenes. A veces suelta una esfera que congela la cuenta atrás: recógela. Guarda antes de cada uno."
   },
   "ZA-05": {
    "pasos": [
@@ -482,23 +508,32 @@
   },
   "ZA-07": {
    "pasos": [
-    "Compra la expansión de pago Megadimensión y termina la historia principal (créditos).",
-    "Ayuda a Anya, la pastelera del Gran Hotel Ricachilton, con su dónut y ve al Canal Saison: entras por primera vez en Luminalia Dimensional con Hoopa.",
-    "Pide dónuts a Anya en el Hotel Z para abrir portales: cada zona dimensional (salvaje, de combate o «???») tiene de 1 a 5 estrellas y tres tareas que dan puntos para avanzar.",
-    "Vence a los megas descontrolados de cada tramo, como Mega-Heatran en el Averno Abrasador, y captura a Darkrai en la Isla Lunanueva de Pesadilla.",
-    "Busca a Rayquaza para Anya: Groudon (Tierra del Ocaso), Kyogre (Mar del Albor) y Rayquaza (Gran Pilar Celeste), cada uno con su dónut especial.",
-    "Con Pokekeep: si no tienes la expansión, sus legendarios (Hoopa, Darkrai, Groudon, Kyogre, Rayquaza…) puedes añadirlos legales desde la Librería, pero no marques su historia."
+    "Requisitos: comprar la expansión Megadimensión (la ropa Holo-X y Holo-Y se recibe al comprarla; la historia está disponible desde el 10 de diciembre de 2025) y haber terminado la historia principal.",
+    "Empiezan a abrirse agujeros de Hoopa en Ciudad Luminalia. Ayuda a Anya, la pastelera que viaja con Hoopa, con su dónut y ve al Canal Saison: acabas en Luminalia Dimensional y, al volver, Córax te encarga investigarla para el Clan Corrosión (misión dimensional 1, primer sondeo).",
+    "Para entrar necesitas un dónut de Anya, que preparas en el Hotel Z; sus sabores activan poderes de Hoopa que suben el nivel de tus Pokémon. Dentro, los salvajes superan el nivel 100; usa dónuts de tantas estrellas como la zona, porque con menos baja mucho la probabilidad de captura y el tiempo dentro es limitado.",
+    "Cada zona dimensional (salvaje, de combate o «???», de 1 a 5 estrellas) trae tareas que suman puntos de sondeo: romper Poké Balls flotantes, rocas, zarzas o barro, recoger objetos brillantes, capturar especies concretas, de un tipo, alfa o variocolor, o capturar sin ser visto. Al completar las tres aparece una gran Poké Ball dorada con objetos raros, como Bayas Dimensionales.",
+    "En las zonas de combate dimensionales vence a entrenadores para sumar sondeo. Algunos ayudan: los mensajeros dan bayas, las enfermeras y camareras curan, los maníacos dan Poké Balls raras y los niños ricos, monedas de Gimmighoul y pepitas.",
+    "Avanza las misiones dimensionales en orden: alternan los sondeos 2 a 6 con escenas en el Hotel Z (la llegada de una visitante enfadada, Corelia instalándose con Anya, una visita al museo y la cafetería, un estruendo en la sala de estrategia del Equipo MZ, un compañero que no baja a desayunar y un alboroto a medianoche). Cada sondeo abre zonas más peligrosas.",
+    "Sondeos 4 a 6: investiga la gran distorsión sobre la Torre Prisma, que amenaza con tragarse la ciudad. Prepara el dónut con la especia negra del Clan Corrosión, entra en el portal y vence a Darkrai en la Isla Lunanueva de Pesadilla (primero normal y después megaevolucionado) y captúralo.",
+    "Misión 12, «El mejor regalo»: Anya busca un legendario para su madre. Antes, consigue la Sal Gruesa de Hoenn y prepara los dónuts especiales de las distorsiones rubí y zafiro: captura a Groudon en la Tierra del Ocaso (misión 13) y a Kyogre en el Mar del Albor (misión 14).",
+    "Después Córax descubre la receta del dónut de la distorsión esmeralda: cruza al Gran Pilar Celeste y captura a Rayquaza (normal y Mega-Rayquaza).",
+    "Tras vencer a Darkrai aparecen arenas dimensionales con revanchas de los megas descontrolados a nivel 200 y con límite de tiempo; a veces sueltan una esfera que congela la cuenta atrás.",
+    "Tras la misión secundaria 188, en la sede del Clan Corrosión habla con Giso: cada 25.000 puntos de sondeo puedes pedir un escaneo; a veces sale una zona «???» de 5 estrellas con Latias, Latios, Cobalion, Terrakion, Virizion, Keldeo o Meloetta.",
+    "Otras zonas «???» llevan a misiones secundarias o dan megapiedras del DLC (Raichunita X e Y, Chimechita, Absolita Z, Staraptorita, Lucarita Z, Heatranita, Darkrainita, Golurkita, Meowsticita, Crabominablita, Golisopodita, Magearnita, Zeraoranita, Scovillainita, Glimmoranita y Tatsugirita). Con Pokekeep: la Garchompita Z (Regalo Misterioso) y la Baxcaliburita (combates clasificatorios) no se consiguen jugando; añádelas en la pestaña SAV, botón «Objetos», y sin la expansión añade sus Pokémon legales desde la Librería sin marcar la historia."
    ],
-   "precaucion": "Los Pokémon salvajes de Luminalia Dimensional superan el nivel 100: sube a tu equipo con los dónuts de Anya. Si usas un dónut de menos estrellas que el portal, cuesta más capturar."
+   "precaucion": "Si entras con un dónut de menos estrellas que la zona, cuesta mucho capturar. Las zonas escaneadas no aparecen hasta completar la misión secundaria 188, y las revanchas de nivel 200 exigen haber vencido a Darkrai."
   },
   "ZA-08": {
    "pasos": [
+    "Misión 39: se abren los Juegos Z-A infinitos. Ya no hay ascensos de rango, pero cada noche hay tres zonas de combate y los rivales suben de nivel a medida que completas torneos.",
+    "Con el Cupón Desafío llama a un rival en la sede de Quastelar S. A. para los combates de recompensa: pepitas grandes, vitaminas, Chapas Plateadas o Doradas, Poké Balls especiales y, con suerte, una Master Ball; las rachas largas dan más Caramelos Experiencia. Tras 15 combates vences a tu rival y recibes el Floette flor eterna y la Floettita.",
+    "Misiones 40 a 42: «el que da» (con Melia, antigua miembro del Team Flare: Xerneas), «el que quita» (con Grisel y Airén: Yveltal) y «La preservación del equilibrio» (Zygarde); los detalles de las capturas están en la misión 06.",
     "Completa la Pokédex de Luminalia: 232 entradas.",
     "Completa la MegaDex: 68 megaevoluciones en el juego base y 93 con Megadimensión.",
     "Con Megadimensión, completa la Pokédex Dimensional: 132 entradas.",
-    "Sube las Tareas de Melia al nivel 50: en el 49 te da la Master Ball y en el 50, el Amuleto Iris.",
-    "Revisa también megapiedras, misiones secundarias y los legendarios Xerneas, Yveltal y Zygarde.",
-    "Con Pokekeep: lo que solo llegó por eventos (Diancie, Mewtwo, megapiedras de Regalo Misterioso y de combates clasificatorios), añádelo legal desde la Librería o desde «Objetos»."
+    "Sube las Tareas de Melia al nivel 50: en el 49 te da la Master Ball y en el 50, el Amuleto Iris. Revisa también los títulos de entrenador.",
+    "Revisa megapiedras, misiones secundarias y los legendarios Xerneas, Yveltal y Zygarde.",
+    "Con Pokekeep: lo que solo llegó por eventos (Diancie, Mewtwo, megapiedras de Regalo Misterioso y de combates clasificatorios), añádelo legal desde la Librería o desde «Objetos»; los repartos por Internet o con código no se desbloquean jugando."
    ],
    "precaucion": "Z-A no tiene tarjeta de entrenador con estrellas: el cierre se comprueba en cada Pokédex, en la MegaDex y en el nivel de las Tareas de Melia."
   },

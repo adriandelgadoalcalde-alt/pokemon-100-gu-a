@@ -401,7 +401,7 @@ async function run() {
       assert.equal(await allPage.locator('[data-master]:checked').count(),0);
       await allPage.locator('[data-view="mission"]').first().click();
       for(const suffix of ['04','05','09','11','13'])await allPage.locator(`[data-mid="${game}-${suffix}"] > summary`).click();
-      assert.match(await allPage.locator(`[data-mid="${game}-04"] .route-details`).innerText(),/regalo del túnel no es MO04 Fuerza/);
+      assert.match(await allPage.locator(`[data-mid="${game}-04"] .route-details`).innerText(),/regalo del túnel no es MO04 Fuerza|este regalo no es la MO04 Fuerza/);
       assert.match(await allPage.locator(`[data-mid="${game}-05"] .route-details`).innerText(),/Aura o Bruno entrega MO04 Fuerza|\(Bruno o Aura\) te da la MO04 Fuerza/);
       assert.match(await allPage.locator(`[data-mid="${game}-09"] .route-details`).innerText(),/Máximo[^.]*a su casa/);
       assert.match(await allPage.locator(`[data-mid="${game}-11"] .route-details`).innerText(),/Plubio (tanto en Rubí Omega como en Zafiro Alfa|en las dos ediciones)/);
