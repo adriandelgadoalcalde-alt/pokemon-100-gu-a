@@ -1,0 +1,776 @@
+{
+ "misiones": {
+  "SUN-09": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Código Cero de Gladio",
+     "texto": "Cuándo: en cuanto eres campeón (no depende de las misiones de Handsome). Dónde: Paraíso Æther, planta de la reserva (primera planta). Paso a paso: 1) Vuela al Paraíso Æther con la montura Charizard. 2) Entra en la reserva y camina hacia el norte: Gladio te espera y te cuenta lo que ha pasado con su familia. 3) Te regala un Código Cero de nivel 40 (no el suyo) y todos los discos que usará Silvally para cambiar de tipo. Consejo: Código Cero evoluciona a Silvally al subir de nivel con mucha amistad (220 en esta generación): llévalo en el equipo, dale Pokémon Relax y no dejes que se debilite. Fuente: WikiDex «Código Cero» y «Gladio»; Serebii «Gift Pokémon» (Sol y Luna)."
+    },
+    {
+     "titulo": "Misión 1 de Handsome: Nihilego",
+     "texto": "Cuándo: justo después de vencer a Destra. Dónde: Paraíso Æther (2.ª planta, laboratorio secreto B) y Área Volcánica del Wela o Túnel Diglett (Akala). Paso a paso: 1) En la segunda planta del Paraíso Æther (los laboratorios) habla con Zyra y síguela hasta el laboratorio secreto B, la sala del fondo: te da las Ente Balls. 2) Vuelve al Motel Decamino de la Ruta 8 y espera a Handsome: te avisa de un Ultraente en el Área Volcánica del Wela y en el Túnel Diglett. 3) Busca en la hierba del Área Volcánica o recorriendo el Túnel Diglett: solo aparece un Nihilego (nivel 55) en uno de los dos sitios. Con un Repelente activo solo te saldrá él. 4) Captúralo con Ente Ball (con otras Poké Balls cuesta mucho más) y vuelve al motel: la misión se da por terminada. Consejo: aparece como «???» hasta que lo registras en la Pokédex; guarda antes del combate. Fuente: WikiDex «Handsome y los Ultraentes»."
+    },
+    {
+     "titulo": "Misión 2 de Handsome: dos Buzzwole",
+     "texto": "Cuándo: tras terminar la misión de Nihilego. Dónde: Motel de la Ruta 2 y Jardines de Melemele (Melemele). Paso a paso: 1) Ve al motel de la Ruta 2: Handsome te habla de dos Ultraentes en los Jardines de Melemele. 2) Recorre la hierba de los Jardines de Melemele hasta que salte el combate especial: Buzzwole, nivel 65. 3) Captura los dos Buzzwole (lleva al menos dos Ente Balls) y vuelve al motel de la Ruta 2. Consejo: usa Repelente para que no te salgan Pokémon comunes; Buzzwole (Bicho/Lucha) es muy débil a Volador. Fuente: WikiDex «Handsome y los Ultraentes»."
+    },
+    {
+     "titulo": "Misión 3 de Handsome: Rika y dos Xurkitree",
+     "texto": "Cuándo: tras la segunda misión. Dónde: El motel donde te espera Handsome, la Jungla Umbría y la Colina del Recuerdo (Akala). Paso a paso: 1) Vuelve con Handsome: con él está la capitana Rika, que te reta para medir tu fuerza (Klefki, Granbull, Shiinotic, Wigglytuff y Ribombee, todos de nivel 61). 2) Tras vencerla, Handsome te avisa de dos Xurkitree, que aparecen en la Jungla Umbría y en la Colina del Recuerdo. 3) Recorre las dos zonas hasta capturar los dos (nivel 65) y vuelve al motel. Consejo: Xurkitree es de tipo Eléctrico puro: un Pokémon de tipo Tierra no recibe sus ataques eléctricos. Fuente: WikiDex «Handsome y los Ultraentes»."
+    },
+    {
+     "titulo": "Misión 4 de Handsome: cuatro Kartana",
+     "texto": "Cuándo: tras la tercera misión. Dónde: Motel de la Ruta 13 y Parque de Malíe (Ula-Ula). Paso a paso: 1) Ve al motel de la Ruta 13: Handsome y Destra te hablan de nuevos Ultraentes en el Parque de Malíe. 2) Recorre el Parque de Malíe hasta que salte el combate especial: Kartana, nivel 60. 3) Captura los cuatro Kartana y vuelve al motel; al terminar, Denio llega y te avisa de un Ultraente muy poderoso en Poni. Consejo: Kartana (Planta/Acero) es débil x4 al Fuego: cuidado con no debilitarlo sin querer. Fuente: WikiDex «Handsome y los Ultraentes»."
+    },
+    {
+     "objetivo": "pokemon-787"
+    },
+    {
+     "objetivo": "pokemon-788"
+    },
+    {
+     "titulo": "Tapu Lele en las Ruinas de la Vida",
+     "texto": "Cuándo: después de ser campeón. Dónde: Ruinas de la Vida (Akala), al final de la Colina del Recuerdo. Paso a paso: 1) Llega a las ruinas y aparta las rocas del exterior con la montura Machamp. 2) Sube hasta la estatua del fondo y tócala. 3) Tapu Lele aparece a nivel 60: guarda antes y captúralo (Ultra Balls, Turno Balls u Ocaso Balls). Consejo: si lo debilitas por error, vuelve a tocar la estatua otro día. Los tapus cuentan para la Pokédex de Alola. Fuente: WikiDex «Tapu Lele»; Serebii «Legendary Pokémon» (Sol y Luna)."
+    },
+    {
+     "titulo": "Dexio y la megaevolución",
+     "texto": "Cuándo: tras ser campeón, antes de entrar en las zonas nuevas de Poni. Dónde: Antiguo Paso de Poni, camino del Bosque de Poni. Paso a paso: 1) Desde el Prado de Poni sube hacia el Bosque de Poni (no bajes hacia las ruinas). 2) Sina y Dexio te cortan el paso: vence a Dexio (Espeon, Raichu de Alola, Slowking, Metagross y Alakazam, todos de nivel 61). 3) Te explican la megaevolución y Dexio te da la Alakazamita; desde ahí se abren el Bosque de Poni, los Jardines de Poni, la Llanura, la Costa y la Pendiente de Poni. Consejo: su Alakazam megaevoluciona: lleva Pokémon de tipo Siniestro, Fantasma o Bicho. Fuente: WikiDex «Sina y Dexio» y «Handsome y los Ultraentes»."
+    },
+    {
+     "titulo": "Misión 5 de Handsome: Denio y Guzzlord",
+     "texto": "Cuándo: tras la cuarta misión. Dónde: Restaurante de la Aldea Marina y Gruta Desenlace (Jardines de Poni). Paso a paso: 1) En el restaurante de la Aldea Marina, Handsome y Denio te cuentan qué le pasó a Destra; después Denio te reta (Sableye, Absol, Honchkrow, Krookodile y Persian de Alola, todos de nivel 63). 2) Ve por el Prado de Poni y el Bosque de Poni hasta los Jardines de Poni; sube y entra en la cueva escondida a la izquierda, junto a las ramas del árbol con Miel: es la Gruta Desenlace. 3) Dentro necesitas varias Pokémonturas (Mudsdale, Machamp, Tauros) y combatir con algunos entrenadores; baja hasta la última sala. 4) Guzzlord (nivel 70) aparece en la última sala; si no sale, usa un Repelente y camina por esa zona. Captúralo. 5) Vuelve al restaurante y luego al laboratorio B del Paraíso Æther: Zyra, Destra y Handsome cierran el epílogo y Handsome habla de un Pokémon negro sobre la Colina Dequilate. Consejo: Guzzlord (Siniestro/Dragón) es débil x4 al tipo Hada; guarda antes de entrar en la última sala. Fuente: WikiDex «Handsome y los Ultraentes»."
+    },
+    {
+     "titulo": "Necrozma en la Colina Dequilate",
+     "texto": "Cuándo: tras terminar la quinta misión de Handsome. Dónde: Caldera Remota, en lo alto de la Colina Dequilate (Melemele), a la que se llega por las rocas de la Ruta 1. Paso a paso: 1) En la Ruta 1 rompe las rocas con la montura Tauros y entra en la Colina Dequilate. 2) Sube hasta la Caldera Remota. 3) Camina por la hierba: Necrozma aparece a nivel 75 y solo hay uno. Guarda antes y captúralo. Consejo: las Ente Balls no le dan ventaja porque no es un Ultraente; usa Ocaso o Turno Balls. Fuente: WikiDex «Necrozma»; Serebii «Legendary Pokémon» (Sol y Luna)."
+    },
+    {
+     "titulo": "Segundo Cosmog en el Lago Corosol",
+     "texto": "Cuándo: tras vencer la Liga. Dónde: Altar del Sol (Poni) y el Lago Corosol de la otra dimensión. Paso a paso: 1) Lleva a Solgaleo en el equipo y ve al Altar del Sol de noche. 2) Cruza el ultraumbral hasta la otra dimensión. 3) Atraviesa el Lago Corosol y sube las escaleras: se te une un Cosmog de nivel 5, sin combate. Consejo: puedes evolucionarlo hasta un segundo Solgaleo (Cosmoem al 43 y Solgaleo al 53). Fuente: WikiDex «Cosmog»; Serebii «Legendary Pokémon» (Sol y Luna)."
+    }
+   ]
+  },
+  "SUN-10": {
+   "bloques": [
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "card-3"
+    },
+    {
+     "objetivo": "card-4"
+    },
+    {
+     "objetivo": "card-5"
+    },
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "zygarde-cells"
+    },
+    {
+     "objetivo": "zygarde-cores"
+    },
+    {
+     "titulo": "Células de Zygarde de Melemele (14)",
+     "texto": "Cuándo: desde que tienes el Arca de Zygarde; algunas piden Pokémonturas que llegan más tarde y las de Poni, llegar a esa isla. Dónde: Melemele; las células son destellos verdes en el suelo, solo visibles con el Arca. Paso a paso: 1) Ruta 1 (día). 2) Ruta 1 tras romper rocas con Tauros (día). 3) Junto a la casa de Kukui. 4) Dentro de la Escuela de entrenadores (noche). 5) Fuera del motel de la Ruta 2. 6) Junto a un árbol de Pueblo Lilii hacia la Senda Mahalo (noche). 7) Junto al Centro Pokémon de Ciudad Hauoli (noche). 8) Casa de Liam. 9) Cementerio de Hauoli. 10) Ruta 3 junto a un árbol. 11) Ruta 3 junto al puente (día). 12) Bahía Kalae junto al acceso de la Gruta Unemar. 13) Cueva Sotobosque antes de la sala del dominante. 14) Ruinas de la Guerra antes de la sala de Tapu Koko. Consejo: si una no aparece, vuelve en la otra franja (de día o de noche; en Luna el reloj del juego va 12 horas desfasado respecto al de la consola) o con la montura que se indica. Fuente: WikiDex «Arca de Zygarde» (células de Melemele); Serebii «Zygarde Cores & Cells»."
+    },
+    {
+     "titulo": "Células de Zygarde de Akala (18)",
+     "texto": "Cuándo: desde que tienes el Arca de Zygarde; algunas piden Pokémonturas que llegan más tarde y las de Poni, llegar a esa isla. Dónde: Akala; las células son destellos verdes en el suelo, solo visibles con el Arca. Paso a paso: 1) Montículo de la Ruta 4. 2) Tras el Centro Pokémon de la Ruta 5. 3) Rocas de la Ruta 7 (Lapras). 4) Junto al laboratorio Æther de la Ruta 8. 5) Roca de la entrada de la Ruta 8 (día). 6) Afueras de Akala pasada la Colina del Recuerdo. 7) Salida del Túnel Diglett hacia la Ruta 9. 8) Torre del socorrista de la Playa de Hanohano (día). 9) Sombrilla de la Playa de Hanohano junto a un Stoutland. 10) Antena del Centro de Investigaciones Dimensionales (noche). 11) Izquierda del vestíbulo del Hotel Arrullo del Mar. 12) Rancho Ohana junto a Cuidados Pokémon (día) y junto al Redil Mu-mu (noche). 13) Tras un banco a la derecha del Centro Pokémon de la Avenida Royale (noche). 14) Aparcamiento del supermercado de la Avenida Royale (día). 15) Faro del Cabo de Ciudad Konikoni junto a tres Pikachu (noche). 16) Cueva de la Jungla Umbría (Machamp). 17) Área Volcánica del Wela, a la izquierda de la sala del dominante. Consejo: si una no aparece, vuelve en la otra franja (de día o de noche; en Luna el reloj del juego va 12 horas desfasado respecto al de la consola) o con la montura que se indica. Fuente: WikiDex «Arca de Zygarde» (células de Akala); Serebii «Zygarde Cores & Cells»."
+    },
+    {
+     "titulo": "Células de Zygarde de Ula-Ula (30)",
+     "texto": "Cuándo: desde que tienes el Arca de Zygarde; algunas piden Pokémonturas que llegan más tarde y las de Poni, llegar a esa isla. Dónde: Ula-Ula; las células son destellos verdes en el suelo, solo visibles con el Arca. Paso a paso: 1) Entre dos ambulancias de Ciudad Malíe (día). 2) Planta de reciclaje del Cabo de las Afueras (día). 3) Final del pasillo del Centro Cultural de Malíe (noche). 4) Rincón junto al agua del Parque de Malíe. 5) Ruta 10 junto al acceso al Pico Hokulani (día). 6) Observatorio de Hokulani junto a un Magnemite (noche). 7) Ruta 11 hacia la Ruta 12 (noche). 8) Dos en la Ruta 12 con Mudsdale. 9) Monte Rubor frente a la Central Geotérmica. 10) Playa Menor oeste (día) y este (noche). 11) Ruta 13 junto a la caravana con Spinda. 12) Izquierda del motel de la Ruta 13 (noche). 13) Rejas frente al Centro Pokémon de la Aldea Tapu. 14) Ruta 14 junto a un pescador (noche) y al final, pasado el mochilero. 15) Playa de la Ruta 15. 16) Habitación izquierda de la Casa Æther (día). 17) Junto al Centro Pokémon de la Ruta 16 (día). 18) Dos en los Jardines de Ula-Ula. 19) Dos en la Ruta 17. 20) Pueblo Po junto a la camioneta amarilla (día) y a la roja (noche). 21) Dos en el Monte Lanakila. 22) Desierto de Haina. 23) Afueras de las Ruinas de la Cosecha. Consejo: si una no aparece, vuelve en la otra franja (de día o de noche; en Luna el reloj del juego va 12 horas desfasado respecto al de la consola) o con la montura que se indica. Fuente: WikiDex «Arca de Zygarde» (células de Ula-Ula); Serebii «Zygarde Cores & Cells»."
+    },
+    {
+     "titulo": "Células de Zygarde de Poni (28)",
+     "texto": "Cuándo: desde que tienes el Arca de Zygarde; algunas piden Pokémonturas que llegan más tarde y las de Poni, llegar a esa isla. Dónde: Poni; las células son destellos verdes en el suelo, solo visibles con el Arca. Paso a paso: 1) Dos en la Aldea Marina (junto al Centro Pokémon y bajo una mesa del restaurante Wailord). 2) Tres en el Prado de Poni (playa entre rocas; cartel de noche; subida de día). 3) Tres en el Antiguo Paso de Poni (pared, de día; monolito antes del cañón, de noche; tras el pozo de Hela). 4) Cuatro en el Cañón de Poni (una con Machamp). 5) Arrecife de Poni junto al géiser (día) y junto a un tiki (noche). 6) Dos en el Bosque de Poni. 7) Tres en la Llanura de Poni (cartel de día, flores de noche, zona oeste con Tauros). 8) Jardines de Poni. 9) Tres en la Gruta Desenlace con Mudsdale (1.ª sala de día, 2.ª de noche, sala final). 10) Costa de Poni con Tauros (dos, una de noche). 11) Dos en la Pendiente de Poni. 12) Afueras de las Ruinas del Tránsito. Consejo: si una no aparece, vuelve en la otra franja (de día o de noche; en Luna el reloj del juego va 12 horas desfasado respecto al de la consola) o con la montura que se indica. Fuente: WikiDex «Arca de Zygarde» (células de Poni); Serebii «Zygarde Cores & Cells»."
+    },
+    {
+     "titulo": "Células de Zygarde del Paraíso Æther (5)",
+     "texto": "Cuándo: desde que tienes el Arca de Zygarde; algunas piden Pokémonturas que llegan más tarde y las de Poni, llegar a esa isla. Dónde: Paraíso Æther; las células son destellos verdes en el suelo, solo visibles con el Arca. Paso a paso: 1) Exterior a la izquierda de la entrada (noche). 2) Final del pasillo del sótano de laboratorios. 3) Parte trasera subiendo las escaleras. 4) Lado izquierdo de la mansión de Samina (día). 5) Dentro de la mansión junto a una mesita. Consejo: si una no aparece, vuelve en la otra franja (de día o de noche; en Luna el reloj del juego va 12 horas desfasado respecto al de la consola) o con la montura que se indica. Fuente: WikiDex «Arca de Zygarde» (células de Paraíso Æther); Serebii «Zygarde Cores & Cells»."
+    },
+    {
+     "titulo": "Montar Zygarde en el laboratorio de la Ruta 16",
+     "texto": "Cuándo: en cuanto tengas 10 piezas y, para el Zygarde completo, con las 100. Dónde: laboratorio de la Fundación Æther de la Ruta 16 (Ula-Ula). Paso a paso: 1) Con 10 piezas, la máquina del laboratorio crea un Zygarde al 10 %; con 50, uno al 50 %. También separa un Zygarde para recuperar las piezas. 2) Con las 100 piezas (95 células y 5 núcleos) puedes crear un Zygarde con la habilidad Agrupamiento, que pasa a Zygarde completo en combate cuando le quedan menos de la mitad de los PS. 3) Desde el Arca enseña los movimientos de los núcleos: Velocidad Extrema, Mil Flechas, Danza Dragón, Mil Temblores y Núcleo Castigo. Consejo: un solo Zygarde basta para la Pokédex: crea el de 10 % pronto y desmóntalo después para el completo. Fuente: WikiDex «Arca de Zygarde», «Zygarde» y «Ruta 16 (Alola)»."
+    },
+    {
+     "objetivo": "card-13"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "card-6"
+    },
+    {
+     "objetivo": "card-7"
+    },
+    {
+     "objetivo": "card-8"
+    },
+    {
+     "objetivo": "card-9"
+    },
+    {
+     "objetivo": "card-10"
+    },
+    {
+     "objetivo": "shiny-charm"
+    },
+    {
+     "objetivo": "final-boss"
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "objetivo": "card-11"
+    },
+    {
+     "objetivo": "card-12"
+    },
+    {
+     "objetivo": "card-14"
+    },
+    {
+     "objetivo": "event-0"
+    },
+    {
+     "objetivo": "event-1"
+    }
+   ]
+  },
+  "MOON-09": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Código Cero de Gladio",
+     "texto": "Cuándo: en cuanto eres campeón (no depende de las misiones de Handsome). Dónde: Paraíso Æther, planta de la reserva (primera planta). Paso a paso: 1) Vuela al Paraíso Æther con la montura Charizard. 2) Entra en la reserva y camina hacia el norte: Gladio te espera y te cuenta lo que ha pasado con su familia. 3) Te regala un Código Cero de nivel 40 (no el suyo) y todos los discos que usará Silvally para cambiar de tipo. Consejo: Código Cero evoluciona a Silvally al subir de nivel con mucha amistad (220 en esta generación): llévalo en el equipo, dale Pokémon Relax y no dejes que se debilite. Fuente: WikiDex «Código Cero» y «Gladio»; Serebii «Gift Pokémon» (Sol y Luna)."
+    },
+    {
+     "titulo": "Misión 1 de Handsome: Nihilego",
+     "texto": "Cuándo: justo después de vencer a Destra. Dónde: Paraíso Æther (2.ª planta, laboratorio secreto B) y Área Volcánica del Wela o Túnel Diglett (Akala). Paso a paso: 1) En la segunda planta del Paraíso Æther (los laboratorios) habla con Zyra y síguela hasta el laboratorio secreto B, la sala del fondo: te da las Ente Balls. 2) Vuelve al Motel Decamino de la Ruta 8 y espera a Handsome: te avisa de un Ultraente en el Área Volcánica del Wela y en el Túnel Diglett. 3) Busca en la hierba del Área Volcánica o recorriendo el Túnel Diglett: solo aparece un Nihilego (nivel 55) en uno de los dos sitios. Con un Repelente activo solo te saldrá él. 4) Captúralo con Ente Ball (con otras Poké Balls cuesta mucho más) y vuelve al motel: la misión se da por terminada. Consejo: aparece como «???» hasta que lo registras en la Pokédex; guarda antes del combate. Fuente: WikiDex «Handsome y los Ultraentes»."
+    },
+    {
+     "titulo": "Misión 2 de Handsome: cuatro Pheromosa",
+     "texto": "Cuándo: tras terminar la misión de Nihilego. Dónde: Motel de la Ruta 2 y Cueva Sotobosque (Melemele). Paso a paso: 1) Ve al motel de la Ruta 2: Handsome te habla de cuatro Ultraentes en la Cueva Sotobosque. 2) Recorre la cueva hasta que salte el combate especial: Pheromosa, nivel 65. 3) Captura los cuatro Pheromosa (lleva al menos cuatro Ente Balls) y vuelve al motel de la Ruta 2. Consejo: usa Repelente para que no te salgan Pokémon comunes; Pheromosa es muy rápida pero frágil, y muy débil a Volador. Fuente: WikiDex «Handsome y los Ultraentes»."
+    },
+    {
+     "titulo": "Misión 3 de Handsome: Rika y dos Xurkitree",
+     "texto": "Cuándo: tras la segunda misión. Dónde: El motel donde te espera Handsome, la Jungla Umbría y la Colina del Recuerdo (Akala). Paso a paso: 1) Vuelve con Handsome: con él está la capitana Rika, que te reta para medir tu fuerza (Klefki, Granbull, Shiinotic, Wigglytuff y Ribombee, todos de nivel 61). 2) Tras vencerla, Handsome te avisa de dos Xurkitree, que aparecen en la Jungla Umbría y en la Colina del Recuerdo. 3) Recorre las dos zonas hasta capturar los dos (nivel 65) y vuelve al motel. Consejo: Xurkitree es de tipo Eléctrico puro: un Pokémon de tipo Tierra no recibe sus ataques eléctricos. Fuente: WikiDex «Handsome y los Ultraentes»."
+    },
+    {
+     "titulo": "Misión 4 de Handsome: dos Celesteela",
+     "texto": "Cuándo: tras la tercera misión. Dónde: Motel de la Ruta 13 y Desierto de Haina (Ula-Ula). Paso a paso: 1) Ve al motel de la Ruta 13: Handsome y Destra te hablan de nuevos Ultraentes en el Desierto de Haina. 2) Recorre el desierto hasta que salte el combate especial: Celesteela, nivel 60. 3) Captura los dos Celesteela y vuelve al motel; al terminar, Denio llega y te avisa de un Ultraente muy poderoso en Poni. Consejo: Celesteela (Acero/Volador) es muy resistente: lleva Pokémon con Falso Tortazo y Turno Balls además de Ente Balls. Fuente: WikiDex «Handsome y los Ultraentes»."
+    },
+    {
+     "objetivo": "pokemon-787"
+    },
+    {
+     "objetivo": "pokemon-788"
+    },
+    {
+     "titulo": "Tapu Lele en las Ruinas de la Vida",
+     "texto": "Cuándo: después de ser campeón. Dónde: Ruinas de la Vida (Akala), al final de la Colina del Recuerdo. Paso a paso: 1) Llega a las ruinas y aparta las rocas del exterior con la montura Machamp. 2) Sube hasta la estatua del fondo y tócala. 3) Tapu Lele aparece a nivel 60: guarda antes y captúralo (Ultra Balls, Turno Balls u Ocaso Balls). Consejo: si lo debilitas por error, vuelve a tocar la estatua otro día. Los tapus cuentan para la Pokédex de Alola. Fuente: WikiDex «Tapu Lele»; Serebii «Legendary Pokémon» (Sol y Luna)."
+    },
+    {
+     "titulo": "Dexio y la megaevolución",
+     "texto": "Cuándo: tras ser campeón, antes de entrar en las zonas nuevas de Poni. Dónde: Antiguo Paso de Poni, camino del Bosque de Poni. Paso a paso: 1) Desde el Prado de Poni sube hacia el Bosque de Poni (no bajes hacia las ruinas). 2) Sina y Dexio te cortan el paso: vence a Dexio (Espeon, Raichu de Alola, Slowking, Metagross y Alakazam, todos de nivel 61). 3) Te explican la megaevolución y Dexio te da la Alakazamita; desde ahí se abren el Bosque de Poni, los Jardines de Poni, la Llanura, la Costa y la Pendiente de Poni. Consejo: su Alakazam megaevoluciona: lleva Pokémon de tipo Siniestro, Fantasma o Bicho. Fuente: WikiDex «Sina y Dexio» y «Handsome y los Ultraentes»."
+    },
+    {
+     "titulo": "Misión 5 de Handsome: Denio y Guzzlord",
+     "texto": "Cuándo: tras la cuarta misión. Dónde: Restaurante de la Aldea Marina y Gruta Desenlace (Jardines de Poni). Paso a paso: 1) En el restaurante de la Aldea Marina, Handsome y Denio te cuentan qué le pasó a Destra; después Denio te reta (Sableye, Absol, Honchkrow, Krookodile y Persian de Alola, todos de nivel 63). 2) Ve por el Prado de Poni y el Bosque de Poni hasta los Jardines de Poni; sube y entra en la cueva escondida a la izquierda, junto a las ramas del árbol con Miel: es la Gruta Desenlace. 3) Dentro necesitas varias Pokémonturas (Mudsdale, Machamp, Tauros) y combatir con algunos entrenadores; baja hasta la última sala. 4) Guzzlord (nivel 70) aparece en la última sala; si no sale, usa un Repelente y camina por esa zona. Captúralo. 5) Vuelve al restaurante y luego al laboratorio B del Paraíso Æther: Zyra, Destra y Handsome cierran el epílogo y Handsome habla de un Pokémon negro sobre la Colina Dequilate. Consejo: Guzzlord (Siniestro/Dragón) es débil x4 al tipo Hada; guarda antes de entrar en la última sala. Fuente: WikiDex «Handsome y los Ultraentes»."
+    },
+    {
+     "titulo": "Necrozma en la Colina Dequilate",
+     "texto": "Cuándo: tras terminar la quinta misión de Handsome. Dónde: Caldera Remota, en lo alto de la Colina Dequilate (Melemele), a la que se llega por las rocas de la Ruta 1. Paso a paso: 1) En la Ruta 1 rompe las rocas con la montura Tauros y entra en la Colina Dequilate. 2) Sube hasta la Caldera Remota. 3) Camina por la hierba: Necrozma aparece a nivel 75 y solo hay uno. Guarda antes y captúralo. Consejo: las Ente Balls no le dan ventaja porque no es un Ultraente; usa Ocaso o Turno Balls. Fuente: WikiDex «Necrozma»; Serebii «Legendary Pokémon» (Sol y Luna)."
+    },
+    {
+     "titulo": "Segundo Cosmog en el Lago Coroluna",
+     "texto": "Cuándo: tras vencer la Liga. Dónde: Altar de la Luna (Poni) y el Lago Coroluna de la otra dimensión. Paso a paso: 1) Lleva a Lunala en el equipo y ve al Altar de la Luna de día. 2) Cruza el ultraumbral hasta la otra dimensión. 3) Atraviesa el Lago Coroluna y sube las escaleras: se te une un Cosmog de nivel 5, sin combate. Consejo: puedes evolucionarlo hasta un segundo Lunala (Cosmoem al 43 y Lunala al 53). Fuente: WikiDex «Cosmog»; Serebii «Legendary Pokémon» (Sol y Luna)."
+    }
+   ]
+  },
+  "MOON-10": {
+   "bloques": [
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "card-3"
+    },
+    {
+     "objetivo": "card-4"
+    },
+    {
+     "objetivo": "card-5"
+    },
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "zygarde-cells"
+    },
+    {
+     "objetivo": "zygarde-cores"
+    },
+    {
+     "titulo": "Células de Zygarde de Melemele (14)",
+     "texto": "Cuándo: desde que tienes el Arca de Zygarde; algunas piden Pokémonturas que llegan más tarde y las de Poni, llegar a esa isla. Dónde: Melemele; las células son destellos verdes en el suelo, solo visibles con el Arca. Paso a paso: 1) Ruta 1 (día). 2) Ruta 1 tras romper rocas con Tauros (día). 3) Junto a la casa de Kukui. 4) Dentro de la Escuela de entrenadores (noche). 5) Fuera del motel de la Ruta 2. 6) Junto a un árbol de Pueblo Lilii hacia la Senda Mahalo (noche). 7) Junto al Centro Pokémon de Ciudad Hauoli (noche). 8) Casa de Liam. 9) Cementerio de Hauoli. 10) Ruta 3 junto a un árbol. 11) Ruta 3 junto al puente (día). 12) Bahía Kalae junto al acceso de la Gruta Unemar. 13) Cueva Sotobosque antes de la sala del dominante. 14) Ruinas de la Guerra antes de la sala de Tapu Koko. Consejo: si una no aparece, vuelve en la otra franja (de día o de noche; en Luna el reloj del juego va 12 horas desfasado respecto al de la consola) o con la montura que se indica. Fuente: WikiDex «Arca de Zygarde» (células de Melemele); Serebii «Zygarde Cores & Cells»."
+    },
+    {
+     "titulo": "Células de Zygarde de Akala (18)",
+     "texto": "Cuándo: desde que tienes el Arca de Zygarde; algunas piden Pokémonturas que llegan más tarde y las de Poni, llegar a esa isla. Dónde: Akala; las células son destellos verdes en el suelo, solo visibles con el Arca. Paso a paso: 1) Montículo de la Ruta 4. 2) Tras el Centro Pokémon de la Ruta 5. 3) Rocas de la Ruta 7 (Lapras). 4) Junto al laboratorio Æther de la Ruta 8. 5) Roca de la entrada de la Ruta 8 (día). 6) Afueras de Akala pasada la Colina del Recuerdo. 7) Salida del Túnel Diglett hacia la Ruta 9. 8) Torre del socorrista de la Playa de Hanohano (día). 9) Sombrilla de la Playa de Hanohano junto a un Stoutland. 10) Antena del Centro de Investigaciones Dimensionales (noche). 11) Izquierda del vestíbulo del Hotel Arrullo del Mar. 12) Rancho Ohana junto a Cuidados Pokémon (día) y junto al Redil Mu-mu (noche). 13) Tras un banco a la derecha del Centro Pokémon de la Avenida Royale (noche). 14) Aparcamiento del supermercado de la Avenida Royale (día). 15) Faro del Cabo de Ciudad Konikoni junto a tres Pikachu (noche). 16) Cueva de la Jungla Umbría (Machamp). 17) Área Volcánica del Wela, a la izquierda de la sala del dominante. Consejo: si una no aparece, vuelve en la otra franja (de día o de noche; en Luna el reloj del juego va 12 horas desfasado respecto al de la consola) o con la montura que se indica. Fuente: WikiDex «Arca de Zygarde» (células de Akala); Serebii «Zygarde Cores & Cells»."
+    },
+    {
+     "titulo": "Células de Zygarde de Ula-Ula (30)",
+     "texto": "Cuándo: desde que tienes el Arca de Zygarde; algunas piden Pokémonturas que llegan más tarde y las de Poni, llegar a esa isla. Dónde: Ula-Ula; las células son destellos verdes en el suelo, solo visibles con el Arca. Paso a paso: 1) Entre dos ambulancias de Ciudad Malíe (día). 2) Planta de reciclaje del Cabo de las Afueras (día). 3) Final del pasillo del Centro Cultural de Malíe (noche). 4) Rincón junto al agua del Parque de Malíe. 5) Ruta 10 junto al acceso al Pico Hokulani (día). 6) Observatorio de Hokulani junto a un Magnemite (noche). 7) Ruta 11 hacia la Ruta 12 (noche). 8) Dos en la Ruta 12 con Mudsdale. 9) Monte Rubor frente a la Central Geotérmica. 10) Playa Menor oeste (día) y este (noche). 11) Ruta 13 junto a la caravana con Spinda. 12) Izquierda del motel de la Ruta 13 (noche). 13) Rejas frente al Centro Pokémon de la Aldea Tapu. 14) Ruta 14 junto a un pescador (noche) y al final, pasado el mochilero. 15) Playa de la Ruta 15. 16) Habitación izquierda de la Casa Æther (día). 17) Junto al Centro Pokémon de la Ruta 16 (día). 18) Dos en los Jardines de Ula-Ula. 19) Dos en la Ruta 17. 20) Pueblo Po junto a la camioneta amarilla (día) y a la roja (noche). 21) Dos en el Monte Lanakila. 22) Desierto de Haina. 23) Afueras de las Ruinas de la Cosecha. Consejo: si una no aparece, vuelve en la otra franja (de día o de noche; en Luna el reloj del juego va 12 horas desfasado respecto al de la consola) o con la montura que se indica. Fuente: WikiDex «Arca de Zygarde» (células de Ula-Ula); Serebii «Zygarde Cores & Cells»."
+    },
+    {
+     "titulo": "Células de Zygarde de Poni (28)",
+     "texto": "Cuándo: desde que tienes el Arca de Zygarde; algunas piden Pokémonturas que llegan más tarde y las de Poni, llegar a esa isla. Dónde: Poni; las células son destellos verdes en el suelo, solo visibles con el Arca. Paso a paso: 1) Dos en la Aldea Marina (junto al Centro Pokémon y bajo una mesa del restaurante Wailord). 2) Tres en el Prado de Poni (playa entre rocas; cartel de noche; subida de día). 3) Tres en el Antiguo Paso de Poni (pared, de día; monolito antes del cañón, de noche; tras el pozo de Hela). 4) Cuatro en el Cañón de Poni (una con Machamp). 5) Arrecife de Poni junto al géiser (día) y junto a un tiki (noche). 6) Dos en el Bosque de Poni. 7) Tres en la Llanura de Poni (cartel de día, flores de noche, zona oeste con Tauros). 8) Jardines de Poni. 9) Tres en la Gruta Desenlace con Mudsdale (1.ª sala de día, 2.ª de noche, sala final). 10) Costa de Poni con Tauros (dos, una de noche). 11) Dos en la Pendiente de Poni. 12) Afueras de las Ruinas del Tránsito. Consejo: si una no aparece, vuelve en la otra franja (de día o de noche; en Luna el reloj del juego va 12 horas desfasado respecto al de la consola) o con la montura que se indica. Fuente: WikiDex «Arca de Zygarde» (células de Poni); Serebii «Zygarde Cores & Cells»."
+    },
+    {
+     "titulo": "Células de Zygarde del Paraíso Æther (5)",
+     "texto": "Cuándo: desde que tienes el Arca de Zygarde; algunas piden Pokémonturas que llegan más tarde y las de Poni, llegar a esa isla. Dónde: Paraíso Æther; las células son destellos verdes en el suelo, solo visibles con el Arca. Paso a paso: 1) Exterior a la izquierda de la entrada (noche). 2) Final del pasillo del sótano de laboratorios. 3) Parte trasera subiendo las escaleras. 4) Lado izquierdo de la mansión de Samina (día). 5) Dentro de la mansión junto a una mesita. Consejo: si una no aparece, vuelve en la otra franja (de día o de noche; en Luna el reloj del juego va 12 horas desfasado respecto al de la consola) o con la montura que se indica. Fuente: WikiDex «Arca de Zygarde» (células de Paraíso Æther); Serebii «Zygarde Cores & Cells»."
+    },
+    {
+     "titulo": "Montar Zygarde en el laboratorio de la Ruta 16",
+     "texto": "Cuándo: en cuanto tengas 10 piezas y, para el Zygarde completo, con las 100. Dónde: laboratorio de la Fundación Æther de la Ruta 16 (Ula-Ula). Paso a paso: 1) Con 10 piezas, la máquina del laboratorio crea un Zygarde al 10 %; con 50, uno al 50 %. También separa un Zygarde para recuperar las piezas. 2) Con las 100 piezas (95 células y 5 núcleos) puedes crear un Zygarde con la habilidad Agrupamiento, que pasa a Zygarde completo en combate cuando le quedan menos de la mitad de los PS. 3) Desde el Arca enseña los movimientos de los núcleos: Velocidad Extrema, Mil Flechas, Danza Dragón, Mil Temblores y Núcleo Castigo. Consejo: un solo Zygarde basta para la Pokédex: crea el de 10 % pronto y desmóntalo después para el completo. Fuente: WikiDex «Arca de Zygarde», «Zygarde» y «Ruta 16 (Alola)»."
+    },
+    {
+     "objetivo": "card-13"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "card-6"
+    },
+    {
+     "objetivo": "card-7"
+    },
+    {
+     "objetivo": "card-8"
+    },
+    {
+     "objetivo": "card-9"
+    },
+    {
+     "objetivo": "card-10"
+    },
+    {
+     "objetivo": "shiny-charm"
+    },
+    {
+     "objetivo": "final-boss"
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "objetivo": "card-11"
+    },
+    {
+     "objetivo": "card-12"
+    },
+    {
+     "objetivo": "card-14"
+    },
+    {
+     "objetivo": "event-0"
+    },
+    {
+     "objetivo": "event-1"
+    }
+   ]
+  },
+  "ULTRASUN-09": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "objetivo": "pokemon-772"
+    },
+    {
+     "titulo": "Dos Blacephalon en el Bosque de Poni",
+     "texto": "Cuándo: tras recibir el Código Cero, en la última misión de la Unidad Ultra. Dónde: Bosque de Poni (Poni). Paso a paso: 1) Sigue a Tilo y a la Unidad Ultra hasta el Bosque de Poni: han llegado Blacephalon por un ultraumbral. 2) Recibes 5 Ente Balls. 3) Busca en la hierba: Tilo se queda uno para la investigación y tú capturas los otros dos (nivel 60). Solo hay esos dos. Consejo: guarda antes de cada encuentro: si debilitas uno, no vuelve a aparecer. Con Pokekeep: el Stakataka de la otra edición, añádelo legal desde la Librería si no puedes intercambiarlo. Fuente: WikiDex «Blacephalon»; Serebii «Ultra Recon Squad» y «Ultra Beasts» (Ultrasol y Ultraluna)."
+    },
+    {
+     "objetivo": "pokemon-786"
+    },
+    {
+     "objetivo": "pokemon-787"
+    },
+    {
+     "objetivo": "pokemon-788"
+    },
+    {
+     "titulo": "Necrosol y Necroluna: fusionar a Necrozma",
+     "texto": "Cuándo: en cuanto tienes a Necrozma (se captura en la cima del Monte Lanakila, antes de la Liga). Dónde: Monte Lanakila (Ula-Ula); la fusión, desde la Bolsa en cualquier sitio. Paso a paso: 1) Captura a Necrozma (nivel 65) en la cima del Monte Lanakila, camino de la Liga; guarda antes. 2) Acromo te entrega allí mismo el Necrosol y el Necroluna. 3) Con Necrozma y Solgaleo en el equipo, usa el Necrosol: Necrozma melena crepuscular (Psíquico/Acero). Con Lunala y el Necroluna: Necrozma alas del alba (Psíquico/Fantasma). Consejo: para registrar las dos formas hace falta tener a Solgaleo y a Lunala; el de la otra edición llega por intercambio. Con Pokekeep: si no puedes intercambiar el legendario de Ultraluna, añádelo legal desde la Librería. Fuente: WikiDex «Necrozma» y «Necrosol»."
+    },
+    {
+     "titulo": "Dexio en la Llanura de Poni",
+     "texto": "Cuándo: tras la Liga, de camino a la Gruta Desenlace. Dónde: Llanura de Poni (Poni). Paso a paso: 1) Entra en las zonas nuevas de Poni por el Bosque de Poni. 2) Sina y Dexio te esperan en la Llanura de Poni: vence a Dexio (Espeon, Raichu de Alola, Slowking, Metagross y Alakazam, todos de nivel 60). 3) Te hablan de la megaevolución y de Zygarde, y te dejan pasar hacia los Jardines de Poni. Consejo: su Alakazam megaevoluciona: lleva ataques de tipo Siniestro, Fantasma o Bicho. Fuente: WikiDex «Sina y Dexio»."
+    },
+    {
+     "objetivo": "zygarde-cells"
+    },
+    {
+     "objetivo": "zygarde-cores"
+    },
+    {
+     "titulo": "Ultraviaje dimensional: Ultraentes",
+     "texto": "Cuándo: desde que viajas a Ultrópolis en la historia; repetible sin límite. Dónde: los ultraumbrales blancos del ultraviaje dimensional, montando a Solgaleo o Lunala. Paso a paso: 1) Durante el viaje esquiva los orbes eléctricos (te frenan) y recoge las esferas de energía (te aceleran); cuantos más años luz recorras, más anillos tendrán los ultraumbrales. 2) Entra solo en ultraumbrales blancos: llevan a los mundos de los Ultraentes (en Ultrasol: Nihilego, Buzzwole, Xurkitree, Kartana y Guzzlord). 3) Para acertar el mundo: pocos años luz y sin anillo, Ultraabismo (Nihilego); muchos años luz y sin anillo, Ultrajungla (Buzzwole); un anillo, Ultragenerador (Xurkitree); dos anillos, Ultrabosque (Kartana); dos anillos y radios, Ultraurbe (Guzzlord). 4) Los Ultraentes se pueden capturar tantas veces como quieras; lleva Ente Balls. Consejo: los controles se cambian de sensor de giro a botón deslizante hablando con el hombre del casco en las oficinas de GAME FREAK de Ciudad Kantai. Los legendarios de los ultraumbrales de color están en la misión «Episodio RR y Ultraumbrales». Con Pokekeep: los Ultraentes exclusivos de Ultraluna (Pheromosa y Celesteela), añádelos legales desde la Librería si no puedes intercambiarlos. Fuente: WikiDex «Ultraumbral» (ultraviaje dimensional); Serebii «Ultra Wormholes»."
+    },
+    {
+     "titulo": "Gladio vuelve de Kanto",
+     "texto": "Cuándo: un mes exacto después de capturar o vencer a Necrozma en el Monte Lanakila. Dónde: Liga Pokémon del Monte Lanakila y, después, el Paraíso Æther. Paso a paso: 1) Deja pasar un mes de calendario desde lo de Necrozma. 2) Vuelve a la Liga y vence otra vez al Alto Mando: en el trono aparece Gladio como retador; su Silvally tiene el tipo que vence a tu inicial. 3) Tras vencerle, ve al Paraíso Æther para ver la última escena, en la que su padre, Polo, se reencuentra con Samina. Consejo: si no sale a la primera, sigue defendiendo el título: los retadores salen al azar. Fuente: WikiDex «Gladio» y «Liga Pokémon (Alola)»."
+    }
+   ]
+  },
+  "ULTRASUN-10": {
+   "bloques": [
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "card-3"
+    },
+    {
+     "objetivo": "card-4"
+    },
+    {
+     "objetivo": "card-5"
+    },
+    {
+     "objetivo": "mantine-surf"
+    },
+    {
+     "objetivo": "card-13"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "card-6"
+    },
+    {
+     "objetivo": "card-7"
+    },
+    {
+     "objetivo": "card-8"
+    },
+    {
+     "objetivo": "card-9"
+    },
+    {
+     "objetivo": "card-10"
+    },
+    {
+     "objetivo": "shiny-charm"
+    },
+    {
+     "objetivo": "final-boss"
+    },
+    {
+     "titulo": "Defender el título de campeón",
+     "texto": "Cuándo: cada vez que vuelves a vencer al Alto Mando después de ser campeón. Dónde: Liga Pokémon del Monte Lanakila (Ula-Ula). Paso a paso: 1) Vuelve a la Liga y vence otra vez a los cuatro del Alto Mando (Lario, Mayla, Zarala y Kahili), en el orden que quieras. 2) En la sala del trono te espera un retador. El primero siempre es Tilo; después salen al azar el profesor Kukui, Samina, Guzmán, Olano, Chris, Francine, Hela, José y, un mes después de lo de Necrozma, Gladio. 3) Sus equipos van del nivel 66 al 69; si pierdes no pasa nada: sigues siendo campeón. Consejo: entre combate y combate solo puedes curar con objetos: lleva Restaurar Todo y Revivir, y repite para ver a todos los retadores. Fuente: WikiDex «Liga Pokémon (Alola)» (retadores de Ultrasol y Ultraluna)."
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "objetivo": "card-11"
+    },
+    {
+     "objetivo": "card-12"
+    },
+    {
+     "objetivo": "card-14"
+    },
+    {
+     "objetivo": "event-1"
+    }
+   ]
+  },
+  "ULTRASUN-E01": {
+   "bloques": [
+    {
+     "objetivo": "rocket"
+    },
+    {
+     "titulo": "Festi Plaza y entrada al Paraíso Æther",
+     "texto": "Cuándo: en cuanto Chris aparece en tu casa tras la misión de la Unidad Ultra. Dónde: Festi Plaza y exterior del Paraíso Æther. Paso a paso: 1) En la Festi Plaza no puedes usar tu equipo: entra en la Agencia de Combate y vence con Pokémon prestados al jefe de los reclutas (Golbat, Raticate y Arbok, nivel 50). 2) Chris recupera el control de la Festi Plaza y te da un Botón Escape. 3) Vuelve a casa: la televisión muestra el ataque al Paraíso Æther y Lylia te pide ir. Allí Zyra te da una Malasada Maxi. 4) Fuera, vence en fila a varios reclutas con un solo Pokémon cada uno; en la puerta, con Lylia (Clefairy de nivel 60), gana el combate doble contra Fabio y un empleado. 5) Dentro, haz pareja con Guzmán contra dos reclutas. Después Lylia se queda en su cuarto y cura a tu equipo siempre que hables con ella. Consejo: a partir de aquí no se puede salir del edificio hasta terminar: lleva objetos de curación y Revivir. Fuente: WikiDex «Episodio Rainbow Rocket»."
+    },
+    {
+     "titulo": "Guaridas de Aquiles y de Magno",
+     "texto": "Cuándo: tras el combate doble con Guzmán. Dónde: Paraíso Æther: puerta izquierda (Aquiles) y puerta derecha (Magno) de la sala de Guzmán. Paso a paso: 1) Guarida de Aquiles: laberinto de teletransportadores con reclutas de nivel 62 y Electrode camuflados; al final, dos reclutas seguidos ante la puerta. 2) Vence a Aquiles: cuatro Pokémon de nivel 64 y Kyogre de nivel 66 (Llovizna, Hidrobomba, Trueno, Rayo Hielo). Pulsa el botón oculto tras el cuadro del fondo. 3) Guarida de Magno: paneles de colores que se iluminan; memoriza y repite secuencias de 4, 6 y 8 paneles mientras los reclutas intentan distraerte. 4) Vence a Magno: Mightyena, Crobat, Weezing y Camerupt de nivel 64 y Groudon de nivel 66 (Sequía, Terremoto, Rayo Solar, Lanzallamas). Pulsa el botón del cuadro. Consejo: lleva un Pokémon de tipo Planta o Eléctrico para Kyogre y uno de tipo Agua para Groudon; vuelve con Lylia a curar entre guarida y guarida. Fuente: WikiDex «Episodio Rainbow Rocket»."
+    },
+    {
+     "titulo": "Guaridas de Helio y de Lysson, y Ghechis",
+     "texto": "Cuándo: tras vencer a Aquiles y Magno. Dónde: Paraíso Æther: puertas izquierda (Helio) y derecha (Lysson) que se abren en la sala de Guzmán; Ghechis, en el cuarto de Lylia. Paso a paso: 1) Guarida de Helio: suelos deslizantes y reclutas; vence a Helio (Crobat, Honchkrow, Weavile y Houndoom de nivel 65 y Dialga de nivel 67) y usa la Llave Galaxia en el aparato del fondo. 2) Guarida de Lysson: estatuas de Meowth que vigilan en línea recta (gíralas desde la espalda para pasar); vence a Lysson (Mienshao, Honchkrow, Pyroar y Gyarados con megaevolución, de nivel 65, y Xerneas de nivel 67). 3) Ve al cuarto de Lylia: del teletransportador sale Ghechis (Cofagrigus, Bouffalant, Bisharp e Hydreigon de nivel 66, y Zekrom). Véncele; Acromo aparece y lo devuelve a su mundo. Consejo: contra los legendarios, Pokémon de tipo Hada o Dragón rinden bien frente a Dialga y Zekrom. Fuente: WikiDex «Episodio Rainbow Rocket»."
+    },
+    {
+     "titulo": "Giovanni en el despacho de Samina",
+     "texto": "Cuándo: tras vencer a Ghechis. Dónde: despacho de Samina, en lo alto del Paraíso Æther (teletransportador del cuarto de Lylia). Paso a paso: 1) Sube por el teletransportador: Samina está dormida por el poder de un Ultraente y Giovanni te ofrece unirte al Team Rainbow Rocket. 2) Vence a Giovanni: Dugtrio, Nidoking, Nidoqueen y Rhyperior de nivel 68 y Mewtwo de nivel 70, que megaevoluciona a Mega-Mewtwo X. 3) Al salir, todos te dan las gracias y recibes 55 Maxipepitas. Fin del Episodio RR. Consejo: los Maxipepitas se venden caras: úsalas para comprar objetos de combate antes del Árbol de Combate. Fuente: WikiDex «Episodio Rainbow Rocket»."
+    },
+    {
+     "titulo": "Legendarios de los ultraumbrales de color",
+     "texto": "Cuándo: tras ser campeón; cada legendario sale hasta que lo capturas. Dónde: ultraviaje dimensional: ultraumbrales azules (cascadas), verdes (campo rocoso), rojos (cima de montaña) y amarillos (cueva) del Ultraespacio Cero. Paso a paso: 1) Azul: Suicune (con Entei y Raikou en el equipo), Latios, Uxie, Mesprit, Azelf y Kyurem (con Reshiram y Zekrom). 2) Verde: Mewtwo, Raikou, Dialga, Cobalion, Terrakion, Virizion, Reshiram y Xerneas. 3) Rojo: Articuno, Zapdos, Moltres, Ho-Oh, Rayquaza (con Kyogre y Groudon), Cresselia, Tornadus y Landorus (con Tornadus y Thundurus). 4) Amarillo: Regirock, Regice, Registeel, Groudon, Heatran y Giratina (con Dialga y Palkia). 5) Viaja lejos sin chocar con los orbes eléctricos: a partir de unos 2.500 años luz salen ultraumbrales con dos anillos y radios, que garantizan el legendario; con menos anillos la probabilidad es baja (3 % sin anillo). 6) Todos están a nivel 60; guarda antes y lleva Ocaso y Turno Balls. Consejo: cuando ya tienes todos los legendarios de un color, en sus ultraumbrales solo salen Pokémon comunes. Con Pokekeep: los legendarios exclusivos de Ultraluna (y los que se piden en pareja con los de la otra edición), añádelos legales desde la Librería si no puedes intercambiarlos. Fuente: WikiDex «Ultraumbral» (ultraviaje dimensional); Serebii «Ultra Wormholes»."
+    }
+   ]
+  },
+  "ULTRASUN-DETAIL1": {
+   "bloques": [
+    {
+     "titulo": "Episodio RR: cuándo encaja en la ruta de dominsignias",
+     "texto": "Cuándo: tras ser campeón y ayudar a la Unidad Ultra en Poni. Dónde: tu casa, la Festi Plaza y el Paraíso Æther. Paso a paso: 1) Chris te avisa en casa: libera la Festi Plaza con Pokémon prestados. 2) En el Paraíso Æther vence a Aquiles, Magno, Helio, Lysson y Ghechis y, al final, a Giovanni: 55 Maxipepitas. 3) Hazlo antes de la última vuelta de dominsignias: no da ninguna, pero el desarrollo completo está en la misión «Episodio RR y Ultraumbrales». Consejo: las dominsignias de Poni (Aldea Marina, casa de Hela, Isla Exeggutor y entrada del Árbol de Combate) se pueden recoger en el mismo viaje que la misión de la Unidad Ultra. Fuente: WikiDex «Episodio Rainbow Rocket» y «Dominsignia»."
+    },
+    {
+     "objetivo": "stickers"
+    },
+    {
+     "titulo": "Dominsignias de Melemele (17)",
+     "texto": "Cuándo: desde que llegas a Melemele; algunas piden Pokémonturas (Tauros, Machamp) o la caña. Dónde: Melemele; son destellos amarillos en paredes, muebles y fachadas. Paso a paso: 1) Segunda casa a la izquierda de Pueblo Lilii (Tauros). 2) En Ciudad Hauoli, Centro Pokémon, peluquería, entrada, piscina (con caña) y habitación de la casa de Liam, fachada e interior del ayuntamiento, tienda de malasadas, aparcamiento de la comisaría, edificio del embarcadero y final del puerto. 3) En la Ruta 2, entrada y nevera de la casa de Guzmán, Huerto de Bayas, casa del huerto y Centro Pokémon. Consejo: muchas están en paredes y muebles poco visibles: entra en cada casa y rodea cada edificio; la lista va en el orden en que se recorre la isla. Fuente: WikiDex «Dominsignia» (dominsignias de Melemele)."
+    },
+    {
+     "titulo": "Dominsignias de Akala (33)",
+     "texto": "Cuándo: desde que llegas a Akala; algunas piden Pokémonturas (Tauros, Machamp) o la caña. Dónde: Akala; son destellos amarillos en paredes, muebles y fachadas. Paso a paso: 1) En Ciudad Kantai, puerto, caseta a la izquierda del Hotel Arrullo del Mar, fachada, mesa y primera habitación izquierda de la 2.ª planta del hotel, muro y antena del CID, despacho de Pimpinela, ordenador de GAME FREAK, 2.ª planta del edificio de la Fundación Æther y junto al club de surf. 2) Pueblo Ohana (carro de paja, casa de Kiawe y mueble de la habitación de al lado). 3) Rancho Ohana (valla norte y pescando junto al Tauros). 4) Ruta 5 (pescando frente al Centro Pokémon). 5) Ruta 8 (caseta Æther y caravana de fósiles). 6) Entrada del Área Volcánica del Wela (roca con Tauros). 7) Avenida Royale (banco y columna hacia la Ruta 7). 8) Estadio Royale (escaleras y 2.ª planta). 9) Ciudad Konikoni (restaurante, habitación de Mayla, muelle y faro con Machamp). 10) Playa de Hanohano (bajo el Sandygast y muro norte). 11) Resort Hanohano (fuente con caña, junto a la entrenadora del Murkrow y embarcadero). Consejo: muchas están en paredes y muebles poco visibles: entra en cada casa y rodea cada edificio; la lista va en el orden en que se recorre la isla. Fuente: WikiDex «Dominsignia» (dominsignias de Akala)."
+    },
+    {
+     "titulo": "Dominsignias de Ula-Ula (34)",
+     "texto": "Cuándo: desde que llegas a Ula-Ula; algunas piden Pokémonturas (Tauros, Machamp) o la caña. Dónde: Ula-Ula; son destellos amarillos en paredes, muebles y fachadas. Paso a paso: 1) Ciudad Malíe (embarcadero, tienda de ropa, gimnasio de Kanto, escaleras y 2.ª planta de la biblioteca, primera aula del Centro Cultural). 2) Quiosco del Parque de Malíe. 3) Planta de reciclaje del Cabo de las Afueras. 4) Quitamiedos del Pico Hokulani. 5) Cuatro en el Observatorio (sala, tras el mostrador, caja del pasillo izquierdo y cuarto de Chris). 6) Ruta 13 (escalera del hostal y caravana). 7) Monte Rubor (pared de la Central Geotérmica y roca con Tauros). 8) Ruta 14 (boquete y junto a los Murkrow). 9) Club de surf de la Ruta 15. 10) Caseta Æther de la Ruta 16. 11) Lago de los Jardines de Ula-Ula (caña). 12) Tres en la Ruta 17 (dentro y tras el cartel de la comisaría y tras una roca de la muralla de Pueblo Po). 13) Pueblo Po (agujero de la pared izquierda, fachada e interior del Centro Pokémon, pared del edificio del Team Skull y tres superpuestas tras romper una roca con Tauros junto a la mansión). 14) Mansión Misteriosa (caja del primer piso y balcón). Consejo: muchas están en paredes y muebles poco visibles: entra en cada casa y rodea cada edificio; la lista va en el orden en que se recorre la isla. Fuente: WikiDex «Dominsignia» (dominsignias de Ula-Ula)."
+    },
+    {
+     "titulo": "Dominsignias de Poni (16)",
+     "texto": "Cuándo: desde que llegas a Poni; algunas piden Pokémonturas (Tauros, Machamp) o la caña. Dónde: Poni; son destellos amarillos en paredes, muebles y fachadas. Paso a paso: 1) Aldea Marina (exterior e interior de la barcaza Huntail, exterior e interior del barco Whiscash, cajas junto al restaurante, barcaza Steelix y última plataforma de la derecha). 2) Muro antes de la casa de Hela (Prado de Poni). 3) Antiguo Paso de Poni (izquierda del muro, tras el pozo, habitación derecha, patio y cocina de la casa de Hela, y muro hacia el Bosque de Poni). 4) Roca con Tauros en el segundo nivel de la Isla Exeggutor. 5) Entrada del Árbol de Combate. Consejo: muchas están en paredes y muebles poco visibles: entra en cada casa y rodea cada edificio; la lista va en el orden en que se recorre la isla. Fuente: WikiDex «Dominsignia» (dominsignias de Poni)."
+    },
+    {
+     "titulo": "Premios de Gabriel Oak por las dominsignias",
+     "texto": "Cuándo: cada vez que alcanzas 20, 40, 50, 70, 80 y 100 dominsignias. Dónde: Playa de Kantai (Akala). Paso a paso: 1) Lleva las dominsignias a Gabriel Oak en la Playa de Kantai. 2) Te regala un Pokémon del tamaño de un dominante por cada tramo: con 20, Gumshoos (nv. 20); con 40, Marowak de Alola (nv. 25); con 50, Lurantis (nv. 30); con 70, Vikavolt (nv. 35); con 80, Mimikyu (nv. 40); con 100, Ribombee (nv. 50). 3) Habla con él cada vez que subas de tramo para recoger el Pokémon de ese tramo. Consejo: Wishiwashi es el único dominante que no se puede conseguir. Fuente: WikiDex «Dominsignia» (recompensas)."
+    }
+   ]
+  },
+  "ULTRAMOON-09": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "objetivo": "pokemon-772"
+    },
+    {
+     "titulo": "Dos Stakataka en el Bosque de Poni",
+     "texto": "Cuándo: tras recibir el Código Cero, en la última misión de la Unidad Ultra. Dónde: Bosque de Poni (Poni). Paso a paso: 1) Sigue a Tilo y a la Unidad Ultra hasta el Bosque de Poni: han llegado Stakataka por un ultraumbral. 2) Recibes 5 Ente Balls. 3) Busca en la hierba: Tilo se queda uno para la investigación y tú capturas los otros dos (nivel 60). Solo hay esos dos. Consejo: guarda antes de cada encuentro: si debilitas uno, no vuelve a aparecer. Con Pokekeep: el Blacephalon de la otra edición, añádelo legal desde la Librería si no puedes intercambiarlo. Fuente: WikiDex «Stakataka»; Serebii «Ultra Recon Squad» y «Ultra Beasts» (Ultrasol y Ultraluna)."
+    },
+    {
+     "objetivo": "pokemon-786"
+    },
+    {
+     "objetivo": "pokemon-787"
+    },
+    {
+     "objetivo": "pokemon-788"
+    },
+    {
+     "titulo": "Necrosol y Necroluna: fusionar a Necrozma",
+     "texto": "Cuándo: en cuanto tienes a Necrozma (se captura en la cima del Monte Lanakila, antes de la Liga). Dónde: Monte Lanakila (Ula-Ula); la fusión, desde la Bolsa en cualquier sitio. Paso a paso: 1) Captura a Necrozma (nivel 65) en la cima del Monte Lanakila, camino de la Liga; guarda antes. 2) Acromo te entrega allí mismo el Necrosol y el Necroluna. 3) Con Necrozma y Solgaleo en el equipo, usa el Necrosol: Necrozma melena crepuscular (Psíquico/Acero). Con Lunala y el Necroluna: Necrozma alas del alba (Psíquico/Fantasma). Consejo: para registrar las dos formas hace falta tener a Solgaleo y a Lunala; el de la otra edición llega por intercambio. Con Pokekeep: si no puedes intercambiar el legendario de Ultrasol, añádelo legal desde la Librería. Fuente: WikiDex «Necrozma» y «Necrosol»."
+    },
+    {
+     "titulo": "Dexio en la Llanura de Poni",
+     "texto": "Cuándo: tras la Liga, de camino a la Gruta Desenlace. Dónde: Llanura de Poni (Poni). Paso a paso: 1) Entra en las zonas nuevas de Poni por el Bosque de Poni. 2) Sina y Dexio te esperan en la Llanura de Poni: vence a Dexio (Espeon, Raichu de Alola, Slowking, Metagross y Alakazam, todos de nivel 60). 3) Te hablan de la megaevolución y de Zygarde, y te dejan pasar hacia los Jardines de Poni. Consejo: su Alakazam megaevoluciona: lleva ataques de tipo Siniestro, Fantasma o Bicho. Fuente: WikiDex «Sina y Dexio»."
+    },
+    {
+     "objetivo": "zygarde-cells"
+    },
+    {
+     "objetivo": "zygarde-cores"
+    },
+    {
+     "titulo": "Ultraviaje dimensional: Ultraentes",
+     "texto": "Cuándo: desde que viajas a Ultrópolis en la historia; repetible sin límite. Dónde: los ultraumbrales blancos del ultraviaje dimensional, montando a Solgaleo o Lunala. Paso a paso: 1) Durante el viaje esquiva los orbes eléctricos (te frenan) y recoge las esferas de energía (te aceleran); cuantos más años luz recorras, más anillos tendrán los ultraumbrales. 2) Entra solo en ultraumbrales blancos: llevan a los mundos de los Ultraentes (en Ultraluna: Nihilego, Pheromosa, Xurkitree, Celesteela y Guzzlord). 3) Para acertar el mundo: pocos años luz y sin anillo, Ultraabismo (Nihilego); muchos años luz y sin anillo, Ultradesierto (Pheromosa); un anillo, Ultragenerador (Xurkitree); dos anillos, Ultravalle (Celesteela); dos anillos y radios, Ultraurbe (Guzzlord). 4) Los Ultraentes se pueden capturar tantas veces como quieras; lleva Ente Balls. Consejo: los controles se cambian de sensor de giro a botón deslizante hablando con el hombre del casco en las oficinas de GAME FREAK de Ciudad Kantai. Los legendarios de los ultraumbrales de color están en la misión «Episodio RR y Ultraumbrales». Con Pokekeep: los Ultraentes exclusivos de Ultrasol (Buzzwole y Kartana), añádelos legales desde la Librería si no puedes intercambiarlos. Fuente: WikiDex «Ultraumbral» (ultraviaje dimensional); Serebii «Ultra Wormholes»."
+    },
+    {
+     "titulo": "Gladio vuelve de Kanto",
+     "texto": "Cuándo: un mes exacto después de capturar o vencer a Necrozma en el Monte Lanakila. Dónde: Liga Pokémon del Monte Lanakila y, después, el Paraíso Æther. Paso a paso: 1) Deja pasar un mes de calendario desde lo de Necrozma. 2) Vuelve a la Liga y vence otra vez al Alto Mando: en el trono aparece Gladio como retador; su Silvally tiene el tipo que vence a tu inicial. 3) Tras vencerle, ve al Paraíso Æther para ver la última escena, en la que su padre, Polo, se reencuentra con Samina. Consejo: si no sale a la primera, sigue defendiendo el título: los retadores salen al azar. Fuente: WikiDex «Gladio» y «Liga Pokémon (Alola)»."
+    }
+   ]
+  },
+  "ULTRAMOON-10": {
+   "bloques": [
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "card-3"
+    },
+    {
+     "objetivo": "card-4"
+    },
+    {
+     "objetivo": "card-5"
+    },
+    {
+     "objetivo": "mantine-surf"
+    },
+    {
+     "objetivo": "card-13"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "card-6"
+    },
+    {
+     "objetivo": "card-7"
+    },
+    {
+     "objetivo": "card-8"
+    },
+    {
+     "objetivo": "card-9"
+    },
+    {
+     "objetivo": "card-10"
+    },
+    {
+     "objetivo": "shiny-charm"
+    },
+    {
+     "objetivo": "final-boss"
+    },
+    {
+     "titulo": "Defender el título de campeón",
+     "texto": "Cuándo: cada vez que vuelves a vencer al Alto Mando después de ser campeón. Dónde: Liga Pokémon del Monte Lanakila (Ula-Ula). Paso a paso: 1) Vuelve a la Liga y vence otra vez a los cuatro del Alto Mando (Lario, Mayla, Zarala y Kahili), en el orden que quieras. 2) En la sala del trono te espera un retador. El primero siempre es Tilo; después salen al azar el profesor Kukui, Samina, Guzmán, Olano, Chris, Francine, Hela, José y, un mes después de lo de Necrozma, Gladio. 3) Sus equipos van del nivel 66 al 69; si pierdes no pasa nada: sigues siendo campeón. Consejo: entre combate y combate solo puedes curar con objetos: lleva Restaurar Todo y Revivir, y repite para ver a todos los retadores. Fuente: WikiDex «Liga Pokémon (Alola)» (retadores de Ultrasol y Ultraluna)."
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "objetivo": "card-11"
+    },
+    {
+     "objetivo": "card-12"
+    },
+    {
+     "objetivo": "card-14"
+    },
+    {
+     "objetivo": "event-1"
+    }
+   ]
+  },
+  "ULTRAMOON-E01": {
+   "bloques": [
+    {
+     "objetivo": "rocket"
+    },
+    {
+     "titulo": "Festi Plaza y entrada al Paraíso Æther",
+     "texto": "Cuándo: en cuanto Chris aparece en tu casa tras la misión de la Unidad Ultra. Dónde: Festi Plaza y exterior del Paraíso Æther. Paso a paso: 1) En la Festi Plaza no puedes usar tu equipo: entra en la Agencia de Combate y vence con Pokémon prestados al jefe de los reclutas (Golbat, Raticate y Arbok, nivel 50). 2) Chris recupera el control de la Festi Plaza y te da un Botón Escape. 3) Vuelve a casa: la televisión muestra el ataque al Paraíso Æther y Lylia te pide ir. Allí Zyra te da una Malasada Maxi. 4) Fuera, vence en fila a varios reclutas con un solo Pokémon cada uno; en la puerta, con Lylia (Clefairy de nivel 60), gana el combate doble contra Fabio y un empleado. 5) Dentro, haz pareja con Guzmán contra dos reclutas. Después Lylia se queda en su cuarto y cura a tu equipo siempre que hables con ella. Consejo: a partir de aquí no se puede salir del edificio hasta terminar: lleva objetos de curación y Revivir. Fuente: WikiDex «Episodio Rainbow Rocket»."
+    },
+    {
+     "titulo": "Guaridas de Aquiles y de Magno",
+     "texto": "Cuándo: tras el combate doble con Guzmán. Dónde: Paraíso Æther: puerta izquierda (Aquiles) y puerta derecha (Magno) de la sala de Guzmán. Paso a paso: 1) Guarida de Aquiles: laberinto de teletransportadores con reclutas de nivel 62 y Electrode camuflados; al final, dos reclutas seguidos ante la puerta. 2) Vence a Aquiles: cuatro Pokémon de nivel 64 y Kyogre de nivel 66 (Llovizna, Hidrobomba, Trueno, Rayo Hielo). Pulsa el botón oculto tras el cuadro del fondo. 3) Guarida de Magno: paneles de colores que se iluminan; memoriza y repite secuencias de 4, 6 y 8 paneles mientras los reclutas intentan distraerte. 4) Vence a Magno: Mightyena, Crobat, Weezing y Camerupt de nivel 64 y Groudon de nivel 66 (Sequía, Terremoto, Rayo Solar, Lanzallamas). Pulsa el botón del cuadro. Consejo: lleva un Pokémon de tipo Planta o Eléctrico para Kyogre y uno de tipo Agua para Groudon; vuelve con Lylia a curar entre guarida y guarida. Fuente: WikiDex «Episodio Rainbow Rocket»."
+    },
+    {
+     "titulo": "Guaridas de Helio y de Lysson, y Ghechis",
+     "texto": "Cuándo: tras vencer a Aquiles y Magno. Dónde: Paraíso Æther: puertas izquierda (Helio) y derecha (Lysson) que se abren en la sala de Guzmán; Ghechis, en el cuarto de Lylia. Paso a paso: 1) Guarida de Helio: suelos deslizantes y reclutas; vence a Helio (Crobat, Honchkrow, Weavile y Houndoom de nivel 65 y Palkia de nivel 67) y usa la Llave Galaxia en el aparato del fondo. 2) Guarida de Lysson: estatuas de Meowth que vigilan en línea recta (gíralas desde la espalda para pasar); vence a Lysson (Mienshao, Honchkrow, Pyroar y Gyarados con megaevolución, de nivel 65, y Yveltal de nivel 67). 3) Ve al cuarto de Lylia: del teletransportador sale Ghechis (Cofagrigus, Bouffalant, Bisharp e Hydreigon de nivel 66, y Reshiram). Véncele; Acromo aparece y lo devuelve a su mundo. Consejo: contra los legendarios, Pokémon de tipo Hada o Dragón rinden bien frente a Palkia y Reshiram. Fuente: WikiDex «Episodio Rainbow Rocket»."
+    },
+    {
+     "titulo": "Giovanni en el despacho de Samina",
+     "texto": "Cuándo: tras vencer a Ghechis. Dónde: despacho de Samina, en lo alto del Paraíso Æther (teletransportador del cuarto de Lylia). Paso a paso: 1) Sube por el teletransportador: Samina está dormida por el poder de un Ultraente y Giovanni te ofrece unirte al Team Rainbow Rocket. 2) Vence a Giovanni: Dugtrio, Nidoking, Nidoqueen y Rhyperior de nivel 68 y Mewtwo de nivel 70, que megaevoluciona a Mega-Mewtwo Y. 3) Al salir, todos te dan las gracias y recibes 55 Maxipepitas. Fin del Episodio RR. Consejo: los Maxipepitas se venden caras: úsalas para comprar objetos de combate antes del Árbol de Combate. Fuente: WikiDex «Episodio Rainbow Rocket»."
+    },
+    {
+     "titulo": "Legendarios de los ultraumbrales de color",
+     "texto": "Cuándo: tras ser campeón; cada legendario sale hasta que lo capturas. Dónde: ultraviaje dimensional: ultraumbrales azules (cascadas), verdes (campo rocoso), rojos (cima de montaña) y amarillos (cueva) del Ultraespacio Cero. Paso a paso: 1) Azul: Suicune (con Entei y Raikou en el equipo), Lugia, Latias, Kyogre, Uxie, Mesprit, Azelf y Kyurem (con Reshiram y Zekrom). 2) Verde: Mewtwo, Entei, Cobalion, Terrakion, Virizion y Zekrom. 3) Rojo: Articuno, Zapdos, Moltres, Rayquaza (con Kyogre y Groudon), Cresselia, Thundurus, Landorus (con Tornadus y Thundurus) e Yveltal. 4) Amarillo: Regirock, Regice, Registeel, Palkia, Regigigas y Giratina (con Dialga y Palkia). 5) Viaja lejos sin chocar con los orbes eléctricos: a partir de unos 2.500 años luz salen ultraumbrales con dos anillos y radios, que garantizan el legendario; con menos anillos la probabilidad es baja (3 % sin anillo). 6) Todos están a nivel 60; guarda antes y lleva Ocaso y Turno Balls. Consejo: cuando ya tienes todos los legendarios de un color, en sus ultraumbrales solo salen Pokémon comunes. Con Pokekeep: los legendarios exclusivos de Ultrasol (y los que se piden en pareja con los de la otra edición), añádelos legales desde la Librería si no puedes intercambiarlos. Fuente: WikiDex «Ultraumbral» (ultraviaje dimensional); Serebii «Ultra Wormholes»."
+    }
+   ]
+  },
+  "ULTRAMOON-DETAIL1": {
+   "bloques": [
+    {
+     "titulo": "Episodio RR: cuándo encaja en la ruta de dominsignias",
+     "texto": "Cuándo: tras ser campeón y ayudar a la Unidad Ultra en Poni. Dónde: tu casa, la Festi Plaza y el Paraíso Æther. Paso a paso: 1) Chris te avisa en casa: libera la Festi Plaza con Pokémon prestados. 2) En el Paraíso Æther vence a Aquiles, Magno, Helio, Lysson y Ghechis y, al final, a Giovanni: 55 Maxipepitas. 3) Hazlo antes de la última vuelta de dominsignias: no da ninguna, pero el desarrollo completo está en la misión «Episodio RR y Ultraumbrales». Consejo: las dominsignias de Poni (Aldea Marina, casa de Hela, Isla Exeggutor y entrada del Árbol de Combate) se pueden recoger en el mismo viaje que la misión de la Unidad Ultra. Fuente: WikiDex «Episodio Rainbow Rocket» y «Dominsignia»."
+    },
+    {
+     "objetivo": "stickers"
+    },
+    {
+     "titulo": "Dominsignias de Melemele (17)",
+     "texto": "Cuándo: desde que llegas a Melemele; algunas piden Pokémonturas (Tauros, Machamp) o la caña. Dónde: Melemele; son destellos amarillos en paredes, muebles y fachadas. Paso a paso: 1) Segunda casa a la izquierda de Pueblo Lilii (Tauros). 2) En Ciudad Hauoli, Centro Pokémon, peluquería, entrada, piscina (con caña) y habitación de la casa de Liam, fachada e interior del ayuntamiento, tienda de malasadas, aparcamiento de la comisaría, edificio del embarcadero y final del puerto. 3) En la Ruta 2, entrada y nevera de la casa de Guzmán, Huerto de Bayas, casa del huerto y Centro Pokémon. Consejo: muchas están en paredes y muebles poco visibles: entra en cada casa y rodea cada edificio; la lista va en el orden en que se recorre la isla. Fuente: WikiDex «Dominsignia» (dominsignias de Melemele)."
+    },
+    {
+     "titulo": "Dominsignias de Akala (33)",
+     "texto": "Cuándo: desde que llegas a Akala; algunas piden Pokémonturas (Tauros, Machamp) o la caña. Dónde: Akala; son destellos amarillos en paredes, muebles y fachadas. Paso a paso: 1) En Ciudad Kantai, puerto, caseta a la izquierda del Hotel Arrullo del Mar, fachada, mesa y primera habitación izquierda de la 2.ª planta del hotel, muro y antena del CID, despacho de Pimpinela, ordenador de GAME FREAK, 2.ª planta del edificio de la Fundación Æther y junto al club de surf. 2) Pueblo Ohana (carro de paja, casa de Kiawe y mueble de la habitación de al lado). 3) Rancho Ohana (valla norte y pescando junto al Tauros). 4) Ruta 5 (pescando frente al Centro Pokémon). 5) Ruta 8 (caseta Æther y caravana de fósiles). 6) Entrada del Área Volcánica del Wela (roca con Tauros). 7) Avenida Royale (banco y columna hacia la Ruta 7). 8) Estadio Royale (escaleras y 2.ª planta). 9) Ciudad Konikoni (restaurante, habitación de Mayla, muelle y faro con Machamp). 10) Playa de Hanohano (bajo el Sandygast y muro norte). 11) Resort Hanohano (fuente con caña, junto a la entrenadora del Murkrow y embarcadero). Consejo: muchas están en paredes y muebles poco visibles: entra en cada casa y rodea cada edificio; la lista va en el orden en que se recorre la isla. Fuente: WikiDex «Dominsignia» (dominsignias de Akala)."
+    },
+    {
+     "titulo": "Dominsignias de Ula-Ula (34)",
+     "texto": "Cuándo: desde que llegas a Ula-Ula; algunas piden Pokémonturas (Tauros, Machamp) o la caña. Dónde: Ula-Ula; son destellos amarillos en paredes, muebles y fachadas. Paso a paso: 1) Ciudad Malíe (embarcadero, tienda de ropa, gimnasio de Kanto, escaleras y 2.ª planta de la biblioteca, primera aula del Centro Cultural). 2) Quiosco del Parque de Malíe. 3) Planta de reciclaje del Cabo de las Afueras. 4) Quitamiedos del Pico Hokulani. 5) Cuatro en el Observatorio (sala, tras el mostrador, caja del pasillo izquierdo y cuarto de Chris). 6) Ruta 13 (escalera del hostal y caravana). 7) Monte Rubor (pared de la Central Geotérmica y roca con Tauros). 8) Ruta 14 (boquete y junto a los Murkrow). 9) Club de surf de la Ruta 15. 10) Caseta Æther de la Ruta 16. 11) Lago de los Jardines de Ula-Ula (caña). 12) Tres en la Ruta 17 (dentro y tras el cartel de la comisaría y tras una roca de la muralla de Pueblo Po). 13) Pueblo Po (agujero de la pared izquierda, fachada e interior del Centro Pokémon, pared del edificio del Team Skull y tres superpuestas tras romper una roca con Tauros junto a la mansión). 14) Mansión Misteriosa (caja del primer piso y balcón). Consejo: muchas están en paredes y muebles poco visibles: entra en cada casa y rodea cada edificio; la lista va en el orden en que se recorre la isla. Fuente: WikiDex «Dominsignia» (dominsignias de Ula-Ula)."
+    },
+    {
+     "titulo": "Dominsignias de Poni (16)",
+     "texto": "Cuándo: desde que llegas a Poni; algunas piden Pokémonturas (Tauros, Machamp) o la caña. Dónde: Poni; son destellos amarillos en paredes, muebles y fachadas. Paso a paso: 1) Aldea Marina (exterior e interior de la barcaza Huntail, exterior e interior del barco Whiscash, cajas junto al restaurante, barcaza Steelix y última plataforma de la derecha). 2) Muro antes de la casa de Hela (Prado de Poni). 3) Antiguo Paso de Poni (izquierda del muro, tras el pozo, habitación derecha, patio y cocina de la casa de Hela, y muro hacia el Bosque de Poni). 4) Roca con Tauros en el segundo nivel de la Isla Exeggutor. 5) Entrada del Árbol de Combate. Consejo: muchas están en paredes y muebles poco visibles: entra en cada casa y rodea cada edificio; la lista va en el orden en que se recorre la isla. Fuente: WikiDex «Dominsignia» (dominsignias de Poni)."
+    },
+    {
+     "titulo": "Premios de Gabriel Oak por las dominsignias",
+     "texto": "Cuándo: cada vez que alcanzas 20, 40, 50, 70, 80 y 100 dominsignias. Dónde: Playa de Kantai (Akala). Paso a paso: 1) Lleva las dominsignias a Gabriel Oak en la Playa de Kantai. 2) Te regala un Pokémon del tamaño de un dominante por cada tramo: con 20, Raticate de Alola (nv. 20); con 40, Araquanid (nv. 25); con 50, Salazzle (nv. 30); con 70, Togedemaru (nv. 35); con 80, Mimikyu (nv. 40); con 100, Kommo-o (nv. 50). 3) Habla con él cada vez que subas de tramo para recoger el Pokémon de ese tramo. Consejo: Wishiwashi es el único dominante que no se puede conseguir. Fuente: WikiDex «Dominsignia» (recompensas)."
+    }
+   ]
+  },
+  "LETGOP-05": {
+   "bloques": [
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "pokemon-145"
+    },
+    {
+     "objetivo": "pokemon-144"
+    },
+    {
+     "objetivo": "pokemon-146"
+    },
+    {
+     "objetivo": "pokemon-150"
+    },
+    {
+     "titulo": "Verde en la Cueva Celeste",
+     "texto": "Cuándo: justo después de capturar a Mewtwo. Dónde: fondo de la Cueva Celeste y, desde el día siguiente, junto a la tienda de bicis de Ciudad Celeste. Paso a paso: 1) Tras capturar a Mewtwo, Trace te avisa de que hay una chica en la cueva: vuelve al sitio donde estaba Mewtwo. 2) Vence a Verde: Clefable, Gengar, Kangaskhan, Victreebel y Ninetales de nivel 66 y Blastoise de nivel 68 con megaevolución. 3) Te da la Mewtwoita X y la Mewtwoita Y, y deja cinco Poké Balls en el suelo; recógelas. 4) Desde el día siguiente está junto a la tienda de bicis de Ciudad Celeste: cada vez que vuelves a vencer al Alto Mando acepta la revancha. Consejo: un Pokémon de tipo Eléctrico o Planta frena a su Mega-Blastoise; contra Gengar, ataques de tipo Psíquico o Tierra. Fuente: WikiDex «Verde (personaje)»; Serebii «Pokémon Trainer Green»."
+    },
+    {
+     "objetivo": "event-0"
+    }
+   ]
+  },
+  "LETGOP-06": {
+   "bloques": [
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "objetivo": "battle1"
+    },
+    {
+     "objetivo": "medal-type"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "objetivo": "shiny-charm"
+    }
+   ]
+  },
+  "LETGOE-05": {
+   "bloques": [
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "pokemon-145"
+    },
+    {
+     "objetivo": "pokemon-144"
+    },
+    {
+     "objetivo": "pokemon-146"
+    },
+    {
+     "objetivo": "pokemon-150"
+    },
+    {
+     "titulo": "Verde en la Cueva Celeste",
+     "texto": "Cuándo: justo después de capturar a Mewtwo. Dónde: fondo de la Cueva Celeste y, desde el día siguiente, junto a la tienda de bicis de Ciudad Celeste. Paso a paso: 1) Tras capturar a Mewtwo, Trace te avisa de que hay una chica en la cueva: vuelve al sitio donde estaba Mewtwo. 2) Vence a Verde: Clefable, Gengar, Kangaskhan, Victreebel y Ninetales de nivel 66 y Blastoise de nivel 68 con megaevolución. 3) Te da la Mewtwoita X y la Mewtwoita Y, y deja cinco Poké Balls en el suelo; recógelas. 4) Desde el día siguiente está junto a la tienda de bicis de Ciudad Celeste: cada vez que vuelves a vencer al Alto Mando acepta la revancha. Consejo: un Pokémon de tipo Eléctrico o Planta frena a su Mega-Blastoise; contra Gengar, ataques de tipo Psíquico o Tierra. Fuente: WikiDex «Verde (personaje)»; Serebii «Pokémon Trainer Green»."
+    },
+    {
+     "objetivo": "event-0"
+    }
+   ]
+  },
+  "LETGOE-06": {
+   "bloques": [
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "objetivo": "battle1"
+    },
+    {
+     "objetivo": "medal-type"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "objetivo": "shiny-charm"
+    }
+   ]
+  }
+ },
+ "corrige": {
+  "SUN": {
+   "postgame": "Cuándo: en cuanto ves los créditos tras ser campeón. Dónde: tu casa (Afueras de Hauoli, Melemele) y el Motel Decamino de la Ruta 8 (Akala). Paso a paso: 1) Al salir de casa tras los créditos, un hombre misterioso te entrega la nota intrigante. 2) Ve al Motel Decamino de la Ruta 8: Handsome y Destra, de la Policía Internacional, te piden ayuda contra los Ultraentes. Si dices que no, vuelve al motel y acepta. 3) Vence a Destra (Alakazam, Mismagius, Snorlax, Salamence y Weavile, todos de nivel 61). 4) Así empieza el epílogo «Handsome y los Ultraentes»: cinco misiones seguidas (Nihilego; dos Buzzwole; Xurkitree; cuatro Kartana; Guzzlord), cada una con su bloque a continuación y en orden. 5) Sin orden fijo y en paralelo: el Código Cero de Gladio, los tres tapus que faltan y, al terminar la quinta misión, Necrozma; después, Cosmog. Consejo: en Sol no hay Episodio Rainbow Rocket: es exclusivo de Ultrasol y Ultraluna. El Árbol de Combate se abre tras la Liga (misión «Pasaporte, células y núcleos de Zygarde») y la defensa del título está en «Liga Pokémon de Alola». Fuente: WikiDex «Handsome y los Ultraentes» y «Destra»."
+  },
+  "MOON": {
+   "postgame": "Cuándo: en cuanto ves los créditos tras ser campeón. Dónde: tu casa (Afueras de Hauoli, Melemele) y el Motel Decamino de la Ruta 8 (Akala). Paso a paso: 1) Al salir de casa tras los créditos, un hombre misterioso te entrega la nota intrigante. 2) Ve al Motel Decamino de la Ruta 8: Handsome y Destra, de la Policía Internacional, te piden ayuda contra los Ultraentes. Si dices que no, vuelve al motel y acepta. 3) Vence a Destra (Alakazam, Mismagius, Snorlax, Salamence y Weavile, todos de nivel 61). 4) Así empieza el epílogo «Handsome y los Ultraentes»: cinco misiones seguidas (Nihilego; cuatro Pheromosa; Xurkitree; dos Celesteela; Guzzlord), cada una con su bloque a continuación y en orden. 5) Sin orden fijo y en paralelo: el Código Cero de Gladio, los tres tapus que faltan y, al terminar la quinta misión, Necrozma; después, Cosmog. Consejo: en Luna no hay Episodio Rainbow Rocket: es exclusivo de Ultrasol y Ultraluna. El Árbol de Combate se abre tras la Liga (misión «Pasaporte, células y núcleos de Zygarde») y la defensa del título está en «Liga Pokémon de Alola». Fuente: WikiDex «Handsome y los Ultraentes» y «Destra»."
+  },
+  "ULTRASUN": {
+   "postgame": "Cuándo: en cuanto ves los créditos tras ser campeón. Dónde: Poni (Antiguo Paso de Poni y Bosque de Poni), y después tu casa, la Festi Plaza y el Paraíso Æther. Paso a paso: 1) Tras los créditos, la Unidad Ultra pide ayuda en Poni: ve al Antiguo Paso de Poni, donde Zyra te da el Código Cero de Gladio (bloque siguiente). 2) Sigue a Tilo y a la Unidad Ultra al Bosque de Poni y captura dos Blacephalon (bloque propio). 3) Con eso queda abierto el Episodio Rainbow Rocket (misión «Episodio RR y Ultraumbrales») y, en Poni, el camino al Árbol de Combate. 4) En cualquier orden: los tres tapus que faltan, el Zygarde de la Gruta Desenlace con el Arca de Zygarde y los legendarios del ultraviaje dimensional. 5) Un mes después de capturar o vencer a Necrozma en el Monte Lanakila, Gladio vuelve de Kanto como retador de la Liga. Consejo: el Árbol de Combate, las defensas del título y los sellos del pasaporte están en «Pasaporte, pegatinas y colecciones»; las 100 dominsignias, en «Equipo Rainbow Rocket y 100 pegatinas». Fuente: WikiDex «Episodio Rainbow Rocket», «Código Cero» y «Gladio»; Serebii «Ultra Recon Squad».",
+   "battle0": "Cuándo: tras la Liga y la misión de la Unidad Ultra. Dónde: Árbol de Combate, al final de la Pendiente de Poni (Bosque de Poni → Llanura de Poni → Costa de Poni → Pendiente de Poni). Paso a paso: 1) A la entrada te encuentras a Rojo y Azul: elige a uno y vence; cura antes porque el combate es inmediato. 2) Elige modalidad: Individual (3 Pokémon), Doble (4) o Múltiple (2 por entrenador). No se repiten especies ni objetos. 3) En los combates normales de Ultrasol y Ultraluna no hay límite de nivel ni se prohíben legendarios; en los supercombates sí: todo se ajusta a nivel 50 y no se admiten Mewtwo, Solgaleo, Lunala, Necrozma y demás Pokémon especiales. 4) Tras 19 victorias, en el combate 20 aparece el jefe (Rojo o Azul); vencerle abre los supercombates, donde vuelven a salir en el combate 50. 5) Cada 10 combates sale un entrenador destacado (Cintia, Blasco, Destra, Acromo, Aza, Sina, Dexio, Kiawe, Lulú, Francine, Guzmán, Kukui…). 6) La primera vez que vences a Rojo en Individual te da Charizardita X e Y, Venusaurita y Blastoisita. Consejo: los PB se canjean en los puestos de la entrada; vencer a Rojo y Azul da la cinta As del Árbol (normal) o Maestro del Árbol (supercombate); la recepcionista regala objetos una vez al día a las 5, 10, 20, 30, 40 y 50 victorias seguidas (con 50, una Chapa dorada). Fuente: WikiDex «Árbol de Combate»."
+  },
+  "ULTRAMOON": {
+   "postgame": "Cuándo: en cuanto ves los créditos tras ser campeón. Dónde: Poni (Antiguo Paso de Poni y Bosque de Poni), y después tu casa, la Festi Plaza y el Paraíso Æther. Paso a paso: 1) Tras los créditos, la Unidad Ultra pide ayuda en Poni: ve al Antiguo Paso de Poni, donde Zyra te da el Código Cero de Gladio (bloque siguiente). 2) Sigue a Tilo y a la Unidad Ultra al Bosque de Poni y captura dos Stakataka (bloque propio). 3) Con eso queda abierto el Episodio Rainbow Rocket (misión «Episodio RR y Ultraumbrales») y, en Poni, el camino al Árbol de Combate. 4) En cualquier orden: los tres tapus que faltan, el Zygarde de la Gruta Desenlace con el Arca de Zygarde y los legendarios del ultraviaje dimensional. 5) Un mes después de capturar o vencer a Necrozma en el Monte Lanakila, Gladio vuelve de Kanto como retador de la Liga. Consejo: el Árbol de Combate, las defensas del título y los sellos del pasaporte están en «Pasaporte, pegatinas y colecciones»; las 100 dominsignias, en «Equipo Rainbow Rocket y 100 pegatinas». Fuente: WikiDex «Episodio Rainbow Rocket», «Código Cero» y «Gladio»; Serebii «Ultra Recon Squad».",
+   "battle0": "Cuándo: tras la Liga y la misión de la Unidad Ultra. Dónde: Árbol de Combate, al final de la Pendiente de Poni (Bosque de Poni → Llanura de Poni → Costa de Poni → Pendiente de Poni). Paso a paso: 1) A la entrada te encuentras a Rojo y Azul: elige a uno y vence; cura antes porque el combate es inmediato. 2) Elige modalidad: Individual (3 Pokémon), Doble (4) o Múltiple (2 por entrenador). No se repiten especies ni objetos. 3) En los combates normales de Ultrasol y Ultraluna no hay límite de nivel ni se prohíben legendarios; en los supercombates sí: todo se ajusta a nivel 50 y no se admiten Mewtwo, Solgaleo, Lunala, Necrozma y demás Pokémon especiales. 4) Tras 19 victorias, en el combate 20 aparece el jefe (Rojo o Azul); vencerle abre los supercombates, donde vuelven a salir en el combate 50. 5) Cada 10 combates sale un entrenador destacado (Cintia, Blasco, Destra, Acromo, Aza, Sina, Dexio, Kiawe, Lulú, Francine, Guzmán, Kukui…). 6) La primera vez que vences a Rojo en Individual te da Charizardita X e Y, Venusaurita y Blastoisita. Consejo: los PB se canjean en los puestos de la entrada; vencer a Rojo y Azul da la cinta As del Árbol (normal) o Maestro del Árbol (supercombate); la recepcionista regala objetos una vez al día a las 5, 10, 20, 30, 40 y 50 victorias seguidas (con 50, una Chapa dorada). Fuente: WikiDex «Árbol de Combate»."
+  },
+  "LETGOP": {
+   "battle1": "Cuándo: tras ser campeón y vencer al menos a 6 entrenadores maestros. Dónde: entrada de la Meseta Añil. Paso a paso: 1) Vence a 6 entrenadores maestros. 2) Lleva seis Pokémon en el equipo: Rojo no combate si no. 3) Vence a Rojo (Pikachu, Machamp, Arcanine, Lapras, Snorlax y Venusaur con megaevolución, todos de nivel 85): título de maestro del combate. 4) Rojo se va tras el combate y reaparece cada vez que vuelves a vencer al Alto Mando. 5) Otros rivales fuertes del final: Verde (Cueva Celeste y luego junto a la tienda de bicis de Ciudad Celeste, nivel 66-68) y Azul, que pasa a ser líder del Gimnasio de Ciudad Verde tras la Liga (nivel 66-68, con Mega-Charizard Y). Consejo: Rojo es el rival más fuerte del juego: sube a tu equipo con caramelos y lleva Pociones Máximas. Fuente: WikiDex «Entrenador maestro» y «Rojo (personaje)»; Serebii «Pokémon Trainer Red», «Pokémon Trainer Blue» y «Pokémon Trainer Green»."
+  },
+  "LETGOE": {
+   "battle1": "Cuándo: tras ser campeón y vencer al menos a 6 entrenadores maestros. Dónde: entrada de la Meseta Añil. Paso a paso: 1) Vence a 6 entrenadores maestros. 2) Lleva seis Pokémon en el equipo: Rojo no combate si no. 3) Vence a Rojo (Pikachu, Machamp, Arcanine, Lapras, Snorlax y Venusaur con megaevolución, todos de nivel 85): título de maestro del combate. 4) Rojo se va tras el combate y reaparece cada vez que vuelves a vencer al Alto Mando. 5) Otros rivales fuertes del final: Verde (Cueva Celeste y luego junto a la tienda de bicis de Ciudad Celeste, nivel 66-68) y Azul, que pasa a ser líder del Gimnasio de Ciudad Verde tras la Liga (nivel 66-68, con Mega-Charizard Y). Consejo: Rojo es el rival más fuerte del juego: sube a tu equipo con caramelos y lleva Pociones Máximas. Fuente: WikiDex «Entrenador maestro» y «Rojo (personaje)»; Serebii «Pokémon Trainer Red», «Pokémon Trainer Blue» y «Pokémon Trainer Green»."
+  }
+ }
+}
