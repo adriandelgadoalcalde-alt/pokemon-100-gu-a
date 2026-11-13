@@ -577,7 +577,8 @@ async function run() {
     const offline = await browser.newContext(ctx());
     const offlinePage = await offline.newPage();
     offlinePage.on('pageerror', e => errors.push(e.message));
-    await offlinePage.goto(base);
+    // La dirección principal salta al Atlas: se instala desde él para no evaluar durante la redirección.
+    await offlinePage.goto(`${base}/atlas.html`);
     await offlinePage.evaluate(async () => {await navigator.serviceWorker.ready;});
     await offlinePage.reload();
     await offlinePage.waitForFunction(() => !!navigator.serviceWorker.controller);
