@@ -2,8 +2,11 @@
 
 Aplicación de seguimiento Pokémon con dos rutas de acceso:
 
-- **[Atlas de nueve generaciones](./atlas.html):** 39 ediciones, 525 misiones y 1.146 pasos; lectura directa de formatos compatibles, importación de diagnósticos JSON y cobertura visible por edición.
-- **[Lector de guardados y guía clásica](./index.html):** lectura local de los formatos compatibles y guía especializada para las ediciones ya implementadas.
+- **Una sola página ([dirección principal](./), que abre el Atlas):** 39 ediciones, 525 misiones y 1.146 pasos. Al leer tu
+  guardado, cada misión se marca sola con lo que demuestra la partida (`src/guides/mission-proof.js`), la ruta te lleva
+  en orden a lo primero que de verdad falta, un test salta solo con lo que la partida no guarda (se recuerda por
+  partida) y cada juego muestra lo que hoy solo se consigue con Pokekeep. La antigua guía de 6 ediciones queda en
+  `clasica.html`, sin enlaces.
 
 ## Publicación
 GitHub Pages se publica desde la rama `main` y la raíz del repositorio. La aplicación puede instalarse desde Safari en iPad y Chrome en Android, sujeto a disponibilidad del navegador.

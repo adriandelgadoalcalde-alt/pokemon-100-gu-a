@@ -37,14 +37,14 @@ function catalogue(html) {
   return data;
 }
 function audit(root = '.') {
-  const classic = fs.readFileSync(`${root}/index.html`, 'utf8');
+  const classic = fs.readFileSync(`${root}/clasica.html`, 'utf8');
   const atlas = fs.readFileSync(`${root}/atlas.html`, 'utf8');
   const db = JSON.parse(classic.match(/<script id="data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
   const catalog = catalogue(atlas);
   const classicTasks = db.games.flatMap(g => g.chapters.flatMap(c => c.tasks));
   const atlasTasks = catalog.games.flatMap(g => g.missions);
   const errors = [];
-  for (const [name, html] of [['index.html', classic], ['atlas.html', atlas]])
+  for (const [name, html] of [['clasica.html', classic], ['atlas.html', atlas]])
     for (const code of scripts(html))
       for (const duplicate of duplicates(code)) errors.push(`${name}: función duplicada ${duplicate}`);
   const sw=acorn.parse(fs.readFileSync(`${root}/sw.js`,'utf8'),{ecmaVersion:'latest'});

@@ -813,3 +813,26 @@ test('Máscaras de Ogerpon: sin ellas en la mochila y sin Ogerpon capturado, «n
  assert.deepEqual(v({items:[{id:2406,count:1}],caught:[25]}),[false]);
  assert.deepEqual(v({items:[{id:2406,count:1}],caught:[1017]}),[]); // Ogerpon puede llevar las demás equipadas
 });
+
+test('Escarlata/Púrpura: las tres sendas por el orden de las 18 medallas',()=>{
+ const O=require('../src/engine/objectives.js'),types=['Bug','Grass','Electric','Water','Normal','Ghost','Psychic','Ice','Rock','Flying','Steel','Ground','Dragon','Dark','Fire','Poison','Fairy','Fighting'];
+ const nb=f=>Object.fromEntries(types.map((t,i)=>['KIndexReceivedBadge'+t,f(i)])),v=(b,id)=>O.fromDiagnosis({game:'VIOLET',namedBlocks:b}).find(x=>x.id===id)?.value;
+ assert.equal(v(nb(i=>i+1),'sv.path.victory'),true);assert.equal(v(nb(i=>i+1),'sv.path.starfall'),true);
+ assert.equal(v(nb(()=>0),'sv.path.legends'),false);assert.equal(v(nb(()=>0),'sv.story.started'),undefined);
+ assert.equal(v(nb(i=>i<8?i+1:0),'sv.path.victory'),true);assert.equal(v(nb(i=>i<8?i+1:0),'sv.path.legends'),false);
+});
+
+test('Ruta: las misiones se acreditan con la partida y la recomendación nunca es algo ya demostrado',()=>{
+ const P=require('../src/guides/mission-proof.js'),R=require('../src/engine/route.js');
+ const game={id:'SOULSILVER',mainStoryLastMission:'SOULSILVER-02',missions:[
+  {id:'SOULSILVER-01',section:'Historia',title:'A',steps:['x']},{id:'SOULSILVER-02',section:'Historia',title:'B',steps:['x']},
+  {id:'SOULSILVER-14',section:'Postgame y 100%',title:'Legendarios',steps:['x']},{id:'SOULSILVER-15',section:'Postgame y 100%',title:'Completismo',steps:['x']}]};
+ const says=id=>id==='pokedex'?false:id.startsWith('pokemon-')?true:id==='collect-unown'?false:null;
+ const proof=P.evaluate(game,{storyRows:[{id:'SOULSILVER-02',state:'direct',label:'Medalla'}],goalSays:says,storyClear:true});
+ assert.equal(proof.get('SOULSILVER-01').value,true);assert.equal(proof.get('SOULSILVER-14').value,true);assert.equal(proof.get('SOULSILVER-15').value,false);
+ const rec=R.nextMission(game,{gameClear:true},m=>proof.get(m.id)?.value===true,()=>false);
+ assert.equal(rec.mission.id,'SOULSILVER-15');
+ // Un DLC que la partida no tiene instalado va al final.
+ const sv={id:'VIOLET',mainStoryLastMission:'VIOLET-01',missions:[{id:'VIOLET-01',section:'Historia',title:'A',steps:['x']},{id:'VIOLET-09',section:'DLC',title:'DLC',steps:['x']},{id:'VIOLET-12',section:'Postgame',title:'Pokédex',steps:['x']}]};
+ assert.equal(R.nextMission(sv,{gameClear:true,revision:'-Base'},m=>m.id==='VIOLET-01',()=>false).mission.id,'VIOLET-12');
+});
