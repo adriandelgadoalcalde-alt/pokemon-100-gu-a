@@ -20,6 +20,20 @@ GOALS = json.loads((ROOT / 'research/guides/objetivos.json').read_text(encoding=
 # {"misiones": {"<misión>": {"pasos": [...], "precaucion": "..."}}, "objetivos": {"<JUEGO>:<objetivo>": "texto"}}.
 # Mandan sobre todo lo anterior: las misiones van al CATALOG y los objetivos a MASTER_DATA.
 PRECISION = [json.loads(f.read_text(encoding='utf-8')) for f in sorted((ROOT / 'research/guides/precision').glob('*.json'))]
+# Correcciones de objetivos que trajeron los bloques por misión (research/guides/bloques/*.json, clave «corrige»).
+for _f in sorted((ROOT / 'research/guides/bloques').glob('*.json')):
+    _pack = json.loads(_f.read_text(encoding='utf-8'))
+    _game = {}
+    for _mid in _pack.get('misiones', {}):
+        _game.setdefault(_mid.rsplit('-', 1)[0], True)
+    _fix = {}
+    for _k, _t in _pack.get('corrige', {}).items():
+        if ':' in _k:
+            _fix[_k] = _t
+        else:
+            for _g in _game:
+                _fix[_g + ':' + _k] = _t
+    PRECISION.append({'objetivos': _fix})
 
 
 def places(game, species):

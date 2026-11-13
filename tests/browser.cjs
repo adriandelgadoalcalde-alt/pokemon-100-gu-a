@@ -207,14 +207,20 @@ async function run() {
       await allPage.locator('[data-view="mastery"]').first().click();
       await allPage.locator('[data-master]').first().waitFor();
       await allPage.locator('[data-view="dossier"]').first().click();
-      await allPage.locator('[data-goal]').first().waitFor();
-      if(game.generation===1){assert.equal(await allPage.locator('[data-goal]').count(),5);assert.match(await allPage.locator('body').innerText(),/Los entrenadores secundarios quedan fuera/);}
+      // Expediente: un punto por objetivo de maestría, agrupado por fases y enlazado a su misión.
+      await allPage.locator('[data-dossier-goal]').first().waitFor();
+      assert.equal(await allPage.locator('[data-dossier-goal]').count(),await allPage.evaluate(id=>masteryGoals(game(id)).length,game.id));
       const detailed=game.missions.find(m=>require('../src/guides/routes.js').get(game.id,m.id));
       assert.ok(detailed,game.id+': missing detailed route');
       await allPage.locator('[data-view="mission"]').first().click();
       await allPage.locator('[data-mid="'+detailed.id+'"] > summary').click();
       await allPage.locator('[data-mid="'+detailed.id+'"] .route-details').waitFor();
       assert.ok(await allPage.locator('[data-mid="'+detailed.id+'"] .route-details ol > li').count()>=3);
+      // Con todas las misiones y bloques abiertos, nada de lo que se lee nombra PKHeX (en las instrucciones va Pokekeep).
+      await allPage.evaluate(()=>document.querySelectorAll('details:not([open])').forEach(d=>{d.open=true;d.dataset.abiertaEnPrueba='1';}));
+      assert.doesNotMatch(await allPage.locator('main').innerText(),/PKHeX/,game.id+': la guía nombra PKHeX');
+      await allPage.evaluate(()=>document.querySelectorAll('details[data-abierta-en-prueba]').forEach(d=>{d.open=false;delete d.dataset.abiertaEnPrueba;}));
+      assert.ok(await allPage.locator('.goal-block').count()>0,game.id+': sin bloques por objetivo');
       const overflow=await allPage.evaluate(()=>{const W=innerWidth;if(document.documentElement.scrollWidth<=W+1)return null;
         return [...document.querySelectorAll('body *')].filter(e=>{const r=e.getBoundingClientRect();return r.right>W+1&&r.width>0;}).slice(-4)
           .map(e=>e.tagName+'.'+String(e.className).slice(0,30)+' derecha='+Math.round(e.getBoundingClientRect().right)+' «'+(e.textContent||'').trim().slice(0,50)+'»').join(' | ');});
@@ -285,7 +291,7 @@ async function run() {
       await allPage.locator('[data-view="mastery"]').first().click();
       const proof=await allPage.locator('#master-card-1').innerText();
       if(game==='DIAMOND')assert.match(proof,/Evidencia/);else assert.doesNotMatch(proof,/Evidencia/);
-      assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+      assert.equal(await allPage.locator('[data-master]:checked:not(:disabled)').count(),0);
     }
     // HGSS-specific actions must not inherit G/S gifts or skip the Kimono sequence.
     await allPage.locator('[data-view="mission"]').first().click();
@@ -318,7 +324,7 @@ async function run() {
     await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.FIRERED?.caught?.includes(16));
     assert.match(await allPage.locator('#master-card-1').innerText(),/Evidencia/);
     assert.match(await allPage.locator('#master-card-2').innerText(),/Evidencia/);
-    assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+    assert.equal(await allPage.locator('[data-master]:checked:not(:disabled)').count(),0);
     await allPage.locator('[data-view="coverage"]').first().click();
     assert.equal(await allPage.locator('[data-coverage-game]').count(),39);
     await allPage.setViewportSize({width:390,height:1000});
@@ -358,7 +364,7 @@ async function run() {
       await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-unova-full.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...gap,caught:national5}))});
       await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.[g]?.caught?.includes(249),game);
       assert.match(await allPage.locator('#master-card-1').innerText(),/Evidencia: Registro de Pokédex/);
-      assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+      assert.equal(await allPage.locator('[data-master]:checked:not(:disabled)').count(),0);
     }
     await allPage.locator('[data-view="mission"]').first().click();
     await allPage.locator('[data-mid="WHITE2-N2"] > summary').click();
@@ -379,7 +385,7 @@ async function run() {
       await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-kalos-full.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...d,caught:[],seen:kalosRequired}))});
       await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.[g]?.seen?.includes(650),game);
       assert.match(await allPage.locator('#master-card-1').innerText(),/Evidencia/);
-      assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+      assert.equal(await allPage.locator('[data-master]:checked:not(:disabled)').count(),0);
       await allPage.locator('[data-view="mission"]').first().click();
       for(const suffix of ['04','06','08'])await allPage.locator(`[data-mid="${game}-${suffix}"] > summary`).click();
       assert.match(await allPage.locator(`[data-mid="${game}-04"] .route-details`).innerText(),/Lino[^.]*MO04 Fuerza|MO04 Fuerza de Lino/);
@@ -398,7 +404,7 @@ async function run() {
       await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.[g]?.seen?.includes(252),game);
       assert.match(await allPage.locator('#master-card-1').innerText(),/Evidencia/);
       assert.doesNotMatch(await allPage.locator('#master-pokedex').innerText(),/Evidencia/);
-      assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+      assert.equal(await allPage.locator('[data-master]:checked:not(:disabled)').count(),0);
       await allPage.locator('[data-view="mission"]').first().click();
       for(const suffix of ['04','05','09','11','13'])await allPage.locator(`[data-mid="${game}-${suffix}"] > summary`).click();
       assert.match(await allPage.locator(`[data-mid="${game}-04"] .route-details`).innerText(),/regalo del túnel no es MO04 Fuerza|este regalo no es la MO04 Fuerza/);
@@ -433,7 +439,7 @@ async function run() {
       await allPage.locator('#file-diagnosis').setInputFiles({name:'synthetic-kanto-full.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...d,caught:required,seen:[]}))});
       await allPage.waitForFunction(g=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.[g]?.caught?.includes(150),game);
       assert.match(await allPage.locator('#master-pokedex').innerText(),/Evidencia/);
-      assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+      assert.equal(await allPage.locator('[data-master]:checked:not(:disabled)').count(),0);
       await allPage.locator('[data-view="mission"]').first().click();
       await allPage.locator(`[data-mid="${game}-03"] > summary`).click();
       assert.ok(await allPage.locator(`[data-mid="${game}-03"] .route-details`).isVisible());
@@ -450,7 +456,7 @@ async function run() {
       assert.doesNotMatch(await allPage.locator('#master-shiny-charm').innerText(),/Evidencia/);
       await allPage.locator('[data-view="diagnostic"]').first().click();
       assert.match(await allPage.locator('#dex-completion').innerText(),/Nacional: 482\/482 registradas/);
-      assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+      assert.equal(await allPage.locator('[data-master]:checked:not(:disabled)').count(),0);
       await allPage.locator('[data-view="mission"]').first().click();
       await allPage.locator(`[data-mid="${game}-12"] > summary`).click();
       assert.ok(await allPage.locator(`[data-mid="${game}-12"] .route-details`).isVisible());
@@ -507,7 +513,7 @@ async function run() {
     await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.ULTRAMOON?.passport?.mask===(1<<14));
     assert.match(await allPage.locator('#master-card-13').innerText(),/Evidencia: Sello registrado/);
     assert.doesNotMatch(await allPage.locator('#master-card-14').innerText(),/Evidencia/);
-    assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+    assert.equal(await allPage.locator('[data-master]:checked:not(:disabled)').count(),0);
     // Medal receipts, ready rewards and unknown states have separate searchable rows.
     const medalRows=Array.from({length:255},(_,i)=>({id:i+1,state:0}));
     medalRows[0]={id:1,state:4,date:'2026-02-31'};medalRows[1]={id:2,state:3,date:'2026-11-10'};medalRows[254]={id:255,state:7};
@@ -532,7 +538,7 @@ async function run() {
     await allPage.waitForFunction(()=>JSON.parse(localStorage.getItem('pokemon-atlas9-progress-v1'))?.evidence?.BLACK2?.medals?.medals?.[254]?.state===4);
     await allPage.locator('[data-view="mastery"]').first().click();
     assert.match(await allPage.locator('#master-medals').innerText(),/255 medallas recibidas registradas/);
-    assert.equal(await allPage.locator('[data-master]:checked').count(),0);
+    assert.equal(await allPage.locator('[data-master]:checked:not(:disabled)').count(),0);
     // GBA documentary flags orient an imported save without ticking historical scenes.
     const gba={game:'FIRERED',caught:[],seen:[],gameClear:null,badgesTotal:8,badgesMask:255,nationalDex:true,
       integrity:{checksumsValid:true},progressSignals:[{id:'story.gba.gameClear',label:'Indicador de Liga superada (GBA)',value:true,validation:'documented'}]};
