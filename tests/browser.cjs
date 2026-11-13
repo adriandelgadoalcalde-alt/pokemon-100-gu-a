@@ -79,6 +79,11 @@ async function run() {
     assert.deepEqual(atlasBinary.checks,backup.checks);
     assert.deepEqual(atlasBinary.evidence.SOULSILVER.caught,[145,146]);
     assert.ok(atlasBinary.evidenceArchive.SOULSILVER.length>0);
+    // Al leer una partida salta el test de lo que la partida no guarda; «Ahora no» lo deja para otra visita.
+    assert.equal(await page.locator('#preguntas-partida').count(),1,'el test de la partida no ha saltado al leerla');
+    assert.equal(await page.locator('#preguntas-partida input[type="radio"]').count(),0);
+    await page.locator('#preguntas-luego').click();
+    assert.equal(await page.locator('#preguntas-partida').count(),0);
     await page.locator('[data-view="mastery"]').first().click();
     assert.match(await page.locator('#master-pokemon-145').innerText(), /integridad del bloque comprobada/);
     await page.locator('[data-view="mission"]').first().click();
