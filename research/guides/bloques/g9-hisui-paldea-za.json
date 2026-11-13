@@ -1,0 +1,578 @@
+{
+ "misiones": {
+  "ARCEUS-08": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Encomienda 20: Volus, Metis y la Tabla Pétrea",
+     "texto": "Cuándo: la mañana siguiente a los créditos (encomienda 19 terminada). Dónde: Villa Jubileo, la Antigua Aldea Oculta (Metis) y la Foresta Funesta (Pradera Obsidiana). Paso a paso: 1) Al despertar, la capitana Selena te encarga investigar los mitos y aparece Volus, que se ofrece a ayudarte a reunir el resto de las tablas. 2) Volus te lleva a la Pradera Obsidiana y te recomienda consultar a Metis: ve a la Antigua Aldea Oculta y escúchala; sus pistas son las que abren las encomiendas 21 a 25. 3) En la Foresta Funesta busca al Vespiquen alfa y captúralo o derrótalo: recibes la Tabla Pétrea, que más adelante necesitarás para abrir el Templo Puntaneva. Consejo: captúralo en vez de debilitarlo, porque cuenta para las tareas de investigación de Vespiquen; las encomiendas 21, 22 y 23 se pueden hacer en el orden que quieras. Fuente: WikiDex «Tabla Pétrea» y «Lista de encomiendas de Leyendas Pokémon: Arceus»; Serebii «Volo» y «Missions» de Leyendas Pokémon: Arceus."
+    },
+    {
+     "titulo": "Encomienda 21: Uxie, Mesprit y Azelf (Tabla Draco)",
+     "texto": "Cuándo: tras la encomienda 20, en cualquier orden respecto a la 22 y la 23. Dónde: las cavernas de los tres lagos: Caverna Veraz (Lago Veraz, Pradera Obsidiana), Caverna Valor (Lago Valor, Pantanal Carmesí) y Caverna Agudeza (Lago Agudeza, Tundra Alba). Paso a paso: 1) Acepta la pista de Metis sobre los tres lagos. 2) Entra en cada caverna: Mesprit espera en la Caverna Veraz, Azelf en la Caverna Valor y Uxie en la Caverna Agudeza, los tres de nivel 70. 3) Debilítalos para poder lanzarles Poké Balls y captúralos: con los tres resueltos recibes la Tabla Draco. Consejo: WikiDex indica que la tabla también se da si los derrotas, pero captúralos: son tres entradas de la Pokédex de Hisui que exige el encuentro con Arceus. Lleva Ultra Balls y guarda antes de entrar en cada caverna. Fuente: WikiDex «Tabla Draco»; Serebii «Legendary Pokémon» de Leyendas Pokémon: Arceus."
+    },
+    {
+     "objetivo": "pokemon-485"
+    },
+    {
+     "objetivo": "pokemon-488"
+    },
+    {
+     "objetivo": "pokemon-486"
+    },
+    {
+     "titulo": "Encomienda 25: el general Sorbus en la Playa del Albor (Tabla Fuerte)",
+     "texto": "Cuándo: tras recibir la pista de Metis sobre la Playa del Albor (encomienda 25). Dónde: Playa del Albor, junto a Villa Jubileo. Paso a paso: 1) Sal de Villa Jubileo hacia la Playa del Albor, donde empezó tu aventura. 2) El general Sorbus te espera y te reta a un combate individual. 3) Vence a sus cinco Pokémon: Golem (nivel 65), Clefable (nivel 65), Braviary de Hisui (nivel 65), Heracross (nivel 65) y Snorlax (nivel 66). 4) Al ganar recibes la Tabla Fuerte. Consejo: agua, planta o acero contra Golem; acero o veneno contra Clefable; eléctrico, roca o hielo contra Braviary; volador, fuego o psíquico contra Heracross, y lucha contra Snorlax. Después Sorbus queda disponible para revanchas en Villa Jubileo con niveles cada vez más altos. Fuente: WikiDex «Sorbus» y «Tabla Fuerte»; Serebii «Missions» de Leyendas Pokémon: Arceus."
+    },
+    {
+     "titulo": "Encomienda 26: la madera de Metis (Tabla Duende) y el camino al Templo de Sinnoh",
+     "texto": "Cuándo: con las tablas de las encomiendas 20 a 25 en la bolsa (17 en total). Dónde: Antigua Aldea Oculta, Ruinas Celestiales (Ladera Corona) y Templo de Sinnoh. Paso a paso: 1) Vuelve a la Antigua Aldea Oculta: Volus se reúne allí contigo. 2) Metis te pide 3 unidades de madera; si no llevas, recógelas del suelo de cualquier bosque de Hisui. Entrégaselas y recibes la Tabla Duende. 3) Volus te lleva a las Ruinas Celestiales de la Ladera Corona, te habla de Giratina y te propone subir al Templo de Sinnoh. 4) Antes de subir, guarda y prepara el equipo: arriba te esperan tres combates seguidos (ver el bloque siguiente). Consejo: aprovecha para curar en el campamento y comprar Revivir; desde el Templo no puedes volver a por objetos sin perder el progreso del combate. Fuente: WikiDex «Tabla Duende» y «Madera»; Serebii «Volo» de Leyendas Pokémon: Arceus."
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "titulo": "Peticiones 89 y 90: los tesoros de los clanes (Gran Diamansfera y Gran Lustresfera)",
+     "texto": "Cuándo: tras los créditos, cuando aparecen en la lista de peticiones del Móvil Arceus. Dónde: Poblado Diamante (Pantanal Carmesí), con Adamas, y Poblado Perla (Tundra Alba), con Nákara. Paso a paso: 1) Petición 89, «El tesoro del Clan Diamante»: habla con Adamas en el Poblado Diamante y acepta su combate; su equipo es de Eevee evolucionados, con Leafeon de nivel 64 al frente. 2) Al vencerle te da la Gran Diamansfera, que permite a Dialga cambiar a su forma Origen. 3) Petición 90, «El tesoro del Clan Perla»: habla con Nákara en el Poblado Perla y vence a su equipo, con Glaceon de nivel 64 al frente. 4) Al vencerla te da la Gran Lustresfera, que permite a Palkia cambiar a su forma Origen. Consejo: con la actualización 1.1, las peticiones 106 y 107 piden combatir con Dialga y Palkia en forma Origen, así que guarda las dos esferas. Fuente: WikiDex «Lista de peticiones de Leyendas Pokémon: Arceus» y «Gran Diamansfera»; Serebii «Requests» de Leyendas Pokémon: Arceus."
+    },
+    {
+     "objetivo": "pokemon-487"
+    },
+    {
+     "objetivo": "items0"
+    }
+   ]
+  },
+  "ARCEUS-09": {
+   "bloques": [
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "event-0"
+    },
+    {
+     "objetivo": "pokemon-493"
+    },
+    {
+     "titulo": "Después de Arceus: revanchas de los señores y peticiones 106 y 107",
+     "texto": "Cuándo: tras los créditos para las revanchas; las peticiones 106 y 107 llegan con «El despertar de Hisui» (actualización gratuita 1.1). Dónde: la arena de cada Pokémon señorial (por ejemplo, la Arena del Gran Árbol de Kleavor) y los lugares donde esperan Adamas (Costa Cobalto) y Nákara (Poblado Diamante, Pantanal Carmesí, según WikiDex). Paso a paso: 1) Revanchas: vuelve a la arena de cada Pokémon señorial (Kleavor, Lilligant, Arcanine, Electrode y Avalugg); ahora son de nivel 70, con nuevos movimientos y niveles de esfuerzo al máximo. Te cronometran y te dan Caramelos Experiencia según lo bien que lo hagas. 2) Petición 106, «El deseo de Adamas»: con Dialga en forma Origen en el equipo, habla con Adamas y vence a su equipo (Leafeon de nivel 65 al frente); recibes un Caramelo Experiencia XL y una Piedra Hoja. 3) Petición 107, «El deseo de Nákara»: vence a Nákara usando solo a Palkia en forma Origen. 4) Arceus de nivel 100 no se repite en la Sala del Origen: aparece al llegar a 50 victorias seguidas en el reto onírico (bloque de «Distorsiones, alfas y colecciones»). Consejo: no hemos podido confirmar en las fuentes que existan combates contra Dialga y Palkia «mejorados» aparte de estas dos peticiones. Fuente: Serebii «Noble Pokémon» (Rematches) y «Eternal Battle Reverie»; WikiDex «Lista de peticiones de Leyendas Pokémon: Arceus»."
+    },
+    {
+     "objetivo": "recognition-2"
+    },
+    {
+     "titulo": "Pokédex «perfecta»: todas las tareas de investigación",
+     "texto": "Cuándo: tras completar la Pokédex; es una meta aparte del Amuleto Iris. Dónde: Pokédex del Móvil Arceus (pestaña de tareas de investigación de cada especie) y las cinco zonas de Hisui. Paso a paso: 1) Abre la entrada de cada especie y mira qué tareas le faltan (capturar cierto número, verle usar un movimiento, derrotarlo con un tipo, darle comida, evolucionarlo, capturarlo sin ser visto…). 2) Cumple todas las tareas de esa especie: la entrada pasa de «completada» (nivel 10) a «perfecta». 3) Repite con cada especie; las que exigen movimientos concretos suelen salir antes enfrentándote al Pokémon cuando ya ha subido de nivel. Consejo: una entrada perfecta suma dos tiradas extra de variocolor para esa especie (frente a una sola con nivel 10), así que merece la pena en los Pokémon que quieras variocolores. Fuente: Serebii «Shiny Pokémon» y «Research Tasks» de Leyendas Pokémon: Arceus."
+    }
+   ]
+  },
+  "ARCEUS-10": {
+   "bloques": [
+    {
+     "titulo": "Distorsiones espaciotemporales",
+     "texto": "Cuándo: desde que calmas a Kleavor; los iniciales de otras regiones solo salen tras la historia. Dónde: las cinco zonas de Hisui (la distorsión se forma en un punto al azar de la zona en la que estés). Paso a paso: 1) Explora la zona: cuando aparece el aviso en pantalla y el símbolo de espiral en el mapa, tienes 5 minutos hasta que la cúpula se forma del todo. 2) Entra en ella: dura 4 minutos y dentro solo salen Pokémon y objetos de distorsión (también alfas y variocolores). 3) Especies raras de cada zona: Pradera Obsidiana, Gengar, Sneasel, Weavile, Leafeon y Sylveon; Pantanal Carmesí, Flareon, Umbreon, Porygon, Porygon2, Porygon-Z y Cyndaquil y su línea; Costa Cobalto, Magnemite, Magneton, Magnezone, Vaporeon y Flareon; Ladera Corona, Jolteon, Sylveon, Cranidos, Rampardos, Shieldon, Bastiodon, Magmortar y Rowlet y su línea; Tundra Alba, Espeon, Glaceon, Scizor, Electivire y Oshawott y su línea. 4) Si no sale, sigue moviéndote: la probabilidad crece con el tiempo y es segura a los 40 minutos. Consejo: el contador se reinicia al cambiar de zona, descansar en un campamento o cargar la partida, y no avanza con el menú abierto ni en combate; con sol intenso, tormenta eléctrica o ventisca no se forman. Fuente: WikiDex «Distorsión espaciotemporal»; Serebii «Space-time Distortions» de Leyendas Pokémon: Arceus."
+    },
+    {
+     "objetivo": "wisps"
+    },
+    {
+     "objetivo": "unown"
+    },
+    {
+     "objetivo": "medal-type"
+    },
+    {
+     "objetivo": "requests"
+    },
+    {
+     "objetivo": "pokemon-905"
+    },
+    {
+     "titulo": "Apariciones supermasivas (peticiones 95 a 102, «El despertar de Hisui»)",
+     "texto": "Cuándo: tras los créditos y con el juego actualizado a la versión 1.1 o posterior. Dónde: Base de la loma (Pradera Obsidiana) con Lina y las cinco zonas de Hisui. Paso a paso: 1) Petición 95, «Un nuevo desastre»: habla con Lina en la Base de la loma, investiga la aparición masiva de Zorua al oeste de la Isla Hansa e informa a Lina y después a la capitana Selena. 2) Peticiones 96 a 101: con Lina, revisa las apariciones supermasivas de cada zona (por ejemplo, tres en la Pradera Obsidiana); la 99, «Operación rechupete», consiste en llevar 10 Cebos de Setas (se compran en Villa Jubileo o se fabrican) al pasaje oculto de la Tundra Alba y volver con Lina. 3) Petición 102, «El despertar de Hisui»: al terminar las anteriores, Adamas y Nákara te llevan a ver el amanecer; recibes una Piedra Alba, una Semilla Dominio y 3 Caramelos Experiencia XL. Consejo: las apariciones supermasivas solo surgen con lluvia o nevada y duran poco; tienen más probabilidad de variocolor que una aparición normal. Fuente: WikiDex «Lista de peticiones de Leyendas Pokémon: Arceus»; Serebii «Massive Mass Outbreaks» de Leyendas Pokémon: Arceus."
+    },
+    {
+     "titulo": "Reto onírico (combates seguidos contra rivales que eliges)",
+     "texto": "Cuándo: tras completar la petición 102 y todas las encomiendas (versión 1.1). Dónde: tu residencia en Villa Jubileo. Paso a paso: 1) Al pasar por delante de tu residencia, el Móvil Arceus te pide dormir: acuéstate y sueñas con la Sala del Origen, donde Arceus te invita al reto. 2) Antes de cada combate eliges entre tres categorías de rival (por tipo o por descripción); las sencillas dan 3 puntos y las raras hasta 12. 3) Gasta puntos entre combates para curar PS o PP, cambiar el Pokémon inicial, cambiar de rivales o debilitar al siguiente rival; los rivales van del nivel 60 al 100, y desde la racha 20 todos son de nivel 100. 4) Al llegar a 50 victorias seguidas te enfrentas a Arceus; si le vences, tu tarjeta de partida recibe una marca. Al terminar cobras Caramelos Experiencia, objetos de esfuerzo, Pepitas, Semillas Dominio, Caramelos Raros y Trozos Estrella según tu racha. Consejo: lleva Pokémon de nivel 100 y empieza por categorías baratas para acumular puntos de curación. Fuente: WikiDex «Reto onírico»; Serebii «Eternal Battle Reverie» de Leyendas Pokémon: Arceus."
+    },
+    {
+     "titulo": "Vías solitarias de Fero (peticiones 108 a 122)",
+     "texto": "Cuándo: con la actualización 1.1, tras los créditos. Dónde: dojo de Villa Jubileo. Paso a paso: 1) Habla con Garret, de la división de seguridad, en el dojo: cada petición te propone afrontar la vía solitaria con un Pokémon concreto (la 108, con un Bidoof bien entrenado; la 109, con Eevee…). 2) Deja en el equipo SOLO a ese Pokémon y habla con Fero para empezar los combates. 3) Vence a todos los rivales de la vía sin cambiar de Pokémon; al ganar se completa la petición. 4) Repite con cada Pokémon de la lista hasta la petición 122. Consejo: sube a nivel 100 y maximiza los niveles de esfuerzo del Pokémon que vayas a usar; lleva objetos curativos. Fuente: WikiDex «Lista de peticiones de Leyendas Pokémon: Arceus»; Serebii «Path of Solitude» de Leyendas Pokémon: Arceus."
+    },
+    {
+     "titulo": "Variocolores y alfas (metas personales)",
+     "texto": "Cuándo: en cualquier momento; mejor con el Amuleto Iris y las entradas a nivel 10 o perfectas. Dónde: las cinco zonas de Hisui, apariciones masivas, supermasivas y distorsiones. Paso a paso: 1) Sube la entrada de la especie que buscas a nivel 10 (2 de 4096) o a perfecta (4 de 4096), y consigue el Amuleto Iris (+3 tiradas). 2) Busca apariciones masivas de esa especie (25 tiradas extra) o supermasivas (12 extra) y recórrelas por completo. 3) Los alfas tienen tamaño máximo y ojos rojos; en distorsiones y supermasivas aparecen más que en el campo normal. Lleva tu propia lista: el juego no da premio por reunirlos. Consejo: guarda antes de una aparición masiva y no cambies de zona hasta terminarla. Fuente: Serebii «Shiny Pokémon», «Mass Outbreaks» y «Alpha Pokémon» de Leyendas Pokémon: Arceus."
+    }
+   ]
+  },
+  "ARCEUS-DETAIL1": {
+   "bloques": [
+    {
+     "titulo": "Requisitos reales del encuentro con Arceus",
+     "texto": "Cuándo: tras la encomienda 26 (Volus vencido y Flauta Azur en la bolsa). Dónde: Templo de Sinnoh, en la cima de la Ladera Corona, y Sala del Origen. Paso a paso: 1) Termina la historia (encomiendas 1-19) y el postgame de Volus (encomiendas 20-26): la Flauta Celestial se convierte en la Flauta Azur. 2) Captura todas las especies de la Pokédex de Hisui salvo Phione, Manaphy, Darkrai, Shaymin y el propio Arceus; no hace falta ninguna entrada a nivel de investigación 10. 3) Toca la Flauta Azur en el Templo de Sinnoh (encomienda 27): si te falta alguna captura, no pasa nada. 4) En la Sala del Origen, esquiva sus ataques, lánzale el bálsamo misterioso y debilita a Arceus (nivel 75): se captura al calmarlo y recibes la Tabla Legendaria. 5) El Amuleto Iris (todas las entradas a nivel 10) y la Pokédex «perfecta» son metas posteriores e independientes. Consejo: Shaymin y Darkrai solo aparecen con partidas de Espada/Escudo y de Diamante Brillante/Perla Reluciente en la consola; no bloquean a Arceus. Con Pokekeep: si no tienes esas partidas, añade a Shaymin y a Darkrai legales desde la Librería para cerrar la Pokédex. Fuente: Serebii «Legendary Pokémon» (Arceus) de Leyendas Pokémon: Arceus; WikiDex «Lista de encomiendas de Leyendas Pokémon: Arceus»."
+    }
+   ]
+  },
+  "SCARLET-08": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Revanchas de los ocho gimnasios (la inspección de Ságita)",
+     "texto": "Cuándo: tras los créditos de «Camino a casa», al empezar la preparación de la Gran Pugna Académica. Dónde: los ocho gimnasios de Paldea y el vestíbulo de la Academia Naranja (Ciudad Meseta). Paso a paso: 1) Ságita, la presidenta de la Liga, está ocupada con el torneo y te pide inspeccionar en su lugar a los ocho líderes. 2) Vence otra vez, en el orden que quieras, a Araceli (bicho, Pueblo Pirotín), Brais (planta, Pueblo Altamía), e-Nigma (eléctrico, Ciudad Leudal), Fuco (agua, Ciudad Cántara), Laureano (normal, Pueblo Mestura), Lima (fantasma, Pueblo Hozkailu), Tuli (psíquico, Pueblo Alforno) y Grusha (hielo, Sierra Napada): son 8 combates, con cinco Pokémon de nivel 65 y uno de nivel 66 cada uno. 3) Con los ocho vencidos, Ságita te cita en el vestíbulo de la Academia Naranja; en tu cuarto te hace cuatro preguntas y te regala una Roca del Rey. Consejo: no hay examen de gimnasio en las revanchas; basta con hablar con el líder. Lleva Pokémon de nivel 65 o más. Fuente: Serebii «Gym Leader Rematches»; WikiDex, guía «Camino a casa» de Escarlata y Púrpura."
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "titulo": "Teraincursiones de 6★ (y las de 7★ de evento)",
+     "texto": "Cuándo: después de ganar tu primera Gran Pugna Académica. Dónde: cristales de teraincursión de toda Paldea (con brillo morado y negro, en el mapa). Paso a paso: 1) Al ganar el torneo, Cinio te llama y te pide investigar las teraincursiones. 2) Completa 10 teraincursiones de 4★ o 5★ (vale cualquier combinación de las dos). 3) Cinio vuelve a llamarte: se desbloquean las teraincursiones de 6★ y las de 7★, que solo aparecen en eventos temporales. 4) Solo hay una teraincursión de 6★ cada día; varias especies (Ditto, Blissey, Dondozo…) pueden soltar especias ocultas, con un 14 % de probabilidad. Consejo: con el Amuleto Cristalino (Pokédex de Noroteo) ganas 12 teralitos extra en cada incursión de 6★. Fuente: WikiDex «Teraincursión» y «Amuleto Cristalino»; Serebii «Tera Raid Battles» de Escarlata y Púrpura."
+    }
+   ]
+  },
+  "SCARLET-09": {
+   "bloques": [
+    {
+     "objetivo": "dlc-ogerpon"
+    },
+    {
+     "titulo": "Llegada a Noroteo con Brie",
+     "texto": "Cuándo: en cuanto empieza tu búsqueda del tesoro, si tienes «El tesoro oculto del Área Cero» (recomendado tras «Camino a casa»: los niveles se adaptan a tu progreso). Dónde: vestíbulo de la Academia Naranja (Ciudad Meseta), Carretera de Noroteo y Villa Versui. Paso a paso: 1) Cinio te llama: has sido elegido para el campamento de la Academia Arándano; ve al vestíbulo de la Academia Naranja, habla con Brie y Cinio te añade la Pokédex de Noroteo. 2) Habla con Brie para viajar; en la Carretera de Noroteo sigue el camino hasta Villa Versui (hay MT en el suelo: MT015, MT109 y MT140). 3) En Villa Versui conoces a Corin y Cass y combates con Corin; después descansa en el albergue. 4) Al día siguiente el encargado te da el Paloselfi Rotom y combates contra Cass, que será tu compañero de orientación. Fuente: WikiDex, guía «La llegada a Noroteo» de Escarlata y Púrpura."
+    },
+    {
+     "titulo": "Los tres carteles de la leyenda y el Festival de Máscaras",
+     "texto": "Cuándo: justo después de llegar a Noroteo. Dónde: Parque de los compatrones (por la Colina Manzanar), centro cultural de Noroteo (por la Senda Jarana), Fauces del Ogro y Gruta del Pavor (Monte Ogro) y Elíseo Baldío. Paso a paso: 1) Primer cartel: en el Parque de los compatrones, al oeste de Villa Versui; léelo con Cass y hazte la foto. 2) Segundo cartel: cruza la villa hacia el este por la Senda Jarana (Cinio te invita a un pícnic y te regala un huevo de un inicial de Sinnoh) y sube al patio del centro cultural de Noroteo. 3) Sigue a Cass por el Monte Ogro hasta la cascada de las Fauces del Ogro, vence a Cass y entra en la cueva del ogro. 4) Por la tarde, en casa de Cass y Corin recibes el traje del festival y combates con Corin por la máscara; por la noche, en el Festival de Máscaras del centro cultural, juega al Juego del Cazaogros (fácil): recibes el Amuleto Experiencia. Sigue después al «niño» enmascarado hasta el Monte Ogro: es Ogerpon, que deja caer la Máscara Turquesa. 5) Tercer cartel: tras hablar con el abuelo, ve al Elíseo Baldío (noroeste), vence a Cass y lee el último cartel; vuelve al albergue. Consejo: si aún no tienes las mejoras de montura, ve al Elíseo Baldío por el oeste (Colina Manzanar y Pradera Glicina). Fuente: WikiDex, guía «La llegada a Noroteo» de Escarlata y Púrpura."
+    },
+    {
+     "titulo": "El fragmento de cristal y el robo de la Máscara Turquesa",
+     "texto": "Cuándo: tras la orientación de los tres carteles. Dónde: Lago Cristalino (por el Paso del Averno, Monte Ogro), Parque de los compatrones, centro cultural de Noroteo y Gruta del Pavor. Paso a paso: 1) En casa de los abuelos te piden un fragmento de cristal del Lago Cristalino para reparar la máscara. 2) Sube por el Monte Ogro hasta el Paso del Averno y, en el letrero azul, ve a la derecha hasta el Lago Cristalino: un Milotic te ataca y lo vences junto a Corin; suelta el fragmento. 3) De vuelta, el abuelo te dice que Cass ha robado la máscara: vence a Cass en el santuario del Parque de los compatrones y recupérala; Okidogi, Munkidori y Fezandipiti escapan del santuario. 4) Síguelos al centro cultural y después a la Gruta del Pavor: vence a Munkidori, que huye con sus compañeros. Consejo: los niveles del Milotic y del equipo de Corin dependen de si terminaste «Camino a casa». Fuente: WikiDex, guía «En busca de las máscaras» de Escarlata y Púrpura."
+    },
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "pokemon-1017"
+    },
+    {
+     "objetivo": "pokemon-1014"
+    },
+    {
+     "objetivo": "pokemon-1015"
+    },
+    {
+     "objetivo": "pokemon-1016"
+    },
+    {
+     "objetivo": "ogre-oustin"
+    }
+   ]
+  },
+  "SCARLET-10": {
+   "bloques": [
+    {
+     "objetivo": "dlc-terapagos"
+    },
+    {
+     "titulo": "Llegada a la Academia Arándano, Club de la Liga y PA",
+     "texto": "Cuándo: tras terminar «Camino a casa» y «La máscara turquesa». Dónde: Academia Arándano (Teselia) y su Biodomo. Paso a paso: 1) Brie te propone el intercambio: viaja a la Academia Arándano y combate contra Corin al llegar. 2) Levi te anima a apuntarte a la Liga Arándano; en el tutorial de la Sala del Club de la Liga te da 200 PA (puntos arándano). 3) Gana más PA con las Tareas Extraescolares Arándano (TEA) del Biodomo: individuales (azules, 20-40 PA), especiales (rojas, cada 10 individuales, 100-200 PA) y grupales (amarillas, con otros jugadores en el Círculo Unión, 400-600 PA). 4) Usa los PA para pagar la inscripción a cada prueba de la Liga, la tienda, la impresora de objetos y las mejoras del Club. Consejo: haz siempre tres TEA a la vez mientras exploras; también te dan PA por vencer a cierto número de entrenadores en cada área. Fuente: WikiDex «Punto arándano» y «Tareas Extraescolares Arándano»; Serebii «Blueberry League Elite Four»."
+    },
+    {
+     "objetivo": "blueberry-league"
+    },
+    {
+     "objetivo": "flying-trial"
+    },
+    {
+     "titulo": "Caverna Abisal Cero: el camino hasta Terapagos",
+     "texto": "Cuándo: tras ser campeón de la Liga Arándano, cuando Brie te pide acompañarla. Dónde: Área Cero: Laboratorio Cero y Caverna Abisal Cero. Paso a paso: 1) Sal desde la entrada de la Academia Arándano con Brie, Cass y Corin hacia el Área Cero. 2) En el Laboratorio Cero inserta el disco índigo: se abre el paso a la Caverna Abisal Cero. 3) Baja por la caverna y vence a los Pokémon astrales que bloquean cada cristal (Glimmora, Noivern, Pelarena, Garchomp y Garganacl). 4) Al fondo, Terapagos se escapa del control de Cass: el combate final está en el siguiente bloque. Consejo: no hay Centro Pokémon dentro; lleva objetos curativos y guarda antes de bajar. Fuente: WikiDex, guía «Regresamos a Paldea» de Escarlata y Púrpura; Serebii «Area Zero Underdepths»."
+    },
+    {
+     "objetivo": "pokemon-1024"
+    },
+    {
+     "titulo": "Vuelo libre de tu montura",
+     "texto": "Cuándo: tras capturar a Terapagos y ver los créditos de «El disco índigo». Dónde: Sala del Club de la Liga, en la Academia Arándano. Paso a paso: 1) Vuelve a la Academia Arándano y entra en la Sala del Club de la Liga. 2) Habla con Nerina: da a Koraidon la comida especial que le permite volar de forma permanente (antes solo volaba en su prueba). 3) Si ya superaste el recorrido difícil de su vuelo contrarreloj, te abre también el muy difícil. Consejo: con el vuelo libre se recogen mucho más rápido las estacas, las MT del suelo y los teralitos que te falten. Fuente: Serebii «Flying Time Trial» de Escarlata y Púrpura."
+    }
+   ]
+  },
+  "SCARLET-11": {
+   "bloques": [
+    {
+     "objetivo": "event-0"
+    },
+    {
+     "objetivo": "pecharunt"
+    },
+    {
+     "titulo": "Mencía, Damián y Noa en el Club de la Liga",
+     "texto": "Cuándo: tras capturar a Pecharunt y terminar «Mochisteria». Dónde: Sala del Club de la Liga, en la Academia Arándano. Paso a paso: 1) Termina el epílogo: al día siguiente Cass y Corin os despiden en el centro cultural de Noroteo. 2) En la Sala del Club de la Liga, abre el menú de invitar entrenadores al club. 3) Invita a Mencía, Damián y Noa como entrenadores: podrás combatir e intercambiar con ellos; Cass y Corin aparecen además en el club de vez en cuando para combatir e intercambiar. Consejo: invitar entrenadores al club cuesta PA, así que ahorra con las TEA. Fuente: Serebii «Mochi Mayhem» y «League Club» de Escarlata y Púrpura; WikiDex «Punto arándano»."
+    }
+   ]
+  },
+  "SCARLET-12": {
+   "bloques": [
+    {
+     "objetivo": "pokemon-1001"
+    },
+    {
+     "objetivo": "pokemon-1002"
+    },
+    {
+     "objetivo": "pokemon-1003"
+    },
+    {
+     "objetivo": "pokemon-1004"
+    },
+    {
+     "titulo": "El segundo Koraidon del Área Cero",
+     "texto": "Cuándo: tras vencer en el Laboratorio Cero al Koraidon paradójico (final de «Camino a casa»). Dónde: Área Cero, junto a la entrada del Laboratorio Cero. Paso a paso: 1) Vuelve al fondo del Área Cero (puedes volar al punto del laboratorio). 2) Junto al Laboratorio Cero verás al otro Koraidon: acércate y te reta. 3) Debilítalo y captúralo: es de nivel 72, con naturaleza firme y teratipo lucha. Consejo: guarda antes del combate; a diferencia de tu montura, este ejemplar se puede usar con normalidad en combate y llevar a otros juegos. Fuente: Serebii «Legendary Pokémon» de Escarlata y Púrpura."
+    },
+    {
+     "titulo": "Legendarios de Galletano (25 galletas)",
+     "texto": "Cuándo: tras terminar «El disco índigo» (Terapagos capturado). Dónde: entrada de la Academia Arándano (Galletano está a la derecha del mostrador) y distintos puntos de Paldea, Noroteo y el Biodomo. Paso a paso: 1) Brie te llama al aula 1.º D de la Academia Arándano y te avisa de que un hombre de traje te busca en la entrada: es Galletano. 2) Por cada 10 TEA individuales o especiales completadas te da una galleta al azar (máximo 13, con 130 TEA): Articuno, Zapdos, Moltres y Kubfu en ambas ediciones, y en esta edición Raikou, Entei, Suicune, Ho-Oh, Latios, Groudon, Reshiram, Solgaleo y Glastrier. 3) Por cada TEA grupal (con otros jugadores) te da otra (máximo 12): Cobalion, Terrakion, Virizion, Lugia, Latias, Kyogre, Zekrom, Lunala y Spectrier, más Rayquaza, Kyurem y Necrozma en ambas ediciones. 4) Cada galleta viene con una historia que indica dónde aparece el legendario: ve allí y captúralo (casi todos de nivel 70). Consejo: las TEA grupales se pueden hacer con jugadores de cualquier edición; no hace falta nadie de Púrpura para desbloquear ninguna galleta. Con Pokekeep: si no puedes jugar en grupo, añade legales desde la Librería los legendarios de las galletas grupales. Fuente: WikiDex «Galletano»; Serebii «Snacksworth & Legendary Pokémon»."
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "medal-type"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "titulo": "Pokédex de Noroteo: diploma y Amuleto Cristalino",
+     "texto": "Cuándo: durante o tras «La máscara turquesa»; mejor tras capturar a Ogerpon, a los compatrones y a Ursaluna Luna Carmesí. Dónde: Noroteo; el premio te lo da Cinio en la Senda Jarana. Paso a paso: 1) Registra como capturadas las 200 especies de la Pokédex de Noroteo (muchas también viven en Paldea). 2) Ve a la Senda Jarana y habla con Cinio. 3) Recibes el diploma de la Pokédex de Noroteo y el Amuleto Cristalino, que da teralitos extra en teraincursiones de 3★ a 6★. Consejo: la misión de Gama (Ursaluna Luna Carmesí) te pide antes enseñarle 150 entradas de esta Pokédex, así que avanzarás las dos cosas a la vez. Fuente: WikiDex «Amuleto Cristalino» y guía «El misterio de la Luna Carmesí»; Serebii «Kitakami Pokédex»."
+    },
+    {
+     "titulo": "Pokédex Arándano: diploma y Amuleto Emblema",
+     "texto": "Cuándo: durante o tras «El disco índigo». Dónde: Biodomo de la Academia Arándano; el premio te lo da el director Mirtilo en la entrada de la academia. Paso a paso: 1) Registra como capturadas las especies de la Pokédex Arándano (240; Ondulagua y Ferroverdor, las dos últimas, no cuentan). 2) Habla con el director Mirtilo en la entrada de la Academia Arándano. 3) Recibes el diploma de la Pokédex Arándano y el Amuleto Emblema, que triplica la probabilidad de encontrar Pokémon salvajes con emblema. Consejo: dona PA en el Club de la Liga para ampliar la biodiversidad de cada área: así aparecen especies que antes no salían. Fuente: WikiDex «Amuleto Emblema»; Serebii «Blueberry Pokédex»."
+    },
+    {
+     "titulo": "Emblemas",
+     "texto": "Cuándo: en cualquier momento; mejor tras conseguir el Amuleto Emblema. Dónde: Pokémon salvajes de Paldea, Noroteo y el Biodomo. Paso a paso: 1) Al capturar un Pokémon salvaje puede llevar un emblema: de clima (1 de 50), de hora (1 de 50), de personalidad (1 de 100 entre todos) o raro (1 de 1000). 2) Sube la probabilidad con un bocadillo de Poder Emblema (cada nivel añade una tirada) y con el Amuleto Emblema (+2 tiradas siempre). 3) Otros emblemas se ganan después de la captura al cumplir condiciones concretas (por ejemplo, el Emblema Astucia del Munchlax del Juego del Cazaogros o los de tamaño). 4) Elige un emblema como principal en la ficha del Pokémon: le da un título al salir al combate. Consejo: el bocadillo de Poder Emblema necesita al menos dos especias ocultas. Lleva tu propia lista; el juego no premia la colección completa. Fuente: Serebii «Marks» de Escarlata y Púrpura; WikiDex «Emblema» y «Especia Oculta Dulce»."
+    },
+    {
+     "titulo": "Teratipos: cambiar el teratipo con teralitos",
+     "texto": "Cuándo: tras vencer a Laureano en el Gimnasio de Pueblo Mestura. Dónde: Mesón El Tesoro (Pueblo Mestura) y cristales de teraincursión de todo el mapa. Paso a paso: 1) Consigue teralitos del tipo que quieras en teraincursiones (o en el suelo); hay 19, uno por tipo más el astral. 2) Ve al Mesón El Tesoro y habla con la cocinera de la barra. 3) Entrega 50 teralitos de un tipo: el Pokémon que elijas pasa a tener ese teratipo (Ogerpon y Terapagos no se pueden cambiar). Consejo: tras vencer a Laureano la cocinera te regala 50 teralitos normales; el teratipo astral se consigue igual con 50 teralitos astrales del Biodomo. Fuente: WikiDex «Teralito» y «Mesón El Tesoro»; Serebii «Terastal Phenomenon» y «Stellar Type»."
+    },
+    {
+     "titulo": "Recetas de bocadillos (151)",
+     "texto": "Cuándo: a lo largo de la partida; varias al conseguir medallas, especias ocultas o avanzar la historia. Dónde: restaurantes Pantástico de Paldea, Pueblo Cahíz (tu madre) y el final del río que desemboca en el Lago Cazola. Paso a paso: 1) Habla con el cliente junto al mostrador de cada restaurante Pantástico: te enseña recetas según tus medallas, tu progreso y las especias ocultas que lleves. 2) Recetas 112 a 115: te las enseña tu madre en Pueblo Cahíz; las 125 a 127, también ella tras «Camino a casa». 3) Recetas 148 a 151: el entrenador que hace un pícnic con un Dratini al final del camino del río que desemboca en el Lago Cazola. 4) Las recetas de especias ocultas exigen llevar esa especia en la bolsa: sale como premio de algunas teraincursiones de 5★ (11 %) y 6★ (14 %). Consejo: revisa la lista de recetas del pícnic para ver qué números te faltan. Fuente: WikiDex «Recetas para los bocadillos»; Serebii «Sandwiches» de Escarlata y Púrpura."
+    },
+    {
+     "titulo": "Máquinas técnicas (229 MT)",
+     "texto": "Cuándo: durante toda la partida; las más altas llegan con los DLC. Dónde: máquinas de MT de los Centros Pokémon, el suelo de Paldea, Noroteo y el Biodomo, y premios de combates. Paso a paso: 1) Recoge las MT del suelo y las que te dan entrenadores y líderes: cada una que encuentras o te regalan se añade a la lista de fabricación. 2) En cualquier máquina de MT fabrica copias con materiales de Pokémon salvajes y Puntos de Liga (los PL se ganan en combates y teraincursiones). 3) Completa la numeración de la MT001 a la MT229 (171 en el juego base y el resto con «La máscara turquesa» y «El disco índigo»). Consejo: la TEA «Fabrica una MT» del Biodomo da PA; aprovecha para fabricar las que necesites. Fuente: Serebii «TMs» de Escarlata y Púrpura; WikiDex «Tareas Extraescolares Arándano»."
+    }
+   ]
+  },
+  "SCARLET-DETAIL1": {
+   "bloques": [
+    {
+     "titulo": "Orden de requisitos del epílogo «Mochisteria»",
+     "texto": "Cuándo: tras los créditos de las tres rutas de Paldea y los dos capítulos del DLC. Dónde: Área Cero, vestíbulo de la Academia Naranja, Noroteo y Academia Arándano. Paso a paso: 1) Termina «Travesía de la victoria», «Senda legendaria» y «Vía Stardust» y después «Camino a casa» en el Área Cero. 2) Haz las revanchas de los ocho gimnasios y juega la primera Gran Pugna Académica. 3) Completa «La máscara turquesa» (captura de Ogerpon) y «El disco índigo» (Liga Arándano y Terapagos). 4) Recoge la Baya Meloc Singular en Regalo Misterioso, interactúa con la figura polvorienta del Bazar Meloc de Villa Versui y termina el epílogo capturando a Pecharunt (nivel 88). 5) Lleva por separado las Pokédex de Paldea, Noroteo y Arándano: cada una tiene su diploma y su premio. Consejo: el epílogo no empieza si falta cualquiera de los pasos 1 a 3, aunque tengas la baya. Con Pokekeep: si no tienes los DLC, no marques sus historias; añade legales desde la Librería a Ogerpon, los compatrones, Terapagos y Pecharunt, y la Baya Meloc Singular a la mochila. Fuente: Serebii «Mochi Mayhem»; WikiDex «Baya Meloc Singular»."
+    }
+   ]
+  },
+  "VIOLET-08": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Revanchas de los ocho gimnasios (la inspección de Ságita)",
+     "texto": "Cuándo: tras los créditos de «Camino a casa», al empezar la preparación de la Gran Pugna Académica. Dónde: los ocho gimnasios de Paldea y el vestíbulo de la Academia Uva (Ciudad Meseta). Paso a paso: 1) Ságita, la presidenta de la Liga, está ocupada con el torneo y te pide inspeccionar en su lugar a los ocho líderes. 2) Vence otra vez, en el orden que quieras, a Araceli (bicho, Pueblo Pirotín), Brais (planta, Pueblo Altamía), e-Nigma (eléctrico, Ciudad Leudal), Fuco (agua, Ciudad Cántara), Laureano (normal, Pueblo Mestura), Lima (fantasma, Pueblo Hozkailu), Tuli (psíquico, Pueblo Alforno) y Grusha (hielo, Sierra Napada): son 8 combates, con cinco Pokémon de nivel 65 y uno de nivel 66 cada uno. 3) Con los ocho vencidos, Ságita te cita en el vestíbulo de la Academia Uva; en tu cuarto te hace cuatro preguntas y te regala una Roca del Rey. Consejo: no hay examen de gimnasio en las revanchas; basta con hablar con el líder. Lleva Pokémon de nivel 65 o más. Fuente: Serebii «Gym Leader Rematches»; WikiDex, guía «Camino a casa» de Escarlata y Púrpura."
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "titulo": "Teraincursiones de 6★ (y las de 7★ de evento)",
+     "texto": "Cuándo: después de ganar tu primera Gran Pugna Académica. Dónde: cristales de teraincursión de toda Paldea (con brillo morado y negro, en el mapa). Paso a paso: 1) Al ganar el torneo, Cinio te llama y te pide investigar las teraincursiones. 2) Completa 10 teraincursiones de 4★ o 5★ (vale cualquier combinación de las dos). 3) Cinio vuelve a llamarte: se desbloquean las teraincursiones de 6★ y las de 7★, que solo aparecen en eventos temporales. 4) Solo hay una teraincursión de 6★ cada día; varias especies (Ditto, Blissey, Dondozo…) pueden soltar especias ocultas, con un 14 % de probabilidad. Consejo: con el Amuleto Cristalino (Pokédex de Noroteo) ganas 12 teralitos extra en cada incursión de 6★. Fuente: WikiDex «Teraincursión» y «Amuleto Cristalino»; Serebii «Tera Raid Battles» de Escarlata y Púrpura."
+    }
+   ]
+  },
+  "VIOLET-09": {
+   "bloques": [
+    {
+     "objetivo": "dlc-ogerpon"
+    },
+    {
+     "titulo": "Llegada a Noroteo con Brie",
+     "texto": "Cuándo: en cuanto empieza tu búsqueda del tesoro, si tienes «El tesoro oculto del Área Cero» (recomendado tras «Camino a casa»: los niveles se adaptan a tu progreso). Dónde: vestíbulo de la Academia Uva (Ciudad Meseta), Carretera de Noroteo y Villa Versui. Paso a paso: 1) Cinio te llama: has sido elegido para el campamento de la Academia Arándano; ve al vestíbulo de la Academia Uva, habla con Brie y Cinio te añade la Pokédex de Noroteo. 2) Habla con Brie para viajar; en la Carretera de Noroteo sigue el camino hasta Villa Versui (hay MT en el suelo: MT015, MT109 y MT140). 3) En Villa Versui conoces a Corin y Cass y combates con Corin; después descansa en el albergue. 4) Al día siguiente el encargado te da el Paloselfi Rotom y combates contra Cass, que será tu compañero de orientación. Fuente: WikiDex, guía «La llegada a Noroteo» de Escarlata y Púrpura."
+    },
+    {
+     "titulo": "Los tres carteles de la leyenda y el Festival de Máscaras",
+     "texto": "Cuándo: justo después de llegar a Noroteo. Dónde: Parque de los compatrones (por la Colina Manzanar), centro cultural de Noroteo (por la Senda Jarana), Fauces del Ogro y Gruta del Pavor (Monte Ogro) y Elíseo Baldío. Paso a paso: 1) Primer cartel: en el Parque de los compatrones, al oeste de Villa Versui; léelo con Cass y hazte la foto. 2) Segundo cartel: cruza la villa hacia el este por la Senda Jarana (Cinio te invita a un pícnic y te regala un huevo de un inicial de Sinnoh) y sube al patio del centro cultural de Noroteo. 3) Sigue a Cass por el Monte Ogro hasta la cascada de las Fauces del Ogro, vence a Cass y entra en la cueva del ogro. 4) Por la tarde, en casa de Cass y Corin recibes el traje del festival y combates con Corin por la máscara; por la noche, en el Festival de Máscaras del centro cultural, juega al Juego del Cazaogros (fácil): recibes el Amuleto Experiencia. Sigue después al «niño» enmascarado hasta el Monte Ogro: es Ogerpon, que deja caer la Máscara Turquesa. 5) Tercer cartel: tras hablar con el abuelo, ve al Elíseo Baldío (noroeste), vence a Cass y lee el último cartel; vuelve al albergue. Consejo: si aún no tienes las mejoras de montura, ve al Elíseo Baldío por el oeste (Colina Manzanar y Pradera Glicina). Fuente: WikiDex, guía «La llegada a Noroteo» de Escarlata y Púrpura."
+    },
+    {
+     "titulo": "El fragmento de cristal y el robo de la Máscara Turquesa",
+     "texto": "Cuándo: tras la orientación de los tres carteles. Dónde: Lago Cristalino (por el Paso del Averno, Monte Ogro), Parque de los compatrones, centro cultural de Noroteo y Gruta del Pavor. Paso a paso: 1) En casa de los abuelos te piden un fragmento de cristal del Lago Cristalino para reparar la máscara. 2) Sube por el Monte Ogro hasta el Paso del Averno y, en el letrero azul, ve a la derecha hasta el Lago Cristalino: un Milotic te ataca y lo vences junto a Corin; suelta el fragmento. 3) De vuelta, el abuelo te dice que Cass ha robado la máscara: vence a Cass en el santuario del Parque de los compatrones y recupérala; Okidogi, Munkidori y Fezandipiti escapan del santuario. 4) Síguelos al centro cultural y después a la Gruta del Pavor: vence a Munkidori, que huye con sus compañeros. Consejo: los niveles del Milotic y del equipo de Corin dependen de si terminaste «Camino a casa». Fuente: WikiDex, guía «En busca de las máscaras» de Escarlata y Púrpura."
+    },
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "pokemon-1017"
+    },
+    {
+     "objetivo": "pokemon-1014"
+    },
+    {
+     "objetivo": "pokemon-1015"
+    },
+    {
+     "objetivo": "pokemon-1016"
+    },
+    {
+     "objetivo": "ogre-oustin"
+    }
+   ]
+  },
+  "VIOLET-10": {
+   "bloques": [
+    {
+     "objetivo": "dlc-terapagos"
+    },
+    {
+     "titulo": "Llegada a la Academia Arándano, Club de la Liga y PA",
+     "texto": "Cuándo: tras terminar «Camino a casa» y «La máscara turquesa». Dónde: Academia Arándano (Teselia) y su Biodomo. Paso a paso: 1) Brie te propone el intercambio: viaja a la Academia Arándano y combate contra Corin al llegar. 2) Levi te anima a apuntarte a la Liga Arándano; en el tutorial de la Sala del Club de la Liga te da 200 PA (puntos arándano). 3) Gana más PA con las Tareas Extraescolares Arándano (TEA) del Biodomo: individuales (azules, 20-40 PA), especiales (rojas, cada 10 individuales, 100-200 PA) y grupales (amarillas, con otros jugadores en el Círculo Unión, 400-600 PA). 4) Usa los PA para pagar la inscripción a cada prueba de la Liga, la tienda, la impresora de objetos y las mejoras del Club. Consejo: haz siempre tres TEA a la vez mientras exploras; también te dan PA por vencer a cierto número de entrenadores en cada área. Fuente: WikiDex «Punto arándano» y «Tareas Extraescolares Arándano»; Serebii «Blueberry League Elite Four»."
+    },
+    {
+     "objetivo": "blueberry-league"
+    },
+    {
+     "objetivo": "flying-trial"
+    },
+    {
+     "titulo": "Caverna Abisal Cero: el camino hasta Terapagos",
+     "texto": "Cuándo: tras ser campeón de la Liga Arándano, cuando Brie te pide acompañarla. Dónde: Área Cero: Laboratorio Cero y Caverna Abisal Cero. Paso a paso: 1) Sal desde la entrada de la Academia Arándano con Brie, Cass y Corin hacia el Área Cero. 2) En el Laboratorio Cero inserta el disco índigo: se abre el paso a la Caverna Abisal Cero. 3) Baja por la caverna y vence a los Pokémon astrales que bloquean cada cristal (Glimmora, Noivern, Ferropúas, Garchomp y Garganacl). 4) Al fondo, Terapagos se escapa del control de Cass: el combate final está en el siguiente bloque. Consejo: no hay Centro Pokémon dentro; lleva objetos curativos y guarda antes de bajar. Fuente: WikiDex, guía «Regresamos a Paldea» de Escarlata y Púrpura; Serebii «Area Zero Underdepths»."
+    },
+    {
+     "objetivo": "pokemon-1024"
+    },
+    {
+     "titulo": "Vuelo libre de tu montura",
+     "texto": "Cuándo: tras capturar a Terapagos y ver los créditos de «El disco índigo». Dónde: Sala del Club de la Liga, en la Academia Arándano. Paso a paso: 1) Vuelve a la Academia Arándano y entra en la Sala del Club de la Liga. 2) Habla con Nerina: da a Miraidon la comida especial que le permite volar de forma permanente (antes solo volaba en su prueba). 3) Si ya superaste el recorrido difícil de su vuelo contrarreloj, te abre también el muy difícil. Consejo: con el vuelo libre se recogen mucho más rápido las estacas, las MT del suelo y los teralitos que te falten. Fuente: Serebii «Flying Time Trial» de Escarlata y Púrpura."
+    }
+   ]
+  },
+  "VIOLET-11": {
+   "bloques": [
+    {
+     "objetivo": "event-0"
+    },
+    {
+     "objetivo": "pecharunt"
+    },
+    {
+     "titulo": "Mencía, Damián y Noa en el Club de la Liga",
+     "texto": "Cuándo: tras capturar a Pecharunt y terminar «Mochisteria». Dónde: Sala del Club de la Liga, en la Academia Arándano. Paso a paso: 1) Termina el epílogo: al día siguiente Cass y Corin os despiden en el centro cultural de Noroteo. 2) En la Sala del Club de la Liga, abre el menú de invitar entrenadores al club. 3) Invita a Mencía, Damián y Noa como entrenadores: podrás combatir e intercambiar con ellos; Cass y Corin aparecen además en el club de vez en cuando para combatir e intercambiar. Consejo: invitar entrenadores al club cuesta PA, así que ahorra con las TEA. Fuente: Serebii «Mochi Mayhem» y «League Club» de Escarlata y Púrpura; WikiDex «Punto arándano»."
+    }
+   ]
+  },
+  "VIOLET-12": {
+   "bloques": [
+    {
+     "objetivo": "pokemon-1001"
+    },
+    {
+     "objetivo": "pokemon-1002"
+    },
+    {
+     "objetivo": "pokemon-1003"
+    },
+    {
+     "objetivo": "pokemon-1004"
+    },
+    {
+     "titulo": "El segundo Miraidon del Área Cero",
+     "texto": "Cuándo: tras vencer en el Laboratorio Cero al Miraidon paradójico (final de «Camino a casa»). Dónde: Área Cero, junto a la entrada del Laboratorio Cero. Paso a paso: 1) Vuelve al fondo del Área Cero (puedes volar al punto del laboratorio). 2) Junto al Laboratorio Cero verás al otro Miraidon: acércate y te reta. 3) Debilítalo y captúralo: es de nivel 72, con naturaleza modesta y teratipo eléctrico. Consejo: guarda antes del combate; a diferencia de tu montura, este ejemplar se puede usar con normalidad en combate y llevar a otros juegos. Fuente: Serebii «Legendary Pokémon» de Escarlata y Púrpura."
+    },
+    {
+     "titulo": "Legendarios de Galletano (25 galletas)",
+     "texto": "Cuándo: tras terminar «El disco índigo» (Terapagos capturado). Dónde: entrada de la Academia Arándano (Galletano está a la derecha del mostrador) y distintos puntos de Paldea, Noroteo y el Biodomo. Paso a paso: 1) Brie te llama al aula 1.º D de la Academia Arándano y te avisa de que un hombre de traje te busca en la entrada: es Galletano. 2) Por cada 10 TEA individuales o especiales completadas te da una galleta al azar (máximo 13, con 130 TEA): Articuno, Zapdos, Moltres y Kubfu en ambas ediciones, y en esta edición Cobalion, Terrakion, Virizion, Lugia, Latias, Kyogre, Zekrom, Lunala y Spectrier. 3) Por cada TEA grupal (con otros jugadores) te da otra (máximo 12): Raikou, Entei, Suicune, Ho-Oh, Latios, Groudon, Reshiram, Solgaleo y Glastrier, más Rayquaza, Kyurem y Necrozma en ambas ediciones. 4) Cada galleta viene con una historia que indica dónde aparece el legendario: ve allí y captúralo (casi todos de nivel 70). Consejo: las TEA grupales se pueden hacer con jugadores de cualquier edición; no hace falta nadie de Escarlata para desbloquear ninguna galleta. Con Pokekeep: si no puedes jugar en grupo, añade legales desde la Librería los legendarios de las galletas grupales. Fuente: WikiDex «Galletano»; Serebii «Snacksworth & Legendary Pokémon»."
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "medal-type"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "titulo": "Pokédex de Noroteo: diploma y Amuleto Cristalino",
+     "texto": "Cuándo: durante o tras «La máscara turquesa»; mejor tras capturar a Ogerpon, a los compatrones y a Ursaluna Luna Carmesí. Dónde: Noroteo; el premio te lo da Cinio en la Senda Jarana. Paso a paso: 1) Registra como capturadas las 200 especies de la Pokédex de Noroteo (muchas también viven en Paldea). 2) Ve a la Senda Jarana y habla con Cinio. 3) Recibes el diploma de la Pokédex de Noroteo y el Amuleto Cristalino, que da teralitos extra en teraincursiones de 3★ a 6★. Consejo: la misión de Gama (Ursaluna Luna Carmesí) te pide antes enseñarle 150 entradas de esta Pokédex, así que avanzarás las dos cosas a la vez. Fuente: WikiDex «Amuleto Cristalino» y guía «El misterio de la Luna Carmesí»; Serebii «Kitakami Pokédex»."
+    },
+    {
+     "titulo": "Pokédex Arándano: diploma y Amuleto Emblema",
+     "texto": "Cuándo: durante o tras «El disco índigo». Dónde: Biodomo de la Academia Arándano; el premio te lo da el director Mirtilo en la entrada de la academia. Paso a paso: 1) Registra como capturadas las especies de la Pokédex Arándano (240; Ondulagua y Ferroverdor, las dos últimas, no cuentan). 2) Habla con el director Mirtilo en la entrada de la Academia Arándano. 3) Recibes el diploma de la Pokédex Arándano y el Amuleto Emblema, que triplica la probabilidad de encontrar Pokémon salvajes con emblema. Consejo: dona PA en el Club de la Liga para ampliar la biodiversidad de cada área: así aparecen especies que antes no salían. Fuente: WikiDex «Amuleto Emblema»; Serebii «Blueberry Pokédex»."
+    },
+    {
+     "titulo": "Emblemas",
+     "texto": "Cuándo: en cualquier momento; mejor tras conseguir el Amuleto Emblema. Dónde: Pokémon salvajes de Paldea, Noroteo y el Biodomo. Paso a paso: 1) Al capturar un Pokémon salvaje puede llevar un emblema: de clima (1 de 50), de hora (1 de 50), de personalidad (1 de 100 entre todos) o raro (1 de 1000). 2) Sube la probabilidad con un bocadillo de Poder Emblema (cada nivel añade una tirada) y con el Amuleto Emblema (+2 tiradas siempre). 3) Otros emblemas se ganan después de la captura al cumplir condiciones concretas (por ejemplo, el Emblema Astucia del Munchlax del Juego del Cazaogros o los de tamaño). 4) Elige un emblema como principal en la ficha del Pokémon: le da un título al salir al combate. Consejo: el bocadillo de Poder Emblema necesita al menos dos especias ocultas. Lleva tu propia lista; el juego no premia la colección completa. Fuente: Serebii «Marks» de Escarlata y Púrpura; WikiDex «Emblema» y «Especia Oculta Dulce»."
+    },
+    {
+     "titulo": "Teratipos: cambiar el teratipo con teralitos",
+     "texto": "Cuándo: tras vencer a Laureano en el Gimnasio de Pueblo Mestura. Dónde: Mesón El Tesoro (Pueblo Mestura) y cristales de teraincursión de todo el mapa. Paso a paso: 1) Consigue teralitos del tipo que quieras en teraincursiones (o en el suelo); hay 19, uno por tipo más el astral. 2) Ve al Mesón El Tesoro y habla con la cocinera de la barra. 3) Entrega 50 teralitos de un tipo: el Pokémon que elijas pasa a tener ese teratipo (Ogerpon y Terapagos no se pueden cambiar). Consejo: tras vencer a Laureano la cocinera te regala 50 teralitos normales; el teratipo astral se consigue igual con 50 teralitos astrales del Biodomo. Fuente: WikiDex «Teralito» y «Mesón El Tesoro»; Serebii «Terastal Phenomenon» y «Stellar Type»."
+    },
+    {
+     "titulo": "Recetas de bocadillos (151)",
+     "texto": "Cuándo: a lo largo de la partida; varias al conseguir medallas, especias ocultas o avanzar la historia. Dónde: restaurantes Pantástico de Paldea, Pueblo Cahíz (tu madre) y el final del río que desemboca en el Lago Cazola. Paso a paso: 1) Habla con el cliente junto al mostrador de cada restaurante Pantástico: te enseña recetas según tus medallas, tu progreso y las especias ocultas que lleves. 2) Recetas 112 a 115: te las enseña tu madre en Pueblo Cahíz; las 125 a 127, también ella tras «Camino a casa». 3) Recetas 148 a 151: el entrenador que hace un pícnic con un Dratini al final del camino del río que desemboca en el Lago Cazola. 4) Las recetas de especias ocultas exigen llevar esa especia en la bolsa: sale como premio de algunas teraincursiones de 5★ (11 %) y 6★ (14 %). Consejo: revisa la lista de recetas del pícnic para ver qué números te faltan. Fuente: WikiDex «Recetas para los bocadillos»; Serebii «Sandwiches» de Escarlata y Púrpura."
+    },
+    {
+     "titulo": "Máquinas técnicas (229 MT)",
+     "texto": "Cuándo: durante toda la partida; las más altas llegan con los DLC. Dónde: máquinas de MT de los Centros Pokémon, el suelo de Paldea, Noroteo y el Biodomo, y premios de combates. Paso a paso: 1) Recoge las MT del suelo y las que te dan entrenadores y líderes: cada una que encuentras o te regalan se añade a la lista de fabricación. 2) En cualquier máquina de MT fabrica copias con materiales de Pokémon salvajes y Puntos de Liga (los PL se ganan en combates y teraincursiones). 3) Completa la numeración de la MT001 a la MT229 (171 en el juego base y el resto con «La máscara turquesa» y «El disco índigo»). Consejo: la TEA «Fabrica una MT» del Biodomo da PA; aprovecha para fabricar las que necesites. Fuente: Serebii «TMs» de Escarlata y Púrpura; WikiDex «Tareas Extraescolares Arándano»."
+    }
+   ]
+  },
+  "VIOLET-DETAIL1": {
+   "bloques": [
+    {
+     "titulo": "Orden de requisitos del epílogo «Mochisteria»",
+     "texto": "Cuándo: tras los créditos de las tres rutas de Paldea y los dos capítulos del DLC. Dónde: Área Cero, vestíbulo de la Academia Uva, Noroteo y Academia Arándano. Paso a paso: 1) Termina «Travesía de la victoria», «Senda legendaria» y «Vía Stardust» y después «Camino a casa» en el Área Cero. 2) Haz las revanchas de los ocho gimnasios y juega la primera Gran Pugna Académica. 3) Completa «La máscara turquesa» (captura de Ogerpon) y «El disco índigo» (Liga Arándano y Terapagos). 4) Recoge la Baya Meloc Singular en Regalo Misterioso, interactúa con la figura polvorienta del Bazar Meloc de Villa Versui y termina el epílogo capturando a Pecharunt (nivel 88). 5) Lleva por separado las Pokédex de Paldea, Noroteo y Arándano: cada una tiene su diploma y su premio. Consejo: el epílogo no empieza si falta cualquiera de los pasos 1 a 3, aunque tengas la baya. Con Pokekeep: si no tienes los DLC, no marques sus historias; añade legales desde la Librería a Ogerpon, los compatrones, Terapagos y Pecharunt, y la Baya Meloc Singular a la mochila. Fuente: Serebii «Mochi Mayhem»; WikiDex «Baya Meloc Singular»."
+    }
+   ]
+  },
+  "ZA-06": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "objetivo": "pokemon-716"
+    },
+    {
+     "objetivo": "pokemon-717"
+    },
+    {
+     "titulo": "Misión 42, «La preservación del equilibrio»: Zygarde",
+     "texto": "Cuándo: tras capturar a Xerneas (misión 40) y a Yveltal (misión 41). Dónde: Hotel Z y Torre Prisma (Ciudad Luminalia). Paso a paso: 1) Vuelve al Hotel Z: L te reta a un combate; véncele. 2) Zygarde aparece y te lleva a la Torre Prisma: el combate sigue el estilo de las megaevoluciones descontroladas, con tres fases. 3) Fase 1: Zygarde al 10 %, solo ataques normales. Fase 2: forma 50 %, con varios Fuerza Telúrica seguidos. Fase 3: forma completa, con un enorme ataque exclusivo de tipo dragón que cubre casi todo el escenario salvo unos huecos con forma de Z y oleadas de Fuerza Telúrica de fuera hacia dentro. 4) Al derrotarlo, captúralo (nivel 84). Consejo: lleva muchas pociones y Revivir; aprende la forma de los huecos en Z para esquivar su gran ataque. Fuente: Serebii «Legendary Pokémon» y «Main Missions» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "objetivo": "mega-stones"
+    },
+    {
+     "objetivo": "side-missions"
+    }
+   ]
+  },
+  "ZA-07": {
+   "bloques": [
+    {
+     "objetivo": "mega-dimension"
+    },
+    {
+     "titulo": "Misión dimensional 1: Anya, Hoopa y el primer sondeo",
+     "texto": "Cuándo: con la expansión Megadimensión comprada (historia disponible desde el 10 de diciembre de 2025) y la historia principal terminada. Dónde: Ciudad Luminalia, Canal Saison y Hotel Z. Paso a paso: 1) Al comprar el DLC, recoge la ropa holo-X y holo-Y desde el icono del DLC en el menú. 2) Empiezan a aparecer distorsiones en la ciudad: ayuda a Anya, la pastelera que viaja con Hoopa, con su dónut y ve al Canal Saison: entras por primera vez en Luminalia Dimensional. 3) Al salir, Córax te llama: el Clan Corrosión y Quastelar S. A. investigan juntos la distorsión gigante sobre la Torre Prisma y te encargan el sondeo de Luminalia Dimensional. Consejo: a partir de aquí Anya y Corelia viven en el Hotel Z; es allí donde se preparan los dónuts. Fuente: WikiDex «Megadimensión» y «Luminalia Dimensional»; Serebii «Hyperspace Missions» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "titulo": "Dónuts de Anya y bayas dimensionales",
+     "texto": "Cuándo: cada vez que quieras entrar en una zona dimensional. Dónde: Hotel Z, con Anya. Paso a paso: 1) Recoge bayas, sobre todo Bayas Dimensionales, que se consiguen dentro de las zonas (Poké Balls doradas, entrenadores repartidores). 2) Pide a Anya un dónut combinando bayas: sus sabores dan poderes de Hoopa durante la visita (por ejemplo, subir de nivel a tus Pokémon por encima del 100 o mejorar capturas). 3) Elige un portal del mapa: usa un dónut de tantas estrellas como la zona, porque dentro los salvajes superan el nivel 100 y el tiempo es limitado. Consejo: guarda los dónuts especiales de la historia (especia negra, Sal Gruesa de Hoenn, Aceite de Arboliva) para su misión; no los gastes en zonas normales. Fuente: WikiDex «Luminalia Dimensional»; Serebii «Ansha's Donuts» y «Flavor Powers» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "titulo": "Zonas dimensionales y puntos de sondeo",
+     "texto": "Cuándo: desde el primer sondeo; cada sondeo abre zonas de más estrellas. Dónde: portales repartidos por Ciudad Luminalia (el mapa marca estrellas, tamaño y tipo de zona). Paso a paso: 1) Zonas salvajes dimensionales (de 1 a 5 ★): Pokémon de un mismo tipo; sus tareas piden capturar especies concretas, de un tipo, alfas o, a veces, variocolores. 2) Zonas de combate dimensionales: entrenadores de un mismo tipo; sus tareas piden vencer a varios o usar movimientos supereficaces. Los repartidores dan Bayas Dimensionales, los Pokécolectores Poké Balls raras y los entrenadores alfa (hologramas rojos, tres alfas) Chapas Doradas o Plateadas o Semillas Dominio. 3) Zonas «???»: suelen esconder una misión secundaria o un mega descontrolado; las de 5 ★ guardan un legendario o singular. 4) Al completar las tres tareas de una zona aparece una gran Poké Ball dorada: rómpela para llevarte objetos raros. Consejo: los puntos de sondeo deciden cuándo puedes combatir contra el siguiente mega descontrolado (de 10.000 puntos para Mega-Absol Z a 100.000 para Mega-Rayquaza). Fuente: WikiDex «Luminalia Dimensional»; Serebii «Hyperspace Lumiose» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "titulo": "Misiones dimensionales 2 a 6: escenas en el Hotel Z",
+     "texto": "Cuándo: entre un sondeo y el siguiente. Dónde: Hotel Z y Ciudad Luminalia. Paso a paso: 1) Misión 2: una visitante furiosa entra dando un portazo en el hotel; habla con ella para calmarla. 2) Misión 3 (sondeo 2), con Anya y Corelia instaladas en el hotel. 3) Misión 4: acompaña a Anya y Corelia al museo y a la cafetería. 4) Misión 5: investiga el estruendo de la sala de estrategia del Equipo MZ. 5) Misión 6 (sondeo 3): los detectores de distorsión se calibran y se abren zonas más peligrosas. Consejo: cada escena se marca en el mapa; si no avanza, suma puntos de sondeo en zonas de tu nivel. Fuente: Serebii «Hyperspace Missions» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "titulo": "Megas descontrolados de Megadimensión",
+     "texto": "Cuándo: a medida que acumulas puntos de sondeo. Dónde: arenas dimensionales que se abren en Luminalia Dimensional. Paso a paso: 1) Al llegar a los puntos necesarios, entra en la arena del siguiente mega descontrolado con tu compañero (Corelia o tu rival). 2) Orden y niveles según WikiDex: Mega-Absol Z (105), Mega-Staraptor (120), Mega-Tatsugiri (140), Mega-Meowstic (150), Mega-Heatran (180) y Mega-Darkrai (200); los primigenios y Mega-Rayquaza también son de 200. 3) Esquiva sus ataques de área y derrótalo: recibes su megapiedra (Absolita Z, Staraptorita, Tatsugirita, Meowsticita, Heatranita…); Heatran se captura al vencerlo. 4) Tras la historia, Airén te ofrece el simulador para repetir estos combates contra el reloj (3 Caramelos Experiencia M por victoria) y, con todos vencidos, el reto encadenado de los 27 megas descontrolados con solo 3 curaciones completas, que da un título. Consejo: no hemos podido confirmar en las fuentes la «esfera que congela la cuenta atrás» ni las revanchas de nivel 200 con límite de tiempo fuera del simulador. Fuente: WikiDex «Megaevolución descontrolada»; Serebii «Rogue Mega Evolution Rematch» y «Legendary Pokémon» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "titulo": "Misiones dimensionales 7 a 11: Darkrai en la Isla Lunanueva de Pesadilla",
+     "texto": "Cuándo: sondeos 4 a 6. Dónde: Hotel Z, Torre Prisma y portal de la Isla Lunanueva de Pesadilla. Paso a paso: 1) Misión 7: Naveen no baja a desayunar; sigue a su Scrafty hasta su cuarto. Misiones 8 y 9 (sondeos 4 y 5): investiga la gran distorsión sobre la Torre Prisma, que amenaza con tragarse la ciudad. 2) Misión 10: un alboroto a medianoche despierta el hotel. Misión 11 (sondeo 6): se descubre que Darkrai absorbió megaenergía de la torre. 3) Prepara con Anya el dónut de la especia negra del Clan Corrosión y entra en el portal sobre la Torre Prisma. 4) En la Isla Lunanueva de Pesadilla vence a Darkrai en forma normal y después megaevolucionado; captúralo (nivel 85) y recibes la Darkrainita. Consejo: lleva Pokémon de tipo hada, lucha o bicho y un dónut de 5 estrellas. Fuente: WikiDex «Luminalia Dimensional»; Serebii «Hyperspace Missions» y «Legendary Pokémon» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "titulo": "Misiones 12 a 14: Groudon y Kyogre (distorsiones rubí y zafiro)",
+     "texto": "Cuándo: tras capturar a Darkrai, con la misión 12, «El mejor regalo». Dónde: Hotel Z; portal del sector 11 del Distrito Amarillo (Groudon) y de la zona salvaje 5 (Kyogre). Paso a paso: 1) Anya busca un legendario para su madre: Córax descubre las distorsiones rubí y zafiro y te da las recetas. 2) Consigue la Sal Gruesa de Hoenn (te la dan Grisela y Grisel) y prepara los dos dónuts especiales. 3) Misión 13: entra por el portal del sector 11 del Distrito Amarillo a la Tierra del Ocaso, vence a Groudon y después a Groudon primigenio (el agua no le afecta) y captúralo (nivel 80): recibes el Prisma Rojo. 4) Misión 14: entra por el portal de la zona salvaje 5 al Mar del Albor, vence a Kyogre y a Kyogre primigenio y captúralo (nivel 80): recibes el Prisma Azul. Consejo: con las dos capturas, Córax encuentra la receta del dónut de la distorsión esmeralda (siguiente bloque). Fuente: WikiDex «Luminalia Dimensional» y «Megaevolución descontrolada»; Serebii «Legendary Pokémon» y «Hyperspace Missions» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "titulo": "Rayquaza en el Gran Pilar Celeste (distorsión esmeralda)",
+     "texto": "Cuándo: tras capturar a Groudon y a Kyogre. Dónde: terraza del Hotel Z y Gran Pilar Celeste. Paso a paso: 1) Sigue investigando para Córax hasta que descubra la receta del dónut de la distorsión esmeralda; te da una botella de Aceite de Arboliva. 2) Prepara ese dónut con Anya y subid a la terraza del Hotel Z: se abre el portal al Gran Pilar Celeste. 3) Vence a Rayquaza en forma normal y después a Mega-Rayquaza, que tiene un viento protector que reduce parte del daño y le quita las debilidades del tipo volador. 4) Captúralo y enséñaselo a Anya: te pide que lo cuides tú de momento. Consejo: necesitas unos 100.000 puntos de sondeo para este combate; lleva Pokémon de tipo dragón y hada. Fuente: WikiDex «Luminalia Dimensional»; Serebii «Legendary Pokémon» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "titulo": "Tras Rayquaza: Hoopa, Meltan/Melmetal y Magearna",
+     "texto": "Cuándo: después de capturar a Rayquaza. Dónde: Hotel Z, sector 1 del Distrito Rojo y Quastelar S. A. Paso a paso: 1) Hoopa: en el Hotel Z, tu rival (Urbi o Muni) encuentra una Vasija de Castigo en el cuarto de A. Z.; Córax avisa de una distorsión: vence allí a Hoopa desatado; después puedes pasarlo a Hoopa contenido y se une a ti. 2) Meltan: en el sector 1 del Distrito Rojo aparece una misión secundaria para capturar a un Meltan; luego un portal te lleva con una niña y muchos Meltan: responde que te gustan y te regala un Melmetal. 3) Magearna: tras ayudar a Airén en una misión secundaria, la presidenta de Quastelar S. A. te pide 999 megaesquirlas; entrégalas, activa la Magearnita y Magearna despierta y se une a ti con su megapiedra. Consejo: guarda megaesquirlas desde el principio del DLC para no atascarte con Magearna. Fuente: Serebii «Legendary Pokémon» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "objetivo": "event-1"
+    },
+    {
+     "objetivo": "mega-stones-dlc"
+    }
+   ]
+  },
+  "ZA-08": {
+   "bloques": [
+    {
+     "objetivo": "postgame-legendary"
+    },
+    {
+     "titulo": "Juegos Z-A infinitos: combates de recompensa repetibles",
+     "texto": "Cuándo: tras la misión 39 y para el resto de la partida. Dónde: zonas de combate nocturnas de Ciudad Luminalia y sede de Quastelar S. A. Paso a paso: 1) Cada noche se abren tres zonas de combate; ya no hay ascensos de rango, pero los rivales suben de nivel a medida que completas torneos. 2) Al vencer a suficientes entrenadores consigues un Cupón Desafío: llévalo a Quastelar S. A. para llamar a un rival a un combate de recompensa (al principio en orden; desde el combate 20, al azar). 3) Premios al azar: Pepita Grande, vitaminas (5), Chapas (3) o una Chapa Dorada, Revestimiento Metálico, Dulce de Nata, Saquito Fragante, Roca del Rey, una Poké Ball especial y, con un 1,38 %, una Master Ball. 4) Además, cada racha da Caramelos Experiencia: M en las primeras 20 victorias y L a partir de la 21. Consejo: es la forma repetible de conseguir Chapas Doradas y Poké Balls especiales (Rapid, Nivel, Cebo, Peso, Amor, Amigo y Luna Ball). Fuente: Serebii «Z-A Royale» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "titulo": "MegaDex: 68 megaevoluciones (93 con Megadimensión)",
+     "texto": "Cuándo: durante toda la partida. Dónde: la sección MegaDex de la Pokédex; las megapiedras, en Ciudad Luminalia y, con el DLC, en Luminalia Dimensional. Paso a paso: 1) Consigue la megapiedra de cada especie (bloques de megapiedras del juego base y de Megadimensión). 2) Ten al Pokémon con su megapiedra y megaevoluciónalo en combate: la entrada se registra. 3) Repite con cada megaevolución distinta: algunas especies tienen dos (Charizard X e Y, Mewtwo X e Y y, en el DLC, Raichu X e Y). Consejo: las megas de Mewtwo, Diancie y las de megapiedras de combates clasificatorios o Regalo Misterioso no se pueden conseguir jugando si el reparto terminó. Con Pokekeep: añade esas megapiedras desde la pestaña SAV, botón «Objetos», y a Diancie o Mewtwo legales desde la Librería. Fuente: Serebii «Mega Evolutions» y «DLC Mega Evolutions» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "titulo": "Pokédex Dimensional (132 entradas, DLC)",
+     "texto": "Cuándo: con Megadimensión, tras la historia principal. Dónde: Luminalia Dimensional. Paso a paso: 1) Entra en zonas salvajes dimensionales de distintos tipos: el mapa enseña tres de las especies que pueden salir en cada una. 2) Sube de estrellas: en las de 5 ★ salen pesos pesados, iniciales de otras regiones, fósiles y formas regionales de Alola, Galar y Hisui. 3) Completa los legendarios y singulares del DLC (Darkrai, Groudon, Kyogre, Rayquaza, Heatran, Hoopa y los de las zonas «???» de 5 ★). Consejo: la tarea «capturar sin ser visto» y las de alfas suman también puntos de sondeo. Con Pokekeep: sin la expansión, añade legales desde la Librería los Pokémon que solo salen en ella. Fuente: WikiDex «Luminalia Dimensional»; Serebii «Hyperspace Pokédex» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "objetivo": "medal-type"
+    },
+    {
+     "titulo": "Títulos de entrenador",
+     "texto": "Cuándo: en cualquier momento; la mayoría con los combates en línea. Dónde: perfil de entrenador (los títulos se muestran al intercambiar o en combates por conexión). Paso a paso: 1) Abre tu perfil y revisa la lista de títulos: cada uno indica la tarea que lo desbloquea. 2) Cumple las tareas: la mayoría están ligadas a los combates en línea y tienen variantes de bronce, plata y oro. 3) Elige hasta tres títulos para mostrarlos en tu perfil. Consejo: el reto encadenado de los megas descontrolados del simulador de Airén (Megadimensión) también da un título. Fuente: Serebii «Titles» y «Rogue Mega Evolution Rematch» de Leyendas Pokémon: Z-A."
+    },
+    {
+     "objetivo": "event-0"
+    },
+    {
+     "objetivo": "mega-stones-special"
+    }
+   ]
+  },
+  "ZA-DETAIL1": {
+   "bloques": [
+    {
+     "titulo": "Ruta resumida de Megadimensión",
+     "texto": "Cuándo: con la expansión comprada y los créditos de la historia principal vistos. Dónde: Ciudad Luminalia, Hotel Z, sede del Clan Corrosión y Luminalia Dimensional. Paso a paso: 1) Ayuda a Anya y ve al Canal Saison para entrar por primera vez en Luminalia Dimensional con Hoopa. 2) Haz las tareas de las zonas dimensionales para sumar puntos de sondeo; con ellos se abren los megas descontrolados y zonas de más estrellas. 3) Prepara el dónut de la especia negra del Clan Corrosión y captura a Darkrai en la Isla Lunanueva de Pesadilla. 4) Con la Sal Gruesa de Hoenn captura a Groudon (Tierra del Ocaso) y Kyogre (Mar del Albor); después, con la receta de Córax, a Rayquaza en el Gran Pilar Celeste. 5) Tras la misión dimensional 12, la misión secundaria 188 activa los escaneos de Giso en la sede del Clan Corrosión (uno cada 25.000 puntos): busca las zonas «???» de 5 ★ con Latias, Latios, Cobalion, Terrakion, Virizion, Keldeo y Meloetta. Consejo: Keldeo solo sale después de capturar a Cobalion, Terrakion y Virizion; si sales de una zona sin capturar al legendario, volverá a aparecer en otro escaneo. Con Pokekeep: sin la expansión, añade legales desde la Librería los Pokémon de Megadimensión que te falten. Fuente: WikiDex «Luminalia Dimensional»; Serebii «Hyperspace Lumiose» y «Side Missions» de Leyendas Pokémon: Z-A."
+    }
+   ]
+  }
+ },
+ "corrige": {
+  "ARCEUS": {
+   "items0": "Cuándo: diez tablas durante la historia; siete en las encomiendas 20 a 26; la de Volus y la Tabla Legendaria, al final. Dónde: arenas de los señores, cavernas de los lagos, Isla Escupefuego, Arena de la Luna, Templo Puntaneva, Playa del Albor, Antigua Aldea Oculta y Templo de Sinnoh. Paso a paso: 1) Historia: Tabla Bicho (Kleavor), Tabla Pradal (Lilligant), Tabla Llama (Arcanine), Tabla Trueno (Electrode) y Tabla Helada (Avalugg); monturas: Tabla Mental (Wyrdeer), Tabla Terrax (Ursaluna), Tabla Linfa (Basculegion), Tabla Tóxica (Sneasler) y Tabla Cielo (Braviary de Hisui). 2) Encomiendas: 20, Tabla Pétrea (Vespiquen alfa de la Foresta Funesta); 21, Tabla Draco (Uxie, Mesprit y Azelf); 22, Tabla Acero (Heatran); 23, Tabla Oscura (Cresselia); 24, Tabla Neutra (Regigigas); 25, Tabla Fuerte (combate contra Sorbus en la Playa del Albor); 26, Tabla Duende (3 de madera para Metis). Son 17. 3) Vence a Volus y a Giratina en el Templo de Sinnoh: recibes la Tabla Terror (18) y la Flauta Azur. 4) Vence y captura a Arceus: recibes la Tabla Legendaria (19). 5) Objetos de Dialga, Palkia y Giratina: Gran Diamansfera (petición 89, combate contra Adamas en el Poblado Diamante), Gran Lustresfera (petición 90, contra Nákara en el Poblado Perla) y Gran Griseosfera (petición 91, al capturar a Giratina). Consejo: el Templo Puntaneva no se abre sin la Tabla Acero, la Tabla Helada y la Tabla Pétrea. Fuente: WikiDex «Tabla Pétrea», «Tabla Draco», «Tabla Fuerte», «Tabla Duende», «Tabla Linfa», «Tabla Tóxica», «Tabla Cielo» y «Lista de peticiones de Leyendas Pokémon: Arceus»; Serebii «Volo» y «Legendary Pokémon» de Leyendas Pokémon: Arceus."
+  },
+  "SCARLET": {
+   "battle0": "Cuándo: tras los créditos. Dónde: gimnasios de Paldea y vestíbulo de la Academia Naranja, en Ciudad Meseta. Paso a paso: 1) Ságita te pide inspeccionar los gimnasios: vence otra vez a Araceli, Brais, e-Nigma, Fuco, Laureano, Lima, Tuli y Grusha (niveles 65-66). 2) Ságita te cita en el vestíbulo y, en tu cuarto, te hace cuatro preguntas; recibes una Roca del Rey. 3) Una semana después, inscríbete en el vestíbulo. 4) Gana las cuatro rondas: Damián en primera ronda, Cinio en cuartos, Kendra en semifinales y Ságita en la final. 5) Mencía te da una gorra deportiva de la Liga Pokémon y Cinio te llama para que investigues las teraincursiones: tras completar 10 de 4★ o 5★ vuelve a llamarte y se abren las de 6★. Consejo: si pierdes, vuelve a inscribirte; después el torneo es repetible y los rivales cambian. Fuente: WikiDex, guía «Camino a casa» y «Teraincursión»; Serebii «Academy Ace Tournament».",
+   "dlc-ogerpon": "Cuándo: desde que empieza la búsqueda del tesoro, con el DLC «El tesoro oculto del Área Cero». Dónde: Noroteo (Villa Versui, Monte Ogro, Gruta del Pavor). Paso a paso: 1) Cinio te llama: habla con Brie en el vestíbulo de tu academia y viaja a Noroteo. 2) Visita los tres carteles (Parque de los compatrones, centro cultural de Noroteo y Elíseo Baldío) y asiste al Festival de Máscaras. 3) Consigue el fragmento de cristal del Lago Cristalino y recupera la Máscara Turquesa venciendo a Cass. 4) Recupera las otras tres máscaras de los compatrones enormes (Elíseo Baldío, Laguna Glicina y Cueva Aguafría). 5) En la Gruta del Pavor vence a Cass y captura a Ogerpon; después, Corin te reta a un último combate en el Parque de los compatrones. Consejo: termina «Camino a casa» antes si quieres que los rivales sean de nivel alto y den más experiencia. Con Pokekeep: sin el DLC, añade a Ogerpon legal desde la Librería. Fuente: WikiDex, guías «La llegada a Noroteo» y «En busca de las máscaras»."
+  },
+  "VIOLET": {
+   "battle0": "Cuándo: tras los créditos. Dónde: gimnasios de Paldea y vestíbulo de la Academia Uva, en Ciudad Meseta. Paso a paso: 1) Ságita te pide inspeccionar los gimnasios: vence otra vez a Araceli, Brais, e-Nigma, Fuco, Laureano, Lima, Tuli y Grusha (niveles 65-66). 2) Ságita te cita en el vestíbulo y, en tu cuarto, te hace cuatro preguntas; recibes una Roca del Rey. 3) Una semana después, inscríbete en el vestíbulo. 4) Gana las cuatro rondas: Damián en primera ronda, Cinio en cuartos, Kendra en semifinales y Ságita en la final. 5) Mencía te da una gorra deportiva de la Liga Pokémon y Cinio te llama para que investigues las teraincursiones: tras completar 10 de 4★ o 5★ vuelve a llamarte y se abren las de 6★. Consejo: si pierdes, vuelve a inscribirte; después el torneo es repetible y los rivales cambian. Fuente: WikiDex, guía «Camino a casa» y «Teraincursión»; Serebii «Academy Ace Tournament».",
+   "dlc-ogerpon": "Cuándo: desde que empieza la búsqueda del tesoro, con el DLC «El tesoro oculto del Área Cero». Dónde: Noroteo (Villa Versui, Monte Ogro, Gruta del Pavor). Paso a paso: 1) Cinio te llama: habla con Brie en el vestíbulo de tu academia y viaja a Noroteo. 2) Visita los tres carteles (Parque de los compatrones, centro cultural de Noroteo y Elíseo Baldío) y asiste al Festival de Máscaras. 3) Consigue el fragmento de cristal del Lago Cristalino y recupera la Máscara Turquesa venciendo a Cass. 4) Recupera las otras tres máscaras de los compatrones enormes (Elíseo Baldío, Laguna Glicina y Cueva Aguafría). 5) En la Gruta del Pavor vence a Cass y captura a Ogerpon; después, Corin te reta a un último combate en el Parque de los compatrones. Consejo: termina «Camino a casa» antes si quieres que los rivales sean de nivel alto y den más experiencia. Con Pokekeep: sin el DLC, añade a Ogerpon legal desde la Librería. Fuente: WikiDex, guías «La llegada a Noroteo» y «En busca de las máscaras»."
+  },
+  "ZA": {
+   "event-1": "Cuándo: con Megadimensión, tras la historia principal. Dónde: Luminalia Dimensional. Paso a paso: 1) Ayuda a Anya y ve al Canal Saison para entrar por primera vez. 2) Completa tareas de las zonas dimensionales para ganar puntos y vence a los megas descontrolados. 3) Heatran: arena dimensional del Mega-Heatran descontrolado (nivel 80); se captura al vencerlo y da la Heatranita. 4) Darkrai: Isla Lunanueva de Pesadilla, con el dónut de la especia negra del Clan Corrosión (nivel 85). 5) Groudon (Tierra del Ocaso) y Kyogre (Mar del Albor), con la Sal Gruesa de Hoenn (nivel 80). 6) Rayquaza (Gran Pilar Celeste), con el dónut que descubre Córax; después, Hoopa desatado, Melmetal y Magearna. 7) Tras la misión dimensional 12, la misión secundaria 188 abre los escaneos de Giso en la sede del Clan Corrosión (cada 25.000 puntos): zonas «???» de 5 estrellas con Cobalion, Terrakion, Virizion, Latios, Latias y Meloetta; Keldeo aparece tras capturar a los otros tres espadachines místicos. Consejo: el escaneo no siempre da un legendario; repítelo. Si sales de la zona sin capturarlo, volverá a salir en otro escaneo. Con Pokekeep: sin la expansión, añádelos legales desde la Librería. Fuente: WikiDex «Luminalia Dimensional»; Serebii «Hyperspace Lumiose» y «Legendary Pokémon» de Leyendas Pokémon: Z-A."
+  }
+ }
+}
