@@ -333,18 +333,6 @@
    ],
    "precaucion": "Ruta de Negro 2/Blanco 2: no sigas el recorrido de Negro/Blanco, las ciudades y los líderes cambian. Guarda antes de cada Espadachín Místico: si los debilitas no se pierden, pero no reaparecen hasta después de la Liga."
   },
-  "BLACK2-08": {
-   "pasos": [
-    "En Ciudad Caolín Iris te recibe. Gimnasio de Lirio (tipo Dragón): vence al menos a uno de los dos veteranos de la planta para subir. Lleva Hielo o Dragón; recibes la Medalla Leyenda y la MT82 (Cola Dragón).",
-    "En casa de Lirio, el barco volador del Equipo Plasma congela Ciudad Caolín con su cañón de hielo: vence a los reclutas por la ciudad y al miembro del Trío Sombrío cerca de la salida este.",
-    "Cheren te pide ir a Ciudad Marga por el Acuatúnel, que sale al este de Pueblo Arenisca.",
-    "Gimnasio de Ciprián (tipo Agua) en Ciudad Marga: los nenúfares te llevan en la dirección en que subes. Su equipo: Carracosta y Wailord (nivel 49) y Jellicent (51); lleva Planta o Eléctrico. Recibes la Medalla Ola y la MT55 (Escaldar).",
-    "En la Ruta 22 Terrakion (nivel 45) espera en una plataforma; al acercarte Acromo te da su máquina. Después recorre la Ruta 21 hasta la Gruta Marina y, con Surf, ve a su salida este: usa la máquina de Acromo para despertar al Crustle que la bloquea.",
-    "Entra en la Fragata Plasma: en Negro 2 usa los teletransportadores de los camarotes para encontrar los cuatro interruptores que apagan la barrera eléctrica. Vence a Menek y a su recluta en un combate doble con tu rival.",
-    "Cruza la Ruta 22 hasta el Boquete Gigante: sube a la Fragata, vence a Acromo en el puesto de mando y en la cueva del fondo enfréntate a Kyurem Negro (Kyurem fusionado con el Zekrom de N) y después a Ghechis."
-   ],
-   "precaucion": "Ruta de Negro 2/Blanco 2: no sigas el recorrido de Negro/Blanco, las ciudades y los líderes cambian. La Fragata Plasma tiene puzles distintos en Negro 2 y Blanco 2; si te pide contraseña, vence a todos los reclutas para conseguir las pistas."
-  },
   "BLACK2-09": {
    "pasos": [
     "Cruza la Ruta 23 (hay un refugio que cura y la MT35, Lanzallamas); al final N te da la MO05 (Cascada).",
@@ -358,26 +346,31 @@
   },
   "BLACK2-10": {
    "pasos": [
-    "Ve a Pueblo Ocre y vence a Mirto; después aparece su nieto Guayo, que te espera en el Rascacielos Negro de Ciudad Negra.",
-    "Cruza el Puente Saeta (ya abierto) hacia el Bosque Azulejo (Cheren te da una Mejora), Ciudad Esmalte (Aloe te da un fósil a elegir) y Ciudad Gres, cuyo gimnasio es ahora un restaurante donde Millo, Zeo y Maíz aceptan combates dobles a diario.",
-    "En el Solar de los Sueños (este de Ciudad Gres) persigue a Latios (nivel 68) hasta acorralarlo; necesitas Corte.",
-    "Sigue al Zoroark de N por las cuevas de la Calle Victoria hasta el Palacio de N semihundido; vence a N y te da el Orbe Oscuro. Llévalo a lo alto de la Torre Duodraco (Ciudad Teja, ahora accesible por el Monte Tuerca) y captura a Zekrom (nivel 70).",
-    "Vuelve a la cueva norte del Boquete Gigante y captura a Kyurem (nivel 70); deja la Punta ADN para fusionarlo.",
-    "Entra en la Cueva Psique (Ruta 20, con Surf y Cascada) y sigue al trío del lago: Uxie ante el Museo de Ciudad Esmalte, Mesprit en la cima de la Torre de los Cielos y Azelf en el oeste de la Ruta 23 (todos nivel 65).",
-    "Recoge la Piedra Magma en la Ruta 18 (Heatran en la Montaña Reversia) y la Pluma Lunar en Villa Horroris (Cresselia en el Puente Progreso). En el Túnel Yakón, las Ruinas Subterráneas guardan a los Regis.",
-    "En el Laboratorio P+P (Ruta 18) vuelve a vencer a Acromo en la Fragata Plasma: te da una Master Ball."
+    "Ve a Pueblo Ocre y vence a Mirto en su revancha del postgame; al acabar aparece su nieto Guayo, que te espera en el Rascacielos Negro de Ciudad Negra. Esta victoria y la de la Liga son logros distintos.",
+    "Desde Ciudad Porcelana cruza el Puente Saeta, ya abierto, hasta el Bosque Azulejo: Cheren te lleva al fondo, donde un sabio te habla de N, y te da una Mejora. En Ciudad Esmalte Aloe te deja elegir el Fósil Pluma (Archen) o el Fósil Tapa (Tirtouga). En Ciudad Gres el gimnasio es ahora un restaurante: Millo, Zeo y Maíz aceptan cada día un combate doble.",
+    "En el Solar de los Sueños (este de Ciudad Gres) Latios (nivel 68) te sale al paso y huye. Ve primero a las escaleras del sótano; cuando reaparezca, vuelve atrás y entra en las ruinas con Corte; sigue hacia arriba, sube las escaleras de las ruinas, ve al extremo suroeste de la zona superior y por último al extremo noreste, donde se cansa y te ataca. Guarda antes. Al capturarlo recibes el Rocío Bondad.",
+    "En la Calle Victoria sigue al Zoroark de N por las cuevas de la derecha hasta el Palacio de N semihundido. Acompaña a N a su antiguo cuarto y a la sala del trono y vence a su Zekrom (nivel 70): te da el Orbe Oscuro (dentro también está la MT50, Sofoco).",
+    "Lleva el Orbe Oscuro a Ciudad Teja (el Monte Tuerca ya está abierto) y sube la Torre Duodraco hasta la cima; por el camino hay una Griseosfera, una Diamansfera y una Lustresfera. Arriba el orbe se convierte en Zekrom: captúralo (nivel 70).",
+    "Vuelve a la cueva del norte del Boquete Gigante (final de la Ruta 22) y captura a Kyurem (nivel 70) en su forma normal. Deja la Punta ADN, que sirve para fusionarlo con Zekrom y separarlos cuando quieras.",
+    "Entra en la Cueva Psique desde el agua de la Ruta 20 (Surf y Cascada) y presencia con la Profesora Encina la huida del trío del lago. Uxie aparece en el centro del círculo ante la puerta del Museo de Ciudad Esmalte; Mesprit, junto a las escaleras de la cima de la Torre de los Cielos; Azelf, en el oeste de la Ruta 23 tras el puzle de rocas (Corte y Fuerza). Los tres a nivel 65.",
+    "Heatran: llega a la Ruta 18 por el agua de la Ruta 17 (Surf desde la Ruta 1), recoge la Piedra Magma en uno de sus riscos altos y actívala en la Sala Renacer, al fondo de la Montaña Reversia (la cueva que te señaló Bel), nivel 68.",
+    "Cresselia: en Villa Horroris, junto a Pueblo Chamota, baja por las escaleras de arriba a la izquierda, ve a la derecha y sube; sube a la planta alta por la derecha y sigue a la izquierda; vuelve a bajar por la izquierda, rodea a la derecha y sube por las escaleras del centro siguiendo a la joven fantasma. En la habitación central recoge la Pluma Lunar y llévala al centro del Puente Progreso (nivel 68).",
+    "En Pueblo Arenisca tu rival te da la MO06 (Buceo) y te reta. Con Buceo entra en las Ruinas Submarinas desde la zona oscura de la Bahía Arenisca: cuatro plantas en laberinto con un límite de 500 pasos por visita; Menek te da un libro de Ghechis para traducir sus inscripciones. Cintia te espera en Pueblo Arenisca en primavera y verano.",
+    "En el Laboratorio P+P vuelve a vencer a Acromo en la Fragata Plasma (te da una Master Ball) y en Ciudad Teja reta al Trío Sombrío, una vez por estación."
    ],
-   "precaucion": "Ciudad Negra y el Rascacielos Negro solo existen en Negro 2; Latias, Regice y otros exclusivos de Blanco 2 requieren intercambio o claves de un amigo."
+   "precaucion": "Ciudad Negra y el Rascacielos Negro solo existen en Negro 2; Latias, Regice y otros exclusivos de Blanco 2 requieren intercambio o claves de un amigo. El dragón de N en estas secuelas es el contrario al que capturaste en Negro/Blanco: no confundas las exclusividades de los dos juegos."
   },
   "BLACK2-11": {
    "pasos": [
-    "Cada vez que ganes insignias, habla con Don Insignio en cualquier Centro Pokémon para que te las entregue; los rangos se reciben en el Insigniárium, planta 1 del edificio más al oeste de Ciudad Porcelana.",
-    "Pokédex de Teselia: con los 297 Pokémon vistos (sin Victini, Keldeo, Meloetta ni Genesect) la Profesora Encina te da el permiso para la Reserva Natural; con todos capturados, el Amuleto Oval.",
-    "Pokédex Nacional: capturada sin los singulares de evento, Carrasco Encina te manda a su hija, que te da el Amuleto Iris; el Director del Juego de la Torre de Game Freak te da el diploma.",
-    "Ficha de entrenador: cambia de color (azul, morado, naranja, plata, oro y último color) con cinco logros: superar la Liga, completar la Pokédex Nacional, todas las películas de Pokéwood, el Torneo Campeones del PWT y el Nexárbol a nivel 30 en negro y en blanco.",
+    "Pokédex Nacional: exige 636 especies, toda la Nacional menos Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta y Genesect (Lugia y Ho-Oh sí cuentan). Compara especie a especie: una especie excluida no sustituye a una exigida.",
+    "Pokédex de Teselia: con los 297 Pokémon vistos (sin Victini, Keldeo, Meloetta ni Genesect), la Profesora Encina, en su laboratorio de Pueblo Arcilla, te da el Permiso para la Reserva Natural; con todos capturados, el Amuleto Oval. Son dos premios distintos y hay que recogerlos hablando con ella.",
+    "Con la Nacional capturada, habla con Carrasco Encina en Pueblo Arcilla: te dice que su hija tiene un regalo y la Profesora Encina te entrega el Amuleto Iris. El Director del Juego de la Torre de Game Freak (planta 21) te da los diplomas.",
+    "Ficha de entrenador: cambia de color (azul, morado, naranja, plata, oro y último color) con cinco logros independientes: superar la Liga, completar la Pokédex Nacional, rodar todas las películas de Pokéwood, ganar el Torneo Campeones del PWT y llevar el Nexárbol a nivel 30 o más en negro y en blanco (cada nivel por separado, no la suma).",
+    "Sube el Nexárbol con las Misiones Festival de la Zona Nexo (C-Gear); se pueden hacer solo o con otros jugadores por conexión local.",
+    "Insignias: cada vez que ganes una, habla con Don Insignio en cualquier Centro Pokémon para recogerla; las Insignias Pista de la Caja de Insignias te dicen lo que falta y los rangos se recogen en el Insigniárium, planta 1 del edificio más al oeste de Ciudad Porcelana.",
     "Con Pokekeep: lo que solo se conseguía con Blanco 2, con la RAdar Pokémon de 3DS o con eventos cerrados, añádelo legal desde la Librería para completar las Pokédex."
    ],
-   "precaucion": "Insignias (255, Caja de Insignias) y ficha de entrenador (cinco logros) son registros distintos: tener muchas insignias no cambia el color de la ficha."
+   "precaucion": "Insignias (255, Caja de Insignias) y ficha de entrenador (cinco logros) son registros distintos: tener muchas insignias no cambia el color de la ficha, y cumplir una Pokédex no significa que ya hayas recogido su premio."
   },
   "BLACK2-E01": {
    "pasos": [
@@ -392,45 +385,50 @@
   },
   "BLACK2-E02": {
    "pasos": [
-    "Estudios Cinematográficos Pokéwood (norte de Ciudad Hormigón): en cada rodaje combate eligiendo en cada turno la frase que encaja con el guion; el final bueno exige seguirlo.",
-    "Desde el principio: Juncomán, Los invasores, Cronodisea, La puerta al mundo mágico y La niebla roja (y sus secuelas). Tras el Hall de la Fama: Juncomán contraataca y su secuela, El Amorfus, Amor a primera vista y Antifantasmas.",
-    "Por taquilla: Juncobot al lograr 5000 millones en una película; ¡Qué pedazo de oficinista! en el Rango 3 (10 000 millones en total) y Un recuerdo inolvidable en el Rango 4 (25 000 millones). El retorno de Juncomán se abre al rodar todas las demás.",
-    "Rueda todas las películas: obtienes el rango EX, tu camerino y una estatua de bronce en los estudios.",
-    "Pokémon World Tournament (sur de Ciudad Fayenza): tras la Liga gana el Torneo Líderes de Teselia; eso abre Kanto, Johto, Hoenn y Sinnoh; ganarlos abre el Torneo Mundial de Líderes.",
-    "Gana 10 veces el Torneo Mundial de Líderes para abrir el Torneo Campeones (Cintia, Azul, Lance, Rojo, Plubio, Máximo y Mirto, con equipos de nivel 50) y gánalo."
+    "Estudios Cinematográficos Pokéwood (norte de Ciudad Hormigón): elige guion y rueda con los Pokémon de alquiler que marca la película; en el combate elige en cada turno la frase que encaja con el guion. Después mira el estreno en el cine para comprobar el final.",
+    "Necesitas el final bueno para desbloquear la siguiente entrega de cada serie; si sale un final malo o extraño, repite. El final extraño (salirte del guion sin fallar la misión) sirve para que tus propios Pokémon se conviertan en estrellas, pero no desbloquea la secuela.",
+    "Desde el principio: Juncomán, Los invasores, Cronodisea, La puerta al mundo mágico y La niebla roja (con sus secuelas). Tras el Hall de la Fama: Juncomán contraataca y su secuela, El Amorfus, Amor a primera vista y Antifantasmas.",
+    "Las demás dependen de la taquilla: Juncobot al recaudar 5000 millones en una sola película; ¡Qué pedazo de oficinista! al llegar al Rango 3 (10 000 millones en total) y Un recuerdo inolvidable en el Rango 4 (25 000 millones). Al terminar todas se abre El retorno de Juncomán; con ella logras el rango EX, el camerino propio y la estatua de bronce.",
+    "Pokémon World Tournament (sur de Ciudad Fayenza, mostrador de la derecha): tras el Hall de la Fama gana el Torneo Líderes de Teselia; así se abren los de Kanto, Johto, Hoenn y Sinnoh.",
+    "Gana al menos una vez cada uno de esos cinco torneos para abrir el Torneo Mundial de Líderes, y gánalo 10 veces para abrir el Torneo Campeones (Cintia, Azul, Lance, Rojo, Plubio, Máximo y Mirto, con seis Pokémon a nivel 50).",
+    "Gana el Torneo Campeones para el logro de la ficha. El Torneo Fayenza de la historia o vencer a un solo campeón no cuentan. Los torneos de Descarga dependían de Wi-Fi y no hacen falta para nada de esto."
    ],
-   "precaucion": "En el PWT no se admiten Mewtwo, Mew, Lugia, Ho-Oh, Celebi, Kyogre, Groudon, Rayquaza, Jirachi, Deoxys, Dialga, Palkia, Giratina, Manaphy, Darkrai, Shaymin, Arceus, Victini, Reshiram, Zekrom, Kyurem, Keldeo, Meloetta ni Genesect. Los torneos de Descarga dependían de Wi-Fi y no cuentan."
+   "precaucion": "En los torneos del PWT no se admiten Mewtwo, Mew, Lugia, Ho-Oh, Celebi, Kyogre, Groudon, Rayquaza, Jirachi, Deoxys, Dialga, Palkia, Giratina, Manaphy, Darkrai, Shaymin, Arceus, Victini, Reshiram, Zekrom, Kyurem, Keldeo, Meloetta ni Genesect; Latios y Latias tampoco si llevan el Rocío Bondad."
   },
   "BLACK2-N1": {
    "pasos": [
-    "Necesitas una partida de Negro o Blanco en otra consola: en el menú principal de Negro 2 elige Nexo Teselia y luego Nexo Recuerdo, y conecta por comunicación inalámbrica local (la vía Wi-Fi cerró el 20 de mayo de 2014).",
-    "Con los datos recibidos aparecen recuerdos: en el restaurante de Ciudad Gres (Millo, Zeo y Maíz), en el Museo de Ciudad Esmalte (Aloe), en el antiguo gimnasio de Ciudad Teja (Junco) y con el dueño del Musical en Ciudad Mayólica.",
-    "Otros piden progreso: Gerania tras llegar a Pueblo Chamota, el Zoroark de la casa de exmiembros del Equipo Plasma de Fayenza tras participar en el PWT, Lirio en Ciudad Caolín tras la Liga y un Criapokémon junto al PC de cualquier Centro Pokémon.",
-    "Tras hablar con el sabio de Ciudad Fayenza aparecen salvajes por Teselia los Pokémon que liberó N (con «(?)» al empezar el combate; al capturarlos conservan el ID 00002 de N).",
-    "Tras la Liga, Cheren te reta en la Ruta 5 y Bel en Pueblo Arcilla, con equipos basados en tu partida de Negro/Blanco.",
+    "Necesitas una partida de Negro o Blanco en otra consola: en el menú principal de Negro 2 elige Nexo Teselia y luego Nexo Recuerdo, y conecta por comunicación inalámbrica local (la vía de la Conexión Wi-Fi de Nintendo cerró el 20 de mayo de 2014). Los recuerdos dependen de cuánto haya avanzado esa partida.",
+    "Busca los recuerdos en su lugar: restaurante de Ciudad Gres (Millo, Zeo y Maíz), Museo de Ciudad Esmalte (Aloe, Camus y Yakón), antiguo gimnasio de Ciudad Teja (Junco), el dueño del Musical en Ciudad Mayólica y un Criapokémon junto al PC de cualquier Centro Pokémon («Amigos que vienen y van»).",
+    "Otros piden progreso: Gerania, tras llegar a Pueblo Chamota; el Zoroark de la casa de los exmiembros del Equipo Plasma de Ciudad Fayenza, tras participar en el PWT; y Lirio en Ciudad Caolín, tras la Liga. Los complementos del Musical de Negro/Blanco también se traspasan con el Nexo Recuerdo.",
+    "Pokémon de N: con el recuerdo de cómo N liberó a sus Pokémon y tras hablar con el sabio Ruga de Ciudad Fayenza, aparecen salvajes: Purrloin en la Ruta 2; Pidove, Timburr y Tympole en el Bosque Azulejo; Woobat en la Cueva Manantial; Boldore, Joltik, Ferroseed y Klink en la Cueva Electrorroca; y Sandile, Darumaka, Darmanitan, Scraggy y Sigilyph en la Zona Desierto. Al empezar el combate brillan y llevan «(?)»; al capturarlos tienen el EO N y el ID 00002 y no se les puede poner mote. Ese brillo no significa que sean variocolor.",
+    "El Zorua que te regala Ruga en Ciudad Fayenza (nivel 25) es otro encuentro y no necesita el Nexo Recuerdo.",
+    "Tras la Liga, con los datos enlazados, Cheren te reta en la Ruta 5 y Bel en Pueblo Arcilla, con equipos basados en tu partida de Negro/Blanco.",
+    "Los Claros Ocultos son otra cosa: Bel te enseña el de la Ruta 5 al darte Vuelo. Cuando vacías uno puede volver a llenarse mientras caminas, pero no está garantizado. Visitar claros, capturar sus Pokémon con habilidad oculta y ver los recuerdos son objetivos distintos.",
     "Con Pokekeep: los recuerdos no se pueden reproducir sin la otra partida; si te falta algún Pokémon de N para la Pokédex, añádelo legal desde la Librería."
    ],
-   "precaucion": "No marques el objetivo por haber visto los recuerdos en vídeo: necesitas haber recibido los datos de Negro/Blanco en esta partida."
+   "precaucion": "No marques el objetivo por haber visto los recuerdos en vídeo: necesitas haber recibido en esta partida los datos de una de Negro/Blanco."
   },
   "BLACK2-N2": {
    "pasos": [
-    "Comprueba tu edición: en Negro 2 entre la Ruta 14 y la Ruta 15 está Ciudad Negra con el Rascacielos Negro; Bosque Blanco es de Blanco 2.",
-    "Tras vencer a Iris y después a Mirto en Pueblo Ocre, entra en el Rascacielos Negro: en cada zona encuentra al guardián, que tiene la llave de la compuerta, y vence al Entrenador Jefe. Al acabar la zona 5 recibes la clave que permite a un amigo con Blanco 2 cambiar su zona por la tuya.",
-    "Las claves se comparten en Nexo Teselia > Sistema Clave por infrarrojos: pon las dos consolas cerca con los cartuchos apuntándose.",
-    "Ruinas Subterráneas (final del Túnel Yakón): visítalas de día y de noche para leer las dos inscripciones; colócate en el ojo del suelo, da 9 pasos al este y 6 al sur y pulsa A sobre el interruptor antiguo. Se abre la Sala Pico Roca con Regirock (nivel 65).",
-    "Al capturar a Regirock recibes la Clave Hierro: actívala en Nexo Teselia > Sistema Clave y la puerta lleva a la Sala Hierro (Registeel, nivel 65).",
-    "La Clave Iceberg (Regice) solo la tiene quien captura a Regirock en Blanco 2: pídesela a un amigo. Con Pokekeep: si no tienes con quién compartirla, añade a Regice legal desde la Librería.",
-    "Con Regirock, Regice y Registeel en el equipo, ve a la sala del sótano del Monte Tuerca y despierta a Regigigas (nivel 68)."
+    "Comprueba tu edición: en Negro 2 entre la Ruta 14 y la Ruta 15 está Ciudad Negra con el Rascacielos Negro; Bosque Blanco es de Blanco 2 y solo llega con su clave.",
+    "Tras vencer a Iris y después a Mirto en Pueblo Ocre, entra en el Rascacielos Negro y habla con la recepcionista. En cada una de las 10 zonas busca al guardián, que tiene la llave de la compuerta, y vence al Entrenador Jefe. La distribución de las salas cambia en cada intento: usa las pistas de los entrenadores. No puedes usar la mochila; el enfermero o la enfermera de la zona te cura una sola vez tras vencerle.",
+    "Al acabar la zona 5 recibes la clave del Rascacielos Negro (clave rascacielos o cavernogal), que permite a un amigo con Blanco 2 cambiar su zona por la tuya. Las claves se comparten y se activan desde el menú inicial, en Nexo Teselia > Sistema Clave, por infrarrojos, con las dos consolas cerca y los cartuchos apuntándose.",
+    "Completa las 10 zonas y vence a Guayo; después visítalo en casa de Mirto, en Pueblo Ocre, y te regala un Gible variocolor. Lleva un hueco libre en el equipo.",
+    "Ruinas Subterráneas, al final del Túnel Yakón (sale de Ciudad Fayenza): visítalas de día y de noche para leer las dos inscripciones. Colócate en el ojo dibujado ante la gran puerta, da 9 pasos al este y 6 al sur y pulsa A sobre el interruptor antiguo: el ojo se vuelve rojo y se abre la Sala Pico Roca con Regirock (nivel 65).",
+    "Captura a Regirock para recibir la Clave Hierro; si lo debilitas, huyes o lo recibes por intercambio no te dan la clave. Actívala en Nexo Teselia > Sistema Clave y la puerta lleva a la Sala Hierro (Registeel, nivel 65).",
+    "La Clave Iceberg (Regice) solo la consigue quien captura a Regirock en Blanco 2: pídesela a un amigo. Con Pokekeep: si no tienes con quién compartirla, añade a Regice legal desde la Librería.",
+    "Con Regirock, Regice y Registeel en el equipo, ve a la sala del sótano del Monte Tuerca y pulsa A frente a Regigigas (nivel 68); no hace falta que los tres sean de tu propia partida.",
+    "Al vencer a Iris recibes la clave del Modo Reto. Recibir, activar y terminar el juego con un modo son cosas distintas; no borres la partida para conservar una clave."
    ],
-   "precaucion": "La clave del Rascacielos Negro, la de los Regis y la clave del Modo Reto se comparten entre Negro 2 y Blanco 2, pero los Regis no se pueden capturar sin la clave activa."
+   "precaucion": "Las claves son del menú inicial, no objetos de la mochila, y los Regis no se pueden capturar sin la clave activa. Un Regirock ya registrado en la Pokédex no sustituye a capturarlo en estas ruinas."
   },
   "BLACK2-N3": {
    "pasos": [
-    "Tras la Liga, ve viendo los Pokémon de la Pokédex de Teselia: con los 297 vistos (sin Victini, Keldeo, Meloetta ni Genesect) visita a la Profesora Encina en su laboratorio de Pueblo Arcilla.",
-    "Te entrega el Permiso para la Reserva Natural.",
-    "Ve al aeropuerto de Ciudad Loza y elige volar a la Reserva Natural.",
-    "Lleva Falso Tortazo y Ultra Balls: en la Reserva Natural hay un único Haxorus variocolor de nivel 60; guarda antes de combatir.",
-    "Aprovecha para capturar Pokémon de nivel 56-67 (Nuzleaf, Altaria, Girafarig, Fraxure, Kecleon…) y recoger la Maxipepita (hierba oscura) y el Caramelo Raro (sobre la cascada)."
+    "Tras la Liga, ve registrando como vistos los Pokémon de la Pokédex de Teselia de esta edición: hacen falta 297; Victini, Keldeo, Meloetta y Genesect no cuentan.",
+    "Ve al laboratorio de la Profesora Encina en Pueblo Arcilla y pídele que evalúe la Pokédex: te entrega el Permiso para la Reserva Natural. Tener los 297 vistos no basta; hay que recogerlo.",
+    "Ve al aeropuerto de Ciudad Loza y vuela a la Reserva Natural. Para volver usa el avión: la reserva está fuera del mapa de Teselia.",
+    "Lleva Falso Tortazo y Ultra Balls y guarda antes: en la Reserva Natural hay un único Haxorus variocolor de nivel 60. Un Haxorus variocolor criado o intercambiado no cuenta como este encuentro.",
+    "Aprovecha para capturar Pokémon de nivel 56-67 (Nuzleaf, Altaria, Girafarig, Golduck, Noctowl, Fraxure y Kecleon; Audino, Dunsparce y Shiftry en la hierba que se mueve; Basculin, Buizel y Floatzel en el agua) y recoger la Maxipepita (hierba oscura) y el Caramelo Raro (sobre la cascada)."
    ],
    "precaucion": "El permiso exige ver los 297 Pokémon, no capturarlos; capturar los 297 es la condición del Amuleto Oval, que es otro premio."
   },
@@ -509,18 +507,6 @@
    ],
    "precaucion": "Ruta de Negro 2/Blanco 2: no sigas el recorrido de Negro/Blanco, las ciudades y los líderes cambian. Guarda antes de cada Espadachín Místico: si los debilitas no se pierden, pero no reaparecen hasta después de la Liga."
   },
-  "WHITE2-08": {
-   "pasos": [
-    "En Ciudad Caolín Iris te recibe. Gimnasio de Lirio (tipo Dragón): vence al menos a uno de los dos veteranos de la planta para subir. Lleva Hielo o Dragón; recibes la Medalla Leyenda y la MT82 (Cola Dragón).",
-    "En casa de Lirio, el barco volador del Equipo Plasma congela Ciudad Caolín con su cañón de hielo: vence a los reclutas por la ciudad y al miembro del Trío Sombrío cerca de la salida este.",
-    "Cheren te pide ir a Ciudad Marga por el Acuatúnel, que sale al este de Pueblo Arenisca.",
-    "Gimnasio de Ciprián (tipo Agua) en Ciudad Marga: los nenúfares te llevan en la dirección en que subes. Su equipo: Carracosta y Wailord (nivel 49) y Jellicent (51); lleva Planta o Eléctrico. Recibes la Medalla Ola y la MT55 (Escaldar).",
-    "En la Ruta 22 Terrakion (nivel 45) espera en una plataforma; al acercarte Acromo te da su máquina. Después recorre la Ruta 21 hasta la Gruta Marina y, con Surf, ve a su salida este: usa la máquina de Acromo para despertar al Crustle que la bloquea.",
-    "Entra en la Fragata Plasma: en Blanco 2 vence a los reclutas de los camarotes: te dan pistas de la contraseña y uno te entrega la Tarjeta Plasma para cruzar la barrera eléctrica. Vence a Menek y a su recluta en un combate doble con tu rival.",
-    "Cruza la Ruta 22 hasta el Boquete Gigante: sube a la Fragata, vence a Acromo en el puesto de mando y en la cueva del fondo enfréntate a Kyurem Blanco (Kyurem fusionado con el Reshiram de N) y después a Ghechis."
-   ],
-   "precaucion": "Ruta de Negro 2/Blanco 2: no sigas el recorrido de Negro/Blanco, las ciudades y los líderes cambian. La Fragata Plasma tiene puzles distintos en Negro 2 y Blanco 2; si te pide contraseña, vence a todos los reclutas para conseguir las pistas."
-  },
   "WHITE2-09": {
    "pasos": [
     "Cruza la Ruta 23 (hay un refugio que cura y la MT35, Lanzallamas); al final N te da la MO05 (Cascada).",
@@ -534,26 +520,31 @@
   },
   "WHITE2-10": {
    "pasos": [
-    "Ve a Pueblo Ocre y vence a Mirto; después aparece su nieto Guayo, que te espera en el Cavernogal Blanco de Bosque Blanco.",
-    "Cruza el Puente Saeta (ya abierto) hacia el Bosque Azulejo (Cheren te da una Mejora), Ciudad Esmalte (Aloe te da un fósil a elegir) y Ciudad Gres, cuyo gimnasio es ahora un restaurante donde Millo, Zeo y Maíz aceptan combates dobles a diario.",
-    "En el Solar de los Sueños (este de Ciudad Gres) persigue a Latias (nivel 68) hasta acorralarlo; necesitas Corte.",
-    "Sigue al Zoroark de N por las cuevas de la Calle Victoria hasta el Palacio de N semihundido; vence a N y te da el Orbe Claro. Llévalo a lo alto de la Torre Duodraco (Ciudad Teja, ahora accesible por el Monte Tuerca) y captura a Reshiram (nivel 70).",
-    "Vuelve a la cueva norte del Boquete Gigante y captura a Kyurem (nivel 70); deja la Punta ADN para fusionarlo.",
-    "Entra en la Cueva Psique (Ruta 20, con Surf y Cascada) y sigue al trío del lago: Uxie ante el Museo de Ciudad Esmalte, Mesprit en la cima de la Torre de los Cielos y Azelf en el oeste de la Ruta 23 (todos nivel 65).",
-    "Recoge la Piedra Magma en la Ruta 18 (Heatran en la Montaña Reversia) y la Pluma Lunar en Villa Horroris (Cresselia en el Puente Progreso). En el Túnel Yakón, las Ruinas Subterráneas guardan a los Regis.",
-    "En el Laboratorio P+P (Ruta 18) vuelve a vencer a Acromo en la Fragata Plasma: te da una Master Ball."
+    "Ve a Pueblo Ocre y vence a Mirto en su revancha del postgame; al acabar aparece su nieto Guayo, que te espera en el Cavernogal Blanco de Bosque Blanco. Esta victoria y la de la Liga son logros distintos.",
+    "Desde Ciudad Porcelana cruza el Puente Saeta, ya abierto, hasta el Bosque Azulejo: Cheren te lleva al fondo, donde un sabio te habla de N, y te da una Mejora. En Ciudad Esmalte Aloe te deja elegir el Fósil Pluma (Archen) o el Fósil Tapa (Tirtouga). En Ciudad Gres el gimnasio es ahora un restaurante: Millo, Zeo y Maíz aceptan cada día un combate doble.",
+    "En el Solar de los Sueños (este de Ciudad Gres) Latias (nivel 68) te sale al paso y huye. Ve primero a las escaleras del sótano; cuando reaparezca, vuelve atrás y entra en las ruinas con Corte; sigue hacia arriba, sube las escaleras de las ruinas, ve al extremo suroeste de la zona superior y por último al extremo noreste, donde se cansa y te ataca. Guarda antes. Al capturarlo recibes el Rocío Bondad.",
+    "En la Calle Victoria sigue al Zoroark de N por las cuevas de la derecha hasta el Palacio de N semihundido. Acompaña a N a su antiguo cuarto y a la sala del trono y vence a su Reshiram (nivel 70): te da el Orbe Claro (dentro también está la MT50, Sofoco).",
+    "Lleva el Orbe Claro a Ciudad Teja (el Monte Tuerca ya está abierto) y sube la Torre Duodraco hasta la cima; por el camino hay una Griseosfera, una Diamansfera y una Lustresfera. Arriba el orbe se convierte en Reshiram: captúralo (nivel 70).",
+    "Vuelve a la cueva del norte del Boquete Gigante (final de la Ruta 22) y captura a Kyurem (nivel 70) en su forma normal. Deja la Punta ADN, que sirve para fusionarlo con Reshiram y separarlos cuando quieras.",
+    "Entra en la Cueva Psique desde el agua de la Ruta 20 (Surf y Cascada) y presencia con la Profesora Encina la huida del trío del lago. Uxie aparece en el centro del círculo ante la puerta del Museo de Ciudad Esmalte; Mesprit, junto a las escaleras de la cima de la Torre de los Cielos; Azelf, en el oeste de la Ruta 23 tras el puzle de rocas (Corte y Fuerza). Los tres a nivel 65.",
+    "Heatran: llega a la Ruta 18 por el agua de la Ruta 17 (Surf desde la Ruta 1), recoge la Piedra Magma en uno de sus riscos altos y actívala en la Sala Renacer, al fondo de la Montaña Reversia (la cueva que te señaló Bel), nivel 68.",
+    "Cresselia: en Villa Horroris, junto a Pueblo Chamota, baja por las escaleras de arriba a la izquierda, ve a la derecha y sube; sube a la planta alta por la derecha y sigue a la izquierda; vuelve a bajar por la izquierda, rodea a la derecha y sube por las escaleras del centro siguiendo a la joven fantasma. En la habitación central recoge la Pluma Lunar y llévala al centro del Puente Progreso (nivel 68).",
+    "En Pueblo Arenisca tu rival te da la MO06 (Buceo) y te reta. Con Buceo entra en las Ruinas Submarinas desde la zona oscura de la Bahía Arenisca: cuatro plantas en laberinto con un límite de 500 pasos por visita; Menek te da un libro de Ghechis para traducir sus inscripciones. Cintia te espera en Pueblo Arenisca en primavera y verano.",
+    "En el Laboratorio P+P vuelve a vencer a Acromo en la Fragata Plasma (te da una Master Ball) y en Ciudad Teja reta al Trío Sombrío, una vez por estación."
    ],
-   "precaucion": "Bosque Blanco y el Cavernogal Blanco solo existen en Blanco 2; Latios, Registeel y otros exclusivos de Negro 2 requieren intercambio o claves de un amigo."
+   "precaucion": "Bosque Blanco y el Cavernogal Blanco solo existen en Blanco 2; Latios, Registeel y otros exclusivos de Negro 2 requieren intercambio o claves de un amigo. El dragón de N en estas secuelas es el contrario al que capturaste en Negro/Blanco: no confundas las exclusividades de los dos juegos."
   },
   "WHITE2-11": {
    "pasos": [
-    "Cada vez que ganes insignias, habla con Don Insignio en cualquier Centro Pokémon para que te las entregue; los rangos se reciben en el Insigniárium, planta 1 del edificio más al oeste de Ciudad Porcelana.",
-    "Pokédex de Teselia: con los 297 Pokémon vistos (sin Victini, Keldeo, Meloetta ni Genesect) la Profesora Encina te da el permiso para la Reserva Natural; con todos capturados, el Amuleto Oval.",
-    "Pokédex Nacional: capturada sin los singulares de evento, Carrasco Encina te manda a su hija, que te da el Amuleto Iris; el Director del Juego de la Torre de Game Freak te da el diploma.",
-    "Ficha de entrenador: cambia de color (azul, morado, naranja, plata, oro y último color) con cinco logros: superar la Liga, completar la Pokédex Nacional, todas las películas de Pokéwood, el Torneo Campeones del PWT y el Nexárbol a nivel 30 en negro y en blanco.",
+    "Pokédex Nacional: exige 636 especies, toda la Nacional menos Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta y Genesect (Lugia y Ho-Oh sí cuentan). Compara especie a especie: una especie excluida no sustituye a una exigida.",
+    "Pokédex de Teselia: con los 297 Pokémon vistos (sin Victini, Keldeo, Meloetta ni Genesect), la Profesora Encina, en su laboratorio de Pueblo Arcilla, te da el Permiso para la Reserva Natural; con todos capturados, el Amuleto Oval. Son dos premios distintos y hay que recogerlos hablando con ella.",
+    "Con la Nacional capturada, habla con Carrasco Encina en Pueblo Arcilla: te dice que su hija tiene un regalo y la Profesora Encina te entrega el Amuleto Iris. El Director del Juego de la Torre de Game Freak (planta 21) te da los diplomas.",
+    "Ficha de entrenador: cambia de color (azul, morado, naranja, plata, oro y último color) con cinco logros independientes: superar la Liga, completar la Pokédex Nacional, rodar todas las películas de Pokéwood, ganar el Torneo Campeones del PWT y llevar el Nexárbol a nivel 30 o más en negro y en blanco (cada nivel por separado, no la suma).",
+    "Sube el Nexárbol con las Misiones Festival de la Zona Nexo (C-Gear); se pueden hacer solo o con otros jugadores por conexión local.",
+    "Insignias: cada vez que ganes una, habla con Don Insignio en cualquier Centro Pokémon para recogerla; las Insignias Pista de la Caja de Insignias te dicen lo que falta y los rangos se recogen en el Insigniárium, planta 1 del edificio más al oeste de Ciudad Porcelana.",
     "Con Pokekeep: lo que solo se conseguía con Negro 2, con la RAdar Pokémon de 3DS o con eventos cerrados, añádelo legal desde la Librería para completar las Pokédex."
    ],
-   "precaucion": "Insignias (255, Caja de Insignias) y ficha de entrenador (cinco logros) son registros distintos: tener muchas insignias no cambia el color de la ficha."
+   "precaucion": "Insignias (255, Caja de Insignias) y ficha de entrenador (cinco logros) son registros distintos: tener muchas insignias no cambia el color de la ficha, y cumplir una Pokédex no significa que ya hayas recogido su premio."
   },
   "WHITE2-E01": {
    "pasos": [
@@ -568,47 +559,76 @@
   },
   "WHITE2-E02": {
    "pasos": [
-    "Estudios Cinematográficos Pokéwood (norte de Ciudad Hormigón): en cada rodaje combate eligiendo en cada turno la frase que encaja con el guion; el final bueno exige seguirlo.",
-    "Desde el principio: Juncomán, Los invasores, Cronodisea, La puerta al mundo mágico y La niebla roja (y sus secuelas). Tras el Hall de la Fama: Juncomán contraataca y su secuela, El Amorfus, Amor a primera vista y Antifantasmas.",
-    "Por taquilla: Juncobot al lograr 5000 millones en una película; ¡Qué pedazo de oficinista! en el Rango 3 (10 000 millones en total) y Un recuerdo inolvidable en el Rango 4 (25 000 millones). El retorno de Juncomán se abre al rodar todas las demás.",
-    "Rueda todas las películas: obtienes el rango EX, tu camerino y una estatua de bronce en los estudios.",
-    "Pokémon World Tournament (sur de Ciudad Fayenza): tras la Liga gana el Torneo Líderes de Teselia; eso abre Kanto, Johto, Hoenn y Sinnoh; ganarlos abre el Torneo Mundial de Líderes.",
-    "Gana 10 veces el Torneo Mundial de Líderes para abrir el Torneo Campeones (Cintia, Azul, Lance, Rojo, Plubio, Máximo y Mirto, con equipos de nivel 50) y gánalo."
+    "Estudios Cinematográficos Pokéwood (norte de Ciudad Hormigón): elige guion y rueda con los Pokémon de alquiler que marca la película; en el combate elige en cada turno la frase que encaja con el guion. Después mira el estreno en el cine para comprobar el final.",
+    "Necesitas el final bueno para desbloquear la siguiente entrega de cada serie; si sale un final malo o extraño, repite. El final extraño (salirte del guion sin fallar la misión) sirve para que tus propios Pokémon se conviertan en estrellas, pero no desbloquea la secuela.",
+    "Desde el principio: Juncomán, Los invasores, Cronodisea, La puerta al mundo mágico y La niebla roja (con sus secuelas). Tras el Hall de la Fama: Juncomán contraataca y su secuela, El Amorfus, Amor a primera vista y Antifantasmas.",
+    "Las demás dependen de la taquilla: Juncobot al recaudar 5000 millones en una sola película; ¡Qué pedazo de oficinista! al llegar al Rango 3 (10 000 millones en total) y Un recuerdo inolvidable en el Rango 4 (25 000 millones). Al terminar todas se abre El retorno de Juncomán; con ella logras el rango EX, el camerino propio y la estatua de bronce.",
+    "Pokémon World Tournament (sur de Ciudad Fayenza, mostrador de la derecha): tras el Hall de la Fama gana el Torneo Líderes de Teselia; así se abren los de Kanto, Johto, Hoenn y Sinnoh.",
+    "Gana al menos una vez cada uno de esos cinco torneos para abrir el Torneo Mundial de Líderes, y gánalo 10 veces para abrir el Torneo Campeones (Cintia, Azul, Lance, Rojo, Plubio, Máximo y Mirto, con seis Pokémon a nivel 50).",
+    "Gana el Torneo Campeones para el logro de la ficha. El Torneo Fayenza de la historia o vencer a un solo campeón no cuentan. Los torneos de Descarga dependían de Wi-Fi y no hacen falta para nada de esto."
    ],
-   "precaucion": "En el PWT no se admiten Mewtwo, Mew, Lugia, Ho-Oh, Celebi, Kyogre, Groudon, Rayquaza, Jirachi, Deoxys, Dialga, Palkia, Giratina, Manaphy, Darkrai, Shaymin, Arceus, Victini, Reshiram, Zekrom, Kyurem, Keldeo, Meloetta ni Genesect. Los torneos de Descarga dependían de Wi-Fi y no cuentan."
+   "precaucion": "En los torneos del PWT no se admiten Mewtwo, Mew, Lugia, Ho-Oh, Celebi, Kyogre, Groudon, Rayquaza, Jirachi, Deoxys, Dialga, Palkia, Giratina, Manaphy, Darkrai, Shaymin, Arceus, Victini, Reshiram, Zekrom, Kyurem, Keldeo, Meloetta ni Genesect; Latios y Latias tampoco si llevan el Rocío Bondad."
   },
   "WHITE2-N1": {
    "pasos": [
-    "Necesitas una partida de Negro o Blanco en otra consola: en el menú principal de Blanco 2 elige Nexo Teselia y luego Nexo Recuerdo, y conecta por comunicación inalámbrica local (la vía Wi-Fi cerró el 20 de mayo de 2014).",
-    "Con los datos recibidos aparecen recuerdos: en el restaurante de Ciudad Gres (Millo, Zeo y Maíz), en el Museo de Ciudad Esmalte (Aloe), en el antiguo gimnasio de Ciudad Teja (Junco) y con el dueño del Musical en Ciudad Mayólica.",
-    "Otros piden progreso: Gerania tras llegar a Pueblo Chamota, el Zoroark de la casa de exmiembros del Equipo Plasma de Fayenza tras participar en el PWT, Lirio en Ciudad Caolín tras la Liga y un Criapokémon junto al PC de cualquier Centro Pokémon.",
-    "Tras hablar con el sabio de Ciudad Fayenza aparecen salvajes por Teselia los Pokémon que liberó N (con «(?)» al empezar el combate; al capturarlos conservan el ID 00002 de N).",
-    "Tras la Liga, Cheren te reta en la Ruta 5 y Bel en Pueblo Arcilla, con equipos basados en tu partida de Negro/Blanco.",
+    "Necesitas una partida de Negro o Blanco en otra consola: en el menú principal de Blanco 2 elige Nexo Teselia y luego Nexo Recuerdo, y conecta por comunicación inalámbrica local (la vía de la Conexión Wi-Fi de Nintendo cerró el 20 de mayo de 2014). Los recuerdos dependen de cuánto haya avanzado esa partida.",
+    "Busca los recuerdos en su lugar: restaurante de Ciudad Gres (Millo, Zeo y Maíz), Museo de Ciudad Esmalte (Aloe, Camus y Yakón), antiguo gimnasio de Ciudad Teja (Junco), el dueño del Musical en Ciudad Mayólica y un Criapokémon junto al PC de cualquier Centro Pokémon («Amigos que vienen y van»).",
+    "Otros piden progreso: Gerania, tras llegar a Pueblo Chamota; el Zoroark de la casa de los exmiembros del Equipo Plasma de Ciudad Fayenza, tras participar en el PWT; y Lirio en Ciudad Caolín, tras la Liga. Los complementos del Musical de Negro/Blanco también se traspasan con el Nexo Recuerdo.",
+    "Pokémon de N: con el recuerdo de cómo N liberó a sus Pokémon y tras hablar con el sabio Ruga de Ciudad Fayenza, aparecen salvajes: Purrloin en la Ruta 2; Pidove, Timburr y Tympole en el Bosque Azulejo; Woobat en la Cueva Manantial; Boldore, Joltik, Ferroseed y Klink en la Cueva Electrorroca; y Sandile, Darumaka, Darmanitan, Scraggy y Sigilyph en la Zona Desierto. Al empezar el combate brillan y llevan «(?)»; al capturarlos tienen el EO N y el ID 00002 y no se les puede poner mote. Ese brillo no significa que sean variocolor.",
+    "El Zorua que te regala Ruga en Ciudad Fayenza (nivel 25) es otro encuentro y no necesita el Nexo Recuerdo.",
+    "Tras la Liga, con los datos enlazados, Cheren te reta en la Ruta 5 y Bel en Pueblo Arcilla, con equipos basados en tu partida de Negro/Blanco.",
+    "Los Claros Ocultos son otra cosa: Bel te enseña el de la Ruta 5 al darte Vuelo. Cuando vacías uno puede volver a llenarse mientras caminas, pero no está garantizado. Visitar claros, capturar sus Pokémon con habilidad oculta y ver los recuerdos son objetivos distintos.",
     "Con Pokekeep: los recuerdos no se pueden reproducir sin la otra partida; si te falta algún Pokémon de N para la Pokédex, añádelo legal desde la Librería."
    ],
-   "precaucion": "No marques el objetivo por haber visto los recuerdos en vídeo: necesitas haber recibido los datos de Negro/Blanco en esta partida."
+   "precaucion": "No marques el objetivo por haber visto los recuerdos en vídeo: necesitas haber recibido en esta partida los datos de una de Negro/Blanco."
   },
   "WHITE2-N2": {
    "pasos": [
-    "Comprueba tu edición: en Blanco 2 entre la Ruta 14 y la Ruta 15 está Bosque Blanco con el Cavernogal Blanco; Ciudad Negra es de Negro 2.",
-    "Tras vencer a Iris y después a Mirto en Pueblo Ocre, entra en el Cavernogal Blanco: en cada zona encuentra al guardián, que tiene la llave de la compuerta, y vence al Entrenador Jefe. Al acabar la zona 5 recibes la clave que permite a un amigo con Negro 2 cambiar su zona por la tuya.",
-    "Las claves se comparten en Nexo Teselia > Sistema Clave por infrarrojos: pon las dos consolas cerca con los cartuchos apuntándose.",
-    "Ruinas Subterráneas (final del Túnel Yakón): visítalas de día y de noche para leer las dos inscripciones; colócate en el ojo del suelo, da 9 pasos al este y 6 al sur y pulsa A sobre el interruptor antiguo. Se abre la Sala Pico Roca con Regirock (nivel 65).",
-    "Al capturar a Regirock recibes la Clave Iceberg: actívala en Nexo Teselia > Sistema Clave y la puerta lleva a la Sala Iceberg (Regice, nivel 65).",
-    "La Clave Hierro (Registeel) solo la tiene quien captura a Regirock en Negro 2: pídesela a un amigo. Con Pokekeep: si no tienes con quién compartirla, añade a Registeel legal desde la Librería.",
-    "Con Regirock, Regice y Registeel en el equipo, ve a la sala del sótano del Monte Tuerca y despierta a Regigigas (nivel 68)."
+    "Comprueba tu edición: en Blanco 2 entre la Ruta 14 y la Ruta 15 está Bosque Blanco con el Cavernogal Blanco; Ciudad Negra es de Negro 2 y solo llega con su clave.",
+    "Tras vencer a Iris y después a Mirto en Pueblo Ocre, entra en el Cavernogal Blanco y habla con la recepcionista. En cada una de las 10 zonas busca al guardián, que tiene la llave de la compuerta, y vence al Entrenador Jefe. La distribución de las salas cambia en cada intento: usa las pistas de los entrenadores. No puedes usar la mochila; el enfermero o la enfermera de la zona te cura una sola vez tras vencerle.",
+    "Al acabar la zona 5 recibes la clave del Cavernogal Blanco (clave rascacielos o cavernogal), que permite a un amigo con Negro 2 cambiar su zona por la tuya. Las claves se comparten y se activan desde el menú inicial, en Nexo Teselia > Sistema Clave, por infrarrojos, con las dos consolas cerca y los cartuchos apuntándose.",
+    "Completa las 10 zonas y vence a Guayo; después visítalo en casa de Mirto, en Pueblo Ocre, y te regala un Dratini variocolor. Lleva un hueco libre en el equipo.",
+    "Ruinas Subterráneas, al final del Túnel Yakón (sale de Ciudad Fayenza): visítalas de día y de noche para leer las dos inscripciones. Colócate en el ojo dibujado ante la gran puerta, da 9 pasos al este y 6 al sur y pulsa A sobre el interruptor antiguo: el ojo se vuelve rojo y se abre la Sala Pico Roca con Regirock (nivel 65).",
+    "Captura a Regirock para recibir la Clave Iceberg; si lo debilitas, huyes o lo recibes por intercambio no te dan la clave. Actívala en Nexo Teselia > Sistema Clave y la puerta lleva a la Sala Iceberg (Regice, nivel 65).",
+    "La Clave Hierro (Registeel) solo la consigue quien captura a Regirock en Negro 2: pídesela a un amigo. Con Pokekeep: si no tienes con quién compartirla, añade a Registeel legal desde la Librería.",
+    "Con Regirock, Regice y Registeel en el equipo, ve a la sala del sótano del Monte Tuerca y pulsa A frente a Regigigas (nivel 68); no hace falta que los tres sean de tu propia partida.",
+    "Al vencer a Iris recibes la clave del Modo Ayuda. Recibir, activar y terminar el juego con un modo son cosas distintas; no borres la partida para conservar una clave."
    ],
-   "precaucion": "La clave del Cavernogal Blanco, la de los Regis y la clave del Modo Ayuda se comparten entre Negro 2 y Blanco 2, pero los Regis no se pueden capturar sin la clave activa."
+   "precaucion": "Las claves son del menú inicial, no objetos de la mochila, y los Regis no se pueden capturar sin la clave activa. Un Regirock ya registrado en la Pokédex no sustituye a capturarlo en estas ruinas."
   },
   "WHITE2-N3": {
    "pasos": [
-    "Tras la Liga, ve viendo los Pokémon de la Pokédex de Teselia: con los 297 vistos (sin Victini, Keldeo, Meloetta ni Genesect) visita a la Profesora Encina en su laboratorio de Pueblo Arcilla.",
-    "Te entrega el Permiso para la Reserva Natural.",
-    "Ve al aeropuerto de Ciudad Loza y elige volar a la Reserva Natural.",
-    "Lleva Falso Tortazo y Ultra Balls: en la Reserva Natural hay un único Haxorus variocolor de nivel 60; guarda antes de combatir.",
-    "Aprovecha para capturar Pokémon de nivel 56-67 (Nuzleaf, Altaria, Girafarig, Fraxure, Kecleon…) y recoger la Maxipepita (hierba oscura) y el Caramelo Raro (sobre la cascada)."
+    "Tras la Liga, ve registrando como vistos los Pokémon de la Pokédex de Teselia de esta edición: hacen falta 297; Victini, Keldeo, Meloetta y Genesect no cuentan.",
+    "Ve al laboratorio de la Profesora Encina en Pueblo Arcilla y pídele que evalúe la Pokédex: te entrega el Permiso para la Reserva Natural. Tener los 297 vistos no basta; hay que recogerlo.",
+    "Ve al aeropuerto de Ciudad Loza y vuela a la Reserva Natural. Para volver usa el avión: la reserva está fuera del mapa de Teselia.",
+    "Lleva Falso Tortazo y Ultra Balls y guarda antes: en la Reserva Natural hay un único Haxorus variocolor de nivel 60. Un Haxorus variocolor criado o intercambiado no cuenta como este encuentro.",
+    "Aprovecha para capturar Pokémon de nivel 56-67 (Nuzleaf, Altaria, Girafarig, Golduck, Noctowl, Fraxure y Kecleon; Audino, Dunsparce y Shiftry en la hierba que se mueve; Basculin, Buizel y Floatzel en el agua) y recoger la Maxipepita (hierba oscura) y el Caramelo Raro (sobre la cascada)."
    ],
    "precaucion": "El permiso exige ver los 297 Pokémon, no capturarlos; capturar los 297 es la condición del Amuleto Oval, que es otro premio."
+  },
+  "BLACK2-08": {
+   "pasos": [
+    "En Ciudad Caolín Iris te recibe. Gimnasio de Lirio (tipo Dragón): vence al menos a uno de los dos veteranos de la planta para subir. Lleva Hielo o Dragón; recibes la Medalla Leyenda y la MT82 (Cola Dragón).",
+    "En casa de Lirio, el barco volador del Equipo Plasma congela Ciudad Caolín con su cañón de hielo: vence a los reclutas por la ciudad y al miembro del Trío Sombrío cerca de la salida este.",
+    "Cheren te pide ir a Ciudad Marga por el Acuatúnel, que sale al este de Pueblo Arenisca.",
+    "Gimnasio de Ciprián (tipo Agua) en Ciudad Marga: los nenúfares te llevan en la dirección en que subes. Su equipo: Carracosta y Wailord (nivel 49) y Jellicent (51); lleva Planta o Eléctrico. Recibes la Medalla Ola y la MT55 (Escaldar).",
+    "En la Ruta 22 Terrakion (nivel 45) espera en una plataforma; al acercarte Acromo te da su máquina. Después recorre la Ruta 21 hasta la Gruta Marina y, con Surf, ve a su salida este: usa la máquina de Acromo para despertar al Crustle que la bloquea.",
+    "Entra en la Fragata Plasma, ahora fondeada junto a la Ruta 21. Una barrera eléctrica corta el paso y el modo de quitarla cambia según la edición: o bien usas los teletransportadores de los camarotes para encontrar y pulsar cuatro interruptores, o bien vences a todos los reclutas de los camarotes, que te dan pistas de una contraseña, y consigues la Tarjeta Plasma para teclearla. La mecánica que no te toque ahora aparece en la siguiente visita, en el Boquete Gigante. Pasada la barrera, usa el teletransportador hasta la sala de Menek y vence a Menek y a su recluta en un combate doble con tu rival.",
+    "Cruza la Ruta 22 hasta el Boquete Gigante: sube a la Fragata (vuelve a haber barrera eléctrica: interruptores o contraseña, la mecánica que no hiciste en la Ruta 21), vence a Acromo en el puesto de mando y en la cueva del fondo enfréntate a Kyurem Negro (Kyurem fusionado con el Zekrom de N) y después a Ghechis."
+   ],
+   "precaucion": "Ruta de Negro 2/Blanco 2: no sigas el recorrido de Negro/Blanco, las ciudades y los líderes cambian. Las fuentes no coinciden en qué edición usa interruptores y cuál la contraseña en cada visita a la Fragata Plasma: sigue lo que veas en el barco y vence a todos los reclutas, que dan las pistas de la contraseña."
+  },
+  "WHITE2-08": {
+   "pasos": [
+    "En Ciudad Caolín Iris te recibe. Gimnasio de Lirio (tipo Dragón): vence al menos a uno de los dos veteranos de la planta para subir. Lleva Hielo o Dragón; recibes la Medalla Leyenda y la MT82 (Cola Dragón).",
+    "En casa de Lirio, el barco volador del Equipo Plasma congela Ciudad Caolín con su cañón de hielo: vence a los reclutas por la ciudad y al miembro del Trío Sombrío cerca de la salida este.",
+    "Cheren te pide ir a Ciudad Marga por el Acuatúnel, que sale al este de Pueblo Arenisca.",
+    "Gimnasio de Ciprián (tipo Agua) en Ciudad Marga: los nenúfares te llevan en la dirección en que subes. Su equipo: Carracosta y Wailord (nivel 49) y Jellicent (51); lleva Planta o Eléctrico. Recibes la Medalla Ola y la MT55 (Escaldar).",
+    "En la Ruta 22 Terrakion (nivel 45) espera en una plataforma; al acercarte Acromo te da su máquina. Después recorre la Ruta 21 hasta la Gruta Marina y, con Surf, ve a su salida este: usa la máquina de Acromo para despertar al Crustle que la bloquea.",
+    "Entra en la Fragata Plasma, ahora fondeada junto a la Ruta 21. Una barrera eléctrica corta el paso y el modo de quitarla cambia según la edición: o bien usas los teletransportadores de los camarotes para encontrar y pulsar cuatro interruptores, o bien vences a todos los reclutas de los camarotes, que te dan pistas de una contraseña, y consigues la Tarjeta Plasma para teclearla. La mecánica que no te toque ahora aparece en la siguiente visita, en el Boquete Gigante. Pasada la barrera, usa el teletransportador hasta la sala de Menek y vence a Menek y a su recluta en un combate doble con tu rival.",
+    "Cruza la Ruta 22 hasta el Boquete Gigante: sube a la Fragata (vuelve a haber barrera eléctrica: interruptores o contraseña, la mecánica que no hiciste en la Ruta 21), vence a Acromo en el puesto de mando y en la cueva del fondo enfréntate a Kyurem Blanco (Kyurem fusionado con el Reshiram de N) y después a Ghechis."
+   ],
+   "precaucion": "Ruta de Negro 2/Blanco 2: no sigas el recorrido de Negro/Blanco, las ciudades y los líderes cambian. Las fuentes no coinciden en qué edición usa interruptores y cuál la contraseña en cada visita a la Fragata Plasma: sigue lo que veas en el barco y vence a todos los reclutas, que dan las pistas de la contraseña."
   }
  },
  "objetivos": {

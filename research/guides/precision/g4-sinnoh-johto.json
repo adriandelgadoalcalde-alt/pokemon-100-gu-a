@@ -1,0 +1,994 @@
+{
+ "misiones": {
+  "DIAMOND-01": {
+   "pasos": [
+    "En Pueblo Hojaverde baja de tu habitación, entra en la casa de tu amigo Israel (la del noroeste) y síguelo hasta la Ruta 201, al norte del pueblo.",
+    "Id juntos hacia el oeste hasta el Lago Veraz: veréis al profesor Serbal y a su ayudante (Maya o León) marcharse; al entrar en la hierba alta os atacan dos Starly salvajes.",
+    "Abre el maletín que olvidó el profesor y elige a Turtwig, Chimchar o Piplup (nivel 5); Israel se queda con el que tiene ventaja de tipo sobre el tuyo. Vence al Starly.",
+    "Vuelve hacia Pueblo Hojaverde: el profesor y su ayudante te paran y te piden que vayas a Pueblo Arena. En casa, tu madre te da las Deportivas para correr.",
+    "Cruza la Ruta 201 hacia el este hasta Pueblo Arena y entra en el laboratorio de Serbal: te regala el Pokémon que elegiste y te entrega la Pokédex.",
+    "Vuelve a casa: tu madre te da el Diario y la madre de Israel un paquete para él. En la Ruta 202 el ayudante te enseña a capturar y te da cinco Poké Balls: captura tu primer Pokémon."
+   ],
+   "precaucion": "El inicial no se puede cambiar. Turtwig y Piplup tienen ventaja contra Roco (tipo Roca); con Chimchar conviene capturar un Machop en la Ruta 207 o evolucionarlo a Monferno. Platino cambia esta introducción."
+  },
+  "DIAMOND-02": {
+   "pasos": [
+    "En Ciudad Jubileo entrega el paquete a Israel en la Escuela de Entrenadores (te da un Mapa) y vence a Israel en la Ruta 203, al este de la ciudad.",
+    "Cruza la Puerta Pirita: el primer montañero te regala la MO06 Golpe roca. Sal por el otro lado a Ciudad Pirita.",
+    "Israel te cuenta que el líder, Roco, se ha ido a la Mina Pirita, al sur de la ciudad: entra en la mina, recórrela hasta el fondo y habla con Roco para que vuelva al gimnasio.",
+    "En el gimnasio Pirita vence a sus entrenadores y a Roco (tipo Roca) con ataques de tipo Agua, Planta o Lucha.",
+    "Recibe la medalla Lignito (permite usar Golpe roca fuera de combate) y la MT76 Trampa rocas."
+   ],
+   "precaucion": "Hasta que no hables con Roco en la Mina Pirita, el gimnasio no tiene líder; y sin la medalla Lignito no puedes romper las rocas que cierran la salida norte de Ciudad Jubileo (Ruta 204)."
+  },
+  "DIAMOND-03": {
+   "pasos": [
+    "En Ciudad Jubileo vence en combate doble a dos miembros del Equipo Galaxia junto al ayudante de Serbal; sigue al norte por la Ruta 204 y la Senda Desolada (rompe las rocas con Golpe roca) hasta Pueblo Aromaflor.",
+    "En la Ruta 205 una niña te pide ayuda para su padre: en el Prado Aromaflor vence a los dos reclutas Galaxia para conseguir la Llave central y, en el Valle Eólico, vence a la comandante Venus.",
+    "Cruza el Bosque Vetusto con Malta como acompañante (su Chansey cura a tu equipo tras cada combate) y llega a Ciudad Vetusta.",
+    "Acércate al Edificio Galaxia, al norte del Centro Pokémon: Cintia te regala la MO01 Corte.",
+    "En el gimnasio Vetusta busca y vence a los cuatro entrenadores escondidos entre los árboles para que aparezca Gardenia (tipo Planta); usa Fuego, Volador, Hielo o Bicho. Recibe la medalla Bosque, que permite usar Corte.",
+    "Corta los árboles de la entrada del Edificio Galaxia, sube a la última planta y vence a la comandante Ceres para liberar a los Pokémon de Pepe Volata.",
+    "Ve a la tienda de bicis de Pepe Volata, en Vetusta: te regala la Bicicleta (con B cambias entre marcha rápida y acrobática).",
+    "Antes de irte, habla con el Hombre Topo (casa junto al Centro Pokémon de Vetusta): te da el Kit de exploración para bajar al Subsuelo."
+   ],
+   "precaucion": "En Platino esta parte cambia (otro reto en el gimnasio, Cintia te da además un Huevo de Togepi antes de la bici y el orden de los gimnasios siguientes es distinto): no mezcles las dos guías."
+  },
+  "DIAMOND-04": {
+   "pasos": [
+    "Sal por el sur de Ciudad Vetusta: en el edificio de la Ruta Ciclista un ayudante de Serbal te da el Repartir experiencia. Baja en bici a la Ruta 206 y sigue por la Ruta 207 y el Monte Corona hasta la Ruta 208.",
+    "Llega a Ciudad Corazón: el gimnasio de Fantina no te acepta aún. En el Auditorio tu madre te regala un traje para los concursos; al salir por el este, Israel te reta.",
+    "Por la Ruta 209 sube a la Torre Perdida (cinco plantas de tumbas): en lo más alto recibes la MO04 Fuerza.",
+    "Sigue a Pueblo Sosiego, toma el tramo sur de la Ruta 210 (unos Psyduck bloquean el norte) y cruza la lluviosa Ruta 215 hasta Ciudad Rocavelo.",
+    "En el gimnasio Rocavelo vence a Brega (tipo Lucha) con Pokémon de tipo Volador, Psíquico o Fantasma; contra su Lucario, Fuego, Lucha o Tierra. Recibe la medalla Adoquín (permite Vuelo fuera de combate) y la MT60 Puño drenaje.",
+    "Al salir, el ayudante de Serbal te pide ayuda: vence a los dos reclutas Galaxia y, dentro del Almacén Galaxia, recoge la MO02 Vuelo, que está entre dos contenedores.",
+    "En Poké-reloj S.A. de Ciudad Jubileo recoge la función Mapa para el Poké-reloj (se desbloquea con la tercera medalla)."
+   ],
+   "precaucion": "En Diamante y Perla Fantina no está en su gimnasio hasta que tengas la MO03 Surf de Pueblo Caelestis: es tu quinta líder, no la tercera (en Platino sí es la tercera)."
+  },
+  "DIAMOND-05": {
+   "pasos": [
+    "Sal por el sur de Ciudad Rocavelo a la Ruta 214 y sigue por la Ruta 213 (Hotel Gran Lago y Orilla Valor) hasta Ciudad Pradera.",
+    "En la entrada del Gran Pantano (500 ₽, 30 Safari Balls, 500 pasos) el primer chico te regala la MO05 Despejar: la necesitarás en la Ruta 210 norte.",
+    "En el gimnasio Pradera pulsa los botones de colores que suben y bajan el nivel del agua para abrir camino entre los seis entrenadores hasta Mananti (tipo Agua); vence con ataques Eléctrico o Planta.",
+    "Recibe la medalla Ciénaga y la MT55 Salmuera.",
+    "Habla con el recluta Galaxia que hay a la derecha de la entrada del Gran Pantano y persíguelo: vence a Israel cuando te corte el paso, sigue al recluta por la playa de la Ruta 213 y véncelo junto a la entrada del Lago Valor.",
+    "Cintia aparece y te da la Poción Secreta para curar a los Psyduck de la Ruta 210."
+   ],
+   "precaucion": "Sin la Poción Secreta no hay forma de apartar a los Psyduck, y sin la MO05 Despejar la niebla de la Ruta 210 norte hace fallar tus ataques: recoge las dos antes de seguir."
+  },
+  "DIAMOND-06": {
+   "pasos": [
+    "Vuela a Pueblo Sosiego y, junto al Café Rodeo, usa la Poción Secreta con los Psyduck de la Ruta 210. Cintia te pide que entregues un Talismán a su abuela, en Pueblo Caelestis.",
+    "Cruza la Ruta 210 norte (usa Despejar contra la niebla) hasta Pueblo Caelestis.",
+    "Vence al recluta Galaxia que bloquea las Ruinas Caelestis; la abuela de Cintia ve el Talismán y te deja entrar. Examina los grabados del fondo de las ruinas y, al salir, te da la MO03 Surf.",
+    "Vuela a Ciudad Corazón y entra en el gimnasio de Fantina: las respuestas de las cuatro puertas son 15 (puerta derecha), 40 (centro), 39 (izquierda) y 15 otra vez (derecha).",
+    "Vence a Fantina (tipo Fantasma) con ataques Siniestro, Fantasma o Eléctrico (los Normales, Lucha y Tierra no le sirven): recibe la medalla Reliquia, que permite usar Surf fuera de combate, y la MT65 Garra umbría.",
+    "Desde el oeste de Ciudad Jubileo haz Surf por la Ruta 218 hasta Ciudad Canal (el ayudante de Serbal añade a tu Pokédex la vista de formas) y vence a Israel en el puente.",
+    "En el gimnasio Canal recorre los elevadores hasta Acerón (tipo Acero) y vence con Fuego, Lucha, Agua o Tierra (su Bronzor levita): recibe la medalla Mina (permite Fuerza fuera de combate) y la MT91 Foco resplandor."
+   ],
+   "precaucion": "En Diamante y Perla es la medalla Reliquia de Fantina la que permite usar Surf: sin ella no puedes llegar a Ciudad Canal."
+  },
+  "DIAMOND-07": {
+   "pasos": [
+    "Sigue a Israel a la última planta de la Biblioteca de Ciudad Canal: Serbal os encarga visitar los tres lagos y una explosión en el Lago Valor sacude la ciudad.",
+    "Vuela a Ciudad Rocavelo, baja por la Ruta 214 hasta el Lago Valor y vence al comandante Saturno en la Caverna Valor.",
+    "Vuela a Pueblo Hojaverde y, en el Lago Veraz, vence a la comandante Venus (usa Lucha contra su Purugly y Fuego contra Bronzor).",
+    "Desde el este de Ciudad Vetusta entra en el Monte Corona (necesitas Fuerza, Despejar y Golpe roca) y sal por arriba a la Ruta 216, cubierta de nieve.",
+    "Cruza la Ruta 216 y la Ruta 217 (ventisca: no se puede correr ni ir en bici); detrás de una casa de la Ruta 217 recoge la MO08 Treparrocas.",
+    "En Ciudad Puntaneva rompe las bolas de nieve del gimnasio tomando impulso en el hielo y vence a Inverna (tipo Hielo) con Fuego, Lucha, Roca o Acero.",
+    "Recibe la medalla Carámbano (permite Treparrocas fuera de combate) y la MT72 Alud; vuelve a la Orilla Agudeza: el Equipo Galaxia ya se ha llevado a Uxie y te espera en Ciudad Rocavelo."
+   ],
+   "precaucion": "La Ruta 216 y la 217 tienen muchos entrenadores con Pokémon de tipo Hielo y la nieve frena: lleva un Pokémon de Fuego o Lucha y curaciones de sobra."
+  },
+  "DIAMOND-08": {
+   "pasos": [
+    "En Ciudad Rocavelo habla con el recluta de la escalera del Edificio Galaxia para conseguir la Llave almacén, abre el Almacén Galaxia y sigue por el sótano hasta el Edificio Galaxia.",
+    "Recorre el edificio con los teletransportadores, abriendo puertas con la llave, y vence a Helio en su despacho: te regala la Master Ball.",
+    "Usa el teletransportador amarillo a la derecha del despacho, cruza la sala de tubos verdes, vence a Saturno y pulsa el botón rojo para liberar a Uxie, Mesprit y Azelf.",
+    "Entra en el Monte Corona por la Ruta 207 y sube hasta la cima, la Columna Lanza (necesitas Surf, Treparrocas, Golpe roca y Fuerza).",
+    "Junto a Israel, vence a Venus y Ceres en combate doble y después a Helio.",
+    "Dialga aparece a nivel 47: guarda antes, duérmelo o paralízalo y captúralo.",
+    "Antes de irte recoge al fondo de la Columna Lanza la Diamansfera."
+   ],
+   "precaucion": "Guarda justo antes del legendario y evita ataques que le resten PS cada turno (veneno, Drenadoras): conviene dejarlo con pocos PS y dormido o paralizado."
+  },
+  "DIAMOND-09": {
+   "pasos": [
+    "Tras lo de la Columna Lanza se abre la Ruta 222: llega a Ciudad Marina desde Ciudad Pradera (pasando por el Hotel Gran Lago).",
+    "Fausto, del Alto Mando, te cuenta que el líder Lectro está desanimado: búscalo en lo alto del Faro Visión y habla con él para que vuelva al gimnasio.",
+    "Avanza por el gimnasio Marina accionando los interruptores verdes que giran los pasillos y vence a Lectro (tipo Eléctrico) con ataques de Tierra.",
+    "Recibe la medalla Faro (permite Cascada fuera de combate) y la MT57 Rayo carga.",
+    "En la playa de la Ruta 223, al norte de Ciudad Marina, Yasmina te regala la MO07 Cascada.",
+    "Comprueba en tu ficha de entrenador que tienes las ocho medallas."
+   ],
+   "precaucion": "El paso de la Ruta 222 está cerrado hasta resolver el incidente de la Columna Lanza."
+  },
+  "DIAMOND-10": {
+   "pasos": [
+    "Surfea por la Ruta 223 desde Ciudad Marina y sube la cascada del final: llegas a la Liga Pokémon y a la entrada de la Calle Victoria.",
+    "Cruza la Calle Victoria con Treparrocas, Fuerza, Golpe roca y Surf (el anciano que bloquea una cueva no te dejará pasar hasta ganar la Liga: es el camino a la Ruta 224).",
+    "En el Centro Pokémon de la Liga compra Restaurar todo y Revivir; el guardia comprobará tus ocho medallas.",
+    "Antes de entrar, Israel te reta a un último combate.",
+    "Vence en orden a Alecrán (Bicho), Gaia (Tierra), Fausto (Fuego) y Delos (Psíquico): no puedes salir a curarte entre combates.",
+    "Vence a la campeona Cintia (Spiritomb, Roserade, Gastrodon, Lucario, Milotic y Garchomp, niveles 60-66).",
+    "Entra en el Hall de la Fama con el profesor Serbal y mira los créditos."
+   ],
+   "precaucion": "Guarda antes de entrar: contra el Garchomp de Cintia usa ataques de Hielo y contra Spiritomb cualquier tipo salvo Normal, Lucha y Psíquico."
+  },
+  "DIAMOND-11": {
+   "pasos": [
+    "Completa los vistos de la Pokédex de Sinnoh (150; Manaphy no hace falta). Para el último, habla con la anciana de Pueblo Caelestis, en la casa grande del norte: te enseña un libro del Monte Corona y registra a Palkia.",
+    "Ve al laboratorio de Pueblo Arena y habla con Serbal: aparece el profesor Oak, instala la Pokédex Nacional y te habla del Parque Compi; Serbal te da el Pokéradar.",
+    "Toma el barco en el puerto de Ciudad Puntaneva hasta la Zona de Combate; el pescador del norte te regala la Supercaña. Allí está el Parque Batalla con la Torre Batalla.",
+    "Recorre las Rutas 225 a 230, la Zona Descanso y la Zona Sobrevivir; con la Pokédex Nacional, acompaña a Bulgur por la Montaña Dura (Ruta 227) y vuelve después a por Heatran.",
+    "Vuelve a la Calle Victoria: el anciano ya te deja pasar a la zona profunda (Sémola te acompaña) y a la Ruta 224.",
+    "Con la Pokédex Nacional se abren además el Parque Compi (Ruta 221), el Templo Puntaneva (Regigigas) y la Isla Plenilunio (Cresselia, desde Ciudad Canal); la Cueva Retorno (Giratina) está al final de la Vía Manantial, en la Ruta 214."
+   ],
+   "precaucion": "Muchos encuentros de después de la Liga exigen la Pokédex Nacional: consíguela antes de recorrer la Zona de Combate. Platino sustituye la Torre Batalla por el Frente Batalla."
+  },
+  "DIAMOND-12": {
+   "pasos": [
+    "Baja al Subsuelo con el Kit de exploración del Hombre Topo (Ciudad Vetusta): monta tu base secreta y excava esferas, fósiles y objetos en las paredes.",
+    "Para la estrella del Subsuelo, gana 50 veces Captura la bandera contra otros jugadores conectados en local (consolas DS con Diamante, Perla o Platino).",
+    "En el Auditorio de Ciudad Corazón gana un Súper Concurso de nivel experto: tienes que ganar antes, en la misma categoría (carisma, belleza, dulzura, ingenio o dureza), los niveles normal, difícil y superior.",
+    "En la Torre Batalla de la Zona de Combate consigue 100 victorias seguidas (Jericor, el As de la Torre, aparece en los combates 21 y 49 de la modalidad individual).",
+    "Registra como capturadas 482 especies de la Pokédex Nacional (no cuentan Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus) y pide el diploma al director del juego, en el Hotel Gran Lago.",
+    "Con Pokekeep: los exclusivos de la otra edición y los Pokémon que solo llegaban por el Parque Compi o por intercambio, añádelos legales desde la Librería.",
+    "Revisa en la ficha de entrenador que tienes las cinco estrellas (Liga, Súper Concurso experto, Pokédex Nacional, Torre Batalla y Captura la bandera)."
+   ],
+   "precaucion": "Captura la bandera exige otra consola con un juego de Sinnoh conectada en local: no se puede conseguir en solitario."
+  },
+  "PEARL-01": {
+   "pasos": [
+    "En Pueblo Hojaverde baja de tu habitación, entra en la casa de tu amigo Israel (la del noroeste) y síguelo hasta la Ruta 201, al norte del pueblo.",
+    "Id juntos hacia el oeste hasta el Lago Veraz: veréis al profesor Serbal y a su ayudante (Maya o León) marcharse; al entrar en la hierba alta os atacan dos Starly salvajes.",
+    "Abre el maletín que olvidó el profesor y elige a Turtwig, Chimchar o Piplup (nivel 5); Israel se queda con el que tiene ventaja de tipo sobre el tuyo. Vence al Starly.",
+    "Vuelve hacia Pueblo Hojaverde: el profesor y su ayudante te paran y te piden que vayas a Pueblo Arena. En casa, tu madre te da las Deportivas para correr.",
+    "Cruza la Ruta 201 hacia el este hasta Pueblo Arena y entra en el laboratorio de Serbal: te regala el Pokémon que elegiste y te entrega la Pokédex.",
+    "Vuelve a casa: tu madre te da el Diario y la madre de Israel un paquete para él. En la Ruta 202 el ayudante te enseña a capturar y te da cinco Poké Balls: captura tu primer Pokémon."
+   ],
+   "precaucion": "El inicial no se puede cambiar. Turtwig y Piplup tienen ventaja contra Roco (tipo Roca); con Chimchar conviene capturar un Machop en la Ruta 207 o evolucionarlo a Monferno. Platino cambia esta introducción."
+  },
+  "PEARL-02": {
+   "pasos": [
+    "En Ciudad Jubileo entrega el paquete a Israel en la Escuela de Entrenadores (te da un Mapa) y vence a Israel en la Ruta 203, al este de la ciudad.",
+    "Cruza la Puerta Pirita: el primer montañero te regala la MO06 Golpe roca. Sal por el otro lado a Ciudad Pirita.",
+    "Israel te cuenta que el líder, Roco, se ha ido a la Mina Pirita, al sur de la ciudad: entra en la mina, recórrela hasta el fondo y habla con Roco para que vuelva al gimnasio.",
+    "En el gimnasio Pirita vence a sus entrenadores y a Roco (tipo Roca) con ataques de tipo Agua, Planta o Lucha.",
+    "Recibe la medalla Lignito (permite usar Golpe roca fuera de combate) y la MT76 Trampa rocas."
+   ],
+   "precaucion": "Hasta que no hables con Roco en la Mina Pirita, el gimnasio no tiene líder; y sin la medalla Lignito no puedes romper las rocas que cierran la salida norte de Ciudad Jubileo (Ruta 204)."
+  },
+  "PEARL-03": {
+   "pasos": [
+    "En Ciudad Jubileo vence en combate doble a dos miembros del Equipo Galaxia junto al ayudante de Serbal; sigue al norte por la Ruta 204 y la Senda Desolada (rompe las rocas con Golpe roca) hasta Pueblo Aromaflor.",
+    "En la Ruta 205 una niña te pide ayuda para su padre: en el Prado Aromaflor vence a los dos reclutas Galaxia para conseguir la Llave central y, en el Valle Eólico, vence a la comandante Venus.",
+    "Cruza el Bosque Vetusto con Malta como acompañante (su Chansey cura a tu equipo tras cada combate) y llega a Ciudad Vetusta.",
+    "Acércate al Edificio Galaxia, al norte del Centro Pokémon: Cintia te regala la MO01 Corte.",
+    "En el gimnasio Vetusta busca y vence a los cuatro entrenadores escondidos entre los árboles para que aparezca Gardenia (tipo Planta); usa Fuego, Volador, Hielo o Bicho. Recibe la medalla Bosque, que permite usar Corte.",
+    "Corta los árboles de la entrada del Edificio Galaxia, sube a la última planta y vence a la comandante Ceres para liberar a los Pokémon de Pepe Volata.",
+    "Ve a la tienda de bicis de Pepe Volata, en Vetusta: te regala la Bicicleta (con B cambias entre marcha rápida y acrobática).",
+    "Antes de irte, habla con el Hombre Topo (casa junto al Centro Pokémon de Vetusta): te da el Kit de exploración para bajar al Subsuelo."
+   ],
+   "precaucion": "En Platino esta parte cambia (otro reto en el gimnasio, Cintia te da además un Huevo de Togepi antes de la bici y el orden de los gimnasios siguientes es distinto): no mezcles las dos guías."
+  },
+  "PEARL-04": {
+   "pasos": [
+    "Sal por el sur de Ciudad Vetusta: en el edificio de la Ruta Ciclista un ayudante de Serbal te da el Repartir experiencia. Baja en bici a la Ruta 206 y sigue por la Ruta 207 y el Monte Corona hasta la Ruta 208.",
+    "Llega a Ciudad Corazón: el gimnasio de Fantina no te acepta aún. En el Auditorio tu madre te regala un traje para los concursos; al salir por el este, Israel te reta.",
+    "Por la Ruta 209 sube a la Torre Perdida (cinco plantas de tumbas): en lo más alto recibes la MO04 Fuerza.",
+    "Sigue a Pueblo Sosiego, toma el tramo sur de la Ruta 210 (unos Psyduck bloquean el norte) y cruza la lluviosa Ruta 215 hasta Ciudad Rocavelo.",
+    "En el gimnasio Rocavelo vence a Brega (tipo Lucha) con Pokémon de tipo Volador, Psíquico o Fantasma; contra su Lucario, Fuego, Lucha o Tierra. Recibe la medalla Adoquín (permite Vuelo fuera de combate) y la MT60 Puño drenaje.",
+    "Al salir, el ayudante de Serbal te pide ayuda: vence a los dos reclutas Galaxia y, dentro del Almacén Galaxia, recoge la MO02 Vuelo, que está entre dos contenedores.",
+    "En Poké-reloj S.A. de Ciudad Jubileo recoge la función Mapa para el Poké-reloj (se desbloquea con la tercera medalla)."
+   ],
+   "precaucion": "En Diamante y Perla Fantina no está en su gimnasio hasta que tengas la MO03 Surf de Pueblo Caelestis: es tu quinta líder, no la tercera (en Platino sí es la tercera)."
+  },
+  "PEARL-05": {
+   "pasos": [
+    "Sal por el sur de Ciudad Rocavelo a la Ruta 214 y sigue por la Ruta 213 (Hotel Gran Lago y Orilla Valor) hasta Ciudad Pradera.",
+    "En la entrada del Gran Pantano (500 ₽, 30 Safari Balls, 500 pasos) el primer chico te regala la MO05 Despejar: la necesitarás en la Ruta 210 norte.",
+    "En el gimnasio Pradera pulsa los botones de colores que suben y bajan el nivel del agua para abrir camino entre los seis entrenadores hasta Mananti (tipo Agua); vence con ataques Eléctrico o Planta.",
+    "Recibe la medalla Ciénaga y la MT55 Salmuera.",
+    "Habla con el recluta Galaxia que hay a la derecha de la entrada del Gran Pantano y persíguelo: vence a Israel cuando te corte el paso, sigue al recluta por la playa de la Ruta 213 y véncelo junto a la entrada del Lago Valor.",
+    "Cintia aparece y te da la Poción Secreta para curar a los Psyduck de la Ruta 210."
+   ],
+   "precaucion": "Sin la Poción Secreta no hay forma de apartar a los Psyduck, y sin la MO05 Despejar la niebla de la Ruta 210 norte hace fallar tus ataques: recoge las dos antes de seguir."
+  },
+  "PEARL-06": {
+   "pasos": [
+    "Vuela a Pueblo Sosiego y, junto al Café Rodeo, usa la Poción Secreta con los Psyduck de la Ruta 210. Cintia te pide que entregues un Talismán a su abuela, en Pueblo Caelestis.",
+    "Cruza la Ruta 210 norte (usa Despejar contra la niebla) hasta Pueblo Caelestis.",
+    "Vence al recluta Galaxia que bloquea las Ruinas Caelestis; la abuela de Cintia ve el Talismán y te deja entrar. Examina los grabados del fondo de las ruinas y, al salir, te da la MO03 Surf.",
+    "Vuela a Ciudad Corazón y entra en el gimnasio de Fantina: las respuestas de las cuatro puertas son 15 (puerta derecha), 40 (centro), 39 (izquierda) y 15 otra vez (derecha).",
+    "Vence a Fantina (tipo Fantasma) con ataques Siniestro, Fantasma o Eléctrico (los Normales, Lucha y Tierra no le sirven): recibe la medalla Reliquia, que permite usar Surf fuera de combate, y la MT65 Garra umbría.",
+    "Desde el oeste de Ciudad Jubileo haz Surf por la Ruta 218 hasta Ciudad Canal (el ayudante de Serbal añade a tu Pokédex la vista de formas) y vence a Israel en el puente.",
+    "En el gimnasio Canal recorre los elevadores hasta Acerón (tipo Acero) y vence con Fuego, Lucha, Agua o Tierra (su Bronzor levita): recibe la medalla Mina (permite Fuerza fuera de combate) y la MT91 Foco resplandor."
+   ],
+   "precaucion": "En Diamante y Perla es la medalla Reliquia de Fantina la que permite usar Surf: sin ella no puedes llegar a Ciudad Canal."
+  },
+  "PEARL-07": {
+   "pasos": [
+    "Sigue a Israel a la última planta de la Biblioteca de Ciudad Canal: Serbal os encarga visitar los tres lagos y una explosión en el Lago Valor sacude la ciudad.",
+    "Vuela a Ciudad Rocavelo, baja por la Ruta 214 hasta el Lago Valor y vence al comandante Saturno en la Caverna Valor.",
+    "Vuela a Pueblo Hojaverde y, en el Lago Veraz, vence a la comandante Venus (usa Lucha contra su Purugly y Fuego contra Bronzor).",
+    "Desde el este de Ciudad Vetusta entra en el Monte Corona (necesitas Fuerza, Despejar y Golpe roca) y sal por arriba a la Ruta 216, cubierta de nieve.",
+    "Cruza la Ruta 216 y la Ruta 217 (ventisca: no se puede correr ni ir en bici); detrás de una casa de la Ruta 217 recoge la MO08 Treparrocas.",
+    "En Ciudad Puntaneva rompe las bolas de nieve del gimnasio tomando impulso en el hielo y vence a Inverna (tipo Hielo) con Fuego, Lucha, Roca o Acero.",
+    "Recibe la medalla Carámbano (permite Treparrocas fuera de combate) y la MT72 Alud; vuelve a la Orilla Agudeza: el Equipo Galaxia ya se ha llevado a Uxie y te espera en Ciudad Rocavelo."
+   ],
+   "precaucion": "La Ruta 216 y la 217 tienen muchos entrenadores con Pokémon de tipo Hielo y la nieve frena: lleva un Pokémon de Fuego o Lucha y curaciones de sobra."
+  },
+  "PEARL-08": {
+   "pasos": [
+    "En Ciudad Rocavelo habla con el recluta de la escalera del Edificio Galaxia para conseguir la Llave almacén, abre el Almacén Galaxia y sigue por el sótano hasta el Edificio Galaxia.",
+    "Recorre el edificio con los teletransportadores, abriendo puertas con la llave, y vence a Helio en su despacho: te regala la Master Ball.",
+    "Usa el teletransportador amarillo a la derecha del despacho, cruza la sala de tubos verdes, vence a Saturno y pulsa el botón rojo para liberar a Uxie, Mesprit y Azelf.",
+    "Entra en el Monte Corona por la Ruta 207 y sube hasta la cima, la Columna Lanza (necesitas Surf, Treparrocas, Golpe roca y Fuerza).",
+    "Junto a Israel, vence a Venus y Ceres en combate doble y después a Helio.",
+    "Palkia aparece a nivel 47: guarda antes, duérmelo o paralízalo y captúralo.",
+    "Antes de irte recoge al fondo de la Columna Lanza la Lustresfera."
+   ],
+   "precaucion": "Guarda justo antes del legendario y evita ataques que le resten PS cada turno (veneno, Drenadoras): conviene dejarlo con pocos PS y dormido o paralizado."
+  },
+  "PEARL-09": {
+   "pasos": [
+    "Tras lo de la Columna Lanza se abre la Ruta 222: llega a Ciudad Marina desde Ciudad Pradera (pasando por el Hotel Gran Lago).",
+    "Fausto, del Alto Mando, te cuenta que el líder Lectro está desanimado: búscalo en lo alto del Faro Visión y habla con él para que vuelva al gimnasio.",
+    "Avanza por el gimnasio Marina accionando los interruptores verdes que giran los pasillos y vence a Lectro (tipo Eléctrico) con ataques de Tierra.",
+    "Recibe la medalla Faro (permite Cascada fuera de combate) y la MT57 Rayo carga.",
+    "En la playa de la Ruta 223, al norte de Ciudad Marina, Yasmina te regala la MO07 Cascada.",
+    "Comprueba en tu ficha de entrenador que tienes las ocho medallas."
+   ],
+   "precaucion": "El paso de la Ruta 222 está cerrado hasta resolver el incidente de la Columna Lanza."
+  },
+  "PEARL-10": {
+   "pasos": [
+    "Surfea por la Ruta 223 desde Ciudad Marina y sube la cascada del final: llegas a la Liga Pokémon y a la entrada de la Calle Victoria.",
+    "Cruza la Calle Victoria con Treparrocas, Fuerza, Golpe roca y Surf (el anciano que bloquea una cueva no te dejará pasar hasta ganar la Liga: es el camino a la Ruta 224).",
+    "En el Centro Pokémon de la Liga compra Restaurar todo y Revivir; el guardia comprobará tus ocho medallas.",
+    "Antes de entrar, Israel te reta a un último combate.",
+    "Vence en orden a Alecrán (Bicho), Gaia (Tierra), Fausto (Fuego) y Delos (Psíquico): no puedes salir a curarte entre combates.",
+    "Vence a la campeona Cintia (Spiritomb, Roserade, Gastrodon, Lucario, Milotic y Garchomp, niveles 60-66).",
+    "Entra en el Hall de la Fama con el profesor Serbal y mira los créditos."
+   ],
+   "precaucion": "Guarda antes de entrar: contra el Garchomp de Cintia usa ataques de Hielo y contra Spiritomb cualquier tipo salvo Normal, Lucha y Psíquico."
+  },
+  "PEARL-11": {
+   "pasos": [
+    "Completa los vistos de la Pokédex de Sinnoh (150; Manaphy no hace falta). Para el último, habla con la anciana de Pueblo Caelestis, en la casa grande del norte: te enseña un libro del Monte Corona y registra a Dialga.",
+    "Ve al laboratorio de Pueblo Arena y habla con Serbal: aparece el profesor Oak, instala la Pokédex Nacional y te habla del Parque Compi; Serbal te da el Pokéradar.",
+    "Toma el barco en el puerto de Ciudad Puntaneva hasta la Zona de Combate; el pescador del norte te regala la Supercaña. Allí está el Parque Batalla con la Torre Batalla.",
+    "Recorre las Rutas 225 a 230, la Zona Descanso y la Zona Sobrevivir; con la Pokédex Nacional, acompaña a Bulgur por la Montaña Dura (Ruta 227) y vuelve después a por Heatran.",
+    "Vuelve a la Calle Victoria: el anciano ya te deja pasar a la zona profunda (Sémola te acompaña) y a la Ruta 224.",
+    "Con la Pokédex Nacional se abren además el Parque Compi (Ruta 221), el Templo Puntaneva (Regigigas) y la Isla Plenilunio (Cresselia, desde Ciudad Canal); la Cueva Retorno (Giratina) está al final de la Vía Manantial, en la Ruta 214."
+   ],
+   "precaucion": "Muchos encuentros de después de la Liga exigen la Pokédex Nacional: consíguela antes de recorrer la Zona de Combate. Platino sustituye la Torre Batalla por el Frente Batalla."
+  },
+  "PEARL-12": {
+   "pasos": [
+    "Baja al Subsuelo con el Kit de exploración del Hombre Topo (Ciudad Vetusta): monta tu base secreta y excava esferas, fósiles y objetos en las paredes.",
+    "Para la estrella del Subsuelo, gana 50 veces Captura la bandera contra otros jugadores conectados en local (consolas DS con Diamante, Perla o Platino).",
+    "En el Auditorio de Ciudad Corazón gana un Súper Concurso de nivel experto: tienes que ganar antes, en la misma categoría (carisma, belleza, dulzura, ingenio o dureza), los niveles normal, difícil y superior.",
+    "En la Torre Batalla de la Zona de Combate consigue 100 victorias seguidas (Jericor, el As de la Torre, aparece en los combates 21 y 49 de la modalidad individual).",
+    "Registra como capturadas 482 especies de la Pokédex Nacional (no cuentan Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus) y pide el diploma al director del juego, en el Hotel Gran Lago.",
+    "Con Pokekeep: los exclusivos de la otra edición y los Pokémon que solo llegaban por el Parque Compi o por intercambio, añádelos legales desde la Librería.",
+    "Revisa en la ficha de entrenador que tienes las cinco estrellas (Liga, Súper Concurso experto, Pokédex Nacional, Torre Batalla y Captura la bandera)."
+   ],
+   "precaucion": "Captura la bandera exige otra consola con un juego de Sinnoh conectada en local: no se puede conseguir en solitario."
+  },
+  "PLATINUM-01": {
+   "pasos": [
+    "En Pueblo Hojaverde sal de casa, busca a Israel en la suya (noroeste) y ve con él a la Ruta 201, al norte del pueblo.",
+    "En la Ruta 201 el profesor Serbal y su ayudante (Maya o León) os dejan elegir del maletín a Turtwig, Chimchar o Piplup; Israel se queda con el que tiene ventaja sobre el tuyo.",
+    "Visita con Israel el Lago Veraz, al oeste de la ruta: allí conoces a Helio, que se marcha enseguida.",
+    "Ve a Pueblo Arena: en el laboratorio Serbal te entrega la Pokédex y, al salir, la MT27 Retroceso.",
+    "Vuelve a casa: tu madre te da el Diario y la madre de Israel un paquete para él.",
+    "En la Ruta 202 el ayudante te enseña a capturar y te da cinco Poké Balls: captura tu primer Pokémon."
+   ],
+   "precaucion": "El inicial no se puede cambiar. En Platino el reparto del inicial y la visita al lago cambian de orden respecto a Diamante y Perla."
+  },
+  "PLATINUM-02": {
+   "pasos": [
+    "En Ciudad Jubileo entrega el paquete a Israel (contiene el Mapa) y vence a Israel en la Ruta 203.",
+    "Cruza la Puerta Pirita: el primer montañero te regala la MO06 Golpe roca. Llega a Ciudad Pirita, donde un niño te lleva al gimnasio.",
+    "Israel te cuenta que Roco está en la Mina Pirita, al sur de la ciudad: entra en la mina y habla con él; al salir, el gimnasio ya está abierto.",
+    "El gimnasio Pirita no tiene puzle: vence a sus entrenadores y a Roco (tipo Roca) con Agua, Planta o Lucha.",
+    "Recibe la medalla Lignito (Golpe roca fuera de combate) y la MT76 Trampa rocas."
+   ],
+   "precaucion": "Sin la medalla Lignito no puedes romper las rocas de la Ruta 204, al norte de Ciudad Jubileo."
+  },
+  "PLATINUM-03": {
+   "pasos": [
+    "En Ciudad Jubileo vence al Equipo Galaxia en combate doble con el ayudante de Serbal y sigue por la Ruta 204 hasta Pueblo Aromaflor.",
+    "En la Ruta 205 ayuda a la niña: consigue la Llave central en el Prado Aromaflor y libera la central del Valle Eólico venciendo a la comandante Venus.",
+    "Cruza el Bosque Vetusto con Malta (cura a tu equipo tras cada combate; al salir te da una Campana alivio) y llega a Ciudad Vetusta, donde Cintia te da la MO01 Corte.",
+    "En el gimnasio Vetusta vence a las entrenadoras para que el reloj central vaya cambiando de hora y abra paso hasta Gardenia (tipo Planta); usa Fuego, Volador, Hielo o Bicho.",
+    "Recibe la medalla Bosque (Corte fuera de combate) y la MT86 Hierba lazo.",
+    "Corta los árboles del Edificio Galaxia, entra (el detective Handsome te explica que la escalera buena tiene un cuadro), sube a la cuarta planta y vence a la comandante Ceres para liberar a Pepe Volata.",
+    "En la puerta de la tienda de bicis Cintia te ofrece un Huevo (eclosiona Togepi): acéptalo y Pepe Volata te regala la Bicicleta."
+   ],
+   "precaucion": "Si no aceptas el Huevo de Cintia no puedes entrar en la tienda de bicis; deja un hueco libre en el equipo."
+  },
+  "PLATINUM-04": {
+   "pasos": [
+    "Baja por la Ruta Ciclista (necesitas el Kit de exploración del Hombre Topo de Vetusta para pasar) y sigue por las Rutas 206, 207 y 208 y el Monte Corona hasta Ciudad Corazón.",
+    "En Platino, Fantina es la tercera líder y ya está en su gimnasio de Ciudad Corazón: recorre el laberinto a oscuras buscando con la luz el símbolo que te indican y escoge la puerta que lo lleva.",
+    "Vence a Fantina (tipo Fantasma) con ataques de tipo Siniestro o Fantasma y recibe la medalla Reliquia.",
+    "Sal por la Ruta 209 (Israel te espera en el edificio de salida), cruza Pueblo Sosiego, el tramo sur de la Ruta 210 y la Ruta 215 hasta Ciudad Rocavelo.",
+    "Vence a Brega (tipo Lucha: Meditite, Machoke y Lucario) con Volador o Psíquico y Fuego, Lucha o Tierra contra Lucario: recibe la medalla Adoquín.",
+    "Ayuda al ayudante de Serbal a recuperar su Pokédex venciendo a dos reclutas Galaxia y recoge la MO02 Vuelo en el Almacén Galaxia."
+   ],
+   "precaucion": "Diamante y Perla y sus remakes colocan a Fantina más tarde: en Platino el orden es Roco, Gardenia, Fantina, Brega, Mananti, Acerón, Inverna y Lectro."
+  },
+  "PLATINUM-05": {
+   "pasos": [
+    "Sal por el sur de Ciudad Rocavelo a la Ruta 214 y sigue por la Ruta 213 (Hotel Gran Lago) hasta Ciudad Pradera.",
+    "En la entrada del Gran Pantano consigue la MO05 Despejar, que necesitarás en la Ruta 210 norte.",
+    "En el gimnasio Pradera (tipo Agua) pulsa los botones que suben y bajan el nivel del agua para llegar hasta Mananti; vence con ataques Eléctrico o Planta.",
+    "Recibe la medalla Ciénaga (en Platino permite usar Surf fuera de combate) y la MT55 Salmuera.",
+    "Persigue al recluta Galaxia que huye desde el Gran Pantano por la playa de la Ruta 213 hasta la entrada del Lago Valor y véncelo; consigues la Poción Secreta para los Psyduck de la Ruta 210."
+   ],
+   "precaucion": "En Platino Mananti es el quinto líder y Fantina ya debe estar vencida."
+  },
+  "PLATINUM-06": {
+   "pasos": [
+    "Vuela a Pueblo Sosiego y usa la Poción Secreta con los Psyduck de la Ruta 210: Cintia te pide que entregues un Talismán a su abuela, en Pueblo Caelestis.",
+    "Cruza la Ruta 210 norte con Despejar (la niebla hace fallar los ataques) hasta Pueblo Caelestis.",
+    "Vence al recluta Galaxia que amenaza con volar las Ruinas Caelestis y supera el enfrentamiento con el Equipo Galaxia dentro de las ruinas: la abuela de Cintia te da la MO03 Surf.",
+    "Desde el oeste de Ciudad Jubileo haz Surf por la Ruta 218 hasta Ciudad Canal y vence a Israel en el puente.",
+    "Ve a la Isla Hierro con el marinero de Canal: Quinoa te da la MO04 Fuerza; recorre la cueva con su Lucario como compañero (al final te regala un Huevo de Riolu).",
+    "Vence a Acerón (tipo Acero) en el gimnasio de los elevadores con Tierra, Lucha, Agua o Fuego: medalla Mina (Fuerza fuera de combate) y MT91 Foco resplandor."
+   ],
+   "precaucion": "Deja un hueco libre en el equipo antes de terminar la Isla Hierro para el Huevo de Riolu."
+  },
+  "PLATINUM-07": {
+   "pasos": [
+    "Sigue a Israel a la última planta de la Biblioteca de Ciudad Canal: Serbal os manda a los lagos y una explosión en el Lago Valor sacude la ciudad.",
+    "Vuela a Pueblo Hojaverde y, por la Ruta 201, ve al Lago Veraz: vence a los reclutas en combates dobles y a la comandante Venus.",
+    "Ve después al Lago Valor (al norte de la Ruta 214), donde estalló la bomba, y vence al comandante Saturno en la Caverna Valor.",
+    "Desde Ciudad Vetusta cruza el Monte Corona hacia la Ruta 216 y sigue por la Ruta 217 (ventisca); detrás de una casa de la Ruta 217 recoge la MO08 Treparrocas.",
+    "En Ciudad Puntaneva vence a Inverna (tipo Hielo) rompiendo las bolas de nieve del gimnasio; usa Fuego, Lucha, Roca o Acero.",
+    "Recibe la medalla Carámbano (Treparrocas fuera de combate) y la MT72 Alud; sube con Treparrocas desde la Orilla Agudeza al Lago Agudeza, donde Israel te cuenta que se han llevado a Uxie."
+   ],
+   "precaucion": "La nieve no deja correr ni ir en bici y las rutas nevadas tienen muchos entrenadores: lleva un Pokémon de Fuego o Lucha y curaciones."
+  },
+  "PLATINUM-08": {
+   "pasos": [
+    "En Ciudad Rocavelo entra en el Almacén Galaxia (Handsome abre la puerta) y sigue por el sótano hasta el Edificio Galaxia.",
+    "Vence a Helio: te regala la Master Ball. Sube al laboratorio, vence a Saturno y libera a Uxie, Mesprit y Azelf; Plutón se burla y se marcha.",
+    "Entra en el Monte Corona por la Ruta 207 (necesitas Surf, Treparrocas, Fuerza y Golpe roca) y sube hasta la Columna Lanza.",
+    "Junto a Israel, vence a Venus y Ceres en combate doble; Helio invoca a Dialga y Palkia con la Cadena roja y Giratina aparece y lo arrastra al Mundo Distorsión.",
+    "Sigue a Cintia al Mundo Distorsión y resuélvelo (ver la misión «Mundo Distorsión y Giratina»).",
+    "Al volver apareces en la Vía Manantial: ve al laboratorio de Serbal en Pueblo Arena, que te confirma que el trío de los lagos ha vuelto a sus cavernas."
+   ],
+   "precaucion": "En Platino Dialga y Palkia no se capturan en la historia: lo que cuenta es el Mundo Distorsión y Giratina. Guarda antes de entrar."
+  },
+  "PLATINUM-09": {
+   "pasos": [
+    "Llega a Ciudad Marina por la Ruta 222; Fausto te pide que ayudes a Lectro a recuperar la ilusión.",
+    "Vence a Lectro (tipo Eléctrico) en su gimnasio con ataques de Tierra: recibe la medalla Faro (Cascada fuera de combate) y la MT57 Rayo carga.",
+    "En la playa de la Ruta 223 habla con Yasmina: te da la MO07 Cascada.",
+    "Comprueba en tu ficha que tienes las ocho medallas."
+   ],
+   "precaucion": "Debes haber resuelto antes lo del Mundo Distorsión: hasta entonces el camino a Ciudad Marina está cerrado."
+  },
+  "PLATINUM-10": {
+   "pasos": [
+    "Surfea por la Ruta 223 y sube la cascada del final: hay un Centro Pokémon junto a la entrada de la Calle Victoria.",
+    "Cruza la Calle Victoria (un solo camino, con Fuerza, Treparrocas y Golpe roca; si colocas mal una roca, sal del piso y vuelve a entrar).",
+    "Compra Revivir y Restaurar todo: dentro de la Liga no hay Centro Pokémon entre combates.",
+    "Vence en orden a Alecrán (Bicho), Gaia (Tierra), Fausto (Fuego) y Delos (Psíquico).",
+    "Vence a la campeona Cintia (Spiritomb, Roserade, Togekiss, Lucario, Milotic y Garchomp, niveles 58-62).",
+    "Entra en el Hall de la Fama y mira los créditos."
+   ],
+   "precaucion": "Guarda antes de entrar en la Liga; contra el Garchomp de Cintia usa ataques de Hielo."
+  },
+  "PLATINUM-11": {
+   "pasos": [
+    "Tras los créditos, toma el barco en el puerto de Ciudad Puntaneva hacia la Zona de Combate; a la entrada del Frente Batalla, Israel y tú vencéis a Lectro y Fausto y aparece Jericor.",
+    "Completa los vistos de la Pokédex de Sinnoh de Platino (210; Manaphy se ve leyendo el libro del despacho del dueño de la Mansión Pokémon, Ruta 212) y habla con Serbal en Pueblo Arena: Oak instala la Pokédex Nacional y Serbal te da el Pokéradar.",
+    "Con la Pokédex Nacional avanza por la Bahía Gresca hasta la Montaña Dura (Ruta 227): vence a Venus y Ceres, acompaña a Bulgur y detén a Plutón, que intenta robar la Piedra Magma.",
+    "Habla con la abuela de Cintia en Pueblo Caelestis y sube a la Columna Lanza para recoger la Diamansfera y la Lustresfera y enfrentarte a Dialga y Palkia (nivel 70).",
+    "En la Cueva Retorno (Fuente Despedida, al final de la Vía Manantial) recoge la Griseosfera junto al portal al Mundo Distorsión.",
+    "Visita también el Parque Compi (Ruta 221), el Templo Puntaneva (Regigigas), la Isla Plenilunio (Cresselia) y el Frente Batalla."
+   ],
+   "precaucion": "Para avanzar por la Bahía Gresca más allá de la Zona de Combate necesitas la Pokédex Nacional. En Platino el Frente Batalla sustituye a la Torre Batalla de Diamante y Perla."
+  },
+  "PLATINUM-12": {
+   "pasos": [
+    "Baja al Subsuelo con el Kit de exploración del Hombre Topo (Ciudad Vetusta) y gana 50 veces Captura la bandera contra otros jugadores conectados en local.",
+    "En el Auditorio de Ciudad Corazón gana un Súper Concurso de nivel experto (antes, normal, difícil y superior de la misma categoría).",
+    "En la Torre Batalla del Frente Batalla gana 100 combates seguidos (Jericor aparece en los combates 21 y 49).",
+    "Registra como capturadas 482 especies de la Pokédex Nacional (no cuentan Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus) y pide el diploma al director del juego en el Hotel Gran Lago.",
+    "Para cintas: Olga, en una casa del noreste de Ciudad Marina, da cada día de la semana una cinta distinta según su estado de ánimo (siete en total).",
+    "Con Pokekeep: los Pokémon que solo llegaban por intercambio, por el Parque Compi o por evento, añádelos legales desde la Librería.",
+    "Revisa en la ficha de entrenador las cinco estrellas."
+   ],
+   "precaucion": "Captura la bandera necesita otra consola con un juego de Sinnoh conectada en local."
+  },
+  "PLATINUM-DETAIL1": {
+   "pasos": [
+    "Tras la escena de la Columna Lanza, Giratina te arrastra al Mundo Distorsión: sigue a Cintia, que te da pistas; aquí la gravedad cambia y puedes caminar por paredes y subir cascadas al revés.",
+    "Baja hasta encontrar a Mesprit, Azelf y Uxie: cada uno se coloca sobre un hoyo y te indica que empujes allí una roca con Fuerza.",
+    "Empuja una roca a cada uno de los tres hoyos (si fallas, vuelve a subir y repite); al terminar, habla con Cintia y súbete a la baldosa que aparece.",
+    "Vence a Helio.",
+    "Giratina (forma Origen, nivel 47) te espera: guarda antes y captúralo con Ultra Balls u Ocaso Balls (o la Master Ball).",
+    "Al salir apareces en la Vía Manantial; habla con Serbal en Pueblo Arena.",
+    "Tras la Liga, en la Cueva Retorno (Fuente Despedida): avanza por salas aleatorias hasta encontrar tres pilares antes de recorrer 30 salas. En la última sala recoges la Griseosfera y, si debilitaste o huiste de Giratina, vuelve a aparecer (nivel 47)."
+   ],
+   "precaucion": "La Griseosfera es la que permite a Giratina mantener la forma Origen fuera del Mundo Distorsión: recógela antes de dar el objetivo por terminado."
+  },
+  "HEARTGOLD-01": {
+   "pasos": [
+    "En Pueblo Primavera baja a ver a tu madre, sal (el Marill de tu vecino, Eco o Lira, choca contigo) y entra en el laboratorio del profesor Elm, a la izquierda de tu casa.",
+    "Elige a Chikorita (Planta), Cyndaquil (Fuego) o Totodile (Agua). El ayudante te da cinco Pociones y, en casa, tu madre te devuelve el Pokégear.",
+    "Sal por la Ruta 29 hacia el oeste hasta Ciudad Cerezo (un anciano te enseña la ciudad y te da las Deportivas) y sube por la Ruta 30 hasta la casa del Sr. Pokémon.",
+    "El Sr. Pokémon te da el Huevo Misterioso para Elm y el profesor Oak, que está de visita, te entrega la Pokédex.",
+    "Al volver por Ciudad Cerezo te reta el chico pelirrojo; en el laboratorio la policía investiga el robo de un inicial: dale nombre al ladrón y entrega el Huevo a Elm.",
+    "En la Ruta 29 tu vecino te enseña a capturar y te da cinco Poké Balls: registra tu primera captura."
+   ],
+   "precaucion": "La elección inicial solo puede hacerse una vez; el rival se queda con el inicial que tiene ventaja sobre el tuyo. Cyndaquil facilita los dos primeros gimnasios."
+  },
+  "HEARTGOLD-02": {
+   "pasos": [
+    "Por la Ruta 30 y la Ruta 31 llega a Ciudad Malva (en el edificio de paso tu vecino te da la Cámara Lucha).",
+    "El gimnasio está cerrado: sube a la Torre Bellsprout, al noreste de la ciudad, vence a los sabios y al Anciano de la cima; te da la MT Destello.",
+    "En el gimnasio de Pegaso (tipo Volador) sube a la plataforma y vence con ataques Eléctrico, Roca o Hielo (un Geodude de la Cueva Oscura o el Onix que te cambian en Malva por un Bellsprout ayudan).",
+    "Recibe la medalla Céfiro (Golpe roca fuera de combate) y la MT51 Respiro.",
+    "Elm te llama: su ayudante te espera en la Tienda Pokémon de Malva y te da el Huevo que encontró el Sr. Pokémon (de él nace un Togepi)."
+   ],
+   "precaucion": "Sin el Huevo de la Tienda Pokémon el señor de la Ruta 32 no te deja seguir hacia el sur."
+  },
+  "HEARTGOLD-03": {
+   "pasos": [
+    "Baja por la Ruta 32 (un señor que ve tu medalla te da una Semilla milagro), cruza la Cueva Unión y la lluviosa Ruta 33 hasta Pueblo Azalea.",
+    "Habla con César en su casa y bajad juntos al Pozo Slowpoke: vence a los reclutas del Team Rocket y al ejecutivo que les cortan la cola a los Slowpoke.",
+    "César te regala una Rapid Ball y desde entonces fabrica una Ball al día con los Bonguris que le lleves.",
+    "En el gimnasio de Antón (tipo Bicho) muévete por las telarañas en los vagones de Spinarak y vence con Fuego o Volador: medalla Colmena y MT89 Ida y vuelta.",
+    "En el Encinar, al oeste, encuentra los dos Farfetch’d del aprendiz de carbonero y acércate a cada uno por la espalda para que vuelvan con él.",
+    "El carbonero te regala la MO01 Corte; corta el arbusto, ayuda a la chica Kimono que se ha perdido y sal a la Ruta 34."
+   ],
+   "precaucion": "Si un Farfetch’d te ve llegar de frente, se escapa: rodéalo para hablarle por detrás. Antes de dejar el Encinar recoge sus objetos y los Pokémon que te falten."
+  },
+  "HEARTGOLD-04": {
+   "pasos": [
+    "Sube por la Ruta 34 (allí está la Guardería Pokémon) hasta Ciudad Trigal; en la Vía Subterránea tu vecino te da la Caja corazón.",
+    "Blanca no está en su gimnasio: búscala en la Torre Radio, al oeste de la ciudad, y vuelve con ella al gimnasio.",
+    "Recorre el gimnasio con forma de Clefairy venciendo a todos sus entrenadores y vence a Blanca (tipo Normal) con Lucha; un Pokémon de tipo Fantasma no recibe sus ataques Normales.",
+    "Blanca se echa a llorar y no te da la medalla: haz como que te vas; una entrenadora la convence y, al volver a hablar con ella, te da la medalla Planicie (Fuerza fuera de combate) y la MT45 Atracción.",
+    "Con la medalla, ve a la floristería, al este del gimnasio: la encargada te regala la Regadera Squirtle."
+   ],
+   "precaucion": "Blanca no te entrega la medalla inmediatamente tras el combate: hay que volver a hablar con ella."
+  },
+  "HEARTGOLD-05": {
+   "pasos": [
+    "Sal de Ciudad Trigal por la Ruta 35; el edificio de paso lleva al Parque Nacional y, a la izquierda, a la Cúpula Pokéathlon. Sigue hasta la Ruta 36.",
+    "Usa la Regadera con el «árbol» que se mueve en la Ruta 36: es un Sudowoodo salvaje que te ataca; captúralo o véncelo para despejar el camino.",
+    "Por la Ruta 37 entra en Ciudad Iris; en el Teatro de Danza vence al recluta Rocket que molesta a una chica Kimono: un señor del público te da la MO03 Surf.",
+    "El líder Morti está en la Torre Quemada (noroeste): conoce a Eusine, vence a tu rival y baja al sótano; Raikou, Entei y Suicune huyen y quedan libres.",
+    "Morti vuelve al gimnasio: avanza a oscuras (solo hay luz junto a los entrenadores) y vence a Morti (tipo Fantasma) con ataques de tipo Siniestro.",
+    "Recibe la medalla Niebla (Surf fuera de combate) y la MT30 Bola sombra."
+   ],
+   "precaucion": "Desde la Torre Quemada Raikou y Entei vagan por las rutas de Johto y empieza la persecución de Suicune (ver «Suicune: cadena exacta de apariciones»)."
+  },
+  "HEARTGOLD-06": {
+   "pasos": [
+    "Por las Rutas 38 y 39 llega a Ciudad Olivo. Yasmina no está en el gimnasio: sube al Faro de Olivo, al sureste.",
+    "En la cima Yasmina cuida de su Ampharos, Amphy, que está enfermo: necesita una medicina que preparan en Ciudad Orquídea.",
+    "Surfea por las Rutas 40 y 41 (las Islas Remolino quedan para más adelante) hasta Ciudad Orquídea; al norte de la ciudad verás a Suicune y Eusine te retará.",
+    "En el gimnasio de Aníbal (tipo Lucha) sube y gira la válvula roja de la izquierda para cortar la cascada; vence con Volador o Psíquico: medalla Tormenta y MT01 Puño certero. Al salir, su mujer te da la MO02 Vuelo.",
+    "Consigue en Ciudad Orquídea la Poción Secreta, vuela a Olivo y dásela a Yasmina en lo alto del faro (puedes subir en ascensor).",
+    "Vence a Yasmina (tipo Acero) con Fuego, Lucha o Tierra: medalla Mineral y MT23 Cola férrea."
+   ],
+   "precaucion": "Yasmina no acepta el combate hasta que Amphy esté curado: el viaje a Ciudad Orquídea es obligatorio."
+  },
+  "HEARTGOLD-07": {
+   "pasos": [
+    "Tu vecino te avisa de que algo raro pasa en el Lago de la Furia. Ve al este de Ciudad Iris por la Ruta 42 (Suicune aparece junto a la entrada del Monte Mortero) hasta Pueblo Caoba.",
+    "Sube por la Ruta 43 por la hierba (en el edificio de paso un Rocket cobra 1000 ₽) hasta el Lago de la Furia.",
+    "Surfea hasta el Gyarados rojo, que siempre es variocolor: captúralo o véncelo y recoge la Escama roja que deja.",
+    "Lance te pide ayuda: en Pueblo Caoba entra con él en la tienda sospechosa y baja al escondite del Team Rocket; vence a los reclutas, a Petrel y a Atenea (las contraseñas de las puertas te las revelan los propios Rocket).",
+    "Junto a Lance vence a los seis Electrode que alimentan la máquina de ondas (tú tres y él tres): Lance te da la MO05 Torbellino.",
+    "Vence a Fredo (tipo Hielo) cruzando las pistas de hielo del gimnasio de Caoba: medalla Glaciar (Torbellino fuera de combate) y MT07 Granizo."
+   ],
+   "precaucion": "Guarda antes del Gyarados rojo si quieres capturarlo: es único."
+  },
+  "HEARTGOLD-08": {
+   "pasos": [
+    "Elm te pide que enciendas la radio: el Team Rocket ha tomado la Torre Radio de Ciudad Trigal. Entra y sube venciendo reclutas.",
+    "Baja a la Vía Subterránea por la entrada sur de Trigal: en el almacén pulsa los interruptores en orden rojo, azul y verde y rescata al verdadero director, que te da la Llave magnética.",
+    "Vuelve a la Torre Radio, abre las puertas de la tercera planta, vence a los ejecutivos y, en el mirador de arriba, a Atlas.",
+    "El director te regala el Ala arcoíris.",
+    "Ve al este de Pueblo Caoba por la Ruta 44 y cruza la Ruta Helada: en la segunda pista de hielo coge la MO07 Cascada deslizándote derecha, arriba, izquierda, abajo, izquierda, arriba y derecha.",
+    "En Ciudad Endrino vence a Débora (tipo Dragón; abre con Gyarados) y entra en la Guarida Dragón, tras el gimnasio, con Surf y Torbellino.",
+    "Responde al anciano del Santuario Dragón: arriba, arriba, abajo, arriba, medio. Débora te da la medalla Dragón y la MT59 Pulso dragón; vuelve a hablar con el anciano para recibir un Dratini."
+   ],
+   "precaucion": "Si aciertas todas las preguntas del anciano a la primera, el Dratini sabe Velocidad extrema; si fallas alguna, sabrá Ataque rápido."
+  },
+  "HEARTGOLD-09": {
+   "pasos": [
+    "Con ocho medallas vuelve a Pueblo Primavera: Elm te regala la Master Ball y tu vecino te impide ir a la Liga.",
+    "En el Teatro de Danza de Ciudad Iris vence a las cinco chicas Kimono que fuiste encontrando: te dan la Campana clara.",
+    "Entra en la Torre Campana (al norte de Ciudad Iris) con el Ala arcoíris y la Campana clara, sube a la cima y enfréntate a Ho-Oh, nivel 45.",
+    "Haz Surf hacia el este desde Pueblo Primavera por la Ruta 27, cruza las Cataratas Tohjo (Cascada) y sigue al norte por la Ruta 26; el guardia de la entrada comprueba tus ocho medallas.",
+    "Cruza la Calle Victoria; al salir te reta tu rival.",
+    "En la Meseta Añil vence a Mento (Psíquico), Koga (Veneno), Bruno (Lucha) y Karen (Siniestro) y al campeón Lance (Dragón): usa Hielo, Eléctrico y Roca.",
+    "Entra en el Hall de la Fama con Lance."
+   ],
+   "precaucion": "Si debilitas a Ho-Oh, vuelve tras vencer al Alto Mando: reaparece. El equipo de Lance exige ataques de Hielo."
+  },
+  "HEARTGOLD-10": {
+   "pasos": [
+    "Tras la Liga, Elm te da el Ticket barco. En el puerto de Ciudad Olivo el profesor Oak te entrega la Pokédex Nacional.",
+    "Embarca en el S.S. Aqua; durante el viaje ayuda a un caballero a encontrar a su nieta (está en el camarote del capitán).",
+    "Al desembarcar en Ciudad Carmín verás a Suicune y a Eusine en el puerto.",
+    "Vence a Lt. Surge (tipo Eléctrico) en Ciudad Carmín: busca los dos interruptores escondidos en las papeleras para abrir las barreras. Recibes la medalla Trueno.",
+    "Por la Ruta 6 llega a Ciudad Azafrán y vence a Sabrina (Psíquico; medalla Pantano); por la Ruta 7 llega a Ciudad Azulona y vence a Erika (Planta; medalla Arcoíris).",
+    "En Ciudad Celeste el gimnasio está vacío: ve a la Central de Energía (siguiente misión)."
+   ],
+   "precaucion": "No todos los gimnasios de Kanto se abren a la vez: Misty aparece tras recuperar la Maquinaria de la Central, Brock necesita despertar al Snorlax de la Ruta 11 y Azul pide siete medallas de Kanto."
+  },
+  "HEARTGOLD-11": {
+   "pasos": [
+    "Desde Ciudad Celeste ve por la Ruta 9 y haz Surf hacia el sur por el río de la Ruta 10 hasta la Central de Energía: el director ha perdido la Maquinaria.",
+    "Vuelve al gimnasio de Ciudad Celeste, persigue al sospechoso hasta el puente al norte de la ciudad y vence a su Golbat: te dice dónde la escondió.",
+    "Recoge la Maquinaria en el gimnasio Celeste, junto a los flotadores a la izquierda del escenario, y llévala a la Central: el director te da la MT57 Rayo carga.",
+    "En la Torre Radio de Pueblo Lavanda actualizan tu Pokégear con la Expansión de radio, que incluye la Pokéflauta.",
+    "Busca el Poké Muñeco Clefairy en el Club de Fans de Pokémon de Ciudad Carmín y devuélveselo a la Copiona de Ciudad Azafrán: te da el Magnetopase para el Magnetotrén (Azafrán–Trigal).",
+    "Ve al Cabo Celeste (Ruta 25, junto a la casa de Bill), interrumpe la cita de Misty y véncela en su gimnasio (Agua) con Eléctrico o Planta."
+   ],
+   "precaucion": "Sin la Maquinaria no funcionan el Magnetotrén ni la radio de Kanto, y sin la Pokéflauta no puedes despertar al Snorlax que bloquea la Cueva Diglett."
+  },
+  "HEARTGOLD-12": {
+   "pasos": [
+    "En Ciudad Fucsia vence a Sachiko (tipo Veneno; el gimnasio tiene paredes invisibles) con Psíquico o Tierra.",
+    "Sintoniza la Pokéflauta del Pokégear frente al Snorlax de la Ruta 11 (nivel 50), véncelo o captúralo y cruza la Cueva Diglett hasta Ciudad Plateada (en la Ruta 2 necesitas Corte).",
+    "Vence a Brock (tipo Roca) con Agua, Planta o Tierra.",
+    "En Isla Canela habla con Azul; Blaine (tipo Fuego) tiene ahora su gimnasio en las Islas Espuma (Ruta 20): véncelo con Agua, Tierra o Roca.",
+    "Con siete medallas de Kanto habla otra vez con Azul en Isla Canela: abre su gimnasio de Ciudad Verde.",
+    "Cruza el gimnasio de Ciudad Verde con sus baldosas giratorias y vence a Azul: medalla Tierra y MT92 Espacio raro.",
+    "Con las 16 medallas ve al laboratorio del profesor Oak en Pueblo Paleta: te da la MO08 Treparrocas y permiso para entrar en el Monte Plateado."
+   ],
+   "precaucion": "Los gimnasios de Kanto no se desbloquean todos al mismo tiempo: Azul exige haber vencido antes a los otros siete líderes."
+  },
+  "HEARTGOLD-13": {
+   "pasos": [
+    "Con las 16 medallas habla con Oak en Pueblo Paleta para que te deje entrar en el Monte Plateado.",
+    "Desde el edificio de la Calle Victoria sal hacia el oeste por la Ruta 28 hasta el Centro Pokémon del Monte Plateado y entra en la Cueva Monte Plateado.",
+    "Sube por la cueva (Surf, Cascada y Treparrocas) hasta la cima; cura antes en el Centro Pokémon del exterior.",
+    "Vence a Rojo: Pikachu nivel 88, Lapras 80, Snorlax 82 y Venusaur, Charizard y Blastoise 84. En la cima graniza durante el combate.",
+    "Tras vencer a Rojo, vuelve a Pueblo Paleta: Oak te deja elegir a Bulbasaur, Charmander o Squirtle."
+   ],
+   "precaucion": "El inicial de Oak es el requisito para que el Sr. Pokémon te dé la Esfera azul (Kyogre). Rojo se puede volver a retar tras vencer de nuevo a Lance."
+  },
+  "HEARTGOLD-14": {
+   "pasos": [
+    "Raikou y Entei: tras la escena de la Torre Quemada vagan por las rutas de Johto; mira su posición en el mapa del Pokégear, entra en esa ruta y usa Mal de ojo o un ataque que impida huir (o la Master Ball).",
+    "Suicune: sigue sus apariciones (Torre Quemada, norte de Ciudad Orquídea, Ruta 42, Ciudad Carmín, Ruta 14) y, tras vencer a Misty, combátelo en el Cabo Celeste (Ruta 25), nivel 40.",
+    "Ho-Oh: en la historia, cima de la Torre Campana (nivel 45). Lugia: ya en Kanto, el anciano de Ciudad Plateada (a la derecha de la Tienda, en lo alto) te da el Ala plateada; ve a la sala más profunda de las Islas Remolino (Torbellino, Surf, Destello, Fuerza y Cascada), nivel 70.",
+    "Aves: Articuno en lo más profundo de las Islas Espuma (nivel 50); Zapdos en la Ruta 10, junto a la puerta de la Central de Energía, tras las ocho medallas de Kanto; Moltres en la Cueva Monte Plateado, con Treparrocas.",
+    "Mewtwo: en la Cueva Celeste (al norte de Ciudad Celeste), con las 16 medallas; si lo debilitas o huyes, reaparece tras vencer de nuevo al Alto Mando.",
+    "Kyogre y Rayquaza: Torre Oculta (Ruta 47), nivel 50 (ver «Rojo → Oak → Orbe azul → Kyogre»). Latias: con la Pokédex Nacional, habla con Máximo al salir del Club de Fans de Ciudad Carmín y búscala errante por las rutas de Kanto.",
+    "Con Pokekeep: Groudon y Latios son de Plata SoulSilver; añádelos legales desde la Librería (para la Esfera verde el Groudon debe tener origen en Plata SoulSilver).",
+    "Marca por separado el avistamiento y la captura: un legendario debilitado cuenta como visto, no como capturado."
+   ],
+   "precaucion": "Los errantes huyen en el primer turno y cambian de ruta cuando tú cambias de zona: usa Mal de ojo, Bloqueo o un Pokémon con Sombra trampa y duérmelos antes de lanzar Balls."
+  },
+  "HEARTGOLD-15": {
+   "pasos": [
+    "Pokédex: registra como capturadas todas las especies de la Pokédex de Johto menos Mew y Celebi (254) y luego las de la Pokédex Nacional menos Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin y Arceus (484); pide los diplomas en la planta de Game Freak del Edificio Azulona (Ciudad Azulona).",
+    "Con Pokekeep: los exclusivos de la otra edición, los de Hoenn y Sinnoh que solo llegaban por intercambio o por el Parque Compi y los singulares de evento, añádelos legales desde la Librería.",
+    "Pokéathlon: en la Cúpula Pokéathlon (entre la Ruta 35 y el Parque Nacional) supera el récord de cada una de las 10 pruebas.",
+    "Ruinas Alfa: resuelve los cuatro puzles y las cuatro cámaras secretas y registra las 28 formas de Unown.",
+    "Hojas doradas: consigue cinco en un mismo Pokémon y enséñaselo a tu vecino (Eco o Lira).",
+    "Combates repetibles: Frente Batalla (Ruta 40), revancha del Alto Mando y de Lance, Rojo, y los líderes de Johto y Kanto, que te dan su número para retarlos en el Dojo Karate de Ciudad Azafrán.",
+    "Revisa en la ficha de entrenador las cinco estrellas: Liga, Pokédex Nacional, 100 victorias seguidas en la Torre Batalla, hojas doradas y récords del Pokéathlon."
+   ],
+   "precaucion": "Las estrellas de la ficha de Oro HeartGold y Plata SoulSilver no son las de Diamante, Perla y Platino: aquí cuentan las hojas doradas y el Pokéathlon, no los concursos ni el Subsuelo."
+  },
+  "HEARTGOLD-E01": {
+   "pasos": [
+    "En el sótano de la Torre Quemada (Ciudad Iris) libera a las tres bestias: Suicune se detiene a mirarte antes de huir.",
+    "Cuando llegues a Ciudad Orquídea, ve al norte junto a una casa aislada: aparece Suicune y, tras huir, Eusine te reta; véncelo.",
+    "En la Ruta 42, tras cruzar el primer tramo de agua, corta el arbusto que lleva a los árboles bonguri, cerca de una entrada del Monte Mortero: Suicune vuelve a aparecer.",
+    "Al desembarcar del S.S. Aqua en el puerto de Ciudad Carmín, Suicune aparece sobre el agua y Eusine llega tras él.",
+    "Ve a la Ruta 14, en el sur de Kanto: nueva aparición.",
+    "Vence a Misty en Ciudad Celeste y ve al Cabo Celeste (Ruta 25, junto a la casa de Bill): Suicune (nivel 40) ya no huye y puedes combatirlo; guarda antes."
+   ],
+   "precaucion": "Las apariciones van en orden: si una no salta, revisa que has visto la anterior. Si lo debilitas o no lo capturas, reaparece en la Torre Quemada tras vencer al Alto Mando reforzado (con las ocho medallas de Kanto)."
+  },
+  "HEARTGOLD-E02": {
+   "pasos": [
+    "Consigue las ocho medallas de Kanto (16 en total) y, con el permiso de Oak, sube al Monte Plateado y vence a Rojo.",
+    "Vuelve a Pueblo Paleta y acepta el inicial de Kanto que te ofrece Oak (Bulbasaur, Charmander o Squirtle).",
+    "Visita al Sr. Pokémon en su casa de la Ruta 30: te da la Esfera azul.",
+    "Ve a Ciudad Orquídea y entra en el Paso Acantilado, sal a la Ruta 47 y entra en la Cueva Acantilado; baja la escalera, haz Surf hacia la izquierda hasta el fondo, cruza el hueco entre las rocas y sube dos veces con Treparrocas hasta la Torre Oculta.",
+    "Kyogre te espera a nivel 50: guarda antes.",
+    "Para Rayquaza: reúne en la misma partida tu Kyogre y un Groudon capturado en Plata SoulSilver y habla con Oak; te da la Esfera verde y Rayquaza aparece en la Torre Oculta (nivel 50).",
+    "Con Pokekeep: añade desde la Librería un Groudon legal con origen Plata SoulSilver (un Groudon de Rubí o Zafiro no sirve) y llévalo a Oak."
+   ],
+   "precaucion": "La Esfera roja y Groudon son de Plata SoulSilver. Si el Sr. Pokémon no te da la esfera, es que te falta vencer a Rojo o recoger el inicial de Oak."
+  },
+  "HEARTGOLD-E03": {
+   "pasos": [
+    "Las Ruinas Alfa están al sur de Ciudad Malva (entradas desde la Ruta 36 y la Ruta 32). Cada puzle se toca solo con el lápiz: arrastra una pieza para moverla y dale un toque breve, sin arrastrar, para girarla 90°. El tablero es de 6×6: el cuadro central de 4×4 es la imagen (filas y columnas 1-4 desde arriba a la izquierda) y las piezas sueltas están en el borde (casillas 1-4 de cada lado, de izquierda a derecha arriba y abajo, de arriba abajo a izquierda y derecha).",
+    "Kabuto (cámara noreste, junto al acceso de la Ruta 36): pieza del borde izquierdo 1 → 3 toques → fila 2, columna 2; borde derecho 2 → 2 toques → fila 3, columna 3; borde izquierdo 4 → 1 toque → fila 1, columna 2; borde inferior 4 → 3 toques → fila 3, columna 1. Desbloquea los Unown A-J.",
+    "Aerodactyl (cámara sureste, junto al acceso de la Ruta 32; se cruza el lago con Surf): superior 1 → 1 toque → fila 3, col. 2; superior 3 → 2 → fila 4, col. 2; derecho 2 → 1 → fila 4, col. 4; izquierdo 3 → 1 → fila 1, col. 2; derecho 4 → 2 → fila 2, col. 2; inferior 2 → 2 → fila 1, col. 1; inferior 4 → 3 → fila 2, col. 1. Desbloquea R-V.",
+    "Omanyte (cámara suroeste, por la Cueva Unión con Surf y Fuerza): superior 2 → 3 toques → fila 3, col. 3; superior 4 → sin girar → fila 3, col. 2; izquierdo 1 → sin girar → fila 3, col. 1; derecho 2 → 2 → fila 4, col. 2; izquierdo 3 → sin girar → fila 2, col. 4; derecho 3 → 1 → fila 4, col. 1; izquierdo 4 → 1 → fila 1, col. 1; inferior 1 → 2 → fila 2, col. 3; inferior 2 → 3 → fila 3, col. 4. Desbloquea K-Q.",
+    "Ho-Oh (cámara noroeste, por la Cueva Unión con Surf): superior 2 → sin girar → fila 3, col. 1; superior 3 → 1 → fila 4, col. 2; superior 4 → 1 → fila 1, col. 1; izquierdo 1 → 2 → fila 4, col. 3; izquierdo 2 → 2 → fila 4, col. 1; derecho 2 → 1 → fila 3, col. 2; izquierdo 3 → 1 → fila 1, col. 2; derecho 4 → 1 → fila 3, col. 3; inferior 1 → 2 → fila 2, col. 1; inferior 2 → 3 → fila 2, col. 4. Desbloquea W-Z.",
+    "Cámaras secretas: en la sala de cada puzle, la palabra del fondo indica qué hacer para abrir la pared: en la de Kabuto usa una Cuerda Huida; en la de Aerodactyl usa Destello; en la de Omanyte usa una Piedra Agua; en la de Ho-Oh lleva a Ho-Oh en el equipo y examina la pared del fondo. Detrás hay una recámara con objetos.",
+    "Habla con el investigador del Centro de Investigación para llenar el Bloc Unown y captura las 26 letras en la gran sala subterránea (al resolver cada puzle caes en ella).",
+    "Con los cuatro puzles resueltos, al volver a entrar aparece una pared dorada: el científico la lee y te lleva al centro. Después, en la sala de entrada (antes de bajar la escalera) solo salen los Unown «!» y «?»: captúralos para tener los 28.",
+    "Con Pokekeep: si aún no tienes Ho-Oh para la cámara de Ho-Oh, añade uno legal desde la Librería."
+   ],
+   "precaucion": "Cada acción solo funciona en su sala: la Cuerda Huida en la de Kabuto, Destello en la de Aerodactyl, la Piedra Agua en la de Omanyte y Ho-Oh en la de Ho-Oh."
+  },
+  "HEARTGOLD-DETAIL1": {
+   "pasos": [
+    "Comprueba en tu ficha que tienes las 16 medallas y que has vencido a Rojo en la cima del Monte Plateado.",
+    "En Pueblo Paleta recibe del profesor Oak un inicial de Kanto (Bulbasaur, Charmander o Squirtle).",
+    "Ve a la casa del Sr. Pokémon en la Ruta 30: te da la Esfera azul.",
+    "Desde Ciudad Orquídea cruza el Paso Acantilado a la Ruta 47 y entra en la Cueva Acantilado; con Surf y Treparrocas (dos veces) llegas a la Torre Oculta.",
+    "Combate contra Kyogre (nivel 50) con la Esfera azul en la mochila; guarda antes.",
+    "Con Pokekeep: el Groudon de Plata SoulSilver que pide Oak para la Esfera verde, añádelo legal desde la Librería."
+   ],
+   "precaucion": "Si el Sr. Pokémon no te da la Esfera azul, falta el inicial de Oak: recógelo primero. La MO08 Treparrocas, necesaria para la Torre Oculta, te la da Oak al tener las 16 medallas."
+  },
+  "SOULSILVER-01": {
+   "pasos": [
+    "En Pueblo Primavera baja a ver a tu madre, sal (el Marill de tu vecino, Eco o Lira, choca contigo) y entra en el laboratorio del profesor Elm, a la izquierda de tu casa.",
+    "Elige a Chikorita (Planta), Cyndaquil (Fuego) o Totodile (Agua). El ayudante te da cinco Pociones y, en casa, tu madre te devuelve el Pokégear.",
+    "Sal por la Ruta 29 hacia el oeste hasta Ciudad Cerezo (un anciano te enseña la ciudad y te da las Deportivas) y sube por la Ruta 30 hasta la casa del Sr. Pokémon.",
+    "El Sr. Pokémon te da el Huevo Misterioso para Elm y el profesor Oak, que está de visita, te entrega la Pokédex.",
+    "Al volver por Ciudad Cerezo te reta el chico pelirrojo; en el laboratorio la policía investiga el robo de un inicial: dale nombre al ladrón y entrega el Huevo a Elm.",
+    "En la Ruta 29 tu vecino te enseña a capturar y te da cinco Poké Balls: registra tu primera captura."
+   ],
+   "precaucion": "La elección inicial solo puede hacerse una vez; el rival se queda con el inicial que tiene ventaja sobre el tuyo. Cyndaquil facilita los dos primeros gimnasios."
+  },
+  "SOULSILVER-02": {
+   "pasos": [
+    "Por la Ruta 30 y la Ruta 31 llega a Ciudad Malva (en el edificio de paso tu vecino te da la Cámara Lucha).",
+    "El gimnasio está cerrado: sube a la Torre Bellsprout, al noreste de la ciudad, vence a los sabios y al Anciano de la cima; te da la MT Destello.",
+    "En el gimnasio de Pegaso (tipo Volador) sube a la plataforma y vence con ataques Eléctrico, Roca o Hielo (un Geodude de la Cueva Oscura o el Onix que te cambian en Malva por un Bellsprout ayudan).",
+    "Recibe la medalla Céfiro (Golpe roca fuera de combate) y la MT51 Respiro.",
+    "Elm te llama: su ayudante te espera en la Tienda Pokémon de Malva y te da el Huevo que encontró el Sr. Pokémon (de él nace un Togepi)."
+   ],
+   "precaucion": "Sin el Huevo de la Tienda Pokémon el señor de la Ruta 32 no te deja seguir hacia el sur."
+  },
+  "SOULSILVER-03": {
+   "pasos": [
+    "Baja por la Ruta 32 (un señor que ve tu medalla te da una Semilla milagro), cruza la Cueva Unión y la lluviosa Ruta 33 hasta Pueblo Azalea.",
+    "Habla con César en su casa y bajad juntos al Pozo Slowpoke: vence a los reclutas del Team Rocket y al ejecutivo que les cortan la cola a los Slowpoke.",
+    "César te regala una Rapid Ball y desde entonces fabrica una Ball al día con los Bonguris que le lleves.",
+    "En el gimnasio de Antón (tipo Bicho) muévete por las telarañas en los vagones de Spinarak y vence con Fuego o Volador: medalla Colmena y MT89 Ida y vuelta.",
+    "En el Encinar, al oeste, encuentra los dos Farfetch’d del aprendiz de carbonero y acércate a cada uno por la espalda para que vuelvan con él.",
+    "El carbonero te regala la MO01 Corte; corta el arbusto, ayuda a la chica Kimono que se ha perdido y sal a la Ruta 34."
+   ],
+   "precaucion": "Si un Farfetch’d te ve llegar de frente, se escapa: rodéalo para hablarle por detrás. Antes de dejar el Encinar recoge sus objetos y los Pokémon que te falten."
+  },
+  "SOULSILVER-04": {
+   "pasos": [
+    "Sube por la Ruta 34 (allí está la Guardería Pokémon) hasta Ciudad Trigal; en la Vía Subterránea tu vecino te da la Caja corazón.",
+    "Blanca no está en su gimnasio: búscala en la Torre Radio, al oeste de la ciudad, y vuelve con ella al gimnasio.",
+    "Recorre el gimnasio con forma de Clefairy venciendo a todos sus entrenadores y vence a Blanca (tipo Normal) con Lucha; un Pokémon de tipo Fantasma no recibe sus ataques Normales.",
+    "Blanca se echa a llorar y no te da la medalla: haz como que te vas; una entrenadora la convence y, al volver a hablar con ella, te da la medalla Planicie (Fuerza fuera de combate) y la MT45 Atracción.",
+    "Con la medalla, ve a la floristería, al este del gimnasio: la encargada te regala la Regadera Squirtle."
+   ],
+   "precaucion": "Blanca no te entrega la medalla inmediatamente tras el combate: hay que volver a hablar con ella."
+  },
+  "SOULSILVER-05": {
+   "pasos": [
+    "Sal de Ciudad Trigal por la Ruta 35; el edificio de paso lleva al Parque Nacional y, a la izquierda, a la Cúpula Pokéathlon. Sigue hasta la Ruta 36.",
+    "Usa la Regadera con el «árbol» que se mueve en la Ruta 36: es un Sudowoodo salvaje que te ataca; captúralo o véncelo para despejar el camino.",
+    "Por la Ruta 37 entra en Ciudad Iris; en el Teatro de Danza vence al recluta Rocket que molesta a una chica Kimono: un señor del público te da la MO03 Surf.",
+    "El líder Morti está en la Torre Quemada (noroeste): conoce a Eusine, vence a tu rival y baja al sótano; Raikou, Entei y Suicune huyen y quedan libres.",
+    "Morti vuelve al gimnasio: avanza a oscuras (solo hay luz junto a los entrenadores) y vence a Morti (tipo Fantasma) con ataques de tipo Siniestro.",
+    "Recibe la medalla Niebla (Surf fuera de combate) y la MT30 Bola sombra."
+   ],
+   "precaucion": "Desde la Torre Quemada Raikou y Entei vagan por las rutas de Johto y empieza la persecución de Suicune (ver «Suicune: cadena exacta de apariciones»)."
+  },
+  "SOULSILVER-06": {
+   "pasos": [
+    "Por las Rutas 38 y 39 llega a Ciudad Olivo. Yasmina no está en el gimnasio: sube al Faro de Olivo, al sureste.",
+    "En la cima Yasmina cuida de su Ampharos, Amphy, que está enfermo: necesita una medicina que preparan en Ciudad Orquídea.",
+    "Surfea por las Rutas 40 y 41 (las Islas Remolino quedan para más adelante) hasta Ciudad Orquídea; al norte de la ciudad verás a Suicune y Eusine te retará.",
+    "En el gimnasio de Aníbal (tipo Lucha) sube y gira la válvula roja de la izquierda para cortar la cascada; vence con Volador o Psíquico: medalla Tormenta y MT01 Puño certero. Al salir, su mujer te da la MO02 Vuelo.",
+    "Consigue en Ciudad Orquídea la Poción Secreta, vuela a Olivo y dásela a Yasmina en lo alto del faro (puedes subir en ascensor).",
+    "Vence a Yasmina (tipo Acero) con Fuego, Lucha o Tierra: medalla Mineral y MT23 Cola férrea."
+   ],
+   "precaucion": "Yasmina no acepta el combate hasta que Amphy esté curado: el viaje a Ciudad Orquídea es obligatorio."
+  },
+  "SOULSILVER-07": {
+   "pasos": [
+    "Tu vecino te avisa de que algo raro pasa en el Lago de la Furia. Ve al este de Ciudad Iris por la Ruta 42 (Suicune aparece junto a la entrada del Monte Mortero) hasta Pueblo Caoba.",
+    "Sube por la Ruta 43 por la hierba (en el edificio de paso un Rocket cobra 1000 ₽) hasta el Lago de la Furia.",
+    "Surfea hasta el Gyarados rojo, que siempre es variocolor: captúralo o véncelo y recoge la Escama roja que deja.",
+    "Lance te pide ayuda: en Pueblo Caoba entra con él en la tienda sospechosa y baja al escondite del Team Rocket; vence a los reclutas, a Petrel y a Atenea (las contraseñas de las puertas te las revelan los propios Rocket).",
+    "Junto a Lance vence a los seis Electrode que alimentan la máquina de ondas (tú tres y él tres): Lance te da la MO05 Torbellino.",
+    "Vence a Fredo (tipo Hielo) cruzando las pistas de hielo del gimnasio de Caoba: medalla Glaciar (Torbellino fuera de combate) y MT07 Granizo."
+   ],
+   "precaucion": "Guarda antes del Gyarados rojo si quieres capturarlo: es único."
+  },
+  "SOULSILVER-08": {
+   "pasos": [
+    "Elm te pide que enciendas la radio: el Team Rocket ha tomado la Torre Radio de Ciudad Trigal. Entra y sube venciendo reclutas.",
+    "Baja a la Vía Subterránea por la entrada sur de Trigal: en el almacén pulsa los interruptores en orden rojo, azul y verde y rescata al verdadero director, que te da la Llave magnética.",
+    "Vuelve a la Torre Radio, abre las puertas de la tercera planta, vence a los ejecutivos y, en el mirador de arriba, a Atlas.",
+    "El director te regala el Ala plateada.",
+    "Ve al este de Pueblo Caoba por la Ruta 44 y cruza la Ruta Helada: en la segunda pista de hielo coge la MO07 Cascada deslizándote derecha, arriba, izquierda, abajo, izquierda, arriba y derecha.",
+    "En Ciudad Endrino vence a Débora (tipo Dragón; abre con Gyarados) y entra en la Guarida Dragón, tras el gimnasio, con Surf y Torbellino.",
+    "Responde al anciano del Santuario Dragón: arriba, arriba, abajo, arriba, medio. Débora te da la medalla Dragón y la MT59 Pulso dragón; vuelve a hablar con el anciano para recibir un Dratini."
+   ],
+   "precaucion": "Si aciertas todas las preguntas del anciano a la primera, el Dratini sabe Velocidad extrema; si fallas alguna, sabrá Ataque rápido."
+  },
+  "SOULSILVER-09": {
+   "pasos": [
+    "Con ocho medallas vuelve a Pueblo Primavera: Elm te regala la Master Ball y tu vecino te impide ir a la Liga.",
+    "En el Teatro de Danza de Ciudad Iris vence a las cinco chicas Kimono que fuiste encontrando: te dan la Campana oleaje.",
+    "Ve a las Islas Remolino (entra por la isla del noreste, la más cercana a Olivo) con Torbellino, Surf, Destello y Cascada; con el Ala plateada y la Campana oleaje baja hasta Lugia, nivel 45.",
+    "Haz Surf hacia el este desde Pueblo Primavera por la Ruta 27, cruza las Cataratas Tohjo (Cascada) y sigue al norte por la Ruta 26; el guardia de la entrada comprueba tus ocho medallas.",
+    "Cruza la Calle Victoria; al salir te reta tu rival.",
+    "En la Meseta Añil vence a Mento (Psíquico), Koga (Veneno), Bruno (Lucha) y Karen (Siniestro) y al campeón Lance (Dragón): usa Hielo, Eléctrico y Roca.",
+    "Entra en el Hall de la Fama con Lance."
+   ],
+   "precaucion": "Si debilitas a Lugia, vuelve tras vencer al Alto Mando: reaparece. El equipo de Lance exige ataques de Hielo."
+  },
+  "SOULSILVER-10": {
+   "pasos": [
+    "Tras la Liga, Elm te da el Ticket barco. En el puerto de Ciudad Olivo el profesor Oak te entrega la Pokédex Nacional.",
+    "Embarca en el S.S. Aqua; durante el viaje ayuda a un caballero a encontrar a su nieta (está en el camarote del capitán).",
+    "Al desembarcar en Ciudad Carmín verás a Suicune y a Eusine en el puerto.",
+    "Vence a Lt. Surge (tipo Eléctrico) en Ciudad Carmín: busca los dos interruptores escondidos en las papeleras para abrir las barreras. Recibes la medalla Trueno.",
+    "Por la Ruta 6 llega a Ciudad Azafrán y vence a Sabrina (Psíquico; medalla Pantano); por la Ruta 7 llega a Ciudad Azulona y vence a Erika (Planta; medalla Arcoíris).",
+    "En Ciudad Celeste el gimnasio está vacío: ve a la Central de Energía (siguiente misión)."
+   ],
+   "precaucion": "No todos los gimnasios de Kanto se abren a la vez: Misty aparece tras recuperar la Maquinaria de la Central, Brock necesita despertar al Snorlax de la Ruta 11 y Azul pide siete medallas de Kanto."
+  },
+  "SOULSILVER-11": {
+   "pasos": [
+    "Desde Ciudad Celeste ve por la Ruta 9 y haz Surf hacia el sur por el río de la Ruta 10 hasta la Central de Energía: el director ha perdido la Maquinaria.",
+    "Vuelve al gimnasio de Ciudad Celeste, persigue al sospechoso hasta el puente al norte de la ciudad y vence a su Golbat: te dice dónde la escondió.",
+    "Recoge la Maquinaria en el gimnasio Celeste, junto a los flotadores a la izquierda del escenario, y llévala a la Central: el director te da la MT57 Rayo carga.",
+    "En la Torre Radio de Pueblo Lavanda actualizan tu Pokégear con la Expansión de radio, que incluye la Pokéflauta.",
+    "Busca el Poké Muñeco Clefairy en el Club de Fans de Pokémon de Ciudad Carmín y devuélveselo a la Copiona de Ciudad Azafrán: te da el Magnetopase para el Magnetotrén (Azafrán–Trigal).",
+    "Ve al Cabo Celeste (Ruta 25, junto a la casa de Bill), interrumpe la cita de Misty y véncela en su gimnasio (Agua) con Eléctrico o Planta."
+   ],
+   "precaucion": "Sin la Maquinaria no funcionan el Magnetotrén ni la radio de Kanto, y sin la Pokéflauta no puedes despertar al Snorlax que bloquea la Cueva Diglett."
+  },
+  "SOULSILVER-12": {
+   "pasos": [
+    "En Ciudad Fucsia vence a Sachiko (tipo Veneno; el gimnasio tiene paredes invisibles) con Psíquico o Tierra.",
+    "Sintoniza la Pokéflauta del Pokégear frente al Snorlax de la Ruta 11 (nivel 50), véncelo o captúralo y cruza la Cueva Diglett hasta Ciudad Plateada (en la Ruta 2 necesitas Corte).",
+    "Vence a Brock (tipo Roca) con Agua, Planta o Tierra.",
+    "En Isla Canela habla con Azul; Blaine (tipo Fuego) tiene ahora su gimnasio en las Islas Espuma (Ruta 20): véncelo con Agua, Tierra o Roca.",
+    "Con siete medallas de Kanto habla otra vez con Azul en Isla Canela: abre su gimnasio de Ciudad Verde.",
+    "Cruza el gimnasio de Ciudad Verde con sus baldosas giratorias y vence a Azul: medalla Tierra y MT92 Espacio raro.",
+    "Con las 16 medallas ve al laboratorio del profesor Oak en Pueblo Paleta: te da la MO08 Treparrocas y permiso para entrar en el Monte Plateado."
+   ],
+   "precaucion": "Los gimnasios de Kanto no se desbloquean todos al mismo tiempo: Azul exige haber vencido antes a los otros siete líderes."
+  },
+  "SOULSILVER-13": {
+   "pasos": [
+    "Con las 16 medallas habla con Oak en Pueblo Paleta para que te deje entrar en el Monte Plateado.",
+    "Desde el edificio de la Calle Victoria sal hacia el oeste por la Ruta 28 hasta el Centro Pokémon del Monte Plateado y entra en la Cueva Monte Plateado.",
+    "Sube por la cueva (Surf, Cascada y Treparrocas) hasta la cima; cura antes en el Centro Pokémon del exterior.",
+    "Vence a Rojo: Pikachu nivel 88, Lapras 80, Snorlax 82 y Venusaur, Charizard y Blastoise 84. En la cima graniza durante el combate.",
+    "Tras vencer a Rojo, vuelve a Pueblo Paleta: Oak te deja elegir a Bulbasaur, Charmander o Squirtle."
+   ],
+   "precaucion": "El inicial de Oak es el requisito para que el Sr. Pokémon te dé la Esfera roja (Groudon). Rojo se puede volver a retar tras vencer de nuevo a Lance."
+  },
+  "SOULSILVER-14": {
+   "pasos": [
+    "Raikou y Entei: tras la escena de la Torre Quemada vagan por las rutas de Johto; mira su posición en el mapa del Pokégear, entra en esa ruta y usa Mal de ojo o un ataque que impida huir (o la Master Ball).",
+    "Suicune: sigue sus apariciones (Torre Quemada, norte de Ciudad Orquídea, Ruta 42, Ciudad Carmín, Ruta 14) y, tras vencer a Misty, combátelo en el Cabo Celeste (Ruta 25), nivel 40.",
+    "Lugia: en la historia, Islas Remolino (nivel 45). Ho-Oh: ya en Kanto, el anciano de Ciudad Plateada (a la derecha de la Tienda, en lo alto) te da el Ala arcoíris; sube a la cima de la Torre Campana de Ciudad Iris, nivel 70.",
+    "Aves: Articuno en lo más profundo de las Islas Espuma (nivel 50); Zapdos en la Ruta 10, junto a la puerta de la Central de Energía, tras las ocho medallas de Kanto; Moltres en la Cueva Monte Plateado, con Treparrocas.",
+    "Mewtwo: en la Cueva Celeste (al norte de Ciudad Celeste), con las 16 medallas; si lo debilitas o huyes, reaparece tras vencer de nuevo al Alto Mando.",
+    "Groudon y Rayquaza: Torre Oculta (Ruta 47), nivel 50 (ver «Rojo → Oak → Orbe rojo → Groudon»). Latios: con la Pokédex Nacional, habla con Máximo al salir del Club de Fans de Ciudad Carmín y búscalo errante por las rutas de Kanto.",
+    "Con Pokekeep: Kyogre y Latias son de Oro HeartGold; añádelos legales desde la Librería (para la Esfera verde el Kyogre debe tener origen en Oro HeartGold).",
+    "Marca por separado el avistamiento y la captura: un legendario debilitado cuenta como visto, no como capturado."
+   ],
+   "precaucion": "Los errantes huyen en el primer turno y cambian de ruta cuando tú cambias de zona: usa Mal de ojo, Bloqueo o un Pokémon con Sombra trampa y duérmelos antes de lanzar Balls."
+  },
+  "SOULSILVER-15": {
+   "pasos": [
+    "Pokédex: registra como capturadas todas las especies de la Pokédex de Johto menos Mew y Celebi (254) y luego las de la Pokédex Nacional menos Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin y Arceus (484); pide los diplomas en la planta de Game Freak del Edificio Azulona (Ciudad Azulona).",
+    "Con Pokekeep: los exclusivos de la otra edición, los de Hoenn y Sinnoh que solo llegaban por intercambio o por el Parque Compi y los singulares de evento, añádelos legales desde la Librería.",
+    "Pokéathlon: en la Cúpula Pokéathlon (entre la Ruta 35 y el Parque Nacional) supera el récord de cada una de las 10 pruebas.",
+    "Ruinas Alfa: resuelve los cuatro puzles y las cuatro cámaras secretas y registra las 28 formas de Unown.",
+    "Hojas doradas: consigue cinco en un mismo Pokémon y enséñaselo a tu vecino (Eco o Lira).",
+    "Combates repetibles: Frente Batalla (Ruta 40), revancha del Alto Mando y de Lance, Rojo, y los líderes de Johto y Kanto, que te dan su número para retarlos en el Dojo Karate de Ciudad Azafrán.",
+    "Revisa en la ficha de entrenador las cinco estrellas: Liga, Pokédex Nacional, 100 victorias seguidas en la Torre Batalla, hojas doradas y récords del Pokéathlon."
+   ],
+   "precaucion": "Las estrellas de la ficha de Oro HeartGold y Plata SoulSilver no son las de Diamante, Perla y Platino: aquí cuentan las hojas doradas y el Pokéathlon, no los concursos ni el Subsuelo."
+  },
+  "SOULSILVER-E01": {
+   "pasos": [
+    "En el sótano de la Torre Quemada (Ciudad Iris) libera a las tres bestias: Suicune se detiene a mirarte antes de huir.",
+    "Cuando llegues a Ciudad Orquídea, ve al norte junto a una casa aislada: aparece Suicune y, tras huir, Eusine te reta; véncelo.",
+    "En la Ruta 42, tras cruzar el primer tramo de agua, corta el arbusto que lleva a los árboles bonguri, cerca de una entrada del Monte Mortero: Suicune vuelve a aparecer.",
+    "Al desembarcar del S.S. Aqua en el puerto de Ciudad Carmín, Suicune aparece sobre el agua y Eusine llega tras él.",
+    "Ve a la Ruta 14, en el sur de Kanto: nueva aparición.",
+    "Vence a Misty en Ciudad Celeste y ve al Cabo Celeste (Ruta 25, junto a la casa de Bill): Suicune (nivel 40) ya no huye y puedes combatirlo; guarda antes."
+   ],
+   "precaucion": "Las apariciones van en orden: si una no salta, revisa que has visto la anterior. Si lo debilitas o no lo capturas, reaparece en la Torre Quemada tras vencer al Alto Mando reforzado (con las ocho medallas de Kanto)."
+  },
+  "SOULSILVER-E02": {
+   "pasos": [
+    "Consigue las ocho medallas de Kanto (16 en total) y, con el permiso de Oak, sube al Monte Plateado y vence a Rojo.",
+    "Vuelve a Pueblo Paleta y acepta el inicial de Kanto que te ofrece Oak (Bulbasaur, Charmander o Squirtle).",
+    "Visita al Sr. Pokémon en su casa de la Ruta 30: te da la Esfera roja.",
+    "Ve a Ciudad Orquídea y entra en el Paso Acantilado, sal a la Ruta 47 y entra en la Cueva Acantilado; baja la escalera, haz Surf hacia la izquierda hasta el fondo, cruza el hueco entre las rocas y sube dos veces con Treparrocas hasta la Torre Oculta.",
+    "Groudon te espera a nivel 50: guarda antes.",
+    "Para Rayquaza: reúne en la misma partida tu Groudon y un Kyogre capturado en Oro HeartGold y habla con Oak; te da la Esfera verde y Rayquaza aparece en la Torre Oculta (nivel 50).",
+    "Con Pokekeep: añade desde la Librería un Kyogre legal con origen Oro HeartGold (un Kyogre de Rubí o Zafiro no sirve) y llévalo a Oak."
+   ],
+   "precaucion": "La Esfera azul y Kyogre son de Oro HeartGold. Si el Sr. Pokémon no te da la esfera, es que te falta vencer a Rojo o recoger el inicial de Oak."
+  },
+  "SOULSILVER-E03": {
+   "pasos": [
+    "Las Ruinas Alfa están al sur de Ciudad Malva (entradas desde la Ruta 36 y la Ruta 32). Cada puzle se toca solo con el lápiz: arrastra una pieza para moverla y dale un toque breve, sin arrastrar, para girarla 90°. El tablero es de 6×6: el cuadro central de 4×4 es la imagen (filas y columnas 1-4 desde arriba a la izquierda) y las piezas sueltas están en el borde (casillas 1-4 de cada lado, de izquierda a derecha arriba y abajo, de arriba abajo a izquierda y derecha).",
+    "Kabuto (cámara noreste, junto al acceso de la Ruta 36): pieza del borde izquierdo 1 → 3 toques → fila 2, columna 2; borde derecho 2 → 2 toques → fila 3, columna 3; borde izquierdo 4 → 1 toque → fila 1, columna 2; borde inferior 4 → 3 toques → fila 3, columna 1. Desbloquea los Unown A-J.",
+    "Aerodactyl (cámara sureste, junto al acceso de la Ruta 32; se cruza el lago con Surf): superior 1 → 1 toque → fila 3, col. 2; superior 3 → 2 → fila 4, col. 2; derecho 2 → 1 → fila 4, col. 4; izquierdo 3 → 1 → fila 1, col. 2; derecho 4 → 2 → fila 2, col. 2; inferior 2 → 2 → fila 1, col. 1; inferior 4 → 3 → fila 2, col. 1. Desbloquea R-V.",
+    "Omanyte (cámara suroeste, por la Cueva Unión con Surf y Fuerza): superior 2 → 3 toques → fila 3, col. 3; superior 4 → sin girar → fila 3, col. 2; izquierdo 1 → sin girar → fila 3, col. 1; derecho 2 → 2 → fila 4, col. 2; izquierdo 3 → sin girar → fila 2, col. 4; derecho 3 → 1 → fila 4, col. 1; izquierdo 4 → 1 → fila 1, col. 1; inferior 1 → 2 → fila 2, col. 3; inferior 2 → 3 → fila 3, col. 4. Desbloquea K-Q.",
+    "Ho-Oh (cámara noroeste, por la Cueva Unión con Surf): superior 2 → sin girar → fila 3, col. 1; superior 3 → 1 → fila 4, col. 2; superior 4 → 1 → fila 1, col. 1; izquierdo 1 → 2 → fila 4, col. 3; izquierdo 2 → 2 → fila 4, col. 1; derecho 2 → 1 → fila 3, col. 2; izquierdo 3 → 1 → fila 1, col. 2; derecho 4 → 1 → fila 3, col. 3; inferior 1 → 2 → fila 2, col. 1; inferior 2 → 3 → fila 2, col. 4. Desbloquea W-Z.",
+    "Cámaras secretas: en la sala de cada puzle, la palabra del fondo indica qué hacer para abrir la pared: en la de Kabuto usa una Cuerda Huida; en la de Aerodactyl usa Destello; en la de Omanyte usa una Piedra Agua; en la de Ho-Oh lleva a Ho-Oh en el equipo y examina la pared del fondo. Detrás hay una recámara con objetos.",
+    "Habla con el investigador del Centro de Investigación para llenar el Bloc Unown y captura las 26 letras en la gran sala subterránea (al resolver cada puzle caes en ella).",
+    "Con los cuatro puzles resueltos, al volver a entrar aparece una pared dorada: el científico la lee y te lleva al centro. Después, en la sala de entrada (antes de bajar la escalera) solo salen los Unown «!» y «?»: captúralos para tener los 28.",
+    "Con Pokekeep: si aún no tienes Ho-Oh (en Plata SoulSilver llega tras la Liga), añade uno legal desde la Librería para la cámara de Ho-Oh."
+   ],
+   "precaucion": "Cada acción solo funciona en su sala: la Cuerda Huida en la de Kabuto, Destello en la de Aerodactyl, la Piedra Agua en la de Omanyte y Ho-Oh en la de Ho-Oh."
+  },
+  "SOULSILVER-DETAIL1": {
+   "pasos": [
+    "Comprueba en tu ficha que tienes las 16 medallas y que has vencido a Rojo en la cima del Monte Plateado.",
+    "En Pueblo Paleta recibe del profesor Oak un inicial de Kanto (Bulbasaur, Charmander o Squirtle).",
+    "Ve a la casa del Sr. Pokémon en la Ruta 30: te da la Esfera roja.",
+    "Desde Ciudad Orquídea cruza el Paso Acantilado a la Ruta 47 y entra en la Cueva Acantilado; con Surf y Treparrocas (dos veces) llegas a la Torre Oculta.",
+    "Combate contra Groudon (nivel 50) con la Esfera roja en la mochila; guarda antes.",
+    "Con Pokekeep: el Kyogre de Oro HeartGold que pide Oak para la Esfera verde, añádelo legal desde la Librería."
+   ],
+   "precaucion": "Si el Sr. Pokémon no te da la Esfera roja, falta el inicial de Oak: recógelo primero. La MO08 Treparrocas, necesaria para la Torre Oculta, te la da Oak al tener las 16 medallas."
+  }
+ },
+ "objetivos": {
+  "DIAMOND:story": "Cuándo: desde el principio; es lo que desbloquea casi todo lo demás. Dónde: toda Sinnoh, de Pueblo Hojaverde a la Liga Pokémon (al final de la Calle Victoria). Paso a paso: 1) Consigue las ocho medallas en el orden de Diamante y Perla: Roco (Ciudad Pirita, Roca), Gardenia (Ciudad Vetusta, Planta), Brega (Ciudad Rocavelo, Lucha), Mananti (Ciudad Pradera, Agua), Fantina (Ciudad Corazón, Fantasma; solo después de conseguir Surf en Pueblo Caelestis), Acerón (Ciudad Canal, Acero), Inverna (Ciudad Puntaneva, Hielo) y Lectro (Ciudad Marina, Eléctrico). 2) Detén al Equipo Galaxia en los lagos, en su sede de Ciudad Rocavelo y en la Columna Lanza, donde te enfrentas a Helio y a Dialga. 3) Con la MO07 Cascada que te da Yasmina en la Ruta 223, cruza la Calle Victoria. 4) Vence a Israel, a Alecrán, Gaia, Fausto, Delos y a la campeona Cintia y entra en el Hall de la Fama. Consejo: la pestaña «Dónde estás» con tu guardado te dice la siguiente medalla y la zona a la que ir. Fuente: WikiDex «Guía de Pokémon Diamante y Pokémon Perla».",
+  "DIAMOND:postgame": "Cuándo: tras ver los créditos. Dónde: Pueblo Arena, Ciudad Puntaneva (puerto) y la Bahía Gresca. Paso a paso: 1) Completa los vistos de la Pokédex de Sinnoh y habla con Serbal en su laboratorio de Pueblo Arena: el profesor Oak instala la Pokédex Nacional y Serbal te da el Pokéradar. 2) Toma el barco del puerto de Ciudad Puntaneva hasta la Zona de Combate; el pescador del norte te regala la Supercaña. 3) Recorre el Parque Batalla con la Torre Batalla y, con la Pokédex Nacional, las Rutas 225 a 230 hasta la Montaña Dura (Ruta 227), donde acompañas a Bulgur. 4) Después: Heatran en el fondo de la Montaña Dura; Giratina en la Cueva Retorno (Ruta 214, por la Vía Manantial); Cresselia desde la Isla Plenilunio (barco de Ciudad Canal); Regigigas en el Templo Puntaneva; la Ruta 224 por la Calle Victoria. Consejo: casi todo lo de la Bahía Gresca exige la Pokédex Nacional; consíguela antes de ir. Fuente: WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (páginas 24-27).",
+  "DIAMOND:battle1": "Cuándo: después de ser campeón; la Liga se puede repetir cuantas veces quieras. Dónde: Liga Pokémon de Sinnoh, al final de la Calle Victoria (Surf y Cascada por la Ruta 223 desde Ciudad Marina). Paso a paso: 1) Ten en cuenta que en Diamante y Perla no hay equipos de revancha: al volver, el Alto Mando y Cintia (esta, con niveles 60-66) usan los mismos Pokémon (la revancha reforzada llega con Platino). 2) Lleva un equipo por encima del nivel 60 y Restaurar todo y Revivir: dentro de la Liga no puedes salir a curarte. 3) Vence en orden a Alecrán (Bicho), Gaia (Tierra), Fausto (Fuego) y Delos (Psíquico). 4) Termina venciendo a Cintia para completar la vuelta. Consejo: repetir la Liga es buen sitio para subir de nivel y ganar dinero. Fuente: WikiDex «Cintia»; WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (Alto Mando).",
+  "DIAMOND:pokedex": "Cuándo: en la fase final, con la Pokédex Nacional. Dónde: toda Sinnoh, la Bahía Gresca y el Parque Compi (Ruta 221). Paso a paso: 1) Registra como capturadas 482 especies: no cuentan Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus. 2) Usa el Pokéradar en la hierba para las especies de otras regiones y para cadenas. 3) Los exclusivos de la otra edición y los iniciales de otras regiones llegan por intercambio; los de Game Boy Advance, por el Parque Compi (consola con ranura de GBA). 4) Con Pokekeep: lo que te falte de otras ediciones o que solo llegaba por el Parque Compi, añádelo legal desde la Librería. Consejo: completarla da el diploma Nacional del Hotel Gran Lago y una estrella de la ficha. Fuente: pokeplatinum (src/pokedex.c, lista de especies excluidas); WikiDex «Ficha de entrenador».",
+  "DIAMOND:diploma-regional": "Cuándo: en cuanto hayas visto las 150 especies de la Pokédex de Sinnoh (basta con verlas; Manaphy, el n.º 151, no hace falta). Dónde: casa del director del juego, en la Orilla Valor (Hotel Gran Lago, entre la Ruta 213 y la Ruta 214). Paso a paso: 1) Completa los vistos combatiendo contra entrenadores y fijándote en los Pokémon de los intercambios. 2) El último suele ser el legendario de la otra edición: lo registra la anciana de la casa grande del norte de Pueblo Caelestis con un libro del Monte Corona. 3) Habla con Serbal en Pueblo Arena: aparece Oak e instala la Pokédex Nacional. 4) Habla con el director del juego: te entrega el diploma de la Pokédex de Sinnoh. Consejo: las revanchas con el Buscapelea ayudan a ver especies de entrenadores. Fuente: WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (páginas 2 y 24); pokeplatinum (mismo guion del director).",
+  "DIAMOND:diploma-nacional": "Cuándo: en la fase final, con la Pokédex Nacional. Dónde: casa del director del juego, Orilla Valor (Hotel Gran Lago). Paso a paso: 1) Registra como capturadas 482 especies de la Pokédex Nacional: no cuentan Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus. 2) Trae lo que no se captura en tu edición desde la otra, desde Platino, Oro HeartGold o Plata SoulSilver por intercambio, o de Game Boy Advance por el Parque Compi (Ruta 221). 3) Con Pokekeep: lo que solo llegaba por intercambio o por el Parque Compi, añádelo legal desde la Librería. 4) Habla con el director del juego: te entrega el diploma de la Pokédex Nacional (cuenta además como estrella de la ficha). Consejo: los exclusivos de versión y los iniciales de otras regiones son lo que más tarda. Fuente: WikiDex «Ficha de entrenador»; pokeplatinum (src/pokedex.c).",
+  "DIAMOND:pokemon-480": "Cuándo: tras el combate de la Columna Lanza (fin de la historia del Equipo Galaxia). Dónde: Caverna Agudeza, en el Lago Agudeza (al norte de la Ruta 217; se sube con Treparrocas desde la Orilla Agudeza). Paso a paso: 1) Entra en la Caverna Agudeza. 2) Uxie te espera a nivel 50 y no huye. 3) Duérmelo o paralízalo y usa Ocaso Balls (es una cueva). Consejo: Falsotortazo lo deja con 1 PS. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Uxie».",
+  "DIAMOND:pokemon-481": "Cuándo: tras el combate de la Columna Lanza (fin de la historia del Equipo Galaxia). Dónde: Caverna Veraz, en el Lago Veraz (Ruta 201), y después errante por Sinnoh. Paso a paso: 1) Entra en la Caverna Veraz: Mesprit (nivel 50) huye y empieza a vagar. 2) Localízalo con la función Marcamapa del Poké-reloj y entra en su ruta. 3) En combate, usa Mal de ojo (lo conocen los Golbat de la Calle Victoria) o un Wobbuffet con Sombra trampa para que no huya; duérmelo o paralízalo. Consejo: si huye, cambia de ruta de forma impredecible; la Master Ball lo resuelve en un turno. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Mesprit».",
+  "DIAMOND:pokemon-482": "Cuándo: tras el combate de la Columna Lanza (fin de la historia del Equipo Galaxia). Dónde: Caverna Valor, en el Lago Valor (al norte de la Ruta 214; se entra con Surf). Paso a paso: 1) Entra en la Caverna Valor. 2) Azelf te espera a nivel 50 y no huye. 3) Duérmelo o paralízalo y usa Ocaso Balls. Consejo: guarda antes del combate. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Azelf».",
+  "DIAMOND:pokemon-485": "Cuándo: tras la Liga, con la Pokédex Nacional. Dónde: lo más profundo de la Montaña Dura (Ruta 227, Bahía Gresca). Paso a paso: 1) Con la Pokédex Nacional, Bulgur se une a ti en la Montaña Dura: llegad al fondo, donde se lleva la Piedra Magma. 2) Búscalo en la Zona Sobrevivir: dice que va a devolverla. 3) Vuelve tú solo al fondo de la Montaña Dura: Heatran (nivel 70) aparece. Consejo: lleva Pokémon de Agua o Tierra (cuidado: es de tipo Fuego y Acero). Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Heatran»; WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (página 26).",
+  "DIAMOND:pokemon-487": "Cuándo: tras la Liga. Dónde: Cueva Retorno, en la Fuente Despedida (Ruta 214 → Vía Manantial). Paso a paso: 1) Lleva Treparrocas y Despejar (Golpe roca ahorra camino). 2) Entra por la Vía Manantial, al sur de Ciudad Rocavelo, hasta la Fuente Despedida y sube con Treparrocas a la cueva. 3) Las salas son aleatorias: encuentra tres pilares antes de recorrer 30 salas (si vuelves por la puerta por la que entraste, regresas al inicio). 4) En la última sala está Giratina, nivel 70. Consejo: guarda antes de entrar en la sala final. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Cueva Retorno».",
+  "DIAMOND:pokemon-488": "Cuándo: tras la Liga, con la Pokédex Nacional. Dónde: casa del suroeste de Ciudad Canal, Isla Plenilunio y después errante por Sinnoh. Paso a paso: 1) En la casa del suroeste de Ciudad Canal, la madre de un niño con pesadillas te cuenta que solo una pluma de Cresselia puede curarlo. 2) El marinero de Ciudad Canal te lleva a la Isla Plenilunio: examina a Cresselia para registrarla y huye dejando la Pluma lunar. 3) Entrega la Pluma lunar al niño. 4) Cresselia (nivel 50) vaga por Sinnoh: localízala con el Marcamapa del Poké-reloj y usa Mal de ojo o Sombra trampa. Consejo: con la Master Ball te ahorras la persecución. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Cresselia».",
+  "DIAMOND:pokemon-486": "Cuándo: tras la Liga, con la Pokédex Nacional y Regirock, Regice y Registeel en el equipo. Dónde: Templo Puntaneva, al norte de Ciudad Puntaneva. Paso a paso: 1) En Diamante y Perla los Regis solo llegan por el Parque Compi (Ruta 221) desde Rubí, Zafiro o Esmeralda, o por intercambio con Platino. 2) Con Pokekeep: añade a Regirock, Regice y Registeel legales desde la Librería y ponlos en el equipo. 3) Inverna te deja entrar al templo: baja los pisos por las pistas de hielo. 4) En la última sala la estatua cobra vida: Regigigas aparece a nivel 70. Consejo: Regigigas tiene Inicio lento: aprovecha sus primeros turnos para dormirlo. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Templo Puntaneva (Sinnoh)»; WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (página 27).",
+  "DIAMOND:pokemon-483": "Cuándo: final de la historia del Equipo Galaxia, en la cima del Monte Corona. Dónde: Columna Lanza. Paso a paso: 1) Sube al Monte Corona desde la Ruta 207 (Surf, Treparrocas, Golpe roca y Fuerza). 2) Vence con Israel a Venus y Ceres y luego a Helio. 3) Dialga aparece a nivel 47: guarda antes, duérmelo o paralízalo y captúralo. Consejo: evita ataques que le resten PS cada turno (veneno, Drenadoras). Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (página 20).",
+  "DIAMOND:card-0": "Cuándo: al terminar la historia. Dónde: Liga Pokémon de Sinnoh. Paso a paso: 1) Vence al Alto Mando y a Cintia. 2) Entra en el Hall de la Fama. 3) Comprueba en la ficha de entrenador la primera estrella. Consejo: es la misma condición que el objetivo «Finalizar la historia principal». Fuente: WikiDex «Ficha de entrenador».",
+  "DIAMOND:card-1": "Cuándo: en la fase final. Dónde: toda Sinnoh. Paso a paso: 1) Registra como capturadas 482 especies de la Pokédex Nacional (sin Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus). 2) Comprueba en la ficha la estrella. 3) Con Pokekeep: lo que solo llegaba por intercambio, evento o Parque Compi, añádelo legal desde la Librería. Consejo: es la misma condición que el diploma Nacional del Hotel Gran Lago. Fuente: WikiDex «Ficha de entrenador».",
+  "DIAMOND:card-2": "Cuándo: desde que llegas a Ciudad Corazón. Dónde: Auditorio de Ciudad Corazón. Paso a paso: 1) Elige una categoría: carisma, belleza, dulzura, ingenio o dureza. 2) Gana en esa categoría los niveles normal, difícil y superior (cada uno se abre al ganar el anterior). 3) Gana el nivel experto: tres pruebas (exhibición visual con los accesorios de la Caja corazón, baile siguiendo el ritmo y exhibición de movimientos). Consejo: dale Pokochos de la cualidad elegida y viste al Pokémon según el tema del concurso. Fuente: WikiDex «Súper concurso»; WikiDex «Ficha de entrenador».",
+  "DIAMOND:card-3": "Cuándo: cuando tengas el Kit de exploración (Ciudad Vetusta). Dónde: Subsuelo de Sinnoh. Paso a paso: 1) Pide el Kit de exploración al Hombre Topo de Ciudad Vetusta y monta tu base secreta en el Subsuelo. 2) Conéctate en local con otras consolas DS con Diamante, Perla o Platino. 3) Roba la bandera de las bases de los otros jugadores y llévala a la tuya: necesitas 50 victorias en Captura la bandera. 4) Al llegar a 50 la ficha suma la estrella. Consejo: no se puede hacer en solitario; queda con otros jugadores para turnaros. Fuente: WikiDex «Ficha de entrenador».",
+  "DIAMOND:card-4": "Cuándo: tras la Liga. Dónde: Torre Batalla, en el Parque Batalla de la Zona de Combate. Paso a paso: 1) Al entrar te dan la Tarjeta puntos. 2) Elige una modalidad y encadena 100 victorias seguidas (rondas de siete combates). 3) Jericor, el As de la Torre, aparece en el combate 21 y en el 49 de la modalidad individual. Consejo: lleva Pokémon pensados para nivel 50 con objetos variados; si pierdes, la racha vuelve a cero. Fuente: WikiDex «Frente Batalla (Sinnoh)»; WikiDex «Ficha de entrenador».",
+  "DIAMOND:nurse-gold": "Cuándo: al llegar a la ficha negra (cinco estrellas). Dónde: cualquier Centro Pokémon de Sinnoh. Paso a paso: 1) Consigue las cinco estrellas en cualquier orden: completar la Liga, ganar un Súper Concurso de nivel experto, completar la Pokédex Nacional (482 especies), conseguir 100 victorias en la Torre Batalla y 50 capturas en Captura la bandera del Subsuelo. 2) Comprueba que la ficha tiene las cinco estrellas y es negra. 3) Habla con la enfermera del mostrador. 4) Al ver tu ficha cambia su recibimiento habitual. Consejo: la ficha cambia de color con cada estrella (roja, azul, bronce, plata, oro y negra); revisa en ella qué hazañas te faltan. Fuente: WikiDex «Ficha de entrenador».",
+  "DIAMOND:event-0": "Cuándo: tras la Liga. Dónde: Isla Lunanueva (Darkrai), Paraíso Floral (Shaymin) y Sala del Origen (Arceus). Paso a paso: 1) Darkrai: con el Carné socio, el marinero de Ciudad Canal te lleva a la Isla Lunanueva. 2) Shaymin: con la Carta del Profesor Oak, ve al final de la Ruta 224 (por la Calle Victoria), escribe tu mensaje en la roca y llega al Paraíso Floral. 3) Arceus: con la Flauta azur, tócala en la Columna Lanza para subir a la Sala del Origen. 4) Esos objetos solo se repartieron en eventos ya cerrados. Con Pokekeep: añade a Darkrai, Shaymin o Arceus legales desde la Librería. Consejo: los tres no cuentan para la Pokédex Nacional del diploma. Fuente: WikiDex «Darkrai», «Shaymin» y «Arceus»; WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (página 27).",
+  "DIAMOND:event-1": "Cuándo: en cualquier momento. Dónde: fuera del juego (otros juegos y eventos). Paso a paso: 1) Manaphy llegaba en huevo desde Pokémon Ranger; Phione nace al criar a Manaphy con Ditto en la Guardería de Pueblo Sosiego. 2) Mew, Celebi, Jirachi y Deoxys solo llegaban por eventos o desde otros juegos por el Parque Compi. 3) Con Pokekeep: añade el huevo de Manaphy o el singular que quieras, legal, desde la Librería. Consejo: ninguno cuenta para el diploma Nacional; son para tener la Pokédex al 100 %. Fuente: WikiDex «Manaphy»; pokeplatinum (src/pokedex.c).",
+  "PEARL:story": "Cuándo: desde el principio; es lo que desbloquea casi todo lo demás. Dónde: toda Sinnoh, de Pueblo Hojaverde a la Liga Pokémon (al final de la Calle Victoria). Paso a paso: 1) Consigue las ocho medallas en el orden de Diamante y Perla: Roco (Ciudad Pirita, Roca), Gardenia (Ciudad Vetusta, Planta), Brega (Ciudad Rocavelo, Lucha), Mananti (Ciudad Pradera, Agua), Fantina (Ciudad Corazón, Fantasma; solo después de conseguir Surf en Pueblo Caelestis), Acerón (Ciudad Canal, Acero), Inverna (Ciudad Puntaneva, Hielo) y Lectro (Ciudad Marina, Eléctrico). 2) Detén al Equipo Galaxia en los lagos, en su sede de Ciudad Rocavelo y en la Columna Lanza, donde te enfrentas a Helio y a Palkia. 3) Con la MO07 Cascada que te da Yasmina en la Ruta 223, cruza la Calle Victoria. 4) Vence a Israel, a Alecrán, Gaia, Fausto, Delos y a la campeona Cintia y entra en el Hall de la Fama. Consejo: la pestaña «Dónde estás» con tu guardado te dice la siguiente medalla y la zona a la que ir. Fuente: WikiDex «Guía de Pokémon Diamante y Pokémon Perla».",
+  "PEARL:postgame": "Cuándo: tras ver los créditos. Dónde: Pueblo Arena, Ciudad Puntaneva (puerto) y la Bahía Gresca. Paso a paso: 1) Completa los vistos de la Pokédex de Sinnoh y habla con Serbal en su laboratorio de Pueblo Arena: el profesor Oak instala la Pokédex Nacional y Serbal te da el Pokéradar. 2) Toma el barco del puerto de Ciudad Puntaneva hasta la Zona de Combate; el pescador del norte te regala la Supercaña. 3) Recorre el Parque Batalla con la Torre Batalla y, con la Pokédex Nacional, las Rutas 225 a 230 hasta la Montaña Dura (Ruta 227), donde acompañas a Bulgur. 4) Después: Heatran en el fondo de la Montaña Dura; Giratina en la Cueva Retorno (Ruta 214, por la Vía Manantial); Cresselia desde la Isla Plenilunio (barco de Ciudad Canal); Regigigas en el Templo Puntaneva; la Ruta 224 por la Calle Victoria. Consejo: casi todo lo de la Bahía Gresca exige la Pokédex Nacional; consíguela antes de ir. Fuente: WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (páginas 24-27).",
+  "PEARL:battle1": "Cuándo: después de ser campeón; la Liga se puede repetir cuantas veces quieras. Dónde: Liga Pokémon de Sinnoh, al final de la Calle Victoria (Surf y Cascada por la Ruta 223 desde Ciudad Marina). Paso a paso: 1) Ten en cuenta que en Diamante y Perla no hay equipos de revancha: al volver, el Alto Mando y Cintia (esta, con niveles 60-66) usan los mismos Pokémon (la revancha reforzada llega con Platino). 2) Lleva un equipo por encima del nivel 60 y Restaurar todo y Revivir: dentro de la Liga no puedes salir a curarte. 3) Vence en orden a Alecrán (Bicho), Gaia (Tierra), Fausto (Fuego) y Delos (Psíquico). 4) Termina venciendo a Cintia para completar la vuelta. Consejo: repetir la Liga es buen sitio para subir de nivel y ganar dinero. Fuente: WikiDex «Cintia»; WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (Alto Mando).",
+  "PEARL:pokedex": "Cuándo: en la fase final, con la Pokédex Nacional. Dónde: toda Sinnoh, la Bahía Gresca y el Parque Compi (Ruta 221). Paso a paso: 1) Registra como capturadas 482 especies: no cuentan Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus. 2) Usa el Pokéradar en la hierba para las especies de otras regiones y para cadenas. 3) Los exclusivos de la otra edición y los iniciales de otras regiones llegan por intercambio; los de Game Boy Advance, por el Parque Compi (consola con ranura de GBA). 4) Con Pokekeep: lo que te falte de otras ediciones o que solo llegaba por el Parque Compi, añádelo legal desde la Librería. Consejo: completarla da el diploma Nacional del Hotel Gran Lago y una estrella de la ficha. Fuente: pokeplatinum (src/pokedex.c, lista de especies excluidas); WikiDex «Ficha de entrenador».",
+  "PEARL:diploma-regional": "Cuándo: en cuanto hayas visto las 150 especies de la Pokédex de Sinnoh (basta con verlas; Manaphy, el n.º 151, no hace falta). Dónde: casa del director del juego, en la Orilla Valor (Hotel Gran Lago, entre la Ruta 213 y la Ruta 214). Paso a paso: 1) Completa los vistos combatiendo contra entrenadores y fijándote en los Pokémon de los intercambios. 2) El último suele ser el legendario de la otra edición: lo registra la anciana de la casa grande del norte de Pueblo Caelestis con un libro del Monte Corona. 3) Habla con Serbal en Pueblo Arena: aparece Oak e instala la Pokédex Nacional. 4) Habla con el director del juego: te entrega el diploma de la Pokédex de Sinnoh. Consejo: las revanchas con el Buscapelea ayudan a ver especies de entrenadores. Fuente: WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (páginas 2 y 24); pokeplatinum (mismo guion del director).",
+  "PEARL:diploma-nacional": "Cuándo: en la fase final, con la Pokédex Nacional. Dónde: casa del director del juego, Orilla Valor (Hotel Gran Lago). Paso a paso: 1) Registra como capturadas 482 especies de la Pokédex Nacional: no cuentan Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus. 2) Trae lo que no se captura en tu edición desde la otra, desde Platino, Oro HeartGold o Plata SoulSilver por intercambio, o de Game Boy Advance por el Parque Compi (Ruta 221). 3) Con Pokekeep: lo que solo llegaba por intercambio o por el Parque Compi, añádelo legal desde la Librería. 4) Habla con el director del juego: te entrega el diploma de la Pokédex Nacional (cuenta además como estrella de la ficha). Consejo: los exclusivos de versión y los iniciales de otras regiones son lo que más tarda. Fuente: WikiDex «Ficha de entrenador»; pokeplatinum (src/pokedex.c).",
+  "PEARL:pokemon-480": "Cuándo: tras el combate de la Columna Lanza (fin de la historia del Equipo Galaxia). Dónde: Caverna Agudeza, en el Lago Agudeza (al norte de la Ruta 217; se sube con Treparrocas desde la Orilla Agudeza). Paso a paso: 1) Entra en la Caverna Agudeza. 2) Uxie te espera a nivel 50 y no huye. 3) Duérmelo o paralízalo y usa Ocaso Balls (es una cueva). Consejo: Falsotortazo lo deja con 1 PS. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Uxie».",
+  "PEARL:pokemon-481": "Cuándo: tras el combate de la Columna Lanza (fin de la historia del Equipo Galaxia). Dónde: Caverna Veraz, en el Lago Veraz (Ruta 201), y después errante por Sinnoh. Paso a paso: 1) Entra en la Caverna Veraz: Mesprit (nivel 50) huye y empieza a vagar. 2) Localízalo con la función Marcamapa del Poké-reloj y entra en su ruta. 3) En combate, usa Mal de ojo (lo conocen los Golbat de la Calle Victoria) o un Wobbuffet con Sombra trampa para que no huya; duérmelo o paralízalo. Consejo: si huye, cambia de ruta de forma impredecible; la Master Ball lo resuelve en un turno. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Mesprit».",
+  "PEARL:pokemon-482": "Cuándo: tras el combate de la Columna Lanza (fin de la historia del Equipo Galaxia). Dónde: Caverna Valor, en el Lago Valor (al norte de la Ruta 214; se entra con Surf). Paso a paso: 1) Entra en la Caverna Valor. 2) Azelf te espera a nivel 50 y no huye. 3) Duérmelo o paralízalo y usa Ocaso Balls. Consejo: guarda antes del combate. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Azelf».",
+  "PEARL:pokemon-485": "Cuándo: tras la Liga, con la Pokédex Nacional. Dónde: lo más profundo de la Montaña Dura (Ruta 227, Bahía Gresca). Paso a paso: 1) Con la Pokédex Nacional, Bulgur se une a ti en la Montaña Dura: llegad al fondo, donde se lleva la Piedra Magma. 2) Búscalo en la Zona Sobrevivir: dice que va a devolverla. 3) Vuelve tú solo al fondo de la Montaña Dura: Heatran (nivel 70) aparece. Consejo: lleva Pokémon de Agua o Tierra (cuidado: es de tipo Fuego y Acero). Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Heatran»; WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (página 26).",
+  "PEARL:pokemon-487": "Cuándo: tras la Liga. Dónde: Cueva Retorno, en la Fuente Despedida (Ruta 214 → Vía Manantial). Paso a paso: 1) Lleva Treparrocas y Despejar (Golpe roca ahorra camino). 2) Entra por la Vía Manantial, al sur de Ciudad Rocavelo, hasta la Fuente Despedida y sube con Treparrocas a la cueva. 3) Las salas son aleatorias: encuentra tres pilares antes de recorrer 30 salas (si vuelves por la puerta por la que entraste, regresas al inicio). 4) En la última sala está Giratina, nivel 70. Consejo: guarda antes de entrar en la sala final. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Cueva Retorno».",
+  "PEARL:pokemon-488": "Cuándo: tras la Liga, con la Pokédex Nacional. Dónde: casa del suroeste de Ciudad Canal, Isla Plenilunio y después errante por Sinnoh. Paso a paso: 1) En la casa del suroeste de Ciudad Canal, la madre de un niño con pesadillas te cuenta que solo una pluma de Cresselia puede curarlo. 2) El marinero de Ciudad Canal te lleva a la Isla Plenilunio: examina a Cresselia para registrarla y huye dejando la Pluma lunar. 3) Entrega la Pluma lunar al niño. 4) Cresselia (nivel 50) vaga por Sinnoh: localízala con el Marcamapa del Poké-reloj y usa Mal de ojo o Sombra trampa. Consejo: con la Master Ball te ahorras la persecución. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Cresselia».",
+  "PEARL:pokemon-486": "Cuándo: tras la Liga, con la Pokédex Nacional y Regirock, Regice y Registeel en el equipo. Dónde: Templo Puntaneva, al norte de Ciudad Puntaneva. Paso a paso: 1) En Diamante y Perla los Regis solo llegan por el Parque Compi (Ruta 221) desde Rubí, Zafiro o Esmeralda, o por intercambio con Platino. 2) Con Pokekeep: añade a Regirock, Regice y Registeel legales desde la Librería y ponlos en el equipo. 3) Inverna te deja entrar al templo: baja los pisos por las pistas de hielo. 4) En la última sala la estatua cobra vida: Regigigas aparece a nivel 70. Consejo: Regigigas tiene Inicio lento: aprovecha sus primeros turnos para dormirlo. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Templo Puntaneva (Sinnoh)»; WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (página 27).",
+  "PEARL:pokemon-484": "Cuándo: final de la historia del Equipo Galaxia, en la cima del Monte Corona. Dónde: Columna Lanza. Paso a paso: 1) Sube al Monte Corona desde la Ruta 207 (Surf, Treparrocas, Golpe roca y Fuerza). 2) Vence con Israel a Venus y Ceres y luego a Helio. 3) Palkia aparece a nivel 47: guarda antes, duérmelo o paralízalo y captúralo. Consejo: evita ataques que le resten PS cada turno (veneno, Drenadoras). Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (página 20).",
+  "PEARL:card-0": "Cuándo: al terminar la historia. Dónde: Liga Pokémon de Sinnoh. Paso a paso: 1) Vence al Alto Mando y a Cintia. 2) Entra en el Hall de la Fama. 3) Comprueba en la ficha de entrenador la primera estrella. Consejo: es la misma condición que el objetivo «Finalizar la historia principal». Fuente: WikiDex «Ficha de entrenador».",
+  "PEARL:card-1": "Cuándo: en la fase final. Dónde: toda Sinnoh. Paso a paso: 1) Registra como capturadas 482 especies de la Pokédex Nacional (sin Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus). 2) Comprueba en la ficha la estrella. 3) Con Pokekeep: lo que solo llegaba por intercambio, evento o Parque Compi, añádelo legal desde la Librería. Consejo: es la misma condición que el diploma Nacional del Hotel Gran Lago. Fuente: WikiDex «Ficha de entrenador».",
+  "PEARL:card-2": "Cuándo: desde que llegas a Ciudad Corazón. Dónde: Auditorio de Ciudad Corazón. Paso a paso: 1) Elige una categoría: carisma, belleza, dulzura, ingenio o dureza. 2) Gana en esa categoría los niveles normal, difícil y superior (cada uno se abre al ganar el anterior). 3) Gana el nivel experto: tres pruebas (exhibición visual con los accesorios de la Caja corazón, baile siguiendo el ritmo y exhibición de movimientos). Consejo: dale Pokochos de la cualidad elegida y viste al Pokémon según el tema del concurso. Fuente: WikiDex «Súper concurso»; WikiDex «Ficha de entrenador».",
+  "PEARL:card-3": "Cuándo: cuando tengas el Kit de exploración (Ciudad Vetusta). Dónde: Subsuelo de Sinnoh. Paso a paso: 1) Pide el Kit de exploración al Hombre Topo de Ciudad Vetusta y monta tu base secreta en el Subsuelo. 2) Conéctate en local con otras consolas DS con Diamante, Perla o Platino. 3) Roba la bandera de las bases de los otros jugadores y llévala a la tuya: necesitas 50 victorias en Captura la bandera. 4) Al llegar a 50 la ficha suma la estrella. Consejo: no se puede hacer en solitario; queda con otros jugadores para turnaros. Fuente: WikiDex «Ficha de entrenador».",
+  "PEARL:card-4": "Cuándo: tras la Liga. Dónde: Torre Batalla, en el Parque Batalla de la Zona de Combate. Paso a paso: 1) Al entrar te dan la Tarjeta puntos. 2) Elige una modalidad y encadena 100 victorias seguidas (rondas de siete combates). 3) Jericor, el As de la Torre, aparece en el combate 21 y en el 49 de la modalidad individual. Consejo: lleva Pokémon pensados para nivel 50 con objetos variados; si pierdes, la racha vuelve a cero. Fuente: WikiDex «Frente Batalla (Sinnoh)»; WikiDex «Ficha de entrenador».",
+  "PEARL:nurse-gold": "Cuándo: al llegar a la ficha negra (cinco estrellas). Dónde: cualquier Centro Pokémon de Sinnoh. Paso a paso: 1) Consigue las cinco estrellas en cualquier orden: completar la Liga, ganar un Súper Concurso de nivel experto, completar la Pokédex Nacional (482 especies), conseguir 100 victorias en la Torre Batalla y 50 capturas en Captura la bandera del Subsuelo. 2) Comprueba que la ficha tiene las cinco estrellas y es negra. 3) Habla con la enfermera del mostrador. 4) Al ver tu ficha cambia su recibimiento habitual. Consejo: la ficha cambia de color con cada estrella (roja, azul, bronce, plata, oro y negra); revisa en ella qué hazañas te faltan. Fuente: WikiDex «Ficha de entrenador».",
+  "PEARL:event-0": "Cuándo: tras la Liga. Dónde: Isla Lunanueva (Darkrai), Paraíso Floral (Shaymin) y Sala del Origen (Arceus). Paso a paso: 1) Darkrai: con el Carné socio, el marinero de Ciudad Canal te lleva a la Isla Lunanueva. 2) Shaymin: con la Carta del Profesor Oak, ve al final de la Ruta 224 (por la Calle Victoria), escribe tu mensaje en la roca y llega al Paraíso Floral. 3) Arceus: con la Flauta azur, tócala en la Columna Lanza para subir a la Sala del Origen. 4) Esos objetos solo se repartieron en eventos ya cerrados. Con Pokekeep: añade a Darkrai, Shaymin o Arceus legales desde la Librería. Consejo: los tres no cuentan para la Pokédex Nacional del diploma. Fuente: WikiDex «Darkrai», «Shaymin» y «Arceus»; WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (página 27).",
+  "PEARL:event-1": "Cuándo: en cualquier momento. Dónde: fuera del juego (otros juegos y eventos). Paso a paso: 1) Manaphy llegaba en huevo desde Pokémon Ranger; Phione nace al criar a Manaphy con Ditto en la Guardería de Pueblo Sosiego. 2) Mew, Celebi, Jirachi y Deoxys solo llegaban por eventos o desde otros juegos por el Parque Compi. 3) Con Pokekeep: añade el huevo de Manaphy o el singular que quieras, legal, desde la Librería. Consejo: ninguno cuenta para el diploma Nacional; son para tener la Pokédex al 100 %. Fuente: WikiDex «Manaphy»; pokeplatinum (src/pokedex.c).",
+  "PLATINUM:story": "Cuándo: desde el principio; es lo que desbloquea casi todo lo demás. Dónde: toda Sinnoh, de Pueblo Hojaverde a la Liga Pokémon (al final de la Calle Victoria). Paso a paso: 1) Consigue las ocho medallas en el orden de Platino: Roco (Ciudad Pirita, Roca), Gardenia (Ciudad Vetusta, Planta), Fantina (Ciudad Corazón, Fantasma), Brega (Ciudad Rocavelo, Lucha), Mananti (Ciudad Pradera, Agua), Acerón (Ciudad Canal, Acero), Inverna (Ciudad Puntaneva, Hielo) y Lectro (Ciudad Marina, Eléctrico). 2) Detén al Equipo Galaxia en los lagos, en su sede de Ciudad Rocavelo y en la Columna Lanza, y resuelve el Mundo Distorsión venciendo a Helio y enfrentándote a Giratina. 3) Con la MO07 Cascada que te da Yasmina en la Ruta 223, cruza la Calle Victoria. 4) Vence a Alecrán, Gaia, Fausto, Delos y a la campeona Cintia y entra en el Hall de la Fama. Consejo: la pestaña «Dónde estás» con tu guardado te dice la siguiente medalla y la zona a la que ir. Fuente: WikiDex «Guía de Pokémon Platino».",
+  "PLATINUM:postgame": "Cuándo: tras ver los créditos. Dónde: Pueblo Arena, Ciudad Puntaneva (puerto) y la Bahía Gresca. Paso a paso: 1) Completa los vistos de la Pokédex de Sinnoh y habla con Serbal en su laboratorio de Pueblo Arena: el profesor Oak instala la Pokédex Nacional y Serbal te da el Pokéradar. 2) Toma el barco del puerto de Ciudad Puntaneva hasta la Zona de Combate; el pescador del norte te regala la Supercaña. 3) Recorre el Frente Batalla y, con la Pokédex Nacional, las Rutas 225 a 230 hasta la Montaña Dura (Ruta 227): allí vences a Venus y Ceres, acompañas a Bulgur y detienes a Plutón. 4) Después: Heatran en el fondo de la Montaña Dura; Dialga y Palkia en la Columna Lanza (tras hablar con la abuela de Cintia en Pueblo Caelestis); la Griseosfera en la Cueva Retorno; Cresselia desde la Isla Plenilunio (barco de Ciudad Canal); Regigigas en el Templo Puntaneva. Consejo: casi todo lo de la Bahía Gresca exige la Pokédex Nacional; consíguela antes de ir. Fuente: WikiDex «Guía de Pokémon Platino».",
+  "PLATINUM:battle0": "Cuándo: tras la Liga. Dónde: Frente Batalla, en la Zona de Combate (barco desde el puerto de Ciudad Puntaneva). Paso a paso: 1) En la entrada vence con Israel a Lectro y Fausto; Jericor os invita a la Torre Batalla. 2) Elige un edificio: Torre Batalla, Fábrica Batalla, Sala Batalla, Castillo Batalla o Ruleta Batalla, y encadena victorias en combates individuales (si pierdes, la racha vuelve a cero). 3) El As de cada edificio aparece en una racha concreta (ver «Estampas de oro de los cinco Ases»); vencerlo una vez da la estampa de plata y la segunda, la de oro. 4) Los Puntos de Batalla se cambian por objetos en los mostradores del Frente. Consejo: la Torre Batalla cuenta además para la estrella de la ficha (100 victorias seguidas). Fuente: WikiDex «Frente Batalla (Sinnoh)»; WikiDex «Guía de Pokémon Platino».",
+  "PLATINUM:battle1": "Cuándo: después de ser campeón, tener la Pokédex Nacional y detener a Plutón en la Montaña Dura. Dónde: Montaña Dura (Ruta 227, Bahía Gresca) y la Liga Pokémon de Sinnoh. Paso a paso: 1) Completa los vistos de la Pokédex de Sinnoh y recoge la Pokédex Nacional en Pueblo Arena. 2) Viaja a la Zona de Combate, sigue hasta la Montaña Dura, vence a Venus y Ceres y, con Bulgur, detén a Plutón, que intenta llevarse la Piedra Magma. 3) Desde entonces el Alto Mando y Cintia usan sus equipos de revancha, más fuertes. 4) Vuelve a la Liga con curaciones de sobra y vence a Alecrán (Bicho), Gaia (Tierra), Fausto (Fuego) y Delos (Psíquico). 5) Termina venciendo a Cintia. Consejo: dentro de la Liga no puedes salir a curarte entre combates. Fuente: WikiDex «Liga Pokémon (Sinnoh)»; WikiDex «Guía de Pokémon Platino» (página 18).",
+  "PLATINUM:pokedex": "Cuándo: en la fase final, con la Pokédex Nacional. Dónde: toda Sinnoh, la Bahía Gresca y el Parque Compi (Ruta 221). Paso a paso: 1) Registra como capturadas 482 especies: no cuentan Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus. 2) Usa el Pokéradar en la hierba para las especies de otras regiones y para cadenas. 3) Los exclusivos de la otra edición y los iniciales de otras regiones llegan por intercambio; los de Game Boy Advance, por el Parque Compi (consola con ranura de GBA). 4) Con Pokekeep: lo que te falte de otras ediciones o que solo llegaba por el Parque Compi, añádelo legal desde la Librería. Consejo: completarla da el diploma Nacional del Hotel Gran Lago y una estrella de la ficha. Fuente: pokeplatinum (src/pokedex.c, lista de especies excluidas); WikiDex «Ficha de entrenador».",
+  "PLATINUM:diploma-regional": "Cuándo: en cuanto hayas visto las 210 especies de la Pokédex de Sinnoh de Platino (basta con verlas). Dónde: casa del director del juego, en la Orilla Valor (Hotel Gran Lago, entre la Ruta 213 y la Ruta 214). Paso a paso: 1) Completa los vistos combatiendo contra entrenadores y fijándote en los Pokémon de los intercambios. 2) Para ver a Manaphy (n.º 151, en Platino sí cuenta), lee el libro del despacho del dueño de la Mansión Pokémon (Ruta 212). 3) Habla con Serbal en Pueblo Arena: Oak instala la Pokédex Nacional. 4) Habla con el director del juego: te entrega el diploma de la Pokédex de Sinnoh. Consejo: los Pokémon que solo ves en combate contra entrenadores cuentan igual. Fuente: pokeplatinum (mapa grand_lake_valor_lakefront_west_house, «visto todos los Pokémon de Sinnoh»); WikiDex «Manaphy».",
+  "PLATINUM:diploma-nacional": "Cuándo: en la fase final, con la Pokédex Nacional. Dónde: casa del director del juego, Orilla Valor (Hotel Gran Lago). Paso a paso: 1) Registra como capturadas (no basta con verlas) 482 especies: no cuentan Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus. 2) Trae lo que Platino no tiene desde Diamante, Perla, Oro HeartGold o Plata SoulSilver por intercambio, o de Game Boy Advance por el Parque Compi (Ruta 221). 3) Con Pokekeep: lo que solo llegaba por intercambio o por el Parque Compi, añádelo legal desde la Librería. 4) Habla con el director del juego: te entrega el diploma de la Pokédex Nacional (cuenta además como estrella de la ficha). Consejo: el director primero entrega el diploma de Sinnoh; si aún no lo tienes, habla con él dos veces. Fuente: pokeplatinum (src/pokedex.c y script del director del juego).",
+  "PLATINUM:pokemon-480": "Cuándo: al salir del Mundo Distorsión y hablar con el profesor Serbal en Pueblo Arena. Dónde: Caverna Agudeza, en el Lago Agudeza (al norte de la Ruta 217; se sube con Treparrocas desde la Orilla Agudeza). Paso a paso: 1) Entra en la Caverna Agudeza. 2) Uxie te espera a nivel 50 y no huye. 3) Duérmelo o paralízalo y usa Ocaso Balls (es una cueva). Consejo: Falsotortazo lo deja con 1 PS. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Uxie».",
+  "PLATINUM:pokemon-481": "Cuándo: al salir del Mundo Distorsión y hablar con el profesor Serbal en Pueblo Arena. Dónde: Caverna Veraz, en el Lago Veraz (Ruta 201), y después errante por Sinnoh. Paso a paso: 1) Entra en la Caverna Veraz: Mesprit (nivel 50) huye y empieza a vagar. 2) Localízalo con la función Marcamapa del Poké-reloj y entra en su ruta. 3) En combate, usa Mal de ojo (lo conocen los Golbat de la Calle Victoria) o un Wobbuffet con Sombra trampa para que no huya; duérmelo o paralízalo. Consejo: si huye, cambia de ruta de forma impredecible; la Master Ball lo resuelve en un turno. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Mesprit».",
+  "PLATINUM:pokemon-482": "Cuándo: al salir del Mundo Distorsión y hablar con el profesor Serbal en Pueblo Arena. Dónde: Caverna Valor, en el Lago Valor (al norte de la Ruta 214; se entra con Surf). Paso a paso: 1) Entra en la Caverna Valor. 2) Azelf te espera a nivel 50 y no huye. 3) Duérmelo o paralízalo y usa Ocaso Balls. Consejo: guarda antes del combate. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Azelf».",
+  "PLATINUM:pokemon-485": "Cuándo: tras la Liga, con la Pokédex Nacional. Dónde: lo más profundo de la Montaña Dura (Ruta 227, Bahía Gresca). Paso a paso: 1) Detén a Plutón en la Montaña Dura junto a Bulgur. 2) Completada la exploración con Bulgur, vuelve al fondo de la montaña. 3) Heatran (nivel 50) aparece: captúralo. Consejo: lleva Pokémon de Agua o Tierra y muchas Ultra Balls. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Heatran».",
+  "PLATINUM:pokemon-487": "Cuándo: final de la historia del Equipo Galaxia. Dónde: Mundo Distorsión; si no lo capturas, Cueva Retorno tras la Liga. Paso a paso: 1) Resuelve el Mundo Distorsión (rocas con Fuerza en los hoyos que indican Uxie, Mesprit y Azelf) y vence a Helio. 2) Giratina en forma Origen (nivel 47) te espera al final: guarda antes y captúralo. 3) Si lo debilitas o huyes, tras la Liga ve a la Cueva Retorno (Fuente Despedida, al final de la Vía Manantial): encuentra tres pilares antes de recorrer 30 salas y en la última está otra vez (nivel 47), junto a la Griseosfera. Consejo: las Ocaso Balls funcionan bien en ambos sitios. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Cueva Retorno»; WikiDex «Guía de Pokémon Platino» (página 15).",
+  "PLATINUM:pokemon-488": "Cuándo: tras la Liga, con la Pokédex Nacional. Dónde: casa del suroeste de Ciudad Canal, Isla Plenilunio y después errante por Sinnoh. Paso a paso: 1) En la casa del suroeste de Ciudad Canal, la madre de un niño con pesadillas te cuenta que solo una pluma de Cresselia puede curarlo. 2) El marinero de Ciudad Canal te lleva a la Isla Plenilunio: examina a Cresselia para registrarla y huye dejando la Pluma lunar. 3) Entrega la Pluma lunar al niño. 4) Cresselia (nivel 50) vaga por Sinnoh: localízala con el Marcamapa del Poké-reloj y usa Mal de ojo o Sombra trampa. Consejo: con la Master Ball te ahorras la persecución. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Cresselia».",
+  "PLATINUM:pokemon-486": "Cuándo: con Regirock, Regice y Registeel en el equipo. Dónde: Templo Puntaneva, al norte de Ciudad Puntaneva, en la sala más profunda. Paso a paso: 1) Consigue a los tres Regis: por el Parque Compi desde Rubí, Zafiro o Esmeralda (consola con ranura de GBA), o con el Regigigas de evento, que permite despertarlos en sus ruinas. 2) Con Pokekeep: añade a Regirock, Regice y Registeel legales desde la Librería y ponlos en el equipo. 3) Baja los pisos del templo resolviendo las pistas de hielo. 4) En la última sala la estatua cobra vida: Regigigas aparece a nivel 1. Consejo: es nivel 1 en Platino (no es un error): basta con una Poké Ball. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Templo Puntaneva (Sinnoh)»; WikiDex «Regirock».",
+  "PLATINUM:pokemon-483": "Cuándo: tras ganar la Liga (no hace falta la Pokédex Nacional). Dónde: Columna Lanza, en la cima del Monte Corona. Paso a paso: 1) Habla con la abuela de Cintia en Pueblo Caelestis. 2) Entra en el Monte Corona por la Ruta 211 y, antes de subir a la cima, recoge la Diamansfera y la Lustresfera. 3) Sube a la Columna Lanza con la Diamansfera en la mochila: Dialga aparece a nivel 70. Consejo: guarda antes; las Ocaso Balls o el Temporizador ayudan con su baja tasa de captura. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Dialga»; WikiDex «Guía de Pokémon Platino» (página 18).",
+  "PLATINUM:pokemon-484": "Cuándo: tras ganar la Liga (no hace falta la Pokédex Nacional). Dónde: Columna Lanza, en la cima del Monte Corona. Paso a paso: 1) Habla con la abuela de Cintia en Pueblo Caelestis. 2) Entra en el Monte Corona por la Ruta 211 y, antes de subir a la cima, recoge la Diamansfera y la Lustresfera. 3) Sube a la Columna Lanza con la Lustresfera en la mochila: Palkia aparece a nivel 70. Consejo: guarda antes; las Ocaso Balls o el Temporizador ayudan con su baja tasa de captura. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Palkia»; WikiDex «Guía de Pokémon Platino» (página 18).",
+  "PLATINUM:card-0": "Cuándo: al terminar la historia. Dónde: Liga Pokémon de Sinnoh. Paso a paso: 1) Vence al Alto Mando y a Cintia. 2) Entra en el Hall de la Fama. 3) Comprueba en la ficha de entrenador la primera estrella. Consejo: es la misma condición que el objetivo «Finalizar la historia principal». Fuente: WikiDex «Ficha de entrenador».",
+  "PLATINUM:card-1": "Cuándo: en la fase final. Dónde: toda Sinnoh. Paso a paso: 1) Registra como capturadas 482 especies de la Pokédex Nacional (sin Mew, Lugia, Ho-Oh, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus). 2) Comprueba en la ficha la estrella. 3) Con Pokekeep: lo que solo llegaba por intercambio, evento o Parque Compi, añádelo legal desde la Librería. Consejo: es la misma condición que el diploma Nacional del Hotel Gran Lago. Fuente: WikiDex «Ficha de entrenador».",
+  "PLATINUM:card-2": "Cuándo: desde que llegas a Ciudad Corazón. Dónde: Auditorio de Ciudad Corazón. Paso a paso: 1) Elige una categoría: carisma, belleza, dulzura, ingenio o dureza. 2) Gana en esa categoría los niveles normal, difícil y superior (cada uno se abre al ganar el anterior). 3) Gana el nivel experto: tres pruebas (exhibición visual con los accesorios de la Caja corazón, baile siguiendo el ritmo y exhibición de movimientos). Consejo: dale Pokochos de la cualidad elegida y viste al Pokémon según el tema del concurso. Fuente: WikiDex «Súper concurso»; WikiDex «Ficha de entrenador».",
+  "PLATINUM:card-3": "Cuándo: cuando tengas el Kit de exploración (Ciudad Vetusta). Dónde: Subsuelo de Sinnoh. Paso a paso: 1) Pide el Kit de exploración al Hombre Topo de Ciudad Vetusta y monta tu base secreta en el Subsuelo. 2) Conéctate en local con otras consolas DS con Diamante, Perla o Platino. 3) Roba la bandera de las bases de los otros jugadores y llévala a la tuya: necesitas 50 victorias en Captura la bandera. 4) Al llegar a 50 la ficha suma la estrella. Consejo: no se puede hacer en solitario; queda con otros jugadores para turnaros. Fuente: WikiDex «Ficha de entrenador».",
+  "PLATINUM:card-4": "Cuándo: tras la Liga. Dónde: Torre Batalla, en el Frente Batalla de la Zona de Combate. Paso a paso: 1) Al entrar te dan la Tarjeta puntos. 2) Elige una modalidad y encadena 100 victorias seguidas (rondas de siete combates). 3) Jericor, el As de la Torre, aparece en el combate 21 y en el 49 de la modalidad individual. Consejo: lleva Pokémon pensados para nivel 50 con objetos variados; si pierdes, la racha vuelve a cero. Fuente: WikiDex «Frente Batalla (Sinnoh)»; WikiDex «Ficha de entrenador».",
+  "PLATINUM:event-0": "Cuándo: tras la Liga. Dónde: Isla Lunanueva (Darkrai), Paraíso Floral (Shaymin) y Sala del Origen (Arceus). Paso a paso: 1) Darkrai: con el Carné socio, el marinero de Ciudad Canal te lleva a la Isla Lunanueva. 2) Shaymin: con la Carta del Profesor Oak, ve al final de la Ruta 224 (por la Calle Victoria), escribe tu mensaje en la roca y llega al Paraíso Floral. 3) Arceus: con la Flauta azur, tócala en la Columna Lanza para subir a la Sala del Origen. 4) Esos objetos solo se repartieron en eventos ya cerrados. Con Pokekeep: añade a Darkrai, Shaymin o Arceus legales desde la Librería. Consejo: en Platino Shaymin cambia a forma Cielo con una Gracídea durante el día. Fuente: WikiDex «Darkrai», «Shaymin» y «Arceus»; WikiDex «Guía de Pokémon Diamante y Pokémon Perla» (página 27).",
+  "PLATINUM:event-1": "Cuándo: en cualquier momento. Dónde: fuera del juego (otros juegos y eventos). Paso a paso: 1) Manaphy llegaba en huevo desde Pokémon Ranger; Phione nace al criar a Manaphy con Ditto en la Guardería de Pueblo Sosiego. 2) Mew, Celebi, Jirachi y Deoxys solo llegaban por eventos o desde otros juegos por el Parque Compi. 3) Con Pokekeep: añade el huevo de Manaphy o el singular que quieras, legal, desde la Librería. Consejo: ninguno cuenta para el diploma Nacional; son para tener la Pokédex al 100 %. Fuente: WikiDex «Manaphy»; pokeplatinum (src/pokedex.c).",
+  "PLATINUM:frontier-prints": "Cuándo: tras la Liga. Dónde: Frente Batalla, en la Zona de Combate (barco desde Ciudad Puntaneva). Paso a paso: 1) En cada edificio encadena victorias en combates individuales; cada As aparece en una racha concreta. 2) Torre Batalla: el Amo Torre Jericor, en los combates 21 y 49. 3) Fábrica Batalla: el Jefe Fábrica Espinal, en el 21 y el 49 (usas Pokémon de préstamo). 4) Castillo Batalla: el Mayordomo Kokuran, en el 21 y el 49. 5) Ruleta Batalla: la Astro Ruleta Delila, en el 21 y el 49. 6) Sala Batalla: la Dama Salón Argenta, en el combate 50 y en el 170. 7) La primera victoria contra cada As da su estampa de plata en la Cámara lucha; la segunda, la de color (oro). Si pierdes, la racha vuelve a cero. Consejo: prepara Pokémon pensados para nivel 50 y otra estrategia para la Fábrica. Fuente: WikiDex «As del Frente Batalla»; WikiDex «Frente Batalla (Sinnoh)».",
+  "PLATINUM:final-boss": "Cuándo: después de detener a Plutón en la Montaña Dura (tras ser campeón y tener la Pokédex Nacional). Dónde: sala de la campeona de la Liga Pokémon de Sinnoh. Paso a paso: 1) Termina la historia de la Montaña Dura venciendo a Plutón. 2) Desde entonces Cintia usa su equipo de revancha: Spiritomb, Roserade y Milotic al nivel 74, Togekiss y Lucario al 76 y Garchomp al 78. 3) Prepara un equipo cercano al nivel 75, ataques de Hielo contra Garchomp y Restaurar todo y Revivir de sobra. 4) Vence otra vez a Alecrán, Gaia, Fausto y Delos y luego a Cintia. Consejo: contra Spiritomb no sirven los ataques Normal, Lucha ni Psíquico. Fuente: WikiDex «Cintia» (equipos de Platino).",
+  "PLATINUM:nurse-gold": "Cuándo: en cuanto tu ficha de entrenador sea de oro (cuatro estrellas o más). Dónde: cualquier Centro Pokémon de Sinnoh. Paso a paso: 1) Consigue cuatro de las cinco estrellas: completar la Liga, ganar un Súper Concurso de nivel experto, completar la Pokédex Nacional (482), ganar 100 combates seguidos en la Torre Batalla y capturar 50 banderas en el Subsuelo. 2) Comprueba que la ficha es de oro (cuatro estrellas). 3) Habla con la enfermera del mostrador. 4) La primera vez interrumpe su saludo al ver tu ficha, te llama por tu nombre y te ofrece curar a tus Pokémon; desde entonces te saluda siempre por tu nombre. Consejo: la ficha cambia de color con cada estrella (roja, azul, bronce, plata, oro y negra). Fuente: pokeplatinum (res/field/scripts/common.s, guion de la enfermera; nivel de ficha oro = 4).",
+  "HEARTGOLD:story": "Cuándo: desde el principio; es lo que desbloquea casi todo lo demás. Dónde: Johto, de Pueblo Primavera a la Meseta Añil. Paso a paso: 1) Consigue las ocho medallas de Johto: Pegaso (Ciudad Malva, Volador), Antón (Pueblo Azalea, Bicho), Blanca (Ciudad Trigal, Normal), Morti (Ciudad Iris, Fantasma), Aníbal (Ciudad Orquídea, Lucha), Yasmina (Ciudad Olivo, Acero), Fredo (Pueblo Caoba, Hielo) y Débora (Ciudad Endrino, Dragón). 2) Expulsa al Team Rocket del Pozo Slowpoke, del escondite de Pueblo Caoba y de la Torre Radio de Ciudad Trigal. 3) Vence a las chicas Kimono en Ciudad Iris y enfréntate a Ho-Oh en la Torre Campana. 4) Por la Ruta 27, las Cataratas Tohjo, la Ruta 26 y la Calle Victoria llega a la Liga y vence a Mento, Koga, Bruno, Karen y Lance para entrar en el Hall de la Fama. Consejo: la pestaña «Dónde estás» con tu guardado te dice la siguiente medalla y la zona a la que ir. Fuente: WikiDex «Guía de Pokémon Oro HeartGold y Pokémon Plata SoulSilver».",
+  "HEARTGOLD:postgame": "Cuándo: tras la Liga de Johto. Dónde: Kanto y el Monte Plateado. Paso a paso: 1) Elm te da el Ticket barco; en el puerto de Ciudad Olivo Oak te da la Pokédex Nacional y el S.S. Aqua te lleva a Ciudad Carmín. 2) Gana las ocho medallas de Kanto: Lt. Surge (Carmín), Sabrina (Azafrán), Erika (Azulona), Misty (Celeste, tras recuperar la Maquinaria de la Central de Energía), Sachiko (Fucsia), Brock (Plateada, tras despertar al Snorlax de la Ruta 11), Blaine (Islas Espuma) y Azul (Ciudad Verde, con siete medallas). 3) Con las 16 medallas, Oak te da la MO08 Treparrocas y permiso para el Monte Plateado. 4) Sube por la Ruta 28 y la Cueva Monte Plateado hasta la cima y vence a Rojo. Consejo: después vence otra vez al Alto Mando, ahora reforzado. Fuente: WikiDex «Guía de Pokémon Oro HeartGold y Pokémon Plata SoulSilver» (páginas 15-27); WikiDex «Monte Plateado».",
+  "HEARTGOLD:battle0": "Cuándo: con las 16 medallas (las ocho de Johto y las ocho de Kanto). Dónde: Liga Pokémon, en la Meseta Añil (al final de la Calle Victoria). Paso a paso: 1) Gana las ocho medallas de Kanto: el Alto Mando y Lance pasan a sus equipos de revancha, con Pokémon de Hoenn y Sinnoh (Mento abre con Bronzong, Koga con Skuntank, Bruno con Hitmontop y Lance con Salamence). 2) Prepara un equipo de nivel alto y curaciones abundantes. 3) Vence en orden a Mento (Psíquico), Koga (Veneno), Bruno (Lucha) y Karen (Siniestro; su Spiritomb no tiene debilidades). 4) Termina venciendo a Lance con ataques de Hielo, Eléctrico y Roca. Consejo: si ya ganaste el combate doble con tu rival contra Lance y Débora en la Guarida Dragón, los lunes y miércoles tu rival te espera en la Calle Victoria. Fuente: WikiDex «Guía de Pokémon Oro HeartGold y Pokémon Plata SoulSilver» (páginas 25-26).",
+  "HEARTGOLD:battle1": "Cuándo: tras la Liga. Dónde: Frente Batalla, al que se llega por el Acceso al Frente, en la Ruta 40, al oeste de Ciudad Olivo. Paso a paso: 1) Elige edificio: Torre Batalla, Fábrica Batalla, Sala Batalla, Castillo Batalla o Ruleta Batalla. 2) Encadena victorias: cada As aparece en una racha concreta y vencerlo dos veces da su estampa de oro (ver «Estampas de oro de los cinco Ases»). 3) En la Torre Batalla consigue además 100 victorias seguidas para la estrella de la ficha. Consejo: si pierdes, la racha vuelve a cero; prepara equipos pensados para nivel 50. Fuente: WikiDex «Frente Batalla (Sinnoh)» (mismo Frente en Johto); WikiDex «Ficha de entrenador».",
+  "HEARTGOLD:items0": "Cuándo: tras la Liga de Johto. Dónde: Pueblo Primavera, Kanto y Pueblo Paleta. Paso a paso: 1) Ticket barco: te lo da Elm en su laboratorio tras ganar la Liga (S.S. Aqua desde Ciudad Olivo a Ciudad Carmín). 2) Maquinaria: devuélvela a la Central de Energía tras recuperarla en el gimnasio de Ciudad Celeste. 3) Expansión de radio (Pokéflauta): en la Torre Radio de Pueblo Lavanda, tras arreglar la Central. 4) Magnetopase: devuelve a la Copiona de Ciudad Azafrán el Poké Muñeco Clefairy que perdió en el Club de Fans de Pokémon de Ciudad Carmín. 5) MO08 Treparrocas y permiso del Monte Plateado: te los da Oak en Pueblo Paleta al tener las 16 medallas. Consejo: el Magnetopase y la radio solo sirven con la Central de Energía en marcha. Fuente: WikiDex «Guía de Pokémon Oro HeartGold y Pokémon Plata SoulSilver» (páginas 16-20); WikiDex «MO08»; WikiDex «Monte Plateado».",
+  "HEARTGOLD:pokedex": "Cuándo: en la fase final, con la Pokédex Nacional. Dónde: Johto, Kanto, la Zona Safari de Johto (Ruta 48) y el Parque Compi (Ciudad Fucsia). Paso a paso: 1) Registra como capturadas 484 especies: no cuentan Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus. 2) Los exclusivos de la otra edición y los iniciales que no elegiste llegan por intercambio; Oak (Kanto) y Máximo (Hoenn, Silph S.A.) te regalan un inicial de su región. 3) Con Pokekeep: los que solo llegaban por intercambio, por el Parque Compi o por evento, añádelos legales desde la Librería. Consejo: completarla da el diploma Nacional y una estrella de la ficha. Fuente: pokeheartgold (src/pokedex.c, lista de singulares excluidos); WikiDex «Guía de Pokémon Oro HeartGold y Pokémon Plata SoulSilver» (página 27).",
+  "HEARTGOLD:diploma-regional": "Cuándo: al tener registradas como capturadas todas las especies de la Pokédex de Johto salvo Mew y Celebi (254 de 256). Dónde: Ciudad Azulona, Edificio Azulona, en la segunda planta (oficinas de Game Freak). Paso a paso: 1) Captura o consigue por evolución, crianza o intercambio las 254 especies. 2) Con Pokekeep: los exclusivos de Plata SoulSilver y los que no puedas capturar, añádelos legales desde la Librería. 3) Viaja a Ciudad Azulona y sube a la segunda planta del Edificio Azulona. 4) Habla con el hombre que entrega los diplomas: te da el de la Pokédex de Johto. Consejo: aquí sí hay que capturarlos, no basta con verlos. Fuente: pokeheartgold (src/pokedex.c); WikiDex «Edificio Azulona».",
+  "HEARTGOLD:diploma-nacional": "Cuándo: en la fase final, con la Pokédex Nacional. Dónde: el mismo hombre del Edificio Azulona (segunda planta, Ciudad Azulona). Paso a paso: 1) Registra como capturadas 484 especies de la Pokédex Nacional (sin Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus). 2) Trae lo que no se captura en tu edición desde la otra, desde Diamante, Perla o Platino por intercambio, o desde Game Boy Advance con el Parque Compi de Ciudad Fucsia. 3) Con Pokekeep: lo que solo llegaba por intercambio o por el Parque Compi, añádelo legal desde la Librería. 4) Habla con el hombre de los diplomas: te da el de la Pokédex Nacional. Consejo: la Zona Safari de Johto permite capturar especies de otras regiones sin salir del juego. Fuente: pokeheartgold (src/pokedex.c); WikiDex «Edificio Azulona».",
+  "HEARTGOLD:pokemon-243": "Cuándo: tras la escena del sótano de la Torre Quemada (Ciudad Iris). Dónde: errante por las rutas de Johto. Paso a paso: 1) Al bajar al sótano de la Torre Quemada, Raikou huye y empieza a vagar. 2) Mira su posición en el mapa del Pokégear y entra en esa ruta por tierra o agua (si llegas volando, cambia de sitio). 3) Huye en el primer turno: usa Mal de ojo o Bloqueo, o duérmelo, o la Master Ball. Consejo: el daño que le hagas se conserva entre encuentros. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Raikou»; WikiDex «Guía de Pokémon Oro HeartGold y Pokémon Plata SoulSilver» (página 6).",
+  "HEARTGOLD:pokemon-244": "Cuándo: tras la escena del sótano de la Torre Quemada. Dónde: errante por las rutas de Johto. Paso a paso: 1) Entei huye de la Torre Quemada y vaga por Johto. 2) Sigue su posición en el mapa del Pokégear y entra en su ruta caminando o surfeando. 3) Impide que huya con Mal de ojo o Bloqueo, duérmelo y lanza Balls. Consejo: el daño que le hagas se conserva entre encuentros. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Entei».",
+  "HEARTGOLD:pokemon-245": "Cuándo: tras perseguirlo por Johto y Kanto y vencer a Misty. Dónde: Cabo Celeste (Ruta 25, junto a la casa de Bill). Paso a paso: 1) Sigue sus apariciones en orden: Torre Quemada, norte de Ciudad Orquídea (combate con Eusine), Ruta 42 (junto al Monte Mortero), puerto de Ciudad Carmín y Ruta 14. 2) Vence a Misty en Ciudad Celeste. 3) En la Ruta 25 Suicune (nivel 40) ya no huye: guarda y captúralo. Consejo: si lo debilitas, reaparece en la Torre Quemada tras vencer al Alto Mando reforzado. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Suicune».",
+  "HEARTGOLD:pokemon-249": "Cuándo: ya en Kanto, tras la Liga. Dónde: Islas Remolino (Ruta 41), en la sala más profunda. Paso a paso: 1) En Ciudad Plateada habla con el anciano que está de espaldas en el terreno elevado a la derecha de la Tienda: te da el Ala plateada. 2) Entra en las Islas Remolino por la isla del noreste (necesitas Torbellino, Surf, Destello, Fuerza y Cascada). 3) Baja hasta la sala más profunda: Lugia aparece a nivel 70. Consejo: guarda antes; las Ocaso Balls funcionan bien en la cueva. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Lugia»; WikiDex «Islas Remolino»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 20).",
+  "HEARTGOLD:pokemon-250": "Cuándo: durante la historia, con las ocho medallas de Johto. Dónde: cima de la Torre Campana, al norte de Ciudad Iris. Paso a paso: 1) El director de la Torre Radio te da el Ala arcoíris al expulsar al Team Rocket. 2) Vence a las cinco chicas Kimono en el Teatro de Danza de Ciudad Iris: te dan la Campana clara. 3) Entra en la Torre Campana, sube a la cima y Ho-Oh aparece a nivel 45. Consejo: si lo debilitas, reaparece tras vencer al Alto Mando; de noche las Ocaso Balls dan buen resultado. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Ho-Oh»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 12).",
+  "HEARTGOLD:pokemon-144": "Cuándo: ya en Kanto, con Surf y Fuerza. Dónde: Islas Espuma (Ruta 20), en la parte más profunda. Paso a paso: 1) Llega a las Islas Espuma surfeando desde Isla Canela. 2) Baja, mueve las rocas con Fuerza y sigue hacia la isla del norte. 3) Cruza el puente, baja hasta el fondo y surfea hasta Articuno (nivel 50). Consejo: allí mismo está el gimnasio de Blaine; guarda antes del combate. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Articuno»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 23).",
+  "HEARTGOLD:pokemon-145": "Cuándo: después de conseguir las ocho medallas de Kanto. Dónde: Ruta 10, junto a la puerta de la Central de Energía. Paso a paso: 1) Vence a Azul en Ciudad Verde para completar las medallas de Kanto. 2) Ve a la Central de Energía (Surf por la Ruta 10). 3) Zapdos está fuera, junto a la puerta: habla con él para combatir. Consejo: de noche las Ocaso Balls funcionan mejor. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Zapdos»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 24).",
+  "HEARTGOLD:pokemon-146": "Cuándo: con las 16 medallas y la MO08 Treparrocas. Dónde: Cueva Monte Plateado. Paso a paso: 1) Con el permiso de Oak, ve por la Ruta 28 al Monte Plateado. 2) Al entrar en la cueva, ve a la izquierda, surfea y sube la cascada; cruza la puerta. 3) Sube con Treparrocas por uno de los lados y examina a Moltres para combatir. Consejo: vuelve al Centro Pokémon del exterior antes de seguir hacia la cima. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Moltres»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 27).",
+  "HEARTGOLD:pokemon-150": "Cuándo: con las 16 medallas. Dónde: Cueva Celeste, junto al puente del norte de Ciudad Celeste. Paso a paso: 1) Con las 16 medallas la persona que tapaba la entrada se aparta. 2) Entra con Destello y Golpe roca y avanza por la cueva (los Pokémon salvajes son de nivel alto). 3) Mewtwo te espera en la sala más profunda. Consejo: si lo debilitas o huyes, reaparece tras vencer de nuevo al Alto Mando. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Mewtwo»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 18).",
+  "HEARTGOLD:pokemon-382": "Cuándo: con las 16 medallas, tras vencer a Rojo y recibir el inicial de Kanto de Oak. Dónde: Torre Oculta (Ruta 47). Paso a paso: 1) Vence a Rojo en el Monte Plateado. 2) Recoge en Pueblo Paleta el inicial que te ofrece Oak. 3) Habla con el Sr. Pokémon en la Ruta 30: te da la Esfera azul. 4) Desde Ciudad Orquídea cruza el Paso Acantilado a la Ruta 47, entra en la Cueva Acantilado, baja, surfea a la izquierda y sube dos veces con Treparrocas hasta la Torre Oculta. 5) Kyogre aparece a nivel 50. Consejo: guarda antes del combate. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Torre Oculta».",
+  "HEARTGOLD:pokemon-384": "Cuándo: tras tener en la misma partida un Kyogre y un Groudon de Oro HeartGold o Plata SoulSilver. Dónde: Pueblo Paleta (Oak) y Torre Oculta (Ruta 47). Paso a paso: 1) Captura a Kyogre en la Torre Oculta. 2) Consigue un Groudon capturado en Plata SoulSilver (por intercambio); uno de Rubí o Zafiro no sirve. 3) Con Pokekeep: añade desde la Librería un Groudon legal con origen Plata SoulSilver. 4) Habla con Oak en Pueblo Paleta con los dos: te da la Esfera verde. 5) Vuelve a la Torre Oculta: Rayquaza aparece a nivel 50. Consejo: guarda antes del combate. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Torre Oculta»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 27).",
+  "HEARTGOLD:pokemon-380": "Cuándo: con la Pokédex Nacional. Dónde: errante por las rutas de Kanto. Paso a paso: 1) Al salir del Club de Fans de Pokémon de Ciudad Carmín, habla con Máximo. 2) Latias empieza a vagar por Kanto: mira su posición en el mapa del Pokégear. 3) Entra en su ruta caminando o surfeando y usa Mal de ojo o Bloqueo para que no huya. Consejo: duérmela antes de lanzar Balls o usa la Master Ball. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Latias».",
+  "HEARTGOLD:orb-red-blue": "Cuándo: después de vencer a Rojo en la cima del Monte Plateado (requiere las 16 medallas) y de recibir de Oak un inicial de Kanto. Dónde: Monte Plateado, Pueblo Paleta, casa del Sr. Pokémon (Ruta 30) y Torre Oculta (Ruta 47). Paso a paso: 1) Con las 16 medallas, sube al Monte Plateado y vence a Rojo. 2) En Pueblo Paleta recoge el inicial que te ofrece Oak (Bulbasaur, Charmander o Squirtle). 3) Visita al Sr. Pokémon en la Ruta 30: te da la esfera azul. 4) De Ciudad Orquídea pasa por el Paso Acantilado a la Ruta 47, entra en la Cueva Acantilado y, con Surf y Treparrocas, llega a la Torre Oculta. 5) Te espera Kyogre a nivel 50. Consejo: con un Groudon de Plata SoulSilver en la partida (con Pokekeep, añádelo legal desde la Librería), Oak te da la esfera verde para Rayquaza. Fuente: WikiDex «Torre Oculta».",
+  "HEARTGOLD:red-battle": "Cuándo: con las 16 medallas. Dónde: cima del Monte Plateado. Paso a paso: 1) Pide permiso a Oak en Pueblo Paleta (también te da la MO08 Treparrocas). 2) Ve por la Ruta 28 al Centro Pokémon del Monte Plateado y sube por la cueva (Surf, Cascada y Treparrocas). 3) Vence a Rojo: Pikachu nivel 88, Lapras 80, Snorlax 82 y Venusaur, Charizard y Blastoise 84. Consejo: en la cima graniza durante el combate; contra Pikachu, Tierra; contra Charizard, Roca o Agua; lleva Revivir de sobra. Al vencerle te da la Cinta Legendaria y puedes repetir el combate tras vencer de nuevo a Lance. Fuente: WikiDex «Monte Plateado»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 27).",
+  "HEARTGOLD:unown": "Cuándo: desde la primera medalla (Kabuto) y, para las demás cámaras, con Surf y Fuerza. Dónde: Ruinas Alfa, al sur de Ciudad Malva (accesos desde la Ruta 36, la Ruta 32 y la Cueva Unión). Paso a paso: 1) Los puzles se manejan con el lápiz: arrastra para mover y da un toque breve para girar 90°; el cuadro central de 4×4 es la imagen y las piezas sueltas están en el borde (casillas 1-4 de cada lado). Kabuto (cámara noreste): izquierdo 1 → 3 toques → fila 2, col. 2; derecho 2 → 2 → fila 3, col. 3; izquierdo 4 → 1 → fila 1, col. 2; inferior 4 → 3 → fila 3, col. 1. Aerodactyl (sureste, Surf): superior 1 → 1 → fila 3, col. 2; superior 3 → 2 → fila 4, col. 2; derecho 2 → 1 → fila 4, col. 4; izquierdo 3 → 1 → fila 1, col. 2; derecho 4 → 2 → fila 2, col. 2; inferior 2 → 2 → fila 1, col. 1; inferior 4 → 3 → fila 2, col. 1. Omanyte (suroeste, por la Cueva Unión con Surf y Fuerza): superior 2 → 3 → fila 3, col. 3; superior 4 → 0 → fila 3, col. 2; izquierdo 1 → 0 → fila 3, col. 1; derecho 2 → 2 → fila 4, col. 2; izquierdo 3 → 0 → fila 2, col. 4; derecho 3 → 1 → fila 4, col. 1; izquierdo 4 → 1 → fila 1, col. 1; inferior 1 → 2 → fila 2, col. 3; inferior 2 → 3 → fila 3, col. 4. Ho-Oh (noroeste, por la Cueva Unión con Surf): superior 2 → 0 → fila 3, col. 1; superior 3 → 1 → fila 4, col. 2; superior 4 → 1 → fila 1, col. 1; izquierdo 1 → 2 → fila 4, col. 3; izquierdo 2 → 2 → fila 4, col. 1; derecho 2 → 1 → fila 3, col. 2; izquierdo 3 → 1 → fila 1, col. 2; derecho 4 → 1 → fila 3, col. 3; inferior 1 → 2 → fila 2, col. 1; inferior 2 → 3 → fila 2, col. 4. 2) Cámaras secretas, en la sala de cada puzle: en la de Kabuto usa una Cuerda Huida; en la de Aerodactyl usa Destello; en la de Omanyte usa una Piedra Agua; en la de Ho-Oh lleva a Ho-Oh en el equipo y examina la pared del fondo. 3) Pide el Bloc Unown al investigador del Centro de Investigación y captura las 26 letras en la sala subterránea (Kabuto A-J, Omanyte K-Q, Aerodactyl R-V, Ho-Oh W-Z). 4) Con los cuatro puzles resueltos aparece la pared dorada; tras la visita al centro, en la sala de entrada (antes de bajar la escalera) solo salen «!» y «?». Con Pokekeep: si no tienes a Ho-Oh para la última cámara, añade uno legal desde la Librería. Consejo: el canal «Ondas misteriosas» de la radio hace que salgan más letras que te faltan. Fuente: pokeheartgold (src/alph_puzzle.c, src/field/encounter_check.c y guiones de las Ruinas Alfa); WikiDex «Ruinas Alfa».",
+  "HEARTGOLD:card-0": "Cuándo: al terminar la historia de Johto. Dónde: Liga Pokémon, Meseta Añil. Paso a paso: 1) Vence al Alto Mando y a Lance. 2) Entra en el Hall de la Fama. 3) Comprueba la estrella en la ficha de entrenador (pantalla táctil). Consejo: es la misma condición que «Finalizar la historia principal». Fuente: WikiDex «Ficha de entrenador».",
+  "HEARTGOLD:card-1": "Cuándo: en la fase final. Dónde: Johto y Kanto. Paso a paso: 1) Registra como capturadas 484 especies (sin Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus). 2) Con Pokekeep: lo que solo llegaba por intercambio, evento o Parque Compi, añádelo legal desde la Librería. 3) Comprueba la estrella en la ficha. Consejo: es la misma condición que el diploma Nacional del Edificio Azulona. Fuente: WikiDex «Ficha de entrenador»; pokeheartgold (src/pokedex.c).",
+  "HEARTGOLD:card-2": "Cuándo: desde que llegas a la Ruta 35. Dónde: Cúpula Pokéathlon, a la que se entra por el edificio de paso entre la Ruta 35 y el Parque Nacional (salida izquierda). Paso a paso: 1) Hay cinco competiciones de tres pruebas: Velocidad (Saltaobstáculos, Atrapabanderas, Carrera de relevos), Fortaleza (Rompelosas, Pisacírculos, Metegoles), Precisión (Nieve cruzada, Metegoles, Atrapabanderas), Resistencia (Fuera del ring, Carrera de relevos, Rompelosas) y Salto (Botaluces, Atrapadiscos, Saltaobstáculos). 2) Supera el récord de cada una de las 10 pruebas distintas. 3) Al batir los 10 récords la ficha suma la estrella. Consejo: usa Pokémon con buenas estadísticas de rendimiento para la prueba (velocidad, fuerza, técnica, aguante y salto). Fuente: WikiDex «Pokéathlon»; WikiDex «Ficha de entrenador».",
+  "HEARTGOLD:card-3": "Cuándo: en cualquier momento; el reto se activa al encontrar la primera hoja. Dónde: hierba alta de las rutas que tocan a tu Pokémon y, para entregar, tu vecino (Eco o Lira) en Pueblo Primavera. Paso a paso: 1) Pon primero en el equipo al Pokémon que te sigue y habla con él en la hierba alta de las rutas de su naturaleza; no siempre sale a la primera: insiste. Al encontrar una, salta con un «!» rojo y una nota verde. 2) Rutas según naturaleza (una hoja por ruta; las rutas unidas con «o» son excluyentes): Activa, Afable, Alocada y Rara: Rutas 11, 18, 26, 39 y 44. Amable, Floja, Plácida y Serena: Ruta 2 o 28, Ruta 4, Ruta 6, Ruta 35 o 48 y Ruta 32. Agitada, Alegre, Grosera, Ingenua y Pícara: Ruta 1, Ruta 3, Ruta 5 o 12, Ruta 31 y Ruta 34. Cauta, Dócil, Mansa, Modesta y Seria: Ruta 7, Ruta 8, 13 o 14, Ruta 33, Ruta 36 y Ruta 45. Audaz, Firme, Fuerte y Osada: Ruta 9 o 24, Ruta 15, Ruta 22 o 46, Ruta 37 y Ruta 42. Huraña, Miedosa y Tímida: Ruta 10 o 25, Ruta 16, Ruta 27, Ruta 38 y Ruta 43. 3) Con cinco hojas en el mismo Pokémon, llévalo primero del equipo y habla con tu vecino: la ficha suma la estrella, recibes un diploma y las hojas se convierten en la Corona dorada. Consejo: cuantas más hojas lleva, más cuesta encontrar la siguiente. Fuente: WikiDex «Hoja dorada»; Serebii «Shiny Leaf» (HeartGold y SoulSilver).",
+  "HEARTGOLD:card-4": "Cuándo: tras la Liga. Dónde: Torre Batalla del Frente Batalla (Acceso al Frente, Ruta 40, al oeste de Ciudad Olivo). Paso a paso: 1) Elige una modalidad y encadena 100 victorias seguidas (rondas de siete combates). 2) Jericor aparece en el combate 21 y en el 49 de la modalidad individual. 3) Al llegar a 100, la ficha suma la estrella. Consejo: si pierdes, la racha vuelve a cero; lleva Pokémon pensados para nivel 50. Fuente: WikiDex «Ficha de entrenador»; WikiDex «Frente Batalla (Sinnoh)».",
+  "HEARTGOLD:event-0": "Cuándo: en cualquier momento. Dónde: fuera del juego (eventos ya cerrados) y el santuario del Encinar. Paso a paso: 1) En Oro HeartGold y Plata SoulSilver Celebi no se captura en el juego: solo llegó por Regalo Misterioso y otros eventos. 2) Con Pokekeep: añade un Celebi de evento legal desde la Librería. 3) Con ese Celebi primero del equipo, ve al santuario del Encinar para jugar la historia del viaje en el tiempo con Giovanni (ver el objetivo siguiente). Consejo: Celebi no cuenta para los diplomas de la Pokédex. Fuente: WikiDex «Encinar» (Evento de Celebi); pokeheartgold (src/pokedex.c).",
+  "HEARTGOLD:event-1": "Cuándo: tras la historia principal. Dónde: santuario del Encinar (Celebi) y Ruinas Alfa (Arceus). Paso a paso: 1) Celebi: lleva un Celebi repartido por evento en el primer lugar del equipo y examina el santuario del Encinar: viajas al pasado y conoces la historia de tu rival y Giovanni. 2) Arceus: entra en las Ruinas Alfa con un Arceus de evento (o el de la Sala del Origen de Diamante, Perla o Platino) como acompañante; el investigador te lleva a las Ruinas de Sinjoh. 3) En las Ruinas de Sinjoh habla con Cintia en la cabaña; deja a Arceus como único Pokémon del equipo (hay un PC) y entra con él en el Estrado Mistrío: elige a Dialga, Palkia o Giratina (a nivel 1). 4) Con Pokekeep: añade el Celebi o el Arceus de evento legal desde la Librería y llévalo en el equipo; luego sigue la historia en el juego. Consejo: el anciano del Abra de la cabaña te devuelve a casa. Fuente: WikiDex «Ruinas de Sinjoh»; WikiDex «Encinar»; WikiDex «Dialga».",
+  "HEARTGOLD:collect-unown": "Cuándo: a medida que resuelves los puzles de las Ruinas Alfa. Dónde: sala subterránea de las Ruinas Alfa y sala de entrada. Paso a paso: 1) Resuelve los cuatro puzles (soluciones en «Resolver 4 cámaras secretas y registrar los 28 Unown»): Kabuto desbloquea A-J, Omanyte K-Q, Aerodactyl R-V y Ho-Oh W-Z. 2) Captura las letras en la gran sala subterránea; las Ocaso Balls y la radio sintonizada en «Ondas misteriosas» ayudan. 3) Con los cuatro puzles resueltos, entra de nuevo: el científico lee la pared dorada y te lleva al centro. 4) Después, en la sala de entrada (antes de bajar la escalera), captura «!» y «?». Consejo: habla con el investigador del centro para ir llenando el Bloc Unown. Fuente: pokeheartgold (src/field/encounter_check.c); WikiDex «Ruinas Alfa».",
+  "HEARTGOLD:frontier-prints": "Cuándo: tras la Liga. Dónde: Frente Batalla de Johto, por el Acceso al Frente de la Ruta 40 (al oeste de Ciudad Olivo): Torre, Fábrica, Sala, Castillo y Ruleta Batalla. Paso a paso: 1) En cada edificio encadena victorias en combates individuales; cada As aparece en una racha concreta. 2) Torre Batalla: el Amo Torre Jericor, en los combates 21 y 49. 3) Fábrica Batalla: el Jefe Fábrica Espinal, en el 21 y el 49 (Pokémon de préstamo). 4) Castillo Batalla: el Mayordomo Kokuran, en el 21 y el 49. 5) Ruleta Batalla: la Astro Ruleta Delila, en el 21 y el 49. 6) Sala Batalla: la Dama Salón Argenta, en el combate 50 y en el 170. 7) La primera victoria contra cada As da su estampa de plata y la segunda, la de color (oro); si pierdes, la racha vuelve a cero. Consejo: prepara equipos para nivel 50; en la Ruleta los efectos aleatorios pueden ayudarte o perjudicarte. Fuente: WikiDex «As del Frente Batalla»; WikiDex «Frente Batalla (Johto)».",
+  "HEARTGOLD:nurse-gold": "Cuándo: en cuanto tu ficha de entrenador tenga cuatro estrellas o más. Dónde: cualquier Centro Pokémon de Johto o Kanto. Paso a paso: 1) Consigue cuatro de las cinco estrellas: completar la Liga, completar la Pokédex Nacional (484), 100 victorias seguidas en la Torre Batalla, enseñar a tu vecino un Pokémon con cinco hojas doradas y batir los récords de las 10 pruebas del Pokéathlon. 2) Comprueba en la ficha que ya tiene cuatro estrellas. 3) Habla con la enfermera del Centro Pokémon. 4) Te reconoce por la ficha y cambia su recibimiento al curar a tus Pokémon. Consejo: en Oro HeartGold y Plata SoulSilver la ficha cambia de color con cada estrella (roja, azul, verde, morada, gris y negra). Fuente: WikiDex «Ficha de entrenador».",
+  "SOULSILVER:story": "Cuándo: desde el principio; es lo que desbloquea casi todo lo demás. Dónde: Johto, de Pueblo Primavera a la Meseta Añil. Paso a paso: 1) Consigue las ocho medallas de Johto: Pegaso (Ciudad Malva, Volador), Antón (Pueblo Azalea, Bicho), Blanca (Ciudad Trigal, Normal), Morti (Ciudad Iris, Fantasma), Aníbal (Ciudad Orquídea, Lucha), Yasmina (Ciudad Olivo, Acero), Fredo (Pueblo Caoba, Hielo) y Débora (Ciudad Endrino, Dragón). 2) Expulsa al Team Rocket del Pozo Slowpoke, del escondite de Pueblo Caoba y de la Torre Radio de Ciudad Trigal. 3) Vence a las chicas Kimono en Ciudad Iris y enfréntate a Lugia en las Islas Remolino. 4) Por la Ruta 27, las Cataratas Tohjo, la Ruta 26 y la Calle Victoria llega a la Liga y vence a Mento, Koga, Bruno, Karen y Lance para entrar en el Hall de la Fama. Consejo: la pestaña «Dónde estás» con tu guardado te dice la siguiente medalla y la zona a la que ir. Fuente: WikiDex «Guía de Pokémon Oro HeartGold y Pokémon Plata SoulSilver».",
+  "SOULSILVER:postgame": "Cuándo: tras la Liga de Johto. Dónde: Kanto y el Monte Plateado. Paso a paso: 1) Elm te da el Ticket barco; en el puerto de Ciudad Olivo Oak te da la Pokédex Nacional y el S.S. Aqua te lleva a Ciudad Carmín. 2) Gana las ocho medallas de Kanto: Lt. Surge (Carmín), Sabrina (Azafrán), Erika (Azulona), Misty (Celeste, tras recuperar la Maquinaria de la Central de Energía), Sachiko (Fucsia), Brock (Plateada, tras despertar al Snorlax de la Ruta 11), Blaine (Islas Espuma) y Azul (Ciudad Verde, con siete medallas). 3) Con las 16 medallas, Oak te da la MO08 Treparrocas y permiso para el Monte Plateado. 4) Sube por la Ruta 28 y la Cueva Monte Plateado hasta la cima y vence a Rojo. Consejo: después vence otra vez al Alto Mando, ahora reforzado. Fuente: WikiDex «Guía de Pokémon Oro HeartGold y Pokémon Plata SoulSilver» (páginas 15-27); WikiDex «Monte Plateado».",
+  "SOULSILVER:battle0": "Cuándo: con las 16 medallas (las ocho de Johto y las ocho de Kanto). Dónde: Liga Pokémon, en la Meseta Añil (al final de la Calle Victoria). Paso a paso: 1) Gana las ocho medallas de Kanto: el Alto Mando y Lance pasan a sus equipos de revancha, con Pokémon de Hoenn y Sinnoh (Mento abre con Bronzong, Koga con Skuntank, Bruno con Hitmontop y Lance con Salamence). 2) Prepara un equipo de nivel alto y curaciones abundantes. 3) Vence en orden a Mento (Psíquico), Koga (Veneno), Bruno (Lucha) y Karen (Siniestro; su Spiritomb no tiene debilidades). 4) Termina venciendo a Lance con ataques de Hielo, Eléctrico y Roca. Consejo: si ya ganaste el combate doble con tu rival contra Lance y Débora en la Guarida Dragón, los lunes y miércoles tu rival te espera en la Calle Victoria. Fuente: WikiDex «Guía de Pokémon Oro HeartGold y Pokémon Plata SoulSilver» (páginas 25-26).",
+  "SOULSILVER:battle1": "Cuándo: tras la Liga. Dónde: Frente Batalla, al que se llega por el Acceso al Frente, en la Ruta 40, al oeste de Ciudad Olivo. Paso a paso: 1) Elige edificio: Torre Batalla, Fábrica Batalla, Sala Batalla, Castillo Batalla o Ruleta Batalla. 2) Encadena victorias: cada As aparece en una racha concreta y vencerlo dos veces da su estampa de oro (ver «Estampas de oro de los cinco Ases»). 3) En la Torre Batalla consigue además 100 victorias seguidas para la estrella de la ficha. Consejo: si pierdes, la racha vuelve a cero; prepara equipos pensados para nivel 50. Fuente: WikiDex «Frente Batalla (Sinnoh)» (mismo Frente en Johto); WikiDex «Ficha de entrenador».",
+  "SOULSILVER:items0": "Cuándo: tras la Liga de Johto. Dónde: Pueblo Primavera, Kanto y Pueblo Paleta. Paso a paso: 1) Ticket barco: te lo da Elm en su laboratorio tras ganar la Liga (S.S. Aqua desde Ciudad Olivo a Ciudad Carmín). 2) Maquinaria: devuélvela a la Central de Energía tras recuperarla en el gimnasio de Ciudad Celeste. 3) Expansión de radio (Pokéflauta): en la Torre Radio de Pueblo Lavanda, tras arreglar la Central. 4) Magnetopase: devuelve a la Copiona de Ciudad Azafrán el Poké Muñeco Clefairy que perdió en el Club de Fans de Pokémon de Ciudad Carmín. 5) MO08 Treparrocas y permiso del Monte Plateado: te los da Oak en Pueblo Paleta al tener las 16 medallas. Consejo: el Magnetopase y la radio solo sirven con la Central de Energía en marcha. Fuente: WikiDex «Guía de Pokémon Oro HeartGold y Pokémon Plata SoulSilver» (páginas 16-20); WikiDex «MO08»; WikiDex «Monte Plateado».",
+  "SOULSILVER:pokedex": "Cuándo: en la fase final, con la Pokédex Nacional. Dónde: Johto, Kanto, la Zona Safari de Johto (Ruta 48) y el Parque Compi (Ciudad Fucsia). Paso a paso: 1) Registra como capturadas 484 especies: no cuentan Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus. 2) Los exclusivos de la otra edición y los iniciales que no elegiste llegan por intercambio; Oak (Kanto) y Máximo (Hoenn, Silph S.A.) te regalan un inicial de su región. 3) Con Pokekeep: los que solo llegaban por intercambio, por el Parque Compi o por evento, añádelos legales desde la Librería. Consejo: completarla da el diploma Nacional y una estrella de la ficha. Fuente: pokeheartgold (src/pokedex.c, lista de singulares excluidos); WikiDex «Guía de Pokémon Oro HeartGold y Pokémon Plata SoulSilver» (página 27).",
+  "SOULSILVER:diploma-regional": "Cuándo: al tener registradas como capturadas todas las especies de la Pokédex de Johto salvo Mew y Celebi (254 de 256). Dónde: Ciudad Azulona, Edificio Azulona, en la segunda planta (oficinas de Game Freak). Paso a paso: 1) Captura o consigue por evolución, crianza o intercambio las 254 especies. 2) Con Pokekeep: los exclusivos de Oro HeartGold y los que no puedas capturar, añádelos legales desde la Librería. 3) Viaja a Ciudad Azulona y sube a la segunda planta del Edificio Azulona. 4) Habla con el hombre que entrega los diplomas: te da el de la Pokédex de Johto. Consejo: aquí sí hay que capturarlos, no basta con verlos. Fuente: pokeheartgold (src/pokedex.c); WikiDex «Edificio Azulona».",
+  "SOULSILVER:diploma-nacional": "Cuándo: en la fase final, con la Pokédex Nacional. Dónde: el mismo hombre del Edificio Azulona (segunda planta, Ciudad Azulona). Paso a paso: 1) Registra como capturadas 484 especies de la Pokédex Nacional (sin Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus). 2) Trae lo que no se captura en tu edición desde la otra, desde Diamante, Perla o Platino por intercambio, o desde Game Boy Advance con el Parque Compi de Ciudad Fucsia. 3) Con Pokekeep: lo que solo llegaba por intercambio o por el Parque Compi, añádelo legal desde la Librería. 4) Habla con el hombre de los diplomas: te da el de la Pokédex Nacional. Consejo: la Zona Safari de Johto permite capturar especies de otras regiones sin salir del juego. Fuente: pokeheartgold (src/pokedex.c); WikiDex «Edificio Azulona».",
+  "SOULSILVER:pokemon-243": "Cuándo: tras la escena del sótano de la Torre Quemada (Ciudad Iris). Dónde: errante por las rutas de Johto. Paso a paso: 1) Al bajar al sótano de la Torre Quemada, Raikou huye y empieza a vagar. 2) Mira su posición en el mapa del Pokégear y entra en esa ruta por tierra o agua (si llegas volando, cambia de sitio). 3) Huye en el primer turno: usa Mal de ojo o Bloqueo, o duérmelo, o la Master Ball. Consejo: el daño que le hagas se conserva entre encuentros. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Raikou»; WikiDex «Guía de Pokémon Oro HeartGold y Pokémon Plata SoulSilver» (página 6).",
+  "SOULSILVER:pokemon-244": "Cuándo: tras la escena del sótano de la Torre Quemada. Dónde: errante por las rutas de Johto. Paso a paso: 1) Entei huye de la Torre Quemada y vaga por Johto. 2) Sigue su posición en el mapa del Pokégear y entra en su ruta caminando o surfeando. 3) Impide que huya con Mal de ojo o Bloqueo, duérmelo y lanza Balls. Consejo: el daño que le hagas se conserva entre encuentros. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Entei».",
+  "SOULSILVER:pokemon-245": "Cuándo: tras perseguirlo por Johto y Kanto y vencer a Misty. Dónde: Cabo Celeste (Ruta 25, junto a la casa de Bill). Paso a paso: 1) Sigue sus apariciones en orden: Torre Quemada, norte de Ciudad Orquídea (combate con Eusine), Ruta 42 (junto al Monte Mortero), puerto de Ciudad Carmín y Ruta 14. 2) Vence a Misty en Ciudad Celeste. 3) En la Ruta 25 Suicune (nivel 40) ya no huye: guarda y captúralo. Consejo: si lo debilitas, reaparece en la Torre Quemada tras vencer al Alto Mando reforzado. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Suicune».",
+  "SOULSILVER:pokemon-249": "Cuándo: durante la historia, con las ocho medallas de Johto. Dónde: Islas Remolino (Ruta 41), en la sala más profunda. Paso a paso: 1) El director de la Torre Radio te da el Ala plateada al expulsar al Team Rocket. 2) Vence a las cinco chicas Kimono en el Teatro de Danza de Ciudad Iris: te dan la Campana oleaje. 3) Entra en las Islas Remolino por la isla del noreste (Torbellino, Surf, Destello y Cascada); el monje solo te deja pasar con el Ala plateada. 4) Al fondo, las chicas Kimono llaman a Lugia: aparece a nivel 45. Consejo: si lo debilitas, reaparece tras vencer al Alto Mando. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Lugia»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 12).",
+  "SOULSILVER:pokemon-250": "Cuándo: ya en Kanto, tras la Liga. Dónde: cima de la Torre Campana, al norte de Ciudad Iris. Paso a paso: 1) En Ciudad Plateada habla con el anciano que está de espaldas en el terreno elevado a la derecha de la Tienda: te da el Ala arcoíris. 2) Ve a la Torre Campana de Ciudad Iris y sube a la cima. 3) Ho-Oh aparece a nivel 70. Consejo: guarda antes del combate. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Ho-Oh»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 20).",
+  "SOULSILVER:pokemon-144": "Cuándo: ya en Kanto, con Surf y Fuerza. Dónde: Islas Espuma (Ruta 20), en la parte más profunda. Paso a paso: 1) Llega a las Islas Espuma surfeando desde Isla Canela. 2) Baja, mueve las rocas con Fuerza y sigue hacia la isla del norte. 3) Cruza el puente, baja hasta el fondo y surfea hasta Articuno (nivel 50). Consejo: allí mismo está el gimnasio de Blaine; guarda antes del combate. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Articuno»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 23).",
+  "SOULSILVER:pokemon-145": "Cuándo: después de conseguir las ocho medallas de Kanto. Dónde: Ruta 10, junto a la puerta de la Central de Energía. Paso a paso: 1) Vence a Azul en Ciudad Verde para completar las medallas de Kanto. 2) Ve a la Central de Energía (Surf por la Ruta 10). 3) Zapdos está fuera, junto a la puerta: habla con él para combatir. Consejo: de noche las Ocaso Balls funcionan mejor. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Zapdos»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 24).",
+  "SOULSILVER:pokemon-146": "Cuándo: con las 16 medallas y la MO08 Treparrocas. Dónde: Cueva Monte Plateado. Paso a paso: 1) Con el permiso de Oak, ve por la Ruta 28 al Monte Plateado. 2) Al entrar en la cueva, ve a la izquierda, surfea y sube la cascada; cruza la puerta. 3) Sube con Treparrocas por uno de los lados y examina a Moltres para combatir. Consejo: vuelve al Centro Pokémon del exterior antes de seguir hacia la cima. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Moltres»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 27).",
+  "SOULSILVER:pokemon-150": "Cuándo: con las 16 medallas. Dónde: Cueva Celeste, junto al puente del norte de Ciudad Celeste. Paso a paso: 1) Con las 16 medallas la persona que tapaba la entrada se aparta. 2) Entra con Destello y Golpe roca y avanza por la cueva (los Pokémon salvajes son de nivel alto). 3) Mewtwo te espera en la sala más profunda. Consejo: si lo debilitas o huyes, reaparece tras vencer de nuevo al Alto Mando. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Mewtwo»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 18).",
+  "SOULSILVER:pokemon-383": "Cuándo: con las 16 medallas, tras vencer a Rojo y recibir el inicial de Kanto de Oak. Dónde: Torre Oculta (Ruta 47). Paso a paso: 1) Vence a Rojo en el Monte Plateado. 2) Recoge en Pueblo Paleta el inicial que te ofrece Oak. 3) Habla con el Sr. Pokémon en la Ruta 30: te da la Esfera roja. 4) Desde Ciudad Orquídea cruza el Paso Acantilado a la Ruta 47, entra en la Cueva Acantilado, baja, surfea a la izquierda y sube dos veces con Treparrocas hasta la Torre Oculta. 5) Groudon aparece a nivel 50. Consejo: guarda antes del combate. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Torre Oculta».",
+  "SOULSILVER:pokemon-384": "Cuándo: tras tener en la misma partida un Kyogre y un Groudon de Oro HeartGold o Plata SoulSilver. Dónde: Pueblo Paleta (Oak) y Torre Oculta (Ruta 47). Paso a paso: 1) Captura a Groudon en la Torre Oculta. 2) Consigue un Kyogre capturado en Oro HeartGold (por intercambio); uno de Rubí o Zafiro no sirve. 3) Con Pokekeep: añade desde la Librería un Kyogre legal con origen Oro HeartGold. 4) Habla con Oak en Pueblo Paleta con los dos: te da la Esfera verde. 5) Vuelve a la Torre Oculta: Rayquaza aparece a nivel 50. Consejo: guarda antes del combate. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Torre Oculta»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 27).",
+  "SOULSILVER:pokemon-381": "Cuándo: con la Pokédex Nacional. Dónde: errante por las rutas de Kanto. Paso a paso: 1) Al salir del Club de Fans de Pokémon de Ciudad Carmín, habla con Máximo. 2) Latios empieza a vagar por Kanto: mira su posición en el mapa del Pokégear. 3) Entra en su ruta caminando o surfeando y usa Mal de ojo o Bloqueo para que no huya. Consejo: duérmelo antes de lanzar Balls o usa la Master Ball. Se acredita con el registro en la Pokédex de la partida. Fuente: WikiDex «Latios».",
+  "SOULSILVER:orb-red-blue": "Cuándo: después de vencer a Rojo en la cima del Monte Plateado (requiere las 16 medallas) y de recibir de Oak un inicial de Kanto. Dónde: Monte Plateado, Pueblo Paleta, casa del Sr. Pokémon (Ruta 30) y Torre Oculta (Ruta 47). Paso a paso: 1) Con las 16 medallas, sube al Monte Plateado y vence a Rojo. 2) En Pueblo Paleta recoge el inicial que te ofrece Oak (Bulbasaur, Charmander o Squirtle). 3) Visita al Sr. Pokémon en la Ruta 30: te da la esfera roja. 4) De Ciudad Orquídea pasa por el Paso Acantilado a la Ruta 47, entra en la Cueva Acantilado y, con Surf y Treparrocas, llega a la Torre Oculta. 5) Te espera Groudon a nivel 50. Consejo: con un Kyogre de Oro HeartGold en la partida (con Pokekeep, añádelo legal desde la Librería), Oak te da la esfera verde para Rayquaza. Fuente: WikiDex «Torre Oculta».",
+  "SOULSILVER:red-battle": "Cuándo: con las 16 medallas. Dónde: cima del Monte Plateado. Paso a paso: 1) Pide permiso a Oak en Pueblo Paleta (también te da la MO08 Treparrocas). 2) Ve por la Ruta 28 al Centro Pokémon del Monte Plateado y sube por la cueva (Surf, Cascada y Treparrocas). 3) Vence a Rojo: Pikachu nivel 88, Lapras 80, Snorlax 82 y Venusaur, Charizard y Blastoise 84. Consejo: en la cima graniza durante el combate; contra Pikachu, Tierra; contra Charizard, Roca o Agua; lleva Revivir de sobra. Al vencerle te da la Cinta Legendaria y puedes repetir el combate tras vencer de nuevo a Lance. Fuente: WikiDex «Monte Plateado»; WikiDex «Guía… Oro HeartGold y Plata SoulSilver» (página 27).",
+  "SOULSILVER:unown": "Cuándo: desde la primera medalla (Kabuto) y, para las demás cámaras, con Surf y Fuerza. Dónde: Ruinas Alfa, al sur de Ciudad Malva (accesos desde la Ruta 36, la Ruta 32 y la Cueva Unión). Paso a paso: 1) Los puzles se manejan con el lápiz: arrastra para mover y da un toque breve para girar 90°; el cuadro central de 4×4 es la imagen y las piezas sueltas están en el borde (casillas 1-4 de cada lado). Kabuto (cámara noreste): izquierdo 1 → 3 toques → fila 2, col. 2; derecho 2 → 2 → fila 3, col. 3; izquierdo 4 → 1 → fila 1, col. 2; inferior 4 → 3 → fila 3, col. 1. Aerodactyl (sureste, Surf): superior 1 → 1 → fila 3, col. 2; superior 3 → 2 → fila 4, col. 2; derecho 2 → 1 → fila 4, col. 4; izquierdo 3 → 1 → fila 1, col. 2; derecho 4 → 2 → fila 2, col. 2; inferior 2 → 2 → fila 1, col. 1; inferior 4 → 3 → fila 2, col. 1. Omanyte (suroeste, por la Cueva Unión con Surf y Fuerza): superior 2 → 3 → fila 3, col. 3; superior 4 → 0 → fila 3, col. 2; izquierdo 1 → 0 → fila 3, col. 1; derecho 2 → 2 → fila 4, col. 2; izquierdo 3 → 0 → fila 2, col. 4; derecho 3 → 1 → fila 4, col. 1; izquierdo 4 → 1 → fila 1, col. 1; inferior 1 → 2 → fila 2, col. 3; inferior 2 → 3 → fila 3, col. 4. Ho-Oh (noroeste, por la Cueva Unión con Surf): superior 2 → 0 → fila 3, col. 1; superior 3 → 1 → fila 4, col. 2; superior 4 → 1 → fila 1, col. 1; izquierdo 1 → 2 → fila 4, col. 3; izquierdo 2 → 2 → fila 4, col. 1; derecho 2 → 1 → fila 3, col. 2; izquierdo 3 → 1 → fila 1, col. 2; derecho 4 → 1 → fila 3, col. 3; inferior 1 → 2 → fila 2, col. 1; inferior 2 → 3 → fila 2, col. 4. 2) Cámaras secretas, en la sala de cada puzle: en la de Kabuto usa una Cuerda Huida; en la de Aerodactyl usa Destello; en la de Omanyte usa una Piedra Agua; en la de Ho-Oh lleva a Ho-Oh en el equipo y examina la pared del fondo. 3) Pide el Bloc Unown al investigador del Centro de Investigación y captura las 26 letras en la sala subterránea (Kabuto A-J, Omanyte K-Q, Aerodactyl R-V, Ho-Oh W-Z). 4) Con los cuatro puzles resueltos aparece la pared dorada; tras la visita al centro, en la sala de entrada (antes de bajar la escalera) solo salen «!» y «?». Con Pokekeep: en Plata SoulSilver Ho-Oh llega tras la Liga; si no lo tienes, añade uno legal desde la Librería para la última cámara. Consejo: el canal «Ondas misteriosas» de la radio hace que salgan más letras que te faltan. Fuente: pokeheartgold (src/alph_puzzle.c, src/field/encounter_check.c y guiones de las Ruinas Alfa); WikiDex «Ruinas Alfa».",
+  "SOULSILVER:card-0": "Cuándo: al terminar la historia de Johto. Dónde: Liga Pokémon, Meseta Añil. Paso a paso: 1) Vence al Alto Mando y a Lance. 2) Entra en el Hall de la Fama. 3) Comprueba la estrella en la ficha de entrenador (pantalla táctil). Consejo: es la misma condición que «Finalizar la historia principal». Fuente: WikiDex «Ficha de entrenador».",
+  "SOULSILVER:card-1": "Cuándo: en la fase final. Dónde: Johto y Kanto. Paso a paso: 1) Registra como capturadas 484 especies (sin Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin ni Arceus). 2) Con Pokekeep: lo que solo llegaba por intercambio, evento o Parque Compi, añádelo legal desde la Librería. 3) Comprueba la estrella en la ficha. Consejo: es la misma condición que el diploma Nacional del Edificio Azulona. Fuente: WikiDex «Ficha de entrenador»; pokeheartgold (src/pokedex.c).",
+  "SOULSILVER:card-2": "Cuándo: desde que llegas a la Ruta 35. Dónde: Cúpula Pokéathlon, a la que se entra por el edificio de paso entre la Ruta 35 y el Parque Nacional (salida izquierda). Paso a paso: 1) Hay cinco competiciones de tres pruebas: Velocidad (Saltaobstáculos, Atrapabanderas, Carrera de relevos), Fortaleza (Rompelosas, Pisacírculos, Metegoles), Precisión (Nieve cruzada, Metegoles, Atrapabanderas), Resistencia (Fuera del ring, Carrera de relevos, Rompelosas) y Salto (Botaluces, Atrapadiscos, Saltaobstáculos). 2) Supera el récord de cada una de las 10 pruebas distintas. 3) Al batir los 10 récords la ficha suma la estrella. Consejo: usa Pokémon con buenas estadísticas de rendimiento para la prueba (velocidad, fuerza, técnica, aguante y salto). Fuente: WikiDex «Pokéathlon»; WikiDex «Ficha de entrenador».",
+  "SOULSILVER:card-3": "Cuándo: en cualquier momento; el reto se activa al encontrar la primera hoja. Dónde: hierba alta de las rutas que tocan a tu Pokémon y, para entregar, tu vecino (Eco o Lira) en Pueblo Primavera. Paso a paso: 1) Pon primero en el equipo al Pokémon que te sigue y habla con él en la hierba alta de las rutas de su naturaleza; no siempre sale a la primera: insiste. Al encontrar una, salta con un «!» rojo y una nota verde. 2) Rutas según naturaleza (una hoja por ruta; las rutas unidas con «o» son excluyentes): Activa, Afable, Alocada y Rara: Rutas 11, 18, 26, 39 y 44. Amable, Floja, Plácida y Serena: Ruta 2 o 28, Ruta 4, Ruta 6, Ruta 35 o 48 y Ruta 32. Agitada, Alegre, Grosera, Ingenua y Pícara: Ruta 1, Ruta 3, Ruta 5 o 12, Ruta 31 y Ruta 34. Cauta, Dócil, Mansa, Modesta y Seria: Ruta 7, Ruta 8, 13 o 14, Ruta 33, Ruta 36 y Ruta 45. Audaz, Firme, Fuerte y Osada: Ruta 9 o 24, Ruta 15, Ruta 22 o 46, Ruta 37 y Ruta 42. Huraña, Miedosa y Tímida: Ruta 10 o 25, Ruta 16, Ruta 27, Ruta 38 y Ruta 43. 3) Con cinco hojas en el mismo Pokémon, llévalo primero del equipo y habla con tu vecino: la ficha suma la estrella, recibes un diploma y las hojas se convierten en la Corona dorada. Consejo: cuantas más hojas lleva, más cuesta encontrar la siguiente. Fuente: WikiDex «Hoja dorada»; Serebii «Shiny Leaf» (HeartGold y SoulSilver).",
+  "SOULSILVER:card-4": "Cuándo: tras la Liga. Dónde: Torre Batalla del Frente Batalla (Acceso al Frente, Ruta 40, al oeste de Ciudad Olivo). Paso a paso: 1) Elige una modalidad y encadena 100 victorias seguidas (rondas de siete combates). 2) Jericor aparece en el combate 21 y en el 49 de la modalidad individual. 3) Al llegar a 100, la ficha suma la estrella. Consejo: si pierdes, la racha vuelve a cero; lleva Pokémon pensados para nivel 50. Fuente: WikiDex «Ficha de entrenador»; WikiDex «Frente Batalla (Sinnoh)».",
+  "SOULSILVER:event-0": "Cuándo: en cualquier momento. Dónde: fuera del juego (eventos ya cerrados) y el santuario del Encinar. Paso a paso: 1) En Oro HeartGold y Plata SoulSilver Celebi no se captura en el juego: solo llegó por Regalo Misterioso y otros eventos. 2) Con Pokekeep: añade un Celebi de evento legal desde la Librería. 3) Con ese Celebi primero del equipo, ve al santuario del Encinar para jugar la historia del viaje en el tiempo con Giovanni (ver el objetivo siguiente). Consejo: Celebi no cuenta para los diplomas de la Pokédex. Fuente: WikiDex «Encinar» (Evento de Celebi); pokeheartgold (src/pokedex.c).",
+  "SOULSILVER:event-1": "Cuándo: tras la historia principal. Dónde: santuario del Encinar (Celebi) y Ruinas Alfa (Arceus). Paso a paso: 1) Celebi: lleva un Celebi repartido por evento en el primer lugar del equipo y examina el santuario del Encinar: viajas al pasado y conoces la historia de tu rival y Giovanni. 2) Arceus: entra en las Ruinas Alfa con un Arceus de evento (o el de la Sala del Origen de Diamante, Perla o Platino) como acompañante; el investigador te lleva a las Ruinas de Sinjoh. 3) En las Ruinas de Sinjoh habla con Cintia en la cabaña; deja a Arceus como único Pokémon del equipo (hay un PC) y entra con él en el Estrado Mistrío: elige a Dialga, Palkia o Giratina (a nivel 1). 4) Con Pokekeep: añade el Celebi o el Arceus de evento legal desde la Librería y llévalo en el equipo; luego sigue la historia en el juego. Consejo: el anciano del Abra de la cabaña te devuelve a casa. Fuente: WikiDex «Ruinas de Sinjoh»; WikiDex «Encinar»; WikiDex «Dialga».",
+  "SOULSILVER:collect-unown": "Cuándo: a medida que resuelves los puzles de las Ruinas Alfa. Dónde: sala subterránea de las Ruinas Alfa y sala de entrada. Paso a paso: 1) Resuelve los cuatro puzles (soluciones en «Resolver 4 cámaras secretas y registrar los 28 Unown»): Kabuto desbloquea A-J, Omanyte K-Q, Aerodactyl R-V y Ho-Oh W-Z. 2) Captura las letras en la gran sala subterránea; las Ocaso Balls y la radio sintonizada en «Ondas misteriosas» ayudan. 3) Con los cuatro puzles resueltos, entra de nuevo: el científico lee la pared dorada y te lleva al centro. 4) Después, en la sala de entrada (antes de bajar la escalera), captura «!» y «?». Consejo: habla con el investigador del centro para ir llenando el Bloc Unown. Fuente: pokeheartgold (src/field/encounter_check.c); WikiDex «Ruinas Alfa».",
+  "SOULSILVER:frontier-prints": "Cuándo: tras la Liga. Dónde: Frente Batalla de Johto, por el Acceso al Frente de la Ruta 40 (al oeste de Ciudad Olivo): Torre, Fábrica, Sala, Castillo y Ruleta Batalla. Paso a paso: 1) En cada edificio encadena victorias en combates individuales; cada As aparece en una racha concreta. 2) Torre Batalla: el Amo Torre Jericor, en los combates 21 y 49. 3) Fábrica Batalla: el Jefe Fábrica Espinal, en el 21 y el 49 (Pokémon de préstamo). 4) Castillo Batalla: el Mayordomo Kokuran, en el 21 y el 49. 5) Ruleta Batalla: la Astro Ruleta Delila, en el 21 y el 49. 6) Sala Batalla: la Dama Salón Argenta, en el combate 50 y en el 170. 7) La primera victoria contra cada As da su estampa de plata y la segunda, la de color (oro); si pierdes, la racha vuelve a cero. Consejo: prepara equipos para nivel 50; en la Ruleta los efectos aleatorios pueden ayudarte o perjudicarte. Fuente: WikiDex «As del Frente Batalla»; WikiDex «Frente Batalla (Johto)».",
+  "SOULSILVER:nurse-gold": "Cuándo: en cuanto tu ficha de entrenador tenga cuatro estrellas o más. Dónde: cualquier Centro Pokémon de Johto o Kanto. Paso a paso: 1) Consigue cuatro de las cinco estrellas: completar la Liga, completar la Pokédex Nacional (484), 100 victorias seguidas en la Torre Batalla, enseñar a tu vecino un Pokémon con cinco hojas doradas y batir los récords de las 10 pruebas del Pokéathlon. 2) Comprueba en la ficha que ya tiene cuatro estrellas. 3) Habla con la enfermera del Centro Pokémon. 4) Te reconoce por la ficha y cambia su recibimiento al curar a tus Pokémon. Consejo: en Oro HeartGold y Plata SoulSilver la ficha cambia de color con cada estrella (roja, azul, verde, morada, gris y negra). Fuente: WikiDex «Ficha de entrenador»."
+ }
+}

@@ -1,0 +1,584 @@
+{
+ "misiones": {
+  "GOLD-01": {
+   "pasos": [
+    "Baja a la planta baja y habla con tu madre: te devuelve el Pokégear (reloj y teléfono) y te pide que vayas a ver al Profesor Elm.",
+    "Entra en el Laboratorio del Profesor Elm y elige uno de los tres Poké Balls de la mesa: Chikorita (planta), Cyndaquil (fuego) o Totodile (agua), los tres de nivel 5 y con una Baya.",
+    "Elm te encarga un recado: sal por el oeste a la Ruta 29, cruza Ciudad Cerezo y sigue hacia el norte por la Ruta 30 hasta la casa del Sr. Pokémon.",
+    "En casa del Sr. Pokémon recibes el Huevo Misterioso y, de manos del Profesor Oak (que está de visita), la Pokédex.",
+    "Al volver por Ciudad Cerezo te corta el paso un chico pelirrojo: es tu rival y combate con el inicial que tiene ventaja de tipo sobre el tuyo (nivel 5).",
+    "En el laboratorio, un policía te pregunta por el ladrón: pon nombre a tu rival. Entrega el Huevo a Elm y su ayudante te da 5 Poké Balls: desde ese momento puedes capturar Pokémon y registrarlos en la Pokédex."
+   ],
+   "precaucion": "Solo puedes elegir un inicial por partida; los otros dos únicamente llegan por intercambio o crianza desde otra partida. Con Pokekeep: añade desde la Librería los iniciales que no elegiste para completar la Pokédex."
+  },
+  "GOLD-02": {
+   "pasos": [
+    "Desde Ciudad Cerezo sube por la Ruta 30 y la Ruta 31 hasta Ciudad Malva.",
+    "(Recomendado) Entra en la Torre Bellsprout, al norte de la ciudad, sube a la última planta y vence al sabio mayor: te da la MO05 Destello.",
+    "Prepara Pokémon de tipo Eléctrico, Roca o Hielo y entra en el gimnasio de Ciudad Malva: Pegaso usa Pokémon de tipo Volador.",
+    "Vence a Pegaso: recibes la Medalla Céfiro (permite usar Destello fuera de combate) y la MT31 Bofetón Lodo.",
+    "El Profesor Elm te llama al Pokégear: ve al Centro Pokémon de Ciudad Malva, donde te espera su ayudante, y acepta el Huevo que te ofrece (necesitas un hueco libre en el equipo).",
+    "Lleva el Huevo en el equipo mientras caminas hasta que eclosione: es un Togepi. Enséñaselo después a Elm en su laboratorio y te regala una Piedra Eterna."
+   ],
+   "precaucion": "El ayudante de Elm no te da el Huevo si llevas 6 Pokémon: deja uno en el PC antes de hablar con él. El Huevo es la única forma de conseguir Togepi en esta partida."
+  },
+  "GOLD-03": {
+   "pasos": [
+    "Sal de Ciudad Malva hacia el sur por la Ruta 32; en el Centro Pokémon del final de la ruta un pescador te regala la Caña Vieja.",
+    "Cruza la Cueva Unión y la Ruta 33 hasta Pueblo Azalea: un soldado del Team Rocket bloquea la puerta del gimnasio.",
+    "Habla con César, el artesano de Poké Balls, en su casa (al norte del pueblo): sale corriendo al Pozo Slowpoke. Síguelo y entra en el pozo.",
+    "Dentro del pozo vence a los cuatro miembros del Team Rocket (el último, el más fuerte, tiene un Pokémon de nivel 14). Al terminar, César te lleva a su casa y te regala una Cebo Ball.",
+    "Entra en el gimnasio (ya no hay nadie en la puerta) y vence a Antón, especialista en tipo Bicho (su Scyther de nivel 16 es el más peligroso): usa Pokémon de tipo Fuego, Volador o Roca. Recibes la Medalla Colmena (permite usar Corte fuera de combate) y la MT49 Corte Furia.",
+    "Al salir del gimnasio tu rival te reta. Después entra en el Encinar, al oeste del pueblo.",
+    "En el Encinar el aprendiz del carbonero ha perdido a su Farfetch'd: acércate al Farfetch'd por detrás para que se mueva en la dirección contraria y guíalo así hasta el aprendiz. Su maestro te da la MO01 Corte; un chico del bosque te da además la MT02 Golpe Cabeza.",
+    "Usa Corte en el arbusto que bloquea la salida norte del Encinar para llegar a la Ruta 34."
+   ],
+   "precaucion": "Antes de salir del Encinar recoge sus objetos y prueba Golpe Cabeza en los árboles para registrar Pokémon que solo salen así; volver más tarde obliga a cruzar de nuevo desde Ciudad Trigal."
+  },
+  "GOLD-04": {
+   "pasos": [
+    "Recorre la Ruta 34 hacia el norte hasta Ciudad Trigal.",
+    "(Recomendado) En la planta baja de la Torre Radio responde al concurso de 5 preguntas para obtener la Tarjeta Radio del Pokégear; las respuestas correctas, por orden, son: Sí, Sí, No, Sí, No.",
+    "(Recomendado) En la tienda de bicicletas te prestan gratis una Bicicleta.",
+    "Entra en el gimnasio de Ciudad Trigal: Blanca usa tipo Normal; su Miltank (nivel 20) usa Desenrollar y Batido, así que lleva Pokémon de tipo Lucha o de Roca y objetos curativos.",
+    "Al vencerla, Blanca se echa a llorar y no te da la medalla: habla con la entrenadora que hay dentro del gimnasio y después vuelve a hablar con Blanca. Recibes la Medalla Planicie (permite usar Fuerza fuera de combate) y la MT45 Atracción.",
+    "Ve a la floristería, junto al gimnasio: con la Medalla Planicie, la dueña te da la Regadera."
+   ],
+   "precaucion": "Blanca no entrega la medalla justo después del combate: hay que hablar con la entrenadora del gimnasio y volver a hablar con ella. Sin la Medalla Planicie no te dan la Regadera."
+  },
+  "GOLD-05": {
+   "pasos": [
+    "Sube por la Ruta 35 (o cruza el Parque Nacional, donde se celebra el Concurso de Bichos los martes, jueves y sábados) hasta el árbol que se mueve en la Ruta 36.",
+    "Guarda la partida y usa la Regadera con el árbol: es un Sudowoodo salvaje de nivel 20. Captúralo; si lo debilitas, desaparece para siempre.",
+    "Sigue por la Ruta 37 hasta Ciudad Iris.",
+    "Entra en la Torre Quemada, al noroeste: vence a tu rival en la planta baja y cae al sótano, donde Raikou, Entei y Suicune despiertan, huyen y empiezan a vagar por las rutas de Johto. No es obligatorio para el gimnasio, pero sin esta escena no podrás capturarlos.",
+    "Entra en el Teatro de Danza, vence a las cinco Chicas Kimono (cada una usa una evolución de Eevee) y habla con el señor del teatro: te da la MO03 Surf.",
+    "Vence a Morti en el gimnasio de Ciudad Iris (tipo Fantasma; su Gengar usa Hipnosis y Comesueños: lleva Despertar y Pokémon de tipo Siniestro o Normal). Recibes la Medalla Niebla (permite usar Surf fuera de combate) y la MT30 Bola Sombra."
+   ],
+   "precaucion": "Al salir de la Torre Quemada, Raikou, Entei y Suicune vagan por Johto y huyen al primer turno: no gastes la Master Ball en otro Pokémon antes de capturarlos."
+  },
+  "GOLD-06": {
+   "pasos": [
+    "Sigue por las Rutas 38 y 39 (Granja Mu-mu) hasta Ciudad Olivo; en el café de la ciudad un marinero te da la MO04 Fuerza.",
+    "Sube al Faro de Olivo hasta la planta superior y habla con Yasmina: no puede combatir porque su Ampharos (Amphy) está enfermo.",
+    "Haz Surf hacia el oeste por las Rutas 40 y 41 hasta Ciudad Orquídea y entra en la farmacia: tras hablar con Yasmina, el farmacéutico te da la Poción Secreta.",
+    "Entra en el gimnasio de Ciudad Orquídea: usa Fuerza para apartar las rocas y vence a Aníbal (tipo Lucha; usa tipo Volador o Psíquico). Recibes la Medalla Tormenta (permite usar Vuelo fuera de combate) y la MT01 Puño Dinámico.",
+    "Habla con la mujer de Aníbal en Ciudad Orquídea: te da la MO02 Vuelo.",
+    "Vuela o vuelve haciendo Surf a Ciudad Olivo, sube al faro y entrega la Poción Secreta a Yasmina.",
+    "Ve al gimnasio de Ciudad Olivo y vence a Yasmina (Magnemite x2 y Steelix; usa tipo Fuego, Tierra o Lucha). Recibes la Medalla Mineral y la MT23 Cola Férrea."
+   ],
+   "precaucion": "El orden es obligatorio: sin hablar antes con Yasmina en el faro, la farmacia de Ciudad Orquídea no te da la Poción Secreta, y sin Fuerza no llegas a Aníbal."
+  },
+  "GOLD-07": {
+   "pasos": [
+    "Desde Ciudad Iris sal por el este a la Ruta 42 (Surf o Monte Mortero) hasta Pueblo Caoba: un pescador bloquea la puerta del gimnasio.",
+    "Sube por la Ruta 43 hasta el Lago de la Furia, guarda y haz Surf hasta el centro: el Gyarados rojo (variocolor, nivel 30) te ataca. Captúralo o debilítalo; en ambos casos recoges la Escama Roja.",
+    "En la orilla habla con Lance y acepta ayudarle. Vuelve a Pueblo Caoba y entra en la tienda de recuerdos: Lance descubre la escalera secreta del Escondite del Team Rocket.",
+    "En el sótano 1, cada estatua de Persian hace aparecer soldados; desactívalas con el ordenador que hay junto al científico de esa planta. En el sótano 2 Lance cura a tu equipo.",
+    "En el sótano 3 vence a la soldado (te dice la contraseña COLASLOWPOKE) y al soldado con Raticate (COLARATICATE); con las dos se abre la oficina del jefe. Vence al ejecutivo y habla con el Murkrow: te dice la contraseña de la sala del emisor.",
+    "Vuelve al sótano 2, abre la puerta con esa contraseña, vence a la Ejecutiva (Lance se encarga del soldado) y debilita o captura los tres Electrode de nivel 23 que alimentan la máquina. Lance te da la MO06 Torbellino.",
+    "Entra en el gimnasio (ya desbloqueado): el suelo es de hielo y resbalas hasta chocar con algo; prueba cada trayectoria hasta llegar a Fredo. Vence a Fredo (tipo Hielo; usa Fuego, Lucha, Roca o Acero): recibes la Medalla Glaciar (permite usar Torbellino fuera de combate) y la MT16 Viento Hielo."
+   ],
+   "precaucion": "El Gyarados rojo solo aparece una vez: guarda antes de tocarlo. La Escama Roja se la puedes cambiar al Sr. Pokémon (Ruta 30) por el Repartir Experiencia."
+  },
+  "GOLD-08": {
+   "pasos": [
+    "Tras la Medalla Glaciar, el Team Rocket ocupa la Torre Radio de Ciudad Trigal: entra, sube planta a planta venciendo a los soldados y, en la planta más alta a la que llegas, vence al falso director (un ejecutivo disfrazado). Te da la Llave Sótano.",
+    "Entra en la Vía Subterránea de Ciudad Trigal y abre con la Llave Sótano la puerta del sótano; tu rival te reta allí.",
+    "En la sala de interruptores pulsa el interruptor 3, después el 2 y por último el 1 (los tres deben quedar encendidos): así se abre la puerta que lleva al almacén.",
+    "En el almacén vence a los Rocket y encuentra al director de verdad: te da la Llave Magnética.",
+    "Vuelve a la Torre Radio, abre con la Llave Magnética la puerta cerrada de la 3.ª planta y sube venciendo a los ejecutivos (Atenea y, al final, Atlas). Al terminar, el director te da el Ala Arcoíris (sirve para Ho-Oh en la Torre Hojalata).",
+    "Sal por el este de Pueblo Caoba a la Ruta 44 y cruza la Ruta Helada: en el hielo resbalas hasta chocar; recoge en la primera planta la MO07 Cascada y usa Fuerza para meter las rocas en los agujeros de los pisos inferiores.",
+    "En Ciudad Endrino el gimnasio ya está abierto: en la planta superior empuja con Fuerza las tres rocas por los agujeros para formar el camino de la planta baja y vence a Débora (Dragonair x3 y Kingdra de nivel 40; usa Hielo contra los Dragonair).",
+    "Débora no te da la medalla: ve a la Guarida Dragón, detrás del gimnasio (Surf y Torbellino), y recoge el Colmillo Dragón del suelo en la parte este. Débora aparece y te da la Medalla Dragón (permite usar Cascada fuera de combate) y la MT24 Dragoaliento.",
+    "Vuelve al laboratorio del Profesor Elm con la Medalla Dragón: te regala una Master Ball."
+   ],
+   "precaucion": "Sin liberar la Torre Radio, un chico bloquea el gimnasio de Ciudad Endrino; y la Ruta 44 sigue cerrada hasta que vacías el Escondite del Team Rocket de Pueblo Caoba."
+  },
+  "GOLD-09": {
+   "pasos": [
+    "Comprueba que tienes las 8 medallas de Johto y un Pokémon que sepa Surf y otro con Cascada.",
+    "Desde Pueblo Primavera haz Surf hacia el este por la Ruta 27, sube las Cataratas Tohjo con Cascada y sigue por la Ruta 26 hacia el norte.",
+    "En el edificio de entrada a la Calle Victoria un guarda comprueba tus 8 medallas; cruza la Calle Victoria y vence a tu rival antes de salir a la Meseta Añil.",
+    "En la Meseta Añil compra objetos curativos (Hiperpociones, Revivir, Restaura Todo si puedes) y guarda la partida.",
+    "Vence en orden al Alto Mando: Mento (tipo Psíquico), Koga (Veneno), Bruno (Lucha) y Karen (Siniestro). No puedes salir a curarte entre combates, solo usar objetos.",
+    "Vence a Lance, el Campeón: Gyarados (nivel 44), Dragonite (47), Dragonite (47), Aerodactyl (46), Charizard (46) y Dragonite (50). Los Dragonite son muy débiles al tipo Hielo; usa Eléctrico contra Gyarados y Agua o Roca contra Charizard y Aerodactyl.",
+    "Entra en el Hall de la Fama con Lance. Tras los créditos, el Profesor Elm te llama: ve a su laboratorio y te da el Ticket Barco."
+   ],
+   "precaucion": "Lleva Pokémon de nivel 45 o más y varios ataques de tipo Hielo: Lance tiene tres Dragonite y uno de nivel 50 con Ultraje e Hiperrayo."
+  },
+  "GOLD-10": {
+   "pasos": [
+    "Con el Ticket Barco ve al puerto de Ciudad Olivo: el primer viaje del S.S. Aqua sale cualquier día; después zarpa de Olivo los lunes y viernes y de Ciudad Carmín los miércoles y domingos.",
+    "Durante el viaje, un anciano te pide que busques a su nieta: encuéntrala en el camarote del capitán y llévasela; él te regala un Revestimiento Metálico. Al terminar, el barco atraca en Ciudad Carmín.",
+    "En Ciudad Carmín ya puedes retar a Lt. Surge; al este, un Snorlax dormido bloquea la entrada de la Cueva Diglett.",
+    "Sube por la Ruta 6 hasta Ciudad Azafrán: el Magnetotrén no funciona y Sabrina ya acepta combates.",
+    "Ve a la Central de Energía (Ruta 10, al norte de Pueblo Lavanda o por la Ruta 9 desde Ciudad Celeste) y habla con el director: alguien ha robado una pieza de la máquina."
+   ],
+   "precaucion": "No todos los gimnasios de Kanto están disponibles al llegar: Misty no está hasta resolver lo de la Central de Energía, Azul no abre el de Ciudad Verde hasta que lo encuentras en Isla Canela y a Ciudad Plateada se llega por la Cueva Diglett tras despertar al Snorlax."
+  },
+  "GOLD-11": {
+   "pasos": [
+    "En la Central de Energía (Ruta 10) habla con el director: le han robado la Maquinaria del generador.",
+    "Ve a Ciudad Celeste y entra en el gimnasio vacío: un soldado del Team Rocket sale huyendo.",
+    "Sube por la Ruta 24 (el Puente Pepita, al norte de la ciudad), vence al soldado y te confiesa que escondió la pieza en el gimnasio.",
+    "Vuelve al gimnasio de Ciudad Celeste y examina el agua de la piscina (es un objeto oculto; el Buscaobjetos ayuda): recoges la Maquinaria.",
+    "Llévasela al director de la Central de Energía: te da la MT07 Electrocañón y vuelven a funcionar el Magnetotrén y la Torre Radio de Pueblo Lavanda.",
+    "En la Torre Radio de Pueblo Lavanda te dan la Tarjeta Expansión para escuchar las emisoras de Kanto (incluida la Poké Flauta, que despierta al Snorlax de Ciudad Carmín).",
+    "Sigue por la Ruta 25 hasta el Cabo Celeste: Misty está allí con su novio y vuelve al gimnasio de Ciudad Celeste.",
+    "Para el Pase: en Ciudad Azafrán habla con la Copiona (en la planta de arriba de su casa); en el Club de Fans de Ciudad Carmín un socio te da el Objeto Perdido (el Pokémuñeco); devuélveselo a la Copiona y te da el Pase del Magnetotrén (une Ciudad Azafrán y Ciudad Trigal)."
+   ],
+   "precaucion": "El Club de Fans solo te da el Objeto Perdido después de haber hablado con la Copiona y de haber devuelto la Maquinaria: hazlo en ese orden."
+  },
+  "GOLD-12": {
+   "pasos": [
+    "Ciudad Carmín: vence a Lt. Surge (tipo Eléctrico; usa Tierra) para la Medalla Trueno.",
+    "Ciudad Azafrán: en el gimnasio de Sabrina avanzas con baldosas teletransportadoras; pisa cada una, apunta adónde te lleva y sigue la que te acerca al centro. Vence a Sabrina (tipo Psíquico; usa Siniestro o Bicho) para la Medalla Pantano.",
+    "Ciudad Azulona: usa Corte en el arbusto de la entrada del gimnasio y vence a Erika (tipo Planta; usa Fuego, Hielo o Volador): Medalla Arcoíris y MT19 Gigadrenado.",
+    "Ciudad Fucsia (por las Rutas 12-15 desde Pueblo Lavanda o por el Camino de Bicis desde Ciudad Azulona): vence a Sachiko (tipo Veneno; usa Psíquico o Tierra): Medalla Alma y MT06 Tóxico.",
+    "Ciudad Celeste: cuando Misty vuelva del Cabo Celeste, véncela (tipo Agua; usa Eléctrico o Planta) para la Medalla Cascada.",
+    "Ciudad Plateada: en Ciudad Carmín sintoniza la Poké Flauta en la radio junto al Snorlax (nivel 50, captúralo: es el único), cruza la Cueva Diglett y sube por la Ruta 2. Vence a Brock (tipo Roca; usa Agua o Planta) para la Medalla Roca.",
+    "Islas Espuma: haz Surf hasta Isla Canela (Ruta 21 desde Pueblo Paleta o Ruta 20 desde Ciudad Fucsia). En Isla Canela habla con Azul junto al Centro Pokémon; después ve haciendo Surf hacia el este a las Islas Espuma y vence a Blaine (tipo Fuego; usa Agua o Tierra) para la Medalla Volcán.",
+    "Ciudad Verde: tras hablar con Azul en Isla Canela, el gimnasio se abre; vence a Azul para la Medalla Tierra. Con las 8 de Kanto tienes 16 medallas."
+   ],
+   "precaucion": "El gimnasio de Ciudad Verde está vacío hasta que hablas con Azul en Isla Canela, y Misty no vuelve hasta que recuperas la Maquinaria y la ves en el Cabo Celeste."
+  },
+  "GOLD-13": {
+   "pasos": [
+    "Con las 16 medallas ve a Pueblo Paleta y habla con el Profesor Oak en su laboratorio: te da permiso para entrar en el Monte Plateado.",
+    "Ve a la puerta de la Calle Victoria (Ruta 22/Ruta 26) y sal por el oeste: el guarda ya te deja pasar a la Ruta 28.",
+    "Recorre la Ruta 28 (necesitas Surf y Corte) hasta el Centro Pokémon del Monte Plateado y cúrate.",
+    "Entra en la Cueva Monte Plateado: la primera zona está a oscuras, así que usa Destello; sube por las salas hasta la cima.",
+    "Guarda antes de hablar con Rojo: Pikachu (nivel 81), Espeon (73), Snorlax (75), Venusaur (77), Charizard (77) y Blastoise (77). Usa Tierra contra Pikachu, Lucha contra Snorlax, Eléctrico contra Blastoise y Charizard, y Fuego o Volador contra Venusaur.",
+    "Al vencerle, Rojo desaparece en silencio y salen los créditos del final del juego."
+   ],
+   "precaucion": "Rojo es el combate más difícil del juego (niveles 73 a 81): lleva un equipo de nivel 70 o más, muchas curaciones y Revivir."
+  },
+  "GOLD-14": {
+   "pasos": [
+    "Raikou, Entei y Suicune (nivel 40): tras la escena del sótano de la Torre Quemada vagan por las rutas de Johto y cambian de ruta cada vez que cambias de zona. Cuando te encuentres uno, consulta su ÁREA en la Pokédex para seguirlo.",
+    "Para capturar a un errante usa en el primer turno Mal de Ojo o Telaraña (o duérmelo); si huye, conserva los PS y el estado. La Master Ball que da Elm sirve para uno de ellos.",
+    "Ho-Oh (nivel 40): con el Ala Arcoíris que te da el director de la Torre Radio, entra en la Torre Hojalata de Ciudad Iris (los sabios te dejan pasar), sube hasta el tejado y guarda antes de hablar con él.",
+    "Lugia (nivel 70): ya en Kanto, un anciano de Ciudad Plateada te da el Ala Plateada. Ve a las Islas Remolino (Ruta 41) con Torbellino, Destello, Surf y Cascada; entra por la isla del noreste y baja hasta la cascada del fondo, donde está Lugia.",
+    "Snorlax (nivel 50, Ciudad Carmín), Sudowoodo (nivel 20, Ruta 36), Gyarados rojo (nivel 30, Lago de la Furia) y Lapras (nivel 20, Cueva Unión, sótano más profundo, solo los viernes) también son encuentros únicos o semanales.",
+    "Con Pokekeep: Celebi, Mew, Mewtwo, Articuno, Zapdos y Moltres no se pueden capturar en Oro; añádelos legales desde la Librería de Pokekeep para registrarlos."
+   ],
+   "precaucion": "Guarda siempre antes de cada legendario: si lo debilitas, Ho-Oh, Lugia y los encuentros únicos no vuelven a aparecer."
+  },
+  "GOLD-15": {
+   "pasos": [
+    "Pokédex: registra como capturados los 251 Pokémon (o los 249 sin Mew ni Celebi para el diploma). Lo que falta en esta edición llega por intercambio con Plata o con Rojo, Azul y Amarillo mediante la Cápsula del Tiempo de los Centros Pokémon.",
+    "Unown: captura las 26 letras en las Ruinas Alfa (los cuatro puzles están detallados en su objetivo).",
+    "Diploma: con los 249 Pokémon capturados, habla con el diseñador del juego en la 3.ª planta de la Mansión Azulona (Ciudad Azulona).",
+    "Combates: vence a Rojo en el Monte Plateado y gana las 16 medallas.",
+    "Objetos únicos: Master Ball (Elm, con la Medalla Dragón), Caña Vieja (Ruta 32), Caña Buena (casa de Ciudad Olivo), Supercaña (casa de la Ruta 12), Buscaobjetos (casa de Ciudad Iris), Bicicleta (Ciudad Trigal) y las MT que dan los 16 líderes.",
+    "Con Pokekeep: añade desde la Librería, legales, los Pokémon que solo llegan por intercambio con otra edición o por eventos cerrados (Mew y Celebi) cuando no tengas otra consola o partida."
+   ],
+   "precaucion": "En Oro, Plata y Cristal no existen concursos ni Pokéathlon: el 100 % es la Pokédex, los Unown, el diploma, las 16 medallas y Rojo. Una evolución por intercambio (Kadabra, Machoke, Graveler, Haunter, Onix y Scyther con Revestimiento Metálico, Seadra con Escama Dragón, Porygon con Mejora, Poliwhirl y Slowpoke con Roca del Rey) necesita intercambiar el Pokémon y que te lo devuelvan."
+  },
+  "SILVER-01": {
+   "pasos": [
+    "Baja a la planta baja y habla con tu madre: te devuelve el Pokégear (reloj y teléfono) y te pide que vayas a ver al Profesor Elm.",
+    "Entra en el Laboratorio del Profesor Elm y elige uno de los tres Poké Balls de la mesa: Chikorita (planta), Cyndaquil (fuego) o Totodile (agua), los tres de nivel 5 y con una Baya.",
+    "Elm te encarga un recado: sal por el oeste a la Ruta 29, cruza Ciudad Cerezo y sigue hacia el norte por la Ruta 30 hasta la casa del Sr. Pokémon.",
+    "En casa del Sr. Pokémon recibes el Huevo Misterioso y, de manos del Profesor Oak (que está de visita), la Pokédex.",
+    "Al volver por Ciudad Cerezo te corta el paso un chico pelirrojo: es tu rival y combate con el inicial que tiene ventaja de tipo sobre el tuyo (nivel 5).",
+    "En el laboratorio, un policía te pregunta por el ladrón: pon nombre a tu rival. Entrega el Huevo a Elm y su ayudante te da 5 Poké Balls: desde ese momento puedes capturar Pokémon y registrarlos en la Pokédex."
+   ],
+   "precaucion": "Solo puedes elegir un inicial por partida; los otros dos únicamente llegan por intercambio o crianza desde otra partida. Con Pokekeep: añade desde la Librería los iniciales que no elegiste para completar la Pokédex."
+  },
+  "SILVER-02": {
+   "pasos": [
+    "Desde Ciudad Cerezo sube por la Ruta 30 y la Ruta 31 hasta Ciudad Malva.",
+    "(Recomendado) Entra en la Torre Bellsprout, al norte de la ciudad, sube a la última planta y vence al sabio mayor: te da la MO05 Destello.",
+    "Prepara Pokémon de tipo Eléctrico, Roca o Hielo y entra en el gimnasio de Ciudad Malva: Pegaso usa Pokémon de tipo Volador.",
+    "Vence a Pegaso: recibes la Medalla Céfiro (permite usar Destello fuera de combate) y la MT31 Bofetón Lodo.",
+    "El Profesor Elm te llama al Pokégear: ve al Centro Pokémon de Ciudad Malva, donde te espera su ayudante, y acepta el Huevo que te ofrece (necesitas un hueco libre en el equipo).",
+    "Lleva el Huevo en el equipo mientras caminas hasta que eclosione: es un Togepi. Enséñaselo después a Elm en su laboratorio y te regala una Piedra Eterna."
+   ],
+   "precaucion": "El ayudante de Elm no te da el Huevo si llevas 6 Pokémon: deja uno en el PC antes de hablar con él. El Huevo es la única forma de conseguir Togepi en esta partida."
+  },
+  "SILVER-03": {
+   "pasos": [
+    "Sal de Ciudad Malva hacia el sur por la Ruta 32; en el Centro Pokémon del final de la ruta un pescador te regala la Caña Vieja.",
+    "Cruza la Cueva Unión y la Ruta 33 hasta Pueblo Azalea: un soldado del Team Rocket bloquea la puerta del gimnasio.",
+    "Habla con César, el artesano de Poké Balls, en su casa (al norte del pueblo): sale corriendo al Pozo Slowpoke. Síguelo y entra en el pozo.",
+    "Dentro del pozo vence a los cuatro miembros del Team Rocket (el último, el más fuerte, tiene un Pokémon de nivel 14). Al terminar, César te lleva a su casa y te regala una Cebo Ball.",
+    "Entra en el gimnasio (ya no hay nadie en la puerta) y vence a Antón, especialista en tipo Bicho (su Scyther de nivel 16 es el más peligroso): usa Pokémon de tipo Fuego, Volador o Roca. Recibes la Medalla Colmena (permite usar Corte fuera de combate) y la MT49 Corte Furia.",
+    "Al salir del gimnasio tu rival te reta. Después entra en el Encinar, al oeste del pueblo.",
+    "En el Encinar el aprendiz del carbonero ha perdido a su Farfetch'd: acércate al Farfetch'd por detrás para que se mueva en la dirección contraria y guíalo así hasta el aprendiz. Su maestro te da la MO01 Corte; un chico del bosque te da además la MT02 Golpe Cabeza.",
+    "Usa Corte en el arbusto que bloquea la salida norte del Encinar para llegar a la Ruta 34."
+   ],
+   "precaucion": "Antes de salir del Encinar recoge sus objetos y prueba Golpe Cabeza en los árboles para registrar Pokémon que solo salen así; volver más tarde obliga a cruzar de nuevo desde Ciudad Trigal."
+  },
+  "SILVER-04": {
+   "pasos": [
+    "Recorre la Ruta 34 hacia el norte hasta Ciudad Trigal.",
+    "(Recomendado) En la planta baja de la Torre Radio responde al concurso de 5 preguntas para obtener la Tarjeta Radio del Pokégear; las respuestas correctas, por orden, son: Sí, Sí, No, Sí, No.",
+    "(Recomendado) En la tienda de bicicletas te prestan gratis una Bicicleta.",
+    "Entra en el gimnasio de Ciudad Trigal: Blanca usa tipo Normal; su Miltank (nivel 20) usa Desenrollar y Batido, así que lleva Pokémon de tipo Lucha o de Roca y objetos curativos.",
+    "Al vencerla, Blanca se echa a llorar y no te da la medalla: habla con la entrenadora que hay dentro del gimnasio y después vuelve a hablar con Blanca. Recibes la Medalla Planicie (permite usar Fuerza fuera de combate) y la MT45 Atracción.",
+    "Ve a la floristería, junto al gimnasio: con la Medalla Planicie, la dueña te da la Regadera."
+   ],
+   "precaucion": "Blanca no entrega la medalla justo después del combate: hay que hablar con la entrenadora del gimnasio y volver a hablar con ella. Sin la Medalla Planicie no te dan la Regadera."
+  },
+  "SILVER-05": {
+   "pasos": [
+    "Sube por la Ruta 35 (o cruza el Parque Nacional, donde se celebra el Concurso de Bichos los martes, jueves y sábados) hasta el árbol que se mueve en la Ruta 36.",
+    "Guarda la partida y usa la Regadera con el árbol: es un Sudowoodo salvaje de nivel 20. Captúralo; si lo debilitas, desaparece para siempre.",
+    "Sigue por la Ruta 37 hasta Ciudad Iris.",
+    "Entra en la Torre Quemada, al noroeste: vence a tu rival en la planta baja y cae al sótano, donde Raikou, Entei y Suicune despiertan, huyen y empiezan a vagar por las rutas de Johto. No es obligatorio para el gimnasio, pero sin esta escena no podrás capturarlos.",
+    "Entra en el Teatro de Danza, vence a las cinco Chicas Kimono (cada una usa una evolución de Eevee) y habla con el señor del teatro: te da la MO03 Surf.",
+    "Vence a Morti en el gimnasio de Ciudad Iris (tipo Fantasma; su Gengar usa Hipnosis y Comesueños: lleva Despertar y Pokémon de tipo Siniestro o Normal). Recibes la Medalla Niebla (permite usar Surf fuera de combate) y la MT30 Bola Sombra."
+   ],
+   "precaucion": "Al salir de la Torre Quemada, Raikou, Entei y Suicune vagan por Johto y huyen al primer turno: no gastes la Master Ball en otro Pokémon antes de capturarlos."
+  },
+  "SILVER-06": {
+   "pasos": [
+    "Sigue por las Rutas 38 y 39 (Granja Mu-mu) hasta Ciudad Olivo; en el café de la ciudad un marinero te da la MO04 Fuerza.",
+    "Sube al Faro de Olivo hasta la planta superior y habla con Yasmina: no puede combatir porque su Ampharos (Amphy) está enfermo.",
+    "Haz Surf hacia el oeste por las Rutas 40 y 41 hasta Ciudad Orquídea y entra en la farmacia: tras hablar con Yasmina, el farmacéutico te da la Poción Secreta.",
+    "Entra en el gimnasio de Ciudad Orquídea: usa Fuerza para apartar las rocas y vence a Aníbal (tipo Lucha; usa tipo Volador o Psíquico). Recibes la Medalla Tormenta (permite usar Vuelo fuera de combate) y la MT01 Puño Dinámico.",
+    "Habla con la mujer de Aníbal en Ciudad Orquídea: te da la MO02 Vuelo.",
+    "Vuela o vuelve haciendo Surf a Ciudad Olivo, sube al faro y entrega la Poción Secreta a Yasmina.",
+    "Ve al gimnasio de Ciudad Olivo y vence a Yasmina (Magnemite x2 y Steelix; usa tipo Fuego, Tierra o Lucha). Recibes la Medalla Mineral y la MT23 Cola Férrea."
+   ],
+   "precaucion": "El orden es obligatorio: sin hablar antes con Yasmina en el faro, la farmacia de Ciudad Orquídea no te da la Poción Secreta, y sin Fuerza no llegas a Aníbal."
+  },
+  "SILVER-07": {
+   "pasos": [
+    "Desde Ciudad Iris sal por el este a la Ruta 42 (Surf o Monte Mortero) hasta Pueblo Caoba: un pescador bloquea la puerta del gimnasio.",
+    "Sube por la Ruta 43 hasta el Lago de la Furia, guarda y haz Surf hasta el centro: el Gyarados rojo (variocolor, nivel 30) te ataca. Captúralo o debilítalo; en ambos casos recoges la Escama Roja.",
+    "En la orilla habla con Lance y acepta ayudarle. Vuelve a Pueblo Caoba y entra en la tienda de recuerdos: Lance descubre la escalera secreta del Escondite del Team Rocket.",
+    "En el sótano 1, cada estatua de Persian hace aparecer soldados; desactívalas con el ordenador que hay junto al científico de esa planta. En el sótano 2 Lance cura a tu equipo.",
+    "En el sótano 3 vence a la soldado (te dice la contraseña COLASLOWPOKE) y al soldado con Raticate (COLARATICATE); con las dos se abre la oficina del jefe. Vence al ejecutivo y habla con el Murkrow: te dice la contraseña de la sala del emisor.",
+    "Vuelve al sótano 2, abre la puerta con esa contraseña, vence a la Ejecutiva (Lance se encarga del soldado) y debilita o captura los tres Electrode de nivel 23 que alimentan la máquina. Lance te da la MO06 Torbellino.",
+    "Entra en el gimnasio (ya desbloqueado): el suelo es de hielo y resbalas hasta chocar con algo; prueba cada trayectoria hasta llegar a Fredo. Vence a Fredo (tipo Hielo; usa Fuego, Lucha, Roca o Acero): recibes la Medalla Glaciar (permite usar Torbellino fuera de combate) y la MT16 Viento Hielo."
+   ],
+   "precaucion": "El Gyarados rojo solo aparece una vez: guarda antes de tocarlo. La Escama Roja se la puedes cambiar al Sr. Pokémon (Ruta 30) por el Repartir Experiencia."
+  },
+  "SILVER-08": {
+   "pasos": [
+    "Tras la Medalla Glaciar, el Team Rocket ocupa la Torre Radio de Ciudad Trigal: entra, sube planta a planta venciendo a los soldados y, en la planta más alta a la que llegas, vence al falso director (un ejecutivo disfrazado). Te da la Llave Sótano.",
+    "Entra en la Vía Subterránea de Ciudad Trigal y abre con la Llave Sótano la puerta del sótano; tu rival te reta allí.",
+    "En la sala de interruptores pulsa el interruptor 3, después el 2 y por último el 1 (los tres deben quedar encendidos): así se abre la puerta que lleva al almacén.",
+    "En el almacén vence a los Rocket y encuentra al director de verdad: te da la Llave Magnética.",
+    "Vuelve a la Torre Radio, abre con la Llave Magnética la puerta cerrada de la 3.ª planta y sube venciendo a los ejecutivos (Atenea y, al final, Atlas). Al terminar, el director te da el Ala Plateada (sirve para Lugia en las Islas Remolino).",
+    "Sal por el este de Pueblo Caoba a la Ruta 44 y cruza la Ruta Helada: en el hielo resbalas hasta chocar; recoge en la primera planta la MO07 Cascada y usa Fuerza para meter las rocas en los agujeros de los pisos inferiores.",
+    "En Ciudad Endrino el gimnasio ya está abierto: en la planta superior empuja con Fuerza las tres rocas por los agujeros para formar el camino de la planta baja y vence a Débora (Dragonair x3 y Kingdra de nivel 40; usa Hielo contra los Dragonair).",
+    "Débora no te da la medalla: ve a la Guarida Dragón, detrás del gimnasio (Surf y Torbellino), y recoge el Colmillo Dragón del suelo en la parte este. Débora aparece y te da la Medalla Dragón (permite usar Cascada fuera de combate) y la MT24 Dragoaliento.",
+    "Vuelve al laboratorio del Profesor Elm con la Medalla Dragón: te regala una Master Ball."
+   ],
+   "precaucion": "Sin liberar la Torre Radio, un chico bloquea el gimnasio de Ciudad Endrino; y la Ruta 44 sigue cerrada hasta que vacías el Escondite del Team Rocket de Pueblo Caoba."
+  },
+  "SILVER-09": {
+   "pasos": [
+    "Comprueba que tienes las 8 medallas de Johto y un Pokémon que sepa Surf y otro con Cascada.",
+    "Desde Pueblo Primavera haz Surf hacia el este por la Ruta 27, sube las Cataratas Tohjo con Cascada y sigue por la Ruta 26 hacia el norte.",
+    "En el edificio de entrada a la Calle Victoria un guarda comprueba tus 8 medallas; cruza la Calle Victoria y vence a tu rival antes de salir a la Meseta Añil.",
+    "En la Meseta Añil compra objetos curativos (Hiperpociones, Revivir, Restaura Todo si puedes) y guarda la partida.",
+    "Vence en orden al Alto Mando: Mento (tipo Psíquico), Koga (Veneno), Bruno (Lucha) y Karen (Siniestro). No puedes salir a curarte entre combates, solo usar objetos.",
+    "Vence a Lance, el Campeón: Gyarados (nivel 44), Dragonite (47), Dragonite (47), Aerodactyl (46), Charizard (46) y Dragonite (50). Los Dragonite son muy débiles al tipo Hielo; usa Eléctrico contra Gyarados y Agua o Roca contra Charizard y Aerodactyl.",
+    "Entra en el Hall de la Fama con Lance. Tras los créditos, el Profesor Elm te llama: ve a su laboratorio y te da el Ticket Barco."
+   ],
+   "precaucion": "Lleva Pokémon de nivel 45 o más y varios ataques de tipo Hielo: Lance tiene tres Dragonite y uno de nivel 50 con Ultraje e Hiperrayo."
+  },
+  "SILVER-10": {
+   "pasos": [
+    "Con el Ticket Barco ve al puerto de Ciudad Olivo: el primer viaje del S.S. Aqua sale cualquier día; después zarpa de Olivo los lunes y viernes y de Ciudad Carmín los miércoles y domingos.",
+    "Durante el viaje, un anciano te pide que busques a su nieta: encuéntrala en el camarote del capitán y llévasela; él te regala un Revestimiento Metálico. Al terminar, el barco atraca en Ciudad Carmín.",
+    "En Ciudad Carmín ya puedes retar a Lt. Surge; al este, un Snorlax dormido bloquea la entrada de la Cueva Diglett.",
+    "Sube por la Ruta 6 hasta Ciudad Azafrán: el Magnetotrén no funciona y Sabrina ya acepta combates.",
+    "Ve a la Central de Energía (Ruta 10, al norte de Pueblo Lavanda o por la Ruta 9 desde Ciudad Celeste) y habla con el director: alguien ha robado una pieza de la máquina."
+   ],
+   "precaucion": "No todos los gimnasios de Kanto están disponibles al llegar: Misty no está hasta resolver lo de la Central de Energía, Azul no abre el de Ciudad Verde hasta que lo encuentras en Isla Canela y a Ciudad Plateada se llega por la Cueva Diglett tras despertar al Snorlax."
+  },
+  "SILVER-11": {
+   "pasos": [
+    "En la Central de Energía (Ruta 10) habla con el director: le han robado la Maquinaria del generador.",
+    "Ve a Ciudad Celeste y entra en el gimnasio vacío: un soldado del Team Rocket sale huyendo.",
+    "Sube por la Ruta 24 (el Puente Pepita, al norte de la ciudad), vence al soldado y te confiesa que escondió la pieza en el gimnasio.",
+    "Vuelve al gimnasio de Ciudad Celeste y examina el agua de la piscina (es un objeto oculto; el Buscaobjetos ayuda): recoges la Maquinaria.",
+    "Llévasela al director de la Central de Energía: te da la MT07 Electrocañón y vuelven a funcionar el Magnetotrén y la Torre Radio de Pueblo Lavanda.",
+    "En la Torre Radio de Pueblo Lavanda te dan la Tarjeta Expansión para escuchar las emisoras de Kanto (incluida la Poké Flauta, que despierta al Snorlax de Ciudad Carmín).",
+    "Sigue por la Ruta 25 hasta el Cabo Celeste: Misty está allí con su novio y vuelve al gimnasio de Ciudad Celeste.",
+    "Para el Pase: en Ciudad Azafrán habla con la Copiona (en la planta de arriba de su casa); en el Club de Fans de Ciudad Carmín un socio te da el Objeto Perdido (el Pokémuñeco); devuélveselo a la Copiona y te da el Pase del Magnetotrén (une Ciudad Azafrán y Ciudad Trigal)."
+   ],
+   "precaucion": "El Club de Fans solo te da el Objeto Perdido después de haber hablado con la Copiona y de haber devuelto la Maquinaria: hazlo en ese orden."
+  },
+  "SILVER-12": {
+   "pasos": [
+    "Ciudad Carmín: vence a Lt. Surge (tipo Eléctrico; usa Tierra) para la Medalla Trueno.",
+    "Ciudad Azafrán: en el gimnasio de Sabrina avanzas con baldosas teletransportadoras; pisa cada una, apunta adónde te lleva y sigue la que te acerca al centro. Vence a Sabrina (tipo Psíquico; usa Siniestro o Bicho) para la Medalla Pantano.",
+    "Ciudad Azulona: usa Corte en el arbusto de la entrada del gimnasio y vence a Erika (tipo Planta; usa Fuego, Hielo o Volador): Medalla Arcoíris y MT19 Gigadrenado.",
+    "Ciudad Fucsia (por las Rutas 12-15 desde Pueblo Lavanda o por el Camino de Bicis desde Ciudad Azulona): vence a Sachiko (tipo Veneno; usa Psíquico o Tierra): Medalla Alma y MT06 Tóxico.",
+    "Ciudad Celeste: cuando Misty vuelva del Cabo Celeste, véncela (tipo Agua; usa Eléctrico o Planta) para la Medalla Cascada.",
+    "Ciudad Plateada: en Ciudad Carmín sintoniza la Poké Flauta en la radio junto al Snorlax (nivel 50, captúralo: es el único), cruza la Cueva Diglett y sube por la Ruta 2. Vence a Brock (tipo Roca; usa Agua o Planta) para la Medalla Roca.",
+    "Islas Espuma: haz Surf hasta Isla Canela (Ruta 21 desde Pueblo Paleta o Ruta 20 desde Ciudad Fucsia). En Isla Canela habla con Azul junto al Centro Pokémon; después ve haciendo Surf hacia el este a las Islas Espuma y vence a Blaine (tipo Fuego; usa Agua o Tierra) para la Medalla Volcán.",
+    "Ciudad Verde: tras hablar con Azul en Isla Canela, el gimnasio se abre; vence a Azul para la Medalla Tierra. Con las 8 de Kanto tienes 16 medallas."
+   ],
+   "precaucion": "El gimnasio de Ciudad Verde está vacío hasta que hablas con Azul en Isla Canela, y Misty no vuelve hasta que recuperas la Maquinaria y la ves en el Cabo Celeste."
+  },
+  "SILVER-13": {
+   "pasos": [
+    "Con las 16 medallas ve a Pueblo Paleta y habla con el Profesor Oak en su laboratorio: te da permiso para entrar en el Monte Plateado.",
+    "Ve a la puerta de la Calle Victoria (Ruta 22/Ruta 26) y sal por el oeste: el guarda ya te deja pasar a la Ruta 28.",
+    "Recorre la Ruta 28 (necesitas Surf y Corte) hasta el Centro Pokémon del Monte Plateado y cúrate.",
+    "Entra en la Cueva Monte Plateado: la primera zona está a oscuras, así que usa Destello; sube por las salas hasta la cima.",
+    "Guarda antes de hablar con Rojo: Pikachu (nivel 81), Espeon (73), Snorlax (75), Venusaur (77), Charizard (77) y Blastoise (77). Usa Tierra contra Pikachu, Lucha contra Snorlax, Eléctrico contra Blastoise y Charizard, y Fuego o Volador contra Venusaur.",
+    "Al vencerle, Rojo desaparece en silencio y salen los créditos del final del juego."
+   ],
+   "precaucion": "Rojo es el combate más difícil del juego (niveles 73 a 81): lleva un equipo de nivel 70 o más, muchas curaciones y Revivir."
+  },
+  "SILVER-14": {
+   "pasos": [
+    "Raikou, Entei y Suicune (nivel 40): tras la escena del sótano de la Torre Quemada vagan por las rutas de Johto y cambian de ruta cada vez que cambias de zona. Cuando te encuentres uno, consulta su ÁREA en la Pokédex para seguirlo.",
+    "Para capturar a un errante usa en el primer turno Mal de Ojo o Telaraña (o duérmelo); si huye, conserva los PS y el estado. La Master Ball que da Elm sirve para uno de ellos.",
+    "Lugia (nivel 40): con el Ala Plateada que te da el director de la Torre Radio y la Medalla Dragón (para Cascada), ve a las Islas Remolino (Ruta 41) con Torbellino, Destello, Surf y Cascada; entra por la isla del noreste y baja hasta la cascada del fondo. Guarda antes de hablar con él.",
+    "Ho-Oh (nivel 70): ya en Kanto, un anciano de Ciudad Plateada te da el Ala Arcoíris. Entra en la Torre Hojalata de Ciudad Iris y sube hasta el tejado.",
+    "Snorlax (nivel 50, Ciudad Carmín), Sudowoodo (nivel 20, Ruta 36), Gyarados rojo (nivel 30, Lago de la Furia) y Lapras (nivel 20, Cueva Unión, sótano más profundo, solo los viernes) también son encuentros únicos o semanales.",
+    "Con Pokekeep: Celebi, Mew, Mewtwo, Articuno, Zapdos y Moltres no se pueden capturar en Plata; añádelos legales desde la Librería de Pokekeep para registrarlos."
+   ],
+   "precaucion": "Guarda siempre antes de cada legendario: si lo debilitas, Ho-Oh, Lugia y los encuentros únicos no vuelven a aparecer."
+  },
+  "SILVER-15": {
+   "pasos": [
+    "Pokédex: registra como capturados los 251 Pokémon (o los 249 sin Mew ni Celebi para el diploma). Lo que falta en esta edición llega por intercambio con Oro o con Rojo, Azul y Amarillo mediante la Cápsula del Tiempo de los Centros Pokémon.",
+    "Unown: captura las 26 letras en las Ruinas Alfa (los cuatro puzles están detallados en su objetivo).",
+    "Diploma: con los 249 Pokémon capturados, habla con el diseñador del juego en la 3.ª planta de la Mansión Azulona (Ciudad Azulona).",
+    "Combates: vence a Rojo en el Monte Plateado y gana las 16 medallas.",
+    "Objetos únicos: Master Ball (Elm, con la Medalla Dragón), Caña Vieja (Ruta 32), Caña Buena (casa de Ciudad Olivo), Supercaña (casa de la Ruta 12), Buscaobjetos (casa de Ciudad Iris), Bicicleta (Ciudad Trigal) y las MT que dan los 16 líderes.",
+    "Con Pokekeep: añade desde la Librería, legales, los Pokémon que solo llegan por intercambio con otra edición o por eventos cerrados (Mew y Celebi) cuando no tengas otra consola o partida."
+   ],
+   "precaucion": "En Oro, Plata y Cristal no existen concursos ni Pokéathlon: el 100 % es la Pokédex, los Unown, el diploma, las 16 medallas y Rojo. Una evolución por intercambio (Kadabra, Machoke, Graveler, Haunter, Onix y Scyther con Revestimiento Metálico, Seadra con Escama Dragón, Porygon con Mejora, Poliwhirl y Slowpoke con Roca del Rey) necesita intercambiar el Pokémon y que te lo devuelvan."
+  },
+  "CRYSTAL-01": {
+   "pasos": [
+    "Al empezar la partida elige si juegas como chico o como chica y pon tu nombre; despiertas en tu casa de Pueblo Primavera.",
+    "Baja a la planta baja y habla con tu madre: te devuelve el Pokégear (reloj y teléfono) y te pide que vayas a ver al Profesor Elm.",
+    "Entra en el Laboratorio del Profesor Elm y elige uno de los tres Poké Balls de la mesa: Chikorita (planta), Cyndaquil (fuego) o Totodile (agua), los tres de nivel 5 y con una Baya.",
+    "Elm te encarga un recado: sal por el oeste a la Ruta 29, cruza Ciudad Cerezo y sigue hacia el norte por la Ruta 30 hasta la casa del Sr. Pokémon.",
+    "En casa del Sr. Pokémon recibes el Huevo Misterioso y, de manos del Profesor Oak (que está de visita), la Pokédex.",
+    "Al volver por Ciudad Cerezo te corta el paso un chico pelirrojo: es tu rival y combate con el inicial que tiene ventaja de tipo sobre el tuyo (nivel 5).",
+    "En el laboratorio, un policía te pregunta por el ladrón: pon nombre a tu rival. Entrega el Huevo a Elm y su ayudante te da 5 Poké Balls: desde ese momento puedes capturar Pokémon y registrarlos en la Pokédex."
+   ],
+   "precaucion": "Solo puedes elegir un inicial por partida; los otros dos únicamente llegan por intercambio o crianza desde otra partida. Con Pokekeep: añade desde la Librería los iniciales que no elegiste para completar la Pokédex."
+  },
+  "CRYSTAL-02": {
+   "pasos": [
+    "Desde Ciudad Cerezo sube por la Ruta 30 y la Ruta 31 hasta Ciudad Malva.",
+    "(Recomendado) Entra en la Torre Bellsprout, al norte de la ciudad, sube a la última planta y vence al sabio mayor: te da la MO05 Destello.",
+    "Prepara Pokémon de tipo Eléctrico, Roca o Hielo y entra en el gimnasio de Ciudad Malva: Pegaso usa Pokémon de tipo Volador.",
+    "Vence a Pegaso: recibes la Medalla Céfiro (permite usar Destello fuera de combate) y la MT31 Bofetón Lodo.",
+    "El Profesor Elm te llama al Pokégear: ve al Centro Pokémon de Ciudad Malva, donde te espera su ayudante, y acepta el Huevo que te ofrece (necesitas un hueco libre en el equipo).",
+    "Lleva el Huevo en el equipo mientras caminas hasta que eclosione: es un Togepi. Enséñaselo después a Elm en su laboratorio y te regala una Piedra Eterna."
+   ],
+   "precaucion": "El ayudante de Elm no te da el Huevo si llevas 6 Pokémon: deja uno en el PC antes de hablar con él. El Huevo es la única forma de conseguir Togepi en esta partida."
+  },
+  "CRYSTAL-03": {
+   "pasos": [
+    "Sal de Ciudad Malva hacia el sur por la Ruta 32; en el Centro Pokémon del final de la ruta un pescador te regala la Caña Vieja.",
+    "Cruza la Cueva Unión y la Ruta 33 hasta Pueblo Azalea: un soldado del Team Rocket bloquea la puerta del gimnasio.",
+    "Habla con César, el artesano de Poké Balls, en su casa (al norte del pueblo): sale corriendo al Pozo Slowpoke. Síguelo y entra en el pozo.",
+    "Dentro del pozo vence a los cuatro miembros del Team Rocket (el último, el más fuerte, tiene un Pokémon de nivel 14). Al terminar, César te lleva a su casa y te regala una Cebo Ball.",
+    "Entra en el gimnasio (ya no hay nadie en la puerta) y vence a Antón, especialista en tipo Bicho (su Scyther de nivel 16 es el más peligroso): usa Pokémon de tipo Fuego, Volador o Roca. Recibes la Medalla Colmena (permite usar Corte fuera de combate) y la MT49 Corte Furia.",
+    "Al salir del gimnasio tu rival te reta. Después entra en el Encinar, al oeste del pueblo.",
+    "En el Encinar el aprendiz del carbonero ha perdido a su Farfetch'd: acércate al Farfetch'd por detrás para que se mueva en la dirección contraria y guíalo así hasta el aprendiz. Su maestro te da la MO01 Corte; un chico del bosque te da además la MT02 Golpe Cabeza.",
+    "Usa Corte en el arbusto que bloquea la salida norte del Encinar para llegar a la Ruta 34."
+   ],
+   "precaucion": "Antes de salir del Encinar recoge sus objetos y prueba Golpe Cabeza en los árboles para registrar Pokémon que solo salen así; volver más tarde obliga a cruzar de nuevo desde Ciudad Trigal."
+  },
+  "CRYSTAL-04": {
+   "pasos": [
+    "Recorre la Ruta 34 hacia el norte hasta Ciudad Trigal. En la Guardería de esa ruta, el anciano te regala un Huevo extraño (puede salir Pichu, Cleffa, Igglybuff, Smoochum, Magby, Elekid o Tyrogue).",
+    "(Recomendado) En la planta baja de la Torre Radio responde al concurso de 5 preguntas para obtener la Tarjeta Radio del Pokégear; las respuestas correctas, por orden, son: Sí, Sí, No, Sí, No.",
+    "(Recomendado) En la tienda de bicicletas te prestan gratis una Bicicleta.",
+    "Entra en el gimnasio de Ciudad Trigal: Blanca usa tipo Normal; su Miltank (nivel 20) usa Desenrollar y Batido, así que lleva Pokémon de tipo Lucha o de Roca y objetos curativos.",
+    "Al vencerla, Blanca se echa a llorar y no te da la medalla: habla con la entrenadora que hay dentro del gimnasio y después vuelve a hablar con Blanca. Recibes la Medalla Planicie (permite usar Fuerza fuera de combate) y la MT45 Atracción.",
+    "Ve a la floristería, junto al gimnasio, y luego a la Ruta 36 (al norte, cruzando la Ruta 35 o el Parque Nacional): habla con la chica que mira un árbol extraño. Vuelve a la floristería y, con la Medalla Planicie, te da la Regadera."
+   ],
+   "precaucion": "Blanca no entrega la medalla justo después del combate: hay que hablar con la entrenadora del gimnasio y volver a hablar con ella. Sin la Medalla Planicie no te dan la Regadera."
+  },
+  "CRYSTAL-05": {
+   "pasos": [
+    "Sube por la Ruta 35 (o cruza el Parque Nacional, donde se celebra el Concurso de Bichos los martes, jueves y sábados) hasta el árbol que se mueve en la Ruta 36.",
+    "Guarda la partida y usa la Regadera con el árbol: es un Sudowoodo salvaje de nivel 20. Captúralo; si lo debilitas, desaparece para siempre.",
+    "Sigue por la Ruta 37 hasta Ciudad Iris.",
+    "Entra en la Torre Quemada, al noroeste: Eusine se presenta, vences a tu rival en la planta baja y caes al sótano, donde Raikou, Entei y Suicune despiertan y huyen. Raikou y Entei empiezan a vagar por Johto; Suicune empieza la persecución propia de Cristal. Es obligatorio: hasta entonces un anciano bloquea el gimnasio.",
+    "Entra en el Teatro de Danza, vence a las cinco Chicas Kimono (cada una usa una evolución de Eevee) y habla con el señor del teatro: te da la MO03 Surf.",
+    "Vence a Morti en el gimnasio de Ciudad Iris (tipo Fantasma; su Gengar usa Hipnosis y Comesueños: lleva Despertar y Pokémon de tipo Siniestro o Normal). Recibes la Medalla Niebla (permite usar Surf fuera de combate) y la MT30 Bola Sombra."
+   ],
+   "precaucion": "En Cristal, Suicune no vaga como Raikou y Entei: aparecerá en puntos fijos (Ciudad Orquídea, Ruta 42 y Ruta 36) y te espera en la Torre Hojalata cuando tengas la Campana Clara."
+  },
+  "CRYSTAL-06": {
+   "pasos": [
+    "Sigue por las Rutas 38 y 39 (Granja Mu-mu) hasta Ciudad Olivo; en el café de la ciudad un marinero te da la MO04 Fuerza.",
+    "Sube al Faro de Olivo hasta la planta superior y habla con Yasmina: no puede combatir porque su Ampharos (Amphy) está enfermo.",
+    "Haz Surf hacia el oeste por las Rutas 40 y 41 hasta Ciudad Orquídea y entra en la farmacia: tras hablar con Yasmina, el farmacéutico te da la Poción Secreta.",
+    "Entra en el gimnasio de Ciudad Orquídea: usa Fuerza para apartar las rocas y vence a Aníbal (tipo Lucha; usa tipo Volador o Psíquico). Recibes la Medalla Tormenta (permite usar Vuelo fuera de combate) y la MT01 Puño Dinámico.",
+    "Habla con la mujer de Aníbal en Ciudad Orquídea: te da la MO02 Vuelo. Al norte de la ciudad verás a Suicune y Eusine te retará a un combate.",
+    "Vuela o vuelve haciendo Surf a Ciudad Olivo, sube al faro y entrega la Poción Secreta a Yasmina.",
+    "Ve al gimnasio de Ciudad Olivo y vence a Yasmina (Magnemite x2 y Steelix; usa tipo Fuego, Tierra o Lucha). Recibes la Medalla Mineral y la MT23 Cola Férrea."
+   ],
+   "precaucion": "El orden es obligatorio: sin hablar antes con Yasmina en el faro, la farmacia de Ciudad Orquídea no te da la Poción Secreta, y sin Fuerza no llegas a Aníbal."
+  },
+  "CRYSTAL-07": {
+   "pasos": [
+    "Desde Ciudad Iris sal por el este a la Ruta 42 (Surf o Monte Mortero) hasta Pueblo Caoba: un pescador bloquea la puerta del gimnasio.",
+    "Sube por la Ruta 43 hasta el Lago de la Furia, guarda y haz Surf hasta el centro: el Gyarados rojo (variocolor, nivel 30) te ataca. Captúralo o debilítalo; en ambos casos recoges la Escama Roja.",
+    "En la orilla habla con Lance y acepta ayudarle. Vuelve a Pueblo Caoba y entra en la tienda de recuerdos: Lance descubre la escalera secreta del Escondite del Team Rocket.",
+    "En el sótano 1, cada estatua de Persian hace aparecer soldados; desactívalas con el ordenador que hay junto al científico de esa planta. En el sótano 2 Lance cura a tu equipo.",
+    "En el sótano 3 vence a la soldado (te dice la contraseña COLASLOWPOKE) y al soldado con Raticate (COLARATICATE); con las dos se abre la oficina del jefe. Vence al ejecutivo y habla con el Murkrow: te dice la contraseña de la sala del emisor.",
+    "Vuelve al sótano 2, abre la puerta con esa contraseña, vence a la Ejecutiva (Lance se encarga del soldado) y debilita o captura los tres Electrode de nivel 23 que alimentan la máquina. Lance te da la MO06 Torbellino.",
+    "Entra en el gimnasio (ya desbloqueado): el suelo es de hielo y resbalas hasta chocar con algo; prueba cada trayectoria hasta llegar a Fredo. Vence a Fredo (tipo Hielo; usa Fuego, Lucha, Roca o Acero): recibes la Medalla Glaciar (permite usar Torbellino fuera de combate) y la MT16 Viento Hielo."
+   ],
+   "precaucion": "El Gyarados rojo solo aparece una vez: guarda antes de tocarlo. La Escama Roja se la puedes cambiar al Sr. Pokémon (Ruta 30) por el Repartir Experiencia."
+  },
+  "CRYSTAL-08": {
+   "pasos": [
+    "Tras la Medalla Glaciar, el Team Rocket ocupa la Torre Radio de Ciudad Trigal: entra, sube planta a planta venciendo a los soldados y, en la planta más alta a la que llegas, vence al falso director (un ejecutivo disfrazado). Te da la Llave Sótano.",
+    "Entra en la Vía Subterránea de Ciudad Trigal y abre con la Llave Sótano la puerta del sótano; tu rival te reta allí.",
+    "En la sala de interruptores pulsa el interruptor 3, después el 2 y por último el 1 (los tres deben quedar encendidos): así se abre la puerta que lleva al almacén.",
+    "En el almacén vence a los Rocket y encuentra al director de verdad: te da la Llave Magnética.",
+    "Vuelve a la Torre Radio, abre con la Llave Magnética la puerta cerrada de la 3.ª planta y sube venciendo a los ejecutivos (Atenea y, al final, Atlas). Al terminar, el director te da la Campana Clara (sirve para Suicune en la Torre Hojalata).",
+    "Sal por el este de Pueblo Caoba a la Ruta 44 y cruza la Ruta Helada: en el hielo resbalas hasta chocar; recoge en la primera planta la MO07 Cascada y usa Fuerza para meter las rocas en los agujeros de los pisos inferiores.",
+    "En Ciudad Endrino el gimnasio ya está abierto: en la planta superior empuja con Fuerza las tres rocas por los agujeros para formar el camino de la planta baja y vence a Débora (Dragonair x3 y Kingdra de nivel 40; usa Hielo contra los Dragonair).",
+    "Débora no te da la medalla: ve a la Guarida Dragón, detrás del gimnasio (Surf y Torbellino), entra en el Santuario Dragón y responde al Maestro Dragón. Respuestas válidas: 1) Compañero o Amigo; 2) Estrategia o Mejora; 3) Duro o Con cualquiera; 4) Amor o Sabiduría; 5) Ambos. Débora te da la Medalla Dragón al salir y la MT24 Dragoaliento en la Guarida; sal y vuelve a entrar en el santuario para que el Maestro te regale un Dratini de nivel 15.",
+    "Vuelve al laboratorio del Profesor Elm con la Medalla Dragón: te regala una Master Ball."
+   ],
+   "precaucion": "Si fallas una sola pregunta del Maestro Dragón, el Dratini no tendrá Velocidad Extrema (el examen se repite hasta acertar, pero el fallo queda anotado): guarda antes de entrar en el santuario y recarga si te equivocas."
+  },
+  "CRYSTAL-09": {
+   "pasos": [
+    "Comprueba que tienes las 8 medallas de Johto y un Pokémon que sepa Surf y otro con Cascada.",
+    "Desde Pueblo Primavera haz Surf hacia el este por la Ruta 27, sube las Cataratas Tohjo con Cascada y sigue por la Ruta 26 hacia el norte.",
+    "En el edificio de entrada a la Calle Victoria un guarda comprueba tus 8 medallas; cruza la Calle Victoria y vence a tu rival antes de salir a la Meseta Añil.",
+    "En la Meseta Añil compra objetos curativos (Hiperpociones, Revivir, Restaura Todo si puedes) y guarda la partida.",
+    "Vence en orden al Alto Mando: Mento (tipo Psíquico), Koga (Veneno), Bruno (Lucha) y Karen (Siniestro). No puedes salir a curarte entre combates, solo usar objetos.",
+    "Vence a Lance, el Campeón: Gyarados (nivel 44), Dragonite (47), Dragonite (47), Aerodactyl (46), Charizard (46) y Dragonite (50). Los Dragonite son muy débiles al tipo Hielo; usa Eléctrico contra Gyarados y Agua o Roca contra Charizard y Aerodactyl.",
+    "Entra en el Hall de la Fama con Lance. Tras los créditos, el Profesor Elm te llama: ve a su laboratorio y te da el Ticket Barco."
+   ],
+   "precaucion": "Lleva Pokémon de nivel 45 o más y varios ataques de tipo Hielo: Lance tiene tres Dragonite y uno de nivel 50 con Ultraje e Hiperrayo."
+  },
+  "CRYSTAL-10": {
+   "pasos": [
+    "Con el Ticket Barco ve al puerto de Ciudad Olivo: el primer viaje del S.S. Aqua sale cualquier día; después zarpa de Olivo los lunes y viernes y de Ciudad Carmín los miércoles y domingos.",
+    "Durante el viaje, un anciano te pide que busques a su nieta: encuéntrala en el camarote del capitán y llévasela; él te regala un Revestimiento Metálico. Al terminar, el barco atraca en Ciudad Carmín.",
+    "En Ciudad Carmín ya puedes retar a Lt. Surge; al este, un Snorlax dormido bloquea la entrada de la Cueva Diglett.",
+    "Sube por la Ruta 6 hasta Ciudad Azafrán: el Magnetotrén no funciona y Sabrina ya acepta combates.",
+    "Ve a la Central de Energía (Ruta 10, al norte de Pueblo Lavanda o por la Ruta 9 desde Ciudad Celeste) y habla con el director: alguien ha robado una pieza de la máquina."
+   ],
+   "precaucion": "No todos los gimnasios de Kanto están disponibles al llegar: Misty no está hasta resolver lo de la Central de Energía, Azul no abre el de Ciudad Verde hasta que lo encuentras en Isla Canela y a Ciudad Plateada se llega por la Cueva Diglett tras despertar al Snorlax."
+  },
+  "CRYSTAL-11": {
+   "pasos": [
+    "En la Central de Energía (Ruta 10) habla con el director: le han robado la Maquinaria del generador.",
+    "Ve a Ciudad Celeste y entra en el gimnasio vacío: un soldado del Team Rocket sale huyendo.",
+    "Sube por la Ruta 24 (el Puente Pepita, al norte de la ciudad), vence al soldado y te confiesa que escondió la pieza en el gimnasio.",
+    "Vuelve al gimnasio de Ciudad Celeste y examina el agua de la piscina (es un objeto oculto; el Buscaobjetos ayuda): recoges la Maquinaria.",
+    "Llévasela al director de la Central de Energía: te da la MT07 Electrocañón y vuelven a funcionar el Magnetotrén y la Torre Radio de Pueblo Lavanda.",
+    "En la Torre Radio de Pueblo Lavanda te dan la Tarjeta Expansión para escuchar las emisoras de Kanto (incluida la Poké Flauta, que despierta al Snorlax de Ciudad Carmín).",
+    "Sigue por la Ruta 25 hasta el Cabo Celeste: Misty está allí con su novio y vuelve al gimnasio de Ciudad Celeste.",
+    "Para el Pase: en Ciudad Azafrán habla con la Copiona (en la planta de arriba de su casa); en el Club de Fans de Ciudad Carmín un socio te da el Objeto Perdido (el Pokémuñeco); devuélveselo a la Copiona y te da el Pase del Magnetotrén (une Ciudad Azafrán y Ciudad Trigal)."
+   ],
+   "precaucion": "El Club de Fans solo te da el Objeto Perdido después de haber hablado con la Copiona y de haber devuelto la Maquinaria: hazlo en ese orden."
+  },
+  "CRYSTAL-12": {
+   "pasos": [
+    "Ciudad Carmín: vence a Lt. Surge (tipo Eléctrico; usa Tierra) para la Medalla Trueno.",
+    "Ciudad Azafrán: en el gimnasio de Sabrina avanzas con baldosas teletransportadoras; pisa cada una, apunta adónde te lleva y sigue la que te acerca al centro. Vence a Sabrina (tipo Psíquico; usa Siniestro o Bicho) para la Medalla Pantano.",
+    "Ciudad Azulona: usa Corte en el arbusto de la entrada del gimnasio y vence a Erika (tipo Planta; usa Fuego, Hielo o Volador): Medalla Arcoíris y MT19 Gigadrenado.",
+    "Ciudad Fucsia (por las Rutas 12-15 desde Pueblo Lavanda o por el Camino de Bicis desde Ciudad Azulona): vence a Sachiko (tipo Veneno; usa Psíquico o Tierra): Medalla Alma y MT06 Tóxico.",
+    "Ciudad Celeste: cuando Misty vuelva del Cabo Celeste, véncela (tipo Agua; usa Eléctrico o Planta) para la Medalla Cascada.",
+    "Ciudad Plateada: en Ciudad Carmín sintoniza la Poké Flauta en la radio junto al Snorlax (nivel 50, captúralo: es el único), cruza la Cueva Diglett y sube por la Ruta 2. Vence a Brock (tipo Roca; usa Agua o Planta) para la Medalla Roca.",
+    "Islas Espuma: haz Surf hasta Isla Canela (Ruta 21 desde Pueblo Paleta o Ruta 20 desde Ciudad Fucsia). En Isla Canela habla con Azul junto al Centro Pokémon; después ve haciendo Surf hacia el este a las Islas Espuma y vence a Blaine (tipo Fuego; usa Agua o Tierra) para la Medalla Volcán.",
+    "Ciudad Verde: tras hablar con Azul en Isla Canela, el gimnasio se abre; vence a Azul para la Medalla Tierra. Con las 8 de Kanto tienes 16 medallas."
+   ],
+   "precaucion": "El gimnasio de Ciudad Verde está vacío hasta que hablas con Azul en Isla Canela, y Misty no vuelve hasta que recuperas la Maquinaria y la ves en el Cabo Celeste."
+  },
+  "CRYSTAL-13": {
+   "pasos": [
+    "Con las 16 medallas ve a Pueblo Paleta y habla con el Profesor Oak en su laboratorio: te da permiso para entrar en el Monte Plateado.",
+    "Ve a la puerta de la Calle Victoria (Ruta 22/Ruta 26) y sal por el oeste: el guarda ya te deja pasar a la Ruta 28.",
+    "Recorre la Ruta 28 (necesitas Surf y Corte) hasta el Centro Pokémon del Monte Plateado y cúrate.",
+    "Entra en la Cueva Monte Plateado: la primera zona está a oscuras, así que usa Destello; sube por las salas hasta la cima.",
+    "Guarda antes de hablar con Rojo: Pikachu (nivel 81), Espeon (73), Snorlax (75), Venusaur (77), Charizard (77) y Blastoise (77). Usa Tierra contra Pikachu, Lucha contra Snorlax, Eléctrico contra Blastoise y Charizard, y Fuego o Volador contra Venusaur.",
+    "Al vencerle, Rojo desaparece en silencio y salen los créditos del final del juego."
+   ],
+   "precaucion": "Rojo es el combate más difícil del juego (niveles 73 a 81): lleva un equipo de nivel 70 o más, muchas curaciones y Revivir."
+  },
+  "CRYSTAL-14": {
+   "pasos": [
+    "Raikou y Entei (nivel 40): tras la escena del sótano de la Torre Quemada vagan por las rutas de Johto. Cuando te encuentres uno, consulta su ÁREA en la Pokédex para seguirlo; usa Mal de Ojo o Telaraña en el primer turno porque huyen (conservan PS y estado).",
+    "Suicune (nivel 40): no vaga. Con la Campana Clara del director de la Torre Radio, entra en la Torre Hojalata de Ciudad Iris y combate con él en la planta baja; no huye (detalle en la misión «Suicune, Torre Hojalata y bestias errantes»).",
+    "Lugia (nivel 60): ya en Kanto, un anciano de Ciudad Plateada te da el Ala Plateada. Ve a las Islas Remolino (Ruta 41) con Torbellino, Destello, Surf y Cascada; entra por la isla del noreste y baja hasta la cascada del fondo.",
+    "Ho-Oh (nivel 60): después de la Liga y con Raikou, Entei y Suicune capturados por ti (en el equipo o en el PC), habla con el sabio de la planta baja de la Torre Hojalata: te da el Ala Arcoíris y se abren las escaleras. Sube hasta el tejado.",
+    "Snorlax (nivel 50, Ciudad Carmín), Sudowoodo (nivel 20, Ruta 36), Gyarados rojo (nivel 30, Lago de la Furia) y Lapras (nivel 20, Cueva Unión, sótano más profundo, solo los viernes) también son encuentros únicos o semanales.",
+    "Celebi (nivel 30) solo aparece en la versión de Consola Virtual de Nintendo 3DS mediante la GS Ball (ver el objetivo de Celebi). Con Pokekeep: si juegas en cartucho, añade el Celebi de evento legal desde la Librería; haz lo mismo con Mew, Mewtwo, Articuno, Zapdos y Moltres, que no se capturan en Cristal."
+   ],
+   "precaucion": "El Ala Arcoíris solo te la dan si los tres perros legendarios están capturados por ti (con tu nombre y tu número de entrenador): uno recibido por intercambio no cuenta."
+  },
+  "CRYSTAL-15": {
+   "pasos": [
+    "Pokédex: registra como capturados los 251 Pokémon (o los 249 sin Mew ni Celebi para el diploma). Lo que falta en esta edición llega por intercambio con Oro o Plata o con Rojo, Azul y Amarillo mediante la Cápsula del Tiempo de los Centros Pokémon.",
+    "Unown: captura las 26 letras en las Ruinas Alfa (los cuatro puzles están detallados en su objetivo).",
+    "Diploma: con los 249 Pokémon capturados, habla con el diseñador del juego en la 3.ª planta de la Mansión Azulona (Ciudad Azulona).",
+    "Combates: vence a Rojo en el Monte Plateado y gana las 16 medallas. En Cristal, supera un desafío completo de la Torre Batalla (Ruta 40).",
+    "Objetos únicos: Master Ball (Elm, con la Medalla Dragón), Caña Vieja (Ruta 32), Caña Buena (casa de Ciudad Olivo), Supercaña (casa de la Ruta 12), Buscaobjetos (casa de Ciudad Iris), Bicicleta (Ciudad Trigal) y las MT que dan los 16 líderes.",
+    "Con Pokekeep: añade desde la Librería, legales, los Pokémon que solo llegan por intercambio con otra edición o por eventos cerrados (Mew y Celebi) cuando no tengas otra consola o partida."
+   ],
+   "precaucion": "En Oro, Plata y Cristal no existen concursos ni Pokéathlon: el 100 % es la Pokédex, los Unown, el diploma, las 16 medallas y Rojo. Una evolución por intercambio (Kadabra, Machoke, Graveler, Haunter, Onix y Scyther con Revestimiento Metálico, Seadra con Escama Dragón, Porygon con Mejora, Poliwhirl y Slowpoke con Roca del Rey) necesita intercambiar el Pokémon y que te lo devuelvan."
+  },
+  "CRYSTAL-DETAIL1": {
+   "pasos": [
+    "En el sótano de la Torre Quemada (Ciudad Iris) Eusine se presenta y Raikou, Entei y Suicune despiertan y huyen; Raikou y Entei empiezan a vagar por Johto (nivel 40).",
+    "Suicune aparece en puntos fijos: al norte de Ciudad Orquídea (Eusine te reta allí), después en la Ruta 42 y después en la Ruta 36. Estas apariciones solo son escenas: no hace falta verlas todas.",
+    "Libera la Torre Radio de Ciudad Trigal: el director te da la Campana Clara.",
+    "En Ciudad Iris entra en la casa que da paso a la Torre Hojalata: con la Campana Clara los sabios te combaten; cuando vences al último, se aparta y te deja pasar.",
+    "Guarda antes de entrar en la Torre Hojalata. En la planta baja, Suicune (nivel 40) se acerca y combate; no huye, así que puedes debilitarlo poco a poco y capturarlo sin prisa.",
+    "Captura también a Raikou y Entei errantes: consulta su ÁREA en la Pokédex y usa Mal de Ojo o Telaraña en el primer turno porque huyen.",
+    "Tras la Liga, con los tres capturados por ti (en el equipo o en el PC), habla con el sabio de la planta baja de la Torre Hojalata: te da el Ala Arcoíris, se abren las escaleras y Ho-Oh (nivel 60) te espera en el tejado."
+   ],
+   "precaucion": "En Cristal Suicune está en la Torre Hojalata, no vagando, y Ho-Oh exige tener a Raikou, Entei y Suicune capturados con tu propio nombre y número de entrenador: si uno lo recibiste por intercambio, no vale. Si debilitas a Suicune o Ho-Oh, no vuelven."
+  }
+ },
+ "objetivos": {
+  "GOLD:story": "Cuándo: desde el principio. Dónde: Johto, de Pueblo Primavera a la Meseta Añil. Paso a paso: 1) Elige inicial en el Laboratorio Elm y entrega el Huevo del Sr. Pokémon. 2) Gana las 8 medallas en este orden: Pegaso (Ciudad Malva, Céfiro), Antón (Pueblo Azalea, Colmena), Blanca (Ciudad Trigal, Planicie), Morti (Ciudad Iris, Niebla), Aníbal (Ciudad Orquídea, Tormenta), Yasmina (Ciudad Olivo, Mineral), Fredo (Pueblo Caoba, Glaciar) y Débora (Ciudad Endrino, Dragón). 3) Detén al Team Rocket en el Pozo Slowpoke, en su escondite de Pueblo Caoba y en la Torre Radio de Ciudad Trigal. 4) Desde Pueblo Primavera haz Surf por la Ruta 27, sube las Cataratas Tohjo con Cascada, cruza la Ruta 26 y la Calle Victoria. 5) Vence a Mento, Koga, Bruno, Karen y Lance y entra en el Hall de la Fama. Consejo: usa la pestaña «Dónde estás» con tu guardado: te dice la siguiente medalla y la zona a la que ir. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal».",
+  "GOLD:postgame": "Cuándo: después del Hall de la Fama. Dónde: Kanto y Monte Plateado. Paso a paso: 1) Recoge el Ticket Barco en el laboratorio de Elm y toma el S.S. Aqua en Ciudad Olivo hasta Ciudad Carmín. 2) En la Central de Energía (Ruta 10) te piden la Maquinaria robada: está oculta en el agua del gimnasio de Ciudad Celeste tras vencer al soldado Rocket de la Ruta 24; devuélvela. 3) Gana las 8 medallas de Kanto: Lt. Surge (Ciudad Carmín), Sabrina (Ciudad Azafrán), Erika (Ciudad Azulona), Sachiko (Ciudad Fucsia), Misty (Ciudad Celeste, tras verla en el Cabo Celeste), Brock (Ciudad Plateada, por la Cueva Diglett tras despertar a Snorlax con la Poké Flauta), Blaine (Islas Espuma) y Azul (Ciudad Verde, tras hablar con él en Isla Canela). 4) Con 16 medallas habla con el Profesor Oak en Pueblo Paleta. 5) Ve por la Ruta 28 al Monte Plateado y vence a Rojo en la cima (Pikachu nivel 81). Consejo: Rojo usa niveles 73-81; entrena hasta nivel 70 o más. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Monte Plateado».",
+  "GOLD:items0": "Cuándo: en la historia y en Kanto. Dónde: Johto y Kanto. Paso a paso: 1) Ticket Barco: te lo da Elm en su laboratorio después del Hall de la Fama. 2) Tarjeta Radio: concurso de la planta baja de la Torre Radio de Ciudad Trigal (respuestas: Sí, Sí, No, Sí, No); Tarjeta Expansión: Torre Radio de Pueblo Lavanda tras reparar la Central de Energía. 3) Pase del Magnetotrén: habla con la Copiona en Ciudad Azafrán, recoge el Objeto Perdido (Pokémuñeco) en el Club de Fans de Ciudad Carmín y devuélveselo. 4) Monte Plateado: con las 16 medallas, el Profesor Oak te da permiso y el guarda de la Ruta 28 te deja pasar. 5) Objetos clave de la historia: Regadera (floristería de Ciudad Trigal), Poción Secreta (farmacia de Ciudad Orquídea), Llave Sótano y Llave Magnética (Torre Radio y almacén de Ciudad Trigal), Ala Arcoíris (director de la Torre Radio) y Ala Plateada (anciano de Ciudad Plateada). Colmillo Dragón (Guarida Dragón) para la Medalla Dragón. Consejo: el Magnetotrén une Ciudad Trigal y Ciudad Azafrán y ahorra el barco. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Lista de objetos clave de la segunda generación».",
+  "GOLD:pokedex": "Cuándo: a lo largo de toda la partida; lo último, tras la Liga. Dónde: Johto, Kanto e intercambios. Paso a paso: 1) Captura lo que aparece en hierba, agua, pesca (Caña Vieja, Caña Buena y Supercaña), Golpe Cabeza y Golpe Roca en Johto y Kanto. 2) Evoluciona y cría (Guardería de la Ruta 34) para obtener las formas que faltan; las evoluciones por intercambio necesitan intercambiar y recuperar el Pokémon. 3) Faltan en esta edición: Vulpix, Ninetales, Meowth, Persian, Ledyba, Ledian, Skarmory, Delibird, Phanpy y Donphan (exclusivos de Plata); tráelos por intercambio con Plata. 4) Tampoco se capturan aquí Bulbasaur, Charmander y Squirtle con sus evoluciones, Omanyte, Omastar, Kabuto, Kabutops, Articuno, Zapdos, Moltres, Mewtwo y Mew: llegan desde Rojo, Azul o Amarillo con la Cápsula del Tiempo de los Centros Pokémon. 5) Celebi solo llegó por eventos. Con Pokekeep: añade legales desde la Librería los que te falten por intercambio o por evento. Consejo: los dos iniciales de Johto que no elegiste también requieren otra partida. Fuente: Serebii «Unobtainable Pokémon»; WikiDex «Lista de Pokémon exclusivos de cada videojuego».",
+  "GOLD:pokemon-243": "Cuándo: después de la escena del sótano de la Torre Quemada (Ciudad Iris). Dónde: Raikou vaga por las rutas de Johto, nivel 40. Paso a paso: 1) Recorre rutas de Johto con hierba hasta que aparezca; con eso queda registrado como visto. 2) Abre su ficha en la Pokédex y consulta su ÁREA para ver en qué ruta está ahora; cambia de ruta cada vez que tú cambias de zona. 3) Lleva un Pokémon con Mal de Ojo o Telaraña y úsalo en el primer turno, porque huye; también sirve dormirlo. 4) Si escapa, conserva los PS y el estado que le dejaste. 5) Captúralo (la Master Ball de Elm es ideal). Consejo: guarda antes de cada intento y no lo debilites: si cae debilitado, desaparece. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal».",
+  "GOLD:pokemon-244": "Cuándo: después de la escena del sótano de la Torre Quemada (Ciudad Iris). Dónde: Entei vaga por las rutas de Johto, nivel 40. Paso a paso: 1) Recorre rutas de Johto con hierba hasta que aparezca; con eso queda registrado como visto. 2) Abre su ficha en la Pokédex y consulta su ÁREA para ver en qué ruta está ahora; cambia de ruta cada vez que tú cambias de zona. 3) Lleva un Pokémon con Mal de Ojo o Telaraña y úsalo en el primer turno, porque huye; también sirve dormirlo. 4) Si escapa, conserva los PS y el estado que le dejaste. 5) Captúralo (la Master Ball de Elm es ideal). Consejo: guarda antes de cada intento y no lo debilites: si cae debilitado, desaparece. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal».",
+  "GOLD:pokemon-245": "Cuándo: después de la escena del sótano de la Torre Quemada (Ciudad Iris). Dónde: Suicune vaga por las rutas de Johto, nivel 40. Paso a paso: 1) Recorre rutas de Johto con hierba hasta que aparezca; con eso queda registrado como visto. 2) Abre su ficha en la Pokédex y consulta su ÁREA para ver en qué ruta está ahora; cambia de ruta cada vez que tú cambias de zona. 3) Lleva un Pokémon con Mal de Ojo o Telaraña y úsalo en el primer turno, porque huye; también sirve dormirlo. 4) Si escapa, conserva los PS y el estado que le dejaste. 5) Captúralo (la Master Ball de Elm es ideal). Consejo: guarda antes de cada intento y no lo debilites: si cae debilitado, desaparece. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal».",
+  "GOLD:pokemon-249": "Cuándo: después de la Liga, ya en Kanto. Dónde: Islas Remolino (Ruta 41), nivel 70. Paso a paso: 1) En Ciudad Plateada habla con el anciano: te da el Ala Plateada. 2) Lleva Pokémon con Surf, Torbellino, Destello y Cascada. 3) Entra en las Islas Remolino por la isla del noreste y baja hasta la sala de la cascada del fondo. 4) Guarda y habla con Lugia. Consejo: sin el Ala Plateada en la Mochila Lugia no aparece. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold) (WhirlIslandLugiaChamber, PewterCity); WikiDex «Islas Remolino».",
+  "GOLD:pokemon-250": "Cuándo: tras liberar la Torre Radio de Ciudad Trigal. Dónde: tejado de la Torre Hojalata (Ciudad Iris), nivel 40. Paso a paso: 1) El director de la Torre Radio te da el Ala Arcoíris. 2) Con ella en la Mochila, los sabios de la entrada te dejan pasar a la Torre Hojalata. 3) Sube planta a planta hasta el tejado. 4) Guarda y habla con Ho-Oh. Consejo: si lo debilitas no vuelve; recarga. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold) (RadioTower5F, TinTowerRoof).",
+  "GOLD:medal-type": "Cuándo: tras la Liga, cuando ya puedes viajar a Kanto, y con 249 Pokémon capturados (todos salvo Mew y Celebi). Dónde: Ciudad Azulona (Kanto), Mansión Azulona, 3.ª planta (oficina de GAME FREAK). Paso a paso: 1) Completa la Pokédex Nacional: además de Johto y Kanto, trae por intercambio las exclusivas de la otra edición y lo que solo se consigue en Rojo, Azul o Amarillo (los iniciales de Kanto, los fósiles Omanyte y Kabuto, Articuno, Zapdos, Moltres y Mewtwo). 2) Revisa que en la Pokédex constan como capturados los 251 salvo Mew y Celebi. 3) Viaja a Ciudad Azulona, entra en la Mansión Azulona y sube a la 3.ª planta. 4) Habla con el diseñador del juego para recibir el diploma. Con Pokekeep: los que solo llegan por intercambio, añádelos legales desde la Librería. Consejo: después, el artista gráfico de la misma sala te ofrece imprimir el diploma con la Game Boy Printer. Fuente: WikiDex «Edificio Azulona»; decompilación de pret (pokecrystal/pokegold) (CeladonMansion3F).",
+  "GOLD:event-0": "Cuándo: no se puede conseguir jugando. Dónde: solo existió por eventos oficiales ya cerrados (en Oro no hay GS Ball ni forma de llamar a Celebi; el evento del santuario del Encinar es exclusivo de Pokémon Cristal). Paso a paso: 1) Si tienes un Celebi de evento en otra partida de segunda generación, tráelo por intercambio. 2) Con Pokekeep: añade el Celebi de evento legal desde la Librería. 3) Comprueba en la Pokédex que queda registrado como capturado. Consejo: Celebi no cuenta para el diploma de GAME FREAK (249 sin Mew ni Celebi). Fuente: Serebii «Unobtainable Pokémon» (Oro/Plata); decompilación de pret (pokecrystal/pokegold).",
+  "GOLD:collect-unown": "Cuándo: desde que llegas a Ciudad Malva; dos cámaras necesitan Surf y una también Fuerza. Dónde: Ruinas Alfa (entre la Ruta 32 y la Ruta 36), su sala interior (sótano) y el centro de investigación. Paso a paso: 1) Cómo se resuelve un puzle: examina la losa del fondo de la cámara; aparecen 16 piezas colocadas al azar en el marco exterior de una cuadrícula de 6x6 (cambian cada vez). Pulsa A para coger una pieza, mueve el cursor (pasa por encima de todo) y pulsa A para soltarla en una casilla vacía del cuadrado central de 4x4. Coloca las 16 hasta formar el dibujo del Pokémon; Start sale del puzle. Truco: empieza por las cuatro esquinas y los bordes del dibujo. 2) Cámara de Kabuto (junto al centro de investigación, sin MO): al completarla caes a la sala interior y aparecen los Unown A a K. 3) Captura 3 formas distintas y sal: un científico te lleva al centro de investigación y añade el modo Unown a tu Pokédex (las registra en el orden en que las capturas). 4) Cámara de Aerodactyl (cruzando con Surf el lago al sur de las ruinas): letras S a W. 5) Cámara de Omanyte (desde la Cueva Unión: con Surf llega al montañero del fondo, sigue y aparta con Fuerza la roca que tapa una salida; salta los desniveles hacia la izquierda): letras L a R. 6) Cámara de Ho-Oh (desde la Cueva Unión con Surf, pasando a los montañeros hacia el oeste): letras X, Y y Z. 7) Captura en la sala interior hasta tener las 26 formas; solo cuentan las capturadas. Cuando las tengas todas, el centro de investigación activa la impresora de Unown. Consejo: las letras salen al azar entre las desbloqueadas; si te falta una de un grupo, insiste en la sala interior. Fuente: decompilación de pret (pokecrystal/pokegold) (unown_puzzle, RuinsOfAlphOutside, cámaras); WikiDex «Ruinas Alfa» y «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal/Página 16».",
+  "SILVER:story": "Cuándo: desde el principio. Dónde: Johto, de Pueblo Primavera a la Meseta Añil. Paso a paso: 1) Elige inicial en el Laboratorio Elm y entrega el Huevo del Sr. Pokémon. 2) Gana las 8 medallas en este orden: Pegaso (Ciudad Malva, Céfiro), Antón (Pueblo Azalea, Colmena), Blanca (Ciudad Trigal, Planicie), Morti (Ciudad Iris, Niebla), Aníbal (Ciudad Orquídea, Tormenta), Yasmina (Ciudad Olivo, Mineral), Fredo (Pueblo Caoba, Glaciar) y Débora (Ciudad Endrino, Dragón). 3) Detén al Team Rocket en el Pozo Slowpoke, en su escondite de Pueblo Caoba y en la Torre Radio de Ciudad Trigal. 4) Desde Pueblo Primavera haz Surf por la Ruta 27, sube las Cataratas Tohjo con Cascada, cruza la Ruta 26 y la Calle Victoria. 5) Vence a Mento, Koga, Bruno, Karen y Lance y entra en el Hall de la Fama. Consejo: usa la pestaña «Dónde estás» con tu guardado: te dice la siguiente medalla y la zona a la que ir. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal».",
+  "SILVER:postgame": "Cuándo: después del Hall de la Fama. Dónde: Kanto y Monte Plateado. Paso a paso: 1) Recoge el Ticket Barco en el laboratorio de Elm y toma el S.S. Aqua en Ciudad Olivo hasta Ciudad Carmín. 2) En la Central de Energía (Ruta 10) te piden la Maquinaria robada: está oculta en el agua del gimnasio de Ciudad Celeste tras vencer al soldado Rocket de la Ruta 24; devuélvela. 3) Gana las 8 medallas de Kanto: Lt. Surge (Ciudad Carmín), Sabrina (Ciudad Azafrán), Erika (Ciudad Azulona), Sachiko (Ciudad Fucsia), Misty (Ciudad Celeste, tras verla en el Cabo Celeste), Brock (Ciudad Plateada, por la Cueva Diglett tras despertar a Snorlax con la Poké Flauta), Blaine (Islas Espuma) y Azul (Ciudad Verde, tras hablar con él en Isla Canela). 4) Con 16 medallas habla con el Profesor Oak en Pueblo Paleta. 5) Ve por la Ruta 28 al Monte Plateado y vence a Rojo en la cima (Pikachu nivel 81). Consejo: Rojo usa niveles 73-81; entrena hasta nivel 70 o más. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Monte Plateado».",
+  "SILVER:items0": "Cuándo: en la historia y en Kanto. Dónde: Johto y Kanto. Paso a paso: 1) Ticket Barco: te lo da Elm en su laboratorio después del Hall de la Fama. 2) Tarjeta Radio: concurso de la planta baja de la Torre Radio de Ciudad Trigal (respuestas: Sí, Sí, No, Sí, No); Tarjeta Expansión: Torre Radio de Pueblo Lavanda tras reparar la Central de Energía. 3) Pase del Magnetotrén: habla con la Copiona en Ciudad Azafrán, recoge el Objeto Perdido (Pokémuñeco) en el Club de Fans de Ciudad Carmín y devuélveselo. 4) Monte Plateado: con las 16 medallas, el Profesor Oak te da permiso y el guarda de la Ruta 28 te deja pasar. 5) Objetos clave de la historia: Regadera (floristería de Ciudad Trigal), Poción Secreta (farmacia de Ciudad Orquídea), Llave Sótano y Llave Magnética (Torre Radio y almacén de Ciudad Trigal), Ala Plateada (director de la Torre Radio) y Ala Arcoíris (anciano de Ciudad Plateada). Colmillo Dragón (Guarida Dragón) para la Medalla Dragón. Consejo: el Magnetotrén une Ciudad Trigal y Ciudad Azafrán y ahorra el barco. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Lista de objetos clave de la segunda generación».",
+  "SILVER:pokedex": "Cuándo: a lo largo de toda la partida; lo último, tras la Liga. Dónde: Johto, Kanto e intercambios. Paso a paso: 1) Captura lo que aparece en hierba, agua, pesca (Caña Vieja, Caña Buena y Supercaña), Golpe Cabeza y Golpe Roca en Johto y Kanto. 2) Evoluciona y cría (Guardería de la Ruta 34) para obtener las formas que faltan; las evoluciones por intercambio necesitan intercambiar y recuperar el Pokémon. 3) Faltan en esta edición: Growlithe, Arcanine, Mankey, Primeape, Spinarak, Ariados, Gligar, Mantine, Teddiursa y Ursaring (exclusivos de Oro); tráelos por intercambio con Oro. 4) Tampoco se capturan aquí Bulbasaur, Charmander y Squirtle con sus evoluciones, Omanyte, Omastar, Kabuto, Kabutops, Articuno, Zapdos, Moltres, Mewtwo y Mew: llegan desde Rojo, Azul o Amarillo con la Cápsula del Tiempo de los Centros Pokémon. 5) Celebi solo llegó por eventos. Con Pokekeep: añade legales desde la Librería los que te falten por intercambio o por evento. Consejo: los dos iniciales de Johto que no elegiste también requieren otra partida. Fuente: Serebii «Unobtainable Pokémon»; WikiDex «Lista de Pokémon exclusivos de cada videojuego».",
+  "SILVER:pokemon-243": "Cuándo: después de la escena del sótano de la Torre Quemada (Ciudad Iris). Dónde: Raikou vaga por las rutas de Johto, nivel 40. Paso a paso: 1) Recorre rutas de Johto con hierba hasta que aparezca; con eso queda registrado como visto. 2) Abre su ficha en la Pokédex y consulta su ÁREA para ver en qué ruta está ahora; cambia de ruta cada vez que tú cambias de zona. 3) Lleva un Pokémon con Mal de Ojo o Telaraña y úsalo en el primer turno, porque huye; también sirve dormirlo. 4) Si escapa, conserva los PS y el estado que le dejaste. 5) Captúralo (la Master Ball de Elm es ideal). Consejo: guarda antes de cada intento y no lo debilites: si cae debilitado, desaparece. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal».",
+  "SILVER:pokemon-244": "Cuándo: después de la escena del sótano de la Torre Quemada (Ciudad Iris). Dónde: Entei vaga por las rutas de Johto, nivel 40. Paso a paso: 1) Recorre rutas de Johto con hierba hasta que aparezca; con eso queda registrado como visto. 2) Abre su ficha en la Pokédex y consulta su ÁREA para ver en qué ruta está ahora; cambia de ruta cada vez que tú cambias de zona. 3) Lleva un Pokémon con Mal de Ojo o Telaraña y úsalo en el primer turno, porque huye; también sirve dormirlo. 4) Si escapa, conserva los PS y el estado que le dejaste. 5) Captúralo (la Master Ball de Elm es ideal). Consejo: guarda antes de cada intento y no lo debilites: si cae debilitado, desaparece. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal».",
+  "SILVER:pokemon-245": "Cuándo: después de la escena del sótano de la Torre Quemada (Ciudad Iris). Dónde: Suicune vaga por las rutas de Johto, nivel 40. Paso a paso: 1) Recorre rutas de Johto con hierba hasta que aparezca; con eso queda registrado como visto. 2) Abre su ficha en la Pokédex y consulta su ÁREA para ver en qué ruta está ahora; cambia de ruta cada vez que tú cambias de zona. 3) Lleva un Pokémon con Mal de Ojo o Telaraña y úsalo en el primer turno, porque huye; también sirve dormirlo. 4) Si escapa, conserva los PS y el estado que le dejaste. 5) Captúralo (la Master Ball de Elm es ideal). Consejo: guarda antes de cada intento y no lo debilites: si cae debilitado, desaparece. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal».",
+  "SILVER:pokemon-249": "Cuándo: tras liberar la Torre Radio de Ciudad Trigal y tener la Medalla Dragón (para Cascada). Dónde: Islas Remolino (Ruta 41), nivel 40. Paso a paso: 1) El director de la Torre Radio te da el Ala Plateada. 2) Lleva Pokémon con Surf, Torbellino, Destello y Cascada. 3) Entra por la isla del noreste y baja hasta la sala de la cascada del fondo. 4) Guarda y habla con Lugia. Consejo: sin el Ala Plateada en la Mochila Lugia no aparece. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold) (RadioTower5F, WhirlIslandLugiaChamber); WikiDex «Islas Remolino».",
+  "SILVER:pokemon-250": "Cuándo: después de la Liga, ya en Kanto. Dónde: tejado de la Torre Hojalata (Ciudad Iris), nivel 70. Paso a paso: 1) En Ciudad Plateada habla con el anciano: te da el Ala Arcoíris. 2) Vuelve a Ciudad Iris (Magnetotrén o barco) y entra en la Torre Hojalata. 3) Sube hasta el tejado. 4) Guarda y habla con Ho-Oh. Consejo: sin el Ala Arcoíris en la Mochila Ho-Oh no aparece. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold) (PewterCity, TinTowerRoof).",
+  "SILVER:medal-type": "Cuándo: tras la Liga, cuando ya puedes viajar a Kanto, y con 249 Pokémon capturados (todos salvo Mew y Celebi). Dónde: Ciudad Azulona (Kanto), Mansión Azulona, 3.ª planta (oficina de GAME FREAK). Paso a paso: 1) Completa la Pokédex Nacional: además de Johto y Kanto, trae por intercambio las exclusivas de la otra edición y lo que solo se consigue en Rojo, Azul o Amarillo (los iniciales de Kanto, los fósiles Omanyte y Kabuto, Articuno, Zapdos, Moltres y Mewtwo). 2) Revisa que en la Pokédex constan como capturados los 251 salvo Mew y Celebi. 3) Viaja a Ciudad Azulona, entra en la Mansión Azulona y sube a la 3.ª planta. 4) Habla con el diseñador del juego para recibir el diploma. Con Pokekeep: los que solo llegan por intercambio, añádelos legales desde la Librería. Consejo: después, el artista gráfico de la misma sala te ofrece imprimir el diploma con la Game Boy Printer. Fuente: WikiDex «Edificio Azulona»; decompilación de pret (pokecrystal/pokegold) (CeladonMansion3F).",
+  "SILVER:event-0": "Cuándo: no se puede conseguir jugando. Dónde: solo existió por eventos oficiales ya cerrados (en Plata no hay GS Ball ni forma de llamar a Celebi; el evento del santuario del Encinar es exclusivo de Pokémon Cristal). Paso a paso: 1) Si tienes un Celebi de evento en otra partida de segunda generación, tráelo por intercambio. 2) Con Pokekeep: añade el Celebi de evento legal desde la Librería. 3) Comprueba en la Pokédex que queda registrado como capturado. Consejo: Celebi no cuenta para el diploma de GAME FREAK (249 sin Mew ni Celebi). Fuente: Serebii «Unobtainable Pokémon» (Oro/Plata); decompilación de pret (pokecrystal/pokegold).",
+  "SILVER:collect-unown": "Cuándo: desde que llegas a Ciudad Malva; dos cámaras necesitan Surf y una también Fuerza. Dónde: Ruinas Alfa (entre la Ruta 32 y la Ruta 36), su sala interior (sótano) y el centro de investigación. Paso a paso: 1) Cómo se resuelve un puzle: examina la losa del fondo de la cámara; aparecen 16 piezas colocadas al azar en el marco exterior de una cuadrícula de 6x6 (cambian cada vez). Pulsa A para coger una pieza, mueve el cursor (pasa por encima de todo) y pulsa A para soltarla en una casilla vacía del cuadrado central de 4x4. Coloca las 16 hasta formar el dibujo del Pokémon; Start sale del puzle. Truco: empieza por las cuatro esquinas y los bordes del dibujo. 2) Cámara de Kabuto (junto al centro de investigación, sin MO): al completarla caes a la sala interior y aparecen los Unown A a K. 3) Captura 3 formas distintas y sal: un científico te lleva al centro de investigación y añade el modo Unown a tu Pokédex (las registra en el orden en que las capturas). 4) Cámara de Aerodactyl (cruzando con Surf el lago al sur de las ruinas): letras S a W. 5) Cámara de Omanyte (desde la Cueva Unión: con Surf llega al montañero del fondo, sigue y aparta con Fuerza la roca que tapa una salida; salta los desniveles hacia la izquierda): letras L a R. 6) Cámara de Ho-Oh (desde la Cueva Unión con Surf, pasando a los montañeros hacia el oeste): letras X, Y y Z. 7) Captura en la sala interior hasta tener las 26 formas; solo cuentan las capturadas. Cuando las tengas todas, el centro de investigación activa la impresora de Unown. Consejo: las letras salen al azar entre las desbloqueadas; si te falta una de un grupo, insiste en la sala interior. Fuente: decompilación de pret (pokecrystal/pokegold) (unown_puzzle, RuinsOfAlphOutside, cámaras); WikiDex «Ruinas Alfa» y «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal/Página 16».",
+  "CRYSTAL:story": "Cuándo: desde el principio. Dónde: Johto, de Pueblo Primavera a la Meseta Añil. Paso a paso: 1) Elige inicial en el Laboratorio Elm y entrega el Huevo del Sr. Pokémon. 2) Gana las 8 medallas en este orden: Pegaso (Ciudad Malva, Céfiro), Antón (Pueblo Azalea, Colmena), Blanca (Ciudad Trigal, Planicie), Morti (Ciudad Iris, Niebla), Aníbal (Ciudad Orquídea, Tormenta), Yasmina (Ciudad Olivo, Mineral), Fredo (Pueblo Caoba, Glaciar) y Débora (Ciudad Endrino, Dragón). 3) Detén al Team Rocket en el Pozo Slowpoke, en su escondite de Pueblo Caoba y en la Torre Radio de Ciudad Trigal. 4) Desde Pueblo Primavera haz Surf por la Ruta 27, sube las Cataratas Tohjo con Cascada, cruza la Ruta 26 y la Calle Victoria. 5) Vence a Mento, Koga, Bruno, Karen y Lance y entra en el Hall de la Fama. Consejo: usa la pestaña «Dónde estás» con tu guardado: te dice la siguiente medalla y la zona a la que ir. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal».",
+  "CRYSTAL:postgame": "Cuándo: después del Hall de la Fama. Dónde: Kanto y Monte Plateado. Paso a paso: 1) Recoge el Ticket Barco en el laboratorio de Elm y toma el S.S. Aqua en Ciudad Olivo hasta Ciudad Carmín. 2) En la Central de Energía (Ruta 10) te piden la Maquinaria robada: está oculta en el agua del gimnasio de Ciudad Celeste tras vencer al soldado Rocket de la Ruta 24; devuélvela. 3) Gana las 8 medallas de Kanto: Lt. Surge (Ciudad Carmín), Sabrina (Ciudad Azafrán), Erika (Ciudad Azulona), Sachiko (Ciudad Fucsia), Misty (Ciudad Celeste, tras verla en el Cabo Celeste), Brock (Ciudad Plateada, por la Cueva Diglett tras despertar a Snorlax con la Poké Flauta), Blaine (Islas Espuma) y Azul (Ciudad Verde, tras hablar con él en Isla Canela). 4) Con 16 medallas habla con el Profesor Oak en Pueblo Paleta. 5) Ve por la Ruta 28 al Monte Plateado y vence a Rojo en la cima (Pikachu nivel 81). Consejo: Rojo usa niveles 73-81; entrena hasta nivel 70 o más. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Monte Plateado».",
+  "CRYSTAL:battle1": "Cuándo: en cuanto llegas a Ciudad Olivo; no hace falta haber pasado la Liga. Dónde: Torre Batalla, al norte de la Ruta 40 (al oeste de Ciudad Olivo). Paso a paso: 1) Prepara tres Pokémon de especies distintas, que no lleven el mismo objeto, y sin huevos. 2) Elige en el mostrador un nivel de desafío (de 10 en 10, de 10 a 100): ninguno de tus tres puede superarlo. Mewtwo, Mew, Lugia, Ho-Oh y Celebi solo se admiten en nivel 70 o superior. 3) Vence a 7 entrenadores seguidos. 4) Al ganar el séptimo, recoge el premio en el mostrador: 5 unidades de una vitamina. Consejo: la vitamina del premio sale al azar entre Más PS, Proteína, Hierro, Carburante y Calcio; repite desafíos para juntar la que te falte. Fuente: Serebii «Crystal Battle Tower»; decompilación de pret (pokecrystal/pokegold) (battle_tower).",
+  "CRYSTAL:items0": "Cuándo: en la historia y en Kanto. Dónde: Johto y Kanto. Paso a paso: 1) Ticket Barco: te lo da Elm en su laboratorio después del Hall de la Fama. 2) Tarjeta Radio: concurso de la planta baja de la Torre Radio de Ciudad Trigal (respuestas: Sí, Sí, No, Sí, No); Tarjeta Expansión: Torre Radio de Pueblo Lavanda tras reparar la Central de Energía. 3) Pase del Magnetotrén: habla con la Copiona en Ciudad Azafrán, recoge el Objeto Perdido (Pokémuñeco) en el Club de Fans de Ciudad Carmín y devuélveselo. 4) Monte Plateado: con las 16 medallas, el Profesor Oak te da permiso y el guarda de la Ruta 28 te deja pasar. 5) Objetos clave de la historia: Regadera (floristería de Ciudad Trigal), Poción Secreta (farmacia de Ciudad Orquídea), Llave Sótano y Llave Magnética (Torre Radio y almacén de Ciudad Trigal), Campana Clara (director de la Torre Radio) y Ala Plateada (anciano de Ciudad Plateada); el Ala Arcoíris te la da el sabio de la Torre Hojalata. Consejo: el Magnetotrén une Ciudad Trigal y Ciudad Azafrán y ahorra el barco. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Lista de objetos clave de la segunda generación».",
+  "CRYSTAL:pokedex": "Cuándo: a lo largo de toda la partida; lo último, tras la Liga. Dónde: Johto, Kanto e intercambios. Paso a paso: 1) Captura lo que aparece en hierba, agua, pesca (Caña Vieja, Caña Buena y Supercaña), Golpe Cabeza y Golpe Roca en Johto y Kanto. 2) Evoluciona y cría (Guardería de la Ruta 34) para obtener las formas que faltan; las evoluciones por intercambio necesitan intercambiar y recuperar el Pokémon. 3) Faltan en esta edición: Vulpix, Ninetales, Mankey, Primeape, Mareep, Flaaffy, Ampharos, Girafarig, Remoraid y Octillery (no aparecen en Cristal); tráelos por intercambio con Oro o Plata. 4) Tampoco se capturan aquí Bulbasaur, Charmander y Squirtle con sus evoluciones, Omanyte, Omastar, Kabuto, Kabutops, Articuno, Zapdos, Moltres, Mewtwo y Mew: llegan desde Rojo, Azul o Amarillo con la Cápsula del Tiempo de los Centros Pokémon. 5) Celebi solo llegó por eventos (en Cristal de Consola Virtual, con la GS Ball). Con Pokekeep: añade legales desde la Librería los que te falten por intercambio o por evento. Consejo: los dos iniciales de Johto que no elegiste también requieren otra partida. Fuente: Serebii «Unobtainable Pokémon»; WikiDex «Lista de Pokémon exclusivos de cada videojuego».",
+  "CRYSTAL:pokemon-243": "Cuándo: después de la escena del sótano de la Torre Quemada (Ciudad Iris). Dónde: Raikou vaga por las rutas de Johto, nivel 40. Paso a paso: 1) Recorre rutas de Johto con hierba hasta que aparezca; con eso queda registrado como visto. 2) Abre su ficha en la Pokédex y consulta su ÁREA para ver en qué ruta está ahora; cambia de ruta cada vez que tú cambias de zona. 3) Lleva un Pokémon con Mal de Ojo o Telaraña y úsalo en el primer turno, porque huye; también sirve dormirlo. 4) Si escapa, conserva los PS y el estado que le dejaste. 5) Captúralo (la Master Ball de Elm es ideal). Consejo: guarda antes de cada intento y no lo debilites: si cae debilitado, desaparece. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal».",
+  "CRYSTAL:pokemon-244": "Cuándo: después de la escena del sótano de la Torre Quemada (Ciudad Iris). Dónde: Entei vaga por las rutas de Johto, nivel 40. Paso a paso: 1) Recorre rutas de Johto con hierba hasta que aparezca; con eso queda registrado como visto. 2) Abre su ficha en la Pokédex y consulta su ÁREA para ver en qué ruta está ahora; cambia de ruta cada vez que tú cambias de zona. 3) Lleva un Pokémon con Mal de Ojo o Telaraña y úsalo en el primer turno, porque huye; también sirve dormirlo. 4) Si escapa, conserva los PS y el estado que le dejaste. 5) Captúralo (la Master Ball de Elm es ideal). Consejo: guarda antes de cada intento y no lo debilites: si cae debilitado, desaparece. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold); WikiDex «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal».",
+  "CRYSTAL:pokemon-245": "Cuándo: tras liberar la Torre Radio de Ciudad Trigal y recibir la Campana Clara. Dónde: planta baja de la Torre Hojalata (Ciudad Iris), nivel 40. Paso a paso: 1) Mira a Suicune en la Torre Quemada, al norte de Ciudad Orquídea, en la Ruta 42 y en la Ruta 36 (escenas, no obligatorias). 2) Con la Campana Clara en la Mochila, entra en la casa de Ciudad Iris que lleva a la Torre Hojalata y vence a los sabios hasta que el último te deje pasar. 3) Guarda y entra en la Torre Hojalata: Suicune se acerca y combate. 4) No huye: debilítalo y captúralo. Consejo: si lo debilitas no vuelve; recarga la partida guardada. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold) (TinTower1F, WiseTriosRoom).",
+  "CRYSTAL:pokemon-249": "Cuándo: después de la Liga, ya en Kanto. Dónde: Islas Remolino (Ruta 41), nivel 60. Paso a paso: 1) En Ciudad Plateada habla con el anciano: te da el Ala Plateada. 2) Lleva Pokémon con Surf, Torbellino, Destello y Cascada. 3) Entra por la isla del noreste y baja hasta la sala de la cascada del fondo. 4) Guarda y habla con Lugia. Consejo: sin el Ala Plateada en la Mochila Lugia no aparece. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold) (PewterCity, WhirlIslandLugiaChamber).",
+  "CRYSTAL:pokemon-250": "Cuándo: después de la Liga y con Raikou, Entei y Suicune capturados por ti. Dónde: tejado de la Torre Hojalata (Ciudad Iris), nivel 60. Paso a paso: 1) Captura a Raikou y Entei (errantes) y a Suicune (Torre Hojalata) con tu propio nombre de entrenador; pueden estar en el equipo o en el PC. 2) Entra en la Torre Hojalata y habla con el sabio de la planta baja: te da el Ala Arcoíris y se abren las escaleras. 3) Sube hasta el tejado. 4) Guarda y habla con Ho-Oh. Consejo: un perro legendario recibido por intercambio no cuenta para el sabio. Se acredita con el registro en la Pokédex de la partida. Fuente: decompilación de pret (pokecrystal/pokegold) (TinTower1F, BeastsCheck). Nota: WikiDex dice que el Ala te la da Eusine en Ciudad Azulona; según el código del juego te la da el sabio de la Torre Hojalata.",
+  "CRYSTAL:medal-type": "Cuándo: tras la Liga, cuando ya puedes viajar a Kanto, y con 249 Pokémon capturados (todos salvo Mew y Celebi). Dónde: Ciudad Azulona (Kanto), Mansión Azulona, 3.ª planta (oficina de GAME FREAK). Paso a paso: 1) Completa la Pokédex Nacional: además de Johto y Kanto, trae por intercambio las exclusivas de la otra edición y lo que solo se consigue en Rojo, Azul o Amarillo (los iniciales de Kanto, los fósiles Omanyte y Kabuto, Articuno, Zapdos, Moltres y Mewtwo). 2) Revisa que en la Pokédex constan como capturados los 251 salvo Mew y Celebi. 3) Viaja a Ciudad Azulona, entra en la Mansión Azulona y sube a la 3.ª planta. 4) Habla con el diseñador del juego para recibir el diploma. Con Pokekeep: los que solo llegan por intercambio, añádelos legales desde la Librería. Consejo: después, el artista gráfico de la misma sala te ofrece imprimir el diploma con la Game Boy Printer. Fuente: WikiDex «Edificio Azulona»; decompilación de pret (pokecrystal/pokegold) (CeladonMansion3F).",
+  "CRYSTAL:event-0": "Cuándo: después del Hall de la Fama, y solo en Pokémon Cristal de la Consola Virtual de Nintendo 3DS (en el cartucho original fuera de Japón no existe). Dónde: Centro Pokémon de Ciudad Trigal, casa de César en Pueblo Azalea y santuario del Encinar. Paso a paso: 1) Entra en el Centro Pokémon de Ciudad Trigal y, al intentar salir, la recepcionista te da la GS Ball. 2) Ve a Pueblo Azalea y dale la GS Ball a César en su casa. 3) Vuelve a hablar con él al día siguiente (fecha real): sale corriendo, te devuelve la GS Ball delante de su casa y te pide que investigues el Encinar. 4) Entra en el Encinar por la entrada sur, usa Corte en el arbusto que tapa el santuario y examina el santuario: acepta colocar la GS Ball. 5) Guarda antes: Celebi (nivel 30) aparece y combate; si lo debilitas no vuelve. Con Pokekeep: si juegas en cartucho o ya lo debilitaste, añade el Celebi de evento legal desde la Librería. Consejo: lleva Ultra Balls y un Pokémon que dé Somnífero o Paralizar. Fuente: decompilación de pret (pokecrystal/pokegold) (GoldenrodPokecenter1F, KurtsHouse, IlexForest); WikiDex «GS Ball».",
+  "CRYSTAL:collect-unown": "Cuándo: desde que llegas a Ciudad Malva; dos cámaras necesitan Surf y una también Fuerza. Dónde: Ruinas Alfa (entre la Ruta 32 y la Ruta 36), su sala interior (sótano) y el centro de investigación. Paso a paso: 1) Cómo se resuelve un puzle: examina la losa del fondo de la cámara; aparecen 16 piezas colocadas al azar en el marco exterior de una cuadrícula de 6x6 (cambian cada vez). Pulsa A para coger una pieza, mueve el cursor (pasa por encima de todo) y pulsa A para soltarla en una casilla vacía del cuadrado central de 4x4. Coloca las 16 hasta formar el dibujo del Pokémon; Start sale del puzle. Truco: empieza por las cuatro esquinas y los bordes del dibujo. 2) Cámara de Kabuto (junto al centro de investigación, sin MO): al completarla caes a la sala interior y aparecen los Unown A a K. 3) Captura 3 formas distintas y sal: un científico te lleva al centro de investigación y añade el modo Unown a tu Pokédex (las registra en el orden en que las capturas). 4) Cámara de Aerodactyl (cruzando con Surf el lago al sur de las ruinas): letras S a W. 5) Cámara de Omanyte (desde la Cueva Unión: con Surf llega al montañero del fondo, sigue y aparta con Fuerza la roca que tapa una salida; salta los desniveles hacia la izquierda): letras L a R. 6) Cámara de Ho-Oh (desde la Cueva Unión con Surf, pasando a los montañeros hacia el oeste): letras X, Y y Z. 7) Captura en la sala interior hasta tener las 26 formas; solo cuentan las capturadas. Cuando las tengas todas, el centro de investigación activa la impresora de Unown. Consejo (solo Cristal): cada cámara tiene una pared que se abre a una sala con 4 objetos: usa una Cuerda Huida dentro de la de Kabuto (Baya, Bayantídoto, Polvo Curación y Polvo Energía), entra con una Piedra Agua en la Mochila en la de Omanyte (Baya Misterio, Agua Mística, Polvoestelar y Trozo Estrella), usa Destello en la de Aerodactyl (Baya Dorada, Piedra Lunar, Polvo Curación y Raíz Energía) y entra con Ho-Oh como primer Pokémon en la de Ho-Oh (Baya Dorada, Baya Misterio, Hierba Revivir y Carbón). Fuente: decompilación de pret (pokecrystal/pokegold) (unown_puzzle, RuinsOfAlphOutside, cámaras); WikiDex «Ruinas Alfa» y «Guía de Pokémon Oro, Pokémon Plata y Pokémon Cristal/Página 16»."
+ }
+}
