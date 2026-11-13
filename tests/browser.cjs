@@ -215,7 +215,10 @@ async function run() {
       await allPage.locator('[data-mid="'+detailed.id+'"] > summary').click();
       await allPage.locator('[data-mid="'+detailed.id+'"] .route-details').waitFor();
       assert.ok(await allPage.locator('[data-mid="'+detailed.id+'"] .route-details ol > li').count()>=3);
-      assert.ok(await allPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),game.id+': expanded route overflow');
+      const overflow=await allPage.evaluate(()=>{const W=innerWidth;if(document.documentElement.scrollWidth<=W+1)return null;
+        return [...document.querySelectorAll('body *')].filter(e=>{const r=e.getBoundingClientRect();return r.right>W+1&&r.width>0;}).slice(-4)
+          .map(e=>e.tagName+'.'+String(e.className).slice(0,30)+' derecha='+Math.round(e.getBoundingClientRect().right)+' «'+(e.textContent||'').trim().slice(0,50)+'»').join(' | ');});
+      assert.equal(overflow,null,game.id+': expanded route overflow: '+overflow);
       if(['RED','GOLD','SWORD','ZA'].includes(game.id))await allPage.screenshot({path:path.join(resultDir,'route-'+game.id+'-390.png'),fullPage:true});
     }
     // Platinum's starter, gym order and field moves differ from Diamond/Pearl.
