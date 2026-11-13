@@ -1,0 +1,547 @@
+{
+ "misiones": {
+  "RUBY-13": {
+   "bloques": [
+    {
+     "objetivo": "items0"
+    },
+    {
+     "titulo": "Abrir la Cámara Sellada (Ruta 134)",
+     "texto": "Cuándo: en cuanto tengas Buceo (MO08, que te da Máximo en Algaria tras la Medalla Mente); no hace falta la Liga. Dónde: Ruta 134 (al oeste de Pueblo Oromar), Cámara Sellada bajo el mar. Paso a paso: 1) Prepara el equipo: un Relicanth (buceando en las zonas oscuras de las rutas 124 y 126), un Wailord (surfeando en la Ruta 129 o evolucionando a Wailmer en el nivel 40) y un Pokémon con Excavar (MT28, en la casa del Fosilmaníaco de la Ruta 114). 2) Desde Pueblo Oromar surfea hacia el oeste por la Ruta 134 y deja que la corriente te arrastre hasta la pequeña mancha de agua oscura del sur; bucea en ella. 3) Bajo el agua, sigue hacia el sur hasta la pared con inscripción en braille («Sube ahora») y emerge: estás en la primera sala de la Cámara Sellada. 4) Ponte delante de la pared del fondo («Cava ahora») y usa Excavar: se abre el paso a la segunda sala. 5) Coloca a Relicanth el PRIMERO del equipo y a Wailord el ÚLTIMO y lee la inscripción del fondo («Primero Relicanth. Al final Wailord»): la cueva tiembla y quedan abiertas las Ruinas del Desierto, la Cueva Insular y la Tumba Antigua. Consejo: el orden es el contrario al de Esmeralda; las placas del suelo de la primera sala son el alfabeto braille por si quieres traducir las demás inscripciones. Fuente: decompilación pokeruby de pret (SealedChamber, braille_puzzles.c); WikiDex «Cámara Sellada»."
+    },
+    {
+     "objetivo": "pokemon-377"
+    },
+    {
+     "objetivo": "pokemon-378"
+    },
+    {
+     "objetivo": "pokemon-379"
+    },
+    {
+     "titulo": "Rayquaza en el Pilar Celeste (Ruta 131)",
+     "texto": "Cuándo: el juego no lo bloquea hasta la Liga: basta con poder surfear hasta la Ruta 131 (desde Algaria por las rutas 127, 128, 129 y 130) y tener la Bici carrera; lo habitual es hacerlo tras el Hall de la Fama. Dónde: Pilar Celeste, en la Ruta 131, al este de Pueblo Oromar; Rayquaza (nivel 70) está en la azotea. Paso a paso: 1) Cambia a la Bici carrera en la tienda de bicis de Ciudad Malvalona si llevas la acrobática. 2) Entra en el pilar y sube planta a planta; cruza los suelos agrietados sin detenerte con la Bici carrera, o caerás a la planta de abajo. 3) En la 4.ª planta déjate caer por uno de los últimos agujeros de la parte norte: así llegas a la escalera que sube a la 5.ª, que ya no tiene suelo agrietado. 4) Guarda antes de salir a la azotea, habla con Rayquaza y combate. Consejo: solo hay uno; si lo debilitas no vuelve. Lleva Ultra Balls y algo que lo duerma o paralice; es Dragón/Volador, así que el Hielo le hace daño cuádruple. Fuente: decompilación pokeruby de pret (SkyPillar_Top: Rayquaza nivel 70, sin condición de Liga; conexiones de las rutas 127-131); WikiDex «Pilar Celeste»."
+    },
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "objetivo": "pokemon-381"
+    },
+    {
+     "titulo": "Beldum, regalo de Máximo (Ciudad Algaria)",
+     "texto": "Cuándo: tras entrar en el Hall de la Fama. Dónde: casa de Máximo en Ciudad Algaria (la del noroeste de la ciudad). Paso a paso: 1) Vuela a Ciudad Algaria después de los créditos. 2) Entra en la casa de Máximo: sobre la mesa hay una carta suya y una Poké Ball. 3) Lee la carta y coge la Poké Ball: contiene un Beldum de nivel 5. 4) Ten un hueco libre en el equipo o en las cajas antes de cogerlo. Consejo: Es la única forma de conseguir Beldum, Metang y Metagross en Rubí y Zafiro. Evoluciona a Metang en el nivel 20 y a Metagross en el 45. Fuente: decompilación pokeruby de pret (MossdeepCity_StevensHouse y hall_of_fame.inc); WikiDex «Beldum»."
+    },
+    {
+     "objetivo": "pokemon-380"
+    },
+    {
+     "titulo": "Kyogre (exclusivo de Zafiro)",
+     "texto": "Cuándo: en cualquier momento, siempre que tengas acceso a otra partida; no aparece en tu edición. Dónde: en Zafiro se captura en la Cueva Ancestral de Arrecípolis durante la historia (nivel 45); en Esmeralda, tras la Liga, en la cueva que indica el Instituto Meteorológico (nivel 70). Paso a paso: 1) Consigue que alguien con Zafiro o Esmeralda tenga capturado a Kyogre. 2) Conecta las dos consolas con el cable link (o la conexión que use tu plataforma) y entra en el Club de Cable de la planta superior de cualquier Centro Pokémon. 3) Haz el intercambio en la sala de intercambios: Kyogre queda registrado como capturado en tu Pokédex. Consejo: es obligatorio para el diploma de la Pokédex de Hoenn; la Pokédex lo cuenta como capturado en cuanto llega a tu partida, así que después puedes devolverlo con otro intercambio. Con Pokekeep: si no tienes con quién intercambiar, añade un Kyogre legal desde la Librería. Fuente: decompilación pokeruby de pret (CaveOfOrigin_B4F: Groudon o Kyogre nivel 45) y pokeemerald (TerraCave_End y MarineCave_End, nivel 70); WikiDex «Cueva Ancestral»."
+    },
+    {
+     "objetivo": "event-0"
+    }
+   ]
+  },
+  "RUBY-14": {
+   "bloques": [
+    {
+     "objetivo": "trick-house"
+    },
+    {
+     "titulo": "Base secreta",
+     "texto": "Cuándo: en cuanto llegas al tramo norte de la Ruta 111 (al salir del Túnel Fervergal o al bajar de la Ruta 113). Dónde: Ruta 111, junto a un árbol grande cerca de la casa de la anciana que te deja descansar; adornos en los puestos del mercado de Ciudad Portual, la Floristería Pitiminí (Ruta 104), la tienda de adornos de Ciudad Arborada y la 5.ª planta y la azotea (en las liquidaciones que anuncia la tele) del Centro Comercial de Ciudad Calagua. Paso a paso: 1) Habla con el chico del tramo norte de la Ruta 111: te regala la MT43 Daño secreto (después también se vende en el mercado de Ciudad Portual). 2) Enséñasela a un Pokémon y llévalo en el equipo. 3) Busca un hueco en una pared de roca, un arbusto grande o un árbol con lianas, ponte delante, pulsa A y acepta usar Daño secreto: se abre la base y puedes entrar. 4) Dentro, enciende el PC de la base y elige «Decorar» para colocar los adornos que hayas comprado o ganado (escudos de la Torre Batalla, tiendas de la Casa Treta, muñecos, etc.). 5) Solo puedes tener una: si usas Daño secreto en otro sitio, el juego te pregunta si quieres mudarte y todos los adornos vuelven a tu PC. Consejo: al mezclar récords con amigos que tengan base, sus bases aparecen en tu partida y puedes combatir contra ellos. Fuente: decompilación pret (pokeruby y pokeemerald: secret_power_tm.inc, secret_base.inc y puestos de adornos de SlateportCity, Route104_PrettyPetalFlowerShop, FortreeCity_DecorationShop y LilycoveCity_DepartmentStore); WikiDex «Base secreta»."
+    },
+    {
+     "objetivo": "battle1"
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "objetivo": "card-3"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "objetivo": "diploma-nacional"
+    }
+   ]
+  },
+  "SAPPHIRE-13": {
+   "bloques": [
+    {
+     "objetivo": "items0"
+    },
+    {
+     "titulo": "Abrir la Cámara Sellada (Ruta 134)",
+     "texto": "Cuándo: en cuanto tengas Buceo (MO08, que te da Máximo en Algaria tras la Medalla Mente); no hace falta la Liga. Dónde: Ruta 134 (al oeste de Pueblo Oromar), Cámara Sellada bajo el mar. Paso a paso: 1) Prepara el equipo: un Relicanth (buceando en las zonas oscuras de las rutas 124 y 126), un Wailord (surfeando en la Ruta 129 o evolucionando a Wailmer en el nivel 40) y un Pokémon con Excavar (MT28, en la casa del Fosilmaníaco de la Ruta 114). 2) Desde Pueblo Oromar surfea hacia el oeste por la Ruta 134 y deja que la corriente te arrastre hasta la pequeña mancha de agua oscura del sur; bucea en ella. 3) Bajo el agua, sigue hacia el sur hasta la pared con inscripción en braille («Sube ahora») y emerge: estás en la primera sala de la Cámara Sellada. 4) Ponte delante de la pared del fondo («Cava ahora») y usa Excavar: se abre el paso a la segunda sala. 5) Coloca a Relicanth el PRIMERO del equipo y a Wailord el ÚLTIMO y lee la inscripción del fondo («Primero Relicanth. Al final Wailord»): la cueva tiembla y quedan abiertas las Ruinas del Desierto, la Cueva Insular y la Tumba Antigua. Consejo: el orden es el contrario al de Esmeralda; las placas del suelo de la primera sala son el alfabeto braille por si quieres traducir las demás inscripciones. Fuente: decompilación pokeruby de pret (SealedChamber, braille_puzzles.c); WikiDex «Cámara Sellada»."
+    },
+    {
+     "objetivo": "pokemon-377"
+    },
+    {
+     "objetivo": "pokemon-378"
+    },
+    {
+     "objetivo": "pokemon-379"
+    },
+    {
+     "titulo": "Rayquaza en el Pilar Celeste (Ruta 131)",
+     "texto": "Cuándo: el juego no lo bloquea hasta la Liga: basta con poder surfear hasta la Ruta 131 (desde Algaria por las rutas 127, 128, 129 y 130) y tener la Bici carrera; lo habitual es hacerlo tras el Hall de la Fama. Dónde: Pilar Celeste, en la Ruta 131, al este de Pueblo Oromar; Rayquaza (nivel 70) está en la azotea. Paso a paso: 1) Cambia a la Bici carrera en la tienda de bicis de Ciudad Malvalona si llevas la acrobática. 2) Entra en el pilar y sube planta a planta; cruza los suelos agrietados sin detenerte con la Bici carrera, o caerás a la planta de abajo. 3) En la 4.ª planta déjate caer por uno de los últimos agujeros de la parte norte: así llegas a la escalera que sube a la 5.ª, que ya no tiene suelo agrietado. 4) Guarda antes de salir a la azotea, habla con Rayquaza y combate. Consejo: solo hay uno; si lo debilitas no vuelve. Lleva Ultra Balls y algo que lo duerma o paralice; es Dragón/Volador, así que el Hielo le hace daño cuádruple. Fuente: decompilación pokeruby de pret (SkyPillar_Top: Rayquaza nivel 70, sin condición de Liga; conexiones de las rutas 127-131); WikiDex «Pilar Celeste»."
+    },
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "objetivo": "pokemon-380"
+    },
+    {
+     "titulo": "Beldum, regalo de Máximo (Ciudad Algaria)",
+     "texto": "Cuándo: tras entrar en el Hall de la Fama. Dónde: casa de Máximo en Ciudad Algaria (la del noroeste de la ciudad). Paso a paso: 1) Vuela a Ciudad Algaria después de los créditos. 2) Entra en la casa de Máximo: sobre la mesa hay una carta suya y una Poké Ball. 3) Lee la carta y coge la Poké Ball: contiene un Beldum de nivel 5. 4) Ten un hueco libre en el equipo o en las cajas antes de cogerlo. Consejo: Es la única forma de conseguir Beldum, Metang y Metagross en Rubí y Zafiro. Evoluciona a Metang en el nivel 20 y a Metagross en el 45. Fuente: decompilación pokeruby de pret (MossdeepCity_StevensHouse y hall_of_fame.inc); WikiDex «Beldum»."
+    },
+    {
+     "objetivo": "pokemon-381"
+    },
+    {
+     "titulo": "Groudon (exclusivo de Rubí)",
+     "texto": "Cuándo: en cualquier momento, siempre que tengas acceso a otra partida; no aparece en tu edición. Dónde: en Rubí se captura en la Cueva Ancestral de Arrecípolis durante la historia (nivel 45); en Esmeralda, tras la Liga, en la cueva que indica el Instituto Meteorológico (nivel 70). Paso a paso: 1) Consigue que alguien con Rubí o Esmeralda tenga capturado a Groudon. 2) Conecta las dos consolas con el cable link (o la conexión que use tu plataforma) y entra en el Club de Cable de la planta superior de cualquier Centro Pokémon. 3) Haz el intercambio en la sala de intercambios: Groudon queda registrado como capturado en tu Pokédex. Consejo: es obligatorio para el diploma de la Pokédex de Hoenn; la Pokédex lo cuenta como capturado en cuanto llega a tu partida, así que después puedes devolverlo con otro intercambio. Con Pokekeep: si no tienes con quién intercambiar, añade un Groudon legal desde la Librería. Fuente: decompilación pokeruby de pret (CaveOfOrigin_B4F: Groudon o Kyogre nivel 45) y pokeemerald (TerraCave_End y MarineCave_End, nivel 70); WikiDex «Cueva Ancestral»."
+    },
+    {
+     "objetivo": "event-0"
+    }
+   ]
+  },
+  "SAPPHIRE-14": {
+   "bloques": [
+    {
+     "objetivo": "trick-house"
+    },
+    {
+     "titulo": "Base secreta",
+     "texto": "Cuándo: en cuanto llegas al tramo norte de la Ruta 111 (al salir del Túnel Fervergal o al bajar de la Ruta 113). Dónde: Ruta 111, junto a un árbol grande cerca de la casa de la anciana que te deja descansar; adornos en los puestos del mercado de Ciudad Portual, la Floristería Pitiminí (Ruta 104), la tienda de adornos de Ciudad Arborada y la 5.ª planta y la azotea (en las liquidaciones que anuncia la tele) del Centro Comercial de Ciudad Calagua. Paso a paso: 1) Habla con el chico del tramo norte de la Ruta 111: te regala la MT43 Daño secreto (después también se vende en el mercado de Ciudad Portual). 2) Enséñasela a un Pokémon y llévalo en el equipo. 3) Busca un hueco en una pared de roca, un arbusto grande o un árbol con lianas, ponte delante, pulsa A y acepta usar Daño secreto: se abre la base y puedes entrar. 4) Dentro, enciende el PC de la base y elige «Decorar» para colocar los adornos que hayas comprado o ganado (escudos de la Torre Batalla, tiendas de la Casa Treta, muñecos, etc.). 5) Solo puedes tener una: si usas Daño secreto en otro sitio, el juego te pregunta si quieres mudarte y todos los adornos vuelven a tu PC. Consejo: al mezclar récords con amigos que tengan base, sus bases aparecen en tu partida y puedes combatir contra ellos. Fuente: decompilación pret (pokeruby y pokeemerald: secret_power_tm.inc, secret_base.inc y puestos de adornos de SlateportCity, Route104_PrettyPetalFlowerShop, FortreeCity_DecorationShop y LilycoveCity_DepartmentStore); WikiDex «Base secreta»."
+    },
+    {
+     "objetivo": "battle1"
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "objetivo": "card-3"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "objetivo": "diploma-nacional"
+    }
+   ]
+  },
+  "EMERALD-13": {
+   "bloques": [
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Latias o Latios errante (pregunta de tu madre)",
+     "texto": "Cuándo: justo después del Hall de la Fama, al despertar en casa. Dónde: Villa Raíz (tu casa) y después cualquier ruta de hierba o agua de Hoenn; nivel 40. Paso a paso: 1) Tras recibir el Ticket barco de tu padre, la tele da una noticia urgente sobre un Pokémon desconocido. 2) Tu madre te pregunta de qué color era: si contestas rojo, vagará Latias; si contestas azul, Latios. El otro queda para la Isla del Sur (Ticket eón). 3) Abre la Pokédex, busca su ficha y mira su «Zona»: indica la ruta en la que está ahora; cambia cada vez que cambias de ruta o vuelas. 4) Ve a esa ruta, camina por la hierba o surfea hasta que aparezca y atrápalo con la Master Ball, o retenlo con Mal de Ojo, Bloqueo o Sombratrampa (Wobbuffet o Wynaut) antes de lanzar Ultra Balls. Consejo: huye en el primer turno y conserva el daño y el estado que le hagas; con un Pokémon de nivel 40 en cabeza y Repelente solo te saldrán encuentros de su nivel. Fuente: decompilación pokeemerald de pret (players_house.inc: elección rojo/azul e InitRoamer); WikiDex «Latias» y «Latios»."
+    },
+    {
+     "titulo": "Rayquaza en el Pilar Celeste (Ruta 131)",
+     "texto": "Cuándo: desde que Rayquaza calma a Groudon y Kyogre en Arrecípolis (antes de la Liga); si no lo capturaste entonces, sigue esperando tras la Liga. Dónde: Pilar Celeste, Ruta 131 (al este de Pueblo Oromar); azotea, nivel 70. Paso a paso: 1) Lleva la Bici carrera (cámbiala en la tienda de bicis de Ciudad Malvalona si tienes la acrobática): tras el incidente los suelos están agrietados. 2) Sube planta a planta cruzando el suelo agrietado sin pararte; en la 4.ª planta déjate caer por uno de los agujeros de la parte norte para llegar a la escalera de la 5.ª. 3) Guarda antes de salir a la azotea y habla con Rayquaza, que duerme. 4) Combate y captúralo con Ultra Balls o la Master Ball. Consejo: si huyes, vuelve a aparecer; si lo debilitas, desaparece para siempre. Es Dragón/Volador: el Hielo le hace daño cuádruple. Fuente: decompilación pokeemerald de pret (SkyPillar_Top: VAR_SKY_PILLAR_STATE y FLAG_DEFEATED_RAYQUAZA); WikiDex «Pilar Celeste»."
+    },
+    {
+     "titulo": "Groudon y Kyogre (Instituto Meteorológico)",
+     "texto": "Cuándo: tras el Hall de la Fama. Dónde: Instituto Meteorológico (Ruta 119), 2.ª planta; Groudon en la Cueva Terrena (rutas 114, 115, 116 o 118) y Kyogre en la Cueva Marina (bajo el agua de las rutas 105, 125, 127 o 129); los dos a nivel 70. Paso a paso: 1) Habla con el científico de la 2.ª planta del Instituto Meteorológico: te dice en qué ruta hay un tiempo anormal (sequía intensa = Cueva Terrena; lluvia torrencial = Cueva Marina). 2) Ve a esa ruta: la Cueva Terrena se abre en una pared de la propia ruta; para la Marina, bucea con Buceo en la mancha oscura del mar. 3) Recorre la cueva hasta el fondo, guarda y combate contra Groudon o Kyogre. 4) Vuelve al instituto para que te indique la siguiente ruta y repite con el otro. Consejo: el tiempo anormal se acaba tras unos 1.000 pasos y se mueve a otra ruta; si llegas tarde, vuelve a preguntar. Si huyes, el legendario se va pero vuelve; si lo debilitas, desaparece. Groudon resiste el Fuego (lleva Agua o Planta) y Kyogre, el Agua (lleva Planta o Eléctrico). Fuente: decompilación pokeemerald de pret (Route119_WeatherInstitute_2F, weather.h ABNORMAL_WEATHER_*, field_specials.c AbnormalWeatherHasExpired, TerraCave_End y MarineCave_End)."
+    },
+    {
+     "titulo": "Beldum, regalo de Máximo (Ciudad Algaria)",
+     "texto": "Cuándo: tras entrar en el Hall de la Fama. Dónde: casa de Máximo en Ciudad Algaria (la del noroeste de la ciudad). Paso a paso: 1) Vuela a Ciudad Algaria después de los créditos. 2) Entra en la casa de Máximo: sobre la mesa hay una carta suya y una Poké Ball. 3) Lee la carta y coge la Poké Ball: contiene un Beldum de nivel 5. 4) Ten un hueco libre en el equipo o en las cajas antes de cogerlo. Consejo: En Esmeralda Máximo no está en casa porque te espera en la Cascada Meteoro. Evoluciona a Metang en el nivel 20 y a Metagross en el 45. Fuente: decompilación pokeemerald de pret (MossdeepCity_StevensHouse y hall_of_fame.inc); WikiDex «Beldum»."
+    },
+    {
+     "titulo": "Combate contra Máximo en la Cascada Meteoro",
+     "texto": "Cuándo: tras el Hall de la Fama. Dónde: Cascada Meteoro (entre las rutas 114 y 115), en la sala más interior, a la que se llega con Surf y Cascada. Paso a paso: 1) Lleva Surf y Cascada (MO07, que te da Plubio en Arrecípolis). 2) Entra en la Cascada Meteoro por la Ruta 114 o la 115, sube las cascadas con Cascada y avanza hasta la cueva del fondo, donde está Máximo. 3) Habla con él y acepta el combate: Skarmory (nivel 77), Claydol (75), Aggron (76), Cradily (76), Armaldo (76) y Metagross (78). 4) Cuando le ganes queda registrado y se marcha. Consejo: es el rival más fuerte de Esmeralda; casi todo su equipo es Acero o Roca, así que lleva Fuego, Agua, Tierra y Lucha, y algo que resista los ataques de tipo Tierra de Claydol. Fuente: decompilación pokeemerald de pret (MeteorFalls_StevensCave y trainer_parties.h sParty_Steven); WikiDex «Cascada Meteoro»."
+    },
+    {
+     "titulo": "Zona Safari: zonas nuevas con Pokémon de Johto",
+     "texto": "Cuándo: tras el Hall de la Fama (antes, dos obreros cortan el paso). Dónde: Zona Safari, junto a la Ruta 121 (al oeste de Ciudad Calagua); dos zonas nuevas en el lado este. Paso a paso: 1) Lleva el Tubo pokécubos (sin él no te dejan entrar) y paga 500 ₽: recibes 30 Safari Balls y tienes 500 pasos. 2) Desde la zona de la entrada, sigue hacia el este por el camino donde estaban los obreros: llegas a la zona sureste, y desde ella subes a la noreste. 3) Zona sureste: Aipom, Gligar, Hoothoot, Mareep, Snubbull, Spinarak, Stantler, Sunkern y Wooper en la hierba; Marill, Wooper y Quagsire surfeando; Remoraid y Octillery pescando. 4) Zona noreste: Aipom, Hoothoot, Houndour, Ledyba, Miltank, Pineco, Sunkern y Teddiursa en la hierba, y Shuckle rompiendo rocas con Golpe roca. 5) Lanza pokécubos para que no huyan y Safari Balls hasta capturarlos. Consejo: muchas de estas especies no aparecen en ningún otro sitio de Hoenn y cuentan para la Pokédex Nacional. Fuente: decompilación pokeemerald de pret (hall_of_fame.inc FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION, wild_encounters.json, safari_zone.c, Route121_SafariZoneEntrance); WikiDex «Zona Safari (Hoenn)»."
+    },
+    {
+     "titulo": "Isla del Sur: el otro Lati (Ticket eón)",
+     "texto": "Cuándo: tras el Hall de la Fama y solo con el Ticket eón, que se repartió en eventos ya cerrados. Dónde: puerto de Ciudad Calagua o de Ciudad Portual (S.S. Marea) e Isla del Sur; nivel 50. Paso a paso: 1) Con el Ticket eón en la mochila, enséñaselo a la recepcionista del puerto y embarca hacia la Isla del Sur. 2) Camina hasta el centro de la isla, donde espera el Lati que NO vaga por Hoenn: Latios si contestaste rojo a tu madre, Latias si contestaste azul. 3) Guarda y combate: lleva equipada la Rocío bondad. Consejo: si lo debilitas sin capturarlo, vuelve a aparecer después de entrar otra vez en el Hall de la Fama. Con Pokekeep: añade el Ticket eón a la mochila y activa su evento, o añade el Latias o Latios legal desde la Librería. Fuente: decompilación pokeemerald de pret (SouthernIsland_Interior: especie según VAR_ROAMER_POKEMON, nivel 50 con ITEM_SOUL_DEW; hall_of_fame.inc)."
+    },
+    {
+     "objetivo": "event-0"
+    }
+   ]
+  },
+  "EMERALD-DETAIL1": {
+   "bloques": [
+    {
+     "titulo": "Abrir la Cámara Sellada (Ruta 134)",
+     "texto": "Cuándo: en cuanto tengas Buceo (MO08, de Máximo en Algaria); no hace falta la Liga. Dónde: Ruta 134, al oeste de Pueblo Oromar; Cámara Sellada bajo el mar. Paso a paso: 1) Lleva un Wailord, un Relicanth y un Pokémon con Excavar (MT28, casa del Fosilmaníaco de la Ruta 114), además de Surf y Buceo. 2) Nada al oeste por la Ruta 134 lo más al sur posible, colócate en el centro del borde oeste de la zona sin entrenadores y deja que la corriente te lleve a la pequeña mancha de agua oscura; bucea. 3) Ve al sur y rodea el saliente hasta quedar ante su pared sur («Sube ahora» en braille) y emerge. 4) En la primera sala, colócate ante la pared del fondo («Cava ahora») y usa Excavar. 5) En la segunda sala pon a Wailord el PRIMERO del equipo y a Relicanth el ÚLTIMO y lee la inscripción («Primero Wailord. Al final Relicanth»): la cueva tiembla y se abren las tres ruinas. Consejo: en Rubí y Zafiro el orden es al revés; si no tiembla, revisa el orden del equipo. Fuente: decompilación pokeemerald de pret (SealedChamber_InnerRoom y braille_puzzles.c); WikiDex «Cámara Sellada»."
+    },
+    {
+     "objetivo": "pokemon-377"
+    },
+    {
+     "objetivo": "pokemon-378"
+    },
+    {
+     "objetivo": "pokemon-379"
+    }
+   ]
+  },
+  "EMERALD-DETAIL2": {
+   "bloques": [
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "titulo": "Torre Batalla: Dama Torre Destra (símbolo Destreza)",
+     "texto": "Cuándo: tras llegar al Frente Batalla. Dónde: Torre Batalla, la más grande del lado este de la isla. Paso a paso: 1) Inscribe tres Pokémon en modo Individual, en Nv. 50 (ninguno puede pasar de nivel 50) o Abierto (los rivales se ajustan a tu Pokémon de mayor nivel, mínimo 60). 2) Gana rondas de siete combates seguidos; entre combate y combate tu equipo se cura. 3) En el combate n.º 35 de la racha te espera Destra con Alakazam, Entei y Snorlax: gánale y recibes el símbolo de plata. 4) Sigue la racha: en el combate n.º 70 Destra usa Raikou, Latios y Snorlax; gánale y recibes el de oro. Consejo: si pierdes, la racha vuelve a cero; entre combates puedes guardar y dejar la racha para otro día. Fuente: decompilación pokeemerald de pret (frontier_util.c: sFrontierBrainStreakAppearances, sFrontierBrainsMons y gFrontierBannedSpecies); WikiDex «Frente Batalla (Hoenn)» y «As del Frente Batalla»."
+    },
+    {
+     "titulo": "Fábrica Batalla: Jefe Fábrica Sabino (símbolo Saber)",
+     "texto": "Cuándo: tras llegar al Frente Batalla. Dónde: Fábrica Batalla, en el lado oeste de la isla. Paso a paso: 1) Elige modo Individual y Nv. 50 o Abierto; no usas tus Pokémon: te prestan seis al azar y escoges tres. 2) Tras cada victoria puedes cambiar uno de los tuyos por uno del rival al que acabas de vencer. 3) En el combate n.º 21 de la racha te espera Sabino, también con Pokémon de alquiler: gánale para el símbolo de plata. 4) Vuelve a enfrentarte a él en el combate n.º 42 para el de oro. Consejo: fíjate en los movimientos de los Pokémon que alquilas y cambia los que no cubran tipos; aquí no influye lo que tengas criado. Fuente: decompilación pokeemerald de pret (frontier_util.c: sFrontierBrainStreakAppearances, sFrontierBrainsMons y gFrontierBannedSpecies); WikiDex «Frente Batalla (Hoenn)» y «As del Frente Batalla»."
+    },
+    {
+     "titulo": "Palacio Batalla: Amo Palacio Aniceto (símbolo Ánimo)",
+     "texto": "Cuándo: tras llegar al Frente Batalla. Dónde: Palacio Batalla, en el lado este de la isla. Paso a paso: 1) Inscribe tres Pokémon en modo Individual (Nv. 50 o Abierto). 2) Tus Pokémon eligen solos qué movimiento usar según su naturaleza; tú solo decides si cambiar. 3) En el combate n.º 21 de la racha aparece Aniceto con Crobat, Slaking y Lapras: gánale para el símbolo de plata. 4) En el n.º 42 usa Arcanine, Slaking y Suicune: gánale para el de oro. Consejo: elige naturalezas que favorezcan atacar y movimientos sin efectos secundarios peligrosos. Fuente: decompilación pokeemerald de pret (frontier_util.c: sFrontierBrainStreakAppearances, sFrontierBrainsMons y gFrontierBannedSpecies); WikiDex «Frente Batalla (Hoenn)» y «As del Frente Batalla»."
+    },
+    {
+     "titulo": "Dojo Batalla: Maestra Dojo Coro (símbolo Coraje)",
+     "texto": "Cuándo: tras llegar al Frente Batalla. Dónde: Dojo Batalla, en el lado oeste de la isla. Paso a paso: 1) Inscribe tres Pokémon (Nv. 50 o Abierto); no puedes cambiarlos durante el combate. 2) Cada enfrentamiento dura tres turnos; si ninguno se debilita, los jueces deciden según lo ofensivo que has sido, la eficacia de tus ataques y los PS que te quedan. 3) En el combate n.º 28 de la racha aparece Coro con Heracross, Umbreon y Shedinja: gánale para el símbolo de plata. 4) En el n.º 56 usa Umbreon, Gengar y Breloom: gánale para el de oro. Consejo: los ataques muy fuertes y supereficaces deciden la puntuación; evita Protección y movimientos de solo estado. Fuente: decompilación pokeemerald de pret (frontier_util.c: sFrontierBrainStreakAppearances, sFrontierBrainsMons y gFrontierBannedSpecies); WikiDex «Frente Batalla (Hoenn)» y «As del Frente Batalla»."
+    },
+    {
+     "titulo": "Cúpula Batalla: Astro Cúpula Tactio (símbolo Táctica)",
+     "texto": "Cuándo: tras llegar al Frente Batalla. Dónde: Cúpula Batalla, en el centro de la isla. Paso a paso: 1) Inscribe tres Pokémon en modo Individual (Nv. 50 o Abierto): entras en un torneo de dieciséis entrenadores, a cuatro rondas. 2) Antes de cada combate ves el equipo del rival y eliges dos de tus tres Pokémon. 3) Gana cuatro torneos seguidos: en la final del 5.º te espera Tactio con Swampert, Salamence y Charizard; gánale para el símbolo de plata. 4) En la final del 10.º torneo seguido usa Swampert, Metagross y Latias: gánale para el de oro. Consejo: consulta en la tabla los equipos de los rivales y reserva tu mejor pareja para la final. Fuente: decompilación pokeemerald de pret (frontier_util.c: sFrontierBrainStreakAppearances, sFrontierBrainsMons y gFrontierBannedSpecies); WikiDex «Frente Batalla (Hoenn)» y «As del Frente Batalla»."
+    },
+    {
+     "titulo": "Sierpe Batalla: Reina Sierpe Fortunia (símbolo Fortuna)",
+     "texto": "Cuándo: tras llegar al Frente Batalla. Dónde: Sierpe Batalla, en el lado este de la isla. Paso a paso: 1) Inscribe tres Pokémon (Nv. 50 o Abierto); cada recorrido tiene catorce salas y en cada una eliges entre tres puertas. 2) Tras cada puerta puede haber un combate individual o doble, Pokémon salvajes, una persona que cura a tu equipo o algo que les cause un problema de estado; los PS y estados no se recuperan solos. 3) Al final del 2.º recorrido seguido (sala n.º 28) te espera Fortunia con Seviper, Shuckle y Milotic: gánale para el símbolo de plata. 4) Al final del 10.º recorrido seguido (sala n.º 140) usa Seviper, Steelix y Gyarados: gánale para el de oro. Consejo: depende mucho del azar; escucha las pistas de la persona de la entrada de cada sala. Fuente: decompilación pokeemerald de pret (frontier_util.c: sFrontierBrainStreakAppearances, sFrontierBrainsMons y gFrontierBannedSpecies); WikiDex «Frente Batalla (Hoenn)» y «As del Frente Batalla»; constante NUM_PIKE_ROOMS = 14."
+    },
+    {
+     "titulo": "Pirámide Batalla: Rey Pirámide Valente (símbolo Valentía)",
+     "texto": "Cuándo: tras llegar al Frente Batalla. Dónde: Pirámide Batalla, en el lado oeste de la isla. Paso a paso: 1) Inscribe tres Pokémon sin objeto equipado (Nv. 50 o Abierto): te cambian la mochila por la de la pirámide, cuyos objetos solo sirven dentro. 2) Sube siete plantas casi a oscuras buscando la salida de cada una; hay entrenadores, Pokémon salvajes y objetos por el suelo. 3) En la cima de la 3.ª pirámide seguida (planta 21) te espera Valente con Regirock, Registeel y Regice: gánale para el símbolo de plata. 4) En la cima de la 10.ª pirámide seguida (planta 70) usa Articuno, Zapdos y Moltres: gánale para el de oro. Consejo: al vencer entrenadores se ilumina más la planta; guarda los objetos curativos para las plantas altas. Fuente: decompilación pokeemerald de pret (frontier_util.c: sFrontierBrainStreakAppearances, sFrontierBrainsMons y gFrontierBannedSpecies); WikiDex «Frente Batalla (Hoenn)» y «As del Frente Batalla»; constante TOTAL_PYRAMID_ROUNDS."
+    },
+    {
+     "objetivo": "card-3"
+    }
+   ]
+  },
+  "EMERALD-14": {
+   "bloques": [
+    {
+     "objetivo": "trick-house"
+    },
+    {
+     "titulo": "Base secreta",
+     "texto": "Cuándo: en cuanto llegas al tramo norte de la Ruta 111 (al salir del Túnel Fervergal o al bajar de la Ruta 113). Dónde: Ruta 111, junto a un árbol grande cerca de la casa de la anciana que te deja descansar; adornos en los puestos del mercado de Ciudad Portual, la Floristería Pitiminí (Ruta 104), la tienda de adornos de Ciudad Arborada y la 5.ª planta y la azotea (en las liquidaciones que anuncia la tele) del Centro Comercial de Ciudad Calagua. Paso a paso: 1) Habla con el chico del tramo norte de la Ruta 111: te regala la MT43 Daño secreto (después también se vende en el mercado de Ciudad Portual). 2) Enséñasela a un Pokémon y llévalo en el equipo. 3) Busca un hueco en una pared de roca, un arbusto grande o un árbol con lianas, ponte delante, pulsa A y acepta usar Daño secreto: se abre la base y puedes entrar. 4) Dentro, enciende el PC de la base y elige «Decorar» para colocar los adornos que hayas comprado o ganado (escudos de la Torre Batalla, tiendas de la Casa Treta, muñecos, etc.). 5) Solo puedes tener una: si usas Daño secreto en otro sitio, el juego te pregunta si quieres mudarte y todos los adornos vuelven a tu PC. Consejo: al mezclar récords con amigos que tengan base, sus bases aparecen en tu partida y puedes combatir contra ellos. En Esmeralda también puedes registrar hasta diez bases de amigos desde el PC de tu base. Fuente: decompilación pret (pokeruby y pokeemerald: secret_power_tm.inc, secret_base.inc y puestos de adornos de SlateportCity, Route104_PrettyPetalFlowerShop, FortreeCity_DecorationShop y LilycoveCity_DepartmentStore); WikiDex «Base secreta»."
+    },
+    {
+     "objetivo": "battle1"
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "titulo": "Inicial de Johto del Profesor Abedul",
+     "texto": "Cuándo: tras el Hall de la Fama, con la Pokédex Nacional ya recibida y la Pokédex de Hoenn completa. Dónde: laboratorio del Profesor Abedul en Villa Raíz. Paso a paso: 1) Tras la Liga, visita a Abedul: mejora tu Pokédex a la Nacional. 2) Completa la Pokédex de Hoenn (las 200 especies que se exigen: todas salvo Jirachi y Deoxys). 3) Vuelve al laboratorio: en la mesa hay tres Poké Balls; elige Chikorita, Cyndaquil o Totodile (nivel 5). Consejo: solo te llevas uno; los otros dos, por intercambio o crianza en la Guardería. Con Pokekeep: si te faltan los otros dos para la Pokédex Nacional, añádelos legales desde la Librería. Fuente: decompilación pokeemerald de pret (LittlerootTown_ProfessorBirchsLab: HasAllHoennMons y givemon de nivel 5)."
+    },
+    {
+     "objetivo": "diploma-nacional"
+    },
+    {
+     "objetivo": "nurse-gold"
+    }
+   ]
+  },
+  "FIRERED-15": {
+   "bloques": [
+    {
+     "objetivo": "pokemon-144"
+    },
+    {
+     "objetivo": "pokemon-145"
+    },
+    {
+     "objetivo": "pokemon-146"
+    },
+    {
+     "objetivo": "pokemon-150"
+    },
+    {
+     "objetivo": "pokemon-243"
+    },
+    {
+     "objetivo": "pokemon-244"
+    },
+    {
+     "objetivo": "pokemon-245"
+    },
+    {
+     "objetivo": "event-0"
+    }
+   ]
+  },
+  "FIRERED-16": {
+   "bloques": [
+    {
+     "titulo": "Ayudantes del Profesor Oak (premios por especies capturadas)",
+     "texto": "Cuándo: durante toda la partida, en cuanto alcances cada cifra. Dónde: casetas y edificios de las rutas de Kanto. Paso a paso: 1) 10 especies capturadas → MO05 Destello: casa del lado este de la Ruta 2. 2) 20 → Piedra eterna: Centro Pokémon de la Ruta 10. 3) 30 → Buscaobjetos: 2.ª planta de la caseta este de la Ruta 11. 4) 40 → Moneda amuleto: 2.ª planta de la caseta norte de la Ruta 16. 5) 50 → Repartir experiencia: 2.ª planta de la caseta oeste de la Ruta 15. Consejo: cuentan las especies capturadas, no las vistas; el ayudante te dice cuántas te faltan. Fuente: decompilación pokefirered de pret (Route2_EastBuilding, Route10_PokemonCenter_1F, Route11_EastEntrance_2F, Route16_NorthEntrance_2F y Route15_WestEntrance_2F)."
+    },
+    {
+     "titulo": "Fósiles: fósil del Mt. Moon y Ámbar viejo",
+     "texto": "Cuándo: el fósil, al cruzar el Mt. Moon; el Ámbar viejo, en cuanto tengas Corte; la resurrección, al llegar a Isla Canela. Dónde: Mt. Moon (última planta del sótano), Museo de la Ciencia de Ciudad Plateada (entrada trasera) y Laboratorio Pokémon de Isla Canela. Paso a paso: 1) En el Mt. Moon vence al entrenador que vigila los dos fósiles y elige el Fósil hélix (Omanyte) o el Fósil domo (Kabuto); el otro desaparece. 2) Con Corte, entra por la puerta trasera del Museo de la Ciencia de Ciudad Plateada (rodeándolo por el este): un hombre te da el Ámbar viejo (Aerodactyl). 3) En Isla Canela, entrega cada fósil al científico de la sala de experimentos del Laboratorio Pokémon. 4) Sal del laboratorio, vuelve a entrar y recoge el Pokémon revivido (nivel 5); repite con el otro fósil. Consejo: el fósil que no elegiste en el Mt. Moon solo llega por intercambio. Con Pokekeep: si no puedes intercambiarlo, añade el Omanyte o el Kabuto legal desde la Librería. Fuente: decompilación pokefirered de pret (PewterCity_Museum_1F ITEM_OLD_AMBER y CinnabarIsland_PokemonLab_ExperimentRoom)."
+    },
+    {
+     "titulo": "Eevee de la Mansión Azulona",
+     "texto": "Cuándo: en cuanto llegas a Ciudad Azulona. Dónde: Mansión Azulona, Ciudad Azulona; habitación de la azotea. Paso a paso: 1) Rodea la Mansión Azulona y entra por la puerta trasera (lado norte). 2) Sube por las escaleras de atrás hasta la azotea y entra en la habitación que hay allí. 3) Coge la Poké Ball de la mesa: es un Eevee de nivel 25 (si no cabe en el equipo, va a la caja). Consejo: solo hay uno; para tener Vaporeon, Jolteon y Flareon cría más Eevee en la Guardería de Isla Quarta (la de la Ruta 5 no da huevos) o consíguelos por intercambio. Espeon y Umbreon necesitan la Pokédex Nacional. Fuente: decompilación pokefirered de pret (CeladonCity_Condominiums_RoofRoom: givemon SPECIES_EEVEE, 25)."
+    },
+    {
+     "titulo": "Hitmonlee o Hitmonchan del Dojo Karate",
+     "texto": "Cuándo: en cuanto entres en Ciudad Azafrán. Dónde: Dojo Karate de Ciudad Azafrán (junto al gimnasio). Paso a paso: 1) Vence a los karatekas del dojo y a su maestro, al fondo. 2) Elige una de las dos Poké Balls del fondo: Hitmonlee o Hitmonchan (nivel 25). 3) El otro deja de estar disponible en tu partida. Consejo: Hitmontop no está en Kanto: llega criando un Tyrogue (huevo de Hitmonlee o Hitmonchan con un Ditto) con la Pokédex Nacional, o por intercambio. Con Pokekeep: el Hitmon que no elegiste, añádelo legal desde la Librería si no puedes intercambiarlo. Fuente: decompilación pokefirered de pret (SaffronCity_Dojo: givemon de nivel 25 y FLAG_GOT_HITMON_FROM_DOJO)."
+    },
+    {
+     "titulo": "Lapras de Silph S.A.",
+     "texto": "Cuándo: durante la liberación de Silph S.A. (historia de Ciudad Azafrán). Dónde: Silph S.A., 7.ª planta. Paso a paso: 1) Sube por Silph S.A. usando la Llave magnética y los teletransportadores hasta la 7.ª planta. 2) Busca en las salas de esa planta al empleado de Silph que quiere agradecerte la ayuda. 3) Habla con él: te regala un Lapras de nivel 25. Consejo: solo hay uno en la partida; tenlo con hueco en el equipo o irá a la caja. Fuente: decompilación pokefirered de pret (SilphCo_7F: givemon SPECIES_LAPRAS, 25)."
+    },
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "titulo": "Evoluciones bloqueadas hasta la Pokédex Nacional",
+     "texto": "Cuándo: mientras no tengas la Pokédex Nacional. Dónde: cualquier evolución hacia una especie que no sea de Kanto. Paso a paso: 1) Si un Golbat, Onix, Scyther, Seadra, Chansey, Eevee (a Espeon o Umbreon), Slowpoke (a Slowking), Poliwhirl (a Politoed) o similar no evoluciona, la evolución se cancela sola porque la especie resultante no está en la Pokédex de Kanto. 2) Consigue la Pokédex Nacional (Profesor Oak, tras la Liga con 60 capturados). 3) Repite la condición de evolución (subir de nivel con amistad, intercambio con el objeto, etc.): ahora sí evoluciona. Consejo: no pierdas objetos de evolución por intercambio (Revestimiento metálico, Escama dragón, Roca del rey) antes de tener la Nacional. Fuente: decompilación pokefirered de pret (evolution_scene.c: cancela si !IsNationalPokedexEnabled y la especie es posterior a Mew)."
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "diploma-nacional"
+    },
+    {
+     "objetivo": "card-3"
+    }
+   ]
+  },
+  "FIRERED-E01": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Pokédex Nacional (Profesor Oak)",
+     "texto": "Cuándo: tras el Hall de la Fama, con 60 especies de Kanto capturadas y después de haber estado ya en Isla Prima. Dónde: laboratorio del Profesor Oak en Pueblo Paleta. Paso a paso: 1) Comprueba en la Pokédex que tienes al menos 60 especies capturadas (no vale con vistas). 2) Entra en el laboratorio de Oak: te valora la Pokédex y, si cumples las condiciones, aparece tu rival y Oak mejora las dos Pokédex a la Nacional. 3) Desde ese momento pueden evolucionar las especies de Johto y Hoenn y aparecen nuevos Pokémon en Archi7. Consejo: si Oak no te la da, revisa que hayas visitado Isla Prima (el viaje con Celio de la historia cuenta). Fuente: decompilación pokefirered de pret (PalletTown_ProfessorOaksLab: TryStartNationalDexScene, 60 capturadas y FLAG_WORLD_MAP_ONE_ISLAND)."
+    },
+    {
+     "objetivo": "sevii-gems"
+    },
+    {
+     "objetivo": "battle0"
+    }
+   ]
+  },
+  "FIRERED-E02": {
+   "bloques": [
+    {
+     "titulo": "Misti-ticket y Ori-ticket",
+     "texto": "Cuándo: tras entrar por primera vez en el Hall de la Fama. Dónde: tu mochila (versión de Nintendo Switch) o un evento de Regalo Misterioso ya cerrado (Game Boy Advance). Paso a paso: 1) En la versión de Nintendo Switch (Nintendo eShop, 27 de febrero de 2026), termina la Liga: los dos tickets aparecen solos en la mochila. 2) En la edición original de Game Boy Advance solo se recibían en eventos ya cerrados. 3) Con el ticket, ve al puerto de Ciudad Carmín y elige el destino en el Surcamar Veloce: Roca Ombligo con el Misti-ticket o Isla Origen con el Ori-ticket. Consejo: Lugia, Ho-Oh y Deoxys no se exigen para el diploma de la Pokédex Nacional ni para la estrella de la Ficha de entrenador. Con Pokekeep: en Game Boy Advance, añade el Misti-ticket o el Ori-ticket a la mochila y activa su evento, o añade el Pokémon legal desde la Librería. Fuente: Serebii «Pokémon FireRed & LeafGreen Nintendo Switch Additions»; decompilación pokefirered de pret (NavelRock y BirthIsland)."
+    },
+    {
+     "titulo": "Ho-Oh en la cima de la Roca Ombligo",
+     "texto": "Cuándo: tras el Hall de la Fama, con el Misti-ticket. Dónde: Roca Ombligo, cima; nivel 70. Paso a paso: 1) Desembarca en la Roca Ombligo y entra en la cueva. 2) En la bifurcación, toma la escalera de la izquierda y sube planta a planta hasta la cima. 3) Guarda antes de acercarte a Ho-Oh y combate. Consejo: si huyes, vuelve a estar allí al regresar; es Fuego/Volador, así que la Roca le hace daño cuádruple. Con Pokekeep: sin ticket, añade un Ho-Oh legal desde la Librería. Fuente: decompilación pokefirered de pret (NavelRock_Fork: salida izquierda a SummitPath; NavelRock_Summit: Ho-Oh nivel 70)."
+    },
+    {
+     "titulo": "Lugia en el fondo de la Roca Ombligo",
+     "texto": "Cuándo: tras el Hall de la Fama, con el Misti-ticket. Dónde: Roca Ombligo, sótano más profundo; nivel 70. Paso a paso: 1) En la bifurcación de la cueva, toma la escalera de la derecha. 2) Baja planta a planta por las escaleras hasta el sótano más profundo, la sala del agua. 3) Guarda antes de acercarte a Lugia y combate. Consejo: Lugia aguanta mucho y usa Recuperación; lleva algo que lo duerma o paralice y muchas Ultra Balls. Con Pokekeep: sin ticket, añade un Lugia legal desde la Librería. Fuente: decompilación pokefirered de pret (NavelRock_Fork: salida derecha a BasePath B1F-B11F; NavelRock_Base: Lugia nivel 70)."
+    },
+    {
+     "titulo": "Deoxys en la Isla Origen",
+     "texto": "Cuándo: tras el Hall de la Fama, con el Ori-ticket. Dónde: Isla Origen; Deoxys de nivel 30 en forma Ataque. Paso a paso: 1) Desembarca en la Isla Origen y ve hasta el triángulo negro del centro; pulsa A junto a él: se mueve a otro punto. 2) Ve hasta su nueva posición por el camino más corto y vuelve a pulsar A. 3) Repítelo diez veces seguidas; si das más pasos de los necesarios, el triángulo vuelve al centro y hay que empezar de nuevo. 4) Tras el décimo toque aparece Deoxys: guarda y combate. Consejo: tiene muy poca Defensa pero escapa a menudo de las Poké Balls; usa Ultra Balls o Turno Balls con el combate alargado. Con Pokekeep: sin ticket, añade un Deoxys legal desde la Librería. Fuente: decompilación pokefirered de pret (BirthIsland_Exterior: seteventmon SPECIES_DEOXYS, 30) y pokeemerald (field_specials.c: diez movimientos con límite de pasos)."
+    }
+   ]
+  },
+  "LEAFGREEN-15": {
+   "bloques": [
+    {
+     "objetivo": "pokemon-144"
+    },
+    {
+     "objetivo": "pokemon-145"
+    },
+    {
+     "objetivo": "pokemon-146"
+    },
+    {
+     "objetivo": "pokemon-150"
+    },
+    {
+     "objetivo": "pokemon-243"
+    },
+    {
+     "objetivo": "pokemon-244"
+    },
+    {
+     "objetivo": "pokemon-245"
+    },
+    {
+     "objetivo": "event-0"
+    }
+   ]
+  },
+  "LEAFGREEN-16": {
+   "bloques": [
+    {
+     "titulo": "Ayudantes del Profesor Oak (premios por especies capturadas)",
+     "texto": "Cuándo: durante toda la partida, en cuanto alcances cada cifra. Dónde: casetas y edificios de las rutas de Kanto. Paso a paso: 1) 10 especies capturadas → MO05 Destello: casa del lado este de la Ruta 2. 2) 20 → Piedra eterna: Centro Pokémon de la Ruta 10. 3) 30 → Buscaobjetos: 2.ª planta de la caseta este de la Ruta 11. 4) 40 → Moneda amuleto: 2.ª planta de la caseta norte de la Ruta 16. 5) 50 → Repartir experiencia: 2.ª planta de la caseta oeste de la Ruta 15. Consejo: cuentan las especies capturadas, no las vistas; el ayudante te dice cuántas te faltan. Fuente: decompilación pokefirered de pret (Route2_EastBuilding, Route10_PokemonCenter_1F, Route11_EastEntrance_2F, Route16_NorthEntrance_2F y Route15_WestEntrance_2F)."
+    },
+    {
+     "titulo": "Fósiles: fósil del Mt. Moon y Ámbar viejo",
+     "texto": "Cuándo: el fósil, al cruzar el Mt. Moon; el Ámbar viejo, en cuanto tengas Corte; la resurrección, al llegar a Isla Canela. Dónde: Mt. Moon (última planta del sótano), Museo de la Ciencia de Ciudad Plateada (entrada trasera) y Laboratorio Pokémon de Isla Canela. Paso a paso: 1) En el Mt. Moon vence al entrenador que vigila los dos fósiles y elige el Fósil hélix (Omanyte) o el Fósil domo (Kabuto); el otro desaparece. 2) Con Corte, entra por la puerta trasera del Museo de la Ciencia de Ciudad Plateada (rodeándolo por el este): un hombre te da el Ámbar viejo (Aerodactyl). 3) En Isla Canela, entrega cada fósil al científico de la sala de experimentos del Laboratorio Pokémon. 4) Sal del laboratorio, vuelve a entrar y recoge el Pokémon revivido (nivel 5); repite con el otro fósil. Consejo: el fósil que no elegiste en el Mt. Moon solo llega por intercambio. Con Pokekeep: si no puedes intercambiarlo, añade el Omanyte o el Kabuto legal desde la Librería. Fuente: decompilación pokefirered de pret (PewterCity_Museum_1F ITEM_OLD_AMBER y CinnabarIsland_PokemonLab_ExperimentRoom)."
+    },
+    {
+     "titulo": "Eevee de la Mansión Azulona",
+     "texto": "Cuándo: en cuanto llegas a Ciudad Azulona. Dónde: Mansión Azulona, Ciudad Azulona; habitación de la azotea. Paso a paso: 1) Rodea la Mansión Azulona y entra por la puerta trasera (lado norte). 2) Sube por las escaleras de atrás hasta la azotea y entra en la habitación que hay allí. 3) Coge la Poké Ball de la mesa: es un Eevee de nivel 25 (si no cabe en el equipo, va a la caja). Consejo: solo hay uno; para tener Vaporeon, Jolteon y Flareon cría más Eevee en la Guardería de Isla Quarta (la de la Ruta 5 no da huevos) o consíguelos por intercambio. Espeon y Umbreon necesitan la Pokédex Nacional. Fuente: decompilación pokefirered de pret (CeladonCity_Condominiums_RoofRoom: givemon SPECIES_EEVEE, 25)."
+    },
+    {
+     "titulo": "Hitmonlee o Hitmonchan del Dojo Karate",
+     "texto": "Cuándo: en cuanto entres en Ciudad Azafrán. Dónde: Dojo Karate de Ciudad Azafrán (junto al gimnasio). Paso a paso: 1) Vence a los karatekas del dojo y a su maestro, al fondo. 2) Elige una de las dos Poké Balls del fondo: Hitmonlee o Hitmonchan (nivel 25). 3) El otro deja de estar disponible en tu partida. Consejo: Hitmontop no está en Kanto: llega criando un Tyrogue (huevo de Hitmonlee o Hitmonchan con un Ditto) con la Pokédex Nacional, o por intercambio. Con Pokekeep: el Hitmon que no elegiste, añádelo legal desde la Librería si no puedes intercambiarlo. Fuente: decompilación pokefirered de pret (SaffronCity_Dojo: givemon de nivel 25 y FLAG_GOT_HITMON_FROM_DOJO)."
+    },
+    {
+     "titulo": "Lapras de Silph S.A.",
+     "texto": "Cuándo: durante la liberación de Silph S.A. (historia de Ciudad Azafrán). Dónde: Silph S.A., 7.ª planta. Paso a paso: 1) Sube por Silph S.A. usando la Llave magnética y los teletransportadores hasta la 7.ª planta. 2) Busca en las salas de esa planta al empleado de Silph que quiere agradecerte la ayuda. 3) Habla con él: te regala un Lapras de nivel 25. Consejo: solo hay uno en la partida; tenlo con hueco en el equipo o irá a la caja. Fuente: decompilación pokefirered de pret (SilphCo_7F: givemon SPECIES_LAPRAS, 25)."
+    },
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "titulo": "Evoluciones bloqueadas hasta la Pokédex Nacional",
+     "texto": "Cuándo: mientras no tengas la Pokédex Nacional. Dónde: cualquier evolución hacia una especie que no sea de Kanto. Paso a paso: 1) Si un Golbat, Onix, Scyther, Seadra, Chansey, Eevee (a Espeon o Umbreon), Slowpoke (a Slowking), Poliwhirl (a Politoed) o similar no evoluciona, la evolución se cancela sola porque la especie resultante no está en la Pokédex de Kanto. 2) Consigue la Pokédex Nacional (Profesor Oak, tras la Liga con 60 capturados). 3) Repite la condición de evolución (subir de nivel con amistad, intercambio con el objeto, etc.): ahora sí evoluciona. Consejo: no pierdas objetos de evolución por intercambio (Revestimiento metálico, Escama dragón, Roca del rey) antes de tener la Nacional. Fuente: decompilación pokefirered de pret (evolution_scene.c: cancela si !IsNationalPokedexEnabled y la especie es posterior a Mew)."
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "diploma-nacional"
+    },
+    {
+     "objetivo": "card-3"
+    }
+   ]
+  },
+  "LEAFGREEN-E01": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Pokédex Nacional (Profesor Oak)",
+     "texto": "Cuándo: tras el Hall de la Fama, con 60 especies de Kanto capturadas y después de haber estado ya en Isla Prima. Dónde: laboratorio del Profesor Oak en Pueblo Paleta. Paso a paso: 1) Comprueba en la Pokédex que tienes al menos 60 especies capturadas (no vale con vistas). 2) Entra en el laboratorio de Oak: te valora la Pokédex y, si cumples las condiciones, aparece tu rival y Oak mejora las dos Pokédex a la Nacional. 3) Desde ese momento pueden evolucionar las especies de Johto y Hoenn y aparecen nuevos Pokémon en Archi7. Consejo: si Oak no te la da, revisa que hayas visitado Isla Prima (el viaje con Celio de la historia cuenta). Fuente: decompilación pokefirered de pret (PalletTown_ProfessorOaksLab: TryStartNationalDexScene, 60 capturadas y FLAG_WORLD_MAP_ONE_ISLAND)."
+    },
+    {
+     "objetivo": "sevii-gems"
+    },
+    {
+     "objetivo": "battle0"
+    }
+   ]
+  },
+  "LEAFGREEN-E02": {
+   "bloques": [
+    {
+     "titulo": "Misti-ticket y Ori-ticket",
+     "texto": "Cuándo: tras entrar por primera vez en el Hall de la Fama. Dónde: tu mochila (versión de Nintendo Switch) o un evento de Regalo Misterioso ya cerrado (Game Boy Advance). Paso a paso: 1) En la versión de Nintendo Switch (Nintendo eShop, 27 de febrero de 2026), termina la Liga: los dos tickets aparecen solos en la mochila. 2) En la edición original de Game Boy Advance solo se recibían en eventos ya cerrados. 3) Con el ticket, ve al puerto de Ciudad Carmín y elige el destino en el Surcamar Veloce: Roca Ombligo con el Misti-ticket o Isla Origen con el Ori-ticket. Consejo: Lugia, Ho-Oh y Deoxys no se exigen para el diploma de la Pokédex Nacional ni para la estrella de la Ficha de entrenador. Con Pokekeep: en Game Boy Advance, añade el Misti-ticket o el Ori-ticket a la mochila y activa su evento, o añade el Pokémon legal desde la Librería. Fuente: Serebii «Pokémon FireRed & LeafGreen Nintendo Switch Additions»; decompilación pokefirered de pret (NavelRock y BirthIsland)."
+    },
+    {
+     "titulo": "Ho-Oh en la cima de la Roca Ombligo",
+     "texto": "Cuándo: tras el Hall de la Fama, con el Misti-ticket. Dónde: Roca Ombligo, cima; nivel 70. Paso a paso: 1) Desembarca en la Roca Ombligo y entra en la cueva. 2) En la bifurcación, toma la escalera de la izquierda y sube planta a planta hasta la cima. 3) Guarda antes de acercarte a Ho-Oh y combate. Consejo: si huyes, vuelve a estar allí al regresar; es Fuego/Volador, así que la Roca le hace daño cuádruple. Con Pokekeep: sin ticket, añade un Ho-Oh legal desde la Librería. Fuente: decompilación pokefirered de pret (NavelRock_Fork: salida izquierda a SummitPath; NavelRock_Summit: Ho-Oh nivel 70)."
+    },
+    {
+     "titulo": "Lugia en el fondo de la Roca Ombligo",
+     "texto": "Cuándo: tras el Hall de la Fama, con el Misti-ticket. Dónde: Roca Ombligo, sótano más profundo; nivel 70. Paso a paso: 1) En la bifurcación de la cueva, toma la escalera de la derecha. 2) Baja planta a planta por las escaleras hasta el sótano más profundo, la sala del agua. 3) Guarda antes de acercarte a Lugia y combate. Consejo: Lugia aguanta mucho y usa Recuperación; lleva algo que lo duerma o paralice y muchas Ultra Balls. Con Pokekeep: sin ticket, añade un Lugia legal desde la Librería. Fuente: decompilación pokefirered de pret (NavelRock_Fork: salida derecha a BasePath B1F-B11F; NavelRock_Base: Lugia nivel 70)."
+    },
+    {
+     "titulo": "Deoxys en la Isla Origen",
+     "texto": "Cuándo: tras el Hall de la Fama, con el Ori-ticket. Dónde: Isla Origen; Deoxys de nivel 30 en forma Defensa. Paso a paso: 1) Desembarca en la Isla Origen y ve hasta el triángulo negro del centro; pulsa A junto a él: se mueve a otro punto. 2) Ve hasta su nueva posición por el camino más corto y vuelve a pulsar A. 3) Repítelo diez veces seguidas; si das más pasos de los necesarios, el triángulo vuelve al centro y hay que empezar de nuevo. 4) Tras el décimo toque aparece Deoxys: guarda y combate. Consejo: tiene muy poca Defensa pero escapa a menudo de las Poké Balls; usa Ultra Balls o Turno Balls con el combate alargado. Con Pokekeep: sin ticket, añade un Deoxys legal desde la Librería. Fuente: decompilación pokefirered de pret (BirthIsland_Exterior: seteventmon SPECIES_DEOXYS, 30) y pokeemerald (field_specials.c: diez movimientos con límite de pasos)."
+    }
+   ]
+  }
+ },
+ "corrige": {
+  "RUBY": {
+   "pokedex": "Cuándo: a lo largo de la partida; lo normal es cerrarla tras la Liga. Dónde: toda Hoenn. Paso a paso: 1) Registra como capturadas las 200 especies de la Pokédex de Hoenn que el juego exige (todas menos Jirachi y Deoxys). 2) Atrapa los encuentros únicos: Groudon, Rayquaza, Latios, los Regis, Castform, el fósil y el Beldum que Máximo deja en su casa de Ciudad Algaria tras la Liga (es el único de su línea evolutiva). 3) Consigue por intercambio los exclusivos de la otra edición y el inicial y el fósil que no elegiste. 4) Evoluciona por intercambio a Kadabra, Machoke, Graveler y Haunter. 5) Con la Pokédex completa, habla con el diseñador del juego en la segunda planta del Motel Aguacala (Ciudad Calagua): te da el diploma. Con Pokekeep: lo que solo llega por intercambio o por eventos, añádelo legal desde la Librería. Fuente: WikiDex «Motel Aguacala» y «Ficha de entrenador»; decompilación pret.",
+   "postgame": "Cuándo: tras el Hall de la Fama; la Cámara Sellada y el Pilar Celeste no exigen la Liga (basta con Buceo, Surf y la Bici carrera). Dónde: Villa Raíz, Pilar Celeste (Ruta 131), Cámara Sellada (Ruta 134), Ciudad Algaria y la Torre Batalla. Paso a paso: 1) Al volver a casa tu padre te da el Ticket barco y la tele anuncia un Pokémon desconocido: Latios empieza a vagar por Hoenn (nivel 40). 2) Si aún no lo hiciste, sube al Pilar Celeste con la Bici carrera y captura a Rayquaza (nivel 70). 3) Abre la Cámara Sellada y captura a Regirock, Regice y Registeel (nivel 40). 4) Recoge el Beldum (nivel 5) que Máximo deja en una Poké Ball sobre la mesa de su casa de Ciudad Algaria. 5) Usa el Ticket barco en el puerto de Ciudad Portual o de Ciudad Calagua para ir en el S.S. Marea a la Torre Batalla. Con Pokekeep: Latias (Isla del Sur, con el Ticket eón de un evento cerrado), Jirachi, Deoxys y Kyogre (exclusivo de Zafiro) no se consiguen solo con esta partida: añade el Ticket eón y activa su evento, o añade los Pokémon legales desde la Librería. Fuente: decompilación pokeruby de pret (hall_of_fame.inc: Ticket barco, Lati en la tele y Beldum de MossdeepCity_StevensHouse; SkyPillar_Top sin condición de Liga); WikiDex «Guía de Pokémon Rubí, Pokémon Zafiro y Pokémon Esmeralda»."
+  },
+  "SAPPHIRE": {
+   "pokedex": "Cuándo: a lo largo de la partida; lo normal es cerrarla tras la Liga. Dónde: toda Hoenn. Paso a paso: 1) Registra como capturadas las 200 especies de la Pokédex de Hoenn que el juego exige (todas menos Jirachi y Deoxys). 2) Atrapa los encuentros únicos: Kyogre, Rayquaza, Latias, los Regis, Castform, el fósil y el Beldum que Máximo deja en su casa de Ciudad Algaria tras la Liga (es el único de su línea evolutiva). 3) Consigue por intercambio los exclusivos de la otra edición y el inicial y el fósil que no elegiste. 4) Evoluciona por intercambio a Kadabra, Machoke, Graveler y Haunter. 5) Con la Pokédex completa, habla con el diseñador del juego en la segunda planta del Motel Aguacala (Ciudad Calagua): te da el diploma. Con Pokekeep: lo que solo llega por intercambio o por eventos, añádelo legal desde la Librería. Fuente: WikiDex «Motel Aguacala» y «Ficha de entrenador»; decompilación pret.",
+   "postgame": "Cuándo: tras el Hall de la Fama; la Cámara Sellada y el Pilar Celeste no exigen la Liga (basta con Buceo, Surf y la Bici carrera). Dónde: Villa Raíz, Pilar Celeste (Ruta 131), Cámara Sellada (Ruta 134), Ciudad Algaria y la Torre Batalla. Paso a paso: 1) Al volver a casa tu padre te da el Ticket barco y la tele anuncia un Pokémon desconocido: Latias empieza a vagar por Hoenn (nivel 40). 2) Si aún no lo hiciste, sube al Pilar Celeste con la Bici carrera y captura a Rayquaza (nivel 70). 3) Abre la Cámara Sellada y captura a Regirock, Regice y Registeel (nivel 40). 4) Recoge el Beldum (nivel 5) que Máximo deja en una Poké Ball sobre la mesa de su casa de Ciudad Algaria. 5) Usa el Ticket barco en el puerto de Ciudad Portual o de Ciudad Calagua para ir en el S.S. Marea a la Torre Batalla. Con Pokekeep: Latios (Isla del Sur, con el Ticket eón de un evento cerrado), Jirachi, Deoxys y Groudon (exclusivo de Rubí) no se consiguen solo con esta partida: añade el Ticket eón y activa su evento, o añade los Pokémon legales desde la Librería. Fuente: decompilación pokeruby de pret (hall_of_fame.inc: Ticket barco, Lati en la tele y Beldum de MossdeepCity_StevensHouse; SkyPillar_Top sin condición de Liga); WikiDex «Guía de Pokémon Rubí, Pokémon Zafiro y Pokémon Esmeralda»."
+  },
+  "FIRERED": {
+   "battle0": "Cuándo: la Liga se puede repetir en cuanto entras en el Hall de la Fama; los equipos más fuertes llegan tras entregar el Zafiro a Celio en Isla Prima. Dónde: Meseta Añil (por la Calle Victoria) y el Centro Pokémon de Ciudad Carmín (Buscapelea). Paso a paso: 1) Vuelve a la Meseta Añil, cúrate y guarda: una vez dentro no puedes salir a curarte. 2) Tras entregar el Zafiro, el Alto Mando usa equipos nuevos: Lorelei (niveles 63-66: Dewgong, Cloyster, Piloswine, Jynx y Lapras), Bruno (65-68: dos Steelix, Hitmonchan, Hitmonlee y Machamp), Agatha (65-70: dos Gengar, Crobat, Misdreavus y Arbok) y Lance (66-72: Gyarados, dos Dragonite, Kingdra y Aerodactyl). 3) Tu rival, el Campeón, lleva Heracross (72), Alakazam (73), Tyranitar (72), dos Pokémon según tu inicial (73) y el inicial que eligió (75). 4) Para las revanchas de las rutas, pide el Buscapelea a la chica del Centro Pokémon de Ciudad Carmín y úsalo en una ruta: los entrenadores que quieran repetir te lo indican; se recarga cada 100 pasos. Consejo: la Torre Desafío de Isla Sétima tiene su propio objetivo; lleva Pokémon de nivel 70 o más para la Liga reforzada. Fuente: decompilación pokefirered de pret (PokemonLeague_LoreleisRoom: FLAG_SYS_CAN_LINK_WITH_RS; trainer_parties.h EliteFour*2 y ChampionRematch*; VermilionCity_PokemonCenter_1F; vs_seeker.c)."
+  },
+  "LEAFGREEN": {
+   "battle0": "Cuándo: la Liga se puede repetir en cuanto entras en el Hall de la Fama; los equipos más fuertes llegan tras entregar el Zafiro a Celio en Isla Prima. Dónde: Meseta Añil (por la Calle Victoria) y el Centro Pokémon de Ciudad Carmín (Buscapelea). Paso a paso: 1) Vuelve a la Meseta Añil, cúrate y guarda: una vez dentro no puedes salir a curarte. 2) Tras entregar el Zafiro, el Alto Mando usa equipos nuevos: Lorelei (niveles 63-66: Dewgong, Cloyster, Piloswine, Jynx y Lapras), Bruno (65-68: dos Steelix, Hitmonchan, Hitmonlee y Machamp), Agatha (65-70: dos Gengar, Crobat, Misdreavus y Arbok) y Lance (66-72: Gyarados, dos Dragonite, Kingdra y Aerodactyl). 3) Tu rival, el Campeón, lleva Heracross (72), Alakazam (73), Tyranitar (72), dos Pokémon según tu inicial (73) y el inicial que eligió (75). 4) Para las revanchas de las rutas, pide el Buscapelea a la chica del Centro Pokémon de Ciudad Carmín y úsalo en una ruta: los entrenadores que quieran repetir te lo indican; se recarga cada 100 pasos. Consejo: la Torre Desafío de Isla Sétima tiene su propio objetivo; lleva Pokémon de nivel 70 o más para la Liga reforzada. Fuente: decompilación pokefirered de pret (PokemonLeague_LoreleisRoom: FLAG_SYS_CAN_LINK_WITH_RS; trainer_parties.h EliteFour*2 y ChampionRematch*; VermilionCity_PokemonCenter_1F; vs_seeker.c)."
+  }
+ }
+}

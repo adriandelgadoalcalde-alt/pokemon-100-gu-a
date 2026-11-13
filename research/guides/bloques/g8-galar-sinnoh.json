@@ -1,0 +1,684 @@
+{
+ "misiones": {
+  "SWORD-07": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Master Ball de Magnolia y Charmander de Lionel",
+     "texto": "Cuándo: nada más ver los créditos de la Copa de Campeones. Dónde: tu casa y la casa de Paul, en Pueblo Yarda. Paso a paso: 1) Al volver a casa, la Profesora Magnolia te espera con tu madre y te entrega una Master Ball. 2) Entra en la casa de Paul y sube al segundo piso, al cuarto de Lionel. 3) Recoge la Poké Ball que hay junto a la nota: es un Charmander de nivel 5 que podrá gigamaxizarse cuando evolucione a Charizard. Consejo: guarda la Master Ball: no la gastes en Zacian si puedes capturarlo con estados alterados, porque en las Nieves de la Corona Peony te dará otra. Fuente: Serebii «Gift Pokémon» (Charmander); Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Combates con Paul y Tizonio en el Bosque Oniria",
+     "texto": "Cuándo: justo después de recoger la Master Ball. Dónde: santuario del Bosque Oniria, al fondo del bosque (al norte de Pueblo Yarda). Paso a paso: 1) Recorre el bosque por el mismo camino que en la historia hasta el santuario. 2) Paul te reta: su equipo es de nivel 58 a 60. 3) Sonia te propone devolver la Espada Oxidada al altar; aparecen Tizonio y Dargo y se los llevan. En Espada te enfrentas a Tizonio (equipo de nivel 60) mientras Paul combate contra el otro. 4) Al ganar recuperas la Espada Oxidada; Paul pierde su combate y el otro objeto se lo llevan. Ve al laboratorio de Pueblo Par. Consejo: lleva a tu equipo por encima del nivel 60: los combates siguientes del episodio van subiendo hasta el 70. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Pokémon dinamaxizado del Estadio de Hoyuelo (Tsareena)",
+     "texto": "Cuándo: primera parada del episodio, al salir del laboratorio de Pueblo Par. Dónde: Estadio de Hoyuelo, en Pueblo Hoyuelo. Paso a paso: 1) Entra en el estadio: Percy y Nerio están en pleno combate de exhibición. 2) Vence en incursión Dinamax al Tsareena descontrolado con Percy, Nerio y Paul como compañeros. 3) Percy te da su tarjeta de liga rara; Tizonio y Dargo anuncian que seguirán dinamaxizando Pokémon y Sonia te avisa de Amura y Pistón. Consejo: Tsareena es de tipo Planta: lleva un Pokémon de tipo Fuego, Volador o Hielo. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Pokémon dinamaxizado del Estadio de Amura (Gyarados)",
+     "texto": "Cuándo: después de Hoyuelo; puedes hacerlo antes o después de Pistón. Dónde: Estadio de Amura, en Pueblo Amura. Paso a paso: 1) Ve al estadio, donde te espera Cathy. 2) Vence en incursión Dinamax al Gyarados descontrolado con Cathy, Nerio y Paul. 3) Cathy te da su tarjeta de liga rara. Consejo: Gyarados es de tipo Agua y Volador: los ataques de tipo Eléctrico le hacen el cuádruple de daño. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Pokémon dinamaxizado del Estadio de Pistón (Torkoal)",
+     "texto": "Cuándo: después de Hoyuelo; puedes hacerlo antes o después de Amura. Dónde: Estadio de Pistón, en Ciudad Pistón. Paso a paso: 1) Ve al estadio, donde te espera Naboru. 2) Vence en incursión Dinamax al Torkoal descontrolado con Naboru, Nerio y Paul. 3) Naboru te da su tarjeta de liga rara. Cuando tengas hechos Amura y Pistón, Sonia te llama: Tizonio y Dargo están en su laboratorio. Consejo: Torkoal es de tipo Fuego: Agua, Tierra y Roca le hacen mucho daño. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Combate doble contra Tizonio y Dargo en el laboratorio de Sonia",
+     "texto": "Cuándo: tras calmar Amura y Pistón. Dónde: laboratorio de Sonia, en Pueblo Par. Paso a paso: 1) Entra en el laboratorio: Tizonio y Dargo exigen las estrellas deseo. 2) Combate múltiple junto a Paul contra los dos (tres Pokémon cada uno, de nivel 62). 3) Al ganar, la nueva ayudante de Sonia, admiradora de los hermanos, les entrega las estrellas deseo y huyen; los cuatro estadios restantes quedan bajo ataque y puedes hacerlos en el orden que quieras. Consejo: Falinks y Bronzong de Dargo y Golisopod de Tizonio golpean fuerte: un Pokémon de tipo Fuego o Fantasma cubre a la vez a varios de sus Pokémon de tipo Acero y Bicho. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Pokémon dinamaxizado del Estadio de Ladera (Conkeldurr)",
+     "texto": "Cuándo: tras el combate del laboratorio; orden libre entre Ladera, Plié, Auriga y Artejo. Dónde: Estadio de Ladera, en Pueblo Ladera. Paso a paso: 1) Ve al estadio: Judith, Paul y Nerio se reparten varios Pokémon dinamaxizados. 2) A ti te toca el Conkeldurr descontrolado: es una incursión Dinamax en la que vas solo con tus compañeros de la CPU. 3) Al ganar, Judith te da su tarjeta de liga rara. Consejo: Conkeldurr es de tipo Lucha: Volador, Psíquico y Hada le hacen mucho daño. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Combate contra Berto en el Estadio de Plié",
+     "texto": "Cuándo: tras el combate del laboratorio; orden libre entre Ladera, Plié, Auriga y Artejo. Dónde: Estadio de Plié, en Pueblo Plié. Paso a paso: 1) Entra en el estadio: Berto, ya líder de gimnasio, ha calmado él solo a los Pokémon dinamaxizados. 2) Te reta para demostrar que es más capaz que tú: Mawile, Gardevoir y Rapidash de nivel 61-62 y Hatterene de nivel 63. 3) Al vencerle, Sally te da su tarjeta de liga rara y la de Berto. Consejo: casi todo su equipo es de tipo Hada o Psíquico: los ataques de tipo Acero y Veneno funcionan muy bien. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Pokémon dinamaxizado del Estadio de Auriga (Gigalith)",
+     "texto": "Cuándo: tras el combate del laboratorio; orden libre entre Ladera, Plié, Auriga y Artejo. Dónde: Estadio de Auriga, en Pueblo Auriga. Paso a paso: 1) Ve al estadio: Morris te pide ayuda porque hay varios Pokémon dinamaxizados. 2) Te toca el Gigalith descontrolado, en incursión Dinamax. 3) Al ganar, Morris te da su tarjeta de liga rara. Consejo: Gigalith es de tipo Roca: Agua, Planta, Lucha, Tierra y Acero le hacen mucho daño. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Haxorus dinamaxizado de Ciudad Artejo",
+     "texto": "Cuándo: tras el combate del laboratorio; orden libre entre Ladera, Plié, Auriga y Artejo. Dónde: entrada de la Planta Eléctrica y Estadio de Artejo, en Ciudad Artejo. Paso a paso: 1) Sonia te espera a la entrada de la Planta Eléctrica: Tizonio y Dargo están dentro con las estrellas deseo, pero no puede entrar. 2) Antes, ayuda a Roy: vence en incursión Dinamax al Haxorus descontrolado. 3) Roy te da su tarjeta de liga rara. Con los cuatro estadios calmados, la puerta de la planta ya se puede abrir. Consejo: Haxorus es de tipo Dragón: Hada, Hielo y Dragón le hacen mucho daño. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Planta Eléctrica: Tizonio y Zamazenta descontrolado",
+     "texto": "Cuándo: con los ocho estadios ya resueltos. Dónde: Planta Eléctrica de Ciudad Artejo, hasta la azotea. Paso a paso: 1) Habla con Sonia en la entrada: su Yamper abre la puerta. 2) Dentro te reta Tizonio con cuatro Pokémon de nivel 64. 3) En la azotea, Zamazenta está fuera de control por la energía Dinamax: derrótalo (nivel 70). En este combate no se puede capturar. Consejo: cura al equipo entre combate y combate: no hay Centro Pokémon entre la planta y la azotea. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Capturar a Zacian (nivel 70)",
+     "texto": "Cuándo: justo después de calmar a Zamazenta. Dónde: azotea de la Planta Eléctrica de Ciudad Artejo. Paso a paso: 1) Zamazenta huye y Paul va tras él; Zacian se queda y te reta. 2) Debilítalo hasta dejarle poca vida, provócale sueño o parálisis y lanza Ultra Balls, Ocaso Balls o Turno Balls; la Master Ball lo asegura. 3) Al capturarlo lleva equipado la Espada Oxidada. Tizonio y Dargo prometen enmendarse y Nerio te da su tarjeta de liga rara. Consejo: a diferencia de Eternatus, aquí la captura no está garantizada: guarda antes de entrar en la planta. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Último combate con Paul en el Bosque Oniria",
+     "texto": "Cuándo: en cuanto Paul te llame, después de capturar a Zacian. Dónde: santuario del Bosque Oniria. Paso a paso: 1) Ve al santuario: Paul ha calmado y capturado a Zamazenta. 2) Te reta con su mejor equipo, de nivel 68 a 70, con Zamazenta de nivel 70. 3) Al ganar te da su tarjeta de liga rara; Paul decide ser profesor y trabajar con Sonia, y el episodio posliga termina. Consejo: Zamazenta aprende Danza Espada o Defensa Férrea y pega muy fuerte: debilítalo antes de que acumule mejoras. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Zamazenta: el legendario de Escudo",
+     "texto": "Cuándo: después de terminar el episodio posliga. Dónde: solo en Escudo; en esta partida no se puede capturar. Paso a paso: 1) En Espada, Zamazenta solo aparece como rival y en el equipo de Paul. 2) Para registrarlo como capturado necesitas un intercambio con una partida de Escudo o pasarlo por Pokémon HOME. 3) Comprueba en la Pokédex que figura como capturado, no solo visto. Consejo: Zamazenta no es necesario para la Pokédex de Galar, pero sí para tener a los dos héroes. Con Pokekeep: añade a Zamazenta legal desde la Librería. Fuente: Serebii «Sordward & Shielbert» (Encounter 11)."
+    }
+   ]
+  },
+  "SWORD-08": {
+   "bloques": [
+    {
+     "titulo": "Viajar a la Isla de la Armadura",
+     "texto": "Cuándo: en cuanto tengas el Pase de expansión (no hace falta ser campeón). Dónde: Estación de Pueblo Par (Ruta 1). Paso a paso: 1) Entra en la estación de Pueblo Par: un Slowpoke de Galar bloquea la entrada; combate contra él y captúralo o derrótalo. 2) Enseña el Pase Armadura al revisor y sube al tren. 3) Llegas a la Estación Armadura, en el Prado Reverencia; la ayudante de Sonia amplía tu Pokédex con la Pokédex Armadura (211 especies). Consejo: el Slowpoke de Galar de la estación es el primero que puedes capturar; luego evoluciona con objetos que se consiguen en la propia isla. Fuente: WikiDex «Guía de Pokémon Espada y Pokémon Escudo/La isla de la armadura» y «Dojo Maestro»."
+    },
+    {
+     "titulo": "Combate con Sófora y entrada en el Dojo Maestro",
+     "texto": "Cuándo: nada más bajar del tren. Dónde: Prado Reverencia y Dojo Maestro. Paso a paso: 1) Al salir de la estación te reta Sófora, aspirante del dojo. 2) Ve al Dojo Maestro: Tania, la patrona, te recibe e Idrán te entrega el Amuleto Exp. 3) Mostaz te reta a un combate; al ganarle eres alumno del dojo y recibes el uniforme. Consejo: el Amuleto Exp. aumenta la experiencia que gana todo el equipo: llévalo ya activo para el resto del DLC. Fuente: WikiDex «Dojo Maestro»; Serebii «Mustard»."
+    },
+    {
+     "objetivo": "alolan-diglett"
+    },
+    {
+     "titulo": "Primera prueba: los Slowpoke de Galar y el Bulbasaur o Squirtle Gigamax",
+     "texto": "Cuándo: después de hacerte alumno del dojo. Dónde: Humedal Frescor, saliendo del dojo hacia el oeste. Paso a paso: 1) Los tres Slowpoke de Galar han robado el uniforme de Sófora: sigue la polvareda que levantan. 2) Alcánzalos y véncelos a los tres (no se pueden capturar y tienen la Velocidad muy subida). 3) Vuelve al dojo: Tania te deja elegir un Bulbasaur o un Squirtle de nivel 5 con factor Gigamax. Solo puedes quedarte con uno. Consejo: el que no elijas no se consigue en esta partida: guarda antes de elegir. Con Pokekeep: si quieres el otro inicial de Kanto con factor Gigamax, añádelo legal desde la Librería. Fuente: WikiDex «Dojo Maestro»; Serebii «Gift Pokémon»."
+    },
+    {
+     "titulo": "Segunda prueba: Maxisetas y Maxisopa",
+     "texto": "Cuándo: después de la primera prueba. Dónde: Llano Entrenamiento y Gruta Calentamiento, al norte del dojo. Paso a paso: 1) Mostaz explica que las Maxisetas del Bosque Concentración se las comieron los Greedent: ve a la Gruta Calentamiento. 2) Al intentar coger las Maxisetas aparece Sófora y te reta por ellas: gánale. 3) En el dojo se prepara la primera Maxisopa; desde entonces el ayudante de cocina prepara otra con 3 Maxisetas para dar o quitar el factor Gigamax. Consejo: las Maxisetas reaparecen en la Cueva Contienda, la Cueva Tenacidad, el Bosque Concentración y la Gruta Calentamiento tras hacer incursiones Dinamax en la isla (unas 3 incursiones por seta). Fuente: WikiDex «Dojo Maestro»; Serebii «Max Soup»."
+    },
+    {
+     "objetivo": "pokemon-891"
+    },
+    {
+     "titulo": "Entrenar a Kubfu con los alumnos de Mostaz",
+     "texto": "Cuándo: en cuanto recibas a Kubfu. Dónde: Cueva Contienda, la rampa al norte de esa cueva, la entrada de la Cuenca Arenosa y la Bahía Circular. Paso a paso: 1) Mostaz te pide que Kubfu sea tu mejor amigo: llévalo en el equipo. 2) Visita a los alumnos repartidos por los cuatro puntos y habla con ellos para entrenarlo. 3) Vuelve al dojo y habla con Mostaz: te lleva ante las Torres Pugna para que elijas una. Consejo: no lleves equipada una Piedra Eterna en Kubfu si quieres que evolucione al final de la torre. Fuente: Serebii «Mustard»; WikiDex «Dojo Maestro»."
+    },
+    {
+     "objetivo": "pokemon-892"
+    },
+    {
+     "titulo": "Urshifu Gigamax: Maxipanal y combate final con Mostaz",
+     "texto": "Cuándo: siendo campeón y con Kubfu ya evolucionado. Dónde: Dojo Maestro e Isla Melosa. Paso a paso: 1) Entra en el dojo: Paul está con Mostaz, que te cuenta que Urshifu puede gigamaxizarse pero falta un ingrediente. 2) Consigue un Maxipanal: sale como recompensa de las incursiones Dinamax de Combee o Vespiquen de la Isla Melosa. 3) Da 3 Maxisetas y el Maxipanal al ayudante de cocina: tu Urshifu recibe el factor Gigamax. 4) Mostaz te reta con el Urshifu del estilo contrario, también Gigamax; al ganarle termina la historia de la isla y desde entonces puedes repetir el combate una vez al día. Consejo: terminar esta historia es una de las siete estrellas de la tarjeta de liga. Fuente: Serebii «Mustard» y «Max Soup»; WikiDex «Maxipanal»."
+    },
+    {
+     "objetivo": "restricted-sparring"
+    },
+    {
+     "objetivo": "dojo-watts"
+    }
+   ]
+  },
+  "SWORD-09": {
+   "bloques": [
+    {
+     "titulo": "Llegar a las Nieves de la Corona y conocer a Peony",
+     "texto": "Cuándo: con el Pase de expansión; las capturas legendarias piden ser campeón. Dónde: Estación de Pueblo Par, Campo Deslizante, Supernido Dinamax y Villa Helada. Paso a paso: 1) Enseña el Pase Corona al revisor de la Estación de Pueblo Par: llegas al Campo Deslizante y la Pokédex se amplía con la Pokédex Corona (210 especies). 2) Peony discute con su hija Ariette; Peony te reta a un combate al que debes ganar. 3) Sigue a Peony hasta el Supernido Dinamax y ayúdale en la primera Aventura Dinamax. 4) Ve a la base de Peony en Villa Helada: te nombra comandante, te da el uniforme de expedición y las tres leyendas, y al empezar la primera te entrega una Master Ball. Consejo: el alcalde de Villa Helada te da un jersey y permite que tu primer Pokémon camine a tu lado; esto hace falta para abrir las Ruinas Iceberg. Fuente: WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Las nieves de la corona»."
+    },
+    {
+     "objetivo": "pokemon-898"
+    },
+    {
+     "objetivo": "pokemon-896"
+    },
+    {
+     "objetivo": "pokemon-897"
+    },
+    {
+     "objetivo": "pokemon-379"
+    },
+    {
+     "objetivo": "pokemon-378"
+    },
+    {
+     "objetivo": "pokemon-377"
+    },
+    {
+     "objetivo": "pokemon-894"
+    },
+    {
+     "objetivo": "pokemon-895"
+    },
+    {
+     "titulo": "Leyenda de las aves: Colina del Maxiárbol",
+     "texto": "Cuándo: en cualquier momento tras recibir las leyendas de Peony. Dónde: Colina del Maxiárbol, junto al Lago Bolaguna. Paso a paso: 1) Cruza el Lecho del Gigante hacia el Lago Bolaguna y sube a la Colina del Maxiárbol. 2) Verás a Articuno, Zapdos y Moltres de Galar peleando por los frutos del árbol; la llamada de Peony los asusta y cada uno huye a una zona. 3) Articuno queda en las Nieves de la Corona, Zapdos en el Área Silvestre de Galar y Moltres en la Isla de la Armadura: los tres se pueden capturar. Consejo: si huyes o debilitas a una de las aves, vuelve a aparecer en su zona; guarda antes de cada combate. Fuente: Serebii «A Legendary Tree of a Legendary Three»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Las nieves de la corona»."
+    },
+    {
+     "titulo": "Articuno de Galar (nivel 70)",
+     "texto": "Cuándo: tras ver a las aves en la Colina del Maxiárbol. Dónde: Nieves de la Corona: vuela por varias zonas (por ejemplo, cerca de Villa Helada, sobre las Ruinas Iceberg o en el Lecho del Gigante junto al Viejo Cementerio). Paso a paso: 1) Búscalo volando por las Nieves de la Corona. 2) Bájate de la bici y acércate: crea ilusiones de sí mismo que giran a su alrededor. 3) Toca la que sea el verdadero (no le quites la vista de encima mientras se desdobla); entonces te ataca y puedes capturarlo. Consejo: si tocas una ilusión desaparece y tienes que volver a encontrarlo. Fuente: Serebii «A Legendary Tree of a Legendary Three»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Las nieves de la corona»."
+    },
+    {
+     "titulo": "Zapdos de Galar (nivel 70)",
+     "texto": "Cuándo: tras ver a las aves en la Colina del Maxiárbol. Dónde: Área Silvestre de Galar. Paso a paso: 1) Busca a Zapdos corriendo por el Área Silvestre. 2) Persíguelo en la Bici Rotom hasta que se canse. 3) Cuando lo alcances empieza el combate: captúralo. Consejo: mejora la bici al máximo con vatios en el Área Silvestre antes de perseguirlo. Fuente: Serebii «A Legendary Tree of a Legendary Three»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Las nieves de la corona»."
+    },
+    {
+     "titulo": "Moltres de Galar (nivel 70)",
+     "texto": "Cuándo: tras ver a las aves en la Colina del Maxiárbol. Dónde: Isla de la Armadura (por ejemplo, sobre la playa cercana a la Estación Armadura o en la isla central de la Bahía Circular). Paso a paso: 1) Viaja a la Isla de la Armadura y busca a Moltres volando en círculos. 2) No intentes seguirlo por detrás: adelántate a su ruta y espera a que pase. 3) Llama su atención con el silbato o el timbre de la bici: te ataca y puedes capturarlo. Consejo: viaja en taxi volador hasta la Estación Armadura y espera en el acantilado junto al dojo. Fuente: Serebii «A Legendary Tree of a Legendary Three»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Las nieves de la corona»."
+    },
+    {
+     "objetivo": "pokemon-486"
+    },
+    {
+     "titulo": "Aventuras Dinamax en el Supernido",
+     "texto": "Cuándo: desde el primer encuentro con Peony; el modo infinito, tras terminar la historia del DLC y 3 aventuras. Dónde: Supernido Dinamax, en el Campo Deslizante. Paso a paso: 1) Habla con la científica de la entrada; puedes ir con hasta tres jugadores o con tres compañeros de la CPU. 2) Elige un Pokémon de alquiler (no se usan los tuyos) y el camino: son 4 incursiones seguidas, la última contra un legendario. 3) La vida y los PP no se recuperan entre incursiones (solo con las bayas del camino) y el grupo tiene 4 vidas en total. 4) Todo Pokémon derrotado se captura siempre, con cualquier Poké Ball; al final te quedas con uno de los capturados y recibes Maxinium. Consejo: Ariette, a cambio de 5 Maxinium, te dice qué legendario espera al final; reiniciar la consola en mitad de la aventura tiene penalización. Fuente: WikiDex «Aventura Dinamax» y «Supernido Dinamax»."
+    },
+    {
+     "objetivo": "pokemon-803"
+    },
+    {
+     "objetivo": "footprints"
+    },
+    {
+     "objetivo": "pokemon-638"
+    },
+    {
+     "objetivo": "pokemon-639"
+    },
+    {
+     "objetivo": "pokemon-640"
+    },
+    {
+     "objetivo": "pokemon-647"
+    },
+    {
+     "objetivo": "event-1"
+    }
+   ]
+  },
+  "SWORD-10": {
+   "bloques": [
+    {
+     "objetivo": "pokemon-772"
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "titulo": "Función Juez en las cajas del PC",
+     "texto": "Cuándo: al llegar por primera vez al rango 4 (nivel Normal) de la Torre Batalla, en individual o en dobles. Dónde: Torre Batalla de Ciudad Puntera; luego, en cualquier caja del PC. Paso a paso: 1) Gana combates en la Torre Batalla hasta subir del rango 3 al rango 4. 2) Al volver a recepción recibes los premios del rango (5 PB, 2 caramelos raros, una menta y una chapa plateada) y se activa la función Juez. 3) Abre una caja del PC y cambia la vista con los botones superiores: el Juez valora los IV de cada estadística, para saber cuáles merece la pena mejorar con chapas. Consejo: con esta vista puedes elegir los padres para la cría sin calcular nada. Fuente: WikiDex «Torre Batalla (Galar)»; Serebii «Battle Tower»."
+    },
+    {
+     "titulo": "Recordador de movimientos y entrenamiento extremo",
+     "texto": "Cuándo: tras ser campeón (el recordador está disponible antes; el entrenamiento extremo, en la Torre Batalla). Dónde: cualquier Centro Pokémon de Galar y mostrador de la Torre Batalla de Ciudad Puntera. Paso a paso: 1) En cualquier Centro Pokémon, el recordador de movimientos enseña gratis los movimientos olvidados (también los aprendidos con DT ya gastadas). 2) Sube el Pokémon que quieras mejorar al nivel 100 (caramelos raros, caramelos de experiencia). 3) En la Torre Batalla, el empleado del entrenamiento extremo sube a 31 una estadística por chapa plateada o todas con una chapa dorada. 4) Recuerda que la cría hereda los IV originales, no los mejorados. Consejo: las chapas salen como premio de rango y por número de victorias en la Torre Batalla, y también se canjean por 25 PB. Fuente: WikiDex «Entrenamiento extremo», «Recuerda-Movimientos» y «Torre Batalla (Galar)»."
+    },
+    {
+     "titulo": "Revanchas de la Copa de Campeones (torneo de liga)",
+     "texto": "Cuándo: después de ser campeón; Lionel se puede invitar tras vencerle en la Torre Batalla. Dónde: Estadio de Puntera, en Ciudad Puntera. Paso a paso: 1) Habla con la recepción del estadio para jugar un torneo de liga; puedes invitar a entrenadores de una lista de 10 (líderes, exlíderes y rivales). 2) Supera tres combates en eliminatoria (cuartos, semifinal y final) para conservar el título. 3) Bolifacio te da un premio cada vez que lo ganas: el primero del día es siempre un Trozo deseo y los siguientes, Poké Balls al azar (entre ellas algunas raras, como la Ente Ball, la Amor Ball o la Luna Ball). Consejo: no es el Torneo Estrellas de Galar del DLC, que va en combates múltiples. Fuente: Serebii «Champion Cup Rematch»; WikiDex «Estadio de Puntera»."
+    },
+    {
+     "titulo": "Especies difíciles de la Pokédex de Galar: fósiles, iniciales y evoluciones por intercambio",
+     "texto": "Cuándo: durante la partida; termínalo antes de ir al Hotel Jonia. Dónde: Ruta 6 (Carmen Babia), Valle Entrepuentes y Cuenca Polvorienta del Área Silvestre, Pueblo Ladera y Centros Pokémon. Paso a paso: 1) En Espada, un hombre del Centro Pokémon de Pueblo Ladera te regala 2 Ornitofósiles; hay 2 Plesiofósiles ocultos al suroeste del Poké Campamento de la Ruta 6, y los Hermanos Pozuelo del Valle Entrepuentes y el suelo de la Cuenca Polvorienta dan más (el Ictiofósil y el Dracofósil son raros en Espada). 2) Lleva una mitad superior (Ornitofósil o Ictiofósil) y una inferior (Plesiofósil o Dracofósil) a Carmen Babia, en la Ruta 6: restaura Dracozolt, Arctozolt, Dracovish o Arctovish según la combinación. 3) Los otros dos iniciales de Galar no se regalan en la historia: consíguelos por intercambio o criando ejemplares de otra partida; el Charmander de Lionel cubre a Charmander, Charmeleon y Charizard. 4) Las evoluciones por intercambio (por ejemplo Gengar, Machamp, Conkeldurr, Gigalith, Gourgeist, Escavalier y Accelgor) necesitan un intercambio local o en línea. Consejo: las exclusivas de Escudo y las evoluciones por intercambio son lo último que suele faltar. Con Pokekeep: las exclusivas de Escudo, los otros iniciales y las evoluciones por intercambio que no puedas hacer, añádelas legales desde la Librería. Fuente: WikiDex «Carmen Babia», «Ornitofósil», «Ictiofósil», «Plesiofósil» y «Dracofósil»."
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "medal-type"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "objetivo": "final-boss"
+    },
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "league-card-stars"
+    },
+    {
+     "titulo": "Torneo Estrellas de Galar",
+     "texto": "Cuándo: con la historia principal, la de la Isla de la Armadura y la de las Nieves de la Corona terminadas: Lionel te llama para la inauguración. Dónde: Estadio de Puntera, en Ciudad Puntera. Paso a paso: 1) Atiende la llamada de Lionel y ve al Estadio de Puntera. 2) Elige compañero: al principio solo puedes escoger entre Paul y Roxy; cada torneo que ganas desbloquea más compañeros, hasta 17. 3) Juega el torneo: eliminatoria directa en combates múltiples (dos entrenadores por bando) contra líderes, exlíderes y rivales de la historia. 4) El primer torneo ganado da 1.000.000 de Pokédólares y cierra el DLC con los créditos; cada victoria posterior da entre 50.000 y 100.000 y el premio de Bolifacio. 5) Con 15 torneos ganados aparecen Tizonio y Dargo, que también pueden ser rivales y compañeros. Consejo: los equipos de los compañeros y rivales están entre los niveles 68 y 74: lleva Pokémon de nivel 75 o más. Fuente: WikiDex «Torneo Estrellas de Galar»; Serebii «Galarian Star Tournament»."
+    },
+    {
+     "titulo": "Combates clasificatorios del Estadio de Combate (en línea)",
+     "texto": "Cuándo: en cualquier momento, con conexión a internet y suscripción a Nintendo Switch Online. Dónde: menú del juego (Conexión Y), opción Estadio de Combate. Paso a paso: 1) Abre el Estadio de Combate y elige Combates clasificatorios, individuales o dobles; cada temporada tiene sus propias reglas, que se descargan al entrar. 2) Gana combates para sumar puntos y subir de categoría (de Principiante a Master Ball); el rango es independiente del de la Torre Batalla. 3) Los Pokémon traídos de otros juegos necesitan el símbolo de autorización de combate, que pone el hombre junto al ascensor de la Torre Batalla (borra sus movimientos y les pone los que aprenden por nivel). Consejo: no es necesario para ningún premio de la Pokédex ni de la tarjeta de liga; depende de que el servicio en línea siga activo. Fuente: Serebii «Battle Stadium» y «Ranked Battle»; WikiDex «Torre Batalla (Galar)» (autorización de combate)."
+    },
+    {
+     "objetivo": "event-0"
+    }
+   ]
+  },
+  "SHIELD-07": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Master Ball de Magnolia y Charmander de Lionel",
+     "texto": "Cuándo: nada más ver los créditos de la Copa de Campeones. Dónde: tu casa y la casa de Paul, en Pueblo Yarda. Paso a paso: 1) Al volver a casa, la Profesora Magnolia te espera con tu madre y te entrega una Master Ball. 2) Entra en la casa de Paul y sube al segundo piso, al cuarto de Lionel. 3) Recoge la Poké Ball que hay junto a la nota: es un Charmander de nivel 5 que podrá gigamaxizarse cuando evolucione a Charizard. Consejo: guarda la Master Ball: no la gastes en Zamazenta si puedes capturarlo con estados alterados, porque en las Nieves de la Corona Peony te dará otra. Fuente: Serebii «Gift Pokémon» (Charmander); Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Combates con Paul y Dargo en el Bosque Oniria",
+     "texto": "Cuándo: justo después de recoger la Master Ball. Dónde: santuario del Bosque Oniria, al fondo del bosque (al norte de Pueblo Yarda). Paso a paso: 1) Recorre el bosque por el mismo camino que en la historia hasta el santuario. 2) Paul te reta: su equipo es de nivel 58 a 60. 3) Sonia te propone devolver el Escudo Oxidado al altar; aparecen Tizonio y Dargo y se los llevan. En Escudo te enfrentas a Dargo (equipo de nivel 60) mientras Paul combate contra el otro. 4) Al ganar recuperas el Escudo Oxidado; Paul pierde su combate y el otro objeto se lo llevan. Ve al laboratorio de Pueblo Par. Consejo: lleva a tu equipo por encima del nivel 60: los combates siguientes del episodio van subiendo hasta el 70. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Pokémon dinamaxizado del Estadio de Hoyuelo (Tsareena)",
+     "texto": "Cuándo: primera parada del episodio, al salir del laboratorio de Pueblo Par. Dónde: Estadio de Hoyuelo, en Pueblo Hoyuelo. Paso a paso: 1) Entra en el estadio: Percy y Nerio están en pleno combate de exhibición. 2) Vence en incursión Dinamax al Tsareena descontrolado con Percy, Nerio y Paul como compañeros. 3) Percy te da su tarjeta de liga rara; Tizonio y Dargo anuncian que seguirán dinamaxizando Pokémon y Sonia te avisa de Amura y Pistón. Consejo: Tsareena es de tipo Planta: lleva un Pokémon de tipo Fuego, Volador o Hielo. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Pokémon dinamaxizado del Estadio de Amura (Gyarados)",
+     "texto": "Cuándo: después de Hoyuelo; puedes hacerlo antes o después de Pistón. Dónde: Estadio de Amura, en Pueblo Amura. Paso a paso: 1) Ve al estadio, donde te espera Cathy. 2) Vence en incursión Dinamax al Gyarados descontrolado con Cathy, Nerio y Paul. 3) Cathy te da su tarjeta de liga rara. Consejo: Gyarados es de tipo Agua y Volador: los ataques de tipo Eléctrico le hacen el cuádruple de daño. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Pokémon dinamaxizado del Estadio de Pistón (Torkoal)",
+     "texto": "Cuándo: después de Hoyuelo; puedes hacerlo antes o después de Amura. Dónde: Estadio de Pistón, en Ciudad Pistón. Paso a paso: 1) Ve al estadio, donde te espera Naboru. 2) Vence en incursión Dinamax al Torkoal descontrolado con Naboru, Nerio y Paul. 3) Naboru te da su tarjeta de liga rara. Cuando tengas hechos Amura y Pistón, Sonia te llama: Tizonio y Dargo están en su laboratorio. Consejo: Torkoal es de tipo Fuego: Agua, Tierra y Roca le hacen mucho daño. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Combate doble contra Tizonio y Dargo en el laboratorio de Sonia",
+     "texto": "Cuándo: tras calmar Amura y Pistón. Dónde: laboratorio de Sonia, en Pueblo Par. Paso a paso: 1) Entra en el laboratorio: Tizonio y Dargo exigen las estrellas deseo. 2) Combate múltiple junto a Paul contra los dos (tres Pokémon cada uno, de nivel 62). 3) Al ganar, la nueva ayudante de Sonia, admiradora de los hermanos, les entrega las estrellas deseo y huyen; los cuatro estadios restantes quedan bajo ataque y puedes hacerlos en el orden que quieras. Consejo: Falinks y Bronzong de Dargo y Golisopod de Tizonio golpean fuerte: un Pokémon de tipo Fuego o Fantasma cubre a la vez a varios de sus Pokémon de tipo Acero y Bicho. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Pokémon dinamaxizado del Estadio de Ladera (Dusknoir)",
+     "texto": "Cuándo: tras el combate del laboratorio; orden libre entre Ladera, Plié, Auriga y Artejo. Dónde: Estadio de Ladera, en Pueblo Ladera. Paso a paso: 1) Ve al estadio: Alistair, Paul y Nerio se reparten varios Pokémon dinamaxizados. 2) A ti te toca el Dusknoir descontrolado: es una incursión Dinamax en la que vas solo con tus compañeros de la CPU. 3) Al ganar, Alistair te da su tarjeta de liga rara. Consejo: Dusknoir es de tipo Fantasma: Fantasma y Siniestro le hacen mucho daño, y los ataques Normal y Lucha no le afectan. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Combate contra Berto en el Estadio de Plié",
+     "texto": "Cuándo: tras el combate del laboratorio; orden libre entre Ladera, Plié, Auriga y Artejo. Dónde: Estadio de Plié, en Pueblo Plié. Paso a paso: 1) Entra en el estadio: Berto, ya líder de gimnasio, ha calmado él solo a los Pokémon dinamaxizados. 2) Te reta para demostrar que es más capaz que tú: Mawile, Gardevoir y Rapidash de nivel 61-62 y Hatterene de nivel 63. 3) Al vencerle, Sally te da su tarjeta de liga rara y la de Berto. Consejo: casi todo su equipo es de tipo Hada o Psíquico: los ataques de tipo Acero y Veneno funcionan muy bien. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Pokémon dinamaxizado del Estadio de Auriga (Froslass)",
+     "texto": "Cuándo: tras el combate del laboratorio; orden libre entre Ladera, Plié, Auriga y Artejo. Dónde: Estadio de Auriga, en Pueblo Auriga. Paso a paso: 1) Ve al estadio: Mel te pide ayuda porque hay varios Pokémon dinamaxizados. 2) Te toca el Froslass descontrolado, en incursión Dinamax. 3) Al ganar, Mel te da su tarjeta de liga rara. Consejo: Froslass es de tipo Hielo y Fantasma: Fuego, Roca, Acero, Fantasma y Siniestro le hacen mucho daño. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Haxorus dinamaxizado de Ciudad Artejo",
+     "texto": "Cuándo: tras el combate del laboratorio; orden libre entre Ladera, Plié, Auriga y Artejo. Dónde: entrada de la Planta Eléctrica y Estadio de Artejo, en Ciudad Artejo. Paso a paso: 1) Sonia te espera a la entrada de la Planta Eléctrica: Tizonio y Dargo están dentro con las estrellas deseo, pero no puede entrar. 2) Antes, ayuda a Roy: vence en incursión Dinamax al Haxorus descontrolado. 3) Roy te da su tarjeta de liga rara. Con los cuatro estadios calmados, la puerta de la planta ya se puede abrir. Consejo: Haxorus es de tipo Dragón: Hada, Hielo y Dragón le hacen mucho daño. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Planta Eléctrica: Dargo y Zacian descontrolado",
+     "texto": "Cuándo: con los ocho estadios ya resueltos. Dónde: Planta Eléctrica de Ciudad Artejo, hasta la azotea. Paso a paso: 1) Habla con Sonia en la entrada: su Yamper abre la puerta. 2) Dentro te reta Dargo con cuatro Pokémon de nivel 64. 3) En la azotea, Zacian está fuera de control por la energía Dinamax: derrótalo (nivel 70). En este combate no se puede capturar. Consejo: cura al equipo entre combate y combate: no hay Centro Pokémon entre la planta y la azotea. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Capturar a Zamazenta (nivel 70)",
+     "texto": "Cuándo: justo después de calmar a Zacian. Dónde: azotea de la Planta Eléctrica de Ciudad Artejo. Paso a paso: 1) Zacian huye y Paul va tras él; Zamazenta se queda y te reta. 2) Debilítalo hasta dejarle poca vida, provócale sueño o parálisis y lanza Ultra Balls, Ocaso Balls o Turno Balls; la Master Ball lo asegura. 3) Al capturarlo lleva equipado el Escudo Oxidado. Tizonio y Dargo prometen enmendarse y Nerio te da su tarjeta de liga rara. Consejo: a diferencia de Eternatus, aquí la captura no está garantizada: guarda antes de entrar en la planta. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Último combate con Paul en el Bosque Oniria",
+     "texto": "Cuándo: en cuanto Paul te llame, después de capturar a Zamazenta. Dónde: santuario del Bosque Oniria. Paso a paso: 1) Ve al santuario: Paul ha calmado y capturado a Zacian. 2) Te reta con su mejor equipo, de nivel 68 a 70, con Zacian de nivel 70. 3) Al ganar te da su tarjeta de liga rara; Paul decide ser profesor y trabajar con Sonia, y el episodio posliga termina. Consejo: Zacian aprende Danza Espada o Defensa Férrea y pega muy fuerte: debilítalo antes de que acumule mejoras. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon»."
+    },
+    {
+     "titulo": "Zacian: el legendario de Espada",
+     "texto": "Cuándo: después de terminar el episodio posliga. Dónde: solo en Espada; en esta partida no se puede capturar. Paso a paso: 1) En Escudo, Zacian solo aparece como rival y en el equipo de Paul. 2) Para registrarlo como capturado necesitas un intercambio con una partida de Espada o pasarlo por Pokémon HOME. 3) Comprueba en la Pokédex que figura como capturado, no solo visto. Consejo: Zacian no es necesario para la Pokédex de Galar, pero sí para tener a los dos héroes. Con Pokekeep: añade a Zacian legal desde la Librería. Fuente: Serebii «Sordward & Shielbert» (Encounter 11)."
+    }
+   ]
+  },
+  "SHIELD-08": {
+   "bloques": [
+    {
+     "titulo": "Viajar a la Isla de la Armadura",
+     "texto": "Cuándo: en cuanto tengas el Pase de expansión (no hace falta ser campeón). Dónde: Estación de Pueblo Par (Ruta 1). Paso a paso: 1) Entra en la estación de Pueblo Par: un Slowpoke de Galar bloquea la entrada; combate contra él y captúralo o derrótalo. 2) Enseña el Pase Armadura al revisor y sube al tren. 3) Llegas a la Estación Armadura, en el Prado Reverencia; la ayudante de Sonia amplía tu Pokédex con la Pokédex Armadura (211 especies). Consejo: el Slowpoke de Galar de la estación es el primero que puedes capturar; luego evoluciona con objetos que se consiguen en la propia isla. Fuente: WikiDex «Guía de Pokémon Espada y Pokémon Escudo/La isla de la armadura» y «Dojo Maestro»."
+    },
+    {
+     "titulo": "Combate con Dreo y entrada en el Dojo Maestro",
+     "texto": "Cuándo: nada más bajar del tren. Dónde: Prado Reverencia y Dojo Maestro. Paso a paso: 1) Al salir de la estación te reta Dreo, aspirante del dojo. 2) Ve al Dojo Maestro: Tania, la patrona, te recibe e Idrán te entrega el Amuleto Exp. 3) Mostaz te reta a un combate; al ganarle eres alumno del dojo y recibes el uniforme. Consejo: el Amuleto Exp. aumenta la experiencia que gana todo el equipo: llévalo ya activo para el resto del DLC. Fuente: WikiDex «Dojo Maestro»; Serebii «Mustard»."
+    },
+    {
+     "objetivo": "alolan-diglett"
+    },
+    {
+     "titulo": "Primera prueba: los Slowpoke de Galar y el Bulbasaur o Squirtle Gigamax",
+     "texto": "Cuándo: después de hacerte alumno del dojo. Dónde: Humedal Frescor, saliendo del dojo hacia el oeste. Paso a paso: 1) Los tres Slowpoke de Galar han robado el uniforme de Dreo: sigue la polvareda que levantan. 2) Alcánzalos y véncelos a los tres (no se pueden capturar y tienen la Velocidad muy subida). 3) Vuelve al dojo: Tania te deja elegir un Bulbasaur o un Squirtle de nivel 5 con factor Gigamax. Solo puedes quedarte con uno. Consejo: el que no elijas no se consigue en esta partida: guarda antes de elegir. Con Pokekeep: si quieres el otro inicial de Kanto con factor Gigamax, añádelo legal desde la Librería. Fuente: WikiDex «Dojo Maestro»; Serebii «Gift Pokémon»."
+    },
+    {
+     "titulo": "Segunda prueba: Maxisetas y Maxisopa",
+     "texto": "Cuándo: después de la primera prueba. Dónde: Llano Entrenamiento y Gruta Calentamiento, al norte del dojo. Paso a paso: 1) Mostaz explica que las Maxisetas del Bosque Concentración se las comieron los Greedent: ve a la Gruta Calentamiento. 2) Al intentar coger las Maxisetas aparece Dreo y te reta por ellas: gánale. 3) En el dojo se prepara la primera Maxisopa; desde entonces el ayudante de cocina prepara otra con 3 Maxisetas para dar o quitar el factor Gigamax. Consejo: las Maxisetas reaparecen en la Cueva Contienda, la Cueva Tenacidad, el Bosque Concentración y la Gruta Calentamiento tras hacer incursiones Dinamax en la isla (unas 3 incursiones por seta). Fuente: WikiDex «Dojo Maestro»; Serebii «Max Soup»."
+    },
+    {
+     "objetivo": "pokemon-891"
+    },
+    {
+     "titulo": "Entrenar a Kubfu con los alumnos de Mostaz",
+     "texto": "Cuándo: en cuanto recibas a Kubfu. Dónde: Cueva Contienda, la rampa al norte de esa cueva, la entrada de la Cuenca Arenosa y la Bahía Circular. Paso a paso: 1) Mostaz te pide que Kubfu sea tu mejor amigo: llévalo en el equipo. 2) Visita a los alumnos repartidos por los cuatro puntos y habla con ellos para entrenarlo. 3) Vuelve al dojo y habla con Mostaz: te lleva ante las Torres Pugna para que elijas una. Consejo: no lleves equipada una Piedra Eterna en Kubfu si quieres que evolucione al final de la torre. Fuente: Serebii «Mustard»; WikiDex «Dojo Maestro»."
+    },
+    {
+     "objetivo": "pokemon-892"
+    },
+    {
+     "titulo": "Urshifu Gigamax: Maxipanal y combate final con Mostaz",
+     "texto": "Cuándo: siendo campeón y con Kubfu ya evolucionado. Dónde: Dojo Maestro e Isla Melosa. Paso a paso: 1) Entra en el dojo: Paul está con Mostaz, que te cuenta que Urshifu puede gigamaxizarse pero falta un ingrediente. 2) Consigue un Maxipanal: sale como recompensa de las incursiones Dinamax de Combee o Vespiquen de la Isla Melosa. 3) Da 3 Maxisetas y el Maxipanal al ayudante de cocina: tu Urshifu recibe el factor Gigamax. 4) Mostaz te reta con el Urshifu del estilo contrario, también Gigamax; al ganarle termina la historia de la isla y desde entonces puedes repetir el combate una vez al día. Consejo: terminar esta historia es una de las siete estrellas de la tarjeta de liga. Fuente: Serebii «Mustard» y «Max Soup»; WikiDex «Maxipanal»."
+    },
+    {
+     "objetivo": "restricted-sparring"
+    },
+    {
+     "objetivo": "dojo-watts"
+    }
+   ]
+  },
+  "SHIELD-09": {
+   "bloques": [
+    {
+     "titulo": "Llegar a las Nieves de la Corona y conocer a Peony",
+     "texto": "Cuándo: con el Pase de expansión; las capturas legendarias piden ser campeón. Dónde: Estación de Pueblo Par, Campo Deslizante, Supernido Dinamax y Villa Helada. Paso a paso: 1) Enseña el Pase Corona al revisor de la Estación de Pueblo Par: llegas al Campo Deslizante y la Pokédex se amplía con la Pokédex Corona (210 especies). 2) Peony discute con su hija Ariette; Peony te reta a un combate al que debes ganar. 3) Sigue a Peony hasta el Supernido Dinamax y ayúdale en la primera Aventura Dinamax. 4) Ve a la base de Peony en Villa Helada: te nombra comandante, te da el uniforme de expedición y las tres leyendas, y al empezar la primera te entrega una Master Ball. Consejo: el alcalde de Villa Helada te da un jersey y permite que tu primer Pokémon camine a tu lado; esto hace falta para abrir las Ruinas Iceberg. Fuente: WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Las nieves de la corona»."
+    },
+    {
+     "objetivo": "pokemon-898"
+    },
+    {
+     "objetivo": "pokemon-896"
+    },
+    {
+     "objetivo": "pokemon-897"
+    },
+    {
+     "objetivo": "pokemon-379"
+    },
+    {
+     "objetivo": "pokemon-378"
+    },
+    {
+     "objetivo": "pokemon-377"
+    },
+    {
+     "objetivo": "pokemon-894"
+    },
+    {
+     "objetivo": "pokemon-895"
+    },
+    {
+     "titulo": "Leyenda de las aves: Colina del Maxiárbol",
+     "texto": "Cuándo: en cualquier momento tras recibir las leyendas de Peony. Dónde: Colina del Maxiárbol, junto al Lago Bolaguna. Paso a paso: 1) Cruza el Lecho del Gigante hacia el Lago Bolaguna y sube a la Colina del Maxiárbol. 2) Verás a Articuno, Zapdos y Moltres de Galar peleando por los frutos del árbol; la llamada de Peony los asusta y cada uno huye a una zona. 3) Articuno queda en las Nieves de la Corona, Zapdos en el Área Silvestre de Galar y Moltres en la Isla de la Armadura: los tres se pueden capturar. Consejo: si huyes o debilitas a una de las aves, vuelve a aparecer en su zona; guarda antes de cada combate. Fuente: Serebii «A Legendary Tree of a Legendary Three»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Las nieves de la corona»."
+    },
+    {
+     "titulo": "Articuno de Galar (nivel 70)",
+     "texto": "Cuándo: tras ver a las aves en la Colina del Maxiárbol. Dónde: Nieves de la Corona: vuela por varias zonas (por ejemplo, cerca de Villa Helada, sobre las Ruinas Iceberg o en el Lecho del Gigante junto al Viejo Cementerio). Paso a paso: 1) Búscalo volando por las Nieves de la Corona. 2) Bájate de la bici y acércate: crea ilusiones de sí mismo que giran a su alrededor. 3) Toca la que sea el verdadero (no le quites la vista de encima mientras se desdobla); entonces te ataca y puedes capturarlo. Consejo: si tocas una ilusión desaparece y tienes que volver a encontrarlo. Fuente: Serebii «A Legendary Tree of a Legendary Three»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Las nieves de la corona»."
+    },
+    {
+     "titulo": "Zapdos de Galar (nivel 70)",
+     "texto": "Cuándo: tras ver a las aves en la Colina del Maxiárbol. Dónde: Área Silvestre de Galar. Paso a paso: 1) Busca a Zapdos corriendo por el Área Silvestre. 2) Persíguelo en la Bici Rotom hasta que se canse. 3) Cuando lo alcances empieza el combate: captúralo. Consejo: mejora la bici al máximo con vatios en el Área Silvestre antes de perseguirlo. Fuente: Serebii «A Legendary Tree of a Legendary Three»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Las nieves de la corona»."
+    },
+    {
+     "titulo": "Moltres de Galar (nivel 70)",
+     "texto": "Cuándo: tras ver a las aves en la Colina del Maxiárbol. Dónde: Isla de la Armadura (por ejemplo, sobre la playa cercana a la Estación Armadura o en la isla central de la Bahía Circular). Paso a paso: 1) Viaja a la Isla de la Armadura y busca a Moltres volando en círculos. 2) No intentes seguirlo por detrás: adelántate a su ruta y espera a que pase. 3) Llama su atención con el silbato o el timbre de la bici: te ataca y puedes capturarlo. Consejo: viaja en taxi volador hasta la Estación Armadura y espera en el acantilado junto al dojo. Fuente: Serebii «A Legendary Tree of a Legendary Three»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Las nieves de la corona»."
+    },
+    {
+     "objetivo": "pokemon-486"
+    },
+    {
+     "titulo": "Aventuras Dinamax en el Supernido",
+     "texto": "Cuándo: desde el primer encuentro con Peony; el modo infinito, tras terminar la historia del DLC y 3 aventuras. Dónde: Supernido Dinamax, en el Campo Deslizante. Paso a paso: 1) Habla con la científica de la entrada; puedes ir con hasta tres jugadores o con tres compañeros de la CPU. 2) Elige un Pokémon de alquiler (no se usan los tuyos) y el camino: son 4 incursiones seguidas, la última contra un legendario. 3) La vida y los PP no se recuperan entre incursiones (solo con las bayas del camino) y el grupo tiene 4 vidas en total. 4) Todo Pokémon derrotado se captura siempre, con cualquier Poké Ball; al final te quedas con uno de los capturados y recibes Maxinium. Consejo: Ariette, a cambio de 5 Maxinium, te dice qué legendario espera al final; reiniciar la consola en mitad de la aventura tiene penalización. Fuente: WikiDex «Aventura Dinamax» y «Supernido Dinamax»."
+    },
+    {
+     "objetivo": "pokemon-803"
+    },
+    {
+     "objetivo": "footprints"
+    },
+    {
+     "objetivo": "pokemon-638"
+    },
+    {
+     "objetivo": "pokemon-639"
+    },
+    {
+     "objetivo": "pokemon-640"
+    },
+    {
+     "objetivo": "pokemon-647"
+    },
+    {
+     "objetivo": "event-1"
+    }
+   ]
+  },
+  "SHIELD-10": {
+   "bloques": [
+    {
+     "objetivo": "pokemon-772"
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "titulo": "Función Juez en las cajas del PC",
+     "texto": "Cuándo: al llegar por primera vez al rango 4 (nivel Normal) de la Torre Batalla, en individual o en dobles. Dónde: Torre Batalla de Ciudad Puntera; luego, en cualquier caja del PC. Paso a paso: 1) Gana combates en la Torre Batalla hasta subir del rango 3 al rango 4. 2) Al volver a recepción recibes los premios del rango (5 PB, 2 caramelos raros, una menta y una chapa plateada) y se activa la función Juez. 3) Abre una caja del PC y cambia la vista con los botones superiores: el Juez valora los IV de cada estadística, para saber cuáles merece la pena mejorar con chapas. Consejo: con esta vista puedes elegir los padres para la cría sin calcular nada. Fuente: WikiDex «Torre Batalla (Galar)»; Serebii «Battle Tower»."
+    },
+    {
+     "titulo": "Recordador de movimientos y entrenamiento extremo",
+     "texto": "Cuándo: tras ser campeón (el recordador está disponible antes; el entrenamiento extremo, en la Torre Batalla). Dónde: cualquier Centro Pokémon de Galar y mostrador de la Torre Batalla de Ciudad Puntera. Paso a paso: 1) En cualquier Centro Pokémon, el recordador de movimientos enseña gratis los movimientos olvidados (también los aprendidos con DT ya gastadas). 2) Sube el Pokémon que quieras mejorar al nivel 100 (caramelos raros, caramelos de experiencia). 3) En la Torre Batalla, el empleado del entrenamiento extremo sube a 31 una estadística por chapa plateada o todas con una chapa dorada. 4) Recuerda que la cría hereda los IV originales, no los mejorados. Consejo: las chapas salen como premio de rango y por número de victorias en la Torre Batalla, y también se canjean por 25 PB. Fuente: WikiDex «Entrenamiento extremo», «Recuerda-Movimientos» y «Torre Batalla (Galar)»."
+    },
+    {
+     "titulo": "Revanchas de la Copa de Campeones (torneo de liga)",
+     "texto": "Cuándo: después de ser campeón; Lionel se puede invitar tras vencerle en la Torre Batalla. Dónde: Estadio de Puntera, en Ciudad Puntera. Paso a paso: 1) Habla con la recepción del estadio para jugar un torneo de liga; puedes invitar a entrenadores de una lista de 10 (líderes, exlíderes y rivales). 2) Supera tres combates en eliminatoria (cuartos, semifinal y final) para conservar el título. 3) Bolifacio te da un premio cada vez que lo ganas: el primero del día es siempre un Trozo deseo y los siguientes, Poké Balls al azar (entre ellas algunas raras, como la Ente Ball, la Amor Ball o la Luna Ball). Consejo: no es el Torneo Estrellas de Galar del DLC, que va en combates múltiples. Fuente: Serebii «Champion Cup Rematch»; WikiDex «Estadio de Puntera»."
+    },
+    {
+     "titulo": "Especies difíciles de la Pokédex de Galar: fósiles, iniciales y evoluciones por intercambio",
+     "texto": "Cuándo: durante la partida; termínalo antes de ir al Hotel Jonia. Dónde: Ruta 6 (Carmen Babia), Valle Entrepuentes y Cuenca Polvorienta del Área Silvestre, Pueblo Ladera y Centros Pokémon. Paso a paso: 1) En Escudo, un hombre del Centro Pokémon de Pueblo Ladera te regala 2 Dracofósiles; hay 2 Ictiofósiles ocultos al sureste del Poké Campamento de la Ruta 6, y los Hermanos Pozuelo del Valle Entrepuentes y el suelo de la Cuenca Polvorienta dan más (el Ornitofósil y el Plesiofósil son raros en Escudo). 2) Lleva una mitad superior (Ornitofósil o Ictiofósil) y una inferior (Plesiofósil o Dracofósil) a Carmen Babia, en la Ruta 6: restaura Dracozolt, Arctozolt, Dracovish o Arctovish según la combinación. 3) Los otros dos iniciales de Galar no se regalan en la historia: consíguelos por intercambio o criando ejemplares de otra partida; el Charmander de Lionel cubre a Charmander, Charmeleon y Charizard. 4) Las evoluciones por intercambio (por ejemplo Gengar, Machamp, Conkeldurr, Gigalith, Gourgeist, Escavalier y Accelgor) necesitan un intercambio local o en línea. Consejo: las exclusivas de Espada y las evoluciones por intercambio son lo último que suele faltar. Con Pokekeep: las exclusivas de Espada, los otros iniciales y las evoluciones por intercambio que no puedas hacer, añádelas legales desde la Librería. Fuente: WikiDex «Carmen Babia», «Ornitofósil», «Ictiofósil», «Plesiofósil» y «Dracofósil»."
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "medal-type"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "objetivo": "final-boss"
+    },
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "league-card-stars"
+    },
+    {
+     "titulo": "Torneo Estrellas de Galar",
+     "texto": "Cuándo: con la historia principal, la de la Isla de la Armadura y la de las Nieves de la Corona terminadas: Lionel te llama para la inauguración. Dónde: Estadio de Puntera, en Ciudad Puntera. Paso a paso: 1) Atiende la llamada de Lionel y ve al Estadio de Puntera. 2) Elige compañero: al principio solo puedes escoger entre Paul y Roxy; cada torneo que ganas desbloquea más compañeros, hasta 17. 3) Juega el torneo: eliminatoria directa en combates múltiples (dos entrenadores por bando) contra líderes, exlíderes y rivales de la historia. 4) El primer torneo ganado da 1.000.000 de Pokédólares y cierra el DLC con los créditos; cada victoria posterior da entre 50.000 y 100.000 y el premio de Bolifacio. 5) Con 15 torneos ganados aparecen Tizonio y Dargo, que también pueden ser rivales y compañeros. Consejo: los equipos de los compañeros y rivales están entre los niveles 68 y 74: lleva Pokémon de nivel 75 o más. Fuente: WikiDex «Torneo Estrellas de Galar»; Serebii «Galarian Star Tournament»."
+    },
+    {
+     "titulo": "Combates clasificatorios del Estadio de Combate (en línea)",
+     "texto": "Cuándo: en cualquier momento, con conexión a internet y suscripción a Nintendo Switch Online. Dónde: menú del juego (Conexión Y), opción Estadio de Combate. Paso a paso: 1) Abre el Estadio de Combate y elige Combates clasificatorios, individuales o dobles; cada temporada tiene sus propias reglas, que se descargan al entrar. 2) Gana combates para sumar puntos y subir de categoría (de Principiante a Master Ball); el rango es independiente del de la Torre Batalla. 3) Los Pokémon traídos de otros juegos necesitan el símbolo de autorización de combate, que pone el hombre junto al ascensor de la Torre Batalla (borra sus movimientos y les pone los que aprenden por nivel). Consejo: no es necesario para ningún premio de la Pokédex ni de la tarjeta de liga; depende de que el servicio en línea siga activo. Fuente: Serebii «Battle Stadium» y «Ranked Battle»; WikiDex «Torre Batalla (Galar)» (autorización de combate)."
+    },
+    {
+     "objetivo": "event-0"
+    }
+   ]
+  },
+  "BD-11": {
+   "bloques": [
+    {
+     "titulo": "Pokédex Nacional del Profesor Oak",
+     "texto": "Cuándo: después del Hall de la Fama. Dónde: laboratorio del Profesor Serbal, en Pueblo Arena. Paso a paso: 1) Registra como vistos los 150 Pokémon de la Pokédex de Sinnoh que no son Manaphy: casi todos se ven combatiendo contra todos los entrenadores, y el legendario de la otra edición se ve en Pueblo Caelestis durante la historia. 2) Ve al laboratorio de Pueblo Arena y habla con el Profesor Serbal: aparece el Profesor Oak y te entrega la Pokédex Nacional. 3) Serbal te da además el Pokéradar. 4) Desde ese momento se abren el barco a la Bahía Gresca, el Parque Hansa, los enjambres y más especies en las Grutas del Subsuelo, y las revanchas de líderes y Alto Mando llevan Pokémon nuevos. Consejo: para este desbloqueo basta con ver las especies; capturarlas solo hace falta para los premios de la Nacional. Fuente: Serebii «National Pokédex» y «Poké Radar» (Brilliant Diamond & Shining Pearl)."
+    },
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Barco a la Bahía Gresca: Zona Combate y Parque Batalla",
+     "texto": "Cuándo: con la Pokédex Nacional. Dónde: puerto de Ciudad Puntaneva y Zona Combate (Bahía Gresca). Paso a paso: 1) Ve al puerto de Ciudad Puntaneva y habla con el marinero del barco: te lleva a la Zona Combate. 2) En la Zona Combate, un pescador junto al acceso a la Ruta 225 te regala la Supercaña y una señora de la Tienda Pokémon, el Periscopio. 3) Al noreste está el Parque Batalla, con la Torre Batalla y sus tiendas de PB. 4) Hacia el norte, por la Ruta 225, se llega a la Zona Sobrevivir; la Montaña Dura (Heatran) está más allá, en la Ruta 227. Consejo: el ferry de vuelta a Ciudad Puntaneva está amarrado en el mismo muelle. Fuente: WikiDex «Zona Combate» y «Torre Batalla (Sinnoh/Johto)»; Serebii «Battle Tower» (Brilliant Diamond & Shining Pearl)."
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "objetivo": "pokemon-485"
+    },
+    {
+     "objetivo": "pokemon-487"
+    },
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "pokemon-486"
+    },
+    {
+     "objetivo": "pokemon-488"
+    }
+   ]
+  },
+  "BD-12": {
+   "bloques": [
+    {
+     "titulo": "Kit de Explorador y excavación en las Grutas del Subsuelo",
+     "texto": "Cuándo: desde que llegas a Ciudad Vetusta, durante la historia. Dónde: Ciudad Vetusta (el hombre del subsuelo te da el Kit de Explorador) y las seis zonas de las Grutas del Subsuelo. Paso a paso: 1) Recoge el Kit de Explorador en Ciudad Vetusta y úsalo en cualquier ruta para bajar a las grutas. 2) Pulsa R para activar el radar: las paredes con objetos se iluminan. Acércate y examínalas. 3) Pica la pared con el pico (una casilla) o el martillo (varias, pero agrieta más la pared); evita las barras de hierro, que la dañan mucho. 4) Salen esferas, piedras evolutivas, fósiles, Esquirlas Extrañas (para las losas del Parque Hansa) y cajas con estatuas. 5) Cumple las tareas del hombre del subsuelo: al excavar tu primer objeto te da un Taladro, y al crear y decorar tu base recibes más premios. Consejo: los Diglett y Dugtrio de los pasillos dan 1 y 3 puntos; con 40 en una sesión, durante 4 minutos salen más cajas con estatuas de color y más Pokémon raros. Fuente: Serebii «Grand Underground»; WikiDex «Grutas del Subsuelo»."
+    },
+    {
+     "titulo": "Base Secreta y estatuas",
+     "texto": "Cuándo: en cuanto tengas un Taladro. Dónde: cualquier pared de las Grutas del Subsuelo. Paso a paso: 1) Consigue el Taladro (tarea de excavar un objeto o comprándolo en las grutas) y úsalo en una pared: se abre tu base. 2) Coloca hasta 18 estatuas, siempre que quepan; también puedes ponerlas sobre pedestales. 3) Solo se potencia un tipo, el que más sumen tus estatuas: las grandes cuentan más, las de color el doble y las legendarias el triple; el efecto se nota en las guaridas Pokémon. 4) Amplía la base con los comerciantes de las grutas a cambio de esferas; para moverla de sitio usa otro Taladro. Consejo: las estatuas colocadas y las variantes obtenidas son contadores distintos: para la ficha cuentan las variantes. Fuente: Serebii «Statues» y «Grand Underground»; WikiDex «Grutas del Subsuelo»."
+    },
+    {
+     "objetivo": "card-3"
+    },
+    {
+     "titulo": "Gala Superconcurso: niveles normal, difícil y superior",
+     "texto": "Cuándo: desde que llegas a Ciudad Corazón, durante la historia. Dónde: Auditorio de Ciudad Corazón. Paso a paso: 1) Elige categoría (carisma, belleza, dulzura, ingenio o dureza) y prepara al Pokémon con pokochos que suban esa cualidad. 2) Decora su cápsula con sellos: hasta 20, y los que encajan con la categoría puntúan más. 3) Elige su movimiento de gala (solo uno por gala). 4) La gala tiene tres fases: valoración de estilo (cualidades y sellos), baile (pulsa al ritmo) y movimientos (úsalo cuando su efecto encaje y encadénalo con los demás para hacer combos). 5) Gana para subir de nivel: normal, difícil y superior; hay que quedar primero y que el grupo supere el umbral de puntos. Consejo: un Pokémon solo puede comer pokochos hasta llenar su lustre: usa los de más nivel. Fuente: Serebii «Super Contests»; WikiDex «Súper concurso» (Gala Superconcurso)."
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "titulo": "Pokéradar y enjambres",
+     "texto": "Cuándo: con la Pokédex Nacional. Dónde: hierba alta de las rutas de Sinnoh; para los enjambres, Pueblo Arena. Paso a paso: 1) Usa el Pokéradar en hierba alta: varias matas se agitan. 2) Entra en una mata que se mueve, vence o captura al Pokémon y repite para alargar la cadena; usa Repelente para que no se corte. 3) En la mayoría de rutas hay una especie de fuera de la Pokédex de Sinnoh que solo sale con el Pokéradar; las matas que se agitan con más fuerza tienen 1 entre 128 de traer un Pokémon con habilidad oculta. 4) Para los enjambres, habla en Pueblo Arena con el ayudante del profesor y luego con su hermana; desde entonces el enjambre del día se ve en el mapa. Consejo: el enjambre cambia cada día: consúltalo a diario en el mapa. Fuente: Serebii «Poké Radar» y «Swarms» (Brilliant Diamond & Shining Pearl)."
+    },
+    {
+     "titulo": "Cinta Estelar de los Concursos y gala especial",
+     "texto": "Cuándo: la cinta, en cuanto ganes las cinco categorías en nivel experto; la gala especial, tras vencer al Alto Mando. Dónde: Auditorio de Ciudad Corazón. Paso a paso: 1) Con el mismo Pokémon, gana la gala de nivel experto en las cinco categorías: recibe las cinco Cintas Estrella (del Carisma, de la Belleza, de la Dulzura, del Ingenio y de la Dureza). 2) Con las cinco, ese Pokémon recibe la Cinta Estelar de los Concursos. 3) Tras vencer al Alto Mando se abre una gala especial de Diamante Brillante, solo para Pokémon con esa cinta; no tiene categoría y puntúa el lustre y la cápsula, y compiten entrenadoras como Yasmina o Fantina. 4) Gana su nivel experto: el Pokémon recibe la Cinta Estrella Rutilante. Consejo: la estrella de la ficha solo pide una gala de nivel experto; esto es para completar las cintas. Fuente: Serebii «Super Contests»; WikiDex «Cinta»."
+    },
+    {
+     "objetivo": "card-4"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "objetivo": "diploma-nacional"
+    },
+    {
+     "objetivo": "shiny-charm"
+    },
+    {
+     "objetivo": "final-boss"
+    },
+    {
+     "objetivo": "nurse-gold"
+    },
+    {
+     "objetivo": "event-0"
+    }
+   ]
+  },
+  "SP-11": {
+   "bloques": [
+    {
+     "titulo": "Pokédex Nacional del Profesor Oak",
+     "texto": "Cuándo: después del Hall de la Fama. Dónde: laboratorio del Profesor Serbal, en Pueblo Arena. Paso a paso: 1) Registra como vistos los 150 Pokémon de la Pokédex de Sinnoh que no son Manaphy: casi todos se ven combatiendo contra todos los entrenadores, y el legendario de la otra edición se ve en Pueblo Caelestis durante la historia. 2) Ve al laboratorio de Pueblo Arena y habla con el Profesor Serbal: aparece el Profesor Oak y te entrega la Pokédex Nacional. 3) Serbal te da además el Pokéradar. 4) Desde ese momento se abren el barco a la Bahía Gresca, el Parque Hansa, los enjambres y más especies en las Grutas del Subsuelo, y las revanchas de líderes y Alto Mando llevan Pokémon nuevos. Consejo: para este desbloqueo basta con ver las especies; capturarlas solo hace falta para los premios de la Nacional. Fuente: Serebii «National Pokédex» y «Poké Radar» (Brilliant Diamond & Shining Pearl)."
+    },
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Barco a la Bahía Gresca: Zona Combate y Parque Batalla",
+     "texto": "Cuándo: con la Pokédex Nacional. Dónde: puerto de Ciudad Puntaneva y Zona Combate (Bahía Gresca). Paso a paso: 1) Ve al puerto de Ciudad Puntaneva y habla con el marinero del barco: te lleva a la Zona Combate. 2) En la Zona Combate, un pescador junto al acceso a la Ruta 225 te regala la Supercaña y una señora de la Tienda Pokémon, el Periscopio. 3) Al noreste está el Parque Batalla, con la Torre Batalla y sus tiendas de PB. 4) Hacia el norte, por la Ruta 225, se llega a la Zona Sobrevivir; la Montaña Dura (Heatran) está más allá, en la Ruta 227. Consejo: el ferry de vuelta a Ciudad Puntaneva está amarrado en el mismo muelle. Fuente: WikiDex «Zona Combate» y «Torre Batalla (Sinnoh/Johto)»; Serebii «Battle Tower» (Brilliant Diamond & Shining Pearl)."
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "objetivo": "pokemon-485"
+    },
+    {
+     "objetivo": "pokemon-487"
+    },
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "pokemon-486"
+    },
+    {
+     "objetivo": "pokemon-488"
+    }
+   ]
+  },
+  "SP-12": {
+   "bloques": [
+    {
+     "titulo": "Kit de Explorador y excavación en las Grutas del Subsuelo",
+     "texto": "Cuándo: desde que llegas a Ciudad Vetusta, durante la historia. Dónde: Ciudad Vetusta (el hombre del subsuelo te da el Kit de Explorador) y las seis zonas de las Grutas del Subsuelo. Paso a paso: 1) Recoge el Kit de Explorador en Ciudad Vetusta y úsalo en cualquier ruta para bajar a las grutas. 2) Pulsa R para activar el radar: las paredes con objetos se iluminan. Acércate y examínalas. 3) Pica la pared con el pico (una casilla) o el martillo (varias, pero agrieta más la pared); evita las barras de hierro, que la dañan mucho. 4) Salen esferas, piedras evolutivas, fósiles, Esquirlas Extrañas (para las losas del Parque Hansa) y cajas con estatuas. 5) Cumple las tareas del hombre del subsuelo: al excavar tu primer objeto te da un Taladro, y al crear y decorar tu base recibes más premios. Consejo: los Diglett y Dugtrio de los pasillos dan 1 y 3 puntos; con 40 en una sesión, durante 4 minutos salen más cajas con estatuas de color y más Pokémon raros. Fuente: Serebii «Grand Underground»; WikiDex «Grutas del Subsuelo»."
+    },
+    {
+     "titulo": "Base Secreta y estatuas",
+     "texto": "Cuándo: en cuanto tengas un Taladro. Dónde: cualquier pared de las Grutas del Subsuelo. Paso a paso: 1) Consigue el Taladro (tarea de excavar un objeto o comprándolo en las grutas) y úsalo en una pared: se abre tu base. 2) Coloca hasta 18 estatuas, siempre que quepan; también puedes ponerlas sobre pedestales. 3) Solo se potencia un tipo, el que más sumen tus estatuas: las grandes cuentan más, las de color el doble y las legendarias el triple; el efecto se nota en las guaridas Pokémon. 4) Amplía la base con los comerciantes de las grutas a cambio de esferas; para moverla de sitio usa otro Taladro. Consejo: las estatuas colocadas y las variantes obtenidas son contadores distintos: para la ficha cuentan las variantes. Fuente: Serebii «Statues» y «Grand Underground»; WikiDex «Grutas del Subsuelo»."
+    },
+    {
+     "objetivo": "card-3"
+    },
+    {
+     "titulo": "Gala Superconcurso: niveles normal, difícil y superior",
+     "texto": "Cuándo: desde que llegas a Ciudad Corazón, durante la historia. Dónde: Auditorio de Ciudad Corazón. Paso a paso: 1) Elige categoría (carisma, belleza, dulzura, ingenio o dureza) y prepara al Pokémon con pokochos que suban esa cualidad. 2) Decora su cápsula con sellos: hasta 20, y los que encajan con la categoría puntúan más. 3) Elige su movimiento de gala (solo uno por gala). 4) La gala tiene tres fases: valoración de estilo (cualidades y sellos), baile (pulsa al ritmo) y movimientos (úsalo cuando su efecto encaje y encadénalo con los demás para hacer combos). 5) Gana para subir de nivel: normal, difícil y superior; hay que quedar primero y que el grupo supere el umbral de puntos. Consejo: un Pokémon solo puede comer pokochos hasta llenar su lustre: usa los de más nivel. Fuente: Serebii «Super Contests»; WikiDex «Súper concurso» (Gala Superconcurso)."
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "titulo": "Pokéradar y enjambres",
+     "texto": "Cuándo: con la Pokédex Nacional. Dónde: hierba alta de las rutas de Sinnoh; para los enjambres, Pueblo Arena. Paso a paso: 1) Usa el Pokéradar en hierba alta: varias matas se agitan. 2) Entra en una mata que se mueve, vence o captura al Pokémon y repite para alargar la cadena; usa Repelente para que no se corte. 3) En la mayoría de rutas hay una especie de fuera de la Pokédex de Sinnoh que solo sale con el Pokéradar; las matas que se agitan con más fuerza tienen 1 entre 128 de traer un Pokémon con habilidad oculta. 4) Para los enjambres, habla en Pueblo Arena con el ayudante del profesor y luego con su hermana; desde entonces el enjambre del día se ve en el mapa. Consejo: el enjambre cambia cada día: consúltalo a diario en el mapa. Fuente: Serebii «Poké Radar» y «Swarms» (Brilliant Diamond & Shining Pearl)."
+    },
+    {
+     "titulo": "Cinta Estelar de los Concursos y gala especial",
+     "texto": "Cuándo: la cinta, en cuanto ganes las cinco categorías en nivel experto; la gala especial, tras vencer al Alto Mando. Dónde: Auditorio de Ciudad Corazón. Paso a paso: 1) Con el mismo Pokémon, gana la gala de nivel experto en las cinco categorías: recibe las cinco Cintas Estrella (del Carisma, de la Belleza, de la Dulzura, del Ingenio y de la Dureza). 2) Con las cinco, ese Pokémon recibe la Cinta Estelar de los Concursos. 3) Tras vencer al Alto Mando se abre una gala especial de Perla Reluciente, solo para Pokémon con esa cinta; no tiene categoría y puntúa el lustre y la cápsula, y compiten entrenadoras como Yasmina o Fantina. 4) Gana su nivel experto: el Pokémon recibe la Cinta Estrella Rutilante. Consejo: la estrella de la ficha solo pide una gala de nivel experto; esto es para completar las cintas. Fuente: Serebii «Super Contests»; WikiDex «Cinta»."
+    },
+    {
+     "objetivo": "card-4"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "objetivo": "diploma-nacional"
+    },
+    {
+     "objetivo": "shiny-charm"
+    },
+    {
+     "objetivo": "final-boss"
+    },
+    {
+     "objetivo": "nurse-gold"
+    },
+    {
+     "objetivo": "event-0"
+    }
+   ]
+  }
+ },
+ "corrige": {
+  "SWORD": {
+   "postgame": "Cuándo: después de ser campeón, al terminar los créditos. Dónde: Pueblo Yarda, Bosque Oniria, laboratorio de Pueblo Par, los estadios de Hoyuelo, Amura, Pistón, Ladera, Plié, Auriga y Artejo y la Planta Eléctrica de Ciudad Artejo. Paso a paso: 1) Recoge la Master Ball de Magnolia en tu casa y el Charmander del cuarto de Lionel. 2) En el santuario del Bosque Oniria vence a Paul; Tizonio y Dargo se llevan la Espada y el Escudo oxidados y en Espada te enfrentas a Tizonio. 3) Calma los Pokémon dinamaxizados de Hoyuelo y, en el orden que quieras, de Amura y Pistón. 4) Vence a Tizonio y Dargo en el laboratorio de Sonia junto a Paul. 5) Resuelve Ladera, Plié (combate con Berto), Auriga y Artejo, en el orden que quieras. 6) En la Planta Eléctrica vence a Tizonio y a Zamazenta y captura a Zacian (nivel 70). 7) Vuelve al Bosque Oniria y vence a Paul por última vez: el episodio termina. Consejo: terminar este episodio activa las huellas de Sonia en las Nieves de la Corona; la Torre Batalla y los DLC tienen sus propias misiones. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon».",
+   "battle0": "Cuándo: después de ser campeón de Galar. Dónde: Torre Batalla, en el norte de Ciudad Puntera (la antigua Torre Rose). Paso a paso: 1) Habla con la recepción y elige combates individuales (3 Pokémon) o dobles (4); cada modalidad lleva su propio rango. 2) Los Pokémon de más de nivel 50 bajan a 50, no se pueden repetir especies ni objetos y no se usan objetos de la mochila ni se gana experiencia. 3) Cada victoria da 2 PB; perder no te echa, solo te baja de rango. Los rangos se agrupan en niveles: Principiante (1-3), Normal (4-6), Alto (7-9), Avanzado (10) y Maestro. 4) Al ir a pasar de un nivel al siguiente te reta Lionel con su Charizard Gigamax; los Pokémon que le ganan en el rango 10 reciben la Cinta Maestro de la Torre. 5) La primera vez que alcanzas cada rango en cada modalidad recibes premios: PB, caramelos raros y mentas; en el rango 4, la función Juez; en el 10 y en Maestro, una Cápsula Habilidad, y en Maestro además una chapa dorada. Consejo: si aún no tienes equipo competitivo, el hombre de verde del mostrador de la derecha presta 5 equipos de alquiler. Fuente: WikiDex «Torre Batalla (Galar)»; Serebii «Battle Tower».",
+   "items0": "Cuándo: a lo largo de la historia, del episodio posliga y de los DLC. Dónde: casa de Magnolia (Ruta 2), Planta Eléctrica de Ciudad Artejo, Dojo Maestro e Isla Melosa (Isla de la Armadura), Villa Helada y Supernido Dinamax (Nieves de la Corona). Paso a paso: 1) Maximuñequera: te la dan Magnolia y Sonia en la casa de Magnolia (Ruta 2) tras recibir la carta de recomendación; sin ella no hay Dinamax ni incursiones. 2) La Espada Oxidada: Zacian la lleva equipada al capturarlo en la azotea de la Planta Eléctrica de Ciudad Artejo, durante el episodio posliga. 3) Amuleto Exp.: te lo da Idrán al entrar por primera vez en el Dojo Maestro. 4) Maxisopa: tras la segunda prueba de Mostaz, entrega 3 Maxisetas al ayudante de cocina del dojo para dar o quitar el factor Gigamax; para Urshifu hace falta además un Maxipanal (incursiones de Combee o Vespiquen en la Isla Melosa). 5) Riendas Unión: las fabrica Peony en la casa del alcalde de Villa Helada durante la leyenda de Calyrex; sirven para unir o separar a Calyrex y su corcel. 6) Parche Habilidad y Ente Ball: te los da la científica del Supernido Dinamax cuando enseñas a Peony un Necrozma capturado en una Aventura Dinamax. Consejo: deja un hueco libre en el equipo antes de usar las Riendas Unión para separar a Calyrex. Fuente: web oficial de Pokémon Espada y Pokémon Escudo (swordshield.pokemon.com/es-es); WikiDex «Maximuñequera», «Maxisopa», «Maxipanal» y «Supernido Dinamax»; Serebii «Sordward & Shielbert»."
+  },
+  "SHIELD": {
+   "postgame": "Cuándo: después de ser campeón, al terminar los créditos. Dónde: Pueblo Yarda, Bosque Oniria, laboratorio de Pueblo Par, los estadios de Hoyuelo, Amura, Pistón, Ladera, Plié, Auriga y Artejo y la Planta Eléctrica de Ciudad Artejo. Paso a paso: 1) Recoge la Master Ball de Magnolia en tu casa y el Charmander del cuarto de Lionel. 2) En el santuario del Bosque Oniria vence a Paul; Tizonio y Dargo se llevan la Espada y el Escudo oxidados y en Escudo te enfrentas a Dargo. 3) Calma los Pokémon dinamaxizados de Hoyuelo y, en el orden que quieras, de Amura y Pistón. 4) Vence a Tizonio y Dargo en el laboratorio de Sonia junto a Paul. 5) Resuelve Ladera, Plié (combate con Berto), Auriga y Artejo, en el orden que quieras. 6) En la Planta Eléctrica vence a Dargo y a Zacian y captura a Zamazenta (nivel 70). 7) Vuelve al Bosque Oniria y vence a Paul por última vez: el episodio termina. Consejo: terminar este episodio activa las huellas de Sonia en las Nieves de la Corona; la Torre Batalla y los DLC tienen sus propias misiones. Fuente: Serebii «Sordward & Shielbert»; WikiDex «Guía de Pokémon Espada y Pokémon Escudo/Después de la Liga Pokémon».",
+   "battle0": "Cuándo: después de ser campeón de Galar. Dónde: Torre Batalla, en el norte de Ciudad Puntera (la antigua Torre Rose). Paso a paso: 1) Habla con la recepción y elige combates individuales (3 Pokémon) o dobles (4); cada modalidad lleva su propio rango. 2) Los Pokémon de más de nivel 50 bajan a 50, no se pueden repetir especies ni objetos y no se usan objetos de la mochila ni se gana experiencia. 3) Cada victoria da 2 PB; perder no te echa, solo te baja de rango. Los rangos se agrupan en niveles: Principiante (1-3), Normal (4-6), Alto (7-9), Avanzado (10) y Maestro. 4) Al ir a pasar de un nivel al siguiente te reta Lionel con su Charizard Gigamax; los Pokémon que le ganan en el rango 10 reciben la Cinta Maestro de la Torre. 5) La primera vez que alcanzas cada rango en cada modalidad recibes premios: PB, caramelos raros y mentas; en el rango 4, la función Juez; en el 10 y en Maestro, una Cápsula Habilidad, y en Maestro además una chapa dorada. Consejo: si aún no tienes equipo competitivo, el hombre de verde del mostrador de la derecha presta 5 equipos de alquiler. Fuente: WikiDex «Torre Batalla (Galar)»; Serebii «Battle Tower».",
+   "items0": "Cuándo: a lo largo de la historia, del episodio posliga y de los DLC. Dónde: casa de Magnolia (Ruta 2), Planta Eléctrica de Ciudad Artejo, Dojo Maestro e Isla Melosa (Isla de la Armadura), Villa Helada y Supernido Dinamax (Nieves de la Corona). Paso a paso: 1) Maximuñequera: te la dan Magnolia y Sonia en la casa de Magnolia (Ruta 2) tras recibir la carta de recomendación; sin ella no hay Dinamax ni incursiones. 2) El Escudo Oxidado: Zamazenta lo lleva equipado al capturarlo en la azotea de la Planta Eléctrica de Ciudad Artejo, durante el episodio posliga. 3) Amuleto Exp.: te lo da Idrán al entrar por primera vez en el Dojo Maestro. 4) Maxisopa: tras la segunda prueba de Mostaz, entrega 3 Maxisetas al ayudante de cocina del dojo para dar o quitar el factor Gigamax; para Urshifu hace falta además un Maxipanal (incursiones de Combee o Vespiquen en la Isla Melosa). 5) Riendas Unión: las fabrica Peony en la casa del alcalde de Villa Helada durante la leyenda de Calyrex; sirven para unir o separar a Calyrex y su corcel. 6) Parche Habilidad y Ente Ball: te los da la científica del Supernido Dinamax cuando enseñas a Peony un Necrozma capturado en una Aventura Dinamax. Consejo: deja un hueco libre en el equipo antes de usar las Riendas Unión para separar a Calyrex. Fuente: web oficial de Pokémon Espada y Pokémon Escudo (swordshield.pokemon.com/es-es); WikiDex «Maximuñequera», «Maxisopa», «Maxipanal» y «Supernido Dinamax»; Serebii «Sordward & Shielbert»."
+  },
+  "BD": {
+   "battle0": "Cuándo: después del Hall de la Fama y con la Pokédex Nacional. Dónde: Torre Batalla, en el Parque Batalla de la Zona Combate (barco desde el puerto de Ciudad Puntaneva). Paso a paso: 1) Elige combates individuales (3 Pokémon) o dobles (4); los Pokémon de nivel superior a 50 bajan a 50 durante el reto. 2) Cada ronda son 7 combates y al terminarla recibes PB; puedes parar hasta el quinto combate de la ronda, pero a partir de ahí salir rompe la racha. 3) En la clase normal individual, el As de la Torre Jericor, padre de Israel, te reta en el combate 21 (final de la tercera ronda): derrótale. 4) Mantén la racha hasta el combate 49, donde Jericor vuelve con un equipo más fuerte; con 49 victorias seguidas se abre la clase experto, con rangos del 1 al 10, líderes y Alto Mando al final de cada ronda y de nuevo Jericor. 5) Para la estrella de la ficha de entrenador sigue hasta una racha de 100 victorias seguidas. Consejo: las rachas individual y doble se cuentan por separado; en los dobles de la clase normal no aparece Jericor. Fuente: WikiDex «Torre Batalla (Sinnoh/Johto)»; Serebii «Battle Tower» (Brilliant Diamond & Shining Pearl).",
+   "pokedex": "Cuándo: durante toda la partida; la Pokédex Nacional, tras el Hall de la Fama. Dónde: Sinnoh, Gran Pantano, Grutas del Subsuelo, Parque Hansa y Bahía Gresca; los premios, en el Hotel Gran Lago. Paso a paso: 1) Registra como vistas las 150 especies de la Pokédex de Sinnoh que no son Manaphy y enséñaselas al Profesor Serbal: el Profesor Oak te da la Pokédex Nacional. 2) Captura las especies de otras regiones en las guaridas Pokémon de las Grutas del Subsuelo, el Gran Pantano, con el Pokéradar y en los enjambres que aparecen con la Pokédex Nacional. 3) Captura los legendarios del Parque Hansa con las losas. 4) Habla con los directores del juego del Hotel Gran Lago para el diploma y el Amuleto Iris. 5) Con Pokekeep: las exclusivas de Perla Reluciente y los singulares de evento, añádelos legales desde la Librería. Consejo: con la Pokédex Nacional aparecen más Pokémon en las Grutas del Subsuelo. Fuente: Serebii «National Pokédex»; web oficial de Pokémon Diamante Brillante y Pokémon Perla Reluciente (diamondpearl.pokemon.com/es-es)."
+  },
+  "SP": {
+   "battle0": "Cuándo: después del Hall de la Fama y con la Pokédex Nacional. Dónde: Torre Batalla, en el Parque Batalla de la Zona Combate (barco desde el puerto de Ciudad Puntaneva). Paso a paso: 1) Elige combates individuales (3 Pokémon) o dobles (4); los Pokémon de nivel superior a 50 bajan a 50 durante el reto. 2) Cada ronda son 7 combates y al terminarla recibes PB; puedes parar hasta el quinto combate de la ronda, pero a partir de ahí salir rompe la racha. 3) En la clase normal individual, el As de la Torre Jericor, padre de Israel, te reta en el combate 21 (final de la tercera ronda): derrótale. 4) Mantén la racha hasta el combate 49, donde Jericor vuelve con un equipo más fuerte; con 49 victorias seguidas se abre la clase experto, con rangos del 1 al 10, líderes y Alto Mando al final de cada ronda y de nuevo Jericor. 5) Para la estrella de la ficha de entrenador sigue hasta una racha de 100 victorias seguidas. Consejo: las rachas individual y doble se cuentan por separado; en los dobles de la clase normal no aparece Jericor. Fuente: WikiDex «Torre Batalla (Sinnoh/Johto)»; Serebii «Battle Tower» (Brilliant Diamond & Shining Pearl).",
+   "pokedex": "Cuándo: durante toda la partida; la Pokédex Nacional, tras el Hall de la Fama. Dónde: Sinnoh, Gran Pantano, Grutas del Subsuelo, Parque Hansa y Bahía Gresca; los premios, en el Hotel Gran Lago. Paso a paso: 1) Registra como vistas las 150 especies de la Pokédex de Sinnoh que no son Manaphy y enséñaselas al Profesor Serbal: el Profesor Oak te da la Pokédex Nacional. 2) Captura las especies de otras regiones en las guaridas Pokémon de las Grutas del Subsuelo, el Gran Pantano, con el Pokéradar y en los enjambres que aparecen con la Pokédex Nacional. 3) Captura los legendarios del Parque Hansa con las losas. 4) Habla con los directores del juego del Hotel Gran Lago para el diploma y el Amuleto Iris. 5) Con Pokekeep: las exclusivas de Diamante Brillante y los singulares de evento, añádelos legales desde la Librería. Consejo: con la Pokédex Nacional aparecen más Pokémon en las Grutas del Subsuelo. Fuente: Serebii «National Pokédex»; web oficial de Pokémon Diamante Brillante y Pokémon Perla Reluciente (diamondpearl.pokemon.com/es-es)."
+  }
+ }
+}

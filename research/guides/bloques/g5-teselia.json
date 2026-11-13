@@ -1,0 +1,794 @@
+{
+ "misiones": {
+  "BLACK-10": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Handsome y los seis sabios del Equipo Plasma",
+     "texto": "Cuándo: justo después de los créditos del primer final; el orden de los sabios es libre. Dónde: tu casa de Pueblo Arcilla y seis lugares de Teselia. Paso a paso: 1) Baja de tu cuarto: la «madre» que te habla es Handsome disfrazado. Te regala la Supercaña y te encarga encontrar a los sabios del Equipo Plasma que han huido; Ghechis ha escapado, así que quedan seis. 2) Castillo Ancestral (Zona Desierto, desde la Ruta 4): la Profesora Encina despierta a las estatuas de Darmanitan (nivel 35) con un Caramelo Furia; dentro vence al recluta (Krookodile, nivel 64) y habla con el sabio Ryoku: te da la MT04 (Paz Mental). Tras la puerta donde estaba hay un Volcarona de nivel 70. 3) Ruta 18, al oeste de Pueblo Arcilla (Surf): el sabio Ruga está en la playa suroeste de la isla mayor y te da la MT32 (Doble Equipo). 4) Almacenes Frigoríficos de Ciudad Fayenza: el sabio Menek te da la MT01 (Afilagarras). 5) Ruta 14, entre Pueblo Arenisca y Ciudad Negra: necesitas Cascada (la MO05 está en la Ruta 18); el sabio Giallo te da la MT08 (Corpulencia). 6) Solar de los Sueños, en Ciudad Gres, a mano derecha: el sabio Blau te da la MT75 (Danza Espada). 7) Cueva Electrorroca (al sur de Ciudad Loza): al hablar con el sabio Sumra te atacan dos reclutas (Watchog y Scrafty a nivel 63; Liepard, Garbodor y Liepard a nivel 62); al vencerlos te da la MT69 (Pulimento). Consejo: Handsome aparece cada vez que encuentras a un sabio para llevárselo; en el Castillo Ancestral lleva Ocaso Ball para Volcarona. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» (apartado «Los 7 sabios») y WikiDex «Siete Sabios»."
+    },
+    {
+     "titulo": "Este de Teselia y el tutor de movimientos definitivos (Ruta 13)",
+     "texto": "Cuándo: tras los créditos; el acceso este de Ciudad Caolín ya está abierto. Dónde: Ruta 11, Puente Villa, Ruta 12, Pueblo Ladrillo y Ruta 13. Paso a paso: 1) Sal de Ciudad Caolín por el acceso del este a la Ruta 11: aquí aparecen por primera vez Pokémon de otras regiones (nivel 47-58) y entrenadores de nivel 64-65. 2) Cruza el Puente Villa: en la cuarta casa está el Club de Pesca (si pescas el Pokémon que piden ese día te dan 5 Buceo Ball) y en la sexta te curan. 3) Sigue por la Ruta 12 (MT53, Energibola, en el hueco de la derecha nada más entrar) hasta Pueblo Ladrillo y sal al este a la Ruta 13. 4) En la Ruta 13 no cruces el puente de madera: baja por las escaleras de la izquierda, sigue pegado al muro y baja por la playa; en la casa del anciano te enseña Planta Feroz, Anillo Ígneo o Hidrocañón al inicial totalmente evolucionado de cualquier región, siempre que tenga mucha amistad. 5) Al salir, haz Surf hacia el norte: en la otra casa un hombre te da la Tabla Linfa y la Tabla Draco. Consejo: si el anciano no quiere enseñarle el movimiento, sube la amistad de tu Pokémon y vuelve. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» (Ruta 11 a Ruta 13); Serebii «Move Tutors» (Negro/Blanco)."
+    },
+    {
+     "objetivo": "pokemon-646"
+    },
+    {
+     "objetivo": "final-boss-cynthia"
+    },
+    {
+     "titulo": "MO06 (Buceo) y Ruinas Submarinas de la Bahía Arenisca",
+     "texto": "Cuándo: tras los créditos, al llegar a Pueblo Arenisca por la Ruta 13. Dónde: Pueblo Arenisca y la Bahía Arenisca, al este del pueblo. Paso a paso: 1) Junto a la casa de Cintia (la primera a la izquierda al entrar en el pueblo), una mujer te da la MO06 (Buceo). 2) Con Surf ve hacia el este por la bahía y usa Buceo en la zona de agua más oscura: entras en las Ruinas Submarinas, el único lugar de Teselia donde se bucea. 3) Tienes 500 pasos por visita; al gastarlos una corriente te saca, pero puedes volver cuantas veces quieras. 4) Primera planta: llega a la columna del centro; aquí están 14 tablas para Arceus y varias monedas antiguas. Segunda planta: usa Destello ante la columna para bajar. Tercera planta: usa Fuerza sobre la columna. Cuarta planta: una sala con la reliquia final (una corona). 5) Vende las reliquias (no las tablas) al karateka que está al oeste de la mansión de la familia Finolis, en Pueblo Arenisca: pagan muy bien. Consejo: en la mansión Finolis el niño de la entrada inicia una serie de combates diarios con su familia (niveles 60-65, hasta 21 Pokémon seguidos sin curar); dan mucho dinero y experiencia. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Pueblo Arenisca», «Bahía Arenisca», «Ruinas Submarinas»); Serebii «Abyssal Ruins» (Negro/Blanco)."
+    },
+    {
+     "titulo": "Ciudad Negra (exclusiva de Negro)",
+     "texto": "Cuándo: tras los créditos. Dónde: al sur de la Ruta 14, entre la Ruta 14 y la Ruta 15. Paso a paso: 1) Desde Pueblo Arenisca baja por la Ruta 14 hasta Ciudad Negra. 2) Combate con sus entrenadores: llevan Pokémon totalmente evolucionados de otras regiones, desde nivel 30. 3) En la tienda del centro de la ciudad puedes librar dos combates rotatorios y comprar objetos raros (Pepita, Escama Corazón…); lo que se vende depende de los vecinos que vivan en la ciudad. 4) Un hombre de la tienda te da 10.000 ₽ cuando sumas diez victorias contra los entrenadores de la ciudad y te pide otras diez; cada día te pide lo mismo. 5) Para que los vecinos no se vayan, entra y combate a menudo (cada día que pasa restan puntos); con la Zona Nexo, conectado a un amigo con Blanco, puedes atraer a otros. Consejo: como máximo viven 10 vecinos a la vez; si cambias mucho la hora de la consola la ciudad se queda vacía. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Bosque Blanco/Ciudad Negra»); Serebii «Black City & White Forest» (Negro/Blanco)."
+    },
+    {
+     "titulo": "Laboratorio Transfer: traer Pokémon de la 4.ª generación",
+     "texto": "Cuándo: tras los créditos, con la Pokédex Nacional (Carrasco Encina la activa en tu casa). Dónde: Laboratorio Transfer, en la Ruta 15. Paso a paso: 1) Necesitas dos consolas: una con tu Negro y otra con Diamante, Perla, Platino, Oro HeartGold o Plata SoulSilver. 2) Entra en el laboratorio, escucha la explicación y elige el Pokétransfer: la otra consola recibe un programa por descarga DS. 3) Envía 6 Pokémon cada vez desde las cajas: sin objeto (vuelve a la mochila), sin movimientos de MO, sin huevos y sin el Pichu de orejas picudas. 4) Captúralos en el minijuego disparando Poké Balls con el arco; los que no captures vuelven al juego de origen. 5) Repite sin límite. Consejo: en la misma Ruta 15 una señora te cambia un Rotom por un Ditto. Con Pokekeep: si ya no tienes juegos de 4.ª generación, añade lo que te falte legal desde la Librería. Fuente: Serebii «The PokéTransfer» (Negro/Blanco); WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Ruta 15»)."
+    },
+    {
+     "titulo": "Puente Progreso: las tres esferas del Trío Sombrío",
+     "texto": "Cuándo: tras los créditos, al pasar de la Ruta 15 a la Ruta 16. Dónde: Puente Progreso. Paso a paso: 1) Desde Ciudad Negra cruza la Ruta 15 hasta el puente. 2) A mitad del puente aparece el Trío Sombrío del Equipo Plasma. 3) Te entregan la Diamansfera, la Lustresfera y la Griseosfera. 4) Cuando veas sombras sobre el puente puedes encontrar Swanna o plumas (Pluma Ímpetu, Mente, Aguante y Músculo). Consejo: un señor del puente vende un Magikarp de nivel 5 por 500 ₽. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Puente Progreso»)."
+    },
+    {
+     "titulo": "Cobalion en la Cueva Loza (si aún no lo tienes)",
+     "texto": "Cuándo: desde que tienes Surf; si ya lo capturaste durante la historia, sáltate este bloque. Dónde: Cueva Loza, en la Ruta 6 junto a Ciudad Loza; al fondo, la Estancia Orientación. Paso a paso: 1) Entra en la Cueva Loza con un Pokémon con Surf y otro con Fuerza. 2) Al fondo, en la Estancia Orientación, combate contra Cobalion (nivel 42). 3) Captúralo; si lo debilitaste, vuelve a aparecer después de vencer al Alto Mando. Consejo: guarda antes de hablarle; Terrakion y Virizion aparecen después de haber encontrado a Cobalion. Fuente: Serebii «Legendary Pokémon» (Negro/Blanco); WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Liga Pokémon»."
+    },
+    {
+     "objetivo": "pokemon-639"
+    },
+    {
+     "objetivo": "pokemon-640"
+    },
+    {
+     "titulo": "Tornadus errante",
+     "texto": "Cuándo: con las ocho medallas; al entrar en el acceso a la Ruta 10 la recepcionista avisa de un clima extraño en la Ruta 7. Si ya lo capturaste, sáltate este bloque. Dónde: errante por las rutas de Teselia (nivel 40). Paso a paso: 1) Ve a la Ruta 7 y entra en la casa de la anciana que curaba a tus Pokémon: al salir, Tornadus aparece y huye. 2) Desde entonces vaga por las rutas; los letreros de los accesos indican en qué ruta hay clima extraño. 3) Encuéntralo en la hierba de esa ruta y usa Mal de Ojo, Bloqueo o un Pokémon con Sombra Trampa para que no huya, o la Master Ball. 4) Captúralo. Consejo: lo necesitas, junto a Thundurus, para Landorus. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon»; WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Liga Pokémon»; Serebii «Legendary Pokémon» (Negro/Blanco)."
+    },
+    {
+     "objetivo": "pokemon-642"
+    },
+    {
+     "objetivo": "pokemon-645"
+    },
+    {
+     "titulo": "Gruta Superación (Ruta 9)",
+     "texto": "Cuándo: tras los créditos; antes, un karateka bloquea la entrada. Dónde: Ruta 9, junto a Ciudad Caolín, al final de un camino de hierba algo laberíntico. Paso a paso: 1) Lleva un Pokémon con Destello (la cueva está a oscuras) y otro con Surf. 2) Recorre la entrada y los sótanos 1 y 2: hay Pokémon salvajes desde nivel 48. 3) Vence a sus 5 entrenadores, con Pokémon de nivel 62 o más. 4) Sal cuando tu equipo esté cerca de nivel 70 para la revancha de la Liga. Consejo: en Negro 2/Blanco 2 la entrada está tapada por rocas. Fuente: WikiDex «Gruta Superación»; WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Gruta Superación»)."
+    },
+    {
+     "titulo": "Revancha de la Liga y Campeón Mirto (Hall de la Fama)",
+     "texto": "Cuándo: tras los créditos, cuando tu equipo ronde el nivel 70-75. Dónde: Liga Pokémon, al final de la Calle Victoria. Paso a paso: 1) Vence otra vez al Alto Mando en cualquier orden: Anís (Fantasma), Lotto (Lucha), Catleya (Psíquico) y Aza (Siniestro); cada uno lleva cinco Pokémon a nivel 71 y el último a nivel 73. 2) Sube a la sala del Campeón: Mirto usa Accelgor, Bouffalant, Druddigon, Vanilluxe y Escavalier a nivel 75 y Volcarona a nivel 77. 3) Gánale: entras en el Hall de la Fama y quedan abiertas las revanchas que piden haber vencido a Mirto. Consejo: lleva muchos Revivir y Restaurar Todo; Roca o Agua contra Volcarona, y Bouffalant tiene Herbívoro (no uses Planta). Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Liga Pokémon (segunda vez)»)."
+    },
+    {
+     "titulo": "Revancha diaria: Morimoto (Torre de Game Freak)",
+     "texto": "Cuándo: tras terminar la historia; una vez al día. Dónde: Torre de Game Freak, el primer edificio a la derecha de la Calle Porcelana de Ciudad Porcelana; planta 21 (oficinas). Paso a paso: 1) Sube en ascensor a las oficinas de Game Freak. 2) Habla con Morimoto: combate individual contra Liepard, Swoobat, Simisage, Simisear y Simipour a nivel 75 y Zebstrika a nivel 77 (Serebii da un nivel más a cada uno). 3) Vuelve al día siguiente para repetirlo. Consejo: sus monos llevan Baya Yapati y usan Acróbata; en la misma planta, el Director del Juego entrega los diplomas y otro hombre cambia la música por la de las bases Rocket de Oro HeartGold y Plata SoulSilver. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Cambios después de vencer la Liga Pokémon»); WikiDex «Torre de Game Freak»; Serebii «Sinnoh Champion Cynthia & Designer Morimoto»."
+    },
+    {
+     "titulo": "Revancha diaria: Cheren en la Calle Victoria",
+     "texto": "Cuándo: tras vencer a N y a Ghechis; una vez al día. Dónde: primero en la Ruta 5 y después en la parte superior de la Calle Victoria. Paso a paso: 1) Busca a Cheren en la Ruta 5, donde se ha ido a entrenar. 2) Después se traslada a la zona más alta de la Calle Victoria: habla con él allí. 3) Combate individual: Unfezant, Liepard, Gigalith, Haxorus y el mono elemental a nivel 65 y, a nivel 67, la evolución final del inicial que tiene ventaja sobre el tuyo. 4) Vuelve cada día para repetirlo. Consejo: Haxorus es su Pokémon más peligroso; lleva Hielo o Dragón. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Cambios después de vencer la Liga Pokémon»)."
+    },
+    {
+     "titulo": "Revancha de fin de semana: Bel en Pueblo Arcilla",
+     "texto": "Cuándo: tras vencer al Campeón Mirto; solo los sábados y domingos. Dónde: laboratorio de la Profesora Encina, en Pueblo Arcilla. Paso a paso: 1) Vence a Mirto en la Liga. 2) Un sábado o un domingo entra en el laboratorio de Pueblo Arcilla y habla con Bel. 3) Combate individual: Stoutland, Musharna, Chandelure, Mienshao y un mono elemental a nivel 63 y, a nivel 65, la evolución final del inicial débil frente al tuyo. 4) Vuelve otro fin de semana para repetirlo. Consejo: Chandelure es el que más pega; lleva Agua, Tierra o Roca. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Cambios después de vencer la Liga Pokémon»)."
+    }
+   ]
+  },
+  "BLACK-11": {
+   "bloques": [
+    {
+     "titulo": "Ficha de entrenador: cómo cambia de color",
+     "texto": "Cuándo: desde el principio; se consulta en cualquier momento. Dónde: menú del juego > Ficha de entrenador. Paso a paso: 1) Abre la ficha: empieza de color verde y no tiene estrellas. 2) Cada logro la sube un nivel, en cualquier orden: morada, roja, plata, oro y, con los cinco, negra. 3) Los cinco logros son: superar la Liga Pokémon; la Pokédex Nacional sin los singulares de evento; todos los complementos del Musical; 49 victorias seguidas en el Súper Individual y en el Súper Doble del Metro Batalla; y el Nexárbol a nivel 30 o más en el nivel negro y en el blanco. 4) Comprueba el color tras cada logro; abajo tienes un bloque para cada uno. Consejo: el último color es el de tu edición (negro en Negro, blanco en Blanco). Fuente: WikiDex «Ficha de entrenador»; Serebii «The Trainer Card» (Negro/Blanco)."
+    },
+    {
+     "objetivo": "card-3"
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "objetivo": "card-4"
+    },
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "diploma-nacional"
+    },
+    {
+     "objetivo": "event-0"
+    },
+    {
+     "objetivo": "nurse-gold"
+    }
+   ]
+  },
+  "WHITE-10": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "titulo": "Handsome y los seis sabios del Equipo Plasma",
+     "texto": "Cuándo: justo después de los créditos del primer final; el orden de los sabios es libre. Dónde: tu casa de Pueblo Arcilla y seis lugares de Teselia. Paso a paso: 1) Baja de tu cuarto: la «madre» que te habla es Handsome disfrazado. Te regala la Supercaña y te encarga encontrar a los sabios del Equipo Plasma que han huido; Ghechis ha escapado, así que quedan seis. 2) Castillo Ancestral (Zona Desierto, desde la Ruta 4): la Profesora Encina despierta a las estatuas de Darmanitan (nivel 35) con un Caramelo Furia; dentro vence al recluta (Krookodile, nivel 64) y habla con el sabio Ryoku: te da la MT04 (Paz Mental). Tras la puerta donde estaba hay un Volcarona de nivel 70. 3) Ruta 18, al oeste de Pueblo Arcilla (Surf): el sabio Ruga está en la playa suroeste de la isla mayor y te da la MT32 (Doble Equipo). 4) Almacenes Frigoríficos de Ciudad Fayenza: el sabio Menek te da la MT01 (Afilagarras). 5) Ruta 14, entre Pueblo Arenisca y Bosque Blanco: necesitas Cascada (la MO05 está en la Ruta 18); el sabio Giallo te da la MT08 (Corpulencia). 6) Solar de los Sueños, en Ciudad Gres, a mano derecha: el sabio Blau te da la MT75 (Danza Espada). 7) Cueva Electrorroca (al sur de Ciudad Loza): al hablar con el sabio Sumra te atacan dos reclutas (Watchog y Scrafty a nivel 63; Liepard, Garbodor y Liepard a nivel 62); al vencerlos te da la MT69 (Pulimento). Consejo: Handsome aparece cada vez que encuentras a un sabio para llevárselo; en el Castillo Ancestral lleva Ocaso Ball para Volcarona. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» (apartado «Los 7 sabios») y WikiDex «Siete Sabios»."
+    },
+    {
+     "titulo": "Este de Teselia y el tutor de movimientos definitivos (Ruta 13)",
+     "texto": "Cuándo: tras los créditos; el acceso este de Ciudad Caolín ya está abierto. Dónde: Ruta 11, Puente Villa, Ruta 12, Pueblo Ladrillo y Ruta 13. Paso a paso: 1) Sal de Ciudad Caolín por el acceso del este a la Ruta 11: aquí aparecen por primera vez Pokémon de otras regiones (nivel 47-58) y entrenadores de nivel 64-65. 2) Cruza el Puente Villa: en la cuarta casa está el Club de Pesca (si pescas el Pokémon que piden ese día te dan 5 Buceo Ball) y en la sexta te curan. 3) Sigue por la Ruta 12 (MT53, Energibola, en el hueco de la derecha nada más entrar) hasta Pueblo Ladrillo y sal al este a la Ruta 13. 4) En la Ruta 13 no cruces el puente de madera: baja por las escaleras de la izquierda, sigue pegado al muro y baja por la playa; en la casa del anciano te enseña Planta Feroz, Anillo Ígneo o Hidrocañón al inicial totalmente evolucionado de cualquier región, siempre que tenga mucha amistad. 5) Al salir, haz Surf hacia el norte: en la otra casa un hombre te da la Tabla Linfa y la Tabla Draco. Consejo: si el anciano no quiere enseñarle el movimiento, sube la amistad de tu Pokémon y vuelve. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» (Ruta 11 a Ruta 13); Serebii «Move Tutors» (Negro/Blanco)."
+    },
+    {
+     "objetivo": "pokemon-646"
+    },
+    {
+     "objetivo": "final-boss-cynthia"
+    },
+    {
+     "titulo": "MO06 (Buceo) y Ruinas Submarinas de la Bahía Arenisca",
+     "texto": "Cuándo: tras los créditos, al llegar a Pueblo Arenisca por la Ruta 13. Dónde: Pueblo Arenisca y la Bahía Arenisca, al este del pueblo. Paso a paso: 1) Junto a la casa de Cintia (la primera a la izquierda al entrar en el pueblo), una mujer te da la MO06 (Buceo). 2) Con Surf ve hacia el este por la bahía y usa Buceo en la zona de agua más oscura: entras en las Ruinas Submarinas, el único lugar de Teselia donde se bucea. 3) Tienes 500 pasos por visita; al gastarlos una corriente te saca, pero puedes volver cuantas veces quieras. 4) Primera planta: llega a la columna del centro; aquí están 14 tablas para Arceus y varias monedas antiguas. Segunda planta: usa Destello ante la columna para bajar. Tercera planta: usa Fuerza sobre la columna. Cuarta planta: una sala con la reliquia final (una corona). 5) Vende las reliquias (no las tablas) al karateka que está al oeste de la mansión de la familia Finolis, en Pueblo Arenisca: pagan muy bien. Consejo: en la mansión Finolis el niño de la entrada inicia una serie de combates diarios con su familia (niveles 60-65, hasta 21 Pokémon seguidos sin curar); dan mucho dinero y experiencia. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Pueblo Arenisca», «Bahía Arenisca», «Ruinas Submarinas»); Serebii «Abyssal Ruins» (Negro/Blanco)."
+    },
+    {
+     "titulo": "Bosque Blanco (exclusivo de Blanco)",
+     "texto": "Cuándo: tras los créditos. Dónde: al sur de la Ruta 14, entre la Ruta 14 y la Ruta 15. Paso a paso: 1) Desde Pueblo Arenisca baja por la Ruta 14 hasta Bosque Blanco. 2) En la hierba y en el agua aparecen Pokémon de otras regiones en su forma básica y siempre a nivel 5 (Ralts, Bagon, Aron, Magby, Togepi, Shinx, Abra, Mareep…); el Repelente no los ahuyenta. 3) En la casa junto al Centro Pokémon puedes librar dos combates triples; al lado, un señor te pide que le enseñes un Pokémon del bosque capturado ese mismo día y te da una Baya Meloc. 4) Los objetos del suelo dependen de los vecinos: habla con ellos a menudo para que no se vayan; con la Zona Nexo, conectado a un amigo con Negro, puedes atraer a otros. Consejo: como máximo viven 10 vecinos a la vez; si cambias mucho la hora de la consola el bosque se queda sin hierba. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Bosque Blanco/Ciudad Negra»); Serebii «Black City & White Forest» (Negro/Blanco)."
+    },
+    {
+     "titulo": "Laboratorio Transfer: traer Pokémon de la 4.ª generación",
+     "texto": "Cuándo: tras los créditos, con la Pokédex Nacional (Carrasco Encina la activa en tu casa). Dónde: Laboratorio Transfer, en la Ruta 15. Paso a paso: 1) Necesitas dos consolas: una con tu Blanco y otra con Diamante, Perla, Platino, Oro HeartGold o Plata SoulSilver. 2) Entra en el laboratorio, escucha la explicación y elige el Pokétransfer: la otra consola recibe un programa por descarga DS. 3) Envía 6 Pokémon cada vez desde las cajas: sin objeto (vuelve a la mochila), sin movimientos de MO, sin huevos y sin el Pichu de orejas picudas. 4) Captúralos en el minijuego disparando Poké Balls con el arco; los que no captures vuelven al juego de origen. 5) Repite sin límite. Consejo: en la misma Ruta 15 una señora te cambia un Rotom por un Ditto. Con Pokekeep: si ya no tienes juegos de 4.ª generación, añade lo que te falte legal desde la Librería. Fuente: Serebii «The PokéTransfer» (Negro/Blanco); WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Ruta 15»)."
+    },
+    {
+     "titulo": "Puente Progreso: las tres esferas del Trío Sombrío",
+     "texto": "Cuándo: tras los créditos, al pasar de la Ruta 15 a la Ruta 16. Dónde: Puente Progreso. Paso a paso: 1) Desde Bosque Blanco cruza la Ruta 15 hasta el puente. 2) A mitad del puente aparece el Trío Sombrío del Equipo Plasma. 3) Te entregan la Diamansfera, la Lustresfera y la Griseosfera. 4) Cuando veas sombras sobre el puente puedes encontrar Swanna o plumas (Pluma Ímpetu, Mente, Aguante y Músculo). Consejo: un señor del puente vende un Magikarp de nivel 5 por 500 ₽. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Puente Progreso»)."
+    },
+    {
+     "titulo": "Cobalion en la Cueva Loza (si aún no lo tienes)",
+     "texto": "Cuándo: desde que tienes Surf; si ya lo capturaste durante la historia, sáltate este bloque. Dónde: Cueva Loza, en la Ruta 6 junto a Ciudad Loza; al fondo, la Estancia Orientación. Paso a paso: 1) Entra en la Cueva Loza con un Pokémon con Surf y otro con Fuerza. 2) Al fondo, en la Estancia Orientación, combate contra Cobalion (nivel 42). 3) Captúralo; si lo debilitaste, vuelve a aparecer después de vencer al Alto Mando. Consejo: guarda antes de hablarle; Terrakion y Virizion aparecen después de haber encontrado a Cobalion. Fuente: Serebii «Legendary Pokémon» (Negro/Blanco); WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Liga Pokémon»."
+    },
+    {
+     "objetivo": "pokemon-639"
+    },
+    {
+     "objetivo": "pokemon-640"
+    },
+    {
+     "titulo": "Thundurus errante",
+     "texto": "Cuándo: con las ocho medallas; al entrar en el acceso a la Ruta 10 la recepcionista avisa de un clima extraño en la Ruta 7. Si ya lo capturaste, sáltate este bloque. Dónde: errante por las rutas de Teselia (nivel 40). Paso a paso: 1) Ve a la Ruta 7 y entra en la casa de la anciana que curaba a tus Pokémon: al salir, Thundurus aparece y huye. 2) Desde entonces vaga por las rutas; los letreros de los accesos indican en qué ruta hay clima extraño. 3) Encuéntralo en la hierba de esa ruta y usa Mal de Ojo, Bloqueo o un Pokémon con Sombra Trampa para que no huya, o la Master Ball. 4) Captúralo. Consejo: lo necesitas, junto a Tornadus, para Landorus. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon»; WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Liga Pokémon»; Serebii «Legendary Pokémon» (Negro/Blanco)."
+    },
+    {
+     "objetivo": "pokemon-641"
+    },
+    {
+     "objetivo": "pokemon-645"
+    },
+    {
+     "titulo": "Gruta Superación (Ruta 9)",
+     "texto": "Cuándo: tras los créditos; antes, un karateka bloquea la entrada. Dónde: Ruta 9, junto a Ciudad Caolín, al final de un camino de hierba algo laberíntico. Paso a paso: 1) Lleva un Pokémon con Destello (la cueva está a oscuras) y otro con Surf. 2) Recorre la entrada y los sótanos 1 y 2: hay Pokémon salvajes desde nivel 48. 3) Vence a sus 5 entrenadores, con Pokémon de nivel 62 o más. 4) Sal cuando tu equipo esté cerca de nivel 70 para la revancha de la Liga. Consejo: en Negro 2/Blanco 2 la entrada está tapada por rocas. Fuente: WikiDex «Gruta Superación»; WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Gruta Superación»)."
+    },
+    {
+     "titulo": "Revancha de la Liga y Campeón Mirto (Hall de la Fama)",
+     "texto": "Cuándo: tras los créditos, cuando tu equipo ronde el nivel 70-75. Dónde: Liga Pokémon, al final de la Calle Victoria. Paso a paso: 1) Vence otra vez al Alto Mando en cualquier orden: Anís (Fantasma), Lotto (Lucha), Catleya (Psíquico) y Aza (Siniestro); cada uno lleva cinco Pokémon a nivel 71 y el último a nivel 73. 2) Sube a la sala del Campeón: Mirto usa Accelgor, Bouffalant, Druddigon, Vanilluxe y Escavalier a nivel 75 y Volcarona a nivel 77. 3) Gánale: entras en el Hall de la Fama y quedan abiertas las revanchas que piden haber vencido a Mirto. Consejo: lleva muchos Revivir y Restaurar Todo; Roca o Agua contra Volcarona, y Bouffalant tiene Herbívoro (no uses Planta). Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Liga Pokémon (segunda vez)»)."
+    },
+    {
+     "titulo": "Revancha diaria: Morimoto (Torre de Game Freak)",
+     "texto": "Cuándo: tras terminar la historia; una vez al día. Dónde: Torre de Game Freak, el primer edificio a la derecha de la Calle Porcelana de Ciudad Porcelana; planta 21 (oficinas). Paso a paso: 1) Sube en ascensor a las oficinas de Game Freak. 2) Habla con Morimoto: combate individual contra Liepard, Swoobat, Simisage, Simisear y Simipour a nivel 75 y Zebstrika a nivel 77 (Serebii da un nivel más a cada uno). 3) Vuelve al día siguiente para repetirlo. Consejo: sus monos llevan Baya Yapati y usan Acróbata; en la misma planta, el Director del Juego entrega los diplomas y otro hombre cambia la música por la de las bases Rocket de Oro HeartGold y Plata SoulSilver. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Cambios después de vencer la Liga Pokémon»); WikiDex «Torre de Game Freak»; Serebii «Sinnoh Champion Cynthia & Designer Morimoto»."
+    },
+    {
+     "titulo": "Revancha diaria: Cheren en la Calle Victoria",
+     "texto": "Cuándo: tras vencer a N y a Ghechis; una vez al día. Dónde: primero en la Ruta 5 y después en la parte superior de la Calle Victoria. Paso a paso: 1) Busca a Cheren en la Ruta 5, donde se ha ido a entrenar. 2) Después se traslada a la zona más alta de la Calle Victoria: habla con él allí. 3) Combate individual: Unfezant, Liepard, Gigalith, Haxorus y el mono elemental a nivel 65 y, a nivel 67, la evolución final del inicial que tiene ventaja sobre el tuyo. 4) Vuelve cada día para repetirlo. Consejo: Haxorus es su Pokémon más peligroso; lleva Hielo o Dragón. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Cambios después de vencer la Liga Pokémon»)."
+    },
+    {
+     "titulo": "Revancha de fin de semana: Bel en Pueblo Arcilla",
+     "texto": "Cuándo: tras vencer al Campeón Mirto; solo los sábados y domingos. Dónde: laboratorio de la Profesora Encina, en Pueblo Arcilla. Paso a paso: 1) Vence a Mirto en la Liga. 2) Un sábado o un domingo entra en el laboratorio de Pueblo Arcilla y habla con Bel. 3) Combate individual: Stoutland, Musharna, Chandelure, Mienshao y un mono elemental a nivel 63 y, a nivel 65, la evolución final del inicial débil frente al tuyo. 4) Vuelve otro fin de semana para repetirlo. Consejo: Chandelure es el que más pega; lleva Agua, Tierra o Roca. Fuente: WikiDex «Guía de Pokémon Negro y Pokémon Blanco/Después de la Liga Pokémon» («Cambios después de vencer la Liga Pokémon»)."
+    }
+   ]
+  },
+  "WHITE-11": {
+   "bloques": [
+    {
+     "titulo": "Ficha de entrenador: cómo cambia de color",
+     "texto": "Cuándo: desde el principio; se consulta en cualquier momento. Dónde: menú del juego > Ficha de entrenador. Paso a paso: 1) Abre la ficha: empieza de color verde y no tiene estrellas. 2) Cada logro la sube un nivel, en cualquier orden: morada, roja, plata, oro y, con los cinco, blanca. 3) Los cinco logros son: superar la Liga Pokémon; la Pokédex Nacional sin los singulares de evento; todos los complementos del Musical; 49 victorias seguidas en el Súper Individual y en el Súper Doble del Metro Batalla; y el Nexárbol a nivel 30 o más en el nivel negro y en el blanco. 4) Comprueba el color tras cada logro; abajo tienes un bloque para cada uno. Consejo: el último color es el de tu edición (negro en Negro, blanco en Blanco). Fuente: WikiDex «Ficha de entrenador»; Serebii «The Trainer Card» (Negro/Blanco)."
+    },
+    {
+     "objetivo": "card-3"
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "objetivo": "card-4"
+    },
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "diploma-nacional"
+    },
+    {
+     "objetivo": "event-0"
+    },
+    {
+     "objetivo": "nurse-gold"
+    }
+   ]
+  },
+  "BLACK2-10": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "objetivo": "items0"
+    },
+    {
+     "titulo": "Mirto en Pueblo Ocre y la llegada de Guayo",
+     "texto": "Cuándo: tras el Hall de la Fama; un solo combate. Dónde: casa de Mirto, en Pueblo Ocre. Paso a paso: 1) Vuela a Pueblo Ocre y entra en casa de Mirto. 2) Combate individual: Accelgor, Escavalier, Bouffalant, Conkeldurr y Braviary a nivel 60 y Volcarona a nivel 62. 3) Al ganar aparece su nieto Guayo, que te espera en el Rascacielos Negro de Ciudad Negra (entre las Rutas 14 y 15). 4) Esta victoria es la que abre el desafío de Guayo; es distinta de la de la Liga. Consejo: contra Volcarona, Roca; contra Conkeldurr, Psíquico o Volador; Bouffalant cae con Lucha. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Pueblo Ocre»); Serebii «Strong Trainers» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "Puente Saeta y Bosque Azulejo con Cheren (Mejora)",
+     "texto": "Cuándo: tras el Hall de la Fama, cuando el Puente Saeta ya está abierto. Dónde: Ciudad Porcelana > Puente Saeta > Bosque Azulejo. Paso a paso: 1) Desde Ciudad Porcelana cruza el Puente Saeta. 2) En el Bosque Azulejo Cheren te pide que le acompañes al fondo del bosque; por el camino hay entrenadores con Pokémon de nivel 60. 3) Al fondo os encontráis con un sabio del antiguo Equipo Plasma (Blau), que os habla de N y se marcha. 4) Cheren te da la Mejora; recoge también la Poké Ball del suelo. Consejo: la Mejora es el objeto que hace evolucionar a Porygon por intercambio. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Puente Saeta y Bosque Azulejo»); WikiDex «Siete Sabios»."
+    },
+    {
+     "titulo": "Ciudad Esmalte: Fósil Pluma o Fósil Tapa",
+     "texto": "Cuándo: tras el Hall de la Fama, después del Bosque Azulejo. Dónde: museo y antiguo gimnasio de Ciudad Esmalte. Paso a paso: 1) Entra en el museo y acércate al científico que mira el esqueleto. 2) Llega Aloe y te deja elegir: Fósil Pluma (Archen) o Fósil Tapa (Tirtouga). 3) Dáselo a la mujer de la entrada del museo para revivirlo. 4) En la garita entre Ciudad Esmalte y la Ruta 3 te regalan un Huevo del que nace un Happiny. Consejo: en una casa del suroeste de la ciudad hay un tutor de movimientos que cobra en partes verdes. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Ciudad Esmalte»)."
+    },
+    {
+     "titulo": "Restaurante de Ciudad Gres: combate diario con Millo, Zeo y Maíz",
+     "texto": "Cuándo: tras el Hall de la Fama; una vez al día. Dónde: antiguo gimnasio de Ciudad Gres, ahora un restaurante (por la Ruta 3 desde Ciudad Esmalte). Paso a paso: 1) Entra en el restaurante: los camareros son Millo, Zeo y Maíz. 2) Habla con uno: combate a tu lado contra los otros dos en un combate múltiple. 3) Cada hermano usa tres Pokémon: dos a nivel 65 y su mono elemental (Simisage, Simisear o Simipour) a nivel 67. 4) Vuelve al día siguiente para repetirlo. Consejo: si llevas el recuerdo «Tres son multitud» del Nexo Recuerdo, aquí te cuentan por qué dejaron el gimnasio. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Ciudad Gres»); Serebii «Strong Trainers» (Negro 2/Blanco 2)."
+    },
+    {
+     "objetivo": "pokemon-381"
+    },
+    {
+     "titulo": "Palacio de N: vencer a N y a su Zekrom",
+     "texto": "Cuándo: tras el Hall de la Fama; al salir de casa te avisan de que el Zoroark de N te espera en la Calle Victoria. Dónde: Calle Victoria > Palacio de N (semihundido dentro de la cueva). Paso a paso: 1) En la Calle Victoria sigue al Zoroark de N por las cuevas de la derecha hasta el palacio. 2) N te pide que vayas a su antiguo cuarto (la primera puerta). 3) Síguele a la sala del trono: combate solo con Zekrom, a nivel 70. 4) Al ganar recibes 14.000 ₽ y el Orbe Oscuro. Dentro del palacio está también la MT50 (Sofoco). Consejo: guarda antes de entrar en la sala del trono. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Conseguir a Kyurem negro/Kyurem blanco»); WikiDex «Castillo de N»."
+    },
+    {
+     "titulo": "Torre Duodraco: capturar a Zekrom",
+     "texto": "Cuándo: después de recibir el Orbe Oscuro. Dónde: Torre Duodraco, junto a Ciudad Teja (el Monte Tuerca ya está abierto; también puedes ir con Vuelo). Paso a paso: 1) Ve a Ciudad Teja y entra en la Torre Duodraco. 2) Sube hasta la cima; por el camino recoge la Griseosfera, la Diamansfera y la Lustresfera. 3) En lo más alto el Orbe Oscuro se transforma en Zekrom: combate (nivel 70) y captúralo. Consejo: guarda antes y captúralo antes de ir a por Kyurem, porque lo necesitas para la fusión. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Conseguir a Kyurem negro/Kyurem blanco»); Serebii «Legendary Pokémon» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "Kyurem en el Boquete Gigante y la Punta ADN",
+     "texto": "Cuándo: tras capturar a Zekrom. Dónde: Boquete Gigante, al final de la Ruta 22; cueva del norte. Paso a paso: 1) Ve a Ciudad Marga y sigue por la Ruta 22 hasta el Boquete Gigante. 2) Atraviésalo hasta la cueva del norte. 3) Combate con Kyurem (nivel 70, forma normal) y captúralo. 4) Recoge la Punta ADN que deja: sirve para fusionarlo con Zekrom y separarlos cuando quieras. Consejo: guarda antes de hablarle. Fuente: Serebii «Legendary Pokémon» (Negro 2/Blanco 2); WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon»."
+    },
+    {
+     "objetivo": "pokemon-480"
+    },
+    {
+     "objetivo": "pokemon-481"
+    },
+    {
+     "objetivo": "pokemon-482"
+    },
+    {
+     "objetivo": "pokemon-485"
+    },
+    {
+     "titulo": "Cresselia: Pluma Lunar de Villa Horroris",
+     "texto": "Cuándo: la Pluma Lunar se puede recoger desde que llegas a Pueblo Chamota; Cresselia, cuando llegues al Puente Progreso. Si ya la capturaste, sáltate este bloque. Dónde: Villa Horroris (junto a Pueblo Chamota) y Puente Progreso, entre las Rutas 15 y 16 (nivel 68). Paso a paso: 1) En Villa Horroris baja por las escaleras de arriba a la izquierda, ve a la derecha por la biblioteca y sube. 2) Sube a la planta alta por las escaleras de la derecha (aparece la joven fantasma) y sigue a la izquierda hasta bajar otra vez. 3) Vuelve a bajar a la biblioteca por la izquierda (recoge la Piedra Noche), ve a la derecha, sube y luego sube por las escaleras del centro. 4) Entra por la puerta del centro y coge la Pluma Lunar. 5) En mitad del Puente Progreso la pluma brilla: sácala y combate con Cresselia (nivel 68). Consejo: los muebles cambian de sitio en cada vuelta; sigue el orden de escaleras, no los muebles. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Capturar a Cresselia»); WikiDex «Villa Horroris»."
+    },
+    {
+     "titulo": "Matís en Pueblo Arenisca: MO06 (Buceo)",
+     "texto": "Cuándo: tras el Hall de la Fama. Dónde: Pueblo Arenisca. Paso a paso: 1) Llega a Pueblo Arenisca: Matís te da la MO06 (Buceo). 2) Te reta: cura antes a tu equipo. 3) Lleva cinco Pokémon a nivel 62 (entre ellos Unfezant, Bouffalant, Flygon, Eelektross y un mono elemental) y, a nivel 64, la evolución final del inicial con ventaja sobre el tuyo. 4) Después puedes volver a retarle cuando quieras en la base del Equipo Plasma de Ciudad Fayenza. Consejo: Flygon y Eelektross tienen Levitación: no uses ataques de Tierra contra ellos. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Encuentros con Matís, Cintia y N»)."
+    },
+    {
+     "titulo": "Ruinas Submarinas y el libro de Menek",
+     "texto": "Cuándo: tras recibir Buceo y vencer a Matís en Pueblo Arenisca. Dónde: Bahía Arenisca, al este de Pueblo Arenisca. Paso a paso: 1) Con Surf ve hacia el este por la bahía y usa Buceo en la zona de agua más oscura. 2) Tienes 500 pasos por visita; al gastarlos una corriente te saca, pero puedes volver. 3) Las cuatro plantas son como en Negro/Blanco: en la primera, tablas para Arceus y monedas antiguas; en la segunda, Destello ante la columna; en la tercera, Fuerza sobre la columna; en la cuarta, la reliquia final. 4) Tras vencer a Matís aparece Menek en Pueblo Arenisca y te da un libro de Ghechis con el que se traducen las inscripciones de las columnas. Consejo: lleva un Pokémon con Destello y otro con Fuerza para no gastar pasos. Fuente: WikiDex «Templo Submarino/Ruinas Submarinas» y «Siete Sabios»; Serebii «Abyssal Ruins»."
+    },
+    {
+     "titulo": "Cintia en la villa de Catleya (Pueblo Arenisca)",
+     "texto": "Cuándo: tras el Hall de la Fama, solo en primavera o en verano (en Teselia la estación cambia cada mes: enero, mayo y septiembre son primavera; febrero, junio y octubre, verano). Dónde: villa de Catleya, la casa a la izquierda del Centro Pokémon de Pueblo Arenisca. Paso a paso: 1) En primavera o verano entra en la villa y habla con Cintia. 2) Combate individual: Spiritomb, Milotic, Togekiss, Lucario y Glaceon a nivel 76 y Garchomp a nivel 78. 3) Puedes repetirlo una vez al día mientras dure la estación. Consejo: Spiritomb usa Doble Equipo: tíralo rápido con ataques que no fallen; para Garchomp, Hielo o Dragón. Fuente: Serebii «Strong Trainers» (Negro 2/Blanco 2); WikiDex «Pueblo Arenisca»."
+    },
+    {
+     "titulo": "Acromo en la Fragata Plasma: segunda Master Ball",
+     "texto": "Cuándo: tras el Hall de la Fama. Dónde: Fragata Plasma, atracada junto al Laboratorio P+P (desde Pueblo Arcilla, Surf por la Ruta 1 hacia el oeste y la Ruta 17). Paso a paso: 1) Sigue las corrientes de la Ruta 17 hasta el Laboratorio P+P; al este está el barco. 2) Sube a la Fragata Plasma y ve al puente de mando. 3) Combate contra Acromo: Magneton, Rotom (forma Lavado), Metagross, Beheeyem y Magnezone a nivel 72 y Klinklang a nivel 74. 4) Al ganar te da una Master Ball, la segunda del juego. 5) Desde entonces puedes retarle cada día en la cubierta de proa. Consejo: Fuego, Lucha o Tierra contra casi todo su equipo; Planta contra Rotom Lavado. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Segunda Master Ball»); Serebii «Strong Trainers» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "Trío Sombrío en Ciudad Teja (una vez por estación)",
+     "texto": "Cuándo: tras el Hall de la Fama; se repite una vez por estación (cada mes). Dónde: Ciudad Teja. Paso a paso: 1) Ve a Ciudad Teja: el Trío Sombrío te reta. 2) Son tres combates: individual (Bisharp, Bisharp y Absol), triple (Bisharp, Accelgor y Bisharp) y rotatorio (Banette, Bisharp y Bisharp); los Bisharp a nivel 65 y el otro Pokémon a nivel 67. 3) Vuelve en la siguiente estación para repetirlo. Consejo: Fuego, Lucha o Tierra contra Bisharp; Chandelure o Golurk van muy bien. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Ciudad Teja»); Serebii «Strong Trainers» (Negro 2/Blanco 2)."
+    }
+   ]
+  },
+  "BLACK2-11": {
+   "bloques": [
+    {
+     "titulo": "Ficha de entrenador: cómo cambia de color",
+     "texto": "Cuándo: desde el principio; se consulta en cualquier momento. Dónde: menú del juego > Ficha de entrenador. Paso a paso: 1) Abre la ficha: empieza de color azul y no tiene estrellas. 2) Cada logro la sube un nivel, en cualquier orden; con los cinco llega al último color, negro en tu edición. Serebii da como colores intermedios morado, naranja, plata y oro; WikiDex da verde, rojo, plata y oro. 3) Los cinco logros son: superar la Liga; la Pokédex Nacional sin los singulares de evento; rodar todas las películas de Pokéwood; ganar el Torneo Campeones del PWT; y el Nexárbol a nivel 30 o más en el nivel negro y en el blanco (cada uno por separado). 4) Comprueba el color tras cada logro; abajo tienes un bloque para cada uno. Consejo: las insignias del Medallero no cuentan para la ficha. Fuente: WikiDex «Ficha de entrenador»; Serebii «The Trainer Card» (Negro 2/Blanco 2)."
+    },
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "objetivo": "oval-charm"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "shiny-charm"
+    },
+    {
+     "objetivo": "diploma-nacional"
+    },
+    {
+     "objetivo": "event-0"
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "card-3"
+    },
+    {
+     "objetivo": "card-4"
+    },
+    {
+     "titulo": "Recoger las insignias con Don Insignio",
+     "texto": "Cuándo: cada vez que cumples un logro del Medallero, desde que tienes la Caja de Insignias (Pueblo Ocre). Dónde: cualquier Centro Pokémon, donde espera Don Insignio, y el Insigniárium de Ciudad Porcelana. Paso a paso: 1) Al cumplir un logro, la insignia no llega sola: entra en un Centro Pokémon y habla con Don Insignio, que te da todas las pendientes de una vez. 2) Abre la Caja de Insignias (objeto clave) para ver las conseguidas; las Insignias Pista indican qué falta. 3) Recoge los rangos en el Insigniárium (planta 1 del edificio más al oeste de Ciudad Porcelana). Consejo: el detalle de las 255 insignias está en la misión del Medallero de Teselia. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
+    },
+    {
+     "objetivo": "nurse-gold"
+    }
+   ]
+  },
+  "BLACK2-E01": {
+   "bloques": [
+    {
+     "titulo": "Caja de Insignias y Don Insignio",
+     "texto": "Cuándo: al principio del juego, en Pueblo Ocre. Dónde: a la salida de la casa de Mirto, en Pueblo Ocre. Paso a paso: 1) Al salir por primera vez de casa de Mirto, Don Insignio te habla de la caza de insignias. 2) Acepta participar: te da la Caja de Insignias y la insignia «Primer Paso», además de algunas Insignias Pista. 3) Desde entonces Don Insignio espera en los Centros Pokémon para entregarte las que vayas ganando. Consejo: puedes poner una insignia en la ficha de entrenador para que la vean los demás. Fuente: WikiDex «Insignia» y «Caja de Insignias»."
+    },
+    {
+     "objetivo": "medals"
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "titulo": "Rangos del Insigniárium (50, 100, 150 y 200 insignias)",
+     "texto": "Cuándo: a medida que juntas insignias. Dónde: Insigniárium, planta 1 del edificio más al oeste de Ciudad Porcelana. Paso a paso: 1) Recoge con Don Insignio todas las insignias pendientes. 2) Ve al Insigniárium y habla con el recepcionista. 3) Recibe el rango que te corresponde: Aspirante con 50, Profesional con 100, Maestría con 150 y Leyenda con 200. 4) Cada rango da a su vez una insignia especial. Consejo: la insignia final de «todas las insignias» exige las 255. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "Insignias que dependían de servicios cerrados",
+     "texto": "Cuándo: al final, cuando ya no te falte nada que se pueda ganar jugando. Dónde: Caja de Insignias (para ver qué falta). Paso a paso: 1) Las de intercambio, combates inalámbricos y Misiones Festival se siguen consiguiendo con otra consola por conexión local. 2) Las que exigían la Conexión Wi-Fi de Nintendo (cerrada el 20 de mayo de 2014), Pokémon Global Link o la RAdar Pokémon ya no se pueden ganar jugando. 3) Con Pokekeep: abre la partida, pestaña SAV, botón «Insignias», marca solo las que dependían de esos servicios cerrados, guarda y exporta la partida. Consejo: anota cuáles marcas así para saber que no las ganaste jugando. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
+    }
+   ]
+  },
+  "BLACK2-E02": {
+   "bloques": [
+    {
+     "titulo": "Pokéwood: cómo se rueda una película",
+     "texto": "Cuándo: desde la Medalla Ponzoña (tras vencer a Hiedra). Dónde: Estudios Cinematográficos Pokéwood, al norte de Ciudad Hormigón. Paso a paso: 1) Elige una película y entra en el plató del croma. 2) Combate con los Pokémon de alquiler que marca el guion; en cada turno aparecen frases: elige la que encaja con el guion. 3) Al acabar mira el estreno en el cine: según tus elecciones sale final bueno, malo o alternativo. 4) Solo el final bueno abre la siguiente entrega de la serie; si sale otro, repite. 5) Con toda una serie terminada con final bueno puedes rodar con tus propios Pokémon; si acabas una película con final alternativo, tu Pokémon se convierte en estrella (entra al combate con una animación especial). Consejo: después del estreno habla con tus fans: te regalan objetos, más cuanto mejor sea el final y tu rango. Fuente: WikiDex «Estudios Cinematográficos Pokéwood»."
+    },
+    {
+     "titulo": "Pokéwood: películas abiertas desde el principio",
+     "texto": "Cuándo: desde la Medalla Ponzoña. Dónde: Pokéwood, Ciudad Hormigón. Paso a paso: 1) Juncomán (la primera entrega; el resto de la serie llega tras el Hall de la Fama). 2) Los invasores 1 a 4. 3) Cronodisea 1 a 3. 4) La puerta al mundo mágico 1 a 3. 5) La niebla roja 1 a 3. Consejo: cada serie se abre entrega a entrega con el final bueno de la anterior. Fuente: WikiDex «Estudios Cinematográficos Pokéwood»."
+    },
+    {
+     "titulo": "Pokéwood: películas que se abren tras el Hall de la Fama",
+     "texto": "Cuándo: tras vencer a Iris. Dónde: Pokéwood, Ciudad Hormigón. Paso a paso: 1) Juncomán contraataca y Juncomán contraataca 2. 2) El Amorfus 1 a 4. 3) Amor a primera vista 1 a 3. 4) Antifantasmas 1 a 4. Consejo: sube la taquilla mientras tanto, porque las últimas series dependen de ella. Fuente: WikiDex «Estudios Cinematográficos Pokéwood»."
+    },
+    {
+     "titulo": "Pokéwood: películas por taquilla, El retorno de Juncomán y rango EX",
+     "texto": "Cuándo: a medida que sube tu recaudación. Dónde: Pokéwood, Ciudad Hormigón. Paso a paso: 1) Juncobot 1 a 4: se abre al recaudar 5.000 millones o más con una sola película. 2) ¡Qué pedazo de oficinista! 1 a 4: al llegar al Rango 3 (10.000 millones en total). 3) Un recuerdo inolvidable 1 a 4: al llegar al Rango 4 (25.000 millones). 4) Con todas las demás rodadas se abre la película especial El retorno de Juncomán; complétala. 5) Con todas las películas completas llegas al rango EX: camerino propio y estatua de bronce en los estudios. Consejo: son 40 películas en total contando El retorno de Juncomán; el Rango 5 llega con 45.000 millones. Fuente: WikiDex «Estudios Cinematográficos Pokéwood»."
+    },
+    {
+     "titulo": "PWT: Torneo Fayenza y torneos del mostrador izquierdo",
+     "texto": "Cuándo: el Torneo Fayenza es parte obligatoria de la historia; los demás se abren al ganarlo. Dónde: Pokémon World Tournament, al sur de Ciudad Fayenza, mostrador de la izquierda. Paso a paso: 1) Torneo Fayenza: combates a nivel 25; en la historia te enfrentas a Matís y a Cheren y al final a Acromo. 2) Al ganarlo se abren el Torneo Préstamo (Pokémon de alquiler) y el Torneo Trueque (nivel 50, puedes cambiar un Pokémon con el rival). 3) Gana PB en ellos y canjéalos en los mostradores de premios (MT, objetos de combate, vitaminas). Consejo: el Torneo Fayenza o vencer a un campeón suelto no cuentan para el logro de la ficha; los torneos de Descarga dependían de la Conexión Wi-Fi de Nintendo y no hacen falta para nada. Fuente: WikiDex «Pokémon World Tournament»; Serebii «Pokémon World Tournament» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "PWT: Torneos de Líderes de las cinco regiones",
+     "texto": "Cuándo: tras el Hall de la Fama. Dónde: Pokémon World Tournament, sur de Ciudad Fayenza, mostrador de la derecha. Paso a paso: 1) Gana el Torneo Líderes de Teselia (se abre al superar la Liga). 2) Con él se abren los Torneos Líderes de Kanto, Johto, Hoenn y Sinnoh: gana los cuatro. 3) Cada torneo se puede jugar en combate individual, doble, triple o rotatorio, a nivel 50. Consejo: no se admiten los legendarios principales ni los singulares (Mewtwo, Lugia, Ho-Oh, Kyogre, Groudon, Rayquaza, Dialga, Palkia, Giratina, Reshiram, Zekrom, Kyurem…), ni Latios o Latias con Rocío Bondad. Fuente: WikiDex «Pokémon World Tournament»; Serebii «Pokémon World Tournament» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "PWT: Torneo Mundial de Líderes (10 victorias)",
+     "texto": "Cuándo: tras ganar los cinco Torneos de Líderes. Dónde: Pokémon World Tournament, mostrador de la derecha. Paso a paso: 1) Con los cinco Torneos de Líderes ganados se abre el Torneo Mundial de Líderes, con líderes de todas las regiones. 2) Gánalo 10 veces (no hace falta que sean seguidas). 3) Al llegar a las 10 se abre el Torneo Campeones. Consejo: ganar el Torneo Préstamo y el Torneo Trueque con los de Líderes abre además el Supertorneo Préstamo y el Supertorneo Trueque. Fuente: WikiDex «Pokémon World Tournament»; Serebii «Pokémon World Tournament» (Negro 2/Blanco 2)."
+    },
+    {
+     "objetivo": "pwt"
+    }
+   ]
+  },
+  "BLACK2-N1": {
+   "bloques": [
+    {
+     "titulo": "Nexo Recuerdo: conectar con una partida de Negro o Blanco",
+     "texto": "Cuándo: en cualquier momento; mejor antes de entrar por primera vez en el Teatro Musical de Ciudad Mayólica. Dónde: menú principal de Negro 2 > Nexo Teselia > Nexo Recuerdo. Paso a paso: 1) Necesitas otra consola con una partida de Negro o Blanco. 2) Elige Nexo Teselia y luego Nexo Recuerdo, y conecta por comunicación inalámbrica local (la vía por la Conexión Wi-Fi de Nintendo cerró el 20 de mayo de 2014). 3) Lo que se desbloquea depende de lo que hiciste en esa partida: medallas Trío, Temblor, Candelizo, Leyenda y Jet para cada recuerdo de líder; haber vencido a N y a Ghechis para los Pokémon de N, el Zoroark de Fayenza, el Criapokémon y las revanchas de Cheren y Bel. Consejo: también cambian los diálogos: los personajes llaman por su nombre al protagonista de Negro/Blanco. Fuente: WikiDex «Nexo Teselia» (Nexo Recuerdo); Serebii «Memory Link»."
+    },
+    {
+     "titulo": "Complementos del Musical de Negro/Blanco",
+     "texto": "Cuándo: antes de entrar por primera vez en el Teatro Musical de Ciudad Mayólica. Dónde: Teatro Musical, Ciudad Mayólica. Paso a paso: 1) Haz el Nexo Recuerdo con una partida de Negro/Blanco que tenga el Neceser. 2) Entra en el Teatro Musical: en vez de un Neceser vacío, el dueño te da el que «se dejó un entrenador», con todos los complementos de esa partida. 3) El dueño te cuenta además el recuerdo «Adiós, querida estrella». Consejo: si entras en el teatro antes de conectar, recibirás el Neceser vacío. Fuente: Serebii «Memory Link»; WikiDex «Nexo Teselia»."
+    },
+    {
+     "titulo": "Zorua de Ruga (Ciudad Fayenza)",
+     "texto": "Cuándo: durante la historia, en Ciudad Fayenza; no necesita el Nexo Recuerdo. Dónde: refugio al oeste del gimnasio de Ciudad Fayenza. Paso a paso: 1) Entra en el refugio: el sabio Ruga te reta a un combate. 2) Al vencerle te ofrece el Zorua de N, que él cuidaba (nivel 25). 3) Lleva un hueco libre en el equipo para recibirlo. Consejo: con el Nexo Recuerdo, Ruga te cuenta además dónde están los Pokémon que N liberó. Fuente: WikiDex «Siete Sabios» y «Pokémon de N»."
+    },
+    {
+     "titulo": "Pokémon de N",
+     "texto": "Cuándo: con el recuerdo de N liberando a sus Pokémon (partida de Negro/Blanco con N y Ghechis vencidos) y tras hablar con Ruga en Ciudad Fayenza. Dónde: Ruta 2; Bosque Azulejo; Cueva Manantial; Cueva Electrorroca; Zona Desierto. Paso a paso: 1) Purrloin en la Ruta 2. 2) Pidove, Timburr y Tympole en el Bosque Azulejo. 3) Woobat en la Cueva Manantial. 4) Boldore, Joltik, Ferroseed y Klink en la Cueva Electrorroca. 5) Sandile, Darumaka, Darmanitan, Scraggy y Sigilyph en la Zona Desierto. 6) Al empezar el combate brillan y llevan «(?)»; al capturarlos tienen el EO N y el ID 00002 y no se les puede poner mote. Consejo: ese brillo no significa que sean variocolor. Con Pokekeep: los recuerdos no se reproducen sin la otra partida; si te falta alguno para la Pokédex, añádelo legal desde la Librería. Fuente: WikiDex «Nexo Teselia» y «Pokémon de N»; Serebii «Memory Link»."
+    },
+    {
+     "titulo": "Claros Ocultos",
+     "texto": "Cuándo: desde la Ruta 5, donde Bel te enseña el primero al darte Vuelo. Dónde: 15 zonas: Rutas 2, 3, 5, 6, 7, 9, 13, 18, 22 y 23, Rancho Ocre, Bosque Azulejo, Bosque de los Perdidos, Boquete Gigante y Santuario Abundancia. Paso a paso: 1) Busca el hueco entre dos árboles y pulsa A. 2) Dentro puede haber un objeto, un objeto oculto (Zahorí) o un Pokémon con su habilidad oculta (el de la Ruta 5 es un Minccino con Encadenado). 3) Cuando lo vacías, cada 256 pasos tiene un 5 % de probabilidad de volver a llenarse: 40 % objeto, 40 % objeto oculto, 20 % Pokémon. 4) No se regenera hasta que recojas el objeto o captures, debilites o huyas del Pokémon. Consejo: los Pokémon de los claros nunca son variocolor; visitar claros, capturar sus Pokémon y ver los recuerdos son objetivos distintos. Fuente: WikiDex «Claro oculto»; Serebii «Hidden Grotto»."
+    },
+    {
+     "titulo": "Recuerdos en su sitio: líderes, Musical y Criapokémon",
+     "texto": "Cuándo: tras hacer el Nexo Recuerdo; cada uno al llegar a su lugar. Dónde: Ciudad Gres, Ciudad Esmalte, Ciudad Teja, Ciudad Mayólica y el Centro Pokémon de Ciudad Engobe. Paso a paso: 1) «Tres son multitud»: restaurante de Ciudad Gres (Millo, Zeo y Maíz). 2) «Cada uno con su hueso»: museo de Ciudad Esmalte (Aloe, Camus y Yakón). 3) «Un espíritu ambicioso»: antiguo gimnasio de Ciudad Teja (Junco). 4) «Adiós, querida estrella»: el dueño del Musical en Ciudad Mayólica. 5) «Amigos que vienen y van»: un Criapokémon en el Centro Pokémon de Ciudad Engobe (WikiDex lo sitúa junto al PC de cualquier Centro Pokémon). Consejo: Gres y Esmalte solo son accesibles tras el Hall de la Fama. Fuente: WikiDex «Nexo Teselia» (lista de recuerdos); Serebii «Memory Link»."
+    },
+    {
+     "titulo": "Recuerdos que piden avanzar: Gerania, Zoroark y Lirio",
+     "texto": "Cuándo: según tu avance en esta partida. Dónde: Ciudad Loza, Ciudad Fayenza y Ciudad Caolín. Paso a paso: 1) «Genial y sofisticada»: Gerania te habla de Camila tras llegar a Pueblo Chamota. 2) «Blanco y negro»: después de participar en el PWT, en la casa de un antiguo miembro del Equipo Plasma de Ciudad Fayenza aparece un Zoroark. 3) «Una nueva luz»: Lirio, en Ciudad Caolín (WikiDex: tras la Liga; Serebii: tras entrar en el palacio). Consejo: si un recuerdo no aparece, revisa la medalla que exige en la partida de Negro/Blanco. Fuente: WikiDex «Nexo Teselia»; Serebii «Memory Link»."
+    },
+    {
+     "titulo": "Revanchas de Cheren (Ruta 5) y Bel (Pueblo Arcilla)",
+     "texto": "Cuándo: con el Nexo Recuerdo hecho desde una partida en la que venciste a N y a Ghechis; tras la Liga, según WikiDex. Dónde: Ruta 5 (Cheren) y Pueblo Arcilla (Bel). Paso a paso: 1) Entra en la Ruta 5: Cheren te reta con su equipo de Negro/Blanco (cinco Pokémon a nivel 65 y su inicial a nivel 67). 2) Entra en Pueblo Arcilla: Bel te reta en recuerdo de su primer combate (cinco Pokémon a nivel 63 y su inicial a nivel 65). 3) Sus equipos dependen del inicial que elegiste en Negro/Blanco. Consejo: según Serebii son combates de una sola vez: ve preparado. Fuente: Serebii «Memory Link» y «Strong Trainers» (Negro 2/Blanco 2); WikiDex «Nexo Teselia»."
+    }
+   ]
+  },
+  "BLACK2-N2": {
+   "bloques": [
+    {
+     "titulo": "Ciudad Negra: la zona exclusiva de tu edición",
+     "texto": "Cuándo: tras el Hall de la Fama. Dónde: entre la Ruta 14 y la Ruta 15. Paso a paso: 1) En Negro 2 ahí está Ciudad Negra, con el Rascacielos Negro. 2) Bosque Blanco y el Cavernogal Blanco son de Blanco 2: solo llegan a tu partida con su clave. 3) La clave se activa en el menú principal, Nexo Teselia > Sistema Clave. Consejo: tras completar el desafío, los mercados de la zona venden un objeto distinto cada día. Fuente: WikiDex «Nexo Teselia» (Sistema Clave); Serebii «Black City & White Forest» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "Clave del Modo Reto",
+     "texto": "Cuándo: al vencer a la Campeona Iris. Dónde: menú principal > Nexo Teselia > Sistema Clave. Paso a paso: 1) Al vencer a Iris recibes la clave reto. 2) Actívala en el Sistema Clave: los entrenadores llevan Pokémon de más nivel, mejores movimientos y objetos, y líderes y Alto Mando un Pokémon más. 3) La clave ayuda es de Blanco 2: pídesela a un amigo por infrarrojos. Consejo: recibir, activar y terminar el juego con un modo son cosas distintas; si borras la partida pierdes las claves. Fuente: WikiDex «Nexo Teselia» (Sistema Clave); Serebii «Easy Mode & Challenge Mode»."
+    },
+    {
+     "objetivo": "black-tower"
+    },
+    {
+     "titulo": "Clave rascacielos o cavernogal: compartirla por infrarrojos",
+     "texto": "Cuándo: al superar la zona 5 del Rascacielos Negro. Dónde: menú principal > Nexo Teselia > Sistema Clave. Paso a paso: 1) Supera la zona 5 del Rascacielos Negro: recibes la clave rascacielos. 2) Pon tu consola cerca de la de un amigo con Blanco 2, con los cartuchos apuntándose (infrarrojos). 3) Enviaos las claves en el Sistema Clave y activa la que recibas: cambia la zona entre las Rutas 14 y 15. Consejo: tras vencer a Guayo, en la zona 10 de la otra edición te espera un veterano con equipo de legendarios a nivel 80. Fuente: WikiDex «Nexo Teselia» (Sistema Clave); Serebii «Black City & White Forest» (Negro 2/Blanco 2)."
+    },
+    {
+     "objetivo": "pokemon-377"
+    },
+    {
+     "objetivo": "pokemon-379"
+    },
+    {
+     "objetivo": "pokemon-378"
+    },
+    {
+     "objetivo": "pokemon-486"
+    }
+   ]
+  },
+  "BLACK2-N3": {
+   "bloques": [
+    {
+     "titulo": "Pokédex de Teselia: los 297 vistos",
+     "texto": "Cuándo: tras el Hall de la Fama, cuando tengas ya casi toda la Pokédex de Teselia. Dónde: toda Teselia. Paso a paso: 1) Registra como vistos los 297 Pokémon de la Pokédex de Teselia de tu edición; Victini, Keldeo, Meloetta y Genesect no cuentan. 2) Basta con verlos: los exclusivos de Blanco 2 se registran al ver el Pokémon de otro entrenador o al recibirlos por intercambio. 3) Consulta la Pokédex para ver cuáles te faltan. Consejo: capturarlos todos es otro premio distinto (el Amuleto Oval). Fuente: WikiDex «Reserva Natural»; Serebii «Pokédex Completion Rewards»."
+    },
+    {
+     "titulo": "El Pase de la Profesora Encina",
+     "texto": "Cuándo: con los 297 vistos. Dónde: laboratorio de la Profesora Encina, en Pueblo Arcilla. Paso a paso: 1) Ve a Pueblo Arcilla (Ruta 1 desde Pueblo Terracota, o con Vuelo). 2) Pide a la Profesora Encina que evalúe tu Pokédex. 3) Te entrega el Pase, el objeto clave que permite volar a la Reserva Natural. Tener los 297 vistos no basta: hay que recogerlo. Consejo: el nombre oficial en España es «Pase» (Permit en inglés). Fuente: WikiDex «Pase» y «Reserva Natural»; Serebii «Pokédex Completion Rewards»."
+    },
+    {
+     "titulo": "Viaje a la Reserva Natural y Haxorus variocolor",
+     "texto": "Cuándo: con el Pase. Dónde: aeropuerto de Ciudad Loza > Reserva Natural (fuera del mapa de Teselia). Paso a paso: 1) Ve al aeropuerto de Ciudad Loza y vuela a la Reserva Natural; para volver usa también el avión. 2) Guarda antes de buscarlo y lleva Falso Tortazo y Ultra Balls. 3) En la reserva hay un único Haxorus variocolor de nivel 60: debilítalo sin derrotarlo y captúralo. Consejo: un Haxorus variocolor criado o intercambiado no cuenta como este encuentro. Fuente: WikiDex «Reserva Natural»; Serebii «Pokédex Completion Rewards»."
+    },
+    {
+     "titulo": "Reserva Natural: otros Pokémon y objetos",
+     "texto": "Cuándo: con el Pase, en cualquier visita. Dónde: Reserva Natural. Paso a paso: 1) Hierba: Nuzleaf, Altaria, Girafarig, Golduck, Noctowl, Fraxure y Kecleon (nivel 56-59; 64-67 en la hierba oscura). 2) Hierba que se mueve: Audino, Dunsparce y Shiftry. Agua: Basculin, Buizel y Floatzel; pescando con la Supercaña, Magikarp y Gyarados. 3) Objetos: Maxipepita (hierba oscura), Caramelo Raro (sobre la cascada) y Poción Máxima (al norte, con Surf). Consejo: Magikarp y Gyarados pueden salir a cualquier nivel entre 1 y 100. Fuente: WikiDex «Reserva Natural»."
+    }
+   ]
+  },
+  "WHITE2-10": {
+   "bloques": [
+    {
+     "objetivo": "postgame"
+    },
+    {
+     "objetivo": "items0"
+    },
+    {
+     "titulo": "Mirto en Pueblo Ocre y la llegada de Guayo",
+     "texto": "Cuándo: tras el Hall de la Fama; un solo combate. Dónde: casa de Mirto, en Pueblo Ocre. Paso a paso: 1) Vuela a Pueblo Ocre y entra en casa de Mirto. 2) Combate individual: Accelgor, Escavalier, Bouffalant, Conkeldurr y Braviary a nivel 60 y Volcarona a nivel 62. 3) Al ganar aparece su nieto Guayo, que te espera en el Cavernogal Blanco de Bosque Blanco (entre las Rutas 14 y 15). 4) Esta victoria es la que abre el desafío de Guayo; es distinta de la de la Liga. Consejo: contra Volcarona, Roca; contra Conkeldurr, Psíquico o Volador; Bouffalant cae con Lucha. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Pueblo Ocre»); Serebii «Strong Trainers» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "Puente Saeta y Bosque Azulejo con Cheren (Mejora)",
+     "texto": "Cuándo: tras el Hall de la Fama, cuando el Puente Saeta ya está abierto. Dónde: Ciudad Porcelana > Puente Saeta > Bosque Azulejo. Paso a paso: 1) Desde Ciudad Porcelana cruza el Puente Saeta. 2) En el Bosque Azulejo Cheren te pide que le acompañes al fondo del bosque; por el camino hay entrenadores con Pokémon de nivel 60. 3) Al fondo os encontráis con un sabio del antiguo Equipo Plasma (Blau), que os habla de N y se marcha. 4) Cheren te da la Mejora; recoge también la Poké Ball del suelo. Consejo: la Mejora es el objeto que hace evolucionar a Porygon por intercambio. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Puente Saeta y Bosque Azulejo»); WikiDex «Siete Sabios»."
+    },
+    {
+     "titulo": "Ciudad Esmalte: Fósil Pluma o Fósil Tapa",
+     "texto": "Cuándo: tras el Hall de la Fama, después del Bosque Azulejo. Dónde: museo y antiguo gimnasio de Ciudad Esmalte. Paso a paso: 1) Entra en el museo y acércate al científico que mira el esqueleto. 2) Llega Aloe y te deja elegir: Fósil Pluma (Archen) o Fósil Tapa (Tirtouga). 3) Dáselo a la mujer de la entrada del museo para revivirlo. 4) En la garita entre Ciudad Esmalte y la Ruta 3 te regalan un Huevo del que nace un Happiny. Consejo: en una casa del suroeste de la ciudad hay un tutor de movimientos que cobra en partes verdes. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Ciudad Esmalte»)."
+    },
+    {
+     "titulo": "Restaurante de Ciudad Gres: combate diario con Millo, Zeo y Maíz",
+     "texto": "Cuándo: tras el Hall de la Fama; una vez al día. Dónde: antiguo gimnasio de Ciudad Gres, ahora un restaurante (por la Ruta 3 desde Ciudad Esmalte). Paso a paso: 1) Entra en el restaurante: los camareros son Millo, Zeo y Maíz. 2) Habla con uno: combate a tu lado contra los otros dos en un combate múltiple. 3) Cada hermano usa tres Pokémon: dos a nivel 65 y su mono elemental (Simisage, Simisear o Simipour) a nivel 67. 4) Vuelve al día siguiente para repetirlo. Consejo: si llevas el recuerdo «Tres son multitud» del Nexo Recuerdo, aquí te cuentan por qué dejaron el gimnasio. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Ciudad Gres»); Serebii «Strong Trainers» (Negro 2/Blanco 2)."
+    },
+    {
+     "objetivo": "pokemon-380"
+    },
+    {
+     "titulo": "Palacio de N: vencer a N y a su Reshiram",
+     "texto": "Cuándo: tras el Hall de la Fama; al salir de casa te avisan de que el Zoroark de N te espera en la Calle Victoria. Dónde: Calle Victoria > Palacio de N (semihundido dentro de la cueva). Paso a paso: 1) En la Calle Victoria sigue al Zoroark de N por las cuevas de la derecha hasta el palacio. 2) N te pide que vayas a su antiguo cuarto (la primera puerta). 3) Síguele a la sala del trono: combate solo con Reshiram, a nivel 70. 4) Al ganar recibes 14.000 ₽ y el Orbe Claro. Dentro del palacio está también la MT50 (Sofoco). Consejo: guarda antes de entrar en la sala del trono. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Conseguir a Kyurem negro/Kyurem blanco»); WikiDex «Castillo de N»."
+    },
+    {
+     "titulo": "Torre Duodraco: capturar a Reshiram",
+     "texto": "Cuándo: después de recibir el Orbe Claro. Dónde: Torre Duodraco, junto a Ciudad Teja (el Monte Tuerca ya está abierto; también puedes ir con Vuelo). Paso a paso: 1) Ve a Ciudad Teja y entra en la Torre Duodraco. 2) Sube hasta la cima; por el camino recoge la Griseosfera, la Diamansfera y la Lustresfera. 3) En lo más alto el Orbe Claro se transforma en Reshiram: combate (nivel 70) y captúralo. Consejo: guarda antes y captúralo antes de ir a por Kyurem, porque lo necesitas para la fusión. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Conseguir a Kyurem negro/Kyurem blanco»); Serebii «Legendary Pokémon» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "Kyurem en el Boquete Gigante y la Punta ADN",
+     "texto": "Cuándo: tras capturar a Reshiram. Dónde: Boquete Gigante, al final de la Ruta 22; cueva del norte. Paso a paso: 1) Ve a Ciudad Marga y sigue por la Ruta 22 hasta el Boquete Gigante. 2) Atraviésalo hasta la cueva del norte. 3) Combate con Kyurem (nivel 70, forma normal) y captúralo. 4) Recoge la Punta ADN que deja: sirve para fusionarlo con Reshiram y separarlos cuando quieras. Consejo: guarda antes de hablarle. Fuente: Serebii «Legendary Pokémon» (Negro 2/Blanco 2); WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon»."
+    },
+    {
+     "objetivo": "pokemon-480"
+    },
+    {
+     "objetivo": "pokemon-481"
+    },
+    {
+     "objetivo": "pokemon-482"
+    },
+    {
+     "objetivo": "pokemon-485"
+    },
+    {
+     "titulo": "Cresselia: Pluma Lunar de Villa Horroris",
+     "texto": "Cuándo: la Pluma Lunar se puede recoger desde que llegas a Pueblo Chamota; Cresselia, cuando llegues al Puente Progreso. Si ya la capturaste, sáltate este bloque. Dónde: Villa Horroris (junto a Pueblo Chamota) y Puente Progreso, entre las Rutas 15 y 16 (nivel 68). Paso a paso: 1) En Villa Horroris baja por las escaleras de arriba a la izquierda, ve a la derecha por la biblioteca y sube. 2) Sube a la planta alta por las escaleras de la derecha (aparece la joven fantasma) y sigue a la izquierda hasta bajar otra vez. 3) Vuelve a bajar a la biblioteca por la izquierda (recoge la Piedra Noche), ve a la derecha, sube y luego sube por las escaleras del centro. 4) Entra por la puerta del centro y coge la Pluma Lunar. 5) En mitad del Puente Progreso la pluma brilla: sácala y combate con Cresselia (nivel 68). Consejo: los muebles cambian de sitio en cada vuelta; sigue el orden de escaleras, no los muebles. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Capturar a Cresselia»); WikiDex «Villa Horroris»."
+    },
+    {
+     "titulo": "Matís en Pueblo Arenisca: MO06 (Buceo)",
+     "texto": "Cuándo: tras el Hall de la Fama. Dónde: Pueblo Arenisca. Paso a paso: 1) Llega a Pueblo Arenisca: Matís te da la MO06 (Buceo). 2) Te reta: cura antes a tu equipo. 3) Lleva cinco Pokémon a nivel 62 (entre ellos Unfezant, Bouffalant, Flygon, Eelektross y un mono elemental) y, a nivel 64, la evolución final del inicial con ventaja sobre el tuyo. 4) Después puedes volver a retarle cuando quieras en la base del Equipo Plasma de Ciudad Fayenza. Consejo: Flygon y Eelektross tienen Levitación: no uses ataques de Tierra contra ellos. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Encuentros con Matís, Cintia y N»)."
+    },
+    {
+     "titulo": "Ruinas Submarinas y el libro de Menek",
+     "texto": "Cuándo: tras recibir Buceo y vencer a Matís en Pueblo Arenisca. Dónde: Bahía Arenisca, al este de Pueblo Arenisca. Paso a paso: 1) Con Surf ve hacia el este por la bahía y usa Buceo en la zona de agua más oscura. 2) Tienes 500 pasos por visita; al gastarlos una corriente te saca, pero puedes volver. 3) Las cuatro plantas son como en Negro/Blanco: en la primera, tablas para Arceus y monedas antiguas; en la segunda, Destello ante la columna; en la tercera, Fuerza sobre la columna; en la cuarta, la reliquia final. 4) Tras vencer a Matís aparece Menek en Pueblo Arenisca y te da un libro de Ghechis con el que se traducen las inscripciones de las columnas. Consejo: lleva un Pokémon con Destello y otro con Fuerza para no gastar pasos. Fuente: WikiDex «Templo Submarino/Ruinas Submarinas» y «Siete Sabios»; Serebii «Abyssal Ruins»."
+    },
+    {
+     "titulo": "Cintia en la villa de Catleya (Pueblo Arenisca)",
+     "texto": "Cuándo: tras el Hall de la Fama, solo en primavera o en verano (en Teselia la estación cambia cada mes: enero, mayo y septiembre son primavera; febrero, junio y octubre, verano). Dónde: villa de Catleya, la casa a la izquierda del Centro Pokémon de Pueblo Arenisca. Paso a paso: 1) En primavera o verano entra en la villa y habla con Cintia. 2) Combate individual: Spiritomb, Milotic, Togekiss, Lucario y Glaceon a nivel 76 y Garchomp a nivel 78. 3) Puedes repetirlo una vez al día mientras dure la estación. Consejo: Spiritomb usa Doble Equipo: tíralo rápido con ataques que no fallen; para Garchomp, Hielo o Dragón. Fuente: Serebii «Strong Trainers» (Negro 2/Blanco 2); WikiDex «Pueblo Arenisca»."
+    },
+    {
+     "titulo": "Acromo en la Fragata Plasma: segunda Master Ball",
+     "texto": "Cuándo: tras el Hall de la Fama. Dónde: Fragata Plasma, atracada junto al Laboratorio P+P (desde Pueblo Arcilla, Surf por la Ruta 1 hacia el oeste y la Ruta 17). Paso a paso: 1) Sigue las corrientes de la Ruta 17 hasta el Laboratorio P+P; al este está el barco. 2) Sube a la Fragata Plasma y ve al puente de mando. 3) Combate contra Acromo: Magneton, Rotom (forma Lavado), Metagross, Beheeyem y Magnezone a nivel 72 y Klinklang a nivel 74. 4) Al ganar te da una Master Ball, la segunda del juego. 5) Desde entonces puedes retarle cada día en la cubierta de proa. Consejo: Fuego, Lucha o Tierra contra casi todo su equipo; Planta contra Rotom Lavado. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Segunda Master Ball»); Serebii «Strong Trainers» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "Trío Sombrío en Ciudad Teja (una vez por estación)",
+     "texto": "Cuándo: tras el Hall de la Fama; se repite una vez por estación (cada mes). Dónde: Ciudad Teja. Paso a paso: 1) Ve a Ciudad Teja: el Trío Sombrío te reta. 2) Son tres combates: individual (Bisharp, Bisharp y Absol), triple (Bisharp, Accelgor y Bisharp) y rotatorio (Banette, Bisharp y Bisharp); los Bisharp a nivel 65 y el otro Pokémon a nivel 67. 3) Vuelve en la siguiente estación para repetirlo. Consejo: Fuego, Lucha o Tierra contra Bisharp; Chandelure o Golurk van muy bien. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon» («Ciudad Teja»); Serebii «Strong Trainers» (Negro 2/Blanco 2)."
+    }
+   ]
+  },
+  "WHITE2-11": {
+   "bloques": [
+    {
+     "titulo": "Ficha de entrenador: cómo cambia de color",
+     "texto": "Cuándo: desde el principio; se consulta en cualquier momento. Dónde: menú del juego > Ficha de entrenador. Paso a paso: 1) Abre la ficha: empieza de color azul y no tiene estrellas. 2) Cada logro la sube un nivel, en cualquier orden; con los cinco llega al último color, blanco en tu edición. Serebii da como colores intermedios morado, naranja, plata y oro; WikiDex da verde, rojo, plata y oro. 3) Los cinco logros son: superar la Liga; la Pokédex Nacional sin los singulares de evento; rodar todas las películas de Pokéwood; ganar el Torneo Campeones del PWT; y el Nexárbol a nivel 30 o más en el nivel negro y en el blanco (cada uno por separado). 4) Comprueba el color tras cada logro; abajo tienes un bloque para cada uno. Consejo: las insignias del Medallero no cuentan para la ficha. Fuente: WikiDex «Ficha de entrenador»; Serebii «The Trainer Card» (Negro 2/Blanco 2)."
+    },
+    {
+     "objetivo": "card-0"
+    },
+    {
+     "objetivo": "oval-charm"
+    },
+    {
+     "objetivo": "diploma-regional"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "card-1"
+    },
+    {
+     "objetivo": "shiny-charm"
+    },
+    {
+     "objetivo": "diploma-nacional"
+    },
+    {
+     "objetivo": "event-0"
+    },
+    {
+     "objetivo": "card-2"
+    },
+    {
+     "objetivo": "card-3"
+    },
+    {
+     "objetivo": "card-4"
+    },
+    {
+     "titulo": "Recoger las insignias con Don Insignio",
+     "texto": "Cuándo: cada vez que cumples un logro del Medallero, desde que tienes la Caja de Insignias (Pueblo Ocre). Dónde: cualquier Centro Pokémon, donde espera Don Insignio, y el Insigniárium de Ciudad Porcelana. Paso a paso: 1) Al cumplir un logro, la insignia no llega sola: entra en un Centro Pokémon y habla con Don Insignio, que te da todas las pendientes de una vez. 2) Abre la Caja de Insignias (objeto clave) para ver las conseguidas; las Insignias Pista indican qué falta. 3) Recoge los rangos en el Insigniárium (planta 1 del edificio más al oeste de Ciudad Porcelana). Consejo: el detalle de las 255 insignias está en la misión del Medallero de Teselia. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
+    },
+    {
+     "objetivo": "nurse-gold"
+    }
+   ]
+  },
+  "WHITE2-E01": {
+   "bloques": [
+    {
+     "titulo": "Caja de Insignias y Don Insignio",
+     "texto": "Cuándo: al principio del juego, en Pueblo Ocre. Dónde: a la salida de la casa de Mirto, en Pueblo Ocre. Paso a paso: 1) Al salir por primera vez de casa de Mirto, Don Insignio te habla de la caza de insignias. 2) Acepta participar: te da la Caja de Insignias y la insignia «Primer Paso», además de algunas Insignias Pista. 3) Desde entonces Don Insignio espera en los Centros Pokémon para entregarte las que vayas ganando. Consejo: puedes poner una insignia en la ficha de entrenador para que la vean los demás. Fuente: WikiDex «Insignia» y «Caja de Insignias»."
+    },
+    {
+     "objetivo": "medals"
+    },
+    {
+     "objetivo": "battle0"
+    },
+    {
+     "titulo": "Rangos del Insigniárium (50, 100, 150 y 200 insignias)",
+     "texto": "Cuándo: a medida que juntas insignias. Dónde: Insigniárium, planta 1 del edificio más al oeste de Ciudad Porcelana. Paso a paso: 1) Recoge con Don Insignio todas las insignias pendientes. 2) Ve al Insigniárium y habla con el recepcionista. 3) Recibe el rango que te corresponde: Aspirante con 50, Profesional con 100, Maestría con 150 y Leyenda con 200. 4) Cada rango da a su vez una insignia especial. Consejo: la insignia final de «todas las insignias» exige las 255. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "Insignias que dependían de servicios cerrados",
+     "texto": "Cuándo: al final, cuando ya no te falte nada que se pueda ganar jugando. Dónde: Caja de Insignias (para ver qué falta). Paso a paso: 1) Las de intercambio, combates inalámbricos y Misiones Festival se siguen consiguiendo con otra consola por conexión local. 2) Las que exigían la Conexión Wi-Fi de Nintendo (cerrada el 20 de mayo de 2014), Pokémon Global Link o la RAdar Pokémon ya no se pueden ganar jugando. 3) Con Pokekeep: abre la partida, pestaña SAV, botón «Insignias», marca solo las que dependían de esos servicios cerrados, guarda y exporta la partida. Consejo: anota cuáles marcas así para saber que no las ganaste jugando. Fuente: WikiDex «Insignia»; Serebii «Medals» (Negro 2/Blanco 2)."
+    }
+   ]
+  },
+  "WHITE2-E02": {
+   "bloques": [
+    {
+     "titulo": "Pokéwood: cómo se rueda una película",
+     "texto": "Cuándo: desde la Medalla Ponzoña (tras vencer a Hiedra). Dónde: Estudios Cinematográficos Pokéwood, al norte de Ciudad Hormigón. Paso a paso: 1) Elige una película y entra en el plató del croma. 2) Combate con los Pokémon de alquiler que marca el guion; en cada turno aparecen frases: elige la que encaja con el guion. 3) Al acabar mira el estreno en el cine: según tus elecciones sale final bueno, malo o alternativo. 4) Solo el final bueno abre la siguiente entrega de la serie; si sale otro, repite. 5) Con toda una serie terminada con final bueno puedes rodar con tus propios Pokémon; si acabas una película con final alternativo, tu Pokémon se convierte en estrella (entra al combate con una animación especial). Consejo: después del estreno habla con tus fans: te regalan objetos, más cuanto mejor sea el final y tu rango. Fuente: WikiDex «Estudios Cinematográficos Pokéwood»."
+    },
+    {
+     "titulo": "Pokéwood: películas abiertas desde el principio",
+     "texto": "Cuándo: desde la Medalla Ponzoña. Dónde: Pokéwood, Ciudad Hormigón. Paso a paso: 1) Juncomán (la primera entrega; el resto de la serie llega tras el Hall de la Fama). 2) Los invasores 1 a 4. 3) Cronodisea 1 a 3. 4) La puerta al mundo mágico 1 a 3. 5) La niebla roja 1 a 3. Consejo: cada serie se abre entrega a entrega con el final bueno de la anterior. Fuente: WikiDex «Estudios Cinematográficos Pokéwood»."
+    },
+    {
+     "titulo": "Pokéwood: películas que se abren tras el Hall de la Fama",
+     "texto": "Cuándo: tras vencer a Iris. Dónde: Pokéwood, Ciudad Hormigón. Paso a paso: 1) Juncomán contraataca y Juncomán contraataca 2. 2) El Amorfus 1 a 4. 3) Amor a primera vista 1 a 3. 4) Antifantasmas 1 a 4. Consejo: sube la taquilla mientras tanto, porque las últimas series dependen de ella. Fuente: WikiDex «Estudios Cinematográficos Pokéwood»."
+    },
+    {
+     "titulo": "Pokéwood: películas por taquilla, El retorno de Juncomán y rango EX",
+     "texto": "Cuándo: a medida que sube tu recaudación. Dónde: Pokéwood, Ciudad Hormigón. Paso a paso: 1) Juncobot 1 a 4: se abre al recaudar 5.000 millones o más con una sola película. 2) ¡Qué pedazo de oficinista! 1 a 4: al llegar al Rango 3 (10.000 millones en total). 3) Un recuerdo inolvidable 1 a 4: al llegar al Rango 4 (25.000 millones). 4) Con todas las demás rodadas se abre la película especial El retorno de Juncomán; complétala. 5) Con todas las películas completas llegas al rango EX: camerino propio y estatua de bronce en los estudios. Consejo: son 40 películas en total contando El retorno de Juncomán; el Rango 5 llega con 45.000 millones. Fuente: WikiDex «Estudios Cinematográficos Pokéwood»."
+    },
+    {
+     "titulo": "PWT: Torneo Fayenza y torneos del mostrador izquierdo",
+     "texto": "Cuándo: el Torneo Fayenza es parte obligatoria de la historia; los demás se abren al ganarlo. Dónde: Pokémon World Tournament, al sur de Ciudad Fayenza, mostrador de la izquierda. Paso a paso: 1) Torneo Fayenza: combates a nivel 25; en la historia te enfrentas a Matís y a Cheren y al final a Acromo. 2) Al ganarlo se abren el Torneo Préstamo (Pokémon de alquiler) y el Torneo Trueque (nivel 50, puedes cambiar un Pokémon con el rival). 3) Gana PB en ellos y canjéalos en los mostradores de premios (MT, objetos de combate, vitaminas). Consejo: el Torneo Fayenza o vencer a un campeón suelto no cuentan para el logro de la ficha; los torneos de Descarga dependían de la Conexión Wi-Fi de Nintendo y no hacen falta para nada. Fuente: WikiDex «Pokémon World Tournament»; Serebii «Pokémon World Tournament» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "PWT: Torneos de Líderes de las cinco regiones",
+     "texto": "Cuándo: tras el Hall de la Fama. Dónde: Pokémon World Tournament, sur de Ciudad Fayenza, mostrador de la derecha. Paso a paso: 1) Gana el Torneo Líderes de Teselia (se abre al superar la Liga). 2) Con él se abren los Torneos Líderes de Kanto, Johto, Hoenn y Sinnoh: gana los cuatro. 3) Cada torneo se puede jugar en combate individual, doble, triple o rotatorio, a nivel 50. Consejo: no se admiten los legendarios principales ni los singulares (Mewtwo, Lugia, Ho-Oh, Kyogre, Groudon, Rayquaza, Dialga, Palkia, Giratina, Reshiram, Zekrom, Kyurem…), ni Latios o Latias con Rocío Bondad. Fuente: WikiDex «Pokémon World Tournament»; Serebii «Pokémon World Tournament» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "PWT: Torneo Mundial de Líderes (10 victorias)",
+     "texto": "Cuándo: tras ganar los cinco Torneos de Líderes. Dónde: Pokémon World Tournament, mostrador de la derecha. Paso a paso: 1) Con los cinco Torneos de Líderes ganados se abre el Torneo Mundial de Líderes, con líderes de todas las regiones. 2) Gánalo 10 veces (no hace falta que sean seguidas). 3) Al llegar a las 10 se abre el Torneo Campeones. Consejo: ganar el Torneo Préstamo y el Torneo Trueque con los de Líderes abre además el Supertorneo Préstamo y el Supertorneo Trueque. Fuente: WikiDex «Pokémon World Tournament»; Serebii «Pokémon World Tournament» (Negro 2/Blanco 2)."
+    },
+    {
+     "objetivo": "pwt"
+    }
+   ]
+  },
+  "WHITE2-N1": {
+   "bloques": [
+    {
+     "titulo": "Nexo Recuerdo: conectar con una partida de Negro o Blanco",
+     "texto": "Cuándo: en cualquier momento; mejor antes de entrar por primera vez en el Teatro Musical de Ciudad Mayólica. Dónde: menú principal de Blanco 2 > Nexo Teselia > Nexo Recuerdo. Paso a paso: 1) Necesitas otra consola con una partida de Negro o Blanco. 2) Elige Nexo Teselia y luego Nexo Recuerdo, y conecta por comunicación inalámbrica local (la vía por la Conexión Wi-Fi de Nintendo cerró el 20 de mayo de 2014). 3) Lo que se desbloquea depende de lo que hiciste en esa partida: medallas Trío, Temblor, Candelizo, Leyenda y Jet para cada recuerdo de líder; haber vencido a N y a Ghechis para los Pokémon de N, el Zoroark de Fayenza, el Criapokémon y las revanchas de Cheren y Bel. Consejo: también cambian los diálogos: los personajes llaman por su nombre al protagonista de Negro/Blanco. Fuente: WikiDex «Nexo Teselia» (Nexo Recuerdo); Serebii «Memory Link»."
+    },
+    {
+     "titulo": "Complementos del Musical de Negro/Blanco",
+     "texto": "Cuándo: antes de entrar por primera vez en el Teatro Musical de Ciudad Mayólica. Dónde: Teatro Musical, Ciudad Mayólica. Paso a paso: 1) Haz el Nexo Recuerdo con una partida de Negro/Blanco que tenga el Neceser. 2) Entra en el Teatro Musical: en vez de un Neceser vacío, el dueño te da el que «se dejó un entrenador», con todos los complementos de esa partida. 3) El dueño te cuenta además el recuerdo «Adiós, querida estrella». Consejo: si entras en el teatro antes de conectar, recibirás el Neceser vacío. Fuente: Serebii «Memory Link»; WikiDex «Nexo Teselia»."
+    },
+    {
+     "titulo": "Zorua de Ruga (Ciudad Fayenza)",
+     "texto": "Cuándo: durante la historia, en Ciudad Fayenza; no necesita el Nexo Recuerdo. Dónde: refugio al oeste del gimnasio de Ciudad Fayenza. Paso a paso: 1) Entra en el refugio: el sabio Ruga te reta a un combate. 2) Al vencerle te ofrece el Zorua de N, que él cuidaba (nivel 25). 3) Lleva un hueco libre en el equipo para recibirlo. Consejo: con el Nexo Recuerdo, Ruga te cuenta además dónde están los Pokémon que N liberó. Fuente: WikiDex «Siete Sabios» y «Pokémon de N»."
+    },
+    {
+     "titulo": "Pokémon de N",
+     "texto": "Cuándo: con el recuerdo de N liberando a sus Pokémon (partida de Negro/Blanco con N y Ghechis vencidos) y tras hablar con Ruga en Ciudad Fayenza. Dónde: Ruta 2; Bosque Azulejo; Cueva Manantial; Cueva Electrorroca; Zona Desierto. Paso a paso: 1) Purrloin en la Ruta 2. 2) Pidove, Timburr y Tympole en el Bosque Azulejo. 3) Woobat en la Cueva Manantial. 4) Boldore, Joltik, Ferroseed y Klink en la Cueva Electrorroca. 5) Sandile, Darumaka, Darmanitan, Scraggy y Sigilyph en la Zona Desierto. 6) Al empezar el combate brillan y llevan «(?)»; al capturarlos tienen el EO N y el ID 00002 y no se les puede poner mote. Consejo: ese brillo no significa que sean variocolor. Con Pokekeep: los recuerdos no se reproducen sin la otra partida; si te falta alguno para la Pokédex, añádelo legal desde la Librería. Fuente: WikiDex «Nexo Teselia» y «Pokémon de N»; Serebii «Memory Link»."
+    },
+    {
+     "titulo": "Claros Ocultos",
+     "texto": "Cuándo: desde la Ruta 5, donde Bel te enseña el primero al darte Vuelo. Dónde: 15 zonas: Rutas 2, 3, 5, 6, 7, 9, 13, 18, 22 y 23, Rancho Ocre, Bosque Azulejo, Bosque de los Perdidos, Boquete Gigante y Santuario Abundancia. Paso a paso: 1) Busca el hueco entre dos árboles y pulsa A. 2) Dentro puede haber un objeto, un objeto oculto (Zahorí) o un Pokémon con su habilidad oculta (el de la Ruta 5 es un Minccino con Encadenado). 3) Cuando lo vacías, cada 256 pasos tiene un 5 % de probabilidad de volver a llenarse: 40 % objeto, 40 % objeto oculto, 20 % Pokémon. 4) No se regenera hasta que recojas el objeto o captures, debilites o huyas del Pokémon. Consejo: los Pokémon de los claros nunca son variocolor; visitar claros, capturar sus Pokémon y ver los recuerdos son objetivos distintos. Fuente: WikiDex «Claro oculto»; Serebii «Hidden Grotto»."
+    },
+    {
+     "titulo": "Recuerdos en su sitio: líderes, Musical y Criapokémon",
+     "texto": "Cuándo: tras hacer el Nexo Recuerdo; cada uno al llegar a su lugar. Dónde: Ciudad Gres, Ciudad Esmalte, Ciudad Teja, Ciudad Mayólica y el Centro Pokémon de Ciudad Engobe. Paso a paso: 1) «Tres son multitud»: restaurante de Ciudad Gres (Millo, Zeo y Maíz). 2) «Cada uno con su hueso»: museo de Ciudad Esmalte (Aloe, Camus y Yakón). 3) «Un espíritu ambicioso»: antiguo gimnasio de Ciudad Teja (Junco). 4) «Adiós, querida estrella»: el dueño del Musical en Ciudad Mayólica. 5) «Amigos que vienen y van»: un Criapokémon en el Centro Pokémon de Ciudad Engobe (WikiDex lo sitúa junto al PC de cualquier Centro Pokémon). Consejo: Gres y Esmalte solo son accesibles tras el Hall de la Fama. Fuente: WikiDex «Nexo Teselia» (lista de recuerdos); Serebii «Memory Link»."
+    },
+    {
+     "titulo": "Recuerdos que piden avanzar: Gerania, Zoroark y Lirio",
+     "texto": "Cuándo: según tu avance en esta partida. Dónde: Ciudad Loza, Ciudad Fayenza y Ciudad Caolín. Paso a paso: 1) «Genial y sofisticada»: Gerania te habla de Camila tras llegar a Pueblo Chamota. 2) «Blanco y negro»: después de participar en el PWT, en la casa de un antiguo miembro del Equipo Plasma de Ciudad Fayenza aparece un Zoroark. 3) «Una nueva luz»: Lirio, en Ciudad Caolín (WikiDex: tras la Liga; Serebii: tras entrar en el palacio). Consejo: si un recuerdo no aparece, revisa la medalla que exige en la partida de Negro/Blanco. Fuente: WikiDex «Nexo Teselia»; Serebii «Memory Link»."
+    },
+    {
+     "titulo": "Revanchas de Cheren (Ruta 5) y Bel (Pueblo Arcilla)",
+     "texto": "Cuándo: con el Nexo Recuerdo hecho desde una partida en la que venciste a N y a Ghechis; tras la Liga, según WikiDex. Dónde: Ruta 5 (Cheren) y Pueblo Arcilla (Bel). Paso a paso: 1) Entra en la Ruta 5: Cheren te reta con su equipo de Negro/Blanco (cinco Pokémon a nivel 65 y su inicial a nivel 67). 2) Entra en Pueblo Arcilla: Bel te reta en recuerdo de su primer combate (cinco Pokémon a nivel 63 y su inicial a nivel 65). 3) Sus equipos dependen del inicial que elegiste en Negro/Blanco. Consejo: según Serebii son combates de una sola vez: ve preparado. Fuente: Serebii «Memory Link» y «Strong Trainers» (Negro 2/Blanco 2); WikiDex «Nexo Teselia»."
+    }
+   ]
+  },
+  "WHITE2-N2": {
+   "bloques": [
+    {
+     "titulo": "Bosque Blanco: la zona exclusiva de tu edición",
+     "texto": "Cuándo: tras el Hall de la Fama. Dónde: entre la Ruta 14 y la Ruta 15. Paso a paso: 1) En Blanco 2 ahí está Bosque Blanco, con el Cavernogal Blanco. 2) Ciudad Negra y el Rascacielos Negro son de Negro 2: solo llegan a tu partida con su clave. 3) La clave se activa en el menú principal, Nexo Teselia > Sistema Clave. Consejo: tras completar el desafío, los mercados de la zona venden un objeto distinto cada día. Fuente: WikiDex «Nexo Teselia» (Sistema Clave); Serebii «Black City & White Forest» (Negro 2/Blanco 2)."
+    },
+    {
+     "titulo": "Clave del Modo Ayuda",
+     "texto": "Cuándo: al vencer a la Campeona Iris. Dónde: menú principal > Nexo Teselia > Sistema Clave. Paso a paso: 1) Al vencer a Iris recibes la clave ayuda. 2) Actívala en el Sistema Clave: los entrenadores llevan Pokémon de menos nivel. 3) La clave reto es de Negro 2: pídesela a un amigo por infrarrojos. Consejo: recibir, activar y terminar el juego con un modo son cosas distintas; si borras la partida pierdes las claves. Fuente: WikiDex «Nexo Teselia» (Sistema Clave); Serebii «Easy Mode & Challenge Mode»."
+    },
+    {
+     "objetivo": "treehollow"
+    },
+    {
+     "titulo": "Clave rascacielos o cavernogal: compartirla por infrarrojos",
+     "texto": "Cuándo: al superar la zona 5 del Cavernogal Blanco. Dónde: menú principal > Nexo Teselia > Sistema Clave. Paso a paso: 1) Supera la zona 5 del Cavernogal Blanco: recibes la clave cavernogal. 2) Pon tu consola cerca de la de un amigo con Negro 2, con los cartuchos apuntándose (infrarrojos). 3) Enviaos las claves en el Sistema Clave y activa la que recibas: cambia la zona entre las Rutas 14 y 15. Consejo: tras vencer a Guayo, en la zona 10 de la otra edición te espera un veterano con equipo de legendarios a nivel 80. Fuente: WikiDex «Nexo Teselia» (Sistema Clave); Serebii «Black City & White Forest» (Negro 2/Blanco 2)."
+    },
+    {
+     "objetivo": "pokemon-377"
+    },
+    {
+     "objetivo": "pokemon-378"
+    },
+    {
+     "objetivo": "pokemon-379"
+    },
+    {
+     "objetivo": "pokemon-486"
+    }
+   ]
+  },
+  "WHITE2-N3": {
+   "bloques": [
+    {
+     "titulo": "Pokédex de Teselia: los 297 vistos",
+     "texto": "Cuándo: tras el Hall de la Fama, cuando tengas ya casi toda la Pokédex de Teselia. Dónde: toda Teselia. Paso a paso: 1) Registra como vistos los 297 Pokémon de la Pokédex de Teselia de tu edición; Victini, Keldeo, Meloetta y Genesect no cuentan. 2) Basta con verlos: los exclusivos de Negro 2 se registran al ver el Pokémon de otro entrenador o al recibirlos por intercambio. 3) Consulta la Pokédex para ver cuáles te faltan. Consejo: capturarlos todos es otro premio distinto (el Amuleto Oval). Fuente: WikiDex «Reserva Natural»; Serebii «Pokédex Completion Rewards»."
+    },
+    {
+     "titulo": "El Pase de la Profesora Encina",
+     "texto": "Cuándo: con los 297 vistos. Dónde: laboratorio de la Profesora Encina, en Pueblo Arcilla. Paso a paso: 1) Ve a Pueblo Arcilla (Ruta 1 desde Pueblo Terracota, o con Vuelo). 2) Pide a la Profesora Encina que evalúe tu Pokédex. 3) Te entrega el Pase, el objeto clave que permite volar a la Reserva Natural. Tener los 297 vistos no basta: hay que recogerlo. Consejo: el nombre oficial en España es «Pase» (Permit en inglés). Fuente: WikiDex «Pase» y «Reserva Natural»; Serebii «Pokédex Completion Rewards»."
+    },
+    {
+     "titulo": "Viaje a la Reserva Natural y Haxorus variocolor",
+     "texto": "Cuándo: con el Pase. Dónde: aeropuerto de Ciudad Loza > Reserva Natural (fuera del mapa de Teselia). Paso a paso: 1) Ve al aeropuerto de Ciudad Loza y vuela a la Reserva Natural; para volver usa también el avión. 2) Guarda antes de buscarlo y lleva Falso Tortazo y Ultra Balls. 3) En la reserva hay un único Haxorus variocolor de nivel 60: debilítalo sin derrotarlo y captúralo. Consejo: un Haxorus variocolor criado o intercambiado no cuenta como este encuentro. Fuente: WikiDex «Reserva Natural»; Serebii «Pokédex Completion Rewards»."
+    },
+    {
+     "titulo": "Reserva Natural: otros Pokémon y objetos",
+     "texto": "Cuándo: con el Pase, en cualquier visita. Dónde: Reserva Natural. Paso a paso: 1) Hierba: Nuzleaf, Altaria, Girafarig, Golduck, Noctowl, Fraxure y Kecleon (nivel 56-59; 64-67 en la hierba oscura). 2) Hierba que se mueve: Audino, Dunsparce y Shiftry. Agua: Basculin, Buizel y Floatzel; pescando con la Supercaña, Magikarp y Gyarados. 3) Objetos: Maxipepita (hierba oscura), Caramelo Raro (sobre la cascada) y Poción Máxima (al norte, con Surf). Consejo: Magikarp y Gyarados pueden salir a cualquier nivel entre 1 y 100. Fuente: WikiDex «Reserva Natural»."
+    }
+   ]
+  }
+ },
+ "corrige": {
+  "BLACK2": {
+   "items0": "Cuándo: tras el Hall de la Fama, salvo la Pluma Lunar, que puedes recoger antes. Dónde: varios lugares de Teselia. Paso a paso: 1) Orbe Oscuro: te lo da N al vencerle en su palacio, oculto en la Calle Victoria (sigue a su Zoroark); llévalo a lo alto de la Torre Duodraco para Zekrom. 2) Pluma Lunar: en Villa Horroris, junto a Pueblo Chamota, siguiendo las escaleras del puzle de la casa; se usa en mitad del Puente Progreso (Cresselia). 3) Piedra Magma: en uno de los riscos más altos de la Ruta 18; se usa en la Sala Renacer de la Montaña Reversia (Heatran). 4) Clave Hierro: al capturar a Regirock en las Ruinas Subterráneas; se activa en Nexo Teselia > Sistema Clave para Registeel. La Clave Iceberg (Regice) llega de un amigo con Blanco 2. 5) Pase: con los 297 Pokémon de la Pokédex de Teselia vistos, te lo da la Profesora Encina para volar a la Reserva Natural. 6) MO05 Cascada: te la da N al final de la Ruta 23. Con Pokekeep: si no tienes a nadie con Blanco 2, añade a Regice legal desde la Librería. Consejo: cada objeto tiene su bloque en esta guía; aquí solo está la lista para no olvidarte de ninguno. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon», «Ruinas Subterráneas», «Pase» y «Reserva Natural».",
+   "oval-charm": "Cuándo: tras el Hall de la Fama, al haber capturado toda la Pokédex de Teselia. Dónde: laboratorio de la Profesora Encina, en Pueblo Arcilla. Paso a paso: 1) Captura los 297 Pokémon de la Pokédex de Teselia de esta edición (no hacen falta Victini, Keldeo, Meloetta ni Genesect). 2) Ve a Pueblo Arcilla (Ruta 1 desde Pueblo Terracota, o con Vuelo) y habla con la Profesora Encina para que evalúe tu Pokédex. 3) Te entrega el Amuleto Oval, que hace que la guardería encuentre huevos con más facilidad. Con Pokekeep: los exclusivos de Blanco 2, añádelos legales desde la Librería si no tienes con quién intercambiar. Consejo: con solo verlos todos ya te da antes el Pase para la Reserva Natural (bloque propio en la misión de la Reserva Natural). Fuente: WikiDex «Reserva Natural» y «Pase»; Serebii «Pokédex Completion Rewards».",
+   "battle0": "Cuándo: desde que llegas a Ciudad Mayólica durante la historia. Dónde: Metro Batalla, Ciudad Mayólica. Paso a paso: 1) La primera vez que entras, los Jefes de Metro Fero y Caril te retan a un combate múltiple (Boldore y Gurdurr a nivel 26) con un compañero; al vencerlos se abre el Metro Batalla. 2) Elige línea: verde oscuro (Individual), roja (Doble) o naranja (Múltiple). Tus Pokémon combaten a nivel 50 y no se admiten legendarios como Mewtwo, Reshiram, Zekrom, Kyurem ni los singulares. 3) Cada tren son 7 combates; en la victoria 21 te retan los Jefes de Metro: Fero en Individual, Caril en Doble y los dos en Múltiple. 4) Con 21 victorias seguidas se abren las líneas Súper (verde, rosa y amarilla), donde vuelven en la victoria 49. 5) Canjea los PB en el Servicio de Intercambio (piedras evolutivas, objetos de combate y MT). Consejo: los PB del Metro Batalla y del PWT suman para una insignia de Combate. Fuente: WikiDex «Metro Batalla» y «Jefe Metro»; Serebii «Battle Subway» (Negro 2/Blanco 2).",
+   "pokedex": "Cuándo: desde el principio; la Pokédex Nacional la activa Carrasco Encina tras el Hall de la Fama. Dónde: toda Teselia y ediciones anteriores. Paso a paso: 1) Completa la Pokédex de Teselia (incluye hierba que se mueve, claros ocultos y estaciones). 2) Tras la Liga, abre el oeste original, Ciudad Negra, la Reserva Natural y los legendarios del postgame. 3) Trae los de 4.ª generación con el Pokétransfer del Laboratorio Transfer (Ruta 15) desde Diamante, Perla, Platino, Oro HeartGold y Plata SoulSilver, y los de Negro/Blanco por intercambio. 4) No cuentan Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta ni Genesect. 5) Intercambia con Blanco 2 sus exclusivos (Latias, entre otros) y pide a un amigo con Blanco 2 la Clave Iceberg para Regice. Con Pokekeep: lo que solo se conseguía en Blanco 2, con la RAdar Pokémon (Tornadus, Thundurus y Landorus tótem, entre otros) o por eventos, añádelo legal desde la Librería. Consejo: el Amuleto Iris llega con la Nacional capturada. Fuente: WikiDex «Ficha de entrenador» y «Nexo Teselia»; Serebii «Pokédex Completion Rewards».",
+   "black-tower": "Cuándo: tras vencer a Iris y después a Mirto en Pueblo Ocre; aparece Guayo y te manda allí. Solo en Negro 2 (o con la clave rascacielos de un amigo). Dónde: Rascacielos Negro, en Ciudad Negra (entre las Rutas 14 y 15). Paso a paso: 1) Habla con la recepcionista. 2) Hay 10 zonas: las 1-5 (ascensor izquierdo) con Pokémon desde nivel 45 y las 6-10 (ascensor derecho) más largas y con Pokémon de más nivel; la distribución cambia en cada intento. 3) En cada zona busca al guardián, que tiene la llave de la compuerta, y vence al Entrenador Jefe que espera detrás; los entrenadores dan pistas sobre quién es el guardián. 4) No puedes usar la mochila: busca al enfermero de la zona, que cura una vez tras vencerle. 5) Al acabar la zona 5 recibes la clave rascacielos, que permite a un amigo con Blanco 2 cambiar su zona por la tuya. 6) En la zona 10 te espera Guayo con Latios, Garchomp y Volcarona a nivel 80. 7) Tras vencerle, visítalo en casa de Mirto, en Pueblo Ocre, con un hueco libre en el equipo: te regala un Gible variocolor. Consejo: si te retiras, pierdes el dinero ganado en el desafío; aquí tus Pokémon sí ganan experiencia y no hay restricción de Pokémon. Fuente: WikiDex «Rascacielos Negro»; Serebii «Black City & White Forest» y «Strong Trainers» (Negro 2/Blanco 2)."
+  },
+  "WHITE2": {
+   "items0": "Cuándo: tras el Hall de la Fama, salvo la Pluma Lunar, que puedes recoger antes. Dónde: varios lugares de Teselia. Paso a paso: 1) Orbe Claro: te lo da N al vencerle en su palacio, oculto en la Calle Victoria (sigue a su Zoroark); llévalo a lo alto de la Torre Duodraco para Reshiram. 2) Pluma Lunar: en Villa Horroris, junto a Pueblo Chamota, siguiendo las escaleras del puzle de la casa; se usa en mitad del Puente Progreso (Cresselia). 3) Piedra Magma: en uno de los riscos más altos de la Ruta 18; se usa en la Sala Renacer de la Montaña Reversia (Heatran). 4) Clave Iceberg: al capturar a Regirock en las Ruinas Subterráneas; se activa en Nexo Teselia > Sistema Clave para Regice. La Clave Hierro (Registeel) llega de un amigo con Negro 2. 5) Pase: con los 297 Pokémon de la Pokédex de Teselia vistos, te lo da la Profesora Encina para volar a la Reserva Natural. 6) MO05 Cascada: te la da N al final de la Ruta 23. Con Pokekeep: si no tienes a nadie con Negro 2, añade a Registeel legal desde la Librería. Consejo: cada objeto tiene su bloque en esta guía; aquí solo está la lista para no olvidarte de ninguno. Fuente: WikiDex «Guía de Pokémon Negro 2 y Pokémon Blanco 2/Después de la Liga Pokémon», «Ruinas Subterráneas», «Pase» y «Reserva Natural».",
+   "oval-charm": "Cuándo: tras el Hall de la Fama, al haber capturado toda la Pokédex de Teselia. Dónde: laboratorio de la Profesora Encina, en Pueblo Arcilla. Paso a paso: 1) Captura los 297 Pokémon de la Pokédex de Teselia de esta edición (no hacen falta Victini, Keldeo, Meloetta ni Genesect). 2) Ve a Pueblo Arcilla (Ruta 1 desde Pueblo Terracota, o con Vuelo) y habla con la Profesora Encina para que evalúe tu Pokédex. 3) Te entrega el Amuleto Oval, que hace que la guardería encuentre huevos con más facilidad. Con Pokekeep: los exclusivos de Negro 2, añádelos legales desde la Librería si no tienes con quién intercambiar. Consejo: con solo verlos todos ya te da antes el Pase para la Reserva Natural (bloque propio en la misión de la Reserva Natural). Fuente: WikiDex «Reserva Natural» y «Pase»; Serebii «Pokédex Completion Rewards».",
+   "battle0": "Cuándo: desde que llegas a Ciudad Mayólica durante la historia. Dónde: Metro Batalla, Ciudad Mayólica. Paso a paso: 1) La primera vez que entras, los Jefes de Metro Fero y Caril te retan a un combate múltiple (Boldore y Gurdurr a nivel 26) con un compañero; al vencerlos se abre el Metro Batalla. 2) Elige línea: verde oscuro (Individual), roja (Doble) o naranja (Múltiple). Tus Pokémon combaten a nivel 50 y no se admiten legendarios como Mewtwo, Reshiram, Zekrom, Kyurem ni los singulares. 3) Cada tren son 7 combates; en la victoria 21 te retan los Jefes de Metro: Fero en Individual, Caril en Doble y los dos en Múltiple. 4) Con 21 victorias seguidas se abren las líneas Súper (verde, rosa y amarilla), donde vuelven en la victoria 49. 5) Canjea los PB en el Servicio de Intercambio (piedras evolutivas, objetos de combate y MT). Consejo: los PB del Metro Batalla y del PWT suman para una insignia de Combate. Fuente: WikiDex «Metro Batalla» y «Jefe Metro»; Serebii «Battle Subway» (Negro 2/Blanco 2).",
+   "pokedex": "Cuándo: desde el principio; la Pokédex Nacional la activa Carrasco Encina tras el Hall de la Fama. Dónde: toda Teselia y ediciones anteriores. Paso a paso: 1) Completa la Pokédex de Teselia (incluye hierba que se mueve, claros ocultos y estaciones). 2) Tras la Liga, abre el oeste original, Bosque Blanco, la Reserva Natural y los legendarios del postgame. 3) Trae los de 4.ª generación con el Pokétransfer del Laboratorio Transfer (Ruta 15) desde Diamante, Perla, Platino, Oro HeartGold y Plata SoulSilver, y los de Negro/Blanco por intercambio. 4) No cuentan Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta ni Genesect. 5) Intercambia con Negro 2 sus exclusivos (Latios, entre otros) y pide a un amigo con Negro 2 la Clave Hierro para Registeel. Con Pokekeep: lo que solo se conseguía en Negro 2, con la RAdar Pokémon (Tornadus, Thundurus y Landorus tótem, entre otros) o por eventos, añádelo legal desde la Librería. Consejo: el Amuleto Iris llega con la Nacional capturada. Fuente: WikiDex «Ficha de entrenador» y «Nexo Teselia»; Serebii «Pokédex Completion Rewards».",
+   "treehollow": "Cuándo: tras vencer a Iris y después a Mirto en Pueblo Ocre; aparece Guayo y te manda allí. Solo en Blanco 2 (o con la clave cavernogal de un amigo). Dónde: Cavernogal Blanco, en Bosque Blanco (entre las Rutas 14 y 15). Paso a paso: 1) Habla con la recepcionista. 2) Hay 10 zonas: las 1-5 (ascensor izquierdo) con Pokémon desde nivel 45 y las 6-10 (ascensor derecho) más largas y con Pokémon de más nivel; la distribución cambia en cada intento. 3) En cada zona busca al guardián, que tiene la llave de la compuerta, y vence al Entrenador Jefe que espera detrás; los entrenadores dan pistas sobre quién es el guardián. 4) No puedes usar la mochila: busca al enfermero de la zona, que cura una vez tras vencerle. 5) Al acabar la zona 5 recibes la clave cavernogal, que permite a un amigo con Negro 2 cambiar su zona por la tuya. 6) En la zona 10 te espera Guayo con Latias, Dragonite y Volcarona a nivel 80. 7) Tras vencerle, visítalo en casa de Mirto, en Pueblo Ocre, con un hueco libre en el equipo: te regala un Dratini variocolor. Consejo: si te retiras, pierdes el dinero ganado en el desafío; aquí tus Pokémon sí ganan experiencia y no hay restricción de Pokémon. Fuente: WikiDex «Cavernogal Blanco»; Serebii «Black City & White Forest» y «Strong Trainers» (Negro 2/Blanco 2)."
+  }
+ }
+}

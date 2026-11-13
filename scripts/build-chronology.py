@@ -28,7 +28,10 @@ for _f in sorted((ROOT / 'research/guides/bloques').glob('*.json')):
         _game.setdefault(_mid.rsplit('-', 1)[0], True)
     _fix = {}
     for _k, _t in _pack.get('corrige', {}).items():
-        if ':' in _k:
+        if isinstance(_t, dict):  # agrupado por juego: {"RED": {"postgame": "…"}}
+            for _id, _tt in _t.items():
+                _fix[_k + ':' + _id] = _tt
+        elif ':' in _k:
             _fix[_k] = _t
         else:
             for _g in _game:

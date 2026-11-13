@@ -1,0 +1,573 @@
+{
+ "misiones": {
+  "GOLD-10": {
+   "bloques": [
+    {
+     "titulo": "Ticket Barco y horario del S.S. Aqua",
+     "texto": "Cuándo: justo después de entrar en el Hall de la Fama. Dónde: Laboratorio Elm (Pueblo Primavera) y puerto de Ciudad Olivo. Paso a paso: 1) Tras los créditos apareces en tu casa: ve al Laboratorio Elm y habla con el profesor; te da el Ticket Barco (si aún no tenías la Master Ball, vuelve a hablarle y te la da). 2) Viaja a Ciudad Olivo, entra en el puerto (al sur de la ciudad) y enseña el Ticket Barco al marinero. 3) El primer viaje sale el día que sea; a partir de entonces el S.S. Aqua zarpa de Ciudad Olivo solo los lunes y viernes, y de Ciudad Carmín solo los miércoles y domingos (según el reloj del juego). 4) En el primer viaje completa la búsqueda de la nieta (bloque siguiente); al terminar, el barco atraca en Ciudad Carmín. Consejo: cuando consigas el Pase del Magnetotrén (misión «Restaurar la Central de Energía») ya no dependerás de los días del barco. Fuente: decompilación de pret (pokegold/pokecrystal) (ElmsLab, OlivinePort, VermilionPort); WikiDex «S.S. Aqua»."
+    },
+    {
+     "titulo": "La nieta perdida del S.S. Aqua (Revestimiento Metálico)",
+     "texto": "Cuándo: durante el primer viaje del S.S. Aqua. Dónde: camarotes, sala de máquinas y camarote del capitán del barco. Paso a paso: 1) Un caballero te pide que busques a su nieta, que se ha perdido por el barco. 2) Un marinero te impide pasar a la sala de máquinas hasta que encuentres a su compañero: busca en los camarotes al marinero que se ha quedado dormido y véncele en combate; entonces te dejan pasar. 3) Llega al camarote del capitán: allí está la niña jugando al escondite; habla con ella y te acompaña de vuelta. 4) El caballero te regala el Revestimiento Metálico. Por el camino puedes combatir con los entrenadores de los camarotes. Consejo: el Revestimiento Metálico hace evolucionar a Onix en Steelix y a Scyther en Scizor si lo llevan equipado al intercambiarlos; es el único de la partida. Fuente: decompilación de pret (pokegold/pokecrystal) (FastShipCabins_SE_SSE_CaptainsCabin: METAL_COAT); WikiDex «S.S. Aqua»."
+    },
+    {
+     "titulo": "Llegada a Kanto: Ciudad Carmín, Ciudad Azafrán y la Central de Energía",
+     "texto": "Cuándo: al bajar del S.S. Aqua. Dónde: Ciudad Carmín, Ruta 6, Ciudad Azafrán y Ruta 10. Paso a paso: 1) En Ciudad Carmín ya puedes retar a Lt. Surge (ver «Ocho medallas de Kanto»); al este de la ciudad, un Snorlax dormido tapa la entrada de la Cueva Diglett y de momento no se puede despertar. 2) Sube por la Ruta 6 hasta Ciudad Azafrán: la estación del Magnetotrén está parada por falta de electricidad y Sabrina ya acepta combates. 3) Ve a la Central de Energía, en la Ruta 10: desde Ciudad Celeste, hacia el este por la Ruta 9; o desde Pueblo Lavanda, hacia el norte por la Ruta 10 (el río se cruza con Surf). 4) Habla con el director de la Central: le han robado la Maquinaria del generador (sigue en «Restaurar la Central de Energía»). Consejo: en el Club de Fans de Pokémon de Ciudad Carmín, el presidente te regala un Caramelo Raro si aceptas escuchar su historia. Fuente: decompilación de pret (pokegold/pokecrystal) (VermilionCity, PowerPlant, PokemonFanClub); WikiDex «Ruta 10 (Kanto)»."
+    }
+   ]
+  },
+  "GOLD-11": {
+   "bloques": [
+    {
+     "titulo": "Recuperar la Maquinaria robada",
+     "texto": "Cuándo: después de hablar con el director de la Central de Energía. Dónde: Gimnasio de Ciudad Celeste y Ruta 24 (el puente al norte de Ciudad Celeste). Paso a paso: 1) Entra en el Gimnasio de Ciudad Celeste, que está vacío: un soldado del Team Rocket sale corriendo al verte. 2) Sube por la Ruta 24 (el puente al norte de la ciudad) y habla con el soldado: combate con él y, al vencerle, confiesa que escondió la pieza en el gimnasio. 3) Vuelve al gimnasio y examina el agua en el centro de la piscina (es un objeto oculto; el Buscaobjetos lo marca): recoges la Maquinaria. Consejo: el soldado y la pieza solo aparecen después de haber hablado con el director; si no los ves, vuelve primero a la Central. Fuente: decompilación de pret (pokegold/pokecrystal) (PowerPlant, CeruleanGym: MACHINE_PART oculta, Route24); WikiDex «Objetos clave de la segunda generación»."
+    },
+    {
+     "titulo": "Devolver la Maquinaria: MT07 Electrocañón y Magnetotrén",
+     "texto": "Cuándo: en cuanto tengas la Maquinaria. Dónde: Central de Energía (Ruta 10). Paso a paso: 1) Vuelve a la Central de Energía y habla con el director. 2) Te da como recompensa la MT07 Electrocañón (Eléctrico, 100 de potencia, 50 % de precisión, paraliza siempre que acierta). 3) Con la electricidad restaurada vuelven a funcionar el Magnetotrén (Ciudad Azafrán–Ciudad Trigal, necesita el Pase) y la Torre Radio de Pueblo Lavanda. Consejo: el Electrocañón casa muy bien con Fijar Blanco. Fuente: decompilación de pret (pokegold/pokecrystal) (PowerPlant: TM_ZAP_CANNON; EVENT_RESTORED_POWER_TO_KANTO); WikiDex «Ruta 10 (Kanto)»."
+    },
+    {
+     "titulo": "Tarjeta Expansión (radio de Kanto y Poké Flauta)",
+     "texto": "Cuándo: después de devolver la Maquinaria. Dónde: Torre Radio de Pueblo Lavanda, planta baja. Paso a paso: 1) Viaja a Pueblo Lavanda y entra en la Torre Radio. 2) Habla con el señor mayor de la planta baja: al saber que la electricidad ha vuelto te da la Tarjeta Expansión para el Pokégear. 3) Desde ahora la radio capta las emisoras de Kanto; en el dial 20 suena la Poké Flauta, que sirve para despertar al Snorlax de Ciudad Carmín. Consejo: la Poké Flauta solo se oye estando en Kanto. Fuente: decompilación de pret (pokegold/pokecrystal) (LavRadioTower1F: ENGINE_EXPN_CARD; engine/pokegear: PokeFluteRadio en 20.0)."
+    },
+    {
+     "titulo": "Misty en el Cabo Celeste (vuelve al gimnasio)",
+     "texto": "Cuándo: después de haber visto al soldado Rocket en el Gimnasio de Ciudad Celeste. Dónde: Ruta 24 y Ruta 25 hasta el Cabo Celeste, al norte de Ciudad Celeste. Paso a paso: 1) Cruza la Ruta 24 hacia el norte y sigue al este por la Ruta 25 hasta el Cabo Celeste (cerca de la casa de Bill). 2) Al llegar, Misty está allí con su novio; al acercarte se enfada y vuelve a su gimnasio. 3) Desde ese momento ya puedes retarla en Ciudad Celeste (ver «Ocho medallas de Kanto»). Consejo: en la Ruta 25, el último entrenador del puente te regala una Pepita si vences a todos los anteriores. Fuente: decompilación de pret (pokegold/pokecrystal) (CeruleanGym, Route25: EVENT_ROUTE_25_MISTY_BOYFRIEND, NUGGET)."
+    },
+    {
+     "titulo": "Pase del Magnetotrén (la Copiona y el Pokémuñeco)",
+     "texto": "Cuándo: después de devolver la Maquinaria a la Central. Dónde: casa de la Copiona en Ciudad Azafrán y Club de Fans de Pokémon de Ciudad Carmín. Paso a paso: 1) En Ciudad Azafrán entra en la casa de la Copiona y sube a la planta de arriba: te cuenta que ha perdido su Pokémuñeco de Clefairy. 2) Ve al Club de Fans de Pokémon de Ciudad Carmín y habla con el socio que juega con un muñeco de Clefairy: te da el Objeto Perdido para que se lo devuelvas. 3) Vuelve con la Copiona y entrégaselo: te da el Pase. 4) Con el Pase, el Magnetotrén une la estación de Ciudad Azafrán con la de Ciudad Trigal en ambos sentidos. Consejo: el socio del club solo te da el muñeco si antes has hablado con la Copiona y la Central ya funciona. Fuente: decompilación de pret (pokegold/pokecrystal) (CopycatsHouse2F: PASS; PokemonFanClub: LOST_ITEM); WikiDex «Lista de objetos clave de la segunda generación»."
+    }
+   ]
+  },
+  "GOLD-12": {
+   "bloques": [
+    {
+     "titulo": "Lt. Surge: Medalla Trueno (Ciudad Carmín)",
+     "texto": "Cuándo: en cuanto llegas a Kanto. Dónde: Gimnasio de Ciudad Carmín. Paso a paso: 1) En el gimnasio hay 3 entrenadores (un caballero, un guitarrista y un malabarista); no hay puzle. 2) Lt. Surge usa Raichu (nivel 44), dos Electrode (nivel 40), Magneton (nivel 40) y Electabuzz (nivel 46). 3) Lleva Pokémon de tipo Tierra, inmunes a sus ataques Eléctricos; cuidado con Explosión de los Electrode y con Fijar Blanco + Electrocañón de Magneton. 4) Al vencerle recibes la Medalla Trueno (no da MT). Consejo: un Pokémon de tipo Tierra con Terremoto barre a todo su equipo. Fuente: decompilación de pret (pokegold/pokecrystal) (VermilionGym; data/trainers/parties: LtSurgeGroup)."
+    },
+    {
+     "titulo": "Sabrina: Medalla Pantano (Ciudad Azafrán)",
+     "texto": "Cuándo: desde que llegas a Kanto. Dónde: Gimnasio de Ciudad Azafrán. Paso a paso: 1) El gimnasio son salas unidas por baldosas teletransportadoras: pisa cada una, apunta adónde te lleva y sigue las que te acercan a la sala central, donde está Sabrina. 2) Por el camino hay 4 entrenadores (dos médium y dos psíquicos). 3) Sabrina usa Espeon (nivel 46), Mr. Mime (nivel 46, con Barrera, Reflejo y Relevo) y Alakazam (nivel 48, con Recuperación). Usa ataques de tipo Siniestro, Bicho o Fantasma. 4) Al vencerla recibes la Medalla Pantano (no da MT). Consejo: rompe las barreras de Mr. Mime antes de que pase las mejoras con Relevo. Fuente: decompilación de pret (pokegold/pokecrystal) (SaffronGym; data/trainers/parties: SabrinaGroup)."
+    },
+    {
+     "titulo": "Erika: Medalla Arcoíris y MT19 Gigadrenado (Ciudad Azulona)",
+     "texto": "Cuándo: desde que llegas a Kanto. Dónde: Gimnasio de Ciudad Azulona (al sur de la ciudad). Paso a paso: 1) Un arbusto tapa la entrada: córtalo con Corte. 2) Dentro hay 5 entrenadoras antes de llegar a Erika. 3) Erika usa Tangela (nivel 42), Jumpluff (nivel 41), Victreebel (nivel 46) y Bellossom (nivel 46); los dos últimos usan Día Soleado y Rayo Solar o Síntesis. Usa Fuego, Hielo, Volador o Veneno. 4) Al vencerla recibes la Medalla Arcoíris y la MT19 Gigadrenado. Consejo: con el sol activo, un ataque de Fuego hace el doble de daño. Fuente: decompilación de pret (pokegold/pokecrystal) (CeladonGym: TM_GIGA_DRAIN; data/trainers/parties: ErikaGroup); WikiDex «Gimnasio Azulona»."
+    },
+    {
+     "titulo": "Sachiko: Medalla Alma y MT06 Tóxico (Ciudad Fucsia)",
+     "texto": "Cuándo: desde que llegas a Kanto. Dónde: Gimnasio de Ciudad Fucsia; se llega por las Rutas 12 a 15 desde Pueblo Lavanda o por el Camino de Bicis (Rutas 16 a 18, con Bicicleta) desde Ciudad Azulona. Paso a paso: 1) Dentro, todos los entrenadores aparecen disfrazados de Sachiko: 4 son entrenadores normales (se descubren al combatir) y solo una es la líder. 2) Habla con cada figura hasta dar con la Sachiko verdadera. 3) Sachiko usa Crobat (nivel 36), dos Weezing (nivel 36, con Explosión), Ariados (nivel 33) y Venomoth (nivel 39). Psíquico es eficaz contra los cinco; Tierra sirve contra los Weezing, pero Crobat es inmune por ser Volador. 4) Al vencerla recibes la Medalla Alma y la MT06 Tóxico. Consejo: los Weezing pueden usar Explosión; lleva un Pokémon de tipo Roca o Acero de reserva. Fuente: decompilación de pret (pokegold/pokecrystal) (FuchsiaGym: TM_TOXIC; data/trainers/parties: JanineGroup); WikiDex «Gimnasio Fucsia»."
+    },
+    {
+     "titulo": "Misty: Medalla Cascada (Ciudad Celeste)",
+     "texto": "Cuándo: después de ver a Misty en el Cabo Celeste. Dónde: Gimnasio de Ciudad Celeste. Paso a paso: 1) En el gimnasio hay 3 entrenadores (dos nadadoras y un nadador). 2) Misty usa Golduck (nivel 42), Quagsire (nivel 42), Lapras (nivel 44) y Starmie (nivel 47). 3) Usa Eléctrico contra Golduck, Lapras y Starmie, pero Planta contra Quagsire (es de tipo Agua y Tierra: inmune a la Electricidad y débil x4 a Planta). 4) Al vencerla recibes la Medalla Cascada (no da MT). Consejo: Lapras puede usar Canto Mortal; cambia de Pokémon antes de que acabe la cuenta. Fuente: decompilación de pret (pokegold/pokecrystal) (CeruleanGym; data/trainers/parties: MistyGroup)."
+    },
+    {
+     "titulo": "Snorlax de Ciudad Carmín (abre la Cueva Diglett)",
+     "texto": "Cuándo: después de conseguir la Tarjeta Expansión. Dónde: Ciudad Carmín, al este, delante de la entrada de la Cueva Diglett. Paso a paso: 1) Colócate justo al lado del Snorlax dormido. 2) Abre el Pokégear, ve a la radio y sintoniza el dial 20 (Poké Flauta); con la música sonando, habla con Snorlax. 3) Se despierta y combate: Snorlax salvaje de nivel 50 que lleva siempre Restos. Guarda antes, debilítalo con cuidado y captúralo (Ultra Ball o Master Ball). 4) Con el paso libre, cruza la Cueva Diglett hasta la Ruta 2 y sube a Ciudad Plateada. Consejo: es el único Snorlax de la partida; si lo debilitas no vuelve, así que recarga. Fuente: decompilación de pret (pokegold/pokecrystal) (VermilionCity: loadwildmon SNORLAX, 50 con BATTLETYPE_FORCEITEM; engine/events/specials: SnorlaxAwake)."
+    },
+    {
+     "titulo": "Brock: Medalla Roca (Ciudad Plateada)",
+     "texto": "Cuándo: tras despertar a Snorlax y cruzar la Cueva Diglett. Dónde: Gimnasio de Ciudad Plateada. Paso a paso: 1) En el gimnasio hay 1 entrenador (un campista). 2) Brock usa Graveler (nivel 41), Rhyhorn (nivel 41), Omastar (nivel 42), Onix (nivel 44) y Kabutops (nivel 42). 3) Usa Planta: es x4 contra los cinco (todos son Roca con Tierra o con Agua); el Agua, la Lucha y la Tierra también sirven contra Graveler, Rhyhorn y Onix. 4) Al vencerle recibes la Medalla Roca (no da MT). Consejo: Rhyhorn tiene Perforador (fulmina de un golpe si acierta); acaba con él pronto. Fuente: decompilación de pret (pokegold/pokecrystal) (PewterGym; data/trainers/parties: BrockGroup)."
+    },
+    {
+     "titulo": "Blaine: Medalla Volcán (Islas Espuma)",
+     "texto": "Cuándo: cuando tengas Surf en Kanto. Dónde: Islas Espuma, entre Ciudad Fucsia e Isla Canela. Paso a paso: 1) Llega haciendo Surf: desde Pueblo Paleta por la Ruta 21 hasta Isla Canela y al este por la Ruta 20, o desde Ciudad Fucsia al sur y al oeste por las Rutas 19 y 20. 2) En Isla Canela solo queda el Centro Pokémon (el volcán arrasó la isla): habla con Azul junto a él (abre el Gimnasio de Ciudad Verde). 3) En las Islas Espuma entra en la cueva del gimnasio; no hay entrenadores. Blaine usa Magcargo (nivel 45), Magmar (nivel 45) y Rapidash (nivel 50): usa Agua o Tierra (Magcargo es débil x4 a ambos). 4) Al vencerle recibes la Medalla Volcán (no da MT). Consejo: Rapidash usa Llamarada; un Pokémon de Agua con Surf lo despacha. Fuente: decompilación de pret (pokegold/pokecrystal) (SeafoamGym, CinnabarIsland; data/trainers/parties: BlaineGroup); WikiDex «Islas Espuma» e «Isla Canela»."
+    },
+    {
+     "titulo": "Azul: Medalla Tierra (Ciudad Verde)",
+     "texto": "Cuándo: después de hablar con Azul en Isla Canela. Dónde: Gimnasio de Ciudad Verde. Paso a paso: 1) El gimnasio no tiene entrenadores: ve directo a Azul. 2) Azul usa Pidgeot (nivel 56), Alakazam (nivel 54), Rhydon (nivel 56), Gyarados (nivel 58), Exeggutor (nivel 58) y Arcanine (nivel 58, con Velocidad Extrema). 3) Lleva un equipo variado de nivel 55 o más: Eléctrico contra Pidgeot y Gyarados, Agua o Planta contra Rhydon, Siniestro contra Alakazam, Bicho o Fuego contra Exeggutor y Agua o Tierra contra Arcanine. 4) Al vencerle recibes la Medalla Tierra: con ella tienes las 16 medallas. Consejo: es el combate más duro antes de Rojo; guarda antes. Fuente: decompilación de pret (pokegold/pokecrystal) (ViridianGym, CinnabarIsland: EVENT_VIRIDIAN_GYM_BLUE; data/trainers/parties: BlueGroup)."
+    }
+   ]
+  },
+  "GOLD-13": {
+   "bloques": [
+    {
+     "titulo": "Permiso del Profesor Oak para el Monte Plateado",
+     "texto": "Cuándo: con las 16 medallas (8 de Johto y 8 de Kanto). Dónde: Laboratorio de Oak, Pueblo Paleta. Paso a paso: 1) Viaja a Pueblo Paleta (al sur de Ciudad Verde por la Ruta 1, o con Vuelo). 2) Habla con el Profesor Oak: comprueba tus medallas y, si tienes las 16, te da permiso para entrar en el Monte Plateado. 3) Además evalúa tu Pokédex cada vez que le hablas. Consejo: si le hablas antes con solo las 8 de Johto, te anima a ganar las de Kanto; vuelve cuando las tengas. Fuente: decompilación de pret (pokegold/pokecrystal) (OaksLab: EVENT_OPENED_MT_SILVER); WikiDex «Monte Plateado»."
+    },
+    {
+     "titulo": "Ruta 28 y Centro Pokémon del Monte Plateado (MT47 Ala de Acero)",
+     "texto": "Cuándo: después del permiso de Oak. Dónde: puerta de la Calle Victoria (entre la Ruta 22 y la Ruta 26) y Ruta 28. Paso a paso: 1) Desde Ciudad Verde ve al oeste por la Ruta 22 hasta la puerta de la Calle Victoria: el guarda de la salida oeste ya no te bloquea. 2) Recorre la Ruta 28 (necesitas Surf y Corte); los Pokémon salvajes rondan el nivel 40. 3) En la casa de la ruta (se llega con Corte) vive una famosa escondida: te regala la MT47 Ala de Acero a cambio de guardar el secreto. 4) Junto a la entrada de la cueva está el Centro Pokémon del Monte Plateado: cúrate y guarda; desde aquí puedes volver con Vuelo. Consejo: en la Ruta 28 hay un Caramelo Raro oculto; el Buscaobjetos lo encuentra. Fuente: decompilación de pret (pokegold/pokecrystal) (VictoryRoadGate, Route28, Route28SteelWingHouse: TM_STEEL_WING); WikiDex «Monte Plateado»."
+    },
+    {
+     "titulo": "Cueva Monte Plateado hasta la cima",
+     "texto": "Cuándo: después de llegar al Centro Pokémon del Monte Plateado. Dónde: Cueva Monte Plateado (Monte Plateado, frontera entre Kanto y Johto). Paso a paso: 1) La primera sala está a oscuras: usa Destello. 2) Sube sala a sala hacia la cima; los salvajes rondan los niveles 40-53 (Golbat, Ursaring, Onix, Graveler, Golduck...). 3) Por el camino hay objetos útiles (Revivir Máximo, Restaurar Todo, Elixir Máximo, Ultra Ball oculta...). 4) Llega a la última sala, guarda y prepara al equipo antes de hablar con Rojo. Consejo: aquí aparece Larvitar (niveles 15-20), útil para la Pokédex. Fuente: decompilación de pret (pokegold/pokecrystal) (SilverCaveRoom1-3, SilverCaveItemRooms; data/wild/johto_grass); WikiDex «Monte Plateado»."
+    },
+    {
+     "objetivo": "postgame"
+    }
+   ]
+  },
+  "GOLD-14": {
+   "bloques": [
+    {
+     "titulo": "Master Ball del Profesor Elm",
+     "texto": "Cuándo: en cuanto tienes la Medalla Dragón (la octava de Johto). Dónde: Laboratorio Elm, Pueblo Primavera. Paso a paso: 1) Tras vencer a Débora en Ciudad Endrino, vuelve a Pueblo Primavera. 2) Habla con el Profesor Elm: te regala la Master Ball (si ya pasaste la Liga sin recogerla, primero te da el Ticket Barco y en la siguiente conversación la Master Ball). 3) Resérvala para un encuentro único difícil: un perro legendario errante, que huye en el primer turno, es el mejor uso. Consejo: es la única Master Ball que te dan en la partida; no la gastes en algo que puedas debilitar y capturar con calma. Fuente: decompilación de pret (pokegold/pokecrystal) (ElmsLab: ENGINE_RISINGBADGE, MASTER_BALL)."
+    },
+    {
+     "objetivo": "pokemon-243"
+    },
+    {
+     "objetivo": "pokemon-244"
+    },
+    {
+     "objetivo": "pokemon-245"
+    },
+    {
+     "objetivo": "pokemon-250"
+    },
+    {
+     "objetivo": "pokemon-249"
+    },
+    {
+     "titulo": "Lapras de la Cueva Unión (solo los viernes)",
+     "texto": "Cuándo: cualquier viernes (reloj del juego) desde que tienes Surf. Dónde: Cueva Unión, sótano más profundo (entre Ciudad Malva y Pueblo Azalea, Ruta 32/33). Paso a paso: 1) Entra en la Cueva Unión y baja hasta el sótano más profundo; necesitas Surf para cruzar el agua. 2) Los viernes hay un Lapras quieto en el agua: guarda y háblale. 3) Lapras salvaje de nivel 20: debilítalo y captúralo. 4) Si lo debilitas o huyes, vuelve otro viernes: aparece de nuevo cada semana. Consejo: es la única forma de conseguir Lapras en la partida, aparte de intercambiarlo. Fuente: decompilación de pret (pokegold/pokecrystal) (UnionCaveB2F: ifequal FRIDAY, loadwildmon LAPRAS, 20)."
+    },
+    {
+     "titulo": "Sudowoodo y el Gyarados rojo (encuentros únicos de la historia)",
+     "texto": "Cuándo: durante la historia; no se repiten. Dónde: Ruta 36 (Sudowoodo) y Lago de la Furia, al norte de Pueblo Caoba (Gyarados rojo). Paso a paso: 1) Sudowoodo (nivel 20): con la Regadera de la floristería de Ciudad Trigal, riégalo en la Ruta 36; guarda antes y captúralo. 2) Gyarados rojo (nivel 30): en el centro del Lago de la Furia (con Surf); guarda antes de hablarle y captúralo. 3) Si debilitaste alguno de los dos, ya no vuelve: la especie se puede registrar igualmente (Sudowoodo por cría en la Guardería; Gyarados pescando Magikarp y evolucionándolo), pero el ejemplar único se pierde. Consejo: aunque debilites al Gyarados rojo recibes la Escama Roja. Fuente: decompilación de pret (pokegold/pokecrystal) (Route36: loadwildmon SUDOWOODO, 20; LakeOfRage: loadwildmon GYARADOS, 30)."
+    },
+    {
+     "objetivo": "event-0"
+    },
+    {
+     "titulo": "Mew (solo por evento)",
+     "texto": "Cuándo: no se puede conseguir jugando. Dónde: solo existió en eventos oficiales ya cerrados de la primera generación (Rojo, Azul y Amarillo). Paso a paso: 1) Si tienes un Mew de evento en Rojo, Azul o Amarillo, pásalo con la Cápsula del Tiempo (2.ª planta de cualquier Centro Pokémon; se activa al hablar con Bill en el Centro Pokémon de Ciudad Iris). 2) Con Pokekeep: añade el Mew de evento legal desde la Librería. 3) Comprueba en la Pokédex que queda registrado como capturado. Consejo: Mew no cuenta para el diploma de GAME FREAK (249 sin Mew ni Celebi). Fuente: decompilación de pret (pokegold/pokecrystal) (EcruteakPokecenter1F: ENGINE_TIME_CAPSULE; CeladonMansion3F); Serebii «Unobtainable Pokémon»."
+    },
+    {
+     "titulo": "Mewtwo, Articuno, Zapdos y Moltres (desde Rojo, Azul o Amarillo)",
+     "texto": "Cuándo: desde que Bill activa la Cápsula del Tiempo en el Centro Pokémon de Ciudad Iris. Dónde: en esta edición no aparecen; en Rojo, Azul y Amarillo están en la Cueva Celeste (Mewtwo, nivel 70), las Islas Espuma (Articuno, nivel 50), la Central de Energía (Zapdos, nivel 50) y la Calle Victoria (Moltres, nivel 50). Paso a paso: 1) Captúralos en una partida de Rojo, Azul o Amarillo. 2) Conecta las dos consolas con el cable y entra en la Cápsula del Tiempo (2.ª planta de un Centro Pokémon, mostrador de la derecha). 3) Intercámbialos a esta partida; de vuelta a la primera generación no se puede enviar nada de la segunda (especies ni movimientos nuevos). 4) Con Pokekeep: si no tienes otra consola o partida, añádelos legales desde la Librería. Consejo: los tres pájaros y Mewtwo sí cuentan para el diploma de GAME FREAK. Fuente: decompilación de pret (pokered: CeruleanCaveB1F, SeafoamIslandsB4F, PowerPlant, VictoryRoad2F; pokegold/pokecrystal: EcruteakPokecenter1F)."
+    }
+   ]
+  },
+  "GOLD-15": {
+   "bloques": [
+    {
+     "objetivo": "collect-unown"
+    },
+    {
+     "titulo": "Caña Vieja (Centro Pokémon de la Ruta 32)",
+     "texto": "Cuándo: desde que llegas a la Ruta 32, al sur de Ciudad Malva. Dónde: Centro Pokémon de la Ruta 32 (junto a la entrada de la Cueva Unión). Paso a paso: 1) Entra en el Centro Pokémon del final de la Ruta 32. 2) Habla con el pescador y responde que sí te interesa pescar. 3) Te da la Caña Vieja; regístrala en el botón Select para usarla frente al agua. Consejo: con ella salen sobre todo Magikarp; sirve para conseguir Gyarados por evolución. Fuente: decompilación de pret (pokegold/pokecrystal) (Route32Pokecenter1F: OLD_ROD)."
+    },
+    {
+     "titulo": "Bicicleta (tienda de bicis de Ciudad Trigal)",
+     "texto": "Cuándo: en cuanto llegas a Ciudad Trigal. Dónde: tienda de bicicletas de Ciudad Trigal. Paso a paso: 1) Entra en la tienda: el dueño se queja de que no vende bicis. 2) Acepta su propuesta: le das tu nombre y tu número de teléfono para que la anuncies. 3) Te presta la Bicicleta (cuenta como tuya para siempre) y más adelante te llama por teléfono. Consejo: la necesitas para el Camino de Bicis de Kanto (Rutas 16 a 18). Fuente: decompilación de pret (pokegold/pokecrystal) (GoldenrodBikeShop: BICYCLE)."
+    },
+    {
+     "titulo": "Buscaobjetos (casa de Ciudad Iris)",
+     "texto": "Cuándo: en cuanto llegas a Ciudad Iris. Dónde: casa de Ciudad Iris, en la fila de casas del sur, junto al Gimnasio. Paso a paso: 1) Entra en la casa y habla con el hombre. 2) Te pregunta si viajas en busca de aventuras con tus Pokémon: responde que sí. 3) Te regala el Buscaobjetos, que avisa cuando hay un objeto oculto cerca. Consejo: úsalo en cuevas y rutas: hay muchos objetos ocultos (Maquinaria del Gimnasio Celeste, Caramelo Raro de la Ruta 28...). Fuente: decompilación de pret (pokegold/pokecrystal) (EcruteakItemfinderHouse: ITEMFINDER)."
+    },
+    {
+     "titulo": "Caña Buena (casa de Ciudad Olivo)",
+     "texto": "Cuándo: en cuanto llegas a Ciudad Olivo. Dónde: casa del pescador en Ciudad Olivo. Paso a paso: 1) Entra en la casa del pescador de Ciudad Olivo. 2) Te pregunta si te gusta pescar: responde que sí. 3) Te da la Caña Buena, que pesca Pokémon de más nivel y más especies que la Caña Vieja. Consejo: en cada zona de agua la Caña Buena y la Supercaña tienen sus propias tablas; prueba las tres cañas para registrar todo lo que vive allí. Fuente: decompilación de pret (pokegold/pokecrystal) (OlivineGoodRodHouse: GOOD_ROD)."
+    },
+    {
+     "titulo": "Supercaña (casa de la Ruta 12)",
+     "texto": "Cuándo: ya en Kanto. Dónde: casa del pescador de la Ruta 12, al sur de Pueblo Lavanda. Paso a paso: 1) Desde Pueblo Lavanda baja por la Ruta 12. 2) Entra en la casa del pescador y responde que sí te interesa pescar. 3) Te da la Supercaña, la mejor caña: pesca Pokémon de nivel alto y las especies más raras de cada zona. Consejo: en la Guarida Dragón y la Ruta Helada solo la Supercaña puede sacar Dragonair (nivel 40). Fuente: decompilación de pret (pokegold/pokecrystal) (Route12SuperRodHouse: SUPER_ROD; data/wild/fish)."
+    },
+    {
+     "titulo": "MT de los líderes de gimnasio",
+     "texto": "Cuándo: al ganar cada medalla. Dónde: gimnasios de Johto y Kanto. Paso a paso: 1) Johto, todos dan MT al vencerlos: Pegaso MT31 Bofetón Lodo, Antón MT49 Corte Furia, Blanca MT45 Atracción, Morti MT30 Bola Sombra, Aníbal MT01 Puño Dinámico, Yasmina MT23 Cola Férrea, Fredo MT16 Viento Hielo y Débora MT24 Dragoaliento. 2) Kanto: solo dan MT Erika (MT19 Gigadrenado) y Sachiko (MT06 Tóxico); Lt. Surge, Sabrina, Misty, Brock, Blaine y Azul solo dan la medalla. 3) Si tu Mochila está llena y no te cabe la MT, vuelve a hablar con el líder para recogerla. Consejo: otras MT únicas del postgame son la MT07 Electrocañón (Central de Energía) y la MT47 Ala de Acero (Ruta 28). Fuente: decompilación de pret (pokegold/pokecrystal) (VioletGym, AzaleaGym, GoldenrodGym, EcruteakGym, CianwoodGym, OlivineGym, MahoganyGym, BlackthornGym1F, CeladonGym, FuchsiaGym)."
+    },
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "medal-type"
+    }
+   ]
+  },
+  "SILVER-10": {
+   "bloques": [
+    {
+     "titulo": "Ticket Barco y horario del S.S. Aqua",
+     "texto": "Cuándo: justo después de entrar en el Hall de la Fama. Dónde: Laboratorio Elm (Pueblo Primavera) y puerto de Ciudad Olivo. Paso a paso: 1) Tras los créditos apareces en tu casa: ve al Laboratorio Elm y habla con el profesor; te da el Ticket Barco (si aún no tenías la Master Ball, vuelve a hablarle y te la da). 2) Viaja a Ciudad Olivo, entra en el puerto (al sur de la ciudad) y enseña el Ticket Barco al marinero. 3) El primer viaje sale el día que sea; a partir de entonces el S.S. Aqua zarpa de Ciudad Olivo solo los lunes y viernes, y de Ciudad Carmín solo los miércoles y domingos (según el reloj del juego). 4) En el primer viaje completa la búsqueda de la nieta (bloque siguiente); al terminar, el barco atraca en Ciudad Carmín. Consejo: cuando consigas el Pase del Magnetotrén (misión «Restaurar la Central de Energía») ya no dependerás de los días del barco. Fuente: decompilación de pret (pokegold/pokecrystal) (ElmsLab, OlivinePort, VermilionPort); WikiDex «S.S. Aqua»."
+    },
+    {
+     "titulo": "La nieta perdida del S.S. Aqua (Revestimiento Metálico)",
+     "texto": "Cuándo: durante el primer viaje del S.S. Aqua. Dónde: camarotes, sala de máquinas y camarote del capitán del barco. Paso a paso: 1) Un caballero te pide que busques a su nieta, que se ha perdido por el barco. 2) Un marinero te impide pasar a la sala de máquinas hasta que encuentres a su compañero: busca en los camarotes al marinero que se ha quedado dormido y véncele en combate; entonces te dejan pasar. 3) Llega al camarote del capitán: allí está la niña jugando al escondite; habla con ella y te acompaña de vuelta. 4) El caballero te regala el Revestimiento Metálico. Por el camino puedes combatir con los entrenadores de los camarotes. Consejo: el Revestimiento Metálico hace evolucionar a Onix en Steelix y a Scyther en Scizor si lo llevan equipado al intercambiarlos; es el único de la partida. Fuente: decompilación de pret (pokegold/pokecrystal) (FastShipCabins_SE_SSE_CaptainsCabin: METAL_COAT); WikiDex «S.S. Aqua»."
+    },
+    {
+     "titulo": "Llegada a Kanto: Ciudad Carmín, Ciudad Azafrán y la Central de Energía",
+     "texto": "Cuándo: al bajar del S.S. Aqua. Dónde: Ciudad Carmín, Ruta 6, Ciudad Azafrán y Ruta 10. Paso a paso: 1) En Ciudad Carmín ya puedes retar a Lt. Surge (ver «Ocho medallas de Kanto»); al este de la ciudad, un Snorlax dormido tapa la entrada de la Cueva Diglett y de momento no se puede despertar. 2) Sube por la Ruta 6 hasta Ciudad Azafrán: la estación del Magnetotrén está parada por falta de electricidad y Sabrina ya acepta combates. 3) Ve a la Central de Energía, en la Ruta 10: desde Ciudad Celeste, hacia el este por la Ruta 9; o desde Pueblo Lavanda, hacia el norte por la Ruta 10 (el río se cruza con Surf). 4) Habla con el director de la Central: le han robado la Maquinaria del generador (sigue en «Restaurar la Central de Energía»). Consejo: en el Club de Fans de Pokémon de Ciudad Carmín, el presidente te regala un Caramelo Raro si aceptas escuchar su historia. Fuente: decompilación de pret (pokegold/pokecrystal) (VermilionCity, PowerPlant, PokemonFanClub); WikiDex «Ruta 10 (Kanto)»."
+    }
+   ]
+  },
+  "SILVER-11": {
+   "bloques": [
+    {
+     "titulo": "Recuperar la Maquinaria robada",
+     "texto": "Cuándo: después de hablar con el director de la Central de Energía. Dónde: Gimnasio de Ciudad Celeste y Ruta 24 (el puente al norte de Ciudad Celeste). Paso a paso: 1) Entra en el Gimnasio de Ciudad Celeste, que está vacío: un soldado del Team Rocket sale corriendo al verte. 2) Sube por la Ruta 24 (el puente al norte de la ciudad) y habla con el soldado: combate con él y, al vencerle, confiesa que escondió la pieza en el gimnasio. 3) Vuelve al gimnasio y examina el agua en el centro de la piscina (es un objeto oculto; el Buscaobjetos lo marca): recoges la Maquinaria. Consejo: el soldado y la pieza solo aparecen después de haber hablado con el director; si no los ves, vuelve primero a la Central. Fuente: decompilación de pret (pokegold/pokecrystal) (PowerPlant, CeruleanGym: MACHINE_PART oculta, Route24); WikiDex «Objetos clave de la segunda generación»."
+    },
+    {
+     "titulo": "Devolver la Maquinaria: MT07 Electrocañón y Magnetotrén",
+     "texto": "Cuándo: en cuanto tengas la Maquinaria. Dónde: Central de Energía (Ruta 10). Paso a paso: 1) Vuelve a la Central de Energía y habla con el director. 2) Te da como recompensa la MT07 Electrocañón (Eléctrico, 100 de potencia, 50 % de precisión, paraliza siempre que acierta). 3) Con la electricidad restaurada vuelven a funcionar el Magnetotrén (Ciudad Azafrán–Ciudad Trigal, necesita el Pase) y la Torre Radio de Pueblo Lavanda. Consejo: el Electrocañón casa muy bien con Fijar Blanco. Fuente: decompilación de pret (pokegold/pokecrystal) (PowerPlant: TM_ZAP_CANNON; EVENT_RESTORED_POWER_TO_KANTO); WikiDex «Ruta 10 (Kanto)»."
+    },
+    {
+     "titulo": "Tarjeta Expansión (radio de Kanto y Poké Flauta)",
+     "texto": "Cuándo: después de devolver la Maquinaria. Dónde: Torre Radio de Pueblo Lavanda, planta baja. Paso a paso: 1) Viaja a Pueblo Lavanda y entra en la Torre Radio. 2) Habla con el señor mayor de la planta baja: al saber que la electricidad ha vuelto te da la Tarjeta Expansión para el Pokégear. 3) Desde ahora la radio capta las emisoras de Kanto; en el dial 20 suena la Poké Flauta, que sirve para despertar al Snorlax de Ciudad Carmín. Consejo: la Poké Flauta solo se oye estando en Kanto. Fuente: decompilación de pret (pokegold/pokecrystal) (LavRadioTower1F: ENGINE_EXPN_CARD; engine/pokegear: PokeFluteRadio en 20.0)."
+    },
+    {
+     "titulo": "Misty en el Cabo Celeste (vuelve al gimnasio)",
+     "texto": "Cuándo: después de haber visto al soldado Rocket en el Gimnasio de Ciudad Celeste. Dónde: Ruta 24 y Ruta 25 hasta el Cabo Celeste, al norte de Ciudad Celeste. Paso a paso: 1) Cruza la Ruta 24 hacia el norte y sigue al este por la Ruta 25 hasta el Cabo Celeste (cerca de la casa de Bill). 2) Al llegar, Misty está allí con su novio; al acercarte se enfada y vuelve a su gimnasio. 3) Desde ese momento ya puedes retarla en Ciudad Celeste (ver «Ocho medallas de Kanto»). Consejo: en la Ruta 25, el último entrenador del puente te regala una Pepita si vences a todos los anteriores. Fuente: decompilación de pret (pokegold/pokecrystal) (CeruleanGym, Route25: EVENT_ROUTE_25_MISTY_BOYFRIEND, NUGGET)."
+    },
+    {
+     "titulo": "Pase del Magnetotrén (la Copiona y el Pokémuñeco)",
+     "texto": "Cuándo: después de devolver la Maquinaria a la Central. Dónde: casa de la Copiona en Ciudad Azafrán y Club de Fans de Pokémon de Ciudad Carmín. Paso a paso: 1) En Ciudad Azafrán entra en la casa de la Copiona y sube a la planta de arriba: te cuenta que ha perdido su Pokémuñeco de Clefairy. 2) Ve al Club de Fans de Pokémon de Ciudad Carmín y habla con el socio que juega con un muñeco de Clefairy: te da el Objeto Perdido para que se lo devuelvas. 3) Vuelve con la Copiona y entrégaselo: te da el Pase. 4) Con el Pase, el Magnetotrén une la estación de Ciudad Azafrán con la de Ciudad Trigal en ambos sentidos. Consejo: el socio del club solo te da el muñeco si antes has hablado con la Copiona y la Central ya funciona. Fuente: decompilación de pret (pokegold/pokecrystal) (CopycatsHouse2F: PASS; PokemonFanClub: LOST_ITEM); WikiDex «Lista de objetos clave de la segunda generación»."
+    }
+   ]
+  },
+  "SILVER-12": {
+   "bloques": [
+    {
+     "titulo": "Lt. Surge: Medalla Trueno (Ciudad Carmín)",
+     "texto": "Cuándo: en cuanto llegas a Kanto. Dónde: Gimnasio de Ciudad Carmín. Paso a paso: 1) En el gimnasio hay 3 entrenadores (un caballero, un guitarrista y un malabarista); no hay puzle. 2) Lt. Surge usa Raichu (nivel 44), dos Electrode (nivel 40), Magneton (nivel 40) y Electabuzz (nivel 46). 3) Lleva Pokémon de tipo Tierra, inmunes a sus ataques Eléctricos; cuidado con Explosión de los Electrode y con Fijar Blanco + Electrocañón de Magneton. 4) Al vencerle recibes la Medalla Trueno (no da MT). Consejo: un Pokémon de tipo Tierra con Terremoto barre a todo su equipo. Fuente: decompilación de pret (pokegold/pokecrystal) (VermilionGym; data/trainers/parties: LtSurgeGroup)."
+    },
+    {
+     "titulo": "Sabrina: Medalla Pantano (Ciudad Azafrán)",
+     "texto": "Cuándo: desde que llegas a Kanto. Dónde: Gimnasio de Ciudad Azafrán. Paso a paso: 1) El gimnasio son salas unidas por baldosas teletransportadoras: pisa cada una, apunta adónde te lleva y sigue las que te acercan a la sala central, donde está Sabrina. 2) Por el camino hay 4 entrenadores (dos médium y dos psíquicos). 3) Sabrina usa Espeon (nivel 46), Mr. Mime (nivel 46, con Barrera, Reflejo y Relevo) y Alakazam (nivel 48, con Recuperación). Usa ataques de tipo Siniestro, Bicho o Fantasma. 4) Al vencerla recibes la Medalla Pantano (no da MT). Consejo: rompe las barreras de Mr. Mime antes de que pase las mejoras con Relevo. Fuente: decompilación de pret (pokegold/pokecrystal) (SaffronGym; data/trainers/parties: SabrinaGroup)."
+    },
+    {
+     "titulo": "Erika: Medalla Arcoíris y MT19 Gigadrenado (Ciudad Azulona)",
+     "texto": "Cuándo: desde que llegas a Kanto. Dónde: Gimnasio de Ciudad Azulona (al sur de la ciudad). Paso a paso: 1) Un arbusto tapa la entrada: córtalo con Corte. 2) Dentro hay 5 entrenadoras antes de llegar a Erika. 3) Erika usa Tangela (nivel 42), Jumpluff (nivel 41), Victreebel (nivel 46) y Bellossom (nivel 46); los dos últimos usan Día Soleado y Rayo Solar o Síntesis. Usa Fuego, Hielo, Volador o Veneno. 4) Al vencerla recibes la Medalla Arcoíris y la MT19 Gigadrenado. Consejo: con el sol activo, un ataque de Fuego hace el doble de daño. Fuente: decompilación de pret (pokegold/pokecrystal) (CeladonGym: TM_GIGA_DRAIN; data/trainers/parties: ErikaGroup); WikiDex «Gimnasio Azulona»."
+    },
+    {
+     "titulo": "Sachiko: Medalla Alma y MT06 Tóxico (Ciudad Fucsia)",
+     "texto": "Cuándo: desde que llegas a Kanto. Dónde: Gimnasio de Ciudad Fucsia; se llega por las Rutas 12 a 15 desde Pueblo Lavanda o por el Camino de Bicis (Rutas 16 a 18, con Bicicleta) desde Ciudad Azulona. Paso a paso: 1) Dentro, todos los entrenadores aparecen disfrazados de Sachiko: 4 son entrenadores normales (se descubren al combatir) y solo una es la líder. 2) Habla con cada figura hasta dar con la Sachiko verdadera. 3) Sachiko usa Crobat (nivel 36), dos Weezing (nivel 36, con Explosión), Ariados (nivel 33) y Venomoth (nivel 39). Psíquico es eficaz contra los cinco; Tierra sirve contra los Weezing, pero Crobat es inmune por ser Volador. 4) Al vencerla recibes la Medalla Alma y la MT06 Tóxico. Consejo: los Weezing pueden usar Explosión; lleva un Pokémon de tipo Roca o Acero de reserva. Fuente: decompilación de pret (pokegold/pokecrystal) (FuchsiaGym: TM_TOXIC; data/trainers/parties: JanineGroup); WikiDex «Gimnasio Fucsia»."
+    },
+    {
+     "titulo": "Misty: Medalla Cascada (Ciudad Celeste)",
+     "texto": "Cuándo: después de ver a Misty en el Cabo Celeste. Dónde: Gimnasio de Ciudad Celeste. Paso a paso: 1) En el gimnasio hay 3 entrenadores (dos nadadoras y un nadador). 2) Misty usa Golduck (nivel 42), Quagsire (nivel 42), Lapras (nivel 44) y Starmie (nivel 47). 3) Usa Eléctrico contra Golduck, Lapras y Starmie, pero Planta contra Quagsire (es de tipo Agua y Tierra: inmune a la Electricidad y débil x4 a Planta). 4) Al vencerla recibes la Medalla Cascada (no da MT). Consejo: Lapras puede usar Canto Mortal; cambia de Pokémon antes de que acabe la cuenta. Fuente: decompilación de pret (pokegold/pokecrystal) (CeruleanGym; data/trainers/parties: MistyGroup)."
+    },
+    {
+     "titulo": "Snorlax de Ciudad Carmín (abre la Cueva Diglett)",
+     "texto": "Cuándo: después de conseguir la Tarjeta Expansión. Dónde: Ciudad Carmín, al este, delante de la entrada de la Cueva Diglett. Paso a paso: 1) Colócate justo al lado del Snorlax dormido. 2) Abre el Pokégear, ve a la radio y sintoniza el dial 20 (Poké Flauta); con la música sonando, habla con Snorlax. 3) Se despierta y combate: Snorlax salvaje de nivel 50 que lleva siempre Restos. Guarda antes, debilítalo con cuidado y captúralo (Ultra Ball o Master Ball). 4) Con el paso libre, cruza la Cueva Diglett hasta la Ruta 2 y sube a Ciudad Plateada. Consejo: es el único Snorlax de la partida; si lo debilitas no vuelve, así que recarga. Fuente: decompilación de pret (pokegold/pokecrystal) (VermilionCity: loadwildmon SNORLAX, 50 con BATTLETYPE_FORCEITEM; engine/events/specials: SnorlaxAwake)."
+    },
+    {
+     "titulo": "Brock: Medalla Roca (Ciudad Plateada)",
+     "texto": "Cuándo: tras despertar a Snorlax y cruzar la Cueva Diglett. Dónde: Gimnasio de Ciudad Plateada. Paso a paso: 1) En el gimnasio hay 1 entrenador (un campista). 2) Brock usa Graveler (nivel 41), Rhyhorn (nivel 41), Omastar (nivel 42), Onix (nivel 44) y Kabutops (nivel 42). 3) Usa Planta: es x4 contra los cinco (todos son Roca con Tierra o con Agua); el Agua, la Lucha y la Tierra también sirven contra Graveler, Rhyhorn y Onix. 4) Al vencerle recibes la Medalla Roca (no da MT). Consejo: Rhyhorn tiene Perforador (fulmina de un golpe si acierta); acaba con él pronto. Fuente: decompilación de pret (pokegold/pokecrystal) (PewterGym; data/trainers/parties: BrockGroup)."
+    },
+    {
+     "titulo": "Blaine: Medalla Volcán (Islas Espuma)",
+     "texto": "Cuándo: cuando tengas Surf en Kanto. Dónde: Islas Espuma, entre Ciudad Fucsia e Isla Canela. Paso a paso: 1) Llega haciendo Surf: desde Pueblo Paleta por la Ruta 21 hasta Isla Canela y al este por la Ruta 20, o desde Ciudad Fucsia al sur y al oeste por las Rutas 19 y 20. 2) En Isla Canela solo queda el Centro Pokémon (el volcán arrasó la isla): habla con Azul junto a él (abre el Gimnasio de Ciudad Verde). 3) En las Islas Espuma entra en la cueva del gimnasio; no hay entrenadores. Blaine usa Magcargo (nivel 45), Magmar (nivel 45) y Rapidash (nivel 50): usa Agua o Tierra (Magcargo es débil x4 a ambos). 4) Al vencerle recibes la Medalla Volcán (no da MT). Consejo: Rapidash usa Llamarada; un Pokémon de Agua con Surf lo despacha. Fuente: decompilación de pret (pokegold/pokecrystal) (SeafoamGym, CinnabarIsland; data/trainers/parties: BlaineGroup); WikiDex «Islas Espuma» e «Isla Canela»."
+    },
+    {
+     "titulo": "Azul: Medalla Tierra (Ciudad Verde)",
+     "texto": "Cuándo: después de hablar con Azul en Isla Canela. Dónde: Gimnasio de Ciudad Verde. Paso a paso: 1) El gimnasio no tiene entrenadores: ve directo a Azul. 2) Azul usa Pidgeot (nivel 56), Alakazam (nivel 54), Rhydon (nivel 56), Gyarados (nivel 58), Exeggutor (nivel 58) y Arcanine (nivel 58, con Velocidad Extrema). 3) Lleva un equipo variado de nivel 55 o más: Eléctrico contra Pidgeot y Gyarados, Agua o Planta contra Rhydon, Siniestro contra Alakazam, Bicho o Fuego contra Exeggutor y Agua o Tierra contra Arcanine. 4) Al vencerle recibes la Medalla Tierra: con ella tienes las 16 medallas. Consejo: es el combate más duro antes de Rojo; guarda antes. Fuente: decompilación de pret (pokegold/pokecrystal) (ViridianGym, CinnabarIsland: EVENT_VIRIDIAN_GYM_BLUE; data/trainers/parties: BlueGroup)."
+    }
+   ]
+  },
+  "SILVER-13": {
+   "bloques": [
+    {
+     "titulo": "Permiso del Profesor Oak para el Monte Plateado",
+     "texto": "Cuándo: con las 16 medallas (8 de Johto y 8 de Kanto). Dónde: Laboratorio de Oak, Pueblo Paleta. Paso a paso: 1) Viaja a Pueblo Paleta (al sur de Ciudad Verde por la Ruta 1, o con Vuelo). 2) Habla con el Profesor Oak: comprueba tus medallas y, si tienes las 16, te da permiso para entrar en el Monte Plateado. 3) Además evalúa tu Pokédex cada vez que le hablas. Consejo: si le hablas antes con solo las 8 de Johto, te anima a ganar las de Kanto; vuelve cuando las tengas. Fuente: decompilación de pret (pokegold/pokecrystal) (OaksLab: EVENT_OPENED_MT_SILVER); WikiDex «Monte Plateado»."
+    },
+    {
+     "titulo": "Ruta 28 y Centro Pokémon del Monte Plateado (MT47 Ala de Acero)",
+     "texto": "Cuándo: después del permiso de Oak. Dónde: puerta de la Calle Victoria (entre la Ruta 22 y la Ruta 26) y Ruta 28. Paso a paso: 1) Desde Ciudad Verde ve al oeste por la Ruta 22 hasta la puerta de la Calle Victoria: el guarda de la salida oeste ya no te bloquea. 2) Recorre la Ruta 28 (necesitas Surf y Corte); los Pokémon salvajes rondan el nivel 40. 3) En la casa de la ruta (se llega con Corte) vive una famosa escondida: te regala la MT47 Ala de Acero a cambio de guardar el secreto. 4) Junto a la entrada de la cueva está el Centro Pokémon del Monte Plateado: cúrate y guarda; desde aquí puedes volver con Vuelo. Consejo: en la Ruta 28 hay un Caramelo Raro oculto; el Buscaobjetos lo encuentra. Fuente: decompilación de pret (pokegold/pokecrystal) (VictoryRoadGate, Route28, Route28SteelWingHouse: TM_STEEL_WING); WikiDex «Monte Plateado»."
+    },
+    {
+     "titulo": "Cueva Monte Plateado hasta la cima",
+     "texto": "Cuándo: después de llegar al Centro Pokémon del Monte Plateado. Dónde: Cueva Monte Plateado (Monte Plateado, frontera entre Kanto y Johto). Paso a paso: 1) La primera sala está a oscuras: usa Destello. 2) Sube sala a sala hacia la cima; los salvajes rondan los niveles 40-53 (Golbat, Ursaring, Onix, Graveler, Golduck...). 3) Por el camino hay objetos útiles (Revivir Máximo, Restaurar Todo, Elixir Máximo, Ultra Ball oculta...). 4) Llega a la última sala, guarda y prepara al equipo antes de hablar con Rojo. Consejo: aquí aparece Larvitar (niveles 15-20), útil para la Pokédex. Fuente: decompilación de pret (pokegold/pokecrystal) (SilverCaveRoom1-3, SilverCaveItemRooms; data/wild/johto_grass); WikiDex «Monte Plateado»."
+    },
+    {
+     "objetivo": "postgame"
+    }
+   ]
+  },
+  "SILVER-14": {
+   "bloques": [
+    {
+     "titulo": "Master Ball del Profesor Elm",
+     "texto": "Cuándo: en cuanto tienes la Medalla Dragón (la octava de Johto). Dónde: Laboratorio Elm, Pueblo Primavera. Paso a paso: 1) Tras vencer a Débora en Ciudad Endrino, vuelve a Pueblo Primavera. 2) Habla con el Profesor Elm: te regala la Master Ball (si ya pasaste la Liga sin recogerla, primero te da el Ticket Barco y en la siguiente conversación la Master Ball). 3) Resérvala para un encuentro único difícil: un perro legendario errante, que huye en el primer turno, es el mejor uso. Consejo: es la única Master Ball que te dan en la partida; no la gastes en algo que puedas debilitar y capturar con calma. Fuente: decompilación de pret (pokegold/pokecrystal) (ElmsLab: ENGINE_RISINGBADGE, MASTER_BALL)."
+    },
+    {
+     "objetivo": "pokemon-243"
+    },
+    {
+     "objetivo": "pokemon-244"
+    },
+    {
+     "objetivo": "pokemon-245"
+    },
+    {
+     "objetivo": "pokemon-249"
+    },
+    {
+     "objetivo": "pokemon-250"
+    },
+    {
+     "titulo": "Lapras de la Cueva Unión (solo los viernes)",
+     "texto": "Cuándo: cualquier viernes (reloj del juego) desde que tienes Surf. Dónde: Cueva Unión, sótano más profundo (entre Ciudad Malva y Pueblo Azalea, Ruta 32/33). Paso a paso: 1) Entra en la Cueva Unión y baja hasta el sótano más profundo; necesitas Surf para cruzar el agua. 2) Los viernes hay un Lapras quieto en el agua: guarda y háblale. 3) Lapras salvaje de nivel 20: debilítalo y captúralo. 4) Si lo debilitas o huyes, vuelve otro viernes: aparece de nuevo cada semana. Consejo: es la única forma de conseguir Lapras en la partida, aparte de intercambiarlo. Fuente: decompilación de pret (pokegold/pokecrystal) (UnionCaveB2F: ifequal FRIDAY, loadwildmon LAPRAS, 20)."
+    },
+    {
+     "titulo": "Sudowoodo y el Gyarados rojo (encuentros únicos de la historia)",
+     "texto": "Cuándo: durante la historia; no se repiten. Dónde: Ruta 36 (Sudowoodo) y Lago de la Furia, al norte de Pueblo Caoba (Gyarados rojo). Paso a paso: 1) Sudowoodo (nivel 20): con la Regadera de la floristería de Ciudad Trigal, riégalo en la Ruta 36; guarda antes y captúralo. 2) Gyarados rojo (nivel 30): en el centro del Lago de la Furia (con Surf); guarda antes de hablarle y captúralo. 3) Si debilitaste alguno de los dos, ya no vuelve: la especie se puede registrar igualmente (Sudowoodo por cría en la Guardería; Gyarados pescando Magikarp y evolucionándolo), pero el ejemplar único se pierde. Consejo: aunque debilites al Gyarados rojo recibes la Escama Roja. Fuente: decompilación de pret (pokegold/pokecrystal) (Route36: loadwildmon SUDOWOODO, 20; LakeOfRage: loadwildmon GYARADOS, 30)."
+    },
+    {
+     "objetivo": "event-0"
+    },
+    {
+     "titulo": "Mew (solo por evento)",
+     "texto": "Cuándo: no se puede conseguir jugando. Dónde: solo existió en eventos oficiales ya cerrados de la primera generación (Rojo, Azul y Amarillo). Paso a paso: 1) Si tienes un Mew de evento en Rojo, Azul o Amarillo, pásalo con la Cápsula del Tiempo (2.ª planta de cualquier Centro Pokémon; se activa al hablar con Bill en el Centro Pokémon de Ciudad Iris). 2) Con Pokekeep: añade el Mew de evento legal desde la Librería. 3) Comprueba en la Pokédex que queda registrado como capturado. Consejo: Mew no cuenta para el diploma de GAME FREAK (249 sin Mew ni Celebi). Fuente: decompilación de pret (pokegold/pokecrystal) (EcruteakPokecenter1F: ENGINE_TIME_CAPSULE; CeladonMansion3F); Serebii «Unobtainable Pokémon»."
+    },
+    {
+     "titulo": "Mewtwo, Articuno, Zapdos y Moltres (desde Rojo, Azul o Amarillo)",
+     "texto": "Cuándo: desde que Bill activa la Cápsula del Tiempo en el Centro Pokémon de Ciudad Iris. Dónde: en esta edición no aparecen; en Rojo, Azul y Amarillo están en la Cueva Celeste (Mewtwo, nivel 70), las Islas Espuma (Articuno, nivel 50), la Central de Energía (Zapdos, nivel 50) y la Calle Victoria (Moltres, nivel 50). Paso a paso: 1) Captúralos en una partida de Rojo, Azul o Amarillo. 2) Conecta las dos consolas con el cable y entra en la Cápsula del Tiempo (2.ª planta de un Centro Pokémon, mostrador de la derecha). 3) Intercámbialos a esta partida; de vuelta a la primera generación no se puede enviar nada de la segunda (especies ni movimientos nuevos). 4) Con Pokekeep: si no tienes otra consola o partida, añádelos legales desde la Librería. Consejo: los tres pájaros y Mewtwo sí cuentan para el diploma de GAME FREAK. Fuente: decompilación de pret (pokered: CeruleanCaveB1F, SeafoamIslandsB4F, PowerPlant, VictoryRoad2F; pokegold/pokecrystal: EcruteakPokecenter1F)."
+    }
+   ]
+  },
+  "SILVER-15": {
+   "bloques": [
+    {
+     "objetivo": "collect-unown"
+    },
+    {
+     "titulo": "Caña Vieja (Centro Pokémon de la Ruta 32)",
+     "texto": "Cuándo: desde que llegas a la Ruta 32, al sur de Ciudad Malva. Dónde: Centro Pokémon de la Ruta 32 (junto a la entrada de la Cueva Unión). Paso a paso: 1) Entra en el Centro Pokémon del final de la Ruta 32. 2) Habla con el pescador y responde que sí te interesa pescar. 3) Te da la Caña Vieja; regístrala en el botón Select para usarla frente al agua. Consejo: con ella salen sobre todo Magikarp; sirve para conseguir Gyarados por evolución. Fuente: decompilación de pret (pokegold/pokecrystal) (Route32Pokecenter1F: OLD_ROD)."
+    },
+    {
+     "titulo": "Bicicleta (tienda de bicis de Ciudad Trigal)",
+     "texto": "Cuándo: en cuanto llegas a Ciudad Trigal. Dónde: tienda de bicicletas de Ciudad Trigal. Paso a paso: 1) Entra en la tienda: el dueño se queja de que no vende bicis. 2) Acepta su propuesta: le das tu nombre y tu número de teléfono para que la anuncies. 3) Te presta la Bicicleta (cuenta como tuya para siempre) y más adelante te llama por teléfono. Consejo: la necesitas para el Camino de Bicis de Kanto (Rutas 16 a 18). Fuente: decompilación de pret (pokegold/pokecrystal) (GoldenrodBikeShop: BICYCLE)."
+    },
+    {
+     "titulo": "Buscaobjetos (casa de Ciudad Iris)",
+     "texto": "Cuándo: en cuanto llegas a Ciudad Iris. Dónde: casa de Ciudad Iris, en la fila de casas del sur, junto al Gimnasio. Paso a paso: 1) Entra en la casa y habla con el hombre. 2) Te pregunta si viajas en busca de aventuras con tus Pokémon: responde que sí. 3) Te regala el Buscaobjetos, que avisa cuando hay un objeto oculto cerca. Consejo: úsalo en cuevas y rutas: hay muchos objetos ocultos (Maquinaria del Gimnasio Celeste, Caramelo Raro de la Ruta 28...). Fuente: decompilación de pret (pokegold/pokecrystal) (EcruteakItemfinderHouse: ITEMFINDER)."
+    },
+    {
+     "titulo": "Caña Buena (casa de Ciudad Olivo)",
+     "texto": "Cuándo: en cuanto llegas a Ciudad Olivo. Dónde: casa del pescador en Ciudad Olivo. Paso a paso: 1) Entra en la casa del pescador de Ciudad Olivo. 2) Te pregunta si te gusta pescar: responde que sí. 3) Te da la Caña Buena, que pesca Pokémon de más nivel y más especies que la Caña Vieja. Consejo: en cada zona de agua la Caña Buena y la Supercaña tienen sus propias tablas; prueba las tres cañas para registrar todo lo que vive allí. Fuente: decompilación de pret (pokegold/pokecrystal) (OlivineGoodRodHouse: GOOD_ROD)."
+    },
+    {
+     "titulo": "Supercaña (casa de la Ruta 12)",
+     "texto": "Cuándo: ya en Kanto. Dónde: casa del pescador de la Ruta 12, al sur de Pueblo Lavanda. Paso a paso: 1) Desde Pueblo Lavanda baja por la Ruta 12. 2) Entra en la casa del pescador y responde que sí te interesa pescar. 3) Te da la Supercaña, la mejor caña: pesca Pokémon de nivel alto y las especies más raras de cada zona. Consejo: en la Guarida Dragón y la Ruta Helada solo la Supercaña puede sacar Dragonair (nivel 40). Fuente: decompilación de pret (pokegold/pokecrystal) (Route12SuperRodHouse: SUPER_ROD; data/wild/fish)."
+    },
+    {
+     "titulo": "MT de los líderes de gimnasio",
+     "texto": "Cuándo: al ganar cada medalla. Dónde: gimnasios de Johto y Kanto. Paso a paso: 1) Johto, todos dan MT al vencerlos: Pegaso MT31 Bofetón Lodo, Antón MT49 Corte Furia, Blanca MT45 Atracción, Morti MT30 Bola Sombra, Aníbal MT01 Puño Dinámico, Yasmina MT23 Cola Férrea, Fredo MT16 Viento Hielo y Débora MT24 Dragoaliento. 2) Kanto: solo dan MT Erika (MT19 Gigadrenado) y Sachiko (MT06 Tóxico); Lt. Surge, Sabrina, Misty, Brock, Blaine y Azul solo dan la medalla. 3) Si tu Mochila está llena y no te cabe la MT, vuelve a hablar con el líder para recogerla. Consejo: otras MT únicas del postgame son la MT07 Electrocañón (Central de Energía) y la MT47 Ala de Acero (Ruta 28). Fuente: decompilación de pret (pokegold/pokecrystal) (VioletGym, AzaleaGym, GoldenrodGym, EcruteakGym, CianwoodGym, OlivineGym, MahoganyGym, BlackthornGym1F, CeladonGym, FuchsiaGym)."
+    },
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "medal-type"
+    }
+   ]
+  },
+  "CRYSTAL-10": {
+   "bloques": [
+    {
+     "titulo": "Ticket Barco y horario del S.S. Aqua",
+     "texto": "Cuándo: justo después de entrar en el Hall de la Fama. Dónde: Laboratorio Elm (Pueblo Primavera) y puerto de Ciudad Olivo. Paso a paso: 1) Tras los créditos apareces en tu casa: ve al Laboratorio Elm y habla con el profesor; te da el Ticket Barco (si aún no tenías la Master Ball, vuelve a hablarle y te la da). 2) Viaja a Ciudad Olivo, entra en el puerto (al sur de la ciudad) y enseña el Ticket Barco al marinero. 3) El primer viaje sale el día que sea; a partir de entonces el S.S. Aqua zarpa de Ciudad Olivo solo los lunes y viernes, y de Ciudad Carmín solo los miércoles y domingos (según el reloj del juego). 4) En el primer viaje completa la búsqueda de la nieta (bloque siguiente); al terminar, el barco atraca en Ciudad Carmín. Consejo: cuando consigas el Pase del Magnetotrén (misión «Restaurar la Central de Energía») ya no dependerás de los días del barco. Fuente: decompilación de pret (pokegold/pokecrystal) (ElmsLab, OlivinePort, VermilionPort); WikiDex «S.S. Aqua»."
+    },
+    {
+     "titulo": "La nieta perdida del S.S. Aqua (Revestimiento Metálico)",
+     "texto": "Cuándo: durante el primer viaje del S.S. Aqua. Dónde: camarotes, sala de máquinas y camarote del capitán del barco. Paso a paso: 1) Un caballero te pide que busques a su nieta, que se ha perdido por el barco. 2) Un marinero te impide pasar a la sala de máquinas hasta que encuentres a su compañero: busca en los camarotes al marinero que se ha quedado dormido y véncele en combate; entonces te dejan pasar. 3) Llega al camarote del capitán: allí está la niña jugando al escondite; habla con ella y te acompaña de vuelta. 4) El caballero te regala el Revestimiento Metálico. Por el camino puedes combatir con los entrenadores de los camarotes. Consejo: el Revestimiento Metálico hace evolucionar a Onix en Steelix y a Scyther en Scizor si lo llevan equipado al intercambiarlos; es el único de la partida. Fuente: decompilación de pret (pokegold/pokecrystal) (FastShipCabins_SE_SSE_CaptainsCabin: METAL_COAT); WikiDex «S.S. Aqua»."
+    },
+    {
+     "titulo": "Llegada a Kanto: Ciudad Carmín, Ciudad Azafrán y la Central de Energía",
+     "texto": "Cuándo: al bajar del S.S. Aqua. Dónde: Ciudad Carmín, Ruta 6, Ciudad Azafrán y Ruta 10. Paso a paso: 1) En Ciudad Carmín ya puedes retar a Lt. Surge (ver «Ocho medallas de Kanto»); al este de la ciudad, un Snorlax dormido tapa la entrada de la Cueva Diglett y de momento no se puede despertar. 2) Sube por la Ruta 6 hasta Ciudad Azafrán: la estación del Magnetotrén está parada por falta de electricidad y Sabrina ya acepta combates. 3) Ve a la Central de Energía, en la Ruta 10: desde Ciudad Celeste, hacia el este por la Ruta 9; o desde Pueblo Lavanda, hacia el norte por la Ruta 10 (el río se cruza con Surf). 4) Habla con el director de la Central: le han robado la Maquinaria del generador (sigue en «Restaurar la Central de Energía»). Consejo: en el Club de Fans de Pokémon de Ciudad Carmín, el presidente te regala un Caramelo Raro si aceptas escuchar su historia. Fuente: decompilación de pret (pokegold/pokecrystal) (VermilionCity, PowerPlant, PokemonFanClub); WikiDex «Ruta 10 (Kanto)»."
+    }
+   ]
+  },
+  "CRYSTAL-11": {
+   "bloques": [
+    {
+     "titulo": "Recuperar la Maquinaria robada",
+     "texto": "Cuándo: después de hablar con el director de la Central de Energía. Dónde: Gimnasio de Ciudad Celeste y Ruta 24 (el puente al norte de Ciudad Celeste). Paso a paso: 1) Entra en el Gimnasio de Ciudad Celeste, que está vacío: un soldado del Team Rocket sale corriendo al verte. 2) Sube por la Ruta 24 (el puente al norte de la ciudad) y habla con el soldado: combate con él y, al vencerle, confiesa que escondió la pieza en el gimnasio. 3) Vuelve al gimnasio y examina el agua en el centro de la piscina (es un objeto oculto; el Buscaobjetos lo marca): recoges la Maquinaria. Consejo: el soldado y la pieza solo aparecen después de haber hablado con el director; si no los ves, vuelve primero a la Central. Fuente: decompilación de pret (pokegold/pokecrystal) (PowerPlant, CeruleanGym: MACHINE_PART oculta, Route24); WikiDex «Objetos clave de la segunda generación»."
+    },
+    {
+     "titulo": "Devolver la Maquinaria: MT07 Electrocañón y Magnetotrén",
+     "texto": "Cuándo: en cuanto tengas la Maquinaria. Dónde: Central de Energía (Ruta 10). Paso a paso: 1) Vuelve a la Central de Energía y habla con el director. 2) Te da como recompensa la MT07 Electrocañón (Eléctrico, 100 de potencia, 50 % de precisión, paraliza siempre que acierta). 3) Con la electricidad restaurada vuelven a funcionar el Magnetotrén (Ciudad Azafrán–Ciudad Trigal, necesita el Pase) y la Torre Radio de Pueblo Lavanda. Consejo: el Electrocañón casa muy bien con Fijar Blanco. Fuente: decompilación de pret (pokegold/pokecrystal) (PowerPlant: TM_ZAP_CANNON; EVENT_RESTORED_POWER_TO_KANTO); WikiDex «Ruta 10 (Kanto)»."
+    },
+    {
+     "titulo": "Tarjeta Expansión (radio de Kanto y Poké Flauta)",
+     "texto": "Cuándo: después de devolver la Maquinaria. Dónde: Torre Radio de Pueblo Lavanda, planta baja. Paso a paso: 1) Viaja a Pueblo Lavanda y entra en la Torre Radio. 2) Habla con el señor mayor de la planta baja: al saber que la electricidad ha vuelto te da la Tarjeta Expansión para el Pokégear. 3) Desde ahora la radio capta las emisoras de Kanto; en el dial 20 suena la Poké Flauta, que sirve para despertar al Snorlax de Ciudad Carmín. Consejo: la Poké Flauta solo se oye estando en Kanto. Fuente: decompilación de pret (pokegold/pokecrystal) (LavRadioTower1F: ENGINE_EXPN_CARD; engine/pokegear: PokeFluteRadio en 20.0)."
+    },
+    {
+     "titulo": "Misty en el Cabo Celeste (vuelve al gimnasio)",
+     "texto": "Cuándo: después de haber visto al soldado Rocket en el Gimnasio de Ciudad Celeste. Dónde: Ruta 24 y Ruta 25 hasta el Cabo Celeste, al norte de Ciudad Celeste. Paso a paso: 1) Cruza la Ruta 24 hacia el norte y sigue al este por la Ruta 25 hasta el Cabo Celeste (cerca de la casa de Bill). 2) Al llegar, Misty está allí con su novio; al acercarte se enfada y vuelve a su gimnasio. 3) Desde ese momento ya puedes retarla en Ciudad Celeste (ver «Ocho medallas de Kanto»). Consejo: en la Ruta 25, el último entrenador del puente te regala una Pepita si vences a todos los anteriores. Fuente: decompilación de pret (pokegold/pokecrystal) (CeruleanGym, Route25: EVENT_ROUTE_25_MISTY_BOYFRIEND, NUGGET)."
+    },
+    {
+     "titulo": "Pase del Magnetotrén (la Copiona y el Pokémuñeco)",
+     "texto": "Cuándo: después de devolver la Maquinaria a la Central. Dónde: casa de la Copiona en Ciudad Azafrán y Club de Fans de Pokémon de Ciudad Carmín. Paso a paso: 1) En Ciudad Azafrán entra en la casa de la Copiona y sube a la planta de arriba: te cuenta que ha perdido su Pokémuñeco de Clefairy. 2) Ve al Club de Fans de Pokémon de Ciudad Carmín y habla con el socio que juega con un muñeco de Clefairy: te da el Objeto Perdido para que se lo devuelvas. 3) Vuelve con la Copiona y entrégaselo: te da el Pase. 4) Con el Pase, el Magnetotrén une la estación de Ciudad Azafrán con la de Ciudad Trigal en ambos sentidos. Consejo: el socio del club solo te da el muñeco si antes has hablado con la Copiona y la Central ya funciona. Fuente: decompilación de pret (pokegold/pokecrystal) (CopycatsHouse2F: PASS; PokemonFanClub: LOST_ITEM); WikiDex «Lista de objetos clave de la segunda generación»."
+    }
+   ]
+  },
+  "CRYSTAL-12": {
+   "bloques": [
+    {
+     "titulo": "Lt. Surge: Medalla Trueno (Ciudad Carmín)",
+     "texto": "Cuándo: en cuanto llegas a Kanto. Dónde: Gimnasio de Ciudad Carmín. Paso a paso: 1) En el gimnasio hay 3 entrenadores (un caballero, un guitarrista y un malabarista); no hay puzle. 2) Lt. Surge usa Raichu (nivel 44), dos Electrode (nivel 40), Magneton (nivel 40) y Electabuzz (nivel 46). 3) Lleva Pokémon de tipo Tierra, inmunes a sus ataques Eléctricos; cuidado con Explosión de los Electrode y con Fijar Blanco + Electrocañón de Magneton. 4) Al vencerle recibes la Medalla Trueno (no da MT). Consejo: un Pokémon de tipo Tierra con Terremoto barre a todo su equipo. Fuente: decompilación de pret (pokegold/pokecrystal) (VermilionGym; data/trainers/parties: LtSurgeGroup)."
+    },
+    {
+     "titulo": "Sabrina: Medalla Pantano (Ciudad Azafrán)",
+     "texto": "Cuándo: desde que llegas a Kanto. Dónde: Gimnasio de Ciudad Azafrán. Paso a paso: 1) El gimnasio son salas unidas por baldosas teletransportadoras: pisa cada una, apunta adónde te lleva y sigue las que te acercan a la sala central, donde está Sabrina. 2) Por el camino hay 4 entrenadores (dos médium y dos psíquicos). 3) Sabrina usa Espeon (nivel 46), Mr. Mime (nivel 46, con Barrera, Reflejo y Relevo) y Alakazam (nivel 48, con Recuperación). Usa ataques de tipo Siniestro, Bicho o Fantasma. 4) Al vencerla recibes la Medalla Pantano (no da MT). Consejo: rompe las barreras de Mr. Mime antes de que pase las mejoras con Relevo. Fuente: decompilación de pret (pokegold/pokecrystal) (SaffronGym; data/trainers/parties: SabrinaGroup)."
+    },
+    {
+     "titulo": "Erika: Medalla Arcoíris y MT19 Gigadrenado (Ciudad Azulona)",
+     "texto": "Cuándo: desde que llegas a Kanto. Dónde: Gimnasio de Ciudad Azulona (al sur de la ciudad). Paso a paso: 1) Un arbusto tapa la entrada: córtalo con Corte. 2) Dentro hay 5 entrenadoras antes de llegar a Erika. 3) Erika usa Tangela (nivel 42), Jumpluff (nivel 41), Victreebel (nivel 46) y Bellossom (nivel 46); los dos últimos usan Día Soleado y Rayo Solar o Síntesis. Usa Fuego, Hielo, Volador o Veneno. 4) Al vencerla recibes la Medalla Arcoíris y la MT19 Gigadrenado. Consejo: con el sol activo, un ataque de Fuego hace el doble de daño. Fuente: decompilación de pret (pokegold/pokecrystal) (CeladonGym: TM_GIGA_DRAIN; data/trainers/parties: ErikaGroup); WikiDex «Gimnasio Azulona»."
+    },
+    {
+     "titulo": "Sachiko: Medalla Alma y MT06 Tóxico (Ciudad Fucsia)",
+     "texto": "Cuándo: desde que llegas a Kanto. Dónde: Gimnasio de Ciudad Fucsia; se llega por las Rutas 12 a 15 desde Pueblo Lavanda o por el Camino de Bicis (Rutas 16 a 18, con Bicicleta) desde Ciudad Azulona. Paso a paso: 1) Dentro, todos los entrenadores aparecen disfrazados de Sachiko: 4 son entrenadores normales (se descubren al combatir) y solo una es la líder. 2) Habla con cada figura hasta dar con la Sachiko verdadera. 3) Sachiko usa Crobat (nivel 36), dos Weezing (nivel 36, con Explosión), Ariados (nivel 33) y Venomoth (nivel 39). Psíquico es eficaz contra los cinco; Tierra sirve contra los Weezing, pero Crobat es inmune por ser Volador. 4) Al vencerla recibes la Medalla Alma y la MT06 Tóxico. Consejo: los Weezing pueden usar Explosión; lleva un Pokémon de tipo Roca o Acero de reserva. Fuente: decompilación de pret (pokegold/pokecrystal) (FuchsiaGym: TM_TOXIC; data/trainers/parties: JanineGroup); WikiDex «Gimnasio Fucsia»."
+    },
+    {
+     "titulo": "Misty: Medalla Cascada (Ciudad Celeste)",
+     "texto": "Cuándo: después de ver a Misty en el Cabo Celeste. Dónde: Gimnasio de Ciudad Celeste. Paso a paso: 1) En el gimnasio hay 3 entrenadores (dos nadadoras y un nadador). 2) Misty usa Golduck (nivel 42), Quagsire (nivel 42), Lapras (nivel 44) y Starmie (nivel 47). 3) Usa Eléctrico contra Golduck, Lapras y Starmie, pero Planta contra Quagsire (es de tipo Agua y Tierra: inmune a la Electricidad y débil x4 a Planta). 4) Al vencerla recibes la Medalla Cascada (no da MT). Consejo: Lapras puede usar Canto Mortal; cambia de Pokémon antes de que acabe la cuenta. Fuente: decompilación de pret (pokegold/pokecrystal) (CeruleanGym; data/trainers/parties: MistyGroup)."
+    },
+    {
+     "titulo": "Snorlax de Ciudad Carmín (abre la Cueva Diglett)",
+     "texto": "Cuándo: después de conseguir la Tarjeta Expansión. Dónde: Ciudad Carmín, al este, delante de la entrada de la Cueva Diglett. Paso a paso: 1) Colócate justo al lado del Snorlax dormido. 2) Abre el Pokégear, ve a la radio y sintoniza el dial 20 (Poké Flauta); con la música sonando, habla con Snorlax. 3) Se despierta y combate: Snorlax salvaje de nivel 50 que lleva siempre Restos. Guarda antes, debilítalo con cuidado y captúralo (Ultra Ball o Master Ball). 4) Con el paso libre, cruza la Cueva Diglett hasta la Ruta 2 y sube a Ciudad Plateada. Consejo: es el único Snorlax de la partida; si lo debilitas no vuelve, así que recarga. Fuente: decompilación de pret (pokegold/pokecrystal) (VermilionCity: loadwildmon SNORLAX, 50 con BATTLETYPE_FORCEITEM; engine/events/specials: SnorlaxAwake)."
+    },
+    {
+     "titulo": "Brock: Medalla Roca (Ciudad Plateada)",
+     "texto": "Cuándo: tras despertar a Snorlax y cruzar la Cueva Diglett. Dónde: Gimnasio de Ciudad Plateada. Paso a paso: 1) En el gimnasio hay 1 entrenador (un campista). 2) Brock usa Graveler (nivel 41), Rhyhorn (nivel 41), Omastar (nivel 42), Onix (nivel 44) y Kabutops (nivel 42). 3) Usa Planta: es x4 contra los cinco (todos son Roca con Tierra o con Agua); el Agua, la Lucha y la Tierra también sirven contra Graveler, Rhyhorn y Onix. 4) Al vencerle recibes la Medalla Roca (no da MT). Consejo: Rhyhorn tiene Perforador (fulmina de un golpe si acierta); acaba con él pronto. Fuente: decompilación de pret (pokegold/pokecrystal) (PewterGym; data/trainers/parties: BrockGroup)."
+    },
+    {
+     "titulo": "Blaine: Medalla Volcán (Islas Espuma)",
+     "texto": "Cuándo: cuando tengas Surf en Kanto. Dónde: Islas Espuma, entre Ciudad Fucsia e Isla Canela. Paso a paso: 1) Llega haciendo Surf: desde Pueblo Paleta por la Ruta 21 hasta Isla Canela y al este por la Ruta 20, o desde Ciudad Fucsia al sur y al oeste por las Rutas 19 y 20. 2) En Isla Canela solo queda el Centro Pokémon (el volcán arrasó la isla): habla con Azul junto a él (abre el Gimnasio de Ciudad Verde). 3) En las Islas Espuma entra en la cueva del gimnasio; no hay entrenadores. Blaine usa Magcargo (nivel 45), Magmar (nivel 45) y Rapidash (nivel 50): usa Agua o Tierra (Magcargo es débil x4 a ambos). 4) Al vencerle recibes la Medalla Volcán (no da MT). Consejo: Rapidash usa Llamarada; un Pokémon de Agua con Surf lo despacha. Fuente: decompilación de pret (pokegold/pokecrystal) (SeafoamGym, CinnabarIsland; data/trainers/parties: BlaineGroup); WikiDex «Islas Espuma» e «Isla Canela»."
+    },
+    {
+     "titulo": "Azul: Medalla Tierra (Ciudad Verde)",
+     "texto": "Cuándo: después de hablar con Azul en Isla Canela. Dónde: Gimnasio de Ciudad Verde. Paso a paso: 1) El gimnasio no tiene entrenadores: ve directo a Azul. 2) Azul usa Pidgeot (nivel 56), Alakazam (nivel 54), Rhydon (nivel 56), Gyarados (nivel 58), Exeggutor (nivel 58) y Arcanine (nivel 58, con Velocidad Extrema). 3) Lleva un equipo variado de nivel 55 o más: Eléctrico contra Pidgeot y Gyarados, Agua o Planta contra Rhydon, Siniestro contra Alakazam, Bicho o Fuego contra Exeggutor y Agua o Tierra contra Arcanine. 4) Al vencerle recibes la Medalla Tierra: con ella tienes las 16 medallas. Consejo: es el combate más duro antes de Rojo; guarda antes. Fuente: decompilación de pret (pokegold/pokecrystal) (ViridianGym, CinnabarIsland: EVENT_VIRIDIAN_GYM_BLUE; data/trainers/parties: BlueGroup)."
+    }
+   ]
+  },
+  "CRYSTAL-13": {
+   "bloques": [
+    {
+     "titulo": "Permiso del Profesor Oak para el Monte Plateado",
+     "texto": "Cuándo: con las 16 medallas (8 de Johto y 8 de Kanto). Dónde: Laboratorio de Oak, Pueblo Paleta. Paso a paso: 1) Viaja a Pueblo Paleta (al sur de Ciudad Verde por la Ruta 1, o con Vuelo). 2) Habla con el Profesor Oak: comprueba tus medallas y, si tienes las 16, te da permiso para entrar en el Monte Plateado. 3) Además evalúa tu Pokédex cada vez que le hablas. Consejo: si le hablas antes con solo las 8 de Johto, te anima a ganar las de Kanto; vuelve cuando las tengas. Fuente: decompilación de pret (pokegold/pokecrystal) (OaksLab: EVENT_OPENED_MT_SILVER); WikiDex «Monte Plateado»."
+    },
+    {
+     "titulo": "Ruta 28 y Centro Pokémon del Monte Plateado (MT47 Ala de Acero)",
+     "texto": "Cuándo: después del permiso de Oak. Dónde: puerta de la Calle Victoria (entre la Ruta 22 y la Ruta 26) y Ruta 28. Paso a paso: 1) Desde Ciudad Verde ve al oeste por la Ruta 22 hasta la puerta de la Calle Victoria: el guarda de la salida oeste ya no te bloquea. 2) Recorre la Ruta 28 (necesitas Surf y Corte); los Pokémon salvajes rondan el nivel 40. 3) En la casa de la ruta (se llega con Corte) vive una famosa escondida: te regala la MT47 Ala de Acero a cambio de guardar el secreto. 4) Junto a la entrada de la cueva está el Centro Pokémon del Monte Plateado: cúrate y guarda; desde aquí puedes volver con Vuelo. Consejo: en la Ruta 28 hay un Caramelo Raro oculto; el Buscaobjetos lo encuentra. Fuente: decompilación de pret (pokegold/pokecrystal) (VictoryRoadGate, Route28, Route28SteelWingHouse: TM_STEEL_WING); WikiDex «Monte Plateado»."
+    },
+    {
+     "titulo": "Cueva Monte Plateado hasta la cima",
+     "texto": "Cuándo: después de llegar al Centro Pokémon del Monte Plateado. Dónde: Cueva Monte Plateado (Monte Plateado, frontera entre Kanto y Johto). Paso a paso: 1) La primera sala está a oscuras: usa Destello. 2) Sube sala a sala hacia la cima; los salvajes rondan los niveles 40-53 (Golbat, Ursaring, Onix, Graveler, Golduck...). 3) Por el camino hay objetos útiles (Revivir Máximo, Restaurar Todo, Elixir Máximo, Ultra Ball oculta...). 4) Llega a la última sala, guarda y prepara al equipo antes de hablar con Rojo. Consejo: aquí aparece Larvitar (niveles 15-20), útil para la Pokédex. Fuente: decompilación de pret (pokegold/pokecrystal) (SilverCaveRoom1-3, SilverCaveItemRooms; data/wild/johto_grass); WikiDex «Monte Plateado»."
+    },
+    {
+     "objetivo": "postgame"
+    }
+   ]
+  },
+  "CRYSTAL-14": {
+   "bloques": [
+    {
+     "titulo": "Master Ball del Profesor Elm",
+     "texto": "Cuándo: en cuanto tienes la Medalla Dragón (la octava de Johto). Dónde: Laboratorio Elm, Pueblo Primavera. Paso a paso: 1) Tras vencer a Débora en Ciudad Endrino, vuelve a Pueblo Primavera. 2) Habla con el Profesor Elm: te regala la Master Ball (si ya pasaste la Liga sin recogerla, primero te da el Ticket Barco y en la siguiente conversación la Master Ball). 3) Resérvala para un encuentro único difícil: un perro legendario errante, que huye en el primer turno, es el mejor uso. Consejo: es la única Master Ball que te dan en la partida; no la gastes en algo que puedas debilitar y capturar con calma. Fuente: decompilación de pret (pokegold/pokecrystal) (ElmsLab: ENGINE_RISINGBADGE, MASTER_BALL)."
+    },
+    {
+     "objetivo": "pokemon-249"
+    },
+    {
+     "titulo": "Lapras de la Cueva Unión (solo los viernes)",
+     "texto": "Cuándo: cualquier viernes (reloj del juego) desde que tienes Surf. Dónde: Cueva Unión, sótano más profundo (entre Ciudad Malva y Pueblo Azalea, Ruta 32/33). Paso a paso: 1) Entra en la Cueva Unión y baja hasta el sótano más profundo; necesitas Surf para cruzar el agua. 2) Los viernes hay un Lapras quieto en el agua: guarda y háblale. 3) Lapras salvaje de nivel 20: debilítalo y captúralo. 4) Si lo debilitas o huyes, vuelve otro viernes: aparece de nuevo cada semana. Consejo: es la única forma de conseguir Lapras en la partida, aparte de intercambiarlo. Fuente: decompilación de pret (pokegold/pokecrystal) (UnionCaveB2F: ifequal FRIDAY, loadwildmon LAPRAS, 20)."
+    },
+    {
+     "titulo": "Sudowoodo y el Gyarados rojo (encuentros únicos de la historia)",
+     "texto": "Cuándo: durante la historia; no se repiten. Dónde: Ruta 36 (Sudowoodo) y Lago de la Furia, al norte de Pueblo Caoba (Gyarados rojo). Paso a paso: 1) Sudowoodo (nivel 20): con la Regadera de la floristería de Ciudad Trigal, riégalo en la Ruta 36; guarda antes y captúralo. 2) Gyarados rojo (nivel 30): en el centro del Lago de la Furia (con Surf); guarda antes de hablarle y captúralo. 3) Si debilitaste alguno de los dos, ya no vuelve: la especie se puede registrar igualmente (Sudowoodo por cría en la Guardería; Gyarados pescando Magikarp y evolucionándolo), pero el ejemplar único se pierde. Consejo: aunque debilites al Gyarados rojo recibes la Escama Roja. Fuente: decompilación de pret (pokegold/pokecrystal) (Route36: loadwildmon SUDOWOODO, 20; LakeOfRage: loadwildmon GYARADOS, 30)."
+    },
+    {
+     "objetivo": "event-0"
+    },
+    {
+     "titulo": "Mew (solo por evento)",
+     "texto": "Cuándo: no se puede conseguir jugando. Dónde: solo existió en eventos oficiales ya cerrados de la primera generación (Rojo, Azul y Amarillo). Paso a paso: 1) Si tienes un Mew de evento en Rojo, Azul o Amarillo, pásalo con la Cápsula del Tiempo (2.ª planta de cualquier Centro Pokémon; se activa al hablar con Bill en el Centro Pokémon de Ciudad Iris). 2) Con Pokekeep: añade el Mew de evento legal desde la Librería. 3) Comprueba en la Pokédex que queda registrado como capturado. Consejo: Mew no cuenta para el diploma de GAME FREAK (249 sin Mew ni Celebi). Fuente: decompilación de pret (pokegold/pokecrystal) (EcruteakPokecenter1F: ENGINE_TIME_CAPSULE; CeladonMansion3F); Serebii «Unobtainable Pokémon»."
+    },
+    {
+     "titulo": "Mewtwo, Articuno, Zapdos y Moltres (desde Rojo, Azul o Amarillo)",
+     "texto": "Cuándo: desde que Bill activa la Cápsula del Tiempo en el Centro Pokémon de Ciudad Iris. Dónde: en esta edición no aparecen; en Rojo, Azul y Amarillo están en la Cueva Celeste (Mewtwo, nivel 70), las Islas Espuma (Articuno, nivel 50), la Central de Energía (Zapdos, nivel 50) y la Calle Victoria (Moltres, nivel 50). Paso a paso: 1) Captúralos en una partida de Rojo, Azul o Amarillo. 2) Conecta las dos consolas con el cable y entra en la Cápsula del Tiempo (2.ª planta de un Centro Pokémon, mostrador de la derecha). 3) Intercámbialos a esta partida; de vuelta a la primera generación no se puede enviar nada de la segunda (especies ni movimientos nuevos). 4) Con Pokekeep: si no tienes otra consola o partida, añádelos legales desde la Librería. Consejo: los tres pájaros y Mewtwo sí cuentan para el diploma de GAME FREAK. Fuente: decompilación de pret (pokered: CeruleanCaveB1F, SeafoamIslandsB4F, PowerPlant, VictoryRoad2F; pokegold/pokecrystal: EcruteakPokecenter1F)."
+    }
+   ]
+  },
+  "CRYSTAL-DETAIL1": {
+   "bloques": [
+    {
+     "titulo": "Despertar de las bestias en la Torre Quemada",
+     "texto": "Cuándo: al llegar a Ciudad Iris, antes del gimnasio de Morti. Dónde: Torre Quemada, al noroeste de Ciudad Iris. Paso a paso: 1) Entra en la Torre Quemada: en la planta baja conoces a Eusine y combates contra tu rival. 2) Cae por el agujero del suelo al sótano, donde descansan Raikou, Entei y Suicune. 3) Al acercarte despiertan y huyen; Raikou y Entei empiezan a vagar por Johto (nivel 40) y Suicune empieza a aparecerse en puntos fijos. 4) Tras esta escena se abre el Gimnasio de Ciudad Iris. Consejo: desde este momento ya puedes buscar a Raikou y Entei por las rutas de Johto. Fuente: decompilación de pret (pokecrystal: BurnedTower1F, BurnedTowerB1F: EVENT_RELEASED_THE_BEASTS)."
+    },
+    {
+     "titulo": "Apariciones de Suicune y combate con Eusine",
+     "texto": "Cuándo: después de la Torre Quemada; son escenas opcionales. Dónde: al norte de Ciudad Orquídea, Ruta 42 y Ruta 36. Paso a paso: 1) En la parte norte de Ciudad Orquídea, Suicune aparece y huye; Eusine te reta: usa Drowzee (nivel 23), Haunter (nivel 23) y Electrode (nivel 25). 2) Después Suicune se deja ver en la Ruta 42 y luego en la Ruta 36; en cada sitio aparece al pasar por un punto concreto y escapa. 3) Estas apariciones no son necesarias para capturarlo: lo que abre su combate es la Campana Clara. Consejo: el combate con Eusine solo ocurre una vez y da buena experiencia. Fuente: decompilación de pret (pokecrystal: CianwoodCity, Route42, Route36; data/trainers/parties: EUSINE)."
+    },
+    {
+     "titulo": "Campana Clara (director de la Torre Radio)",
+     "texto": "Cuándo: al expulsar al Team Rocket de la Torre Radio de Ciudad Trigal. Dónde: Torre Radio de Ciudad Trigal, 5.ª planta. Paso a paso: 1) Recupera la Llave Sótano y la Llave Magnética y libera la Torre Radio (misión de historia). 2) Al vencer al último ejecutivo Rocket de la 5.ª planta, el director auténtico entra y te da las gracias. 3) Te regala la Campana Clara, que permite que los sabios de Ciudad Iris te dejen llegar a la Torre Hojalata. Consejo: llévala en la Mochila; no hace falta usarla. Fuente: decompilación de pret (pokecrystal: RadioTower5F: CLEAR_BELL); WikiDex «Lista de objetos clave de la segunda generación»."
+    },
+    {
+     "titulo": "Los tres sabios de la Torre Hojalata (3 combates)",
+     "texto": "Cuándo: con la Campana Clara en la Mochila. Dónde: Ciudad Iris, edificio del norte que lleva a la entrada de la Torre Hojalata (sala de los sabios). Paso a paso: 1) Entra en el edificio del norte de Ciudad Iris: con la Campana Clara aparecen tres sabios que te retan. 2) Cada uno usa dos Pokémon de nivel 32: Noctowl con Flareon, Noctowl con Jolteon y Noctowl con Vaporeon. 3) Al vencer al último, se aparta y te deja pasar a la entrada de la Torre Hojalata. Consejo: Noctowl es Normal/Volador; Eléctrico o Roca le van bien. Cúrate antes de entrar en la torre. Fuente: decompilación de pret (pokecrystal: WiseTriosRoom; data/trainers/parties: Sage GAKU, MASA, KOJI)."
+    },
+    {
+     "objetivo": "pokemon-245"
+    },
+    {
+     "objetivo": "pokemon-243"
+    },
+    {
+     "objetivo": "pokemon-244"
+    },
+    {
+     "objetivo": "pokemon-250"
+    }
+   ]
+  },
+  "CRYSTAL-15": {
+   "bloques": [
+    {
+     "objetivo": "collect-unown"
+    },
+    {
+     "titulo": "Caña Vieja (Centro Pokémon de la Ruta 32)",
+     "texto": "Cuándo: desde que llegas a la Ruta 32, al sur de Ciudad Malva. Dónde: Centro Pokémon de la Ruta 32 (junto a la entrada de la Cueva Unión). Paso a paso: 1) Entra en el Centro Pokémon del final de la Ruta 32. 2) Habla con el pescador y responde que sí te interesa pescar. 3) Te da la Caña Vieja; regístrala en el botón Select para usarla frente al agua. Consejo: con ella salen sobre todo Magikarp; sirve para conseguir Gyarados por evolución. Fuente: decompilación de pret (pokegold/pokecrystal) (Route32Pokecenter1F: OLD_ROD)."
+    },
+    {
+     "titulo": "Bicicleta (tienda de bicis de Ciudad Trigal)",
+     "texto": "Cuándo: en cuanto llegas a Ciudad Trigal. Dónde: tienda de bicicletas de Ciudad Trigal. Paso a paso: 1) Entra en la tienda: el dueño se queja de que no vende bicis. 2) Acepta su propuesta: le das tu nombre y tu número de teléfono para que la anuncies. 3) Te presta la Bicicleta (cuenta como tuya para siempre) y más adelante te llama por teléfono. Consejo: la necesitas para el Camino de Bicis de Kanto (Rutas 16 a 18). Fuente: decompilación de pret (pokegold/pokecrystal) (GoldenrodBikeShop: BICYCLE)."
+    },
+    {
+     "titulo": "Buscaobjetos (casa de Ciudad Iris)",
+     "texto": "Cuándo: en cuanto llegas a Ciudad Iris. Dónde: casa de Ciudad Iris, en la fila de casas del sur, junto al Gimnasio. Paso a paso: 1) Entra en la casa y habla con el hombre. 2) Te pregunta si viajas en busca de aventuras con tus Pokémon: responde que sí. 3) Te regala el Buscaobjetos, que avisa cuando hay un objeto oculto cerca. Consejo: úsalo en cuevas y rutas: hay muchos objetos ocultos (Maquinaria del Gimnasio Celeste, Caramelo Raro de la Ruta 28...). Fuente: decompilación de pret (pokegold/pokecrystal) (EcruteakItemfinderHouse: ITEMFINDER)."
+    },
+    {
+     "titulo": "Caña Buena (casa de Ciudad Olivo)",
+     "texto": "Cuándo: en cuanto llegas a Ciudad Olivo. Dónde: casa del pescador en Ciudad Olivo. Paso a paso: 1) Entra en la casa del pescador de Ciudad Olivo. 2) Te pregunta si te gusta pescar: responde que sí. 3) Te da la Caña Buena, que pesca Pokémon de más nivel y más especies que la Caña Vieja. Consejo: en cada zona de agua la Caña Buena y la Supercaña tienen sus propias tablas; prueba las tres cañas para registrar todo lo que vive allí. Fuente: decompilación de pret (pokegold/pokecrystal) (OlivineGoodRodHouse: GOOD_ROD)."
+    },
+    {
+     "objetivo": "battle1"
+    },
+    {
+     "titulo": "Supercaña (casa de la Ruta 12)",
+     "texto": "Cuándo: ya en Kanto. Dónde: casa del pescador de la Ruta 12, al sur de Pueblo Lavanda. Paso a paso: 1) Desde Pueblo Lavanda baja por la Ruta 12. 2) Entra en la casa del pescador y responde que sí te interesa pescar. 3) Te da la Supercaña, la mejor caña: pesca Pokémon de nivel alto y las especies más raras de cada zona. Consejo: en la Guarida Dragón y la Ruta Helada solo la Supercaña puede sacar Dragonair (nivel 40). Fuente: decompilación de pret (pokegold/pokecrystal) (Route12SuperRodHouse: SUPER_ROD; data/wild/fish)."
+    },
+    {
+     "titulo": "MT de los líderes de gimnasio",
+     "texto": "Cuándo: al ganar cada medalla. Dónde: gimnasios de Johto y Kanto. Paso a paso: 1) Johto, todos dan MT al vencerlos: Pegaso MT31 Bofetón Lodo, Antón MT49 Corte Furia, Blanca MT45 Atracción, Morti MT30 Bola Sombra, Aníbal MT01 Puño Dinámico, Yasmina MT23 Cola Férrea, Fredo MT16 Viento Hielo y Débora MT24 Dragoaliento. 2) Kanto: solo dan MT Erika (MT19 Gigadrenado) y Sachiko (MT06 Tóxico); Lt. Surge, Sabrina, Misty, Brock, Blaine y Azul solo dan la medalla. 3) Si tu Mochila está llena y no te cabe la MT, vuelve a hablar con el líder para recogerla. Consejo: otras MT únicas del postgame son la MT07 Electrocañón (Central de Energía) y la MT47 Ala de Acero (Ruta 28). Fuente: decompilación de pret (pokegold/pokecrystal) (VioletGym, AzaleaGym, GoldenrodGym, EcruteakGym, CianwoodGym, OlivineGym, MahoganyGym, BlackthornGym1F, CeladonGym, FuchsiaGym)."
+    },
+    {
+     "objetivo": "items0"
+    },
+    {
+     "objetivo": "pokedex"
+    },
+    {
+     "objetivo": "medal-type"
+    }
+   ]
+  }
+ },
+ "corrige": {
+  "postgame": "Cuándo: con las 16 medallas y el permiso del Profesor Oak. Dónde: cima de la Cueva Monte Plateado (se llega por la Ruta 28). Paso a paso: 1) Requisitos: las 8 medallas de Johto y las 8 de Kanto (Lt. Surge, Sabrina, Erika, Sachiko, Misty, Brock, Blaine y Azul) y hablar con Oak en Pueblo Paleta. 2) Sube la Cueva Monte Plateado con Destello y guarda en la última sala, delante de Rojo. 3) Rojo usa Pikachu (nivel 81, con Trueno y Encanto), Espeon (nivel 73), Snorlax (nivel 75, con Descanso y Ronquido), Venusaur (nivel 77, Día Soleado + Rayo Solar), Charizard (nivel 77) y Blastoise (nivel 77). 4) Usa Tierra contra Pikachu, Lucha contra Snorlax, Eléctrico contra Blastoise y Charizard, Siniestro o Bicho contra Espeon y Fuego, Volador o Psíquico contra Venusaur. 5) Al vencerle, Rojo desaparece sin decir nada y salen los créditos; no hay revancha. Consejo: lleva el equipo a nivel 70 o más y bastantes Revivir y Restaurar Todo; Pikachu es rápido y paraliza con Trueno. Fuente: decompilación de pret (pokegold/pokecrystal) (SilverCaveRoom3; data/trainers/parties: RedGroup); WikiDex «Monte Plateado»."
+ }
+}
